@@ -1,0 +1,73 @@
+{
+  "id": "646c5e727e56e743c9aed4a1",
+  "title": "Step 9",
+  "challengeType": 0,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>fCC Cat Painting</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n</head>\n<body>\n    <main>\n      <div class=\"cat-head\"></div>\n    </main>\n</body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>fCC Cat Painting</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n</head>\n<body>\n    <main>\n      <div class=\"cat-head\"></div>\n    </main>\n</body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        19
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #c9d2fc;\n}\n\n.cat-head {\n\n\n  \n  background: linear-gradient(#5e5e5e 85%, #45454f 100%);\n  width: 205px;\n  height: 180px;\n  border: 1px solid #000;\n  border-radius: 46%;\n}",
+      "error": null,
+      "seed": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #c9d2fc;\n}\n\n.cat-head {\n\n\n  \n  background: linear-gradient(#5e5e5e 85%, #45454f 100%);\n  width: 205px;\n  height: 180px;\n  border: 1px solid #000;\n  border-radius: 46%;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>position</code> property set to <code>static</code>. Make sure you add a semi-colon.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.position === 'static')"
+    },
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>top</code> property set to <code>100px</code>. Make sure you add a semi-colon.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.top === '100px')"
+    },
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>left</code> property set to <code>100px</code>. Make sure you add a semi-colon.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.left === '100px')"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>CSS positioning lets you set how you want an element to be positioned in the browser. It has a <code>position</code> property you can set to <code>static</code>, <code>absolute</code>, <code>relative</code>, <code>sticky</code> or <code>fixed</code>.</p>\n<p>Once you set the <code>position</code> property of the element, you can move the element around by setting a pixel or a percentage value for one or more of the <code>top</code>, <code>right</code>, <code>left</code>, or <code>bottom</code> properties.</p>\n<p><code>static</code> is the default positioning for all elements. If you assign it to an element, you won't be able to move it around with <code>top</code>, <code>right</code>, <code>left</code>, or <code>bottom</code>.</p>\n<p>Give <code>.cat-head</code> a <code>position</code> property of <code>static</code>, then set the <code>top</code> and <code>left</code> properties to <code>100px</code> each.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-intermediate-css-by-building-a-cat-painting",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

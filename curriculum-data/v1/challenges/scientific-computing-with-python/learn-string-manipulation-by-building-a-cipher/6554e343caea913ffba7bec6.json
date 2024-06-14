@@ -1,0 +1,49 @@
+{
+  "id": "6554e343caea913ffba7bec6",
+  "title": "Step 73",
+  "challengeType": 20,
+  "dashedName": "step-73",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        26
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\ntext = 'Hello Zaira'\ncustom_key = 'python'\ndef vigenere(message, key, direction):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:        \n            # Find the right key character to encode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    \n    return encrypted_text\nencryption = vigenere(text, custom_key, 1)\nprint(encryption)\ndecryption = vigenere(encryption, custom_key, -1)\nprint(decryption)\n",
+      "error": null,
+      "seed": "\ntext = 'Hello Zaira'\ncustom_key = 'python'\ndef vigenere(message, key, direction):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:        \n            # Find the right key character to encode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    \n    return encrypted_text\nencryption = vigenere(text, custom_key, 1)\nprint(encryption)\ndecryption = vigenere(encryption, custom_key, -1)\nprint(decryption)\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should change each occurrence of <code>encrypted_text</code> into <code>final_message</code>.</p>",
+      "testString": "({\n  test: () => {\n    const l = code.match(/final_message/g).length\n    assert.equal(l, 4)\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now, your function can be used both to encrypt and decrypt a message. Clean up your code with better variable names.</p>\n<p>Change each occurrence of <code>encrypted_text</code> into <code>final_message</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 72,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

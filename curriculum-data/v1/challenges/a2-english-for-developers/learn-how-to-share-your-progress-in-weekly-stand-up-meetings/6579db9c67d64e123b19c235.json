@@ -1,0 +1,88 @@
+{
+  "id": "6579db9c67d64e123b19c235",
+  "title": "Task 29",
+  "challengeType": 19,
+  "dashedName": "task-29",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Bob want to find out with his question?</p>",
+    "answers": [
+      {
+        "answer": "<p>Sophie's opinion on the best code practices</p>",
+        "feedback": "<p>Bob is inquiring about timing, not code practices.</p>"
+      },
+      {
+        "answer": "<p>The time that works best for Sophie for the review session</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>If Sophie can lead the review session</p>",
+        "feedback": "<p>Bob's question is about finding a suitable time, not about leadership roles.</p>"
+      },
+      {
+        "answer": "<p>The details of Sophie's coding problem</p>",
+        "feedback": "<p>Bob is asking about Sophie's availability, not the details of her coding issue.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 42.82,
+        "finishTimestamp": 44.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 2.2,
+        "dialogue": {
+          "text": "When is best for you?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 2.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Bob wants to know Sophie's availability to schedule the code review session, a common question in professional settings to coordinate activities based on team members' schedules.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 29,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

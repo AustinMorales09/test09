@@ -1,0 +1,113 @@
+{
+  "id": "64496d80bc174a158c973080",
+  "title": "Step 25",
+  "challengeType": 0,
+  "dashedName": "step-25",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        11
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      container.appendChild(input);\n    })\n  })\n}",
+      "error": null,
+      "seed": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      container.appendChild(input);\n    })\n  })\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>return</code> keyword.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?\\s*const\\s+middle\\s*=\\s*length\\s*\\/\\s*2\\s*-\\s*1\\s*;?\\s*return/);"
+    },
+    {
+      "text": "<p>You should call your <code>isEven()</code> function after your <code>return</code> keyword.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?\\s*const\\s+middle\\s*=\\s*length\\s*\\/\\s*2\\s*-\\s*1\\s*;?\\s*return\\s+isEven\\(/);"
+    },
+    {
+      "text": "<p>You should pass your <code>length</code> variable to your <code>isEven()</code> call.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?\\s*const\\s+middle\\s*=\\s*length\\s*\\/\\s*2\\s*-\\s*1\\s*;?\\s*return\\s+isEven\\(\\s*length\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should use ternary syntax to check the truthiness of your <code>isEven()</code> call.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?\\s*const\\s+middle\\s*=\\s*length\\s*\\/\\s*2\\s*-\\s*1\\s*;?\\s*return\\s+isEven\\(\\s*length\\s*\\)\\s*\\?/);"
+    },
+    {
+      "text": "<p>If the ternary is truthy, you should call your <code>average()</code> function.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?\\s*const\\s+middle\\s*=\\s*length\\s*\\/\\s*2\\s*-\\s*1\\s*;?\\s*return\\s+isEven\\(\\s*length\\s*\\)\\s*\\?\\s*average\\(/);"
+    },
+    {
+      "text": "<p>You should pass an array to your <code>average()</code> function.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?\\s*const\\s+middle\\s*=\\s*length\\s*\\/\\s*2\\s*-\\s*1\\s*;?\\s*return\\s+isEven\\(\\s*length\\s*\\)\\s*\\?\\s*average\\(\\s*\\[/);"
+    },
+    {
+      "text": "<p>The first element of the array passed to <code>average()</code> should be the element at the <code>middle</code> index of your <code>sorted</code> array.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?\\s*const\\s+middle\\s*=\\s*length\\s*\\/\\s*2\\s*-\\s*1\\s*;?\\s*return\\s+isEven\\(\\s*length\\s*\\)\\s*\\?\\s*average\\(\\s*\\[\\s*sorted\\s*\\[\\s*middle\\s*\\]/);"
+    },
+    {
+      "text": "<p>The first element of the array passed to <code>average()</code> should be the element at the <code>middle + 1</code> index of your <code>sorted</code> array.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?\\s*const\\s+middle\\s*=\\s*length\\s*\\/\\s*2\\s*-\\s*1\\s*;?\\s*return\\s+isEven\\(\\s*length\\s*\\)\\s*\\?\\s*average\\(\\s*\\[\\s*sorted\\s*\\[\\s*middle\\s*\\]\\s*,\\s*sorted\\s*\\[\\s*middle\\s*\\+\\s*1\\s*\\]\\s*\\]\\s*\\)/);"
+    },
+    {
+      "text": "<p>If the ternary is false, you should return the value of <code>sorted</code> at the <code>middle</code> index. Use <code>Math.ceil()</code> to round the <code>middle</code> value up.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?\\s*const\\s+middle\\s*=\\s*length\\s*\\/\\s*2\\s*-\\s*1\\s*;?\\s*return\\s+isEven\\(\\s*length\\s*\\)\\s*\\?\\s*average\\(\\s*\\[\\s*sorted\\s*\\[\\s*middle\\s*\\]\\s*,\\s*sorted\\s*\\[\\s*middle\\s*\\+\\s*1\\s*\\]\\s*\\]\\s*\\)\\s*:\\s*sorted\\s*\\[\\s*Math\\.ceil\\(\\s*middle\\s*\\)\\s*\\]\\s*;?/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Using ternary syntax, check if <code>length</code> is even using your <code>isEven</code> function. If it is, return the average of the number at the <code>middle</code> index and the number after that. If it's odd, return the number at the <code>middle</code> index – you'll need to round the <code>middle</code> value up.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

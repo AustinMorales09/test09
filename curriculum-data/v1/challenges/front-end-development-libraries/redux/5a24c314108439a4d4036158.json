@@ -1,0 +1,81 @@
+{
+  "id": "5a24c314108439a4d4036158",
+  "title": "Never Mutate State",
+  "challengeType": 6,
+  "forumTopicId": 301445,
+  "dashedName": "never-mutate-state",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const ADD_TO_DO = 'ADD_TO_DO';\n\n// A list of strings representing tasks to do:\nconst todos = [\n  'Go to the store',\n  'Clean the house',\n  'Cook dinner',\n  'Learn to code',\n];\n\nconst immutableReducer = (state = todos, action) => {\n  switch(action.type) {\n    case ADD_TO_DO:\n      // Don't mutate state here or the tests will fail\n      return\n    default:\n      return state;\n  }\n};\n\nconst addToDo = (todo) => {\n  return {\n    type: ADD_TO_DO,\n    todo\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);",
+      "error": null,
+      "seed": "const ADD_TO_DO = 'ADD_TO_DO';\n\n// A list of strings representing tasks to do:\nconst todos = [\n  'Go to the store',\n  'Clean the house',\n  'Cook dinner',\n  'Learn to code',\n];\n\nconst immutableReducer = (state = todos, action) => {\n  switch(action.type) {\n    case ADD_TO_DO:\n      // Don't mutate state here or the tests will fail\n      return\n    default:\n      return state;\n  }\n};\n\nconst addToDo = (todo) => {\n  return {\n    type: ADD_TO_DO,\n    todo\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const ADD_TO_DO = 'ADD_TO_DO';\n\nconst todos = [\n  'Go to the store',\n  'Clean the house',\n  'Cook dinner',\n  'Learn to code',\n];\n\nconst immutableReducer = (state = todos, action) => {\n  switch(action.type) {\n    case ADD_TO_DO:\n      return state.concat(action.todo);\n    default:\n      return state;\n  }\n};\n\nconst addToDo = (todo) => {\n  return {\n    type: ADD_TO_DO,\n    todo\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);",
+        "error": null,
+        "seed": "const ADD_TO_DO = 'ADD_TO_DO';\n\nconst todos = [\n  'Go to the store',\n  'Clean the house',\n  'Cook dinner',\n  'Learn to code',\n];\n\nconst immutableReducer = (state = todos, action) => {\n  switch(action.type) {\n    case ADD_TO_DO:\n      return state.concat(action.todo);\n    default:\n      return state;\n  }\n};\n\nconst addToDo = (todo) => {\n  return {\n    type: ADD_TO_DO,\n    todo\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The Redux store should exist and initialize with a state equal to the <code>todos</code> array in the code editor.</p>",
+      "testString": "assert(\n  (function () {\n    const todos = [\n      'Go to the store',\n      'Clean the house',\n      'Cook dinner',\n      'Learn to code'\n    ];\n    const initialState = store.getState();\n    return (\n      Array.isArray(initialState) && initialState.join(',') === todos.join(',')\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p><code>addToDo</code> and <code>immutableReducer</code> both should be functions.</p>",
+      "testString": "assert(typeof addToDo === 'function' && typeof immutableReducer === 'function');"
+    },
+    {
+      "text": "<p>Dispatching an action of type <code>ADD_TO_DO</code> on the Redux store should add a <code>todo</code> item and should NOT mutate state.</p>",
+      "testString": "assert(\n  (function () {\n    const initialState = store.getState();\n    const isFrozen = DeepFreeze(initialState);\n    store.dispatch(addToDo('__TEST__TO__DO__'));\n    const finalState = store.getState();\n    const expectedState = [\n      'Go to the store',\n      'Clean the house',\n      'Cook dinner',\n      'Learn to code',\n      '__TEST__TO__DO__'\n    ];\n    return isFrozen && DeepEqual(finalState, expectedState);\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>These final challenges describe several methods of enforcing the key principle of state immutability in Redux. Immutable state means that you never modify state directly, instead, you return a new copy of state.</p>\n<p>If you took a snapshot of the state of a Redux app over time, you would see something like <code>state 1</code>, <code>state 2</code>, <code>state 3</code>,<code>state 4</code>, <code>...</code> and so on where each state may be similar to the last, but each is a distinct piece of data. This immutability, in fact, is what provides such features as time-travel debugging that you may have heard about.</p>\n<p>Redux does not actively enforce state immutability in its store or reducers, that responsibility falls on the programmer. Fortunately, JavaScript (especially ES6) provides several useful tools you can use to enforce the immutability of your state, whether it is a <code>string</code>, <code>number</code>, <code>array</code>, or <code>object</code>. Note that strings and numbers are primitive values and are immutable by nature. In other words, 3 is always 3. You cannot change the value of the number 3. An <code>array</code> or <code>object</code>, however, is mutable. In practice, your state will probably consist of an <code>array</code> or <code>object</code>, as these are useful data structures for representing many types of information.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>There is a <code>store</code> and <code>reducer</code> in the code editor for managing to-do items. Finish writing the <code>ADD_TO_DO</code> case in the reducer to append a new to-do to the state. There are a few ways to accomplish this with standard JavaScript or ES6. See if you can find a way to return a new array with the item from <code>action.todo</code> appended to the end.</p>\n</section>",
+  "translationPending": false,
+  "block": "redux",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 13,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"
+    },
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.2.0/redux-thunk.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,77 @@
+{
+  "id": "664ed97c55a99e5ffab759dc",
+  "title": "Step 12",
+  "challengeType": 0,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        1,
+        3
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = \"Hello\";\n",
+      "error": null,
+      "seed": "let character = \"Hello\";\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a <code>profession</code> variable.</p>",
+      "testString": "assert.match(code, /(?:var|let|const)\\s+profession/);"
+    },
+    {
+      "text": "<p>You should use <code>let</code> to declare the <code>profession</code> variable.</p>",
+      "testString": "assert.match(code, /let\\s+profession/);"
+    },
+    {
+      "text": "<p>You should assign the string <code>\"teacher\"</code> to the <code>profession</code> variable.</p>",
+      "testString": "assert.strictEqual(profession, \"teacher\");"
+    },
+    {
+      "text": "<p>You should declare an <code>age</code> variable.</p>",
+      "testString": "assert.match(code, /(?:var|let|const)\\s+age/);"
+    },
+    {
+      "text": "<p>You should use <code>let</code> to declare the <code>age</code> variable.</p>",
+      "testString": "assert.match(code, /let\\s+age/);"
+    },
+    {
+      "text": "<p>You should not assign a value to the <code>age</code> variable.</p>",
+      "testString": "assert.isUndefined(age);"
+    },
+    {
+      "text": "<p>You should log <code>age</code> to the console.</p>",
+      "testString": "assert.match(code, /console\\.log\\(\\s*age\\s*\\);?/);"
+    },
+    {
+      "text": "<p>You should log <code>profession</code> to the console.</p>",
+      "testString": "assert.match(code, /console\\.log\\(\\s*profession\\s*\\);?/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Before moving forward, you should take a moment to review the concepts you have learned.</p>\n<p>Use the <code>let</code> keyword to declare a <code>profession</code> variable and an <code>age</code> variable. Initialize <code>profession</code> with the string <code>\"teacher\"</code>, but do not initialize <code>age</code> with any value.</p>\n<p>Log both of your variables to the console to see the results.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

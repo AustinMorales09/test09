@@ -1,0 +1,88 @@
+{
+  "id": "656cd17584250515779ca7e5",
+  "title": "Task 122",
+  "challengeType": 19,
+  "dashedName": "task-122",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Sophie describe the distance to the café?</p>",
+    "answers": [
+      {
+        "answer": "<p>It is very far.</p>",
+        "feedback": "<p>Sophie states the opposite.</p>"
+      },
+      {
+        "answer": "<p>It is close.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It isn't close.</p>",
+        "feedback": "<p>Sophie's statement implies the café is near.</p>"
+      },
+      {
+        "answer": "<p>She doesn't know.</p>",
+        "feedback": "<p>Sophie provides information about the café's location.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 28,
+        "finishTimestamp": 30.65
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.2,
+        "dialogue": {
+          "text": "Well, it's not far. Come on, we can go together.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>You can use <code>it is not</code> to make negative statements in the present simple. It negates or says something isn't a certain way. <code>It's</code> is a contraction of <code>it</code> and <code>is</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 124,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

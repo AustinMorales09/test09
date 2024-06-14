@@ -1,0 +1,75 @@
+{
+  "id": "655a88194beb4332037ff7ce",
+  "title": "Task 68",
+  "challengeType": 22,
+  "dashedName": "task-68",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Great! I usually get home around 6. After that, _ a bit chaotic.</p>",
+    "blanks": [
+      {
+        "answer": "it's",
+        "feedback": "<p>Jake is using the contracted form of <code>It is</code>. Don't use capital letters.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 18.6,
+        "finishTimestamp": 23.38
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 5.78,
+        "dialogue": {
+          "text": "Great. I usually get home at around six. After that, it's a bit chaotic.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 6.28
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to Jake and identify if he uses <code>it is</code> or <code>it's</code> in his sentence.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 70,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "6579d49319613ee79fe12f7d",
+  "title": "Task 13",
+  "challengeType": 22,
+  "dashedName": "task-13",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ share the code with me, and I'll _ it out.</p>",
+    "blanks": [
+      {
+        "answer": "Just",
+        "feedback": "<p>It means to do something simple and straightforward – in this case, sharing the code.</p>"
+      },
+      {
+        "answer": "check",
+        "feedback": "<p>It's part of a phrase meaning to examine or review something, here referring to Bob looking at the code.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.1,
+        "finishTimestamp": 19.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.26,
+        "dialogue": {
+          "text": "Just share the code with me, and I'll check it out.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 3.76
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>just</code> in this context is used to simplify an action, suggesting it's an easy or straightforward task. <code>Just share the code with me</code> implies that sharing the code is a simple step. The phrase <code>check it out</code> means to examine or look over something. It's commonly used to suggest taking a closer look at an item or issue.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

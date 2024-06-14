@@ -1,0 +1,30 @@
+{
+  "id": "587d7fb7367417b2b2512c0b",
+  "title": "Use model.find() to Search Your Database",
+  "challengeType": 2,
+  "forumTopicId": 301543,
+  "dashedName": "use-model-find-to-search-your-database",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Find all items corresponding to a criteria should succeed</p>",
+      "testString": "(getUserInput) =>\n  $.post(getUserInput('url') + '/_api/find-all-by-name', {\n    name: 'r@nd0mN4m3',\n    age: 24,\n    favoriteFoods: ['pizza']\n  }).then(\n    (data) => {\n      assert.isArray(data, 'the response should be an Array');\n      assert.equal(\n        data[0].name,\n        'r@nd0mN4m3',\n        'item.name is not what expected'\n      );\n      assert.equal(data[0].__v, 0, 'The item should be not previously edited');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In its simplest usage, <code>Model.find()</code> accepts a query document (a JSON object) as the first argument, then a callback. It returns an array of matches. It supports an extremely wide range of search options. Read more in the docs.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Modify the <code>findPeopleByName</code> function to find all the people having a given name, using <code>Model.find() -> [Person]</code></p>\n<p>Use the function argument <code>personName</code> as the search key.</p>\n</section>",
+  "translationPending": false,
+  "block": "mongodb-and-mongoose",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

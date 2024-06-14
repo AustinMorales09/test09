@@ -1,0 +1,79 @@
+{
+  "id": "587d7787367417b2b2512aa1",
+  "title": "Make Screen Reader Navigation Easier with the header Landmark",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cB76vtv",
+  "forumTopicId": 301023,
+  "dashedName": "make-screen-reader-navigation-easier-with-the-header-landmark",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<body>\n\n  <div>\n    <h1>Training with Camper Cat</h1>\n  </div>\n\n\n  <main>\n    <section id=\"stealth\">\n      <h2>Stealth &amp; Agility Training</h2>\n      <article><h3>Climb foliage quickly using a minimum spanning tree approach</h3></article>\n      <article><h3>No training is NP-complete without parkour</h3></article>\n    </section>\n    <section id=\"combat\">\n      <h2>Combat Training</h2>\n      <article><h3>Dispatch multiple enemies with multithreaded tactics</h3></article>\n      <article><h3>Goodbye world: 5 proven ways to knock out an opponent</h3></article>\n    </section>\n    <section id=\"weapons\">\n      <h2>Weapons Training</h2>\n      <article><h3>Swords: the best tool to literally divide and conquer</h3></article>\n      <article><h3>Breadth-first or depth-first in multi-weapon training?</h3></article>\n    </section>\n  </main>\n</body>",
+      "error": null,
+      "seed": "<body>\n\n  <div>\n    <h1>Training with Camper Cat</h1>\n  </div>\n\n\n  <main>\n    <section id=\"stealth\">\n      <h2>Stealth &amp; Agility Training</h2>\n      <article><h3>Climb foliage quickly using a minimum spanning tree approach</h3></article>\n      <article><h3>No training is NP-complete without parkour</h3></article>\n    </section>\n    <section id=\"combat\">\n      <h2>Combat Training</h2>\n      <article><h3>Dispatch multiple enemies with multithreaded tactics</h3></article>\n      <article><h3>Goodbye world: 5 proven ways to knock out an opponent</h3></article>\n    </section>\n    <section id=\"weapons\">\n      <h2>Weapons Training</h2>\n      <article><h3>Swords: the best tool to literally divide and conquer</h3></article>\n      <article><h3>Breadth-first or depth-first in multi-weapon training?</h3></article>\n    </section>\n  </main>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<body>\n\n  <header>\n    <h1>Training with Camper Cat</h1>\n  </header>\n\n\n  <main>\n    <section id=\"stealth\">\n      <h2>Stealth &amp; Agility Training</h2>\n      <article><h3>Climb foliage quickly using a minimum spanning tree approach</h3></article>\n      <article><h3>No training is NP-complete without parkour</h3></article>\n    </section>\n    <section id=\"combat\">\n      <h2>Combat Training</h2>\n      <article><h3>Dispatch multiple enemies with multithreaded tactics</h3></article>\n      <article><h3>Goodbye world: 5 proven ways to knock out an opponent</h3></article>\n    </section>\n    <section id=\"weapons\">\n      <h2>Weapons Training</h2>\n      <article><h3>Swords: the best tool to literally divide and conquer</h3></article>\n      <article><h3>Breadth-first or depth-first in multi-weapon training?</h3></article>\n    </section>\n  </main>\n</body>",
+        "error": null,
+        "seed": "<body>\n\n  <header>\n    <h1>Training with Camper Cat</h1>\n  </header>\n\n\n  <main>\n    <section id=\"stealth\">\n      <h2>Stealth &amp; Agility Training</h2>\n      <article><h3>Climb foliage quickly using a minimum spanning tree approach</h3></article>\n      <article><h3>No training is NP-complete without parkour</h3></article>\n    </section>\n    <section id=\"combat\">\n      <h2>Combat Training</h2>\n      <article><h3>Dispatch multiple enemies with multithreaded tactics</h3></article>\n      <article><h3>Goodbye world: 5 proven ways to knock out an opponent</h3></article>\n    </section>\n    <section id=\"weapons\">\n      <h2>Weapons Training</h2>\n      <article><h3>Swords: the best tool to literally divide and conquer</h3></article>\n      <article><h3>Breadth-first or depth-first in multi-weapon training?</h3></article>\n    </section>\n  </main>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have one <code>header</code> tag.</p>",
+      "testString": "assert($('header').length == 1);"
+    },
+    {
+      "text": "<p>Your <code>header</code> tags should wrap around the <code>h1</code>.</p>",
+      "testString": "assert($('header').children('h1').length == 1);"
+    },
+    {
+      "text": "<p>Your code should not have any <code>div</code> tags.</p>",
+      "testString": "assert($('div').length == 0);"
+    },
+    {
+      "text": "<p>Your <code>header</code> element should have a closing tag.</p>",
+      "testString": "assert(\n  code.match(/<\\/header>/g) &&\n    code.match(/<\\/header>/g).length === code.match(/<header>/g).length\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The next HTML5 element that adds semantic meaning and improves accessibility is the <code>header</code> tag. It's used to wrap introductory information or navigation links for its parent tag and works well around content that's repeated at the top on multiple pages.</p>\n<p><code>header</code> shares the embedded landmark feature you saw with <code>main</code>, allowing assistive technologies to quickly navigate to that content.</p>\n<p><strong>Note:</strong> The <code>header</code> is meant for use in the <code>body</code> tag of your HTML document. It is different than the <code>head</code> element, which contains the page's title, meta information, etc.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Camper Cat is writing some great articles about ninja training, and wants to add a page for them to his site. Change the top <code>div</code> that currently contains the <code>h1</code> to a <code>header</code> tag instead.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-accessibility",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

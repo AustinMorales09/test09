@@ -1,0 +1,45 @@
+{
+  "id": "65704486e7b02272663824e9",
+  "title": "Learn Block and Inline Question K",
+  "challengeType": 15,
+  "dashedName": "learn-block-and-inline-question-k",
+  "solutions": [],
+  "question": {
+    "text": "<p>What happens when you add a bottom padding of 15 pixels to a <code>span</code> element with display set to <code>inline-block</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>The <code>span</code> element's content will shift upward by 15 pixels.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The <code>span</code> element's width will increase by 15 pixels.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The <code>span</code> element will gain additional space below its content.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Padding has no effect on the layout of an <code>inline-block</code> <code>span</code> element.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Now that you have a basic understanding on how adding width and height to <code>inline</code> elements works.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-block-and-inline",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,34 @@
+{
+  "id": "587d7fb4367417b2b2512c00",
+  "title": "Expand Your Project with External Packages from npm",
+  "challengeType": 2,
+  "forumTopicId": 301527,
+  "dashedName": "expand-your-project-with-external-packages-from-npm",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>\"dependencies\"</code> should include <code>\"@freecodecamp/example\"</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/package.json').then(\n    (data) => {\n      var packJson = JSON.parse(data);\n      assert.property(\n        packJson.dependencies,\n        '@freecodecamp/example',\n        '\"dependencies\" does not include \"@freecodecamp/example\"'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p><code>\"@freecodecamp/example\"</code> version should be <code>\"1.1.0\"</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/package.json').then(\n    (data) => {\n      var packJson = JSON.parse(data);\n      assert.match(\n        packJson.dependencies[\"@freecodecamp/example\"],\n        /^[\\^\\~]?1\\.1\\.0/,\n        'Wrong version of \"@freecodecamp/example\" installed. It should be 1.1.0'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>One of the biggest reasons to use a package manager, is their powerful dependency management. Instead of manually having to make sure that you get all dependencies whenever you set up a project on a new computer, npm automatically installs everything for you. But how can npm know exactly what your project needs? Meet the <code>dependencies</code> section of your package.json file.</p>\n<p>In this section, packages your project requires are stored using the following format:</p>\n<pre><code class=\"language-json\">\"dependencies\": {\n  \"package-name\": \"version\",\n  \"express\": \"4.14.0\"\n}\n\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add version <code>1.1.0</code> of the <code>@freecodecamp/example</code> package to the <code>dependencies</code> field of your <code>package.json</code> file.</p>\n<p><strong>Note:</strong> <code>@freecodecamp/example</code> is a faux package used as a learning tool.</p>\n</section>",
+  "translationPending": false,
+  "block": "managing-packages-with-npm",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

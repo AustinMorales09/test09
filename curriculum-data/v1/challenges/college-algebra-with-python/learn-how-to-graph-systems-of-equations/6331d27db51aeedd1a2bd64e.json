@@ -1,0 +1,48 @@
+{
+  "id": "6331d27db51aeedd1a2bd64e",
+  "title": "Graphing Systems",
+  "challengeType": 15,
+  "videoId": "FxSIFR4zsrE",
+  "dashedName": "graphing-systems",
+  "solutions": [],
+  "question": {
+    "text": "<p>The numpy <code>linspace()</code> function takes three arguments to create an array. Which of the following arguments does it not take?</p>",
+    "answers": [
+      {
+        "answer": "<p>Minimum value</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Maximum value</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Number of items in the array</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Formula to generate each item</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [
+    "<p>Add code from the video to the algebra notebook you are building, and test it with different functions.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This first video will show you how to graph systems of equations with written math, then code.</p>\n<p>Here is the <a href=\"https://colab.research.google.com/drive/1N1JEZJctODxsntROnmg0VqMSHXYdIlFD?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Colab notebook used in this video.</a></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-graph-systems-of-equations",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "65528a7c39eb38f51e0e6f7f",
+  "title": "Task 10",
+  "challengeType": 19,
+  "dashedName": "task-10",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Tom say to indicate he is happy to meet Maria?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>It's a pleasure to see you</code></p>",
+        "feedback": "<p>Tom is being introduced to Maria for the first time. Listen to his choice of words!</p>"
+      },
+      {
+        "answer": "<p><code>It's a pleasure to meet you</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>It's a pleasure to know you</code></p>",
+        "feedback": "<p>Tom is being introduced to Maria for the first time. Listen to his choice of words!</p>"
+      },
+      {
+        "answer": "<p><code>It's a pleasure to call you</code></p>",
+        "feedback": "<p>Tom is being introduced to Maria for the first time. Listen to his choice of words!</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 7,
+        "finishTimestamp": 8.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 2.34,
+        "dialogue": {
+          "text": "It's a pleasure to meet you.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 2.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Expressions like <code>It's a pleasure to meet you</code> are commonly used when meeting someone for the first time as a polite way to greet someone.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

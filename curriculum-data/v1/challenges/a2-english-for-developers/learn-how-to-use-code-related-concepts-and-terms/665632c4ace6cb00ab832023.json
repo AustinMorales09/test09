@@ -1,0 +1,88 @@
+{
+  "id": "665632c4ace6cb00ab832023",
+  "title": "Task 21",
+  "challengeType": 19,
+  "dashedName": "task-21",
+  "solutions": [],
+  "question": {
+    "text": "<p>What seems to be the problem he's having?</p>",
+    "answers": [
+      {
+        "answer": "<p>He does not know what code he's going to write next</p>",
+        "feedback": "<p>He says he's learning about something, but he does not know how to use it.</p>"
+      },
+      {
+        "answer": "<p>He does not have a computer, so he can't write code</p>",
+        "feedback": "<p>Tom does not mention not having a computer. Try again.</p>"
+      },
+      {
+        "answer": "<p>His computer is not functioning correctly</p>",
+        "feedback": "<p>He asks about <code>functions</code>, but that does not mean this is a problem with the computer.</p>"
+      },
+      {
+        "answer": "<p>He does not understand how to use <code>functions</code>.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.26
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.26,
+        "dialogue": {
+          "text": "Sarah, I'm learning about functions in programming and I'm not sure how to use them.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.76
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to Tom as he asks Sarah about programming.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

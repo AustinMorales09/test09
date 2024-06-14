@@ -1,0 +1,49 @@
+{
+  "id": "6555d6e12c95701172b55709",
+  "title": "Step 75",
+  "challengeType": 20,
+  "dashedName": "step-75",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        5
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    final_message = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            final_message += char\n        else:        \n            # Find the right key character to encode/decode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted/decrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            final_message += alphabet[new_index]\n    \n    return final_message\n    \nencryption = vigenere(text, custom_key, 1)\nprint(encryption)\ndecryption = vigenere(encryption, custom_key, -1)\nprint(decryption)",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    final_message = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            final_message += char\n        else:        \n            # Find the right key character to encode/decode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted/decrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            final_message += alphabet[new_index]\n    \n    return final_message\n    \nencryption = vigenere(text, custom_key, 1)\nprint(encryption)\ndecryption = vigenere(encryption, custom_key, -1)\nprint(decryption)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>direction</code> parameter of your <code>vigenere</code> function should have a default value of <code>1</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import inspect\n    sig = str(inspect.signature(vigenere))\n    sig == '(message, key, direction=1)'\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Functions can be called with default arguments. A default argument indicates the value that the function should take if the argument is not passed. For example, the function below accepts three arguments but you can call it passing two arguments. The third one will assume the specified value by default:</p>\n<pre><code class=\"language-py\">def foo(a, b, c=value):\n    &#x3C;code>\n</code></pre>\n<p>Modify the <code>vigenere</code> function so that its <code>direction</code> parameter has a default value of <code>1</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 74,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "658150c6b7f47a2629b2372d",
+  "title": "Task 15",
+  "challengeType": 19,
+  "dashedName": "task-15",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the word <code>demotivate</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>To inspire</p>",
+        "feedback": "<p>It's not the right option as it means to fill someone with the urge or ability to do or feel something.</p>"
+      },
+      {
+        "answer": "<p>To encourage</p>",
+        "feedback": "<p>It's not the right option as it means to give support, confidence, or hope to someone.</p>"
+      },
+      {
+        "answer": "<p>To discourage</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To energize</p>",
+        "feedback": "<p>It means to give vitality and enthusiasm to someone or something, which is different from the word you learn.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>demotivate</code> means to reduce someone's enthusiasm or confidence.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

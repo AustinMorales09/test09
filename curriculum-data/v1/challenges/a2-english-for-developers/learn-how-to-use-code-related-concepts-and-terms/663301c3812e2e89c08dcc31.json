@@ -1,0 +1,83 @@
+{
+  "id": "663301c3812e2e89c08dcc31",
+  "title": "Task 24",
+  "challengeType": 22,
+  "dashedName": "task-24",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ _ _, Sarah.</p>",
+    "blanks": [
+      {
+        "answer": "Thanks",
+        "feedback": "<p>This word is used to express gratitude. It's often used in social and professional settings to show appreciation.</p>"
+      },
+      {
+        "answer": "for",
+        "feedback": "<p>This preposition is used to indicate the reason for the gratitude.</p>"
+      },
+      {
+        "answer": "explaining",
+        "feedback": "<p>This is the <code>-ing</code> form of a verb that means to make something clear or easy to understand by describing or giving information about it.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 8.28,
+        "finishTimestamp": 9.56
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 2.28,
+        "dialogue": {
+          "text": "Thanks for explaining, Sarah.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 2.78
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>thanks for</code> is used to show gratitude for specific actions or help received. The structure is commonly followed by an <code>-ing</code> form of a verb (a gerund) or a noun to specify what the thanks are for.</p>\n<p>Examples:</p>\n<p><code>Thanks for helping me with my homework.</code></p>\n<p><code>Thanks for the advice.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

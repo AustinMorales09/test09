@@ -1,0 +1,53 @@
+{
+  "id": "64df3e2fac34d813d048f3f9",
+  "title": "Step 43",
+  "challengeType": 20,
+  "dashedName": "step-43",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        29
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "NUMBER_OF_DISKS = 4\nnumber_of_moves = 2 ** NUMBER_OF_DISKS - 1\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\n\ndef make_allowed_move(rod1, rod2):    \n    forward = False\n    if not rods[rod2]:\n        forward = True\n    elif rods[rod1] and rods[rod1][-1] < rods[rod2][-1]:\n        forward = True              \n    if forward:\n        print(f'Moving disk {rods[rod1][-1]} from {rod1} to {rod2}')\n        rods[rod2].append(rods[rod1].pop())\n    else:\n        print(f'Moving disk {rods[rod2][-1]} from {rod2} to {rod1}')\n        rods[rod1].append(rods[rod2].pop())\n    \n    # display our progress\n    print(rods, '\\n')\n\ndef move(n, source, auxiliary, target):\n    # display starting configuration\n    print(rods, '\\n')\n              \n# initiate call from source A to target C with auxiliary B\nmove(NUMBER_OF_DISKS, 'A', 'B', 'C')",
+      "error": null,
+      "seed": "NUMBER_OF_DISKS = 4\nnumber_of_moves = 2 ** NUMBER_OF_DISKS - 1\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\n\ndef make_allowed_move(rod1, rod2):    \n    forward = False\n    if not rods[rod2]:\n        forward = True\n    elif rods[rod1] and rods[rod1][-1] < rods[rod2][-1]:\n        forward = True              \n    if forward:\n        print(f'Moving disk {rods[rod1][-1]} from {rod1} to {rod2}')\n        rods[rod2].append(rods[rod1].pop())\n    else:\n        print(f'Moving disk {rods[rod2][-1]} from {rod2} to {rod1}')\n        rods[rod1].append(rods[rod2].pop())\n    \n    # display our progress\n    print(rods, '\\n')\n\ndef move(n, source, auxiliary, target):\n    # display starting configuration\n    print(rods, '\\n')\n              \n# initiate call from source A to target C with auxiliary B\nmove(NUMBER_OF_DISKS, 'A', 'B', 'C')"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should delete the <code>number_of_moves</code> variable and its content.</p>",
+      "testString": "({ test: () => assert.match(code, /NUMBER_OF_DISKS\\s*=\\s*4\\s+(?=rods\\s*=\\s*\\{)/) })"
+    },
+    {
+      "text": "<p>You should delete the whole <code>make_allowed_move</code> function.</p>",
+      "testString": "({ test: () => assert.match(code, /\\}\\s+(?=def\\s+move\\(\\s*n\\s*,\\s*source\\s*,\\s*auxiliary\\s*,\\s*target\\s*\\)\\s*:)/) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You won't need <code>make_allowed_move</code> and <code>number_of_moves</code>, either. Delete the whole function and the variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-solving-the-tower-of-hanoi-puzzle",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,66 @@
+{
+  "id": "587d8254367417b2b2512c70",
+  "title": "Create and Add to Sets in ES6",
+  "challengeType": 1,
+  "forumTopicId": 301636,
+  "dashedName": "create-and-add-to-sets-in-es6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function checkSet() {\n  var set = new Set([1, 2, 3, 3, 2, 1, 2, 3, 1]);\n  // Only change code below this line\n\n  // Only change code above this line\n  console.log(Array.from(set));\n  return set;\n}\n\ncheckSet();",
+      "error": null,
+      "seed": "function checkSet() {\n  var set = new Set([1, 2, 3, 3, 2, 1, 2, 3, 1]);\n  // Only change code below this line\n\n  // Only change code above this line\n  console.log(Array.from(set));\n  return set;\n}\n\ncheckSet();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function checkSet(){var set = new Set([1,2,3,'Taco','Cat','Awesome']);\nreturn set;}",
+        "error": null,
+        "seed": "function checkSet(){var set = new Set([1,2,3,'Taco','Cat','Awesome']);\nreturn set;}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>Set</code> should only contain the values <code>1, 2, 3, Taco, Cat, Awesome</code>.</p>",
+      "testString": "assert(\n  (function () {\n    var test = checkSet();\n    return (\n      test.size == 6 &&\n      test.has(1) &&\n      test.has(2) &&\n      test.has(3) &&\n      test.has('Taco') &&\n      test.has('Cat') &&\n      test.has('Awesome')\n    );\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you have worked through ES5, you are going to perform something similar in ES6. This will be considerably easier. ES6 contains a built-in data structure <code>Set</code> so many of the operations you wrote by hand are now included for you. Let's take a look:</p>\n<p>To create a new empty set:</p>\n<pre><code class=\"language-js\">var set = new Set();\n</code></pre>\n<p>You can create a set with a value:</p>\n<pre><code class=\"language-js\">var set = new Set(1);\n</code></pre>\n<p>You can create a set with an array:</p>\n<pre><code class=\"language-js\">var set = new Set([1, 2, 3]);\n</code></pre>\n<p>Once you have created a set, you can add the values you wish using the <code>add</code> method:</p>\n<pre><code class=\"language-js\">var set = new Set([1, 2, 3]);\nset.add([4, 5, 6]);\n</code></pre>\n<p>As a reminder, a set is a data structure that cannot contain duplicate values:</p>\n<pre><code class=\"language-js\">var set = new Set([1, 2, 3, 1, 2, 3]);\n// set contains [1, 2, 3] only\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>For this exercise, return a set with the following values: <code>1, 2, 3, 'Taco', 'Cat', 'Awesome'</code></p>\n</section>",
+  "translationPending": false,
+  "block": "data-structures",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

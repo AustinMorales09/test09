@@ -1,0 +1,45 @@
+{
+  "id": "6633abfc050e82a29a76dd42",
+  "title": "Task 49",
+  "challengeType": 19,
+  "dashedName": "task-49",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence is using <code>can</code> or <code>can't</code> correctly?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I can to play the guitar.</code></p>",
+        "feedback": "<p>This sentence is incorrect because <code>to</code> should not be used with <code>can</code>. The correct sentence would be: <code>I can play the guitar.</code></p>"
+      },
+      {
+        "answer": "<p><code>She can't see without her glasses.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>We can goes to the park tomorrow.</code></p>",
+        "feedback": "<p>The modal <code>can</code> is followed by a base form of the verb, so <code>goes</code> should be <code>go</code>.</p>"
+      },
+      {
+        "answer": "<p><code>He can driving at night.</code></p>",
+        "feedback": "<p><code>Can</code> should be followed by the base form of the verb without <code>ing</code>. The correct sentence should be: <code>He can drive at night.</code></p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Can</code> is used to show that something is possible or someone is capable of doing something, while <code>can't</code> is a contraction of <code>cannot</code>, indicating that something is impossible or someone is incapable of doing something. Both words should be followed by the base form of verbs.</p>\n<p>Examples:</p>\n<p><code>I can swim.</code> (showing ability)</p>\n<p><code>I can't swim.</code> (showing inability or lack of ability)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 51,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

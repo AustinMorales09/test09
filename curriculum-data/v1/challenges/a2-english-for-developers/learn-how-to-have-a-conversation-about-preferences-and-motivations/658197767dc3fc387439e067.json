@@ -1,0 +1,87 @@
+{
+  "id": "658197767dc3fc387439e067",
+  "title": "Task 53",
+  "challengeType": 22,
+  "dashedName": "task-53",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Sometimes, it _ like we're _ for no reason, and it's hard to _ time to _ work on projects.</p>",
+    "blanks": [
+      {
+        "answer": "feels",
+        "feedback": "<p>This word is used when talking about emotions or sensations. Notice it ends in <code>s</code>.</p>"
+      },
+      {
+        "answer": "meeting",
+        "feedback": "<p>This word refers to coming together with others to discuss or do something. It ends in <code>ing</code>, showing an action.</p>"
+      },
+      {
+        "answer": "find",
+        "feedback": "<p>This word means to discover or locate something. It's often used when you're looking for something.</p>"
+      },
+      {
+        "answer": "actually",
+        "feedback": "<p>This word is used to emphasize what is really true or happening.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 37.76,
+        "finishTimestamp": 43.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 6.6,
+        "dialogue": {
+          "text": "Sometimes it feels like we're meeting for no reason and it's hard to find time to actually work on projects.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 7.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 54,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

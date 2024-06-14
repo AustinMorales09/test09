@@ -1,0 +1,92 @@
+{
+  "id": "655a33bb8f2009ff7a7abfaa",
+  "title": "Task 42",
+  "challengeType": 22,
+  "dashedName": "task-42",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Absolutely! My first suggestion is to not hit the snooze button multiple times. It _ _ tempting, but it disrupts your sleep cycle and you _ feel groggy during the day.</p>",
+    "blanks": [
+      {
+        "answer": "may",
+        "feedback": "<p>This word is part of a modal phrase that indicates a possibility.</p>"
+      },
+      {
+        "answer": "be",
+        "feedback": "<p>It combines with <code>may</code> to form a modal phrase that indicates a possibility.</p>"
+      },
+      {
+        "answer": "may",
+        "feedback": "<p>Here the modal verb is used alone to express the possibility of feeling groggy.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room1.png",
+      "characters": [
+        {
+          "character": "Expert",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 8.98,
+        "finishTimestamp": 19.58
+      }
+    },
+    "commands": [
+      {
+        "character": "Expert",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Expert",
+        "startTime": 1,
+        "finishTime": 6.42,
+        "dialogue": {
+          "text": "Absolutely. My first suggestion is to not hit the snooze button multiple times.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "startTime": 7.08,
+        "finishTime": 11.6,
+        "dialogue": {
+          "text": "It may be tempting, but it disrupts your sleep cycle and you may feel groggy during the day.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "opacity": 0,
+        "startTime": 12.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>There's a difference between <code>may be</code> and <code>maybe</code>. Let's take a closer look.</p>\n<p><code>May</code> on its own also suggests possibility or permission. <code>May be</code> suggests a possibility or potentiality.</p>\n<p><code>Maybe</code> is an adverb indicating uncertainty or possibility. For example:</p>\n<p><code>It may be raining outside.</code> (suggests a possibility of rain)\n<code>Maybe I will go out later.</code> (expresses uncertainty about going out)\n<code>May I ask a question?</code> (Asks for the permission to speak)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

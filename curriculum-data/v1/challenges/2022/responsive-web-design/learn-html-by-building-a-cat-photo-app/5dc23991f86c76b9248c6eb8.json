@@ -1,0 +1,81 @@
+{
+  "id": "5dc23991f86c76b9248c6eb8",
+  "title": "Step 6",
+  "challengeType": 0,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n    <p>See more cat photos in our gallery.</p>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n    <p>See more cat photos in our gallery.</p>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have an <code>h2</code> element with text <code>Cat Photos</code>. You may have accidentally deleted it, it is missing both opening and closing tags, or the text has changed.</p>",
+      "testString": "assert(\n  document.querySelector('h2') &&\n    code.match(/<\\/h2\\>/) &&\n    document.querySelector('h2').innerText.toLowerCase() === 'cat photos'\n);"
+    },
+    {
+      "text": "<p>You should not add the <code>ul</code> or <code>li</code> elements from the example.</p>",
+      "testString": "assert(\n  !document.querySelector('ul') && !document.querySelector('li')\n);"
+    },
+    {
+      "text": "<p>You should not change the indentation on the line with your <code>h2</code> element. Its opening tag should start 6 spaces over from the start of the line. You can restart the step to restore the original indentation.</p>",
+      "testString": "assert(code.toLowerCase().match(/<\\/h1\\>\\s*\\n\\s{6}<h2>/));"
+    },
+    {
+      "text": "<p>Your code should have a comment. You removed the comment from an earlier step.</p>",
+      "testString": "assert(code.match(/<!--.*-->/));"
+    },
+    {
+      "text": "<p>The comment's text should be <code>TODO: Add link to cat photos</code>. Do not change the text or spacing of the comment.</p>",
+      "testString": "assert(code.match(/<!--\\s*todo:\\s+add\\s+link\\s+to\\s+cat\\s+photos\\.?\\s*-->/i));"
+    },
+    {
+      "text": "<p>You should not change the indentation on the line with your comment element. Its opening tag should start 6 spaces over from the start of the line. You can restart the step to restore the original indentation.</p>",
+      "testString": "assert(\n  code\n    .toLowerCase()\n    .match(/<\\/h2>\\s*\\n\\s{6}<!--\\s*todo:\\s+add\\s+link\\s+to\\s+cat\\s+photos\\s*-->/)\n);"
+    },
+    {
+      "text": "<p>Your code should have a <code>p</code> element. You have removed the <code>p</code> element from an earlier step.</p>",
+      "testString": "assert(document.querySelector('p'));"
+    },
+    {
+      "text": "<p>The text of the <code>p</code> element should be <code>See more cat photos in our gallery.</code> Do not change the text, spacing, or punctuation of the <code>p</code> element.</p>",
+      "testString": "assert(\n  document\n    .querySelector('p')\n    .innerText.toLowerCase()\n    .match(/see\\s+more\\s+cat\\s+photos\\s+in\\s+our\\s+gallery\\.?$/)\n);"
+    },
+    {
+      "text": "<p>The opening <code>p</code> tag should have indentation that matches your <code>h2</code> and comment elements. Its opening tag should start 6 spaces over from the start of the line.</p>",
+      "testString": "assert(code.toLowerCase().match(/-->\\s*\\n\\s{6}<p>/));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In the previous step, you put the <code>h1</code>, <code>h2</code>, comment, and <code>p</code> elements inside the <code>main</code> element. This is called <em>nesting</em>. Nested elements should be placed two spaces further to the right of the element they are nested in. This spacing is called indentation and it is used to make HTML easier to read.</p>\n<p>Here is an example of nesting and indentation:</p>\n<pre><code class=\"language-html\">&#x3C;main>\n  &#x3C;h1>Most important content of the document&#x3C;/h1>\n  &#x3C;p>Some more important content...&#x3C;/p>\n&#x3C;/main>\n</code></pre>\n<p>The <code>h1</code> element, <code>h2</code> element and the comment are indented two spaces more than the <code>main</code> element in the code below. Use the space bar on your keyboard to add two more spaces in front of the <code>p</code> element so that it is indented properly as well.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

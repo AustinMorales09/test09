@@ -1,0 +1,71 @@
+{
+  "id": "587d774c367417b2b2512a9d",
+  "title": "Know When Alt Text Should be Left Blank",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cM9P4t2",
+  "forumTopicId": 301019,
+  "dashedName": "know-when-alt-text-should-be-left-blank",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<h1>Deep Thoughts with Master Camper Cat</h1>\n<article>\n  <h2>Defeating your Foe: the Red Dot is Ours!</h2>\n  <p>To Come...</p>\n</article>\n\n<img src=\"samuraiSwords.jpeg\">\n\n<article>\n  <h2>Is Chuck Norris a Cat Person?</h2>\n  <p>To Come...</p>\n</article>",
+      "error": null,
+      "seed": "<h1>Deep Thoughts with Master Camper Cat</h1>\n<article>\n  <h2>Defeating your Foe: the Red Dot is Ours!</h2>\n  <p>To Come...</p>\n</article>\n\n<img src=\"samuraiSwords.jpeg\">\n\n<article>\n  <h2>Is Chuck Norris a Cat Person?</h2>\n  <p>To Come...</p>\n</article>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<h1>Deep Thoughts with Master Camper Cat</h1>\n<article>\n  <h2>Defeating your Foe: the Red Dot is Ours!</h2>\n  <p>To Come...</p>\n</article>\n\n<img src=\"samuraiSwords.jpeg\" alt=\"\">\n\n<article>\n  <h2>Is Chuck Norris a Cat Person?</h2>\n  <p>To Come...</p>\n</article>",
+        "error": null,
+        "seed": "<h1>Deep Thoughts with Master Camper Cat</h1>\n<article>\n  <h2>Defeating your Foe: the Red Dot is Ours!</h2>\n  <p>To Come...</p>\n</article>\n\n<img src=\"samuraiSwords.jpeg\" alt=\"\">\n\n<article>\n  <h2>Is Chuck Norris a Cat Person?</h2>\n  <p>To Come...</p>\n</article>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>img</code> tag should have an <code>alt</code> attribute.</p>",
+      "testString": "assert(!($('img').attr('alt') == undefined));"
+    },
+    {
+      "text": "<p>The <code>alt</code> attribute should be set to an empty string.</p>",
+      "testString": "assert($('img').attr('alt') == '');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In the last challenge, you learned that including an <code>alt</code> attribute when using <code>img</code> tags is mandatory. However, sometimes images are grouped with a caption already describing them, or are used for decoration only. In these cases, <code>alt</code> text may seem redundant or unnecessary.</p>\n<p>When an image is already explained with text content or does not add meaning to a page, the <code>img</code> still needs an <code>alt</code> attribute, but it can be set to an empty string. Here's an example:</p>\n<pre><code class=\"language-html\">&#x3C;img src=\"visualDecoration.jpeg\" alt=\"\">\n</code></pre>\n<p>Background images usually fall under the 'decorative' label as well. However, they are typically applied with CSS rules, and therefore not part of the markup screen readers process.</p>\n<p><strong>Note:</strong> For images with a caption, you may still want to include <code>alt</code> text since it helps search engines catalog the image's content.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Camper Cat has coded a skeleton page for the blog part of his website. He's planning to add a visual break between his two articles with a decorative image of a samurai sword. Add an <code>alt</code> attribute to the <code>img</code> tag and set it to an empty string. (Note that the image <code>src</code> doesn't link to an actual file - don't worry that there are no swords showing in the display.)</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-accessibility",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

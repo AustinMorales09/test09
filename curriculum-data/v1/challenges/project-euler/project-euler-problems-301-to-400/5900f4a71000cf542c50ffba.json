@@ -1,0 +1,65 @@
+{
+  "id": "5900f4a71000cf542c50ffba",
+  "title": "Problem 315: Digital root clocks",
+  "challengeType": 1,
+  "forumTopicId": 301971,
+  "dashedName": "problem-315-digital-root-clocks",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function digitalRootClocks() {\n\n  return true;\n}\n\ndigitalRootClocks();",
+      "error": null,
+      "seed": "function digitalRootClocks() {\n\n  return true;\n}\n\ndigitalRootClocks();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>digitalRootClocks()</code> should return <code>13625242</code>.</p>",
+      "testString": "assert.strictEqual(digitalRootClocks(), 13625242);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<img class=\"img-responsive center-block\" alt=\"animation of Sam's and Max's clocks calculating digital roots starting from 137\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/digital-root-clocks.gif\" style=\"background-color: white; padding: 10px;\">\n<p>Sam and Max are asked to transform two digital clocks into two \"digital root\" clocks.</p>\n<p>A digital root clock is a digital clock that calculates digital roots step by step.</p>\n<p>When a clock is fed a number, it will show it and then it will start the calculation, showing all the intermediate values until it gets to the result. For example, if the clock is fed the number 137, it will show: <code>137</code> → <code>11</code> → <code>2</code> and then it will go black, waiting for the next number.</p>\n<p>Every digital number consists of some light segments: three horizontal (top, middle, bottom) and four vertical (top-left, top-right, bottom-left, bottom-right). Number <code>1</code> is made of vertical top-right and bottom-right, number <code>4</code> is made by middle horizontal and vertical top-left, top-right and bottom-right. Number <code>8</code> lights them all.</p>\n<p>The clocks consume energy only when segments are turned on/off. To turn on a <code>2</code> will cost 5 transitions, while a <code>7</code> will cost only 4 transitions.</p>\n<p>Sam and Max built two different clocks.</p>\n<p>Sam's clock is fed e.g. number 137: the clock shows <code>137</code>, then the panel is turned off, then the next number (<code>11</code>) is turned on, then the panel is turned off again and finally the last number (<code>2</code>) is turned on and, after some time, off.</p>\n<p>For the example, with number 137, Sam's clock requires:</p>\n<ul>\n<li><code>137</code>: $(2 + 5 + 4) × 2 = 22$ transitions (<code>137</code> on/off).</li>\n<li><code>11</code>: $(2 + 2) × 2 = 8$ transitions (<code>11</code> on/off).</li>\n<li><code>2</code>: $(5) × 2 = 10$ transitions (<code>2</code> on/off).</li>\n</ul>\n<p>For a grand total of 40 transitions.</p>\n<p>Max's clock works differently. Instead of turning off the whole panel, it is smart enough to turn off only those segments that won't be needed for the next number.</p>\n<p>For number 137, Max's clock requires:</p>\n<ul>\n<li><code>137</code> : $2 + 5 + 4 = 11$ transitions (<code>137</code> on), $7$ transitions (to turn off the segments that are not needed for number <code>11</code>).</li>\n<li><code>11</code> : $0$ transitions (number <code>11</code> is already turned on correctly), $3$ transitions (to turn off the first <code>1</code> and the bottom part of the second <code>1</code>; the top part is common with number <code>2</code>).</li>\n<li><code>2</code> : $4$ transitions (to turn on the remaining segments in order to get a <code>2</code>), $5$ transitions (to turn off number <code>2</code>).</li>\n</ul>\n<p>For a grand total of 30 transitions.</p>\n<p>Of course, Max's clock consumes less power than Sam's one. The two clocks are fed all the prime numbers between $A = {10}^7$ and $B = 2 × {10}^7$. Find the difference between the total number of transitions needed by Sam's clock and that needed by Max's one.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

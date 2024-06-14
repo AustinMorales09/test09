@@ -1,0 +1,65 @@
+{
+  "id": "5900f4461000cf542c50ff59",
+  "title": "Problem 218: Perfect right-angled triangles",
+  "challengeType": 1,
+  "forumTopicId": 301860,
+  "dashedName": "problem-218-perfect-right-angled-triangles",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function perfectRightAngledTriangles() {\n\n  return true;\n}\n\nperfectRightAngledTriangles();",
+      "error": null,
+      "seed": "function perfectRightAngledTriangles() {\n\n  return true;\n}\n\nperfectRightAngledTriangles();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>perfectRightAngledTriangles()</code> should return <code>0</code>.</p>",
+      "testString": "assert.strictEqual(perfectRightAngledTriangles(), 0);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Consider the right-angled triangle with sides $a=7$, $b=24$ and $c=25$.</p>\n<p>The area of this triangle is 84, which is divisible by the perfect numbers 6 and 28.</p>\n<p>Moreover it is a primitive right-angled triangle as $gcd(a,b) = 1$ and $gcd(b,c) = 1$.</p>\n<p>Also $c$ is a perfect square.</p>\n<p>We will call a right-angled triangle perfect if:</p>\n<ul>\n<li>it is a primitive right-angled triangle</li>\n<li>its hypotenuse is a perfect square</li>\n</ul>\n<p>We will call a right-angled triangle super-perfect if:</p>\n<ul>\n<li>it is a perfect right-angled triangle</li>\n<li>its area is a multiple of the perfect numbers 6 and 28.</li>\n</ul>\n<p>How many perfect right-angled triangles with $c ≤ {10}^{16}$ exist that are not super-perfect?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

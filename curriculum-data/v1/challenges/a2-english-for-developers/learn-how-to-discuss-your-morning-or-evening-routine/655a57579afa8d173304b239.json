@@ -1,0 +1,88 @@
+{
+  "id": "655a57579afa8d173304b239",
+  "title": "Task 61",
+  "challengeType": 19,
+  "dashedName": "task-61",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the final advice the expert gives to Sophie?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Have a great morning!</code></p>",
+        "feedback": "<p>While encouraging, this is more of a closing remark than the main piece of advice about the morning routine.</p>"
+      },
+      {
+        "answer": "<p><code>Don't forget to have enough hours of sleep to feel well-rested in the morning</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Forget to have enough hours of sleep</code></p>",
+        "feedback": "<p>This goes against the expert's emphasis on the importance of adequate sleep for a good morning routine.</p>"
+      },
+      {
+        "answer": "<p><code>Feel well-rested in the morning</code></p>",
+        "feedback": "<p>This is a desired outcome of following the advice, not the advice itself.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room1.png",
+      "characters": [
+        {
+          "character": "Expert",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 84.44,
+        "finishTimestamp": 88.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Expert",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Expert",
+        "startTime": 1,
+        "finishTime": 5.46,
+        "dialogue": {
+          "text": "Don't forget to get enough sleep to feel well rested in the morning. Have a great morning.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "opacity": 0,
+        "startTime": 5.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 62,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

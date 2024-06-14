@@ -1,0 +1,88 @@
+{
+  "id": "65802fe92ef0f404ba0437f7",
+  "title": "Task 105",
+  "challengeType": 19,
+  "dashedName": "task-105",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the correct phrase that conveys a similar meaning.</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I'm indifferent to it.</code></p>",
+        "feedback": "<p>The phrase expresses enthusiasm, not indifference. Indifference would imply a lack of interest, which is not the case here.</p>"
+      },
+      {
+        "answer": "<p><code>I'm excited about it.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>I'm avoiding it.</code></p>",
+        "feedback": "<p>The phrase expresses eagerness, not avoidance. Avoidance would suggest a desire to stay away from it, contrary to the meaning of looking forward to something.</p>"
+      },
+      {
+        "answer": "<p><code>I'm unaware of it.</code></p>",
+        "feedback": "<p>The phrase expresses anticipation, not unawareness. Unawareness would suggest a lack of knowledge about it, which does not align with the positive anticipation expressed.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 24.06,
+        "finishTimestamp": 26.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 3.4,
+        "dialogue": {
+          "text": "Thanks, Sophie. I'm looking forward to it.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 3.9
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>I'm looking forward to it!</code> is commonly used to express positive anticipation or eagerness about something in the future.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 109,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

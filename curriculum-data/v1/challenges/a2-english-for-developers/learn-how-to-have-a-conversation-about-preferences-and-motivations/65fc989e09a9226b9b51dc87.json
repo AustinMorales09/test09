@@ -1,0 +1,75 @@
+{
+  "id": "65fc989e09a9226b9b51dc87",
+  "title": "Task 29",
+  "challengeType": 22,
+  "dashedName": "task-29",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It is really _.</p>",
+    "blanks": [
+      {
+        "answer": "frustrating",
+        "feedback": "<p>This word is used when something makes you feel upset or annoyed because it is difficult or impossible to deal with.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 53.02,
+        "finishTimestamp": 54.52
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 2.5,
+        "dialogue": {
+          "text": "It is really frustrating.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When something is <code>frustrating</code>, it makes you feel upset or annoyed because you cannot do something the way you want.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 29,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

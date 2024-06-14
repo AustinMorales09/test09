@@ -1,0 +1,83 @@
+{
+  "id": "66389ee34417c057109ed5f6",
+  "title": "Task 45",
+  "challengeType": 22,
+  "dashedName": "task-45",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It's one of those trends that _ _ _ in development.</p>",
+    "blanks": [
+      {
+        "answer": "automates",
+        "feedback": "<p>This word means to make a process operate without human intervention, typically to increase efficiency and reduce error.</p>"
+      },
+      {
+        "answer": "certain",
+        "feedback": "<p>This word is used to specify particular or specific items or cases out of a larger group.</p>"
+      },
+      {
+        "answer": "tasks",
+        "feedback": "<p>It refers to activities or jobs that need to be done, often part of a larger project or process.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 11.02,
+        "finishTimestamp": 13.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.9,
+        "dialogue": {
+          "text": "It's one of those trends that automate certain tasks in development.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>To <code>automate</code> means to make a process operate by itself without needing a person to help. In programming, it might involve using software to write code, test applications, or find and fix errors. For example, a coffee machine that turns on by itself in the morning to make coffee is <code>automated</code>.</p>\n<p>The word <code>certain</code> is used to talk about specific things or people, but not all things or people. For instance, if you say <code>certain books are on sale</code>, it means only some books are on sale, not all of them.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 47,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "65d8947a2588474f90595bcf",
+  "title": "Task 81",
+  "challengeType": 19,
+  "dashedName": "task-81",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are Bob's main responsibilities at work?</p>",
+    "answers": [
+      {
+        "answer": "<p>He organizes team meetings.</p>",
+        "feedback": "<p>While teamwork is mentioned, the focus is on finishing projects on time and working with others, not organizing meetings.</p>"
+      },
+      {
+        "answer": "<p>He works alone on all projects.</p>",
+        "feedback": "<p>Bob mentions collaborating with a team, which means he does not work alone.</p>"
+      },
+      {
+        "answer": "<p>He ensures projects are done on time and works with his team.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He decides the deadlines for projects.</p>",
+        "feedback": "<p>Bob talks about meeting deadlines, not deciding them, and emphasizes teamwork.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 5.94,
+        "finishTimestamp": 10.38
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 5.44,
+        "dialogue": {
+          "text": "In my role, I have to meet project deadlines and collaborate with the development team.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 5.94
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 84,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

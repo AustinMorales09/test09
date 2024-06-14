@@ -1,0 +1,47 @@
+{
+  "id": "5e9a093a74c4063ca6f7c155",
+  "title": "Numpy Operations",
+  "challengeType": 11,
+  "videoId": "eqSVcJbaPdk",
+  "bilibiliIds": {
+    "aid": 378057123,
+    "bvid": "BV13f4y1w7od",
+    "cid": 409012507
+  },
+  "dashedName": "numpy-operations",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the value of <code>a</code> after you run the following code?</p>\n<pre><code class=\"language-py\">a = np.arange(5)\na + 20\n</code></pre>",
+    "answers": [
+      {
+        "answer": "<pre><code class=\"language-python\">[20, 21, 22, 24, 24]\n</code></pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre><code class=\"language-python\">[0, 1, 2, 3, 4]\n</code></pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre><code class=\"language-python\">[25, 26, 27, 28, 29]\n</code></pre>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><em>Instead of using notebooks.ai like it shows in the video, you can use Google Colab instead.</em></p>\n<p>More resources:</p>\n<ul>\n<li><a href=\"https://github.com/ine-rmotr-curriculum/freecodecamp-intro-to-numpy\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Notebooks on GitHub</a></li>\n<li><a href=\"https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">How to open Notebooks from GitHub using Google Colab.</a></li>\n</ul>\n</section>",
+  "translationPending": false,
+  "block": "data-analysis-with-python-course",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 8,
+  "certification": "data-analysis-with-python",
+  "superBlock": "data-analysis-with-python",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

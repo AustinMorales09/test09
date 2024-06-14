@@ -1,0 +1,53 @@
+{
+  "id": "656877f71bba2b97acedf9af",
+  "title": "Step 3",
+  "challengeType": 20,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def main():\n    card_number = '4111-1111-4555-1142'\n    ",
+      "error": null,
+      "seed": "def main():\n    card_number = '4111-1111-4555-1142'\n    "
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a <code>card_translation</code> variable within <code>main</code>.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const main = __helpers.python.getDef(\"\\n\" + transformedCode, \"main\");\n        const { function_body } = main;\n\n        assert.match(function_body, / +card_translation\\s*=/);\n    }\n})"
+    },
+    {
+      "text": "<p>You should assign <code>card_translation</code> a value of <code>str.maketrans({'-': '', ' ': ''})</code>.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const main = __helpers.python.getDef(\"\\n\" + transformedCode, \"main\");\n        const { function_body } = main;\n\n        const allowedMatches = [\n            / +card_translation\\s*=\\s*str\\.maketrans\\(\\s*\\{\\s*('|\")-\\1\\s*:\\s*('|\")\\2\\s*,\\s*('|\") \\3\\s*:\\s*('|\")\\4\\s*\\}\\s*\\)/,\n            / +card_translation\\s*=\\s*str\\.maketrans\\(\\s*\\{\\s*('|\") \\1\\s*:\\s*('|\")\\2\\s*,\\s*('|\")-\\3\\s*:\\s*('|\")\\4\\s*\\}\\s*\\)/,\n        ];\n        const anyMatch = allowedMatches.some((match) => match.test(function_body));\n        assert.isTrue(anyMatch);\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Python comes with built-in classes that can help us with string manipulation. One of them is the <code>str</code> class. It has a method called <code>maketrans</code> that can help us create a translation table. This table can be used to replace characters in a string:</p>\n<pre><code class=\"language-python\">str.maketrans({'t': 'c', 'l': 'b'})\n</code></pre>\n<p>The above, when called on a string, will replace all <code>t</code> characters with <code>c</code> and all <code>l</code> characters with <code>b</code>.</p>\n<p>Create a variable called <code>card_translation</code> and assign it a translation table to replace all <code>-</code> and <code> </code> characters with an empty string.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-work-with-numbers-and-strings-by-implementing-the-luhn-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,53 @@
+{
+  "id": "660f0f980e98e8cf77f1ce31",
+  "title": "Step 29",
+  "challengeType": 1,
+  "dashedName": "step-29",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];",
+      "error": null,
+      "seed": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>rows</code> array should be empty.</p>",
+      "testString": "assert.empty(rows);"
+    },
+    {
+      "text": "<p>Your <code>\"Hello\"</code> string should use double quotes.</p>",
+      "testString": "assert.match(code, /\"Hello\"/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Change your <code>rows</code> declaration to be assigned an empty array again.</p>\n<p>Also, change your <code>'Hello'</code> string to use double quotes again. Generally, it does not matter which of the two you prefer, but you will want to be consistent in that choice throughout your project.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

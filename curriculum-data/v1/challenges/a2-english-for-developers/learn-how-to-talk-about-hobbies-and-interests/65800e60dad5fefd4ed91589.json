@@ -1,0 +1,36 @@
+{
+  "id": "65800e60dad5fefd4ed91589",
+  "title": "Task 97",
+  "challengeType": 22,
+  "dashedName": "task-97",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I'm _ _ visit my friend next week.</p>",
+    "blanks": [
+      {
+        "answer": "planning",
+        "feedback": "<p>This word is used to show you are thinking about doing something in the future.</p>"
+      },
+      {
+        "answer": "to",
+        "feedback": "<p>This preposition is used to connect the verb <code>planning</code> with the action you intend to do.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Following the structure <code>I'm planning to</code> + base form + <code>to</code> + <code>-ing</code>, the sentence indicates a future intention to engage in an activity.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 101,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

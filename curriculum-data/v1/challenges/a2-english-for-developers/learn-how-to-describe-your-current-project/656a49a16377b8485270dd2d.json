@@ -1,0 +1,79 @@
+{
+  "id": "656a49a16377b8485270dd2d",
+  "title": "Task 43",
+  "challengeType": 22,
+  "dashedName": "task-43",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hi Sarah, what _ you _ to these days?</p>",
+    "blanks": [
+      {
+        "answer": "are",
+        "feedback": "<p>Conjugation of verb to be.</p>"
+      },
+      {
+        "answer": "up",
+        "feedback": "<p>Use a preposition here.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 2.32
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.32,
+        "dialogue": {
+          "text": "Hi, Sarah. What are you up to these days?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 3.82
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>What are you up to</code> is a friendly way to ask someone what they are doing. It's like asking, \"What are you doing these days?\"</p>\n<p>For example:</p>\n<p><code>What are you up to this weekend?</code> means \"What are your plans for this weekend?\"</p>\n<p><code>He is up to something.</code> means \"He is doing something.\"</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 47,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

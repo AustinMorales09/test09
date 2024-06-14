@@ -1,0 +1,45 @@
+{
+  "id": "662f12006df30c31b9cb5a3c",
+  "title": "Task 59",
+  "challengeType": 19,
+  "dashedName": "task-59",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>concept</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>It is a plan for a house.</p>",
+        "feedback": "<p>This describes something very specific and physical, not an idea or way of understanding something, which is what a <code>concept</code> is.</p>"
+      },
+      {
+        "answer": "<p>It is a list of steps to follow.</p>",
+        "feedback": "<p>This answer is about instructions or a process, which is different from a <code>concept</code>. A <code>concept</code> is more about understanding an idea, not following steps.</p>"
+      },
+      {
+        "answer": "<p>It is a model you can touch.</p>",
+        "feedback": "<p>A model is something physical you can see and touch, but a <code>concept</code> is an idea in your mind that helps you understand things.</p>"
+      },
+      {
+        "answer": "<p>It is an idea that helps explain things.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>concept</code> generally refers to an idea or principle that is used to plan or define actions and operations. In various subjects, including programming, <code>concepts</code> are the fundamental ideas or theories.</p>\n<p>For example, <code>Object-oriented programming is a concept in computer programming.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 61,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

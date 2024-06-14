@@ -1,0 +1,45 @@
+{
+  "id": "64a669f77a7d00f97013ed0c",
+  "title": "The Box Model Question E",
+  "challengeType": 15,
+  "dashedName": "the-box-model-question-e",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is it important to have a solid understanding of CSS in web development?</p>",
+    "answers": [
+      {
+        "answer": "<p>It allows you to create complex animations and interactive effects.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It allows you to create complex animations and interactive effects.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It helps in optimizing database queries for improved performance.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It enables you to style and design webpages with precision and control.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Now that you understand the basic syntax of HTML and CSS, we’re going to get serious. The most important skills you need to master with CSS are positioning and layout. Changing fonts and colors is a crucial skill, but being able to put things exactly where you want them on a webpage is even more crucial. After all, how many webpages can you find where absolutely every element is just stacked one on top of another?</p>\n<p>Learning to position elements on a webpage is not that difficult once you understand just a few key concepts. Unfortunately, many learners race through learning HTML and CSS to get to JavaScript and end up missing these fundamental concepts. This leads to frustration, pain, (and funny gifs) because all the JavaScript skills in the world are meaningless if you can’t stick your elements on the page where you need them to be. So with that in mind, let’s get started.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-the-box-model",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

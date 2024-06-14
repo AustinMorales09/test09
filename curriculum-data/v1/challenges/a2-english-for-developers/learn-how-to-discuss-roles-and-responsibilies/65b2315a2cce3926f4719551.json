@@ -1,0 +1,83 @@
+{
+  "id": "65b2315a2cce3926f4719551",
+  "title": "Task 8",
+  "challengeType": 22,
+  "dashedName": "task-8",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>She is a tall woman _ _ _ 40s, with long blond hair and glasses.</p>",
+    "blanks": [
+      {
+        "answer": "in",
+        "feedback": "<p>It starts the phrase to indicate the period of age.</p>"
+      },
+      {
+        "answer": "her",
+        "feedback": "<p>It shows that you are talking about the woman's age.</p>"
+      },
+      {
+        "answer": "early",
+        "feedback": "<p>It indicates the lower end of the 40s age range.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 7.18,
+        "finishTimestamp": 11.7
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 5.52,
+        "dialogue": {
+          "text": "She's a tall woman in her early 40s with long blonde hair and glasses.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The structure <code>in + someone's early/late + numbers</code> is used to talk about a person's age without specifying exactly how old they are.</p>\n<p>Examples:</p>\n<p><code>My brother is in his early 20s.</code> This gives a general idea that he is at the beginning of his twenties without specifying the exact age.</p>\n<p><code>My aunt is in her late 50s.</code> It suggests she is towards the end of her fifties, close to turning 60, but doesn't say the precise age.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

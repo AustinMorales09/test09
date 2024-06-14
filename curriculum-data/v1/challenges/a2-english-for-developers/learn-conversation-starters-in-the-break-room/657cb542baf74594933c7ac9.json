@@ -1,0 +1,45 @@
+{
+  "id": "657cb542baf74594933c7ac9",
+  "title": "Task 41",
+  "challengeType": 19,
+  "dashedName": "task-41",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the option that best explains when it is appropriate to ask about someone's physical appearance.</p>",
+    "answers": [
+      {
+        "answer": "<p>Any time you are curious about how a person looks.</p>",
+        "feedback": "<p>Remember to consider the feelings of others and the situation. Asking about someone's appearance should have a clear and respectful purpose.</p>"
+      },
+      {
+        "answer": "<p>When you need to identify someone you are meeting for the first time.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>During casual conversations.</p>",
+        "feedback": "<p>Remember to consider the feelings of others and the situation. Asking about someone's appearance should have a clear and respectful purpose.</p>"
+      },
+      {
+        "answer": "<p>During a meeting.</p>",
+        "feedback": "<p>Remember to consider the feelings of others and the situation. Asking about someone's appearance should have a clear and respectful purpose.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To look like</code> is used to describe someone's or something's appearance, often implying a comparison.</p>\n<p>When you're curious about someone's physical characteristics, such as their hair color, height, or overall look, you might use expressions like:</p>\n<p><code>What does (he/she) look like?</code> or <code>What do they look like?</code></p>\n<p>The choice between these depends on the number and gender of the person you're asking about. Use <code>does</code> with singular pronouns <code>(he, she)</code> when referring to one person and <code>do</code> with <code>they</code> when referring to someone whose gender might not be known or if referring to people in a non-binary or plural sense.</p>\n<p><strong>Note:</strong> Remember that questions about a person's appearance can be sensitive. Some people may not feel comfortable discussing physical traits, and it's important to respect their feelings. Always use this question politely and in the right context, where it is appropriate to do so.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

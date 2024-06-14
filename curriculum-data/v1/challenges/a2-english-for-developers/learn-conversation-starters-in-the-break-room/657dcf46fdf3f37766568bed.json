@@ -1,0 +1,45 @@
+{
+  "id": "657dcf46fdf3f37766568bed",
+  "title": "Task 113",
+  "challengeType": 19,
+  "dashedName": "task-113",
+  "solutions": [],
+  "question": {
+    "text": "<p>What phrase does Maria use to indicate the existence of multiple parks near here?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>There is a park.</code></p>",
+        "feedback": "<p><code>There is</code> is used for singular nouns, not plural.</p>"
+      },
+      {
+        "answer": "<p><code>They are parks.</code></p>",
+        "feedback": "<p>While <code>they are</code> is correct, it's not the phrase used in this context.</p>"
+      },
+      {
+        "answer": "<p><code>There are a park.</code></p>",
+        "feedback": "<p><code>There are</code> is the correct phrase for indicating the existence of multiple parks near here.</p>"
+      },
+      {
+        "answer": "<p><code>There are parks.</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>There are</code> is used when talking about the existence of multiple things or places in a particular location.</p>\n<p>For example: <code>There are many programming languages in the market</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 117,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

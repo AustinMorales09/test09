@@ -1,0 +1,106 @@
+{
+  "id": "6169b284950e171d8d0bb16a",
+  "title": "Step 29",
+  "challengeType": 0,
+  "dashedName": "step-29",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Ferris Wheel</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div class=\"wheel\">\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Ferris Wheel</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div class=\"wheel\">\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        85,
+        100
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": ".wheel {\n  border: 2px solid black;\n  border-radius: 50%;\n  margin-left: 50px;\n  position: absolute;\n  height: 55vw;\n  width: 55vw;\n  max-width: 500px;\n  max-height: 500px;\n  animation-name: wheel;\n  animation-duration: 10s;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n}\n\n.line {\n  background-color: black;\n  width: 50%;\n  height: 2px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform-origin: 0% 0%;\n}\n\n.line:nth-of-type(2) {\n  transform: rotate(60deg);\n}\n.line:nth-of-type(3) {\n  transform: rotate(120deg);\n}\n.line:nth-of-type(4) {\n  transform: rotate(180deg);\n}\n.line:nth-of-type(5) {\n  transform: rotate(240deg);\n}\n.line:nth-of-type(6) {\n  transform: rotate(300deg);\n}\n\n.cabin {\n  background-color: red;\n  width: 20%;\n  height: 20%;\n  position: absolute;\n  border: 2px solid;\n  transform-origin: 50% 0%;\n  animation: cabins 10s ease-in-out infinite;\n}\n\n.cabin:nth-of-type(1) {\n  right: -8.5%;\n  top: 50%;\n}\n.cabin:nth-of-type(2) {\n  right: 17%;\n  top: 93.5%;\n}\n.cabin:nth-of-type(3) {\n  right: 67%;\n  top: 93.5%;\n}\n.cabin:nth-of-type(4) {\n  left: -8.5%;\n  top: 50%;\n}\n.cabin:nth-of-type(5) {\n  left: 17%;\n  top: 7%;\n}\n.cabin:nth-of-type(6) {\n  right: 17%;\n  top: 7%;\n}\n\n@keyframes wheel {\n   0% {\n     transform: rotate(0deg);\n   }\n   100% {\n     transform: rotate(360deg);\n   }\n}\n\n@keyframes cabins {\n  0% {\n    transform: rotate(0deg);\n  }\n  25% {\n    background-color: yellow;\n  }\n  50% {\n    background-color: purple;\n  }\n  100% {\n    transform: rotate(-360deg);\n  }\n}",
+      "error": null,
+      "seed": ".wheel {\n  border: 2px solid black;\n  border-radius: 50%;\n  margin-left: 50px;\n  position: absolute;\n  height: 55vw;\n  width: 55vw;\n  max-width: 500px;\n  max-height: 500px;\n  animation-name: wheel;\n  animation-duration: 10s;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n}\n\n.line {\n  background-color: black;\n  width: 50%;\n  height: 2px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform-origin: 0% 0%;\n}\n\n.line:nth-of-type(2) {\n  transform: rotate(60deg);\n}\n.line:nth-of-type(3) {\n  transform: rotate(120deg);\n}\n.line:nth-of-type(4) {\n  transform: rotate(180deg);\n}\n.line:nth-of-type(5) {\n  transform: rotate(240deg);\n}\n.line:nth-of-type(6) {\n  transform: rotate(300deg);\n}\n\n.cabin {\n  background-color: red;\n  width: 20%;\n  height: 20%;\n  position: absolute;\n  border: 2px solid;\n  transform-origin: 50% 0%;\n  animation: cabins 10s ease-in-out infinite;\n}\n\n.cabin:nth-of-type(1) {\n  right: -8.5%;\n  top: 50%;\n}\n.cabin:nth-of-type(2) {\n  right: 17%;\n  top: 93.5%;\n}\n.cabin:nth-of-type(3) {\n  right: 67%;\n  top: 93.5%;\n}\n.cabin:nth-of-type(4) {\n  left: -8.5%;\n  top: 50%;\n}\n.cabin:nth-of-type(5) {\n  left: 17%;\n  top: 7%;\n}\n.cabin:nth-of-type(6) {\n  right: 17%;\n  top: 7%;\n}\n\n@keyframes wheel {\n   0% {\n     transform: rotate(0deg);\n   }\n   100% {\n     transform: rotate(360deg);\n   }\n}\n\n@keyframes cabins {\n  0% {\n    transform: rotate(0deg);\n  }\n  25% {\n    background-color: yellow;\n  }\n  50% {\n    background-color: purple;\n  }\n  100% {\n    transform: rotate(-360deg);\n  }\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Ferris Wheel</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div class=\"wheel\">\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n    </div>\n  </body>\n</html>",
+        "error": null,
+        "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Ferris Wheel</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div class=\"wheel\">\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n    </div>\n  </body>\n</html>"
+      },
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "styles.css"
+        ],
+        "name": "styles",
+        "ext": "css",
+        "path": "styles.css",
+        "fileKey": "stylescss",
+        "contents": ".wheel {\n  border: 2px solid black;\n  border-radius: 50%;\n  margin-left: 50px;\n  position: absolute;\n  height: 55vw;\n  width: 55vw;\n  max-width: 500px;\n  max-height: 500px;\n  animation-name: wheel;\n  animation-duration: 10s;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n}\n\n.line {\n  background-color: black;\n  width: 50%;\n  height: 2px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform-origin: 0% 0%;\n}\n\n.line:nth-of-type(2) {\n  transform: rotate(60deg);\n}\n.line:nth-of-type(3) {\n  transform: rotate(120deg);\n}\n.line:nth-of-type(4) {\n  transform: rotate(180deg);\n}\n.line:nth-of-type(5) {\n  transform: rotate(240deg);\n}\n.line:nth-of-type(6) {\n  transform: rotate(300deg);\n}\n\n.cabin {\n  background-color: red;\n  width: 20%;\n  height: 20%;\n  position: absolute;\n  border: 2px solid;\n  transform-origin: 50% 0%;\n  animation: cabins 10s ease-in-out infinite;\n}\n\n.cabin:nth-of-type(1) {\n  right: -8.5%;\n  top: 50%;\n}\n.cabin:nth-of-type(2) {\n  right: 17%;\n  top: 93.5%;\n}\n.cabin:nth-of-type(3) {\n  right: 67%;\n  top: 93.5%;\n}\n.cabin:nth-of-type(4) {\n  left: -8.5%;\n  top: 50%;\n}\n.cabin:nth-of-type(5) {\n  left: 17%;\n  top: 7%;\n}\n.cabin:nth-of-type(6) {\n  right: 17%;\n  top: 7%;\n}\n\n@keyframes wheel {\n   0% {\n     transform: rotate(0deg);\n   }\n   100% {\n     transform: rotate(360deg);\n   }\n}\n\n@keyframes cabins {\n  0% {\n    transform: rotate(0deg);\n  }\n  25% {\n    background-color: yellow;\n  }\n  50% {\n    background-color: purple;\n  }\n  75% {\n    background-color: yellow;\n  }\n  100% {\n    transform: rotate(-360deg);\n  }\n}",
+        "error": null,
+        "seed": ".wheel {\n  border: 2px solid black;\n  border-radius: 50%;\n  margin-left: 50px;\n  position: absolute;\n  height: 55vw;\n  width: 55vw;\n  max-width: 500px;\n  max-height: 500px;\n  animation-name: wheel;\n  animation-duration: 10s;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n}\n\n.line {\n  background-color: black;\n  width: 50%;\n  height: 2px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform-origin: 0% 0%;\n}\n\n.line:nth-of-type(2) {\n  transform: rotate(60deg);\n}\n.line:nth-of-type(3) {\n  transform: rotate(120deg);\n}\n.line:nth-of-type(4) {\n  transform: rotate(180deg);\n}\n.line:nth-of-type(5) {\n  transform: rotate(240deg);\n}\n.line:nth-of-type(6) {\n  transform: rotate(300deg);\n}\n\n.cabin {\n  background-color: red;\n  width: 20%;\n  height: 20%;\n  position: absolute;\n  border: 2px solid;\n  transform-origin: 50% 0%;\n  animation: cabins 10s ease-in-out infinite;\n}\n\n.cabin:nth-of-type(1) {\n  right: -8.5%;\n  top: 50%;\n}\n.cabin:nth-of-type(2) {\n  right: 17%;\n  top: 93.5%;\n}\n.cabin:nth-of-type(3) {\n  right: 67%;\n  top: 93.5%;\n}\n.cabin:nth-of-type(4) {\n  left: -8.5%;\n  top: 50%;\n}\n.cabin:nth-of-type(5) {\n  left: 17%;\n  top: 7%;\n}\n.cabin:nth-of-type(6) {\n  right: 17%;\n  top: 7%;\n}\n\n@keyframes wheel {\n   0% {\n     transform: rotate(0deg);\n   }\n   100% {\n     transform: rotate(360deg);\n   }\n}\n\n@keyframes cabins {\n  0% {\n    transform: rotate(0deg);\n  }\n  25% {\n    background-color: yellow;\n  }\n  50% {\n    background-color: purple;\n  }\n  75% {\n    background-color: yellow;\n  }\n  100% {\n    transform: rotate(-360deg);\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a new <code>75%</code> selector in your <code>@keyframes cabins</code> rule.</p>",
+      "testString": "const rules = new __helpers.CSSHelp(document).getCSSRules('keyframes')?.[1]?.cssRules;\nassert(rules?.[0]?.keyText === '75%' || rules?.[1]?.keyText === '75%' || rules?.[2]?.keyText === '75%' || rules?.[3]?.keyText === '75%' || rules?.[4]?.keyText === '75%');"
+    },
+    {
+      "text": "<p>Your <code>75%</code> selector should be between your <code>50%</code> and <code>100%</code> selectors.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getCSSRules('keyframes')?.[1]?.cssRules?.[3]?.keyText === '75%');"
+    },
+    {
+      "text": "<p>Your <code>75%</code> selector should have a <code>background-color</code> property set to <code>yellow</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getCSSRules('keyframes')?.[1]?.cssRules?.[3]?.style?.backgroundColor === 'yellow');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Finally, create a new <code>75%</code> selector between your <code>50%</code> and <code>100%</code> selectors. Give this new selector a <code>background-color</code> property set to <code>yellow</code>.</p>\n<p>With that, your animation is much smoother and your Ferris wheel is complete.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-animation-by-building-a-ferris-wheel",
+  "hasEditableBoundaries": true,
+  "order": 17,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

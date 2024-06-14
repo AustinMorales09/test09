@@ -1,0 +1,53 @@
+{
+  "id": "6582324b5d37fe4b622bc3c0",
+  "title": "Step 11",
+  "challengeType": 20,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        12
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n\ndef total_expenses(expenses):\n    pass\n    \n\n\nexpenses = []",
+      "error": null,
+      "seed": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n\ndef total_expenses(expenses):\n    pass\n    \n\n\nexpenses = []"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a variable named <code>test</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).has_variable(\"test\")`))})"
+    },
+    {
+      "text": "<p>You should assign <code>lambda x: x * 2</code> to your <code>test</code> variable.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_variable(\"test\").is_equivalent(\"test = lambda x: x * 2\")`))})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Lambda functions are brief, anonymous functions in Python, ideal for simple, one-time tasks. They are defined by the <code>lambda</code> keyword, and they use the following syntax:</p>\n<pre><code class=\"language-py\">lambda x: expr\n</code></pre>\n<p>In the example above, <code>x</code> represents a parameter to be used in the expression <code>expr</code>, and it acts just like any parameter in a traditional function. <code>expr</code> is the expression that gets evaluated and returned when the lambda function is called.</p>\n<p>Create a variable named <code>test</code> and assign it a lambda function that takes an <code>x</code> parameter and returns <code>x * 2</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

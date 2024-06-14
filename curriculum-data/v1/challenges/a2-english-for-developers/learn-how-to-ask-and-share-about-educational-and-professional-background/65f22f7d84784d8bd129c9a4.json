@@ -1,0 +1,79 @@
+{
+  "id": "65f22f7d84784d8bd129c9a4",
+  "title": "Task 34",
+  "challengeType": 22,
+  "dashedName": "task-34",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hey, how's it going? I _ you're relatively new here. What's your _ in tech?</p>",
+    "blanks": [
+      {
+        "answer": "noticed",
+        "feedback": "<p>This word is used when someone sees or becomes aware of something.</p>"
+      },
+      {
+        "answer": "background",
+        "feedback": "<p>This word refers to your previous experiences, education, or skills in a particular area.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 5.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 6.36,
+        "dialogue": {
+          "text": "Hey, how's it going? I noticed you're relatively new here. What's your background in tech?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 6.86
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and complete the missing words.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

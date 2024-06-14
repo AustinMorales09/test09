@@ -1,0 +1,73 @@
+{
+  "id": "5d822fd413a79914d39e98cb",
+  "title": "Step 3",
+  "challengeType": 0,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        1,
+        5
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  \n</html>\n",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  \n</html>\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an opening <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<head\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/head\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<body\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/body\\s*>/i));"
+    },
+    {
+      "text": "<p>The <code>head</code> and <code>body</code> elements should be siblings.</p>",
+      "testString": "assert(document.querySelector('head').nextElementSibling.localName === 'body');"
+    },
+    {
+      "text": "<p>The <code>head</code> element should be within the <code>html</code> element.</p>",
+      "testString": "assert([...document.querySelector('html').children].some(x => x.localName === 'head'));"
+    },
+    {
+      "text": "<p>The <code>body</code> element should be within the <code>html</code> element.</p>",
+      "testString": "assert([...document.querySelector('html').children].some(x => x.localName === 'body'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Next, add opening and closing <code>head</code> and <code>body</code> tags within the <code>html</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-variables-by-building-a-city-skyline",
+  "hasEditableBoundaries": true,
+  "order": 14,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,116 @@
+{
+  "id": "661ee36af2d2c772f247f6b6",
+  "title": "Task 93",
+  "challengeType": 19,
+  "dashedName": "task-93",
+  "solutions": [],
+  "question": {
+    "text": "<p>In the dialogue, what does Tom mean when he says <code>AR apps use your device's camera</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>That the camera belongs to your friend.</p>",
+        "feedback": "<p>Adding <code>'s</code> doesn't indicate that the camera belongs to a person necessarily.</p>"
+      },
+      {
+        "answer": "<p>That it is the camera on your device.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>That the camera belongs to Tom.</p>",
+        "feedback": "<p><code>'s</code> can be used to show possession, but not in this context.</p>"
+      },
+      {
+        "answer": "<p>That the camera belongs to Sophie.</p>",
+        "feedback": "<p>Sophie is not mentioned as the owner of the camera in this context. Think about the device mentioned.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 12.46,
+        "finishTimestamp": 20.2
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 2.16,
+        "dialogue": {
+          "text": "How does it work exactly?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 2.52
+      },
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 2.52
+      },
+      {
+        "character": "Tom",
+        "startTime": 2.88,
+        "finishTime": 8.74,
+        "dialogue": {
+          "text": "AR apps use your device's camera to add digital content to the physical world. It's so cool.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 9.24
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you add <code>'s</code> after a noun, it shows that something belongs to or is connected to that noun. It's like adding a label to say that this thing belongs to this person or object. <code>'s</code> indicates the ownership or possession.</p>\n<p>Examples: <code>This is Tom's camera.</code> (this camera belongs to Tom). <code>That's today's newspaper.</code> (that newspaper has the news for today).</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 97,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,83 @@
+{
+  "id": "6579de444ec34929dbc6c2ab",
+  "title": "Task 42",
+  "challengeType": 22,
+  "dashedName": "task-42",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>We _ want to set up a short code review session _ the meeting to _ ideas and solutions.</p>",
+    "blanks": [
+      {
+        "answer": "might",
+        "feedback": "<p>It indicates a possibility or suggestion, here suggesting the idea of having a review session.</p>"
+      },
+      {
+        "answer": "after",
+        "feedback": "<p>It specifies a time following an event, in this case, suggesting the session will be post-meeting.</p>"
+      },
+      {
+        "answer": "exchange",
+        "feedback": "<p>In this context, it means to share and receive ideas and solutions during the session.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.28,
+        "finishTimestamp": 22.72
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.44,
+        "dialogue": {
+          "text": "We might want to set up a short code review session after the meeting to exchange ideas and solutions.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.94
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Exchange</code> means to give something and receive something else in return. In conversations, it often refers to sharing ideas or information. For example, <code>We exchange ideas during meetings</code> means people share and discuss different thoughts. The phrase is essential in understanding collaborative discussions.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

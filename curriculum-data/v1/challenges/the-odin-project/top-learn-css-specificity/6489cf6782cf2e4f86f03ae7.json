@@ -1,0 +1,45 @@
+{
+  "id": "6489cf6782cf2e4f86f03ae7",
+  "title": "The Cascade of CSS Question F",
+  "challengeType": 15,
+  "dashedName": "the-cascade-of-css-question-f",
+  "solutions": [],
+  "question": {
+    "text": "<p>Based on the given CSS code, which font size would be applied to elements with the class \"class second-class\"?</p>",
+    "answers": [
+      {
+        "answer": "<p>12px</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>36px</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>24px</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>48px</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<pre><code class=\"language-css\">/* rule 1 */\n.class.second-class {\n  font-size: 12px;\n}\n\n/* rule 2 */\n.class .second-class {\n  font-size: 24px;\n}\n</code></pre>\n<p>Here both rule 1 and rule 2 have the same specificity. Rule 1 uses a chaining selector (no space) and rule 2 uses a descendant combinator (the empty space). But both rules have two classes and the combinator symbol itself does not add to the specificity.</p>\n<pre><code class=\"language-css\">/* rule 1 */\n.class.second-class {\n  font-size: 12px;\n}\n/* rule 2 */\n.class > .second-class {\n  font-size: 24px;\n}\n</code></pre>\n<p>This example shows the same thing. Even though rule 2 is using a child combinator (<code>></code>), this does not change the specificity value. Both rules still have two classes so they have the same specificity values.</p>\n<p><em>Note:</em> Not everything adds to specificity\nWhen comparing selectors, you may come across special symbols for the universal selector (<code>*</code>) as well as combinators (<code>+</code>, <code>~</code>, <code>></code>, and an empty space). These symbols do not add any specificity in and of themselves.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-css-specificity",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

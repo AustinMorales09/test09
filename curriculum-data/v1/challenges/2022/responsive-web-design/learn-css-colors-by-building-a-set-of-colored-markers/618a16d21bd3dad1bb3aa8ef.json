@@ -1,0 +1,69 @@
+{
+  "id": "618a16d21bd3dad1bb3aa8ef",
+  "title": "Step 41",
+  "challengeType": 0,
+  "dashedName": "step-41",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        11,
+        18
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker one\">\n      </div>\n      <div class=\"marker two\">\n      </div>\n      <div class=\"marker three\">\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker one\">\n      </div>\n      <div class=\"marker two\">\n      </div>\n      <div class=\"marker three\">\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1 {\n  text-align: center;\n}\n\n.container {\n  background-color: rgb(255, 255, 255);\n  padding: 10px 0;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.one {\n  background-color: rgb(0, 0, 0);\n}\n\n.two {\n  background-color: rgb(0, 0, 0);\n}\n\n.three {\n  background-color: rgb(0, 0, 0);\n}\n",
+      "error": null,
+      "seed": "h1 {\n  text-align: center;\n}\n\n.container {\n  background-color: rgb(255, 255, 255);\n  padding: 10px 0;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.one {\n  background-color: rgb(0, 0, 0);\n}\n\n.two {\n  background-color: rgb(0, 0, 0);\n}\n\n.three {\n  background-color: rgb(0, 0, 0);\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your first marker <code>div</code> should not have the class <code>one</code>.</p>",
+      "testString": "const containerFirstChild = [...document.querySelector('.container')?.children][0];\nassert(!containerFirstChild?.classList?.contains('one'));"
+    },
+    {
+      "text": "<p>Your first marker <code>div</code> should have the classes <code>marker</code> and <code>red</code>.</p>",
+      "testString": "const containerFirstChild = [...document.querySelector('.container')?.children][0];\nassert(containerFirstChild?.classList?.contains('marker') && containerFirstChild?.classList?.contains('red'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now it's time to add other details to the markers, starting with the first one.</p>\n<p>In the first marker <code>div</code> element, change the class <code>one</code> to <code>red</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

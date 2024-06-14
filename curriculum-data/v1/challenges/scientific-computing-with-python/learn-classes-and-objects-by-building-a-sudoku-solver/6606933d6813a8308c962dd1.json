@@ -1,0 +1,49 @@
+{
+  "id": "6606933d6813a8308c962dd1",
+  "title": "Step 4",
+  "challengeType": 20,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        6
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    def spam():\n        pass\n    \ngameboard = Board()",
+      "error": null,
+      "seed": "class Board:\n    def spam():\n        pass\n    \ngameboard = Board()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>spam</code> method should have a <code>self</code> parameter.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"Board\").find_function(\"spam\").has_args(\"self\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In order to be an instance method, a method requires a special parameter, named <code>self</code> by convention. This parameter is a reference to the instance of the class and must always be the first parameter.</p>\n<p>Add a <code>self</code> parameter to your <code>spam</code> method.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

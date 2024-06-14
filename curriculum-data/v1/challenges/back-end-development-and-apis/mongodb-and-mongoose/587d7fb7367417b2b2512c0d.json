@@ -1,0 +1,30 @@
+{
+  "id": "587d7fb7367417b2b2512c0d",
+  "title": "Use model.findById() to Search Your Database By _id",
+  "challengeType": 2,
+  "forumTopicId": 301544,
+  "dashedName": "use-model-findbyid-to-search-your-database-by-id",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Find an item by Id should succeed</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/find-by-id').then(\n    (data) => {\n      assert.equal(data.name, 'test', 'item.name is not what expected');\n      assert.equal(data.age, 0, 'item.age is not what expected');\n      assert.deepEqual(\n        data.favoriteFoods,\n        ['none'],\n        'item.favoriteFoods is not what expected'\n      );\n      assert.equal(data.__v, 0, 'The item should be not previously edited');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When saving a document, MongoDB automatically adds the field <code>_id</code>, and set it to a unique alphanumeric key. Searching by <code>_id</code> is an extremely frequent operation, so Mongoose provides a dedicated method for it.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Modify the <code>findPersonById</code> to find the only person having a given <code>_id</code>, using <code>Model.findById() -> Person</code>. Use the function argument <code>personId</code> as the search key.</p>\n</section>",
+  "translationPending": false,
+  "block": "mongodb-and-mongoose",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

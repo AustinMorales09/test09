@@ -1,0 +1,88 @@
+{
+  "id": "657e2c85b80142efb0dcb6fa",
+  "title": "Task 38",
+  "challengeType": 19,
+  "dashedName": "task-38",
+  "solutions": [],
+  "question": {
+    "text": "<p>When does Anna say the lunch break is?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Before noon.</code></p>",
+        "feedback": "<p>Noon is in the middle of the day, not in the morning.</p>"
+      },
+      {
+        "answer": "<p><code> After noon.</code></p>",
+        "feedback": "<p>Noon indicates midday, not a time in the afternoon.</p>"
+      },
+      {
+        "answer": "<p><code>Just before work ends.</code></p>",
+        "feedback": "<p>Noon is mentioned as lunchtime, not as the end of the workday.</p>"
+      },
+      {
+        "answer": "<p><code>Around noon.</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 32.36,
+        "finishTimestamp": 35.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Anna",
+        "startTime": 1,
+        "finishTime": 3.66,
+        "dialogue": {
+          "text": "You have a one-hour lunch break around noon every day.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 4.16
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Before</code> is used to talk about a time earlier than another event or time. It indicates that something happens first. For example, <code>I eat breakfast before I go to work</code> means that eating breakfast happens earlier in time than going to work.</p>\n<p><code>After</code> is used to describe something that happens later than another event or time. It indicates the sequence of events where something happens following something else. For example, <code>I go home after work</code> means that going home happens later in time than finishing work.</p>\n<p><code>Around</code> is used with time expressions indicates a time close to but not exactly at that point. It suggests flexibility within a short time frame. For example, <code>We'll meet around noon</code> can mean any time close to 12:00 PM, like 11:45 AM or 12:15 PM. It's commonly used to give a general idea of timing without being too specific.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 39,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

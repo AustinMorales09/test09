@@ -1,0 +1,61 @@
+{
+  "id": "660f4f79e2a82a4e92290f44",
+  "title": "Step 107",
+  "challengeType": 1,
+  "dashedName": "step-107",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        21
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should uncomment your first <code>for</code> loop.</p>",
+      "testString": "const stripped = __helpers.removeJSComments(code);\nassert.match(stripped, /for\\s*\\(\\s*let\\s+i\\s*=\\s*1;\\s*i\\s*<=\\s*count;\\s*i\\+\\+\\s*\\)/)"
+    },
+    {
+      "text": "<p>You should not remove your single-line comment.</p>",
+      "testString": "assert.match(code, /\\/\\/\\sTODO:/);"
+    },
+    {
+      "text": "<p>You should not uncomment your <code>while</code> loop.</p>",
+      "testString": "const stripped = __helpers.removeJSComments(code);\nassert.notMatch(stripped, /while/);"
+    },
+    {
+      "text": "<p>You should not uncomment your second <code>for</code> loop.</p>",
+      "testString": "const stripped = __helpers.removeJSComments(code);\nassert.lengthOf(stripped.match(/for\\s*\\(/g), 2)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Sometimes you may wish to bring back previous code that you commented out. You can do so by removing the <code>/*</code> and <code>*/</code> around that code. This is called <dfn>uncommenting</dfn>.</p>\n<p>Uncomment only your first <code>for</code> loop. Leave the single line comment and the other two multi line comments in place.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 106,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

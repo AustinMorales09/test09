@@ -1,0 +1,37 @@
+{
+  "id": "657b70cc934e0ab83cab4dbe",
+  "title": "Task 27",
+  "challengeType": 22,
+  "dashedName": "task-27",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Tom: How about you? _ you have any hobbies?</p>\n<p>Sophie: That's cool! I like it, but I _ think of it as a hobby.</p>",
+    "blanks": [
+      {
+        "answer": "Do",
+        "feedback": "<p>In the first blank, Tom is asking a question about Sophie’s hobbies, which requires <code>do.</code></p>"
+      },
+      {
+        "answer": "don't",
+        "feedback": "<p>In the second blank, Sophie is making a negative statement about not considering something a hobby, which requires <code>don't.</code></p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>So far, you've exercised how to ask questions with <code>do</code> and make negative sentences with <code>don't.</code>\nLet's review them. Remember:</p>\n<p>Affirmative: <code>I do work on weekends.</code> (means the person works on weekends)\nNegative: <code>I don't work on weekends.</code> (means the person does not work on weekends)</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Read the dialogue excerpt and fill in the blanks using <code>do</code> or <code>don't.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

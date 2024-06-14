@@ -1,0 +1,81 @@
+{
+  "id": "5900f36e1000cf542c50fe80",
+  "title": "Problem 1: Multiples of 3 or 5",
+  "challengeType": 1,
+  "forumTopicId": 301722,
+  "dashedName": "problem-1-multiples-of-3-or-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function multiplesOf3Or5(number) {\n\n  return true;\n}\n\nmultiplesOf3Or5(1000);",
+      "error": null,
+      "seed": "function multiplesOf3Or5(number) {\n\n  return true;\n}\n\nmultiplesOf3Or5(1000);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const multiplesOf3Or5 = (number) => {\n  var total = 0;\n\n  for(var i = 0; i < number; i++) {\n    if(i % 3 == 0 || i % 5 == 0) {\n      total += i;\n    }\n  }\n  return total;\n};",
+        "error": null,
+        "seed": "const multiplesOf3Or5 = (number) => {\n  var total = 0;\n\n  for(var i = 0; i < number; i++) {\n    if(i % 3 == 0 || i % 5 == 0) {\n      total += i;\n    }\n  }\n  return total;\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>multiplesOf3Or5(10)</code> should return a number.</p>",
+      "testString": "assert(typeof multiplesOf3Or5(10) === 'number');"
+    },
+    {
+      "text": "<p><code>multiplesOf3Or5(49)</code> should return 543.</p>",
+      "testString": "assert.strictEqual(multiplesOf3Or5(49), 543);"
+    },
+    {
+      "text": "<p><code>multiplesOf3Or5(1000)</code> should return 233168.</p>",
+      "testString": "assert.strictEqual(multiplesOf3Or5(1000), 233168);"
+    },
+    {
+      "text": "<p><code>multiplesOf3Or5(8456)</code> should return 16687353.</p>",
+      "testString": "assert.strictEqual(multiplesOf3Or5(8456), 16687353);"
+    },
+    {
+      "text": "<p><code>multiplesOf3Or5(19564)</code> should return 89301183.</p>",
+      "testString": "assert.strictEqual(multiplesOf3Or5(19564), 89301183);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.</p>\n<p>Find the sum of all the multiples of 3 or 5 below the provided parameter value <code>number</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

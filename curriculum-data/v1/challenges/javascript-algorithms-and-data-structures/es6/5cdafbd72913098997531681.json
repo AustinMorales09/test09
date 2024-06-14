@@ -1,0 +1,74 @@
+{
+  "id": "5cdafbd72913098997531681",
+  "title": "Handle a Fulfilled Promise with then",
+  "challengeType": 1,
+  "forumTopicId": 301203,
+  "dashedName": "handle-a-fulfilled-promise-with-then",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const resultIsParameter = /\\.then\\((function\\(result\\){|result|\\(result\\)=>)/.test(__helpers.removeWhiteSpace(__helpers.removeJSComments(code)));",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const makeServerRequest = new Promise((resolve, reject) => {\n  // responseFromServer is set to true to represent a successful response from a server\n  let responseFromServer = true;\n    \n  if(responseFromServer) {\n    resolve(\"We got the data\");\n  } else {  \n    reject(\"Data not received\");\n  }\n});",
+      "error": null,
+      "seed": "const makeServerRequest = new Promise((resolve, reject) => {\n  // responseFromServer is set to true to represent a successful response from a server\n  let responseFromServer = true;\n    \n  if(responseFromServer) {\n    resolve(\"We got the data\");\n  } else {  \n    reject(\"Data not received\");\n  }\n});"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const makeServerRequest = new Promise((resolve, reject) => {\n  // responseFromServer is set to true to represent a successful response from a server\n  let responseFromServer = true;\n    \n  if(responseFromServer) {\n    resolve(\"We got the data\");\n  } else {  \n    reject(\"Data not received\");\n  }\n});\n\nmakeServerRequest.then(result => {\n  console.log(result);\n});",
+        "error": null,
+        "seed": "const makeServerRequest = new Promise((resolve, reject) => {\n  // responseFromServer is set to true to represent a successful response from a server\n  let responseFromServer = true;\n    \n  if(responseFromServer) {\n    resolve(\"We got the data\");\n  } else {  \n    reject(\"Data not received\");\n  }\n});\n\nmakeServerRequest.then(result => {\n  console.log(result);\n});"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call the <code>then</code> method on the promise.</p>",
+      "testString": "assert(\n  __helpers.removeWhiteSpace(__helpers.removeJSComments(code)).match(/(makeServerRequest|\\))\\.then\\(/g)\n);"
+    },
+    {
+      "text": "<p>Your <code>then</code> method should have a callback function with <code>result</code> as its parameter.</p>",
+      "testString": "assert(resultIsParameter);"
+    },
+    {
+      "text": "<p>You should log <code>result</code> to the console.</p>",
+      "testString": "assert(\n  resultIsParameter &&\n    __helpers\n      .removeWhiteSpace(__helpers.removeJSComments(code))\n      .match(/\\.then\\(.*?result.*?console.log\\(result\\).*?\\)/)\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Promises are most useful when you have a process that takes an unknown amount of time in your code (i.e. something asynchronous), often a server request. When you make a server request it takes some amount of time, and after it completes you usually want to do something with the response from the server. This can be achieved by using the <code>then</code> method.</p>\n<pre><code class=\"language-js\">Promise.prototype.then(onFulfilled, onRejected)\n</code></pre>\n<p>The <code>then</code> method schedules callback functions for the eventual completion of a Promise - either fulfillment or rejection. One of the <code>onFulfilled</code> and <code>onRejected</code> handlers will be executed to handle the current promise's fulfillment or rejection. When the promise is fulfilled with <code>resolve</code> the <code>onFulfilled</code> handler is called.</p>\n<pre><code class=\"language-js\">myPromise.then(result => {\n  \n});\n</code></pre>\n<p><code>result</code> comes from the argument given to the <code>resolve</code> method.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add the <code>then</code> method to your promise. Use <code>result</code> as the parameter of its callback function and log <code>result</code> to the console.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,85 @@
+{
+  "id": "646c47867800472a4ed5d2ea",
+  "title": "Step 1",
+  "challengeType": 0,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have the <code>DOCTYPE</code> declaration of <code>html</code>.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE html>/i));"
+    },
+    {
+      "text": "<p>Your <code>DOCTYPE</code> declaration should be at the beginning of your HTML.</p>",
+      "testString": "assert(__helpers.removeHtmlComments(code).match(/^\\s*<!DOCTYPE\\s+html\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>html</code> tag with a <code>lang</code> attribute of <code>en</code>.</p>",
+      "testString": "assert(code.match(/<html\\s+lang\\s*=\\s*('|\")en\\1\\s*>/gi));"
+    },
+    {
+      "text": "<p>You should have a closing <code>html</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/html>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<head>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/head>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<body>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/body>/i));"
+    },
+    {
+      "text": "<p>Your <code>body</code> element should come after the <code>head</code> element.</p>",
+      "testString": "assert(code.match(/<head>\\s*<\\/head>\\s*<body>\\s*<\\/body>/i));"
+    },
+    {
+      "text": "<p>Your <code>head</code> and <code>body</code> elements should be inside the <code>html</code> element.</p>",
+      "testString": "assert(code.match(/<html\\s+lang\\s*=\\s*('|\")en\\1\\s*>\\s*<head>\\s*<\\/head>\\s*<body>\\s*<\\/body>\\s*<\\/html>/i));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Begin with the basic HTML structure. Add a <code>DOCTYPE</code> reference of <code>html</code> and an <code>html</code> element with its <code>lang</code> attribute set to <code>en</code>. Also, add a <code>head</code> and a <code>body</code> element within the <code>html</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-intermediate-css-by-building-a-cat-painting",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,91 @@
+{
+  "id": "bad87fee1348bd9aedf08746",
+  "title": "Inherit Styles from the Body Element",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/c9bmdtR",
+  "forumTopicId": 18204,
+  "dashedName": "inherit-styles-from-the-body-element",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  body {\n    background-color: black;\n  }\n\n</style>",
+      "error": null,
+      "seed": "<style>\n  body {\n    background-color: black;\n  }\n\n</style>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n\n</style>\n<h1>Hello World!</h1>",
+        "error": null,
+        "seed": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n\n</style>\n<h1>Hello World!</h1>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create an <code>h1</code> element.</p>",
+      "testString": "assert($('h1').length > 0);"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should have the text <code>Hello World</code>.</p>",
+      "testString": "assert(\n  $('h1').length > 0 &&\n    $('h1')\n      .text()\n      .match(/hello world/i)\n);"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should have a closing tag.</p>",
+      "testString": "assert(\n  code.match(/<\\/h1>/g) &&\n    code.match(/<h1/g) &&\n    code.match(/<\\/h1>/g).length === code.match(/<h1/g).length\n);"
+    },
+    {
+      "text": "<p>Your <code>body</code> element should have the <code>color</code> property of <code>green</code>.</p>",
+      "testString": "assert($('body').css('color') === 'rgb(0, 128, 0)');"
+    },
+    {
+      "text": "<p>Your <code>body</code> element should have the <code>font-family</code> property of <code>monospace</code>.</p>",
+      "testString": "assert(\n  $('body')\n    .css('font-family')\n    .match(/monospace/i)\n);"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should inherit the font <code>monospace</code> from your <code>body</code> element.</p>",
+      "testString": "assert(\n  $('h1').length > 0 &&\n    $('h1')\n      .css('font-family')\n      .match(/monospace/i)\n);"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should inherit the color <code>green</code> from your <code>body</code> element.</p>",
+      "testString": "assert($('h1').length > 0 && $('h1').css('color') === 'rgb(0, 128, 0)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now we've proven that every HTML page has a <code>body</code> element, and that its <code>body</code> element can also be styled with CSS.</p>\n<p>Remember, you can style your <code>body</code> element just like any other HTML element, and all your other elements will inherit your <code>body</code> element's styles.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>First, create a <code>h1</code> element with the text <code>Hello World</code></p>\n<p>Then, let's give all elements on your page the color of <code>green</code> by adding <code>color: green;</code> to your <code>body</code> element's style declaration.</p>\n<p>Finally, give your <code>body</code> element the font-family of <code>monospace</code> by adding <code>font-family: monospace;</code> to your <code>body</code> element's style declaration.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-css",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,41 @@
+{
+  "id": "637f4e2872c65bc8e73dfe21",
+  "title": "HTML Foundations Question D",
+  "challengeType": 15,
+  "dashedName": "html-foundations-question-d",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the <code>html</code> element?</p>",
+    "answers": [
+      {
+        "answer": "<p>It is the root element in the document and tells the browser which version of HTML it should use.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It is the root element in the document and all other elements should descend from it.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It is the root element in the document and all other elements should come after it.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>After you declare the doctype, you need to provide an <code>&#x3C;html></code> element. This is what’s known as the root element of the document, meaning that every other element in the document will be a descendant of it.</p>\n<p>This becomes more important later on when you learn about manipulating HTML with JavaScript. For now, just know that the <code>html</code> element should be included on every HTML document.</p>\n<p>Back in the <code>index.html</code> file, let’s add the <code>&#x3C;html></code> element by typing out its opening and closing tags, like so:</p>\n<pre><code class=\"language-html\">&#x3C;!DOCTYPE html>\n&#x3C;html lang=\"en\">\n&#x3C;/html>\n</code></pre>\n<h2>What is the lang attribute?</h2>\n<p><code>lang</code> specifies the language of the text content in that element. This attribute is primarily used for improving accessibility of the webpage. It allows assistive technologies, for example screen readers, to adapt according to the language and invoke correct pronunciation.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-html-foundations",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

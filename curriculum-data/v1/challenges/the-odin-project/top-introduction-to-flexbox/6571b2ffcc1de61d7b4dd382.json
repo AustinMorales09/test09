@@ -1,0 +1,45 @@
+{
+  "id": "6571b2ffcc1de61d7b4dd382",
+  "title": "Introduction to Flexbox Question D",
+  "challengeType": 15,
+  "dashedName": "introduction-flexbox-question-d",
+  "solutions": [],
+  "question": {
+    "text": "<p>What role does a flex item play within a flex container?</p>",
+    "answers": [
+      {
+        "answer": "<p>Flex items define the overall layout structure.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Flex items set the background colors of flex containers.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Flex items allow the flex container to resize based on content.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Flex items are elements that reside directly within a flex container.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Now that you have a basic understanding of how flexbox works, what is the primairy role of a flex item in a <code>flexbox</code> layout? Try and answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-introduction-to-flexbox",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

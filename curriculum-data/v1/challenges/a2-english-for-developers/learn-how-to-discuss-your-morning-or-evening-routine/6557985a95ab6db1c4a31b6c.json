@@ -1,0 +1,45 @@
+{
+  "id": "6557985a95ab6db1c4a31b6c",
+  "title": "Task 14",
+  "challengeType": 19,
+  "dashedName": "task-14",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which phrase means to quickly clean yourself under water?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Take a shower</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Take a walk</code></p>",
+        "feedback": "<p><code>Take a walk</code> means to go for a walk outside. It is not about cleaning.</p>"
+      },
+      {
+        "answer": "<p><code>Take a chance</code></p>",
+        "feedback": "<p><code>Take a chance</code> means to try something that might be risky. It's not about cleaning.</p>"
+      },
+      {
+        "answer": "<p><code>Take a nap</code></p>",
+        "feedback": "<p><code>Take a nap</code> means to sleep for a short time. It does not mean to clean yourself.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>take</code> is used in many common English expressions. When <code>take</code> is used with different nouns, it can have special meanings. For example:</p>\n<p><code>Take a shower</code> means to shower.\n<code>Take a walk</code> means to go for a walk.\n<code>Take a nap</code> means to sleep for a little while.\n<code>Take a chance</code> means to try something that might be risky.</p>\n<p>These phrases are like fixed recipes in English; the words go together to mean something specific.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

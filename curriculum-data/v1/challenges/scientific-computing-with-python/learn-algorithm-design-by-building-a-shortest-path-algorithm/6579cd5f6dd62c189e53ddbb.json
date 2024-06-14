@@ -1,0 +1,49 @@
+{
+  "id": "6579cd5f6dd62c189e53ddbb",
+  "title": "Step 14",
+  "challengeType": 20,
+  "dashedName": "step-14",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        11
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\ncopper['food'] = 'hay'\ncopper['species'] = 'Cavia porcellus'\ndel copper['age']\n\nfor i, j in copper.items():\n    print(i, j)",
+      "error": null,
+      "seed": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\ncopper['food'] = 'hay'\ncopper['species'] = 'Cavia porcellus'\ndel copper['age']\n\nfor i, j in copper.items():\n    print(i, j)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should delete all the lines of code after the declaration of your dictionary.</p>",
+      "testString": "({ test: () => {\n    const commentless_code = __helpers.python.removeComments(code);\n    assert.isFalse( /copper\\s*\\[.*?\\]|del|for|print\\s*\\(.*?\\)/ms.test(commentless_code))\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you reviewed the basic aspects of dictionaries, you can proceed to build the shortest path algorithm.</p>\n<p>Delete every line of code after the declaration of the <code>copper</code> dictionary.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

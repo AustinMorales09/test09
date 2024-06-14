@@ -1,0 +1,83 @@
+{
+  "id": "65800a95389cc0fa4c197587",
+  "title": "Task 90",
+  "challengeType": 22,
+  "dashedName": "task-90",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Yeah, I love them. I've been into _ _ and _ for a while now.</p>",
+    "blanks": [
+      {
+        "answer": "rock",
+        "feedback": "<p>It is part of the sport that involves climbing natural or artificial formations.</p>"
+      },
+      {
+        "answer": "climbing",
+        "feedback": "<p>It refers to the action of moving up or across something.</p>"
+      },
+      {
+        "answer": "rafting",
+        "feedback": "<p>It is an adventurous water sport where you navigate rivers or streams in a raft.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.46,
+        "finishTimestamp": 7.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.46,
+        "dialogue": {
+          "text": "Yeah, I love them. I've been into rock climbing and rafting for a while now.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Rock climbing</code> is the sport of climbing up natural rock formations or artificial rock walls.</p>\n<p><code>Rafting</code> involves navigating a river or other bodies of water in a raft, usually going through challenging parts of the river.</p>\n<p>They are two types of <code>extreme sports</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 94,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

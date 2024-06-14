@@ -1,0 +1,65 @@
+{
+  "id": "5900f3ef1000cf542c50ff02",
+  "title": "Problem 131: Prime cube partnership",
+  "challengeType": 1,
+  "forumTopicId": 301759,
+  "dashedName": "problem-131-prime-cube-partnership",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function primeCubePartnership() {\n\n  return true;\n}\n\nprimeCubePartnership();",
+      "error": null,
+      "seed": "function primeCubePartnership() {\n\n  return true;\n}\n\nprimeCubePartnership();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>primeCubePartnership()</code> should return <code>173</code>.</p>",
+      "testString": "assert.strictEqual(primeCubePartnership(), 173);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>There are some prime values, $p$, for which there exists a positive integer, $n$, such that the expression $n^3 + n^{2}p$ is a perfect cube.</p>\n<p>For example, when $p = 19,\\ 8^3 + 8^2 × 19 = {12}^3$.</p>\n<p>What is perhaps most surprising is that the value of $n$ is unique for each prime with this property, and there are only four such primes below one hundred.</p>\n<p>How many primes below one million have this remarkable property?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

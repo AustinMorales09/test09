@@ -1,0 +1,43 @@
+{
+  "id": "647e224b8acb466c97ccbeef",
+  "title": "Create C# Methods with Parameters",
+  "challengeType": 19,
+  "dashedName": "create-c-sharp-methods-with-parameters",
+  "solutions": [],
+  "question": {
+    "text": "<p>Given the method signature,</p>\n<pre><code class=\"language-clike\">void Print(string name, string number = \"\", bool member = false)\n</code></pre>\n<p>Which of the following options correctly uses named and optional arguments?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Print(\"Tony\", member: true);</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Print(number: \"555\", member: false)</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Print(\"Tony\", false)</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [
+    "<p>Complete the <a href=\"https://learn.microsoft.com/training/modules/create-c-sharp-methods-parameters/\" target=\"_blank\" rel=\"noreferrer\">Create C# Methods with Parameters</a> module on Microsoft Learn. Then, answer the question below.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge will be partially completed on the Microsoft Learn platform. Follow these instructions to complete the challenge:</p>\n<ol>\n<li>Go to <a href=\"https://learn.microsoft.com/training/modules/create-c-sharp-methods-parameters/\" target=\"_blank\" rel=\"noreferrer\">https://learn.microsoft.com/training/modules/create-c-sharp-methods-parameters/</a> and complete all the tasks for the \"Create C# Methods with Parameters\" module. This is <strong>required</strong> to earn the \"Create Methods in C# Console Applications\" trophy on Microsoft Learn, and qualify for the certification exam.</li>\n<li>When you are finished, come back and correctly answer the question below.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "create-methods-in-c-sharp-console-applications",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 13,
+  "certification": "foundational-c-sharp-with-microsoft",
+  "superBlock": "foundational-c-sharp-with-microsoft",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "C-Sharp",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

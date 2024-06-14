@@ -1,0 +1,116 @@
+{
+  "id": "657e600a30c66c02e04b704d",
+  "title": "Task 105",
+  "challengeType": 19,
+  "dashedName": "task-105",
+  "solutions": [],
+  "question": {
+    "text": "<p>What do <code>regularly</code> and <code>every year</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Regularly</code> means never; <code>every year</code> means once a month.</p>",
+        "feedback": "<p><code>Regularly</code> is more frequent than never; <code>every year</code> is not monthly.</p>"
+      },
+      {
+        "answer": "<p><code>Regularly</code> means once in a while; <code>every year</code> means daily.</p>",
+        "feedback": "<p><code>Regularly</code> is more consistent than once in a while; <code>every year</code> is not daily.</p>"
+      },
+      {
+        "answer": "<p><code>Regularly</code> means just once; <code>every year</code> means every five years.</p>",
+        "feedback": "<p><code>Regularly</code> implies more than once; <code>every year</code> is not every five years.</p>"
+      },
+      {
+        "answer": "<p><code>Regularly</code> means often or at set times; <code>every year</code> means annually.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room2.png",
+      "characters": [
+        {
+          "character": "Linda",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        },
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 55.74,
+        "finishTimestamp": 61.14
+      }
+    },
+    "commands": [
+      {
+        "character": "Linda",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Linda",
+        "startTime": 1,
+        "finishTime": 2.96,
+        "dialogue": {
+          "text": "Do we have to attend training sessions regularly?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Linda",
+        "opacity": 0,
+        "startTime": 3
+      },
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 3
+      },
+      {
+        "character": "James",
+        "startTime": 4.78,
+        "finishTime": 6.4,
+        "dialogue": {
+          "text": "Yes, you have to attend the training every year.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 6.9
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Regularly</code> means doing something often or at set intervals, like every week or month. <code>Every year</code> means once a year or annually.</p>\n<p>In jobs, some tasks or training might happen regularly or every year. For example, <code>We clean the equipment regularly</code> or <code>The team has a retreat every year.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 108,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

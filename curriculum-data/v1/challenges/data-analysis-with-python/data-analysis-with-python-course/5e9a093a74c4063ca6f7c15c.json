@@ -1,0 +1,47 @@
+{
+  "id": "5e9a093a74c4063ca6f7c15c",
+  "title": "Pandas Creating Columns",
+  "challengeType": 11,
+  "videoId": "_sSo2XZoB3E",
+  "bilibiliIds": {
+    "aid": 975568901,
+    "bvid": "BV1b44y1b7Cg",
+    "cid": 409018052
+  },
+  "dashedName": "pandas-creating-columns",
+  "solutions": [],
+  "question": {
+    "text": "<p>What code would add a \"Certificates per month\" column to the <code>certificates_earned</code> DataFrame like the one below?</p>\n<pre>      Certificates  Time (in months)  Certificates per month\nTom               8                16                    0.50\nKris              2                 5                    0.40\nAhmad             5                 9                    0.56\nBeau              6                12                    0.50</pre>",
+    "answers": [
+      {
+        "answer": "<pre><code class=\"language-py\">certificates_earned['Certificates'] /\ncertificates_earned['Time (in months)']\n</code></pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre><code class=\"language-py\">certificates_earned['Certificates per month'] = round(\n    certificates_earned['Certificates'] /\n    certificates_earned['Time (in months)']\n)\n</code></pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre><code class=\"language-py\">certificates_earned['Certificates per month'] = round(\n    certificates_earned['Certificates'] /\n    certificates_earned['Time (in months)'], 2\n)\n</code></pre>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><em>Instead of using notebooks.ai like it shows in the video, you can use Google Colab instead.</em></p>\n<p>More resources:</p>\n<ul>\n<li><a href=\"https://github.com/ine-rmotr-curriculum/freecodecamp-intro-to-pandas\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Notebooks on GitHub</a></li>\n<li><a href=\"https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">How to open Notebooks from GitHub using Google Colab.</a></li>\n</ul>\n</section>",
+  "translationPending": false,
+  "block": "data-analysis-with-python-course",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 8,
+  "certification": "data-analysis-with-python",
+  "superBlock": "data-analysis-with-python",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

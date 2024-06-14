@@ -1,0 +1,50 @@
+{
+  "id": "5e7b9f0c0b6c005b0e76f072",
+  "title": "Networking Protocol",
+  "challengeType": 11,
+  "videoId": "c6vZGescaSc",
+  "bilibiliIds": {
+    "aid": 931950996,
+    "bvid": "BV1cM4y1N7K6",
+    "cid": 376388317
+  },
+  "dashedName": "networking-protocol",
+  "solutions": [],
+  "question": {
+    "text": "<p>What type of HTTP request is usually used to access a website?</p>",
+    "answers": [
+      {
+        "answer": "<p>POST</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>GET</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>WEB</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>ACCESS</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

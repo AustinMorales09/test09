@@ -1,0 +1,57 @@
+{
+  "id": "6551f1e8737dbe6e0cb08ea4",
+  "title": "Step 10",
+  "challengeType": 20,
+  "dashedName": "step-10",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nprint(type(text))\nshift = 3",
+      "error": null,
+      "seed": "text = 'Hello World'\nprint(type(text))\nshift = 3"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not remove your existing <code>print(type(text))</code> call.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.match(commentless_code, /print\\s*\\(\\s*type\\s*\\(\\s*text\\s*\\)\\s*\\)/)"
+    },
+    {
+      "text": "<p>You should call the <code>print()</code> function passing in the <code>shift</code> variable. Pay attention to place the function call at the beginning of the line.</p>",
+      "testString": "assert.match(code, /^print\\s*\\(\\s*shift\\s*\\)/m)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>And now print your new variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

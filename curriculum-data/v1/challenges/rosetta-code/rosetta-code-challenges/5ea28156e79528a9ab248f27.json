@@ -1,0 +1,94 @@
+{
+  "id": "5ea28156e79528a9ab248f27",
+  "title": "Luhn test of credit card numbers",
+  "challengeType": 1,
+  "forumTopicId": 385284,
+  "dashedName": "luhn-test-of-credit-card-numbers",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function luhnTest(str) {\n\n}",
+      "error": null,
+      "seed": "function luhnTest(str) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function luhnTest(str) {\n  var luhnArr = [0, 2, 4, 6, 8, 1, 3, 5, 7, 9];\n  var counter = 0;\n  var incNum;\n  var odd = false;\n  var temp = String(str).replace(/[^\\d]/g, '');\n  if (temp.length == 0) return false;\n  for (var i = temp.length - 1; i >= 0; --i) {\n    incNum = parseInt(temp.charAt(i), 10);\n    counter += (odd = !odd) ? incNum : luhnArr[incNum];\n  }\n  return counter % 10 == 0;\n}",
+        "error": null,
+        "seed": "function luhnTest(str) {\n  var luhnArr = [0, 2, 4, 6, 8, 1, 3, 5, 7, 9];\n  var counter = 0;\n  var incNum;\n  var odd = false;\n  var temp = String(str).replace(/[^\\d]/g, '');\n  if (temp.length == 0) return false;\n  for (var i = temp.length - 1; i >= 0; --i) {\n    incNum = parseInt(temp.charAt(i), 10);\n    counter += (odd = !odd) ? incNum : luhnArr[incNum];\n  }\n  return counter % 10 == 0;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>luhnTest</code> should be a function.</p>",
+      "testString": "assert(typeof luhnTest === 'function');"
+    },
+    {
+      "text": "<p><code>luhnTest(\"4111111111111111\")</code> should return a boolean.</p>",
+      "testString": "assert(typeof luhnTest('4111111111111111') === 'boolean');"
+    },
+    {
+      "text": "<p><code>luhnTest(\"4111111111111111\")</code> should return <code>true</code>.</p>",
+      "testString": "assert.equal(luhnTest('4111111111111111'), true);"
+    },
+    {
+      "text": "<p><code>luhnTest(\"4111111111111112\")</code> should return <code>false</code>.</p>",
+      "testString": "assert.equal(luhnTest('4111111111111112'), false);"
+    },
+    {
+      "text": "<p><code>luhnTest(\"49927398716\")</code> should return <code>true</code>.</p>",
+      "testString": "assert.equal(luhnTest('49927398716'), true);"
+    },
+    {
+      "text": "<p><code>luhnTest(\"49927398717\")</code> should return <code>false</code>.</p>",
+      "testString": "assert.equal(luhnTest('49927398717'), false);"
+    },
+    {
+      "text": "<p><code>luhnTest(\"1234567812345678\")</code> should return <code>false</code>.</p>",
+      "testString": "assert.equal(luhnTest('1234567812345678'), false);"
+    },
+    {
+      "text": "<p><code>luhnTest(\"1234567812345670\")</code> should return <code>true</code>.</p>",
+      "testString": "assert.equal(luhnTest('1234567812345670'), true);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The Luhn test is used by some credit card companies to distinguish valid credit card numbers from what could be a random selection of digits.</p>\n<p>Those companies using credit card numbers that can be validated by the Luhn test have numbers that pass the following test:</p>\n<ol>\n  <li> Reverse the order of the digits in the number.</li>\n  <li> Take the first, third, ... and every other odd digit in the reversed digits and sum them to form the partial sum s1</li>\n  <li> Taking the second, fourth ... and every other even digit in the reversed digits:</li>\n    <ol>\n      <li>Multiply each digit by two and sum the digits if the answer is greater than nine to form partial sums for the even digits.</li>\n      <li>Sum the partial sums of the even digits to form s2.</li>\n    </ol>\n  <li>If s1 + s2 ends in zero then the original number is in the form of a valid credit card number as verified by the Luhn test.</li>\n</ol>\n<p>For example, if the trial number is 49927398716:</p>\n<pre><code class=\"language-bash\">Reverse the digits:\n  61789372994\nSum the odd digits:\n  6 + 7 + 9 + 7 + 9 + 4 = 42 = s1\nThe even digits:\n    1, 8, 3, 2, 9\n  Two times each even digit:\n    2, 16, 6, 4, 18\n  Sum the digits of each multiplication:\n    2, 7, 6, 4, 9\n  Sum the last:\n    2 + 7 + 6 + 4 + 9 = 28 = s2\n\ns1 + s2 = 70 which ends in zero which means that 49927398716 passes the Luhn test.\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that will validate a number with the Luhn test. Return true if it's a valid number. Otherwise, return false.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 102,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

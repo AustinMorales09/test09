@@ -1,0 +1,85 @@
+{
+  "id": "5900f38c1000cf542c50fe9f",
+  "title": "Problem 32: Pandigital products",
+  "challengeType": 1,
+  "forumTopicId": 301976,
+  "dashedName": "problem-32-pandigital-products",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function pandigitalProducts(n) {\n\n  return true;\n}\n\npandigitalProducts(4);",
+      "error": null,
+      "seed": "function pandigitalProducts(n) {\n\n  return true;\n}\n\npandigitalProducts(4);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function pandigitalProducts(n) {\n  function is1toNPandigital(n, digitStr) {\n    // check if length is n\n    if (digitStr.length !== n) {\n      return false;\n    }\n    // check if pandigital\n    for (let i = digitStr.length; i > 0; i--) {\n      if (digitStr.indexOf(i.toString()) === -1) {\n        return false;\n      }\n    }\n    return true;\n  }\n  function concatenateNums(...numbers) {\n    let digitStr = '';\n    for (let i = 0; i < numbers.length; i++) {\n      digitStr += numbers[i].toString();\n    }\n    return digitStr;\n  }\n\n  const pandigitalNums = [];\n  const limit = 10 ** Math.floor(n / 2) - 1;\n  let sum = 0;\n  for (let mult1 = 2; mult1 < limit; mult1++) {\n    for (let mult2 = 2; mult2 < limit; mult2++) {\n      const product = mult1 * mult2;\n      const concatenated = concatenateNums(mult1, mult2, product);\n      if (concatenated.length > n) {\n        break;\n      } else if (concatenated.length < n) {\n        continue;\n      }\n      if (\n        is1toNPandigital(n, concatenated) &&\n        !pandigitalNums.includes(product)\n      ) {\n        pandigitalNums.push(product);\n        sum += product;\n      }\n    }\n  }\n  return sum;\n}",
+        "error": null,
+        "seed": "function pandigitalProducts(n) {\n  function is1toNPandigital(n, digitStr) {\n    // check if length is n\n    if (digitStr.length !== n) {\n      return false;\n    }\n    // check if pandigital\n    for (let i = digitStr.length; i > 0; i--) {\n      if (digitStr.indexOf(i.toString()) === -1) {\n        return false;\n      }\n    }\n    return true;\n  }\n  function concatenateNums(...numbers) {\n    let digitStr = '';\n    for (let i = 0; i < numbers.length; i++) {\n      digitStr += numbers[i].toString();\n    }\n    return digitStr;\n  }\n\n  const pandigitalNums = [];\n  const limit = 10 ** Math.floor(n / 2) - 1;\n  let sum = 0;\n  for (let mult1 = 2; mult1 < limit; mult1++) {\n    for (let mult2 = 2; mult2 < limit; mult2++) {\n      const product = mult1 * mult2;\n      const concatenated = concatenateNums(mult1, mult2, product);\n      if (concatenated.length > n) {\n        break;\n      } else if (concatenated.length < n) {\n        continue;\n      }\n      if (\n        is1toNPandigital(n, concatenated) &&\n        !pandigitalNums.includes(product)\n      ) {\n        pandigitalNums.push(product);\n        sum += product;\n      }\n    }\n  }\n  return sum;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>pandigitalProducts(4)</code> should return a number.</p>",
+      "testString": "assert(typeof pandigitalProducts(4) === 'number');"
+    },
+    {
+      "text": "<p><code>pandigitalProducts(4)</code> should return <code>12</code>.</p>",
+      "testString": "assert.strictEqual(pandigitalProducts(4), 12);"
+    },
+    {
+      "text": "<p><code>pandigitalProducts(6)</code> should return <code>162</code>.</p>",
+      "testString": "assert.strictEqual(pandigitalProducts(6), 162);"
+    },
+    {
+      "text": "<p><code>pandigitalProducts(7)</code> should return <code>0</code>.</p>",
+      "testString": "assert.strictEqual(pandigitalProducts(7), 0);"
+    },
+    {
+      "text": "<p><code>pandigitalProducts(8)</code> should return <code>13458</code>.</p>",
+      "testString": "assert.strictEqual(pandigitalProducts(8), 13458);"
+    },
+    {
+      "text": "<p><code>pandigitalProducts(9)</code> should return <code>45228</code>.</p>",
+      "testString": "assert.strictEqual(pandigitalProducts(9), 45228);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>We shall say that an <code>n</code>-digit number is pandigital if it makes use of all the digits 1 to <code>n</code> exactly once; for example, the 5-digit number, 15234, is 1 through 5 pandigital.</p>\n<p>The product 7254 is unusual, as the identity, 39 × 186 = 7254, containing multiplicand, multiplier, and product is 1 through 9 pandigital.</p>\n<p>Find the sum of all products whose multiplicand/multiplier/product identity can be written as a 1 through <code>n</code> pandigital.</p>\n<p><strong>Hint:</strong> Some products can be obtained in more than one way so be sure to only include it once in your sum.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 31,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

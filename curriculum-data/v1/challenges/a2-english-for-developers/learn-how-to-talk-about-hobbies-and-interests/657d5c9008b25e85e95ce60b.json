@@ -1,0 +1,79 @@
+{
+  "id": "657d5c9008b25e85e95ce60b",
+  "title": "Task 5",
+  "challengeType": 22,
+  "dashedName": "task-5",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Absolutely. I _ _ passionate about photography for many years.</p>",
+    "blanks": [
+      {
+        "answer": "'ve",
+        "feedback": "<p>You fill in this blank with the verb <code>have</code>, but in its contracted form.</p>"
+      },
+      {
+        "answer": "been",
+        "feedback": "<p>Fill in this blank with the verb <code>be</code>, but in the form we saw in the description when it comes after <code>have</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.14,
+        "finishTimestamp": 7.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.84,
+        "dialogue": {
+          "text": "Absolutely. I've been passionate about photography for many years.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 5.34
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In Bob's sentence, you see a different structure being introduced. Instead of saying <code>I am passionate about photography</code>, Bob uses <code>I've been passionate about  photography</code>. This has to do with the expression that comes right after, <code>for many years</code>.</p>\n<p>When you see <code>'ve been</code> in a sentence, remember it is a contraction of the verb <code>have</code>, which becomes <code>'ve</code>, and the verb <code>to be</code> in the <em>participle</em> form.</p>\n<p>For example: <code>I've been in love with Jane for a long time now, but she just likes me as a friend.</code></p>\n<p>Fill in the blanks with the correct forms of the verbs <code>have</code> and <code>be</code>, according to what Bob says.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

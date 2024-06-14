@@ -1,0 +1,88 @@
+{
+  "id": "656ab76473a1ee49d537698d",
+  "title": "Task 72",
+  "challengeType": 19,
+  "dashedName": "task-72",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>attentive</code> mean in the context of the text below?</p>",
+    "answers": [
+      {
+        "answer": "<p>Not paying attention</p>",
+        "feedback": "<p>This is the opposite of being attentive.</p>"
+      },
+      {
+        "answer": "<p>Looking somewhere else</p>",
+        "feedback": "<p>Being attentive means you are focusing, not looking away.</p>"
+      },
+      {
+        "answer": "<p>Listening carefully</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Not listening</p>",
+        "feedback": "<p>When you're attentive, you are listening or paying attention, not ignoring.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 37,
+        "finishTimestamp": 40.2
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.85,
+        "dialogue": {
+          "text": "Yeah, at this company, they're very attentive to these details.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.35
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Being <code>attentive</code> means paying careful attention or listening carefully.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 73,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

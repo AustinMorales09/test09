@@ -1,0 +1,107 @@
+{
+  "id": "63ee3ff8381756f9716727f3",
+  "title": "CSS Foundations Exercise E",
+  "challengeType": 14,
+  "dashedName": "css-foundations-exercise-e",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Descendant Combinator</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <div class=\"container\">\n      <p class=\"text\">This should be styled.</p>\n    </div>\n    <p class=\"text\">This should be unstyled.</p>\n    <p class=\"text\">This should be unstyled.</p>\n    <div class=\"container\">\n      <p class=\"text\">This should be styled.</p>\n      <p class=\"text\">This should be styled.</p>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Descendant Combinator</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <div class=\"container\">\n      <p class=\"text\">This should be styled.</p>\n    </div>\n    <p class=\"text\">This should be unstyled.</p>\n    <p class=\"text\">This should be unstyled.</p>\n    <div class=\"container\">\n      <p class=\"text\">This should be styled.</p>\n      <p class=\"text\">This should be styled.</p>\n    </div>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Descendant Combinator</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <div class=\"container\">\n      <p class=\"text\">This should be styled.</p>\n    </div>\n    <p class=\"text\">This should be unstyled.</p>\n    <p class=\"text\">This should be unstyled.</p>\n    <div class=\"container\">\n      <p class=\"text\">This should be styled.</p>\n      <p class=\"text\">This should be styled.</p>\n    </div>\n  </body>\n</html>",
+        "error": null,
+        "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Descendant Combinator</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <div class=\"container\">\n      <p class=\"text\">This should be styled.</p>\n    </div>\n    <p class=\"text\">This should be unstyled.</p>\n    <p class=\"text\">This should be unstyled.</p>\n    <div class=\"container\">\n      <p class=\"text\">This should be styled.</p>\n      <p class=\"text\">This should be styled.</p>\n    </div>\n  </body>\n</html>"
+      },
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "styles.css"
+        ],
+        "name": "styles",
+        "ext": "css",
+        "path": "styles.css",
+        "fileKey": "stylescss",
+        "contents": ".container .text {\n  background-color: yellow;\n  color: red;\n  font-size: 20px;\n  text-align: center;\n}",
+        "error": null,
+        "seed": ".container .text {\n  background-color: yellow;\n  color: red;\n  font-size: 20px;\n  text-align: center;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a background color of <code>yellow</code> on your descendants.</p>",
+      "testString": "const styleOne = new __helpers.CSSHelp(document).getStyle('.container .text');\nconst styleTwo =  new __helpers.CSSHelp(document).getStyle('div p');\nconst styleThree =  new __helpers.CSSHelp(document).getStyle('div .text');\nconst styleFour =  new __helpers.CSSHelp(document).getStyle('.container p');\n\nconst styles = [styleOne, styleTwo, styleThree, styleFour];\n\nfunction getCorrectStyle(){\n    for(let i = 0; i < styles.length; i++){\n        if(styles[i] != undefined){\n            return styles[i];\n        }\n    }\n}\n\nassert(getCorrectStyle()?.backgroundColor === 'yellow');\n"
+    },
+    {
+      "text": "<p>You should have a text color of <code>red</code> on your descendants.</p>",
+      "testString": "const styleOne = new __helpers.CSSHelp(document).getStyle('.container .text');\nconst styleTwo =  new __helpers.CSSHelp(document).getStyle('div p');\nconst styleThree =  new __helpers.CSSHelp(document).getStyle('div .text');\nconst styleFour =  new __helpers.CSSHelp(document).getStyle('.container p');\n\nconst styles = [styleOne, styleTwo, styleThree, styleFour];\n\nfunction getCorrectStyle(){\n    for(let i = 0; i < styles.length; i++){\n        if(styles[i] != undefined){\n            return styles[i];\n        }\n    }\n}\n\nassert(getCorrectStyle()?.color === 'red');\n"
+    },
+    {
+      "text": "<p>You should have a font size of <code>20px</code> on your descendants.</p>",
+      "testString": "const styleOne = new __helpers.CSSHelp(document).getStyle('.container .text');\nconst styleTwo =  new __helpers.CSSHelp(document).getStyle('div p');\nconst styleThree =  new __helpers.CSSHelp(document).getStyle('div .text');\nconst styleFour =  new __helpers.CSSHelp(document).getStyle('.container p');\n\nconst styles = [styleOne, styleTwo, styleThree, styleFour];\n\nfunction getCorrectStyle(){\n    for(let i = 0; i < styles.length; i++){\n        if(styles[i] != undefined){\n            return styles[i];\n        }\n    }\n}\n\nassert(getCorrectStyle()?.fontSize === '20px');\n"
+    },
+    {
+      "text": "<p>You should center align the text on your descendants.</p>",
+      "testString": "const styleOne = new __helpers.CSSHelp(document).getStyle('.container .text');\nconst styleTwo =  new __helpers.CSSHelp(document).getStyle('div p');\nconst styleThree =  new __helpers.CSSHelp(document).getStyle('div .text');\nconst styleFour =  new __helpers.CSSHelp(document).getStyle('.container p');\n\nconst styles = [styleOne, styleTwo, styleThree, styleFour];\n\nfunction getCorrectStyle(){\n    for(let i = 0; i < styles.length; i++){\n        if(styles[i] != undefined){\n            return styles[i];\n        }\n    }\n}\n\nassert(getCorrectStyle()?.textAlign === 'center');\n"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Understanding how combinators work can become a lot easier when you start playing around with them and see what exactly is affected by them versus what isn't.</p>\n<p>The goal of this exercise is to apply styles to elements that are descendants of another element, while leaving elements that aren't descendants of that element unstyled.</p>\n<ol>\n<li>You should see a <code>yellow</code> background for <code>p</code> elements that are descendants of the <code>div</code> element.</li>\n<li>You should see a text color of <code>red</code> for elements that are descendants of the <code>div</code> element.</li>\n<li>You should see a font size of <code>20px</code> for elements that are descendants of the <code>div</code> element.</li>\n<li>You should center align text for elements that are descendants of the <code>div</code> element.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-css-foundations-projects",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

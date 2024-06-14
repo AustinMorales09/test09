@@ -1,0 +1,89 @@
+{
+  "id": "5a23c84252665b21eecc801d",
+  "title": "Split a character string based on change of character",
+  "challengeType": 1,
+  "forumTopicId": 302322,
+  "dashedName": "split-a-character-string-based-on-change-of-character",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function split(str) {\n\n}",
+      "error": null,
+      "seed": "function split(str) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function split(str) {\n  const concat = xs =>\n    xs.length > 0\n      ? (() => {\n          const unit = typeof xs[0] === 'string' ? '' : [];\n          return unit.concat.apply(unit, xs);\n        })()\n      : [];\n\n  const group = xs => groupBy((a, b) => a === b, xs);\n\n  const groupBy = (f, xs) => {\n    const dct = xs.slice(1).reduce(\n      (a, x) => {\n        const h = a.active.length > 0 ? a.active[0] : undefined,\n          blnGroup = h !== undefined && f(h, x);\n        return {\n          active: blnGroup ? a.active.concat([x]) : [x],\n          sofar: blnGroup ? a.sofar : a.sofar.concat([a.active])\n        };\n      },\n      {\n        active: xs.length > 0 ? [xs[0]] : [],\n        sofar: []\n      }\n    );\n    return dct.sofar.concat(dct.active.length > 0 ? [dct.active] : []);\n  };\n\n  const map = (f, xs) => xs.map(f);\n\n  const stringChars = s => s.split('');\n\n  return map(concat, group(stringChars(str)));\n}",
+        "error": null,
+        "seed": "function split(str) {\n  const concat = xs =>\n    xs.length > 0\n      ? (() => {\n          const unit = typeof xs[0] === 'string' ? '' : [];\n          return unit.concat.apply(unit, xs);\n        })()\n      : [];\n\n  const group = xs => groupBy((a, b) => a === b, xs);\n\n  const groupBy = (f, xs) => {\n    const dct = xs.slice(1).reduce(\n      (a, x) => {\n        const h = a.active.length > 0 ? a.active[0] : undefined,\n          blnGroup = h !== undefined && f(h, x);\n        return {\n          active: blnGroup ? a.active.concat([x]) : [x],\n          sofar: blnGroup ? a.sofar : a.sofar.concat([a.active])\n        };\n      },\n      {\n        active: xs.length > 0 ? [xs[0]] : [],\n        sofar: []\n      }\n    );\n    return dct.sofar.concat(dct.active.length > 0 ? [dct.active] : []);\n  };\n\n  const map = (f, xs) => xs.map(f);\n\n  const stringChars = s => s.split('');\n\n  return map(concat, group(stringChars(str)));\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>split</code> should be a function.</p>",
+      "testString": "assert(typeof split == 'function');"
+    },
+    {
+      "text": "<p><code>split(\"hello\")</code> should return an array.</p>",
+      "testString": "assert(Array.isArray(split('hello')));"
+    },
+    {
+      "text": "<p><code>split(\"hello\")</code> should return <code>[\"h\", \"e\", \"ll\", \"o\"]</code>.</p>",
+      "testString": "assert.deepEqual(split('hello'), ['h', 'e', 'll', 'o']);"
+    },
+    {
+      "text": "<p><code>split(\"commission\")</code> should return <code>[\"c\", \"o\", \"mm\", \"i\", \"ss\", \"i\", \"o\", \"n\"]</code>.</p>",
+      "testString": "assert.deepEqual(split('commission'), [\n  'c',\n  'o',\n  'mm',\n  'i',\n  'ss',\n  'i',\n  'o',\n  'n'\n]);"
+    },
+    {
+      "text": "<p><code>split(\"ssss----====llloooo\")</code> should return <code>[\"ssss\", \"----\", \"====\", \"lll\", \"oooo\"]</code>.</p>",
+      "testString": "assert.deepEqual(split('ssss----====llloooo'), [\n  'ssss',\n  '----',\n  '====',\n  'lll',\n  'oooo'\n]);"
+    },
+    {
+      "text": "<p><code>split(\"sssmmmaaammmaaat\")</code> should return <code>[\"sss\", \"mmm\", \"aaa\", \"mmm\", \"aaa\", \"t\"]</code>.</p>",
+      "testString": "assert.deepEqual(split('sssmmmaaammmaaat'), [\n  'sss',\n  'mmm',\n  'aaa',\n  'mmm',\n  'aaa',\n  't'\n]);"
+    },
+    {
+      "text": "<p><code>split(\"gHHH5YY++///\\\\\")</code> should return <code>[\"g\", \"HHH\", \"5\", \"YY\", \"++\", \"///\", \"\\\\\"]</code>.</p>",
+      "testString": "assert.deepEqual(split('gHHH5YY++///\\\\'), [\n  'g',\n  'HHH',\n  '5',\n  'YY',\n  '++',\n  '///',\n  '\\\\'\n]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Split a (character) string into comma (plus a blank) delimited strings based on a change of character (left to right). Blanks should be treated as any other character (except they are problematic to display clearly). The same applies to commas. For instance, the string:</p>\n<pre>\n\"gHHH5YY++///\\\\\"\n</pre>\n<p>should be split as:</p>\n<pre>\n[\"g\", \"HHH\", \"5\", \"YY\", \"++\", \"///\", \"\\\\\" ];\n</pre>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 132,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

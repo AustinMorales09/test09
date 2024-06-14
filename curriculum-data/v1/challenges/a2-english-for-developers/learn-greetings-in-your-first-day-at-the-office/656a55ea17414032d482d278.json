@@ -1,0 +1,88 @@
+{
+  "id": "656a55ea17414032d482d278",
+  "title": "Task 57",
+  "challengeType": 19,
+  "dashedName": "task-57",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Sophie describe her activity level when she's working?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>active</code></p>",
+        "feedback": "<p>Sophie comments on how much she sits during work. Which word would best describe someone who sits a lot?</p>"
+      },
+      {
+        "answer": "<p><code>alternative</code></p>",
+        "feedback": "<p>Sophie comments on how much she sits during work. Which word would best describe someone who sits a lot?</p>"
+      },
+      {
+        "answer": "<p><code>inactive</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>commenting</code></p>",
+        "feedback": "<p>Sophie comments on how much she sits during work. Which word would best describe someone who sits a lot?</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.22,
+        "finishTimestamp": 26.48
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.76,
+        "dialogue": {
+          "text": "That's so true. I'm a bit inactive sitting all the time.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.26
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>People sometimes describe how active or inactive they are during their daily routines. In this case, Sophie is commenting on her own activity level at work.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 58,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

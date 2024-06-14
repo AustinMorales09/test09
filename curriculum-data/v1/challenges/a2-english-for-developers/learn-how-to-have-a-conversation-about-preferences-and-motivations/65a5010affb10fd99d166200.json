@@ -1,0 +1,97 @@
+{
+  "id": "65a5010affb10fd99d166200",
+  "title": "Task 101",
+  "challengeType": 19,
+  "dashedName": "task-101",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Sarah's preference?</p>",
+    "answers": [
+      {
+        "answer": "<p>The fitness tracking on smartwatches</p>",
+        "feedback": "<p>Consider the features Sarah mentions that make her prefer one technology over the other.</p>"
+      },
+      {
+        "answer": "<p>The features of smartphones</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The battery life of smartwatches</p>",
+        "feedback": "<p>Think about what Sarah highlights as her favorite aspects of her preferred technology.</p>"
+      },
+      {
+        "answer": "<p>The design of smartwatches</p>",
+        "feedback": "<p>Reflect on whether design is a factor in Sarah's stated preferences.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.56,
+        "finishTimestamp": 29.84
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.48,
+        "dialogue": {
+          "text": "Smartwatches are cool. I'm more into smartphones.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "startTime": 3.68,
+        "finishTime": 8.08,
+        "dialogue": {
+          "text": "The camera quality, the speed, and the number of apps available are what I like the most.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 8.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Sarah shares what she prefers in technology.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 104,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

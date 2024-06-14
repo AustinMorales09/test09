@@ -1,0 +1,61 @@
+{
+  "id": "60f0286404aefb0562a4fdf9",
+  "title": "Step 4",
+  "challengeType": 0,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        6
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    \n  </head>\n  <body>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    \n  </head>\n  <body>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have a <code>title</code> element.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.exists(title);"
+    },
+    {
+      "text": "<p>The <code>title</code> element should be within the <code>head</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('head > title'));"
+    },
+    {
+      "text": "<p>Your project should have a title of <code>Registration Form</code>.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.equal(title.text.toLowerCase(), 'registration form')"
+    },
+    {
+      "text": "<p>Remember, the casing and spelling matters for the title.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.equal(title.text, 'Registration Form');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Add a <code>title</code> and a <code>meta</code> element to the <code>head</code>. Give your project a title of <code>Registration Form</code>, and give a <code>charset</code> attribute with a value of <code>UTF-8</code> to your <code>meta</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-forms-by-building-a-registration-form",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

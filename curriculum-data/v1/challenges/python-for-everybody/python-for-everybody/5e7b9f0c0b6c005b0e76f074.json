@@ -1,0 +1,46 @@
+{
+  "id": "5e7b9f0c0b6c005b0e76f074",
+  "title": "Networking: Text Processing",
+  "challengeType": 11,
+  "videoId": "Pv_pJgVu8WI",
+  "bilibiliIds": {
+    "aid": 804442498,
+    "bvid": "BV16y4y1j7WW",
+    "cid": 377329124
+  },
+  "dashedName": "networking-text-processing",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which type of encoding do most websites use?</p>",
+    "answers": [
+      {
+        "answer": "<p>UTF-8</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>UTF-16</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>UTF-32</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 32,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

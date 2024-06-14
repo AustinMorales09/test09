@@ -1,0 +1,94 @@
+{
+  "id": "5e4ce2eaac708cc68c1df260",
+  "title": "Levenshtein distance",
+  "challengeType": 1,
+  "forumTopicId": 385264,
+  "dashedName": "levenshtein-distance",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function levenshtein(a, b) {\n\n}",
+      "error": null,
+      "seed": "function levenshtein(a, b) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function levenshtein(a, b) {\n  var t = [], u, i, j, m = a.length, n = b.length;\n  if (!m) { return n; }\n  if (!n) { return m; }\n  for (j = 0; j <= n; j++) { t[j] = j; }\n  for (i = 1; i <= m; i++) {\n    for (u = [i], j = 1; j <= n; j++) {\n      u[j] = a[i - 1] === b[j - 1] ? t[j - 1] : Math.min(t[j - 1], t[j], u[j - 1]) + 1;\n    } t = u;\n  } return u[n];\n}",
+        "error": null,
+        "seed": "function levenshtein(a, b) {\n  var t = [], u, i, j, m = a.length, n = b.length;\n  if (!m) { return n; }\n  if (!n) { return m; }\n  for (j = 0; j <= n; j++) { t[j] = j; }\n  for (i = 1; i <= m; i++) {\n    for (u = [i], j = 1; j <= n; j++) {\n      u[j] = a[i - 1] === b[j - 1] ? t[j - 1] : Math.min(t[j - 1], t[j], u[j - 1]) + 1;\n    } t = u;\n  } return u[n];\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>levenshtein</code> should be a function.</p>",
+      "testString": "assert(typeof levenshtein == 'function');"
+    },
+    {
+      "text": "<p><code>levenshtein(\"mist\", \"dist\")</code> should return a number.</p>",
+      "testString": "assert(typeof levenshtein('mist', 'dist') == 'number');"
+    },
+    {
+      "text": "<p><code>levenshtein(\"mist\", \"dist\")</code> should return <code>1</code>.</p>",
+      "testString": "assert.equal(levenshtein('mist', 'dist'), 1);"
+    },
+    {
+      "text": "<p><code>levenshtein(\"tier\", \"tor\")</code> should return <code>2</code>.</p>",
+      "testString": "assert.equal(levenshtein('tier', 'tor'), 2);"
+    },
+    {
+      "text": "<p><code>levenshtein(\"kitten\", \"sitting\")</code> should return <code>3</code>.</p>",
+      "testString": "assert.equal(levenshtein('kitten', 'sitting'), 3);"
+    },
+    {
+      "text": "<p><code>levenshtein(\"stop\", \"tops\")</code> should return <code>2</code>.</p>",
+      "testString": "assert.equal(levenshtein('stop', 'tops'), 2);"
+    },
+    {
+      "text": "<p><code>levenshtein(\"rosettacode\", \"raisethysword\")</code> should return <code>8</code>.</p>",
+      "testString": "assert.equal(levenshtein('rosettacode', 'raisethysword'), 8);"
+    },
+    {
+      "text": "<p><code>levenshtein(\"mississippi\", \"swiss miss\")</code> should return <code>8</code>.</p>",
+      "testString": "assert.equal(levenshtein('mississippi', 'swiss miss'), 8);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In information theory and computer science, the <strong>Levenshtein distance</strong> is a metric for measuring the amount of difference between two sequences (i.e. an edit distance). The Levenshtein distance between two strings is defined as the minimum number of edits needed to transform one string into the other, with the allowable edit operations being insertion, deletion, or substitution of a single character.</p>\n<p>Example:</p>\n<p>The Levenshtein distance between \"<strong>kitten</strong>\" and \"<strong>sitting</strong>\" is 3, since the following three edits change one into the other, and there isn't a way to do it with fewer than three edits:</p>\n<ul>\n  <li><strong>k</strong>itten   <strong>s</strong>itten    (substitution of 'k' with 's')</li>\n  <li>sitt<strong>e</strong>n   sitt<strong>i</strong>n    (substitution of 'e' with 'i')</li>\n  <li>sittin   sittin<strong>g</strong>    (insert 'g' at the end).</li>\n</ul>\n<p><em>The Levenshtein distance between \"<strong>rosettacode</strong>\", \"<strong>raisethysword</strong>\" is <strong>8</strong>.</em></p>\n<p><em>The distance between two strings is same as that when both strings are reversed.</em></p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that returns the Levenshtein distance between two strings given as parameters.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 91,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

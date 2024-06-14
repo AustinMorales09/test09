@@ -1,0 +1,57 @@
+{
+  "id": "5dc24165f86c76b9248c6ebc",
+  "title": "Step 9",
+  "challengeType": 0,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more cat photos in our gallery.</p>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\">\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more cat photos in our gallery.</p>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\">\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have an <code>img</code> element. You removed the <code>img</code> element from an earlier step.</p>",
+      "testString": "assert(document.querySelector('img'));"
+    },
+    {
+      "text": "<p>Your <code>img</code> element does not have an <code>alt</code> attribute. Check that there is a space after the opening tag's name and/or there are spaces before all attribute names.</p>",
+      "testString": "assert(document.querySelector('img').hasAttribute('alt'));"
+    },
+    {
+      "text": "<p>Your <code>img</code> element's <code>alt</code> attribute value is set to something other than 'A cute orange cat lying on its back'. Make sure the <code>alt</code> attribute's value is surrounded with quotation marks.</p>",
+      "testString": "const altText = document\n  .querySelector('img')\n  .alt.toLowerCase()\n  .replace(/\\s+/g, ' ');\nassert(altText.match(/A cute orange cat lying on its back\\.?$/i));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>All <code>img</code> elements should have an <code>alt</code> attribute. The <code>alt</code> attribute's text is used for screen readers to improve accessibility and is displayed if the image fails to load.</p>\n<p>Here is an example of an <code>img</code> element with an <code>alt</code> attribute:</p>\n<pre><code class=\"language-html\">&#x3C;img src=\"cat.jpg\" alt=\"A cat\">\n</code></pre>\n<p>Inside the <code>img</code> element, add an <code>alt</code> attribute with this text:</p>\n<p><code>A cute orange cat lying on its back</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

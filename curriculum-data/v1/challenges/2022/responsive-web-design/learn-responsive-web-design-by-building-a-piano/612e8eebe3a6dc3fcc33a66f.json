@@ -1,0 +1,77 @@
+{
+  "id": "612e8eebe3a6dc3fcc33a66f",
+  "title": "Step 11",
+  "challengeType": 0,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>Piano</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div id=\"piano\">\n      <div class=\"keys\">\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>Piano</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div id=\"piano\">\n      <div class=\"keys\">\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        10
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "html {\n  box-sizing: border-box;\n}\n\n*, *::before, *::after {\n  box-sizing: inherit;\n}\n\n",
+      "error": null,
+      "seed": "html {\n  box-sizing: border-box;\n}\n\n*, *::before, *::after {\n  box-sizing: inherit;\n}\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>#piano</code> selector.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('#piano'));"
+    },
+    {
+      "text": "<p>Your <code>#piano</code> selector should have the <code>background-color</code> property set to <code>#00471b</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('#piano')?.backgroundColor === 'rgb(0, 71, 27)');"
+    },
+    {
+      "text": "<p>Your <code>#piano</code> selector should have a <code>width</code> property set to <code>992px</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('#piano')?.width === '992px');"
+    },
+    {
+      "text": "<p>Your <code>#piano</code> selector should have the <code>height</code> set to <code>290px</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('#piano')?.height === '290px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now target your <code>#piano</code> element with an <code>id</code> selector. Set <code>background-color</code> property to <code>#00471b</code>, the <code>width</code> property to <code>992px</code> and the <code>height</code> property to <code>290px</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-responsive-web-design-by-building-a-piano",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

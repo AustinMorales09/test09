@@ -1,0 +1,54 @@
+{
+  "id": "5e7b9f0e0b6c005b0e76f07a",
+  "title": "Using Web Services",
+  "challengeType": 11,
+  "videoId": "oNl1OVDPGKE",
+  "bilibiliIds": {
+    "aid": 759406136,
+    "bvid": "BV1b64y16746",
+    "cid": 377332189
+  },
+  "dashedName": "using-web-services",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are the two most common ways to send data over the internet?</p>",
+    "answers": [
+      {
+        "answer": "<p>JSON and TXT</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>JSON and XML</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>XML and TXT</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>XML and PHP</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>PHP and TXT</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

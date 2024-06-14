@@ -1,0 +1,106 @@
+{
+  "id": "587d7faa367417b2b2512bd6",
+  "title": "Add a Tooltip to a D3 Element",
+  "challengeType": 6,
+  "forumTopicId": 301470,
+  "dashedName": "add-a-tooltip-to-a-d3-element",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .bar:hover {\n    fill: brown;\n  }\n</style>\n<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => d * 3)\n       .attr(\"fill\", \"navy\")\n       .attr(\"class\", \"bar\")\n       // Add your code below this line\n\n\n\n       // Add your code above this line\n\n    svg.selectAll(\"text\")\n       .data(dataset)\n       .enter()\n       .append(\"text\")\n       .text((d) => d)\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - (d * 3 + 3))\n\n  </script>\n</body>",
+      "error": null,
+      "seed": "<style>\n  .bar:hover {\n    fill: brown;\n  }\n</style>\n<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => d * 3)\n       .attr(\"fill\", \"navy\")\n       .attr(\"class\", \"bar\")\n       // Add your code below this line\n\n\n\n       // Add your code above this line\n\n    svg.selectAll(\"text\")\n       .data(dataset)\n       .enter()\n       .append(\"text\")\n       .text((d) => d)\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - (d * 3 + 3))\n\n  </script>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  .bar:hover {\n    fill: brown;\n  }\n</style>\n<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => d * 3)\n       .attr(\"fill\", \"navy\")\n       .attr(\"class\", \"bar\")\n       .append(\"title\")\n       .text((d) => d)\n       \n\n    svg.selectAll(\"text\")\n       .data(dataset)\n       .enter()\n       .append(\"text\")\n       .text((d) => d)\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - (d * 3 + 3))\n\n  </script>\n</body>",
+        "error": null,
+        "seed": "<style>\n  .bar:hover {\n    fill: brown;\n  }\n</style>\n<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => d * 3)\n       .attr(\"fill\", \"navy\")\n       .attr(\"class\", \"bar\")\n       .append(\"title\")\n       .text((d) => d)\n       \n\n    svg.selectAll(\"text\")\n       .data(dataset)\n       .enter()\n       .append(\"text\")\n       .text((d) => d)\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - (d * 3 + 3))\n\n  </script>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have 9 <code>title</code> elements.</p>",
+      "testString": "assert($('title').length == 9);"
+    },
+    {
+      "text": "<p>The first <code>title</code> element should have tooltip text of <code>12</code>.</p>",
+      "testString": "assert($('title').eq(0).text() == '12');"
+    },
+    {
+      "text": "<p>The second <code>title</code> element should have tooltip text of <code>31</code>.</p>",
+      "testString": "assert($('title').eq(1).text() == '31');"
+    },
+    {
+      "text": "<p>The third <code>title</code> element should have tooltip text of <code>22</code>.</p>",
+      "testString": "assert($('title').eq(2).text() == '22');"
+    },
+    {
+      "text": "<p>The fourth <code>title</code> element should have tooltip text of <code>17</code>.</p>",
+      "testString": "assert($('title').eq(3).text() == '17');"
+    },
+    {
+      "text": "<p>The fifth <code>title</code> element should have tooltip text of <code>25</code>.</p>",
+      "testString": "assert($('title').eq(4).text() == '25');"
+    },
+    {
+      "text": "<p>The sixth <code>title</code> element should have tooltip text of <code>18</code>.</p>",
+      "testString": "assert($('title').eq(5).text() == '18');"
+    },
+    {
+      "text": "<p>The seventh <code>title</code> element should have tooltip text of <code>29</code>.</p>",
+      "testString": "assert($('title').eq(6).text() == '29');"
+    },
+    {
+      "text": "<p>The eighth <code>title</code> element should have tooltip text of <code>14</code>.</p>",
+      "testString": "assert($('title').eq(7).text() == '14');"
+    },
+    {
+      "text": "<p>The ninth <code>title</code> element should have tooltip text of <code>9</code>.</p>",
+      "testString": "assert($('title').eq(8).text() == '9');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A tooltip shows more information about an item on a page when the user hovers over that item. There are several ways to add a tooltip to a visualization. This challenge uses the SVG <code>title</code> element.</p>\n<p><code>title</code> pairs with the <code>text()</code> method to dynamically add data to the bars.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Append a <code>title</code> element under each <code>rect</code> node. Then call the <code>text()</code> method with a callback function so the text displays the data value.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-visualization-with-d3",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 19,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

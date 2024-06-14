@@ -1,0 +1,65 @@
+{
+  "id": "5900f43f1000cf542c50ff51",
+  "title": "Problem 208: Robot Walks",
+  "challengeType": 1,
+  "forumTopicId": 301849,
+  "dashedName": "problem-208-robot-walks",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function robotWalks() {\n\n  return true;\n}\n\nrobotWalks();",
+      "error": null,
+      "seed": "function robotWalks() {\n\n  return true;\n}\n\nrobotWalks();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>robotWalks()</code> should return <code>331951449665644800</code>.</p>",
+      "testString": "assert.strictEqual(robotWalks(), 331951449665644800);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A robot moves in a series of one-fifth circular arcs (72°), with a free choice of a clockwise or an anticlockwise arc for each step, but no turning on the spot.</p>\n<p>One of 70932 possible closed paths of 25 arcs starting northward is</p>\n<img class=\"img-responsive center-block\" alt=\"closed path of 25 arcs, starting northward\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/robot-walks.gif\" style=\"background-color: white; padding: 10px;\">\n<p>Given that the robot starts facing North, how many journeys of 70 arcs in length can it take that return it, after the final arc, to its starting position?</p>\n<p><strong>Note:</strong> Any arc may be traversed multiple times.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

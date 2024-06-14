@@ -1,0 +1,87 @@
+{
+  "id": "65dab20c41a21a817084ecdb",
+  "title": "Task 100",
+  "challengeType": 22,
+  "dashedName": "task-100",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It sounds like you're _ _ _ _ work and life responsibilities at the same time.</p>",
+    "blanks": [
+      {
+        "answer": "doing",
+        "feedback": "<p>This word is used to describe how someone is performing or managing in a situation.</p>"
+      },
+      {
+        "answer": "great",
+        "feedback": "<p>This adjective is used to express that the performance is very good.</p>"
+      },
+      {
+        "answer": "dealing",
+        "feedback": "<p>This word means managing or handling, especially when talking about problems or tasks. Remember to add <code>ing</code> after the verb.</p>"
+      },
+      {
+        "answer": "with",
+        "feedback": "<p>This preposition is used to indicate what someone is managing or handling.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.38,
+        "finishTimestamp": 27.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.6,
+        "dialogue": {
+          "text": "It sounds like you're doing great dealing with work and life responsibilities at the same time.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 6.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>you're doing great</code> is a way to tell someone they are performing very well or successfully managing a situation. It's a form of encouragement or praise. For example, <code>After seeing how well you organized the event, I must say, you're doing great!</code></p>\n<p>After it, you can use phrases starting with <code>verb-ing</code> that describe what the person is doing well at. For instance, <code>You're doing great keeping up with your studies.</code></p>\n<p><code>Deal with</code> means to manage or handle something, especially a problem or challenge. It involves taking action to address a situation or problem. For example, <code>She has to deal with a lot of emails every morning.</code></p>\n<p>The phrase <code>at the same time</code> indicates that two or more actions or events are happening together, not separately.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 104,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

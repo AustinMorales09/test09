@@ -1,0 +1,88 @@
+{
+  "id": "657ee9b69c2e26d964f67ee4",
+  "title": "Task 56",
+  "challengeType": 19,
+  "dashedName": "task-56",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Sarah communicating?</p>",
+    "answers": [
+      {
+        "answer": "<p>She dislikes conventions.</p>",
+        "feedback": "<p>It contradicts Sarah's statement expressing her love for conventions.</p>"
+      },
+      {
+        "answer": "<p>She attends conventions occasionally.</p>",
+        "feedback": "<p>It does not align with her statement about going to at least one convention every year.</p>"
+      },
+      {
+        "answer": "<p>She is a regular attendee and enjoys conventions.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She has never been to a convention.</p>",
+        "feedback": "<p>It contradicts her statement about attending at least one convention every year.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 30.46,
+        "finishTimestamp": 34.22
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 4.76,
+        "dialogue": {
+          "text": "I go to at least one convention every year. It's the best moment of the year for me.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5.26
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In the dialogue, Sarah expresses her enthusiasm for comic conventions.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 58,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

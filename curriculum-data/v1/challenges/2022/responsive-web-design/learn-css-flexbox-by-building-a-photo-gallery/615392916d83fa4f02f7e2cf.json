@@ -1,0 +1,65 @@
+{
+  "id": "615392916d83fa4f02f7e2cf",
+  "title": "Step 16",
+  "challengeType": 0,
+  "dashedName": "step-16",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n    <div class=\"gallery\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg\">\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n    <div class=\"gallery\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg\">\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        19,
+        24
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-family: sans-serif;\n  background: #f5f6f7;\n}\n\n.header {\n  text-align: center;\n  text-transform: uppercase;\n  padding: 32px;\n  background-color: #0a0a23;\n  color: #fff;\n  border-bottom: 4px solid #fdb347;\n}\n\n.gallery {\n  display: flex;\n  flex-direction: row;\n}\n\n.gallery img {\n  width: 100%;\n  max-width: 350px;\n  height: 300px;\n}",
+      "error": null,
+      "seed": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-family: sans-serif;\n  background: #f5f6f7;\n}\n\n.header {\n  text-align: center;\n  text-transform: uppercase;\n  padding: 32px;\n  background-color: #0a0a23;\n  color: #fff;\n  border-bottom: 4px solid #fdb347;\n}\n\n.gallery {\n  display: flex;\n  flex-direction: row;\n}\n\n.gallery img {\n  width: 100%;\n  max-width: 350px;\n  height: 300px;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>.gallery</code> selector should have a <code>flex-wrap</code> property set to <code>wrap</code> as the value.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.gallery')?.flexWrap === 'wrap');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>flex-wrap</code> property determines how your flex items behave when the flex container is too small. Setting it to <code>wrap</code> will allow the items to wrap to the next row or column. <code>nowrap</code> (default) will prevent your items from wrapping and shrink them if needed.</p>\n<p>Make it so your flex items wrap to the next row when they run out of space.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-flexbox-by-building-a-photo-gallery",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

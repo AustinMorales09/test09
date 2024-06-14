@@ -1,0 +1,84 @@
+{
+  "id": "657caec5163c6c85e5b31284",
+  "title": "Task 35",
+  "challengeType": 22,
+  "dashedName": "task-35",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>This is John, the database administrator. _ been here for three years.</p>",
+    "blanks": [
+      {
+        "answer": "He's",
+        "feedback": "<p>A contraction indicating the duration of time John has been at the company. The first letter should be capitalized.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Mark",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.18,
+        "finishTimestamp": 23.52
+      }
+    },
+    "commands": [
+      {
+        "character": "Mark",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.34,
+        "dialogue": {
+          "text": "This is John the database administrator.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "startTime": 3.34,
+        "finishTime": 5.34,
+        "dialogue": {
+          "text": "He's been here for three years.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Mark",
+        "opacity": 0,
+        "startTime": 5.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>He's</code> can be a short form for <code>he has</code> or <code>he is</code>. You can understand which one it is by looking at the context. When <code>he's</code> is followed by a verb in the past participle (like <code>been</code>, <code>done</code>, <code>seen</code>), it means <code>he has</code>. For example:</p>\n<p><code>He's been working</code> means <code>he has been working</code>.</p>\n<p>If <code>he's</code> is followed by an adjective or a present participle (like <code>tired</code>, <code>going</code>, <code>sleeping</code>), it means <code>he is</code>. For example:</p>\n<p><code>He's tired</code> means <code>he is tired</code>. Understanding this helps you know exactly what someone means when they say <code>he's</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

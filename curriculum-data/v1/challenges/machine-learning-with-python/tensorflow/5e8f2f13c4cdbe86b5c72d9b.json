@@ -1,0 +1,47 @@
+{
+  "id": "5e8f2f13c4cdbe86b5c72d9b",
+  "title": "Natural Language Processing With RNNs",
+  "challengeType": 11,
+  "videoId": "ZyCaF5S-lKg",
+  "bilibiliIds": {
+    "aid": 548105306,
+    "bvid": "BV1nq4y1K7VU",
+    "cid": 409134745
+  },
+  "dashedName": "natural-language-processing-with-rnns",
+  "solutions": [],
+  "question": {
+    "text": "<p>Natural Language Processing is a branch of artificial intelligence that...:</p>",
+    "answers": [
+      {
+        "answer": "<p>deals with how computers understand and process natural/human languages.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>translates image data into natural/human languages.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>is focused on translating computer languages into natural/human languages.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The next few video lessons will reference <a href=\"https://colab.research.google.com/drive/1ysEKrw_LE2jMndo1snrZUh5w87LQsCxk#forceEdit=true&#x26;sandboxMode=true\">this Colab notebook</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "tensorflow",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

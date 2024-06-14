@@ -1,0 +1,45 @@
+{
+  "id": "657e761058c1e469fb387f68",
+  "title": "Task 127",
+  "challengeType": 19,
+  "dashedName": "task-127",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are <code>bugs</code> in software?</p>",
+    "answers": [
+      {
+        "answer": "<p>Features that users like.</p>",
+        "feedback": "<p><code>Bugs</code> are not features, but issues.</p>"
+      },
+      {
+        "answer": "<p>The software's security measures.</p>",
+        "feedback": "<p><code>Bugs</code> relate to errors, not security measures directly.</p>"
+      },
+      {
+        "answer": "<p>Parts of the software that are new.</p>",
+        "feedback": "<p><code>Bugs</code> are not new parts, but problems.</p>"
+      },
+      {
+        "answer": "<p>Errors or problems that need to be fixed.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In software testing, <code>bugs</code> refer to errors or problems in the software that need to be identified and fixed. Understanding this term is crucial for comprehending the role of a QA tester.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 131,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

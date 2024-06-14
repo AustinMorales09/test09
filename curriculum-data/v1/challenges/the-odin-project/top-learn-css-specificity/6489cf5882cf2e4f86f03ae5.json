@@ -1,0 +1,45 @@
+{
+  "id": "6489cf5882cf2e4f86f03ae5",
+  "title": "The Cascade of CSS Question D",
+  "challengeType": 15,
+  "dashedName": "the-cascade-of-css-question-d",
+  "solutions": [],
+  "question": {
+    "text": "<p>Based on the modified HTML and CSS code, which color would the <code>&#x3C;div class=\"list\" id=\"subsection\">&#x3C;/div></code> element be rendered as?</p>",
+    "answers": [
+      {
+        "answer": "<p>orange</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>red</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>blue</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>cyan</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Now, let’s change things a little bit:</p>\n<pre><code class=\"language-html\">&#x3C;!-- index.html -->\n\n&#x3C;div class=\"main\">\n  &#x3C;div class=\"list\" id=\"subsection\">&#x3C;/div>\n&#x3C;/div>\n</code></pre>\n<pre><code class=\"language-css\">/* rule 1 */\n#subsection {\n  color: blue;\n}\n\n/* rule 2 */\n.main .list {\n  color: red;\n}\n</code></pre>\n<p>In the example above, despite rule 2 having more class selectors than ID selectors, rule 1 is more specific because ID beats class.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-css-specificity",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

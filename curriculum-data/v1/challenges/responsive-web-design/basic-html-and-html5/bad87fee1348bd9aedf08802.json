@@ -1,0 +1,79 @@
+{
+  "id": "bad87fee1348bd9aedf08802",
+  "title": "Uncomment HTML",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pVMPUv/cBmG9T7",
+  "forumTopicId": 18329,
+  "dashedName": "uncomment-html",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!--\n<h1>Hello World</h1>\n\n<h2>CatPhotoApp</h2>\n\n<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n-->",
+      "error": null,
+      "seed": "<!--\n<h1>Hello World</h1>\n\n<h2>CatPhotoApp</h2>\n\n<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n-->"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<h1>Hello World</h1>\n\n<h2>CatPhotoApp</h2>\n\n<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+        "error": null,
+        "seed": "<h1>Hello World</h1>\n\n<h2>CatPhotoApp</h2>\n\n<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>h1</code> element should be visible on the page by uncommenting it.</p>",
+      "testString": "assert($('h1').length > 0);"
+    },
+    {
+      "text": "<p>Your <code>h2</code> element should be visible on the page by uncommenting it.</p>",
+      "testString": "assert($('h2').length > 0);"
+    },
+    {
+      "text": "<p>Your <code>p</code> element should be visible on the page by uncommenting it.</p>",
+      "testString": "assert($('p').length > 0);"
+    },
+    {
+      "text": "<p>No trailing comment tags should be visible on the page (i.e. <code>--></code>).</p>",
+      "testString": "assert(!$('*:contains(\"-->\")')[1]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Commenting is a way that you can leave comments for other developers within your code without affecting the resulting output that is displayed to the end user.</p>\n<p>Commenting is also a convenient way to make code inactive without having to delete it entirely.</p>\n<p>Comments in HTML start with <code>&#x3C;!--</code> and end with a <code>--></code></p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Uncomment your <code>h1</code>, <code>h2</code> and <code>p</code> elements.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-html-and-html5",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

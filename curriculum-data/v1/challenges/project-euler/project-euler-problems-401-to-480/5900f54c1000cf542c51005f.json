@@ -1,0 +1,69 @@
+{
+  "id": "5900f54c1000cf542c51005f",
+  "title": "Problem 480: The Last Question",
+  "challengeType": 1,
+  "forumTopicId": 302158,
+  "dashedName": "problem-480-the-last-question",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function euler480() {\n\n  return true;\n}\n\neuler480();",
+      "error": null,
+      "seed": "function euler480() {\n\n  return true;\n}\n\neuler480();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>euler480()</code> should return a string.</p>",
+      "testString": "assert(typeof euler480() === 'string');"
+    },
+    {
+      "text": "<p><code>euler480()</code> should return the string <code>turnthestarson</code>.</p>",
+      "testString": "assert.strictEqual(euler480(), 'turnthestarson');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Consider all the words which can be formed by selecting letters, in any order, from the phrase:</p>\n<p>$$\\mathbf{\\text{thereisasyetinsufficientdataforameaningfulanswer}}$$</p>\n<p>Suppose those with 15 letters or less are listed in alphabetical order and numbered sequentially starting at 1.</p>\n<p>The list would include:</p>\n<p>$$\\begin{align}\n&#x26; 1: \\text{a} \\\\\n&#x26; 2: \\text{aa} \\\\\n&#x26; 3: \\text{aaa} \\\\\n&#x26; 4: \\text{aaaa} \\\\\n&#x26; 5: \\text{aaaaa} \\\\\n&#x26; 6: \\text{aaaaaa} \\\\\n&#x26; 7: \\text{aaaaaac} \\\\\n&#x26; 8: \\text{aaaaaacd} \\\\\n&#x26; 9: \\text{aaaaaacde} \\\\\n&#x26; 10: \\text{aaaaaacdee} \\\\\n&#x26; 11: \\text{aaaaaacdeee} \\\\\n&#x26; 12: \\text{aaaaaacdeeee} \\\\\n&#x26; 13: \\text{aaaaaacdeeeee} \\\\\n&#x26; 14: \\text{aaaaaacdeeeeee} \\\\\n&#x26; 15: \\text{aaaaaacdeeeeeef} \\\\\n&#x26; 16: \\text{aaaaaacdeeeeeeg} \\\\\n&#x26; 17: \\text{aaaaaacdeeeeeeh} \\\\\n&#x26; \\ldots \\\\\n&#x26; 28: \\text{aaaaaacdeeeeeey} \\\\\n&#x26; 29: \\text{aaaaaacdeeeeef} \\\\\n&#x26; 30: \\text{aaaaaacdeeeeefe} \\\\\n&#x26; \\ldots \\\\\n&#x26; 115246685191495242: \\text{euleoywuttttsss} \\\\\n&#x26; 115246685191495243: \\text{euler} \\\\\n&#x26; 115246685191495244: \\text{eulera} \\\\\n&#x26; ... \\\\\n&#x26; 525069350231428029: \\text{ywuuttttssssrrr} \\\\\n\\end{align}$$</p>\n<p>Define $P(w)$ as the position of the word $w$.</p>\n<p>Define $W(p)$ as the word in position $p$.</p>\n<p>We can see that $P(w)$ and $W(p)$ are inverses: $P(W(p)) = p$ and $W(P(w)) = w$.</p>\n<p>Examples:</p>\n<p>$$\\begin{align}\n&#x26; W(10) = \\text{ aaaaaacdee} \\\\\n&#x26; P(\\text{aaaaaacdee}) = 10 \\\\\n&#x26; W(115246685191495243) = \\text{ euler} \\\\\n&#x26; P(\\text{euler}) = 115246685191495243 \\\\\n\\end{align}$$</p>\n<p>Find\n$$W(P(\\text{legionary}) + P(\\text{calorimeters}) - P(\\text{annihilate}) + P(\\text{orchestrated}) - P(\\text{fluttering})).$$</p>\n<p>Give your answer using lowercase characters (no punctuation or space).</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 79,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

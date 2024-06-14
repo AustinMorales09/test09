@@ -1,0 +1,90 @@
+{
+  "id": "5a23c84252665b21eecc8014",
+  "title": "Sort stability",
+  "challengeType": 1,
+  "forumTopicId": 302308,
+  "dashedName": "sort-stability",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function stableSort(arr) {\n\n}",
+      "error": null,
+      "seed": "function stableSort(arr) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function stableSort(arr) {\n  arr.sort(function(a, b) {\n    return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0;\n  });\n  return arr;\n}",
+        "error": null,
+        "seed": "function stableSort(arr) {\n  arr.sort(function(a, b) {\n    return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0;\n  });\n  return arr;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>stableSort</code> should be a function.</p>",
+      "testString": "assert(typeof stableSort == 'function');"
+    },
+    {
+      "text": "<p><code>stableSort([[\"UK\", \"London\"], [\"US\", \"New York\"], [\"US\", \"Birmingham\"], [\"UK\", \"Birmingham\"]])</code> should return an array.</p>",
+      "testString": "assert(\n  Array.isArray(\n    stableSort([\n      ['UK', 'London'],\n      ['US', 'New York'],\n      ['US', 'Birmingham'],\n      ['UK', 'Birmingham']\n    ])\n  )\n);"
+    },
+    {
+      "text": "<p><code>stableSort([[\"UK\", \"London\"], [\"US\", \"New York\"], [\"US\", \"Birmingham\"], [\"UK\", \"Birmingham\"]])</code> should return <code>[[\"US\", \"Birmingham\"], [\"UK\", \"Birmingham\"], [\"UK\", \"London\"], [\"US\", \"New York\"]]</code>.</p>",
+      "testString": "assert.deepEqual(\n  stableSort([\n    ['UK', 'London'],\n    ['US', 'New York'],\n    ['US', 'Birmingham'],\n    ['UK', 'Birmingham']\n  ]),\n  [\n    ['US', 'Birmingham'],\n    ['UK', 'Birmingham'],\n    ['UK', 'London'],\n    ['US', 'New York']\n  ]\n);"
+    },
+    {
+      "text": "<p><code>stableSort([[2, 2], [1, 2], [1, 4], [1, 5]])</code> should return <code>[[2, 2], [1, 2], [1, 4], [1, 5]]</code>.</p>",
+      "testString": "assert.deepEqual(\n  stableSort([\n    [2, 2],\n    [1, 2],\n    [1, 4],\n    [1, 5]\n  ]),\n  [\n    [2, 2],\n    [1, 2],\n    [1, 4],\n    [1, 5]\n  ]\n);"
+    },
+    {
+      "text": "<p><code>stableSort([[11, 55], [12, 45], [11, 45], [32, 45]])</code> should return <code>[[12, 45], [11, 45], [32, 45], [11, 55]]</code>.</p>",
+      "testString": "assert.deepEqual(\n  stableSort([\n    [11, 55],\n    [12, 45],\n    [11, 45],\n    [32, 45]\n  ]),\n  [\n    [12, 45],\n    [11, 45],\n    [32, 45],\n    [11, 55]\n  ]\n);"
+    },
+    {
+      "text": "<p><code>stableSort([[10, 22], [1, 2], [1, 4], [1, 5], [10, 9]])</code> should return <code>[[1, 2], [1, 4], [1, 5], [10, 9], [10, 22]]</code>.</p>",
+      "testString": "assert.deepEqual(\n  stableSort([\n    [10, 22],\n    [1, 2],\n    [1, 4],\n    [1, 5],\n    [10, 9]\n  ]),\n  [\n    [1, 2],\n    [1, 4],\n    [1, 5],\n    [10, 9],\n    [10, 22]\n  ]\n);"
+    },
+    {
+      "text": "<p><code>stableSort([[55, 54], [12, 22], [31, 43], [31, 54], [10, 49]])</code> should return <code>[[12, 22], [31, 43], [10, 49], [55, 54], [31, 54]]</code>.</p>",
+      "testString": "assert.deepEqual(\n  stableSort([\n    [55, 54],\n    [12, 22],\n    [31, 43],\n    [31, 54],\n    [10, 49]\n  ]),\n  [\n    [12, 22],\n    [31, 43],\n    [10, 49],\n    [55, 54],\n    [31, 54]\n  ]\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When sorting records in a table by a particular column or field, a <a href=\"https://www.freecodecamp.org/news/stability-in-sorting-algorithms-a-treatment-of-equality-fa3140a5a539/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">stable sort</a> will always retain the relative order of records that have the same key.</p>\n<p>For example, in this table of countries and cities, a stable sort on the <strong>second</strong> column, the cities, would keep the US Birmingham above the UK Birmingham. (Although an unstable sort <em>might</em>, in this case, place the US Birmingham above the UK Birmingham, a stable sort routine would <em>guarantee</em> it).</p>\n<pre>UK  London\nUS  New York\nUS  Birmingham\nUK  Birmingham\n</pre>\n<p>Similarly, stable sorting on just the first column would generate \"UK London\" as the first item and \"US Birmingham\" as the last item (since the order of the elements having the same first word – \"UK\" or \"US\" – would be maintained).</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that takes a 2D array as a parameter. Each element has 2 elements similar to the above example. The function should sort the array as mentioned previously and return the sorted array.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 118,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

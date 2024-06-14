@@ -1,0 +1,74 @@
+{
+  "id": "587d7b88367417b2b2512b46",
+  "title": "Set Default Parameters for Your Functions",
+  "challengeType": 1,
+  "forumTopicId": 301209,
+  "dashedName": "set-default-parameters-for-your-functions",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Only change code below this line\nconst increment = (number, value) => number + value;\n// Only change code above this line",
+      "error": null,
+      "seed": "// Only change code below this line\nconst increment = (number, value) => number + value;\n// Only change code above this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const increment = (number, value = 1) => number + value;",
+        "error": null,
+        "seed": "const increment = (number, value = 1) => number + value;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The result of <code>increment(5, 2)</code> should be <code>7</code>.</p>",
+      "testString": "assert(increment(5, 2) === 7);"
+    },
+    {
+      "text": "<p>The result of <code>increment(5)</code> should be <code>6</code>.</p>",
+      "testString": "assert(increment(5) === 6);"
+    },
+    {
+      "text": "<p>A default parameter value of <code>1</code> should be used for <code>value</code>.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/value\\s*=\\s*1/g));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In order to help us create more flexible functions, ES6 introduces <dfn>default parameters</dfn> for functions.</p>\n<p>Check out this code:</p>\n<pre><code class=\"language-js\">const greeting = (name = \"Anonymous\") => \"Hello \" + name;\n\nconsole.log(greeting(\"John\"));\nconsole.log(greeting());\n</code></pre>\n<p>The console will display the strings <code>Hello John</code> and <code>Hello Anonymous</code>.</p>\n<p>The default parameter kicks in when the argument is not specified (it is undefined). As you can see in the example above, the parameter <code>name</code> will receive its default value <code>Anonymous</code> when you do not provide a value for the parameter. You can add default values for as many parameters as you want.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Modify the function <code>increment</code> by adding default parameters so that it will add 1 to <code>number</code> if <code>value</code> is not specified.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,90 @@
+{
+  "id": "5a24c314108439a4d4036177",
+  "title": "Write a Simple Counter",
+  "challengeType": 6,
+  "forumTopicId": 301425,
+  "dashedName": "write-a-simple-counter",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<Counter />, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class Counter extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      count: 0\n    };\n    // Change code below this line\n\n    // Change code above this line\n  }\n  // Change code below this line\n\n  // Change code above this line\n  render() {\n    return (\n      <div>\n        <button className='inc' onClick={this.increment}>Increment!</button>\n        <button className='dec' onClick={this.decrement}>Decrement!</button>\n        <button className='reset' onClick={this.reset}>Reset</button>\n        <h1>Current Count: {this.state.count}</h1>\n      </div>\n    );\n  }\n};",
+      "error": null,
+      "seed": "class Counter extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      count: 0\n    };\n    // Change code below this line\n\n    // Change code above this line\n  }\n  // Change code below this line\n\n  // Change code above this line\n  render() {\n    return (\n      <div>\n        <button className='inc' onClick={this.increment}>Increment!</button>\n        <button className='dec' onClick={this.decrement}>Decrement!</button>\n        <button className='reset' onClick={this.reset}>Reset</button>\n        <h1>Current Count: {this.state.count}</h1>\n      </div>\n    );\n  }\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "class Counter extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      count: 0\n    };\n  this.increment = this.increment.bind(this);\n this.decrement = this.decrement.bind(this);\n this.reset = this.reset.bind(this);\n }\n  reset() {\n    this.setState({\n      count: 0\n    });\n  }\n  increment() {\n    this.setState(state => ({\n      count: state.count + 1\n    }));\n  }\n  decrement() {\n    this.setState(state => ({\n      count: state.count - 1\n    }));\n  }\n  render() {\n    return (\n      <div>\n        <button className='inc' onClick={this.increment}>Increment!</button>\n        <button className='dec' onClick={this.decrement}>Decrement!</button>\n        <button className='reset' onClick={this.reset}>Reset</button>\n        <h1>Current Count: {this.state.count}</h1>\n      </div>\n    );\n  }\n};",
+        "error": null,
+        "seed": "class Counter extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      count: 0\n    };\n  this.increment = this.increment.bind(this);\n this.decrement = this.decrement.bind(this);\n this.reset = this.reset.bind(this);\n }\n  reset() {\n    this.setState({\n      count: 0\n    });\n  }\n  increment() {\n    this.setState(state => ({\n      count: state.count + 1\n    }));\n  }\n  decrement() {\n    this.setState(state => ({\n      count: state.count - 1\n    }));\n  }\n  render() {\n    return (\n      <div>\n        <button className='inc' onClick={this.increment}>Increment!</button>\n        <button className='dec' onClick={this.decrement}>Decrement!</button>\n        <button className='reset' onClick={this.reset}>Reset</button>\n        <h1>Current Count: {this.state.count}</h1>\n      </div>\n    );\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>Counter</code> should return a <code>div</code> element which contains three buttons with text content in this order <code>Increment!</code>, <code>Decrement!</code>, <code>Reset</code>.</p>",
+      "testString": "assert(\n  (() => {\n    const mockedComponent = Enzyme.mount(React.createElement(Counter));\n    return (\n      mockedComponent.find('.inc').text() === 'Increment!' &&\n      mockedComponent.find('.dec').text() === 'Decrement!' &&\n      mockedComponent.find('.reset').text() === 'Reset'\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p>The state of <code>Counter</code> should initialize with a <code>count</code> property set to <code>0</code>.</p>",
+      "testString": "const mockedComponent = Enzyme.mount(React.createElement(Counter));\nassert(mockedComponent.find('h1').text() === 'Current Count: 0');"
+    },
+    {
+      "text": "<p>Clicking the increment button should increment the count by <code>1</code>.</p>",
+      "testString": "const mockedComponent = Enzyme.mount(React.createElement(Counter));\nmockedComponent.find('.inc').simulate('click');\nassert(mockedComponent.find('h1').text() === 'Current Count: 1');"
+    },
+    {
+      "text": "<p>Clicking the decrement button should decrement the count by <code>1</code>.</p>",
+      "testString": "const mockedComponent = Enzyme.mount(React.createElement(Counter));\nmockedComponent.find('.dec').simulate('click');\nassert(mockedComponent.find('h1').text() === 'Current Count: -1');"
+    },
+    {
+      "text": "<p>Clicking the reset button should reset the count to <code>0</code>.</p>",
+      "testString": "const mockedComponent = Enzyme.mount(React.createElement(Counter));\nmockedComponent.setState({ count: 5 });\nconst currentCountElement = mockedComponent.find('h1');\nassert(currentCountElement.text() === 'Current Count: 5');\nmockedComponent.find('.reset').simulate('click');\nassert(currentCountElement.text() === 'Current Count: 0');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can design a more complex stateful component by combining the concepts covered so far. These include initializing <code>state</code>, writing methods that set <code>state</code>, and assigning click handlers to trigger these methods.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The <code>Counter</code> component keeps track of a <code>count</code> value in <code>state</code>. There are two buttons which call methods <code>increment()</code> and <code>decrement()</code>. Write these methods so the counter value is incremented or decremented by 1 when the appropriate button is clicked. Also, create a <code>reset()</code> method so when the reset button is clicked, the count is set to 0.</p>\n<p><strong>Note:</strong> Make sure you don't modify the <code>className</code>s of the buttons. Also, remember to add the necessary bindings for the newly-created methods in the constructor.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 26,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

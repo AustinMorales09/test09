@@ -1,0 +1,53 @@
+{
+  "id": "6554d25dc5ceaa354307a77e",
+  "title": "Step 68",
+  "challengeType": 20,
+  "dashedName": "step-68",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        29
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:        \n            # Find the right key character to encode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    \n    return encrypted_text\n    \nencryption = vigenere(text, custom_key)\nprint(encryption)",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:        \n            # Find the right key character to encode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    \n    return encrypted_text\n    \nencryption = vigenere(text, custom_key)\nprint(encryption)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should turn the last two lines in your code into comments. Put a <code>#</code> at the beginning of each line.</p>",
+      "testString": "({ test: () => assert.match(code, /#\\s*encryption\\s*=\\s*vigenere\\s*\\(\\s*text\\s*,\\s*custom_key\\s*\\)\\s*#\\s*print\\s*\\(\\s*encryption\\s*\\)/) })"
+    },
+    {
+      "text": "<p>You should add <code>direction</code> as the third parameter of your function.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import inspect    \n    sig = str(inspect.signature(vigenere))\n    sig == '(message, key, direction)'\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Encryption and decryption are opposite processes and your function can do both with a couple of tweaks.</p>\n<p>Add a third parameter called <code>direction</code> to your function definition. Also, comment out the last two lines of code to avoid errors in the console.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 67,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

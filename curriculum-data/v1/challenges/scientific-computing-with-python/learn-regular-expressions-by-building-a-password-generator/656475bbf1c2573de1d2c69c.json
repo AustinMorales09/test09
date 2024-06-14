@@ -1,0 +1,53 @@
+{
+  "id": "656475bbf1c2573de1d2c69c",
+  "title": "Step 11",
+  "challengeType": 20,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        15
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import random\nimport string\n\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n\n# Combine all characters\nall_characters = letters + digits + symbols\n\nprint(all_characters)\nprint(random.choice(all_characters))",
+      "error": null,
+      "seed": "import random\nimport string\n\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n\n# Combine all characters\nall_characters = letters + digits + symbols\n\nprint(all_characters)\nprint(random.choice(all_characters))"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should import the <code>secrets</code> module instead of the <code>random</code> module.</p>",
+      "testString": "({\n  test: () => {\n    assert.match(code, /^import\\s+secrets/m)\n    assert.isFalse( /^import\\s+random/m.test(code))\n  }\n})"
+    },
+    {
+      "text": "<p>You should modify your existing <code>print()</code> call to print <code>secrets.choice(all_characters)</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /^print\\s*\\(\\s*secrets\\.choice\\s*\\(\\s*all_characters\\s*\\)\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Every time the code runs, you should see a random character from the <code>all_characters</code> string. This is exactly what you want to achieve to create a random password.</p>\n<p>However, the algorithm on which <code>random</code> relies makes the generated pseudo-random numbers predictable. Therefore, although the <code>random</code> module is suitable for the most common applications, it cannot be used for cryptographic purposes, due to its deterministic nature.</p>\n<p>Instead of importing <code>random</code>, import the <code>secrets</code> module. Then change the <code>print()</code> call to use <code>secrets.choice(all_characters)</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "660a7f28d5ce6a24ef856a50",
+  "title": "Step 58",
+  "challengeType": 20,
+  "dashedName": "step-58",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        34,
+        41
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    def __init__(self, board):\n        self.board = board\n\n    def find_empty_cell(self):\n        for row, contents in enumerate(self.board):\n            try:\n                col = contents.index(0)\n                return row, col\n            except ValueError:\n                pass\n        return None\n\n    def valid_in_row(self, row, num):\n        return num not in self.board[row]\n\n    def valid_in_col(self, col, num):\n        return all(self.board[row][col] != num for row in range(9))\n\n    def valid_in_square(self, row, col, num):\n        row_start = (row // 3) * 3\n        col_start = (col // 3) * 3\n        for row_no in range(row_start, row_start + 3):\n            for col_no in range(col_start, col_start + 3):\n                if self.board[row_no][col_no] == num:\n                    return False\n        return True\n\n    def is_valid(self, empty, num):\n        row, col = empty\n        valid_in_row = self.valid_in_row(row, num)\n        valid_in_col = self.valid_in_col(col, num)\n        valid_in_square = self.valid_in_square(row, col, num)\n        return all([valid_in_row, valid_in_col, valid_in_square])\n    def solver(self):\n        if (next_empty := self.find_empty_cell()) is None:\n            return True\n        for guess in range(1, 10):\n            if self.is_valid(next_empty, guess):\n                row, col = next_empty\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)",
+      "error": null,
+      "seed": "class Board:\n    def __init__(self, board):\n        self.board = board\n\n    def find_empty_cell(self):\n        for row, contents in enumerate(self.board):\n            try:\n                col = contents.index(0)\n                return row, col\n            except ValueError:\n                pass\n        return None\n\n    def valid_in_row(self, row, num):\n        return num not in self.board[row]\n\n    def valid_in_col(self, col, num):\n        return all(self.board[row][col] != num for row in range(9))\n\n    def valid_in_square(self, row, col, num):\n        row_start = (row // 3) * 3\n        col_start = (col // 3) * 3\n        for row_no in range(row_start, row_start + 3):\n            for col_no in range(col_start, col_start + 3):\n                if self.board[row_no][col_no] == num:\n                    return False\n        return True\n\n    def is_valid(self, empty, num):\n        row, col = empty\n        valid_in_row = self.valid_in_row(row, num)\n        valid_in_col = self.valid_in_col(col, num)\n        valid_in_square = self.valid_in_square(row, col, num)\n        return all([valid_in_row, valid_in_col, valid_in_square])\n    def solver(self):\n        if (next_empty := self.find_empty_cell()) is None:\n            return True\n        for guess in range(1, 10):\n            if self.is_valid(next_empty, guess):\n                row, col = next_empty\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should assign <code>guess</code> to <code>self.board[row][col]</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"Board\").find_function(\"solver\").find_for_loops()[0].find_ifs()[0].find_bodies()[0].is_equivalent(\"row, col = next_empty\\\\nself.board[row][col] = guess\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now, modify the board in place by accessing the cell at the given row and column and assigning it the value of <code>guess</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 57,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

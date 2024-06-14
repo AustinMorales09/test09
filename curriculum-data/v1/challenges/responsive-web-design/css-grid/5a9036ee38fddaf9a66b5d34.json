@@ -1,0 +1,67 @@
+{
+  "id": "5a9036ee38fddaf9a66b5d34",
+  "title": "Use CSS Grid units to Change the Size of Columns and Rows",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pByETK/cvE8phd",
+  "forumTopicId": 301134,
+  "dashedName": "use-css-grid-units-to-change-the-size-of-columns-and-rows",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .d1{background:LightSkyBlue;}\n  .d2{background:LightSalmon;}\n  .d3{background:PaleTurquoise;}\n  .d4{background:LightPink;}\n  .d5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    /* Only change code below this line */\n\n    grid-template-columns: auto 50px 10% 2fr 1fr;\n\n    /* Only change code above this line */\n    grid-template-rows: 50px 50px;\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"d1\">1</div>\n  <div class=\"d2\">2</div>\n  <div class=\"d3\">3</div>\n  <div class=\"d4\">4</div>\n  <div class=\"d5\">5</div>\n</div>",
+      "error": null,
+      "seed": "<style>\n  .d1{background:LightSkyBlue;}\n  .d2{background:LightSalmon;}\n  .d3{background:PaleTurquoise;}\n  .d4{background:LightPink;}\n  .d5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    /* Only change code below this line */\n\n    grid-template-columns: auto 50px 10% 2fr 1fr;\n\n    /* Only change code above this line */\n    grid-template-rows: 50px 50px;\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"d1\">1</div>\n  <div class=\"d2\">2</div>\n  <div class=\"d3\">3</div>\n  <div class=\"d4\">4</div>\n  <div class=\"d5\">5</div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>.container {grid-template-columns: 1fr 100px 2fr;}</style>",
+        "error": null,
+        "seed": "<style>.container {grid-template-columns: 1fr 100px 2fr;}</style>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>container</code> class should have a <code>grid-template-columns</code> property that has three columns with the following widths: <code>1fr</code>, <code>100px</code>, and <code>2fr</code>.</p>",
+      "testString": "assert(\n  code.match(\n    /.container\\s*?{[\\s\\S]*grid-template-columns\\s*?:\\s*?1fr\\s*?100px\\s*?2fr\\s*?;[\\s\\S]*}/gi\n  )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can use absolute and relative units like <code>px</code> and <code>em</code> in CSS Grid to define the size of rows and columns. You can use these as well:</p>\n<p><code>fr</code>: sets the column or row to a fraction of the available space,</p>\n<p><code>auto</code>: sets the column or row to the width or height of its content automatically,</p>\n<p><code>%</code>: adjusts the column or row to the percent width of its container.</p>\n<p>Here's the code that generates the output in the preview:</p>\n<pre><code class=\"language-css\">grid-template-columns: auto 50px 10% 2fr 1fr;\n</code></pre>\n<p>This snippet creates five columns. The first column is as wide as its content, the second column is 50px, the third column is 10% of its container, and for the last two columns; the remaining space is divided into three sections, two are allocated for the fourth column, and one for the fifth.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Make a grid with three columns whose widths are as follows: 1fr, 100px, and 2fr.</p>\n</section>",
+  "translationPending": false,
+  "block": "css-grid",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

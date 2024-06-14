@@ -1,0 +1,81 @@
+{
+  "id": "5900f3c81000cf542c50fedb",
+  "title": "Problem 92: Square digit chains",
+  "challengeType": 1,
+  "forumTopicId": 302209,
+  "dashedName": "problem-92-square-digit-chains",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function squareDigitChains(limit) {\n\n  return true;\n}\n\nsquareDigitChains(100);",
+      "error": null,
+      "seed": "function squareDigitChains(limit) {\n\n  return true;\n}\n\nsquareDigitChains(100);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function squareDigitChains(limit) {\n  // Based on https://www.xarg.org/puzzle/project-euler/problem-92/\n  function getCombinations(neededDigits, curDigits) {\n    if (neededDigits === curDigits.length) {\n      return [curDigits];\n    }\n    const combinations = [];\n    const lastDigit = curDigits.length !== 0 ? curDigits[0] : 9;\n    for (let i = 0; i <= lastDigit; i++) {\n      const results = getCombinations(neededDigits, [i].concat(curDigits));\n      combinations.push(...results);\n    }\n    return combinations;\n  }\n\n  function getPossibleSums(limit) {\n    const digitsCount = getDigits(limit).length - 1;\n    const possibleSquaredSums = [false];\n    for (let i = 1; i <= 81 * digitsCount; i++) {\n      let curVal = i;\n      while (curVal !== 1 && curVal !== 89) {\n        curVal = addSquaredDigits(curVal);\n      }\n      possibleSquaredSums[i] = curVal === 89;\n    }\n    return possibleSquaredSums;\n  }\n\n  function addSquaredDigits(num) {\n    const digits = getDigits(num);\n    let result = 0;\n    for (let i = 0; i < digits.length; i++) {\n      result += digits[i] ** 2;\n    }\n    return result;\n  }\n\n  function getDigits(number) {\n    const digits = [];\n    while (number > 0) {\n      digits.push(number % 10);\n      number = Math.floor(number / 10);\n    }\n    return digits;\n  }\n\n  function getFactorials(number) {\n    const factorials = [1];\n    for (let i = 1; i < number; i++) {\n      factorials[i] = factorials[i - 1] * i;\n    }\n    return factorials;\n  }\n\n  const neededDigits = getDigits(limit).length - 1;\n  const combinations = getCombinations(neededDigits, []);\n  const possibleSquaredDigitsSums = getPossibleSums(limit);\n  const factorials = getFactorials(neededDigits + 1);\n\n  let endingWith89 = 0;\n\n  for (let i = 0; i < combinations.length; i++) {\n    let counts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];\n    let digits = combinations[i];\n    let curSum = 0;\n    for (let j = 0; j < digits.length; j++) {\n      const curDigit = digits[j];\n      curSum += curDigit ** 2;\n      counts[curDigit]++;\n    }\n\n    if (possibleSquaredDigitsSums[curSum]) {\n      let denominator = 1;\n      for (let j = 0; j < counts.length; j++) {\n        denominator = denominator * factorials[counts[j]];\n      }\n      endingWith89 += Math.floor(\n        factorials[factorials.length - 1] / denominator\n      );\n    }\n  }\n  return endingWith89;\n}",
+        "error": null,
+        "seed": "function squareDigitChains(limit) {\n  // Based on https://www.xarg.org/puzzle/project-euler/problem-92/\n  function getCombinations(neededDigits, curDigits) {\n    if (neededDigits === curDigits.length) {\n      return [curDigits];\n    }\n    const combinations = [];\n    const lastDigit = curDigits.length !== 0 ? curDigits[0] : 9;\n    for (let i = 0; i <= lastDigit; i++) {\n      const results = getCombinations(neededDigits, [i].concat(curDigits));\n      combinations.push(...results);\n    }\n    return combinations;\n  }\n\n  function getPossibleSums(limit) {\n    const digitsCount = getDigits(limit).length - 1;\n    const possibleSquaredSums = [false];\n    for (let i = 1; i <= 81 * digitsCount; i++) {\n      let curVal = i;\n      while (curVal !== 1 && curVal !== 89) {\n        curVal = addSquaredDigits(curVal);\n      }\n      possibleSquaredSums[i] = curVal === 89;\n    }\n    return possibleSquaredSums;\n  }\n\n  function addSquaredDigits(num) {\n    const digits = getDigits(num);\n    let result = 0;\n    for (let i = 0; i < digits.length; i++) {\n      result += digits[i] ** 2;\n    }\n    return result;\n  }\n\n  function getDigits(number) {\n    const digits = [];\n    while (number > 0) {\n      digits.push(number % 10);\n      number = Math.floor(number / 10);\n    }\n    return digits;\n  }\n\n  function getFactorials(number) {\n    const factorials = [1];\n    for (let i = 1; i < number; i++) {\n      factorials[i] = factorials[i - 1] * i;\n    }\n    return factorials;\n  }\n\n  const neededDigits = getDigits(limit).length - 1;\n  const combinations = getCombinations(neededDigits, []);\n  const possibleSquaredDigitsSums = getPossibleSums(limit);\n  const factorials = getFactorials(neededDigits + 1);\n\n  let endingWith89 = 0;\n\n  for (let i = 0; i < combinations.length; i++) {\n    let counts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];\n    let digits = combinations[i];\n    let curSum = 0;\n    for (let j = 0; j < digits.length; j++) {\n      const curDigit = digits[j];\n      curSum += curDigit ** 2;\n      counts[curDigit]++;\n    }\n\n    if (possibleSquaredDigitsSums[curSum]) {\n      let denominator = 1;\n      for (let j = 0; j < counts.length; j++) {\n        denominator = denominator * factorials[counts[j]];\n      }\n      endingWith89 += Math.floor(\n        factorials[factorials.length - 1] / denominator\n      );\n    }\n  }\n  return endingWith89;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>squareDigitChains(100)</code> should return a number.</p>",
+      "testString": "assert(typeof squareDigitChains(100) === 'number');"
+    },
+    {
+      "text": "<p><code>squareDigitChains(100)</code> should return <code>80</code>.</p>",
+      "testString": "assert.strictEqual(squareDigitChains(100), 80);"
+    },
+    {
+      "text": "<p><code>squareDigitChains(1000)</code> should return <code>857</code>.</p>",
+      "testString": "assert.strictEqual(squareDigitChains(1000), 857);"
+    },
+    {
+      "text": "<p><code>squareDigitChains(100000)</code> should return <code>85623</code>.</p>",
+      "testString": "assert.strictEqual(squareDigitChains(100000), 85623);"
+    },
+    {
+      "text": "<p><code>squareDigitChains(10000000)</code> should return <code>8581146</code>.</p>",
+      "testString": "assert.strictEqual(squareDigitChains(10000000), 8581146);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A number chain is created by continuously adding the square of the digits in a number to form a new number until it has been seen before.</p>\n<p>For example,</p>\n<p>$$\\begin{align}\n&#x26; 44 → 32 → 13 → 10 → \\boldsymbol{1} → \\boldsymbol{1}\\\\\n&#x26; 85 → \\boldsymbol{89} → 145 → 42 → 20 → 4 → 16 → 37 → 58 → \\boldsymbol{89}\\\\\n\\end{align}$$</p>\n<p>Therefore any chain that arrives at 1 or 89 will become stuck in an endless loop. What is most amazing is that EVERY starting number will eventually arrive at 1 or 89.</p>\n<p>How many starting numbers below <code>limit</code> will arrive at 89?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 91,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

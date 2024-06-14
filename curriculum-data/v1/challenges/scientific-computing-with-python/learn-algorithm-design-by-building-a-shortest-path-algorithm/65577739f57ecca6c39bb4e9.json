@@ -1,0 +1,53 @@
+{
+  "id": "65577739f57ecca6c39bb4e9",
+  "title": "Step 33",
+  "challengeType": 20,
+  "dashedName": "step-33",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        15
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\n\ndef shortest_path(graph, start):\n    unvisited = []\n    distances = {}\n    \n    print(f'Unvisited: {unvisited}\\nDistances: {distances}')\n    \nshortest_path(my_graph, 'A')",
+      "error": null,
+      "seed": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\n\ndef shortest_path(graph, start):\n    unvisited = []\n    distances = {}\n    \n    print(f'Unvisited: {unvisited}\\nDistances: {distances}')\n    \nshortest_path(my_graph, 'A')"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>list()</code> to generate a list from the <code>graph</code> dictionary.</p>",
+      "testString": "({ test: () =>  {\n    const shortest = __helpers.python.getDef(code, \"shortest_path\");\n    const {function_body} = shortest;    \n    assert(function_body.match(/list\\s*\\(\\s*graph\\s*\\)/));\n  }\n})"
+    },
+    {
+      "text": "<p>You should assign <code>list(graph)</code> to <code>unvisited</code>.</p>",
+      "testString": "({ test: () =>  {\n    const shortest = __helpers.python.getDef(code, \"shortest_path\");\n    const {function_body} = shortest;    \n    assert(function_body.match(/unvisited\\s*=\\s*list\\s*\\(\\s*graph\\s*\\)/));\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>list()</code> type constructor enables you to build a list from an iterable.</p>\n<p>Modify the assignment of your <code>unvisited</code> variable to use <code>list()</code>, and pass <code>graph</code> as the iterable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 32,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

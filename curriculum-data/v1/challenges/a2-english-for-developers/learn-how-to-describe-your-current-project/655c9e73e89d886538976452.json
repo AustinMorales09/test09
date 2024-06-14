@@ -1,0 +1,96 @@
+{
+  "id": "655c9e73e89d886538976452",
+  "title": "Task 26",
+  "challengeType": 22,
+  "dashedName": "task-26",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That's good to hear. I'm _ the team that's _ a new part for the client's platform. We're _ to work on it and _ to the client to make sure they like it.</p>",
+    "blanks": [
+      {
+        "answer": "managing",
+        "feedback": "<p>Being in charge of the team.</p>"
+      },
+      {
+        "answer": "making",
+        "feedback": "<p>Creating something new.</p>"
+      },
+      {
+        "answer": "trying",
+        "feedback": "<p>Attempting to do something.</p>"
+      },
+      {
+        "answer": "talk",
+        "feedback": "<p>Speak with someone.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 16.3,
+        "finishTimestamp": 24.38
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 5.68,
+        "dialogue": {
+          "text": "That's good to hear. I'm managing the team that's making a new part for the clients platform.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "startTime": 5.7,
+        "finishTime": 9.08,
+        "dialogue": {
+          "text": "We're trying to work on it and talk to the client to make sure they like it.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 9.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Let's practice!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

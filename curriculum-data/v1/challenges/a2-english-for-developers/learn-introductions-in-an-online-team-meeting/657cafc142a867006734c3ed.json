@@ -1,0 +1,97 @@
+{
+  "id": "657cafc142a867006734c3ed",
+  "title": "Task 36",
+  "challengeType": 19,
+  "dashedName": "task-36",
+  "solutions": [],
+  "question": {
+    "text": "<p>How long has John been working as a database administrator at the company?</p>",
+    "answers": [
+      {
+        "answer": "<p>One year</p>",
+        "feedback": "<p>Listen carefully to the duration mentioned in the audio.</p>"
+      },
+      {
+        "answer": "<p>Two years</p>",
+        "feedback": "<p>The duration mentioned is longer than two years.</p>"
+      },
+      {
+        "answer": "<p>Five years</p>",
+        "feedback": "<p>The duration mentioned is not as long as five years.</p>"
+      },
+      {
+        "answer": "<p>Three years</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Mark",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.18,
+        "finishTimestamp": 23.52
+      }
+    },
+    "commands": [
+      {
+        "character": "Mark",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.34,
+        "dialogue": {
+          "text": "This is John the database administrator.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "startTime": 3.34,
+        "finishTime": 5.34,
+        "dialogue": {
+          "text": "He's been here for three years.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Mark",
+        "opacity": 0,
+        "startTime": 5.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 37,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

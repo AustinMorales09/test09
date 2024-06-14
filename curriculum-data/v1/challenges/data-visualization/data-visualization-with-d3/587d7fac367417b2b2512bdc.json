@@ -1,0 +1,74 @@
+{
+  "id": "587d7fac367417b2b2512bdc",
+  "title": "Use the d3.max and d3.min Functions to Find Minimum and Maximum Values in a Dataset",
+  "challengeType": 6,
+  "forumTopicId": 301496,
+  "dashedName": "use-the-d3-max-and-d3-min-functions-to-find-minimum-and-maximum-values-in-a-dataset",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<body>\n  <script>\n    const positionData = [[1, 7, -4],[6, 3, 8],[2, 9, 3]]\n    // Add your code below this line\n\n    const output = undefined; // Change this line\n\n    // Add your code above this line\n\n    d3.select(\"body\")\n      .append(\"h2\")\n      .text(output)\n  </script>\n</body>",
+      "error": null,
+      "seed": "<body>\n  <script>\n    const positionData = [[1, 7, -4],[6, 3, 8],[2, 9, 3]]\n    // Add your code below this line\n\n    const output = undefined; // Change this line\n\n    // Add your code above this line\n\n    d3.select(\"body\")\n      .append(\"h2\")\n      .text(output)\n  </script>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<body>\n  <script>\n    const positionData = [[1, 7, -4],[6, 3, 8],[2, 9, 3]]\n\n    const output = d3.max(positionData, (d) => d[2])\n\n    d3.select(\"body\")\n      .append(\"h2\")\n      .text(output)\n  </script>\n</body>",
+        "error": null,
+        "seed": "<body>\n  <script>\n    const positionData = [[1, 7, -4],[6, 3, 8],[2, 9, 3]]\n\n    const output = d3.max(positionData, (d) => d[2])\n\n    d3.select(\"body\")\n      .append(\"h2\")\n      .text(output)\n  </script>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The text in the <code>h2</code> should be <code>8</code>.</p>",
+      "testString": "assert(output == 8 && $('h2').text() == '8');"
+    },
+    {
+      "text": "<p>Your code should use the <code>max()</code> method.</p>",
+      "testString": "assert(\n  code.match(/\\.max/g),\n  'Your code should use the <code>max()</code> method.'\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The D3 methods <code>domain()</code> and <code>range()</code> set that information for your scale based on the data. There are a couple methods to make that easier.</p>\n<p>Often when you set the domain, you'll want to use the minimum and maximum values within the data set. Trying to find these values manually, especially in a large data set, may cause errors.</p>\n<p>D3 has two methods - <code>min()</code> and <code>max()</code> to return this information. Here's an example:</p>\n<pre><code class=\"language-js\">const exampleData = [34, 234, 73, 90, 6, 52];\nd3.min(exampleData)\nd3.max(exampleData)\n</code></pre>\n<p>A dataset may have nested arrays, like the <code>[x, y]</code> coordinate pairs that were in the scatter plot example. In that case, you need to tell D3 how to calculate the maximum and minimum. Fortunately, both the <code>min()</code> and <code>max()</code> methods take a callback function. In this example, the callback function's argument <code>d</code> is for the current inner array. The callback needs to return the element from the inner array (the <code>x</code> or <code>y</code> value) over which you want to compute the maximum or minimum. Here's an example for how to find the min and max values with an array of arrays:</p>\n<pre><code class=\"language-js\">const locationData = [[1, 7],[6, 3],[8, 3]];\nconst minX = d3.min(locationData, (d) => d[0]);\n</code></pre>\n<p><code>minX</code> would have the value <code>1</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The <code>positionData</code> array holds sub arrays of x, y, and z coordinates. Use a D3 method to find the maximum value of the z coordinate (the third value) from the arrays and save it in the <code>output</code> variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-visualization-with-d3",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 25,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

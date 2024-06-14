@@ -1,0 +1,49 @@
+{
+  "id": "656474314bf37d3c83a85143",
+  "title": "Step 10",
+  "challengeType": 20,
+  "dashedName": "step-10",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        13,
+        15
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import random\nimport string\n\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n\n# Combine all characters\nall_characters = letters + digits + symbols\n\nprint(all_characters)\nprint(random.random())",
+      "error": null,
+      "seed": "import random\nimport string\n\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n\n# Combine all characters\nall_characters = letters + digits + symbols\n\nprint(all_characters)\nprint(random.random())"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should modify your existing <code>print()</code> call to print <code>random.choice(all_characters)</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /^print\\s*\\(\\s*random\\.choice\\s*\\(\\s*all_characters\\s*\\)\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>choice()</code> function from the <code>random</code> module takes a sequence and returns a random item of the sequence.</p>\n<p>Modify your <code>print()</code> call to use the <code>choice()</code> function and pass <code>all_characters</code> as the argument.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

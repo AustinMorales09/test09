@@ -1,0 +1,65 @@
+{
+  "id": "5900f5061000cf542c510017",
+  "title": "Problem 409: Nim Extreme",
+  "challengeType": 1,
+  "forumTopicId": 302077,
+  "dashedName": "problem-409-nim-extreme",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function nimExtreme() {\n\n  return true;\n}\n\nnimExtreme();",
+      "error": null,
+      "seed": "function nimExtreme() {\n\n  return true;\n}\n\nnimExtreme();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>nimExtreme()</code> should return <code>253223948</code>.</p>",
+      "testString": "assert.strictEqual(nimExtreme(), 253223948);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $n$ be a positive integer. Consider nim positions where:</p>\n<ul>\n<li>There are $n$ non-empty piles.</li>\n<li>Each pile has size less than $2^n$.</li>\n<li>No two piles have the same size.</li>\n</ul>\n<p>Let $W(n)$ be the number of winning nim positions satisfying the above conditions (a position is winning if the first player has a winning strategy).</p>\n<p>For example, $W(1) = 1$, $W(2) = 6$, $W(3) = 168$, $W(5) = 19\\,764\\,360$ and $W(100)\\bmod 1\\,000\\,000\\,007 = 384\\,777\\,056$.</p>\n<p>Find $W(10\\,000\\,000)\\bmod 1\\,000\\,000\\,007$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

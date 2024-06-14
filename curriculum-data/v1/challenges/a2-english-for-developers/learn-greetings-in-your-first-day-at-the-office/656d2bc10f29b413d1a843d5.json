@@ -1,0 +1,88 @@
+{
+  "id": "656d2bc10f29b413d1a843d5",
+  "title": "Task 161",
+  "challengeType": 19,
+  "dashedName": "task-161",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>five o'clock</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>A time of the day.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A person's name.</p>",
+        "feedback": "<p>It's not a name.</p>"
+      },
+      {
+        "answer": "<p>A place.</p>",
+        "feedback": "<p>We are discussing time, not locations.</p>"
+      },
+      {
+        "answer": "<p>A type of food.</p>",
+        "feedback": "<p>You don't eat time.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.1,
+        "finishTimestamp": 20.78
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 2.65,
+        "dialogue": {
+          "text": "Well, it's five o'clock.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 3.15
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Five o'clock</code> is a way of telling time. It refers to 5:00, which can be in the morning (<code>AM</code>) or evening (<code>PM</code>). This conversation happens at the end of the work day so it is fair to assume it is <code>5PM</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 165,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "657b2d9cb974dace59024964",
+  "title": "Task 78",
+  "challengeType": 19,
+  "dashedName": "task-78",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>got</code> imply in Tom's statement about Alice's progress?</p>",
+    "answers": [
+      {
+        "answer": "<p>She received something while studying</p>",
+        "feedback": "<p>While <code>got</code> can mean receiving, in this context it refers to the extent or level of progress.</p>"
+      },
+      {
+        "answer": "<p>She achieved or reached a significant level in her studies</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She needs to get more resources for studying</p>",
+        "feedback": "<p><code>Got</code> here refers to past progress, not a current need for more resources.</p>"
+      },
+      {
+        "answer": "<p>She didn't make any progress in her studies</p>",
+        "feedback": "<p><code>Got</code> in this sentence clearly indicates significant progress, not a lack of it.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 43.1,
+        "finishTimestamp": 47.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.36,
+        "dialogue": {
+          "text": "I admire your dedication. It's amazing how far you got studying by yourself.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.86
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>got</code> in this context is a versatile term and can have several meanings. In its simplest form, it's the past tense of <code>get</code>, which can mean to receive, arrive, become, or reach, depending on the context. In Tom's statement, <code>got</code> refers to the progress or level Alice reached through self-study.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 81,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

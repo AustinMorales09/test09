@@ -1,0 +1,88 @@
+{
+  "id": "655283c039eb38f51e0e6f7e",
+  "title": "Task 9",
+  "challengeType": 19,
+  "dashedName": "task-9",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which option is Tom using to formally introduce himself?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I'm Tom McKenzie.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Call me Tom.</code></p>",
+        "feedback": "<p>Tom is providing both his first name and surname in a formal way. Choose the option that reflects this.</p>"
+      },
+      {
+        "answer": "<p><code>It's a pleasure to meet you.</code></p>",
+        "feedback": "<p>Tom is providing both his first name and surname in a formal way. Choose the option that reflects this.</p>"
+      },
+      {
+        "answer": "<p><code>It's me, Tom.</code></p>",
+        "feedback": "<p>Tom is providing both his first name and surname in a formal way. Choose the option that reflects this.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.5,
+        "finishTimestamp": 7
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.3,
+        "dialogue": {
+          "text": "Hi, that's right. I'm Tom McKenzie.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 3.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Tom is introducing himself using a full name.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

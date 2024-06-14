@@ -1,0 +1,54 @@
+{
+  "id": "5e7b9f140b6c005b0e76f07d",
+  "title": "Web Services: JSON",
+  "challengeType": 11,
+  "videoId": "ZJE-U56BppM",
+  "bilibiliIds": {
+    "aid": 419491911,
+    "bvid": "BV1r3411672w",
+    "cid": 377332928
+  },
+  "dashedName": "web-services-json",
+  "solutions": [],
+  "question": {
+    "text": "<p>What will the following code print?:</p>\n<pre><code class=\"language-python\">import json\ndata = '''\n  [\n    { \"id\" : \"001\",\n      \"x\" : \"2\",\n     \"name\" : \"Quincy\"\n    } ,\n    { \"id\" : \"009\",\n      \"x\" : \"7\",\n      \"name\" : \"Mrugesh\"\n    }\n  ]\n'''\ninfo = json.loads(data)\nprint(info[1]['name'])\n</code></pre>",
+    "answers": [
+      {
+        "answer": "<p>Quincy</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Mrugesh</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>001</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>009</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>[Error]</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 38,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

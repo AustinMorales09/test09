@@ -1,0 +1,83 @@
+{
+  "id": "658154d361f5f6285eeeffc6",
+  "title": "Task 17",
+  "challengeType": 22,
+  "dashedName": "task-17",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Dealing with many tight deadlines and _ _ I'm _ to complete tasks.</p>",
+    "blanks": [
+      {
+        "answer": "feeling",
+        "feedback": "<p>This word is used here as a gerund, indicating the experience or sensation of a particular emotion.</p>"
+      },
+      {
+        "answer": "like",
+        "feedback": "<p>This word is a preposition used to compare or illustrate a similarity to something else.</p>"
+      },
+      {
+        "answer": "rushing",
+        "feedback": "<p>It means you are doing something quickly because you do not have much time. It ends with <code>-ing</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 26.66,
+        "finishTimestamp": 31.58
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.92,
+        "dialogue": {
+          "text": "Dealing with many tight deadlines and feeling like I'm rushing to complete tasks.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 6.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>feeling like I'm rushing</code> means feeling very busy or having to work very fast.</p>\n<p>Being in a <code>rush</code> means you are doing something quickly because you do not have much time. In the dialogue, Brian uses this phrase to show he feels a lot of pressure. So, being in a <code>rush</code> is like racing against time to get things done.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

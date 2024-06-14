@@ -1,0 +1,79 @@
+{
+  "id": "658003870281a9f5541085af",
+  "title": "Task 87",
+  "challengeType": 22,
+  "dashedName": "task-87",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Thanks! Have fun. I _ the convention is a _.</p>",
+    "blanks": [
+      {
+        "answer": "hope",
+        "feedback": "<p>This word is often used to express a desire or wish for something to happen in a particular way.</p>"
+      },
+      {
+        "answer": "success",
+        "feedback": "<p>This word refers to the achievement of a goal or the attainment of prosperity, popularity, or fame.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 32.32,
+        "finishTimestamp": 35.86
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.54,
+        "dialogue": {
+          "text": "Thanks. Have fun. I hope the convention is a success.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.04
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 90,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

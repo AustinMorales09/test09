@@ -1,0 +1,79 @@
+{
+  "id": "663cccdee312b962235e81d1",
+  "title": "Task 50",
+  "challengeType": 22,
+  "dashedName": "task-50",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hey Brian, I was looking at the project details and I noticed something a _ _.</p>",
+    "blanks": [
+      {
+        "answer": "bit",
+        "feedback": "<p>Here, this word preceded by <code>a</code> means a little or not much.</p>"
+      },
+      {
+        "answer": "odd",
+        "feedback": "<p>In this context, it's a synonym to strange, out of the ordinary, not quite right.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.06
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 5.06,
+        "dialogue": {
+          "text": "Hey Brian, I was looking at the project details and I noticed something a bit odd.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 5.56
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>A bit</code> means a small amount of something. For example, if you are a little hungry, you can say <code>I'm a bit hungry</code>. It means you're hungry, but not very much.</p>\n<p><code>Odd</code> means something that is strange or unusual. For example, you can say <code>it is odd to wear a heavy coat on a hot day</code>, because it is not what you expect. It means it is different from normal or from what you expected it to be.</p>\n<p>Listen to the dialogue and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 53,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

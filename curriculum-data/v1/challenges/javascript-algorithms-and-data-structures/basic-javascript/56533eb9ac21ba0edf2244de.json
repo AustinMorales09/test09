@@ -1,0 +1,95 @@
+{
+  "id": "56533eb9ac21ba0edf2244de",
+  "title": "Adding a Default Option in Switch Statements",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/c3JvVfg",
+  "forumTopicId": 16653,
+  "dashedName": "adding-a-default-option-in-switch-statements",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function switchOfStuff(val) {\n  let answer = \"\";\n  // Only change code below this line\n\n\n\n  // Only change code above this line\n  return answer;\n}\n\nswitchOfStuff(1);",
+      "error": null,
+      "seed": "function switchOfStuff(val) {\n  let answer = \"\";\n  // Only change code below this line\n\n\n\n  // Only change code above this line\n  return answer;\n}\n\nswitchOfStuff(1);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function switchOfStuff(val) {\n  let answer = \"\";\n\n  switch(val) {\n    case \"a\":\n      answer = \"apple\";\n      break;\n    case \"b\":\n      answer = \"bird\";\n      break;\n    case \"c\":\n      answer = \"cat\";\n      break;\n    default:\n      answer = \"stuff\";\n  }\n  return answer;\n}",
+        "error": null,
+        "seed": "function switchOfStuff(val) {\n  let answer = \"\";\n\n  switch(val) {\n    case \"a\":\n      answer = \"apple\";\n      break;\n    case \"b\":\n      answer = \"bird\";\n      break;\n    case \"c\":\n      answer = \"cat\";\n      break;\n    default:\n      answer = \"stuff\";\n  }\n  return answer;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>switchOfStuff(\"a\")</code> should return the string <code>apple</code></p>",
+      "testString": "assert(switchOfStuff('a') === 'apple');"
+    },
+    {
+      "text": "<p><code>switchOfStuff(\"b\")</code> should return the string <code>bird</code></p>",
+      "testString": "assert(switchOfStuff('b') === 'bird');"
+    },
+    {
+      "text": "<p><code>switchOfStuff(\"c\")</code> should return the string <code>cat</code></p>",
+      "testString": "assert(switchOfStuff('c') === 'cat');"
+    },
+    {
+      "text": "<p><code>switchOfStuff(\"d\")</code> should return the string <code>stuff</code></p>",
+      "testString": "assert(switchOfStuff('d') === 'stuff');"
+    },
+    {
+      "text": "<p><code>switchOfStuff(4)</code> should return the string <code>stuff</code></p>",
+      "testString": "assert(switchOfStuff(4) === 'stuff');"
+    },
+    {
+      "text": "<p>You should not use any <code>if</code> or <code>else</code> statements</p>",
+      "testString": "assert(!/else/g.test(__helpers.removeJSComments(code)) || !/if/g.test(__helpers.removeJSComments(code)));"
+    },
+    {
+      "text": "<p>You should use a <code>default</code> statement</p>",
+      "testString": "assert(switchOfStuff('string-to-trigger-default-case') === 'stuff');"
+    },
+    {
+      "text": "<p>You should have at least 3 <code>break</code> statements</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/break/g).length > 2);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In a <code>switch</code> statement you may not be able to specify all possible values as <code>case</code> statements. Instead, you can add the <code>default</code> statement which will be executed if no matching <code>case</code> statements are found. Think of it like the final <code>else</code> statement in an <code>if/else</code> chain.</p>\n<p>A <code>default</code> statement should be the last case.</p>\n<pre><code class=\"language-js\">switch (num) {\n  case value1:\n    statement1;\n    break;\n  case value2:\n    statement2;\n    break;\n...\n  default:\n    defaultStatement;\n    break;\n}\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a switch statement to set <code>answer</code> for the following conditions:<br>\n<code>a</code> - <code>apple</code><br>\n<code>b</code> - <code>bird</code><br>\n<code>c</code> - <code>cat</code><br>\n<code>default</code> - <code>stuff</code></p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 76,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

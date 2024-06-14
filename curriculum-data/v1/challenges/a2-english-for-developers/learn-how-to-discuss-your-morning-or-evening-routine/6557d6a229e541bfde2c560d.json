@@ -1,0 +1,88 @@
+{
+  "id": "6557d6a229e541bfde2c560d",
+  "title": "Task 26",
+  "challengeType": 19,
+  "dashedName": "task-26",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does James imply with <code>early</code> in <code>An early coffee</code> about the time Sarah has her coffee?</p>",
+    "answers": [
+      {
+        "answer": "<p>After the usual time</p>",
+        "feedback": "<p><code>Late</code> would be used to indicate something happening after the usual time, not <code>early</code>.</p>"
+      },
+      {
+        "answer": "<p>At midnight</p>",
+        "feedback": "<p><code>Early</code> generally refers to the morning or before the usual time, not specifically midnight.</p>"
+      },
+      {
+        "answer": "<p>Before the usual time</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>During lunchtime</p>",
+        "feedback": "<p><code>Early</code>, in this context, suggests a time before the usual morning schedule, not during lunchtime.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 48.36,
+        "finishTimestamp": 52.1
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 4.74,
+        "dialogue": {
+          "text": "An early coffee and then breakfast. I had never thought of that.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 5.24
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Early</code> refers to doing something sooner or before the usual time, like waking up early in the morning.</p>\n<p><code>Late</code> means doing something after the expected or usual time, like arriving late to a meeting. Here are some examples:</p>\n<p><code>She likes to start her day early with a jog.</code>\n<code>He often works late at the office.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

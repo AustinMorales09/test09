@@ -1,0 +1,88 @@
+{
+  "id": "657b1985ae17886b05b382b1",
+  "title": "Task 26",
+  "challengeType": 19,
+  "dashedName": "task-26",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>performance</code> refer to in the Second Candidate's statement about the website?</p>",
+    "answers": [
+      {
+        "answer": "<p>A live presentation</p>",
+        "feedback": "<p>While <code>performance</code> can mean a presentation, in this context, it relates to the functioning of the website.</p>"
+      },
+      {
+        "answer": "<p>Artistic display</p>",
+        "feedback": "<p>In a technical context, <code>performance</code> refers to operational effectiveness, not an artistic aspect.</p>"
+      },
+      {
+        "answer": "<p>Financial success</p>",
+        "feedback": "<p><code>Performance</code> in this context is about the website's operational aspects, not its financial success.</p>"
+      },
+      {
+        "answer": "<p>How well the website operates</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Second Candidate",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 32.7,
+        "finishTimestamp": 37.84
+      }
+    },
+    "commands": [
+      {
+        "character": "Second Candidate",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Second Candidate",
+        "startTime": 1,
+        "finishTime": 6.14,
+        "dialogue": {
+          "text": "We were responsible for implementing new features and ensuring that the website had fast performance.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Second Candidate",
+        "opacity": 0,
+        "startTime": 6.64
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The term <code>performance</code> in a technical context often refers to how well a system or component operates, especially in terms of speed, efficiency, and reliability. For websites and software, performance can relate to how quickly pages load, the responsiveness of the application, or the stability of the system under various conditions.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

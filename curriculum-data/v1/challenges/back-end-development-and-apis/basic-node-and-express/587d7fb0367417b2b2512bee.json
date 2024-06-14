@@ -1,0 +1,30 @@
+{
+  "id": "587d7fb0367417b2b2512bee",
+  "title": "Start a Working Express Server",
+  "challengeType": 2,
+  "forumTopicId": 301519,
+  "dashedName": "start-a-working-express-server",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your app should serve the string 'Hello Express'</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url')).then(\n    (data) => {\n      assert.equal(\n        data,\n        'Hello Express',\n        'Your app does not serve the text \"Hello Express\"'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In the first two lines of the file <code>myApp.js</code>, you can see how easy it is to create an Express app object. This object has several methods, and you will learn many of them in these challenges. One fundamental method is <code>app.listen(port)</code>. It tells your server to listen on a given port, putting it in running state. For testing reasons, we need the app to be running in the background so we added this method in the <code>server.js</code> file for you.</p>\n<p>Let’s serve our first string! In Express, routes takes the following structure: <code>app.METHOD(PATH, HANDLER)</code>. METHOD is an http method in lowercase. PATH is a relative path on the server (it can be a string, or even a regular expression). HANDLER is a function that Express calls when the route is matched. Handlers take the form <code>function(req, res) {...}</code>, where req is the request object, and res is the response object. For example, the handler</p>\n<pre><code class=\"language-js\">function(req, res) {\n  res.send('Response String');\n}\n</code></pre>\n<p>will serve the string 'Response String'.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use the <code>app.get()</code> method to serve the string \"Hello Express\" to GET requests matching the <code>/</code> (root) path. Be sure that your code works by looking at the logs, then see the results in the preview if you are using Gitpod.</p>\n<p><strong>Note:</strong> All the code for these lessons should be added in between the few lines of code we have started you off with.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-node-and-express",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

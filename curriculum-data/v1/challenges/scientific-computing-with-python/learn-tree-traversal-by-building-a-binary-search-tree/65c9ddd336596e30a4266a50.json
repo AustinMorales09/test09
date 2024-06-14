@@ -1,0 +1,53 @@
+{
+  "id": "65c9ddd336596e30a4266a50",
+  "title": "Step 31",
+  "challengeType": 20,
+  "dashedName": "step-31",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        12
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n    def __str__(self):\n        pass\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n        if key < node.key:\n            return self._search(node.left, key)\n        return self._search(node.right, key)\n    \n    def search(self, key):\n        return self._search(self.root, key)\n\nbst = BinarySearchTree()\n\nnodes = [50, 30, 20, 40, 70, 60, 80]\n\nfor node in nodes:\n    bst.insert(node)\n\nprint('Search for 80:', bst.search(80))\n",
+      "error": null,
+      "seed": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n    def __str__(self):\n        pass\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n        if key < node.key:\n            return self._search(node.left, key)\n        return self._search(node.right, key)\n    \n    def search(self, key):\n        return self._search(self.root, key)\n\nbst = BinarySearchTree()\n\nnodes = [50, 30, 20, 40, 70, 60, 80]\n\nfor node in nodes:\n    bst.insert(node)\n\nprint('Search for 80:', bst.search(80))\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove the <code>pass</code> keyword from the <code>__str__</code> method.</p>",
+      "testString": "({\n  test: () => {\n    assert.isFalse(\n      runPython(\n        `_Node(_code).find_class(\"TreeNode\").find_function(\"__str__\").has_pass()`\n      )\n    );\n  },\n});\n"
+    },
+    {
+      "text": "<p>You should return the string value of <code>self.key</code> from your <code>__str__</code> method.</p>",
+      "testString": "({ test: () => assert.match(code, /^\\s{8}return\\s+str\\(\\s*self\\.key\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In the body of the <code>__str__</code> method, delete <code>pass</code> and return the result of calling the <code>str()</code> function with <code>self.key</code> as the argument.  This is the attribute of the current node object that stores the value associated with the node.</p>\n<p>After returning the result, you should see the exception disappear from the console and the output should now display the value of the <code>key</code> associated with the node.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

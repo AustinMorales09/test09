@@ -1,0 +1,75 @@
+{
+  "id": "661ed01f09114567cc8fa939",
+  "title": "Task 88",
+  "challengeType": 22,
+  "dashedName": "task-88",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Tom, do you know _ about Augmented Reality apps?</p>",
+    "blanks": [
+      {
+        "answer": "anything",
+        "feedback": "<p>When Sophie asks about what Tom knows, she uses a word that suggests openness to <strong>any</strong> kind of information. What is that word?</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 2.8
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.8,
+        "dialogue": {
+          "text": "Tom, do you know anything about Augmented Reality apps?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>You learned how to talk about an unspecified thing or information with a broad term that didn’t point to a specific item. Let’s review it in this challenge.</p>\n<p>Listen and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 92,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

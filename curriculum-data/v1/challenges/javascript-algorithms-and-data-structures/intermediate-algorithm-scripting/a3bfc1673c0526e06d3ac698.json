@@ -1,0 +1,73 @@
+{
+  "id": "a3bfc1673c0526e06d3ac698",
+  "title": "Sum All Primes",
+  "challengeType": 1,
+  "forumTopicId": 16085,
+  "dashedName": "sum-all-primes",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function sumPrimes(num) {\n  return num;\n}\n\nsumPrimes(10);",
+      "error": null,
+      "seed": "function sumPrimes(num) {\n  return num;\n}\n\nsumPrimes(10);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "class PrimeSeive {\n  constructor(num) {\n    const seive = Array(Math.floor((num - 1) / 2)).fill(true);\n    const upper = Math.floor((num - 1) / 2);\n    const sqrtUpper = Math.floor((Math.sqrt(num) - 1) / 2);\n\n    for (let i = 0; i <= sqrtUpper; i++) {\n      if (seive[i]) {\n        // Mark value in seive array\n        const prime = 2 * i + 3;\n        // Mark all multiples of this number as false (not prime)\n        const primeSquaredIndex = 2 * i ** 2 + 6 * i + 3;\n        for (let j = primeSquaredIndex; j < upper; j += prime) {\n          seive[j] = false;\n        }\n      }\n    }\n\n    this._seive = seive;\n  }\n\n  isPrime(num) {\n    return num === 2\n      ? true\n      : num % 2 === 0\n        ? false\n        : this.isOddPrime(num);\n  }\n\n  isOddPrime(num) {\n    return this._seive[(num - 3) / 2];\n  }\n};\n\nfunction sumPrimes(num) {\n  const primeSeive = new PrimeSeive(num);\n\n  let sum = 2;\n  for (let i = 3; i <= num; i += 2) {\n    if (primeSeive.isOddPrime(i)) sum += i;\n  }\n  return sum;\n}\n\nsumPrimes(10);",
+        "error": null,
+        "seed": "class PrimeSeive {\n  constructor(num) {\n    const seive = Array(Math.floor((num - 1) / 2)).fill(true);\n    const upper = Math.floor((num - 1) / 2);\n    const sqrtUpper = Math.floor((Math.sqrt(num) - 1) / 2);\n\n    for (let i = 0; i <= sqrtUpper; i++) {\n      if (seive[i]) {\n        // Mark value in seive array\n        const prime = 2 * i + 3;\n        // Mark all multiples of this number as false (not prime)\n        const primeSquaredIndex = 2 * i ** 2 + 6 * i + 3;\n        for (let j = primeSquaredIndex; j < upper; j += prime) {\n          seive[j] = false;\n        }\n      }\n    }\n\n    this._seive = seive;\n  }\n\n  isPrime(num) {\n    return num === 2\n      ? true\n      : num % 2 === 0\n        ? false\n        : this.isOddPrime(num);\n  }\n\n  isOddPrime(num) {\n    return this._seive[(num - 3) / 2];\n  }\n};\n\nfunction sumPrimes(num) {\n  const primeSeive = new PrimeSeive(num);\n\n  let sum = 2;\n  for (let i = 3; i <= num; i += 2) {\n    if (primeSeive.isOddPrime(i)) sum += i;\n  }\n  return sum;\n}\n\nsumPrimes(10);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>sumPrimes(10)</code> should return a number.</p>",
+      "testString": "assert.deepEqual(typeof sumPrimes(10), 'number');"
+    },
+    {
+      "text": "<p><code>sumPrimes(10)</code> should return 17.</p>",
+      "testString": "assert.deepEqual(sumPrimes(10), 17);"
+    },
+    {
+      "text": "<p><code>sumPrimes(977)</code> should return 73156.</p>",
+      "testString": "assert.deepEqual(sumPrimes(977), 73156);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A <dfn>prime number</dfn> is a whole number greater than 1 with exactly two divisors: 1 and itself. For example, 2 is a prime number because it is only divisible by 1 and 2. In contrast, 4 is not prime since it is divisible by 1, 2 and 4.</p>\n<p>Rewrite <code>sumPrimes</code> so it returns the sum of all prime numbers that are less than or equal to num.</p>\n</section>",
+  "translationPending": false,
+  "block": "intermediate-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

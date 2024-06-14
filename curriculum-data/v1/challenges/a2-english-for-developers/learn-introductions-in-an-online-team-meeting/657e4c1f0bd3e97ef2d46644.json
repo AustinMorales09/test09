@@ -1,0 +1,116 @@
+{
+  "id": "657e4c1f0bd3e97ef2d46644",
+  "title": "Task 89",
+  "challengeType": 19,
+  "dashedName": "task-89",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are Maria and Bob's roles in the project?</p>",
+    "answers": [
+      {
+        "answer": "<p>Maria is the team leader, and Bob is in charge of finances.</p>",
+        "feedback": "<p>Listen again to their specific responsibilities mentioned in the audio.</p>"
+      },
+      {
+        "answer": "<p>Bob is the lead developer, and Maria manages the schedule.</p>",
+        "feedback": "<p>The audio describes different roles for Maria and Bob.</p>"
+      },
+      {
+        "answer": "<p>Maria is responsible for technical aspects, and Bob coordinates the team's efforts.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>They both are responsible for marketing the project.</p>",
+        "feedback": "<p>Their roles are focused on development and management, not marketing.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.18,
+        "finishTimestamp": 19.08
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 5.18,
+        "dialogue": {
+          "text": "I'm Maria, the lead developer. I'm responsible for the technical aspects of the project.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 5.18
+      },
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 5.19
+      },
+      {
+        "character": "Maria",
+        "startTime": 5.19,
+        "finishTime": 10.9,
+        "dialogue": {
+          "text": "This is Bob, the project manager. He's responsible for coordinating our efforts to meet your needs.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 11.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To meet someone's needs</code> means to fulfill or satisfy what someone requires or wants. In a project, this could mean making sure that the work done fits the client's requirements.</p>\n<p>For example, <code>Our team works hard to meet the client's needs</code> means the team aims to do what the client wants. This phrase is often used in customer service and project management.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 93,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

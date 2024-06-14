@@ -1,0 +1,46 @@
+{
+  "id": "6363d2899078df117ce4c407",
+  "title": "Spreadsheets and Additional Resources",
+  "challengeType": 15,
+  "videoId": "JH9Uk2mi3Dc",
+  "dashedName": "spreadsheets-and-additional-resources",
+  "solutions": [],
+  "question": {
+    "text": "<p>What library helps you to read data from a .csv and store it as a dataframe where you can select columns?</p>",
+    "answers": [
+      {
+        "answer": "<p>Math</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Pandas</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Data</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Matplotlib</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Let's look at how you can connect your Math and Python knowledge with external data. This video will show you how to get data from other sources, then transform it so that you can graph it and interpret it.</p>\n</section>",
+  "translationPending": false,
+  "block": "college-algebra-with-python-conclusion",
+  "hasEditableBoundaries": false,
+  "order": 18,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

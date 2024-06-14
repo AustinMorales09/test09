@@ -1,0 +1,67 @@
+{
+  "id": "587d78a3367417b2b2512ad0",
+  "title": "Center an Element Horizontally Using the margin Property",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cyLJqU4",
+  "forumTopicId": 301043,
+  "dashedName": "center-an-element-horizontally-using-the-margin-property",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  div {\n    background-color: blue;\n    height: 100px;\n    width: 100px;\n\n  }\n</style>\n<div></div>",
+      "error": null,
+      "seed": "<style>\n  div {\n    background-color: blue;\n    height: 100px;\n    width: 100px;\n\n  }\n</style>\n<div></div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  div {\n    background-color: blue;\n    height: 100px;\n    width: 100px;\n    margin: auto;\n  }\n</style>\n<div></div>",
+        "error": null,
+        "seed": "<style>\n  div {\n    background-color: blue;\n    height: 100px;\n    width: 100px;\n    margin: auto;\n  }\n</style>\n<div></div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>div</code> should have a <code>margin</code> set to <code>auto</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('div')?.margin === 'auto');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Another positioning technique is to center a block element horizontally. One way to do this is to set its <code>margin</code> to a value of auto.</p>\n<p>This method works for images, too. Images are inline elements by default, but can be changed to block elements when you set the <code>display</code> property to <code>block</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Center the <code>div</code> on the page by adding a <code>margin</code> property with a value of <code>auto</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-visual-design",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

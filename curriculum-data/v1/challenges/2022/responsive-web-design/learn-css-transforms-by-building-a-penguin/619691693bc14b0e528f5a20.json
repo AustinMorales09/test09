@@ -1,0 +1,73 @@
+{
+  "id": "619691693bc14b0e528f5a20",
+  "title": "Step 7",
+  "challengeType": 0,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  \n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Penguin</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  </head>\n\n  <body>\n    <div class=\"ground\"></div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  \n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Penguin</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  </head>\n\n  <body>\n    <div class=\"ground\"></div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        9,
+        11
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100vh;\n  overflow: hidden;\n}\n\n",
+      "error": null,
+      "seed": "body {\n  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100vh;\n  overflow: hidden;\n}\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>.ground</code> selector.</p>",
+      "testString": "assert.match(code, /\\.ground\\s*\\{/);"
+    },
+    {
+      "text": "<p>You should give the <code>.ground</code> element a <code>width</code> of <code>100vw</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.ground')?.width, '100vw');"
+    },
+    {
+      "text": "<p>You should give the <code>.ground</code> element a <code>height</code> of <code>400px</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.ground')?.height, '400px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Target the <code>.ground</code> element, and set its <code>width</code> to take up the full width of the viewport. Then, set the <code>height</code> to <code>400px</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-transforms-by-building-a-penguin",
+  "hasEditableBoundaries": true,
+  "order": 18,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

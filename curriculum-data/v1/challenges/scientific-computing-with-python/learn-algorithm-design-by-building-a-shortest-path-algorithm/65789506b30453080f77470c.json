@@ -1,0 +1,53 @@
+{
+  "id": "65789506b30453080f77470c",
+  "title": "Step 1",
+  "challengeType": 20,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a variable called <code>copper</code>.</p>",
+      "testString": "({ test: () => assert(__userGlobals.has(\"copper\")) })"
+    },
+    {
+      "text": "<p>Your <code>copper</code> variable should have the value of an empty dictionary. Use a pair of curly braces for that.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    copper == {}\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>So far, you have already met different data types:</p>\n<ul>\n<li>Immutable data types, such as integers, strings, tuples, and Booleans.</li>\n<li>Mutable data types, such as lists, and dictionaries.</li>\n</ul>\n<p>A dictionary is identified by a pair of curly braces, <code>{}</code>.</p>\n<p>Start by creating a variable called <code>copper</code> and assign it an empty dictionary using a pair of curly braces, in the same way you would create an empty list with a pair of square brackets.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

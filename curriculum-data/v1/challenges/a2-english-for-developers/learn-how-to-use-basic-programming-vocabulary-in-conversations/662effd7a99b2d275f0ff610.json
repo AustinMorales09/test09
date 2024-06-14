@@ -1,0 +1,83 @@
+{
+  "id": "662effd7a99b2d275f0ff610",
+  "title": "Task 46",
+  "challengeType": 22,
+  "dashedName": "task-46",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I see. Could you show me your code? I _ _ _ to help.</p>",
+    "blanks": [
+      {
+        "answer": "might",
+        "feedback": "<p>This modal verb is used to express uncertainty or possibility about future actions.</p>"
+      },
+      {
+        "answer": "be",
+        "feedback": "<p>It is used here as part of the phrase to express capability or possibility.</p>"
+      },
+      {
+        "answer": "able",
+        "feedback": "<p>It completes the phrase, forming an expression that means having the capability to do something.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 16.2,
+        "finishTimestamp": 19.22
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.02,
+        "dialogue": {
+          "text": "I see. Can you show me your code? I might be able to help.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.52
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>might</code> is a modal verb used to express possibility or potential. The phrase <code>be able to</code> indicates capability.</p>\n<p>Together, <code>might be able to</code> suggests that there is a possibility of achieving something, but it is not certain.</p>\n<p>For example, <code>She might be able to finish the work by tomorrow.</code> This implies that it is possible she will complete the work by then, but it is not guaranteed.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 47,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

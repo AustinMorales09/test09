@@ -1,0 +1,81 @@
+{
+  "id": "5d822fd413a79914d39e98e5",
+  "title": "Step 29",
+  "challengeType": 0,
+  "dashedName": "step-29",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />   \n  </head>\n\n  <body>\n    <div class=\"background-buildings\">\n      <div></div>\n      <div></div>\n      <div class=\"bb1\">\n        <div class=\"bb1a\"></div>\n        <div class=\"bb1b\"></div>\n        <div class=\"bb1c\"></div>\n        <div class=\"bb1d\"></div>\n      </div>\n      <div class=\"bb2\"></div>\n      <div class=\"bb3\"></div>\n      <div></div>\n      <div class=\"bb4\"></div>\n      <div></div>\n      <div></div>\n    </div>\n\n    <div class=\"foreground-buildings\"></div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />   \n  </head>\n\n  <body>\n    <div class=\"background-buildings\">\n      <div></div>\n      <div></div>\n      <div class=\"bb1\">\n        <div class=\"bb1a\"></div>\n        <div class=\"bb1b\"></div>\n        <div class=\"bb1c\"></div>\n        <div class=\"bb1d\"></div>\n      </div>\n      <div class=\"bb2\"></div>\n      <div class=\"bb3\"></div>\n      <div></div>\n      <div class=\"bb4\"></div>\n      <div></div>\n      <div></div>\n    </div>\n\n    <div class=\"foreground-buildings\"></div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        75,
+        77
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": ":root {\n  --building-color1: #aa80ff;\n  --building-color2: #66cc99;\n  --building-color3: #cc6699;\n  --building-color4: #538cc6;\n}\n\n* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  margin: 0;\n  overflow: hidden;\n}\n\n.background-buildings {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: flex-end;\n  justify-content: space-evenly;\n}\n\n.bb1 {\n  width: 10%;\n  height: 70%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.bb1a {\n  width: 70%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1b {\n  width: 80%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1c {\n  width: 90%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1d {\n  width: 100%;\n  height: 70%;\n  background-color: var(--building-color1);\n}\n\n.bb2 {\n  width: 10%;\n  height: 50%;\n  background-color: var(--building-color2);\n}\n\n.bb3 {\n  width: 10%;\n  height: 55%;\n  background-color: var(--building-color3);\n}\n\n.bb4 {\n  width: 11%;\n  height: 58%;\n  background-color: var(--building-color4);\n}\n\n",
+      "error": null,
+      "seed": ":root {\n  --building-color1: #aa80ff;\n  --building-color2: #66cc99;\n  --building-color3: #cc6699;\n  --building-color4: #538cc6;\n}\n\n* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  margin: 0;\n  overflow: hidden;\n}\n\n.background-buildings {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: flex-end;\n  justify-content: space-evenly;\n}\n\n.bb1 {\n  width: 10%;\n  height: 70%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.bb1a {\n  width: 70%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1b {\n  width: 80%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1c {\n  width: 90%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1d {\n  width: 100%;\n  height: 70%;\n  background-color: var(--building-color1);\n}\n\n.bb2 {\n  width: 10%;\n  height: 50%;\n  background-color: var(--building-color2);\n}\n\n.bb3 {\n  width: 10%;\n  height: 55%;\n  background-color: var(--building-color3);\n}\n\n.bb4 {\n  width: 11%;\n  height: 58%;\n  background-color: var(--building-color4);\n}\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use a <code>.foreground-buildings</code> selector.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.foreground-buildings'));"
+    },
+    {
+      "text": "<p>You should give the <code>.foreground-buildings</code> element a <code>width</code> of <code>100%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.foreground-buildings')?.width, '100%');"
+    },
+    {
+      "text": "<p>You should give the <code>.foreground-buildings</code> element a <code>height</code> of <code>100%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.foreground-buildings')?.height, '100%');"
+    },
+    {
+      "text": "<p>You should give the <code>.foreground-buildings</code> element a <code>position</code> of <code>absolute</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.foreground-buildings')?.position, 'absolute');"
+    },
+    {
+      "text": "<p>You should give the <code>.foreground-buildings</code> element a <code>top</code> of <code>0</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.foreground-buildings')?.top, '0px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You want the <code>.foreground-buildings</code> container to sit directly on top of the <code>.background-buildings</code> element. Give it a <code>width</code> and <code>height</code> of <code>100%</code>, set the <code>position</code> to <code>absolute</code>, and the <code>top</code> to <code>0</code>. This will make it the same size as the body and move the start of it to the top left corner.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-variables-by-building-a-city-skyline",
+  "hasEditableBoundaries": true,
+  "order": 14,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

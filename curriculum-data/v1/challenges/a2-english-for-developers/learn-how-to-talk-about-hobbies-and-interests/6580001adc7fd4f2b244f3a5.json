@@ -1,0 +1,92 @@
+{
+  "id": "6580001adc7fd4f2b244f3a5",
+  "title": "Task 81",
+  "challengeType": 22,
+  "dashedName": "task-81",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Thanks for the invite, Sarah. I appreciate it, but I'm not really into sci-fi. I hope you _ _ _ at the convention, though!</p>",
+    "blanks": [
+      {
+        "answer": "have",
+        "feedback": "<p>This word is commonly used to denote the experience or possession of something.</p>"
+      },
+      {
+        "answer": "a",
+        "feedback": "<p>This article is often used to refer to a singular, unspecified object or concept.</p>"
+      },
+      {
+        "answer": "blast",
+        "feedback": "<p>This word, in this context, is a slang term meaning a very enjoyable and exciting experience.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.06,
+        "finishTimestamp": 28.88
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.48,
+        "dialogue": {
+          "text": "Thanks for the invite, Sarah. I appreciate it, but I'm not really into sci-fi.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "startTime": 5.84,
+        "finishTime": 7.82,
+        "dialogue": {
+          "text": "I hope you have a blast at the convention, though.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 8.32
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>have a blast</code> is used to wish someone a lot of fun and enjoyment in an upcoming event or activity.</p>\n<p>For example, if your friend is going to a birthday party, you might say, <code>Have a blast at the party!</code> This means you hope they have a lot of fun at the party.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 84,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,83 @@
+{
+  "id": "662ef8c53ee35f23bb031313",
+  "title": "Task 39",
+  "challengeType": 22,
+  "dashedName": "task-39",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Well, it's actually _ _ _ code, but the issue is in a specific function. I have a loop inside it.</p>",
+    "blanks": [
+      {
+        "answer": "a",
+        "feedback": "<p>This article is used to start the expression that indicates a large quantity.</p>"
+      },
+      {
+        "answer": "lot",
+        "feedback": "<p>This noun is used to express a large amount when combined with the preceding and following words.</p>"
+      },
+      {
+        "answer": "of",
+        "feedback": "<p>This preposition connects a phrase and a noun, showing that the large amount being referred to is <code>code</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 10.5,
+        "finishTimestamp": 15.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.48,
+        "dialogue": {
+          "text": "Well, it's actually a lot of code, but the issue is in a specific function. I have a loop inside it.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.98
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>a lot of</code> can be used with both countable and uncountable nouns, to indicate a large number or amount.</p>\n<p>For countable nouns, such as <code>cars</code>, you might say <code>a lot of cars</code>. For uncountable nouns, like <code>water</code>, you would say <code>a lot of water</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

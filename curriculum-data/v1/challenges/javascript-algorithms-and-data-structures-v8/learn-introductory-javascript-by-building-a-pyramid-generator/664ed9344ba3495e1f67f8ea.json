@@ -1,0 +1,65 @@
+{
+  "id": "664ed9344ba3495e1f67f8ea",
+  "title": "Step 13",
+  "challengeType": 0,
+  "dashedName": "step-13",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        1,
+        6
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = \"Hello\";\nlet profession = \"teacher\";\nlet age;\nconsole.log(age);\nconsole.log(profession);",
+      "error": null,
+      "seed": "let character = \"Hello\";\nlet profession = \"teacher\";\nlet age;\nconsole.log(age);\nconsole.log(profession);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have a <code>profession</code> variable.</p>",
+      "testString": "assert.notMatch(code, /let\\s+profession/);"
+    },
+    {
+      "text": "<p>You should not have a <code>age</code> variable.</p>",
+      "testString": "assert.notMatch(code, /let\\s+age/);"
+    },
+    {
+      "text": "<p>You should not have a <code>console.log</code> statement for <code>age</code>.</p>",
+      "testString": "assert.notMatch(code, /console\\.log\\(\\s*age\\s*\\);/);"
+    },
+    {
+      "text": "<p>You should not have a <code>console.log</code> statement for <code>profession</code>.</p>",
+      "testString": "assert.notMatch(code, /console\\.log\\(\\s*profession\\s*\\);/);"
+    },
+    {
+      "text": "<p>You should still have your <code>character</code> variable.</p>",
+      "testString": "assert.strictEqual(character, \"Hello\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you have reviewed declaration and initialization, remove the code you wrote for your review.</p>\n<p>Do not remove your <code>character</code> variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

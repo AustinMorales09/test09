@@ -1,0 +1,79 @@
+{
+  "id": "65d6dc5686b49d61612472e0",
+  "title": "Task 55",
+  "challengeType": 22,
+  "dashedName": "task-55",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>She _ _ a great person. I should have a chat with her sometime.</p>",
+    "blanks": [
+      {
+        "answer": "sounds",
+        "feedback": "<p>This is used to express how something seems based on what you hear. It's third-person singular form of verb.</p>"
+      },
+      {
+        "answer": "like",
+        "feedback": "<p>This preposition is used to compare or suggest similarity.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 44.66,
+        "finishTimestamp": 47.74
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.08,
+        "dialogue": {
+          "text": "She sounds like a great person. I should have a chat with her sometime.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>sound like</code> is used when something seems to be a certain way based on what you hear. For example, <code>It sounds like she had fun at the party</code> means from what was heard, it seems she enjoyed the party.</p>\n<p>Similarly, <code>look like</code> is used based on what you see. For example, <code>He looks like a runner</code> means from his appearance, he seems to be someone who runs.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 56,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

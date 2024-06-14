@@ -1,0 +1,77 @@
+{
+  "id": "62fc20387ef88d1d1998aac5",
+  "title": "Step 18",
+  "challengeType": 0,
+  "dashedName": "step-18",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n  </head>\n  <body>\n    <div id=\"game\">\n      <div id=\"stats\">\n        <span class=\"stat\">XP: <strong><span id=\"xpText\">0</span></strong></span>\n        <span class=\"stat\">Health: <strong><span id=\"healthText\">100</span></strong></span>\n        <span class=\"stat\">Gold: <strong><span id=\"goldText\">50</span></strong></span>\n      </div>\n      <div id=\"controls\">\n        <button id=\"button1\">Go to store</button>\n        <button id=\"button2\">Go to cave</button>\n        <button id=\"button3\">Fight dragon</button>\n      </div>\n      <div id=\"monsterStats\"></div>\n      <div id=\"text\"></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n  </head>\n  <body>\n    <div id=\"game\">\n      <div id=\"stats\">\n        <span class=\"stat\">XP: <strong><span id=\"xpText\">0</span></strong></span>\n        <span class=\"stat\">Health: <strong><span id=\"healthText\">100</span></strong></span>\n        <span class=\"stat\">Gold: <strong><span id=\"goldText\">50</span></strong></span>\n      </div>\n      <div id=\"controls\">\n        <button id=\"button1\">Go to store</button>\n        <button id=\"button2\">Go to cave</button>\n        <button id=\"button3\">Fight dragon</button>\n      </div>\n      <div id=\"monsterStats\"></div>\n      <div id=\"text\"></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        11
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;\nlet monsterHealth;\nlet inventory = [\"stick\"];\n\nconst button1 = document.querySelector(\"#button1\");\n",
+      "error": null,
+      "seed": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;\nlet monsterHealth;\nlet inventory = [\"stick\"];\n\nconst button1 = document.querySelector(\"#button1\");\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a <code>button2</code> variable with <code>const</code>.</p>",
+      "testString": "assert.match(code, /const\\s+button2/);"
+    },
+    {
+      "text": "<p>Your <code>button2</code> variable should have the value of your <code>\"#button2\"</code> element.</p>",
+      "testString": "assert.deepEqual(button2, document.querySelector('#button2'));"
+    },
+    {
+      "text": "<p>You should declare a <code>button3</code> variable with <code>const</code>.</p>",
+      "testString": "assert.match(code, /const\\s+button3/);"
+    },
+    {
+      "text": "<p>Your <code>button3</code> variable should have the value of your <code>\"#button3\"</code> element.</p>",
+      "testString": "assert.deepEqual(button3, document.querySelector('#button3'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Use <code>querySelector()</code> to get the other two <code>button</code> elements using their <code>id</code>s: <code>button2</code> and <code>button3</code>. Store them in variables called <code>button2</code> and <code>button3</code>. Remember to use <code>const</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-javascript-by-building-a-role-playing-game",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

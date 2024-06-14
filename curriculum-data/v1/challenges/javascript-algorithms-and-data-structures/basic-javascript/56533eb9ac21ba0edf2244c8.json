@@ -1,0 +1,83 @@
+{
+  "id": "56533eb9ac21ba0edf2244c8",
+  "title": "Accessing Object Properties with Bracket Notation",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cBvmEHP",
+  "forumTopicId": 16163,
+  "dashedName": "accessing-object-properties-with-bracket-notation",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(a,b) { return \"entreeValue = '\" + a + \"', drinkValue = '\" + b + \"'\"; })(entreeValue,drinkValue);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Setup\nconst testObj = {\n  \"an entree\": \"hamburger\",\n  \"my side\": \"veggies\",\n  \"the drink\": \"water\"\n};\n\n// Only change code below this line\nconst entreeValue = testObj;   // Change this line\nconst drinkValue = testObj;    // Change this line",
+      "error": null,
+      "seed": "// Setup\nconst testObj = {\n  \"an entree\": \"hamburger\",\n  \"my side\": \"veggies\",\n  \"the drink\": \"water\"\n};\n\n// Only change code below this line\nconst entreeValue = testObj;   // Change this line\nconst drinkValue = testObj;    // Change this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const testObj = {\n  \"an entree\": \"hamburger\",\n  \"my side\": \"veggies\",\n  \"the drink\": \"water\"\n};\nconst entreeValue = testObj[\"an entree\"];\nconst drinkValue = testObj['the drink'];",
+        "error": null,
+        "seed": "const testObj = {\n  \"an entree\": \"hamburger\",\n  \"my side\": \"veggies\",\n  \"the drink\": \"water\"\n};\nconst entreeValue = testObj[\"an entree\"];\nconst drinkValue = testObj['the drink'];"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>entreeValue</code> should be a string</p>",
+      "testString": "assert(typeof entreeValue === 'string');"
+    },
+    {
+      "text": "<p>The value of <code>entreeValue</code> should be the string <code>hamburger</code></p>",
+      "testString": "assert(entreeValue === 'hamburger');"
+    },
+    {
+      "text": "<p><code>drinkValue</code> should be a string</p>",
+      "testString": "assert(typeof drinkValue === 'string');"
+    },
+    {
+      "text": "<p>The value of <code>drinkValue</code> should be the string <code>water</code></p>",
+      "testString": "assert(drinkValue === 'water');"
+    },
+    {
+      "text": "<p>You should use bracket notation twice</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/testObj\\s*?\\[('|\")[^'\"]+\\1\\]/g).length > 1);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The second way to access the properties of an object is bracket notation (<code>[]</code>). If the property of the object you are trying to access has a space in its name, you will need to use bracket notation.</p>\n<p>However, you can still use bracket notation on object properties without spaces.</p>\n<p>Here is a sample of using bracket notation to read an object's property:</p>\n<pre><code class=\"language-js\">const myObj = {\n  \"Space Name\": \"Kirk\",\n  \"More Space\": \"Spock\",\n  \"NoSpace\": \"USS Enterprise\"\n};\n\nmyObj[\"Space Name\"];\nmyObj['More Space'];\nmyObj[\"NoSpace\"];\n</code></pre>\n<p><code>myObj[\"Space Name\"]</code> would be the string <code>Kirk</code>, <code>myObj['More Space']</code> would be the string <code>Spock</code>, and <code>myObj[\"NoSpace\"]</code> would be the string <code>USS Enterprise</code>.</p>\n<p>Note that property names with spaces in them must be in quotes (single or double).</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Read the values of the properties <code>an entree</code> and <code>the drink</code> of <code>testObj</code> using bracket notation and assign them to <code>entreeValue</code> and <code>drinkValue</code> respectively.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 84,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

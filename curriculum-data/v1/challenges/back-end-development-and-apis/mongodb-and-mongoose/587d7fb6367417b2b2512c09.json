@@ -1,0 +1,30 @@
+{
+  "id": "587d7fb6367417b2b2512c09",
+  "title": "Create and Save a Record of a Model",
+  "challengeType": 2,
+  "forumTopicId": 301536,
+  "dashedName": "create-and-save-a-record-of-a-model",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Creating and saving a db item should succeed</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/create-and-save-person').then(\n    (data) => {\n      assert.isString(data.name, '\"item.name\" should be a String');\n      assert.isNumber(data.age, '28', '\"item.age\" should be a Number');\n      assert.isArray(\n        data.favoriteFoods,\n        '\"item.favoriteFoods\" should be an Array'\n      );\n      assert.equal(data.__v, 0, 'The db item should be not previously edited');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In this challenge you will have to create and save a record of a model.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Within the <code>createAndSavePerson</code> function, create a document instance using the <code>Person</code> model constructor you built before. Pass to the constructor an object having the fields <code>name</code>, <code>age</code>, and <code>favoriteFoods</code>. Their types must conform to the ones in the <code>personSchema</code>. Then, call the method <code>document.save()</code> on the returned document instance. Pass to it a callback using the Node convention. This is a common pattern; all the following CRUD methods take a callback function like this as the last argument.</p>\n<pre><code class=\"language-js\">/* Example */\n\n// ...\nperson.save(function(err, data) {\n  //   ...do your stuff here...\n});\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "mongodb-and-mongoose",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

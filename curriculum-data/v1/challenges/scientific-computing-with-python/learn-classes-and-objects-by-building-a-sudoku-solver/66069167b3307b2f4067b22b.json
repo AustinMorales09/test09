@@ -1,0 +1,53 @@
+{
+  "id": "66069167b3307b2f4067b22b",
+  "title": "Step 2",
+  "challengeType": 20,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    pass",
+      "error": null,
+      "seed": "class Board:\n    pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a variable <code>gameboard</code> outside the <code>Board</code> class.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).has_variable(\"gameboard\")`)) })"
+    },
+    {
+      "text": "<p>Your <code>gameboard</code> variable should have the value of <code>Board()</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_variable(\"gameboard\").is_equivalent(\"gameboard = Board()\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A new instance of a class is created by using the function notation, which involves appending a pair of parentheses to the class name.</p>\n<p>Outside the class definition, create an instance of the <code>Board</code> class and assign it to a variable named <code>gameboard</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

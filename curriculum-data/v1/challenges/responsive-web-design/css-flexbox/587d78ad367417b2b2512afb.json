@@ -1,0 +1,71 @@
+{
+  "id": "587d78ad367417b2b2512afb",
+  "title": "Use the flex-shrink Property to Shrink Items",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pVaDAv/cd3PBfr",
+  "forumTopicId": 301113,
+  "dashedName": "use-the-flex-shrink-property-to-shrink-items",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  #box-container {\n    display: flex;\n    height: 500px;\n  }\n  #box-1 {\n    background-color: dodgerblue;\n    width: 100%;\n    height: 200px;\n\n  }\n\n  #box-2 {\n    background-color: orangered;\n    width: 100%;\n    height: 200px;\n\n  }\n</style>\n\n<div id=\"box-container\">\n  <div id=\"box-1\"></div>\n  <div id=\"box-2\"></div>\n</div>",
+      "error": null,
+      "seed": "<style>\n  #box-container {\n    display: flex;\n    height: 500px;\n  }\n  #box-1 {\n    background-color: dodgerblue;\n    width: 100%;\n    height: 200px;\n\n  }\n\n  #box-2 {\n    background-color: orangered;\n    width: 100%;\n    height: 200px;\n\n  }\n</style>\n\n<div id=\"box-container\">\n  <div id=\"box-1\"></div>\n  <div id=\"box-2\"></div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  #box-container {\n    display: flex;\n    height: 500px;\n  }\n  #box-1 {\n    background-color: dodgerblue;\n    width: 100%;\n    height: 200px;\n    flex-shrink: 1;\n  }\n\n  #box-2 {\n    background-color: orangered;\n    width: 100%;\n    height: 200px;\n    flex-shrink: 2;\n  }\n</style>\n\n<div id=\"box-container\">\n  <div id=\"box-1\"></div>\n  <div id=\"box-2\"></div>\n</div>",
+        "error": null,
+        "seed": "<style>\n  #box-container {\n    display: flex;\n    height: 500px;\n  }\n  #box-1 {\n    background-color: dodgerblue;\n    width: 100%;\n    height: 200px;\n    flex-shrink: 1;\n  }\n\n  #box-2 {\n    background-color: orangered;\n    width: 100%;\n    height: 200px;\n    flex-shrink: 2;\n  }\n</style>\n\n<div id=\"box-container\">\n  <div id=\"box-1\"></div>\n  <div id=\"box-2\"></div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>#box-1</code> element should have the <code>flex-shrink</code> property set to a value of <code>1</code>.</p>",
+      "testString": "assert($('#box-1').css('flex-shrink') == '1');"
+    },
+    {
+      "text": "<p>The <code>#box-2</code> element should have the <code>flex-shrink</code> property set to a value of <code>2</code>.</p>",
+      "testString": "assert($('#box-2').css('flex-shrink') == '2');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>So far, all the properties in the challenges apply to the flex container (the parent of the flex items). However, there are several useful properties for the flex items.</p>\n<p>The first is the <code>flex-shrink</code> property. When it's used, it allows an item to shrink if the flex container is too small. Items shrink when the width of the parent container is smaller than the combined widths of all the flex items within it.</p>\n<p>The <code>flex-shrink</code> property takes numbers as values. The higher the number, the more it will shrink compared to the other items in the container. For example, if one item has a <code>flex-shrink</code> value of <code>1</code> and the other has a <code>flex-shrink</code> value of <code>3</code>, the one with the value of <code>3</code> will shrink three times as much as the other.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add the CSS property <code>flex-shrink</code> to both <code>#box-1</code> and <code>#box-2</code>. Give <code>#box-1</code> a value of <code>1</code> and <code>#box-2</code> a value of <code>2</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "css-flexbox",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

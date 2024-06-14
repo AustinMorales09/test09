@@ -1,0 +1,57 @@
+{
+  "id": "660f229d2dbe09ef2954a4a1",
+  "title": "Step 41",
+  "challengeType": 1,
+  "dashedName": "step-41",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        14
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(i);\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(i);\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the concatenation operator on your <code>result</code> variable.</p>",
+      "testString": "assert.match(code, /(?:result\\s*\\+|\\+\\s*result)/);"
+    },
+    {
+      "text": "<p>You should concatenate <code>row</code> to your <code>result</code> variable.</p>",
+      "testString": "assert.match(code, /result\\s*\\+\\s*row|row\\s*\\+\\s*result/);"
+    },
+    {
+      "text": "<p>You should assign the result of your concatenation back to the <code>result</code> variable.</p>",
+      "testString": "assert.match(code, /result\\s*=\\s*(result\\s*\\+\\s*row|row\\s*\\+\\s*result);?/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Remember in your previous loop that you used the addition operator <code>+</code> to increase the value of <code>i</code> by <code>1</code>.</p>\n<p>You can do a similar thing with a string value, by appending a new string to an existing string. For example, <code>hello = hello + \" World\";</code> would add the string <code>\" World\"</code> to the existing string stored in the <code>hello</code> variable. This is called <dfn>concatenation</dfn>.</p>\n<p>In your <code>for...of</code> loop, use the addition operator to concatenate the <code>row</code> value to the <code>result</code> value.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

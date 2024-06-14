@@ -1,0 +1,77 @@
+{
+  "id": "59669d08d75b60482359409f",
+  "title": "Date format",
+  "challengeType": 1,
+  "forumTopicId": 302243,
+  "dashedName": "date-format",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const getDateSolution = () => {\n  const date = new Date();\n  const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];\n  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];\n  const fmt1 = `${date.getFullYear()}-${(1 + date.getMonth())}-${date.getDate()}`;\n  const fmt2 = `${weekdays[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;\n  return [fmt1, fmt2];\n};\n\nconst dates = getDateSolution();\nconst equalsMessage = `message: <code>getDataFormats()</code> should return <code>[\"${dates[0]}\", \"${dates[1]}\"]</code>.`;",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function getDateFormats() {\n\n  return true;\n}",
+      "error": null,
+      "seed": "function getDateFormats() {\n\n  return true;\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function getDateFormats() {\n  const date = new Date();\n  const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];\n  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];\n  const fmt1 = `${date.getFullYear()}-${(1 + date.getMonth())}-${date.getDate()}`;\n  const fmt2 = `${weekdays[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;\n  return [fmt1, fmt2];\n}",
+        "error": null,
+        "seed": "function getDateFormats() {\n  const date = new Date();\n  const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];\n  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];\n  const fmt1 = `${date.getFullYear()}-${(1 + date.getMonth())}-${date.getDate()}`;\n  const fmt2 = `${weekdays[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;\n  return [fmt1, fmt2];\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>getDateFormats</code> should be a function.</p>",
+      "testString": "assert(typeof getDateFormats === 'function');"
+    },
+    {
+      "text": "<p><code>getDateFormats</code> should return an object.</p>",
+      "testString": "assert(typeof getDateFormats() === 'object');"
+    },
+    {
+      "text": "<p><code>getDateFormats</code> should return an array with 2 elements.</p>",
+      "testString": "assert(getDateFormats().length === 2);"
+    },
+    {
+      "text": "<p><code>getDateFormats</code> should return the correct date in the right format</p>",
+      "testString": "assert.deepEqual(getDateFormats(), dates, equalsMessage);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Return an array with two date strings of the current date with the following specifications:</p>\n<ul>\n<li>The first string's date order should be the year number, month number, and day number separated by dashes (<code>-</code>).</li>\n<li>The first string's year should be four digits in length.</li>\n<li>The first string's month and day should not contain any leading zeros.</li>\n<li>The second string's weekday and month names should not be abbreviated.</li>\n<li>The second string's day should not contain any leading zeros.</li>\n</ul>\n<p>Example outputs:</p>\n<pre><code class=\"language-js\">['2007-11-23', 'Friday, November 23, 2007']\n['2021-3-2', 'Tuesday, March 2, 2021']\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "662016beb9bb69b2bd4f5d2a",
+  "title": "Task 6",
+  "challengeType": 19,
+  "dashedName": "task-6",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Tom describe Lisa's eyes?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>She has eyes bright brown.</code></p>",
+        "feedback": "<p>Remember that, in English, adjectives - in this case, <code>bright</code> and <code>brown</code> - go before the noun they qualify.</p>"
+      },
+      {
+        "answer": "<p><code>She has bright brown eyes.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>She has brown eyes bright.</code></p>",
+        "feedback": "<p>The adjective <code>bright</code> is after the noun it qualifies. It should go before it.</p>"
+      },
+      {
+        "answer": "<p><code>She has brown bright eyes.</code></p>",
+        "feedback": "<p>The adjective related to color has to be the one closest to the noun <code>eyes</code>.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge and the next are a quick review related to the sequence of adjectives related to <code>hair</code> and <code>eyes</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

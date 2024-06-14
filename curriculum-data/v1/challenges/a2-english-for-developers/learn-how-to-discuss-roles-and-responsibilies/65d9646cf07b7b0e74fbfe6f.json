@@ -1,0 +1,83 @@
+{
+  "id": "65d9646cf07b7b0e74fbfe6f",
+  "title": "Task 88",
+  "challengeType": 22,
+  "dashedName": "task-88",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Sophie, how do you _ your _ _ and your responsibilities outside of the office?</p>",
+    "blanks": [
+      {
+        "answer": "manage",
+        "feedback": "<p>It means to control or organize something effectively.</p>"
+      },
+      {
+        "answer": "work-life",
+        "feedback": "<p>This term connects work and personal life, showing they are aspects to be balanced.</p>"
+      },
+      {
+        "answer": "balance",
+        "feedback": "<p>It means having the right amount of time and energy for both work and personal life.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 5.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 6.46,
+        "dialogue": {
+          "text": "Sophie, how do you manage your work-life balance and your responsibilities outside of the office?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 6.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>To <code>manage</code> means to control or be in charge of something, like how you organize your time or tasks. For example, <code>I manage my schedule by planning ahead</code> means I control my schedule through planning.</p>\n<p><code>Work-life balance</code> is about making sure you have time for your job and also for people and things like family, friends, and hobbies. The <code>-</code> between <code>work</code> and <code>life</code> links the two words to show they are connected in the concept of balancing career and personal life.</p>\n<p>For example, <code>Achieving a good work-life balance is important for happiness</code> means it's important to have a balanced amount of work and personal time for overall well-being.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 92,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

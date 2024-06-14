@@ -1,0 +1,82 @@
+{
+  "id": "5a23c84252665b21eecc8045",
+  "title": "Sutherland-Hodgman polygon clipping",
+  "challengeType": 1,
+  "forumTopicId": 302336,
+  "dashedName": "sutherland-hodgman-polygon-clipping",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function clip(subjectPolygon, clipPolygon) {\n\n}",
+      "error": null,
+      "seed": "function clip(subjectPolygon, clipPolygon) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function clip(subjectPolygon, clipPolygon) {\n  var cp1, cp2, s, e, i, j;\n  var inside = function(p) {\n    return (\n      (cp2[0] - cp1[0]) * (p[1] - cp1[1]) > (cp2[1] - cp1[1]) * (p[0] - cp1[0])\n    );\n  };\n  var intersection = function() {\n    var dc = [cp1[0] - cp2[0], cp1[1] - cp2[1]],\n      dp = [s[0] - e[0], s[1] - e[1]],\n      n1 = cp1[0] * cp2[1] - cp1[1] * cp2[0],\n      n2 = s[0] * e[1] - s[1] * e[0],\n      n3 = 1.0 / (dc[0] * dp[1] - dc[1] * dp[0]);\n    return [(n1 * dp[0] - n2 * dc[0]) * n3, (n1 * dp[1] - n2 * dc[1]) * n3];\n  };\n  var outputList = subjectPolygon;\n  cp1 = clipPolygon[clipPolygon.length - 1];\n  for (j in clipPolygon) {\n    var cp2 = clipPolygon[j];\n    var inputList = outputList;\n    outputList = [];\n    s = inputList[inputList.length - 1]; //last on the input list\n    for (i in inputList) {\n      var e = inputList[i];\n      if (inside(e)) {\n        if (!inside(s)) {\n          outputList.push(intersection());\n        }\n        outputList.push(e);\n      } else if (inside(s)) {\n        outputList.push(intersection());\n      }\n      s = e;\n    }\n    cp1 = cp2;\n  }\n  return outputList.map(e => e.map(f => Math.round(f * 1000) / 1000));\n}",
+        "error": null,
+        "seed": "function clip(subjectPolygon, clipPolygon) {\n  var cp1, cp2, s, e, i, j;\n  var inside = function(p) {\n    return (\n      (cp2[0] - cp1[0]) * (p[1] - cp1[1]) > (cp2[1] - cp1[1]) * (p[0] - cp1[0])\n    );\n  };\n  var intersection = function() {\n    var dc = [cp1[0] - cp2[0], cp1[1] - cp2[1]],\n      dp = [s[0] - e[0], s[1] - e[1]],\n      n1 = cp1[0] * cp2[1] - cp1[1] * cp2[0],\n      n2 = s[0] * e[1] - s[1] * e[0],\n      n3 = 1.0 / (dc[0] * dp[1] - dc[1] * dp[0]);\n    return [(n1 * dp[0] - n2 * dc[0]) * n3, (n1 * dp[1] - n2 * dc[1]) * n3];\n  };\n  var outputList = subjectPolygon;\n  cp1 = clipPolygon[clipPolygon.length - 1];\n  for (j in clipPolygon) {\n    var cp2 = clipPolygon[j];\n    var inputList = outputList;\n    outputList = [];\n    s = inputList[inputList.length - 1]; //last on the input list\n    for (i in inputList) {\n      var e = inputList[i];\n      if (inside(e)) {\n        if (!inside(s)) {\n          outputList.push(intersection());\n        }\n        outputList.push(e);\n      } else if (inside(s)) {\n        outputList.push(intersection());\n      }\n      s = e;\n    }\n    cp1 = cp2;\n  }\n  return outputList.map(e => e.map(f => Math.round(f * 1000) / 1000));\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>clip</code> should be a function.</p>",
+      "testString": "assert(typeof clip == 'function');"
+    },
+    {
+      "text": "<p><code>clip([[50, 150], [200, 50], [350, 150], [350, 300], [250, 300], [200, 250], [150, 350], [100, 250], [100, 200]], [[100, 100], [300, 100], [300, 300], [100, 300]])</code> should return an array.</p>",
+      "testString": "assert(\n  Array.isArray(\n    clip(\n      [\n        [50, 150],\n        [200, 50],\n        [350, 150],\n        [350, 300],\n        [250, 300],\n        [200, 250],\n        [150, 350],\n        [100, 250],\n        [100, 200]\n      ],\n      [\n        [100, 100],\n        [300, 100],\n        [300, 300],\n        [100, 300]\n      ]\n    )\n  )\n);"
+    },
+    {
+      "text": "<p><code>clip([[50, 150], [200, 50], [350, 150], [350, 300], [250, 300], [200, 250], [150, 350], [100, 250], [100, 200]], [[100, 100], [300, 100], [300, 300], [100, 300]])</code> should return <code>[[100, 116.667], [125, 100], [275, 100], [300, 116.667], [300, 300], [250, 300], [200, 250], [175, 300], [125, 300], [100, 250]]</code>.</p>",
+      "testString": "assert.deepEqual(\n  clip(\n    [\n      [50, 150],\n      [200, 50],\n      [350, 150],\n      [350, 300],\n      [250, 300],\n      [200, 250],\n      [150, 350],\n      [100, 250],\n      [100, 200]\n    ],\n    [\n      [100, 100],\n      [300, 100],\n      [300, 300],\n      [100, 300]\n    ]\n  ),\n  [\n    [100, 116.667],\n    [125, 100],\n    [275, 100],\n    [300, 116.667],\n    [300, 300],\n    [250, 300],\n    [200, 250],\n    [175, 300],\n    [125, 300],\n    [100, 250]\n  ]\n);"
+    },
+    {
+      "text": "<p><code>clip([[150, 200], [400, 450], [30, 50]], [[10, 10], [300, 200], [400, 600], [100, 300]])</code> should return <code>[[150, 200], [350, 400], [348.611, 394.444], [30, 50]]</code>.</p>",
+      "testString": "assert.deepEqual(\n  clip(\n    [\n      [150, 200],\n      [400, 450],\n      [30, 50]\n    ],\n    [\n      [10, 10],\n      [300, 200],\n      [400, 600],\n      [100, 300]\n    ]\n  ),\n  [\n    [150, 200],\n    [350, 400],\n    [348.611, 394.444],\n    [30, 50]\n  ]\n);"
+    },
+    {
+      "text": "<p><code>clip([[250, 200], [100, 450], [130, 250]], [[50, 60], [100, 230], [400, 600], [100, 300]])</code> should return <code>[[129.167, 329.167], [119.565, 319.565], [121.854, 304.305]]</code>.</p>",
+      "testString": "assert.deepEqual(\n  clip(\n    [\n      [250, 200],\n      [100, 450],\n      [130, 250]\n    ],\n    [\n      [50, 60],\n      [100, 230],\n      [400, 600],\n      [100, 300]\n    ]\n  ),\n  [\n    [129.167, 329.167],\n    [119.565, 319.565],\n    [121.854, 304.305]\n  ]\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The Sutherland-Hodgman clipping algorithm finds the polygon that is the intersection between an arbitrary polygon (the \"subject polygon\") and a convex polygon (the \"clip polygon\"). It is used in computer graphics (especially 2D graphics) to reduce the complexity of a scene being displayed by eliminating parts of a polygon that do not need to be displayed. Take the closed polygon defined by the points:</p>\n<pre>[(50, 150), (200, 50), (350, 150), (350, 300), (250, 300), (200, 250), (150, 350), (100, 250), (100, 200)]</pre>\n<p>and clip it by the rectangle defined by the points:</p>\n<pre>[(100, 100), (300, 100), (300, 300), (100, 300)]</pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that takes 2 arrays as parameters. The first array contains the points of the subject polygon and the second array contains the points of the clipping polygon. The function should return an array containing the points of the clipped polygon. Each number should be rounded to 3 decimal places.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 145,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

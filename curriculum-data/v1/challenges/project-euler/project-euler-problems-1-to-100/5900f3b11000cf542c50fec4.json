@@ -1,0 +1,81 @@
+{
+  "id": "5900f3b11000cf542c50fec4",
+  "title": "Problem 69: Totient maximum",
+  "challengeType": 1,
+  "forumTopicId": 302181,
+  "dashedName": "problem-69-totient-maximum",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function totientMaximum(limit) {\n\n  return true;\n}\n\ntotientMaximum(10);",
+      "error": null,
+      "seed": "function totientMaximum(limit) {\n\n  return true;\n}\n\ntotientMaximum(10);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function totientMaximum(limit) {\n  function getSievePrimes(max) {\n    const primesMap = new Array(max).fill(true);\n    primesMap[0] = false;\n    primesMap[1] = false;\n    const primes = [];\n    for (let i = 2; i < max; i = i + 2) {\n      if (primesMap[i]) {\n        primes.push(i);\n        for (let j = i * i; j < max; j = j + i) {\n          primesMap[j] = false;\n        }\n      }\n      if (i === 2) {\n        i = 1;\n      }\n    }\n    return primes;\n  }\n\n  const MAX_PRIME = 50;\n  const primes = getSievePrimes(MAX_PRIME);\n  let result = 1;\n\n  for (let i = 0; result * primes[i] < limit; i++) {\n    result *= primes[i];\n  }\n  return result;\n}",
+        "error": null,
+        "seed": "function totientMaximum(limit) {\n  function getSievePrimes(max) {\n    const primesMap = new Array(max).fill(true);\n    primesMap[0] = false;\n    primesMap[1] = false;\n    const primes = [];\n    for (let i = 2; i < max; i = i + 2) {\n      if (primesMap[i]) {\n        primes.push(i);\n        for (let j = i * i; j < max; j = j + i) {\n          primesMap[j] = false;\n        }\n      }\n      if (i === 2) {\n        i = 1;\n      }\n    }\n    return primes;\n  }\n\n  const MAX_PRIME = 50;\n  const primes = getSievePrimes(MAX_PRIME);\n  let result = 1;\n\n  for (let i = 0; result * primes[i] < limit; i++) {\n    result *= primes[i];\n  }\n  return result;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>totientMaximum(10)</code> should return a number.</p>",
+      "testString": "assert(typeof totientMaximum(10) === 'number');"
+    },
+    {
+      "text": "<p><code>totientMaximum(10)</code> should return <code>6</code>.</p>",
+      "testString": "assert.strictEqual(totientMaximum(10), 6);"
+    },
+    {
+      "text": "<p><code>totientMaximum(10000)</code> should return <code>2310</code>.</p>",
+      "testString": "assert.strictEqual(totientMaximum(10000), 2310);"
+    },
+    {
+      "text": "<p><code>totientMaximum(500000)</code> should return <code>30030</code>.</p>",
+      "testString": "assert.strictEqual(totientMaximum(500000), 30030);"
+    },
+    {
+      "text": "<p><code>totientMaximum(1000000)</code> should return <code>510510</code>.</p>",
+      "testString": "assert.strictEqual(totientMaximum(1000000), 510510);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Euler's Totient function, ${\\phi}(n)$ (sometimes called the phi function), is used to determine the number of numbers less than <code>n</code> which are relatively prime to <code>n</code>. For example, as 1, 2, 4, 5, 7, and 8, are all less than nine and relatively prime to nine, ${\\phi}(9) = 6$.</p>\n<div style='margin-left: 4em;'>\n<table>\n<thead>\n<tr>\n<th>$n$</th>\n<th>$\\text{Relatively Prime}$</th>\n<th>$\\displaystyle{\\phi}(n)$</th>\n<th>$\\displaystyle\\frac{n}{{\\phi}(n)}$</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2</td>\n<td>1</td>\n<td>1</td>\n<td>2</td>\n</tr>\n<tr>\n<td>3</td>\n<td>1,2</td>\n<td>2</td>\n<td>1.5</td>\n</tr>\n<tr>\n<td>4</td>\n<td>1,3</td>\n<td>2</td>\n<td>2</td>\n</tr>\n<tr>\n<td>5</td>\n<td>1,2,3,4</td>\n<td>4</td>\n<td>1.25</td>\n</tr>\n<tr>\n<td>6</td>\n<td>1,5</td>\n<td>2</td>\n<td>3</td>\n</tr>\n<tr>\n<td>7</td>\n<td>1,2,3,4,5,6</td>\n<td>6</td>\n<td>1.1666...</td>\n</tr>\n<tr>\n<td>8</td>\n<td>1,3,5,7</td>\n<td>4</td>\n<td>2</td>\n</tr>\n<tr>\n<td>9</td>\n<td>1,2,4,5,7,8</td>\n<td>6</td>\n<td>1.5</td>\n</tr>\n<tr>\n<td>10</td>\n<td>1,3,7,9</td>\n<td>4</td>\n<td>2.5</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>It can be seen that <code>n</code> = 6 produces a maximum $\\displaystyle\\frac{n}{{\\phi}(n)}$ for <code>n</code> ≤ 10.</p>\n<p>Find the value of <code>n</code> ≤ <code>limit</code> for which $\\displaystyle\\frac{n}{{\\phi(n)}}$ is a maximum.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 68,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

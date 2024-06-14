@@ -1,0 +1,80 @@
+{
+  "id": "657b69e10d6606a0185d4d4f",
+  "title": "Task 23",
+  "challengeType": 22,
+  "dashedName": "task-23",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Tom: How about you? _ you _ any hobbies?</p>",
+    "blanks": [
+      {
+        "answer": "Do",
+        "feedback": "<p>To form a question, we use the auxiliary verb <code>do</code> before the subject, followed by the base form of the main verb. In this case, the main verb is <code>have,</code> which becomes <code>do have</code> in the question.</p>"
+      },
+      {
+        "answer": "have",
+        "feedback": "<p>To form a question, we use the auxiliary verb <code>do</code> before the subject, followed by the base form of the main verb. In this case, the main verb is <code>have,</code> which becomes <code>do have</code> in the question.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 8.06,
+        "finishTimestamp": 9.72
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 2.66,
+        "dialogue": {
+          "text": "How about you? Do you have any hobbies?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 3.16
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>So far you have learned how to create questions with the verb to be. In sentences with the verb <code>to be</code> (am, is, are) you just have to change the order of the noun and the verb to create a question. Like this:</p>\n<p><code>You are a developer</code> -> <code>Are you a developer?</code></p>\n<p>Changing the order of the noun and the verb doesn’t work in every situation. Most sentences need you to add an auxiliary verb to create questions. One of the most common auxiliary verbs is <code>Do</code>.</p>\n<p>You can use the verb <code>do</code> as an auxiliary to most verbs. In the present tense it assumes the form of <code>do</code> (I, you, we, they) and <code>does</code>(he, she, it). It is like a marker you will add to the beginning of your sentence and lets everyone know that sentence is a question. For example:</p>\n<p>Statement: <code>You debug on Fridays.</code>\nQuestion: <code>Do you debug on Fridays?</code></p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

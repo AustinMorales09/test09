@@ -1,0 +1,49 @@
+{
+  "id": "65c4eb814cc977c95cd7df0e",
+  "title": "Step 1",
+  "challengeType": 20,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>class</code> keyword to declare an empty class named <code>TreeNode</code>.</p>",
+      "testString": "({\n  test: () => {\n    assert(runPython(`\n      import inspect\n      inspect.isclass(TreeNode)\n    `));\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In this project, you are going to create a Binary Search Tree (BST). A BST is a data structure in which each node has at most two children, with the left child containing values less than the parent node and the right child containing values greater than the parent node, allowing for efficient searching and sorting operations.</p>\n<p>This is what a Binary Search Tree looks like:</p>\n<img class=\"img-responsive center-block\" alt=\"a binairy search tree\" src=\"https://cdn.freecodecamp.org/curriculum/python/bst-example.png\" style=\"background-color: white; height:500px; width:500px; padding: 10px;\">\n<p>Begin by defining an empty <code>TreeNode</code> class. The <code>TreeNode</code> class represents a node in a binary search tree. Use the <code>pass</code> keyword to fill the class body and avoid an error.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

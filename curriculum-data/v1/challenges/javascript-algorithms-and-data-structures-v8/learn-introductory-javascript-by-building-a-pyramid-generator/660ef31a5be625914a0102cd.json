@@ -1,0 +1,65 @@
+{
+  "id": "660ef31a5be625914a0102cd",
+  "title": "Step 5",
+  "challengeType": 1,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nconsole.log(character);\n",
+      "error": null,
+      "seed": "let character = 'Hello';\nconsole.log(character);\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>character</code> twice in your code.</p>",
+      "testString": "assert.lengthOf(code.match(/character/g), 3);"
+    },
+    {
+      "text": "<p>You should use the assignment operator to reassign <code>character</code>.</p>",
+      "testString": "assert.lengthOf(code.match(/character\\s*\\=/g), 2);"
+    },
+    {
+      "text": "<p>You should use the string <code>\"World\"</code> in your code.</p>",
+      "testString": "assert.match(code, /(\"|')World\\1/);"
+    },
+    {
+      "text": "<p>Your <code>character</code> variable should have the value <code>\"World\"</code>.</p>",
+      "testString": "assert.equal(character, \"World\");"
+    },
+    {
+      "text": "<p>Your reassignment should not use <code>let</code>.</p>",
+      "testString": "assert.isBelow(code.match(/let/g).length, 2);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When a variable is declared with the <code>let</code> keyword, you can <dfn>reassign</dfn> (or change the value of) that variable later on. In this example, the value of <code>programmer</code> is changed from <code>\"Naomi\"</code> to <code>\"CamperChan\"</code>.</p>\n<pre><code class=\"language-js\">let programmer = \"Naomi\";\nprogrammer = \"CamperChan\";\n</code></pre>\n<p>Note that when reassigning a variable, you do <strong>not</strong> use the <code>let</code> keyword again.</p>\n<p>After your <code>console.log</code>, assign the value <code>\"World\"</code> to your <code>character</code> variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

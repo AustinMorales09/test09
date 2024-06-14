@@ -1,0 +1,50 @@
+{
+  "id": "5e7b9f0b0b6c005b0e76f070",
+  "title": "Regular Expressions: Practical Applications",
+  "challengeType": 11,
+  "videoId": "xCjFU9G6x48",
+  "bilibiliIds": {
+    "aid": 546924659,
+    "bvid": "BV1mq4y1H7rZ",
+    "cid": 376386493
+  },
+  "dashedName": "regular-expressions-practical-applications",
+  "solutions": [],
+  "question": {
+    "text": "<p>What will search for a \"$\" in a regular expression?</p>",
+    "answers": [
+      {
+        "answer": "<p>$</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>\\dollar\\</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>\\$</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>!$</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

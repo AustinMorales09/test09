@@ -1,0 +1,65 @@
+{
+  "id": "5900f53d1000cf542c51004f",
+  "title": "Problem 464: Möbius function and intervals",
+  "challengeType": 1,
+  "forumTopicId": 302139,
+  "dashedName": "problem-464-mbius-function-and-intervals",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function mobiusFunctionAndIntervals() {\n\n  return true;\n}\n\nmobiusFunctionAndIntervals();",
+      "error": null,
+      "seed": "function mobiusFunctionAndIntervals() {\n\n  return true;\n}\n\nmobiusFunctionAndIntervals();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>mobiusFunctionAndIntervals()</code> should return <code>198775297232878</code>.</p>",
+      "testString": "assert.strictEqual(mobiusFunctionAndIntervals(), 198775297232878);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The Möbius function, denoted $μ(n)$, is defined as:</p>\n<ul>\n<li>$μ(n) = (-1)^{ω(n)}$ if $n$ is squarefree (where $ω(n)$ is the number of distinct prime factors of $n$)</li>\n<li>$μ(n) = 0$ if $n$ is not squarefree.</li>\n</ul>\n<p>Let $P(a, b)$ be the number of integers $n$ in the interval $[a, b]$ such that $μ(n) = 1$.</p>\n<p>Let $N(a, b)$ be the number of integers $n$ in the interval $[a, b]$ such that $μ(n) = -1$.</p>\n<p>For example, $P(2, 10) = 2$ and $N(2, 10) = 4$.</p>\n<p>Let $C(n)$ be the number of integer pairs $(a, b)$ such that:</p>\n<ul>\n<li>$1 ≤ a ≤ b ≤ n$,</li>\n<li>$99 \\times N(a, b) ≤ 100 \\times P(a, b)$, and</li>\n<li>$99 \\times P(a, b) ≤ 100 \\times N(a, b)$.</li>\n</ul>\n<p>For example, $C(10) = 13$, $C(500) = 16\\,676$ and $C(10\\,000) = 20\\,155\\,319$.</p>\n<p>Find $C(20\\,000\\,000)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 63,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

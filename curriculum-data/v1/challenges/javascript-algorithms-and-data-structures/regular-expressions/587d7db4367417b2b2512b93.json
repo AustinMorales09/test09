@@ -1,0 +1,78 @@
+{
+  "id": "587d7db4367417b2b2512b93",
+  "title": "Find More Than the First Match",
+  "challengeType": 1,
+  "forumTopicId": 301342,
+  "dashedName": "find-more-than-the-first-match",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let twinkleStar = \"Twinkle, twinkle, little star\";\nlet starRegex = /change/; // Change this line\nlet result = twinkleStar; // Change this line",
+      "error": null,
+      "seed": "let twinkleStar = \"Twinkle, twinkle, little star\";\nlet starRegex = /change/; // Change this line\nlet result = twinkleStar; // Change this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let twinkleStar = \"Twinkle, twinkle, little star\";\nlet starRegex = /twinkle/gi;\nlet result = twinkleStar.match(starRegex);",
+        "error": null,
+        "seed": "let twinkleStar = \"Twinkle, twinkle, little star\";\nlet starRegex = /twinkle/gi;\nlet result = twinkleStar.match(starRegex);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your regex <code>starRegex</code> should use the global flag <code>g</code></p>",
+      "testString": "assert(starRegex.flags.match(/g/).length == 1);"
+    },
+    {
+      "text": "<p>Your regex <code>starRegex</code> should use the case insensitive flag <code>i</code></p>",
+      "testString": "assert(starRegex.flags.match(/i/).length == 1);"
+    },
+    {
+      "text": "<p>Your match should match both occurrences of the word <code>Twinkle</code></p>",
+      "testString": "assert(\n  result.sort().join() ==\n    twinkleStar\n      .match(/twinkle/gi)\n      .sort()\n      .join()\n);"
+    },
+    {
+      "text": "<p>Your match <code>result</code> should have two elements in it.</p>",
+      "testString": "assert(result.length == 2);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>So far, you have only been able to extract or search a pattern once.</p>\n<pre><code class=\"language-js\">let testStr = \"Repeat, Repeat, Repeat\";\nlet ourRegex = /Repeat/;\ntestStr.match(ourRegex);\n</code></pre>\n<p>Here <code>match</code> would return <code>[\"Repeat\"]</code>.</p>\n<p>To search or extract a pattern more than once, you can use the global search flag: <code>g</code>.</p>\n<pre><code class=\"language-js\">let repeatRegex = /Repeat/g;\ntestStr.match(repeatRegex);\n</code></pre>\n<p>And here <code>match</code> returns the value <code>[\"Repeat\", \"Repeat\", \"Repeat\"]</code></p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Using the regex <code>starRegex</code>, find and extract both <code>Twinkle</code> words from the string <code>twinkleStar</code>.</p>\n<p><strong>Note</strong><br>\nYou can have multiple flags on your regex like <code>/search/gi</code></p>\n</section>",
+  "translationPending": false,
+  "block": "regular-expressions",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

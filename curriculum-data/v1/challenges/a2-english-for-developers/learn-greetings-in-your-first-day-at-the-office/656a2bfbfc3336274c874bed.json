@@ -1,0 +1,88 @@
+{
+  "id": "656a2bfbfc3336274c874bed",
+  "title": "Task 34",
+  "challengeType": 19,
+  "dashedName": "task-34",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Tom's profession?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Developer</code></p>",
+        "feedback": "<p>Tom clearly states his job title after introducing himself.</p>"
+      },
+      {
+        "answer": "<p><code>Manager</code></p>",
+        "feedback": "<p>Tom clearly states his job title after introducing himself.</p>"
+      },
+      {
+        "answer": "<p><code>Graphic Designer</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Engineer</code></p>",
+        "feedback": "<p>Tom clearly states his job title after introducing himself.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 3.52
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.15,
+        "dialogue": {
+          "text": "Hi there. I'm Tom. I'm the new graphic designer.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.65
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Occupations or professions are roles people have in their jobs. In this dialogue, Tom introduces himself with his profession.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

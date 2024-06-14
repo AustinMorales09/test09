@@ -1,0 +1,30 @@
+{
+  "id": "587d7fb1367417b2b2512bf2",
+  "title": "Use the .env File",
+  "challengeType": 2,
+  "forumTopicId": 301521,
+  "dashedName": "use-the--env-file",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The response of the endpoint <code>/json</code> should change according to the environment variable <code>MESSAGE_STYLE</code></p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/use-env-vars').then(\n    (data) => {\n      assert.isTrue(\n        data.passed,\n        'The response of \"/json\" does not change according to MESSAGE_STYLE'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>.env</code> file is a hidden file that is used to pass environment variables to your application. This file is secret, no one but you can access it, and it can be used to store data that you want to keep private or hidden. For example, you can store API keys from external services or your database URI. You can also use it to store configuration options. By setting configuration options, you can change the behavior of your application, without the need to rewrite some code.</p>\n<p>The environment variables are accessible from the app as <code>process.env.VAR_NAME</code>. The <code>process.env</code> object is a global Node object, and variables are passed as strings. By convention, the variable names are all uppercase, with words separated by an underscore. The <code>.env</code> is a shell file, so you don’t need to wrap names or values in quotes. It is also important to note that there cannot be space around the equals sign when you are assigning values to your variables, e.g. <code>VAR_NAME=value</code>. Usually, you will put each variable definition on a separate line.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Let's add an environment variable as a configuration option.</p>\n<p>Create a <code>.env</code> file in the root of your project directory, and store the variable <code>MESSAGE_STYLE=uppercase</code> in it.</p>\n<p>Then, in the <code>/json</code> GET route handler you created in the last challenge access <code>process.env.MESSAGE_STYLE</code> and transform the response object's <code>message</code> to uppercase if the variable equals <code>uppercase</code>. The response object should either be <code>{\"message\": \"Hello json\"}</code> or <code>{\"message\": \"HELLO JSON\"}</code>, depending on the <code>MESSAGE_STYLE</code> value. Note that you must read the value of <code>process.env.MESSAGE_STYLE</code> <strong>inside</strong> the route handler, not outside of it, due to the way our tests run.</p>\n<p>If you are working locally, you will need the <code>dotenv</code> package. It loads environment variables from your <code>.env</code> file into <code>process.env</code>. The <code>dotenv</code> package has already been installed, and is in your project's <code>package.json</code> file. At the top of your <code>myApp.js</code> file, add <code>require('dotenv').config()</code> to load the environment variables.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-node-and-express",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

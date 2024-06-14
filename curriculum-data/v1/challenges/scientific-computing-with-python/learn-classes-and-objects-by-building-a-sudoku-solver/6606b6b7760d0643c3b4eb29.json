@@ -1,0 +1,49 @@
+{
+  "id": "6606b6b7760d0643c3b4eb29",
+  "title": "Step 19",
+  "challengeType": 20,
+  "dashedName": "step-19",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        11
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    def __init__(self, board):\n        self.board = board\n    def find_empty_cell(self):\n        for row, contents in enumerate(self.board):\n            try:\n                col = contents.index(0)\n                return row, col\n            except:\n                pass\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)",
+      "error": null,
+      "seed": "class Board:\n    def __init__(self, board):\n        self.board = board\n    def find_empty_cell(self):\n        for row, contents in enumerate(self.board):\n            try:\n                col = contents.index(0)\n                return row, col\n            except:\n                pass\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have <code>except ValueError:</code> in your code.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"Board\").find_function(\"find_empty_cell\").find_for_loops()[0].find_bodies()[0].is_equivalent(\"try:\\\\n  col = contents.index(0)\\\\n  return row, col\\\\nexcept ValueError:\\\\n  pass\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>If the code inside the <code>try</code> block raises an exception, you want the program to continue running, and the <code>pass</code> statement accomplishes this.</p>\n<p>Although this code works, specifying the exception type after the <code>except</code> keyword is considered good practice.</p>\n<p>Since you know that a <code>ValueError</code> might be raised, leave a space after the <code>except</code> keyword and add <code>ValueError</code> after that.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

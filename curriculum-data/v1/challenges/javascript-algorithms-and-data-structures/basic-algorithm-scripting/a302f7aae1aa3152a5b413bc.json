@@ -1,0 +1,81 @@
+{
+  "id": "a302f7aae1aa3152a5b413bc",
+  "title": "Factorialize a Number",
+  "challengeType": 1,
+  "forumTopicId": 16013,
+  "dashedName": "factorialize-a-number",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function factorialize(num) {\n  return num;\n}\n\nfactorialize(5);",
+      "error": null,
+      "seed": "function factorialize(num) {\n  return num;\n}\n\nfactorialize(5);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function factorialize(num) {\n  return num < 1 ? 1 : num * factorialize(num - 1);\n}\n\nfactorialize(5);",
+        "error": null,
+        "seed": "function factorialize(num) {\n  return num < 1 ? 1 : num * factorialize(num - 1);\n}\n\nfactorialize(5);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>factorialize(5)</code> should return a number.</p>",
+      "testString": "assert(typeof factorialize(5) === 'number');"
+    },
+    {
+      "text": "<p><code>factorialize(5)</code> should return <code>120</code>.</p>",
+      "testString": "assert(factorialize(5) === 120);"
+    },
+    {
+      "text": "<p><code>factorialize(10)</code> should return <code>3628800</code>.</p>",
+      "testString": "assert(factorialize(10) === 3628800);"
+    },
+    {
+      "text": "<p><code>factorialize(20)</code> should return <code>2432902008176640000</code>.</p>",
+      "testString": "assert(factorialize(20) === 2432902008176640000);"
+    },
+    {
+      "text": "<p><code>factorialize(0)</code> should return <code>1</code>.</p>",
+      "testString": "assert(factorialize(0) === 1);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Return the factorial of the provided integer.</p>\n<p>If the integer is represented with the letter <code>n</code>, a factorial is the product of all positive integers less than or equal to <code>n</code>.</p>\n<p>Factorials are often represented with the shorthand notation <code>n!</code></p>\n<p>For example: <code>5! = 1 * 2 * 3 * 4 * 5 = 120</code></p>\n<p>Only integers greater than or equal to zero will be supplied to the function.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

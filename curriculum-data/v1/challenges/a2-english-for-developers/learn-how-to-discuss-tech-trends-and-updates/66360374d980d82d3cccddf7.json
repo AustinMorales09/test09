@@ -1,0 +1,87 @@
+{
+  "id": "66360374d980d82d3cccddf7",
+  "title": "Task 8",
+  "challengeType": 22,
+  "dashedName": "task-8",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It's _ _ _ trends that _ the development process.</p>",
+    "blanks": [
+      {
+        "answer": "one",
+        "feedback": "<p>This word indicates a single item or example from a group, used here to highlight a specific trend among others.</p>"
+      },
+      {
+        "answer": "of",
+        "feedback": "<p>This word is used to show belonging or part of a category.</p>"
+      },
+      {
+        "answer": "those",
+        "feedback": "<p>This word refers back to a previously mentioned group of things, in this case, <code>trends</code>.</p>"
+      },
+      {
+        "answer": "simplifies",
+        "feedback": "<p>This verb is used to describe the action of making something less complex or easier to do. Use the third person singular form.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.74,
+        "finishTimestamp": 12.5
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.76,
+        "dialogue": {
+          "text": "It's one of those trends that simplifies the development process.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.26
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>one of those</code> is used to refer to a specific item or idea within a larger group. It highlights a particular example from a broader category.</p>\n<p>For example, <code>This is one of those books that you can't put down.</code> This refers to a specific type of book within the larger group of all books.</p>\n<p><code>Simplify the process</code> means to make a procedure easier to understand or carry out. It often involves reducing complexity or steps required to achieve something, as seen in the phrase <code>simplify the development process</code>, indicating making software development less complicated.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

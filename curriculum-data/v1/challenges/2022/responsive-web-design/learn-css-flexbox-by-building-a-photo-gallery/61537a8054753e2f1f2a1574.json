@@ -1,0 +1,73 @@
+{
+  "id": "61537a8054753e2f1f2a1574",
+  "title": "Step 2",
+  "challengeType": 0,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n\n  </head>\n  <body>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n\n  </head>\n  <body>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have two <code>meta</code> elements.</p>",
+      "testString": "const meta = document.querySelectorAll('meta');\nassert(meta?.length === 2);"
+    },
+    {
+      "text": "<p>One <code>meta</code> element should have a <code>name</code> set to <code>viewport</code>, and <code>content</code> set to <code>width=device-width, initial-scale=1.0</code>.</p>",
+      "testString": "const meta = [...document.querySelectorAll('meta')];\nconst target = meta?.find(m => m?.getAttribute('name') === 'viewport' && m?.getAttribute('content').match(/width=device-width,\\s?initial-scale=1(.0)?/) && !m?.getAttribute('charset'));\nassert.exists(target);"
+    },
+    {
+      "text": "<p>Your other <code>meta</code> element should have the <code>charset</code> attribute set to <code>UTF-8</code>.</p>",
+      "testString": "const meta = [...document.querySelectorAll('meta')];\nconst target = meta?.find(m => !m?.getAttribute('name') && !m?.getAttribute('content') && m?.getAttribute('charset')?.toLowerCase() === 'utf-8');\nassert.exists(target);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Within your <code>head</code> element, add a <code>meta</code> tag with the <code>name</code> set to <code>viewport</code> and the <code>content</code> set to <code>width=device-width, initial-scale=1</code>.</p>\n<p>Also add a <code>meta</code> tag with the <code>charset</code> set to <code>UTF-8</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-flexbox-by-building-a-photo-gallery",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

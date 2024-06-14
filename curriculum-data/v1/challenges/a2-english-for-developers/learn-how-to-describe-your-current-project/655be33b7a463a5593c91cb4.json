@@ -1,0 +1,79 @@
+{
+  "id": "655be33b7a463a5593c91cb4",
+  "title": "Task 21",
+  "challengeType": 22,
+  "dashedName": "task-21",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Pictures can be _ to explain things. We are not using pictures, but it's _ fun to work with data like this.</p>",
+    "blanks": [
+      {
+        "answer": "great",
+        "feedback": "<p>Very good or very nice.</p>"
+      },
+      {
+        "answer": "definitely",
+        "feedback": "<p>Adverb that emphasizes a belief</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.12,
+        "finishTimestamp": 28.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.9,
+        "dialogue": {
+          "text": "Pictures can be great to explain things. We're not using pictures, but it's definitely fun to work with data like this.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 7.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>We say something is <code>definite</code> when we are certain about it.</p>\n<p>When you add the suffix <code>-ly</code>, <code>definite</code> becomes an adverb, <code>definitely</code>, which means being sure about something or being confident about it.</p>\n<p>It's often used to emphasize what the speaker believes is true or likely to be true. For example:</p>\n<p><code>I can definitely see why this is important</code> (emphasizing that the importance is expected to be clear)</p>\n<p><code>She will definitely finish the project on time</code> (showing confidence in her completing the project)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

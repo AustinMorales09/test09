@@ -1,0 +1,79 @@
+{
+  "id": "65f365351cf89fedddcc281e",
+  "title": "Task 45",
+  "challengeType": 22,
+  "dashedName": "task-45",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>No, not really. I played around with coding, but most of my projects involved _ designs and _ systems. It was a bit different.</p>",
+    "blanks": [
+      {
+        "answer": "circuit",
+        "feedback": "<p>This term refers to the process of designing the layout and connections of electrical or electronic components to create a functioning system.</p>"
+      },
+      {
+        "answer": "electrical",
+        "feedback": "<p>This adjective describes systems or components that are related to or operated by electricity.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 24.02,
+        "finishTimestamp": 31.2
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 8.18,
+        "dialogue": {
+          "text": "No, not really. I played around with coding, but most of my projects involved circuit designs and electrical systems. It was a bit different.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 8.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Sophie talks about her projects which involved <code>circuit designs</code> and <code>electrical systems</code>.</p>\n<p><code>Circuit design</code> is the process of planning the layout and connections of an electrical or electronic circuit.</p>\n<p><code>Electrical systems</code> refer to a network of electrical components connected to carry out some operation. These can include anything from simple circuits like a flashlight to complex systems found in computers and other high-tech devices.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 47,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

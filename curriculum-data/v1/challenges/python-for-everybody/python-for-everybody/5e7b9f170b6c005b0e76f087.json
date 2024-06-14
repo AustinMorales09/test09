@@ -1,0 +1,46 @@
+{
+  "id": "5e7b9f170b6c005b0e76f087",
+  "title": "Object Lifecycle",
+  "challengeType": 11,
+  "videoId": "p1r3h_AMMIM",
+  "bilibiliIds": {
+    "aid": 461998717,
+    "bvid": "BV1JL411n7Hr",
+    "cid": 377529681
+  },
+  "dashedName": "object-lifecycle",
+  "solutions": [],
+  "question": {
+    "text": "<p>What will the following program print?:</p>\n<pre><code class=\"language-python\">class PartyAnimal:\n    x = 0\n    name = ''\n    def __init__(self, nam):\n        self.name = nam\n        print(self.name,'constructed')\n    def party(self):\n        self.x = self.x + 1\n        print(self.name,'party count',self.x)\n\nq = PartyAnimal('Quincy')\nm = PartyAnimal('Miya')\n\nq.party()\nm.party()\nq.party()\n</code></pre>",
+    "answers": [
+      {
+        "answer": "<pre>\nQuincy constructed\nMiya constructed\nQuincy party count 1\nMiya party count 2\nQuincy party count 3\n</pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre>\nQuincy constructed\nMiya constructed\nQuincy party count 1\nMiya party count 1\nQuincy party count 2\n</pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre>\nQuincy constructed\nQuincy party count 1\nQuincy party count 2\nMiya constructed\nMiya party count 1\n</pre>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 44,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

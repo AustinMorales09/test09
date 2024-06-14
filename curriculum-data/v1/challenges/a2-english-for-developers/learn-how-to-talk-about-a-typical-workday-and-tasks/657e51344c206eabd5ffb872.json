@@ -1,0 +1,75 @@
+{
+  "id": "657e51344c206eabd5ffb872",
+  "title": "Task 73",
+  "challengeType": 22,
+  "dashedName": "task-73",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hey, Linda. Today, I want to talk to you about _ and the obligations we have in our daily tasks.</p>",
+    "blanks": [
+      {
+        "answer": "compliance",
+        "feedback": "<p>A term that means following rules and doing what is required at work.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room2.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 7.4
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 8.4,
+        "dialogue": {
+          "text": "Hey, Linda. Today, I want to talk to you about compliance and the obligations we have in our daily tasks.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 8.9
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 76,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

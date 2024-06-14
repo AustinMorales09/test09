@@ -1,0 +1,65 @@
+{
+  "id": "65a450e8fb2c9d75c7378d28",
+  "title": "Step 86",
+  "challengeType": 20,
+  "dashedName": "step-86",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        31,
+        36
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'mrttaqrhknsw ih puggrur'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction=1):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    final_message = ''\n\n    for char in message.lower():\n\n        # Append any non-letter character to the message\n        if not char.isalpha():\n            final_message += char\n        else:        \n            # Find the right key character to encode/decode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted/decrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            final_message += alphabet[new_index]\n    \n    return final_message\n\ndef encrypt(message, key):\n    return vigenere(message, key)\n    \ndef decrypt(message, key):\n    return vigenere(message, key, -1)\nencryption = encrypt(text, custom_key)\nprint(encryption)\ndecryption = decrypt(encryption, custom_key)\nprint(decryption)",
+      "error": null,
+      "seed": "text = 'mrttaqrhknsw ih puggrur'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction=1):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    final_message = ''\n\n    for char in message.lower():\n\n        # Append any non-letter character to the message\n        if not char.isalpha():\n            final_message += char\n        else:        \n            # Find the right key character to encode/decode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted/decrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            final_message += alphabet[new_index]\n    \n    return final_message\n\ndef encrypt(message, key):\n    return vigenere(message, key)\n    \ndef decrypt(message, key):\n    return vigenere(message, key, -1)\nencryption = encrypt(text, custom_key)\nprint(encryption)\ndecryption = decrypt(encryption, custom_key)\nprint(decryption)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should delete the <code>encryption</code> variable and its value.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.isFalse(/encryption\\s*=\\s*encrypt\\s*\\(\\s*text\\s*,\\s*custom_key\\s*\\)/.test(commentless_code))"
+    },
+    {
+      "text": "<p>You should not have <code>print(encryption)</code> in your code.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.isFalse(/print\\s*\\(\\s*encryption\\s*\\)/.test(commentless_code))"
+    },
+    {
+      "text": "<p>You should turn <code>decryption = decrypt(encryption, custom_key)</code> into a comment.</p>",
+      "testString": "assert(code.match(/#\\s*decryption\\s*=/));"
+    },
+    {
+      "text": "<p>You should turn <code>print(decryption)</code> into a comment.</p>",
+      "testString": "assert(code.match(/#\\s*print\\s*\\(\\s*decryption\\s*\\)/));"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Since this time you are starting from an encrypted string to decrypt, you won't need the <code>encryption</code> variable anymore.</p>\n<p>Delete <code>encryption</code> and the <code>print(encryption)</code> call. Also, comment out the last two lines of your code.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 85,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

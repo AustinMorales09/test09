@@ -1,0 +1,88 @@
+{
+  "id": "65d60150d4ac7c73895342cc",
+  "title": "Task 37",
+  "challengeType": 19,
+  "dashedName": "task-37",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Tom say about her work hours?</p>",
+    "answers": [
+      {
+        "answer": "<p>She comes in late and leaves early.</p>",
+        "feedback": "<p>Tom's observation is the opposite; she arrives early and leaves late.</p>"
+      },
+      {
+        "answer": "<p>She arrives much earlier and leaves later than usual.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She is rarely at the office.</p>",
+        "feedback": "<p>Tom notes that she is consistently in the office early and leaves late, indicating regular presence.</p>"
+      },
+      {
+        "answer": "<p>She works the same hours as everyone else.</p>",
+        "feedback": "<p>Tom specifically points out that her arriving and leaving times are notable, not the same as others.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.16,
+        "finishTimestamp": 11.54
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 6.38,
+        "dialogue": {
+          "text": "Well, I noticed that she's always in her office super early and leaves pretty late. Do you know why?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 6.88
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 38,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

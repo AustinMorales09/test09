@@ -1,0 +1,82 @@
+{
+  "id": "5c6c06847491271903d37cfd",
+  "title": "Use the value attribute with Radio Buttons and Checkboxes",
+  "challengeType": 0,
+  "forumTopicId": 301099,
+  "dashedName": "use-the-value-attribute-with-radio-buttons-and-checkboxes",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>\n\n  <a href=\"#\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n\n  <p>Things cats love:</p>\n  <ul>\n    <li>catnip</li>\n    <li>laser pointers</li>\n    <li>lasagna</li>\n  </ul>\n  <p>Top 3 things cats hate:</p>\n  <ol>\n    <li>flea treatment</li>\n    <li>thunder</li>\n    <li>other cats</li>\n  </ol>\n  <form action=\"https://www.freecatphotoapp.com/submit-cat-photo\">\n    <label for=\"indoor\"><input id=\"indoor\" type=\"radio\" name=\"indoor-outdoor\"> Indoor</label>\n    <label for=\"outdoor\"><input id=\"outdoor\" type=\"radio\" name=\"indoor-outdoor\"> Outdoor</label><br>\n    <label for=\"loving\"><input id=\"loving\" type=\"checkbox\" name=\"personality\"> Loving</label>\n    <label for=\"lazy\"><input id=\"lazy\" type=\"checkbox\" name=\"personality\"> Lazy</label>\n    <label for=\"energetic\"><input id=\"energetic\" type=\"checkbox\" name=\"personality\"> Energetic</label><br>\n    <input type=\"text\" placeholder=\"cat photo URL\" required>\n    <button type=\"submit\">Submit</button>\n  </form>\n</main>",
+      "error": null,
+      "seed": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>\n\n  <a href=\"#\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n\n  <p>Things cats love:</p>\n  <ul>\n    <li>catnip</li>\n    <li>laser pointers</li>\n    <li>lasagna</li>\n  </ul>\n  <p>Top 3 things cats hate:</p>\n  <ol>\n    <li>flea treatment</li>\n    <li>thunder</li>\n    <li>other cats</li>\n  </ol>\n  <form action=\"https://www.freecatphotoapp.com/submit-cat-photo\">\n    <label for=\"indoor\"><input id=\"indoor\" type=\"radio\" name=\"indoor-outdoor\"> Indoor</label>\n    <label for=\"outdoor\"><input id=\"outdoor\" type=\"radio\" name=\"indoor-outdoor\"> Outdoor</label><br>\n    <label for=\"loving\"><input id=\"loving\" type=\"checkbox\" name=\"personality\"> Loving</label>\n    <label for=\"lazy\"><input id=\"lazy\" type=\"checkbox\" name=\"personality\"> Lazy</label>\n    <label for=\"energetic\"><input id=\"energetic\" type=\"checkbox\" name=\"personality\"> Energetic</label><br>\n    <input type=\"text\" placeholder=\"cat photo URL\" required>\n    <button type=\"submit\">Submit</button>\n  </form>\n</main>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>\n\n  <a href=\"#\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n\n  <p>Things cats love:</p>\n  <ul>\n    <li>catnip</li>\n    <li>laser pointers</li>\n    <li>lasagna</li>\n  </ul>\n  <p>Top 3 things cats hate:</p>\n  <ol>\n    <li>flea treatment</li>\n    <li>thunder</li>\n    <li>other cats</li>\n  </ol>\n  <form action=\"https://www.freecatphotoapp.com/submit-cat-photo\">\n    <label for=\"indoor\"><input id=\"indoor\" type=\"radio\" name=\"indoor-outdoor\" value=\"indoor\"> Indoor</label>\n    <label for=\"outdoor\"><input id=\"outdoor\" type=\"radio\" name=\"indoor-outdoor\" value=\"outdoor\"> Outdoor</label><br>\n    <label for=\"loving\"><input id=\"loving\" type=\"checkbox\" name=\"personality\" value=\"loving\"> Loving</label>\n    <label for=\"lazy\"><input id=\"lazy\" type=\"checkbox\" name=\"personality\" value=\"lazy\"> Lazy</label>\n    <label for=\"energetic\"><input id=\"energetic\" type=\"checkbox\" name=\"personality\" value=\"energetic\"> Energetic</label><br>\n    <input type=\"text\" placeholder=\"cat photo URL\" required>\n    <button type=\"submit\">Submit</button>\n  </form>\n</main>",
+        "error": null,
+        "seed": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>\n\n  <a href=\"#\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n\n  <p>Things cats love:</p>\n  <ul>\n    <li>catnip</li>\n    <li>laser pointers</li>\n    <li>lasagna</li>\n  </ul>\n  <p>Top 3 things cats hate:</p>\n  <ol>\n    <li>flea treatment</li>\n    <li>thunder</li>\n    <li>other cats</li>\n  </ol>\n  <form action=\"https://www.freecatphotoapp.com/submit-cat-photo\">\n    <label for=\"indoor\"><input id=\"indoor\" type=\"radio\" name=\"indoor-outdoor\" value=\"indoor\"> Indoor</label>\n    <label for=\"outdoor\"><input id=\"outdoor\" type=\"radio\" name=\"indoor-outdoor\" value=\"outdoor\"> Outdoor</label><br>\n    <label for=\"loving\"><input id=\"loving\" type=\"checkbox\" name=\"personality\" value=\"loving\"> Loving</label>\n    <label for=\"lazy\"><input id=\"lazy\" type=\"checkbox\" name=\"personality\" value=\"lazy\"> Lazy</label>\n    <label for=\"energetic\"><input id=\"energetic\" type=\"checkbox\" name=\"personality\" value=\"energetic\"> Energetic</label><br>\n    <input type=\"text\" placeholder=\"cat photo URL\" required>\n    <button type=\"submit\">Submit</button>\n  </form>\n</main>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>One of your radio buttons should have the <code>value</code> attribute of <code>indoor</code>.</p>",
+      "testString": "assert(\n  $('label:contains(\"Indoor\") > input[type=\"radio\"]').filter(\"[value='indoor']\")\n    .length > 0\n);"
+    },
+    {
+      "text": "<p>One of your radio buttons should have the <code>value</code> attribute of <code>outdoor</code>.</p>",
+      "testString": "assert(\n  $('label:contains(\"Outdoor\") > input[type=\"radio\"]').filter(\n    \"[value='outdoor']\"\n  ).length > 0\n);"
+    },
+    {
+      "text": "<p>One of your checkboxes should have the <code>value</code> attribute of <code>loving</code>.</p>",
+      "testString": "assert(\n  $('label:contains(\"Loving\") > input[type=\"checkbox\"]').filter(\n    \"[value='loving']\"\n  ).length > 0\n);"
+    },
+    {
+      "text": "<p>One of your checkboxes should have the <code>value</code> attribute of <code>lazy</code>.</p>",
+      "testString": "assert(\n  $('label:contains(\"Lazy\") > input[type=\"checkbox\"]').filter(\"[value='lazy']\")\n    .length > 0\n);"
+    },
+    {
+      "text": "<p>One of your checkboxes should have the <code>value</code> attribute of <code>energetic</code>.</p>",
+      "testString": "assert(\n  $('label:contains(\"Energetic\") > input[type=\"checkbox\"]').filter(\n    \"[value='energetic']\"\n  ).length > 0\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When a form gets submitted, the data is sent to the server and includes entries for the options selected. Inputs of type <code>radio</code> and <code>checkbox</code> report their values from the <code>value</code> attribute.</p>\n<p>For example:</p>\n<pre><code class=\"language-html\">&#x3C;label for=\"indoor\">\n  &#x3C;input id=\"indoor\" value=\"indoor\" type=\"radio\" name=\"indoor-outdoor\">Indoor\n&#x3C;/label>\n&#x3C;label for=\"outdoor\">\n  &#x3C;input id=\"outdoor\" value=\"outdoor\" type=\"radio\" name=\"indoor-outdoor\">Outdoor\n&#x3C;/label>\n</code></pre>\n<p>Here, you have two <code>radio</code> inputs. When the user submits the form with the <code>indoor</code> option selected, the form data will include the line: <code>indoor-outdoor=indoor</code>. This is from the <code>name</code> and <code>value</code> attributes of the \"indoor\" input.</p>\n<p>If you omit the <code>value</code> attribute, the submitted form data uses the default value, which is <code>on</code>. In this scenario, if the user clicked the \"indoor\" option and submitted the form, the resulting form data would be <code>indoor-outdoor=on</code>, which is not useful. So the <code>value</code> attribute needs to be set to something to identify the option.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Give each of the existing <code>radio</code> and <code>checkbox</code> inputs the <code>value</code> attribute. Do not create any new radio or checkbox elements. Use the input label text, in lowercase, as the value for the attribute.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-html-and-html5",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

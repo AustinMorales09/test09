@@ -1,0 +1,57 @@
+{
+  "id": "61695d1fbc003856628bf561",
+  "title": "Step 4",
+  "challengeType": 0,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        6
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Colored Markers</title>\n  </head>\n  <body>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Colored Markers</title>\n  </head>\n  <body>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have one <code>meta</code> element.</p>",
+      "testString": "const meta = document.querySelectorAll('meta');\nassert(meta?.length === 1);"
+    },
+    {
+      "text": "<p>Your <code>meta</code> element should be a self-closing element.</p>",
+      "testString": "assert(code.match(/<\\/meta>/i) === null);"
+    },
+    {
+      "text": "<p>Your <code>meta</code> element should have a <code>charset</code> attribute set to <code>utf-8</code>.</p>",
+      "testString": "const meta = [...document.querySelectorAll('meta')];\nconst target = meta?.find(m => m?.getAttribute('charset')?.toLowerCase() === 'utf-8');\nassert.exists(target);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To tell browsers how to encode characters on your page, set the <code>charset</code> to <code>utf-8</code>. <code>utf-8</code> is a universal character set that includes almost every character from all human languages.</p>\n<p>Inside the <code>head</code> element, nest a <code>meta</code> element with the attribute <code>charset</code> set to <code>utf-8</code>. Remember that <code>meta</code> elements are self-closing, and do not need a closing tag.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

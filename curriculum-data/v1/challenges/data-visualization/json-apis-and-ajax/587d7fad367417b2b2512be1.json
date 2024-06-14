@@ -1,0 +1,74 @@
+{
+  "id": "587d7fad367417b2b2512be1",
+  "title": "Handle Click Events with JavaScript using the onclick property",
+  "challengeType": 6,
+  "forumTopicId": 301503,
+  "dashedName": "handle-click-events-with-javascript-using-the-onclick-property",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    // Add your code below this line\n\n\n    // Add your code above this line\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n<h1>Cat Photo Finder</h1>\n<p class=\"message box\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>",
+      "error": null,
+      "seed": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    // Add your code below this line\n\n\n    // Add your code above this line\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n<h1>Cat Photo Finder</h1>\n<p class=\"message box\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    // Add your code below this line\n    document.getElementById('getMessage').onclick = function(){ };\n    // Add your code above this line\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n<h1>Cat Photo Finder</h1> \n<p class=\"message box\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>",
+        "error": null,
+        "seed": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    // Add your code below this line\n    document.getElementById('getMessage').onclick = function(){ };\n    // Add your code above this line\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n<h1>Cat Photo Finder</h1> \n<p class=\"message box\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should use the <code>document.getElementById</code> method to select the element whose id is <code>getMessage</code>.</p>",
+      "testString": "assert(code.match(/document\\s*\\.getElementById\\(\\s*?('|\")getMessage\\1\\s*?\\)/g));"
+    },
+    {
+      "text": "<p>Your code should add an <code>onclick</code> event handler.</p>",
+      "testString": "assert(typeof document.getElementById('getMessage').onclick === 'function');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You want your code to execute only once your page has finished loading. For that purpose, you can attach a JavaScript event to the document called <code>DOMContentLoaded</code>. Here's the code that does this:</p>\n<pre><code class=\"language-js\">document.addEventListener('DOMContentLoaded', function() {\n\n});\n</code></pre>\n<p>You can implement event handlers that go inside of the <code>DOMContentLoaded</code> function. You can implement an <code>onclick</code> event handler which triggers when the user clicks on the <code>#getMessage</code> element, by adding the following code:</p>\n<pre><code class=\"language-js\">document.getElementById('getMessage').onclick = function(){};\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add a click event handler inside of the <code>DOMContentLoaded</code> function for the element with id of <code>getMessage</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "json-apis-and-ajax",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 0,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

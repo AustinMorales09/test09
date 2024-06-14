@@ -1,0 +1,46 @@
+{
+  "id": "63dbd1335d93712ff177d96a",
+  "title": "Simple and Compound Interest: Extra",
+  "challengeType": 15,
+  "videoId": "2cbrstoKNSc",
+  "dashedName": "simple-and-compound-interest-extra",
+  "solutions": [],
+  "question": {
+    "text": "<p>What marker do you use to attach a formula to a cell in a spreadsheet?</p>",
+    "answers": [
+      {
+        "answer": "<p>()</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>=</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>==</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>formula()</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Here is a detour from the Python code, as this video shows you how to create mortgage payment amortization tables in Google Sheets. You will also learn about how to use a very similar setup to estimate retirement account investment returns. This is the video that shows you where your money is going.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-simple-and-compound-interest",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

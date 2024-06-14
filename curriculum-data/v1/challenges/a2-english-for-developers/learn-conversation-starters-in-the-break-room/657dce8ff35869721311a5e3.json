@@ -1,0 +1,45 @@
+{
+  "id": "657dce8ff35869721311a5e3",
+  "title": "Task 111",
+  "challengeType": 19,
+  "dashedName": "task-111",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence is correct for describing one place near you?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>There are a bank just a few blocks away.</code></p>",
+        "feedback": "<p><code>There are</code> is used for plural nouns, and <code>bank</code> is singular. You’ll learn about there are in the next few lessons.</p>"
+      },
+      {
+        "answer": "<p><code>Is there a bank just a few blocks away?</code></p>",
+        "feedback": "<p>This option is a question form, not a statement. You’ll learn about questions later.</p>"
+      },
+      {
+        "answer": "<p><code>There is a bank just a few blocks away.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>There is banks just a few blocks away.</code></p>",
+        "feedback": "<p><code>Banks</code> is plural, so it doesn't match <code>there is.</code></p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>There is</code> is used for singular nouns when talking about the existence of one thing or place. It helps to describe what can be found in a particular location.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 115,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

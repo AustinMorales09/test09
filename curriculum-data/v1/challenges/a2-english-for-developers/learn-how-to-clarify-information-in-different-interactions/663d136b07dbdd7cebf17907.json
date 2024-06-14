@@ -1,0 +1,75 @@
+{
+  "id": "663d136b07dbdd7cebf17907",
+  "title": "Task 58",
+  "challengeType": 22,
+  "dashedName": "task-58",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Well, the documentation says we're starting the _ phase next week, but you mentioned it was the following week.</p>",
+    "blanks": [
+      {
+        "answer": "testing",
+        "feedback": "<p>Followed by <code>phase</code>, this represents the part of a project where you check if things are working well.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.06,
+        "finishTimestamp": 19.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 6.1,
+        "dialogue": {
+          "text": "Well, the documentation says we're starting the testing phase next week, but you mentioned it was the following week.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 6.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The <code>testing phase</code> is a part of a project where you check if everything works correctly. For example, in a project to make a new app, the <code>testing phase</code> is when you try using the app to find and fix any problems. It helps make sure the project is ready and works well.</p>\n<p>Listen to the sentence and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 61,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

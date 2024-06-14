@@ -1,0 +1,88 @@
+{
+  "id": "657d7892712a078b33d7e8a7",
+  "title": "Task 11",
+  "challengeType": 19,
+  "dashedName": "task-11",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the correct interpretation of <code>for nearly a decade now</code> in this context.</p>",
+    "answers": [
+      {
+        "answer": "<p>Bob recently started his photography journey.</p>",
+        "feedback": "<p>Indicates a recent initiation into photography, which is not the case.</p>"
+      },
+      {
+        "answer": "<p>Bob has been into photography for a long time.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Bob has been a professional photographer for ten years.</p>",
+        "feedback": "<p>Suggests a specific professional duration, but the phrase does not necessarily imply professional involvement.</p>"
+      },
+      {
+        "answer": "<p>Bob is new to the world of photography.</p>",
+        "feedback": "<p>Implies a lack of experience in photography, contrary to the phrase's meaning.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.38,
+        "finishTimestamp": 19.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.52,
+        "dialogue": {
+          "text": "For nearly a decade now. It started as a hobby, but it's become a significant part of my life.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 7.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In situations where the <em>Present Perfect tense</em> is used to express the duration of time of a certain action, you normally use <code>for</code> to refer to this duration. For example: <code>I've been an architect for more than 15 years.</code> - Your career in architecture began more than 15 years ago.</p>\n<p>In the phrase <code>for nearly a decade now</code>, Bob is saying that his interest in photography started around a decade ago.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

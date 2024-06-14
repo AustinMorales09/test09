@@ -1,0 +1,82 @@
+{
+  "id": "587d8255367417b2b2512c75",
+  "title": "Create a Circular Queue",
+  "challengeType": 1,
+  "forumTopicId": 301625,
+  "dashedName": "create-a-circular-queue",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "class CircularQueue {\n  constructor(size) {\n\n    this.queue = [];\n    this.read = 0;\n    this.write = 0;\n    this.max = size - 1;\n\n    while (size > 0) {\n      this.queue.push(null);\n      size--;\n    }\n  }\n\n  print() {\n    return this.queue;\n  }\n\n  enqueue(item) {\n    // Only change code below this line\n\n    // Only change code above this line\n  }\n\n  dequeue() {\n    // Only change code below this line\n\n    // Only change code above this line\n  }\n}",
+      "error": null,
+      "seed": "class CircularQueue {\n  constructor(size) {\n\n    this.queue = [];\n    this.read = 0;\n    this.write = 0;\n    this.max = size - 1;\n\n    while (size > 0) {\n      this.queue.push(null);\n      size--;\n    }\n  }\n\n  print() {\n    return this.queue;\n  }\n\n  enqueue(item) {\n    // Only change code below this line\n\n    // Only change code above this line\n  }\n\n  dequeue() {\n    // Only change code below this line\n\n    // Only change code above this line\n  }\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "class CircularQueue {\n  constructor(size) {\n    this.queue = [];\n    this.read = 0;\n    this.write = 0;\n    this.max = size - 1;\n\n    while (size > 0) {\n      this.queue.push(null);\n      size--;\n    }\n  }\n\n  print() {\n    return this.queue;\n  }\n\n  enqueue(item) {\n    // Only change code below this line\n    console.log(this.write, this.max);\n    if (this.queue[this.write] === null) {\n      this.queue[this.write++] = item;\n\n      if (this.write > this.max) {\n        this.write = 0;\n      }\n      return item;\n    }\n    return null;\n    // Only change code above this line\n  }\n\n  dequeue() {\n    // Only change code below this line\n    if (this.queue[this.read] !== null) {\n      let item = this.queue[this.read];\n      this.queue[this.read++] = null;\n      if (this.read > this.max) {\n        this.read = 0;\n      }\n      return item;\n    }\n    return null;\n    // Only change code above this line\n  }\n}",
+        "error": null,
+        "seed": "class CircularQueue {\n  constructor(size) {\n    this.queue = [];\n    this.read = 0;\n    this.write = 0;\n    this.max = size - 1;\n\n    while (size > 0) {\n      this.queue.push(null);\n      size--;\n    }\n  }\n\n  print() {\n    return this.queue;\n  }\n\n  enqueue(item) {\n    // Only change code below this line\n    console.log(this.write, this.max);\n    if (this.queue[this.write] === null) {\n      this.queue[this.write++] = item;\n\n      if (this.write > this.max) {\n        this.write = 0;\n      }\n      return item;\n    }\n    return null;\n    // Only change code above this line\n  }\n\n  dequeue() {\n    // Only change code below this line\n    if (this.queue[this.read] !== null) {\n      let item = this.queue[this.read];\n      this.queue[this.read++] = null;\n      if (this.read > this.max) {\n        this.read = 0;\n      }\n      return item;\n    }\n    return null;\n    // Only change code above this line\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>enqueue</code> method should add items to the circular queue.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new CircularQueue(3);\n    test.enqueue(17);\n    test.enqueue(32);\n    test.enqueue(591);\n    var print = test.print();\n    return print[0] === 17 && print[1] === 32 && print[2] === 591;\n  })()\n);"
+    },
+    {
+      "text": "<p>You should not enqueue items past the read pointer.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new CircularQueue(3);\n    test.enqueue(17);\n    test.enqueue(32);\n    test.enqueue(591);\n    test.enqueue(13);\n    test.enqueue(25);\n    test.enqueue(59);\n    var print = test.print();\n    return print[0] === 17 && print[1] === 32 && print[2] === 591;\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>dequeue</code> method should dequeue items from the queue.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new CircularQueue(3);\n    test.enqueue(17);\n    test.enqueue(32);\n    test.enqueue(591);\n    return (\n      test.dequeue() === 17 && test.dequeue() === 32 && test.dequeue() === 591\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p>After an item is dequeued, its position in the queue should be reset to <code>null</code>.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new CircularQueue(3);\n    test.enqueue(17);\n    test.enqueue(32);\n    test.enqueue(672);\n    test.dequeue();\n    test.dequeue();\n    var print = test.print();\n    return print[0] === null && print[1] === null && print[2] === 672;\n  })()\n);"
+    },
+    {
+      "text": "<p>Trying to dequeue past the write pointer should return <code>null</code> and does not advance the write pointer.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new CircularQueue(3);\n    test.enqueue(17);\n    test.enqueue(32);\n    test.enqueue(591);\n    return (\n      test.dequeue() === 17 &&\n      test.dequeue() === 32 &&\n      test.dequeue() === 591 &&\n      test.dequeue() === null &&\n      test.dequeue() === null &&\n      test.dequeue() === null &&\n      test.dequeue() === null &&\n      test.enqueue(100) === 100 &&\n      test.dequeue() === 100\n    );\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In this challenge you will be creating a Circular Queue. A circular queue is a queue that writes to the end of a collection then begins overwriting itself at the beginning of the collection. This type of data structure is useful in certain situations. For example, a circular queue can be used for streaming media. Once the queue is full, new media data will overwrite old data.</p>\n<p>A good way to illustrate this concept is with an array of length <code>5</code>:</p>\n<pre><code class=\"language-js\">[null, null, null, null, null]\n ^Read @ 0\n ^Write @ 0\n</code></pre>\n<p>Here the read and write are both at position <code>0</code>. Now the queue gets 3 new records <code>a</code>, <code>b</code>, and <code>c</code>. Our queue now looks like:</p>\n<pre><code class=\"language-js\">[a, b, c, null, null]\n ^Read @ 0\n          ^Write @ 3\n</code></pre>\n<p>As the read head reads, it can remove values or keep them:</p>\n<pre><code class=\"language-js\">[null, null, null, null, null]\n                   ^Read @ 3\n                   ^Write @ 3\n</code></pre>\n<p>Now we write the values <code>d</code>, <code>e</code>, and <code>f</code> to the queue. Once the write reaches the end of the array it loops back to the beginning:</p>\n<pre><code class=\"language-js\">[f, null, null, d, e]\n                ^Read @ 3\n    ^Write @ 1\n</code></pre>\n<p>This approach requires a constant amount of memory but allows files of a much larger size to be processed.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>In this challenge we will implement a circular queue. The circular queue should provide <code>enqueue</code> and <code>dequeue</code> methods which allow you to read from and write to the queue. The class itself should also accept an integer argument which you can use to specify the size of the queue when created. We've written the starting version of this class for you in the code editor.</p>\n<p>When you enqueue items to the queue, the write pointer should advance forward and loop back to the beginning once it reaches the end of the queue. The <code>enqueue</code> method should return the item you enqueued if it is successful; otherwise it will return <code>null</code>.</p>\n<p>Likewise, the read pointer should advance forward as you dequeue items. When you dequeue an item, that item should be returned. If you cannot dequeue an item, you should return <code>null</code>.</p>\n<p>The write pointer should not be allowed to move past the read pointer (our class won't let you overwrite data you haven't read yet) and the read pointer should not be able to advance past data you have written.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-structures",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

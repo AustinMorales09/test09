@@ -1,0 +1,30 @@
+{
+  "id": "587d7fb7367417b2b2512c0c",
+  "title": "Use model.findOne() to Return a Single Matching Document from Your Database",
+  "challengeType": 2,
+  "forumTopicId": 301545,
+  "dashedName": "use-model-findone-to-return-a-single-matching-document-from-your-database",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Find one item should succeed</p>",
+      "testString": "(getUserInput) =>\n  $.post(getUserInput('url') + '/_api/find-one-by-food', {\n    name: 'Gary',\n    age: 46,\n    favoriteFoods: ['chicken salad']\n  }).then(\n    (data) => {\n      assert.equal(data.name, 'Gary', 'item.name is not what expected');\n      assert.deepEqual(\n        data.favoriteFoods,\n        ['chicken salad'],\n        'item.favoriteFoods is not what expected'\n      );\n      assert.equal(data.__v, 0, 'The item should be not previously edited');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><code>Model.findOne()</code> behaves like <code>Model.find()</code>, but it returns only one document (not an array), even if there are multiple items. It is especially useful when searching by properties that you have declared as unique.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Modify the <code>findOneByFood</code> function to find just one person which has a certain food in the person's favorites, using <code>Model.findOne() -> Person</code>. Use the function argument <code>food</code> as search key.</p>\n</section>",
+  "translationPending": false,
+  "block": "mongodb-and-mongoose",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

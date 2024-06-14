@@ -1,0 +1,83 @@
+{
+  "id": "65b2b181cb9b2136e833a17a",
+  "title": "Task 50",
+  "challengeType": 22,
+  "dashedName": "task-50",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hey, Tom. I _ that you've _ the issue on GitHub. Great _!</p>",
+    "blanks": [
+      {
+        "answer": "saw",
+        "feedback": "<p>The past of <code>see</code>.</p>"
+      },
+      {
+        "answer": "fixed",
+        "feedback": "<p>The past  participle of <code>fix</code>.</p>"
+      },
+      {
+        "answer": "job",
+        "feedback": "<p>This sentence is used to congratulate someone on their work.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 3.8
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 4.8,
+        "dialogue": {
+          "text": "Hey, Tom. I saw that you've fixed the issue on GitHub. Great job.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 5.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The present perfect tense is used to describe actions that have a connection to the present.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-help-a-coworker-troubleshoot-on-github",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 52,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,71 @@
+{
+  "id": "587d774e367417b2b2512a9f",
+  "title": "Jump Straight to the Content Using the main Element",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cPp7zuE",
+  "forumTopicId": 301018,
+  "dashedName": "jump-straight-to-the-content-using-the-main-element",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<header>\n  <h1>Weapons of the Ninja</h1>\n</header>\n\n\n\n<footer></footer>",
+      "error": null,
+      "seed": "<header>\n  <h1>Weapons of the Ninja</h1>\n</header>\n\n\n\n<footer></footer>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<header>\n  <h1>Weapons of the Ninja</h1>\n</header>\n<main>\n\n</main>\n<footer></footer>",
+        "error": null,
+        "seed": "<header>\n  <h1>Weapons of the Ninja</h1>\n</header>\n<main>\n\n</main>\n<footer></footer>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have one <code>main</code> tag.</p>",
+      "testString": "assert($('main').length == 1);"
+    },
+    {
+      "text": "<p>The <code>main</code> tags should be between the closing <code>header</code> tag and the opening <code>footer</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/header>\\s*?<main>\\s*?<\\/main>/gi));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>HTML5 introduced several new elements that give developers more options while also incorporating accessibility features. These tags include <code>main</code>, <code>header</code>, <code>footer</code>, <code>nav</code>, <code>article</code>, and <code>section</code>, among others.</p>\n<p>By default, a browser renders these elements similar to the humble <code>div</code>. However, using them where appropriate gives additional meaning to your markup. The tag name alone can indicate the type of information it contains, which adds semantic meaning to that content. Assistive technologies can access this information to provide better page summary or navigation options to their users.</p>\n<p>The <code>main</code> element is used to wrap (you guessed it) the main content, and there should be only one per page. It's meant to surround the information related to your page's central topic. It's not meant to include items that repeat across pages, like navigation links or banners.</p>\n<p>The <code>main</code> tag also has an embedded landmark feature that assistive technology can use to navigate to the main content quickly. If you've ever seen a \"Jump to Main Content\" link at the top of a page, using the <code>main</code> tag automatically gives assistive devices that functionality.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Camper Cat has some big ideas for his ninja weapons page. Help him set up his markup by adding opening and closing <code>main</code> tags between the <code>header</code> and <code>footer</code> (covered in other challenges). Keep the <code>main</code> tags empty for now.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-accessibility",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

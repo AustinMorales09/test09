@@ -1,0 +1,45 @@
+{
+  "id": "661bdbcf1d85c329ce8ef7b1",
+  "title": "Task 71",
+  "challengeType": 19,
+  "dashedName": "task-71",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>identity verification</code> involve?</p>",
+    "answers": [
+      {
+        "answer": "<p>Confirming personal preferences</p>",
+        "feedback": "<p><code>Identity verification</code> is more about proving your identity, not personal preferences.</p>"
+      },
+      {
+        "answer": "<p>Checking your financial status</p>",
+        "feedback": "<p><code>Identity verification</code> doesn't necessarily involve checking financial status.</p>"
+      },
+      {
+        "answer": "<p>Verifying your email address</p>",
+        "feedback": "<p><code>Identity verification</code> is broader than just verifying an email address.</p>"
+      },
+      {
+        "answer": "<p>Making sure you are who you say you are</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Identity verification</code> is like proving who you are. It's a way of confirming that the person using a system or service is really the person they claim to be. This can involve showing an ID card, using a password, or, using biometrics like facial recognition or fingerprints.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 74,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

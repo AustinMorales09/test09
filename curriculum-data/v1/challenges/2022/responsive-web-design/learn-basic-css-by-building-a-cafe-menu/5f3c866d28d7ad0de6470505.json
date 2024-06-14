@@ -1,0 +1,73 @@
+{
+  "id": "5f3c866d28d7ad0de6470505",
+  "title": "Step 32",
+  "challengeType": 0,
+  "dashedName": "step-32",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        16,
+        19
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article>\n            <p>French Vanilla</p>\n            <p>3.00</p>\n          </article>\n          <article>\n            <p>Caramel Macchiato</p>\n            <p>3.75</p>\n          </article>\n          <article>\n            <p>Pumpkin Spice</p>\n            <p>3.50</p>\n          </article>\n          <article>\n            <p>Hazelnut</p>\n            <p>4.00</p>\n          </article>\n          <article>\n            <p>Mocha</p>\n            <p>4.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article>\n            <p>French Vanilla</p>\n            <p>3.00</p>\n          </article>\n          <article>\n            <p>Caramel Macchiato</p>\n            <p>3.75</p>\n          </article>\n          <article>\n            <p>Pumpkin Spice</p>\n            <p>3.50</p>\n          </article>\n          <article>\n            <p>Hazelnut</p>\n            <p>4.00</p>\n          </article>\n          <article>\n            <p>Mocha</p>\n            <p>4.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n}",
+      "error": null,
+      "seed": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add the <code>flavor</code> class to your <code>p</code> element.</p>",
+      "testString": "const el = document.querySelector(\"p.flavor\");\nassert.exists(el);"
+    },
+    {
+      "text": "<p>You should only have one element with the <code>flavor</code> class.</p>",
+      "testString": "const elements = document.querySelectorAll('.flavor');\nassert.lengthOf(elements, 1);"
+    },
+    {
+      "text": "<p>Your <code>flavor</code> class should be on the <code>p</code> element with the text <code>French Vanilla</code>.</p>",
+      "testString": "const el = document.querySelector(\".flavor\");\nassert.equal(el.innerText, \"French Vanilla\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The flavors and prices are currently stacked on top of each other and centered with their respective <code>p</code> elements. It would be nice if the flavor was on the left and the price was on the right.</p>\n<p>Add the class name <code>flavor</code> to the <code>French Vanilla</code> <code>p</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 31,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

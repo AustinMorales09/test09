@@ -1,0 +1,75 @@
+{
+  "id": "661918cca4435877962d595a",
+  "title": "Task 23",
+  "challengeType": 22,
+  "dashedName": "task-23",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>During the _, we worked from home with tools like video conference apps and collaboration platforms.</p>",
+    "blanks": [
+      {
+        "answer": "pandemic",
+        "feedback": "<p>The word here refers to the specific period when the sickness was spreading all around the world and affecting work situations globally.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 5.94,
+        "finishTimestamp": 10.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 5.98,
+        "dialogue": {
+          "text": "During the pandemic, we worked from home with tools like video conference apps and collaboration platforms.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 6.48
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The <code>pandemic</code> refers to a time when a very serious sickness was spreading all around the world. During this period, many people got sick, and it was not safe to be close to others. People had to stay at home to stay safe, and this changed how we worked and lived. In this conversation, it means the time when this sickness was happening, and many people had to work from home.</p>\n<p>Listen and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

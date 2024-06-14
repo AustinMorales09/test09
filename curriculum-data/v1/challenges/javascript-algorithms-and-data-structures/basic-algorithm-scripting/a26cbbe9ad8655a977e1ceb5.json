@@ -1,0 +1,85 @@
+{
+  "id": "a26cbbe9ad8655a977e1ceb5",
+  "title": "Find the Longest Word in a String",
+  "challengeType": 1,
+  "forumTopicId": 16015,
+  "dashedName": "find-the-longest-word-in-a-string",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function findLongestWordLength(str) {\n  return str.length;\n}\n\nfindLongestWordLength(\"The quick brown fox jumped over the lazy dog\");",
+      "error": null,
+      "seed": "function findLongestWordLength(str) {\n  return str.length;\n}\n\nfindLongestWordLength(\"The quick brown fox jumped over the lazy dog\");"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function findLongestWordLength(str) {\n  return str.split(' ').sort((a, b) => b.length - a.length)[0].length;\n}\n\nfindLongestWordLength(\"The quick brown fox jumped over the lazy dog\");",
+        "error": null,
+        "seed": "function findLongestWordLength(str) {\n  return str.split(' ').sort((a, b) => b.length - a.length)[0].length;\n}\n\nfindLongestWordLength(\"The quick brown fox jumped over the lazy dog\");"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>findLongestWordLength(\"The quick brown fox jumped over the lazy dog\")</code> should return a number.</p>",
+      "testString": "assert(\n  typeof findLongestWordLength(\n    'The quick brown fox jumped over the lazy dog'\n  ) === 'number'\n);"
+    },
+    {
+      "text": "<p><code>findLongestWordLength(\"The quick brown fox jumped over the lazy dog\")</code> should return <code>6</code>.</p>",
+      "testString": "assert(\n  findLongestWordLength('The quick brown fox jumped over the lazy dog') === 6\n);"
+    },
+    {
+      "text": "<p><code>findLongestWordLength(\"May the force be with you\")</code> should return <code>5</code>.</p>",
+      "testString": "assert(findLongestWordLength('May the force be with you') === 5);"
+    },
+    {
+      "text": "<p><code>findLongestWordLength(\"Google do a barrel roll\")</code> should return <code>6</code>.</p>",
+      "testString": "assert(findLongestWordLength('Google do a barrel roll') === 6);"
+    },
+    {
+      "text": "<p><code>findLongestWordLength(\"What is the average airspeed velocity of an unladen swallow\")</code> should return <code>8</code>.</p>",
+      "testString": "assert(\n  findLongestWordLength(\n    'What is the average airspeed velocity of an unladen swallow'\n  ) === 8\n);"
+    },
+    {
+      "text": "<p><code>findLongestWordLength(\"What if we try a super-long word such as otorhinolaryngology\")</code> should return <code>19</code>.</p>",
+      "testString": "assert(\n  findLongestWordLength(\n    'What if we try a super-long word such as otorhinolaryngology'\n  ) === 19\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Return the length of the longest word in the provided sentence.</p>\n<p>Your response should be a number.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

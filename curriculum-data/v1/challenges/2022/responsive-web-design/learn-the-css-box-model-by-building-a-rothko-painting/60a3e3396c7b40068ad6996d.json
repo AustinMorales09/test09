@@ -1,0 +1,49 @@
+{
+  "id": "60a3e3396c7b40068ad6996d",
+  "title": "Step 4",
+  "challengeType": 0,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n  </head>\n  <body>\n    <img src=\"https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-2.png\">\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n  </head>\n  <body>\n    <img src=\"https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-2.png\">\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>img</code> element should have a <code>src</code> of <code>https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-3.png</code></p>",
+      "testString": "assert(document.querySelector('img').getAttribute('src') === 'https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-3.png');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The content is surrounded by a space called padding, similar to how bubble wrap separates an item from the box around it.</p>\n<p>Think of the border like the cardboard box your item was shipped in.</p>\n<p>Change the <code>src</code> attribute to <code>https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-3.png</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-css-box-model-by-building-a-rothko-painting",
+  "hasEditableBoundaries": true,
+  "order": 5,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,90 @@
+{
+  "id": "5e6dd14192286d95fc43046e",
+  "title": "Longest string challenge",
+  "challengeType": 1,
+  "forumTopicId": 385275,
+  "dashedName": "longest-string-challenge",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function longestString(strings) {\n\n}",
+      "error": null,
+      "seed": "function longestString(strings) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function longestString(strings) {\n    var mx = 0;\n    var result = []\n    strings.forEach(function (e) {\n        if (e.length > mx) {\n            mx = e.length\n            result = [e]\n        } else if (e.length == mx)\n            result.push(e)\n    })\n\n    return result\n}",
+        "error": null,
+        "seed": "function longestString(strings) {\n    var mx = 0;\n    var result = []\n    strings.forEach(function (e) {\n        if (e.length > mx) {\n            mx = e.length\n            result = [e]\n        } else if (e.length == mx)\n            result.push(e)\n    })\n\n    return result\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>longestString</code> should be a function.</p>",
+      "testString": "assert(typeof longestString == 'function');"
+    },
+    {
+      "text": "<p><code>longestString([\"a\", \"bb\", \"ccc\", \"ee\", \"f\", \"ggg\"])</code> should return a array.</p>",
+      "testString": "assert(Array.isArray(longestString(['a', 'bb', 'ccc', 'ee', 'f', 'ggg'])));"
+    },
+    {
+      "text": "<p><code>longestString([\"a\", \"bb\", \"ccc\", \"ee\", \"f\", \"ggg\"])</code> should return <code>[\"ccc\", \"ggg\"]</code>.</p>",
+      "testString": "assert.deepEqual(longestString(['a', 'bb', 'ccc', 'ee', 'f', 'ggg']), [\n  'ccc',\n  'ggg'\n]);"
+    },
+    {
+      "text": "<p><code>longestString([\"afedg\", \"bb\", \"sdccc\", \"efdee\", \"f\", \"geegg\"])</code> should return <code>[\"afedg\", \"sdccc\", \"efdee\", \"geegg\"]</code>.</p>",
+      "testString": "assert.deepEqual(\n  longestString(['afedg', 'bb', 'sdccc', 'efdee', 'f', 'geegg']),\n  ['afedg', 'sdccc', 'efdee', 'geegg']\n);"
+    },
+    {
+      "text": "<p><code>longestString([\"a\", \"bhghgb\", \"ccc\", \"efde\", \"fssdrr\", \"ggg\"])</code> should return <code>[\"bhghgb\", \"fssdrr\"]</code>.</p>",
+      "testString": "assert.deepEqual(\n  longestString(['a', 'bhghgb', 'ccc', 'efde', 'fssdrr', 'ggg']),\n  ['bhghgb', 'fssdrr']\n);"
+    },
+    {
+      "text": "<p><code>longestString([\"ahgfhg\", \"bdsfsb\", \"ccc\", \"ee\", \"f\", \"ggdsfg\"])</code> should return <code>[\"ahgfhg\", \"bdsfsb\", \"ggdsfg\"]</code>.</p>",
+      "testString": "assert.deepEqual(\n  longestString(['ahgfhg', 'bdsfsb', 'ccc', 'ee', 'f', 'ggdsfg']),\n  ['ahgfhg', 'bdsfsb', 'ggdsfg']\n);"
+    },
+    {
+      "text": "<p><code>longestString([\"a\", \"bbdsf\", \"ccc\", \"edfe\", \"gzzzgg\"])</code> should return <code>[\"gzzzgg\"]</code>.</p>",
+      "testString": "assert.deepEqual(longestString(['a', 'bbdsf', 'ccc', 'edfe', 'gzzzgg']), [\n  'gzzzgg'\n]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In this challenge, you have to find the strings that are the longest among the given strings.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that takes an array of strings and returns the strings that have a length equal to the longest length.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 96,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

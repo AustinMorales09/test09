@@ -1,0 +1,85 @@
+{
+  "id": "ac6993d51946422351508a41",
+  "title": "Truncate a String",
+  "challengeType": 1,
+  "forumTopicId": 16089,
+  "dashedName": "truncate-a-string",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function truncateString(str, num) {\n  return str;\n}\n\ntruncateString(\"A-tisket a-tasket A green and yellow basket\", 8);",
+      "error": null,
+      "seed": "function truncateString(str, num) {\n  return str;\n}\n\ntruncateString(\"A-tisket a-tasket A green and yellow basket\", 8);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function truncateString(str, num) {\n  if (num >= str.length) {\n    return str;\n  }\n\n  return str.slice(0, num) + '...';\n}\n\ntruncateString(\"A-tisket a-tasket A green and yellow basket\", 8);",
+        "error": null,
+        "seed": "function truncateString(str, num) {\n  if (num >= str.length) {\n    return str;\n  }\n\n  return str.slice(0, num) + '...';\n}\n\ntruncateString(\"A-tisket a-tasket A green and yellow basket\", 8);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>truncateString(\"A-tisket a-tasket A green and yellow basket\", 8)</code> should return the string <code>A-tisket...</code>.</p>",
+      "testString": "assert(\n  truncateString('A-tisket a-tasket A green and yellow basket', 8) ===\n    'A-tisket...'\n);"
+    },
+    {
+      "text": "<p><code>truncateString(\"Peter Piper picked a peck of pickled peppers\", 11)</code> should return the string <code>Peter Piper...</code>.</p>",
+      "testString": "assert(\n  truncateString('Peter Piper picked a peck of pickled peppers', 11) ===\n    'Peter Piper...'\n);"
+    },
+    {
+      "text": "<p><code>truncateString(\"A-tisket a-tasket A green and yellow basket\", \"A-tisket a-tasket A green and yellow basket\".length)</code> should return the string <code>A-tisket a-tasket A green and yellow basket</code>.</p>",
+      "testString": "assert(\n  truncateString(\n    'A-tisket a-tasket A green and yellow basket',\n    'A-tisket a-tasket A green and yellow basket'.length\n  ) === 'A-tisket a-tasket A green and yellow basket'\n);"
+    },
+    {
+      "text": "<p><code>truncateString(\"A-tisket a-tasket A green and yellow basket\", \"A-tisket a-tasket A green and yellow basket\".length + 2)</code> should return the string <code>A-tisket a-tasket A green and yellow basket</code>.</p>",
+      "testString": "assert(\n  truncateString(\n    'A-tisket a-tasket A green and yellow basket',\n    'A-tisket a-tasket A green and yellow basket'.length + 2\n  ) === 'A-tisket a-tasket A green and yellow basket'\n);"
+    },
+    {
+      "text": "<p><code>truncateString(\"A-\", 1)</code> should return the string <code>A...</code>.</p>",
+      "testString": "assert(truncateString('A-', 1) === 'A...');"
+    },
+    {
+      "text": "<p><code>truncateString(\"Absolutely Longer\", 2)</code> should return the string <code>Ab...</code>.</p>",
+      "testString": "assert(truncateString('Absolutely Longer', 2) === 'Ab...');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a <code>...</code> ending.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "662b74055c06e60af4f9b976",
+  "title": "Task 24",
+  "challengeType": 19,
+  "dashedName": "task-24",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Brian need help with?</p>",
+    "answers": [
+      {
+        "answer": "<p>Brian needs help finding Python, the snake.</p>",
+        "feedback": "<p>Brian’s question is about Python the programming language, not a snake.</p>"
+      },
+      {
+        "answer": "<p>Brian has a question about Python programming and needs clarification.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Brian is looking for someone to teach him Python next week.</p>",
+        "feedback": "<p>Brian’s request implies an immediate need for clarification on a specific question, not seeking a teacher for future lessons.</p>"
+      },
+      {
+        "answer": "<p>Brian wants to know if Sophie is interested in Python.</p>",
+        "feedback": "<p>Brian explicitly states that he has a question about Python, indicating he is looking for information, not asking about interest.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 20.04,
+        "finishTimestamp": 24.82
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.78,
+        "dialogue": {
+          "text": "That's great to hear. You know, I have a question about Python. Can you help me with that?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 6.28
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

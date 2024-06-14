@@ -1,0 +1,65 @@
+{
+  "id": "5900f4031000cf542c50ff15",
+  "title": "Problem 150: Searching a triangular array for a sub-triangle having minimum-sum",
+  "challengeType": 1,
+  "forumTopicId": 301781,
+  "dashedName": "problem-150-searching-a-triangular-array-for-a-sub-triangle-having-minimum-sum",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function smallestSubTriangleSum() {\n\n  return true;\n}\n\nsmallestSubTriangleSum();",
+      "error": null,
+      "seed": "function smallestSubTriangleSum() {\n\n  return true;\n}\n\nsmallestSubTriangleSum();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>smallestSubTriangleSum()</code> should return <code>-271248680</code>.</p>",
+      "testString": "assert.strictEqual(smallestSubTriangleSum(), -271248680);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In a triangular array of positive and negative integers, we wish to find a sub-triangle such that the sum of the numbers it contains is the smallest possible.</p>\n<p>In the example below, it can be easily verified that the marked triangle satisfies this condition having a sum of −42.</p>\n<img class=\"img-responsive center-block\" alt=\"triangular array, with marked sub-triangle, having sum of -42\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/searching-a-triangular-array-for-a-sub-triangle-having-minimum-sum.gif\" style=\"background-color: white; padding: 10px;\">\n<p>We wish to make such a triangular array with one thousand rows, so we generate 500500 pseudo-random numbers $s_k$ in the range $±2^{19}$, using a type of random number generator (known as a Linear Congruential Generator) as follows:</p>\n<p>$$\\begin{align}\nt := &#x26; \\ 0\\\\\n\\text{for}\\ &#x26; k = 1\\ \\text{up to}\\ k = 500500:\\\\\n&#x26; t := (615949 × t + 797807)\\ \\text{modulo}\\ 2^{20}\\\\\n&#x26; s_k := t − 219\\\\\n\\end{align}$$</p>\n<p>Thus: $s_1 = 273519$, $s_2 = −153582$, $s_3 = 450905$ etc.</p>\n<p>Our triangular array is then formed using the pseudo-random numbers thus:</p>\n<p>$$\ns_1 \\\\\ns_2\\;s_3 \\\\\ns_4\\; s_5\\; s_6 \\\\\ns_7\\; s_8\\; s_9\\; s_{10} \\\\\n\\ldots\n$$</p>\n<p>Sub-triangles can start at any element of the array and extend down as far as we like (taking-in the two elements directly below it from the next row, the three elements directly below from the row after that, and so on).</p>\n<p>The \"sum of a sub-triangle\" is defined as the sum of all the elements it contains.</p>\n<p>Find the smallest possible sub-triangle sum.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 49,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

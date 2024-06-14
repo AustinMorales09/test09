@@ -1,0 +1,97 @@
+{
+  "id": "656abb977f9ecf4b821aed11",
+  "title": "Task 78",
+  "challengeType": 19,
+  "dashedName": "task-78",
+  "solutions": [],
+  "question": {
+    "text": "<p>In the dialogue, what is Sophie using <code>these</code> to refer to?</p>",
+    "answers": [
+      {
+        "answer": "<p>The company's policies</p>",
+        "feedback": "<p>While related, Sophie specifically mentions <code>details</code> which is broader.</p>"
+      },
+      {
+        "answer": "<p>The cutting-edge gadgets</p>",
+        "feedback": "<p>Sophie mentions gadgets later in her statement, but <code>these</code> directly refers to <code>details</code>.</p>"
+      },
+      {
+        "answer": "<p>The details the company pays attention to</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The people in the company</p>",
+        "feedback": "<p>The context doesn't suggest that Sophie is discussing people when mentioning <code>these details</code>.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 37,
+        "finishTimestamp": 43.05
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.85,
+        "dialogue": {
+          "text": "Yeah, at this company, they're very attentive to these details.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "startTime": 4.45,
+        "finishTime": 7.1,
+        "dialogue": {
+          "text": "You're going to like it here if you're into cutting-edge gadgets.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 7.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The demonstrative pronoun <code>these</code> is used to refer to specific items or details that are close in proximity or context. It's plural and indicates multiple items that are nearby or currently being discussed.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 79,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

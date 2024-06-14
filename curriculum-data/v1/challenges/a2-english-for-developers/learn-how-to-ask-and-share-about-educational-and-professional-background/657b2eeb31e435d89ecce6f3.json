@@ -1,0 +1,36 @@
+{
+  "id": "657b2eeb31e435d89ecce6f3",
+  "title": "Task 81",
+  "challengeType": 22,
+  "dashedName": "task-81",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>The _ size of the room was quite small. She _ likes small cozy spaces.</p>",
+    "blanks": [
+      {
+        "answer": "actual",
+        "feedback": "<p>This word describes the real size of the room.</p>"
+      },
+      {
+        "answer": "actually",
+        "feedback": "<p>This word is used to say she really likes small spaces.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this task, you'll learn about the word <code>actual</code>. It's an adjective, which is a type of word that describes something. When you say <code>actual</code>, you're talking about what something is really like. For instance, when you talk about <code>the actual color</code>, you mean the real color of something.</p>\n<p>Often, you can add <code>-ly</code> to an adjective to make it an adverb. Adverbs are words that tell us how something is said or done. So, when you add <code>-ly</code> to <code>actual</code>, you get <code>actually</code>, which is an adverb.</p>\n<p>Read the sentence below and place the words <code>actual</code>and <code>actually</code> in the correct place.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 85,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

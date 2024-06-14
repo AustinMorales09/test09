@@ -1,0 +1,65 @@
+{
+  "id": "5900f3f51000cf542c50ff08",
+  "title": "Problem 137: Fibonacci golden nuggets",
+  "challengeType": 1,
+  "forumTopicId": 301765,
+  "dashedName": "problem-137-fibonacci-golden-nuggets",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function goldenNugget() {\n\n  return true;\n}\n\ngoldenNugget();",
+      "error": null,
+      "seed": "function goldenNugget() {\n\n  return true;\n}\n\ngoldenNugget();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>goldenNugget()</code> should return <code>1120149658760</code>.</p>",
+      "testString": "assert.strictEqual(goldenNugget(), 1120149658760);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Consider the infinite polynomial series $A_{F}(x) = xF_1 + x^2F_2 + x^3F_3 + \\ldots$, where $F_k$ is the $k$th term in the Fibonacci sequence: $1, 1, 2, 3, 5, 8, \\ldots$; that is, $F_k = F_{k − 1} + F_{k − 2}, F_1 = 1$ and $F_2 = 1$.</p>\n<p>For this problem we shall be interested in values of $x$ for which $A_{F}(x)$ is a positive integer.</p>\n<p>Surprisingly</p>\n<p>$$\\begin{align}\nA_F(\\frac{1}{2}) &#x26; = (\\frac{1}{2}) × 1 + {(\\frac{1}{2})}^2 × 1 + {(\\frac{1}{2})}^3 × 2 + {(\\frac{1}{2})}^4 × 3 + {(\\frac{1}{2})}^5 × 5 + \\cdots \\\\\n&#x26; = \\frac{1}{2} + \\frac{1}{4} + \\frac{2}{8} + \\frac{3}{16} + \\frac{5}{32} + \\cdots \\\\\n&#x26; = 2\n\\end{align}$$</p>\n<p>The corresponding values of $x$ for the first five natural numbers are shown below.</p>\n<table>\n<thead>\n<tr>\n<th>$x$</th>\n<th>$A_F(x)$</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>$\\sqrt{2} − 1$</td>\n<td>$1$</td>\n</tr>\n<tr>\n<td>$\\frac{1}{2}$</td>\n<td>$2$</td>\n</tr>\n<tr>\n<td>$\\frac{\\sqrt{13} − 2}{3}$</td>\n<td>$3$</td>\n</tr>\n<tr>\n<td>$\\frac{\\sqrt{89} − 5}{8}$</td>\n<td>$4$</td>\n</tr>\n<tr>\n<td>$\\frac{\\sqrt{34} − 3}{5}$</td>\n<td>$5$</td>\n</tr>\n</tbody>\n</table>\n<p>We shall call $A_F(x)$ a golden nugget if $x$ is rational, because they become increasingly rarer; for example, the 10th golden nugget is 74049690.</p>\n<p>Find the 15th golden nugget.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

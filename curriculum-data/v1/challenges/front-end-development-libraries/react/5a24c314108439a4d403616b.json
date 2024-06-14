@@ -1,0 +1,78 @@
+{
+  "id": "5a24c314108439a4d403616b",
+  "title": "Use Default Props",
+  "challengeType": 6,
+  "forumTopicId": 301418,
+  "dashedName": "use-default-props",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<ShoppingCart />, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "const ShoppingCart = (props) => {\n  return (\n    <div>\n      <h1>Shopping Cart Component</h1>\n    </div>\n  )\n};\n// Change code below this line",
+      "error": null,
+      "seed": "const ShoppingCart = (props) => {\n  return (\n    <div>\n      <h1>Shopping Cart Component</h1>\n    </div>\n  )\n};\n// Change code below this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "const ShoppingCart = (props) => {\n  return (\n    <div>\n      <h1>Shopping Cart Component</h1>\n    </div>\n  )\n};\n\n// Change code below this line\nShoppingCart.defaultProps = {\n  items: 0\n}",
+        "error": null,
+        "seed": "const ShoppingCart = (props) => {\n  return (\n    <div>\n      <h1>Shopping Cart Component</h1>\n    </div>\n  )\n};\n\n// Change code below this line\nShoppingCart.defaultProps = {\n  items: 0\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>ShoppingCart</code> component should render.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(ShoppingCart));\n    return mockedComponent.find('ShoppingCart').length === 1;\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>ShoppingCart</code> component should have a default prop of <code>{ items: 0 }</code>.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(ShoppingCart));\n    mockedComponent.setProps({ items: undefined });\n    return mockedComponent.find('ShoppingCart').props().items === 0;\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>React also has an option to set default props. You can assign default props to a component as a property on the component itself and React assigns the default prop if necessary. This allows you to specify what a prop value should be if no value is explicitly provided. For example, if you declare <code>MyComponent.defaultProps = { location: 'San Francisco' }</code>, you have defined a location prop that's set to the string <code>San Francisco</code>, unless you specify otherwise. React assigns default props if props are undefined, but if you pass <code>null</code> as the value for a prop, it will remain <code>null</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The code editor shows a <code>ShoppingCart</code> component. Define default props on this component which specify a prop <code>items</code> with a value of <code>0</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 15,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

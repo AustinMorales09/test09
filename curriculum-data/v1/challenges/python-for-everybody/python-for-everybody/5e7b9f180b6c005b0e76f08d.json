@@ -1,0 +1,50 @@
+{
+  "id": "5e7b9f180b6c005b0e76f08d",
+  "title": "Representing Relationships in a Relational Database",
+  "challengeType": 11,
+  "videoId": "-orenCNdC2Q",
+  "bilibiliIds": {
+    "aid": 931953070,
+    "bvid": "BV1FM4y1N7hc",
+    "cid": 377532529
+  },
+  "dashedName": "representing-relationships-in-a-relational-database",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is a foreign key?</p>",
+    "answers": [
+      {
+        "answer": "<p>A key that is not supposed to be there.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A key that uses non-latin characters.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A number that points to the primary key of an associated row in a different table.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A key that the \"real world\" might use to look up a row.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 49,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

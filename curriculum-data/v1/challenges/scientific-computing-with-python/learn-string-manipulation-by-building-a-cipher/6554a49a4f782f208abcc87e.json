@@ -1,0 +1,53 @@
+{
+  "id": "6554a49a4f782f208abcc87e",
+  "title": "Step 61",
+  "challengeType": 20,
+  "dashedName": "step-61",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        16
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\ntext = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:\n            key_char = key[key_index % len(key)]\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', message)\n    print('encrypted text:', encrypted_text)\n",
+      "error": null,
+      "seed": "\ntext = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:\n            key_char = key[key_index % len(key)]\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', message)\n    print('encrypted text:', encrypted_text)\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>+=</code> operator to add <code>1</code> to <code>key_index</code> inside the <code>else</code> clause body.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {block_body} = __helpers.python.getBlock(commentless_code, \"else\");\nassert(block_body.match(/key_char\\s*=\\s*key\\s*\\[\\s*key_index\\s*%\\s*len\\s*\\(\\s*key\\s*\\)\\s*\\]\\s*key_index\\s*\\+=\\s*1/));"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You will need to increase the <code>key_index</code> count for the next iteration.\nTo do this, after the line you just added and in the same code block, use the addition assignment operator to increment <code>key_index</code> by one.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 60,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

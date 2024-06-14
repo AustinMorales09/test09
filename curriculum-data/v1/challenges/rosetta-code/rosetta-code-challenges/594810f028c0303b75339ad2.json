@@ -1,0 +1,74 @@
+{
+  "id": "594810f028c0303b75339ad2",
+  "title": "Vector cross product",
+  "challengeType": 1,
+  "forumTopicId": 302342,
+  "dashedName": "vector-cross-product",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const tv1 = [1, 2, 3];\nconst tv2 = [4, 5, 6];\nconst res12 = crossProduct(tv1, tv2);\nconst exp12 = [-3, 6, -3];",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function crossProduct(a, b) {\n\n}",
+      "error": null,
+      "seed": "function crossProduct(a, b) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function crossProduct(a, b) {\n  if (!a || !b) {\n    return null;\n  }\n\n  // Check lengths\n  if (a.length !== 3 || b.length !== 3) {\n    return null;\n  }\n\n  return [\n    (a[1] * b[2]) - (a[2] * b[1]),\n    (a[2] * b[0]) - (a[0] * b[2]),\n    (a[0] * b[1]) - (a[1] * b[0])\n  ];\n}",
+        "error": null,
+        "seed": "function crossProduct(a, b) {\n  if (!a || !b) {\n    return null;\n  }\n\n  // Check lengths\n  if (a.length !== 3 || b.length !== 3) {\n    return null;\n  }\n\n  return [\n    (a[1] * b[2]) - (a[2] * b[1]),\n    (a[2] * b[0]) - (a[0] * b[2]),\n    (a[0] * b[1]) - (a[1] * b[0])\n  ];\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>crossProduct</code> should be a function.</p>",
+      "testString": "assert.equal(typeof crossProduct, 'function');"
+    },
+    {
+      "text": "<p><code>crossProduct()</code> should return null.</p>",
+      "testString": "assert.equal(crossProduct(), null);"
+    },
+    {
+      "text": "<p><code>crossProduct([1, 2, 3], [4, 5, 6])</code> should return <code>[-3, 6, -3]</code>.</p>",
+      "testString": "assert.deepEqual(res12, exp12);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A vector is defined as having three dimensions as being represented by an ordered collection of three numbers: (X, Y, Z).</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that takes two vectors (arrays) as input and computes their cross product. Your function should return <code>null</code> on invalid inputs such as vectors of different lengths.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 152,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

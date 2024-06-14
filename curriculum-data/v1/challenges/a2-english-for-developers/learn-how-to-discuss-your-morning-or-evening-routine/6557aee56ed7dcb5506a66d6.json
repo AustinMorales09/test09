@@ -1,0 +1,45 @@
+{
+  "id": "6557aee56ed7dcb5506a66d6",
+  "title": "Task 19",
+  "challengeType": 19,
+  "dashedName": "task-19",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does a <code>relaxed dress code</code> at work usually allow you to wear?</p>",
+    "answers": [
+      {
+        "answer": "<p>Suits and ties</p>",
+        "feedback": "<p>Suits and ties are usually part of a formal dress code, not a relaxed one.</p>"
+      },
+      {
+        "answer": "<p>Casual clothes like jeans and T-shirts</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Uniforms</p>",
+        "feedback": "<p>Uniforms are specific types of clothes required by some workplaces, not typically associated with a relaxed dress code.</p>"
+      },
+      {
+        "answer": "<p>Evening gowns</p>",
+        "feedback": "<p>Evening gowns are very formal and are not usually worn in workplaces with a relaxed dress code.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>dress code</code> is a set of rules about what you should wear in a certain place or event. Different places have different dress codes. For example:</p>\n<p>A <code>relaxed dress code</code> means you can wear casual, comfortable clothes.\nA <code>formal dress code</code> requires more official and elegant clothes.</p>\n<p>Note: Remember, dress codes can vary depending on the culture and the specific place.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "656a444cef055b4342f1f323",
+  "title": "Task 33",
+  "challengeType": 19,
+  "dashedName": "task-33",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Amy currently working on?</p>",
+    "answers": [
+      {
+        "answer": "<p>She is designing a new tech platform</p>",
+        "feedback": "<p>Amy is not designing a platform.</p>"
+      },
+      {
+        "answer": "<p>She is creating a series of videos about technology</p>",
+        "feedback": "<p>Amy is not working on videos.</p>"
+      },
+      {
+        "answer": "<p>She is writing a series of blog posts about tech trends</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She is taking a course on tech trends</p>",
+        "feedback": "<p>Amy's current work is not taking a course.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Amy",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.34,
+        "finishTimestamp": 18.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Amy",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Amy",
+        "startTime": 1,
+        "finishTime": 6.02,
+        "dialogue": {
+          "text": "That sounds like a good idea, Brian. I'm currently working on a series of blog posts about tech trends.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Amy",
+        "opacity": 0,
+        "startTime": 6.52
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Let's practice!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

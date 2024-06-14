@@ -1,0 +1,80 @@
+{
+  "id": "656a417f7f9daf2e9aae6831",
+  "title": "Task 38",
+  "challengeType": 19,
+  "dashedName": "task-38",
+  "solutions": [],
+  "question": {
+    "text": "<p>In which statement does the term CEO refer to a specific person known to both the speaker and the listener?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I talked to the CEO about our project.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>I talked to a CEO at the business fair.</code></p>",
+        "feedback": "<p><code>a CEO</code> means it could be any CEO, not someone they both know. Try again</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.2,
+        "finishTimestamp": 6.66
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.46,
+        "dialogue": {
+          "text": "Oh, hi, Tom. I'm Sophie. I'm a developer.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Identify how articles change the context of a sentence. Articles, like <code>the</code> and <code>a</code>, can change the meaning of a sentence. <code>The</code> talks about something specific. <code>A</code> talks about something in general.</p>\n<p>For Example:\n<code>Tom is a graphic designer in our company</code> means there are many graphic designers and Tom is one of them.\n<code>Tom is the graphic designer of our company</code> means there is only one person in the company matching this description (that's Tom).</p>\n<p>Notice that, after <code>graphic designer</code>, there are details that made the situation more specific. In this company, there's only one person that could fit the profile - Tom.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 39,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

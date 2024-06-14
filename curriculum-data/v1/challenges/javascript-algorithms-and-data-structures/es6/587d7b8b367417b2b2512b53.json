@@ -1,0 +1,78 @@
+{
+  "id": "587d7b8b367417b2b2512b53",
+  "title": "Use class Syntax to Define a Constructor Function",
+  "challengeType": 1,
+  "forumTopicId": 301212,
+  "dashedName": "use-class-syntax-to-define-a-constructor-function",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Only change code below this line\n\n// Only change code above this line\n\nconst carrot = new Vegetable('carrot');\nconsole.log(carrot.name); // Should display 'carrot'",
+      "error": null,
+      "seed": "// Only change code below this line\n\n// Only change code above this line\n\nconst carrot = new Vegetable('carrot');\nconsole.log(carrot.name); // Should display 'carrot'"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "class Vegetable {\n  constructor(name) {\n    this.name = name;\n  }\n}\nconst carrot = new Vegetable('carrot');",
+        "error": null,
+        "seed": "class Vegetable {\n  constructor(name) {\n    this.name = name;\n  }\n}\nconst carrot = new Vegetable('carrot');"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>Vegetable</code> should be a <code>class</code> with a defined <code>constructor</code> method.</p>",
+      "testString": "assert(\n  typeof Vegetable === 'function' && typeof Vegetable.constructor === 'function'\n);"
+    },
+    {
+      "text": "<p>The <code>class</code> keyword should be used.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/class/g));"
+    },
+    {
+      "text": "<p><code>Vegetable</code> should be able to be instantiated.</p>",
+      "testString": "assert(() => {\n  const a = new Vegetable('apple');\n  return typeof a === 'object';\n});"
+    },
+    {
+      "text": "<p><code>carrot.name</code> should return <code>carrot</code>.</p>",
+      "testString": "assert(carrot.name == 'carrot');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>ES6 provides a new syntax to create objects, using the <dfn>class</dfn> keyword.</p>\n<p>In ES5, an object can be created by defining a <code>constructor</code> function and using the <code>new</code> keyword to instantiate the object.</p>\n<p>In ES6, a <code>class</code> declaration has a <code>constructor</code> method that is invoked with the <code>new</code> keyword. If the <code>constructor</code> method is not explicitly defined, then it is implicitly defined with no arguments.</p>\n<pre><code class=\"language-js\">// Explicit constructor\nclass SpaceShuttle {\n  constructor(targetPlanet) {\n    this.targetPlanet = targetPlanet;\n  }\n  takeOff() {\n    console.log(\"To \" + this.targetPlanet + \"!\");\n  }\n}\n\n// Implicit constructor \nclass Rocket {\n  launch() {\n    console.log(\"To the moon!\");\n  }\n}\n\nconst zeus = new SpaceShuttle('Jupiter');\n// prints To Jupiter! in console\nzeus.takeOff();\n\nconst atlas = new Rocket();\n// prints To the moon! in console\natlas.launch();\n</code></pre>\n<p>It should be noted that the <code>class</code> keyword declares a new function, to which a constructor is added. This constructor is invoked when <code>new</code> is called to create a new object.</p>\n<p><strong>Note:</strong> UpperCamelCase should be used by convention for ES6 class names, as in <code>SpaceShuttle</code> used above.</p>\n<p>The <code>constructor</code> method is a special method for creating and initializing an object created with a class. You will learn more about it in the Object Oriented Programming section of the JavaScript Algorithms And Data Structures Certification.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use the <code>class</code> keyword and write a <code>constructor</code> to create the <code>Vegetable</code> class.</p>\n<p>The <code>Vegetable</code> class allows you to create a vegetable object with a property <code>name</code> that gets passed to the <code>constructor</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

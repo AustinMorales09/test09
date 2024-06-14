@@ -1,0 +1,88 @@
+{
+  "id": "657d777c3a22758abc00a183",
+  "title": "Task 10",
+  "challengeType": 19,
+  "dashedName": "task-10",
+  "solutions": [],
+  "question": {
+    "text": "<p>How long has Bob been into photography?</p>",
+    "answers": [
+      {
+        "answer": "<p>For almost 25 years.</p>",
+        "feedback": "<p>He mentions another period.</p>"
+      },
+      {
+        "answer": "<p>Since he got a camera from his parents at age 5.</p>",
+        "feedback": "<p>Bob doesn't mention any of this.</p>"
+      },
+      {
+        "answer": "<p>For about ten years.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He started practicing last year and fell in love immediately.</p>",
+        "feedback": "<p>Bob mentions a much longer period.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.38,
+        "finishTimestamp": 19.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.52,
+        "dialogue": {
+          "text": "For nearly a decade now. It started as a hobby, but it's become a significant part of my life.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 7.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Near</code> means close in distance or time, while <code>nearly</code> is used to indicate that something is almost, but not completely finished.</p>\n<p>For example, if you're <code>near</code> finishing a project, you're close to completing it. If you've <code>nearly</code> finished, you're almost done but not quite there yet.</p>\n<p>The expression <code>for nearly a decade now</code> combines <code>nearly</code> with <code>a decade</code> (ten years) to describe a long period of time, almost but not quite reaching ten years. It's used to talk about something that has been happening or continuing for just about ten years.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

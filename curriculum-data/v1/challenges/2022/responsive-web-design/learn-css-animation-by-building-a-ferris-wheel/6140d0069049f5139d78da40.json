@@ -1,0 +1,65 @@
+{
+  "id": "6140d0069049f5139d78da40",
+  "title": "Step 8",
+  "challengeType": 0,
+  "dashedName": "step-8",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Ferris Wheel</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div class=\"wheel\">\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Ferris Wheel</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div class=\"wheel\">\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        11,
+        20
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": ".wheel {\n  border: 2px solid black;\n  border-radius: 50%;\n  margin-left: 50px;\n  position: absolute;\n  height: 55vw;\n  width: 55vw;\n  max-width: 500px;\n  max-height: 500px;\n}\n\n.line {\n  background-color: black;\n  width: 50%;\n  height: 2px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n}",
+      "error": null,
+      "seed": ".wheel {\n  border: 2px solid black;\n  border-radius: 50%;\n  margin-left: 50px;\n  position: absolute;\n  height: 55vw;\n  width: 55vw;\n  max-width: 500px;\n  max-height: 500px;\n}\n\n.line {\n  background-color: black;\n  width: 50%;\n  height: 2px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>.line</code> selector should have a <code>transform-origin</code> property set to <code>0% 0%</code>.</p>",
+      "testString": "const transformOrigin = new __helpers.CSSHelp(document).getStyle('.line')?.transformOrigin;\nassert(transformOrigin === '0% 0%' || transformOrigin === '0% 0% 0px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>transform-origin</code> property is used to set the point around which a CSS transformation is applied. For example, when performing a <code>rotate</code> (which you will do later in this project), the <code>transform-origin</code> determines around which point the element is rotated.</p>\n<p>Give the <code>.line</code> selector a <code>transform-origin</code> property of <code>0% 0%</code>. This will offset the origin point by <code>0%</code> from the left and <code>0%</code> from the top, setting it to the top left corner of the element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-animation-by-building-a-ferris-wheel",
+  "hasEditableBoundaries": true,
+  "order": 17,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

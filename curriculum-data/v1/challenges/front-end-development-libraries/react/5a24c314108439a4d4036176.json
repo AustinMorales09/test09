@@ -1,0 +1,90 @@
+{
+  "id": "5a24c314108439a4d4036176",
+  "title": "Use State to Toggle an Element",
+  "challengeType": 6,
+  "forumTopicId": 301421,
+  "dashedName": "use-state-to-toggle-an-element",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<MyComponent />, document.getElementById('root'));",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      visibility: false\n    };\n    // Change code below this line\n\n    // Change code above this line\n  }\n  // Change code below this line\n\n  // Change code above this line\n  render() {\n    if (this.state.visibility) {\n      return (\n        <div>\n          <button onClick={this.toggleVisibility}>Click Me</button>\n          <h1>Now you see me!</h1>\n        </div>\n      );\n    } else {\n      return (\n        <div>\n          <button onClick={this.toggleVisibility}>Click Me</button>\n        </div>\n      );\n    }\n  }\n}",
+      "error": null,
+      "seed": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      visibility: false\n    };\n    // Change code below this line\n\n    // Change code above this line\n  }\n  // Change code below this line\n\n  // Change code above this line\n  render() {\n    if (this.state.visibility) {\n      return (\n        <div>\n          <button onClick={this.toggleVisibility}>Click Me</button>\n          <h1>Now you see me!</h1>\n        </div>\n      );\n    } else {\n      return (\n        <div>\n          <button onClick={this.toggleVisibility}>Click Me</button>\n        </div>\n      );\n    }\n  }\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      visibility: false\n    };\n    this.toggleVisibility = this.toggleVisibility.bind(this);\n  }\n  toggleVisibility() {\n    this.setState(state => ({\n      visibility: !state.visibility\n    }));\n  }\n  render() {\n    if (this.state.visibility) {\n      return (\n        <div>\n          <button onClick={this.toggleVisibility}>Click Me</button>\n          <h1>Now you see me!</h1>\n        </div>\n      );\n    } else {\n      return (\n        <div>\n          <button onClick={this.toggleVisibility}>Click Me</button>\n        </div>\n      );\n    }\n  }\n}",
+        "error": null,
+        "seed": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      visibility: false\n    };\n    this.toggleVisibility = this.toggleVisibility.bind(this);\n  }\n  toggleVisibility() {\n    this.setState(state => ({\n      visibility: !state.visibility\n    }));\n  }\n  render() {\n    if (this.state.visibility) {\n      return (\n        <div>\n          <button onClick={this.toggleVisibility}>Click Me</button>\n          <h1>Now you see me!</h1>\n        </div>\n      );\n    } else {\n      return (\n        <div>\n          <button onClick={this.toggleVisibility}>Click Me</button>\n        </div>\n      );\n    }\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>MyComponent</code> should return a <code>div</code> element which contains a <code>button</code>.</p>",
+      "testString": "assert.strictEqual(\n  Enzyme.mount(React.createElement(MyComponent)).find('div').find('button')\n    .length,\n  1\n);"
+    },
+    {
+      "text": "<p>The state of <code>MyComponent</code> should initialize with a <code>visibility</code> property set to <code>false</code>.</p>",
+      "testString": "assert.strictEqual(\n  Enzyme.mount(React.createElement(MyComponent)).state('visibility'),\n  false\n);"
+    },
+    {
+      "text": "<p>Clicking the button element should toggle the <code>visibility</code> property in state between <code>true</code> and <code>false</code> and conditionally render the <code>h1</code> element.</p>",
+      "testString": "(() => {\n  const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n  const first = () => {\n    mockedComponent.setState({ visibility: false });\n    return mockedComponent.state('visibility');\n  };\n  const second = () => {\n    mockedComponent.find('button').simulate('click');\n    return mockedComponent.state('visibility') && mockedComponent.find('h1').exists();\n  };\n  const third = () => {\n    mockedComponent.find('button').simulate('click');\n    return mockedComponent.state('visibility') && mockedComponent.find('h1').exists();\n  };\n  const firstValue = first();\n  const secondValue = second();\n  const thirdValue = third();\n  assert(!firstValue && secondValue && !thirdValue);\n})();"
+    },
+    {
+      "text": "<p>An anonymous function should be passed to <code>setState</code>.</p>",
+      "testString": "const paramRegex = '[a-zA-Z$_]\\\\w*(,[a-zA-Z$_]\\\\w*)?';\nassert(\n  new RegExp(\n    'this\\\\.setState\\\\((function\\\\(' +\n      paramRegex +\n      '\\\\){|([a-zA-Z$_]\\\\w*|\\\\(' +\n      paramRegex +\n      '\\\\))=>)'\n  ).test(__helpers.removeWhiteSpace(code))\n);"
+    },
+    {
+      "text": "<p><code>this</code> should not be used inside <code>setState</code></p>",
+      "testString": "assert(!/this\\.setState\\([^}]*this/.test(code));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Sometimes you might need to know the previous state when updating the state. However, state updates may be asynchronous - this means React may batch multiple <code>setState()</code> calls into a single update. This means you can't rely on the previous value of <code>this.state</code> or <code>this.props</code> when calculating the next value. So, you should not use code like this:</p>\n<pre><code class=\"language-jsx\">this.setState({\n  counter: this.state.counter + this.props.increment\n});\n</code></pre>\n<p>Instead, you should pass <code>setState</code> a function that allows you to access state and props. Using a function with <code>setState</code> guarantees you are working with the most current values of state and props. This means that the above should be rewritten as:</p>\n<pre><code class=\"language-jsx\">this.setState((state, props) => ({\n  counter: state.counter + props.increment\n}));\n</code></pre>\n<p>You can also use a form without <code>props</code> if you need only the <code>state</code>:</p>\n<pre><code class=\"language-jsx\">this.setState(state => ({\n  counter: state.counter + 1\n}));\n</code></pre>\n<p>Note that you have to wrap the object literal in parentheses, otherwise JavaScript thinks it's a block of code.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p><code>MyComponent</code> has a <code>visibility</code> property which is initialized to <code>false</code>. The render method returns one view if the value of <code>visibility</code> is true, and a different view if it is false.</p>\n<p>Currently, there is no way of updating the <code>visibility</code> property in the component's <code>state</code>. The value should toggle back and forth between true and false. There is a click handler on the button which triggers a class method called <code>toggleVisibility()</code>. Pass a function to <code>setState</code> to define this method so that the <code>state</code> of <code>visibility</code> toggles to the opposite value when the method is called. If <code>visibility</code> is <code>false</code>, the method sets it to <code>true</code>, and vice versa.</p>\n<p>Finally, click the button to see the conditional rendering of the component based on its <code>state</code>.</p>\n<p><strong>Hint:</strong> Don't forget to bind the <code>this</code> keyword to the method in the <code>constructor</code>!</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 25,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

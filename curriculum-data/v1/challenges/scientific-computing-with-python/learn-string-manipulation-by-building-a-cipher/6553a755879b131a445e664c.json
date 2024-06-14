@@ -1,0 +1,53 @@
+{
+  "id": "6553a755879b131a445e664c",
+  "title": "Step 44",
+  "challengeType": 20,
+  "dashedName": "step-44",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        14
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        encrypted_text += char\n    else:\n        index = alphabet.find(char)\n        new_index = index + shift\n        encrypted_text += alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        encrypted_text += char\n    else:\n        index = alphabet.find(char)\n        new_index = index + shift\n        encrypted_text += alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>text</code> variable.</p>",
+      "testString": "assert.match(code, /^text\\s*=/m)"
+    },
+    {
+      "text": "<p>You should assign the string <code>'Hello Zaira'</code> to your <code>text</code> variable.</p>",
+      "testString": "assert.match(code, /^text\\s*=\\s*(\"|')Hello\\sZaira\\1/m)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Try to assign the string <code>'Hello Zaira'</code> to your <code>text</code> variable and see what happens in the terminal.</p>\n<p>You'll see a <code>string index out of range</code> exception. Don't worry, you'll figure out how to fix it soon!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

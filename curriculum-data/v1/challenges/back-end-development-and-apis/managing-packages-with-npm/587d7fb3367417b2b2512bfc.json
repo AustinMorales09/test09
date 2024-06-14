@@ -1,0 +1,30 @@
+{
+  "id": "587d7fb3367417b2b2512bfc",
+  "title": "Add a Description to Your package.json",
+  "challengeType": 2,
+  "forumTopicId": 301522,
+  "dashedName": "add-a-description-to-your-package-json",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>package.json should have a valid \"description\" key</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/package.json').then(\n    (data) => {\n      var packJson = JSON.parse(data);\n      assert(packJson.description, '\"description\" is missing');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The next part of a good package.json file is the <code>description</code> field; where a short, but informative description about your project belongs.</p>\n<p>If some day you plan to publish a package to npm, this is the string that should sell your idea to the user when they decide whether to install your package or not. However, that’s not the only use case for the description, it’s a great way to summarize what a project does. It’s just as important in any Node.js project to help other developers, future maintainers or even your future self understand the project quickly.</p>\n<p>Regardless of what you plan for your project, a description is definitely recommended. Here's an example:</p>\n<pre><code class=\"language-json\">\"description\": \"A project that does something awesome\",\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add a <code>description</code> to the package.json file of your project.</p>\n<p><strong>Note:</strong> Remember to use double-quotes for field-names (\") and commas (,) to separate fields.</p>\n</section>",
+  "translationPending": false,
+  "block": "managing-packages-with-npm",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

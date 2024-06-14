@@ -1,0 +1,79 @@
+{
+  "id": "6579d86fee9092ffb268f962",
+  "title": "Task 24",
+  "challengeType": 22,
+  "dashedName": "task-24",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Could you provide more details about the problem, so we can _ some _ solutions during the review?</p>",
+    "blanks": [
+      {
+        "answer": "brainstorm",
+        "feedback": "<p>It means to discuss and come up with various ideas, typically in a group.</p>"
+      },
+      {
+        "answer": "potential",
+        "feedback": "<p>It refers to ideas that might be effective but are still under consideration.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 29.34,
+        "finishTimestamp": 34.66
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.32,
+        "dialogue": {
+          "text": "Could you provide more details about the problem so we can brainstorm some potential solutions during the review?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.82
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Brainstorm</code> refers to a group discussion aimed at generating ideas and solutions. It's a common technique in workplaces to tackle challenges creatively. <code>Potential</code> means possible or capable of being something in the future. In a business context, <code>potential solutions</code> are ideas that could be effective but are not yet decided upon. For example, during a brainstorming session, a team might discuss potential solutions to a technical problem.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

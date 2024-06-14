@@ -1,0 +1,74 @@
+{
+  "id": "587d7b89367417b2b2512b48",
+  "title": "Use the Spread Operator to Evaluate Arrays In-Place",
+  "challengeType": 1,
+  "forumTopicId": 301222,
+  "dashedName": "use-the-spread-operator-to-evaluate-arrays-in-place",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];\nlet arr2;\n\narr2 = [];  // Change this line\n\nconsole.log(arr2);",
+      "error": null,
+      "seed": "const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];\nlet arr2;\n\narr2 = [];  // Change this line\n\nconsole.log(arr2);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];\nlet arr2;\n\narr2 = [...arr1];",
+        "error": null,
+        "seed": "const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];\nlet arr2;\n\narr2 = [...arr1];"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>arr2</code> should be correct copy of <code>arr1</code>.</p>",
+      "testString": "assert(arr2.every((v, i) => v === arr1[i]) && arr2.length);"
+    },
+    {
+      "text": "<p><code>...</code> spread operator should be used to duplicate <code>arr1</code>.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/Array\\(\\s*\\.\\.\\.arr1\\s*\\)|\\[\\s*\\.\\.\\.arr1\\s*\\]/));"
+    },
+    {
+      "text": "<p><code>arr2</code> should remain unchanged when <code>arr1</code> is changed.</p>",
+      "testString": "assert((arr1, arr2) => {\n  arr1.push('JUN');\n  return arr2.length < arr1.length;\n});"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>ES6 introduces the <dfn>spread operator</dfn>, which allows us to expand arrays and other expressions in places where multiple parameters or elements are expected.</p>\n<p>The ES5 code below uses <code>apply()</code> to compute the maximum value in an array:</p>\n<pre><code class=\"language-js\">var arr = [6, 89, 3, 45];\nvar maximus = Math.max.apply(null, arr);\n</code></pre>\n<p><code>maximus</code> would have a value of <code>89</code>.</p>\n<p>We had to use <code>Math.max.apply(null, arr)</code> because <code>Math.max(arr)</code> returns <code>NaN</code>. <code>Math.max()</code> expects comma-separated arguments, but not an array. The spread operator makes this syntax much better to read and maintain.</p>\n<pre><code class=\"language-js\">const arr = [6, 89, 3, 45];\nconst maximus = Math.max(...arr);\n</code></pre>\n<p><code>maximus</code> would have a value of <code>89</code>.</p>\n<p><code>...arr</code> returns an unpacked array. In other words, it spreads the array. However, the spread operator only works in-place, like in an argument to a function or in an array literal. For example:</p>\n<pre><code class=\"language-js\">const spreaded = [...arr];\n</code></pre>\n<p>However, the following code will not work:</p>\n<pre><code class=\"language-js\">const spreaded = ...arr;\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Copy all contents of <code>arr1</code> into another array <code>arr2</code> using the spread operator.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

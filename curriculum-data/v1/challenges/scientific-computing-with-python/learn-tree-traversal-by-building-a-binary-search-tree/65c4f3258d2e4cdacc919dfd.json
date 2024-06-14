@@ -1,0 +1,49 @@
+{
+  "id": "65c4f3258d2e4cdacc919dfd",
+  "title": "Step 15",
+  "challengeType": 20,
+  "dashedName": "step-15",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        19
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class TreeNode:\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\nclass BinarySearchTree:\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n            node.right = self._insert(node.right, key)\n\n",
+      "error": null,
+      "seed": "class TreeNode:\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\nclass BinarySearchTree:\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n            node.right = self._insert(node.right, key)\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should return the current node outside the conditional blocks.</p>",
+      "testString": "({ test: () => assert.match(code, /^\\s{8}return\\s+node/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>At the end of your <code>_insert</code> method, after the insertion process is complete, return the current node to update the tree structure at the higher levels of the recursive call stack.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

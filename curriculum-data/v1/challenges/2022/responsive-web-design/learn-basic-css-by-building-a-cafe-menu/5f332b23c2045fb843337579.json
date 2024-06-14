@@ -1,0 +1,65 @@
+{
+  "id": "5f332b23c2045fb843337579",
+  "title": "Step 7",
+  "challengeType": 0,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        10
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an opening <code>&#x3C;p></code> tag.</p>",
+      "testString": "assert(code.match(/<p>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>&#x3C;/p></code> tag.</p>",
+      "testString": "assert(code.match(/<\\/p>/i));"
+    },
+    {
+      "text": "<p>You should not change your existing <code>h1</code> element. Make sure you did not delete the closing tag.</p>",
+      "testString": "assert($('h1').length === 1);"
+    },
+    {
+      "text": "<p>Your <code>p</code> element should be below your <code>h1</code> element.</p>",
+      "testString": "assert($('p')[0].previousElementSibling.tagName === 'H1');"
+    },
+    {
+      "text": "<p>Your <code>p</code> element should have the text <code>Est. 2020</code>.</p>",
+      "testString": "assert(document.querySelector(\"p\").innerText === \"Est. 2020\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To let visitors know the cafe was founded in 2020, add a <code>p</code> element below the <code>h1</code> element with the text <code>Est. 2020</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

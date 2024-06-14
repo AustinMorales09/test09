@@ -1,0 +1,88 @@
+{
+  "id": "657b1431076b365555784189",
+  "title": "Task 16",
+  "challengeType": 19,
+  "dashedName": "task-16",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>bachelor's degree</code> refer to?</p>",
+    "answers": [
+      {
+        "answer": "<p>An undergraduate academic degree</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A type of professional certification</p>",
+        "feedback": "<p>A bachelor's degree is an academic qualification, not a professional certification.</p>"
+      },
+      {
+        "answer": "<p>A high school diploma</p>",
+        "feedback": "<p>A bachelor's degree is a higher education qualification, more advanced than a high school diploma.</p>"
+      },
+      {
+        "answer": "<p>A master's program entry requirement</p>",
+        "feedback": "<p>While a bachelor's degree may be required for a master's program, it itself refers to an undergraduate degree.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Candidate",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 39.56,
+        "finishTimestamp": 44.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Candidate",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Candidate",
+        "startTime": 1,
+        "finishTime": 5.46,
+        "dialogue": {
+          "text": "I have a bachelor's degree in computer science from California State University.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Candidate",
+        "opacity": 0,
+        "startTime": 5.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>bachelor's degree</code> is an undergraduate academic degree awarded by colleges and universities upon completion of a course of study. In the term <code>bachelor's degree</code>, the use of the noun (<code>bachelor</code>) followed by the <code>'s</code> indicates possession or association. This form is commonly used to show that something belongs to or is related to the noun, as in <code>today's news</code> or <code>teacher's guide</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

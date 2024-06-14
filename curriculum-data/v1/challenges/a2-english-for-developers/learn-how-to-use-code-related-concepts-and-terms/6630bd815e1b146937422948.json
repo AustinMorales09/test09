@@ -1,0 +1,100 @@
+{
+  "id": "6630bd815e1b146937422948",
+  "title": "Task 7",
+  "challengeType": 22,
+  "dashedName": "task-7",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Thanks, but I see _ data types listed in the documentation. How do I know _ _ _ _?</p>",
+    "blanks": [
+      {
+        "answer": "many",
+        "feedback": "<p>This word describes the quantity. Jake is indicating that there is a large number of data types available.</p>"
+      },
+      {
+        "answer": "which",
+        "feedback": "<p>It begins a question that helps specify one item from a group. It is used here to start narrowing down choices among data types.</p>"
+      },
+      {
+        "answer": "one",
+        "feedback": "<p>It refers to a single item or choice.</p>"
+      },
+      {
+        "answer": "to",
+        "feedback": "<p>This preposition is used here to link the decision-making process.</p>"
+      },
+      {
+        "answer": "choose",
+        "feedback": "<p>It means making a selection or decision from the available options.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 10.26,
+        "finishTimestamp": 15.4
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 4.18,
+        "dialogue": {
+          "text": "Thanks, but I see many data types listed in the documentation.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "startTime": 4.5,
+        "finishTime": 6.14,
+        "dialogue": {
+          "text": "How do I know which one to choose?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 6.64
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>choose</code> means to select or decide on one or more options from a set. It is often followed by <code>from</code> implying selecting from a specific group or list.</p>\n<p>For example, <code>At the restaurant, you can choose from ten different desserts.</code> In this sentence, <code>choose from</code> is used to imply that the restaurant offers a variety of ten desserts, and you have the freedom to make a selection based on your preference.</p>\n<p><code>Which one to choose</code> is a common phrase used when someone needs to decide between multiple options and is unsure which is the best choice.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

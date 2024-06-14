@@ -1,0 +1,106 @@
+{
+  "id": "5664820f61c48e80c9fa476c",
+  "title": "Golf Code",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/c9ykNUR",
+  "forumTopicId": 18195,
+  "dashedName": "golf-code",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const names = [\"Hole-in-one!\", \"Eagle\", \"Birdie\", \"Par\", \"Bogey\", \"Double Bogey\", \"Go Home!\"];\n\nfunction golfScore(par, strokes) {\n  // Only change code below this line\n\n\n  return \"Change Me\";\n  // Only change code above this line\n}\n\ngolfScore(5, 4);",
+      "error": null,
+      "seed": "const names = [\"Hole-in-one!\", \"Eagle\", \"Birdie\", \"Par\", \"Bogey\", \"Double Bogey\", \"Go Home!\"];\n\nfunction golfScore(par, strokes) {\n  // Only change code below this line\n\n\n  return \"Change Me\";\n  // Only change code above this line\n}\n\ngolfScore(5, 4);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function golfScore(par, strokes) {\n  if (strokes === 1) {\n    return \"Hole-in-one!\";\n  }\n\n  if (strokes <= par - 2) {\n    return \"Eagle\";\n  }\n\n  if (strokes === par - 1) {\n    return \"Birdie\";\n  }\n\n  if (strokes === par) {\n    return \"Par\";\n  }\n\n  if (strokes === par + 1) {\n    return \"Bogey\";\n  }\n\n  if(strokes === par + 2) {\n    return \"Double Bogey\";\n  }\n\n  return \"Go Home!\";\n}",
+        "error": null,
+        "seed": "function golfScore(par, strokes) {\n  if (strokes === 1) {\n    return \"Hole-in-one!\";\n  }\n\n  if (strokes <= par - 2) {\n    return \"Eagle\";\n  }\n\n  if (strokes === par - 1) {\n    return \"Birdie\";\n  }\n\n  if (strokes === par) {\n    return \"Par\";\n  }\n\n  if (strokes === par + 1) {\n    return \"Bogey\";\n  }\n\n  if(strokes === par + 2) {\n    return \"Double Bogey\";\n  }\n\n  return \"Go Home!\";\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>golfScore(4, 1)</code> should return the string <code>Hole-in-one!</code></p>",
+      "testString": "assert(golfScore(4, 1) === 'Hole-in-one!');"
+    },
+    {
+      "text": "<p><code>golfScore(4, 2)</code> should return the string <code>Eagle</code></p>",
+      "testString": "assert(golfScore(4, 2) === 'Eagle');"
+    },
+    {
+      "text": "<p><code>golfScore(5, 2)</code> should return the string <code>Eagle</code></p>",
+      "testString": "assert(golfScore(5, 2) === 'Eagle');"
+    },
+    {
+      "text": "<p><code>golfScore(4, 3)</code> should return the string <code>Birdie</code></p>",
+      "testString": "assert(golfScore(4, 3) === 'Birdie');"
+    },
+    {
+      "text": "<p><code>golfScore(4, 4)</code> should return the string <code>Par</code></p>",
+      "testString": "assert(golfScore(4, 4) === 'Par');"
+    },
+    {
+      "text": "<p><code>golfScore(1, 1)</code> should return the string <code>Hole-in-one!</code></p>",
+      "testString": "assert(golfScore(1, 1) === 'Hole-in-one!');"
+    },
+    {
+      "text": "<p><code>golfScore(5, 5)</code> should return the string <code>Par</code></p>",
+      "testString": "assert(golfScore(5, 5) === 'Par');"
+    },
+    {
+      "text": "<p><code>golfScore(4, 5)</code> should return the string <code>Bogey</code></p>",
+      "testString": "assert(golfScore(4, 5) === 'Bogey');"
+    },
+    {
+      "text": "<p><code>golfScore(4, 6)</code> should return the string <code>Double Bogey</code></p>",
+      "testString": "assert(golfScore(4, 6) === 'Double Bogey');"
+    },
+    {
+      "text": "<p><code>golfScore(4, 7)</code> should return the string <code>Go Home!</code></p>",
+      "testString": "assert(golfScore(4, 7) === 'Go Home!');"
+    },
+    {
+      "text": "<p><code>golfScore(5, 9)</code> should return the string <code>Go Home!</code></p>",
+      "testString": "assert(golfScore(5, 9) === 'Go Home!');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In the game of Golf, each hole has a <code>par</code>, meaning, the average number of <code>strokes</code> a golfer is expected to make in order to sink the ball in the hole to complete the play. Depending on how far above or below <code>par</code> your <code>strokes</code> are, there is a different nickname.</p>\n<p>Your function will be passed <code>par</code> and <code>strokes</code> arguments. Return the correct string according to this table which lists the strokes in order of priority; top (highest) to bottom (lowest):</p>\n<table><thead><tr><th>Strokes</th><th>Return</th></tr></thead><tbody><tr><td>1</td><td>\"Hole-in-one!\"</td></tr><tr><td>&#x3C;= par - 2</td><td>\"Eagle\"</td></tr><tr><td>par - 1</td><td>\"Birdie\"</td></tr><tr><td>par</td><td>\"Par\"</td></tr><tr><td>par + 1</td><td>\"Bogey\"</td></tr><tr><td>par + 2</td><td>\"Double Bogey\"</td></tr><tr><td>>= par + 3</td><td>\"Go Home!\"</td></tr></tbody></table>\n<p><code>par</code> and <code>strokes</code> will always be numeric and positive. We have added an array of all the names for your convenience.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 74,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

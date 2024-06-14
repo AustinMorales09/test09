@@ -1,0 +1,49 @@
+{
+  "id": "6554de295ade563a069936a1",
+  "title": "Step 69",
+  "challengeType": 20,
+  "dashedName": "step-69",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        21,
+        23
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:        \n            # Find the right key character to encode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    \n    return encrypted_text\n    \n#encryption = vigenere(text, custom_key)\n#print(encryption)",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:        \n            # Find the right key character to encode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    \n    return encrypted_text\n    \n#encryption = vigenere(text, custom_key)\n#print(encryption)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should multiply <code>offset</code> by <code>direction</code> in the <code>new_index</code> assignment. Do not add other parentheses.</p>",
+      "testString": "({ test: () => assert.match(code, /new_index\\s*=\\s*\\(\\s*index\\s*\\+\\s*offset\\s*\\*\\s*direction\\s*\\)\\s*%\\s*len\\s*\\(\\s*alphabet\\s*\\)/) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>All you need to do is multiply the <code>offset</code> by the <code>direction</code> in the <code>new_index</code> assignment. The multiplication operator in Python is <code>*</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 68,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

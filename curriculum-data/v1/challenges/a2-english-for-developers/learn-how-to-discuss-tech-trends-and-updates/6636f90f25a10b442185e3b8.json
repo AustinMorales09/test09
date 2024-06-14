@@ -1,0 +1,79 @@
+{
+  "id": "6636f90f25a10b442185e3b8",
+  "title": "Task 33",
+  "challengeType": 22,
+  "dashedName": "task-33",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That _ cool. Do you think we can use it for our _ project?</p>",
+    "blanks": [
+      {
+        "answer": "sounds",
+        "feedback": "<p>This word is used to describe how something seems or appears based on the information heard.</p>"
+      },
+      {
+        "answer": "upcoming",
+        "feedback": "<p>It refers to something that is scheduled or expected to happen in the near future. In this context, Tom is talking about a project that they are planning to start soon.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 15.46,
+        "finishTimestamp": 19.54
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.08,
+        "dialogue": {
+          "text": "That sounds cool. Do you think we can use it for our upcoming project?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>upcoming</code> is used to describe something that is planned to happen or going to occur soon. It is often used in the context of events, projects, meetings, or other plans that are occurring in the near future.</p>\n<p>For example, <code>We are preparing for the upcoming holiday season.</code> It refers to the holiday season that is approaching.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

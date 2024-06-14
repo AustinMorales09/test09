@@ -1,0 +1,88 @@
+{
+  "id": "657b3026ff79fbe2dda6cb39",
+  "title": "Task 88",
+  "challengeType": 19,
+  "dashedName": "task-88",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Tom expressing when he says <code>That's a cool twist</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>He finds the unexpected change or development interesting</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He thinks the situation is confusing</p>",
+        "feedback": "<p>While a <code>twist</code> can be surprising, Tom's use of <code>cool</code> suggests he finds it interesting rather than confusing.</p>"
+      },
+      {
+        "answer": "<p>He is unhappy with the new development</p>",
+        "feedback": "<p><code>Cool twist</code> usually indicates a positive reaction, not dissatisfaction.</p>"
+      },
+      {
+        "answer": "<p>He expected the development all along</p>",
+        "feedback": "<p>The term <code>twist</code> implies that the development was unexpected.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 18.82,
+        "finishTimestamp": 23.06
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.24,
+        "dialogue": {
+          "text": "That's a cool twist. Did you immediately start working as a tech recruiter after college?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.74
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>That's a cool twist</code> is often used to express that something is interestingly unexpected or surprisingly different. The word <code>twist</code> here refers to a change or development in a situation or story that is unusual or unexpected. <code>Cool</code> in this context means it's positively received.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 92,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,71 @@
+{
+  "id": "cf1111c1c11feddfaeb3bdef",
+  "title": "Add Two Numbers with JavaScript",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cM2KBAG",
+  "forumTopicId": 16650,
+  "dashedName": "add-two-numbers-with-javascript",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(z){return 'sum = '+z;})(sum);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const sum = 10 + 0;",
+      "error": null,
+      "seed": "const sum = 10 + 0;"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const sum = 10 + 10;",
+        "error": null,
+        "seed": "const sum = 10 + 10;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>sum</code> should equal <code>20</code>.</p>",
+      "testString": "assert(sum === 20);"
+    },
+    {
+      "text": "<p>You should use the <code>+</code> operator.</p>",
+      "testString": "assert(/\\+/.test(__helpers.removeJSComments(code)));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><code>Number</code> is a data type in JavaScript which represents numeric data.</p>\n<p>Now let's try to add two numbers using JavaScript.</p>\n<p>JavaScript uses the <code>+</code> symbol as an addition operator when placed between two numbers.</p>\n<p><strong>Example:</strong></p>\n<pre><code class=\"language-js\">const myVar = 5 + 10;\n</code></pre>\n<p><code>myVar</code> now has the value <code>15</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Change the <code>0</code> so that sum will equal <code>20</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

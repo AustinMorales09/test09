@@ -1,0 +1,88 @@
+{
+  "id": "663a3f4bd1ed1ba8f4552212",
+  "title": "Task 24",
+  "challengeType": 19,
+  "dashedName": "task-24",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the Delivery Man have to do?</p>",
+    "answers": [
+      {
+        "answer": "<p>He has to confirm that Sophie is telling the truth</p>",
+        "feedback": "<p>He doesn't have to check that, only that the package is delivered to the right person.</p>"
+      },
+      {
+        "answer": "<p>He has to confirm he has a package to deliver</p>",
+        "feedback": "<p>He knows he has a package, the problem is delivering it to the right person</p>"
+      },
+      {
+        "answer": "<p>He has to confirm this is the right address to deliver the package</p>",
+        "feedback": "<p>He's in the building and he knows it is the correct address.</p>"
+      },
+      {
+        "answer": "<p>He has to confirm the package is delivery to Tom</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Delivery Man",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 10.14,
+        "finishTimestamp": 12.94
+      }
+    },
+    "commands": [
+      {
+        "character": "Delivery Man",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Delivery Man",
+        "startTime": 1,
+        "finishTime": 3.8,
+        "dialogue": {
+          "text": "I need to confirm it's him before I leave this package.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Delivery Man",
+        "opacity": 0,
+        "startTime": 4.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To confirm</code> means to say or show that something is true or correct. For example, if you confirm a plan, you say that you agree to it and will do it. If you confirm that you are delivering a package to someone, you are making sure this person is the one you were supposed to deliver the package to.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

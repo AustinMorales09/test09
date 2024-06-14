@@ -1,0 +1,65 @@
+{
+  "id": "5900f52c1000cf542c51003d",
+  "title": "Problem 446: Retractions B",
+  "challengeType": 1,
+  "forumTopicId": 302118,
+  "dashedName": "problem-446-retractions-b",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function retractionsB() {\n\n  return true;\n}\n\nretractionsB();",
+      "error": null,
+      "seed": "function retractionsB() {\n\n  return true;\n}\n\nretractionsB();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>retractionsB()</code> should return <code>907803852</code>.</p>",
+      "testString": "assert.strictEqual(retractionsB(), 907803852);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>For every integer $n > 1$, the family of functions $f_{n, a, b}$ is defined by:</p>\n<p>$f_{n, a, b}(x) ≡ ax + b\\bmod n$ for $a, b, x$ integer and $0 \\lt a \\lt n$, $0 \\le b \\lt n$, $0 \\le x \\lt n$.</p>\n<p>We will call $f_{n, a, b}$ a retraction if $f_{n, a, b}(f_{n, a, b}(x)) \\equiv f_{n, a, b}(x)\\bmod n$ for every $0 \\le x \\lt n$.</p>\n<p>Let $R(n)$ be the number of retractions for $n$.</p>\n<p>$F(N) = \\displaystyle\\sum_{n = 1}^N R(n^4 + 4)$.</p>\n<p>$F(1024) = 77\\,532\\,377\\,300\\,600$.</p>\n<p>Find $F({10}^7)$. Give your answer modulo $1\\,000\\,000\\,007$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 45,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

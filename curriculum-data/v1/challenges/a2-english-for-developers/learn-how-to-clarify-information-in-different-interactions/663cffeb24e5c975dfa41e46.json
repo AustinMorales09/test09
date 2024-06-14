@@ -1,0 +1,87 @@
+{
+  "id": "663cffeb24e5c975dfa41e46",
+  "title": "Task 54",
+  "challengeType": 22,
+  "dashedName": "task-54",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Really? That's strange. I _ _ the project _ and it should be _.</p>",
+    "blanks": [
+      {
+        "answer": "double",
+        "feedback": "<p>In this context, it means the same as <code>again</code>.</p>"
+      },
+      {
+        "answer": "checked",
+        "feedback": "<p>A verb similar to <code>verify</code>. Use its past form.</p>"
+      },
+      {
+        "answer": "schedule",
+        "feedback": "<p>A synonym for <code>timeline</code> in this case, the times when parts of the project are to occur.</p>"
+      },
+      {
+        "answer": "accurate",
+        "feedback": "<p>A synonym for precise or exact.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.26,
+        "finishTimestamp": 13.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.2,
+        "dialogue": {
+          "text": "Really? That's strange. I double checked the project schedule and it should be accurate.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 5.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Double check</code> means to look at something again to make sure it is correct. For example, you can say <code>I wanted to be sure I locked the door, so I double checked it</code>. It means you are being careful to avoid mistakes, so you are checking what you did again.</p>\n<p>A <code>schedule</code> is a plan that shows when things will happen. For example, a <code>school schedule</code> shows what time classes start and end. It helps you know what to do at different times of the day. In a project, you could use it to estimate the days certain parts of the project start and end.</p>\n<p><code>Accurate</code> means something is correct and has no mistakes. For example, if a clock shows the right time, it is <code>accurate</code>. It means the information is true and exact.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 57,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

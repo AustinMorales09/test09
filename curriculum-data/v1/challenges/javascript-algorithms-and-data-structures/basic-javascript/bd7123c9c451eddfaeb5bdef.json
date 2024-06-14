@@ -1,0 +1,71 @@
+{
+  "id": "bd7123c9c451eddfaeb5bdef",
+  "title": "Use Bracket Notation to Find the Last Character in a String",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cBZQGcv",
+  "forumTopicId": 18342,
+  "dashedName": "use-bracket-notation-to-find-the-last-character-in-a-string",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(v){return v;})(lastLetterOfLastName);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Setup\nconst lastName = \"Lovelace\";\n\n// Only change code below this line\nconst lastLetterOfLastName = lastName; // Change this line",
+      "error": null,
+      "seed": "// Setup\nconst lastName = \"Lovelace\";\n\n// Only change code below this line\nconst lastLetterOfLastName = lastName; // Change this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const lastName = \"Lovelace\";\nconst lastLetterOfLastName = lastName[lastName.length - 1];",
+        "error": null,
+        "seed": "const lastName = \"Lovelace\";\nconst lastLetterOfLastName = lastName[lastName.length - 1];"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>lastLetterOfLastName</code> should be the letter <code>e</code>.</p>",
+      "testString": "assert(lastLetterOfLastName === 'e');"
+    },
+    {
+      "text": "<p>You should use <code>.length</code> to get the last letter.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/\\.length/g).length > 0);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In order to get the last letter of a string, you can subtract one from the string's length.</p>\n<p>For example, if <code>const firstName = \"Ada\"</code>, you can get the value of the last letter of the string by using <code>firstName[firstName.length - 1]</code>.</p>\n<p>Example:</p>\n<pre><code class=\"language-js\">const firstName = \"Ada\";\nconst lastLetter = firstName[firstName.length - 1];\n</code></pre>\n<p><code>lastLetter</code> would have a value of the string <code>a</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use <dfn>bracket notation</dfn> to find the last character in the <code>lastName</code> variable.</p>\n<p><strong>Hint:</strong> Try looking at the example above if you get stuck.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

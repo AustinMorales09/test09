@@ -1,0 +1,88 @@
+{
+  "id": "65b26099dcd86f4e06d0fc21",
+  "title": "Task 18",
+  "challengeType": 19,
+  "dashedName": "task-18",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Bob say about her work experience?</p>",
+    "answers": [
+      {
+        "answer": "<p>She has a long history with tech companies, working there for around ten years.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She recently started working with tech companies.</p>",
+        "feedback": "<p>Bob's statement emphasizes a long-term engagement, not something recent.</p>"
+      },
+      {
+        "answer": "<p>She no longer works with tech companies.</p>",
+        "feedback": "<p>Bob indicates that she is still working with them, not that she has stopped.</p>"
+      },
+      {
+        "answer": "<p>She worked with tech companies only for a short time.</p>",
+        "feedback": "<p><code>about ten years</code> contradicts the idea of being a short time.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.6,
+        "finishTimestamp": 20.2
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.6,
+        "dialogue": {
+          "text": "She's been working with tech companies for about 10 years.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

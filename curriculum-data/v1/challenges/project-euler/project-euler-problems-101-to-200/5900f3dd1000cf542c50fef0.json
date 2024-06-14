@@ -1,0 +1,65 @@
+{
+  "id": "5900f3dd1000cf542c50fef0",
+  "title": "Problem 113: Non-bouncy numbers",
+  "challengeType": 1,
+  "forumTopicId": 301739,
+  "dashedName": "problem-113-non-bouncy-numbers",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function nonBouncyNumbers() {\n\n  return true;\n}\n\nnonBouncyNumbers();",
+      "error": null,
+      "seed": "function nonBouncyNumbers() {\n\n  return true;\n}\n\nnonBouncyNumbers();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>nonBouncyNumbers()</code> should return <code>51161058134250</code>.</p>",
+      "testString": "assert.strictEqual(nonBouncyNumbers(), 51161058134250);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Working from left-to-right if no digit is exceeded by the digit to its left it is called an increasing number; for example, 134468.</p>\n<p>Similarly if no digit is exceeded by the digit to its right it is called a decreasing number; for example, 66420.</p>\n<p>We shall call a positive integer that is neither increasing nor decreasing a \"bouncy\" number; for example, 155349.</p>\n<p>As n increases, the proportion of bouncy numbers below n increases such that there are only 12951 numbers below one-million that are not bouncy and only 277032 non-bouncy numbers below ${10}^{10}$.</p>\n<p>How many numbers below a googol (${10}^{100}$) are not bouncy?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

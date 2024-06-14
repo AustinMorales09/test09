@@ -1,0 +1,83 @@
+{
+  "id": "66200a69671a05aa6bcd669e",
+  "title": "Task 4",
+  "challengeType": 22,
+  "dashedName": "task-4",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>She's a colleague with _ _ _ hair and bright brown eyes.</p>",
+    "blanks": [
+      {
+        "answer": "long",
+        "feedback": "<p>First, the size. Lisa's hair goes past her shoulders.</p>"
+      },
+      {
+        "answer": "wavy",
+        "feedback": "<p>Second, the type. Lisa's hair makes small waves as it grows.</p>"
+      },
+      {
+        "answer": "brown",
+        "feedback": "<p>Finally, the color. Lisa's hair is a shade brighter than black, neither black, nor blonde.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.52,
+        "finishTimestamp": 10.6
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.08,
+        "dialogue": {
+          "text": "She's a colleague with long wavy brown hair and bright brown eyes.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you describe someone's hair, you usually talk about three things: color, type, and length.</p>\n<p>Color: This is the shade of the hair. Common colors are <code>black</code>, <code>brown</code>, <code>blonde</code>, <code>red</code>, and <code>gray</code>.</p>\n<p>Type: This describes how the hair looks and feels. Types of hair include <code>straight</code> (no curves), <code>wavy</code> (somewhat growing in curves), and <code>curly</code> (spiralling down).</p>\n<p>Length: This tells us how long the hair is. Hair can be <code>short</code> (above the ears), <code>medium</code> (around the shoulders), or <code>long</code> (past the shoulders).</p>\n<p>In English, however, the sequence of adjectives is important. You'll frequently describe a person's hair by first informing how long it is, then informing its type, and finally the color. For example, you might say someone has <code>short, curly, blonde hair</code>.</p>\n<p>Now fill in the blanks with Tom's description of Lisa's hair.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

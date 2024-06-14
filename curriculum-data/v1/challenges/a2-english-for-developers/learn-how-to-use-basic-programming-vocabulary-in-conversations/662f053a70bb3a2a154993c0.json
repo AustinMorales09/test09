@@ -1,0 +1,45 @@
+{
+  "id": "662f053a70bb3a2a154993c0",
+  "title": "Task 51",
+  "challengeType": 19,
+  "dashedName": "task-51",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>extension</code> mean in a programming context?</p>",
+    "answers": [
+      {
+        "answer": "<p>It is a command used to end a program.</p>",
+        "feedback": "<p>This is incorrect. An <code>extension</code> is not a command but a software add-on that enhances functionality.</p>"
+      },
+      {
+        "answer": "<p>It is a software add-on that enhances the capabilities of an existing program.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It refers to the extra time given to complete a project.</p>",
+        "feedback": "<p>While <code>extension</code> can mean additional time in other contexts, in programming, it specifically refers to a software component.</p>"
+      },
+      {
+        "answer": "<p>It is a type of data format used for storage.</p>",
+        "feedback": "<p>An <code>extension</code> enhances software functionality; it does not refer to a data storage format.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>An <code>extension</code> is a software component that adds specific capabilities to a larger software application. <code>Extensions</code> can provide new functionality or enhance existing features.</p>\n<p>For example, a browser <code>extension</code> can add special functionality to your web browser, like blocking ads or managing passwords.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 52,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

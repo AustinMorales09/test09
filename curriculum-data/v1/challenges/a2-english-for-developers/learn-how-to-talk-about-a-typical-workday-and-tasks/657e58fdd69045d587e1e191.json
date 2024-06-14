@@ -1,0 +1,45 @@
+{
+  "id": "657e58fdd69045d587e1e191",
+  "title": "Task 90",
+  "challengeType": 19,
+  "dashedName": "task-90",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is an <code>industry</code> in a business context?</p>",
+    "answers": [
+      {
+        "answer": "<p>A hobby people do for fun.</p>",
+        "feedback": "<p>An industry is a business sector, not a hobby.</p>"
+      },
+      {
+        "answer": "<p>A place to go on vacation.</p>",
+        "feedback": "<p>Industries are about business, not vacation places.</p>"
+      },
+      {
+        "answer": "<p>A sector of the economy involving certain kinds of business activities.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A type of sport.</p>",
+        "feedback": "<p>It relates to economic activities, not sports.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Industry</code> refers to a certain type of business or economic activity. Different industries, like technology, healthcare, or education, have their own special ways of working. For example: <code>The fashion industry is known for its creativity and trends.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 93,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

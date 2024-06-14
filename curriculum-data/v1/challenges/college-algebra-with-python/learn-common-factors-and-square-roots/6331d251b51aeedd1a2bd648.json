@@ -1,0 +1,46 @@
+{
+  "id": "6331d251b51aeedd1a2bd648",
+  "title": "Factoring",
+  "challengeType": 15,
+  "videoId": "Puyp_-ZYA54",
+  "dashedName": "factoring",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the modulus (<code>%</code>) operator do in Python?</p>",
+    "answers": [
+      {
+        "answer": "<p>returns the percent</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>divides</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>returns the remainder when dividing</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>creates a space</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This first video will show you how to find common factors and divide them out - in writing, then in code using loops and modulus operations.</p>\n<p>Here is the <a href=\"https://colab.research.google.com/drive/1tB7N3QqHEbGk33v0BdTwZTVkS9ju9yn6?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Colab notebook used in this video.</a></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-common-factors-and-square-roots",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

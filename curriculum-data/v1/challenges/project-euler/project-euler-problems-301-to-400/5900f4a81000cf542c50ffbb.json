@@ -1,0 +1,65 @@
+{
+  "id": "5900f4a81000cf542c50ffbb",
+  "title": "Problem 316: Numbers in decimal expansions",
+  "challengeType": 1,
+  "forumTopicId": 301972,
+  "dashedName": "problem-316-numbers-in-decimal-expansions",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function numbersInDecimalExpansion() {\n\n  return true;\n}\n\nnumbersInDecimalExpansion();",
+      "error": null,
+      "seed": "function numbersInDecimalExpansion() {\n\n  return true;\n}\n\nnumbersInDecimalExpansion();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>numbersInDecimalExpansion()</code> should return <code>542934735751917760</code>.</p>",
+      "testString": "assert.strictEqual(numbersInDecimalExpansion(), 542934735751917760);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $p = p_1 p_2 p_3 \\ldots$ be an infinite sequence of random digits, selected from {0,1,2,3,4,5,6,7,8,9} with equal probability.</p>\n<p>It can be seen that $p$ corresponds to the real number $0.p_1 p_2 p_3 \\ldots$.</p>\n<p>It can also be seen that choosing a random real number from the interval [0,1) is equivalent to choosing an infinite sequence of random digits selected from {0,1,2,3,4,5,6,7,8,9} with equal probability.</p>\n<p>For any positive integer $n$ with $d$ decimal digits, let $k$ be the smallest index such that $p_k, p_{k + 1}, \\ldots p_{k + d - 1}$ are the decimal digits of $n$, in the same order.</p>\n<p>Also, let $g(n)$ be the expected value of $k$; it can be proven that $g(n)$ is always finite and, interestingly, always an integer number.</p>\n<p>For example, if $n = 535$, then</p>\n<p>for $p = 31415926\\mathbf{535}897\\ldots$, we get $k = 9$</p>\n<p>for $p = 35528714365004956000049084876408468\\mathbf{535}4\\ldots$, we get $k = 36$</p>\n<p>etc and we find that $g(535) = 1008$.</p>\n<p>Given that $\\displaystyle\\sum_{n = 2}^{999} g\\left(\\left\\lfloor\\frac{{10}^6}{n}\\right\\rfloor\\right) = 27280188$, find $\\displaystyle\\sum_{n = 2}^{999\\,999} g\\left(\\left\\lfloor\\frac{{10}^{16}}{n}\\right\\rfloor\\right)$.</p>\n<p><strong>Note:</strong> $\\lfloor x\\rfloor$ represents the floor function.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

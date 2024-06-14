@@ -1,0 +1,92 @@
+{
+  "id": "657b1a9581015573806e1e20",
+  "title": "Task 28",
+  "challengeType": 22,
+  "dashedName": "task-28",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>We _ responsible for implementing new features and ensuring the website had fast performance. It _ a _ effort, and we were able to deliver the project on time.</p>",
+    "blanks": [
+      {
+        "answer": "were",
+        "feedback": "<p>This is the past tense form of <code>are</code>, used for plural subjects.</p>"
+      },
+      {
+        "answer": "was",
+        "feedback": "<p>This is the past tense form of <code>is</code>, used for singular subjects.</p>"
+      },
+      {
+        "answer": "collaborative",
+        "feedback": "<p>This word means working together as a team.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Second Candidate",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 32.7,
+        "finishTimestamp": 42.76
+      }
+    },
+    "commands": [
+      {
+        "character": "Second Candidate",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Second Candidate",
+        "startTime": 1,
+        "finishTime": 6.14,
+        "dialogue": {
+          "text": "We were responsible for implementing new features and ensuring that the website had fast performance.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Second Candidate",
+        "startTime": 6.84,
+        "finishTime": 11.06,
+        "dialogue": {
+          "text": "It was a collaborative effort and we were able to deliver the project on time.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Second Candidate",
+        "opacity": 0,
+        "startTime": 11.56
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the dialogue and fill in the blanks with the correct words you learned.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 29,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,116 @@
+{
+  "id": "65d6cc2551fe584833cd6cda",
+  "title": "Task 52",
+  "challengeType": 19,
+  "dashedName": "task-52",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Alice describe the person?</p>",
+    "answers": [
+      {
+        "answer": "<p>She is very strict.</p>",
+        "feedback": "<p><code>Easygoing</code> means the opposite of strict; it describes someone who is relaxed and flexible.</p>"
+      },
+      {
+        "answer": "<p>She is relaxed and not easily upset.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She often gets angry.</p>",
+        "feedback": "<p>Being <code>easygoing</code> means someone doesn't easily get upset or angry.</p>"
+      },
+      {
+        "answer": "<p>She worries a lot.</p>",
+        "feedback": "<p>An <code>easygoing</code> person is described as not easily worried or stressed.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 31.56,
+        "finishTimestamp": 39.74
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.08,
+        "dialogue": {
+          "text": "Wow, that's a long time. Is she a strict person?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.33
+      },
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 4.33
+      },
+      {
+        "character": "Alice",
+        "startTime": 4.58,
+        "finishTime": 9.18,
+        "dialogue": {
+          "text": "She's very easygoing actually. She's serious when it comes to work but also has a good sense of humor.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 9.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 53,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

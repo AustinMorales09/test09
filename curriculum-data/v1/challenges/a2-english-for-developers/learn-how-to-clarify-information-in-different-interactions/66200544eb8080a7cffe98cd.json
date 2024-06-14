@@ -1,0 +1,88 @@
+{
+  "id": "66200544eb8080a7cffe98cd",
+  "title": "Task 2",
+  "challengeType": 19,
+  "dashedName": "task-2",
+  "solutions": [],
+  "question": {
+    "text": "<p>What relationship does Tom have with Lisa?</p>",
+    "answers": [
+      {
+        "answer": "<p>She's his girlfriend</p>",
+        "feedback": "<p>There's nothing indicating that in the dialogue.</p>"
+      },
+      {
+        "answer": "<p>He doesn't know her</p>",
+        "feedback": "<p>He offers a description of Lisa to Alice, so he probably knows her.</p>"
+      },
+      {
+        "answer": "<p>They are friends</p>",
+        "feedback": "<p>That's a possibility, but Tom does not indicate that by what he's saying.</p>"
+      },
+      {
+        "answer": "<p>They are workmates</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.52,
+        "finishTimestamp": 10.6
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.08,
+        "dialogue": {
+          "text": "She's a colleague with long wavy brown hair and bright brown eyes.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>colleague</code> is a person you work with at your job. You and your colleagues might do similar work and help each other. If you are a teacher, for instance, other teachers at your school are your <code>colleagues</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

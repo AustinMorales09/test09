@@ -1,0 +1,65 @@
+{
+  "id": "5900f4381000cf542c50ff4b",
+  "title": "Problem 204: Generalised Hamming Numbers",
+  "challengeType": 1,
+  "forumTopicId": 301845,
+  "dashedName": "problem-204-generalised-hamming-numbers",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function generalisedHammingNumbers() {\n\n  return true;\n}\n\ngeneralisedHammingNumbers();",
+      "error": null,
+      "seed": "function generalisedHammingNumbers() {\n\n  return true;\n}\n\ngeneralisedHammingNumbers();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>generalisedHammingNumbers()</code> should return <code>2944730</code>.</p>",
+      "testString": "assert.strictEqual(generalisedHammingNumbers(), 2944730);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A Hamming number is a positive number which has no prime factor larger than 5.</p>\n<p>So the first few Hamming numbers are 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15.</p>\n<p>There are 1105 Hamming numbers not exceeding ${10}^8$.</p>\n<p>We will call a positive number a generalised Hamming number of type $n$, if it has no prime factor larger than $n$. Hence the Hamming numbers are the generalised Hamming numbers of type 5.</p>\n<p>How many generalised Hamming numbers of type 100 are there which don't exceed ${10}^9$?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

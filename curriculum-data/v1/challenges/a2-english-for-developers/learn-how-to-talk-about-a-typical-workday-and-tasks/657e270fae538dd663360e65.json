@@ -1,0 +1,108 @@
+{
+  "id": "657e270fae538dd663360e65",
+  "title": "Task 30",
+  "challengeType": 22,
+  "dashedName": "task-30",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ that, you'll probably _ the daily team meeting at 9:30.</p>",
+    "blanks": [
+      {
+        "answer": "After",
+        "feedback": "<p>A phrase indicating the next step in a sequence. This word should be capitalized.</p>"
+      },
+      {
+        "answer": "attend",
+        "feedback": "<p>What you do when you go to a meeting.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.75,
+        "finishTimestamp": 16.04
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.44,
+        "dialogue": {
+          "text": "Sounds good. What do I do after checking emails?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 3.44
+      },
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 3.44
+      },
+      {
+        "character": "Anna",
+        "startTime": 4.28,
+        "finishTime": 7.24,
+        "dialogue": {
+          "text": "After that, you'll probably attend the daily team meeting at 9.30.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 7.74
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>After that</code> is often used to indicate what comes next in a series of actions or events. For example:</p>\n<p><code>I check my emails, and after that, I attend a meeting</code>, means that attending the meeting is the next activity you do following the checking of emails.</p>\n<p><code>We have a team briefing first thing in the morning, and after that, we start our individual tasks.</code> Here, <code>first</code> and <code>after</code> help to understand the order of events.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 31,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

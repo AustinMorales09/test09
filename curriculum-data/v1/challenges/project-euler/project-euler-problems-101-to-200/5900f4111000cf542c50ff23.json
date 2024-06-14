@@ -1,0 +1,65 @@
+{
+  "id": "5900f4111000cf542c50ff23",
+  "title": "Problem 164: Numbers for which no three consecutive digits have a sum greater than a given value",
+  "challengeType": 1,
+  "forumTopicId": 301798,
+  "dashedName": "problem-164-numbers-for-which-no-three-consecutive-digits-have-a-sum-greater-than-a-given-value",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function consecutiveDigitsSum() {\n\n  return true;\n}\n\nconsecutiveDigitsSum();",
+      "error": null,
+      "seed": "function consecutiveDigitsSum() {\n\n  return true;\n}\n\nconsecutiveDigitsSum();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>consecutiveDigitsSum()</code> should return <code>378158756814587</code>.</p>",
+      "testString": "assert.strictEqual(consecutiveDigitsSum(), 378158756814587);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>How many 20 digit numbers $n$ (without any leading zero) exist such that no three consecutive digits of $n$ have a sum greater than 9?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 63,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

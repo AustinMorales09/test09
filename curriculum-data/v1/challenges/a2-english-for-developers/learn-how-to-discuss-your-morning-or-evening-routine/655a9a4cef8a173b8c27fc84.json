@@ -1,0 +1,88 @@
+{
+  "id": "655a9a4cef8a173b8c27fc84",
+  "title": "Task 76",
+  "challengeType": 19,
+  "dashedName": "task-76",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah imply?</p>",
+    "answers": [
+      {
+        "answer": "<p>He has the option to relax or meditate once the kids are asleep</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He should wake up the kids to do activities together</p>",
+        "feedback": "<p>Sarah's statement suggests activities for after the kids are asleep, not waking them up.</p>"
+      },
+      {
+        "answer": "<p>Activities with kids should only be done at bedtime</p>",
+        "feedback": "<p>The focus is on what Jake can do once the kids are asleep, not on limiting activities to bedtime.</p>"
+      },
+      {
+        "answer": "<p>Kids should always be awake for relaxation activities</p>",
+        "feedback": "<p>Sarah implies that Jake can do relaxation activities when the kids are asleep.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 75.66,
+        "finishTimestamp": 77.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.32,
+        "dialogue": {
+          "text": "If your kids are asleep, you can do these things too.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 3.82
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Asleep</code> is an adjective that describes someone being in a state of sleep. For example:</p>\n<p><code>The children usually are asleep by 9</code>. (indicates that the children usually are sleeping at that time)</p>\n<p>In Sarah's statement, the <code>if</code> clause sets a condition regarding the kids.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 78,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

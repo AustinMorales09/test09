@@ -1,0 +1,88 @@
+{
+  "id": "6556c78eac427390aafa26ff",
+  "title": "Task 11",
+  "challengeType": 19,
+  "dashedName": "task-11",
+  "solutions": [],
+  "question": {
+    "text": "<p>Where does Sarah go after she stretches in the morning?</p>",
+    "answers": [
+      {
+        "answer": "<p>To the bathroom</p>",
+        "feedback": "<p>This option is not mentioned in Sarah's morning routine.</p>"
+      },
+      {
+        "answer": "<p>Back to bed</p>",
+        "feedback": "<p>Sarah is continuing her morning routine, not going back to bed.</p>"
+      },
+      {
+        "answer": "<p>Outside for a walk</p>",
+        "feedback": "<p>Sarah does not mention going for a walk.</p>"
+      },
+      {
+        "answer": "<p>To the kitchen</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.68,
+        "finishTimestamp": 18.4
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5.72,
+        "dialogue": {
+          "text": "The first thing I do is stretch a bit to wake up. Then I go straight to the kitchen to make a cup of coffee.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.22
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Go straight to</code> describes the action of going directly to a place without any stops along the way.</p>\n<p>For example: <code>As soon as I arrive at the office, I go straight to my desk to check my emails.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,92 @@
+{
+  "id": "65d959d3478ceb77dc1b28a3",
+  "title": "Task 86",
+  "challengeType": 22,
+  "dashedName": "task-86",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Well, I have to attend team meetings and provide progress reports, but I don't have to work _ _ it's an _ situation.</p>",
+    "blanks": [
+      {
+        "answer": "overtime",
+        "feedback": "<p>It refers to working more hours than those regularly scheduled.</p>"
+      },
+      {
+        "answer": "unless",
+        "feedback": "<p>It introduces a condition that makes the previous statement not apply.</p>"
+      },
+      {
+        "answer": "urgent",
+        "feedback": "<p>It means requiring immediate action or attention.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.38,
+        "finishTimestamp": 24.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.58,
+        "dialogue": {
+          "text": "Well, I have to attend team meetings and provide progress reports,",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "startTime": 4.7,
+        "finishTime": 8.24,
+        "dialogue": {
+          "text": "but I don't have to work over time unless it's an urgent situation.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 8.74
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Work overtime</code> means to work more hours than the usual work schedule. For example, <code>I usually work overtime during project deadlines</code> means working extra hours to meet project deadlines.</p>\n<p><code>Unless</code> is used to talk about an exception to something or introduce a condition that makes the previous statement not true. It means <code>if it's not the case</code>. For example, <code>I walk to work unless it rains</code> means I walk to work if it doesn't rain.</p>\n<p><code>Urgent</code> means something that is very important and needs immediate attention. For example, <code>The project is urgent</code> means the project needs to be completed right away.</p>\n<p>In a negative sentence, <code>don't/doesn't have to</code> expresses that something is not a requirement. For example, <code>I don't have to work late</code> means working late is not required.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 89,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

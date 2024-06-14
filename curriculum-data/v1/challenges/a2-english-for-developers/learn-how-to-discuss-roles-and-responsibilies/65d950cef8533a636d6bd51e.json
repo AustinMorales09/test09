@@ -1,0 +1,79 @@
+{
+  "id": "65d950cef8533a636d6bd51e",
+  "title": "Task 84",
+  "challengeType": 22,
+  "dashedName": "task-84",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>What about _ _?</p>",
+    "blanks": [
+      {
+        "answer": "daily",
+        "feedback": "<p>It refers to something that happens every day.</p>"
+      },
+      {
+        "answer": "tasks",
+        "feedback": "<p>It means activities or work that need to be completed.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 15.74,
+        "finishTimestamp": 16.86
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 2.12,
+        "dialogue": {
+          "text": "What about daily tasks?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 2.62
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Daily tasks</code> refer to the activities or work that someone needs to do every day. These can vary depending on the person's job or routine.</p>\n<p>For example, <code>Checking emails and attending meetings are part of my daily tasks at work</code> means these activities are what the person does regularly, every day, as part of their job.</p>\n<p><code>Daily</code> means something that happens every day. Similarly, <code>monthly</code> means something that happens once a month, and <code>yearly</code> means something that happens once a year.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 87,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

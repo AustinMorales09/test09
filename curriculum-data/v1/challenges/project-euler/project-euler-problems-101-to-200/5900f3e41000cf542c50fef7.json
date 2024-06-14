@@ -1,0 +1,65 @@
+{
+  "id": "5900f3e41000cf542c50fef7",
+  "title": "Problem 120: Square remainders",
+  "challengeType": 1,
+  "forumTopicId": 301747,
+  "dashedName": "problem-120-square-remainders",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function squareRemainders() {\n\n  return true;\n}\n\nsquareRemainders();",
+      "error": null,
+      "seed": "function squareRemainders() {\n\n  return true;\n}\n\nsquareRemainders();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>squareRemainders()</code> should return <code>333082500</code>.</p>",
+      "testString": "assert.strictEqual(squareRemainders(), 333082500);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let <code>r</code> be the remainder when ${(a − 1)}^n + {(a + 1)}^n$ is divided by $a^2$.</p>\n<p>For example, if $a = 7$ and $n = 3$, then $r = 42: 6^3 + 8^3 = 728 ≡ 42 \\ \\text{mod}\\ 49$. And as <code>n</code> varies, so too will <code>r</code>, but for $a = 7$ it turns out that $r_{max} = 42$.</p>\n<p>For $3 ≤ a ≤ 1000$, find $\\sum{r}_{max}$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

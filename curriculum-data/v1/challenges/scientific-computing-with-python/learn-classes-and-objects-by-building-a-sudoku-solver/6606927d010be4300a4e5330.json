@@ -1,0 +1,49 @@
+{
+  "id": "6606927d010be4300a4e5330",
+  "title": "Step 3",
+  "challengeType": 20,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    pass\n    \ngameboard = Board()",
+      "error": null,
+      "seed": "class Board:\n    pass\n    \ngameboard = Board()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should define a method named <code>spam</code> inside the <code>Board</code> class.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"Board\").has_function(\"spam\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The instantiation creates an empty object. But classes can have methods, which are like local functions for each instance. Within a class, methods are declared as follows:</p>\n<pre><code class=\"language-py\">class ClassName:\n    def method_name():\n        pass\n</code></pre>\n<p>Inside the <code>Board</code> class, replace <code>pass</code> with an empty method <code>spam</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

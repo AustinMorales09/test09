@@ -1,0 +1,74 @@
+{
+  "id": "587d7b89367417b2b2512b4b",
+  "title": "Use Destructuring Assignment to Assign Variables from Arrays",
+  "challengeType": 1,
+  "forumTopicId": 301213,
+  "dashedName": "use-destructuring-assignment-to-assign-variables-from-arrays",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let a = 8, b = 6;\n// Only change code below this line",
+      "error": null,
+      "seed": "let a = 8, b = 6;\n// Only change code below this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let a = 8, b = 6;\n[a, b] = [b, a];",
+        "error": null,
+        "seed": "let a = 8, b = 6;\n[a, b] = [b, a];"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The value of <code>a</code> should be <code>6</code>, after swapping.</p>",
+      "testString": "assert(a === 6);"
+    },
+    {
+      "text": "<p>The value of <code>b</code> should be <code>8</code>, after swapping.</p>",
+      "testString": "assert(b === 8);"
+    },
+    {
+      "text": "<p>You should use array destructuring to swap <code>a</code> and <code>b</code>.</p>",
+      "testString": "assert(/\\[\\s*(\\w)\\s*,\\s*(\\w)\\s*\\]\\s*=\\s*\\[\\s*\\2\\s*,\\s*\\1\\s*\\]/g.test(__helpers.removeJSComments(code)));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>ES6 makes destructuring arrays as easy as destructuring objects.</p>\n<p>One key difference between the spread operator and array destructuring is that the spread operator unpacks all contents of an array into a comma-separated list. Consequently, you cannot pick or choose which elements you want to assign to variables.</p>\n<p>Destructuring an array lets us do exactly that:</p>\n<pre><code class=\"language-js\">const [a, b] = [1, 2, 3, 4, 5, 6];\nconsole.log(a, b);\n</code></pre>\n<p>The console will display the values of <code>a</code> and <code>b</code> as <code>1, 2</code>.</p>\n<p>The variable <code>a</code> is assigned the first value of the array, and <code>b</code> is assigned the second value of the array. We can also access the value at any index in an array with destructuring by using commas to reach the desired index:</p>\n<pre><code class=\"language-js\">const [a, b,,, c] = [1, 2, 3, 4, 5, 6];\nconsole.log(a, b, c);\n</code></pre>\n<p>The console will display the values of <code>a</code>, <code>b</code>, and <code>c</code> as <code>1, 2, 5</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use destructuring assignment to swap the values of <code>a</code> and <code>b</code> so that <code>a</code> receives the value stored in <code>b</code>, and <code>b</code> receives the value stored in <code>a</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

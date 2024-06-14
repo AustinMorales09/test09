@@ -1,0 +1,46 @@
+{
+  "id": "5ea9997bbec2e9bc47e94dae",
+  "title": "Introduction and Setup",
+  "challengeType": 11,
+  "videoId": "XeQ7ZKtb998",
+  "bilibiliIds": {
+    "aid": 718017704,
+    "bvid": "BV13Q4y1k7hX",
+    "cid": 409033630
+  },
+  "dashedName": "introduction-and-setup",
+  "solutions": [],
+  "question": {
+    "text": "<p>What code editor and extension does the instructor recommend for developing penetration testing tools in Python?</p>",
+    "answers": [
+      {
+        "answer": "<p>Atom and the atom-python-run extension.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>VSCode and Microsoft's Python extension.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Sublime Text and the Anaconda package.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-penetration-testing",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 9,
+  "certification": "information-security",
+  "superBlock": "information-security",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

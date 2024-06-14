@@ -1,0 +1,45 @@
+{
+  "id": "657da01f0bb64c927f6d84c3",
+  "title": "Task 22",
+  "challengeType": 19,
+  "dashedName": "task-22",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>seriously</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>Casual interest</p>",
+        "feedback": "<p>Casual interest suggests a less serious or committed approach, which is not the meaning of <code>seriously</code>.</p>"
+      },
+      {
+        "answer": "<p>Intense commitment</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Lighthearted approach</p>",
+        "feedback": "<p>Lighthearted approach suggests a more relaxed attitude, which is not the case with taking something seriously.</p>"
+      },
+      {
+        "answer": "<p>Temporary fascination</p>",
+        "feedback": "<p>Temporary fascination does not convey a sustained, dedicated commitment.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Seriously</code> indicates a high level of commitment or intensity toward a particular activity. It implies a sincere and dedicated approach.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,97 @@
+{
+  "id": "657ca06716e21b803ffb55d5",
+  "title": "Task 25",
+  "challengeType": 19,
+  "dashedName": "task-25",
+  "solutions": [],
+  "question": {
+    "text": "<p>In Bob's sentence, who does the pronoun <code>her</code> refer to?</p>",
+    "answers": [
+      {
+        "answer": "<p>The team</p>",
+        "feedback": "<p><code>Her</code> is not used for a group like the team.</p>"
+      },
+      {
+        "answer": "<p>Alice</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Bob</p>",
+        "feedback": "<p>In this context, <code>Her</code> is not for Bob.</p>"
+      },
+      {
+        "answer": "<p>You</p>",
+        "feedback": "<p><code>Her</code> does not refer to the listener.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 6.18
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.64,
+        "dialogue": {
+          "text": "All right team this is Alice's first day with us",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "startTime": 4.64,
+        "finishTime": 7.18,
+        "dialogue": {
+          "text": "so please let me introduce you all to her.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 7.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "65c645b838e7deb080fc25e0",
+  "title": "Step 29",
+  "challengeType": 20,
+  "dashedName": "step-29",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        38,
+        46
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n        if key < node.key:\n            return self._search(node.left, key)\n        return self._search(node.right, key)\n    \n    def search(self, key):\n        return self._search(self.root, key)\n\nbst = BinarySearchTree()\n\nnodes = [50, 30, 20, 40, 70, 60, 80]\n\nfor node in nodes:\n    bst.insert(node)\n",
+      "error": null,
+      "seed": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n        if key < node.key:\n            return self._search(node.left, key)\n        return self._search(node.right, key)\n    \n    def search(self, key):\n        return self._search(self.root, key)\n\nbst = BinarySearchTree()\n\nnodes = [50, 30, 20, 40, 70, 60, 80]\n\nfor node in nodes:\n    bst.insert(node)\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should print the result of calling <code>bst.search(80)</code> and your <code>print</code> statement should have the first argument as <code>'Search for 80:'</code>.</p>",
+      "testString": "assert.match(code, /^print\\(('|\")Search for 80:('|\"),\\s*bst\\.search\\(80\\)/gm);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now, the nodes have been inserted. To see if they have been correctly inserted, you can search for a node in the tree.</p>\n<p>Outside the for loop, search for node <code>80</code> in the <code>bst</code> instance and add it to a <code>print</code> call. Also the first argument of the <code>print</code> function should be the <code>'Search for 80:'</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

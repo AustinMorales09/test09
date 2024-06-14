@@ -1,0 +1,69 @@
+{
+  "id": "5dc24614f86c76b9248c6ebd",
+  "title": "Step 10",
+  "challengeType": 0,
+  "dashedName": "step-10",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        6,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more cat photos in our gallery.</p>\n      \n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more cat photos in our gallery.</p>\n      \n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your anchor (<code>a</code>) element should have an opening tag. Opening tags have this syntax: <code>&#x3C;elementName></code>.</p>",
+      "testString": "assert(document.querySelector('a'));"
+    },
+    {
+      "text": "<p>Your anchor (<code>a</code>) element should have a closing tag. Closing tags have a <code>/</code> just after the <code>&#x3C;</code> character.</p>",
+      "testString": "assert(code.match(/<\\/a\\>/));"
+    },
+    {
+      "text": "<p>Your anchor (<code>a</code>) element should be below the <code>p</code> element. You have them in the wrong order.</p>",
+      "testString": "const collection = [...document.querySelectorAll('a, p')].map(\n  (node) => node.nodeName\n);\nassert(collection.indexOf('P') < collection.indexOf('A'));"
+    },
+    {
+      "text": "<p>Your anchor (<code>a</code>) element does not have an <code>href</code> attribute. Check that there is a space after the opening tag's name and/or there are spaces before all attribute names.</p>",
+      "testString": "assert(document.querySelector('a').hasAttribute('href'));"
+    },
+    {
+      "text": "<p>Your anchor (<code>a</code>) element should link to <code>https://freecatphotoapp.com</code>. You have either omitted the URL or have a typo.</p>",
+      "testString": "assert(\n  document.querySelector('a').getAttribute('href') ===\n    'https://freecatphotoapp.com'\n);"
+    },
+    {
+      "text": "<p>Although you have set the anchor ('a') element's <code>href</code> attribute to the correct link, it is recommended to always surround the value of an attribute with quotation marks.</p>",
+      "testString": "assert(\n  !/\\<a\\s+href\\s*=\\s*https:\\/\\/www.freecodecamp.org\\/cat-photos/.test(code)\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can link to another page with the anchor (<code>a</code>) element.</p>\n<p>Here is an example linking to <code>https://www.freecodecamp.org</code>:</p>\n<pre><code class=\"language-html\">&#x3C;a href=\"https://www.freecodecamp.org\">&#x3C;/a>\n</code></pre>\n<p>Add an anchor element after the paragraph that links to <code>https://freecatphotoapp.com</code>. At this point, the link won’t show up in the preview.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

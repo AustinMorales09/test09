@@ -1,0 +1,42 @@
+{
+  "id": "bd7168d8c242eddfaeb5bd13",
+  "title": "Visualize Data with a Bar Chart",
+  "challengeType": 3,
+  "forumTopicId": 301464,
+  "dashedName": "visualize-data-with-a-bar-chart",
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><strong>Objective:</strong> Build an app that is functionally similar to this: <a href=\"https://bar-chart.freecodecamp.rocks\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">https://bar-chart.freecodecamp.rocks</a>.</p>\n<p>Fulfill the below user stories and get all of the tests to pass. Use whichever libraries or APIs you need. Give it your own personal style.</p>\n<p>You can use HTML, JavaScript, CSS, and the D3 svg-based visualization library. The tests require axes to be generated using the D3 axis property, which automatically generates ticks along the axis. These ticks are required for passing the D3 tests because their positions are used to determine alignment of graphed elements. You will find information about generating axes at <a href=\"https://d3js.org/d3-axis\">https://d3js.org/d3-axis</a>. Required DOM elements are queried on the moment of each test. If you use a frontend framework (like Vue for example), the test results may be inaccurate for dynamic content. We hope to accommodate them eventually, but these frameworks are not currently supported for D3 projects.</p>\n<p><strong>User Story #1:</strong> My chart should have a title with a corresponding <code>id=\"title\"</code>.</p>\n<p><strong>User Story #2:</strong> My chart should have a <code>g</code> element x-axis with a corresponding <code>id=\"x-axis\"</code>.</p>\n<p><strong>User Story #3:</strong> My chart should have a <code>g</code> element y-axis with a corresponding <code>id=\"y-axis\"</code>.</p>\n<p><strong>User Story #4:</strong> Both axes should contain multiple tick labels, each with a corresponding <code>class=\"tick\"</code>.</p>\n<p><strong>User Story #5:</strong> My chart should have a <code>rect</code> element for each data point with a corresponding <code>class=\"bar\"</code> displaying the data.</p>\n<p><strong>User Story #6:</strong> Each <code>.bar</code> should have the properties <code>data-date</code> and <code>data-gdp</code> containing <code>date</code> and <code>GDP</code> values.</p>\n<p><strong>User Story #7:</strong> The <code>.bar</code> elements' <code>data-date</code> properties should match the order of the provided data.</p>\n<p><strong>User Story #8:</strong> The <code>.bar</code> elements' <code>data-gdp</code> properties should match the order of the provided data.</p>\n<p><strong>User Story #9:</strong> Each <code>.bar</code> element's height should accurately represent the data's corresponding <code>GDP</code>.</p>\n<p><strong>User Story #10:</strong> The <code>data-date</code> attribute and its corresponding <code>.bar</code> element should align with the corresponding value on the x-axis.</p>\n<p><strong>User Story #11:</strong> The <code>data-gdp</code> attribute and its corresponding <code>.bar</code> element should align with the corresponding value on the y-axis.</p>\n<p><strong>User Story #12:</strong> I can mouse over an area and see a tooltip with a corresponding <code>id=\"tooltip\"</code> which displays more information about the area.</p>\n<p><strong>User Story #13:</strong> My tooltip should have a <code>data-date</code> property that corresponds to the <code>data-date</code> of the active area.</p>\n<p>Here is the dataset you will need to complete this project: <code>https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json</code></p>\n<p>You can build your project by <a href='https://codepen.io/pen?template=MJjpwO' target=\"_blank\" rel=\"noopener noreferrer nofollow\">using this CodePen template</a> and clicking <code>Save</code> to create your own pen. Or you can use this CDN link to run the tests in any environment you like: <code>https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js</code>.</p>\n<p>Once you're done, submit the URL to your working project with all its tests passing.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-visualization-projects",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

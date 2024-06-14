@@ -1,0 +1,82 @@
+{
+  "id": "587d7fa8367417b2b2512bcd",
+  "title": "Create a Bar for Each Data Point in the Set",
+  "challengeType": 6,
+  "forumTopicId": 301482,
+  "dashedName": "create-a-bar-for-each-data-point-in-the-set",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       // Add your code below this line\n\n\n\n       // Add your code above this line\n       .attr(\"x\", 0)\n       .attr(\"y\", 0)\n       .attr(\"width\", 25)\n       .attr(\"height\", 100);\n  </script>\n</body>",
+      "error": null,
+      "seed": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       // Add your code below this line\n\n\n\n       // Add your code above this line\n       .attr(\"x\", 0)\n       .attr(\"y\", 0)\n       .attr(\"width\", 25)\n       .attr(\"height\", 100);\n  </script>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", 0)\n       .attr(\"y\", 0)\n       .attr(\"width\", 25)\n       .attr(\"height\", 100);\n  </script>\n</body>",
+        "error": null,
+        "seed": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", 0)\n       .attr(\"y\", 0)\n       .attr(\"width\", 25)\n       .attr(\"height\", 100);\n  </script>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your document should have 9 <code>rect</code> elements.</p>",
+      "testString": "assert($('rect').length == 9);"
+    },
+    {
+      "text": "<p>Your code should use the <code>data()</code> method.</p>",
+      "testString": "assert(code.match(/\\.data/g));"
+    },
+    {
+      "text": "<p>Your code should use the <code>enter()</code> method.</p>",
+      "testString": "assert(code.match(/\\.enter/g));"
+    },
+    {
+      "text": "<p>Your code should use the <code>append()</code> method.</p>",
+      "testString": "assert(code.match(/\\.append/g));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The last challenge added only one rectangle to the <code>svg</code> element to represent a bar. Here, you'll combine what you've learned so far about <code>data()</code>, <code>enter()</code>, and SVG shapes to create and append a rectangle for each data point in <code>dataset</code>.</p>\n<p>A previous challenge showed the format for how to create and append a <code>div</code> for each item in <code>dataset</code>:</p>\n<pre><code class=\"language-js\">d3.select(\"body\").selectAll(\"div\")\n  .data(dataset)\n  .enter()\n  .append(\"div\")\n</code></pre>\n<p>There are a few differences working with <code>rect</code> elements instead of <code>div</code> elements. The <code>rect</code> elements must be appended to an <code>svg</code> element, not directly to the <code>body</code>. Also, you need to tell D3 where to place each <code>rect</code> within the <code>svg</code> area. The bar placement will be covered in the next challenge.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use the <code>data()</code>, <code>enter()</code>, and <code>append()</code> methods to create and append a <code>rect</code> for each item in <code>dataset</code>. The bars should display all on top of each other; this will be fixed in the next challenge.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-visualization-with-d3",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 11,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

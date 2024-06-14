@@ -1,0 +1,30 @@
+{
+  "id": "587d7fb7367417b2b2512c0a",
+  "title": "Create Many Records with model.create()",
+  "challengeType": 2,
+  "forumTopicId": 301537,
+  "dashedName": "create-many-records-with-model-create",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Creating many db items at once should succeed</p>",
+      "testString": "(getUserInput) =>\n  $.ajax({\n    url: getUserInput('url') + '/_api/create-many-people',\n    type: 'POST',\n    contentType: 'application/json',\n    data: JSON.stringify([\n      { name: 'John', age: 24, favoriteFoods: ['pizza', 'salad'] },\n      { name: 'Mary', age: 21, favoriteFoods: ['onions', 'chicken'] }\n    ])\n  }).then(\n    (data) => {\n      assert.isArray(data, 'the response should be an array');\n      assert.equal(\n        data.length,\n        2,\n        'the response does not contain the expected number of items'\n      );\n      assert.equal(data[0].name, 'John', 'The first item is not correct');\n      assert.equal(\n        data[0].__v,\n        0,\n        'The first item should be not previously edited'\n      );\n      assert.equal(data[1].name, 'Mary', 'The second item is not correct');\n      assert.equal(\n        data[1].__v,\n        0,\n        'The second item should be not previously edited'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Sometimes you need to create many instances of your models, e.g. when seeding a database with initial data. <code>Model.create()</code> takes an array of objects like <code>[{name: 'John', ...}, {...}, ...]</code> as the first argument, and saves them all in the db.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Modify the <code>createManyPeople</code> function to create many people using <code>Model.create()</code> with the argument <code>arrayOfPeople</code>.</p>\n<p><strong>Note:</strong> You can reuse the model you instantiated in the previous exercise.</p>\n</section>",
+  "translationPending": false,
+  "block": "mongodb-and-mongoose",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

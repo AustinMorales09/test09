@@ -1,0 +1,45 @@
+{
+  "id": "661ae3524b312bc38efcd2c6",
+  "title": "Task 59",
+  "challengeType": 19,
+  "dashedName": "task-59",
+  "solutions": [],
+  "question": {
+    "text": "<p>What question could you ask to get information about something in a casual way?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>What's the issue with...?</code></p>",
+        "feedback": "<p>The word <code>issue</code> suggests a problem, but Tom is asking for information, not indicating a problem.</p>"
+      },
+      {
+        "answer": "<p><code>What's the deal with...?</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>What's the problem with...</code></p>",
+        "feedback": "<p><code>Problem</code> is similar to <code>issue</code>, and Tom is more curious than concerned.</p>"
+      },
+      {
+        "answer": "<p><code>What's the news?</code></p>",
+        "feedback": "<p><code>News</code> doesn't fit the context of asking for an explanation about biometrics.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In casual English, the phrase <code>what's the deal</code> is used to ask about a situation or to find out more information about something. It's like saying, <code>Can you tell me more about this?</code> or <code>What's going on with this?</code> It's an informal way of asking for an explanation or details.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 62,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

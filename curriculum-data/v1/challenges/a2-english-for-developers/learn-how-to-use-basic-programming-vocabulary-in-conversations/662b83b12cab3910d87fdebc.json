@@ -1,0 +1,125 @@
+{
+  "id": "662b83b12cab3910d87fdebc",
+  "title": "Task 31",
+  "challengeType": 19,
+  "dashedName": "task-31",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Brian respond after Sophie explains how to declare variables?</p>",
+    "answers": [
+      {
+        "answer": "<p>Brian asks for more clarification on declaring variables.</p>",
+        "feedback": "<p>Brian's response <code>Got it</code> indicates that he understood the explanation, so he does not ask for further clarification.</p>"
+      },
+      {
+        "answer": "<p>Brian acknowledges understanding and expresses gratitude for the help.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Brian disagrees with Sophie's method of declaring variables.</p>",
+        "feedback": "<p>Brian's response does not show any disagreement; he confirms understanding with <code>Got it</code> and thanks Sophie.</p>"
+      },
+      {
+        "answer": "<p>Brian changes the subject to discuss something else.</p>",
+        "feedback": "<p>Brian's response directly addresses the information given about declaring variables, showing he is focused on this topic.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 30.84,
+        "finishTimestamp": 43.06
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.78,
+        "dialogue": {
+          "text": "In Python, you declare variables by using the variable name and the assignment operator.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "startTime": 5.78,
+        "finishTime": 10.12,
+        "dialogue": {
+          "text": "For example, you can declare a variable like this \"name = 'Sophie'\".",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 10.12
+      },
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 10.12
+      },
+      {
+        "character": "Brian",
+        "startTime": 10.12,
+        "finishTime": 13.22,
+        "dialogue": {
+          "text": "Got it. Thanks, Sophie. I appreciate your help.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 13.72
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 31,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

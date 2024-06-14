@@ -1,0 +1,67 @@
+{
+  "id": "bad88fee1348bd9aedf08825",
+  "title": "Adjust the Padding of an Element",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cED8ZC2",
+  "forumTopicId": 301083,
+  "dashedName": "adjust-the-padding-of-an-element",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .injected-text {\n    margin-bottom: -25px;\n    text-align: center;\n  }\n\n  .box {\n    border-style: solid;\n    border-color: black;\n    border-width: 5px;\n    text-align: center;\n  }\n\n  .yellow-box {\n    background-color: yellow;\n    padding: 10px;\n  }\n\n  .red-box {\n    background-color: crimson;\n    color: #fff;\n    padding: 20px;\n  }\n\n  .blue-box {\n    background-color: blue;\n    color: #fff;\n    padding: 10px;\n  }\n</style>\n<h5 class=\"injected-text\">margin</h5>\n\n<div class=\"box yellow-box\">\n  <h5 class=\"box red-box\">padding</h5>\n  <h5 class=\"box blue-box\">padding</h5>\n</div>",
+      "error": null,
+      "seed": "<style>\n  .injected-text {\n    margin-bottom: -25px;\n    text-align: center;\n  }\n\n  .box {\n    border-style: solid;\n    border-color: black;\n    border-width: 5px;\n    text-align: center;\n  }\n\n  .yellow-box {\n    background-color: yellow;\n    padding: 10px;\n  }\n\n  .red-box {\n    background-color: crimson;\n    color: #fff;\n    padding: 20px;\n  }\n\n  .blue-box {\n    background-color: blue;\n    color: #fff;\n    padding: 10px;\n  }\n</style>\n<h5 class=\"injected-text\">margin</h5>\n\n<div class=\"box yellow-box\">\n  <h5 class=\"box red-box\">padding</h5>\n  <h5 class=\"box blue-box\">padding</h5>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  .injected-text {\n    margin-bottom: -25px;\n    text-align: center;\n  }\n\n  .box {\n    border-style: solid;\n    border-color: black;\n    border-width: 5px;\n    text-align: center;\n  }\n\n  .yellow-box {\n    background-color: yellow;\n    padding: 10px;\n  }\n\n  .red-box {\n    background-color: crimson;\n    color: #fff;\n    padding: 20px;\n  }\n\n  .blue-box {\n    background-color: blue;\n    color: #fff;\n    padding: 20px;\n  }\n</style>\n<h5 class=\"injected-text\">margin</h5>\n\n<div class=\"box yellow-box\">\n  <h5 class=\"box red-box\">padding</h5>\n  <h5 class=\"box blue-box\">padding</h5>\n</div>",
+        "error": null,
+        "seed": "<style>\n  .injected-text {\n    margin-bottom: -25px;\n    text-align: center;\n  }\n\n  .box {\n    border-style: solid;\n    border-color: black;\n    border-width: 5px;\n    text-align: center;\n  }\n\n  .yellow-box {\n    background-color: yellow;\n    padding: 10px;\n  }\n\n  .red-box {\n    background-color: crimson;\n    color: #fff;\n    padding: 20px;\n  }\n\n  .blue-box {\n    background-color: blue;\n    color: #fff;\n    padding: 20px;\n  }\n</style>\n<h5 class=\"injected-text\">margin</h5>\n\n<div class=\"box yellow-box\">\n  <h5 class=\"box red-box\">padding</h5>\n  <h5 class=\"box blue-box\">padding</h5>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>blue-box</code> class should give elements <code>20px</code> of <code>padding</code>.</p>",
+      "testString": "assert($('.blue-box').css('padding-top') === '20px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now let's put our Cat Photo App away for a little while and learn more about styling HTML.</p>\n<p>You may have already noticed this, but all HTML elements are essentially little rectangles.</p>\n<p>Three important properties control the space that surrounds each HTML element: <code>padding</code>, <code>border</code>, and <code>margin</code>.</p>\n<p>An element's <code>padding</code> controls the amount of space between the element's content and its <code>border</code>.</p>\n<p>Here, we can see that the blue box and the red box are nested within the yellow box. Note that the red box has more <code>padding</code> than the blue box.</p>\n<p>When you increase the blue box's <code>padding</code>, it will increase the distance (<code>padding</code>) between the text and the border around it.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Change the <code>padding</code> of your blue box to match that of your red box.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-css",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,61 @@
+{
+  "id": "6552008c0d9d9075cbec9772",
+  "title": "Step 13",
+  "challengeType": 20,
+  "dashedName": "step-13",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call the <code>.find()</code> method.</p>",
+      "testString": "assert.match(code, /find\\s*\\(.*\\)/)"
+    },
+    {
+      "text": "<p>You should call the <code>.find()</code> method on the <code>alphabet</code> variable.</p>",
+      "testString": "assert.match(code, /alphabet\\.find\\s*\\(.*\\)/)"
+    },
+    {
+      "text": "<p>You should call the <code>.find()</code> method on the <code>alphabet</code> variable and pass <code>'z'</code> to the method. Pay attention to place the method call at the beginning of the line.</p>",
+      "testString": "assert.match(code, /^alphabet\\.find\\s*\\(\\s*('|\")z\\1\\s*\\)/m)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You are going to use the <code>.find()</code> method to find the position in the alphabet of each letter in your message. A method is similar to a function, but it belongs to an object.</p>\n<pre><code class=\"language-py\">sentence = 'My brain hurts!'\nsentence.find('r')\n</code></pre>\n<p>Above, the <code>.find()</code> method is <em>called on</em> <code>sentence</code> (the string to search in), and <code>'r'</code> (the character to locate) is passed as the argument. The <code>sentence.find('r')</code> call will return <code>4</code>, which is the index of the first occurrence of <code>'r'</code> in <code>sentence</code>.</p>\n<p>At the end of your code, call <code>.find()</code> on <code>alphabet</code> and pass <code>'z'</code> as the argument to the method.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

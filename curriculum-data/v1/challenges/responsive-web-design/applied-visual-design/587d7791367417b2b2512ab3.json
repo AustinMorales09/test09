@@ -1,0 +1,71 @@
+{
+  "id": "587d7791367417b2b2512ab3",
+  "title": "Create Visual Balance Using the text-align Property",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/c3b4EAp",
+  "forumTopicId": 301053,
+  "dashedName": "create-visual-balance-using-the-text-align-property",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  h4 {\n\n  }\n  p {\n\n  }\n  .links {\n    margin-right: 20px;\n\n  }\n  .fullCard {\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n</style>\n<div class=\"fullCard\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Google</h4>\n      <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>",
+      "error": null,
+      "seed": "<style>\n  h4 {\n\n  }\n  p {\n\n  }\n  .links {\n    margin-right: 20px;\n\n  }\n  .fullCard {\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n</style>\n<div class=\"fullCard\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Google</h4>\n      <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  h4 {\n    text-align: center;\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    margin-right: 20px;\n\n  }\n  .fullCard {\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n</style>\n<div class=\"fullCard\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Google</h4>\n      <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>",
+        "error": null,
+        "seed": "<style>\n  h4 {\n    text-align: center;\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    margin-right: 20px;\n\n  }\n  .fullCard {\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n</style>\n<div class=\"fullCard\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Google</h4>\n      <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should use the text-align property on the <code>h4</code> tag to set it to <code>center</code>.</p>",
+      "testString": "assert($('h4').css('text-align') == 'center');"
+    },
+    {
+      "text": "<p>Your code should use the text-align property on the <code>p</code> tag to set it to <code>justify</code>.</p>",
+      "testString": "assert($('p').css('text-align') == 'justify');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>This section of the curriculum focuses on Applied Visual Design. The first group of challenges build on the given card layout to show a number of core principles.</p>\n<p>Text is often a large part of web content. CSS has several options for how to align it with the <code>text-align</code> property.</p>\n<p><code>text-align: justify;</code> spaces the text so that each line has equal width.</p>\n<p><code>text-align: center;</code> centers the text</p>\n<p><code>text-align: right;</code> right-aligns the text</p>\n<p>And <code>text-align: left;</code> (the default) left-aligns the text.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Align the <code>h4</code> tag's text, which says \"Google\", to the center. Then justify the paragraph tag which contains information about how Google was founded.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-visual-design",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

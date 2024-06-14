@@ -1,0 +1,83 @@
+{
+  "id": "655b39e59c29d16d64a2ce8e",
+  "title": "Task 96",
+  "challengeType": 22,
+  "dashedName": "task-96",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That's a good mix of _ and outdoor activities! I don't work at the computer on weekends like you, _. I save that for the weekdays, I _</p>",
+    "blanks": [
+      {
+        "answer": "indoor",
+        "feedback": "<p>Describes activities that are done inside, like using a computer.</p>"
+      },
+      {
+        "answer": "though",
+        "feedback": "<p>Contrasts her activities with Brian's, implying a difference.</p>"
+      },
+      {
+        "answer": "suppose",
+        "feedback": "<p>Indicates a mild assumption or tentative agreement about doing similar activities on weekdays.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 47.9,
+        "finishTimestamp": 54.38
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 7.48,
+        "dialogue": {
+          "text": "That's a good mix of indoor and outdoor activities. I don't work at the computer on weekends like you, though. I save that for the weekdays, I suppose.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 7.98
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Indoor</code> refers to activities done inside a building, while <code>outdoor</code> means activities done outside. For example:</p>\n<p><code>Indoor activities include reading and cooking. Outdoor activities involve hiking and gardening.</code></p>\n<p><code>Though</code> is an expression you use to show contrast between two sentences, similar to <code>but</code>. It can also be used in the middle or in the end of a sentence, not only in the beginning. For example:</p>\n<p><code>I know we wanted to travel. We don't have the money for the tickets, though.</code></p>\n<p><code>I suppose</code> is used to express a mild assumption or agreement. For example:</p>\n<p><code>I suppose we could meet tomorrow.</code> (mild agreement or suggestion)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 100,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "5dfa22d1b521be39a3de7be0",
+  "title": "Step 12",
+  "challengeType": 0,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        6,
+        8
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more cat photos in our gallery.</p>\n      <a href=\"https://freecatphotoapp.com\">link to cat pictures</a>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more cat photos in our gallery.</p>\n      <a href=\"https://freecatphotoapp.com\">link to cat pictures</a>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should nest a new anchor (<code>a</code>) element within the <code>p</code> element.</p>",
+      "testString": "const nestedAnchor = document.querySelector(`p > a`);\nassert.isNotNull(nestedAnchor)"
+    },
+    {
+      "text": "<p>The link's <code>href</code> value should be <code>https://freecatphotoapp.com</code>. You have either omitted the <code>href</code> value or have a typo.</p>",
+      "testString": "assert(\n  document.querySelector('p > a').href === 'https://freecatphotoapp.com/'\n);"
+    },
+    {
+      "text": "<p>The link's text should be <code>cat photos</code>. You have either omitted the text or have a typo.</p>",
+      "testString": "const nestedAnchor = document.querySelector('p > a');\nconst innerContent = nestedAnchor.innerHTML;\nassert.isTrue(innerContent.trim() === 'cat photos');"
+    },
+    {
+      "text": "<p>The text inside your anchor element has extra leading or trailing whitespace. The only space in the anchor text should be between the word <code>cat</code> and the word <code>photos</code>.</p>",
+      "testString": "const nestedAnchor = document.querySelector('p > a');\nconst innerContent = nestedAnchor.innerHTML;\nassert.isNotTrue(/^\\s+|\\s+$/.test(innerContent));"
+    },
+    {
+      "text": "<p>After nesting the anchor (<code>a</code>) element, the only <code>p</code> element content visible in the browser should be <code>See more cat photos in our gallery.</code> Double check the text, spacing, or punctuation of both the <code>p</code> and nested anchor element.</p>",
+      "testString": "assert.match(code, /<p>see more <a[^>]*>cat photos<\\/a> in our gallery\\.?<\\/p>/i)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can turn any text into a link, such as the text inside of a <code>p</code> element.</p>\n<pre><code class=\"language-html\">&#x3C;p>I think &#x3C;a href=\"https://www.freecodecamp.org\">freeCodeCamp&#x3C;/a> is great.&#x3C;/p>\n</code></pre>\n<p>In the text of your <code>p</code> element, turn the words <code>cat photos</code> into a link by adding opening and closing anchor (<code>a</code>) tags around these words. Then set the <code>href</code> attribute to <code>https://freecatphotoapp.com</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

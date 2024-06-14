@@ -1,0 +1,109 @@
+{
+  "id": "63b607af6fcdb119aae9b16a",
+  "title": "Step 4",
+  "challengeType": 0,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        21,
+        23
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n    <title>Calorie Counter</title>\n  </head>\n  <body>\n    <main>\n      <h1>Calorie Counter</h1>\n      <div class=\"container\">\n        <form id=\"calorie-counter\">\n          <label for=\"budget\">Budget</label>\n          <input\n            type=\"number\"\n            min=\"0\"\n            id=\"budget\"\n            placeholder=\"Daily calorie budget\"\n            required\n          />\n\n        </form>\n      </div>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n    <title>Calorie Counter</title>\n  </head>\n  <body>\n    <main>\n      <h1>Calorie Counter</h1>\n      <div class=\"container\">\n        <form id=\"calorie-counter\">\n          <label for=\"budget\">Budget</label>\n          <input\n            type=\"number\"\n            min=\"0\"\n            id=\"budget\"\n            placeholder=\"Daily calorie budget\"\n            required\n          />\n\n        </form>\n      </div>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": ":root {\n  --light-grey: #f5f6f7;\n  --dark-blue: #0a0a23;\n  --fcc-blue: #1b1b32;\n  --light-yellow: #fecc4c;\n  --dark-yellow: #feac32;\n  --light-pink: #ffadad;\n  --dark-red: #850000;\n  --light-green: #acd157;\n}\n\nbody {\n  font-family: \"Lato\", Helvetica, Arial, sans-serif;\n  font-size: 18px;\n  background-color: var(--fcc-blue);\n  color: var(--light-grey);\n}\n\nh1 {\n  text-align: center;\n}\n\n.container {\n  width: 90%;\n  max-width: 680px;\n}\n\nh1,\n.container,\n.output {\n  margin: 20px auto;\n}\n\nlabel,\nlegend {\n  font-weight: bold;\n}\n\n.input-container {\n  display: flex;\n  flex-direction: column;\n}\n\nbutton {\n  cursor: pointer;\n  text-decoration: none;\n  background-color: var(--light-yellow);\n  border: 2px solid var(--dark-yellow);\n}\n\nbutton,\ninput,\nselect {\n  min-height: 24px;\n  color: var(--dark-blue);\n}\n\nfieldset,\nlabel,\nbutton,\ninput,\nselect {\n  margin-bottom: 10px;\n}\n\n.output {\n  border: 2px solid var(--light-grey);\n  padding: 10px;\n  text-align: center;\n}\n\n.hide {\n  display: none;\n}\n\n.output span {\n  font-weight: bold;\n  font-size: 1.2em;\n}\n\n.surplus {\n  color: var(--light-pink);\n}\n\n.deficit {\n  color: var(--light-green);\n}",
+      "error": null,
+      "seed": ":root {\n  --light-grey: #f5f6f7;\n  --dark-blue: #0a0a23;\n  --fcc-blue: #1b1b32;\n  --light-yellow: #fecc4c;\n  --dark-yellow: #feac32;\n  --light-pink: #ffadad;\n  --dark-red: #850000;\n  --light-green: #acd157;\n}\n\nbody {\n  font-family: \"Lato\", Helvetica, Arial, sans-serif;\n  font-size: 18px;\n  background-color: var(--fcc-blue);\n  color: var(--light-grey);\n}\n\nh1 {\n  text-align: center;\n}\n\n.container {\n  width: 90%;\n  max-width: 680px;\n}\n\nh1,\n.container,\n.output {\n  margin: 20px auto;\n}\n\nlabel,\nlegend {\n  font-weight: bold;\n}\n\n.input-container {\n  display: flex;\n  flex-direction: column;\n}\n\nbutton {\n  cursor: pointer;\n  text-decoration: none;\n  background-color: var(--light-yellow);\n  border: 2px solid var(--dark-yellow);\n}\n\nbutton,\ninput,\nselect {\n  min-height: 24px;\n  color: var(--dark-blue);\n}\n\nfieldset,\nlabel,\nbutton,\ninput,\nselect {\n  margin-bottom: 10px;\n}\n\n.output {\n  border: 2px solid var(--light-grey);\n  padding: 10px;\n  text-align: center;\n}\n\n.hide {\n  display: none;\n}\n\n.output span {\n  font-weight: bold;\n  font-size: 1.2em;\n}\n\n.surplus {\n  color: var(--light-pink);\n}\n\n.deficit {\n  color: var(--light-green);\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a <code>fieldset</code> element in your <code>form</code>.</p>",
+      "testString": "assert.exists(document.querySelector('form fieldset'));"
+    },
+    {
+      "text": "<p>Your <code>fieldset</code> element should come after your <code>input</code> element.</p>",
+      "testString": "assert.equal(document.querySelector('form fieldset')?.previousElementSibling?.tagName, \"INPUT\");"
+    },
+    {
+      "text": "<p>Your <code>fieldset</code> element should have an <code>id</code> set to <code>breakfast</code>.</p>",
+      "testString": "assert.equal(document.querySelector('form fieldset')?.id, \"breakfast\");"
+    },
+    {
+      "text": "<p>You should create a <code>legend</code> element within your <code>fieldset</code>.</p>",
+      "testString": "assert.exists(document.querySelector('form fieldset legend'));"
+    },
+    {
+      "text": "<p>Your <code>legend</code> element should have the text <code>Breakfast</code>.</p>",
+      "testString": "assert.equal(document.querySelector('form fieldset legend')?.innerText, \"Breakfast\");"
+    },
+    {
+      "text": "<p>You should create a <code>div</code> element within your <code>fieldset</code>.</p>",
+      "testString": "assert.exists(document.querySelector('form fieldset div'));"
+    },
+    {
+      "text": "<p>Your <code>div</code> element should come after your <code>legend</code> element.</p>",
+      "testString": "assert.equal(document.querySelector('form fieldset div')?.previousElementSibling?.tagName, \"LEGEND\");"
+    },
+    {
+      "text": "<p>Your <code>div</code> element should have a <code>class</code> set to <code>input-container</code>.</p>",
+      "testString": "assert.equal(document.querySelector('form fieldset div')?.className, \"input-container\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In your form, users should have the capability to add various meal types along with their calorie counts.</p>\n<p>Create a <code>fieldset</code> element with the <code>id</code> set to <code>breakfast</code>.</p>\n<p>Within that element, create a <code>legend</code> with the text <code>Breakfast</code>, and an empty <code>div</code> with the <code>class</code> set to <code>input-container</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-form-validation-by-building-a-calorie-counter",
+  "hasEditableBoundaries": true,
+  "order": 4,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

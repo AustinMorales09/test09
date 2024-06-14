@@ -1,0 +1,49 @@
+{
+  "id": "656485a8a3496d4a36b1496a",
+  "title": "Step 4",
+  "challengeType": 20,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        8
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import string\n\n\n\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation",
+      "error": null,
+      "seed": "import string\n\n\n\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add the comment just above the <code>letters</code> variable.</p>",
+      "testString": "({ test: () => assert.match(code, /^#\\s*Define the possible characters for the password.*^letters/ms) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>These three variables constitute the possible characters to choose from when generating the password.</p>\n<p>Just before them, add a comment saying <code>Define the possible characters for the password</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "660f45ccf4ca5c31f253005a",
+  "title": "Step 83",
+  "challengeType": 1,
+  "dashedName": "step-83",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        16,
+        20
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\nlet continueLoop = false;\nlet done = 0;\n\nwhile (continueLoop) {\n\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\nlet continueLoop = false;\nlet done = 0;\n\nwhile (continueLoop) {\n\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>while</code> loop should increment the <code>done</code> variable.</p>",
+      "testString": "assert.match(code, /while\\s*\\(\\s*continueLoop\\s*\\)\\s*\\{\\s*done\\+\\+/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Right now, if you change <code>continueLoop</code> to true, your <code>while</code> loop will run forever. This is called an <dfn>infinite loop</dfn>, and you should be careful to avoid these. An infinite loop can lock up your system, requiring a full restart to escape.</p>\n<p>To avoid this, start by using the increment operator to increase the value of the <code>done</code> variable inside your loop.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 82,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,53 @@
+{
+  "id": "60a3e3396c7b40068ad6996f",
+  "title": "Step 6",
+  "challengeType": 0,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n  </head>\n  <body>\n\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n  </head>\n  <body>\n\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have a <code>div</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('div').length === 1)"
+    },
+    {
+      "text": "<p>The <code>div</code> element should have a <code>class</code> with the value <code>canvas</code>.</p>",
+      "testString": "assert(document.querySelector('div').className.split(' ').includes('canvas'))"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Add a <code>div</code> element in the <code>body</code>.</p>\n<p>Set the <code>class</code> attribute equal to <code>canvas</code>.</p>\n<p>This will act as the canvas for your painting.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-css-box-model-by-building-a-rothko-painting",
+  "hasEditableBoundaries": true,
+  "order": 5,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

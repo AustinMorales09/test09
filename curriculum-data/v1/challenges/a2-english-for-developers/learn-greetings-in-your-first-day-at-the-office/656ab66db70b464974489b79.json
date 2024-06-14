@@ -1,0 +1,32 @@
+{
+  "id": "656ab66db70b464974489b79",
+  "title": "Task 70",
+  "challengeType": 22,
+  "dashedName": "task-70",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>In the tech department, _ always working on exciting projects.</p>",
+    "blanks": [
+      {
+        "answer": "they're",
+        "feedback": "<p>Think about the contraction that represents <code>they are</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Contractions make speech sound more natural and informal. <code>They're</code> is the contracted form of <code>they are</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 71,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

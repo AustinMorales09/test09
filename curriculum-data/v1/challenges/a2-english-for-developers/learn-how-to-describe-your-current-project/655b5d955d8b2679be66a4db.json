@@ -1,0 +1,88 @@
+{
+  "id": "655b5d955d8b2679be66a4db",
+  "title": "Task 2",
+  "challengeType": 19,
+  "dashedName": "task-2",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sophie want to know from James?</p>",
+    "answers": [
+      {
+        "answer": "<p>How James is doing</p>",
+        "feedback": "<p>Sophie is not asking about his personal well-being.</p>"
+      },
+      {
+        "answer": "<p>Why James chose his project</p>",
+        "feedback": "<p>Sophie is not asking the reason he chose this project.</p>"
+      },
+      {
+        "answer": "<p>Where James works</p>",
+        "feedback": "<p>Sophie is not asking where James works.</p>"
+      },
+      {
+        "answer": "<p>What James's cybersecurity project is about</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 0.6,
+        "finishTimestamp": 3.28
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.68,
+        "dialogue": {
+          "text": "Hey James, what's your cybersecurity project about?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.18
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>What</code> is often used to ask for specific information.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

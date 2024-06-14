@@ -1,0 +1,88 @@
+{
+  "id": "658157d104bbc92a95147e45",
+  "title": "Task 32",
+  "challengeType": 19,
+  "dashedName": "task-32",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the phrase <code>other than</code> imply?</p>",
+    "answers": [
+      {
+        "answer": "<p>A single choice</p>",
+        "feedback": "<p>It implies having only one option, which is not the same as the phrase.</p>"
+      },
+      {
+        "answer": "<p>No choice</p>",
+        "feedback": "<p>It indicates the absence of any options, which is the opposite of this phrase.</p>"
+      },
+      {
+        "answer": "<p>An additional option</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The only possibility</p>",
+        "feedback": "<p>It means the singular or exclusive option, which is not the same as the phrase.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 55.34,
+        "finishTimestamp": 60.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 5.82,
+        "dialogue": {
+          "text": "Yeah, technical glitches are complicated and there's not much we can do other than try to solve them.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 6.32
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>other than</code> indicates the presence of an alternative or different option.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 32,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

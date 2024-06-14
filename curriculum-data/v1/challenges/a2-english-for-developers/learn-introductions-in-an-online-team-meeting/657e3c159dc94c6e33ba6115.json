@@ -1,0 +1,79 @@
+{
+  "id": "657e3c159dc94c6e33ba6115",
+  "title": "Task 76",
+  "challengeType": 22,
+  "dashedName": "task-76",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Can you _ _ yourself?</p>",
+    "blanks": [
+      {
+        "answer": "briefly",
+        "feedback": "<p>This word indicates that the introduction should be short and to the point.</p>"
+      },
+      {
+        "answer": "introduce",
+        "feedback": "<p>Means to present oneself to others, usually stating your name and basic details.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.14,
+        "finishTimestamp": 5.8
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 2.66,
+        "dialogue": {
+          "text": "Can you briefly introduce yourself?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 3.16
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and fill in the missing words.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 79,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

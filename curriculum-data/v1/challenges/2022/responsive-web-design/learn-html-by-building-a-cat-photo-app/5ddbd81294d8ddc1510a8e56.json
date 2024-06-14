@@ -1,0 +1,57 @@
+{
+  "id": "5ddbd81294d8ddc1510a8e56",
+  "title": "Step 11",
+  "challengeType": 0,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more cat photos in our gallery.</p>\n      <a href=\"https://freecatphotoapp.com\"></a>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more cat photos in our gallery.</p>\n      <a href=\"https://freecatphotoapp.com\"></a>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your anchor (<code>a</code>) element should have an opening tag. Opening tags have this syntax: <code>&#x3C;elementName></code>.</p>",
+      "testString": "assert(document.querySelector('a'));"
+    },
+    {
+      "text": "<p>Your anchor (<code>a</code>) element should have a closing tag. Closing tags have a <code>/</code> just after the <code>&#x3C;</code> character.</p>",
+      "testString": "assert(code.match(/<\\/a\\>/));"
+    },
+    {
+      "text": "<p>Your anchor (<code>a</code>) element's text should be <code>link to cat pictures</code>. Make sure to put the link text between the anchor (<code>a</code>) element's opening tag and closing tag.</p>",
+      "testString": "assert(\n  document.querySelector('a').innerText.toLowerCase().replace(/\\s+/g, ' ') ===\n    'link to cat pictures'\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A link's text must be placed between the opening and closing tags of an anchor (<code>a</code>) element.</p>\n<p>Here is an example of a link with the text <code>click here to go to freeCodeCamp.org</code>:</p>\n<pre><code class=\"language-html\">&#x3C;a href=\"https://www.freecodecamp.org\">click here to go to freeCodeCamp.org&#x3C;/a>\n</code></pre>\n<p>Add the anchor text <code>link to cat pictures</code> to the anchor element. This will become the link's text.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

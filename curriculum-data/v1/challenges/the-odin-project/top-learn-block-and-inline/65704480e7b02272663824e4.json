@@ -1,0 +1,45 @@
+{
+  "id": "65704480e7b02272663824e4",
+  "title": "Learn Block and Inline Question F",
+  "challengeType": 15,
+  "dashedName": "learn-block-and-inline-question-f",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the \"Normal flow\" in CSS layouts?</p>",
+    "answers": [
+      {
+        "answer": "<p>Normal flow refers to the process of animating elements in a CSS layout.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Normal flow is a CSS property used to control the visibility of elements in a layout.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Normal flow is a CSS rule that defines the order of media queries for responsive design.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Normal flow in CSS layouts refers to the default positioning of elements on a webpage.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The concept of “Normal flow” is implied in the box-model resources, but isn’t laid out very specifically. Read <a href=\"https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow\" target=\"_blank\">Normal Flow</a> from MDN to make sure you understand how elements lay themselves out by default.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-block-and-inline",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

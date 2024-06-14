@@ -1,0 +1,49 @@
+{
+  "id": "6610c2d8d67563174fcf96dc",
+  "title": "Step 51",
+  "challengeType": 1,
+  "dashedName": "step-51",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        8
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow() {\n  return \"Hello!\";\n}\nconst call = padRow();\nconsole.log(call);\n\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow() {\n  return \"Hello!\";\n}\nconst call = padRow();\nconsole.log(call);\n\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>padRow</code> function should have a <code>name</code> parameter.</p>",
+      "testString": "assert.match(padRow.toString(), /\\(name\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When you have a value that is explicitly written in your code, like the <code>\"Hello!\"</code> string in your function, it is considered to be <dfn>hard-coded</dfn>. Hard-coding a value inside a function might not make it as reusable as you'd like.</p>\n<p>Instead, you can define <dfn>parameters</dfn> for the function. Parameters are special variables that are given a value when you call the function, and can be used in your function to dynamically change the result of the function's code.</p>\n<p>To add a parameter to your function, you need to add a variable name inside the parentheses. For example, this <code>demo</code> function has a <code>name</code> parameter:</p>\n<pre><code class=\"language-js\">function demo(name) {\n\n}\n</code></pre>\n<p><code>name</code> sounds like a useful parameter, so go ahead and add it to your <code>padRow</code> function.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 50,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

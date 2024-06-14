@@ -1,0 +1,46 @@
+{
+  "id": "5e8f2f13c4cdbe86b5c72d8d",
+  "title": "Core Learning Algorithms: Classification",
+  "challengeType": 11,
+  "videoId": "qFF7ZQNvK9E",
+  "bilibiliIds": {
+    "aid": 505531167,
+    "bvid": "BV1Vg411c7av",
+    "cid": 409128427
+  },
+  "dashedName": "core-learning-algorithms-classification",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is classification?</p>",
+    "answers": [
+      {
+        "answer": "<p>The process of separating data points into different classes.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Predicting a numeric value or forecast based on independent and dependent variables.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>None of the above.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "tensorflow",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

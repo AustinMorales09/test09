@@ -1,0 +1,65 @@
+{
+  "id": "5900f4511000cf542c50ff63",
+  "title": "Problem 228: Minkowski Sums",
+  "challengeType": 1,
+  "forumTopicId": 301871,
+  "dashedName": "problem-228-minkowski-sums",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function minkowskiSums() {\n\n  return true;\n}\n\nminkowskiSums();",
+      "error": null,
+      "seed": "function minkowskiSums() {\n\n  return true;\n}\n\nminkowskiSums();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>minkowskiSums()</code> should return <code>86226</code>.</p>",
+      "testString": "assert.strictEqual(minkowskiSums(), 86226);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $S_n$ be the regular $n$-sided polygon – or shape – whose vertices $v_k (k = 1, 2, \\ldots, n)$ have coordinates:</p>\n<p>$$\\begin{align}\n&#x26; x_k = cos(\\frac{2k - 1}{n} × 180°) \\\\\n&#x26; y_k = sin(\\frac{2k - 1}{n} × 180°)\n\\end{align}$$</p>\n<p>Each $S_n$ is to be interpreted as a filled shape consisting of all points on the perimeter and in the interior.</p>\n<p>The Minkowski sum, $S + T$, of two shapes $S$ and $T$ is the result of adding every point in $S$ to every point in $T$, where point addition is performed coordinate-wise: $(u, v) + (x, y) = (u + x, v + y)$.</p>\n<p>For example, the sum of $S_3$ and $S_4$ is the six-sided shape shown in pink below:</p>\n<img class=\"img-responsive center-block\" alt=\"image showing S_3, S_4 and S_3 + S_4\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/minkowski-sums.png\" style=\"background-color: white; padding: 10px;\">\n<p>How many sides does $S_{1864} + S_{1865} + \\ldots + S_{1909}$ have?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "657e4dfc07e48897111f235f",
+  "title": "Task 76",
+  "challengeType": 19,
+  "dashedName": "task-76",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are <code>rules</code> in a professional context?</p>",
+    "answers": [
+      {
+        "answer": "<p>Suggestions for hobbies.</p>",
+        "feedback": "<p>Rules are more about mandatory conduct, not hobbies.</p>"
+      },
+      {
+        "answer": "<p>Guidelines or instructions that have to be followed.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Plans for social events.</p>",
+        "feedback": "<p>Rules are related to workplace conduct, not social events.</p>"
+      },
+      {
+        "answer": "<p>Ideas for personal projects.</p>",
+        "feedback": "<p>They pertain to professional behavior, not personal projects.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Rules</code> are specific guidelines or instructions that are meant to be followed. They are set to maintain order and ensure fair and proper conduct, especially in a professional setting.</p>\n<p>For example, <code>The office rules include being punctual and respectful to colleagues</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 79,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

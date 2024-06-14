@@ -1,0 +1,86 @@
+{
+  "id": "5a24c314108439a4d403617e",
+  "title": "Add Event Listeners",
+  "challengeType": 6,
+  "forumTopicId": 301377,
+  "dashedName": "add-event-listeners",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<MyComponent />, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      message: ''\n    };\n    this.handleEnter = this.handleEnter.bind(this);\n    this.handleKeyPress = this.handleKeyPress.bind(this);\n  }\n  // Change code below this line\n  componentDidMount() {\n\n  }\n  componentWillUnmount() {\n\n  }\n  // Change code above this line\n  handleEnter() {\n    this.setState((state) => ({\n      message: state.message + 'You pressed the enter key! '\n    }));\n  }\n  handleKeyPress(event) {\n    if (event.keyCode === 13) {\n      this.handleEnter();\n    }\n  }\n  render() {\n    return (\n      <div>\n        <h1>{this.state.message}</h1>\n      </div>\n    );\n  }\n};",
+      "error": null,
+      "seed": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      message: ''\n    };\n    this.handleEnter = this.handleEnter.bind(this);\n    this.handleKeyPress = this.handleKeyPress.bind(this);\n  }\n  // Change code below this line\n  componentDidMount() {\n\n  }\n  componentWillUnmount() {\n\n  }\n  // Change code above this line\n  handleEnter() {\n    this.setState((state) => ({\n      message: state.message + 'You pressed the enter key! '\n    }));\n  }\n  handleKeyPress(event) {\n    if (event.keyCode === 13) {\n      this.handleEnter();\n    }\n  }\n  render() {\n    return (\n      <div>\n        <h1>{this.state.message}</h1>\n      </div>\n    );\n  }\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      message: ''\n    };\n    this.handleKeyPress = this.handleKeyPress.bind(this);\n    this.handleEnter = this.handleEnter.bind(this);  }\n  componentDidMount() {\n    // Change code below this line\n    document.addEventListener('keydown', this.handleKeyPress);\n    // Change code above this line\n  }\n  componentWillUnmount() {\n    // Change code below this line\n    document.removeEventListener('keydown', this.handleKeyPress);\n    // Change code above this line\n  }\n  handleEnter() {\n    this.setState((state) => ({\n      message: state.message + 'You pressed the enter key! '\n    }));\n  }\n  handleKeyPress(event) {\n    if (event.keyCode === 13) {\n      this.handleEnter();\n    }\n  }\n  render() {\n    return (\n      <div>\n        <h1>{this.state.message}</h1>\n      </div>\n    );\n  }\n};",
+        "error": null,
+        "seed": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      message: ''\n    };\n    this.handleKeyPress = this.handleKeyPress.bind(this);\n    this.handleEnter = this.handleEnter.bind(this);  }\n  componentDidMount() {\n    // Change code below this line\n    document.addEventListener('keydown', this.handleKeyPress);\n    // Change code above this line\n  }\n  componentWillUnmount() {\n    // Change code below this line\n    document.removeEventListener('keydown', this.handleKeyPress);\n    // Change code above this line\n  }\n  handleEnter() {\n    this.setState((state) => ({\n      message: state.message + 'You pressed the enter key! '\n    }));\n  }\n  handleKeyPress(event) {\n    if (event.keyCode === 13) {\n      this.handleEnter();\n    }\n  }\n  render() {\n    return (\n      <div>\n        <h1>{this.state.message}</h1>\n      </div>\n    );\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>MyComponent</code> should render a <code>div</code> element which wraps an <code>h1</code> tag.</p>",
+      "testString": "assert(\n  (() => {\n    const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n    return mockedComponent.find('div').children().find('h1').length === 1;\n  })()\n);"
+    },
+    {
+      "text": "<p>A <code>keydown</code> listener should be attached to the document in <code>componentDidMount</code>.</p>",
+      "testString": "assert(\n  (() => {\n    const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n    const didMountString = mockedComponent\n      .instance()\n      .componentDidMount.toString();\n    return new RegExp(\n      'document.addEventListener(.|\\n|\\r)+keydown(.|\\n|\\r)+this.handleKeyPress'\n    ).test(didMountString);\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>keydown</code> listener should be removed from the document in <code>componentWillUnmount</code>.</p>",
+      "testString": "assert(\n  (() => {\n    const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n    const willUnmountString = mockedComponent\n      .instance()\n      .componentWillUnmount.toString();\n    return new RegExp(\n      'document.removeEventListener(.|\\n|\\r)+keydown(.|\\n|\\r)+this.handleKeyPress'\n    ).test(willUnmountString);\n  })()\n);"
+    },
+    {
+      "text": "<p>Once the component has mounted, pressing <code>enter</code> should update its state and the rendered <code>h1</code> tag.</p>",
+      "testString": "async () => {\n  const waitForIt = (fn) =>\n    new Promise((resolve, reject) => setTimeout(() => resolve(fn()), 250));\n  const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n  const beforeState = mockedComponent.state('message');\n  const beforeText = mockedComponent.find('h1').text();\n  const pressEnterKey = () => {\n    mockedComponent.instance().handleKeyPress({ keyCode: 13 });\n    return waitForIt(() => {\n      mockedComponent.update();\n      return {\n        state: mockedComponent.state('message'),\n        text: mockedComponent.find('h1').text()\n      };\n    });\n  };\n  const afterKeyPress = await pressEnterKey();\n  assert(\n    beforeState !== afterKeyPress.state && beforeText !== afterKeyPress.text\n  );\n};"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>componentDidMount()</code> method is also the best place to attach any event listeners you need to add for specific functionality. React provides a synthetic event system which wraps the native event system present in browsers. This means that the synthetic event system behaves exactly the same regardless of the user's browser - even if the native events may behave differently between different browsers.</p>\n<p>You've already been using some of these synthetic event handlers such as <code>onClick()</code>. React's synthetic event system is great to use for most interactions you'll manage on DOM elements. However, if you want to attach an event handler to the document or window objects, you have to do this directly.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Attach an event listener in the <code>componentDidMount()</code> method for <code>keydown</code> events and have these events trigger the callback <code>handleKeyPress()</code>. You can use <code>document.addEventListener()</code> which takes the event (in quotes) as the first argument and the callback as the second argument.</p>\n<p>Then, in <code>componentWillUnmount()</code>, remove this same event listener. You can pass the same arguments to <code>document.removeEventListener()</code>. It's good practice to use this lifecycle method to do any clean up on React components before they are unmounted and destroyed. Removing event listeners is an example of one such clean up action.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 33,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

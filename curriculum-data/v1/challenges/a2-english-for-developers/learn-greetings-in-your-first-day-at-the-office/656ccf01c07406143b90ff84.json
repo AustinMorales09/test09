@@ -1,0 +1,88 @@
+{
+  "id": "656ccf01c07406143b90ff84",
+  "title": "Task 115",
+  "challengeType": 19,
+  "dashedName": "task-115",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Sophie trying to know when she asks <code>Is that ok for you?</code></p>",
+    "answers": [
+      {
+        "answer": "<p>If Tom knows the café.</p>",
+        "feedback": "<p>Sophie is not inquiring about Tom's knowledge of the café.</p>"
+      },
+      {
+        "answer": "<p>If Tom agrees with the café choice.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>If Tom dislikes coffee.</p>",
+        "feedback": "<p>The question doesn't specify anything about liking or disliking coffee.</p>"
+      },
+      {
+        "answer": "<p>If Tom owns the café.</p>",
+        "feedback": "<p>Sophie is inquiring about Tom's preference, not ownership.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 16.74,
+        "finishTimestamp": 20.34
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.3,
+        "dialogue": {
+          "text": "I know a nice one. It's a café right down the street. Is that okay for you?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>Is that ok for you?</code> is used to ask if someone agrees with or accepts a suggestion or situation.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 117,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

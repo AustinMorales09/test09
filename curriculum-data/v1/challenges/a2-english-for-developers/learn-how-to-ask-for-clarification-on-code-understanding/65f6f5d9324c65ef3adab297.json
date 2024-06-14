@@ -1,0 +1,88 @@
+{
+  "id": "65f6f5d9324c65ef3adab297",
+  "title": "Task 38",
+  "challengeType": 19,
+  "dashedName": "task-38",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sophie imply by using <code>may</code> in her sentence?</p>",
+    "answers": [
+      {
+        "answer": "<p>She is sure about when the issue occurs.</p>",
+        "feedback": "<p>Using <code>may</code> suggests possibility, not certainty. Sophie is considering a potential occurrence, not stating a fact.</p>"
+      },
+      {
+        "answer": "<p>She thinks the problem might happen with large data sets.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She has ruled out large data sets as the cause of the issue.</p>",
+        "feedback": "<p>The use of <code>may</code> indicates that Sophie is considering large data sets as a potential cause, not ruling them out.</p>"
+      },
+      {
+        "answer": "<p>She has no idea about the cause of the issue.</p>",
+        "feedback": "<p>While <code>may</code> shows uncertainty, it doesn't mean she has no idea. She is suggesting a possible cause.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.88,
+        "finishTimestamp": 17.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.56,
+        "dialogue": {
+          "text": "I've noticed that the issue may occur when we handle large data sets.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 5.06
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

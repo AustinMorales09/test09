@@ -1,0 +1,88 @@
+{
+  "id": "6543abeff5f028dba112f278",
+  "title": "Task 7",
+  "challengeType": 19,
+  "dashedName": "task-7",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which operation correctly expands the contraction <code>I'm</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I is</code></p>",
+        "feedback": "<p>Think about which verb form would correctly fit with <code>I</code> to talk about oneself in the present.</p>"
+      },
+      {
+        "answer": "<p><code>I am</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>I was</code></p>",
+        "feedback": "<p>Think about which verb form would correctly fit with <code>I</code> to talk about oneself in the present.</p>"
+      },
+      {
+        "answer": "<p><code>I have</code></p>",
+        "feedback": "<p>Think about which verb form would correctly fit with <code>I</code> to talk about oneself in the present.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.5,
+        "finishTimestamp": 7
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.3,
+        "dialogue": {
+          "text": "Hi, that's right. I'm Tom McKenzie.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 3.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In English, the verb <code>to be</code> is used to talk about identities, characteristics, and more. The contraction <code>I'm</code> is a combination of <code>I</code> and <code>am</code>. Here, Tom uses it to introduce himself.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

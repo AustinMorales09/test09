@@ -1,0 +1,78 @@
+{
+  "id": "587d7b8f367417b2b2512b62",
+  "title": "Implement map on a Prototype",
+  "challengeType": 1,
+  "forumTopicId": 301230,
+  "dashedName": "implement-map-on-a-prototype",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "Array.prototype.myMap = function(callback) {\n  const newArray = [];\n  // Only change code below this line\n\n  // Only change code above this line\n  return newArray;\n};",
+      "error": null,
+      "seed": "Array.prototype.myMap = function(callback) {\n  const newArray = [];\n  // Only change code below this line\n\n  // Only change code above this line\n  return newArray;\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "Array.prototype.myMap = function(callback) {\n  const newArray = [];\n  for (let i = 0; i < this.length; i++) {\n    newArray.push(callback(this[i], i, this));\n  }\n  return newArray;\n};\n\n// Test case\nconst s = [23, 65, 98, 5];\nconst doubled_s = s.myMap(item => item * 2);",
+        "error": null,
+        "seed": "Array.prototype.myMap = function(callback) {\n  const newArray = [];\n  for (let i = 0; i < this.length; i++) {\n    newArray.push(callback(this[i], i, this));\n  }\n  return newArray;\n};\n\n// Test case\nconst s = [23, 65, 98, 5];\nconst doubled_s = s.myMap(item => item * 2);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>[23, 65, 98, 5, 13].myMap(item => item * 2)</code> should equal <code>[46, 130, 196, 10, 26]</code>.</p>",
+      "testString": "const _test_s = [23, 65, 98, 5, 13];\nconst _callback = item => item * 2;\nassert(JSON.stringify(_test_s.map(_callback)) === JSON.stringify(_test_s.myMap(_callback)));"
+    },
+    {
+      "text": "<p><code>[\"naomi\", \"quincy\", \"camperbot\"].myMap(element => element.toUpperCase())</code> should return <code>[\"NAOMI\", \"QUINCY\", \"CAMPERBOT\"]</code>.</p>",
+      "testString": "const _test_s = [\"naomi\", \"quincy\", \"camperbot\"];\nconst _callback = element => element.toUpperCase();\nassert(JSON.stringify(_test_s.map(_callback)) === JSON.stringify(_test_s.myMap(_callback)));"
+    },
+    {
+      "text": "<p><code>[1, 1, 2, 5, 2].myMap((element, index, array) => array[index + 1] || array[0])</code> should return <code>[1, 2, 5, 2, 1]</code>.</p>",
+      "testString": "const _test_s = [1, 1, 2, 5, 2];\nconst _callback = (element, index, array) => array[index + 1] || array[0];\nassert(JSON.stringify(_test_s.map(_callback)) === JSON.stringify(_test_s.myMap(_callback)));"
+    },
+    {
+      "text": "<p>Your code should not use the <code>map</code> method.</p>",
+      "testString": "assert(!__helpers.removeJSComments(code).match(/\\.?[\\s\\S]*?map/g));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As you have seen from applying <code>Array.prototype.map()</code>, or simply <code>map()</code> earlier, the <code>map</code> method returns an array of the same length as the one it was called on. It also doesn't alter the original array, as long as its callback function doesn't.</p>\n<p>In other words, <code>map</code> is a pure function, and its output depends solely on its inputs. Plus, it takes another function as its argument.</p>\n<p>You might learn a lot about the <code>map</code> method if you implement your own version of it. It is recommended you use a <code>for</code> loop or <code>Array.prototype.forEach()</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write your own <code>Array.prototype.myMap()</code>, which should behave exactly like <code>Array.prototype.map()</code>. You should not use the built-in <code>map</code> method. The <code>Array</code> instance can be accessed in the <code>myMap</code> method using <code>this</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "functional-programming",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

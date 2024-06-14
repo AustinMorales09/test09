@@ -1,0 +1,42 @@
+{
+  "id": "bd7108d8c242eddfaeb5bd13",
+  "title": "Map Data Across the Globe",
+  "challengeType": 3,
+  "forumTopicId": 302365,
+  "dashedName": "map-data-across-the-globe",
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><strong>Objective:</strong> Build an app that is functionally similar to this: <a href=\"https://codepen.io/freeCodeCamp/full/mVEJag\">https://codepen.io/freeCodeCamp/full/mVEJag</a>.</p>\n<p>Fulfill the below user stories and get all of the tests to pass. Use whichever libraries or APIs you need. Give it your own personal style.</p>\n<p><strong>User Story:</strong> I can see where all Meteorites landed on a world map.</p>\n<p><strong>User Story:</strong> I can tell the relative size of the meteorite, just by looking at the way it's represented on the map.</p>\n<p><strong>User Story:</strong> I can mouse over the meteorite's data point for additional data.</p>\n<p><strong>Hint:</strong> Here's a dataset you can use to build this: <a href=\"https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json\">https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json</a></p>\n<p>When you are finished, include a link to your project on CodePen and click the \"I've completed this challenge\" button.</p>\n<p>You can get feedback on your project by sharing it on the <a href=\"https://forum.freecodecamp.org/c/project-feedback/409\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">freeCodeCamp forum</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "take-home-projects",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

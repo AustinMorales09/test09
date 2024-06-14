@@ -1,0 +1,88 @@
+{
+  "id": "657e741a7309f661e0a48909",
+  "title": "Task 124",
+  "challengeType": 19,
+  "dashedName": "task-124",
+  "solutions": [],
+  "question": {
+    "text": "<p>Where does Sarah usually go for her lunch break?</p>",
+    "answers": [
+      {
+        "answer": "<p>She stays in the office and works through lunch.</p>",
+        "feedback": "<p>The audio indicates she takes a break, not working through lunch.</p>"
+      },
+      {
+        "answer": "<p>She goes to a café down the street.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She goes home for lunch.</p>",
+        "feedback": "<p>She doesn't mention going home for lunch.</p>"
+      },
+      {
+        "answer": "<p>She skips lunch to continue working.</p>",
+        "feedback": "<p>Sarah talks about taking a break, not skipping lunch.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 47,
+        "finishTimestamp": 50.1
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 4.1,
+        "dialogue": {
+          "text": "At noon, I take a break and have lunch at the cafe down the street.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Sarah's lunch break routine is a typical aspect of many workday schedules.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 128,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

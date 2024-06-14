@@ -1,0 +1,61 @@
+{
+  "id": "660f165270622fd4ec0da3f7",
+  "title": "Step 30",
+  "challengeType": 1,
+  "dashedName": "step-30",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = \"Hello\";\nlet count = 8;\nlet rows = [];",
+      "error": null,
+      "seed": "let character = \"Hello\";\nlet count = 8;\nlet rows = [];"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>const</code> to declare your <code>character</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+character/);"
+    },
+    {
+      "text": "<p>You should use <code>const</code> to declare your <code>count</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+count/);"
+    },
+    {
+      "text": "<p>You should use <code>const</code> to declare your <code>rows</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+rows/);"
+    },
+    {
+      "text": "<p>You should not use <code>let</code> in your code.</p>",
+      "testString": "assert.notMatch(code, /let/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Declaring a variable with the <code>let</code> keyword allows it to be reassigned. This means you could change <code>character</code> later to be a completely different value.</p>\n<p>For this project, you will not want to change these variable values. So instead, you should use <code>const</code> to declare them. <code>const</code> variables are special.</p>\n<p>First, a <code>const</code> variable cannot be reassigned like a <code>let</code> variable. This code would throw an error:</p>\n<pre><code class=\"language-js\">const firstName = \"Naomi\";\nfirstName = \"Jessica\";\n</code></pre>\n<p>A <code>const</code> variable also cannot be uninitialized. This code would throw an error:</p>\n<pre><code class=\"language-js\">const firstName;\n</code></pre>\n<p>Replace your <code>let</code> keywords with <code>const</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 29,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

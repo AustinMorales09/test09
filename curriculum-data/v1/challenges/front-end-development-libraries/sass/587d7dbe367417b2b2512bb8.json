@@ -1,0 +1,82 @@
+{
+  "id": "587d7dbe367417b2b2512bb8",
+  "title": "Use @if and @else to Add Logic To Your Styles",
+  "challengeType": 0,
+  "forumTopicId": 301463,
+  "dashedName": "use-if-and-else-to-add-logic-to-your-styles",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style type='text/scss'>\n\n\n\n  #box {\n    width: 150px;\n    height: 150px;\n    background-color: red;\n    @include border-stroke(medium);\n  }\n</style>\n\n<div id=\"box\"></div>",
+      "error": null,
+      "seed": "<style type='text/scss'>\n\n\n\n  #box {\n    width: 150px;\n    height: 150px;\n    background-color: red;\n    @include border-stroke(medium);\n  }\n</style>\n\n<div id=\"box\"></div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style type='text/scss'>\n  @mixin border-stroke($val) {\n    @if $val == light {\n      border: 1px solid black;\n    }\n    @else if $val == medium {\n      border: 3px solid black;\n    }\n    @else if $val == heavy {\n      border: 6px solid black;\n    }\n    @else {\n      border: none;\n    }\n  }\n\n\n  #box {\n    width: 150px;\n    height: 150px;\n    background-color: red;\n    @include border-stroke(medium);\n  }\n</style>\n\n<div id=\"box\"></div>",
+        "error": null,
+        "seed": "<style type='text/scss'>\n  @mixin border-stroke($val) {\n    @if $val == light {\n      border: 1px solid black;\n    }\n    @else if $val == medium {\n      border: 3px solid black;\n    }\n    @else if $val == heavy {\n      border: 6px solid black;\n    }\n    @else {\n      border: none;\n    }\n  }\n\n\n  #box {\n    width: 150px;\n    height: 150px;\n    background-color: red;\n    @include border-stroke(medium);\n  }\n</style>\n\n<div id=\"box\"></div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should declare a mixin named <code>border-stroke</code> which has a parameter named <code>$val</code>.</p>",
+      "testString": "assert(code.match(/@mixin\\s+?border-stroke\\s*?\\(\\s*?\\$val\\s*?\\)\\s*?{/gi));"
+    },
+    {
+      "text": "<p>Your mixin should have an <code>@if</code> statement to check if <code>$val</code> is <code>light</code>, and to set the <code>border</code> to <code>1px solid black</code>.</p>",
+      "testString": "assert(\n  code.match(\n    /@if\\s+?\\$val\\s*?===?\\s*?light\\s*?{\\s*?border\\s*?:\\s*?1px\\s+?solid\\s+?black\\s*?;\\s*?}/gi\n  )\n);"
+    },
+    {
+      "text": "<p>Your mixin should have an <code>@else if</code> statement to check if <code>$val</code> is <code>medium</code>, and to set the <code>border</code> to <code>3px solid black</code>.</p>",
+      "testString": "assert(\n  code.match(\n    /@else\\s+?if\\s+?\\$val\\s*?===?\\s*?medium\\s*?{\\s*?border\\s*?:\\s*?3px\\s+?solid\\s+?black\\s*?;\\s*?}/gi\n  )\n);"
+    },
+    {
+      "text": "<p>Your mixin should have an <code>@else if</code> statement to check if <code>$val</code> is <code>heavy</code>, and to set the <code>border</code> to <code>6px solid black</code>.</p>",
+      "testString": "assert(\n  code.match(\n    /@else\\s+?if\\s+?\\$val\\s*?===?\\s*?heavy\\s*?{\\s*?border\\s*?:\\s*?6px\\s+?solid\\s+?black\\s*?;\\s*?}/gi\n  )\n);"
+    },
+    {
+      "text": "<p>Your mixin should have an <code>@else</code> statement to set the <code>border</code> to <code>none</code>.</p>",
+      "testString": "assert(code.match(/@else\\s*?{\\s*?border\\s*?:\\s*?none\\s*?;\\s*?}/gi));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>@if</code> directive in Sass is useful to test for a specific case - it works just like the <code>if</code> statement in JavaScript.</p>\n<pre><code class=\"language-scss\">@mixin make-bold($bool) {\n  @if $bool == true {\n    font-weight: bold;\n  }\n}\n</code></pre>\n<p>And just like in JavaScript, the <code>@else if</code> and <code>@else</code> directives test for more conditions:</p>\n<pre><code class=\"language-scss\">@mixin text-effect($val) {\n  @if $val == danger {\n    color: red;\n  }\n  @else if $val == alert {\n    color: yellow;\n  }\n  @else if $val == success {\n    color: green;\n  }\n  @else {\n    color: black;\n  }\n}\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Create a mixin called <code>border-stroke</code> that takes a parameter <code>$val</code>. The mixin should check for the following conditions using <code>@if</code>, <code>@else if</code>, and <code>@else</code> directives:</p>\n<pre><code class=\"language-scss\">light - 1px solid black\nmedium - 3px solid black\nheavy - 6px solid black\n</code></pre>\n<p>If the <code>$val</code> parameter value is not <code>light</code>, <code>medium</code>, or <code>heavy</code>, then the <code>border</code> property should be set to <code>none</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "sass",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

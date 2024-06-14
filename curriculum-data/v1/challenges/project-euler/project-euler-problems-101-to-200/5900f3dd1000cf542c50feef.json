@@ -1,0 +1,65 @@
+{
+  "id": "5900f3dd1000cf542c50feef",
+  "title": "Problem 112: Bouncy numbers",
+  "challengeType": 1,
+  "forumTopicId": 301738,
+  "dashedName": "problem-112-bouncy-numbers",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function bouncyNumbers() {\n\n  return true;\n}\n\nbouncyNumbers();",
+      "error": null,
+      "seed": "function bouncyNumbers() {\n\n  return true;\n}\n\nbouncyNumbers();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>bouncyNumbers()</code> should return <code>1587000</code>.</p>",
+      "testString": "assert.strictEqual(bouncyNumbers(), 1587000);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Working from left-to-right if no digit is exceeded by the digit to its left it is called an increasing number; for example, 134468.</p>\n<p>Similarly if no digit is exceeded by the digit to its right it is called a decreasing number; for example, 66420.</p>\n<p>We shall call a positive integer that is neither increasing nor decreasing a \"bouncy\" number; for example, 155349.</p>\n<p>Clearly there cannot be any bouncy numbers below one-hundred, but just over half of the numbers below one-thousand (525) are bouncy. In fact, the least number for which the proportion of bouncy numbers first reaches 50% is 538.</p>\n<p>Surprisingly, bouncy numbers become more and more common and by the time we reach 21780 the proportion of bouncy numbers is equal to 90%.</p>\n<p>Find the least number for which the proportion of bouncy numbers is exactly 99%.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

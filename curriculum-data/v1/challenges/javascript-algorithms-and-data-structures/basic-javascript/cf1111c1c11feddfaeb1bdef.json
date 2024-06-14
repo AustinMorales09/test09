@@ -1,0 +1,71 @@
+{
+  "id": "cf1111c1c11feddfaeb1bdef",
+  "title": "Iterate with JavaScript While Loops",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/c8QbnCM",
+  "forumTopicId": 18220,
+  "dashedName": "iterate-with-javascript-while-loops",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "if(typeof myArray !== \"undefined\"){(function(){return myArray;})();}",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Setup\nconst myArray = [];\n\n// Only change code below this line\n",
+      "error": null,
+      "seed": "// Setup\nconst myArray = [];\n\n// Only change code below this line\n"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const myArray = [];\nlet i = 5;\nwhile (i >= 0) {\n  myArray.push(i);\n  i--;\n}",
+        "error": null,
+        "seed": "const myArray = [];\nlet i = 5;\nwhile (i >= 0) {\n  myArray.push(i);\n  i--;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should be using a <code>while</code> loop for this.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/while/g));"
+    },
+    {
+      "text": "<p><code>myArray</code> should equal <code>[5, 4, 3, 2, 1, 0]</code>.</p>",
+      "testString": "assert.deepEqual(myArray, [5, 4, 3, 2, 1, 0]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can run the same code multiple times by using a loop.</p>\n<p>The first type of loop we will learn is called a <code>while</code> loop because it runs while a specified condition is true and stops once that condition is no longer true.</p>\n<pre><code class=\"language-js\">const ourArray = [];\nlet i = 0;\n\nwhile (i &#x3C; 5) {\n  ourArray.push(i);\n  i++;\n}\n</code></pre>\n<p>In the code example above, the <code>while</code> loop will execute 5 times and append the numbers 0 through 4 to <code>ourArray</code>.</p>\n<p>Let's try getting a while loop to work by pushing values to an array.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add the numbers 5 through 0 (inclusive) in descending order to <code>myArray</code> using a <code>while</code> loop.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 95,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

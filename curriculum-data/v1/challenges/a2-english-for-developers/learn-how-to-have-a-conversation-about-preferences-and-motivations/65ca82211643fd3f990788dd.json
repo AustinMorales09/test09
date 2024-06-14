@@ -1,0 +1,79 @@
+{
+  "id": "65ca82211643fd3f990788dd",
+  "title": "Task 2",
+  "challengeType": 22,
+  "dashedName": "task-2",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>How about you? What _ you feel _?</p>",
+    "blanks": [
+      {
+        "answer": "makes",
+        "feedback": "<p>This word is used to indicate the reason or cause of something. It is conjugated in the third person.</p>"
+      },
+      {
+        "answer": "motivated",
+        "feedback": "<p>It ends with <code>-ed</code> because it's an adjective that comes from a verb.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 3.92,
+        "finishTimestamp": 6.42
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 3.5,
+        "dialogue": {
+          "text": "How about you? What makes you feel motivated?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>motivate</code> is a verb that means to give someone a reason to act in a certain way.</p>\n<p>By adding <code>-ed</code> to the end, it becomes <code>motivated</code>, an adjective that describes someone who has been influenced or encouraged to do something. For example:\n<code>I'm not motivated to work late today</code></p>\n<p>This sentence means the person does not feel like they want to work extra hours today. <code>Not motivated</code> means they don't have the energy or desire to do it.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,83 @@
+{
+  "id": "65b25f2c3284994aa6632194",
+  "title": "Task 17",
+  "challengeType": 22,
+  "dashedName": "task-17",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ _ working with tech companies _ about ten years.</p>",
+    "blanks": [
+      {
+        "answer": "She's",
+        "feedback": "<p>It's the contraction for <code>She has</code>, starting the sentence with a capital letter.</p>"
+      },
+      {
+        "answer": "been",
+        "feedback": "<p>It's a part of the Present Perfect Continuous tense, showing the action is ongoing.</p>"
+      },
+      {
+        "answer": "for",
+        "feedback": "<p>This word is used to introduce the duration of time the action has been happening.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.6,
+        "finishTimestamp": 20.2
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.6,
+        "dialogue": {
+          "text": "She's been working with tech companies for about 10 years.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The structure <code>have/has been + verb-ing</code> is used in the <em>Present Perfect Continuous</em> tense. It emphasizes actions that started in the past and are still continuing now. <code>Been</code> is the past participle form of the verb <code>be</code>.</p>\n<p>It can be used with <code>for</code> followed by a period of time or <code>since</code> followed by a specific starting point in time to highlight the duration or how long the action happens.</p>\n<p>Examples:</p>\n<p><code>We have been studying English for three years.</code> This means we started studying English three years ago and are still studying it now.</p>\n<p><code>He has been playing the guitar since he was ten.</code> This means he started playing the guitar when he was ten years old and continues to play it.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

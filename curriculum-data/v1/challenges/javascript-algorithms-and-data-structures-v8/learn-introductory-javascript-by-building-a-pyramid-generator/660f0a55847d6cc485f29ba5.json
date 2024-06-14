@@ -1,0 +1,57 @@
+{
+  "id": "660f0a55847d6cc485f29ba5",
+  "title": "Step 25",
+  "challengeType": 1,
+  "dashedName": "step-25",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        6
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];\n\nconsole.log(rows);",
+      "error": null,
+      "seed": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];\n\nconsole.log(rows);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>.push()</code> in your code.</p>",
+      "testString": "assert.match(code, /\\.push\\(/);"
+    },
+    {
+      "text": "<p>You should use the <code>.push()</code> method of your <code>rows</code> array.</p>",
+      "testString": "assert.match(code, /rows\\.push\\(/);"
+    },
+    {
+      "text": "<p>You should pass the string <code>\"freeCodeCamp\"</code> to your <code>.push()</code> method.</p>",
+      "testString": "assert.match(code, /rows\\.push\\(\\s*('|\")freeCodeCamp\\1\\s*\\);?/)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A <dfn>method</dfn> in JavaScript is a function that's associated with certain values or objects. An example you've already encountered is the <code>.log()</code> method, which is part of the <code>console</code> object.</p>\n<p>Arrays have their own methods, and the first you will explore is the <code>.push()</code> method. This allows you to \"push\" a value to the end of an array. Here is an example to add the number <code>12</code> to the end of an array:</p>\n<pre><code class=\"language-js\">array.push(12);\n</code></pre>\n<p>Use <code>.push()</code> to add the string <code>\"freeCodeCamp\"</code> to the end of your <code>rows</code> array. Add this code before your <code>console.log</code> so you can see the change you made to your array.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

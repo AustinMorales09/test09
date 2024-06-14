@@ -1,0 +1,87 @@
+{
+  "id": "587d781c367417b2b2512ac2",
+  "title": "Set the font-size for Multiple Heading Elements",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cPpQNT3",
+  "forumTopicId": 301067,
+  "dashedName": "set-the-font-size-for-multiple-heading-elements",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n\n\n\n\n\n\n</style>\n<h1>This is h1 text</h1>\n<h2>This is h2 text</h2>\n<h3>This is h3 text</h3>\n<h4>This is h4 text</h4>\n<h5>This is h5 text</h5>\n<h6>This is h6 text</h6>",
+      "error": null,
+      "seed": "<style>\n\n\n\n\n\n\n</style>\n<h1>This is h1 text</h1>\n<h2>This is h2 text</h2>\n<h3>This is h3 text</h3>\n<h4>This is h4 text</h4>\n<h5>This is h5 text</h5>\n<h6>This is h6 text</h6>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  h1 {\n    font-size: 68px;\n  }\n  h2 {\n    font-size: 52px;\n  }\n  h3 {\n    font-size: 40px;\n  }\n  h4 {\n    font-size: 32px;\n  }\n  h5 {\n    font-size: 21px;\n  }\n  h6 {\n    font-size: 14px;\n  }\n</style>\n<h1>This is h1 text</h1>\n<h2>This is h2 text</h2>\n<h3>This is h3 text</h3>\n<h4>This is h4 text</h4>\n<h5>This is h5 text</h5>\n<h6>This is h6 text</h6>",
+        "error": null,
+        "seed": "<style>\n  h1 {\n    font-size: 68px;\n  }\n  h2 {\n    font-size: 52px;\n  }\n  h3 {\n    font-size: 40px;\n  }\n  h4 {\n    font-size: 32px;\n  }\n  h5 {\n    font-size: 21px;\n  }\n  h6 {\n    font-size: 14px;\n  }\n</style>\n<h1>This is h1 text</h1>\n<h2>This is h2 text</h2>\n<h3>This is h3 text</h3>\n<h4>This is h4 text</h4>\n<h5>This is h5 text</h5>\n<h6>This is h6 text</h6>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should set the <code>font-size</code> property for the <code>h1</code> tag to 68 pixels.</p>",
+      "testString": " const fontSizeOfh1 = new __helpers.CSSHelp(document).getStyle('h1')?.getPropertyValue('font-size');\n assert(fontSizeOfh1 === '68px');"
+    },
+    {
+      "text": "<p>Your code should set the <code>font-size</code> property for the <code>h2</code> tag to 52 pixels.</p>",
+      "testString": " const fontSizeOfh2 = new __helpers.CSSHelp(document).getStyle('h2')?.getPropertyValue('font-size');\n assert(fontSizeOfh2 === '52px');"
+    },
+    {
+      "text": "<p>Your code should set the <code>font-size</code> property for the <code>h3</code> tag to 40 pixels.</p>",
+      "testString": " const fontSizeOfh3 = new __helpers.CSSHelp(document).getStyle('h3')?.getPropertyValue('font-size');\n assert(fontSizeOfh3 === '40px');"
+    },
+    {
+      "text": "<p>Your code should set the <code>font-size</code> property for the <code>h4</code> tag to 32 pixels.</p>",
+      "testString": " const fontSizeOfh4 = new __helpers.CSSHelp(document).getStyle('h4')?.getPropertyValue('font-size');\n assert(fontSizeOfh4 === '32px');"
+    },
+    {
+      "text": "<p>Your code should set the <code>font-size</code> property for the <code>h5</code> tag to 21 pixels.</p>",
+      "testString": " const fontSizeOfh5 = new __helpers.CSSHelp(document).getStyle('h5')?.getPropertyValue('font-size');\n assert(fontSizeOfh5 === '21px');"
+    },
+    {
+      "text": "<p>Your code should set the <code>font-size</code> property for the <code>h6</code> tag to 14 pixels.</p>",
+      "testString": " const fontSizeOfh6 = new __helpers.CSSHelp(document).getStyle('h6')?.getPropertyValue('font-size');\n assert(fontSizeOfh6 === '14px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>font-size</code> property is used to specify how large the text is in a given element. This rule can be used for multiple elements to create visual consistency of text on a page. In this challenge, you'll set the values for all <code>h1</code> through <code>h6</code> tags to balance the heading sizes.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>In the <code>style</code> tags, set the <code>font-size</code> of the:</p>\n<ul>\n<li><code>h1</code> tag to 68px.</li>\n<li><code>h2</code> tag to 52px.</li>\n<li><code>h3</code> tag to 40px.</li>\n<li><code>h4</code> tag to 32px.</li>\n<li><code>h5</code> tag to 21px.</li>\n<li><code>h6</code> tag to 14px.</li>\n</ul>\n</section>",
+  "translationPending": false,
+  "block": "applied-visual-design",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

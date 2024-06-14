@@ -1,0 +1,49 @@
+{
+  "id": "656639771fed09b5c0e8fe71",
+  "title": "Step 6",
+  "challengeType": 20,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        1,
+        6
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def merge_sort(array):\n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n",
+      "error": null,
+      "seed": "def merge_sort(array):\n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call <code>merge_sort</code> at the bottom of your function body.</p>",
+      "testString": "({\n  test: () => {\n    const transformedCode = code.replace(/\\r/g, \"\");\n    const merge_sort = __helpers.python.getDef(\"\\n\" + transformedCode, \"merge_sort\");\n    const { function_body } = merge_sort;\n\n    assert.match(function_body, /merge_sort\\s*\\(\\s*\\)/);\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you've divided the <code>array</code> list into two separate lists, you'll keep dividing each list until every element stands alone in its own list. A list with a single number is always sorted.</p>\n<p>To do that, recursively call <code>merge_sort</code> inside your function.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-data-structures-by-building-the-merge-sort-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 9,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

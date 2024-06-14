@@ -1,0 +1,57 @@
+{
+  "id": "65c4f22498d22ed775ef8efb",
+  "title": "Step 10",
+  "challengeType": 20,
+  "dashedName": "step-10",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        16
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        pass",
+      "error": null,
+      "seed": "class TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have <code>pass</code> in your <code>_insert</code> method.</p>",
+      "testString": "({ test: () => assert.isFalse(runPython(`_Node(_code).find_class(\"BinarySearchTree\").find_function(\"_insert\").has_pass()`)) })\n"
+    },
+    {
+      "text": "<p>You should write an <code>if</code> statement to check if <code>node is None</code>.</p>",
+      "testString": "({ test: () =>\n  {\n    const transformedCode = code.replace(/\\r/g, \"\");        \n    const ins = __helpers.python.getDef(\"\\n\"+transformedCode, \"_insert\");\n    const {function_body} = ins;    \n    assert(function_body.match(/^\\s{8}if\\s+node\\s+is\\s+None\\s*:/m));\n  }\n})"
+    },
+    {
+      "text": "<p>You should return <code>TreeNode(key)</code> from the <code>if</code> block.</p>",
+      "testString": "({ test: () =>\n  {\n    const transformedCode = code.replace(/\\r/g, \"\");        \n    const ins = __helpers.python.getDef(\"\\n\"+transformedCode, \"_insert\");\n    const {function_body} = ins;    \n    assert(function_body.match(/^(\\s{8})if\\s+node\\s+is\\s+None\\s*:\\s*^\\1\\s{4}return\\s+TreeNode\\s*\\(\\s*key\\s*\\)/m));\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now you need to check if the <code>node</code> parameter is <code>None</code>. If it is, this means that the method has reached a leaf node or an empty spot in the tree where the new node should be inserted.</p>\n<p>Inside the <code>_insert</code> method body, replace <code>pass</code> with an <code>if</code> statement that checks if <code>node is None</code>. Note that <code>is</code> is different from <code>==</code>. In Python, <code>is</code> checks for object identity. It's used to determine if two variables point to the same object in memory. In contrast to <code>is</code>, <code>==</code> determines if the values of two objects are the same, regardless of whether they are the same object in memory.</p>\n<p>Inside the new <code>if</code> block, return <code>TreeNode(key)</code> to  create a new <code>TreeNode</code> instance with the provided key. This will become the new leaf node, effectively inserting the key into the tree.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

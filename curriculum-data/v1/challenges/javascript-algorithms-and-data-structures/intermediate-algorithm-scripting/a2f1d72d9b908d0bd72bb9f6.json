@@ -1,0 +1,133 @@
+{
+  "id": "a2f1d72d9b908d0bd72bb9f6",
+  "title": "Make a Person",
+  "challengeType": 1,
+  "forumTopicId": 16020,
+  "dashedName": "make-a-person",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const Person = function(first, last) {\n  this.getFullName = function() {\n    return \"\";\n  };\n  return \"\";\n};",
+      "error": null,
+      "seed": "const Person = function(first, last) {\n  this.getFullName = function() {\n    return \"\";\n  };\n  return \"\";\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const Person = function(first, last) {\n  let firstName = first;\n  let lastName = last;\n\n  this.getFirstName = function(){\n    return firstName;\n  };\n\n  this.getLastName = function(){\n    return lastName;\n  };\n\n  this.getFullName = function(){\n    return firstName + \" \" + lastName;\n  };\n\n  this.setFirstName = function(str){\n    firstName = str;\n  };\n\n\n  this.setLastName = function(str){\n    lastName = str;\n  };\n\n  this.setFullName = function(first, last){\n    firstName = first;\n    lastName = last;\n  };\n};",
+        "error": null,
+        "seed": "const Person = function(first, last) {\n  let firstName = first;\n  let lastName = last;\n\n  this.getFirstName = function(){\n    return firstName;\n  };\n\n  this.getLastName = function(){\n    return lastName;\n  };\n\n  this.getFullName = function(){\n    return firstName + \" \" + lastName;\n  };\n\n  this.setFirstName = function(str){\n    firstName = str;\n  };\n\n\n  this.setLastName = function(str){\n    lastName = str;\n  };\n\n  this.setFullName = function(first, last){\n    firstName = first;\n    lastName = last;\n  };\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not change the function signature.</p>",
+      "testString": "assert.match(code, /const\\s+Person\\s*=\\s*function\\s*\\(\\s*first\\s*,\\s*last\\s*\\)\\s*{/);"
+    },
+    {
+      "text": "<p>You should not reassign the <code>first</code> parameter.</p>",
+      "testString": "assert.notMatch(code, /\\bfirst\\s*=\\s*/);"
+    },
+    {
+      "text": "<p>You should not reassign the <code>last</code> parameter.</p>",
+      "testString": "assert.notMatch(code, /\\blast\\s*=\\s*/);"
+    },
+    {
+      "text": "<p>No properties should be added. <code>Object.keys(Person).length</code> should always return 6.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\n_person.setFirstName('Haskell');\n_person.setLastName('Curry');\n_person.setFullName('John', 'Smith');\nassert.lengthOf(Object.keys(_person), 6);"
+    },
+    {
+      "text": "<p>You should be able to instantiate your <code>Person</code> object.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\nassert.instanceOf(_person, Person);"
+    },
+    {
+      "text": "<p>Your <code>Person</code> object should not have a <code>firstName</code> property.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\nassert.notProperty(_person, 'firstName');"
+    },
+    {
+      "text": "<p>Your <code>Person</code> object should not have a <code>lastName</code> property.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\nassert.notProperty(_person, 'lastName');"
+    },
+    {
+      "text": "<p>The <code>.getFirstName()</code> method should return the string <code>Bob</code>.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\nassert.strictEqual(_person.getFirstName(), 'Bob');"
+    },
+    {
+      "text": "<p>The <code>.getLastName()</code> should return the string <code>Ross</code>.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\nassert.strictEqual(_person.getLastName(), 'Ross');"
+    },
+    {
+      "text": "<p>The <code>.getFullName()</code> method should return the string <code>Bob Ross</code>.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\nassert.strictEqual(_person.getFullName(), 'Bob Ross');"
+    },
+    {
+      "text": "<p>The <code>.getFullName()</code> method should return the string <code>Haskell Ross</code> after calling <code>.setFirstName('Haskell')</code>.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\n_person.setFirstName('Haskell');\nassert.strictEqual(_person.getFullName(), 'Haskell Ross');"
+    },
+    {
+      "text": "<p>The <code>.getFullName()</code> method should return the string <code>Bob Curry</code> after calling <code>.setLastName('Curry')</code>.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\n_person.setLastName('Curry');\nassert.strictEqual(_person.getFullName(), 'Bob Curry');"
+    },
+    {
+      "text": "<p>The <code>.getFullName()</code> method should return the string <code>Haskell Curry</code> after calling <code>.setFullName('Haskell', 'Curry')</code>.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\n_person.setFullName('Haskell', 'Curry');\nassert.strictEqual(_person.getFullName(), 'Haskell Curry');"
+    },
+    {
+      "text": "<p>The <code>.getFirstName()</code> method should return the string <code>Haskell</code> after calling <code>.setFullName('Haskell', 'Curry')</code>.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\n_person.setFullName('Haskell', 'Curry');\nassert.strictEqual(_person.getFirstName(), 'Haskell');"
+    },
+    {
+      "text": "<p>The <code>.getLastName()</code> method should return the string <code>Curry</code> after calling <code>.setFullName('Haskell', 'Curry')</code>.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\n_person.setFullName('Haskell', 'Curry');\nassert.strictEqual(_person.getLastName(), 'Curry');"
+    },
+    {
+      "text": "<p>The <code>.getFullName()</code> method should return the string <code>Emily Martinez de la Rosa</code> after calling <code>.setFullName('Emily Martinez', 'de la Rosa')</code>.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\n_person.setFullName('Emily Martinez', 'de la Rosa');\nassert.strictEqual(_person.getFullName(), 'Emily Martinez de la Rosa');"
+    },
+    {
+      "text": "<p>The <code>.getFirstName()</code> property should return the string <code>Emily Martinez</code> after calling <code>.setFullName('Emily Martinez', 'de la Rosa')</code>.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\n_person.setFullName('Emily Martinez', 'de la Rosa');\nassert.strictEqual(_person.getFirstName(), 'Emily Martinez');"
+    },
+    {
+      "text": "<p>The <code>.getLastName()</code> property should return the string <code>de la Rosa</code> after calling <code>.setFullName('Emily Martinez', 'de la Rosa')</code>.</p>",
+      "testString": "const _person = new Person('Bob', 'Ross');\n_person.setFullName('Emily Martinez', 'de la Rosa');\nassert.strictEqual(_person.getLastName(), 'de la Rosa');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Fill in the object constructor with the following methods below:</p>\n<pre><code class=\"language-js\">getFirstName()\ngetLastName()\ngetFullName()\nsetFirstName(first)\nsetLastName(last)\nsetFullName(first, last)\n</code></pre>\n<p>Run the tests to see the expected output for each method. These methods must be the only available means of interacting with the object. Each test will declare a new <code>Person</code> instance as <code>new Person('Bob', 'Ross')</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "intermediate-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

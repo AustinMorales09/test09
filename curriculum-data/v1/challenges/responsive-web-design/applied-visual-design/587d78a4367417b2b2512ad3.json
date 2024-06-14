@@ -1,0 +1,79 @@
+{
+  "id": "587d78a4367417b2b2512ad3",
+  "title": "Adjust the Color of Various Elements to Complementary Colors",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cWmPpud",
+  "forumTopicId": 301033,
+  "dashedName": "adjust-the-color-of-various-elements-to-complementary-colors",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  body {\n    background-color: white;\n  }\n  header {\n    background-color: black;\n    color: white;\n    padding: 0.25em;\n  }\n  h2 {\n    color: black;\n  }\n  button {\n    background-color: white;\n  }\n  footer {\n    background-color: black;\n    color: white;\n    padding: 0.5em;\n  }\n</style>\n<header>\n  <h1>Cooking with FCC!</h1>\n</header>\n<main>\n  <article>\n    <h2>Machine Learning in the Kitchen</h2>\n    <p>Join this two day workshop that walks through how to implement cutting-edge snack-getting algorithms with a command line interface. Coding usually involves writing exact instructions, but sometimes you need your computer to execute flexible commands, like <code>fetch Pringles</code>.</p>\n    <button>Sign Up</button>\n  </article>\n  <article>\n    <h2>Bisection Vegetable Chopping</h2>\n    <p>This week-long retreat will level-up your coding ninja skills to actual ninja skills. No longer is the humble bisection search limited to sorted arrays or coding interview questions, applying its concepts in the kitchen will have you chopping carrots in O(log n) time before you know it.</p>\n    <button>Sign Up</button>\n  </article>\n</main>\n<br>\n<footer>&copy; 2018 FCC Kitchen</footer>",
+      "error": null,
+      "seed": "<style>\n  body {\n    background-color: white;\n  }\n  header {\n    background-color: black;\n    color: white;\n    padding: 0.25em;\n  }\n  h2 {\n    color: black;\n  }\n  button {\n    background-color: white;\n  }\n  footer {\n    background-color: black;\n    color: white;\n    padding: 0.5em;\n  }\n</style>\n<header>\n  <h1>Cooking with FCC!</h1>\n</header>\n<main>\n  <article>\n    <h2>Machine Learning in the Kitchen</h2>\n    <p>Join this two day workshop that walks through how to implement cutting-edge snack-getting algorithms with a command line interface. Coding usually involves writing exact instructions, but sometimes you need your computer to execute flexible commands, like <code>fetch Pringles</code>.</p>\n    <button>Sign Up</button>\n  </article>\n  <article>\n    <h2>Bisection Vegetable Chopping</h2>\n    <p>This week-long retreat will level-up your coding ninja skills to actual ninja skills. No longer is the humble bisection search limited to sorted arrays or coding interview questions, applying its concepts in the kitchen will have you chopping carrots in O(log n) time before you know it.</p>\n    <button>Sign Up</button>\n  </article>\n</main>\n<br>\n<footer>&copy; 2018 FCC Kitchen</footer>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  body {\n    background-color: white;\n  }\n  header {\n    background-color: #09A7A1;\n    color: white;\n    padding: 0.25em;\n  }\n  h2 {\n    color: #09A7A1;\n  }\n  button {\n    background-color: #FF790E;\n  }\n  footer {\n    background-color: #09A7A1;\n    color: white;\n    padding: 0.5em;\n  }\n</style>\n<header>\n  <h1>Cooking with FCC!</h1>\n</header>\n<main>\n  <article>\n    <h2>Machine Learning in the Kitchen</h2>\n    <p>Join this two day workshop that walks through how to implement cutting-edge snack-getting algorithms with a command line interface. Coding usually involves writing exact instructions, but sometimes you need your computer to execute flexible commands, like <code>fetch Pringles</code>.</p>\n    <button>Sign Up</button>\n  </article>\n  <article>\n    <h2>Bisection Vegetable Chopping</h2>\n    <p>This week-long retreat will level-up your coding ninja skills to actual ninja skills. No longer is the humble bisection search limited to sorted arrays or coding interview questions, applying its concepts in the kitchen will have you chopping carrots in O(log n) time before you know it.</p>\n    <button>Sign Up</button>\n  </article>\n</main>\n<br>\n<footer>&copy; 2018 FCC Kitchen</footer>",
+        "error": null,
+        "seed": "<style>\n  body {\n    background-color: white;\n  }\n  header {\n    background-color: #09A7A1;\n    color: white;\n    padding: 0.25em;\n  }\n  h2 {\n    color: #09A7A1;\n  }\n  button {\n    background-color: #FF790E;\n  }\n  footer {\n    background-color: #09A7A1;\n    color: white;\n    padding: 0.5em;\n  }\n</style>\n<header>\n  <h1>Cooking with FCC!</h1>\n</header>\n<main>\n  <article>\n    <h2>Machine Learning in the Kitchen</h2>\n    <p>Join this two day workshop that walks through how to implement cutting-edge snack-getting algorithms with a command line interface. Coding usually involves writing exact instructions, but sometimes you need your computer to execute flexible commands, like <code>fetch Pringles</code>.</p>\n    <button>Sign Up</button>\n  </article>\n  <article>\n    <h2>Bisection Vegetable Chopping</h2>\n    <p>This week-long retreat will level-up your coding ninja skills to actual ninja skills. No longer is the humble bisection search limited to sorted arrays or coding interview questions, applying its concepts in the kitchen will have you chopping carrots in O(log n) time before you know it.</p>\n    <button>Sign Up</button>\n  </article>\n</main>\n<br>\n<footer>&copy; 2018 FCC Kitchen</footer>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>header</code> element should have a <code>background-color</code> of #09A7A1.</p>",
+      "testString": "assert($('header').css('background-color') == 'rgb(9, 167, 161)');"
+    },
+    {
+      "text": "<p>The <code>footer</code> element should have a <code>background-color</code> of #09A7A1.</p>",
+      "testString": "assert($('footer').css('background-color') == 'rgb(9, 167, 161)');"
+    },
+    {
+      "text": "<p>The <code>h2</code> element should have a <code>color</code> of #09A7A1.</p>",
+      "testString": "assert($('h2').css('color') == 'rgb(9, 167, 161)');"
+    },
+    {
+      "text": "<p>The <code>button</code> element should have a <code>background-color</code> of #FF790E.</p>",
+      "testString": "assert($('button').css('background-color') == 'rgb(255, 121, 14)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The Complementary Colors challenge showed that opposite colors on the color wheel can make each other appear more vibrant when placed side-by-side. However, the strong visual contrast can be jarring if it's overused on a website, and can sometimes make text harder to read if it's placed on a complementary-colored background. In practice, one of the colors is usually dominant and the complement is used to bring visual attention to certain content on the page.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>This page will use a shade of teal (<code>#09A7A1</code>) as the dominant color, and its orange (<code>#FF790E</code>) complement to visually highlight the sign-up buttons. Change the <code>background-color</code> of both the <code>header</code> and <code>footer</code> from black to the teal color. Then change the <code>h2</code> text <code>color</code> to teal as well. Finally, change the <code>background-color</code> of the <code>button</code> to the orange color.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-visual-design",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

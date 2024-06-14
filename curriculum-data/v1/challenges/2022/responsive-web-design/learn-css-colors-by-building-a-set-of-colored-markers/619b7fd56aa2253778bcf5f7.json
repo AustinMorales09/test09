@@ -1,0 +1,65 @@
+{
+  "id": "619b7fd56aa2253778bcf5f7",
+  "title": "Step 48",
+  "challengeType": 0,
+  "dashedName": "step-48",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker red\">\n      </div>\n      <div class=\"marker green\">\n      </div>\n      <div class=\"marker blue\">\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker red\">\n      </div>\n      <div class=\"marker green\">\n      </div>\n      <div class=\"marker blue\">\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        23,
+        27
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1 {\n  text-align: center;\n}\n\n.container {\n  background-color: rgb(255, 255, 255);\n  padding: 10px 0;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.red {\n  background-color: rgb(255, 0, 0);\n}\n\n.green {\n  background-color: #007F00;\n}\n\n.blue {\n  background-color: rgb(0, 0, 0);\n}\n",
+      "error": null,
+      "seed": "h1 {\n  text-align: center;\n}\n\n.container {\n  background-color: rgb(255, 255, 255);\n  padding: 10px 0;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.red {\n  background-color: rgb(255, 0, 0);\n}\n\n.green {\n  background-color: #007F00;\n}\n\n.blue {\n  background-color: rgb(0, 0, 0);\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>.blue</code> CSS rule should have a <code>background-color</code> property set to <code>hsl(240, 100%, 50%)</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.blue')?.backgroundColor === 'rgb(0, 0, 255)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <dfn>HSL</dfn> color model, or hue, saturation, and lightness, is another way to represent colors.</p>\n<p>The CSS hsl function accepts 3 values: a number from 0 to 360 for hue, a percentage from 0 to 100 for saturation, and a percentage from 0 to 100 for lightness.</p>\n<p>If you imagine a color wheel, the hue red is at 0 degrees, green is at 120 degrees, and blue is at 240 degrees.</p>\n<p>Saturation is the intensity of a color from 0%, or gray, to 100% for pure color. You must add the percent sign <code>%</code> to the saturation and lightness values.</p>\n<p>Lightness is how bright a color appears, from 0%, or complete black, to 100%, complete white, with 50% being neutral.</p>\n<p>In the <code>.blue</code> CSS rule, use the <code>hsl</code> function to change the <code>background-color</code> property to pure blue. Set the hue to <code>240</code>, the saturation to <code>100%</code>, and the lightness to <code>50%</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 47,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

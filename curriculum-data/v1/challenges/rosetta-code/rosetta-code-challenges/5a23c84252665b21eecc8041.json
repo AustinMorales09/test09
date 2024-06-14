@@ -1,0 +1,90 @@
+{
+  "id": "5a23c84252665b21eecc8041",
+  "title": "Sum of a series",
+  "challengeType": 1,
+  "forumTopicId": 302333,
+  "dashedName": "sum-of-a-series",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function sum(a, b) {\n\n}",
+      "error": null,
+      "seed": "function sum(a, b) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function sum(a, b) {\n  function fn(x) {\n    return 1 / (x * x);\n  }\n  var s = 0;\n  for (; a <= b; a++) s += fn(a);\n  return s;\n}",
+        "error": null,
+        "seed": "function sum(a, b) {\n  function fn(x) {\n    return 1 / (x * x);\n  }\n  var s = 0;\n  for (; a <= b; a++) s += fn(a);\n  return s;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>sum</code> should be a function.</p>",
+      "testString": "assert(typeof sum == 'function');"
+    },
+    {
+      "text": "<p><code>sum(1, 100)</code> should return a number.</p>",
+      "testString": "assert(typeof sum(1, 100) == 'number');"
+    },
+    {
+      "text": "<p><code>sum(1, 100)</code> should return <code>1.6349839001848923</code>.</p>",
+      "testString": "assert.equal(sum(1, 100), 1.6349839001848923);"
+    },
+    {
+      "text": "<p><code>sum(33, 46)</code> should return <code>0.009262256361481223</code>.</p>",
+      "testString": "assert.equal(sum(33, 46), 0.009262256361481223);"
+    },
+    {
+      "text": "<p><code>sum(21, 213)</code> should return <code>0.044086990748706555</code>.</p>",
+      "testString": "assert.equal(sum(21, 213), 0.044086990748706555);"
+    },
+    {
+      "text": "<p><code>sum(11, 111)</code> should return <code>0.08619778593108679</code>.</p>",
+      "testString": "assert.equal(sum(11, 111), 0.08619778593108679);"
+    },
+    {
+      "text": "<p><code>sum(1, 10)</code> should return <code>1.5497677311665408</code>.</p>",
+      "testString": "assert.equal(sum(1, 10), 1.5497677311665408);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Compute the <strong>n</strong><sup>th</sup> term of a <em>series</em>, i.e. the sum of the <strong>n</strong> first terms of the corresponding <em>sequence</em>. Informally this value, or its limit when <strong>n</strong> tends to infinity, is also called the <em>sum of the series</em>, thus the title of this task. For this task, use: $S_n = \\displaystyle\\sum_{k=1}^n \\frac{1}{k^2}$.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that take $a$ and $b$ as parameters and returns the sum of $a^{th}$ to $b^{th}$ members of the sequence.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 142,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

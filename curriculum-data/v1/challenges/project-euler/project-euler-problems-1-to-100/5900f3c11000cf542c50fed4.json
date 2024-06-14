@@ -1,0 +1,85 @@
+{
+  "id": "5900f3c11000cf542c50fed4",
+  "title": "Problem 85: Counting rectangles",
+  "challengeType": 1,
+  "forumTopicId": 302199,
+  "dashedName": "problem-85-counting-rectangles",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function countingRectangles(n) {\n\n  return true;\n}\n\ncountingRectangles(18);",
+      "error": null,
+      "seed": "function countingRectangles(n) {\n\n  return true;\n}\n\ncountingRectangles(18);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function countingRectangles(n) {\n  function numberOfRectangles(h, w) {\n    return (h * (h + 1) * w * (w + 1)) / 4;\n  }\n\n  function rectangleArea(h, w) {\n    return h * w;\n  }\n\n  let rectanglesCount = 1;\n  let maxSide = 1;\n  while (rectanglesCount < n) {\n    maxSide++;\n    rectanglesCount = numberOfRectangles(maxSide, 1);\n  }\n\n  let bestDiff = Math.abs(rectanglesCount - n);\n  let bestSize = [maxSide, 1];\n\n  let curHeight = maxSide - 1;\n  let curWidth = 1;\n\n  for (curWidth; curWidth < curHeight; curWidth++) {\n    for (curHeight; curHeight > curWidth; curHeight--) {\n      rectanglesCount = numberOfRectangles(curHeight, curWidth);\n      const curDiff = Math.abs(rectanglesCount - n);\n      if (curDiff < bestDiff) {\n        bestDiff = curDiff;\n        bestSize = [curHeight, curWidth];\n      }\n\n      if (rectanglesCount < n) {\n        break;\n      }\n    }\n  }\n  return rectangleArea(...bestSize);\n}",
+        "error": null,
+        "seed": "function countingRectangles(n) {\n  function numberOfRectangles(h, w) {\n    return (h * (h + 1) * w * (w + 1)) / 4;\n  }\n\n  function rectangleArea(h, w) {\n    return h * w;\n  }\n\n  let rectanglesCount = 1;\n  let maxSide = 1;\n  while (rectanglesCount < n) {\n    maxSide++;\n    rectanglesCount = numberOfRectangles(maxSide, 1);\n  }\n\n  let bestDiff = Math.abs(rectanglesCount - n);\n  let bestSize = [maxSide, 1];\n\n  let curHeight = maxSide - 1;\n  let curWidth = 1;\n\n  for (curWidth; curWidth < curHeight; curWidth++) {\n    for (curHeight; curHeight > curWidth; curHeight--) {\n      rectanglesCount = numberOfRectangles(curHeight, curWidth);\n      const curDiff = Math.abs(rectanglesCount - n);\n      if (curDiff < bestDiff) {\n        bestDiff = curDiff;\n        bestSize = [curHeight, curWidth];\n      }\n\n      if (rectanglesCount < n) {\n        break;\n      }\n    }\n  }\n  return rectangleArea(...bestSize);\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>countingRectangles(18)</code> should return a number.</p>",
+      "testString": "assert(typeof countingRectangles(18) === 'number');"
+    },
+    {
+      "text": "<p><code>countingRectangles(18)</code> should return <code>6</code>.</p>",
+      "testString": "assert.strictEqual(countingRectangles(18), 6);"
+    },
+    {
+      "text": "<p><code>countingRectangles(250)</code> should return <code>22</code>.</p>",
+      "testString": "assert.strictEqual(countingRectangles(250), 22);"
+    },
+    {
+      "text": "<p><code>countingRectangles(50000)</code> should return <code>364</code>.</p>",
+      "testString": "assert.strictEqual(countingRectangles(50000), 364);"
+    },
+    {
+      "text": "<p><code>countingRectangles(1000000)</code> should return <code>1632</code>.</p>",
+      "testString": "assert.strictEqual(countingRectangles(1000000), 1632);"
+    },
+    {
+      "text": "<p><code>countingRectangles(2000000)</code> should return <code>2772</code>.</p>",
+      "testString": "assert.strictEqual(countingRectangles(2000000), 2772);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>By counting carefully it can be seen that a rectangular grid measuring 3 by 2 contains eighteen rectangles:</p>\n<img class=\"img-responsive center-block\" alt=\"a diagram of the different rectangles found within a 3 by 2 rectangular grid\" src=\"https://cdn-media-1.freecodecamp.org/project-euler/counting-rectangles.png\" style=\"background-color: white; padding: 10px;\">\n<p>Although there may not exists a rectangular grid that contains exactly <code>n</code> rectangles, find the area of the grid with the nearest solution.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 84,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

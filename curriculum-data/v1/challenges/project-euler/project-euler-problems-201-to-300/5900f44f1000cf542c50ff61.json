@@ -1,0 +1,65 @@
+{
+  "id": "5900f44f1000cf542c50ff61",
+  "title": "Problem 227: The Chase",
+  "challengeType": 1,
+  "forumTopicId": 301870,
+  "dashedName": "problem-227-the-chase",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function theChase() {\n\n  return true;\n}\n\ntheChase();",
+      "error": null,
+      "seed": "function theChase() {\n\n  return true;\n}\n\ntheChase();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>theChase()</code> should return <code>3780.618622</code>.</p>",
+      "testString": "assert.strictEqual(theChase(), 3780.618622);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>\"The Chase\" is a game played with two dice and an even number of players.</p>\n<p>The players sit around a table; the game begins with two opposite players having one die each. On each turn, the two players with a die roll it.</p>\n<p>If the player rolls a 1, he passes the die to his neighbour on the left.</p>\n<p>If the player rolls a 6, he passes the die to his neighbour on the right.</p>\n<p>Otherwise, he keeps the die for the next turn.</p>\n<p>The game ends when one player has both dice after they have been rolled and passed; that player has then lost.</p>\n<p>In a game with 100 players, what is the expected number of turns the game lasts? Give your answer rounded to ten significant digits.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

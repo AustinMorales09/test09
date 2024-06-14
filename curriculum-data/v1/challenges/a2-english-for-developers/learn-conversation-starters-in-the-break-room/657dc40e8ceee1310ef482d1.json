@@ -1,0 +1,88 @@
+{
+  "id": "657dc40e8ceee1310ef482d1",
+  "title": "Task 91",
+  "challengeType": 19,
+  "dashedName": "task-91",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>Maria prepares the agenda in advance</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>Maria makes the agenda during the meeting.</p>",
+        "feedback": "<p><code>In advance</code> means to do something ahead of time, not during.</p>"
+      },
+      {
+        "answer": "<p>Maria thinks about the agenda but doesn't write it down.</p>",
+        "feedback": "<p><code>Prepares</code> means to actually create or put together, not just think about.</p>"
+      },
+      {
+        "answer": "<p>Maria gets the agenda ready before the meeting happens.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Maria forgets to make the agenda.</p>",
+        "feedback": "<p>Preparing in advance is the opposite of forgetting; it shows Maria is responsible.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 28.18,
+        "finishTimestamp": 30.48
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.3,
+        "dialogue": {
+          "text": "Maria prepares the agenda in advance.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To prepare in advance</code> means to get something ready before the time it is needed. This helps meetings to go smoothly because everyone knows what will be discussed.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 94,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

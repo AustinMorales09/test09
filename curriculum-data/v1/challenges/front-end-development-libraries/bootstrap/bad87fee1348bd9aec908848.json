@@ -1,0 +1,77 @@
+{
+  "id": "bad87fee1348bd9aec908848",
+  "title": "Create Bootstrap Wells",
+  "challengeType": 0,
+  "forumTopicId": 16825,
+  "dashedName": "create-bootstrap-wells",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n\n    </div>\n    <div class=\"col-xs-6\">\n\n    </div>\n  </div>\n</div>",
+      "error": null,
+      "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n\n    </div>\n    <div class=\"col-xs-6\">\n\n    </div>\n  </div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\"></div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\"></div>\n    </div>\n  </div>\n</div>",
+        "error": null,
+        "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\"></div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\"></div>\n    </div>\n  </div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add a <code>div</code> element with the class <code>well</code> inside each of your <code>div</code> elements with the class <code>col-xs-6</code></p>",
+      "testString": "assert($('div.col-xs-6').not(':has(>div.well)').length < 1);"
+    },
+    {
+      "text": "<p>Both of your <code>div</code> elements with the class <code>col-xs-6</code> should be nested within your <code>div</code> element with the class <code>row</code>.</p>",
+      "testString": "assert($('div.row > div.col-xs-6').length > 1);"
+    },
+    {
+      "text": "<p>All your <code>div</code> elements should have closing tags.</p>",
+      "testString": "assert(\n  code.match(/<\\/div>/g) &&\n    code.match(/<div/g) &&\n    code.match(/<\\/div>/g).length === code.match(/<div/g).length\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Bootstrap has a class called <code>well</code> that can create a visual sense of depth for your columns.</p>\n<p>Nest one <code>div</code> element with the class <code>well</code> within each of your <code>col-xs-6</code> <code>div</code> elements.</p>\n</section>",
+  "translationPending": false,
+  "block": "bootstrap",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 22,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

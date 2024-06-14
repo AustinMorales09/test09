@@ -1,0 +1,49 @@
+{
+  "id": "657dadf4d8b93c1704f3a57c",
+  "title": "Step 66",
+  "challengeType": 20,
+  "dashedName": "step-66",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        37,
+        40
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n   \n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, r'\\d'),\n            (special_chars, fr'[{symbols}]'),\n            (uppercase, r'[A-Z]'),\n            (lowercase, r'[a-z]')\n        ]\n\n        # Check constraints        \n        if all(\n            constraint <= len(re.findall(pattern, password))\n            for constraint, pattern in constraints\n        ):\n            break\n    \n    return password\n    \nnew_password = generate_password(8, 1, 1, 1, 1)\nprint(new_password)",
+      "error": null,
+      "seed": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n   \n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, r'\\d'),\n            (special_chars, fr'[{symbols}]'),\n            (uppercase, r'[A-Z]'),\n            (lowercase, r'[a-z]')\n        ]\n\n        # Check constraints        \n        if all(\n            constraint <= len(re.findall(pattern, password))\n            for constraint, pattern in constraints\n        ):\n            break\n    \n    return password\n    \nnew_password = generate_password(8, 1, 1, 1, 1)\nprint(new_password)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>new_password</code> variable should have the value of <code>generate_password(length=8, nums=1, special_chars=1, uppercase=1, lowercase=1)</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /^new_password\\s*=\\s*generate_password\\s*\\(\\s*length\\s*=\\s*8\\s*,\\s*nums\\s*=\\s*1\\s*,\\s*special_chars\\s*=\\s*1\\s*,\\s*uppercase\\s*=\\s*1\\s*,\\s*lowercase\\s*=\\s*1\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>It works, but there are still a couple of things you can improve. First of all, calling a function with 5 arguments can create confusion on which value will be assigned to which parameter.</p>\n<p>You can call a function using keyword arguments, that is writing the parameter name explicitly followed by the assignment operator and the value. For example:</p>\n<pre><code class=\"language-py\">def add(x, y):\n    return x + y\n\nadd(x=1, y=7) # 8\n</code></pre>\n<p>Modify your function call to use keyword arguments.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 65,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

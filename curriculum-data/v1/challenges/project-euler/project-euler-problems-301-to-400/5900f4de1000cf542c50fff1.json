@@ -1,0 +1,65 @@
+{
+  "id": "5900f4de1000cf542c50fff1",
+  "title": "Problem 370: Geometric triangles",
+  "challengeType": 1,
+  "forumTopicId": 302032,
+  "dashedName": "problem-370-geometric-triangles",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function geometricTriangles() {\n\n  return true;\n}\n\ngeometricTriangles();",
+      "error": null,
+      "seed": "function geometricTriangles() {\n\n  return true;\n}\n\ngeometricTriangles();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>geometricTriangles()</code> should return <code>41791929448408</code>.</p>",
+      "testString": "assert.strictEqual(geometricTriangles(), 41791929448408);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let us define a geometric triangle as an integer sided triangle with sides $a ≤ b ≤ c$ so that its sides form a geometric progression, i.e. $b^2 = a \\times c$.</p>\n<p>An example of such a geometric triangle is the triangle with sides $a = 144$, $b = 156$ and $c = 169$.</p>\n<p>There are $861\\,805$ geometric triangles with $\\text{perimeter} ≤ {10}^6$.</p>\n<p>How many geometric triangles exist with $\\text{perimeter} ≤ 2.5 \\times {10}^{13}$?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 69,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

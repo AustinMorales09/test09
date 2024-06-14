@@ -1,0 +1,83 @@
+{
+  "id": "6579e153639adb43c017f3d3",
+  "title": "Task 55",
+  "challengeType": 22,
+  "dashedName": "task-55",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Yeah, consistency is essential. I'll go _ and start with _ those _ standards.</p>",
+    "blanks": [
+      {
+        "answer": "ahead",
+        "feedback": "<p>It means Sophie is ready to initiate the task of defining standards.</p>"
+      },
+      {
+        "answer": "defining",
+        "feedback": "<p>It refers to the process of establishing clear guidelines or rules.</p>"
+      },
+      {
+        "answer": "coding",
+        "feedback": "<p>Such standards refer to the specific rules or guidelines for writing code.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 29.14,
+        "finishTimestamp": 34.08
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.94,
+        "dialogue": {
+          "text": "Yeah, consistency is essential. I'll go ahead and start with defining those coding standards.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 6.44
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Go ahead</code> is a phrase used to indicate starting or proceeding with an action. It shows initiative and readiness to begin. For instance, <code>I'll go ahead and prepare the report</code> means the person is ready to start working on the report without delay.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 57,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

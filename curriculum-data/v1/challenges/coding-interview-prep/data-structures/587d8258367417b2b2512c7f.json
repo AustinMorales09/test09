@@ -1,0 +1,90 @@
+{
+  "id": "587d8258367417b2b2512c7f",
+  "title": "Use Breadth First Search in a Binary Search Tree",
+  "challengeType": 1,
+  "forumTopicId": 301718,
+  "dashedName": "use-breadth-first-search-in-a-binary-search-tree",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "BinarySearchTree.prototype = Object.assign(\n  BinarySearchTree.prototype,\n  {\n    add: function(value) {\n      function searchTree(node) {\n        if (value < node.value) {\n          if (node.left == null) {\n            node.left = new Node(value);\n            return;\n          } else if (node.left != null) {\n            return searchTree(node.left);\n          }\n        } else if (value > node.value) {\n          if (node.right == null) {\n            node.right = new Node(value);\n            return;\n          } else if (node.right != null) {\n            return searchTree(node.right);\n          }\n        } else {\n          return null;\n        }\n      }\n      var node = this.root;\n      if (node == null) {\n        this.root = new Node(value);\n        return;\n      } else {\n        return searchTree(node);\n      }\n    }\n  }\n);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "var displayTree = tree => console.log(JSON.stringify(tree, null, 2));\nfunction Node(value) {\n  this.value = value;\n  this.left = null;\n  this.right = null;\n}\nfunction BinarySearchTree() {\n  this.root = null;\n  // Only change code below this line\n  \n  // Only change code above this line\n}",
+      "error": null,
+      "seed": "var displayTree = tree => console.log(JSON.stringify(tree, null, 2));\nfunction Node(value) {\n  this.value = value;\n  this.left = null;\n  this.right = null;\n}\nfunction BinarySearchTree() {\n  this.root = null;\n  // Only change code below this line\n  \n  // Only change code above this line\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "var displayTree = tree => console.log(JSON.stringify(tree, null, 2));\nfunction Node(value) {\n  this.value = value;\n  this.left = null;\n  this.right = null;\n}\nfunction BinarySearchTree() {\n  this.root = null;\n  // Only change code below this line\n  this.levelOrder = (root = this.root) => {\n    if(!root) return null;\n    let queue = [root];\n    let results = [];\n    while(queue.length > 0) {\n      let node = queue.shift();\n      results.push(node.value);\n      if(node.left) queue.push(node.left);\n      if(node.right) queue.push(node.right);\n    }\n    return results;\n  }\n\n  this.reverseLevelOrder = (root = this.root) => {\n    if(!root) return null;\n    let queue = [root];\n    let results = [] ;\n    while ( queue.length > 0) {\n      let node = queue.shift();\n      results.push(node.value);\n      if(node.right) queue.push(node.right);\n      if(node.left ) queue.push(node.left);\n    }\n    return results;\n  }\n  // Only change code above this line\n}",
+        "error": null,
+        "seed": "var displayTree = tree => console.log(JSON.stringify(tree, null, 2));\nfunction Node(value) {\n  this.value = value;\n  this.left = null;\n  this.right = null;\n}\nfunction BinarySearchTree() {\n  this.root = null;\n  // Only change code below this line\n  this.levelOrder = (root = this.root) => {\n    if(!root) return null;\n    let queue = [root];\n    let results = [];\n    while(queue.length > 0) {\n      let node = queue.shift();\n      results.push(node.value);\n      if(node.left) queue.push(node.left);\n      if(node.right) queue.push(node.right);\n    }\n    return results;\n  }\n\n  this.reverseLevelOrder = (root = this.root) => {\n    if(!root) return null;\n    let queue = [root];\n    let results = [] ;\n    while ( queue.length > 0) {\n      let node = queue.shift();\n      results.push(node.value);\n      if(node.right) queue.push(node.right);\n      if(node.left ) queue.push(node.left);\n    }\n    return results;\n  }\n  // Only change code above this line\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>BinarySearchTree</code> data structure should exist.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof BinarySearchTree !== 'undefined') {\n      test = new BinarySearchTree();\n    }\n    return typeof test == 'object';\n  })()\n);"
+    },
+    {
+      "text": "<p>The binary search tree should have a method called <code>levelOrder</code>.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof BinarySearchTree !== 'undefined') {\n      test = new BinarySearchTree();\n    } else {\n      return false;\n    }\n    return typeof test.levelOrder == 'function';\n  })()\n);"
+    },
+    {
+      "text": "<p>The binary search tree should have a method called <code>reverseLevelOrder</code>.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof BinarySearchTree !== 'undefined') {\n      test = new BinarySearchTree();\n    } else {\n      return false;\n    }\n    return typeof test.reverseLevelOrder == 'function';\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>levelOrder</code> method should return an array of the tree node values explored in level order.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof BinarySearchTree !== 'undefined') {\n      test = new BinarySearchTree();\n    } else {\n      return false;\n    }\n    if (typeof test.levelOrder !== 'function') {\n      return false;\n    }\n    test.add(7);\n    test.add(1);\n    test.add(9);\n    test.add(0);\n    test.add(3);\n    test.add(8);\n    test.add(10);\n    test.add(2);\n    test.add(5);\n    test.add(4);\n    test.add(6);\n    return test.levelOrder().join('') == '719038102546';\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>reverseLevelOrder</code> method should return an array of the tree node values explored in reverse level order.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof BinarySearchTree !== 'undefined') {\n      test = new BinarySearchTree();\n    } else {\n      return false;\n    }\n    if (typeof test.reverseLevelOrder !== 'function') {\n      return false;\n    }\n    test.add(7);\n    test.add(1);\n    test.add(9);\n    test.add(0);\n    test.add(3);\n    test.add(8);\n    test.add(10);\n    test.add(2);\n    test.add(5);\n    test.add(4);\n    test.add(6);\n    return test.reverseLevelOrder().join('') == '791108305264';\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>levelOrder</code> method should return <code>null</code> for an empty tree.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof BinarySearchTree !== 'undefined') {\n      test = new BinarySearchTree();\n    } else {\n      return false;\n    }\n    if (typeof test.levelOrder !== 'function') {\n      return false;\n    }\n    return test.levelOrder() == null;\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>reverseLevelOrder</code> method should return <code>null</code> for an empty tree.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof BinarySearchTree !== 'undefined') {\n      test = new BinarySearchTree();\n    } else {\n      return false;\n    }\n    if (typeof test.reverseLevelOrder !== 'function') {\n      return false;\n    }\n    return test.reverseLevelOrder() == null;\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Here we will introduce another tree traversal method: breadth-first search. In contrast to the depth-first search methods from the last challenge, breadth-first search explores all the nodes in a given level within a tree before continuing on to the next level. Typically, queues are utilized as helper data structures in the design of breadth-first search algorithms.</p>\n<p>In this method, we start by adding the root node to a queue. Then we begin a loop where we dequeue the first item in the queue, add it to a new array, and then inspect both its child subtrees. If its children are not null, they are each enqueued. This process continues until the queue is empty.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Let's create a breadth-first search method in our tree called <code>levelOrder</code>. This method should return an array containing the values of all the tree nodes, explored in a breadth-first manner. Be sure to return the values in the array, not the nodes themselves. A level should be traversed from left to right. Next, let's write a similar method called <code>reverseLevelOrder</code> which performs the same search but in the reverse direction (right to left) at each level.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-structures",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 32,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

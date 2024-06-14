@@ -1,0 +1,73 @@
+{
+  "id": "5900f3701000cf542c50fe83",
+  "title": "Problem 4: Largest palindrome product",
+  "challengeType": 1,
+  "forumTopicId": 302065,
+  "dashedName": "problem-4-largest-palindrome-product",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function largestPalindromeProduct(n) {\n\n  return true;\n}\n\nlargestPalindromeProduct(3);",
+      "error": null,
+      "seed": "function largestPalindromeProduct(n) {\n\n  return true;\n}\n\nlargestPalindromeProduct(3);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const largestPalindromeProduct = (digit)=>{\n  let start = 1;\n  let end = Number(`1e${digit}`) - 1;\n let palindrome = [];\n  for(let i=start;i<=end;i++){\n    for(let j=start;j<=end;j++){\n      let product = i*j;\n      let palindromeRegex = /\\b(\\d)(\\d?)(\\d?).?\\3\\2\\1\\b/gi;\n      palindromeRegex.test(product) && palindrome.push(product);\n    }\n }\n return Math.max(...palindrome);\n}",
+        "error": null,
+        "seed": "const largestPalindromeProduct = (digit)=>{\n  let start = 1;\n  let end = Number(`1e${digit}`) - 1;\n let palindrome = [];\n  for(let i=start;i<=end;i++){\n    for(let j=start;j<=end;j++){\n      let product = i*j;\n      let palindromeRegex = /\\b(\\d)(\\d?)(\\d?).?\\3\\2\\1\\b/gi;\n      palindromeRegex.test(product) && palindrome.push(product);\n    }\n }\n return Math.max(...palindrome);\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>largestPalindromeProduct(2)</code> should return a number.</p>",
+      "testString": "assert(typeof largestPalindromeProduct(2) === 'number');"
+    },
+    {
+      "text": "<p><code>largestPalindromeProduct(2)</code> should return 9009.</p>",
+      "testString": "assert.strictEqual(largestPalindromeProduct(2), 9009);"
+    },
+    {
+      "text": "<p><code>largestPalindromeProduct(3)</code> should return 906609.</p>",
+      "testString": "assert.strictEqual(largestPalindromeProduct(3), 906609);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.</p>\n<p>Find the largest palindrome made from the product of two <code>n</code>-digit numbers.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

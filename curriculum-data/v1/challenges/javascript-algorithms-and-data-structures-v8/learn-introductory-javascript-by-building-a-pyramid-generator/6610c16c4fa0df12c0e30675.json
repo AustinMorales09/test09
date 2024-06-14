@@ -1,0 +1,57 @@
+{
+  "id": "6610c16c4fa0df12c0e30675",
+  "title": "Step 48",
+  "challengeType": 1,
+  "dashedName": "step-48",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        9
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow() {\n\n}\npadRow();\n\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow() {\n\n}\npadRow();\n\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a <code>call</code> variable.</p>",
+      "testString": "assert.match(code, /(const|let)\\s+call/);"
+    },
+    {
+      "text": "<p>You should use <code>const</code> to declare your <code>call</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+call/);"
+    },
+    {
+      "text": "<p>You should assign <code>call</code> the result of your <code>padRow</code> call.</p>",
+      "testString": "assert.match(code, /const\\s+call\\s*=\\s*padRow\\(\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You are calling your <code>padRow</code> function, but not doing anything with that function call. All functions in JavaScript <dfn>return</dfn> a value, meaning they provide the defined result of calling them for you to use elsewhere.</p>\n<p>To see the result of calling your <code>padRow</code> function, declare a <code>call</code> variable and assign your existing <code>padRow</code> call to that variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 47,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

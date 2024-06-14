@@ -1,0 +1,73 @@
+{
+  "id": "5f3cade9993019e26313fa8e",
+  "title": "Step 42",
+  "challengeType": 0,
+  "dashedName": "step-42",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        18,
+        35
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article class=\"item\">\n            <p class=\"flavor\">French Vanilla</p><p class=\"price\">3.00</p>\n          </article>\n          <article>\n            <p>Caramel Macchiato</p>\n            <p>3.75</p>\n          </article>\n          <article>\n            <p>Pumpkin Spice</p>\n            <p>3.50</p>\n          </article>\n          <article>\n            <p>Hazelnut</p>\n            <p>4.00</p>\n          </article>\n          <article>\n            <p>Mocha</p>\n            <p>4.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article class=\"item\">\n            <p class=\"flavor\">French Vanilla</p><p class=\"price\">3.00</p>\n          </article>\n          <article>\n            <p>Caramel Macchiato</p>\n            <p>3.75</p>\n          </article>\n          <article>\n            <p>Pumpkin Spice</p>\n            <p>3.50</p>\n          </article>\n          <article>\n            <p>Hazelnut</p>\n            <p>4.00</p>\n          </article>\n          <article>\n            <p>Mocha</p>\n            <p>4.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.item p {\n  display: inline-block;\n}\n\n.flavor {\n  text-align: left;\n  width: 50%;\n}\n\n.price {\n  text-align: right;\n  width: 50%;\n}",
+      "error": null,
+      "seed": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.item p {\n  display: inline-block;\n}\n\n.flavor {\n  text-align: left;\n  width: 50%;\n}\n\n.price {\n  text-align: right;\n  width: 50%;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should only have five <code>article</code> elements.</p>",
+      "testString": "assert($('article').length === 5);"
+    },
+    {
+      "text": "<p>You should only have five <code>.item</code> elements.</p>",
+      "testString": "assert($('.item').length === 5);"
+    },
+    {
+      "text": "<p>Your <code>.item</code> elements should be your <code>article</code> elements.</p>",
+      "testString": "const articles = $('article');\nconst items = $('.item');\nassert(articles[0] === items[0]);\nassert(articles[1] === items[1]);\nassert(articles[2] === items[2]);\nassert(articles[3] === items[3]);\nassert(articles[4] === items[4]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you know it works, you can change the remaining <code>article</code> and <code>p</code> elements to match the first set. Start by adding the class <code>item</code> to the other <code>article</code> elements.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 41,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

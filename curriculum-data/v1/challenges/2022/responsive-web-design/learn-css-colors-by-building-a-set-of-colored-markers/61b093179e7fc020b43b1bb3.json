@@ -1,0 +1,65 @@
+{
+  "id": "61b093179e7fc020b43b1bb3",
+  "title": "Step 73",
+  "challengeType": 0,
+  "dashedName": "step-73",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker red\">\n        <div class=\"sleeve\"></div>\n      </div>\n      <div class=\"marker green\">\n      </div>\n      <div class=\"marker blue\">\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker red\">\n        <div class=\"sleeve\"></div>\n      </div>\n      <div class=\"marker green\">\n      </div>\n      <div class=\"marker blue\">\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        15,
+        21
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1 {\n  text-align: center;\n}\n\n.container {\n  background-color: rgb(255, 255, 255);\n  padding: 10px 0;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.sleeve {\n  width: 110px;\n  height: 25px;\n  background-color: white;\n}\n\n.red {\n  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));\n}\n\n.green {\n  background: linear-gradient(#55680D, #71F53E, #116C31);\n}\n\n.blue {\n  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));\n}\n",
+      "error": null,
+      "seed": "h1 {\n  text-align: center;\n}\n\n.container {\n  background-color: rgb(255, 255, 255);\n  padding: 10px 0;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.sleeve {\n  width: 110px;\n  height: 25px;\n  background-color: white;\n}\n\n.red {\n  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));\n}\n\n.green {\n  background: linear-gradient(#55680D, #71F53E, #116C31);\n}\n\n.blue {\n  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>.sleeve</code> CSS rule should have an <code>opacity</code> property set to <code>0.5</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.sleeve')?.opacity === '0.5');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><dfn>Opacity</dfn> describes how opaque, or non-transparent, something is. For example, a solid wall is opaque, and no light can pass through. But a drinking glass is much more transparent, and you can see through the glass to the other side.</p>\n<p>With the CSS <code>opacity</code> property, you can control how opaque or transparent an element is. With the value <code>0</code>, or 0%, the element will be completely transparent, and at <code>1.0</code>, or 100%, the element will be completely opaque like it is by default.</p>\n<p>In the <code>.sleeve</code> CSS rule, set the <code>opacity</code> property to <code>0.5</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 72,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

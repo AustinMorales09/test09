@@ -1,0 +1,95 @@
+{
+  "id": "662a35f7eaaa932ab0973d0c",
+  "title": "Task 21",
+  "challengeType": 22,
+  "dashedName": "task-21",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I've learned about _, _ _, and even _ _ in _ languages.</p>",
+    "blanks": [
+      {
+        "answer": "variables",
+        "feedback": "<p>It refers to names in code storing values that can change during program execution.</p>"
+      },
+      {
+        "answer": "data",
+        "feedback": "<p>It refers to the information or values that are used and processed by a computer program.</p>"
+      },
+      {
+        "answer": "types",
+        "feedback": "<p>They are the various categories or kinds of data that a programming language can recognize and handle.</p>"
+      },
+      {
+        "answer": "conditional",
+        "feedback": "<p>This adjective describes a type of programming statement that depends on a specific condition being met.</p>"
+      },
+      {
+        "answer": "statements",
+        "feedback": "<p>They are the individual commands or lines of code that a computer program executes.</p>"
+      },
+      {
+        "answer": "many",
+        "feedback": "<p>This word is used to indicate a large number of something, usually with countable nouns.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 15.04,
+        "finishTimestamp": 19.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.88,
+        "dialogue": {
+          "text": "I've learned about variables, data types, and even conditional statements in many languages.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 6.38
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Learn <code>variables</code>, <code>data types</code> and <code>conditional statements</code> in programming.</p>\n<p>A <code>variable</code> is like a box where you can store information. This information can be numbers, text, or other types of data. You can change what's in the box, which is why it's called a <code>variable</code> – because it can vary. For example, in <code>x = 5</code>, <code>x</code> temporarily holds the value 5.</p>\n<p>A <code>data type</code> is a classification that specifies the type of data that a <code>variable</code> can hold. Common <code>data types</code> include integers (whole numbers), floats (numbers with a decimal), strings (text), and booleans (true or false). For example, if <code>age = 21</code>, the <code>data type</code> is an integer.</p>\n<p>A <code>conditional statement</code> is a command that tells the computer to do something only if a specific condition is true. It's like making a decision in real life based on a certain situation. Common <code>conditional statements</code> are <code>if-else</code> statements. For example, <code>if (temperature > 20) {console.log(\"It's warm outside!\");}</code> is a <code>conditional statement</code> that executes <code>{console.log(\"It's warm outside!\")</code> if the temperature is above 20 degrees.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "65a35340e8c3ae32030cea01",
+  "title": "Task 71",
+  "challengeType": 22,
+  "dashedName": "task-71",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>One of my main motivations _ the financial stability that tech jobs can _.</p>",
+    "blanks": [
+      {
+        "answer": "was",
+        "feedback": "<p>This word is a past tense verb used to describe a state or condition in the past.</p>"
+      },
+      {
+        "answer": "provide",
+        "feedback": "<p>This verb means to give or supply something needed, like help, information, or resources.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Lisa",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.82,
+        "finishTimestamp": 9.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Lisa",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Lisa",
+        "startTime": 1,
+        "finishTime": 5.2,
+        "dialogue": {
+          "text": "One of my main motivations was the financial stability that tech jobs can provide.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "opacity": 0,
+        "startTime": 5.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To provide</code> means to give something needed or useful. For example, a good website might <code>provide</code> information, or a software program might <code>provide</code> tools to help you work better.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 73,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

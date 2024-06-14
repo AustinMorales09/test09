@@ -1,0 +1,42 @@
+{
+  "id": "63ee352b0d8d4841c3a7091c",
+  "videoId": "LGQuIIv2RVA",
+  "title": "CSS Foundations Question C",
+  "challengeType": 15,
+  "dashedName": "css-foundations-question-c",
+  "solutions": [],
+  "question": {
+    "text": "<p>How would you apply a single rule to two different selectors, <code>.red-box</code> and <code>.yellow-box</code>?</p>",
+    "answers": [
+      {
+        "answer": "<pre><code class=\"language-css\">.red-box,\n.yellow-box {\n  width: 25px;\n  height: 25px;\n}\n</code></pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre><code class=\"language-css\">.red-box {\n  width: 25px;\n  height: 25px;\n}\n\n.yellow-box {\n  width: 25px;\n  height: 25px;\n}\n</code></pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre><code class=\"language-css\">.red-box { \n  width: 25px;\n  .yellow-box {\n    height: 25px;\n  }\n}\n</code></pre>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>What if you have two groups of elements that share some of their style declarations?</p>\n<pre><code class=\"language-css\">.read {\n  color: white;\n  background-color: black;\n  /* several unique declarations */\n}\n\n.unread {\n  color: white;\n  background-color: black;\n  /* several unique declarations */\n}\n</code></pre>\n<p>Both our <code>.read</code> and <code>.unread</code> selectors share the <code>color: white;</code> and <code>background-color: black;</code> declarations, but otherwise have several of their own unique declarations. To cut down on the repetition, you can group these two selectors together as a comma-separated list:</p>\n<pre><code class=\"language-css\">.read,\n.unread {\n  color: white;\n  background-color: black;\n}\n\n.read {\n  /* several unique declarations */\n}\n\n.unread {\n  /* several unique declarations */\n}\n</code></pre>\n<p>Both of the examples above (with and without grouping) will have the same result, but the second example reduces the repetition of declarations and makes it easier to edit either the <code>color</code> or <code>background-color</code> for both classes at once.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-css-foundations",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

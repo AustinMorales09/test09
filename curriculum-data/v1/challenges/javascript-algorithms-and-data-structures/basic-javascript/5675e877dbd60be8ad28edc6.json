@@ -1,0 +1,79 @@
+{
+  "id": "5675e877dbd60be8ad28edc6",
+  "title": "Iterate Through an Array with a For Loop",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/caeR3HB",
+  "forumTopicId": 18216,
+  "dashedName": "iterate-through-an-array-with-a-for-loop",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(){if(typeof total !== 'undefined') { return \"total = \" + total; } else { return \"total is undefined\";}})()",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Setup\nconst myArr = [2, 3, 4, 5, 6];\n\n// Only change code below this line\n",
+      "error": null,
+      "seed": "// Setup\nconst myArr = [2, 3, 4, 5, 6];\n\n// Only change code below this line\n"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const myArr = [2, 3, 4, 5, 6];\nlet total = 0;\n\nfor (let i = 0; i < myArr.length; i++) {\n  total += myArr[i];\n}",
+        "error": null,
+        "seed": "const myArr = [2, 3, 4, 5, 6];\nlet total = 0;\n\nfor (let i = 0; i < myArr.length; i++) {\n  total += myArr[i];\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>total</code> should be declared and initialized to 0.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/(var|let|const)\\s*?total\\s*=\\s*0.*?;?/));"
+    },
+    {
+      "text": "<p><code>total</code> should equal 20.</p>",
+      "testString": "assert(total === 20);"
+    },
+    {
+      "text": "<p>You should use a <code>for</code> loop to iterate through <code>myArr</code>.</p>",
+      "testString": "assert(/for\\s*\\(/g.test(__helpers.removeJSComments(code)) && /myArr\\s*\\[/g.test(__helpers.removeJSComments(code)));"
+    },
+    {
+      "text": "<p>You should not attempt to directly assign the value 20 to <code>total</code>.</p>",
+      "testString": "assert(!__helpers.removeWhiteSpace(__helpers.removeJSComments(code)).match(/total[=+-]0*[1-9]+/gm));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A common task in JavaScript is to iterate through the contents of an array. One way to do that is with a <code>for</code> loop. This code will output each element of the array <code>arr</code> to the console:</p>\n<pre><code class=\"language-js\">const arr = [10, 9, 8, 7, 6];\n\nfor (let i = 0; i &#x3C; arr.length; i++) {\n   console.log(arr[i]);\n}\n</code></pre>\n<p>Remember that arrays have zero-based indexing, which means the last index of the array is <code>length - 1</code>. Our condition for this loop is <code>i &#x3C; arr.length</code>, which stops the loop when <code>i</code> is equal to <code>length</code>. In this case the last iteration is <code>i === 4</code> i.e. when <code>i</code> becomes equal to <code>arr.length - 1</code> and outputs <code>6</code> to the console. Then <code>i</code> increases to <code>5</code>, and the loop terminates because <code>i &#x3C; arr.length</code> is <code>false</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Declare and initialize a variable <code>total</code> to <code>0</code>. Use a <code>for</code> loop to add the value of each element of the <code>myArr</code> array to <code>total</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 99,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

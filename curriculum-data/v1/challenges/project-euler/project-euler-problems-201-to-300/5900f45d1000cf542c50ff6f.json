@@ -1,0 +1,65 @@
+{
+  "id": "5900f45d1000cf542c50ff6f",
+  "title": "Problem 240: Top Dice",
+  "challengeType": 1,
+  "forumTopicId": 301887,
+  "dashedName": "problem-240-top-dice",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function topDice() {\n\n  return true;\n}\n\ntopDice();",
+      "error": null,
+      "seed": "function topDice() {\n\n  return true;\n}\n\ntopDice();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>topDice()</code> should return <code>7448717393364182000</code>.</p>",
+      "testString": "assert.strictEqual(topDice(), 7448717393364182000);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>There are 1111 ways in which five 6-sided dice (sides numbered 1 to 6) can be rolled so that the top three sum to 15. Some examples are:</p>\n<p>$$\\begin{align}\n&#x26; D_1,D_2,D_3,D_4,D_5 = 4,3,6,3,5 \\\\\n&#x26; D_1,D_2,D_3,D_4,D_5 = 4,3,3,5,6 \\\\\n&#x26; D_1,D_2,D_3,D_4,D_5 = 3,3,3,6,6 \\\\\n&#x26; D_1,D_2,D_3,D_4,D_5 = 6,6,3,3,3\n\\end{align}$$</p>\n<p>In how many ways can twenty 12-sided dice (sides numbered 1 to 12) be rolled so that the top ten sum to 70?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 39,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

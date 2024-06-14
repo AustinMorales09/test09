@@ -1,0 +1,88 @@
+{
+  "id": "655a54506b259313b2d59577",
+  "title": "Task 58",
+  "challengeType": 19,
+  "dashedName": "task-58",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the cause and consequence of the expert’s advice?</p>",
+    "answers": [
+      {
+        "answer": "<p>Feeling relaxed at the end of the day causes a more productive day</p>",
+        "feedback": "<p>The condition is about starting the day feeling relaxed, not ending it.</p>"
+      },
+      {
+        "answer": "<p>Starting the day relaxed can lead to a more productive day</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Being productive in the morning causes relaxation during the day</p>",
+        "feedback": "<p>The advice suggests that relaxation leads to productivity, not the other way around.</p>"
+      },
+      {
+        "answer": "<p>Rushing in the morning leads to relaxation later</p>",
+        "feedback": "<p>The focus is on the benefit of starting the day relaxed.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room1.png",
+      "characters": [
+        {
+          "character": "Expert",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 67.38,
+        "finishTimestamp": 71.8
+      }
+    },
+    "commands": [
+      {
+        "character": "Expert",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Expert",
+        "startTime": 1,
+        "finishTime": 5.42,
+        "dialogue": {
+          "text": "If you start the day feeling relaxed, you may have a more productive day.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "opacity": 0,
+        "startTime": 5.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Conditional sentences often use <code>if</code> to describe a situation (cause) that will lead to a particular result (consequence). They typically consist of two parts: the <code>if</code> clause (condition) and the main clause (result). For example:</p>\n<p><code>If you sleep well, you will feel refreshed.</code> (condition: sleeping well; result: feeling refreshed)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 59,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

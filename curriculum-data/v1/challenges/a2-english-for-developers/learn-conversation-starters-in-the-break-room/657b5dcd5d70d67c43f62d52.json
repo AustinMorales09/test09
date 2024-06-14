@@ -1,0 +1,45 @@
+{
+  "id": "657b5dcd5d70d67c43f62d52",
+  "title": "Task 22",
+  "challengeType": 19,
+  "dashedName": "task-22",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Tom mean when he says <code>Yes, I love it but I'm only practicing</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>He is a professional photographer.</p>",
+        "feedback": "<p><code>Practicing</code> usually means you're still learning, not that you're a professional.</p>"
+      },
+      {
+        "answer": "<p>He is learning and trying to get better at photography.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He does not like photography.</p>",
+        "feedback": "<p>If Tom loves it, it means he likes photography.</p>"
+      },
+      {
+        "answer": "<p>He is teaching photography to someone.</p>",
+        "feedback": "<p>There is no information suggesting he is teaching photography.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you are <code>practicing,</code> you are doing an activity regularly to improve your skills at it.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

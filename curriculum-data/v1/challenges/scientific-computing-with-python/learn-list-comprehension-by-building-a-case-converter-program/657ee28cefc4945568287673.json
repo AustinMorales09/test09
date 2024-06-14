@@ -1,0 +1,49 @@
+{
+  "id": "657ee28cefc4945568287673",
+  "title": "Step 3",
+  "challengeType": 20,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    snake_cased_char_list = []",
+      "error": null,
+      "seed": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    snake_cased_char_list = []"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should write a new <code>for</code> loop with the target variable named <code>char</code>. Don't forget the colon at the end and to use <code>pass</code> to fill the loop body.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const convert_to_snake_case = __helpers.python.getDef(\"\\n\" + transformedCode, \"convert_to_snake_case\");\n        const { function_body } = convert_to_snake_case;\n\n        assert.match(function_body, / +for\\s+char\\s+in\\s+pascal_or_camel_cased_string\\s*:\\s*pass[\\s]*$/);\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you have an empty list in place, you can start iterating through the input string and start converting each character to snake case.</p>\n<p>Use a <code>for</code> loop to iterate through the <code>pascal_or_camel_cased_string</code>. Make sure to name the target variable <code>char</code> which is short for character. For now, add a <code>pass</code> statement in the loop body.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-list-comprehension-by-building-a-case-converter-program",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

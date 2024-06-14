@@ -1,0 +1,88 @@
+{
+  "id": "6543aaa9f5f028dba112f276",
+  "title": "Task 5",
+  "challengeType": 19,
+  "dashedName": "task-5",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which phrase does Tom use to confirm Maria's statement about him?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>that's wrong</code></p>",
+        "feedback": "<p><code>That's wrong</code> is used to disagree.</p>"
+      },
+      {
+        "answer": "<p><code>that's okay</code></p>",
+        "feedback": "<p><code>that's okay</code> usually shows acceptance, not confirmation.</p>"
+      },
+      {
+        "answer": "<p><code>that's right</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>that's left</code></p>",
+        "feedback": "<p><code>that's left</code> refers to a direction, not confirmation.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.62,
+        "finishTimestamp": 8.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.34,
+        "dialogue": {
+          "text": "Hi, that's right. I'm Tom McKenzie. It's a pleasure to meet you.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When someone makes a correct assumption or guess about you, you can confirm it using phrases like <code>that's right</code>. It's a way of agreeing or saying yes to what is said.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

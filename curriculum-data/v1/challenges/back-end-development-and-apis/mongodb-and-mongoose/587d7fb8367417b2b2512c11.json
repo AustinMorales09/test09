@@ -1,0 +1,30 @@
+{
+  "id": "587d7fb8367417b2b2512c11",
+  "title": "Delete Many Documents with model.remove()",
+  "challengeType": 2,
+  "forumTopicId": 301538,
+  "dashedName": "delete-many-documents-with-model-remove",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Deleting many items at once should succeed</p>",
+      "testString": "(getUserInput) =>\n  $.ajax({\n    url: getUserInput('url') + '/_api/remove-many-people',\n    type: 'POST',\n    contentType: 'application/json',\n    data: JSON.stringify([\n      { name: 'Mary', age: 16, favoriteFoods: ['lollipop'] },\n      { name: 'Mary', age: 21, favoriteFoods: ['steak'] }\n    ])\n  }).then(\n    (data) => {\n      assert.isTrue(!!data.ok, 'The mongo stats are not what expected');\n      assert.equal(\n        data.n,\n        2,\n        'The number of items affected is not what expected'\n      );\n      assert.equal(data.count, 0, 'the db items count is not what expected');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><code>Model.remove()</code> is useful to delete all the documents matching given criteria.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Modify the <code>removeManyPeople</code> function to delete all the people whose name is within the variable <code>nameToRemove</code>, using <code>Model.remove()</code>. Pass it to a query document with the <code>name</code> field set, and a callback.</p>\n<p><strong>Note:</strong> The <code>Model.remove()</code> doesn’t return the deleted document, but a JSON object containing the outcome of the operation, and the number of items affected. Don’t forget to pass it to the <code>done()</code> callback, since we use it in tests.</p>\n</section>",
+  "translationPending": false,
+  "block": "mongodb-and-mongoose",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

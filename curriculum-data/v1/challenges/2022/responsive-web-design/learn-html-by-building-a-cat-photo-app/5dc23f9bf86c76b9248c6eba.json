@@ -1,0 +1,61 @@
+{
+  "id": "5dc23f9bf86c76b9248c6eba",
+  "title": "Step 7",
+  "challengeType": 0,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        6,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more cat photos in our gallery.</p>\n      \n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more cat photos in our gallery.</p>\n      \n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>img</code> element should have an opening tag. Opening tags have this syntax: <code>&#x3C;elementName></code>.</p>",
+      "testString": "assert(document.querySelector('img'));"
+    },
+    {
+      "text": "<p>Your <code>img</code> element should not have a closing tag. Closing tags have a <code>/</code> just after the <code>&#x3C;</code> character.</p>",
+      "testString": "assert(!code.match(/<\\/img\\>/));"
+    },
+    {
+      "text": "<p>You should only have one <code>img</code> element. Remove any extras.</p>",
+      "testString": "assert(document.querySelectorAll('img').length === 1);"
+    },
+    {
+      "text": "<p>Your <code>img</code> element should be below the <code>p</code> element. You have them in the wrong order.</p>",
+      "testString": "const collection = [...document.querySelectorAll('p,img')].map(\n  (node) => node.nodeName\n);\nassert(collection.indexOf('P') < collection.indexOf('IMG'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can add images to your website by using the <code>img</code> element. <code>img</code> elements have an opening tag without a closing tag. A tag for an element without a closing tag is known as a <dfn>self-closing tag</dfn>.</p>\n<p>Add an <code>img</code> element below the <code>p</code> element. At this point, no image will show up in the browser.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

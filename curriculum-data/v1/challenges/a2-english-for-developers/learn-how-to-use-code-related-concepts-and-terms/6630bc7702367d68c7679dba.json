@@ -1,0 +1,97 @@
+{
+  "id": "6630bc7702367d68c7679dba",
+  "title": "Task 6",
+  "challengeType": 19,
+  "dashedName": "task-6",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah imply about <code>data types</code> in her explanation?</p>",
+    "answers": [
+      {
+        "answer": "<p>They are essential for programming and help communicate data characteristics to the computer.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>They are optional in computer programming.</p>",
+        "feedback": "<p><code>Data types</code> are not optional; Sarah describes them as <code>fundamental</code>, meaning they are necessary.</p>"
+      },
+      {
+        "answer": "<p>They only apply to complex data.</p>",
+        "feedback": "<p>Sarah does not limit the use of <code>data types</code> to complex data; <code>data types</code> are used for all sorts of data in programming.</p>"
+      },
+      {
+        "answer": "<p>They reduce the speed of computers.</p>",
+        "feedback": "<p>Sarah's statement implies that <code>data types</code> are helpful and necessary, not that they reduce computer performance.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.2,
+        "finishTimestamp": 10.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.28,
+        "dialogue": {
+          "text": "Sure. Data types are fundamental in programming.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "startTime": 3.7,
+        "finishTime": 6.96,
+        "dialogue": {
+          "text": "You use them to tell the computer what kind of data you're working with.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 7.46
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

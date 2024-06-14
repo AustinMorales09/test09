@@ -1,0 +1,88 @@
+{
+  "id": "657cd0e53b947df11ce91026",
+  "title": "Task 52",
+  "challengeType": 19,
+  "dashedName": "task-52",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence shows that certain qualities are perfect for the job someone is doing?</p>",
+    "answers": [
+      {
+        "answer": "<p>Great traits are important for everybody.</p>",
+        "feedback": "<p>This option says that good qualities are important but doesn't link them to a specific job or role.</p>"
+      },
+      {
+        "answer": "<p>She has traits in her position.</p>",
+        "feedback": "<p>This option mentions traits and position but doesn't clearly connect the quality of the traits to the suitability for the position.</p>"
+      },
+      {
+        "answer": "<p>Those traits are useful for the work.</p>",
+        "feedback": "<p>While this option talks about traits being useful, it doesn't specifically say that the traits are excellent for the person's job or role.</p>"
+      },
+      {
+        "answer": "<p>Those are great traits for someone in her position.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 12.3,
+        "finishTimestamp": 16.88
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.58,
+        "dialogue": {
+          "text": "Those are great traits for someone in her position, I think. What does she do as the team lead?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 6.08
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>You use phrases like <code>in her position</code> to connect someone's qualities to their job/ role. When Tom talks about <code>great traits for someone in her position,</code> he means that Maria's qualities are perfect for the responsibilities and tasks she has as a team lead.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 54,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

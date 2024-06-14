@@ -1,0 +1,45 @@
+{
+  "id": "662f062232f1962aa082710a",
+  "title": "Task 52",
+  "challengeType": 19,
+  "dashedName": "task-52",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>plugin</code> mean in a programming context?</p>",
+    "answers": [
+      {
+        "answer": "<p>It is the main software that runs on a computer.</p>",
+        "feedback": "<p>A <code>plugin</code> is not the main software; it is an add-on that enhances or extends the capabilities of the main software.</p>"
+      },
+      {
+        "answer": "<p>It is a type of computer virus.</p>",
+        "feedback": "<p>Incorrect. A <code>plugin</code> is a legitimate software component, not a virus. It is intended to add functionality to software.</p>"
+      },
+      {
+        "answer": "<p>It is a software component that adds features to an existing program.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It is a standalone application that does not require other software to function.</p>",
+        "feedback": "<p>This is incorrect because a <code>plugin</code> is not standalone; it requires another program to operate and adds functionality to it.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>plugin</code> is a component that adds a specific feature to an existing computer program. When a program supports <code>plugins</code>, it enables customization.\nIn the context of an IDE, <code>plugins</code> can provide additional functionality, like new tools for coding, debugging, or enhancing the user interface.</p>\n<p>For example, a code formatter in an IDE is often a <code>plugin</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 53,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

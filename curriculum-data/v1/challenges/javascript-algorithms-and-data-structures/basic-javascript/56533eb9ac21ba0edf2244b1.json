@@ -1,0 +1,83 @@
+{
+  "id": "56533eb9ac21ba0edf2244b1",
+  "title": "Compound Assignment With Augmented Multiplication",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/c83vrfa",
+  "forumTopicId": 16662,
+  "dashedName": "compound-assignment-with-augmented-multiplication",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(a,b,c){ return \"a = \" + a + \", b = \" + b + \", c = \" + c; })(a,b,c);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let a = 5;\nlet b = 12;\nlet c = 4.6;\n\n// Only change code below this line\na = a * 5;\nb = 3 * b;\nc = c * 10;",
+      "error": null,
+      "seed": "let a = 5;\nlet b = 12;\nlet c = 4.6;\n\n// Only change code below this line\na = a * 5;\nb = 3 * b;\nc = c * 10;"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let a = 5;\nlet b = 12;\nlet c = 4.6;\n\na *= 5;\nb *= 3;\nc *= 10;",
+        "error": null,
+        "seed": "let a = 5;\nlet b = 12;\nlet c = 4.6;\n\na *= 5;\nb *= 3;\nc *= 10;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>a</code> should equal <code>25</code>.</p>",
+      "testString": "assert(a === 25);"
+    },
+    {
+      "text": "<p><code>b</code> should equal <code>36</code>.</p>",
+      "testString": "assert(b === 36);"
+    },
+    {
+      "text": "<p><code>c</code> should equal <code>46</code>.</p>",
+      "testString": "assert(c === 46);"
+    },
+    {
+      "text": "<p>You should use the <code>*=</code> operator for each variable.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/\\*=/g).length === 3);"
+    },
+    {
+      "text": "<p>You should not modify the code above the specified comment.</p>",
+      "testString": "assert(\n  /let a = 5;/.test(__helpers.removeJSComments(code)) &&\n    /let b = 12;/.test(__helpers.removeJSComments(code)) &&\n    /let c = 4\\.6;/.test(__helpers.removeJSComments(code))\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>*=</code> operator multiplies a variable by a number.</p>\n<pre><code class=\"language-js\">myVar = myVar * 5;\n</code></pre>\n<p>will multiply <code>myVar</code> by <code>5</code>. This can be rewritten as:</p>\n<pre><code class=\"language-js\">myVar *= 5;\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Convert the assignments for <code>a</code>, <code>b</code>, and <code>c</code> to use the <code>*=</code> operator.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

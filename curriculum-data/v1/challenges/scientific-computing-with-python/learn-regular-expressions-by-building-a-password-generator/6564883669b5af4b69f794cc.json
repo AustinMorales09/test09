@@ -1,0 +1,49 @@
+{
+  "id": "6564883669b5af4b69f794cc",
+  "title": "Step 6",
+  "challengeType": 20,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        11
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import string\n\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n\n\nall_characters = letters + digits + symbols",
+      "error": null,
+      "seed": "import string\n\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n\n\nall_characters = letters + digits + symbols"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add the comment just above your <code>all_characters</code> variable.</p>",
+      "testString": "({ test: () => assert.match(code, /^#\\s*Combine all characters\\s+^all_characters/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Your <code>all_characters</code> variable is a string formed by all lowercase and uppercase letters, all the 10 digits and several special characters.</p>\n<p>Just before it, add a comment saying <code>Combine all characters</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

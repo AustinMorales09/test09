@@ -1,0 +1,107 @@
+{
+  "id": "661934977df94b891d403ca9",
+  "title": "Task 36",
+  "challengeType": 22,
+  "dashedName": "task-36",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Tom: What other _ tools are there?</p>\n<p>Alice: Well, there are project _ tools.</p>",
+    "blanks": [
+      {
+        "answer": "collaboration",
+        "feedback": "<p>The act of doing things or finishing tasks with help of other people</p>"
+      },
+      {
+        "answer": "management",
+        "feedback": "<p>The way someone takes care of or organizes something, like a job, a group of people, tasks, or even projects.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 30.82,
+        "finishTimestamp": 35.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.04,
+        "dialogue": {
+          "text": "What other collaboration tools are there?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 3.29
+      },
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 3.29
+      },
+      {
+        "character": "Alice",
+        "startTime": 3.54,
+        "finishTime": 5.62,
+        "dialogue": {
+          "text": "Well, there are project management tools.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 6.12
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 37,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

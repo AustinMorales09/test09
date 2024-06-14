@@ -1,0 +1,83 @@
+{
+  "id": "662a2f2a2c16bf1a9f3609b7",
+  "title": "Task 18",
+  "challengeType": 22,
+  "dashedName": "task-18",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I spent _ _ my _ time on it.</p>",
+    "blanks": [
+      {
+        "answer": "much",
+        "feedback": "<p>This word is used to describe a substantial portion of something.</p>"
+      },
+      {
+        "answer": "of",
+        "feedback": "<p>This word connects what follows, showing that it is a part of a whole.</p>"
+      },
+      {
+        "answer": "free",
+        "feedback": "<p>This adjective describes time that is available without commitments or obligations.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 12.36,
+        "finishTimestamp": 14.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 2.8,
+        "dialogue": {
+          "text": "I spent much of my free time on it.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Much of</code> is used to express a large part of something, especially with uncountable nouns. For example, <code>He spent much of the day reading.</code> implies he used a significant portion of the day to read.</p>\n<p><code>Free time</code> refers to time when you are not working or doing essential tasks and can choose what you want to do. For example, <code>She uses her free time to learn guitar.</code> indicates what she chooses to do when she has no other obligations.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

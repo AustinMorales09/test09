@@ -1,0 +1,49 @@
+{
+  "id": "64dc916138dbe03bdfe6cec6",
+  "title": "Step 7",
+  "challengeType": 20,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        5,
+        7
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "rods = {\n    'A': list(range(3, 0, -1)),\n    'B': [],\n    'C': []\n}\n",
+      "error": null,
+      "seed": "rods = {\n    'A': list(range(3, 0, -1)),\n    'B': [],\n    'C': []\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare an empty function named <code>move</code>. Remember to use the <code>pass</code> keyword inside the function body with the correct indentation.</p>",
+      "testString": "({ test: () => {\n\t\tassert(runPython(`\n        import inspect\n        inspect.isfunction(move)\n    `))\n\t} \n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The goal of the Tower of Hanoi is moving all the disks to the last rod. To do that, you must follow three simple rules:</p>\n<ol>\n<li>You can move only top-most disks</li>\n<li>You can move only one disk at a time</li>\n<li>You cannot place larger disks on top of smaller ones</li>\n</ol>\n<p>Below your existing code, declare an empty function named <code>move</code>. Later on, you will use that function to move the disks between the rods. For now, to avoid errors, use the <code>pass</code> keyword inside the function body.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-solving-the-tower-of-hanoi-puzzle",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

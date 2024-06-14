@@ -1,0 +1,79 @@
+{
+  "id": "662b772113dc330c283730f3",
+  "title": "Task 26",
+  "challengeType": 22,
+  "dashedName": "task-26",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>How do you _ _ in Python? I'm curious.</p>",
+    "blanks": [
+      {
+        "answer": "declare",
+        "feedback": "<p>This word refers to introducing a new variable with a specific value.</p>"
+      },
+      {
+        "answer": "variables",
+        "feedback": "<p>It refers to names used in programs to store data that can be changed during execution.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 27.44,
+        "finishTimestamp": 30.84
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 4.4,
+        "dialogue": {
+          "text": "How do you declare variables in Python? I'm curious.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 4.9
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In programming, to <code>declare variables</code> means to create them and define their type and initial value. In Python, you can <code>declare a variable</code> simply by assigning a value to it, as the language does not require explicit type definition for variable declaration.</p>\n<p>To <code>declare a variable</code> in programming means to create it and give it a name.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

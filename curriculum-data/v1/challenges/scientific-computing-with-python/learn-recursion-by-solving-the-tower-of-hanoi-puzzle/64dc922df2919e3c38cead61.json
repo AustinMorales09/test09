@@ -1,0 +1,57 @@
+{
+  "id": "64dc922df2919e3c38cead61",
+  "title": "Step 8",
+  "challengeType": 20,
+  "dashedName": "step-8",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        7
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\nrods = {\n    'A': list(range(3, 0, -1)),\n    'B': [],\n    'C': []\n}\n\ndef move():\n    pass",
+      "error": null,
+      "seed": "\nrods = {\n    'A': list(range(3, 0, -1)),\n    'B': [],\n    'C': []\n}\n\ndef move():\n    pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a variable named <code>NUMBER_OF_DISKS</code>.</p>",
+      "testString": "({test: () => assert(__userGlobals.has('NUMBER_OF_DISKS')) })"
+    },
+    {
+      "text": "<p>The <code>NUMBER_OF_DISKS</code> variable should have the value <code>3</code>.</p>",
+      "testString": "({test: () => assert.equal(__userGlobals.get('NUMBER_OF_DISKS'), 3) })"
+    },
+    {
+      "text": "<p>You should change the value of the <code>range()</code> function's first argument into the <code>NUMBER_OF_DISKS</code> variable.</p>",
+      "testString": "({test: () => assert.match(code, /('|\")A\\1\\s*:\\s*list\\s*\\(\\s*range\\s*\\(\\s*NUMBER_OF_DISKS\\s*,\\s*0\\s*,\\s*-\\s*1\\s*\\)\\s*\\)/) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>At the top of your code, declare a variable named <code>NUMBER_OF_DISKS</code> to store the number of disks and give it the value of <code>3</code>. Then, replace the first argument passed in to the <code>range()</code> function with your new variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-solving-the-tower-of-hanoi-puzzle",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

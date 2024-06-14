@@ -1,0 +1,30 @@
+{
+  "id": "587d7fb9367417b2b2512c12",
+  "title": "Chain Search Query Helpers to Narrow Search Results",
+  "challengeType": 2,
+  "forumTopicId": 301533,
+  "dashedName": "chain-search-query-helpers-to-narrow-search-results",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Chaining query helpers should succeed</p>",
+      "testString": "(getUserInput) =>\n  $.ajax({\n    url: getUserInput('url') + '/_api/query-tools',\n    type: 'POST',\n    contentType: 'application/json',\n    data: JSON.stringify([\n      { name: 'Pablo', age: 26, favoriteFoods: ['burrito', 'hot-dog'] },\n      { name: 'Bob', age: 23, favoriteFoods: ['pizza', 'nachos'] },\n      { name: 'Ashley', age: 32, favoriteFoods: ['steak', 'burrito'] },\n      { name: 'Mario', age: 51, favoriteFoods: ['burrito', 'prosciutto'] }\n    ])\n  }).then(\n    (data) => {\n      assert.isArray(data, 'the response should be an Array');\n      assert.equal(\n        data.length,\n        2,\n        'the data array length is not what expected'\n      );\n      assert.notProperty(\n        data[0],\n        'age',\n        'The returned first item has too many properties'\n      );\n      assert.equal(\n        data[0].name,\n        'Ashley',\n        'The returned first item name is not what expected'\n      );\n      assert.notProperty(\n        data[1],\n        'age',\n        'The returned second item has too many properties'\n      );\n      assert.equal(\n        data[1].name,\n        'Mario',\n        'The returned second item name is not what expected'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>If you don’t pass the callback as the last argument to <code>Model.find()</code> (or to the other search methods), the query is not executed. You can store the query in a variable for later use. This kind of object enables you to build up a query using chaining syntax. The actual db search is executed when you finally chain the method <code>.exec()</code>. You always need to pass your callback to this last method. There are many query helpers, here we'll use the most commonly used.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Modify the <code>queryChain</code> function to find people who like the food specified by the variable named <code>foodToSearch</code>. Sort them by <code>name</code>, limit the results to two documents, and hide their age. Chain <code>.find()</code>, <code>.sort()</code>, <code>.limit()</code>, <code>.select()</code>, and then <code>.exec()</code>. Pass the <code>done(err, data)</code> callback to <code>exec()</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "mongodb-and-mongoose",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

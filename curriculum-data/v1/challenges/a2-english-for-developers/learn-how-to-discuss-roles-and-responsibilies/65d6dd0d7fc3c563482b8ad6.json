@@ -1,0 +1,88 @@
+{
+  "id": "65d6dd0d7fc3c563482b8ad6",
+  "title": "Task 56",
+  "challengeType": 19,
+  "dashedName": "task-56",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Tom implying about the person?</p>",
+    "answers": [
+      {
+        "answer": "<p>She is not nice.</p>",
+        "feedback": "<p>Tom actually suggests the opposite by saying <code>a great person</code>.</p>"
+      },
+      {
+        "answer": "<p>He has never met her.</p>",
+        "feedback": "<p>While this might be true, it doesn't directly address Tom's implication about her being great.</p>"
+      },
+      {
+        "answer": "<p>She seems to be a very good person.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She is loud.</p>",
+        "feedback": "<p><code>Sounds like a great person</code> refers to the quality of her character, not the volume of her voice.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 44.66,
+        "finishTimestamp": 47.74
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.08,
+        "dialogue": {
+          "text": "She sounds like a great person. I should have a chat with her sometime.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 57,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

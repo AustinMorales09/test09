@@ -1,0 +1,83 @@
+{
+  "id": "6619a3859a7988504633e9b0",
+  "title": "Task 50",
+  "challengeType": 22,
+  "dashedName": "task-50",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Quantum computers can _ help _ with _.</p>",
+    "blanks": [
+      {
+        "answer": "also",
+        "feedback": "<p>This word means the same as <code>too</code>, but can be used in other positions in the sentence.</p>"
+      },
+      {
+        "answer": "scientists",
+        "feedback": "<p>People who study nature and the world, normally in more strict conditions. Use the plural form.</p>"
+      },
+      {
+        "answer": "research",
+        "feedback": "<p>This word means trying to find information about something.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.26,
+        "finishTimestamp": 19.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.66,
+        "dialogue": {
+          "text": "Quantum computers can also help scientists with research.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.16
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>scientist</code> is someone who studies and learns about nature and the world. They ask questions and try to find answers.</p>\n<p><code>Research</code> means trying to find more information about something. You might do research by reading books, looking online, or testing to learn new things. When you talk about <code>scientific research</code>, it normally involves a more formal setting, with regulated conditions.</p>\n<p>The word <code>also</code> can be used in substitution to <code>too</code> and can be added in different places in a sentence. Examples: <code>He can play the guitar, but he plays the piano, too.</code> (<code>too</code> is normally added in the end of the sentence, preceded by a comma). <code>He can play the guitar, but he can also play the piano</code> (you can add <code>also</code> before the verb and in the middle of the sentence). These two sentences mean the same.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 52,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

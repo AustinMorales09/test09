@@ -1,0 +1,69 @@
+{
+  "id": "5900f52a1000cf542c51003b",
+  "title": "Problem 444: The Roundtable Lottery",
+  "challengeType": 1,
+  "forumTopicId": 302116,
+  "dashedName": "problem-444-the-roundtable-lottery",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function roundtableLottery() {\n\n  return true;\n}\n\nroundtableLottery();",
+      "error": null,
+      "seed": "function roundtableLottery() {\n\n  return true;\n}\n\nroundtableLottery();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>roundtableLottery()</code> should return a string.</p>",
+      "testString": "assert(typeof roundtableLottery() === 'string');"
+    },
+    {
+      "text": "<p><code>roundtableLottery()</code> should return the string <code>1.200856722e263</code>.</p>",
+      "testString": "assert.strictEqual(roundtableLottery(), '1.200856722e263');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A group of $p$ people decide to sit down at a round table and play a lottery-ticket trading game. Each person starts off with a randomly-assigned, unscratched lottery ticket. Each ticket, when scratched, reveals a whole-pound prize ranging anywhere from £1 to £$p$, with no two tickets alike. The goal of the game is for each person to maximize his ticket winnings upon leaving the game.</p>\n<p>An arbitrary person is chosen to be the first player. Going around the table, each player has only one of two options:</p>\n<ol>\n<li>The player can scratch his ticket and reveal its worth to everyone at the table.</li>\n<li>The player can trade his unscratched ticket for a previous player's scratched ticket, and then leave the game with that ticket. The previous player then scratches his newly-acquired ticket and reveals its worth to everyone at the table.</li>\n</ol>\n<p>The game ends once all tickets have been scratched. All players still remaining at the table must leave with their currently-held tickets.</p>\n<p>Assume that each player uses the optimal strategy for maximizing the expected value of his ticket winnings.</p>\n<p>Let $E(p)$ represent the expected number of players left at the table when the game ends in a game consisting of $p$ players (e.g. $E(111) = 5.2912$ when rounded to 5 significant digits).</p>\n<p>Let $S_1(N) = \\displaystyle\\sum_{p = 1}^N E(p)$.</p>\n<p>Let $S_k(N) = \\displaystyle\\sum_{p = 1}^N S_{k - 1}(p)$ for $k > 1$.</p>\n<p>Find $S_{20}({10}^{14})$ and write the answer as a string in scientific notation rounded to 10 significant digits. Use a lowercase <code>e</code> to separate mantissa and exponent. For example, the answer for $S_3(100)$ would be <code>5.983679014e5</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

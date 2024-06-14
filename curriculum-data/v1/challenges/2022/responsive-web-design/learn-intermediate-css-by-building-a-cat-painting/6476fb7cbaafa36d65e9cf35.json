@@ -1,0 +1,69 @@
+{
+  "id": "6476fb7cbaafa36d65e9cf35",
+  "title": "Step 12",
+  "challengeType": 0,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        12
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>fCC Cat Painting</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n</head>\n<body>\n    <main>\n      <div class=\"cat-head\"></div>\n\n    </main>\n</body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>fCC Cat Painting</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n</head>\n<body>\n    <main>\n      <div class=\"cat-head\"></div>\n\n    </main>\n</body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #c9d2fc;\n}\n\n.cat-head {\n  position: absolute;\n  top: 300px;\n  left: 400px;\n  background: linear-gradient(#5e5e5e 85%, #45454f 100%);\n  width: 205px;\n  height: 180px;\n  border: 1px solid #000;\n  border-radius: 46%;\n}",
+      "error": null,
+      "seed": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #c9d2fc;\n}\n\n.cat-head {\n  position: absolute;\n  top: 300px;\n  left: 400px;\n  background: linear-gradient(#5e5e5e 85%, #45454f 100%);\n  width: 205px;\n  height: 180px;\n  border: 1px solid #000;\n  border-radius: 46%;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>div</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('div').length === 2);"
+    },
+    {
+      "text": "<p>Your <code>div</code> element should have the class <code>box</code>.</p>",
+      "testString": "assert(document.querySelectorAll('div')[1]?.getAttribute('class') === 'box');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><code>fixed</code> is a <code>position</code> property value that lets you make an element fixed to the page no matter where the user scrolls to on the page.</p>\n<p>You'll have to do some more markups to see how <code>fixed</code> positioning works. In your HTML, create a <code>div</code> element with the class <code>box</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-intermediate-css-by-building-a-cat-painting",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

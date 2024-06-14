@@ -1,0 +1,46 @@
+{
+  "id": "5e7b9f0e0b6c005b0e76f07c",
+  "title": "Web Services: XML Schema",
+  "challengeType": 11,
+  "videoId": "yWU9kTxW-nc",
+  "bilibiliIds": {
+    "aid": 631951466,
+    "bvid": "BV1Vb4y1r7m7",
+    "cid": 377332603
+  },
+  "dashedName": "web-services-xml-schema",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is XSD?</p>",
+    "answers": [
+      {
+        "answer": "<p>The W3C Schema specification for XML.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The standard JSON schema from MOZ.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Extensible Situational Driver</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 37,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

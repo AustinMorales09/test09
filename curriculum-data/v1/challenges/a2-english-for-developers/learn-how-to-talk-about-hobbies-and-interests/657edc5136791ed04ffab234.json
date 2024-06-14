@@ -1,0 +1,88 @@
+{
+  "id": "657edc5136791ed04ffab234",
+  "title": "Task 42",
+  "challengeType": 19,
+  "dashedName": "task-42",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah enjoy collecting?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Action figures</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Comic books</code></p>",
+        "feedback": "<p><code>Comic books</code> are related to action figures since both involve characters from stories, but Sarah specifically mentions collecting <code>action figures</code>.</p>"
+      },
+      {
+        "answer": "<p><code>Video game characters</code></p>",
+        "feedback": "<p>While <code>action figures</code> can be based on <code>video game characters</code>, Sarah's collection specifically consists of <code>action figures</code>, not the virtual characters themselves.</p>"
+      },
+      {
+        "answer": "<p><code>Toys</code></p>",
+        "feedback": "<p>It's a broader category that includes <code>action figures</code>, but Sarah specifically expresses her love for collecting <code>action figures</code>.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.1
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 5.1,
+        "dialogue": {
+          "text": "Hey, I noticed you have a huge collection of action figures on that shelf behind you.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 5.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>An <code>action figure</code> is a small toy that looks like a character from a movie, comic book, or video game. People often collect them because they like the characters or stories.</p>\n<p>For example, if you say, <code>My brother got a new action figure for his birthday</code>, it means he received a toy that represents a character he probably likes.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 44,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "65f594d096c1aebb60e5194d",
+  "title": "Task 36",
+  "challengeType": 22,
+  "dashedName": "task-36",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I've noticed that the issue may _ when we handle large data _.</p>",
+    "blanks": [
+      {
+        "answer": "occur",
+        "feedback": "<p>It refers to something happening, often unexpectedly, in a given situation, like an issue in code.</p>"
+      },
+      {
+        "answer": "sets",
+        "feedback": "<p>In this context, Sophie is talking about working with large groups of data.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.88,
+        "finishTimestamp": 17.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.56,
+        "dialogue": {
+          "text": "I've noticed that the issue may occur when we handle large data sets.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 5.06
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To occur</code> means to happen, especially unexpectedly. For example, <code>The error occurs when the program runs.</code></p>\n<p><code>Data sets</code> are collections of data. In coding, a <code>data set</code> can be small or large, containing various types of data used for analysis or processing.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 38,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

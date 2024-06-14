@@ -1,0 +1,88 @@
+{
+  "id": "6579d89bc117c40111641200",
+  "title": "Task 25",
+  "challengeType": 19,
+  "dashedName": "task-25",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why does Bob want Sophie to provide more details about the problem?</p>",
+    "answers": [
+      {
+        "answer": "<p>To evaluate Sophie's performance</p>",
+        "feedback": "<p>Bob's goal is to brainstorm solutions, not to assess Sophie's work.</p>"
+      },
+      {
+        "answer": "<p>To help brainstorm solutions during the review</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To postpone addressing the issue until later</p>",
+        "feedback": "<p>Bob wants to actively work on solutions now, not postpone them.</p>"
+      },
+      {
+        "answer": "<p>To report the issue to higher management</p>",
+        "feedback": "<p>The request is focused on finding solutions within the team, not reporting to management.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 29.34,
+        "finishTimestamp": 34.66
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.32,
+        "dialogue": {
+          "text": "Could you provide more details about the problem so we can brainstorm some potential solutions during the review?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.82
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Bob asks Sophie for more details to help brainstorm solutions, illustrating collaborative problem-solving.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

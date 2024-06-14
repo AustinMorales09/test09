@@ -1,0 +1,78 @@
+{
+  "id": "587d7b8f367417b2b2512b64",
+  "title": "Implement the filter Method on a Prototype",
+  "challengeType": 1,
+  "forumTopicId": 301231,
+  "dashedName": "implement-the-filter-method-on-a-prototype",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "Array.prototype.myFilter = function(callback) {\n  const newArray = [];\n  // Only change code below this line\n\n  // Only change code above this line\n  return newArray;\n};",
+      "error": null,
+      "seed": "Array.prototype.myFilter = function(callback) {\n  const newArray = [];\n  // Only change code below this line\n\n  // Only change code above this line\n  return newArray;\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "Array.prototype.myFilter = function(callback) {\n  const newArray = [];\n  for (let i = 0; i < this.length; i++) {\n    if (callback(this[i], i, this)) newArray.push(this[i]);\n  }\n  return newArray;\n};\n\n// Test case\nconst s = [23, 65, 98, 5];\nconst odd_s = s.myFilter(item => item % 2 === 1);",
+        "error": null,
+        "seed": "Array.prototype.myFilter = function(callback) {\n  const newArray = [];\n  for (let i = 0; i < this.length; i++) {\n    if (callback(this[i], i, this)) newArray.push(this[i]);\n  }\n  return newArray;\n};\n\n// Test case\nconst s = [23, 65, 98, 5];\nconst odd_s = s.myFilter(item => item % 2 === 1);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>[23, 65, 98, 5, 13].myFilter(item => item % 2)</code> should equal <code>[23, 65, 5, 13]</code>.</p>",
+      "testString": "const _test_s = [23, 65, 98, 5, 13];\nconst _callback = item => item % 2;\nassert(JSON.stringify(_test_s.filter(_callback)) === JSON.stringify(_test_s.myFilter(_callback)));"
+    },
+    {
+      "text": "<p><code>[\"naomi\", \"quincy\", \"camperbot\"].myFilter(element => element === \"naomi\")</code> should return <code>[\"naomi\"]</code>.</p>",
+      "testString": "const _test_s = [\"naomi\", \"quincy\", \"camperbot\"];\nconst _callback = element => element === \"naomi\";\nassert(JSON.stringify(_test_s.filter(_callback)) === JSON.stringify(_test_s.myFilter(_callback)));"
+    },
+    {
+      "text": "<p><code>[1, 1, 2, 5, 2].myFilter((element, index, array) => array.indexOf(element) === index)</code> should return <code>[1, 2, 5]</code>.</p>",
+      "testString": "const _test_s = [1, 1, 2, 5, 2];\nconst _callback = (element, index, array) => array.indexOf(element) === index;\nassert(JSON.stringify(_test_s.filter(_callback)) === JSON.stringify(_test_s.myFilter(_callback)));"
+    },
+    {
+      "text": "<p>Your code should not use the <code>filter</code> method.</p>",
+      "testString": "assert(!__helpers.removeJSComments(code).match(/\\.?[\\s\\S]*?filter/g));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You might learn a lot about the <code>filter</code> method if you implement your own version of it. It is recommended you use a <code>for</code> loop or <code>Array.prototype.forEach()</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write your own <code>Array.prototype.myFilter()</code>, which should behave exactly like <code>Array.prototype.filter()</code>. You should not use the built-in <code>filter</code> method. The <code>Array</code> instance can be accessed in the <code>myFilter</code> method using <code>this</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "functional-programming",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

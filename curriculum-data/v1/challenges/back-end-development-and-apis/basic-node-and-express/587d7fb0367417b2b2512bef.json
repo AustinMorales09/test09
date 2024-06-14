@@ -1,0 +1,30 @@
+{
+  "id": "587d7fb0367417b2b2512bef",
+  "title": "Serve an HTML File",
+  "challengeType": 2,
+  "forumTopicId": 301516,
+  "dashedName": "serve-an-html-file",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your app should serve the file views/index.html</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url')).then(\n    (data) => {\n      assert.match(\n        data,\n        /<h1>.*<\\/h1>/,\n        'Your app does not serve the expected HTML'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can respond to requests with a file using the <code>res.sendFile(path)</code> method. You can put it inside the <code>app.get('/', ...)</code> route handler. Behind the scenes, this method will set the appropriate headers to instruct your browser on how to handle the file you want to send, according to its type. Then it will read and send the file. This method needs an absolute file path. We recommend you to use the Node global variable <code>__dirname</code> to calculate the path like this:</p>\n<pre><code class=\"language-js\">absolutePath = __dirname + '/relativePath/file.ext'\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Send the <code>/views/index.html</code> file as a response to GET requests to the <code>/</code> path. If you view your live app, you should see a big HTML heading (and a form that we will use later…), with no style applied.</p>\n<p><strong>Note:</strong> You can edit the solution of the previous challenge or create a new one. If you create a new solution, keep in mind that Express evaluates routes from top to bottom, and executes the handler for the first match. You have to comment out the preceding solution, or the server will keep responding with a string.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-node-and-express",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

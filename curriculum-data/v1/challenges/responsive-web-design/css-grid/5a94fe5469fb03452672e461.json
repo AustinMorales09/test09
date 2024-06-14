@@ -1,0 +1,67 @@
+{
+  "id": "5a94fe5469fb03452672e461",
+  "title": "Create Flexible Layouts Using auto-fill",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pByETK/cmzdycW",
+  "forumTopicId": 301126,
+  "dashedName": "create-flexible-layouts-using-auto-fill",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n  .item5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    min-height: 100px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    /* Only change code below this line */\n\n    grid-template-columns: repeat(3, minmax(60px, 1fr));\n\n    /* Only change code above this line */\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n\n  .container2 {\n    font-size: 40px;\n    min-height: 100px;\n    width: 100%;\n    background: Silver;\n    display: grid;\n    grid-template-columns: repeat(3, minmax(60px, 1fr));\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n</style>\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>\n<div class=\"container2\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>",
+      "error": null,
+      "seed": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n  .item5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    min-height: 100px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    /* Only change code below this line */\n\n    grid-template-columns: repeat(3, minmax(60px, 1fr));\n\n    /* Only change code above this line */\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n\n  .container2 {\n    font-size: 40px;\n    min-height: 100px;\n    width: 100%;\n    background: Silver;\n    display: grid;\n    grid-template-columns: repeat(3, minmax(60px, 1fr));\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n</style>\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>\n<div class=\"container2\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n  .item5{background:PaleGreen;}\n  \n  .container {\n    font-size: 40px;\n    min-height: 100px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    /* Only change code below this line */\n    \n    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));\n    \n    /* Only change code above this line */\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n  \n  .container2 {\n    font-size: 40px;\n    min-height: 100px;\n    width: 100%;\n    background: Silver;\n    display: grid;\n    grid-template-columns: repeat(3, minmax(60px, 1fr));\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n</style>\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>\n<div class=\"container2\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>",
+        "error": null,
+        "seed": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n  .item5{background:PaleGreen;}\n  \n  .container {\n    font-size: 40px;\n    min-height: 100px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    /* Only change code below this line */\n    \n    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));\n    \n    /* Only change code above this line */\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n  \n  .container2 {\n    font-size: 40px;\n    min-height: 100px;\n    width: 100%;\n    background: Silver;\n    display: grid;\n    grid-template-columns: repeat(3, minmax(60px, 1fr));\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n</style>\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>\n<div class=\"container2\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>container</code> class should have a <code>grid-template-columns</code> property with <code>repeat</code> and <code>auto-fill</code> that will fill the grid with columns that have a minimum width of <code>60px</code> and maximum of <code>1fr</code>.</p>",
+      "testString": "assert(\n  code.match(\n    /.container\\s*?{[\\s\\S]*grid-template-columns\\s*?:\\s*?repeat\\s*?\\(\\s*?auto-fill\\s*?,\\s*?minmax\\s*?\\(\\s*?60px\\s*?,\\s*?1fr\\s*?\\)\\s*?\\)\\s*?;[\\s\\S]*}/gi\n  )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The repeat function comes with an option called <dfn>auto-fill</dfn>. This allows you to automatically insert as many rows or columns of your desired size as possible depending on the size of the container. You can create flexible layouts when combining <code>auto-fill</code> with <code>minmax</code>, like this:</p>\n<pre><code class=\"language-css\">repeat(auto-fill, minmax(60px, 1fr));\n</code></pre>\n<p>When the container changes size, this setup keeps inserting 60px columns and stretching them until it can insert another one. <strong>Note:</strong> If your container can't fit all your items on one row, it will move them down to a new one.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>In the first grid, use <code>auto-fill</code> with <code>repeat</code> to fill the grid with columns that have a minimum width of <code>60px</code> and maximum of <code>1fr</code>. Then resize the preview to see auto-fill in action.</p>\n</section>",
+  "translationPending": false,
+  "block": "css-grid",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

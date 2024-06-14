@@ -1,0 +1,83 @@
+{
+  "id": "56533eb9ac21ba0edf2244b2",
+  "title": "Compound Assignment With Augmented Division",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/c2QvKT2",
+  "forumTopicId": 16659,
+  "dashedName": "compound-assignment-with-augmented-division",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(a,b,c){ return \"a = \" + a + \", b = \" + b + \", c = \" + c; })(a,b,c);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let a = 48;\nlet b = 108;\nlet c = 33;\n\n// Only change code below this line\na = a / 12;\nb = b / 4;\nc = c / 11;",
+      "error": null,
+      "seed": "let a = 48;\nlet b = 108;\nlet c = 33;\n\n// Only change code below this line\na = a / 12;\nb = b / 4;\nc = c / 11;"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let a = 48;\nlet b = 108;\nlet c = 33;\n\na /= 12;\nb /= 4;\nc /= 11;",
+        "error": null,
+        "seed": "let a = 48;\nlet b = 108;\nlet c = 33;\n\na /= 12;\nb /= 4;\nc /= 11;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>a</code> should equal <code>4</code>.</p>",
+      "testString": "assert(a === 4);"
+    },
+    {
+      "text": "<p><code>b</code> should equal <code>27</code>.</p>",
+      "testString": "assert(b === 27);"
+    },
+    {
+      "text": "<p><code>c</code> should equal <code>3</code>.</p>",
+      "testString": "assert(c === 3);"
+    },
+    {
+      "text": "<p>You should use the <code>/=</code> operator for each variable.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/\\/=/g).length === 3);"
+    },
+    {
+      "text": "<p>You should not modify the code above the specified comment.</p>",
+      "testString": "assert(\n  /let a = 48;/.test(__helpers.removeJSComments(code)) &&\n    /let b = 108;/.test(__helpers.removeJSComments(code)) &&\n    /let c = 33;/.test(__helpers.removeJSComments(code))\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>/=</code> operator divides a variable by another number.</p>\n<pre><code class=\"language-js\">myVar = myVar / 5;\n</code></pre>\n<p>Will divide <code>myVar</code> by <code>5</code>. This can be rewritten as:</p>\n<pre><code class=\"language-js\">myVar /= 5;\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Convert the assignments for <code>a</code>, <code>b</code>, and <code>c</code> to use the <code>/=</code> operator.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

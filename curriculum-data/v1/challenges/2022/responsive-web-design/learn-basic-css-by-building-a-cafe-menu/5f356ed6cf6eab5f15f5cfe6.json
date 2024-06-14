@@ -1,0 +1,77 @@
+{
+  "id": "5f356ed6cf6eab5f15f5cfe6",
+  "title": "Step 20",
+  "challengeType": 0,
+  "dashedName": "step-20",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        18
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background-color: burlywood;\n}\n\nh1, h2, p {\n  text-align: center;\n}",
+      "error": null,
+      "seed": "body {\n  background-color: burlywood;\n}\n\nh1, h2, p {\n  text-align: center;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your opening <code>&#x3C;div></code> tag should have an <code>id</code> attribute set to <code>menu</code>.</p>",
+      "testString": "const div = $('div')[0];\nassert(div.id === 'menu');"
+    },
+    {
+      "text": "<p>You should have a closing <code>&#x3C;/div></code> tag.</p>",
+      "testString": "assert(code.match(/<\\/div>/i));"
+    },
+    {
+      "text": "<p>You should not change your existing <code>body</code> element. Make sure you did not delete the closing tag.</p>",
+      "testString": "assert($('body').length === 1);"
+    },
+    {
+      "text": "<p>Your <code>div</code> tag should be nested in the <code>body</code>.</p>",
+      "testString": "const div = $('div')[0];\nassert(div.parentElement.tagName === 'BODY');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>div</code> element is used mainly for design layout purposes unlike the other content elements you have used so far. Add a <code>div</code> element inside the <code>body</code> element and then move all the other elements inside the new <code>div</code>.</p>\n<p>Inside the opening <code>div</code> tag, add the <code>id</code> attribute with a value of <code>menu</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

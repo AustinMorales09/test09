@@ -1,0 +1,90 @@
+{
+  "id": "5a23c84252665b21eecc7e7b",
+  "title": "Generator/Exponential",
+  "challengeType": 1,
+  "forumTopicId": 302275,
+  "dashedName": "generatorexponential",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function exponentialGenerator(n) {\n\n}",
+      "error": null,
+      "seed": "function exponentialGenerator(n) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function exponentialGenerator(n){\n  function* PowersGenerator(m) {\n    var n=0;\n    while(1) {\n        yield Math.pow(n, m);\n        n += 1;\n    }\n  }\n\n  function* FilteredGenerator(g, f){\n    var value = g.next().value;\n    var filter = f.next().value;\n    while(1) {\n        if( value < filter ) {\n            yield value;\n            value = g.next().value;\n        } else if ( value > filter ) {\n            filter = f.next().value;\n        } else {\n            value = g.next().value;\n            filter = f.next().value;\n        }\n    }\n  }\n\n  var squares = PowersGenerator(2);\n  var cubes = PowersGenerator(3);\n\n  var filtered = FilteredGenerator(squares, cubes);\n\n  var curr=0;\n  for(var i=0;i<n;i++) curr=filtered.next();\n\n  return curr.value;\n}",
+        "error": null,
+        "seed": "function exponentialGenerator(n){\n  function* PowersGenerator(m) {\n    var n=0;\n    while(1) {\n        yield Math.pow(n, m);\n        n += 1;\n    }\n  }\n\n  function* FilteredGenerator(g, f){\n    var value = g.next().value;\n    var filter = f.next().value;\n    while(1) {\n        if( value < filter ) {\n            yield value;\n            value = g.next().value;\n        } else if ( value > filter ) {\n            filter = f.next().value;\n        } else {\n            value = g.next().value;\n            filter = f.next().value;\n        }\n    }\n  }\n\n  var squares = PowersGenerator(2);\n  var cubes = PowersGenerator(3);\n\n  var filtered = FilteredGenerator(squares, cubes);\n\n  var curr=0;\n  for(var i=0;i<n;i++) curr=filtered.next();\n\n  return curr.value;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>exponentialGenerator</code> should be a function.</p>",
+      "testString": "assert(typeof exponentialGenerator == 'function');"
+    },
+    {
+      "text": "<p><code>exponentialGenerator()</code> should return a number.</p>",
+      "testString": "assert(typeof exponentialGenerator(10) == 'number');"
+    },
+    {
+      "text": "<p><code>exponentialGenerator(10)</code> should return <code>144</code>.</p>",
+      "testString": "assert.equal(exponentialGenerator(10), 144);"
+    },
+    {
+      "text": "<p><code>exponentialGenerator(12)</code> should return <code>196</code>.</p>",
+      "testString": "assert.equal(exponentialGenerator(12), 196);"
+    },
+    {
+      "text": "<p><code>exponentialGenerator(14)</code> should return <code>256</code>.</p>",
+      "testString": "assert.equal(exponentialGenerator(14), 256);"
+    },
+    {
+      "text": "<p><code>exponentialGenerator(20)</code> should return <code>484</code>.</p>",
+      "testString": "assert.equal(exponentialGenerator(20), 484);"
+    },
+    {
+      "text": "<p><code>exponentialGenerator(25)</code> should return <code>784</code>.</p>",
+      "testString": "assert.equal(exponentialGenerator(25), 784);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A generator is an executable entity (like a function or procedure) that contains code that yields a sequence of values, one at a time, so that each time you call the generator, the next value in the sequence is provided.</p>\n<p>Generators are often built on top of coroutines or objects so that the internal state of the object is handled \"naturally\".</p>\n<p>Generators are often used in situations where a sequence is potentially infinite, and where it is possible to construct the next value of the sequence with only minimal state.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that uses generators to generate squares and cubes. Create a new generator that filters all cubes from the generator of squares.</p>\n<p>The function should return the \\( n^{th} \\) value of the filtered generator.</p>\n<p>For example for \\(n=7\\), the function should return 81 as the sequence would be 4, 9, 16, 25, 36, 49, 81. Here 64 is filtered out, as it is a cube.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 58,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

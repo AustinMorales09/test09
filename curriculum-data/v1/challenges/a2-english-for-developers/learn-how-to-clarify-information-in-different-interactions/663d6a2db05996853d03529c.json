@@ -1,0 +1,88 @@
+{
+  "id": "663d6a2db05996853d03529c",
+  "title": "Task 59",
+  "challengeType": 19,
+  "dashedName": "task-59",
+  "solutions": [],
+  "question": {
+    "text": "<p>What caused the confusion?</p>",
+    "answers": [
+      {
+        "answer": "<p>They lost the documentation</p>",
+        "feedback": "<p>If that were true, Maria would not have noticed the difference in the schedule.</p>"
+      },
+      {
+        "answer": "<p>A one-week difference between what is in the documentation and what Brian said</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Maria read the documentation of a different project</p>",
+        "feedback": "<p>Not really. The documentation is the right one, but the project schedule differs from what Brian said.</p>"
+      },
+      {
+        "answer": "<p>Brian caused the confusion by mentioning one schedule and writing a different one in the documentation</p>",
+        "feedback": "<p>It's not mentioned at any moment that Brian wrote the documentation. Another person could have done it.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.06,
+        "finishTimestamp": 19.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 6.1,
+        "dialogue": {
+          "text": "Well, the documentation says we're starting the testing phase next week, but you mentioned it was the following week.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 6.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the dialogue and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 62,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

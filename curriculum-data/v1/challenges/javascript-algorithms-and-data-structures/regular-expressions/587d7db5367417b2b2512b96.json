@@ -1,0 +1,74 @@
+{
+  "id": "587d7db5367417b2b2512b96",
+  "title": "Match Letters of the Alphabet",
+  "challengeType": 1,
+  "forumTopicId": 301354,
+  "dashedName": "match-letters-of-the-alphabet",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let quoteSample = \"The quick brown fox jumps over the lazy dog.\";\nlet alphabetRegex = /change/; // Change this line\nlet result = alphabetRegex; // Change this line",
+      "error": null,
+      "seed": "let quoteSample = \"The quick brown fox jumps over the lazy dog.\";\nlet alphabetRegex = /change/; // Change this line\nlet result = alphabetRegex; // Change this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let quoteSample = \"The quick brown fox jumps over the lazy dog.\";\nlet alphabetRegex = /[a-z]/gi; // Change this line\nlet result = quoteSample.match(alphabetRegex); // Change this line",
+        "error": null,
+        "seed": "let quoteSample = \"The quick brown fox jumps over the lazy dog.\";\nlet alphabetRegex = /[a-z]/gi; // Change this line\nlet result = quoteSample.match(alphabetRegex); // Change this line"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your regex <code>alphabetRegex</code> should match 35 items.</p>",
+      "testString": "assert(result.length == 35);"
+    },
+    {
+      "text": "<p>Your regex <code>alphabetRegex</code> should use the global flag.</p>",
+      "testString": "assert(alphabetRegex.flags.match(/g/).length == 1);"
+    },
+    {
+      "text": "<p>Your regex <code>alphabetRegex</code> should use the case insensitive flag.</p>",
+      "testString": "assert(alphabetRegex.flags.match(/i/).length == 1);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You saw how you can use <dfn>character sets</dfn> to specify a group of characters to match, but that's a lot of typing when you need to match a large range of characters (for example, every letter in the alphabet). Fortunately, there is a built-in feature that makes this short and simple.</p>\n<p>Inside a character set, you can define a range of characters to match using a hyphen character: <code>-</code>.</p>\n<p>For example, to match lowercase letters <code>a</code> through <code>e</code> you would use <code>[a-e]</code>.</p>\n<pre><code class=\"language-js\">let catStr = \"cat\";\nlet batStr = \"bat\";\nlet matStr = \"mat\";\nlet bgRegex = /[a-e]at/;\ncatStr.match(bgRegex);\nbatStr.match(bgRegex);\nmatStr.match(bgRegex);\n</code></pre>\n<p>In order, the three <code>match</code> calls would return the values <code>[\"cat\"]</code>, <code>[\"bat\"]</code>, and <code>null</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Match all the letters in the string <code>quoteSample</code>.</p>\n<p><strong>Note</strong>: Be sure to match both uppercase and lowercase letters.</p>\n</section>",
+  "translationPending": false,
+  "block": "regular-expressions",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

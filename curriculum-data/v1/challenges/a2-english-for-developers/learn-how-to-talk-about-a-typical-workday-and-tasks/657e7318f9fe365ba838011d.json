@@ -1,0 +1,45 @@
+{
+  "id": "657e7318f9fe365ba838011d",
+  "title": "Task 121",
+  "challengeType": 19,
+  "dashedName": "task-121",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are <code>features</code> in the context of software?</p>",
+    "answers": [
+      {
+        "answer": "<p>The different functions or parts of the software</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The problems or bugs found in the software.</p>",
+        "feedback": "<p><code>Features</code> are about functionality, not problems.</p>"
+      },
+      {
+        "answer": "<p>The physical appearance of the software.</p>",
+        "feedback": "<p><code>Features</code> refers to functionalities, not physical appearance.</p>"
+      },
+      {
+        "answer": "<p>The people who develop the software.</p>",
+        "feedback": "<p><code>Features</code> refers to software aspects, not the developers.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In software, <code>features</code> refer to the various functions, parts, or aspects of the software. Each feature, like a login process or a payment system, is a specific capability or function that the software offers.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 125,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

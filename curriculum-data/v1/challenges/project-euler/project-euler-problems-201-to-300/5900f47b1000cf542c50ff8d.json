@@ -1,0 +1,65 @@
+{
+  "id": "5900f47b1000cf542c50ff8d",
+  "title": "Problem 271: Modular Cubes, part 1",
+  "challengeType": 1,
+  "forumTopicId": 301921,
+  "dashedName": "problem-271-modular-cubes-part-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function modularCubesOne() {\n\n  return true;\n}\n\nmodularCubesOne();",
+      "error": null,
+      "seed": "function modularCubesOne() {\n\n  return true;\n}\n\nmodularCubesOne();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>modularCubesOne()</code> should return <code>4617456485273130000</code>.</p>",
+      "testString": "assert.strictEqual(modularCubesOne(), 4617456485273130000);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>For a positive number $n$, define $S(n)$ as the sum of the integers $x$, for which $1 &#x3C; x &#x3C; n$ and $x^3 \\equiv 1\\bmod n$.</p>\n<p>When $n = 91$, there are 8 possible values for $x$, namely: 9, 16, 22, 29, 53, 74, 79, 81. Thus, $S(91) = 9 + 16 + 22 + 29 + 53 + 74 + 79 + 81 = 363$.</p>\n<p>Find $S(13\\,082\\,761\\,331\\,670\\,030)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 70,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "655a367638e3f401eb0235ea",
+  "title": "Task 45",
+  "challengeType": 19,
+  "dashedName": "task-45",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the expert imply by saying you <code>may feel groggy during the day</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>You will be very energetic during the day</p>",
+        "feedback": "<p><code>Feeling groggy</code> indicates a lack of energy, not increased energy.</p>"
+      },
+      {
+        "answer": "<p>You won't need to sleep at all during the day</p>",
+        "feedback": "<p><code>Feeling groggy</code> often relates to a need for more rest, not the absence of it.</p>"
+      },
+      {
+        "answer": "<p>You might feel tired or sluggish during the day</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>You will feel extremely alert</p>",
+        "feedback": "<p><code>Feeling groggy</code> implies a lack of alertness or feeling drowsy, not being extremely alert.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Feel groggy</code> is an informal term that means to feel weak, tired, or not fully awake, often as a result of poor sleep or waking up suddenly.\nFor example:</p>\n<p><code>I feel groggy if I don't get enough sleep</code> (describes feeling tired due to lack of sleep)</p>\n<p><code>Sluggish</code> is an adjective that describes a feeling of low energy, slow movement, or a lack of alertness. It's often used when someone feels tired, lethargic, or not able to think or move quickly. This term can apply to both physical and mental states. Here are some examples:</p>\n<p><code>The computer was running sluggishly, taking a long time to respond</code> (describes slow performance, used metaphorically for an inanimate object)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 46,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

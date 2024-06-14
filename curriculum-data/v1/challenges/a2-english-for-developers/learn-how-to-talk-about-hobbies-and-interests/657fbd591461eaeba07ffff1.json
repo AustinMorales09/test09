@@ -1,0 +1,88 @@
+{
+  "id": "657fbd591461eaeba07ffff1",
+  "title": "Task 74",
+  "challengeType": 19,
+  "dashedName": "task-74",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the main information conveyed by Sarah?</p>",
+    "answers": [
+      {
+        "answer": "<p>Sarah's dislike for conventions</p>",
+        "feedback": "<p>Sarah's dislike for conventions isn't explicitly stated in this sentence.</p>"
+      },
+      {
+        "answer": "<p>Tom's interest in attending the convention</p>",
+        "feedback": "<p>Tom politely declines the invitation, indicating his lack of interest.</p>"
+      },
+      {
+        "answer": "<p>The existence of a significant upcoming sci-fi event</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Sarah's involvement in organizing the convention</p>",
+        "feedback": "<p>There's no mention of Sarah's involvement in organizing the convention.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 18.7,
+        "finishTimestamp": 21.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.66,
+        "dialogue": {
+          "text": "There's a big convention next month. Would you like to come?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.16
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>There's a</code> +. name of an event + period of time is often used to inform someone about an upcoming event.</p>\n<p>In the dialogue, the expression <code>There's a big convention next month</code> is used to convey information about a significant upcoming event related to sci-fi.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 77,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

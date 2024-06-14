@@ -1,0 +1,53 @@
+{
+  "id": "657f0353c9523d7d896873ea",
+  "title": "Step 12",
+  "challengeType": 20,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        13,
+        16
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    snake_cased_char_list = []\n    for char in pascal_or_camel_cased_string:\n        if char.isupper():\n            converted_character = '_' + char.lower()\n            snake_cased_char_list.append(converted_character)\n        else:\n            snake_cased_char_list.append(char)\n    snake_cased_string = ''.join(snake_cased_char_list)\n    clean_snake_cased_string = snake_cased_string.strip('_')\n\n    return clean_snake_cased_string\n\ndef main():\n    pass",
+      "error": null,
+      "seed": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    snake_cased_char_list = []\n    for char in pascal_or_camel_cased_string:\n        if char.isupper():\n            converted_character = '_' + char.lower()\n            snake_cased_char_list.append(converted_character)\n        else:\n            snake_cased_char_list.append(char)\n    snake_cased_string = ''.join(snake_cased_char_list)\n    clean_snake_cased_string = snake_cased_string.strip('_')\n\n    return clean_snake_cased_string\n\ndef main():\n    pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call <code>convert_to_snake_case()</code> inside the <code>main()</code> function and pass <code>'aLongAndComplexString'</code> as input to the function.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const main = __helpers.python.getDef(\"\\n\" + transformedCode, \"main\");\n        const { function_body } = main;\n\n        assert.match(function_body, / +print\\s*\\(\\s*convert_to_snake_case\\s*\\(\\s*(\"|')aLongAndComplexString\\1\\s*\\)\\s*\\)/);\n    }\n})"
+    },
+    {
+      "text": "<p>You should not have <code>pass</code> in your <code>main</code> function.</p>",
+      "testString": "({\n    test: () => {\n        const commentless_code = __helpers.python.removeComments(code);\n        const transformedCode = commentless_code.replace(/\\r/g, \"\");\n        const main = __helpers.python.getDef(\"\\n\" + transformedCode, \"main\");\n        const { function_body } = main;\n\n        assert.notMatch(function_body, /pass/);\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Inside the <code>main()</code> function, replace <code>pass</code> with a  <code>convert_to_snake_case()</code> call. Pass the string <code>'aLongAndComplexString'</code> as input to the function and print out the output using the <code>print()</code> function.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-list-comprehension-by-building-a-case-converter-program",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

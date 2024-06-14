@@ -1,0 +1,79 @@
+{
+  "id": "657eda6e48e0d7c92f0af163",
+  "title": "Task 40",
+  "challengeType": 22,
+  "dashedName": "task-40",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hey, I noticed you have a _ _ of action figures on that shelf behind you.</p>",
+    "blanks": [
+      {
+        "answer": "huge",
+        "feedback": "<p>This word describes the large size or amount.</p>"
+      },
+      {
+        "answer": "collection",
+        "feedback": "<p>This word refers to the group of action figures gathered together, showing the person's interest in collecting them.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.1
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 5.1,
+        "dialogue": {
+          "text": "Hey, I noticed you have a huge collection of action figures on that shelf behind you.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 5.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>huge</code> means very big or large in size, amount, or degree. For example, <code>The building is huge.</code> means the building is very large or big in size.</p>\n<p>The word <code>collection</code> refers to a group of items gathered together, often because they are of the same type or share a theme. For instance, if you say <code>I have a collection of stamps from different countries</code>, it means you have many stamps from various places kept together.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

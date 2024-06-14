@@ -1,0 +1,88 @@
+{
+  "id": "658002d23e245ff4ca8542d5",
+  "title": "Task 86",
+  "challengeType": 19,
+  "dashedName": "task-86",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>maybe next time</code> convey in this context?</p>",
+    "answers": [
+      {
+        "answer": "<p>Immediate rejection</p>",
+        "feedback": "<p>It's contrary to the hopeful nature of the phrase.</p>"
+      },
+      {
+        "answer": "<p>A definite future plan</p>",
+        "feedback": "<p>It suggests a set arrangement, which is not implied by this phrase. It's more about a possibility than a definite plan.</p>"
+      },
+      {
+        "answer": "<p>Polite invitation for the future</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Current disinterest</p>",
+        "feedback": "<p>It may be true for the present but doesn't reflect the optimistic invitation for the future implied by the phrase.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 28.88,
+        "finishTimestamp": 31.8
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.92,
+        "dialogue": {
+          "text": "No problem, Tom. Maybe next time you'll join us.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 89,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

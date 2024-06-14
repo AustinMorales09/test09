@@ -1,0 +1,65 @@
+{
+  "id": "61764f23ea21477b76f3b80f",
+  "title": "Step 17",
+  "challengeType": 0,
+  "dashedName": "step-17",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker one\">\n      </div>\n      <div class=\"marker\">\n      </div>\n      <div class=\"marker\">\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker one\">\n      </div>\n      <div class=\"marker\">\n      </div>\n      <div class=\"marker\">\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        11
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1 {\n  text-align: center;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  background-color: red;\n  margin: 10px auto;\n}\n",
+      "error": null,
+      "seed": "h1 {\n  text-align: center;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  background-color: red;\n  margin: 10px auto;\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>.marker</code> CSS rule should not have a <code>background-color</code> property and value.</p>",
+      "testString": "assert(!code.includes('background-color') && !new __helpers.CSSHelp(document).getStyle('.marker')?.backgroundColor);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Next, remove the <code>background-color</code> property and its value from the <code>.marker</code> CSS rule.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

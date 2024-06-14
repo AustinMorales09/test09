@@ -1,0 +1,83 @@
+{
+  "id": "6556c3561e21d38e21518845",
+  "title": "Task 7",
+  "challengeType": 22,
+  "dashedName": "task-7",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hey, James! Thanks. Look, I don't do anything _ _ the _, I think.</p>",
+    "blanks": [
+      {
+        "answer": "out",
+        "feedback": "<p>This word is the opposite of <code>in</code>.</p>"
+      },
+      {
+        "answer": "of",
+        "feedback": "<p>This word is a preposition with two letters.</p>"
+      },
+      {
+        "answer": "ordinary",
+        "feedback": "<p>This word means common or not special.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 7.48,
+        "finishTimestamp": 11.52
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5.04,
+        "dialogue": {
+          "text": "Hey James, thanks. Look, I don't do anything out of the ordinary, I think.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5.54
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Ordinary</code> means normal or usual. Something ordinary is not special or different. For example:</p>\n<p><code>Eating cereal for breakfast is ordinary</code></p>\n<p><code>Out of the ordinary</code> means something unusual or not common. For example, if your friend usually takes the bus to school but one day arrives in a limousine, that's out of the ordinary. It's not common or usual for them.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

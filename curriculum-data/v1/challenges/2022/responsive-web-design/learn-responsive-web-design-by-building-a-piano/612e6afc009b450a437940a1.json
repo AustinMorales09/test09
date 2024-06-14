@@ -1,0 +1,129 @@
+{
+  "id": "612e6afc009b450a437940a1",
+  "title": "Step 1",
+  "challengeType": 0,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should contain the <code>DOCTYPE</code> reference.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE/gi));"
+    },
+    {
+      "text": "<p>You should include a space after the <code>DOCTYPE</code> reference.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+/gi));"
+    },
+    {
+      "text": "<p>You should define the document type to be <code>html</code>.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+html/gi));"
+    },
+    {
+      "text": "<p>You should close the <code>DOCTYPE</code> declaration with a <code>></code> after the type.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+html\\s*>/gi));"
+    },
+    {
+      "text": "<p>Your <code>html</code> element should have an opening tag with a <code>lang</code> attribute of <code>en</code>.</p>",
+      "testString": "assert(code.match(/<html\\s+lang\\s*=\\s*('|\")en\\1\\s*>/gi));"
+    },
+    {
+      "text": "<p>Your <code>html</code> element should have a closing tag.</p>",
+      "testString": "assert(code.match(/<\\/html\\s*>/));"
+    },
+    {
+      "text": "<p>Your <code>DOCTYPE</code> declaration should be at the beginning of your HTML.</p>",
+      "testString": "assert(__helpers.removeHtmlComments(code).match(/^\\s*<!DOCTYPE\\s+html\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<head\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/head\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<body\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/body\\s*>/i));"
+    },
+    {
+      "text": "<p>The <code>head</code> and <code>body</code> elements should be siblings.</p>",
+      "testString": "assert(document.querySelector('head')?.nextElementSibling?.localName === 'body');"
+    },
+    {
+      "text": "<p>The <code>head</code> element should be within the <code>html</code> element.</p>",
+      "testString": "assert([...document.querySelector('html')?.children].some(x => x?.localName === 'head'));"
+    },
+    {
+      "text": "<p>The <code>body</code> element should be within the <code>html</code> element.</p>",
+      "testString": "assert([...document.querySelector('html')?.children].some(x => x?.localName === 'body'));"
+    },
+    {
+      "text": "<p>Your code should have a <code>title</code> element.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.exists(title);"
+    },
+    {
+      "text": "<p>Your project should have a title of <code>Piano</code>.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.equal(title?.text?.trim()?.toLowerCase(), 'piano')"
+    },
+    {
+      "text": "<p>Remember, the casing and spelling matter for the title.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.equal(title?.text?.trim(), 'Piano');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Begin with the basic HTML structure. Add a <code>DOCTYPE</code> declaration and <code>html</code>, <code>head</code>, <code>body</code>, and <code>title</code> elements.</p>\n<p>Set the language of this page to English. Set the <code>title</code> to <code>Piano</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-responsive-web-design-by-building-a-piano",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,78 @@
+{
+  "id": "587d7dab367417b2b2512b6e",
+  "title": "Use the every Method to Check that Every Element in an Array Meets a Criteria",
+  "challengeType": 1,
+  "forumTopicId": 301312,
+  "dashedName": "use-the-every-method-to-check-that-every-element-in-an-array-meets-a-criteria",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function checkPositive(arr) {\n  // Only change code below this line\n\n\n  // Only change code above this line\n}\n\ncheckPositive([1, 2, 3, -4, 5]);",
+      "error": null,
+      "seed": "function checkPositive(arr) {\n  // Only change code below this line\n\n\n  // Only change code above this line\n}\n\ncheckPositive([1, 2, 3, -4, 5]);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function checkPositive(arr) {\n  return arr.every(num => num > 0);\n}",
+        "error": null,
+        "seed": "function checkPositive(arr) {\n  return arr.every(num => num > 0);\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should use the <code>every</code> method.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/\\.every/g));"
+    },
+    {
+      "text": "<p><code>checkPositive([1, 2, 3, -4, 5])</code> should return <code>false</code>.</p>",
+      "testString": "assert.isFalse(checkPositive([1, 2, 3, -4, 5]));"
+    },
+    {
+      "text": "<p><code>checkPositive([1, 2, 3, 4, 5])</code> should return <code>true</code>.</p>",
+      "testString": "assert.isTrue(checkPositive([1, 2, 3, 4, 5]));"
+    },
+    {
+      "text": "<p><code>checkPositive([1, -2, 3, -4, 5])</code> should return <code>false</code>.</p>",
+      "testString": "assert.isFalse(checkPositive([1, -2, 3, -4, 5]));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>every</code> method works with arrays to check if <em>every</em> element passes a particular test. It returns a Boolean value - <code>true</code> if all values meet the criteria, <code>false</code> if not.</p>\n<p>For example, the following code would check if every element in the <code>numbers</code> array is less than 10:</p>\n<pre><code class=\"language-js\">const numbers = [1, 5, 8, 0, 10, 11];\n\nnumbers.every(function(currentValue) {\n  return currentValue &#x3C; 10;\n});\n</code></pre>\n<p>The <code>every</code> method would return <code>false</code> here.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use the <code>every</code> method inside the <code>checkPositive</code> function to check if every element in <code>arr</code> is positive. The function should return a Boolean value.</p>\n</section>",
+  "translationPending": false,
+  "block": "functional-programming",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

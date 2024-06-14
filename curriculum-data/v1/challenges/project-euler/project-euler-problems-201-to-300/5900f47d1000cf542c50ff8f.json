@@ -1,0 +1,65 @@
+{
+  "id": "5900f47d1000cf542c50ff8f",
+  "title": "Problem 272: Modular Cubes, part 2",
+  "challengeType": 1,
+  "forumTopicId": 301922,
+  "dashedName": "problem-272-modular-cubes-part-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function modularCubesTwo() {\n\n  return true;\n}\n\nmodularCubesTwo();",
+      "error": null,
+      "seed": "function modularCubesTwo() {\n\n  return true;\n}\n\nmodularCubesTwo();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>modularCubesTwo()</code> should return <code>8495585919506151000</code>.</p>",
+      "testString": "assert.strictEqual(modularCubesTwo(), 8495585919506151000);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>For a positive number $n$, define $C(n)$ as the number of the integers $x$, for which $1 &#x3C; x &#x3C; n$ and $x^3 \\equiv 1\\bmod n$.</p>\n<p>When $n = 91$, there are 8 possible values for $x$, namely: 9, 16, 22, 29, 53, 74, 79, 81. Thus, $C(91) = 8$.</p>\n<p>Find the sum of the positive numbers $n ≤ {10}^{11}$ for which $C(n)=242$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 71,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

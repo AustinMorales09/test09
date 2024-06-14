@@ -1,0 +1,88 @@
+{
+  "id": "657b2fea728c2be14a8a98c4",
+  "title": "Task 87",
+  "challengeType": 19,
+  "dashedName": "task-87",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>employee dynamics</code> refer to in a workplace context?</p>",
+    "answers": [
+      {
+        "answer": "<p>The dynamics of machines used by employees</p>",
+        "feedback": "<p><code>Employee dynamics</code> specifically refers to interactions and relationships among employees, not machinery.</p>"
+      },
+      {
+        "answer": "<p>The interactions and relationships among employees</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The employment status of workers</p>",
+        "feedback": "<p><code>Employee dynamics</code> is about how employees work together, not their employment status.</p>"
+      },
+      {
+        "answer": "<p>The dynamics of hiring new employees</p>",
+        "feedback": "<p><code>Employee dynamics</code> refers to existing employee interactions, not the hiring process.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.14,
+        "finishTimestamp": 18.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Anna",
+        "startTime": 1,
+        "finishTime": 6.48,
+        "dialogue": {
+          "text": "I took a course in organizational psychology and it piqued my interest in the workplace and employee dynamics.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 6.98
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Employee dynamics</code> refers to the way employees interact and work together in a workplace. It's an example of using one noun (<code>employee</code>) to describe another noun (<code>dynamics</code>). This type of descriptive noun helps give more specific information about the subject. Other examples include <code>race car</code>, where <code>race</code> describes the type of car, and <code>garden hose</code>, where <code>garden</code> describes the type of hose.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 91,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

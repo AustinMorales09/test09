@@ -1,0 +1,89 @@
+{
+  "id": "612e813b3ba67633222cbe54",
+  "title": "Step 6",
+  "challengeType": 0,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        20
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>Piano</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  </head>\n  <body>\n    <div id=\"piano\">\n      <div class=\"keys\">\n        <div class=\"key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key\"></div>\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>Piano</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  </head>\n  <body>\n    <div id=\"piano\">\n      <div class=\"keys\">\n        <div class=\"key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key\"></div>\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your second <code>.key</code> element should also have a <code>class</code> of <code>black--key</code>.</p>",
+      "testString": "const key = document.querySelectorAll('.key')?.[1];\nassert(key?.className?.includes('black--key'));"
+    },
+    {
+      "text": "<p>Your third <code>.key</code> should have <code>black--key</code> in the <code>class</code>.</p>",
+      "testString": "const third = document.querySelectorAll('.key')?.[2];\nassert(third?.classList?.contains('black--key'));"
+    },
+    {
+      "text": "<p>Your fifth <code>.key</code> should have <code>black--key</code> in the <code>class</code>.</p>",
+      "testString": "const fifth = document.querySelectorAll('.key')?.[4];\nassert(fifth?.classList?.contains('black--key'));"
+    },
+    {
+      "text": "<p>Your sixth <code>.key</code> should have <code>black--key</code> in the <code>class</code>.</p>",
+      "testString": "const sixth = document.querySelectorAll('.key')?.[5];\nassert(sixth?.classList?.contains('black--key'));"
+    },
+    {
+      "text": "<p>Your seventh <code>.key</code> should have <code>black--key</code> in the <code>class</code>.</p>",
+      "testString": "const seventh = document.querySelectorAll('.key')?.[6];\nassert(seventh?.classList?.contains('black--key'));"
+    },
+    {
+      "text": "<p>You should have five <code>.black--key</code> elements.</p>",
+      "testString": "const blackKeys = document.querySelectorAll('.black--key');\nassert(blackKeys?.length === 5);"
+    },
+    {
+      "text": "<p>You should have seven <code>.key</code> elements.</p>",
+      "testString": "const keys = document.querySelectorAll('.key');\nassert(keys?.length === 7);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Remember that a <code>class</code> attribute can have multiple values. To separate your white keys from your black keys, you'll add a second <code>class</code> value of <code>black--key</code>. Add this to your second, third, fifth, sixth, and seventh <code>.key</code> elements.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-responsive-web-design-by-building-a-piano",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

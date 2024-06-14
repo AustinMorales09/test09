@@ -1,0 +1,49 @@
+{
+  "id": "65c4f2851645e8d84d14f5d1",
+  "title": "Step 11",
+  "challengeType": 20,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        12,
+        17
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n",
+      "error": null,
+      "seed": "class TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should write another if statement to check if <code>key</code> is less than <code>node.key</code>. Remember to use the <code>pass</code> keyword.</p>",
+      "testString": "({ test: () => assert(runPython(` _Node(_code).find_class(\"BinarySearchTree\").find_function(\"_insert\").find_ifs()[1].find_conditions()[0].is_equivalent(\"key < node.key\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now you need to recursively traverse the tree and insert the values using the principle for binary trees:</p>\n<ul>\n<li>Values smaller than the key are placed in the left subtree</li>\n<li>Values greater than the key are placed in the right subtree</li>\n</ul>\n<p>After your existing conditional statement, write another <code>if</code> statement to check if <code>key</code> is less than <code>node.key</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

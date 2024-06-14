@@ -1,0 +1,105 @@
+{
+  "id": "6437133052eaf04d7300e622",
+  "title": "Step 22",
+  "challengeType": 0,
+  "dashedName": "step-22",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        4
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\n\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      container.appendChild(input);\n    })\n  })\n}",
+      "error": null,
+      "seed": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\n\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      container.appendChild(input);\n    })\n  })\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare an <code>average</code> variable.</p>",
+      "testString": "assert.match(code, /(?:let|const|var)\\s+average/);"
+    },
+    {
+      "text": "<p>You should use <code>const</code> to declare your <code>average</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+average/);"
+    },
+    {
+      "text": "<p>Your <code>average</code> variable should be a function.</p>",
+      "testString": "assert.isFunction(average);"
+    },
+    {
+      "text": "<p>Your <code>average</code> function should use arrow syntax.</p>",
+      "testString": "assert.match(code, /const\\s+average\\s*=\\s*(\\([^)]*\\)|[^\\s()]+)\\s*=>/);"
+    },
+    {
+      "text": "<p>Your <code>average</code> function should have a <code>nums</code> parameter.</p>",
+      "testString": "assert.match(code, /const\\s+average\\s*=\\s*(\\(\\s*nums\\s*\\)|nums)/);"
+    },
+    {
+      "text": "<p>Your <code>average</code> function should use an implicit return.</p>",
+      "testString": "assert.notMatch(code, /const\\s+average\\s*=\\s*(\\(\\s*nums\\s*\\)|nums)\\s*=>\\s*{/);"
+    },
+    {
+      "text": "<p>Your <code>average</code> function should return the average value of the <code>nums</code> array.</p>",
+      "testString": "assert.equal(average([1,2,3]), 2);\nassert.equal(average([1,2,3,4,5]), 3);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Declare an <code>average</code> function which takes an array of numbers as the <code>nums</code> parameter. It should return the average of all the numbers in the array.</p>\n<p>The average can be calculated by dividing the sum of all the numbers in the array by the length of the array. Remember that you have a <code>sum</code> function you can use.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

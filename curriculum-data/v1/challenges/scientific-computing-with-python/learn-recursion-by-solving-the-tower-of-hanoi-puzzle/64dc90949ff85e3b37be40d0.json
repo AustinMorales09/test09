@@ -1,0 +1,49 @@
+{
+  "id": "64dc90949ff85e3b37be40d0",
+  "title": "Step 5",
+  "challengeType": 20,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        7
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "rods = {\n    'A': range(3, 0, -1),\n    'B': [],\n    'C': []\n}\nprint(type(rods['A']))",
+      "error": null,
+      "seed": "rods = {\n    'A': range(3, 0, -1),\n    'B': [],\n    'C': []\n}\nprint(type(rods['A']))"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should pass your <code>range()</code> call to the <code>list()</code> function.</p>",
+      "testString": "({ test: () => assert(runPython(`\n  rods['A'] == list(range(3, 0, -1))\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>range()</code> function returns an immutable sequence of numbers. As you can see, the data type of <code>rods['A']</code> is <code>range</code>, but you want it to be a list.</p>\n<p>Pass your <code>range()</code> call to the <code>list()</code> function to do that.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-solving-the-tower-of-hanoi-puzzle",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

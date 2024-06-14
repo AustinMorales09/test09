@@ -1,0 +1,49 @@
+{
+  "id": "65578c17d54dfab65cd54b95",
+  "title": "Step 36",
+  "challengeType": 20,
+  "dashedName": "step-36",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        6,
+        15
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\ndef shortest_path(graph, start):\n    unvisited = list(graph)\n    distances = {node: 0 if node == start else float('inf') for node in graph}\n    paths = {node: [] for node in graph}\n    \n    print(f'Unvisited: {unvisited}\\nDistances: {distances}')\n    \nshortest_path(my_graph, 'A')",
+      "error": null,
+      "seed": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\ndef shortest_path(graph, start):\n    unvisited = list(graph)\n    distances = {node: 0 if node == start else float('inf') for node in graph}\n    paths = {node: [] for node in graph}\n    \n    print(f'Unvisited: {unvisited}\\nDistances: {distances}')\n    \nshortest_path(my_graph, 'A')"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>.append()</code> method to append <code>start</code> to <code>paths[start]</code>.</p>",
+      "testString": "({ test: () =>  {\n    const shortest = __helpers.python.getDef(code, \"shortest_path\");\n    const {function_body} = shortest;\n    assert(function_body.match(/^\\s{4}paths\\s*\\[\\s*start\\s*\\]\\s*\\.append\\s*\\(\\s*start\\s*\\)/m));\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Since the algorithm begins its assessment from the starting node, after creating the <code>paths</code> dictionary, you need to add the starting node to its own list in the <code>paths</code> dictionary.</p>\n<p>Use the <code>.append()</code> method to append <code>start</code> to the <code>paths[start]</code> list.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

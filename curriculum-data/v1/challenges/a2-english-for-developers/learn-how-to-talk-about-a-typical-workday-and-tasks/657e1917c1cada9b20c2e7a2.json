@@ -1,0 +1,83 @@
+{
+  "id": "657e1917c1cada9b20c2e7a2",
+  "title": "Task 18",
+  "challengeType": 22,
+  "dashedName": "task-18",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I take short breaks to _, have some _, or _ with colleagues.</p>",
+    "blanks": [
+      {
+        "answer": "stretch",
+        "feedback": "<p>Pay attention to the specific activities Sophie mentions doing during her breaks.</p>"
+      },
+      {
+        "answer": "coffee",
+        "feedback": "<p>Pay attention to the specific activities Sophie mentions doing during her breaks.</p>"
+      },
+      {
+        "answer": "chat",
+        "feedback": "<p>Pay attention to the specific activities Sophie mentions doing during her breaks.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 38.08,
+        "finishTimestamp": 41.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.28,
+        "dialogue": {
+          "text": "I take short breaks to stretch, have some coffee or chat with colleagues.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.78
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Coffee</code>: A drink many people have when they are tired. Example: <code>I drink coffee on my break.</code></p>\n<p><code>Chat</code>: To talk with someone. Example: <code>I chat with my friends at work.</code></p>\n<p><code>Stretch</code>: To move your arms and legs to relax them. Example: <code>I stretch during my break.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

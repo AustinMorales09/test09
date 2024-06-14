@@ -1,0 +1,86 @@
+{
+  "id": "594810f028c0303b75339acd",
+  "title": "Abundant, deficient and perfect number classifications",
+  "challengeType": 1,
+  "forumTopicId": 302221,
+  "dashedName": "abundant-deficient-and-perfect-number-classifications",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function getDPA(num) {\n\n}",
+      "error": null,
+      "seed": "function getDPA(num) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function getDPA(num) {\n  const dpa = [1, 0, 0];\n  for (let n = 2; n <= num; n += 1) {\n    let ds = 1;\n    const e = Math.sqrt(n);\n    for (let d = 2; d < e; d += 1) {\n      if (n % d === 0) {\n        ds += d + (n / d);\n      }\n    }\n    if (n % e === 0) {\n      ds += e;\n    }\n    dpa[ds < n ? 0 : ds === n ? 1 : 2] += 1;\n  }\n  return dpa;\n}",
+        "error": null,
+        "seed": "function getDPA(num) {\n  const dpa = [1, 0, 0];\n  for (let n = 2; n <= num; n += 1) {\n    let ds = 1;\n    const e = Math.sqrt(n);\n    for (let d = 2; d < e; d += 1) {\n      if (n % d === 0) {\n        ds += d + (n / d);\n      }\n    }\n    if (n % e === 0) {\n      ds += e;\n    }\n    dpa[ds < n ? 0 : ds === n ? 1 : 2] += 1;\n  }\n  return dpa;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>getDPA</code> should be a function.</p>",
+      "testString": "assert(typeof getDPA === 'function');"
+    },
+    {
+      "text": "<p><code>getDPA(5000)</code> should return an array.</p>",
+      "testString": "assert(Array.isArray(getDPA(5000)));"
+    },
+    {
+      "text": "<p><code>getDPA(5000)</code> return array should have a length of <code>3</code>.</p>",
+      "testString": "assert(getDPA(5000).length === 3);"
+    },
+    {
+      "text": "<p><code>getDPA(5000)</code> should return <code>[3758, 3, 1239]</code>.</p>",
+      "testString": "assert.deepEqual(getDPA(5000), [3758, 3, 1239]);"
+    },
+    {
+      "text": "<p><code>getDPA(10000)</code> should return <code>[7508, 4, 2488]</code>.</p>",
+      "testString": "assert.deepEqual(getDPA(10000), [7508, 4, 2488]);"
+    },
+    {
+      "text": "<p><code>getDPA(20000)</code> should return <code>[15043, 4, 4953]</code>.</p>",
+      "testString": "assert.deepEqual(getDPA(20000), [15043, 4, 4953]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>These define three classifications of positive integers based on their proper divisors.</p>\n<p>Let $P(n)$ be the sum of the proper divisors of <code>n</code> where proper divisors are all positive integers <code>n</code> other than <code>n</code> itself.</p>\n<p>If <code>P(n) &#x3C; n</code> then <code>n</code> is classed as <code>deficient</code></p>\n<p>If <code>P(n) === n</code> then <code>n</code> is classed as <code>perfect</code></p>\n<p>If <code>P(n) > n</code> then <code>n</code> is classed as <code>abundant</code></p>\n<p><strong>Example</strong>: <code>6</code> has proper divisors of <code>1</code>, <code>2</code>, and <code>3</code>. <code>1 + 2 + 3 = 6</code>, so <code>6</code> is classed as a perfect number.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Implement a function that calculates how many of the integers from <code>1</code> to <code>num</code> (inclusive) are in each of the three classes. Output the result as an array in the following format <code>[deficient, perfect, abundant]</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

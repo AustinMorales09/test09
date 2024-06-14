@@ -1,0 +1,49 @@
+{
+  "id": "65c646d4148ae3b2d1cbcac4",
+  "title": "Step 30",
+  "challengeType": 20,
+  "dashedName": "step-30",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        10
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n        if key < node.key:\n            return self._search(node.left, key)\n        return self._search(node.right, key)\n    \n    def search(self, key):\n        return self._search(self.root, key)\n\nbst = BinarySearchTree()\n\nnodes = [50, 30, 20, 40, 70, 60, 80]\n\nfor node in nodes:\n    bst.insert(node)\n\nprint('Search for 80:', bst.search(80))\n",
+      "error": null,
+      "seed": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n        if key < node.key:\n            return self._search(node.left, key)\n        return self._search(node.right, key)\n    \n    def search(self, key):\n        return self._search(self.root, key)\n\nbst = BinarySearchTree()\n\nnodes = [50, 30, 20, 40, 70, 60, 80]\n\nfor node in nodes:\n    bst.insert(node)\n\nprint('Search for 80:', bst.search(80))\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should define a method <code>__str__</code> that takes a single argument <code>self</code>. Remember to use <code>pass</code>.</p>",
+      "testString": "assert.match(code, /^(\\s+)def\\s+__init__.+?^\\1def\\s+__str__\\(\\s*self\\s*\\)\\s*:\\s*\\n^\\1\\1pass/ms)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Note that, your search returns something like <code>80: &#x3C;__main__.TreeNode object at 0x108b3e0></code>. This is the default string representation when printing an instance of a class.</p>\n<p>To change that to print a useful value, define another method named <code>__str__</code> in the <code>TreeNode</code> class. It takes a single argument <code>self</code>.</p>\n<p>After defining <code>__str__</code> you'll get an exception in the console because the <code>__str__</code> method doesn't return anything yet. You'll work on the method body in the next step.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 29,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

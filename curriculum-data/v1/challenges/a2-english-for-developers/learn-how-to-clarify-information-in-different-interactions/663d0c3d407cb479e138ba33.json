@@ -1,0 +1,79 @@
+{
+  "id": "663d0c3d407cb479e138ba33",
+  "title": "Task 56",
+  "challengeType": 22,
+  "dashedName": "task-56",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Well, the documentation says we're starting the testing phase _ week, but you mentioned it was the _ week.</p>",
+    "blanks": [
+      {
+        "answer": "next",
+        "feedback": "<p>Followed by <code>week</code>, this refers to the week after the one we are in right now.</p>"
+      },
+      {
+        "answer": "following",
+        "feedback": "<p>Use this term to refer to a week after another one previously mentioned in the conversation.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.06,
+        "finishTimestamp": 19.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 6.1,
+        "dialogue": {
+          "text": "Well, the documentation says we're starting the testing phase next week, but you mentioned it was the following week.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 6.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Next</code> means the thing that comes immediately after the current one. For example, <code>next month</code> means the <code>month</code> right after this one.</p>\n<p><code>The following</code> means the thing that comes right after another mentioned thing. For example, if you talk about something happening in two weeks, you can say <code>the following week</code> after <code>next week</code>. It means it comes after something else you just talked about.</p>\n<p>Listen to the dialogue and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 59,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

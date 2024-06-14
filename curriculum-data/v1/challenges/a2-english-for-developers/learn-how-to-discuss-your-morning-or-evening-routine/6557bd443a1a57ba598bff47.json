@@ -1,0 +1,88 @@
+{
+  "id": "6557bd443a1a57ba598bff47",
+  "title": "Task 22",
+  "challengeType": 19,
+  "dashedName": "task-22",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah mean when she says she wants to <code>keep her energy up</code> during the morning?</p>",
+    "answers": [
+      {
+        "answer": "<p>Maintain a high level of energy</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Save energy for later</p>",
+        "feedback": "<p>This choice suggests conserving energy for future use.</p>"
+      },
+      {
+        "answer": "<p>Increase her physical strength</p>",
+        "feedback": "<p>Having energy can contribute to physical strength, <code>keep my energy up</code> specifically refers another thing.</p>"
+      },
+      {
+        "answer": "<p>Wake up early in the morning</p>",
+        "feedback": "<p>Waking up early is about starting the day.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 45.1,
+        "finishTimestamp": 47.82
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.72,
+        "dialogue": {
+          "text": "Breakfast is important to keep my energy up during the morning.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.22
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Keep my energy up</code> is an example of how English speakers often use verbs with adverbs or prepositions to express a specific idea.</p>\n<p>In this case, <code>keep</code> means to maintain, and <code>up</code> means at a high level. So, <code>keep my energy up</code> means to maintain a high level of energy.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

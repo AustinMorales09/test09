@@ -1,0 +1,75 @@
+{
+  "id": "656cd83ad397f61ce1259ad6",
+  "title": "Task 132",
+  "challengeType": 22,
+  "dashedName": "task-132",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Let me _ you to Tom.</p>",
+    "blanks": [
+      {
+        "answer": "introduce",
+        "feedback": "<p>Sophie uses a phrase that suggests she's presenting Tom to Brian.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 7,
+        "finishTimestamp": 11.76
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.76,
+        "dialogue": {
+          "text": "Brian, let me introduce you to Tom. Tom, this is Brian. He's a web developer.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 6.26
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you want to present one person to another, you can use the phrase <code>let me introduce you to [name]</code> (<code>name</code> being the person's name). For example: <code>Let me introduce you to Daniel.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 135,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

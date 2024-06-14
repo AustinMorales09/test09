@@ -1,0 +1,73 @@
+{
+  "id": "63541ef4f96cd82e8e6c788a",
+  "title": "Step 12",
+  "challengeType": 0,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        12
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Registration Form</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Registration Form</h1>\n    <p>Please fill out this form with the required information</p>\n    <form action='https://register-demo.freecodecamp.org'></form>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Registration Form</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Registration Form</h1>\n    <p>Please fill out this form with the required information</p>\n    <form action='https://register-demo.freecodecamp.org'></form>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  width: 100%;\n  height: 100vh;\n  margin: 0;\n  background-color: #1b1b32;\n  color: #f5f6f7;\n}",
+      "error": null,
+      "seed": "body {\n  width: 100%;\n  height: 100vh;\n  margin: 0;\n  background-color: #1b1b32;\n  color: #f5f6f7;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You shouldn't add a new <code>form</code> element.</p>",
+      "testString": "assert.equal(document.querySelectorAll('form').length, 1 )"
+    },
+    {
+      "text": "<p>Your <code>form</code> element should have a <code>method</code> attribute.</p>",
+      "testString": "assert.exists(document.querySelector('form')?.getAttribute('method'));"
+    },
+    {
+      "text": "<p>Your <code>method</code> attribute should be set to <code>post</code>.</p>",
+      "testString": "assert.match(document.querySelector('form')?.getAttribute('method'), /^post$/i);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>method</code> attribute specifies how to send form-data to the URL specified in the <code>action</code> attribute. The form-data can be sent via a <code>GET</code> request as URL parameters (with <code>method=\"get\"</code>) or via a <code>POST</code> request as data in the request body (with <code>method=\"post\"</code>).</p>\n<p>Set the <code>method</code> attribute to send your form data via a <code>POST</code> request.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-forms-by-building-a-registration-form",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

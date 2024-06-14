@@ -1,0 +1,125 @@
+{
+  "id": "662f69e2ea29ba3fd64e66e0",
+  "title": "Task 78",
+  "challengeType": 19,
+  "dashedName": "task-78",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why does Sarah recommend that specific book on OOP's principles to Tom?</p>",
+    "answers": [
+      {
+        "answer": "<p>Because it's the only book she has on the subject</p>",
+        "feedback": "<p>This option is misleading; Sarah recommends the book not because it's her only one, but because it has proven helpful to others.</p>"
+      },
+      {
+        "answer": "<p>Because it includes the most recent research on OOP</p>",
+        "feedback": "<p>While recent research might be beneficial, Sarah specifically mentions the book's usefulness with people she knows, not its recency.</p>"
+      },
+      {
+        "answer": "<p>Because it has been helpful to many people she knows</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Because she wrote the book herself</p>",
+        "feedback": "<p>There is no indication that Sarah authored the book; her recommendation is based on its effectiveness for others.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 31.42,
+        "finishTimestamp": 41.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.3,
+        "dialogue": {
+          "text": "That helps a lot. Can you recommend a good book for me to learn more about it?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.55
+      },
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 5.55
+      },
+      {
+        "character": "Sarah",
+        "startTime": 5.8,
+        "finishTime": 8.3,
+        "dialogue": {
+          "text": "Of course! I have a book on OOP's principles.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "startTime": 8.78,
+        "finishTime": 11.48,
+        "dialogue": {
+          "text": "I'll send you the title. It has helped many people I know.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 11.98
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 80,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

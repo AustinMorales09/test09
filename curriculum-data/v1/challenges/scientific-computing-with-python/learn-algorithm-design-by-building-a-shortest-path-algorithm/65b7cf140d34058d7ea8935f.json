@@ -1,0 +1,49 @@
+{
+  "id": "65b7cf140d34058d7ea8935f",
+  "title": "Step 10",
+  "challengeType": 20,
+  "dashedName": "step-10",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        10
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\ncopper['food'] = 'hay'\ncopper['species'] = 'Cavia porcellus'\n\nfor i in copper:\n    print(i)",
+      "error": null,
+      "seed": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\ncopper['food'] = 'hay'\ncopper['species'] = 'Cavia porcellus'\n\nfor i in copper:\n    print(i)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should modify your <code>for</code> loop to iterate over <code>copper.values()</code> instead of <code>copper</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_for_loops()[0].find_for_iter().is_equivalent(\"copper.values()\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>If you want to iterate over the values of the dictionary keys, one way is to use the <code>.values()</code> method.</p>\n<p>Modify your <code>for</code> loop to iterate over <code>copper.values()</code> instead of <code>copper</code> and look at the output.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

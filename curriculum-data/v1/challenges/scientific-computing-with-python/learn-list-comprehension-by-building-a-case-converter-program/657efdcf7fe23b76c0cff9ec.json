@@ -1,0 +1,53 @@
+{
+  "id": "657efdcf7fe23b76c0cff9ec",
+  "title": "Step 7",
+  "challengeType": 20,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        7
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    snake_cased_char_list = []\n    for char in pascal_or_camel_cased_string:\n        if char.isupper():\n            converted_character = '_' + char.lower()\n            snake_cased_char_list.append(converted_character)",
+      "error": null,
+      "seed": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    snake_cased_char_list = []\n    for char in pascal_or_camel_cased_string:\n        if char.isupper():\n            converted_character = '_' + char.lower()\n            snake_cased_char_list.append(converted_character)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add an <code>else</code> clause inside the <code>for</code> loop. Don't forget the colon at the end.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const convert_to_snake_case = __helpers.python.getDef(\"\\n\" + transformedCode, \"convert_to_snake_case\");\n        const { function_body } = convert_to_snake_case;\n\n        assert.match(function_body, / +else:/);\n    }\n})"
+    },
+    {
+      "text": "<p>You should use the <code>.append()</code> method to add <code>char</code> to the <code>snake_cased_char_list</code> variable.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const convert_to_snake_case = __helpers.python.getDef(\"\\n\" + transformedCode, \"convert_to_snake_case\");\n        const { function_body } = convert_to_snake_case;\n\n        assert.match(function_body, / +snake_cased_char_list.append\\(\\s*char\\s*\\)/);\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Add an <code>else</code> clause on the same level as the existing <code>if</code> statement, inside the <code>for</code> loop. Add characters that are already in lowercase to the list of converted characters inside the body of the <code>else</code> clause.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-list-comprehension-by-building-a-case-converter-program",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

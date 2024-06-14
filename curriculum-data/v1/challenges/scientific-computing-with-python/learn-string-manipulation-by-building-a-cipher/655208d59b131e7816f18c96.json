@@ -1,0 +1,57 @@
+{
+  "id": "655208d59b131e7816f18c96",
+  "title": "Step 15",
+  "challengeType": 20,
+  "dashedName": "step-15",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nalphabet.find(text[0])",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nalphabet.find(text[0])"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a variable named <code>index</code>. Pay attention to place the variable name at the beginning of the line.</p>",
+      "testString": "assert.match(code, /^index\\s*=/m)"
+    },
+    {
+      "text": "<p>You should assign the value returned by <code>alphabet.find(text[0])</code> to your <code>index</code> variable.</p>",
+      "testString": "assert.match(code, /^index\\s*=\\s*alphabet\\.find\\s*\\(\\s*text\\s*\\[\\s*\\s*0\\s*\\]\\s*\\)\\s*(#.*)?$/m)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>print()</code> function gives you only an output in the console, but functions and methods can have a return value that you can use in your code.</p>\n<p>Now assign <code>alphabet.find(text[0])</code> to a variable named <code>index</code>. In this way, <code>index</code> will store the value returned by <code>alphabet.find(text[0])</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

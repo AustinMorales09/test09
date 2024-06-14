@@ -1,0 +1,57 @@
+{
+  "id": "5dfb5ecbeacea3f48c6300b1",
+  "title": "Step 21",
+  "challengeType": 0,
+  "dashedName": "step-21",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        13,
+        17
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          \n        </ul>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          \n        </ul>\n      </section>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have three <code>li</code> elements. Each <code>li</code> element should have its own opening and closing tag.</p>",
+      "testString": "assert($('li').length === 3 && code.match(/<\\/li\\>/g).length === 3);"
+    },
+    {
+      "text": "<p>You should have three <code>li</code> elements with the text <code>cat nip</code>, <code>laser pointers</code> and <code>lasagna</code> in any order. You have either omitted some text or have a typo.</p>",
+      "testString": "assert.deepStrictEqual(\n  [...document.querySelectorAll('li')]\n    .map((item) => item.innerText.toLowerCase())\n    .sort((a, b) => a.localeCompare(b)),\n  ['cat nip', 'lasagna', 'laser pointers']\n);"
+    },
+    {
+      "text": "<p>The three <code>li</code> elements should be located between the <code>ul</code> element's opening and closing tags.</p>",
+      "testString": "assert(\n  [...document.querySelectorAll('li')].filter(\n    (item) => item.parentNode.nodeName === 'UL'\n  ).length === 3\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>li</code> element is used to create a list item in an ordered or unordered list.</p>\n<p>Here is an example of list items in an unordered list:</p>\n<pre><code class=\"language-html\">&#x3C;ul>\n  &#x3C;li>milk&#x3C;/li>\n  &#x3C;li>cheese&#x3C;/li>\n&#x3C;/ul>\n</code></pre>\n<p>Within the <code>ul</code> element nest three list items to display three things cats love:</p>\n<p><code>cat nip</code>\n<code>laser pointers</code>\n<code>lasagna</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "5e46f8edac417301a38fb931",
+  "title": "Neural Network SMS Text Classifier",
+  "challengeType": 10,
+  "forumTopicId": 462380,
+  "dashedName": "neural-network-sms-text-classifier",
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "main.py"
+        ],
+        "name": "main",
+        "ext": "py",
+        "path": "main.py",
+        "fileKey": "mainpy",
+        "contents": "  # Python challenges don't need solutions,\n  # because they would need to be tested against a full working project.\n  # Please check our contributing guidelines to learn more.",
+        "error": null,
+        "seed": "  # Python challenges don't need solutions,\n  # because they would need to be tested against a full working project.\n  # Please check our contributing guidelines to learn more."
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>It should pass all Python tests.</p>",
+      "testString": ""
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You will be <a href=\"https://colab.research.google.com/github/freeCodeCamp/boilerplate-neural-network-sms-text-classifier/blob/master/fcc_sms_text_classification.ipynb\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">working on this project with Google Colaboratory</a>.</p>\n<p>After going to that link, create a copy of the notebook either in your own account or locally. Once you complete the project and it passes the test (included at that link), submit your project link below. If you are submitting a Google Colaboratory link, make sure to turn on link sharing for \"anyone with the link.\"</p>\n<p>We are still developing the interactive instructional content for the machine learning curriculum. For now, you can go through the video challenges in this certification. You may also have to seek out additional learning resources, similar to what you would do when working on a real-world project.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>In this challenge, you need to create a machine learning model that will classify SMS messages as either \"ham\" or \"spam\". A \"ham\" message is a normal message sent by a friend. A \"spam\" message is an advertisement or a message sent by a company.</p>\n<p>You should create a function called <code>predict_message</code> that takes a message string as an argument and returns a list. The first element in the list should be a number between zero and one that indicates the likeliness of \"ham\" (0) or \"spam\" (1). The second element in the list should be the word \"ham\" or \"spam\", depending on which is most likely.</p>\n<p>For this challenge, you will use the <a href=\"http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">SMS Spam Collection</a> dataset. The dataset has already been grouped into train data and test data.</p>\n<p>The first two cells import the libraries and data. The final cell tests your model and function. Add your code in between these cells.</p>\n</section>",
+  "translationPending": false,
+  "block": "machine-learning-with-python-projects",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

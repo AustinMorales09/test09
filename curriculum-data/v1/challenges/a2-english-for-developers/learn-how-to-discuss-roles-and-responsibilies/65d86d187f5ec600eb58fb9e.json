@@ -1,0 +1,83 @@
+{
+  "id": "65d86d187f5ec600eb58fb9e",
+  "title": "Task 70",
+  "challengeType": 22,
+  "dashedName": "task-70",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Ah, speaking of procedures, _ _ _ he told you that we need to do when it comes to office security?</p>",
+    "blanks": [
+      {
+        "answer": "is",
+        "feedback": "<p>This word starts a question asking for specific information or tasks.</p>"
+      },
+      {
+        "answer": "there",
+        "feedback": "<p>It's used here to introduce the existence of tasks or information.</p>"
+      },
+      {
+        "answer": "anything",
+        "feedback": "<p>This word is used to ask about any tasks or information without specifying what it might be.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 37.02,
+        "finishTimestamp": 43.26
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 7.24,
+        "dialogue": {
+          "text": "Speaking of procedures, is there anything he told you that we need to do when it comes to office security?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 7.74
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>Is there anything</code> is used to ask if there are any things or tasks that need to be considered or done. It's a way of asking for more information or details about a subject.</p>\n<p>For example, <code>Is there anything I can help with?</code> means the speaker is offering help with any task.</p>\n<p><code>Speaking of</code> is a phrase used to transition to a related topic or to bring up something connected to the current discussion. For example, <code>Speaking of holidays, are you going anywhere this summer?</code> shifts the conversation to talk about holiday plans.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 72,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

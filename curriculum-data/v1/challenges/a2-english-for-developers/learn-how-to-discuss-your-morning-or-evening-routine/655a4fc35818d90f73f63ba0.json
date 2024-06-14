@@ -1,0 +1,92 @@
+{
+  "id": "655a4fc35818d90f73f63ba0",
+  "title": "Task 54",
+  "challengeType": 22,
+  "dashedName": "task-54",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Yes, don't start your day by checking your phone or emails immediately. It _ stress and _ you feel like you have to _.</p>",
+    "blanks": [
+      {
+        "answer": "creates",
+        "feedback": "<p>Indicates that the action leads to the formation or development of stress. It is conjugated in the third person.</p>"
+      },
+      {
+        "answer": "makes",
+        "feedback": "<p>Used here to express that the action results in feeling a certain way. It is conjugated in the third person.</p>"
+      },
+      {
+        "answer": "rush",
+        "feedback": "<p>Refers to moving or doing something quickly or in a hurry.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room1.png",
+      "characters": [
+        {
+          "character": "Expert",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 43.42,
+        "finishTimestamp": 50.6
+      }
+    },
+    "commands": [
+      {
+        "character": "Expert",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Expert",
+        "startTime": 1,
+        "finishTime": 4.64,
+        "dialogue": {
+          "text": "Yes. Don't start your day by checking your phone or emails immediately.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "startTime": 4.88,
+        "finishTime": 8.18,
+        "dialogue": {
+          "text": "It creates stress and makes you feel like you have to rush.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "opacity": 0,
+        "startTime": 8.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>to rush</code> means to do something or move quickly or in a hurry, often due to time pressure. It's used to describe actions done with urgency. For example:</p>\n<p><code>I had to rush to catch the train.</code> (means moving quickly to not miss the train)</p>\n<p><code>Don't rush your decision.</code> (suggests taking time to decide)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 55,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

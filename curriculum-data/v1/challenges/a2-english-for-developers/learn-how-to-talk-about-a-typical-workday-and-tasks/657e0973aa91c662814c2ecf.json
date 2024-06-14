@@ -1,0 +1,84 @@
+{
+  "id": "657e0973aa91c662814c2ecf",
+  "title": "Task 9",
+  "challengeType": 22,
+  "dashedName": "task-9",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Then, I _ my to-do list for the day and _ my tasks. I like to work on the most _ ones first.</p>",
+    "blanks": [
+      {
+        "answer": "review",
+        "feedback": "<p>Sophie needs to look over her to-do list.</p>"
+      },
+      {
+        "answer": "prioritize",
+        "feedback": "<p>Sophie needs to decide the order in which to do her tasks.</p>"
+      },
+      {
+        "answer": "important",
+        "feedback": "<p>This word describes something that is of higher priority or need.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 16.04,
+        "finishTimestamp": 22.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 7.12,
+        "dialogue": {
+          "text": "Then I review my to-do list for the day and prioritize my tasks. I like to work on the most important ones first.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 7.52
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To review</code> means to look over something, like a list or a plan.</p>\n<p><code>To prioritize</code> means to decide which tasks are most important to do first.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

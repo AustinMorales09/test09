@@ -1,0 +1,50 @@
+{
+  "id": "5e7b9f060b6c005b0e76f05c",
+  "title": "Loops and Iterations",
+  "challengeType": 11,
+  "videoId": "dLA-szNRnUY",
+  "bilibiliIds": {
+    "aid": 674492981,
+    "bvid": "BV1hU4y1H7tF",
+    "cid": 376531204
+  },
+  "dashedName": "loops-and-iterations",
+  "solutions": [],
+  "question": {
+    "text": "<p>What will the following code print out?:</p>\n<pre><code class=\"language-python\">n = 0\nwhile True:\n    if n == 3:\n        break\n    print(n)\n    n = n + 1\n</code></pre>",
+    "answers": [
+      {
+        "answer": "<pre>0\n1\n2</pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre>0\n1\n2\n3</pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre>1\n2</pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre>1\n2\n3</pre>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

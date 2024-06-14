@@ -1,0 +1,61 @@
+{
+  "id": "660f23b53db70af0f2620e78",
+  "title": "Step 42",
+  "challengeType": 1,
+  "dashedName": "step-42",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        14
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(i);\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(i);\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>\\n</code> escape sequence. Remember that it needs to be a string, so it is wrapped in quotes.</p>",
+      "testString": "assert.match(code, /('|\")\\\\n\\1/);"
+    },
+    {
+      "text": "<p>You should concatenate the <code>\\n</code> escape sequence to your <code>result</code> variable.</p>",
+      "testString": "assert.match(code, /result\\s*\\+\\s*('|\")\\\\n\\1/);"
+    },
+    {
+      "text": "<p>You should concatenate your <code>row</code> variable to your <code>\\n</code> escape sequence.</p>",
+      "testString": "assert.match(code, /result\\s*\\+\\s*('|\")\\\\n\\1\\s*\\+\\s*row/);"
+    },
+    {
+      "text": "<p>You should assign the entire concatenation back to your <code>result</code> variable. Don't forget your semi-colon.</p>",
+      "testString": "assert.match(code, /result\\s*=\\s*result\\s*\\+\\s*('|\")\\\\n\\1\\s*\\+\\s*row;/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now all of your numbers are appearing on the same line. This will not work for creating a pyramid.</p>\n<p>You will need to add a new line to each row. However, pressing the return key to insert a line break between quotes in JavaScript will result in a parsing error. Instead, you need to use the special <dfn>escape sequence</dfn> <code>\\n</code>, which is interpreted as a new line when the string is logged. For example:</p>\n<pre><code class=\"language-js\">lineOne = lineOne + \"\\n\" + lineTwo;\n</code></pre>\n<p>Use a second addition operator to concatenate a new line between the existing <code>result</code> value and the added <code>row</code> value.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 41,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

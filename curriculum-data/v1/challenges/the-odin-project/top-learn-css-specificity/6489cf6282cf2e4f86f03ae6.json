@@ -1,0 +1,45 @@
+{
+  "id": "6489cf6282cf2e4f86f03ae6",
+  "title": "The Cascade of CSS Question E",
+  "challengeType": 15,
+  "dashedName": "the-cascade-of-css-question-e",
+  "solutions": [],
+  "question": {
+    "text": "<p>Considering the updated CSS code, which of the following describes the rendering of the <code>&#x3C;div class=\"list\" id=\"subsection\">&#x3C;/div></code> element?</p>",
+    "answers": [
+      {
+        "answer": "<p>Text color: Red, Background color: Transparent</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Text color: Red, Background color: Yellow</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Text color: Blue, Background color: Transparent</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Text color: Blue, Background color: Yellow</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<pre><code class=\"language-css\">/* rule 1 */\n#subsection .list {\n  background-color: yellow;\n  color: blue;\n}\n\n/* rule 2 */\n#subsection .main .list {\n  color: red;\n}\n</code></pre>\n<p>In this final example, both rules are using ID and class selectors, so neither rule is using a more specific selector than the other. The cascade then checks the amounts of each selector type. Both rules only have one ID selector, but rule 2 has more class selectors, so rule 2 has a higher specificity!</p>\n<p>While the <code>color: red</code> declaration would take precedence, the <code>background-color: yellow</code> declaration would still be applied since there’s no conflicting declaration for it.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-css-specificity",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "657b12e7c306334b7c320221",
+  "title": "Task 11",
+  "challengeType": 22,
+  "dashedName": "task-11",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>We _ responsible for the checkout process, and it _ a successful implementation.</p>",
+    "blanks": [
+      {
+        "answer": "were",
+        "feedback": "<p>This is the past tense of <code>are</code> used for plural subjects.</p>"
+      },
+      {
+        "answer": "was",
+        "feedback": "<p>This is the past tense of <code>is</code> used for singular subjects or situations.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Candidate",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 28.88,
+        "finishTimestamp": 33.4
+      }
+    },
+    "commands": [
+      {
+        "character": "Candidate",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Candidate",
+        "startTime": 1,
+        "finishTime": 5.52,
+        "dialogue": {
+          "text": "We were responsible for the checkout process and it was a successful implementation.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Candidate",
+        "opacity": 0,
+        "startTime": 6.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the candidate's statement and fill in the missing words.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

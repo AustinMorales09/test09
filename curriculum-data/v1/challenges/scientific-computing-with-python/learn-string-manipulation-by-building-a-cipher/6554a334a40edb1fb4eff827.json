@@ -1,0 +1,57 @@
+{
+  "id": "6554a334a40edb1fb4eff827",
+  "title": "Step 60",
+  "challengeType": 20,
+  "dashedName": "step-60",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        15
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\ntext = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', message)\n    print('encrypted text:', encrypted_text)\n",
+      "error": null,
+      "seed": "\ntext = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', message)\n    print('encrypted text:', encrypted_text)\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a variable called <code>key_char</code> at the beginning of your <code>else</code> clause body.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {block_body} = __helpers.python.getBlock(commentless_code, \"else\");\nassert(block_body.match(/^\\s*key_char\\s*=/));"
+    },
+    {
+      "text": "<p>You should assign <code>key[key_index % len(key)]</code> to your <code>key_char</code> variable.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {block_body} = __helpers.python.getBlock(commentless_code, \"else\");    \nassert(block_body.match(/key_char\\s*=\\s*key\\s*\\[\\s*key_index\\s*%\\s*len\\s*\\(\\s*key\\s*\\)\\s*\\]/));"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Next, inside the <code>else</code> block, declare a variable called <code>key_char</code> and assign it the value of <code>key</code> at the index <code>key_index</code> mod(<code>%</code>) the length of <code>key</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 59,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

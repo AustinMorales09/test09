@@ -1,0 +1,93 @@
+{
+  "id": "5a24c314108439a4d4036151",
+  "title": "Use a Switch Statement to Handle Multiple Actions",
+  "challengeType": 6,
+  "forumTopicId": 301449,
+  "dashedName": "use-a-switch-statement-to-handle-multiple-actions",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const defaultState = {\n  authenticated: false\n};\n\nconst authReducer = (state = defaultState, action) => {\n  // Change code below this line\n\n  // Change code above this line\n};\n\nconst store = Redux.createStore(authReducer);\n\nconst loginUser = () => {\n  return {\n    type: 'LOGIN'\n  }\n};\n\nconst logoutUser = () => {\n  return {\n    type: 'LOGOUT'\n  }\n};",
+      "error": null,
+      "seed": "const defaultState = {\n  authenticated: false\n};\n\nconst authReducer = (state = defaultState, action) => {\n  // Change code below this line\n\n  // Change code above this line\n};\n\nconst store = Redux.createStore(authReducer);\n\nconst loginUser = () => {\n  return {\n    type: 'LOGIN'\n  }\n};\n\nconst logoutUser = () => {\n  return {\n    type: 'LOGOUT'\n  }\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const defaultState = {\n  authenticated: false\n};\n\nconst authReducer = (state = defaultState, action) => {\n\n  switch (action.type) {\n\n    case 'LOGIN':\n      return {\n        authenticated: true\n      }\n\n    case 'LOGOUT':\n      return {\n        authenticated: false\n      }\n\n    default:\n      return state;\n\n  }\n\n};\n\nconst store = Redux.createStore(authReducer);\n\nconst loginUser = () => {\n  return {\n    type: 'LOGIN'\n  }\n};\n\nconst logoutUser = () => {\n  return {\n    type: 'LOGOUT'\n  }\n};",
+        "error": null,
+        "seed": "const defaultState = {\n  authenticated: false\n};\n\nconst authReducer = (state = defaultState, action) => {\n\n  switch (action.type) {\n\n    case 'LOGIN':\n      return {\n        authenticated: true\n      }\n\n    case 'LOGOUT':\n      return {\n        authenticated: false\n      }\n\n    default:\n      return state;\n\n  }\n\n};\n\nconst store = Redux.createStore(authReducer);\n\nconst loginUser = () => {\n  return {\n    type: 'LOGIN'\n  }\n};\n\nconst logoutUser = () => {\n  return {\n    type: 'LOGOUT'\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Calling the function <code>loginUser</code> should return an object with type property set to the string <code>LOGIN</code>.</p>",
+      "testString": "assert(loginUser().type === 'LOGIN');"
+    },
+    {
+      "text": "<p>Calling the function <code>logoutUser</code> should return an object with type property set to the string <code>LOGOUT</code>.</p>",
+      "testString": "assert(logoutUser().type === 'LOGOUT');"
+    },
+    {
+      "text": "<p>The store should be initialized with an object with an <code>authenticated</code> property set to <code>false</code>.</p>",
+      "testString": "assert(store.getState().authenticated === false);"
+    },
+    {
+      "text": "<p>Dispatching <code>loginUser</code> should update the <code>authenticated</code> property in the store state to <code>true</code>.</p>",
+      "testString": "assert(\n  (function () {\n    const initialState = store.getState();\n    store.dispatch(loginUser());\n    const afterLogin = store.getState();\n    return (\n      initialState.authenticated === false && afterLogin.authenticated === true\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p>Dispatching <code>logoutUser</code> should update the <code>authenticated</code> property in the store state to <code>false</code>.</p>",
+      "testString": "assert(\n  (function () {\n    store.dispatch(loginUser());\n    const loggedIn = store.getState();\n    store.dispatch(logoutUser());\n    const afterLogout = store.getState();\n    return (\n      loggedIn.authenticated === true && afterLogout.authenticated === false\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>authReducer</code> function should handle multiple action types with a <code>switch</code> statement.</p>",
+      "testString": "(getUserInput) =>\n  assert(\n    getUserInput('index').toString().includes('switch') &&\n      getUserInput('index').toString().includes('case') &&\n      getUserInput('index').toString().includes('default')\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can tell the Redux store how to handle multiple action types. Say you are managing user authentication in your Redux store. You want to have a state representation for when users are logged in and when they are logged out. You represent this with a single state object with the property <code>authenticated</code>. You also need action creators that create actions corresponding to user login and user logout, along with the action objects themselves.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The code editor has a store, actions, and action creators set up for you. Fill in the <code>reducer</code> function to handle multiple authentication actions. Use a JavaScript <code>switch</code> statement in the <code>reducer</code> to respond to different action events. This is a standard pattern in writing Redux reducers. The switch statement should switch over <code>action.type</code> and return the appropriate authentication state.</p>\n<p><strong>Note:</strong> At this point, don't worry about state immutability, since it is small and simple in this example. For each action, you can return a new object — for example, <code>{authenticated: true}</code>. Also, don't forget to write a <code>default</code> case in your switch statement that returns the current <code>state</code>. This is important because once your app has multiple reducers, they are all run any time an action dispatch is made, even when the action isn't related to that reducer. In such a case, you want to make sure that you return the current <code>state</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "redux",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 6,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"
+    },
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.2.0/redux-thunk.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

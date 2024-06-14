@@ -1,0 +1,88 @@
+{
+  "id": "65cb916a2d3d9851f81601b2",
+  "title": "Task 3",
+  "challengeType": 22,
+  "dashedName": "task-3",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Maria, I have a question. Do you know what _ the team? How about you? What makes you feel _?</p>",
+    "blanks": [
+      {
+        "answer": "motivates",
+        "feedback": "<p>Think about the word that means to give someone a reason to do something right now. This word is conjugated in the third person singular.</p>"
+      },
+      {
+        "answer": "motivated",
+        "feedback": "<p>This word describes how someone feels when they have a reason or desire to do something. This word ends with <code>-ed</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 6.42
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 4.52,
+        "dialogue": {
+          "text": "Maria, I have a question. Do you know what motivates the team?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "startTime": 4.92,
+        "finishTime": 7.42,
+        "dialogue": {
+          "text": "How about you? What makes you feel motivated?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 7.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Adjectives ending in <code>-ed</code> are often used to describe the emotions or feelings someone experiences. They are used to express a state of mind or being.</p>\n<p>Listen to the audio and complete the sentence.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

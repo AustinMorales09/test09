@@ -1,0 +1,65 @@
+{
+  "id": "5900f51d1000cf542c51002f",
+  "title": "Problem 433: Steps in Euclid's algorithm",
+  "challengeType": 1,
+  "forumTopicId": 302104,
+  "dashedName": "problem-433-steps-in-euclids-algorithm",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function stepsInEuclidsAlgorithm() {\n\n  return true;\n}\n\nstepsInEuclidsAlgorithm();",
+      "error": null,
+      "seed": "function stepsInEuclidsAlgorithm() {\n\n  return true;\n}\n\nstepsInEuclidsAlgorithm();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>stepsInEuclidsAlgorithm()</code> should return <code>326624372659664</code>.</p>",
+      "testString": "assert.strictEqual(stepsInEuclidsAlgorithm(), 326624372659664);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $E(x_0, y_0)$ be the number of steps it takes to determine the greatest common divisor of $x_0$ and $y_0$ with Euclid's algorithm. More formally:</p>\n<p>$$\\begin{align}\n&#x26; x_1 = y_0, y_1 = x_0\\bmod y_0 \\\\\n&#x26; x_n = y_{n - 1}, y_n = x_{n - 1}\\bmod y_{n - 1}\n\\end{align}$$</p>\n<p>$E(x_0, y_0)$ is the smallest $n$ such that $y_n = 0$.</p>\n<p>We have $E(1, 1) = 1$, $E(10, 6) = 3$ and $E(6, 10) = 4$.</p>\n<p>Define $S(N)$ as the sum of $E(x, y)$ for $1 ≤ x$, $y ≤ N$.</p>\n<p>We have $S(1) = 1$, $S(10) = 221$ and $S(100) = 39\\,826$.</p>\n<p>Find $S(5 \\times {10}^6)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 32,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

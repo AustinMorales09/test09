@@ -1,0 +1,75 @@
+{
+  "id": "65b629dbf8298669fb4c1572",
+  "title": "Task 24",
+  "challengeType": 22,
+  "dashedName": "task-24",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>She makes sure we follow the rules and that _ is happy.</p>",
+    "blanks": [
+      {
+        "answer": "everyone",
+        "feedback": "<p>This word is used to refer to each person in a group. It emphasizes that no person is excluded from being happy in this context.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 26.98,
+        "finishTimestamp": 30.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.64,
+        "dialogue": {
+          "text": "She makes sure we follow the rules and that everyone is happy.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 5.14
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>everyone</code>  means every person in a group. <code>Every-</code> is used when talking about all things or people in a group, one by one.</p>\n<p>It's important to note that <code>everyone</code> sounds like it's talking about many people, but you use it with a singular verb. This is similar to other words starting with <code>every-</code> like <code>everything</code> and <code>everybody</code>.</p>\n<p>For example, you say <code>Everyone goes to the party</code>, <code>Everything is right</code> or <code>Everybody works hard</code>.</p>\n<p><code>Make sure</code> means to check or ensure something is correct before moving on. For example, <code>You make sure the code runs</code> means you check the code to be certain it has no errors and can run properly.</p>\n<p><code>Follow the rules</code> means to do what the rules say. If there is a rule that says <code>use camelCase for variable names</code>, to <code>follow the rules</code> means you name your variables like <code>myVariable</code> instead of <code>my_variable</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

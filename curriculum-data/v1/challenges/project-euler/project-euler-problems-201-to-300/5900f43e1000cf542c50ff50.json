@@ -1,0 +1,65 @@
+{
+  "id": "5900f43e1000cf542c50ff50",
+  "title": "Problem 210: Obtuse Angled Triangles",
+  "challengeType": 1,
+  "forumTopicId": 301852,
+  "dashedName": "problem-210-obtuse-angled-triangles",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function obtuseAngledTriangles() {\n\n  return true;\n}\n\nobtuseAngledTriangles();",
+      "error": null,
+      "seed": "function obtuseAngledTriangles() {\n\n  return true;\n}\n\nobtuseAngledTriangles();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>obtuseAngledTriangles()</code> should return <code>1598174770174689500</code>.</p>",
+      "testString": "assert.strictEqual(obtuseAngledTriangles(), 1598174770174689500);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Consider the set $S(r)$ of points ($x$,$y$) with integer coordinates satisfying $|x| + |y| ≤ r$.</p>\n<p>Let $O$ be the point (0,0) and $C$ the point ($\\frac{r}{4}$,$\\frac{r}{4}$).</p>\n<p>Let $N(r)$ be the number of points $B$ in $S(r)$, so that the triangle $OBC$ has an obtuse angle, i.e. the largest angle $α$ satisfies $90°&#x3C;α&#x3C;180°$.</p>\n<p>So, for example, $N(4)=24$ and $N(8)=100$.</p>\n<p>What is $N(1\\,000\\,000\\,000)$?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

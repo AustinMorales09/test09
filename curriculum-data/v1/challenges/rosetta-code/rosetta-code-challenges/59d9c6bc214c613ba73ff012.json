@@ -1,0 +1,81 @@
+{
+  "id": "59d9c6bc214c613ba73ff012",
+  "title": "SEDOLs",
+  "challengeType": 1,
+  "forumTopicId": 302305,
+  "dashedName": "sedols",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function sedol(input) {\n  const checkSum = 0\n  \n  return checkSum;\n}",
+      "error": null,
+      "seed": "function sedol(input) {\n  const checkSum = 0\n  \n  return checkSum;\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function sedol(input) {\n  const checkDigit = sedolCheckDigit(input);\n  if (checkDigit !== null) {\n    return input + checkDigit;\n  }\n  return null;\n}\n\nconst weight = [1, 3, 1, 7, 3, 9, 1];\nfunction sedolCheckDigit(char6) {\n  if (char6.search(/^[0-9BCDFGHJKLMNPQRSTVWXYZ]{6}$/) === -1) {\n    return null;\n  }\n\n  let sum = 0;\n  for (let i = 0; i < char6.length; i++) {\n    sum += weight[i] * parseInt(char6.charAt(i), 36);\n  }\n  const checkSum = (10 - (sum % 10)) % 10;\n  return checkSum.toString();\n}",
+        "error": null,
+        "seed": "function sedol(input) {\n  const checkDigit = sedolCheckDigit(input);\n  if (checkDigit !== null) {\n    return input + checkDigit;\n  }\n  return null;\n}\n\nconst weight = [1, 3, 1, 7, 3, 9, 1];\nfunction sedolCheckDigit(char6) {\n  if (char6.search(/^[0-9BCDFGHJKLMNPQRSTVWXYZ]{6}$/) === -1) {\n    return null;\n  }\n\n  let sum = 0;\n  for (let i = 0; i < char6.length; i++) {\n    sum += weight[i] * parseInt(char6.charAt(i), 36);\n  }\n  const checkSum = (10 - (sum % 10)) % 10;\n  return checkSum.toString();\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>sedol</code> should be a function.</p>",
+      "testString": "assert(typeof sedol === 'function');"
+    },
+    {
+      "text": "<p><code>sedol('a')</code> should return null.</p>",
+      "testString": "assert(sedol('a') === null);"
+    },
+    {
+      "text": "<p><code>sedol('710889')</code> should return '7108899'.</p>",
+      "testString": "assert(sedol('710889') === '7108899');"
+    },
+    {
+      "text": "<p><code>sedol('BOATER')</code> should return null.</p>",
+      "testString": "assert(sedol('BOATER') === null);"
+    },
+    {
+      "text": "<p><code>sedol('228276')</code> should return '2282765'.</p>",
+      "testString": "assert(sedol('228276') === '2282765');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><abbr title=\"Stock Exchange Daily Official List\">SEDOL</abbr> is a list of securities identification numbers issued by the London Stock Exchange.</p>\n<p>For each number list of 6-digit <abbr title=\"Stock Exchange Daily Official List\">SEDOL</abbr>s, calculate and append the checksum digit. That is, given the input string on the left, your function should return the corresponding string on the right:</p>\n<pre>\n710889 => 7108899\nB0YBKJ => B0YBKJ7\n406566 => 4065663\nB0YBLH => B0YBLH2\n228276 => 2282765\nB0YBKL => B0YBKL9\n557910 => 5579107\nB0YBKR => B0YBKR5\n585284 => 5852842\nB0YBKT => B0YBKT7\nB00030 => B000300\n</pre>\n<p>Check that each input is correctly formed, especially with respect to valid characters allowed in a SEDOL string. Your function should return <code>null</code> on an invalid input.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 108,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

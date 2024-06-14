@@ -1,0 +1,75 @@
+{
+  "id": "663a5b36b3cfadb39db070a2",
+  "title": "Task 30",
+  "challengeType": 22,
+  "dashedName": "task-30",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>You can't miss his _.</p>",
+    "blanks": [
+      {
+        "answer": "goatee",
+        "feedback": "<p>This blank refers to a small beard growing only on the chin.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 20.7,
+        "finishTimestamp": 22.14
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 2.44,
+        "dialogue": {
+          "text": "You can't miss his goatee.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 2.94
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>goatee</code> is a small beard that grows only on the chin and sometimes just below the lower lip.</p>\n<p>Listen to the dialogue and fill in the blank</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 31,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

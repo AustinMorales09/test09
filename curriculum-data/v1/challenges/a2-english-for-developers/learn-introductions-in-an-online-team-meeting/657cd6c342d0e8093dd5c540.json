@@ -1,0 +1,83 @@
+{
+  "id": "657cd6c342d0e8093dd5c540",
+  "title": "Task 48",
+  "challengeType": 22,
+  "dashedName": "task-48",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Good _, everyone! I _ you're all _.</p>",
+    "blanks": [
+      {
+        "answer": "morning",
+        "feedback": "<p>This word indicates the time of day and is used as a greeting.</p>"
+      },
+      {
+        "answer": "hope",
+        "feedback": "<p>Used to express a wish or desire for something.</p>"
+      },
+      {
+        "answer": "well",
+        "feedback": "<p>In this context refers to being in good health or condition.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 2.84
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.84,
+        "dialogue": {
+          "text": "Good morning, everyone. I hope you're well.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.34
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>hope</code> is used to express a wish for something to be true or to happen. For example, saying <code>I hope you're doing well</code> means you wish that the person is fine or happy.</p>\n<p><code>Well</code> is often used to mean in good health or in a good condition. For example, <code>Are you feeling well today?</code> is asking if someone is in good health.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 50,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

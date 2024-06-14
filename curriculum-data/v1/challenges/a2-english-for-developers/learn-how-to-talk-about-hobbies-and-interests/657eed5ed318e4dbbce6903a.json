@@ -1,0 +1,45 @@
+{
+  "id": "657eed5ed318e4dbbce6903a",
+  "title": "Task 61",
+  "challengeType": 19,
+  "dashedName": "task-61",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the grammatically correct sentence.</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I've read handbooks at least ten.</code></p>",
+        "feedback": "<p>Consider the typical placement of the phrase when expressing a minimum or lowest quantity.</p>"
+      },
+      {
+        "answer": "<p><code>I've read at least handbooks ten.</code></p>",
+        "feedback": "<p>Place the phrase before the quantity, number, or degree it refers to.</p>"
+      },
+      {
+        "answer": "<p><code>I've read at ten least handbooks.</code></p>",
+        "feedback": "<p>Look for the option where the phrase is correctly positioned to convey the intended meaning.</p>"
+      },
+      {
+        "answer": "<p><code>I've read at least ten handbooks.</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>at least</code> is typically placed before the quantity, number, or degree it refers to. E.g. <code>She's attended at least eleven meetings last month.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 63,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "657e307876468dff6e505438",
+  "title": "Task 42",
+  "challengeType": 19,
+  "dashedName": "task-42",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Tom asking with <code>How long are our workdays?</code></p>",
+    "answers": [
+      {
+        "answer": "<p>The start time of the workday.</p>",
+        "feedback": "<p><code>How long</code> refers to length in time, not specific start times.</p>"
+      },
+      {
+        "answer": "<p>The duration of the workday.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The activities during the workday.</p>",
+        "feedback": "<p>The question focuses on time duration, not specific activities.</p>"
+      },
+      {
+        "answer": "<p>The location of the workday.</p>",
+        "feedback": "<p>Location is not related to the <code>how long</code> inquiry.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>How long</code> is frequently used to ask about the duration or time of an event or activity.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

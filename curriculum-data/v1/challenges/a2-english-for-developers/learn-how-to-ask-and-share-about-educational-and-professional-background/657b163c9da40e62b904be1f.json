@@ -1,0 +1,83 @@
+{
+  "id": "657b163c9da40e62b904be1f",
+  "title": "Task 23",
+  "challengeType": 22,
+  "dashedName": "task-23",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That's great to hear. _ the members of the team _ _ any specific achievements or projects?</p>",
+    "blanks": [
+      {
+        "answer": "Were",
+        "feedback": "<p>This is the past form of <code>are</code> used to ask about a past state or condition.</p>"
+      },
+      {
+        "answer": "involved",
+        "feedback": "<p>Think of a word that means <code>participated in</code> or <code>engaged with</code>.</p>"
+      },
+      {
+        "answer": "in",
+        "feedback": "<p>A preposition that often follows <code>involved</code> to indicate participation or inclusion.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.06,
+        "finishTimestamp": 27.64
+      }
+    },
+    "commands": [
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Anna",
+        "startTime": 1,
+        "finishTime": 5.58,
+        "dialogue": {
+          "text": "That's great to hear. Were the members of the team involved in any specific achievements or projects?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 6.08
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This task is a review of the past simple interrogative. In questions, the simple past tense often begins with a past tense verb, followed by the subject and the rest of the sentence. This structure is used to ask about past events or states.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

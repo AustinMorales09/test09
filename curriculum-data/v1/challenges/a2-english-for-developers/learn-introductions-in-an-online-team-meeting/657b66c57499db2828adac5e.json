@@ -1,0 +1,45 @@
+{
+  "id": "657b66c57499db2828adac5e",
+  "title": "Task 17",
+  "challengeType": 19,
+  "dashedName": "task-17",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>to collaborate</code> generally involve in a team setting?</p>",
+    "answers": [
+      {
+        "answer": "<p>Working individually without communication</p>",
+        "feedback": "<p>Think about the importance of teamwork and interaction in collaboration.</p>"
+      },
+      {
+        "answer": "<p>Competing with team members to show superiority</p>",
+        "feedback": "<p>Collaboration is about working together, not competing against each other.</p>"
+      },
+      {
+        "answer": "<p>Working together with others, sharing ideas and tasks</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Focusing only on personal goals</p>",
+        "feedback": "<p>Collaboration involves collective goals rather than just personal ones.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To collaborate</code> means to work together with others to achieve a common goal, often involving shared responsibilities and teamwork. While <code>contributing</code> involves adding something to a project, <code>collaborating</code> emphasizes working together as a team. For example:</p>\n<p><code>In our team, we collaborate by sharing ideas and responsibilities.</code></p>\n<p><code>Collaborating on the project means we all work together to solve problems.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

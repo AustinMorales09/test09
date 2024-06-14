@@ -1,0 +1,69 @@
+{
+  "id": "660f07d231941bc11719f664",
+  "title": "Step 20",
+  "challengeType": 1,
+  "dashedName": "step-20",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        6
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];\nconsole.log(rows[0]);\n",
+      "error": null,
+      "seed": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];\nconsole.log(rows[0]);\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use bracket notation on the <code>rows</code> array again.</p>",
+      "testString": "assert.lengthOf(code.match(/rows\\[/g), 2)"
+    },
+    {
+      "text": "<p>You should access the third element of the <code>rows</code> array.</p>",
+      "testString": "assert.match(code, /rows\\[\\s*2\\s*\\]/);"
+    },
+    {
+      "text": "<p>You should use the assignment operator on the third element of the <code>rows</code> array.</p>",
+      "testString": "assert.match(code, /rows\\[\\s*2\\s*\\]\\s*=/);"
+    },
+    {
+      "text": "<p>You should assign the value <code>10</code> to the third element of your <code>rows</code> array.</p>",
+      "testString": "assert.equal(rows[2], 10);"
+    },
+    {
+      "text": "<p>You should have a second <code>console.log</code> statement in your code.</p>",
+      "testString": "assert.lengthOf(code.match(/console\\.log/g), 2);"
+    },
+    {
+      "text": "<p>You should log the <code>rows</code> array.</p>",
+      "testString": "assert.match(code, /console\\.log\\(\\s*rows\\s*\\);?/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Arrays are special in that they are considered <dfn>mutable</dfn>. This means you can change the value at an index directly.</p>\n<p>For example, this code would assign the number <code>25</code> to the second element in the array:</p>\n<pre><code class=\"language-js\">let array = [1, 2, 3];\narray[1] = 25;\nconsole.log(array); // prints [1, 25, 3]\n</code></pre>\n<p>Update the <strong>third</strong> element of your <code>rows</code> array to be the number <code>10</code>. Then print the <code>rows</code> array to your console.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

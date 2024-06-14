@@ -1,0 +1,49 @@
+{
+  "id": "6568c86dc9193000d11ca5e0",
+  "title": "Step 38",
+  "challengeType": 20,
+  "dashedName": "step-38",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        10
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\nfor char in text.lower():\n    index = alphabet.find(char)\n    new_index = index + shift\n    encrypted_text = alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\nfor char in text.lower():\n    index = alphabet.find(char)\n    new_index = index + shift\n    encrypted_text = alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should assign <code>encrypted_text + alphabet[new_index]</code> to your <code>encrypted_text</code> variable.</p>",
+      "testString": "({ test: () => {\n    const commentless_code = __helpers.python.removeComments(code);\n    const {block_body} = __helpers.python.getBlock(commentless_code, /for\\s+char\\s+in\\s+text\\.lower\\s*\\(\\s*\\)\\s*/);\n    assert(block_body.match(/encrypted_text\\s*=\\s*encrypted_text\\s*\\+\\s*alphabet\\s*\\[\\s*new_index\\s*\\]/));\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Instead of assigning <code>alphabet[new_index]</code> to <code>encrypted_text</code>, assign the current value of <code>encrypted_text</code> plus <code>alphabet[new_index]</code> to this variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 37,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

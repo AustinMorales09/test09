@@ -1,0 +1,96 @@
+{
+  "id": "656a4815c0d43346a2e27b51",
+  "title": "Task 41",
+  "challengeType": 22,
+  "dashedName": "task-41",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Yes, I am. I'm _ with video interviews and interactive infographics to make the content more _ for our readers. It's a bit _, but I'm _ a lot in the process.</p>",
+    "blanks": [
+      {
+        "answer": "experimenting",
+        "feedback": "<p>Trying out new ideas.</p>"
+      },
+      {
+        "answer": "engaging",
+        "feedback": "<p>Interesting and keeping people's attention.</p>"
+      },
+      {
+        "answer": "challenging",
+        "feedback": "<p>Refers to something that is difficult but rewarding.</p>"
+      },
+      {
+        "answer": "learning",
+        "feedback": "<p>Gaining new knowledge or skills.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Amy",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 31.98,
+        "finishTimestamp": 42.08
+      }
+    },
+    "commands": [
+      {
+        "character": "Amy",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Amy",
+        "startTime": 1,
+        "finishTime": 7.98,
+        "dialogue": {
+          "text": "Yes, I am. I'm experimenting with video interviews and interactive infographics to make the content more engaging for our readers.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Amy",
+        "startTime": 8.54,
+        "finishTime": 11.1,
+        "dialogue": {
+          "text": "It's a bit challenging, but I'm learning a lot in the process.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Amy",
+        "opacity": 0,
+        "startTime": 11.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Let's practice!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 44,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "5900f4b11000cf542c50ffc4",
+  "title": "Problem 325: Stone Game II",
+  "challengeType": 1,
+  "forumTopicId": 301982,
+  "dashedName": "problem-325-stone-game-ii",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function stoneGameTwo() {\n\n  return true;\n}\n\nstoneGameTwo();",
+      "error": null,
+      "seed": "function stoneGameTwo() {\n\n  return true;\n}\n\nstoneGameTwo();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>stoneGameTwo()</code> should return <code>54672965</code>.</p>",
+      "testString": "assert.strictEqual(stoneGameTwo(), 54672965);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A game is played with two piles of stones and two players. On each player's turn, the player may remove a number of stones from the larger pile. The number of stones removes must be a positive multiple of the number of stones in the smaller pile.</p>\n<p>E.g., let the ordered pair (6,14) describe a configuration with 6 stones in the smaller pile and 14 stones in the larger pile, then the first player can remove 6 or 12 stones from the larger pile.</p>\n<p>The player taking all the stones from a pile wins the game.</p>\n<p>A winning configuration is one where the first player can force a win. For example, (1,5), (2,6) and (3,12) are winning configurations because the first player can immediately remove all stones in the second pile.</p>\n<p>A losing configuration is one where the second player can force a win, no matter what the first player does. For example, (2,3) and (3,4) are losing configurations: any legal move leaves a winning configuration for the second player.</p>\n<p>Define $S(N)$ as the sum of ($x_i + y_i$) for all losing configurations ($x_i$, $y_i$), $0 &#x3C; x_i &#x3C; y_i ≤ N$. We can verify that $S(10) = 211$ and $S({10}^4) = 230\\,312\\,207\\,313$.</p>\n<p>Find $S({10}^{16})\\bmod 7^{10}$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

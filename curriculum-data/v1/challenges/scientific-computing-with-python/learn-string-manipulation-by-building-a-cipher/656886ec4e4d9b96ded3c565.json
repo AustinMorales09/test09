@@ -1,0 +1,53 @@
+{
+  "id": "656886ec4e4d9b96ded3c565",
+  "title": "Step 25",
+  "challengeType": 20,
+  "dashedName": "step-25",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        6
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nfor i in text:\n    print(i)",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nfor i in text:\n    print(i)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should replace <code>i</code> with <code>char</code>.</p>",
+      "testString": "assert.match(code, /^for\\s+char\\s+in\\s+text:\\s+print\\s*\\(\\s*char\\s*\\)/m)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The iteration variable can have any valid name, but it's convenient to give it a meaningful name.</p>\n<p>Rename your <code>i</code> variable to <code>char</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "5900f4621000cf542c50ff74",
+  "title": "Problem 245: Coresilience",
+  "challengeType": 1,
+  "forumTopicId": 301892,
+  "dashedName": "problem-245-coresilience",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function coresilience() {\n\n  return true;\n}\n\ncoresilience();",
+      "error": null,
+      "seed": "function coresilience() {\n\n  return true;\n}\n\ncoresilience();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>coresilience()</code> should return <code>288084712410001</code>.</p>",
+      "testString": "assert.strictEqual(coresilience(), 288084712410001);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>We shall call a fraction that cannot be cancelled down a resilient fraction.</p>\n<p>Furthermore we shall define the resilience of a denominator, $R(d)$, to be the ratio of its proper fractions that are resilient; for example, $R(12) = \\frac{4}{11}$.</p>\n<p>The resilience of a number $d > 1$ is then $\\frac{φ(d)}{d − 1}$ , where $φ$ is Euler's totient function.</p>\n<p>We further define the coresilience of a number $n > 1$ as $C(n) = \\frac{n − φ(n)}{n − 1}$.</p>\n<p>The coresilience of a prime $p$ is $C(p) = \\frac{1}{p − 1}$.</p>\n<p>Find the sum of all composite integers $1 &#x3C; n ≤ 2 × {10}^{11}$, for which $C(n)$ is a unit fraction.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 44,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

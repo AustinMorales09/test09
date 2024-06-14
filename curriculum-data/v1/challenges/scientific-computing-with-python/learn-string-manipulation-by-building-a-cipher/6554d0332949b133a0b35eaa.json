@@ -1,0 +1,57 @@
+{
+  "id": "6554d0332949b133a0b35eaa",
+  "title": "Step 66",
+  "challengeType": 20,
+  "dashedName": "step-66",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        25,
+        27
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:        \n            # Find the right key character to encode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    \n    return encrypted_text\n",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:        \n            # Find the right key character to encode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    \n    return encrypted_text\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call <code>vigenere</code> passing <code>text</code> and <code>custom_key</code> as the arguments.</p>",
+      "testString": "({ test: () => assert.match(code, /vigenere\\s*\\(\\s*text\\s*,\\s*custom_key\\s*\\)/) })"
+    },
+    {
+      "text": "<p>You should have an <code>encryption</code> variable.</p>",
+      "testString": "({ test: () => assert(__userGlobals.has(\"encryption\")) })"
+    },
+    {
+      "text": "<p>You should assign your function call to the <code>encryption</code> variable.</p>",
+      "testString": "({ test: () => assert.match(code, /encryption\\s*=\\s*vigenere\\s*\\(\\s*text\\s*,\\s*custom_key\\s*\\)/) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Call your function passing <code>text</code> and <code>custom_key</code> as the arguments. Store the return value of the function call in a variable called <code>encryption</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 65,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

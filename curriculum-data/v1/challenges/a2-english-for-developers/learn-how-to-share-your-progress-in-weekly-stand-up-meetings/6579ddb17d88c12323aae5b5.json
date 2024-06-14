@@ -1,0 +1,79 @@
+{
+  "id": "6579ddb17d88c12323aae5b5",
+  "title": "Task 37",
+  "challengeType": 22,
+  "dashedName": "task-37",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ you mind taking a look at my code? I think a fresh pair of eyes _ help.</p>",
+    "blanks": [
+      {
+        "answer": "Would",
+        "feedback": "<p>It is used to make a polite request.</p>"
+      },
+      {
+        "answer": "could",
+        "feedback": "<p>It suggests that a fresh perspective might be beneficial.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.1,
+        "finishTimestamp": 13.34
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.24,
+        "dialogue": {
+          "text": "Would you mind taking a look at my code? I think a fresh pair of eyes could help.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 5.74
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Understanding the difference between <code>would</code> and <code>could</code> is important in English. <code>Would</code> is often used for polite requests or hypothetical situations. For example, <code>Would you help me?</code> is a polite way to ask for help. <code>Could</code> indicates possibility or potential. For example, <code>Could you help me?</code> suggests the possibility of help.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 38,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

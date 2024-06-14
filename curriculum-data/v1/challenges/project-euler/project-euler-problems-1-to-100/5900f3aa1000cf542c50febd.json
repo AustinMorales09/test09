@@ -1,0 +1,81 @@
+{
+  "id": "5900f3aa1000cf542c50febd",
+  "title": "Problem 62: Cubic permutations",
+  "challengeType": 1,
+  "forumTopicId": 302174,
+  "dashedName": "problem-62-cubic-permutations",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function cubicPermutations(n) {\n\n  return true;\n}\n\ncubicPermutations(2);",
+      "error": null,
+      "seed": "function cubicPermutations(n) {\n\n  return true;\n}\n\ncubicPermutations(2);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function cubicPermutations(n) {\n  function getDigits(num) {\n    const digits = [];\n    while (num > 0) {\n      digits.push(num % 10);\n      num = Math.floor(num / 10);\n    }\n    return digits;\n  }\n\n  function getCube(num) {\n    return num ** 3;\n  }\n\n  const digitsToCubeCounts = {};\n  let curNum = 1;\n  let digits;\n\n  while (!digitsToCubeCounts[digits] || digitsToCubeCounts[digits].count < n) {\n    const cube = getCube(curNum);\n    digits = getDigits(cube).sort().join();\n    if (!digitsToCubeCounts[digits]) {\n      digitsToCubeCounts[digits] = {\n        count: 1,\n        smallestCube: cube\n      };\n    } else {\n      digitsToCubeCounts[digits].count += 1;\n    }\n\n    curNum++;\n  }\n  return digitsToCubeCounts[digits].smallestCube;\n}",
+        "error": null,
+        "seed": "function cubicPermutations(n) {\n  function getDigits(num) {\n    const digits = [];\n    while (num > 0) {\n      digits.push(num % 10);\n      num = Math.floor(num / 10);\n    }\n    return digits;\n  }\n\n  function getCube(num) {\n    return num ** 3;\n  }\n\n  const digitsToCubeCounts = {};\n  let curNum = 1;\n  let digits;\n\n  while (!digitsToCubeCounts[digits] || digitsToCubeCounts[digits].count < n) {\n    const cube = getCube(curNum);\n    digits = getDigits(cube).sort().join();\n    if (!digitsToCubeCounts[digits]) {\n      digitsToCubeCounts[digits] = {\n        count: 1,\n        smallestCube: cube\n      };\n    } else {\n      digitsToCubeCounts[digits].count += 1;\n    }\n\n    curNum++;\n  }\n  return digitsToCubeCounts[digits].smallestCube;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>cubicPermutations(2)</code> should return a number.</p>",
+      "testString": "assert(typeof cubicPermutations(2) === 'number');"
+    },
+    {
+      "text": "<p><code>cubicPermutations(2)</code> should return <code>125</code>.</p>",
+      "testString": "assert.strictEqual(cubicPermutations(2), 125);"
+    },
+    {
+      "text": "<p><code>cubicPermutations(3)</code> should return <code>41063625</code>.</p>",
+      "testString": "assert.strictEqual(cubicPermutations(3), 41063625);"
+    },
+    {
+      "text": "<p><code>cubicPermutations(4)</code> should return <code>1006012008</code>.</p>",
+      "testString": "assert.strictEqual(cubicPermutations(4), 1006012008);"
+    },
+    {
+      "text": "<p><code>cubicPermutations(5)</code> should return <code>127035954683</code>.</p>",
+      "testString": "assert.strictEqual(cubicPermutations(5), 127035954683);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The cube, 41063625 ($345^3$), can be permuted to produce two other cubes: 56623104 ($384^3$) and 66430125 ($405^3$). In fact, 41063625 is the smallest cube which has exactly three permutations of its digits which are also cube.</p>\n<p>Find the smallest cube for which exactly <code>n</code> permutations of its digits are cube.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 61,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

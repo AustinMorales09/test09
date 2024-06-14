@@ -1,0 +1,53 @@
+{
+  "id": "65576ff7888f9e96f52a4be1",
+  "title": "Step 2",
+  "challengeType": 20,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "copper = {}",
+      "error": null,
+      "seed": "copper = {}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>'species'</code> key with the value <code>'guinea pig'</code> inside your <code>copper</code> dictionary.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    copper == {\"species\": \"guinea pig\"}\n  `))\n})"
+    },
+    {
+      "text": "<p>Your <code>copper</code> dictionary should have a single key-value pair.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    len(copper) == 1\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Dictionaries store data in the form of <em>key</em>-<em>value</em> pairs. A key is separated from the correspondent value by a colon. And each key-value pair is separated from the following pair by a comma:</p>\n<pre><code class=\"language-py\">my_dict = {\n    'name': 'Michael',\n    'occupation': 'Lumberjack'\n}\n</code></pre>\n<p>Add a new key-value pair to your dictionary. Use the string <code>'species'</code> as the key, and the string <code>'guinea pig'</code> as the value.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

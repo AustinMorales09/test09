@@ -1,0 +1,87 @@
+{
+  "id": "65dacf1ea93489b07bbe48d8",
+  "title": "Task 105",
+  "challengeType": 22,
+  "dashedName": "task-105",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Sometimes, it's the simple and free things that _ us the _ we're _ _.</p>",
+    "blanks": [
+      {
+        "answer": "bring",
+        "feedback": "<p>This word means to cause something to happen or to achieve a result.</p>"
+      },
+      {
+        "answer": "result",
+        "feedback": "<p>This word means the outcome or effect of an action or situation.</p>"
+      },
+      {
+        "answer": "looking",
+        "feedback": "<p>It means trying to find or search for something. You should use the <code>ing</code> form of verb.</p>"
+      },
+      {
+        "answer": "for",
+        "feedback": "<p>This preposition is used to indicate the object or thing that someone is trying to find.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 35.64,
+        "finishTimestamp": 39.12
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.48,
+        "dialogue": {
+          "text": "Sometimes it's the simple and free things that bring us the result we're looking for.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.98
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>bring results</code> means to produce or achieve the outcomes or benefits you want. For example, <code>Studying hard will bring good results in your exams.</code> means that by studying hard, you will achieve good grades.</p>\n<p>When you talk about <code>look for something</code>, it means you are trying to find or search for something specific. <code>I am looking for my glasses</code> means you are trying to find where your glasses are.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 109,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

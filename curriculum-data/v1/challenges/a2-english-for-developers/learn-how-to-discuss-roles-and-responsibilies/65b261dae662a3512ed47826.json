@@ -1,0 +1,75 @@
+{
+  "id": "65b261dae662a3512ed47826",
+  "title": "Task 19",
+  "challengeType": 22,
+  "dashedName": "task-19",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Ten years? That's _! What does she do exactly?</p>",
+    "blanks": [
+      {
+        "answer": "impressive",
+        "feedback": "<p>It means something is very good or makes you say \"Wow!\"</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 20.62,
+        "finishTimestamp": 23.06
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.44,
+        "dialogue": {
+          "text": "10 years? That's impressive. What does she do exactly?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.94
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>impressive</code> means something is very good or amazing. It's like saying \"Wow!\" when you hear or see something really great.</p>\n<p>For example, if a friend tells you they can speak three languages, you can say, <code>It's impressive!</code> This means you think what they can do is very cool and amazing.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

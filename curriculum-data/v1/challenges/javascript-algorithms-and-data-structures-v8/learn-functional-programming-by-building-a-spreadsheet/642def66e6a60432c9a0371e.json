@@ -1,0 +1,93 @@
+{
+  "id": "642def66e6a60432c9a0371e",
+  "title": "Step 4",
+  "challengeType": 0,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        8
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "window.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n\n  }\n}",
+      "error": null,
+      "seed": "window.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n\n  }\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should access the <code>className</code> property of the <code>label</code> element.</p>",
+      "testString": "assert.match(code, /label\\.className/);"
+    },
+    {
+      "text": "<p>You should set the <code>className</code> property to the string <code>label</code>.</p>",
+      "testString": "assert.match(code, /label\\.className\\s*=\\s*('|\"|`)label\\1/);"
+    },
+    {
+      "text": "<p>You should access the <code>textContent</code> property of the <code>label</code> element.</p>",
+      "testString": "assert.match(code, /label\\.textContent/);"
+    },
+    {
+      "text": "<p>You should set the <code>textContent</code> property to the value of <code>name</code>.</p>",
+      "testString": "assert.match(code, /label\\.textContent\\s*=\\s*name/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Set the <code>className</code> of the <code>label</code> element to <code>label</code>, and set the <code>textContent</code> to the <code>name</code> parameter.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

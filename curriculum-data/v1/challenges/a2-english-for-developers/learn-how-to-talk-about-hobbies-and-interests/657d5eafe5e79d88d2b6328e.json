@@ -1,0 +1,88 @@
+{
+  "id": "657d5eafe5e79d88d2b6328e",
+  "title": "Task 9",
+  "challengeType": 19,
+  "dashedName": "task-9",
+  "solutions": [],
+  "question": {
+    "text": "<p>How is Present Perfect used in Bob's statement?</p>",
+    "answers": [
+      {
+        "answer": "<p>To talk about an action or state that began in the past, but is still valid in the present or still influences it.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To express a one-time event.</p>",
+        "feedback": "<p>The tense is used for ongoing actions, not one-time events.</p>"
+      },
+      {
+        "answer": "<p>To indicate a past action with no present relevance.</p>",
+        "feedback": "<p>The tense suggests ongoing relevance in the present.</p>"
+      },
+      {
+        "answer": "<p>To describe a future plan.</p>",
+        "feedback": "<p>The tense focuses on past and present, not future plans.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.38,
+        "finishTimestamp": 19.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.52,
+        "dialogue": {
+          "text": "For nearly a decade now. It started as a hobby, but it's become a significant part of my life.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 7.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The Present Perfect Tense is used to express past experiences that influence the present. In this dialogue, Bob talks about the duration of his interest in photography, highlighting its evolution from a hobby to a significant part of his life.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

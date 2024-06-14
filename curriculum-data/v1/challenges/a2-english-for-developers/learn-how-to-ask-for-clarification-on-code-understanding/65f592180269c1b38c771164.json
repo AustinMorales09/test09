@@ -1,0 +1,88 @@
+{
+  "id": "65f592180269c1b38c771164",
+  "title": "Task 32",
+  "challengeType": 19,
+  "dashedName": "task-32",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sophie need to help solve her coding issue?</p>",
+    "answers": [
+      {
+        "answer": "<p>Another person to review her code</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A new coding tool</p>",
+        "feedback": "<p>Sophie's request is for assistance from someone else, not for a new tool.</p>"
+      },
+      {
+        "answer": "<p>More time to work alone</p>",
+        "feedback": "<p>Sophie is seeking help from another person, not more time to work by herself.</p>"
+      },
+      {
+        "answer": "<p>Advice on a different project</p>",
+        "feedback": "<p>Sophie's need is related to her current coding issue, not a different project.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 5.22,
+        "finishTimestamp": 7.6
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.38,
+        "dialogue": {
+          "text": "I may need a second pair of eyes to help me out.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.88
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

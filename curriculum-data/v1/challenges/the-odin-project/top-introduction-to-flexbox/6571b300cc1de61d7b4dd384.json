@@ -1,0 +1,45 @@
+{
+  "id": "6571b300cc1de61d7b4dd384",
+  "title": "Introduction to Flexbox Question F",
+  "challengeType": 15,
+  "dashedName": "introduction-flexbox-question-f",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does setting <code>flex: 2</code> to one specific div inside a flex container, while other divs have <code>flex: 1</code>, imply?</p>",
+    "answers": [
+      {
+        "answer": "<p>The container will shrink to accommodate the larger div.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>All divs will retain the same size due to conflicting <code>flex</code> values.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The specific div will grow to be twice the size of the others.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>All divs will shrink equally to adjust to the new <code>flex</code> values.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>flex-grow</code> expects a single number as its value, and that number is used as the flex-item's \"growth factor\". When you applied <code>flex: 1</code> to every div inside our container, you were telling every div to grow the same amount. The result of this is that every div ends up the exact same size. If you instead add <code>flex: 2</code> to just one of the divs, then that div would grow to 2x the size of the others.</p>\n<p>In the following example the <code>flex</code> shorthand has values for <code>flex-shrink</code> and <code>flex-basis</code> specified with their default values.</p>\n<iframe allowfullscreen=\"true\" allowpaymentrequest=\"true\" allowtransparency=\"true\" class=\"cp_embed_iframe \" frameborder=\"0\" height=\"300\" width=\"100%\" name=\"cp_embed_1\" scrolling=\"no\" src=\"https://codepen.io/TheOdinProjectExamples/embed/YzQqvgK?height=300&amp;default-tab=html%2Cresult&amp;slug-hash=YzQqvgK&amp;editable=true&amp;user=TheOdinProjectExamples&amp;name=cp_embed_1\" style=\"width: 100%; overflow:hidden; display:block;\" title=\"CodePen Embed\" loading=\"lazy\" id=\"cp_embed_YzQqvgK\"></iframe>\n</section>",
+  "translationPending": false,
+  "block": "top-introduction-to-flexbox",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

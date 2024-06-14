@@ -1,0 +1,57 @@
+{
+  "id": "65524b790ba8558a2f1c9fe5",
+  "title": "Step 35",
+  "challengeType": 20,
+  "dashedName": "step-35",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        11
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n\nfor char in text.lower():\n    index = alphabet.find(char)\n    print(char, index)\n    new_index = index + shift\n    new_char = alphabet[new_index]\n    print(new_char)",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n\nfor char in text.lower():\n    index = alphabet.find(char)\n    print(char, index)\n    new_index = index + shift\n    new_char = alphabet[new_index]\n    print(new_char)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have <code>print(char, index)</code> in your code.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.isFalse(/print\\s*\\(\\s*char\\s*,\\s*index\\s*\\)/.test(commentless_code))"
+    },
+    {
+      "text": "<p>You should change <code>print(new_char)</code> into <code>print('char:', char, 'new char:', new_char)</code>.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.isFalse(/print\\s*\\(\\s*new_char\\s*\\)/.test(commentless_code));\nconst {block_body} = __helpers.python.getBlock(commentless_code, /for\\s+char\\s+in\\s+text\\.lower\\s*\\(\\s*\\)\\s*/);\nassert(block_body.match(/print\\s*\\(\\s*(\"|')char:\\1\\s*,\\s*char\\s*,\\s*(\"|')new\\schar:\\2\\s*,\\s*new_char\\s*\\)\\s*$/));"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Clean the output a bit. Delete <code>print(char, index)</code>, and turn the last <code>print()</code> call into <code>print('char:', char, 'new char:', new_char)</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

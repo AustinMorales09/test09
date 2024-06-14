@@ -1,0 +1,77 @@
+{
+  "id": "61969c487ced6f12db8fef94",
+  "title": "Step 14",
+  "challengeType": 0,
+  "dashedName": "step-14",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n\n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Penguin</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  </head>\n\n  <body>\n    <div class=\"left-mountain\"></div>\n    <div class=\"penguin\"></div>\n    <div class=\"ground\"></div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n\n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Penguin</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  </head>\n\n  <body>\n    <div class=\"left-mountain\"></div>\n    <div class=\"penguin\"></div>\n    <div class=\"ground\"></div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        9,
+        11
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100vh;\n  overflow: hidden;\n}\n\n\n\n.penguin {\n  width: 300px;\n  height: 300px;\n  margin: auto;\n  margin-top: 75px;\n}\n\n.ground {\n  width: 100vw;\n  height: 400px;\n  background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));\n  z-index: 3;\n  position: absolute;\n}",
+      "error": null,
+      "seed": "body {\n  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100vh;\n  overflow: hidden;\n}\n\n\n\n.penguin {\n  width: 300px;\n  height: 300px;\n  margin: auto;\n  margin-top: 75px;\n}\n\n.ground {\n  width: 100vw;\n  height: 400px;\n  background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));\n  z-index: 3;\n  position: absolute;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>.left-mountain</code> selector.</p>",
+      "testString": "assert.match(code, /\\.left-mountain\\s*\\{/);"
+    },
+    {
+      "text": "<p>You should give <code>.left-mountain</code> a <code>width</code> of <code>300px</code>. Expected <code>--fcc-actual--</code> to be <code>--fcc-expected--</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.left-mountain')?.width, '300px');"
+    },
+    {
+      "text": "<p>You should give <code>.left-mountain</code> a <code>height</code> of <code>300px</code>. Expected <code>--fcc-actual--</code> to be <code>--fcc-expected--</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.left-mountain')?.height, '300px');"
+    },
+    {
+      "text": "<p>You should give <code>.left-mountain</code> a <code>background</code> of <code>linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255))</code>.</p>",
+      "testString": "assert.include(['linear-gradient(rgb(203,241,228),rgb(80,183,255))', 'rgba(0,0,0,0)linear-gradient(rgb(203,241,228),rgb(80,183,255))repeatscroll0%0%'], new __helpers.CSSHelp(document).getStyle('.left-mountain')?.getPropVal('background', true));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Target the <code>.left-mountain</code> element, and set its <code>width</code> and <code>height</code> to <code>300px</code>. Then, set the <code>background</code> to a linear gradient starting at <code>rgb(203, 241, 228)</code> and ending at <code>rgb(80, 183, 255)</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-transforms-by-building-a-penguin",
+  "hasEditableBoundaries": true,
+  "order": 18,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

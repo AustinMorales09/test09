@@ -1,0 +1,79 @@
+{
+  "id": "666339cedcfb436e2c9fd550",
+  "title": "Task 6",
+  "challengeType": 22,
+  "dashedName": "task-6",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Low-code development is about _ software with _ code.</p>",
+    "blanks": [
+      {
+        "answer": "making",
+        "feedback": "<p>The verb used to talk about producing something. Use the <code>-ing</code> form.</p>"
+      },
+      {
+        "answer": "less",
+        "feedback": "<p>The opposite of <code>more</code>. A smaller amount of something.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.14,
+        "finishTimestamp": 9.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 4.32,
+        "dialogue": {
+          "text": "Low-code development is about making software with less code.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.82
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To make something with less</code> is an expression that means the amount of effort to be put on a task will be reduced. In this context, Sarah explains that <code>Low-code development</code> helps in the creation of software and developers don't need to code as much as in regular solutions.</p>\n<p>Listen to the audio and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

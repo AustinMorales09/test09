@@ -1,0 +1,71 @@
+{
+  "id": "56533eb9ac21ba0edf2244b4",
+  "title": "Quoting Strings with Single Quotes",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cbQmnhM",
+  "forumTopicId": 18260,
+  "dashedName": "quoting-strings-with-single-quotes",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const myStr = \"<a href=\\\"http://www.example.com\\\" target=\\\"_blank\\\">Link</a>\";",
+      "error": null,
+      "seed": "const myStr = \"<a href=\\\"http://www.example.com\\\" target=\\\"_blank\\\">Link</a>\";"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const myStr = '<a href=\"http://www.example.com\" target=\"_blank\">Link</a>';",
+        "error": null,
+        "seed": "const myStr = '<a href=\"http://www.example.com\" target=\"_blank\">Link</a>';"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove all the backslashes (<code>\\</code>).</p>",
+      "testString": "assert(\n  !/\\\\/g.test(__helpers.removeJSComments(code)) &&\n    myStr.match(\n      '\\\\s*<a href\\\\s*=\\\\s*\"http://www.example.com\"\\\\s*target\\\\s*=\\\\s*\"_blank\">\\\\s*Link\\\\s*</a>\\\\s*'\n    )\n);"
+    },
+    {
+      "text": "<p>You should have two single quotes <code>'</code> and four double quotes <code>\"</code>.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/\"/g).length === 4 && __helpers.removeJSComments(code).match(/'/g).length === 2);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><dfn>String</dfn> values in JavaScript may be written with single or double quotes, as long as you start and end with the same type of quote. Unlike some other programming languages, single and double quotes work the same in JavaScript.</p>\n<pre><code class=\"language-js\">const doubleQuoteStr = \"This is a string\"; \nconst singleQuoteStr = 'This is also a string';\n</code></pre>\n<p>The reason why you might want to use one type of quote over the other is if you want to use both in a string. This might happen if you want to save a conversation in a string and have the conversation in quotes. Another use for it would be saving an <code>&#x3C;a></code> tag with various attributes in quotes, all within a string.</p>\n<pre><code class=\"language-js\">const conversation = 'Finn exclaims to Jake, \"Algebraic!\"';\n</code></pre>\n<p>However, this becomes a problem if you need to use the outermost quotes within it. Remember, a string has the same kind of quote at the beginning and end. But if you have that same quote somewhere in the middle, the string will stop early and throw an error.</p>\n<pre><code class=\"language-js\">const goodStr = 'Jake asks Finn, \"Hey, let\\'s go on an adventure?\"'; \nconst badStr = 'Finn responds, \"Let's go!\"';\n</code></pre>\n<p>Here <code>badStr</code> will throw an error.</p>\n<p>In the <dfn>goodStr</dfn> above, you can use both quotes safely by using the backslash <code>\\</code> as an escape character.</p>\n<p><strong>Note:</strong> The backslash <code>\\</code> should not be confused with the forward slash <code>/</code>. They do not do the same thing.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Change the provided string to a string with single quotes at the beginning and end and no escape characters.</p>\n<p>Right now, the <code>&#x3C;a></code> tag in the string uses double quotes everywhere. You will need to change the outer quotes to single quotes so you can remove the escape characters.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

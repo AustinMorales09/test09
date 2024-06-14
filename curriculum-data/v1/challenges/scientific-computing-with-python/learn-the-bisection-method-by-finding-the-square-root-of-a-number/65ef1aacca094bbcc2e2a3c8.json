@@ -1,0 +1,57 @@
+{
+  "id": "65ef1aacca094bbcc2e2a3c8",
+  "title": "Step 9",
+  "challengeType": 20,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        9,
+        12
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):\n    if square_target < 0:\n        raise ValueError('Square root of negative number is not defined in real numbers')\n    if square_target == 1:\n        root = 1\n        print(f'The square root of {square_target} is 1')\n    elif square_target == 0:\n        root = 0\n        print(f'The square root of {square_target} is 0')\n    else:\n        pass",
+      "error": null,
+      "seed": "def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):\n    if square_target < 0:\n        raise ValueError('Square root of negative number is not defined in real numbers')\n    if square_target == 1:\n        root = 1\n        print(f'The square root of {square_target} is 1')\n    elif square_target == 0:\n        root = 0\n        print(f'The square root of {square_target} is 0')\n    else:\n        pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove the <code>pass</code> keyword.</p>",
+      "testString": "({\n    test: () => \n    {\n        assert.isFalse(runPython(`_Node(_code).find_function(\"square_root_bisection\").find_ifs()[1].find_bodies()[2].has_pass()`))\n    }\n})"
+    },
+    {
+      "text": "<p>You should declare a variable <code>low</code> and assign it <code>0</code>.</p>",
+      "testString": "({\n    test: () => \n    {\n        assert(runPython(`_Node(_code).find_function(\"square_root_bisection\").find_ifs()[1].find_bodies()[2].find_variable(\"low\").is_equivalent(\"low = 0\")`));    }\n})\n"
+    },
+    {
+      "text": "<p>You should declare a variable <code>high</code> and use the <code>max()</code> function to assign it the maximum value between <code>1</code> and <code>square_target</code>.</p>",
+      "testString": "\n({ test: () => assert(runPython(`\nnode = _Node(_code).find_function(\"square_root_bisection\").find_ifs()[1].find_bodies()[2].find_variable(\"high\")\nvalues = [\"high = max(1, square_target)\", \"high = max(square_target, 1)\"]\nany(node.is_equivalent(val) for val in values)\n`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In Python, the <code>max()</code> function returns the largest of the input values.</p>\n<pre><code class=\"language-python\">max(1, 2, 3) # Output: 3\n</code></pre>\n<p>The variables <code>low</code> and <code>high</code> will be used to define the initial interval where the square root lies.</p>\n<p>Inside the <code>else</code> clause, initialize the <code>low</code> variable to <code>0</code> and the <code>high</code> variable to be the maximum of either <code>1</code> or <code>square_target</code> as the square root of a number is always less than or equal to the number itself.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-bisection-method-by-finding-the-square-root-of-a-number",
+  "hasEditableBoundaries": true,
+  "order": 4,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

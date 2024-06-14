@@ -1,0 +1,46 @@
+{
+  "id": "5ea9997bbec2e9bc47e94db1",
+  "title": "Developing an Nmap Scanner part 1",
+  "challengeType": 11,
+  "videoId": "jYk9XaGoAnk",
+  "bilibiliIds": {
+    "aid": 805657338,
+    "bvid": "BV1o34y1S7zf",
+    "cid": 414718986
+  },
+  "dashedName": "developing-an-nmap-scanner-part-1",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the correct command to install the Python 3 version of the <code>python-nmap</code> library?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>sudo apt install python-nmap</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>pip install python-nmap</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>pip3 install python-nmap</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-penetration-testing",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 9,
+  "certification": "information-security",
+  "superBlock": "information-security",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

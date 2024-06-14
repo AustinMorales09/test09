@@ -1,0 +1,45 @@
+{
+  "id": "662a20ae5a9153fa9e6206c9",
+  "title": "Task 12",
+  "challengeType": 19,
+  "dashedName": "task-12",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the sentence that uses <code>many</code> and <code>much</code> correctly.</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I don't have much time to finish the project.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>She has many water in her glass.</code></p>",
+        "feedback": "<p><code>Water</code> is an uncountable noun, so you should use <code>much</code> instead of <code>many</code> to describe the quantity.</p>"
+      },
+      {
+        "answer": "<p><code>Can you give me many advice on this topic?</code></p>",
+        "feedback": "<p><code>Advice</code> is an uncountable noun, so it's correct to say <code>much advice</code> instead of <code>many advice</code>.</p>"
+      },
+      {
+        "answer": "<p><code>There is much people at the concert.</code></p>",
+        "feedback": "<p><code>People</code> is a countable noun when referring to individuals, so you should use <code>many</code> instead of <code>much</code></p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Many</code> and <code>much</code> are used to talk about quantities, but they are used with different types of nouns. <code>Many</code> is used with countable nouns, which are things you can count, like <code>apples</code>, <code>cars</code>, or <code>books</code>. For example, you can say <code>There are many books on the shelf.</code></p>\n<p><code>Much</code> is used with uncountable nouns, which are things you cannot count individually, like <code>water</code>, <code>sand</code>, or <code>information</code>. For example, you might say <code>There is not much water left in the bottle.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

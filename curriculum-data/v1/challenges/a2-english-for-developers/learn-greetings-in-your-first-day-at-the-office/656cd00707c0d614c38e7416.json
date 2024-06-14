@@ -1,0 +1,88 @@
+{
+  "id": "656cd00707c0d614c38e7416",
+  "title": "Task 118",
+  "challengeType": 19,
+  "dashedName": "task-118",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>have a break</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>To break something.</p>",
+        "feedback": "<p>The phrase is not about damaging anything.</p>"
+      },
+      {
+        "answer": "<p>To continue working non-stop.</p>",
+        "feedback": "<p>Having a break is the opposite of working continuously.</p>"
+      },
+      {
+        "answer": "<p>To take a short rest.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To start a new task.</p>",
+        "feedback": "<p>The phrase refers to pausing or resting, not beginning a new task.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 21.9,
+        "finishTimestamp": 24.04
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 2.85,
+        "dialogue": {
+          "text": "Yeah, it's nice to have a break from the office.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.35
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>To <code>have a break</code> means to take a short rest or pause from what you are doing.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 120,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

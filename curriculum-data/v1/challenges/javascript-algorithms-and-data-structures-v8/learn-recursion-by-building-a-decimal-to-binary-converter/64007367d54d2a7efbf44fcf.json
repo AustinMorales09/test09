@@ -1,0 +1,85 @@
+{
+  "id": "64007367d54d2a7efbf44fcf",
+  "title": "Step 12",
+  "challengeType": 0,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Decimal to Binary Converter</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Decimal to Binary Converter</h1>\n    <div class=\"input-container\">\n      <label for=\"number-input\">Enter a decimal number:</label>\n      <input\n        value=\"\"\n        type=\"number\"\n        name=\"decimal number input\"\n        id=\"number-input\"\n        class=\"number-input\"\n      />\n      <button class=\"convert-btn\" id=\"convert-btn\">Convert</button>\n    </div>\n    <output id=\"result\" for=\"number-input\"></output>\n    <div id=\"animation-container\"></div>\n    <script src=\"script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Decimal to Binary Converter</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Decimal to Binary Converter</h1>\n    <div class=\"input-container\">\n      <label for=\"number-input\">Enter a decimal number:</label>\n      <input\n        value=\"\"\n        type=\"number\"\n        name=\"decimal number input\"\n        id=\"number-input\"\n        class=\"number-input\"\n      />\n      <button class=\"convert-btn\" id=\"convert-btn\">Convert</button>\n    </div>\n    <output id=\"result\" for=\"number-input\"></output>\n    <div id=\"animation-container\"></div>\n    <script src=\"script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n:root {\n  --light-grey: #f5f6f7;\n  --dark-blue: #1b1b32;\n  --orange: #f1be32;\n}\n\nbody {\n  background-color: var(--dark-blue);\n  font-family: \"Times New Roman\", Times, serif;\n  font-size: 18px;\n  color: var(--light-grey);\n  padding: 0 15px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\nh1 {\n  text-align: center;\n  font-size: 2.3rem;\n  margin: 20px 0;\n}\n\n.input-container {\n  margin: 10px 0;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  justify-content: center;\n  align-items: center;\n}\n\n.convert-btn {\n  background-color: var(--orange);\n  cursor: pointer;\n  border: none;\n  padding: 4px;\n}\n\n.number-input {\n  height: 25px;\n}\n\n#result {\n  margin: 10px 0;\n  min-width: 200px;\n  width: fit-content;\n  min-height: 80px;\n  word-break: break-word;\n  padding: 15px;\n  border: 5px solid var(--orange);\n  font-size: 2rem;\n  text-align: center;\n}\n\n#animation-container {\n  margin: auto;\n  max-width: 300px;\n}\n\n.animation-frame {\n  margin: 250px auto 0;\n  padding: 15px 10px;\n  border: 5px solid var(--orange);\n  font-size: 1.2rem;\n  text-align: center;\n}\n\n@media screen and (min-width: 500px) {\n  .input-container {\n    flex-direction: row;\n  }\n\n  #result {\n    max-width: 460px;\n  }\n}",
+      "error": null,
+      "seed": "*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n:root {\n  --light-grey: #f5f6f7;\n  --dark-blue: #1b1b32;\n  --orange: #f1be32;\n}\n\nbody {\n  background-color: var(--dark-blue);\n  font-family: \"Times New Roman\", Times, serif;\n  font-size: 18px;\n  color: var(--light-grey);\n  padding: 0 15px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\nh1 {\n  text-align: center;\n  font-size: 2.3rem;\n  margin: 20px 0;\n}\n\n.input-container {\n  margin: 10px 0;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  justify-content: center;\n  align-items: center;\n}\n\n.convert-btn {\n  background-color: var(--orange);\n  cursor: pointer;\n  border: none;\n  padding: 4px;\n}\n\n.number-input {\n  height: 25px;\n}\n\n#result {\n  margin: 10px 0;\n  min-width: 200px;\n  width: fit-content;\n  min-height: 80px;\n  word-break: break-word;\n  padding: 15px;\n  border: 5px solid var(--orange);\n  font-size: 2rem;\n  text-align: center;\n}\n\n#animation-container {\n  margin: auto;\n  max-width: 300px;\n}\n\n.animation-frame {\n  margin: 250px auto 0;\n  padding: 15px 10px;\n  border: 5px solid var(--orange);\n  font-size: 1.2rem;\n  text-align: center;\n}\n\n@media screen and (min-width: 500px) {\n  .input-container {\n    flex-direction: row;\n  }\n\n  #result {\n    max-width: 460px;\n  }\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        5,
+        9
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const numberInput = document.getElementById(\"number-input\");\nconst convertBtn = document.getElementById(\"convert-btn\");\nconst result = document.getElementById(\"result\");\n\nconst checkUserInput = () => {\n  if (!numberInput.value || parseInt(numberInput.value)) {\n\n  }\n\n  console.log(numberInput.value);\n};\n\nconvertBtn.addEventListener(\"click\", checkUserInput);\n\nnumberInput.addEventListener(\"keydown\", (e) => {\n  if (e.key === \"Enter\") {\n    checkUserInput();\n  }\n});",
+      "error": null,
+      "seed": "const numberInput = document.getElementById(\"number-input\");\nconst convertBtn = document.getElementById(\"convert-btn\");\nconst result = document.getElementById(\"result\");\n\nconst checkUserInput = () => {\n  if (!numberInput.value || parseInt(numberInput.value)) {\n\n  }\n\n  console.log(numberInput.value);\n};\n\nconvertBtn.addEventListener(\"click\", checkUserInput);\n\nnumberInput.addEventListener(\"keydown\", (e) => {\n  if (e.key === \"Enter\") {\n    checkUserInput();\n  }\n});"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should wrap the value returned by <code>parseInt()</code> in the <code>isNaN()</code> function. And add a third condition which checks the value returned by <code>parseInt()</code> to be less than 0.</p>",
+      "testString": "assert.match(String(checkUserInput), /if\\s*\\(\\s*!\\s*numberInput\\s*\\.\\s*value\\s*\\|\\|\\s*isNaN\\(\\s*parseInt\\(\\s*numberInput\\s*\\.\\s*value\\s*\\)\\s*\\)\\s*\\|\\|\\s*parseInt\\(\\s*numberInput\\s*\\.\\s*value\\s*\\)\\s*\\<\\s*0\\s*\\)\\s*\\{/);"
+    },
+    {
+      "text": "<p>The body of your <code>if</code> statement within <code>checkUserInput</code> should be empty.</p>",
+      "testString": "assert.match(String(checkUserInput), /if\\s*\\(\\s*.+\\s*\\)\\s*\\{\\s*\\}/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Next, you need to check if the value returned by the <code>parseInt()</code> function is a number or not.</p>\n<p>To do that, you can use the <code>isNaN()</code> function. This function takes in a string or number as an argument, and returns <code>true</code> if it evaluates to <code>NaN</code>. For example:</p>\n<pre><code class=\"language-js\">isNaN(\"test\"); // true\nisNaN(2); // false\nisNaN(\"3.5\"); // false\n</code></pre>\n<p>Update the second condition in your <code>if</code> statement to use the <code>isNaN()</code> function to check if the value returned by <code>parseInt()</code> is <code>NaN</code>.</p>\n<p>Also,as we mentioned in step 1 that we are considering only positive numbers, we should add a third condition in <code>if</code> statement to check whether the number is less than 0 (i.e negative numbers)</p>\n<pre><code class=\"language-js\"> 6 &#x3C; 0; // false\n-1 &#x3C; 0; // true\n-8 &#x3C; 0; // true\n 0 &#x3C; 0; //false\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-building-a-decimal-to-binary-converter",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

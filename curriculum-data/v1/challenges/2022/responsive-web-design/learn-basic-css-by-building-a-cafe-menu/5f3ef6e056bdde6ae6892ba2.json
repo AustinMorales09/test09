@@ -1,0 +1,77 @@
+{
+  "id": "5f3ef6e056bdde6ae6892ba2",
+  "title": "Step 58",
+  "challengeType": 0,
+  "dashedName": "step-58",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article class=\"item\">\n            <p class=\"flavor\">French Vanilla</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Caramel Macchiato</p><p class=\"price\">3.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Pumpkin Spice</p><p class=\"price\">3.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Hazelnut</p><p class=\"price\">4.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Mocha</p><p class=\"price\">4.50</p>\n          </article>\n        </section>\n        <section>\n          <h2>Desserts</h2>\n          <article class=\"item\">\n            <p class=\"dessert\">Donut</p><p class=\"price\">1.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cherry Pie</p><p class=\"price\">2.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cheesecake</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cinnamon Roll</p><p class=\"price\">2.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article class=\"item\">\n            <p class=\"flavor\">French Vanilla</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Caramel Macchiato</p><p class=\"price\">3.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Pumpkin Spice</p><p class=\"price\">3.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Hazelnut</p><p class=\"price\">4.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Mocha</p><p class=\"price\">4.50</p>\n          </article>\n        </section>\n        <section>\n          <h2>Desserts</h2>\n          <article class=\"item\">\n            <p class=\"dessert\">Donut</p><p class=\"price\">1.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cherry Pie</p><p class=\"price\">2.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cheesecake</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cinnamon Roll</p><p class=\"price\">2.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        18,
+        20
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n  font-family: sans-serif;\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 20px;\n  max-width: 500px;\n}\n\n\n\n.item p {\n  display: inline-block;\n}\n\n.flavor, .dessert {\n  text-align: left;\n  width: 75%;\n}\n\n.price {\n  text-align: right;\n  width: 25%\n}",
+      "error": null,
+      "seed": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n  font-family: sans-serif;\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 20px;\n  max-width: 500px;\n}\n\n\n\n.item p {\n  display: inline-block;\n}\n\n.flavor, .dessert {\n  text-align: left;\n  width: 75%;\n}\n\n.price {\n  text-align: right;\n  width: 25%\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use an <code>h1, h2</code> selector.</p>",
+      "testString": "const h1h2Selector = new __helpers.CSSHelp(document).getStyle('h1, h2');\nassert(h1h2Selector);"
+    },
+    {
+      "text": "<p>You should set the <code>font-family</code> to <code>Impact</code>.</p>",
+      "testString": "const hasFontFamily = new __helpers.CSSHelp(document).getCSSRules().some(x => x.style['font-family'].toLowerCase() === 'impact');\nassert(hasFontFamily);"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should have a <code>font-family</code> of <code>Impact</code>.</p>",
+      "testString": "assert($('h1').css('font-family').match(/impact/i));"
+    },
+    {
+      "text": "<p>Your <code>h2</code> element should have a <code>font-family</code> of <code>Impact</code>.</p>",
+      "testString": "assert($('h2').css('font-family').match(/impact/i));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>It is a bit boring for all the text to have the same <code>font-family</code>. You can still have the majority of the text <code>sans-serif</code> and make just the <code>h1</code> and <code>h2</code> elements different using a different selector.</p>\n<p>Style both the <code>h1</code> and the <code>h2</code> elements using a single selector so that these elements' text use <code>Impact</code> font.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 57,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

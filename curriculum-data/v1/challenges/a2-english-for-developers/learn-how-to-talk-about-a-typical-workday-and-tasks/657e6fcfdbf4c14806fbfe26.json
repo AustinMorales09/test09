@@ -1,0 +1,75 @@
+{
+  "id": "657e6fcfdbf4c14806fbfe26",
+  "title": "Task 112",
+  "challengeType": 22,
+  "dashedName": "task-112",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hey, Sarah! How's work as a QA tester? Is it really _?</p>",
+    "blanks": [
+      {
+        "answer": "challenging",
+        "feedback": "<p>Describes something that tests your ability or determination.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.66
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.66,
+        "dialogue": {
+          "text": "Hey, Sarah. How's work as a QA tester? Is it really challenging?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 6.16
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 116,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

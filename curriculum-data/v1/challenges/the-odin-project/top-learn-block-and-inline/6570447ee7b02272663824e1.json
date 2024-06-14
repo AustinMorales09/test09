@@ -1,0 +1,45 @@
+{
+  "id": "6570447ee7b02272663824e1",
+  "title": "Learn Block and Inline Question C",
+  "challengeType": 15,
+  "dashedName": "learn-block-and-inline-question-c",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does <code>padding</code> affect <code>inline</code> elements?</p>",
+    "answers": [
+      {
+        "answer": "<p>Padding has no effect on <code>inline</code> elements.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Padding increases the width and height of <code>inline</code> elements.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Padding only affects the horizontal spacing of <code>inline</code> elements.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Padding only affects the vertical spacing of <code>inline</code> elements.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Padding is used to create space around an element's content, inside of any defined borders. With inline elements, padding adds space to the left, right, top, and bottom of the content. However, it's important to note that while padding does affect the space around the content, it does not affect the layout of other elements around the inline element. This means that horizontal padding (left and right) is respected, but vertical padding (top and bottom) does not cause other elements to move away.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-block-and-inline",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

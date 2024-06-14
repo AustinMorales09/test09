@@ -1,0 +1,79 @@
+{
+  "id": "65b623813c9f7d5b26b3437f",
+  "title": "Task 21",
+  "challengeType": 22,
+  "dashedName": "task-21",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Well, she's _ _ hiring people and taking care of workers.</p>",
+    "blanks": [
+      {
+        "answer": "responsible",
+        "feedback": "<p>This word means having a duty or job to do something.</p>"
+      },
+      {
+        "answer": "for",
+        "feedback": "<p>This preposition is used to connect <code>responsible</code> with the tasks she does.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.44,
+        "finishTimestamp": 26.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.54,
+        "dialogue": {
+          "text": "Well, she's responsible for hiring people and taking care of workers.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 5.04
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>responsible for</code> means someone has a duty to do something at work or in life. You can use a noun or an <code>-ing</code> form of a verb to describe the duties or tasks.</p>\n<p>Examples: <code>She's responsible for the team.</code>, or <code>I am responsible for teaching English.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

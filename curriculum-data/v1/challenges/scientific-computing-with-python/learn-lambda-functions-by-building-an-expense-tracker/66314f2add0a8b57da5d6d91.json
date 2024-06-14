@@ -1,0 +1,49 @@
+{
+  "id": "66314f2add0a8b57da5d6d91",
+  "title": "Step 14",
+  "challengeType": 20,
+  "dashedName": "step-14",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        13
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n\ndef total_expenses(expenses):\n    pass\n    \ntest = lambda x: x * 2\nprint(map(test, [2, 3, 5, 8]))\n\nexpenses = []",
+      "error": null,
+      "seed": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n\ndef total_expenses(expenses):\n    pass\n    \ntest = lambda x: x * 2\nprint(map(test, [2, 3, 5, 8]))\n\nexpenses = []"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should pass the <code>map()</code> call as the argument to the <code>list()</code> function.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).has_call(\"print(list(map(test, [2,3,5,8])))\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You should see something like <code>&#x3C;map object at 0xd273a8></code> printed on the console, which is the string representation of the map object returned by <code>map()</code>.</p>\n<p>To obtain a readable output you need to turn the map object into a list. Do it by passing the <code>map()</code> call as the argument to the <code>list()</code> function.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

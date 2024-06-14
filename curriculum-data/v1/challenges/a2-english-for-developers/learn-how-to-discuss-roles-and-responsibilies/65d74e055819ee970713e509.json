@@ -1,0 +1,79 @@
+{
+  "id": "65d74e055819ee970713e509",
+  "title": "Task 74",
+  "challengeType": 22,
+  "dashedName": "task-74",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>You _ share your access codes or passwords with _.</p>",
+    "blanks": [
+      {
+        "answer": "mustn't",
+        "feedback": "<p>This word indicates a strong prohibition or advice against doing something.</p>"
+      },
+      {
+        "answer": "anyone",
+        "feedback": "<p>It's used in negative sentences to mean no person at all, emphasizing the prohibition.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 46.32,
+        "finishTimestamp": 49.4
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 4.08,
+        "dialogue": {
+          "text": "You mustn't share your access codes or passwords with anyone.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 4.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you need to express something that is prohibited or a strong suggestion against doing something, you can use <code>mustn't</code> (contraction of <code>mustn't</code>) to form a negative sentence.</p>\n<p>For example, <code>You mustn't touch the wet paint</code> means it's very important not to touch the paint because it's wet.</p>\n<p><code>Anyone</code> is used when you're talking about all people in a general way and usually in questions or negative sentences:</p>\n<p><code>Don't tell anyone</code> means don't tell any person.</p>\n<p><code>Someone</code> is used when you're talking about an unspecified person in a positive sentence:</p>\n<p><code>I need someone to help me</code> means you need an unspecified person to help.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 76,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "60f027099a15b00485563dd2",
+  "title": "Step 2",
+  "challengeType": 0,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>DOCTYPE</code> declaration should be at the beginning of your HTML.</p>",
+      "testString": "assert(__helpers.removeHtmlComments(code).match(/^\\s*<!DOCTYPE\\s+html\\s*>/i));"
+    },
+    {
+      "text": "<p>Your <code>html</code> element should have an opening tag, and <code>lang</code> attribute with value of <code>en</code>.</p>",
+      "testString": "assert(code.match(/<html\\s+lang\\s*=\\s*('|\")en\\1\\s*>/gi));"
+    },
+    {
+      "text": "<p>Your <code>html</code> element should have a closing tag.</p>",
+      "testString": "assert(code.match(/<\\/html\\s*>/));"
+    },
+    {
+      "text": "<p>Your <code>html</code> tags should be in the correct order.</p>",
+      "testString": "assert(code.match(/<html\\s+lang\\s*=\\s*('|\")en\\1\\s*>\\s*<\\/html\\s*>/));"
+    },
+    {
+      "text": "<p>You should only have one <code>html</code> element.</p>",
+      "testString": "// Possibly a redundant test, as browser fixes this\nassert(document.querySelectorAll('html').length === 1);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Below the <code>DOCTYPE</code>, add an <code>html</code> element with a <code>lang</code> attribute set to <code>en</code>, so that you have a place to start putting some code.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-forms-by-building-a-registration-form",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,71 @@
+{
+  "id": "587d78b1367417b2b2512b0c",
+  "title": "Make Typography Responsive",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pzrPu4/crzN7T8",
+  "forumTopicId": 301141,
+  "dashedName": "make-typography-responsive",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n\n</style>\n\n<h2>Importantus Ipsum</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>",
+      "error": null,
+      "seed": "<style>\n\n</style>\n\n<h2>Importantus Ipsum</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  h2 {\n      width: 80vw;\n  }\n  p {\n      width: 75vmin;\n  }\n</style>\n\n<h2>Importantus Ipsum</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>",
+        "error": null,
+        "seed": "<style>\n  h2 {\n      width: 80vw;\n  }\n  p {\n      width: 75vmin;\n  }\n</style>\n\n<h2>Importantus Ipsum</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>h2</code> tag should have a <code>width</code> of 80vw.</p>",
+      "testString": "assert(\n  __helpers\n    .removeCssComments(code)\n    .match(/h2\\s*?{\\s*?width:\\s*?80vw;\\s*?}/g)\n);"
+    },
+    {
+      "text": "<p>Your <code>p</code> tag should have a <code>width</code> of 75vmin.</p>",
+      "testString": "assert(\n  __helpers\n    .removeCssComments(code)\n    .match(/p\\s*?{\\s*?width:\\s*?75vmin;\\s*?}/g)\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Instead of using <code>em</code> or <code>px</code> to size text, you can use viewport units for responsive typography. Viewport units, like percentages, are relative units, but they are based off different items. Viewport units are relative to the viewport dimensions (width or height) of a device, and percentages are relative to the size of the parent container element.</p>\n<p>The four different viewport units are:</p>\n<ul><li><code>vw</code> (viewport width): <code>10vw</code> would be 10% of the viewport's width.</li><li><code>vh</code> (viewport height): <code>3vh</code> would be 3% of the viewport's height.</li><li><code>vmin</code> (viewport minimum): <code>70vmin</code> would be 70% of the viewport's smaller dimension (height or width).</li><li><code>vmax</code> (viewport maximum): <code>100vmax</code> would be 100% of the viewport's bigger dimension (height or width).</li></ul>\n<p>Here is an example that sets a <code>body</code> tag to 30% of the viewport's width.</p>\n<pre><code class=\"language-css\">body { width: 30vw; }\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Set the <code>width</code> of the <code>h2</code> tag to 80% of the viewport's width and the <code>width</code> of the paragraph as 75% of the viewport's smaller dimension.</p>\n</section>",
+  "translationPending": false,
+  "block": "responsive-web-design-principles",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

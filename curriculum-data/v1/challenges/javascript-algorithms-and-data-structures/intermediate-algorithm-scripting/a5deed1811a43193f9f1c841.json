@@ -1,0 +1,85 @@
+{
+  "id": "a5deed1811a43193f9f1c841",
+  "title": "Drop it",
+  "challengeType": 1,
+  "forumTopicId": 16010,
+  "dashedName": "drop-it",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function dropElements(arr, func) {\n  return arr;\n}\n\ndropElements([1, 2, 3], function(n) {return n < 3; });",
+      "error": null,
+      "seed": "function dropElements(arr, func) {\n  return arr;\n}\n\ndropElements([1, 2, 3], function(n) {return n < 3; });"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function dropElements(arr, func) {\n  while (arr.length && !func(arr[0])) {\n    arr.shift();\n  }\n  return arr;\n}",
+        "error": null,
+        "seed": "function dropElements(arr, func) {\n  while (arr.length && !func(arr[0])) {\n    arr.shift();\n  }\n  return arr;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>dropElements([1, 2, 3, 4], function(n) {return n >= 3;})</code> should return <code>[3, 4]</code>.</p>",
+      "testString": "assert.deepEqual(\n  dropElements([1, 2, 3, 4], function (n) {\n    return n >= 3;\n  }),\n  [3, 4]\n);"
+    },
+    {
+      "text": "<p><code>dropElements([0, 1, 0, 1], function(n) {return n === 1;})</code> should return <code>[1, 0, 1]</code>.</p>",
+      "testString": "assert.deepEqual(\n  dropElements([0, 1, 0, 1], function (n) {\n    return n === 1;\n  }),\n  [1, 0, 1]\n);"
+    },
+    {
+      "text": "<p><code>dropElements([1, 2, 3], function(n) {return n > 0;})</code> should return <code>[1, 2, 3]</code>.</p>",
+      "testString": "assert.deepEqual(\n  dropElements([1, 2, 3], function (n) {\n    return n > 0;\n  }),\n  [1, 2, 3]\n);"
+    },
+    {
+      "text": "<p><code>dropElements([1, 2, 3, 4], function(n) {return n > 5;})</code> should return <code>[]</code>.</p>",
+      "testString": "assert.deepEqual(\n  dropElements([1, 2, 3, 4], function (n) {\n    return n > 5;\n  }),\n  []\n);"
+    },
+    {
+      "text": "<p><code>dropElements([1, 2, 3, 7, 4], function(n) {return n > 3;})</code> should return <code>[7, 4]</code>.</p>",
+      "testString": "assert.deepEqual(\n  dropElements([1, 2, 3, 7, 4], function (n) {\n    return n > 3;\n  }),\n  [7, 4]\n);"
+    },
+    {
+      "text": "<p><code>dropElements([1, 2, 3, 9, 2], function(n) {return n > 2;})</code> should return <code>[3, 9, 2]</code>.</p>",
+      "testString": "assert.deepEqual(\n  dropElements([1, 2, 3, 9, 2], function (n) {\n    return n > 2;\n  }),\n  [3, 9, 2]\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Given the array <code>arr</code>, iterate through and remove each element starting from the first element (the 0 index) until the function <code>func</code> returns <code>true</code> when the iterated element is passed through it.</p>\n<p>Then return the rest of the array once the condition is satisfied, otherwise, <code>arr</code> should be returned as an empty array.</p>\n</section>",
+  "translationPending": false,
+  "block": "intermediate-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

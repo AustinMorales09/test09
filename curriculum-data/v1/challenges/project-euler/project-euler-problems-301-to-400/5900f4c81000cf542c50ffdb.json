@@ -1,0 +1,65 @@
+{
+  "id": "5900f4c81000cf542c50ffdb",
+  "title": "Problem 348: Sum of a square and a cube",
+  "challengeType": 1,
+  "forumTopicId": 302007,
+  "dashedName": "problem-348-sum-of-a-square-and-a-cube",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function sumOfSquareAndCube() {\n\n  return true;\n}\n\nsumOfSquareAndCube();",
+      "error": null,
+      "seed": "function sumOfSquareAndCube() {\n\n  return true;\n}\n\nsumOfSquareAndCube();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>sumOfSquareAndCube()</code> should return <code>1004195061</code>.</p>",
+      "testString": "assert.strictEqual(sumOfSquareAndCube(), 1004195061);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Many numbers can be expressed as the sum of a square and a cube. Some of them in more than one way.</p>\n<p>Consider the palindromic numbers that can be expressed as the sum of a square and a cube, both greater than 1, in exactly 4 different ways.</p>\n<p>For example, 5229225 is a palindromic number and it can be expressed in exactly 4 different ways:</p>\n<p>$$\\begin{align}\n&#x26; {2285}^2 + {20}^3 \\\\\n&#x26; {2223}^2 + {66}^3 \\\\\n&#x26; {1810}^2 + {125}^3 \\\\\n&#x26; {1197}^2 + {156}^3\n\\end{align}$$</p>\n<p>Find the sum of the five smallest such palindromic numbers.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 47,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

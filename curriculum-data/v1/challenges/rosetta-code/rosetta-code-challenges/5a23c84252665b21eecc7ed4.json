@@ -1,0 +1,82 @@
+{
+  "id": "5a23c84252665b21eecc7ed4",
+  "title": "Knapsack problem/Unbounded",
+  "challengeType": 1,
+  "forumTopicId": 323655,
+  "dashedName": "knapsack-problemunbounded",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function knapsackUnbounded(items, maxweight, maxvolume) {\n\n}",
+      "error": null,
+      "seed": "function knapsackUnbounded(items, maxweight, maxvolume) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function knapsackUnbounded(items, maxWeight, maxVolume) {\n  function getPickTotals(items, pick) {\n    let totalValue = 0;\n    let totalWeight = 0;\n    let totalVolume = 0;\n    for (let i = 0; i < items.length; i++) {\n      totalValue += pick[i] * items[i].value;\n      totalWeight += pick[i] * items[i].weight;\n      totalVolume += pick[i] * items[i].volume;\n    }\n    return [totalValue, totalWeight, totalVolume];\n  }\n\n  function getMaxes(items, maxWeight, maxVolume) {\n    const maxes = [];\n    for (let i = 0; i < items.length; i++) {\n      const maxUnitsInWeight = Math.floor(maxWeight / items[i].weight);\n      const maxUnitsInVolume = Math.floor(maxVolume / items[i].volume);\n      const maxUnitsInLimit = Math.min(maxUnitsInWeight, maxUnitsInVolume);\n      maxes.push(maxUnitsInLimit);\n    }\n    return maxes;\n  }\n\n  function isInLimit(value, limit) {\n    return value <= limit;\n  }\n\n  function getCombinations(maxValues, curPicks, combinations) {\n    if (maxValues.length === 0) {\n      combinations.push(curPicks);\n    }\n\n    const curMax = maxValues[0];\n    const leftMaxValues = maxValues.slice(1);\n    for (let i = 0; i <= curMax; i++) {\n      getCombinations(leftMaxValues, curPicks.concat(i), combinations);\n    }\n    return combinations;\n  }\n\n  let bestValue = 0;\n  let bestPick = [];\n  const maxes = getMaxes(items, maxWeight, maxVolume);\n  const combinations = getCombinations(maxes, [], []);\n  for (let i = 0; i < combinations.length; i++) {\n    const curPick = combinations[i];\n    const [curValue, curWeight, curVolume] = getPickTotals(items, curPick);\n    if (!isInLimit(curWeight, maxWeight) || !isInLimit(curVolume, maxVolume)) {\n      continue;\n    }\n\n    if (curValue > bestValue) {\n      bestValue = curValue;\n      bestPick = [curPick];\n    } else if (curValue === bestValue) {\n      bestPick.push(curPick);\n    }\n  }\n\n  return bestValue;\n}",
+        "error": null,
+        "seed": "function knapsackUnbounded(items, maxWeight, maxVolume) {\n  function getPickTotals(items, pick) {\n    let totalValue = 0;\n    let totalWeight = 0;\n    let totalVolume = 0;\n    for (let i = 0; i < items.length; i++) {\n      totalValue += pick[i] * items[i].value;\n      totalWeight += pick[i] * items[i].weight;\n      totalVolume += pick[i] * items[i].volume;\n    }\n    return [totalValue, totalWeight, totalVolume];\n  }\n\n  function getMaxes(items, maxWeight, maxVolume) {\n    const maxes = [];\n    for (let i = 0; i < items.length; i++) {\n      const maxUnitsInWeight = Math.floor(maxWeight / items[i].weight);\n      const maxUnitsInVolume = Math.floor(maxVolume / items[i].volume);\n      const maxUnitsInLimit = Math.min(maxUnitsInWeight, maxUnitsInVolume);\n      maxes.push(maxUnitsInLimit);\n    }\n    return maxes;\n  }\n\n  function isInLimit(value, limit) {\n    return value <= limit;\n  }\n\n  function getCombinations(maxValues, curPicks, combinations) {\n    if (maxValues.length === 0) {\n      combinations.push(curPicks);\n    }\n\n    const curMax = maxValues[0];\n    const leftMaxValues = maxValues.slice(1);\n    for (let i = 0; i <= curMax; i++) {\n      getCombinations(leftMaxValues, curPicks.concat(i), combinations);\n    }\n    return combinations;\n  }\n\n  let bestValue = 0;\n  let bestPick = [];\n  const maxes = getMaxes(items, maxWeight, maxVolume);\n  const combinations = getCombinations(maxes, [], []);\n  for (let i = 0; i < combinations.length; i++) {\n    const curPick = combinations[i];\n    const [curValue, curWeight, curVolume] = getPickTotals(items, curPick);\n    if (!isInLimit(curWeight, maxWeight) || !isInLimit(curVolume, maxVolume)) {\n      continue;\n    }\n\n    if (curValue > bestValue) {\n      bestValue = curValue;\n      bestPick = [curPick];\n    } else if (curValue === bestValue) {\n      bestPick.push(curPick);\n    }\n  }\n\n  return bestValue;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>knapsackUnbounded([{ name:\"panacea\", value:3000, weight:0.3, volume:0.025 }, { name:\"ichor\", value:1800, weight:0.2, volume:0.015 }, { name:\"gold\", value:2500, weight:2, volume:0.002 }], 25, 0.25)</code> should return <code>54500</code>.</p>",
+      "testString": "assert.equal(\n  knapsackUnbounded(\n    [\n      { name: 'panacea', value: 3000, weight: 0.3, volume: 0.025 },\n      { name: 'ichor', value: 1800, weight: 0.2, volume: 0.015 },\n      { name: 'gold', value: 2500, weight: 2, volume: 0.002 }\n    ],\n    25,\n    0.25\n  ),\n  54500\n);"
+    },
+    {
+      "text": "<p><code>knapsackUnbounded([{ name:\"panacea\", value:3000, weight:0.3, volume:0.025 }, { name:\"ichor\", value:1800, weight:0.2, volume:0.015 }, { name:\"gold\", value:2500, weight:2, volume:0.002 }], 55, 0.25)</code> should return <code>88400</code>.</p>",
+      "testString": "assert.equal(\n  knapsackUnbounded(\n    [\n      { name: 'panacea', value: 3000, weight: 0.3, volume: 0.025 },\n      { name: 'ichor', value: 1800, weight: 0.2, volume: 0.015 },\n      { name: 'gold', value: 2500, weight: 2, volume: 0.002 }\n    ],\n    55,\n    0.25\n  ),\n  88400\n);"
+    },
+    {
+      "text": "<p><code>knapsackUnbounded([{ name:\"panacea\", value:3000, weight:0.3, volume:0.025 }, { name:\"ichor\", value:1800, weight:0.2, volume:0.015 }, { name:\"gold\", value:2500, weight:2, volume:0.002 }], 25, 0.15)</code> should return <code>42500</code>.</p>",
+      "testString": "assert.equal(\n  knapsackUnbounded(\n    [\n      { name: 'panacea', value: 3000, weight: 0.3, volume: 0.025 },\n      { name: 'ichor', value: 1800, weight: 0.2, volume: 0.015 },\n      { name: 'gold', value: 2500, weight: 2, volume: 0.002 }\n    ],\n    25,\n    0.15\n  ),\n  42500\n);"
+    },
+    {
+      "text": "<p><code>knapsackUnbounded([{ name:\"panacea\", value:3000, weight:0.3, volume:0.025 }, { name:\"ichor\", value:1800, weight:0.2, volume:0.015 }, { name:\"gold\", value:2500, weight:2, volume:0.002 }], 35, 0.35)</code> should return <code>75900</code>.</p>",
+      "testString": "assert.equal(\n  knapsackUnbounded(\n    [\n      { name: 'panacea', value: 3000, weight: 0.3, volume: 0.025 },\n      { name: 'ichor', value: 1800, weight: 0.2, volume: 0.015 },\n      { name: 'gold', value: 2500, weight: 2, volume: 0.002 }\n    ],\n    35,\n    0.35\n  ),\n  75900\n);"
+    },
+    {
+      "text": "<p><code>knapsackUnbounded([{ name:\"panacea\", value:3000, weight:0.3, volume:0.025 }, { name:\"ichor\", value:1800, weight:0.2, volume:0.015 }, { name:\"gold\", value:2500, weight:2, volume:0.002 }], 15, 0.25)</code> should return <code>43200</code>.</p>",
+      "testString": "assert.equal(\n  knapsackUnbounded(\n    [\n      { name: 'panacea', value: 3000, weight: 0.3, volume: 0.025 },\n      { name: 'ichor', value: 1800, weight: 0.2, volume: 0.015 },\n      { name: 'gold', value: 2500, weight: 2, volume: 0.002 }\n    ],\n    15,\n    0.25\n  ),\n  43200\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A traveler gets diverted and has to make an unscheduled stop in what turns out to be Shangri-La. Opting to leave, he is allowed to take as much as he likes of the items available there, so long as it will fit in his knapsack, and he can carry it.</p>\n<p>He knows that he can carry no more than a particular value of maximum weight in total; and that the capacity of his knapsack has a limited volume.</p>\n<p>Looking just above the bar codes on the items he finds their weights and volumes. He digs out his recent copy of a financial paper and gets the value of each item.</p>\n<p>He can only take whole units of any item, but there is much more of any item than he could ever carry.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that takes an array of objects, maximum weight, and maximum volume as parameters. Each object has 4 attributes: name, value, weight, and volume. The function should return the maximum value of items the traveller can take with him.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 82,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

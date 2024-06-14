@@ -1,0 +1,53 @@
+{
+  "id": "65b7d3319ebec69b983fb91b",
+  "title": "Step 12",
+  "challengeType": 20,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        10
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\ncopper['food'] = 'hay'\ncopper['species'] = 'Cavia porcellus'\n\nfor i in copper.items():\n    print(i)",
+      "error": null,
+      "seed": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\ncopper['food'] = 'hay'\ncopper['species'] = 'Cavia porcellus'\n\nfor i in copper.items():\n    print(i)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should modify your <code>for</code> loop to use two variables.</p>",
+      "testString": "({ test: () => assert(runPython(`\nimport ast\nvar = _Node(_code).find_for_loops()[0].find_for_vars()\nisinstance(var.tree, ast.Tuple)\n`)) })"
+    },
+    {
+      "text": "<p>You should print both loop variables inside your <code>for</code> loop.</p>",
+      "testString": "({ test: () => assert(runPython(`\nvar = _Node(_code).find_for_loops()[0].find_for_vars()\n_Node(_code).find_for_loops()[0].find_bodies()[0].is_equivalent(f\"print{var}\")\n`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As you can see from the output, <code>.items()</code> creates a data structures that stores each key-value pair in a distinct tuple. To iterate over the elements in those tuples you can add a second loop variable:</p>\n<pre><code class=\"language-py\">for i, j in dict.items():\n    print(i, j)\n</code></pre>\n<p>Modify your <code>for</code> loop to take two loop variables and print both of them inside the loop body.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

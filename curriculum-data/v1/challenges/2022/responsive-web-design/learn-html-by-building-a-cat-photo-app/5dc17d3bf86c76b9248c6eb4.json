@@ -1,0 +1,61 @@
+{
+  "id": "5dc17d3bf86c76b9248c6eb4",
+  "title": "Step 3",
+  "challengeType": 0,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        6
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <h1>CatPhotoApp</h1>\n    <h2>Cat Photos</h2>\n    \n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <h1>CatPhotoApp</h1>\n    <h2>Cat Photos</h2>\n    \n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>p</code> element should have an opening tag. Opening tags have the following syntax: <code>&#x3C;elementName></code>.</p>",
+      "testString": "assert(document.querySelector('p'));"
+    },
+    {
+      "text": "<p>Your <code>p</code> element should have a closing tag. Closing tags have a <code>/</code> just after the <code>&#x3C;</code> character.</p>",
+      "testString": "assert(code.match(/<\\/p\\>/));"
+    },
+    {
+      "text": "<p>Your <code>p</code> element's text should be <code>See more cat photos in our gallery.</code> You have either omitted the text or have a typo.</p>",
+      "testString": "const extraSpacesRemoved = document\n  .querySelector('p')\n  .innerText.replace(/\\s+/g, ' ');\nassert(extraSpacesRemoved.match(/see more cat photos in our gallery\\.?$/i));"
+    },
+    {
+      "text": "<p>Your <code>p</code> element should be below the <code>h2</code> element. You have them in the wrong order.</p>",
+      "testString": "const collection = [...document.querySelectorAll('h2,p')].map(\n  (node) => node.nodeName\n);\nassert(collection.indexOf('H2') < collection.indexOf('P'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>p</code> element is used to create a paragraph of text on websites. Create a <code>p</code> element below your <code>h2</code> element and give it the following text:</p>\n<p><code>See more cat photos in our gallery.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

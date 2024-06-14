@@ -1,0 +1,77 @@
+{
+  "id": "bad87fee1348bd9aec908746",
+  "title": "House our page within a Bootstrap container-fluid div",
+  "challengeType": 0,
+  "forumTopicId": 18198,
+  "dashedName": "house-our-page-within-a-bootstrap-container-fluid-div",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<h3 class=\"text-primary text-center\">jQuery Playground</h3>",
+      "error": null,
+      "seed": "<h3 class=\"text-primary text-center\">jQuery Playground</h3>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<div class=\"container-fluid\">\n    <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n</div>",
+        "error": null,
+        "seed": "<div class=\"container-fluid\">\n    <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>div</code> element should have the class <code>container-fluid</code>.</p>",
+      "testString": "assert($('div').hasClass('container-fluid'));"
+    },
+    {
+      "text": "<p>Each of your <code>div</code> elements should have closing tags.</p>",
+      "testString": "assert(\n  code.match(/<\\/div>/g) &&\n    code.match(/<div/g) &&\n    code.match(/<\\/div>/g).length === code.match(/<div/g).length\n);"
+    },
+    {
+      "text": "<p>Your <code>h3</code> element should be nested inside a <code>div</code> element.</p>",
+      "testString": "assert($('div').children('h3').length > 0);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now let's make sure all the content on your page is mobile-responsive.</p>\n<p>Let's nest your <code>h3</code> element within a <code>div</code> element with the class <code>container-fluid</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "bootstrap",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 19,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

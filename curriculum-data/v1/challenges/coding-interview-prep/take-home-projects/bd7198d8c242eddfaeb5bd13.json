@@ -1,0 +1,42 @@
+{
+  "id": "bd7198d8c242eddfaeb5bd13",
+  "title": "Show National Contiguity with a Force Directed Graph",
+  "challengeType": 3,
+  "forumTopicId": 302367,
+  "dashedName": "show-national-contiguity-with-a-force-directed-graph",
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><strong>Objective:</strong> Build an app that is functionally similar to this: <a href=\"https://codepen.io/freeCodeCamp/full/XWEONRz\">https://codepen.io/freeCodeCamp/full/XWEONRz</a>.</p>\n<p>Fulfill the below user stories and get all of the tests to pass. Use whichever libraries or APIs you need. Give it your own personal style.</p>\n<p><strong>User Story:</strong> I can see a Force-directed Graph that shows which countries share borders.</p>\n<p><strong>User Story:</strong> I can see each country's flag on its node.</p>\n<p><strong>Hint:</strong> Here's a dataset you can use to build this: <a href=\"https://raw.githubusercontent.com/DealPete/forceDirected/master/countries.json\">https://raw.githubusercontent.com/DealPete/forceDirected/master/countries.json</a></p>\n<p><strong>Hint:</strong> You can create a spritesheet of national flags at <a href=\"https://www.flag-sprites.com\">https://www.flag-sprites.com</a>.</p>\n<p>When you are finished, include a link to your project on CodePen and click the \"I've completed this challenge\" button.</p>\n<p>You can get feedback on your project by sharing it on the <a href=\"https://forum.freecodecamp.org/c/project-feedback/409\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">freeCodeCamp forum</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "take-home-projects",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

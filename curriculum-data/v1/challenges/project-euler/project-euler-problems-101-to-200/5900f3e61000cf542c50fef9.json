@@ -1,0 +1,65 @@
+{
+  "id": "5900f3e61000cf542c50fef9",
+  "title": "Problem 122: Efficient exponentiation",
+  "challengeType": 1,
+  "forumTopicId": 301749,
+  "dashedName": "problem-122-efficient-exponentiation",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function efficientExponentiation() {\n\n  return true;\n}\n\nefficientExponentiation();",
+      "error": null,
+      "seed": "function efficientExponentiation() {\n\n  return true;\n}\n\nefficientExponentiation();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>efficientExponentiation()</code> should return <code>1582</code>.</p>",
+      "testString": "assert.strictEqual(efficientExponentiation(), 1582);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The most naive way of computing $n^{15}$ requires fourteen multiplications:</p>\n<p>$$n × n × \\ldots × n = n^{15}$$</p>\n<p>But using a \"binary\" method you can compute it in six multiplications:</p>\n<p>$$\\begin{align}\n&#x26; n × n = n^2\\\\\n&#x26; n^2 × n^2 = n^4\\\\\n&#x26; n^4 × n^4 = n^8\\\\\n&#x26; n^8 × n^4 = n^{12}\\\\\n&#x26; n^{12} × n^2 = n^{14}\\\\\n&#x26; n^{14} × n = n^{15}\n\\end{align}$$</p>\n<p>However it is yet possible to compute it in only five multiplications:</p>\n<p>$$\\begin{align}\n&#x26; n × n = n^2\\\\\n&#x26; n^2 × n = n^3\\\\\n&#x26; n^3 × n^3 = n^6\\\\\n&#x26; n^6 × n^6 = n^{12}\\\\\n&#x26; n^{12} × n^3 = n^{15}\n\\end{align}$$</p>\n<p>We shall define $m(k)$ to be the minimum number of multiplications to compute $n^k$; for example $m(15) = 5$.</p>\n<p>For $1 ≤ k ≤ 200$, find $\\sum{m(k)}$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

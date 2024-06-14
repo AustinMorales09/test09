@@ -1,0 +1,88 @@
+{
+  "id": "655b283d10fee46040e0a893",
+  "title": "Task 82",
+  "challengeType": 19,
+  "dashedName": "task-82",
+  "solutions": [],
+  "question": {
+    "text": "<p>According to Maria, why are Tuesdays different from other days?</p>",
+    "answers": [
+      {
+        "answer": "<p>She goes out for activities every Tuesday</p>",
+        "feedback": "<p>That's not it.</p>"
+      },
+      {
+        "answer": "<p>She has dance classes on Tuesdays</p>",
+        "feedback": "<p>Maria's dance classes are on Mondays.</p>"
+      },
+      {
+        "answer": "<p>It's the only day she is home early for online lessons</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She works late on Tuesdays</p>",
+        "feedback": "<p>Maria doesn't mention working until late.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.14,
+        "finishTimestamp": 23.56
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 7.42,
+        "dialogue": {
+          "text": "On Tuesdays, I learn Japanese. I take online lessons at 7. I think it's the only day I'm home so early.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 7.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 85,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

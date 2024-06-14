@@ -1,0 +1,53 @@
+{
+  "id": "6569b831a07d7154c793301b",
+  "title": "Step 7",
+  "challengeType": 20,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\n\ndef main():\n    card_number = '4111-1111-4555-1142'\n    card_translation = str.maketrans({'-': '', ' ': ''})\n    translated_card_number = card_number.translate(card_translation)\n\n    print(translated_card_number)\n\nmain()",
+      "error": null,
+      "seed": "\n\ndef main():\n    card_number = '4111-1111-4555-1142'\n    card_translation = str.maketrans({'-': '', ' ': ''})\n    translated_card_number = card_number.translate(card_translation)\n\n    print(translated_card_number)\n\nmain()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a function called <code>verify_card_number</code> with a parameter called <code>card_number</code>.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const verify_card_number = __helpers.python.getDef(\"\\n\" + transformedCode, \"verify_card_number\");\n        assert.exists(verify_card_number);\n        const { function_parameters } = verify_card_number;\n        assert.equal(function_parameters.trim(), \"card_number\");\n    }\n})"
+    },
+    {
+      "text": "<p>You should use the <code>pass</code> keyword in the body of the <code>verify_card_number</code> function.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const verify_card_number = __helpers.python.getDef(\"\\n\" + transformedCode, \"verify_card_number\");\n        assert.exists(verify_card_number);\n        const { function_body } = verify_card_number;\n        assert.match(function_body, / +pass/);\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Define a function <code>verify_card_number</code> with a parameter <code>card_number</code>, and use the <code>pass</code> keyword to make the function do nothing.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-work-with-numbers-and-strings-by-implementing-the-luhn-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

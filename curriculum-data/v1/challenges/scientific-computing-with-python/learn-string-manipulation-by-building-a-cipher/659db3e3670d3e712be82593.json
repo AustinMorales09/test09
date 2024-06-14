@@ -1,0 +1,77 @@
+{
+  "id": "659db3e3670d3e712be82593",
+  "title": "Step 22",
+  "challengeType": 20,
+  "dashedName": "step-22",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        8
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nindex = alphabet.find(text[0].lower())\nprint(index)\nshifted = alphabet[index + shift]\nprint(shifted)",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nindex = alphabet.find(text[0].lower())\nprint(index)\nshifted = alphabet[index + shift]\nprint(shifted)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should still have <code>text = 'Hello World'</code> in your code.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.match(commentless_code, /^text\\s*=\\s*(\"|')Hello World\\1/m)"
+    },
+    {
+      "text": "<p>You should still have <code>shift = 3</code> in your code.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.match(commentless_code, /^shift\\s*=\\s*3/m)"
+    },
+    {
+      "text": "<p>You should still have <code>alphabet = 'abcdefghijklmnopqrstuvwxyz'</code> in your code.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.match(commentless_code, /^alphabet\\s*=\\s*(\"|')abcdefghijklmnopqrstuvwxyz\\1/m)"
+    },
+    {
+      "text": "<p>You should delete <code>index</code> variable and its value.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.notMatch(commentless_code, /index\\s*=/)"
+    },
+    {
+      "text": "<p>You should not have <code>print(index)</code> in your code.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.notMatch(commentless_code, /print\\s*\\(\\s*index\\s*\\)/)"
+    },
+    {
+      "text": "<p>You should delete the <code>shifted</code> variable and its value.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.notMatch(commentless_code, /shifted\\s*=/)"
+    },
+    {
+      "text": "<p>You should not have <code>print(shifted)</code> in your code.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.notMatch(commentless_code, /print\\s*\\(\\s*shifted\\s*\\)/)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Repeating the process of locating the letter inside the alphabet and determine the shifted letter for each character in <code>text</code> can be tedious. Thankfully, you can simplify it using a loop.</p>\n<p>For now, remove all the lines of code below the declaration of the <code>alphabet</code> variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

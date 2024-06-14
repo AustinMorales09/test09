@@ -1,0 +1,61 @@
+{
+  "id": "660f4cffb1459d45e34902d1",
+  "title": "Step 103",
+  "challengeType": 1,
+  "dashedName": "step-103",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        21,
+        23
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\n\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\n\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>const</code> to declare a <code>numbers</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+numbers/);"
+    },
+    {
+      "text": "<p>Your <code>numbers</code> variable should be an array.</p>",
+      "testString": "assert.isArray(numbers);"
+    },
+    {
+      "text": "<p>Your <code>numbers</code> array should have the elements <code>1</code>, <code>2</code>, and <code>3</code> in that order.</p>",
+      "testString": "assert.deepEqual(numbers, [1,2,3]);"
+    },
+    {
+      "text": "<p>You should log your <code>numbers</code> array.</p>",
+      "testString": "assert.match(code, /console\\.log\\(\\s*numbers\\s*\\);?/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can actually build the inverted pyramid without needing to loop \"backwards\" like you did.</p>\n<p>To do this, you'll need to learn a couple of new array methods. Start by using <code>const</code> to declare a <code>numbers</code> variable. Assign it an array with the elements <code>1</code>, <code>2</code>, and <code>3</code>. Then log the <code>numbers</code> array.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 102,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

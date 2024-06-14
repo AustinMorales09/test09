@@ -1,0 +1,65 @@
+{
+  "id": "5900f4a21000cf542c50ffb5",
+  "title": "Problem 310: Nim Square",
+  "challengeType": 1,
+  "forumTopicId": 301966,
+  "dashedName": "problem-310-nim-square",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function nimSquare() {\n\n  return true;\n}\n\nnimSquare();",
+      "error": null,
+      "seed": "function nimSquare() {\n\n  return true;\n}\n\nnimSquare();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>nimSquare()</code> should return <code>2586528661783</code>.</p>",
+      "testString": "assert.strictEqual(nimSquare(), 2586528661783);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Alice and Bob play the game Nim Square.</p>\n<p>Nim Square is just like ordinary three-heap normal play Nim, but the players may only remove a square number of stones from a heap.</p>\n<p>The number of stones in the three heaps is represented by the ordered triple ($a$, $b$, $c$).</p>\n<p>If $0 ≤ a ≤ b ≤ c ≤ 29$ then the number of losing positions for the next player is 1160.</p>\n<p>Find the number of losing positions for the next player if $0 ≤ a ≤ b ≤ c ≤ 100\\,000$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

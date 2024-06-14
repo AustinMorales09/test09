@@ -1,0 +1,30 @@
+{
+  "id": "587d7fb4367417b2b2512bff",
+  "title": "Add a Version to Your package.json",
+  "challengeType": 2,
+  "forumTopicId": 301525,
+  "dashedName": "add-a-version-to-your-package-json",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>package.json should have a valid \"version\" key</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/package.json').then(\n    (data) => {\n      var packJson = JSON.parse(data);\n      assert(packJson.version, '\"version\" is missing');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A <code>version</code> is one of the required fields of your package.json file. This field describes the current version of your project. Here's an example:</p>\n<pre><code class=\"language-json\">\"version\": \"1.2.0\",\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add a <code>version</code> to the package.json file of your project.</p>\n</section>",
+  "translationPending": false,
+  "block": "managing-packages-with-npm",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "656a56f89acf253314e9f6d6",
+  "title": "Task 58",
+  "challengeType": 19,
+  "dashedName": "task-58",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>inactive</code> mean in the context of the dialogue?</p>",
+    "answers": [
+      {
+        "answer": "<p>Very active and always moving</p>",
+        "feedback": "<p>This is the opposite of <code>inactive</code>. <code>Inactive</code> means not being active.</p>"
+      },
+      {
+        "answer": "<p>Not taking any actions</p>",
+        "feedback": "<p>While this can be a form of inactivity, in the context, Sophie is talking about physical activity.</p>"
+      },
+      {
+        "answer": "<p>Not being physically active</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Working without breaks</p>",
+        "feedback": "<p>This doesn't necessarily mean inactivity. Sophie specifically refers to her lack of movement.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.22,
+        "finishTimestamp": 26.48
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.76,
+        "dialogue": {
+          "text": "That's so true. I'm a bit inactive sitting all the time.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.26
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>inactive</code> is used to describe a state of not being active or engaged in physical movement. It can refer to a lack of physical activity or any kind of action.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 59,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

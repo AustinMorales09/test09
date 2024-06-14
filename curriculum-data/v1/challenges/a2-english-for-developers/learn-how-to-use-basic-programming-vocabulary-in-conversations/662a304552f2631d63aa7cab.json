@@ -1,0 +1,88 @@
+{
+  "id": "662a304552f2631d63aa7cab",
+  "title": "Task 19",
+  "challengeType": 19,
+  "dashedName": "task-19",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sophie say about the way she uses her time?</p>",
+    "answers": [
+      {
+        "answer": "<p>She spends all her time working.</p>",
+        "feedback": "<p>Sophie's statement specifically refers to her free time, not her work time, indicating she still distinguishes between the two.</p>"
+      },
+      {
+        "answer": "<p>She rarely has any free time to spend.</p>",
+        "feedback": "<p>Sophie actually indicates she has free time and chooses to spend much of it on a particular activity.</p>"
+      },
+      {
+        "answer": "<p>She doesn’t enjoy what she does in her free time.</p>",
+        "feedback": "<p>There's no indication of her enjoyment; she simply states how she spends her free time.</p>"
+      },
+      {
+        "answer": "<p>She dedicates a big portion of her free time to a specific activity.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 12.36,
+        "finishTimestamp": 14.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 2.8,
+        "dialogue": {
+          "text": "I spent much of my free time on it.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

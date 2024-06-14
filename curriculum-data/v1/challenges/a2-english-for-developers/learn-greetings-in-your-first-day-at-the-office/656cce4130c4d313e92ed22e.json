@@ -1,0 +1,88 @@
+{
+  "id": "656cce4130c4d313e92ed22e",
+  "title": "Task 113",
+  "challengeType": 19,
+  "dashedName": "task-113",
+  "solutions": [],
+  "question": {
+    "text": "<p>Where is the café Sophie is suggesting?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Across the town.</code></p>",
+        "feedback": "<p>Listen closely to where Sophie says the café is located.</p>"
+      },
+      {
+        "answer": "<p><code>Up the hill.</code></p>",
+        "feedback": "<p>Listen closely to where Sophie says the café is located.</p>"
+      },
+      {
+        "answer": "<p><code>Right down the street.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Next to the office.</code></p>",
+        "feedback": "<p>Listen closely to where Sophie says the café is located.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 16.74,
+        "finishTimestamp": 20.34
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.3,
+        "dialogue": {
+          "text": "I know a nice one. It's a café right down the street. Is that okay for you?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Sophie is suggesting a place for lunch and is asking Tom if he's okay with her choice.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 115,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

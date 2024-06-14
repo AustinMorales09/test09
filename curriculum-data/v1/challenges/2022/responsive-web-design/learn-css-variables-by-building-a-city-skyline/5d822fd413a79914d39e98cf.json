@@ -1,0 +1,77 @@
+{
+  "id": "5d822fd413a79914d39e98cf",
+  "title": "Step 7",
+  "challengeType": 0,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />\n  </head>\n\n  <body>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />\n  </head>\n\n  <body>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        5,
+        8
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\n\n\n    ",
+      "error": null,
+      "seed": "* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\n\n\n    "
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>body</code> selector.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('body'));"
+    },
+    {
+      "text": "<p>Your <code>body</code> should have a <code>height</code> of <code>100vh</code>.</p>",
+      "testString": "const bodyStyles = new __helpers.CSSHelp(document).getStyle('body');\nassert.equal(bodyStyles?.height, '100vh');"
+    },
+    {
+      "text": "<p>Your <code>body</code> should have a <code>margin</code> of <code>0</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('body')?.margin, '0px');"
+    },
+    {
+      "text": "<p>Your <code>body</code> should have the <code>overflow</code> property set to <code>hidden</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('body')?.overflow, 'hidden');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can see the <code>body</code> (it's the inner-most box on your page); the box around it is the <code>html</code> element. Make your <code>body</code> fill the whole viewport by giving it a <code>height</code> of <code>100vh</code>. Remove the default <code>margin</code> from the <code>body</code> by setting the <code>margin</code> to <code>0</code>. Finally, set the <code>overflow</code> property to <code>hidden</code> to hide any scroll bars that appear when something extends past the viewport.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-variables-by-building-a-city-skyline",
+  "hasEditableBoundaries": true,
+  "order": 14,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

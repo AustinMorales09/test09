@@ -1,0 +1,70 @@
+{
+  "id": "587d7fab367417b2b2512bd7",
+  "title": "Create a Scatterplot with SVG Circles",
+  "challengeType": 6,
+  "forumTopicId": 301484,
+  "dashedName": "create-a-scatterplot-with-svg-circles",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<body>\n  <script>\n    const dataset = [\n                  [ 34,    78 ],\n                  [ 109,   280 ],\n                  [ 310,   120 ],\n                  [ 79,    411 ],\n                  [ 420,   220 ],\n                  [ 233,   145 ],\n                  [ 333,   96 ],\n                  [ 222,   333 ],\n                  [ 78,    320 ],\n                  [ 21,    123 ]\n                ];\n\n\n    const w = 500;\n    const h = 500;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"circle\")\n       // Add your code below this line\n\n\n\n       // Add your code above this line\n\n  </script>\n</body>",
+      "error": null,
+      "seed": "<body>\n  <script>\n    const dataset = [\n                  [ 34,    78 ],\n                  [ 109,   280 ],\n                  [ 310,   120 ],\n                  [ 79,    411 ],\n                  [ 420,   220 ],\n                  [ 233,   145 ],\n                  [ 333,   96 ],\n                  [ 222,   333 ],\n                  [ 78,    320 ],\n                  [ 21,    123 ]\n                ];\n\n\n    const w = 500;\n    const h = 500;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"circle\")\n       // Add your code below this line\n\n\n\n       // Add your code above this line\n\n  </script>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<body>\n  <script>\n    const dataset = [\n                  [ 34,    78 ],\n                  [ 109,   280 ],\n                  [ 310,   120 ],\n                  [ 79,    411 ],\n                  [ 420,   220 ],\n                  [ 233,   145 ],\n                  [ 333,   96 ],\n                  [ 222,   333 ],\n                  [ 78,    320 ],\n                  [ 21,    123 ]\n                ];\n\n\n    const w = 500;\n    const h = 500;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"circle\")\n       .data(dataset)\n       .enter()\n       .append(\"circle\")\n\n  </script>\n</body>",
+        "error": null,
+        "seed": "<body>\n  <script>\n    const dataset = [\n                  [ 34,    78 ],\n                  [ 109,   280 ],\n                  [ 310,   120 ],\n                  [ 79,    411 ],\n                  [ 420,   220 ],\n                  [ 233,   145 ],\n                  [ 333,   96 ],\n                  [ 222,   333 ],\n                  [ 78,    320 ],\n                  [ 21,    123 ]\n                ];\n\n\n    const w = 500;\n    const h = 500;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"circle\")\n       .data(dataset)\n       .enter()\n       .append(\"circle\")\n\n  </script>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have 10 <code>circle</code> elements.</p>",
+      "testString": "assert($('circle').length == 10);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A scatter plot is another type of visualization. It usually uses circles to map data points, which have two values each. These values tie to the <code>x</code> and <code>y</code> axes, and are used to position the circle in the visualization.</p>\n<p>SVG has a <code>circle</code> tag to create the circle shape. It works a lot like the <code>rect</code> elements you used for the bar chart.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use the <code>data()</code>, <code>enter()</code>, and <code>append()</code> methods to bind <code>dataset</code> to new <code>circle</code> elements that are appended to the SVG.</p>\n<p><strong>Note:</strong> The circles won't be visible because we haven't set their attributes yet. We'll do that in the next challenge.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-visualization-with-d3",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 20,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "6556c456a11da38ed3275f67",
+  "title": "Task 8",
+  "challengeType": 19,
+  "dashedName": "task-8",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah mean when she says, <code>I don't do anything out of the ordinary</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>She does something very unusual every morning</p>",
+        "feedback": "<p><code>Out of the ordinary</code> means unusual, but Sarah says she doesn't do this.</p>"
+      },
+      {
+        "answer": "<p>She follows a unique morning routine</p>",
+        "feedback": "<p>Sarah implies that her routine is typical, not unique.</p>"
+      },
+      {
+        "answer": "<p>She does not do anything unusual in her morning routine</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She likes to do ordinary things sometimes</p>",
+        "feedback": "<p>The phrase does not specifically relate to liking ordinary things.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 7.48,
+        "finishTimestamp": 11.52
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5.04,
+        "dialogue": {
+          "text": "Hey James, thanks. Look, I don't do anything out of the ordinary, I think.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5.54
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "657e0b605954eb6b04279b12",
+  "title": "Task 11",
+  "challengeType": 19,
+  "dashedName": "task-11",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Tom asking Sophie about?</p>",
+    "answers": [
+      {
+        "answer": "<p>The location where Sophie works on projects.</p>",
+        "feedback": "<p>The question is about the method, not the location.</p>"
+      },
+      {
+        "answer": "<p>The time Sophie spends on her projects.</p>",
+        "feedback": "<p>The question is about the method, not the time spent.</p>"
+      },
+      {
+        "answer": "<p>The people Sophie works with on her projects.</p>",
+        "feedback": "<p>The question is about the method, not the people Sophie works with.</p>"
+      },
+      {
+        "answer": "<p>The way Sophie manages her projects.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.1,
+        "finishTimestamp": 25.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.52,
+        "dialogue": {
+          "text": "That makes sense. How do you handle your projects?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Understanding questions about project management is crucial in professional settings.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

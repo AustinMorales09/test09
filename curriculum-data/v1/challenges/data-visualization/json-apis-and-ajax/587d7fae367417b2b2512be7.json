@@ -1,0 +1,70 @@
+{
+  "id": "587d7fae367417b2b2512be7",
+  "title": "Pre-filter JSON to Get the Data You Need",
+  "challengeType": 6,
+  "forumTopicId": 18257,
+  "dashedName": "pre-filter-json-to-get-the-data-you-need",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    document.getElementById('getMessage').onclick = function(){\n      const req = new XMLHttpRequest();\n      req.open(\"GET\",'/json/cats.json', true);\n      req.send();\n      req.onload=function(){\n        let json = JSON.parse(req.responseText);\n        let html = \"\";\n        // Add your code below this line\n\n\n        // Add your code above this line\n         json.forEach(function(val) {\n           html += \"<div class = 'cat'>\"\n\n           html += \"<img src = '\" + val.imageLink + \"' \" + \"alt='\" + val.altText + \"'>\"\n\n           html += \"</div>\"\n         });\n         document.getElementsByClassName('message')[0].innerHTML = html;\n       };\n     };\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n\n<h1>Cat Photo Finder</h1>\n<p class=\"message box\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>",
+      "error": null,
+      "seed": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    document.getElementById('getMessage').onclick = function(){\n      const req = new XMLHttpRequest();\n      req.open(\"GET\",'/json/cats.json', true);\n      req.send();\n      req.onload=function(){\n        let json = JSON.parse(req.responseText);\n        let html = \"\";\n        // Add your code below this line\n\n\n        // Add your code above this line\n         json.forEach(function(val) {\n           html += \"<div class = 'cat'>\"\n\n           html += \"<img src = '\" + val.imageLink + \"' \" + \"alt='\" + val.altText + \"'>\"\n\n           html += \"</div>\"\n         });\n         document.getElementsByClassName('message')[0].innerHTML = html;\n       };\n     };\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n\n<h1>Cat Photo Finder</h1>\n<p class=\"message box\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    document.getElementById('getMessage').onclick = function(){\n      const req = new XMLHttpRequest();\n      req.open(\"GET\",'/json/cats.json', true);\n      req.send();\n      req.onload = function(){\n        let json = JSON.parse(req.responseText);\n        let html = \"\";\n        // Add your code below this line\n        json = json.filter(function(val) {\n          return (val.id !== 1);\n        });\n\n        // Add your code above this line\n         json.forEach(function(val) {\n           html += \"<div class = 'cat'>\"\n\n           html += \"<img src = '\" + val.imageLink + \"' \" + \"alt='\" + val.altText + \"'>\"\n\n           html += \"</div>\"\n         });\n         document.getElementsByClassName('message')[0].innerHTML = html;\n       };\n     };\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n\n<h1>Cat Photo Finder</h1>\n<p class=\"message\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>",
+        "error": null,
+        "seed": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    document.getElementById('getMessage').onclick = function(){\n      const req = new XMLHttpRequest();\n      req.open(\"GET\",'/json/cats.json', true);\n      req.send();\n      req.onload = function(){\n        let json = JSON.parse(req.responseText);\n        let html = \"\";\n        // Add your code below this line\n        json = json.filter(function(val) {\n          return (val.id !== 1);\n        });\n\n        // Add your code above this line\n         json.forEach(function(val) {\n           html += \"<div class = 'cat'>\"\n\n           html += \"<img src = '\" + val.imageLink + \"' \" + \"alt='\" + val.altText + \"'>\"\n\n           html += \"</div>\"\n         });\n         document.getElementsByClassName('message')[0].innerHTML = html;\n       };\n     };\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n\n<h1>Cat Photo Finder</h1>\n<p class=\"message\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should use the <code>filter</code> method.</p>",
+      "testString": "assert(code.match(/json\\.filter/g));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>If you don't want to render every cat photo you get from the freeCodeCamp Cat Photo API, you can pre-filter the JSON before looping through it.</p>\n<p>Given that the JSON data is stored in an array, you can use the <code>filter</code> method to filter out the cat whose <code>id</code> key has a value of <code>1</code>.</p>\n<p>Here's the code to do this:</p>\n<pre><code class=\"language-js\">json = json.filter(function(val) {\n  return (val.id !== 1);\n});\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add code to <code>filter</code> the json data to remove the cat with the <code>id</code> value of <code>1</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "json-apis-and-ajax",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 7,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

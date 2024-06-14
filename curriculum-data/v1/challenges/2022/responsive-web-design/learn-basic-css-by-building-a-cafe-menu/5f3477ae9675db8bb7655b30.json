@@ -1,0 +1,73 @@
+{
+  "id": "5f3477ae9675db8bb7655b30",
+  "title": "Step 12",
+  "challengeType": 0,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        5,
+        11
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n    <style>\n      h1 {\n        text-align: center;\n      }\n    </style>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n    <style>\n      h1 {\n        text-align: center;\n      }\n    </style>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not change the existing <code>h1</code> selector.</p>",
+      "testString": "const hasH1 = new __helpers.CSSHelp(document).getStyle('h1');\nassert(hasH1);"
+    },
+    {
+      "text": "<p>You should not add a new <code>style</code> tag. Add the new CSS rules to the existing <code>style</code> tag.</p>",
+      "testString": "const hasManyStyleTags = document.querySelectorAll('style').length > 1;\nassert(!hasManyStyleTags);"
+    },
+    {
+      "text": "<p>You should add a new <code>h2</code> selector.</p>",
+      "testString": "const hasH2 = new __helpers.CSSHelp(document).getStyle('h2');\nassert(hasH2);"
+    },
+    {
+      "text": "<p>You should add a new <code>p</code> selector.</p>",
+      "testString": "const hasP = new __helpers.CSSHelp(document).getStyle('p');\nassert(hasP);"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should have a <code>text-align</code> of <code>center</code>.</p>",
+      "testString": "const h1TextAlign = new __helpers.CSSHelp(document).getStyle('h1')?.getPropertyValue('text-align');\nassert(h1TextAlign === 'center');"
+    },
+    {
+      "text": "<p>Your <code>h2</code> element should have a <code>text-align</code> of <code>center</code>.</p>",
+      "testString": "const h2TextAlign = new __helpers.CSSHelp(document).getStyle('h2')?.getPropertyValue('text-align');\nassert(h2TextAlign === 'center');"
+    },
+    {
+      "text": "<p>Your <code>p</code> element should have a <code>text-align</code> of <code>center</code>.</p>",
+      "testString": "const pTextAlign = new __helpers.CSSHelp(document).getStyle('p')?.getPropertyValue('text-align');\nassert(pTextAlign === 'center');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In the previous step, you used a <dfn>type selector</dfn> to style the <code>h1</code> element. Center the content of the <code>h2</code> and the <code>p</code> elements by adding a new type selector for each one to the existing <code>style</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

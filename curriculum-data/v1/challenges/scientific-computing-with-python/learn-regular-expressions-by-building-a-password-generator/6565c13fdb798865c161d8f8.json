@@ -1,0 +1,53 @@
+{
+  "id": "6565c13fdb798865c161d8f8",
+  "title": "Step 65",
+  "challengeType": 20,
+  "dashedName": "step-65",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        36,
+        39
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n       \n        constraints = [\n            (nums, r'\\d'),\n            (lowercase, r'[a-z]'),\n            (uppercase, r'[A-Z]'),            \n            (special_chars, fr'[{symbols}]')            \n        ]\n        \n        # Check constraints        \n        if all(\n            constraint <= len(re.findall(pattern, password))\n            for constraint, pattern in constraints\n        ):\n            break\n\n    return password\n    \n# new_password = generate_password(8)\n# print(new_password)",
+      "error": null,
+      "seed": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n       \n        constraints = [\n            (nums, r'\\d'),\n            (lowercase, r'[a-z]'),\n            (uppercase, r'[A-Z]'),            \n            (special_chars, fr'[{symbols}]')            \n        ]\n        \n        # Check constraints        \n        if all(\n            constraint <= len(re.findall(pattern, password))\n            for constraint, pattern in constraints\n        ):\n            break\n\n    return password\n    \n# new_password = generate_password(8)\n# print(new_password)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call <code>generate_password</code> with the provided arguments.</p>",
+      "testString": "({ test: () => assert.match(code, /^new_password\\s*=\\s*generate_password\\s*\\(\\s*8\\s*,\\s*1\\s*,\\s*1\\s*,\\s*1\\s*,\\s*1\\s*\\)/m) })"
+    },
+    {
+      "text": "<p>You should print your <code>new_password</code> variable.</p>",
+      "testString": "({ test: () => assert.match(code, /^print\\s*\\(\\s*new_password\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now it's time to test your function. Uncomment the last two lines in your code and modify the function call passing 5 arguments. Use <code>8</code> for the length and <code>1</code> for the other four constraints.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 64,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

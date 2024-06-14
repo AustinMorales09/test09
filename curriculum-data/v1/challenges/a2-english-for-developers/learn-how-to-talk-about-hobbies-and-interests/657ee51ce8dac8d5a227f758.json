@@ -1,0 +1,88 @@
+{
+  "id": "657ee51ce8dac8d5a227f758",
+  "title": "Task 50",
+  "challengeType": 19,
+  "dashedName": "task-50",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does James want to know with <code>most interested in</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>The type of figures the person likes the best</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The number of figures the person has</p>",
+        "feedback": "<p>James is asking about preferences, not about how many figures there are.</p>"
+      },
+      {
+        "answer": "<p>How much money the person spent on figures</p>",
+        "feedback": "<p>The question about being <code>most interested in</code> is about preferences, not about spending money.</p>"
+      },
+      {
+        "answer": "<p>If the person makes their own figures</p>",
+        "feedback": "<p>James's question focuses on interests, not on whether the person creates figures.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 8.08,
+        "finishTimestamp": 11.24
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 4.16,
+        "dialogue": {
+          "text": "That's awesome. What kind of figures are you most interested in?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 4.66
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>most</code> is often used to show the highest degree or the greatest amount of something.</p>\n<p>For instance, <code>Out of all my hobbies, I enjoy reading the most</code> means that you might have many hobbies, but reading is your favorite.</p>\n<p>The phrase <code>interested in</code> means something catches your attention.</p>\n<p>For example, if you say <code>I am interested in painting</code>, it means you like painting or enjoy learning about it.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 52,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

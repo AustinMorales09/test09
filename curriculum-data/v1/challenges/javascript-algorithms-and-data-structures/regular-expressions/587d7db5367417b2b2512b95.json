@@ -1,0 +1,82 @@
+{
+  "id": "587d7db5367417b2b2512b95",
+  "title": "Match Single Character with Multiple Possibilities",
+  "challengeType": 1,
+  "forumTopicId": 301357,
+  "dashedName": "match-single-character-with-multiple-possibilities",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let quoteSample = \"Beware of bugs in the above code; I have only proved it correct, not tried it.\";\nlet vowelRegex = /change/; // Change this line\nlet result = vowelRegex; // Change this line",
+      "error": null,
+      "seed": "let quoteSample = \"Beware of bugs in the above code; I have only proved it correct, not tried it.\";\nlet vowelRegex = /change/; // Change this line\nlet result = vowelRegex; // Change this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let quoteSample = \"Beware of bugs in the above code; I have only proved it correct, not tried it.\";\nlet vowelRegex = /[aeiou]/gi; // Change this line\nlet result = quoteSample.match(vowelRegex); // Change this line",
+        "error": null,
+        "seed": "let quoteSample = \"Beware of bugs in the above code; I have only proved it correct, not tried it.\";\nlet vowelRegex = /[aeiou]/gi; // Change this line\nlet result = quoteSample.match(vowelRegex); // Change this line"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should find all 25 vowels.</p>",
+      "testString": "assert(result.length == 25);"
+    },
+    {
+      "text": "<p>Your regex <code>vowelRegex</code> should use a character class.</p>",
+      "testString": "assert(/\\[.*\\]/.test(vowelRegex.source));"
+    },
+    {
+      "text": "<p>Your regex <code>vowelRegex</code> should use the global flag.</p>",
+      "testString": "assert(vowelRegex.flags.match(/g/).length == 1);"
+    },
+    {
+      "text": "<p>Your regex <code>vowelRegex</code> should use the case insensitive flag.</p>",
+      "testString": "assert(vowelRegex.flags.match(/i/).length == 1);"
+    },
+    {
+      "text": "<p>Your regex should not match any consonants.</p>",
+      "testString": "assert(!/[b-df-hj-np-tv-z]/gi.test(result.join()));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You learned how to match literal patterns (<code>/literal/</code>) and wildcard character (<code>/./</code>). Those are the extremes of regular expressions, where one finds exact matches and the other matches everything. There are options that are a balance between the two extremes.</p>\n<p>You can search for a literal pattern with some flexibility with <dfn>character classes</dfn>. Character classes allow you to define a group of characters you wish to match by placing them inside square (<code>[</code> and <code>]</code>) brackets.</p>\n<p>For example, you want to match <code>bag</code>, <code>big</code>, and <code>bug</code> but not <code>bog</code>. You can create the regex <code>/b[aiu]g/</code> to do this. The <code>[aiu]</code> is the character class that will only match the characters <code>a</code>, <code>i</code>, or <code>u</code>.</p>\n<pre><code class=\"language-js\">let bigStr = \"big\";\nlet bagStr = \"bag\";\nlet bugStr = \"bug\";\nlet bogStr = \"bog\";\nlet bgRegex = /b[aiu]g/;\nbigStr.match(bgRegex);\nbagStr.match(bgRegex);\nbugStr.match(bgRegex);\nbogStr.match(bgRegex);\n</code></pre>\n<p>In order, the four <code>match</code> calls would return the values <code>[\"big\"]</code>, <code>[\"bag\"]</code>, <code>[\"bug\"]</code>, and <code>null</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use a character class with vowels (<code>a</code>, <code>e</code>, <code>i</code>, <code>o</code>, <code>u</code>) in your regex <code>vowelRegex</code> to find all the vowels in the string <code>quoteSample</code>.</p>\n<p><strong>Note:</strong> Be sure to match both upper- and lowercase vowels.</p>\n</section>",
+  "translationPending": false,
+  "block": "regular-expressions",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

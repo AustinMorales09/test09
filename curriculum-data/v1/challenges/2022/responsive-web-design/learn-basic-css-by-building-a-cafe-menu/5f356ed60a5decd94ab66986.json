@@ -1,0 +1,69 @@
+{
+  "id": "5f356ed60a5decd94ab66986",
+  "title": "Step 22",
+  "challengeType": 0,
+  "dashedName": "step-22",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div id=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div id=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        1,
+        3
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background-color: burlywood;\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n#menu {\n  width: 300px;\n}",
+      "error": null,
+      "seed": "body {\n  background-color: burlywood;\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n#menu {\n  width: 300px;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should comment out the <code>background-color: burlywood;</code> line in your CSS.</p>",
+      "testString": "assert(code.match(/\\/\\*\\s*background-color:\\s*burlywood;?\\s*\\*\\//i));"
+    },
+    {
+      "text": "<p>Your <code>body</code> should have a white background.</p>",
+      "testString": "const bodyCSS = $('body').css('background-color');\nassert(bodyCSS === \"rgba(0, 0, 0, 0)\")"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Comments in CSS look like this:</p>\n<pre><code class=\"language-css\">/* comment here */\n</code></pre>\n<p>In your style sheet, comment out the line containing the <code>background-color</code> property and value, so you can see the effect of only styling the <code>#menu</code> element. This will make the background white again.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

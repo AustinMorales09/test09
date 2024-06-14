@@ -1,0 +1,83 @@
+{
+  "id": "657ea950baa4a8c48e39d031",
+  "title": "Task 35",
+  "challengeType": 22,
+  "dashedName": "task-35",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Sure! _ _ _.</p>",
+    "blanks": [
+      {
+        "answer": "I'd",
+        "feedback": "<p>This is the contracted form of <code>I would</code>, showing enthusiasm to accept an offer or invitation.</p>"
+      },
+      {
+        "answer": "love",
+        "feedback": "<p>This word expresses a strong desire or preference for doing something.</p>"
+      },
+      {
+        "answer": "to",
+        "feedback": "<p>This word is used to introduce the infinitive form of the verb that follows, completing the expression of willingness to do something.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 41.4,
+        "finishTimestamp": 42.74
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 2.34,
+        "dialogue": {
+          "text": "Sure! I'd love to.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 2.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>I would love to</code> is used to express enthusiasm and agreement with a suggested or proposed activity. In affirmative sentences, <code>would</code> is often shortened to <code>'d</code>, as in <code>I'd love to</code>.</p>\n<p>For example, if someone asks you if you want to go to a concert, you can say <code>I'd love to</code> to show that you are very happy about the invitation and really want to go.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

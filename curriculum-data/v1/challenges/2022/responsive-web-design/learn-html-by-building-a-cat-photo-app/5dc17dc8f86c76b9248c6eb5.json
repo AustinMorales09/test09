@@ -1,0 +1,65 @@
+{
+  "id": "5dc17dc8f86c76b9248c6eb5",
+  "title": "Step 4",
+  "challengeType": 0,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        8
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <h1>CatPhotoApp</h1>\n    <h2>Cat Photos</h2>\n    \n    <p>See more cat photos in our gallery.</p>\n    \n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <h1>CatPhotoApp</h1>\n    <h2>Cat Photos</h2>\n    \n    <p>See more cat photos in our gallery.</p>\n    \n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your comment should start with <code>&#x3C;!--</code>. You are missing one or more of the characters that define the start of a comment.</p>",
+      "testString": "assert(code.match(/<!--/));"
+    },
+    {
+      "text": "<p>Your comment should end with <code>--></code>.  You are missing one or more of the characters that define the end of a comment.</p>",
+      "testString": "assert(code.match(/-->/));"
+    },
+    {
+      "text": "<p>Your code should not have extra opening/closing comment characters. You have an extra <code>&#x3C;!--</code> or <code>--></code> displaying in the browser.</p>",
+      "testString": "const noSpaces = code.replace(/\\s/g, '');\nassert(noSpaces.match(/<!--/g).length < 2 && noSpaces.match(/-->/g).length < 2);"
+    },
+    {
+      "text": "<p>Your comment should contain the text <code>TODO: Add link to cat photos</code>.</p>",
+      "testString": "assert(code.match(/<!--\\s*todo:\\s+add\\s+link\\s+to\\s+cat\\s+photos\\s*-->/i));"
+    },
+    {
+      "text": "<p>Your comment should be above the <code>p</code> element. You have them in the wrong order.</p>",
+      "testString": "assert(\n  code\n    .replace(/\\s/g, '')\n    .match(\n      /<!--todo:addlinktocatphotos--><p>seemorecatphotosinourgallery\\.?<\\/p>/i\n    )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Commenting allows you to leave messages without affecting the browser display. It also allows you to make code inactive. A comment in HTML starts with <code>&#x3C;!--</code>, contains any number of lines of text, and ends with <code>--></code>.</p>\n<p>Here is an example of a comment with the <code>TODO: Remove h1</code>:</p>\n<pre><code class=\"language-html\">&#x3C;!-- TODO: Remove h1 -->\n</code></pre>\n<p>Add a comment above the <code>p</code> element with this text:</p>\n<p><code>TODO: Add link to cat photos</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

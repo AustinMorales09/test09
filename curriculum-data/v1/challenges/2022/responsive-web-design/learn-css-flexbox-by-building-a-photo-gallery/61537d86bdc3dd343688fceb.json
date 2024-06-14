@@ -1,0 +1,101 @@
+{
+  "id": "61537d86bdc3dd343688fceb",
+  "title": "Step 6",
+  "challengeType": 0,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        12,
+        24
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n    <div class=\"gallery\">\n      <img>\n      <img>\n      <img>\n      <img>\n      <img>\n      <img>\n      <img>\n      <img>\n      <img>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n    <div class=\"gallery\">\n      <img>\n      <img>\n      <img>\n      <img>\n      <img>\n      <img>\n      <img>\n      <img>\n      <img>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>All nine of your <code>img</code> elements should have a <code>src</code> attribute.</p>",
+      "testString": "const images = [...document.querySelectorAll('img')];\nassert(images.every(image => image.getAttribute('src')));"
+    },
+    {
+      "text": "<p>Your first <code>img</code> element should have <code>https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg</code> set as the <code>src</code> attribute value.</p>",
+      "testString": "assert(document.querySelectorAll('img')?.[0]?.getAttribute('src') === 'https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg');"
+    },
+    {
+      "text": "<p>Your second <code>img</code> element should have <code>https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg</code> set as the <code>src</code> attribute value.</p>",
+      "testString": "assert(document.querySelectorAll('img')?.[1]?.getAttribute('src') === 'https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg');"
+    },
+    {
+      "text": "<p>Your third <code>img</code> element should have <code>https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg</code> set as the <code>src</code> attribute value.</p>",
+      "testString": "assert(document.querySelectorAll('img')?.[2]?.getAttribute('src') === 'https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg');"
+    },
+    {
+      "text": "<p>Your fourth <code>img</code> element should have <code>https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg</code> set as the <code>src</code> attribute value.</p>",
+      "testString": "assert(document.querySelectorAll('img')?.[3]?.getAttribute('src') === 'https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg');"
+    },
+    {
+      "text": "<p>Your fifth <code>img</code> element should have <code>https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg</code> set as the <code>src</code> attribute value.</p>",
+      "testString": "assert(document.querySelectorAll('img')?.[4]?.getAttribute('src') === 'https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg');"
+    },
+    {
+      "text": "<p>Your sixth <code>img</code> element should have <code>https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg</code> set as the <code>src</code> attribute value.</p>",
+      "testString": "assert(document.querySelectorAll('img')?.[5]?.getAttribute('src') === 'https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg');"
+    },
+    {
+      "text": "<p>Your seventh <code>img</code> element should have <code>https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg</code> set as the <code>src</code> attribute value.</p>",
+      "testString": "assert(document.querySelectorAll('img')?.[6]?.getAttribute('src') === 'https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg');"
+    },
+    {
+      "text": "<p>Your eighth <code>img</code> element should have <code>https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg</code> set as the <code>src</code> attribute value.</p>",
+      "testString": "assert(document.querySelectorAll('img')?.[7]?.getAttribute('src') === 'https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg');"
+    },
+    {
+      "text": "<p>Your ninth <code>img</code> element should have <code>https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg</code> set as the <code>src</code> attribute value.</p>",
+      "testString": "assert(document.querySelectorAll('img')?.[8]?.getAttribute('src') === 'https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Next, give each <code>img</code> a <code>src</code> attribute according to its order in the document. The first <code>img</code> should have a <code>src</code> of <code>https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg</code>. The rest should be the same, except replace the <code>1</code> with the number the <code>img</code> is in the document.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-flexbox-by-building-a-photo-gallery",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

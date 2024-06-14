@@ -1,0 +1,45 @@
+{
+  "id": "65b2b6255fe7973a8bf80902",
+  "title": "Task 55",
+  "challengeType": 19,
+  "dashedName": "task-55",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>complicated</code> mean in the context of problem-solving?</p>",
+    "answers": [
+      {
+        "answer": "<p>Easy to solve or understand</p>",
+        "feedback": "<p>'Complicated' actually means the opposite – it indicates difficulty or complexity.</p>"
+      },
+      {
+        "answer": "<p>Difficult to understand or solve</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Unimportant or trivial</p>",
+        "feedback": "<p>'Complicated' suggests complexity and difficulty, not triviality.</p>"
+      },
+      {
+        "answer": "<p>Quick to fix</p>",
+        "feedback": "<p>A complicated issue typically takes longer to fix due to its complexity.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>complicated</code> is used to describe something that is difficult to understand or deal with due to its complexity or many parts.</p>\n<p>In a technical context, a problem being <code>complicated</code> means it can be challenging to solve or understand.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-help-a-coworker-troubleshoot-on-github",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 57,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

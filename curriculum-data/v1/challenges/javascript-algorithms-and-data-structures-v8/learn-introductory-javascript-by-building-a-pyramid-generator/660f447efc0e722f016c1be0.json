@@ -1,0 +1,49 @@
+{
+  "id": "660f447efc0e722f016c1be0",
+  "title": "Step 78",
+  "challengeType": 1,
+  "dashedName": "step-78",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        13,
+        17
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\nif (\"false\") {\n  console.log(\"Condition is true\");\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\nif (\"false\") {\n  console.log(\"Condition is true\");\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>if</code> statement should have <code>\"\"</code> as the condition.</p>",
+      "testString": "assert.match(code, /if\\s*\\(\\s*(\"|')\\1\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The text has appeared again! This is because <code>\"false\"</code> is a string, which when evaluated to a boolean becomes <code>true</code>. This means <code>\"false\"</code> is a truthy value.</p>\n<p>A <dfn>truthy value</dfn> is a value that is considered true when evaluated as a boolean. Most of the values you encounter in JavaScript will be truthy.</p>\n<p>A <dfn>falsy value</dfn> is the opposite - a value considered false when evaluated as a boolean. JavaScript has a defined list of falsy values. Some of them include <code>false</code>, <code>0</code>, <code>\"\"</code>, <code>null</code>, <code>undefined</code>, and <code>NaN</code>.</p>\n<p>Try changing your <code>if</code> condition to an empty string <code>\"\"</code>, which is a falsy value.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 77,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

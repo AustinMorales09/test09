@@ -1,0 +1,106 @@
+{
+  "id": "65815057676f2625ba44a320",
+  "title": "Task 14",
+  "challengeType": 19,
+  "dashedName": "task-14",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why does Brian say, <code>But you know what demotivates me sometimes?</code></p>",
+    "answers": [
+      {
+        "answer": "<p>To ask Maria a question about demotivation</p>",
+        "feedback": "<p>Remember, <code>you know what</code> is used more for sharing, not for asking.</p>"
+      },
+      {
+        "answer": "<p>To tell Maria something about himself</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To test Maria's knowledge on demotivation</p>",
+        "feedback": "<p>Brian is sharing his feelings, not testing Maria.</p>"
+      },
+      {
+        "answer": "<p>To change the subject of the conversation</p>",
+        "feedback": "<p>He's adding to the conversation, not changing the topic.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 18.68,
+        "finishTimestamp": 26.26
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 2.18,
+        "dialogue": {
+          "text": "That's great to hear, Maria.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "startTime": 2.6,
+        "finishTime": 5.64,
+        "dialogue": {
+          "text": "Learning and growing professionally motivates me a lot,",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "startTime": 6.02,
+        "finishTime": 8.58,
+        "dialogue": {
+          "text": "but you know what demotivates me sometimes?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 9.08
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In conversations, people often use phrases like <code>you know what</code> not to ask a real question but to share something important. It's like saying, <code>Listen, I have something to tell you.</code></p>\n<p>For example, if someone says, <code>You know what? I love ice cream,</code> they don't expect you to guess; they are just excited to tell you about their love for ice cream.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

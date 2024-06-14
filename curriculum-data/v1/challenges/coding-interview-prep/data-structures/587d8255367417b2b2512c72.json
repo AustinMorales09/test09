@@ -1,0 +1,66 @@
+{
+  "id": "587d8255367417b2b2512c72",
+  "title": "Use .has and .size on an ES6 Set",
+  "challengeType": 1,
+  "forumTopicId": 301717,
+  "dashedName": "use--has-and--size-on-an-es6-set",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function checkSet(arrToBeSet, checkValue){\n\n   // Only change code below this line\n\n   // Only change code above this line\n\n}",
+      "error": null,
+      "seed": "function checkSet(arrToBeSet, checkValue){\n\n   // Only change code below this line\n\n   // Only change code above this line\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function checkSet(arrToBeSet, checkValue){\nvar set = new Set(arrToBeSet);\nvar result = [\nset.has(checkValue),\nset.size\n];\nreturn result;\n}",
+        "error": null,
+        "seed": "function checkSet(arrToBeSet, checkValue){\nvar set = new Set(arrToBeSet);\nvar result = [\nset.has(checkValue),\nset.size\n];\nreturn result;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>checkSet([4, 5, 6], 3)</code> should return [ false, 3 ]</p>",
+      "testString": "assert(\n  (function () {\n    var test = checkSet([4, 5, 6], 3);\n    return DeepEqual(test, [false, 3]);\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let's look at the .has and .size methods available on the ES6 Set object.</p>\n<p>First, create an ES6 Set</p>\n<pre><code class=\"language-js\">var set = new Set([1,2,3]);\n</code></pre>\n<p>The .has method will check if the value is contained within the set.</p>\n<pre><code class=\"language-js\">var hasTwo = set.has(2);\n</code></pre>\n<p>The .size method will return an integer representing the size of the Set</p>\n<pre><code class=\"language-js\">var howBig = set.size;\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>In this exercise we will pass an array and a value to the checkSet() function. Your function should create an ES6 set from the array argument. Find if the set contains the value argument. Find the size of the set. And return those two values in an array.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-structures",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

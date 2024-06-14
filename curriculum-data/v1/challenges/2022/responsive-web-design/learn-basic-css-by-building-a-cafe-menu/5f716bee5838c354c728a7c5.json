@@ -1,0 +1,89 @@
+{
+  "id": "5f716bee5838c354c728a7c5",
+  "title": "Step 52",
+  "challengeType": 0,
+  "dashedName": "step-52",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        33,
+        37
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article class=\"item\">\n            <p class=\"flavor\">French Vanilla</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Caramel Macchiato</p><p class=\"price\">3.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Pumpkin Spice</p><p class=\"price\">3.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Hazelnut</p><p class=\"price\">4.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Mocha</p><p class=\"price\">4.50</p>\n          </article>\n        </section>\n        <section>\n          <h2>Desserts</h2>\n          <article class=\"item\">\n            <p class=\"dessert\">Donut</p><p class=\"price\">1.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article class=\"item\">\n            <p class=\"flavor\">French Vanilla</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Caramel Macchiato</p><p class=\"price\">3.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Pumpkin Spice</p><p class=\"price\">3.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Hazelnut</p><p class=\"price\">4.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Mocha</p><p class=\"price\">4.50</p>\n          </article>\n        </section>\n        <section>\n          <h2>Desserts</h2>\n          <article class=\"item\">\n            <p class=\"dessert\">Donut</p><p class=\"price\">1.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.item p {\n  display: inline-block;\n}\n\n.flavor, .dessert {\n  text-align: left;\n  width: 75%;\n}\n\n.price {\n  text-align: right;\n  width: 25%\n}",
+      "error": null,
+      "seed": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.item p {\n  display: inline-block;\n}\n\n.flavor, .dessert {\n  text-align: left;\n  width: 75%;\n}\n\n.price {\n  text-align: right;\n  width: 25%\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have four <code>article</code> elements in your second <code>section</code>.</p>",
+      "testString": "const secondSection = document.querySelectorAll('section')[1]\nconst articles = secondSection.querySelectorAll('article')\nassert(articles.length === 4)"
+    },
+    {
+      "text": "<p>You should have four <code>.dessert</code> elements.</p>",
+      "testString": "assert($('.dessert').length === 4);"
+    },
+    {
+      "text": "<p>You should have four new <code>.price</code> elements.</p>",
+      "testString": "assert($('section').last().find('.price').length === 4);"
+    },
+    {
+      "text": "<p>Your <code>section</code> element should have eight <code>p</code> elements.</p>",
+      "testString": "assert($('section').last().find('p').length === 8);"
+    },
+    {
+      "text": "<p>Your <code>.dessert</code> elements should have the text <code>Donut</code>, <code>Cherry Pie</code>, <code>Cheesecake</code>, and <code>Cinnamon Roll</code>.</p>",
+      "testString": "const dessert = $('.dessert');\nassert(dessert[0].innerText.match(/donut/i));\nassert(dessert[1].innerText.match(/cherry pie/i));\nassert(dessert[2].innerText.match(/cheesecake/i));\nassert(dessert[3].innerText.match(/cinnamon roll/i));"
+    },
+    {
+      "text": "<p>Your new <code>.price</code> elements should have the text <code>1.50</code>, <code>2.75</code>, <code>3.00</code>, and <code>2.50</code>.</p>",
+      "testString": "const prices = $('section').last().find('.price');\nassert(prices[0].innerText.match(/1\\.50/));\nassert(prices[1].innerText.match(/2\\.75/));\nassert(prices[2].innerText.match(/3\\.00/));\nassert(prices[3].innerText.match(/2\\.50/));"
+    },
+    {
+      "text": "<p>You should not have any spaces between your <code>p</code> elements.</p>",
+      "testString": "assert(!code.match(/<\\/p>\\s+<p/));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Below the dessert you just added, add the rest of the desserts and prices using three more <code>article</code> elements, each with two nested <code>p</code> elements. Each element should have the correct dessert and price text, and all of them should have the correct classes.</p>\n<pre><code class=\"language-bash\">Cherry Pie 2.75\nCheesecake 3.00\nCinnamon Roll 2.50\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 51,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

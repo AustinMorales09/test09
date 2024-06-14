@@ -1,0 +1,46 @@
+{
+  "id": "587d824f367417b2b2512c5a",
+  "title": "Run Functional Tests on an API Response using Chai-HTTP III - PUT method",
+  "challengeType": 2,
+  "forumTopicId": 301590,
+  "dashedName": "run-functional-tests-on-an-api-response-using-chai-http-iii---put-method",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>All tests should pass.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=functional&n=2').then(\n    (data) => {\n      assert.equal(data.state, 'passed');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should test for <code>res.status</code> to be 200.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=functional&n=2').then(\n    (data) => {\n      assert.equal(data.assertions[0].method, 'equal');\n      assert.equal(data.assertions[0].args[0], 'res.status');\n      assert.equal(data.assertions[0].args[1], '200');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should test for <code>res.type</code> to be <code>'application/json'</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=functional&n=2').then(\n    (data) => {\n      assert.equal(data.assertions[1].method, 'equal');\n      assert.equal(data.assertions[1].args[0], 'res.type');\n      assert.match(data.assertions[1].args[1], /('|\")application\\/json\\1/);\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should test for <code>res.body.name</code> to be <code>'Cristoforo'</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=functional&n=2').then(\n    (data) => {\n      assert.equal(data.assertions[2].method, 'equal');\n      assert.equal(data.assertions[2].args[0], 'res.body.name');\n      assert.match(data.assertions[2].args[1], /('|\")Cristoforo\\1/);\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should test for <code>res.body.surname</code> to be <code>'Colombo'</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=functional&n=2').then(\n    (data) => {\n      assert.equal(data.assertions[3].method, 'equal');\n      assert.equal(data.assertions[3].args[0], 'res.body.surname');\n      assert.match(data.assertions[3].args[1], /('|\")Colombo\\1/);\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As a reminder, this project is being built upon the following starter project on <a href=\"https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Gitpod</a>, or cloned from <a href=\"https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">GitHub</a>.</p>\n<p>When you test a <code>PUT</code> request, you'll often send data along with it. The data you include with your <code>PUT</code> request is called the body of the request.</p>\n<p>To send a <code>PUT</code> request and a JSON object to the <code>'/travellers'</code> endpoint, you can use <code>chai-http</code> plugin's <code>put</code> and <code>send</code> methods:</p>\n<pre><code class=\"language-js\">chai\n  .request(server)\n  .keepOpen()\n  .put('/travellers')\n  .send({\n    \"surname\": [last name of a traveller of the past]\n  })\n  ...\n</code></pre>\n<p>And the route responds with:</p>\n<pre><code class=\"language-json\">{\n  \"name\": [first name],\n  \"surname\": [last name],\n  \"dates\": [birth - death years]\n}\n</code></pre>\n<p>See the server code for the different responses to the <code>'/travellers'</code> endpoint.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Within <code>tests/2_functional-tests.js</code>, alter the <code>'Send {surname: \"Colombo\"}'</code> test (<code>// #3</code>) and use the <code>put</code> and <code>send</code> methods to test the  <code>'/travellers'</code> endpoint.</p>\n<p>Send the following JSON object with your PUT request:</p>\n<pre><code class=\"language-json\">{\n  \"surname\": \"Colombo\"\n}\n</code></pre>\n<p>Check for the following within the <code>request.end</code> callback:</p>\n<ol>\n<li>The <code>status</code> should be <code>200</code></li>\n<li>The <code>type</code> should be <code>application/json</code></li>\n<li>The <code>body.name</code> should be <code>Cristoforo</code></li>\n<li>The <code>body.surname</code> should be <code>Colombo</code></li>\n</ol>\n<p>Follow the assertion order above - we rely on it. Also, be sure to remove <code>assert.fail()</code> once complete.</p>\n</section>",
+  "translationPending": false,
+  "block": "quality-assurance-and-testing-with-chai",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

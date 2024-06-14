@@ -1,0 +1,38 @@
+{
+  "id": "587d824d367417b2b2512c51",
+  "title": "Test if an Array Contains an Item",
+  "challengeType": 2,
+  "forumTopicId": 301603,
+  "dashedName": "test-if-an-array-contains-an-item",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>All tests should pass.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=11').then(\n    (data) => {\n      assert.equal(data.state, 'passed');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the first assertion - <code>include</code> vs. <code>notInclude</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=11').then(\n    (data) => {\n      assert.equal(\n        data.assertions[0].method,\n        'notInclude',\n        \"It's summer in july...\"\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the second assertion - <code>include</code> vs. <code>notInclude</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=11').then(\n    (data) => {\n      assert.equal(\n        data.assertions[1].method,\n        'include',\n        'JavaScript is a backend language !!'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As a reminder, this project is being built upon the following starter project on <a href=\"https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Gitpod</a>, or cloned from <a href=\"https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">GitHub</a>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Within <code>tests/1_unit-tests.js</code> under the test labeled <code>#12</code> in the <code>Arrays</code> suite, change each <code>assert</code> to either <code>assert.include</code> or <code>assert.notInclude</code> to make the test pass (should evaluate to <code>true</code>). Do not alter the arguments passed to the asserts.</p>\n</section>",
+  "translationPending": false,
+  "block": "quality-assurance-and-testing-with-chai",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

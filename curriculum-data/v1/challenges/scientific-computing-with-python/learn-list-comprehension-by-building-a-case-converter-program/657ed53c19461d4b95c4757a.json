@@ -1,0 +1,49 @@
+{
+  "id": "657ed53c19461d4b95c4757a",
+  "title": "Step 2",
+  "challengeType": 20,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    pass    ",
+      "error": null,
+      "seed": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    pass    "
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should replace <code>pass</code> with an empty list named <code>snake_cased_char_list</code> within <code>convert_to_snake_case</code>.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const commentless_code = __helpers.python.removeComments(transformedCode)\n        const convert_to_snake_case = __helpers.python.getDef(\"\\n\" + commentless_code, \"convert_to_snake_case\");\n        const { function_body } = convert_to_snake_case;\n        assert.notMatch(function_body, /\\bpass\\b/);\n        assert.match(function_body, / +snake_cased_char_list\\s*=\\s*\\[\\s*\\]\\s*/);\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now create a new list named <code>snake_cased_char_list</code> inside the function. You can use a set of empty square braces to create the new list.</p>\n<p>This list will hold the characters of the string after you have converted them to snake case.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-list-comprehension-by-building-a-case-converter-program",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

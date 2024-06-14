@@ -1,0 +1,106 @@
+{
+  "id": "657caa4012f1cf846dcaa619",
+  "title": "Task 33",
+  "challengeType": 19,
+  "dashedName": "task-33",
+  "solutions": [],
+  "question": {
+    "text": "<p>Accoding to Bob what is John's main responsibility?</p>",
+    "answers": [
+      {
+        "answer": "<p>Designing websites and graphics.</p>",
+        "feedback": "<p>This is not related to managing databases.</p>"
+      },
+      {
+        "answer": "<p>Making sure their data is secure and efficient.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Teaching database courses.</p>",
+        "feedback": "<p>While some might teach, it's not the primary responsibility mentioned.</p>"
+      },
+      {
+        "answer": "<p>Selling database software.</p>",
+        "feedback": "<p>This role is more about management, not sales.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Mark",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.18,
+        "finishTimestamp": 26.58
+      }
+    },
+    "commands": [
+      {
+        "character": "Mark",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.34,
+        "dialogue": {
+          "text": "This is John the database administrator.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "startTime": 3.34,
+        "finishTime": 5.34,
+        "dialogue": {
+          "text": "He's been here for three years.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "startTime": 5.34,
+        "finishTime": 8.4,
+        "dialogue": {
+          "text": "He makes sure that our data is secure and efficient.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Mark",
+        "opacity": 0,
+        "startTime": 8.9
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>database administrator</code> is a professional responsible for managing and maintaining databases. They ensure that data is secure (safe from unauthorized access) and efficient (easily accessible and usable). This role is crucial in any organization that handles large amounts of data.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

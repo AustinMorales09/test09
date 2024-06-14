@@ -1,0 +1,65 @@
+{
+  "id": "5900f3d91000cf542c50feeb",
+  "title": "Problem 108: Diophantine Reciprocals I",
+  "challengeType": 1,
+  "forumTopicId": 301732,
+  "dashedName": "problem-108-diophantine-reciprocals-i",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function diophantineOne() {\n\n  return true;\n}\n\ndiophantineOne();",
+      "error": null,
+      "seed": "function diophantineOne() {\n\n  return true;\n}\n\ndiophantineOne();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>diophantineOne()</code> should return <code>180180</code>.</p>",
+      "testString": "assert.strictEqual(diophantineOne(), 180180);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In the following equation x, y, and n are positive integers.</p>\n<p>$$\\frac{1}{x} + \\frac{1}{y} = \\frac{1}{n}$$</p>\n<p>For <code>n</code> = 4 there are exactly three distinct solutions:</p>\n<p>$$\\begin{align}\n&#x26; \\frac{1}{5} + \\frac{1}{20} = \\frac{1}{4}\\\\\n\\\\\n&#x26; \\frac{1}{6} + \\frac{1}{12} = \\frac{1}{4}\\\\\n\\\\\n&#x26; \\frac{1}{8} + \\frac{1}{8} = \\frac{1}{4}\n\\end{align}$$</p>\n<p>What is the least value of <code>n</code> for which the number of distinct solutions exceeds one-thousand?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

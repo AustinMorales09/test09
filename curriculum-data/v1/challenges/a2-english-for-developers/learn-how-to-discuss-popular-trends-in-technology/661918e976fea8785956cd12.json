@@ -1,0 +1,45 @@
+{
+  "id": "661918e976fea8785956cd12",
+  "title": "Task 25",
+  "challengeType": 19,
+  "dashedName": "task-25",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following best describes the use of <code>like</code> in this sentence:</p>\n<p><code>Languages like Python, Java, and C++ are widely used in software development.</code></p>",
+    "answers": [
+      {
+        "answer": "<p>To express preference for a programming language</p>",
+        "feedback": "<p>Express preference means stating what you like or prefer. The sentence is providing examples, not preferences.</p>"
+      },
+      {
+        "answer": "<p>To indicate similarity between programming languages</p>",
+        "feedback": "<p>Indicate similarity means showing how things are similar, not listing specific examples.</p>"
+      },
+      {
+        "answer": "<p>To introduce specific examples of programming languages</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To describe emotions related to coding</p>",
+        "feedback": "<p>Describe emotions means talking about feelings, not giving examples related to programming languages.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you use <code>like</code> to list things, it means you are giving specific examples of something. For instance, if you talk about fruit like apples, bananas, and oranges, you are giving examples of different fruit. <code>like</code> helps you show what you mean by giving specific names or things related to the topic. Example: <code>My son loves eating different kinds of fruit like apples, bananas, and oranges.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

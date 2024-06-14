@@ -1,0 +1,75 @@
+{
+  "id": "657e5879357fe6d2bbbdc2f0",
+  "title": "Task 89",
+  "challengeType": 22,
+  "dashedName": "task-89",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>We have to comply with data protection _, security standards, and our company's code of conduct.</p>",
+    "blanks": [
+      {
+        "answer": "regulations",
+        "feedback": "<p>Official rules set by authorities.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room2.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 28.4,
+        "finishTimestamp": 34.06
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 6.66,
+        "dialogue": {
+          "text": "We have to comply with data protection regulations, security standards and our company's code of conduct.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 7.16
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 92,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

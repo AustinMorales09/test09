@@ -1,0 +1,102 @@
+{
+  "id": "587d7fa9367417b2b2512bd0",
+  "title": "Invert SVG Elements",
+  "challengeType": 6,
+  "forumTopicId": 301488,
+  "dashedName": "invert-svg-elements",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => {\n         // Add your code below this line\n\n\n\n         // Add your code above this line\n       })\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => 3 * d);\n  </script>\n</body>",
+      "error": null,
+      "seed": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => {\n         // Add your code below this line\n\n\n\n         // Add your code above this line\n       })\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => 3 * d);\n  </script>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => 3 * d);\n  </script>\n</body>",
+        "error": null,
+        "seed": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => 3 * d);\n  </script>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The first <code>rect</code> should have a <code>y</code> value of <code>64</code>.</p>",
+      "testString": "assert($('rect').eq(0).attr('y') == h - dataset[0] * 3);"
+    },
+    {
+      "text": "<p>The second <code>rect</code> should have a <code>y</code> value of <code>7</code>.</p>",
+      "testString": "assert($('rect').eq(1).attr('y') == h - dataset[1] * 3);"
+    },
+    {
+      "text": "<p>The third <code>rect</code> should have a <code>y</code> value of <code>34</code>.</p>",
+      "testString": "assert($('rect').eq(2).attr('y') == h - dataset[2] * 3);"
+    },
+    {
+      "text": "<p>The fourth <code>rect</code> should have a <code>y</code> value of <code>49</code>.</p>",
+      "testString": "assert($('rect').eq(3).attr('y') == h - dataset[3] * 3);"
+    },
+    {
+      "text": "<p>The fifth <code>rect</code> should have a <code>y</code> value of <code>25</code>.</p>",
+      "testString": "assert($('rect').eq(4).attr('y') == h - dataset[4] * 3);"
+    },
+    {
+      "text": "<p>The sixth <code>rect</code> should have a <code>y</code> value of <code>46</code>.</p>",
+      "testString": "assert($('rect').eq(5).attr('y') == h - dataset[5] * 3);"
+    },
+    {
+      "text": "<p>The seventh <code>rect</code> should have a <code>y</code> value of <code>13</code>.</p>",
+      "testString": "assert($('rect').eq(6).attr('y') == h - dataset[6] * 3);"
+    },
+    {
+      "text": "<p>The eighth <code>rect</code> should have a <code>y</code> value of <code>58</code>.</p>",
+      "testString": "assert($('rect').eq(7).attr('y') == h - dataset[7] * 3);"
+    },
+    {
+      "text": "<p>The ninth <code>rect</code> should have a <code>y</code> value of <code>73</code>.</p>",
+      "testString": "assert($('rect').eq(8).attr('y') == h - dataset[8] * 3);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You may have noticed the bar chart looked like it's upside-down, or inverted. This is because of how SVG uses (x, y) coordinates.</p>\n<p>In SVG, the origin point for the coordinates is in the upper-left corner. An <code>x</code> coordinate of 0 places a shape on the left edge of the SVG area. A <code>y</code> coordinate of 0 places a shape on the top edge of the SVG area. Higher <code>x</code> values push the rectangle to the right. Higher <code>y</code> values push the rectangle down.</p>\n<p>To make the bars right-side-up, you need to change the way the <code>y</code> coordinate is calculated. It needs to account for both the height of the bar and the total height of the SVG area.</p>\n<p>The height of the SVG area is 100. If you have a data point of 0 in the set, you would want the bar to start at the bottom of the SVG area (not the top). To do this, the <code>y</code> coordinate needs a value of 100. If the data point value were 1, you would start with a <code>y</code> coordinate of 100 to set the bar at the bottom. Then you need to account for the height of the bar of 1, so the final <code>y</code> coordinate would be 99.</p>\n<p>The <code>y</code> coordinate that is <code>y = heightOfSVG - heightOfBar</code> would place the bars right-side-up.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Change the callback function for the <code>y</code> attribute to set the bars right-side-up. Remember that the <code>height</code> of the bar is 3 times the data value <code>d</code>.</p>\n<p><strong>Note:</strong> In general, the relationship is <code>y = h - m * d</code>, where <code>m</code> is the constant that scales the data points.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-visualization-with-d3",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 14,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "5900f5001000cf542c510013",
+  "title": "Problem 403: Lattice points enclosed by parabola and line",
+  "challengeType": 1,
+  "forumTopicId": 302071,
+  "dashedName": "problem-403-lattice-points-enclosed-by-parabola-and-line",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function latticePoints() {\n\n  return true;\n}\n\nlatticePoints();",
+      "error": null,
+      "seed": "function latticePoints() {\n\n  return true;\n}\n\nlatticePoints();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>latticePoints()</code> should return <code>18224771</code>.</p>",
+      "testString": "assert.strictEqual(latticePoints(), 18224771);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>For integers $a$ and $b$, we define $D(a, b)$ as the domain enclosed by the parabola $y = x^2$ and the line $y = ax + b: D(a, b) = \\{ (x, y) | x^2 ≤ y ≤ ax + b \\}$.</p>\n<p>$L(a, b)$ is defined as the number of lattice points contained in $D(a, b)$. For example, $L(1, 2) = 8$ and $L(2, -1) = 1$.</p>\n<p>We also define $S(N)$ as the sum of $L(a, b)$ for all the pairs ($a$, $b$) such that the area of $D(a, b)$ is a rational number and $|a|,|b| ≤ N$.</p>\n<p>We can verify that $S(5) = 344$ and $S(100) = 26\\,709\\,528$.</p>\n<p>Find $S({10}^{12})$. Give your answer $\\bmod {10}^8$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

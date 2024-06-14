@@ -1,0 +1,46 @@
+{
+  "id": "64a674937a7d00f97013ed0f",
+  "videoId": "rIO5326FgPE",
+  "title": "The Box Model Question H",
+  "challengeType": 15,
+  "dashedName": "the-box-model-question-h",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the box-sizing CSS property do?</p>",
+    "answers": [
+      {
+        "answer": "<p>It determines the order of the box-model properties.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It specifies the position of an element on the webpage.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It controls how the total width and height of an element are calculated.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It sets the background color of an element.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Because the box model concept is so incredibly fundamental, let’s dig a bit deeper with <a href=\"https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#what_is_the_css_box_model\" target=\"_blank\">this lesson from MDN</a>. It covers the same material as the video above and will introduce you to inline boxes that we will explore in the next lesson. Pay close attention to the examples and take the time to experiment with their in-browser editor!</p>\n</section>",
+  "translationPending": false,
+  "block": "top-the-box-model",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

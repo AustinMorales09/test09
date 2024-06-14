@@ -1,0 +1,61 @@
+{
+  "id": "5f344fc1520b6719f2e35605",
+  "title": "Step 8",
+  "challengeType": 0,
+  "dashedName": "step-8",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        12
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an opening <code>&#x3C;section></code> tag.</p>",
+      "testString": "assert(code.match(/<section\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>&#x3C;/section></code> tag.</p>",
+      "testString": "assert(code.match(/<\\/section\\s*>/i));"
+    },
+    {
+      "text": "<p>You should not change your existing <code>main</code> element. Make sure you didn't delete the closing tag.</p>",
+      "testString": "assert($('main').length === 1);"
+    },
+    {
+      "text": "<p>Your <code>section</code> element should be within your <code>main</code> element.</p>",
+      "testString": "const main = document.querySelector('main');\nconst section = document.querySelector('section');\nassert(section.parentElement === main);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>There will be two sections on the menu, one for coffees and one for desserts. Add a <code>section</code> element within the <code>main</code> element so you have a place to put all the coffees available.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

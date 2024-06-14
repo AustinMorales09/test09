@@ -1,0 +1,87 @@
+{
+  "id": "657e51218ff18f8191b76ea9",
+  "title": "Task 95",
+  "challengeType": 22,
+  "dashedName": "task-95",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ to _ you all. I'm David, the project _ from FCC _</p>",
+    "blanks": [
+      {
+        "answer": "Wonderful",
+        "feedback": "<p>Expresses David's positive feeling about meeting the group. This word is capitalized.</p>"
+      },
+      {
+        "answer": "meet",
+        "feedback": "<p>Refers to the act of being introduced or coming into contact with others.</p>"
+      },
+      {
+        "answer": "manager",
+        "feedback": "<p>Indicates David's role or position within his company.</p>"
+      },
+      {
+        "answer": "Corp.",
+        "feedback": "<p>Short for <code>corporation</code>, denoting the type of organization David represents. This word is capitalized.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "David",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 37.24,
+        "finishTimestamp": 41.84
+      }
+    },
+    "commands": [
+      {
+        "character": "David",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "David",
+        "startTime": 1,
+        "finishTime": 5.6,
+        "dialogue": {
+          "text": "Wonderful to meet you all. I'm David, the project manager from FCC Corp.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "David",
+        "opacity": 0,
+        "startTime": 6.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Wonderful</code> is an adjective used to express that something is very good or pleasant.</p>\n<p><code>Corp.</code> is an abbreviation for <code>corporation</code>, which is a large company or group of companies.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 99,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

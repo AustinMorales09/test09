@@ -1,0 +1,85 @@
+{
+  "id": "a56138aff60341a09ed6c480",
+  "title": "Inventory Update",
+  "challengeType": 1,
+  "forumTopicId": 16019,
+  "dashedName": "inventory-update",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function updateInventory(arr1, arr2) {\n    return arr1;\n}\n\n// Example inventory lists\nvar curInv = [\n    [21, \"Bowling Ball\"],\n    [2, \"Dirty Sock\"],\n    [1, \"Hair Pin\"],\n    [5, \"Microphone\"]\n];\n\nvar newInv = [\n    [2, \"Hair Pin\"],\n    [3, \"Half-Eaten Apple\"],\n    [67, \"Bowling Ball\"],\n    [7, \"Toothpaste\"]\n];\n\nupdateInventory(curInv, newInv);",
+      "error": null,
+      "seed": "function updateInventory(arr1, arr2) {\n    return arr1;\n}\n\n// Example inventory lists\nvar curInv = [\n    [21, \"Bowling Ball\"],\n    [2, \"Dirty Sock\"],\n    [1, \"Hair Pin\"],\n    [5, \"Microphone\"]\n];\n\nvar newInv = [\n    [2, \"Hair Pin\"],\n    [3, \"Half-Eaten Apple\"],\n    [67, \"Bowling Ball\"],\n    [7, \"Toothpaste\"]\n];\n\nupdateInventory(curInv, newInv);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function updateInventory(arr1, arr2) {\n  arr2.forEach(function(item) {\n    createOrUpdate(arr1, item);\n  });\n  // All inventory must be accounted for or you're fired!\n  return arr1;\n}\n\nfunction createOrUpdate(arr1, item) {\n  var index = -1;\n  while (++index < arr1.length) {\n    if (arr1[index][1] === item[1]) {\n      arr1[index][0] += item[0];\n      return;\n    }\n    if (arr1[index][1] > item[1]) {\n      break;\n    }\n  }\n  arr1.splice(index, 0, item);\n}\n\n// Example inventory lists\nvar curInv = [\n    [21, 'Bowling Ball'],\n    [2, 'Dirty Sock'],\n    [1, 'Hair Pin'],\n    [5, 'Microphone']\n];\n\nvar newInv = [\n    [2, 'Hair Pin'],\n    [3, 'Half-Eaten Apple'],\n    [67, 'Bowling Ball'],\n    [7, 'Toothpaste']\n];\n\nupdateInventory(curInv, newInv);",
+        "error": null,
+        "seed": "function updateInventory(arr1, arr2) {\n  arr2.forEach(function(item) {\n    createOrUpdate(arr1, item);\n  });\n  // All inventory must be accounted for or you're fired!\n  return arr1;\n}\n\nfunction createOrUpdate(arr1, item) {\n  var index = -1;\n  while (++index < arr1.length) {\n    if (arr1[index][1] === item[1]) {\n      arr1[index][0] += item[0];\n      return;\n    }\n    if (arr1[index][1] > item[1]) {\n      break;\n    }\n  }\n  arr1.splice(index, 0, item);\n}\n\n// Example inventory lists\nvar curInv = [\n    [21, 'Bowling Ball'],\n    [2, 'Dirty Sock'],\n    [1, 'Hair Pin'],\n    [5, 'Microphone']\n];\n\nvar newInv = [\n    [2, 'Hair Pin'],\n    [3, 'Half-Eaten Apple'],\n    [67, 'Bowling Ball'],\n    [7, 'Toothpaste']\n];\n\nupdateInventory(curInv, newInv);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The function <code>updateInventory</code> should return an array.</p>",
+      "testString": "assert.isArray(\n  updateInventory(\n    [\n      [21, 'Bowling Ball'],\n      [2, 'Dirty Sock'],\n      [1, 'Hair Pin'],\n      [5, 'Microphone']\n    ],\n    [\n      [2, 'Hair Pin'],\n      [3, 'Half-Eaten Apple'],\n      [67, 'Bowling Ball'],\n      [7, 'Toothpaste']\n    ]\n  )\n);"
+    },
+    {
+      "text": "<p><code>updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]])</code> should return an array with a length of 6.</p>",
+      "testString": "assert.equal(\n  updateInventory(\n    [\n      [21, 'Bowling Ball'],\n      [2, 'Dirty Sock'],\n      [1, 'Hair Pin'],\n      [5, 'Microphone']\n    ],\n    [\n      [2, 'Hair Pin'],\n      [3, 'Half-Eaten Apple'],\n      [67, 'Bowling Ball'],\n      [7, 'Toothpaste']\n    ]\n  ).length,\n  6\n);"
+    },
+    {
+      "text": "<p><code>updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]])</code> should return <code>[[88, \"Bowling Ball\"], [2, \"Dirty Sock\"], [3, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [5, \"Microphone\"], [7, \"Toothpaste\"]]</code>.</p>",
+      "testString": "assert.deepEqual(\n  updateInventory(\n    [\n      [21, 'Bowling Ball'],\n      [2, 'Dirty Sock'],\n      [1, 'Hair Pin'],\n      [5, 'Microphone']\n    ],\n    [\n      [2, 'Hair Pin'],\n      [3, 'Half-Eaten Apple'],\n      [67, 'Bowling Ball'],\n      [7, 'Toothpaste']\n    ]\n  ),\n  [\n    [88, 'Bowling Ball'],\n    [2, 'Dirty Sock'],\n    [3, 'Hair Pin'],\n    [3, 'Half-Eaten Apple'],\n    [5, 'Microphone'],\n    [7, 'Toothpaste']\n  ]\n);"
+    },
+    {
+      "text": "<p><code>updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [])</code> should return <code>[[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]]</code>.</p>",
+      "testString": "assert.deepEqual(\n  updateInventory(\n    [\n      [21, 'Bowling Ball'],\n      [2, 'Dirty Sock'],\n      [1, 'Hair Pin'],\n      [5, 'Microphone']\n    ],\n    []\n  ),\n  [\n    [21, 'Bowling Ball'],\n    [2, 'Dirty Sock'],\n    [1, 'Hair Pin'],\n    [5, 'Microphone']\n  ]\n);"
+    },
+    {
+      "text": "<p><code>updateInventory([], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]])</code> should return <code>[[67, \"Bowling Ball\"], [2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [7, \"Toothpaste\"]]</code>.</p>",
+      "testString": "assert.deepEqual(\n  updateInventory(\n    [],\n    [\n      [2, 'Hair Pin'],\n      [3, 'Half-Eaten Apple'],\n      [67, 'Bowling Ball'],\n      [7, 'Toothpaste']\n    ]\n  ),\n  [\n    [67, 'Bowling Ball'],\n    [2, 'Hair Pin'],\n    [3, 'Half-Eaten Apple'],\n    [7, 'Toothpaste']\n  ]\n);"
+    },
+    {
+      "text": "<p><code>updateInventory([[0, \"Bowling Ball\"], [0, \"Dirty Sock\"], [0, \"Hair Pin\"], [0, \"Microphone\"]], [[1, \"Hair Pin\"], [1, \"Half-Eaten Apple\"], [1, \"Bowling Ball\"], [1, \"Toothpaste\"]])</code> should return <code>[[1, \"Bowling Ball\"], [0, \"Dirty Sock\"], [1, \"Hair Pin\"], [1, \"Half-Eaten Apple\"], [0, \"Microphone\"], [1, \"Toothpaste\"]]</code>.</p>",
+      "testString": "assert.deepEqual(\n  updateInventory(\n    [\n      [0, 'Bowling Ball'],\n      [0, 'Dirty Sock'],\n      [0, 'Hair Pin'],\n      [0, 'Microphone']\n    ],\n    [\n      [1, 'Hair Pin'],\n      [1, 'Half-Eaten Apple'],\n      [1, 'Bowling Ball'],\n      [1, 'Toothpaste']\n    ]\n  ),\n  [\n    [1, 'Bowling Ball'],\n    [0, 'Dirty Sock'],\n    [1, 'Hair Pin'],\n    [1, 'Half-Eaten Apple'],\n    [0, 'Microphone'],\n    [1, 'Toothpaste']\n  ]\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Compare and update the inventory stored in a 2D array against a second 2D array of a fresh delivery. Update the current existing inventory item quantities (in <code>arr1</code>). If an item cannot be found, add the new item and quantity into the inventory array. The returned inventory array should be in alphabetical order by item.</p>\n</section>",
+  "translationPending": false,
+  "block": "algorithms",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

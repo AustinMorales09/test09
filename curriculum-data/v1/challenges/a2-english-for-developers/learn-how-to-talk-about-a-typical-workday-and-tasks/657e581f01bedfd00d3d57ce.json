@@ -1,0 +1,45 @@
+{
+  "id": "657e581f01bedfd00d3d57ce",
+  "title": "Task 88",
+  "challengeType": 19,
+  "dashedName": "task-88",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>regulation</code> or <code>regulations</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>Personal choices in clothing.</p>",
+        "feedback": "<p>Regulations are official rules, not personal choices.</p>"
+      },
+      {
+        "answer": "<p>Ideas for new games.</p>",
+        "feedback": "<p>Regulations are about official standards, not game ideas.</p>"
+      },
+      {
+        "answer": "<p>Plans for traveling.</p>",
+        "feedback": "<p>They involve legal standards, not travel plans.</p>"
+      },
+      {
+        "answer": "<p>Official rules made by authorities.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Regulation</code> is a rule made by a government or another authority. <code>Regulations</code> is the plural form, and it means a set of rules. These rules are important to follow in many jobs. For example: <code>Health regulations in restaurants are important for customer safety.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 91,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

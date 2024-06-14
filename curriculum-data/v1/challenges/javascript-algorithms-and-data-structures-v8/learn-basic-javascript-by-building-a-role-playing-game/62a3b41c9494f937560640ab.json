@@ -1,0 +1,93 @@
+{
+  "id": "62a3b41c9494f937560640ab",
+  "title": "Step 10",
+  "challengeType": 0,
+  "dashedName": "step-10",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        6
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;",
+      "error": null,
+      "seed": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>let</code> to declare your <code>monsterHealth</code> variable.</p>",
+      "testString": "assert.match(code, /let\\s+monsterHealth/i);"
+    },
+    {
+      "text": "<p>You should use camelCase to name your <code>monsterHealth</code> variable.</p>",
+      "testString": "assert.match(code, /monsterHealth/);"
+    },
+    {
+      "text": "<p><code>monsterHealth</code> should not have a value.</p>",
+      "testString": "assert.isUndefined(monsterHealth);"
+    },
+    {
+      "text": "<p>You should not assign a value to your <code>monsterHealth</code> variable.</p>",
+      "testString": "assert.match(code, /let\\s+monsterHealth\\s*;?/);"
+    },
+    {
+      "text": "<p>You should use <code>let</code> to declare your <code>inventory</code> variable.</p>",
+      "testString": "assert.match(code, /let\\s+inventory/i);"
+    },
+    {
+      "text": "<p>Your <code>inventory</code> variable should still be an array.</p>",
+      "testString": "assert.isArray(inventory);"
+    },
+    {
+      "text": "<p>Your <code>inventory</code> variable should only have one value.</p>",
+      "testString": "assert.lengthOf(inventory, 1);"
+    },
+    {
+      "text": "<p>Your <code>inventory</code> variable should include the string <code>\"stick\"</code>.</p>",
+      "testString": "assert.include(inventory, \"stick\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Declare two more variables named <code>monsterHealth</code> and <code>inventory</code>.</p>\n<p>For your <code>inventory</code> variable, assign it the value of an array containing the string <code>\"stick\"</code>.</p>\n<p>Remember that you worked with arrays in the previous project like this:</p>\n<pre><code class=\"language-js\">let exampleArray = [\"first\", \"second\", \"third\"];\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-javascript-by-building-a-role-playing-game",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

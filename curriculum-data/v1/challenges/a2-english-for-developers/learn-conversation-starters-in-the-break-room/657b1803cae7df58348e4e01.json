@@ -1,0 +1,88 @@
+{
+  "id": "657b1803cae7df58348e4e01",
+  "title": "Task 8",
+  "challengeType": 19,
+  "dashedName": "task-8",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah mean in her sentence?</p>",
+    "answers": [
+      {
+        "answer": "<p>They often have to leave the office for work reasons.</p>",
+        "feedback": "<p><code>Go out</code> in this context is not about leaving for work tasks.</p>"
+      },
+      {
+        "answer": "<p>They leave the team permanently.</p>",
+        "feedback": "<p><code>Going out with the team</code> has nothing to do with leaving the team, it's about spending time together.</p>"
+      },
+      {
+        "answer": "<p>They go outside for breaks frequently.</p>",
+        "feedback": "<p>The phrase implies more than just taking breaks.</p>"
+      },
+      {
+        "answer": "<p>They participate in social activities as a group sometimes.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.96,
+        "finishTimestamp": 11.75
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 2.79,
+        "dialogue": {
+          "text": "Yes, we go out with the team sometimes.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 3.29
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Go out with the team</code> refers to leaving the usual place of work to spend time together, usually for social activities or team bonding.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

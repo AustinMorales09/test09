@@ -1,0 +1,95 @@
+{
+  "id": "bad87fee1348bd9aedf08719",
+  "title": "Use Abbreviated Hex Code",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cRkpKAm",
+  "forumTopicId": 18338,
+  "dashedName": "use-abbreviated-hex-code",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .red-text {\n    color: #000000;\n  }\n  .fuchsia-text {\n    color: #000000;\n  }\n  .cyan-text {\n    color: #000000;\n  }\n  .green-text {\n    color: #000000;\n  }\n</style>\n\n<h1 class=\"red-text\">I am red!</h1>\n\n<h1 class=\"fuchsia-text\">I am fuchsia!</h1>\n\n<h1 class=\"cyan-text\">I am cyan!</h1>\n\n<h1 class=\"green-text\">I am green!</h1>",
+      "error": null,
+      "seed": "<style>\n  .red-text {\n    color: #000000;\n  }\n  .fuchsia-text {\n    color: #000000;\n  }\n  .cyan-text {\n    color: #000000;\n  }\n  .green-text {\n    color: #000000;\n  }\n</style>\n\n<h1 class=\"red-text\">I am red!</h1>\n\n<h1 class=\"fuchsia-text\">I am fuchsia!</h1>\n\n<h1 class=\"cyan-text\">I am cyan!</h1>\n\n<h1 class=\"green-text\">I am green!</h1>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  .red-text {\n    color: #F00;\n  }\n  .fuchsia-text {\n    color: #F0F;\n  }\n  .cyan-text {\n    color: #0FF;\n  }\n  .green-text {\n    color: #0F0;\n  }\n</style>\n\n<h1 class=\"red-text\">I am red!</h1>\n\n<h1 class=\"fuchsia-text\">I am fuchsia!</h1>\n\n<h1 class=\"cyan-text\">I am cyan!</h1>\n\n<h1 class=\"green-text\">I am green!</h1>",
+        "error": null,
+        "seed": "<style>\n  .red-text {\n    color: #F00;\n  }\n  .fuchsia-text {\n    color: #F0F;\n  }\n  .cyan-text {\n    color: #0FF;\n  }\n  .green-text {\n    color: #0F0;\n  }\n</style>\n\n<h1 class=\"red-text\">I am red!</h1>\n\n<h1 class=\"fuchsia-text\">I am fuchsia!</h1>\n\n<h1 class=\"cyan-text\">I am cyan!</h1>\n\n<h1 class=\"green-text\">I am green!</h1>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>h1</code> element with the text <code>I am red!</code> should be given the <code>color</code> red.</p>",
+      "testString": "assert($('.red-text').css('color') === 'rgb(255, 0, 0)');"
+    },
+    {
+      "text": "<p>The abbreviated hex code for the color red should be used instead of the hex code <code>#FF0000</code>.</p>",
+      "testString": "assert(code.match(/\\.red-text\\s*?{\\s*?color\\s*:\\s*?#F00\\s*?;?\\s*?}/gi));"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element with the text <code>I am green!</code> should be given the <code>color</code> green.</p>",
+      "testString": "assert($('.green-text').css('color') === 'rgb(0, 255, 0)');"
+    },
+    {
+      "text": "<p>The abbreviated hex code for the color green should be used instead of the hex code <code>#00FF00</code>.</p>",
+      "testString": "assert(code.match(/\\.green-text\\s*?{\\s*?color\\s*:\\s*?#0F0\\s*?;?\\s*?}/gi));"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element with the text <code>I am cyan!</code> should be given the <code>color</code> cyan.</p>",
+      "testString": "assert($('.cyan-text').css('color') === 'rgb(0, 255, 255)');"
+    },
+    {
+      "text": "<p>The abbreviated hex code for the color cyan should be used instead of the hex code <code>#00FFFF</code>.</p>",
+      "testString": "assert(code.match(/\\.cyan-text\\s*?{\\s*?color\\s*:\\s*?#0FF\\s*?;?\\s*?}/gi));"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element with the text <code>I am fuchsia!</code> should be given the <code>color</code> fuchsia.</p>",
+      "testString": "assert($('.fuchsia-text').css('color') === 'rgb(255, 0, 255)');"
+    },
+    {
+      "text": "<p>The abbreviated hex code for the color fuchsia should be used instead of the hex code <code>#FF00FF</code>.</p>",
+      "testString": "assert(code.match(/\\.fuchsia-text\\s*?{\\s*?color\\s*:\\s*?#F0F\\s*?;?\\s*?}/gi));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Many people feel overwhelmed by the possibilities of more than 16 million colors. And it's difficult to remember hex code. Fortunately, you can shorten it.</p>\n<p>For example, red's hex code <code>#FF0000</code> can be shortened to <code>#F00</code>. This shortened form gives one digit for red, one digit for green, and one digit for blue.</p>\n<p>This reduces the total number of possible colors to around 4,000. But browsers will interpret <code>#FF0000</code> and <code>#F00</code> as exactly the same color.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Go ahead, try using the abbreviated hex codes to color the correct elements.</p>\n<table><tbody><tr><th>Color</th><th>Short Hex Code</th></tr><tr><td>Cyan</td><td><code>#0FF</code></td></tr><tr><td>Green</td><td><code>#0F0</code></td></tr><tr><td>Red</td><td><code>#F00</code></td></tr><tr><td>Fuchsia</td><td><code>#F0F</code></td></tr></tbody></table>\n</section>",
+  "translationPending": false,
+  "block": "basic-css",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 33,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

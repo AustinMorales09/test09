@@ -1,0 +1,77 @@
+{
+  "id": "bad87fee1348bd9aec908849",
+  "title": "Add Elements within Your Bootstrap Wells",
+  "challengeType": 0,
+  "forumTopicId": 16636,
+  "dashedName": "add-elements-within-your-bootstrap-wells",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n\n\n\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n\n\n\n      </div>\n    </div>\n  </div>\n</div>",
+      "error": null,
+      "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n\n\n\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n\n\n\n      </div>\n    </div>\n  </div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button></button>\n        <button></button>\n        <button></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button></button>\n        <button></button>\n        <button></button>\n      </div>\n    </div>\n  </div>\n</div>",
+        "error": null,
+        "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button></button>\n        <button></button>\n        <button></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button></button>\n        <button></button>\n        <button></button>\n      </div>\n    </div>\n  </div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Three <code>button</code> elements should be nested within each of your <code>div</code> elements with class <code>well</code>.</p>",
+      "testString": "assert(\n  $('div.well:eq(0)').children('button').length === 3 &&\n    $('div.well:eq(1)').children('button').length === 3\n);"
+    },
+    {
+      "text": "<p>You should have a total of 6 <code>button</code> elements.</p>",
+      "testString": "assert($('button') && $('button').length > 5);"
+    },
+    {
+      "text": "<p>All of your <code>button</code> elements should have closing tags.</p>",
+      "testString": "assert(\n  code.match(/<\\/button>/g) &&\n    code.match(/<button/g) &&\n    code.match(/<\\/button>/g).length === code.match(/<button/g).length\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now we're several <code>div</code> elements deep on each column of our row. This is as deep as we'll need to go. Now we can add our <code>button</code> elements.</p>\n<p>Nest three <code>button</code> elements within each of your <code>div</code> elements having the class name <code>well</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "bootstrap",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 23,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

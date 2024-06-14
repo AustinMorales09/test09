@@ -1,0 +1,77 @@
+{
+  "id": "60a3e3396c7b40068ad69974",
+  "title": "Step 11",
+  "challengeType": 0,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": ".canvas {\n  width: 500px;\n  height: 600px;\n  background-color: #4d0f00;\n}",
+      "error": null,
+      "seed": ".canvas {\n  width: 500px;\n  height: 600px;\n  background-color: #4d0f00;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        13
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n    <link href=\"./styles.css\" rel=\"stylesheet\">\n  </head>\n  <body>\n\n    <div class=\"canvas\">\n    </div>\n\n  </body>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n    <link href=\"./styles.css\" rel=\"stylesheet\">\n  </head>\n  <body>\n\n    <div class=\"canvas\">\n    </div>\n\n  </body>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add a new <code>div</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('div').length === 2)"
+    },
+    {
+      "text": "<p>Your <code>.canvas</code> element should be nested in the new <code>div</code> element.</p>",
+      "testString": "assert(document.querySelector('.canvas').parentElement.tagName === 'DIV');"
+    },
+    {
+      "text": "<p>Your new <code>div</code> should have a <code>class</code> with the value <code>frame</code>.</p>",
+      "testString": "assert(document.querySelector('div').className.split(' ').includes('frame'));"
+    },
+    {
+      "text": "<p>Your new <code>div</code> should be within your <code>body</code> element.</p>",
+      "testString": "assert(document.querySelector('div').parentElement.tagName === 'BODY');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Every painting needs a frame.</p>\n<p>Wrap the <code>.canvas</code> element in another <code>div</code>. Give that <code>div</code> the <code>frame</code> class.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-css-box-model-by-building-a-rothko-painting",
+  "hasEditableBoundaries": true,
+  "order": 5,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

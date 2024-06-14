@@ -1,0 +1,88 @@
+{
+  "id": "657b11f87368cf463ea4fe46",
+  "title": "Task 8",
+  "challengeType": 19,
+  "dashedName": "task-8",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Anna ask about specific projects in the past tense?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Where there any specific projects you'd like to mention?</code></p>",
+        "feedback": "<p><code>Where</code> is used for locations. The correct form for asking about past events is <code>Were</code>.</p>"
+      },
+      {
+        "answer": "<p><code>Were there any specific projects you'd like to mention?</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Was there any specific projects you'd like to mention?</code></p>",
+        "feedback": "<p><code>Was</code> is used with singular nouns. Since <code>projects</code> is plural, <code>Were</code> is the correct choice.</p>"
+      },
+      {
+        "answer": "<p><code>Are there any specific projects you'd like to mention?</code></p>",
+        "feedback": "<p><code>Are</code> is present tense. The question is about past projects, so <code>Were</code> is needed.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.64,
+        "finishTimestamp": 22.56
+      }
+    },
+    "commands": [
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Anna",
+        "startTime": 1,
+        "finishTime": 3.92,
+        "dialogue": {
+          "text": "That's excellent. Were there any specific projects you'd like to mention?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 4.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Questions in the past tense with the verb <code>to be</code> are very similar to how you do it in the present tense. The only difference is that you need to remember to conjugate the verb to <code>were</code> or <code>was</code>, followed by the subject and then the main verb. For example:</p>\n<p><code>Were you at the meeting yesterday?</code> Notice how <code>were</code> comes before <code>you</code> to for a question.\n<code>What was my assignment?</code> For a specific question, notice how <code>was</code> comes after <code>what</code> and before <code>my</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

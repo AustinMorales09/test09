@@ -1,0 +1,75 @@
+{
+  "id": "661811bce448257e10e8e1e9",
+  "title": "Task 18",
+  "challengeType": 22,
+  "dashedName": "task-18",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>But researchers and companies are _ working on addressing these issues.</p>",
+    "blanks": [
+      {
+        "answer": "actively",
+        "feedback": "<p>In this case, the word is related to <strong>how</strong> researchers and companies are working, not qualifying them. Use the adverb.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 35.12,
+        "finishTimestamp": 39.28
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.16,
+        "dialogue": {
+          "text": "But researchers and companies are actively working on addressing these issues.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.66
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Active</code> and <code>actively</code> both relate to doing something, but in slightly different ways. <code>Active</code> is an adjective indicating a state of being, describing something that is happening right now, and something that is always busy or lively. For example, if someone is active, it means they are always doing things and not just sitting still. <code>Actively</code>, as the corresponding adverb, is about doing something with energy or effort. It shows how an action is done.</p>\n<p>Listen to the audio and fill in the blank with the correct form: <code>active</code> or <code>actively</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

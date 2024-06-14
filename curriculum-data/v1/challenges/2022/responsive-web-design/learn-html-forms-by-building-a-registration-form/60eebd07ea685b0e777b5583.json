@@ -1,0 +1,65 @@
+{
+  "id": "60eebd07ea685b0e777b5583",
+  "title": "Step 1",
+  "challengeType": 0,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should contain the <code>DOCTYPE</code> reference.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE/gi));"
+    },
+    {
+      "text": "<p>You should include a space after the <code>DOCTYPE</code> reference.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+/gi));"
+    },
+    {
+      "text": "<p>You should define the document type to be <code>html</code>.</p>",
+      "testString": "assert(code.match(/html/gi));"
+    },
+    {
+      "text": "<p>You should close the <code>DOCTYPE</code> declaration with a <code>></code> after the type.</p>",
+      "testString": "assert(code.match(/html\\s*>/gi));"
+    },
+    {
+      "text": "<p>Your <code>DOCTYPE</code> declaration should be at the beginning of your HTML.</p>",
+      "testString": "assert(__helpers.removeHtmlComments(code).match(/^\\s*<!DOCTYPE\\s+html\\s*>/i));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Welcome to the Registration Form project! Start by adding the <code>!DOCTYPE html</code> declaration at the top of the document so the browser knows what type of document it's reading.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-forms-by-building-a-registration-form",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

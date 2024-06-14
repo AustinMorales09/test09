@@ -1,0 +1,49 @@
+{
+  "id": "655776db1eeae0a620e42a0d",
+  "title": "Step 31",
+  "challengeType": 20,
+  "dashedName": "step-31",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        18
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\n\ndef shortest_path(graph, start):\n    unvisited = []\n    distances = {}\n    for node in graph:\n        unvisited.append(node)\n        if node == start:\n            distances[node] = 0\n        else:\n            distances[node] = float('inf')\n    print(f'Unvisited: {unvisited}\\nDistances: {distances}')",
+      "error": null,
+      "seed": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\n\ndef shortest_path(graph, start):\n    unvisited = []\n    distances = {}\n    for node in graph:\n        unvisited.append(node)\n        if node == start:\n            distances[node] = 0\n        else:\n            distances[node] = float('inf')\n    print(f'Unvisited: {unvisited}\\nDistances: {distances}')"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call <code>shortest_path</code> passing <code>my_graph</code> and <code>'A'</code> as the arguments.</p>",
+      "testString": "({ test: () => assert.match(code, /^shortest_path\\s*\\(\\s*my_graph\\s*,\\s*(\"|')A\\1\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now, call your function passing <code>my_graph</code> and <code>'A'</code> as the arguments.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

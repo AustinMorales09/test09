@@ -1,0 +1,88 @@
+{
+  "id": "657daa5ab8505427a5b99cd2",
+  "title": "Task 64",
+  "challengeType": 19,
+  "dashedName": "task-64",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Bob's role in the company?</p>",
+    "answers": [
+      {
+        "answer": "<p>He is the team's project manager.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He is the team's graphic designer.</p>",
+        "feedback": "<p>Remember to listen carefully to the specific role mentioned in the introduction.</p>"
+      },
+      {
+        "answer": "<p>He is the new intern.</p>",
+        "feedback": "<p>Bob introduces himself with a specific management role, not as an intern.</p>"
+      },
+      {
+        "answer": "<p>He is the company's CEO.</p>",
+        "feedback": "<p>Bob's introduction clearly states a different role, not the CEO.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 42.84,
+        "finishTimestamp": 45.06
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.22,
+        "dialogue": {
+          "text": "And I'm Bob, the team's project manager.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 3.72
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In the audio, Bob introduces himself and states his role in the company.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 66,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,78 @@
+{
+  "id": "587d7b89367417b2b2512b4a",
+  "title": "Use Destructuring Assignment to Assign Variables from Nested Objects",
+  "challengeType": 1,
+  "forumTopicId": 301214,
+  "dashedName": "use-destructuring-assignment-to-assign-variables-from-nested-objects",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const LOCAL_FORECAST = {\n  yesterday: { low: 61, high: 75 },\n  today: { low: 64, high: 77 },\n  tomorrow: { low: 68, high: 80 }\n};\n\n// Only change code below this line\n  \nconst lowToday = LOCAL_FORECAST.today.low;\nconst highToday = LOCAL_FORECAST.today.high;\n\n// Only change code above this line",
+      "error": null,
+      "seed": "const LOCAL_FORECAST = {\n  yesterday: { low: 61, high: 75 },\n  today: { low: 64, high: 77 },\n  tomorrow: { low: 68, high: 80 }\n};\n\n// Only change code below this line\n  \nconst lowToday = LOCAL_FORECAST.today.low;\nconst highToday = LOCAL_FORECAST.today.high;\n\n// Only change code above this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const LOCAL_FORECAST = {\n  yesterday: { low: 61, high: 75 },\n  today: { low: 64, high: 77 },\n  tomorrow: { low: 68, high: 80 }\n};\n \nconst { today: { low: lowToday, high: highToday }} = LOCAL_FORECAST;",
+        "error": null,
+        "seed": "const LOCAL_FORECAST = {\n  yesterday: { low: 61, high: 75 },\n  today: { low: 64, high: 77 },\n  tomorrow: { low: 68, high: 80 }\n};\n \nconst { today: { low: lowToday, high: highToday }} = LOCAL_FORECAST;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove the ES5 assignment syntax.</p>",
+      "testString": "assert(\n  !__helpers.removeJSComments(code).match(/lowToday = LOCAL_FORECAST\\.today\\.low/g) &&\n    !__helpers.removeJSComments(code).match(/highToday = LOCAL_FORECAST\\.today.high/g)\n);"
+    },
+    {
+      "text": "<p>You should use destructuring to create the <code>lowToday</code> variable.</p>",
+      "testString": "assert(\n  __helpers.removeJSComments(code).match(\n    /(var|const|let)\\s*{\\s*today\\s*:\\s*{\\s*(low\\s*:\\s*lowToday[^}]*|[^,]*,\\s*low\\s*:\\s*lowToday\\s*)},?\\s*}\\s*=\\s*LOCAL_FORECAST(;|\\s+|\\/\\/)/g\n  )\n);"
+    },
+    {
+      "text": "<p>You should use destructuring to create the <code>highToday</code> variable.</p>",
+      "testString": "assert(\n  __helpers.removeJSComments(code).match(\n    /(var|const|let)\\s*{\\s*today\\s*:\\s*{\\s*(high\\s*:\\s*highToday[^}]*|[^,]*,\\s*high\\s*:\\s*highToday,?\\s*)},?\\s*}\\s*=\\s*LOCAL_FORECAST(;|\\s+|\\/\\/)/g\n  )\n);"
+    },
+    {
+      "text": "<p><code>lowToday</code> should be equal to <code>64</code> and <code>highToday</code> should be equal to <code>77</code>.</p>",
+      "testString": "assert(lowToday === 64 && highToday === 77);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can use the same principles from the previous two lessons to destructure values from nested objects.</p>\n<p>Using an object similar to previous examples:</p>\n<pre><code class=\"language-js\">const user = {\n  johnDoe: { \n    age: 34,\n    email: 'johnDoe@freeCodeCamp.com'\n  }\n};\n</code></pre>\n<p>Here's how to extract the values of object properties and assign them to variables with the same name:</p>\n<pre><code class=\"language-js\">const { johnDoe: { age, email }} = user;\n</code></pre>\n<p>And here's how you can assign an object properties' values to variables with different names:</p>\n<pre><code class=\"language-js\">const { johnDoe: { age: userAge, email: userEmail }} = user;\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Replace the two assignments with an equivalent destructuring assignment. It should still assign the variables <code>lowToday</code> and <code>highToday</code> the values of <code>today.low</code> and <code>today.high</code> from the <code>LOCAL_FORECAST</code> object.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

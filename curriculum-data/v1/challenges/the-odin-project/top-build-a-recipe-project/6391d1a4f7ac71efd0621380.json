@@ -1,0 +1,147 @@
+{
+  "id": "6391d1a4f7ac71efd0621380",
+  "title": "Build a Recipe Page Project",
+  "challengeType": 14,
+  "dashedName": "top-build-a-recipe-project",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>The Odin Recipes</title>\n  </head>\n  <body>\n    <h1>Creamy Chocolate Fudge</h1>\n    <img src=\"https://cdn.freecodecamp.org/curriculum/odin-project/build-a-recipe-page/build-a-recipe-page-01.jpg\" alt=\"A delicious chocolate fudge dessert\">\n    <h2>Description</h2>\n    <p>This recipe is for a rich and creamy chocolate fudge that is sure to satisfy your sweet tooth. It's perfect for a special occasion or as a tasty treat for any time of the year.</p>\n    <p>This recipe is easy to follow and only requires a few simple ingredients. With just a few steps, you'll be able to create a delicious dessert that everyone will love.</p>\n    <h2>Ingredients</h2>\n    <ul>\n      <li>1 cup sugar</li>\n      <li>1/2 cup unsalted butter</li>\n      <li>1/4 cup milk</li>\n      <li>1/4 cup cocoa powder</li>\n      <li>1/4 cup chocolate chips</li>\n      <li>1/4 tsp salt</li>\n      <li>1 tsp vanilla extract</li>\n    </ul>\n    <h2>Steps</h2>\n    <ol>\n      <li>In a medium saucepan, melt the butter over medium heat.</li>\n      <li>Add the sugar, milk, cocoa powder, and salt to the saucepan and stir until well combined.</li>\n      <li>Bring the mixture to a boil, stirring constantly, and then reduce the heat to low and simmer for 5 minutes.</li>\n      <li>Remove the saucepan from the heat and stir in the chocolate chips and vanilla extract until the chocolate is melted and the mixture is smooth.</li>\n      <li>Pour the fudge into a greased 8-inch square pan and let it cool completely before cutting into squares.</li>\n    </ol>\n    <h2>More Recipes</h2>\n    <ul>\n      <li><a href=\"#\">Peanut Butter Cookies</a></li>\n      <li><a href=\"#\">Lemon Bars</a></li>\n      <li><a href=\"#\">Chocolate Chip Pancakes</a></li>\n    </ul>\n  </body>\n</html>",
+        "error": null,
+        "seed": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>The Odin Recipes</title>\n  </head>\n  <body>\n    <h1>Creamy Chocolate Fudge</h1>\n    <img src=\"https://cdn.freecodecamp.org/curriculum/odin-project/build-a-recipe-page/build-a-recipe-page-01.jpg\" alt=\"A delicious chocolate fudge dessert\">\n    <h2>Description</h2>\n    <p>This recipe is for a rich and creamy chocolate fudge that is sure to satisfy your sweet tooth. It's perfect for a special occasion or as a tasty treat for any time of the year.</p>\n    <p>This recipe is easy to follow and only requires a few simple ingredients. With just a few steps, you'll be able to create a delicious dessert that everyone will love.</p>\n    <h2>Ingredients</h2>\n    <ul>\n      <li>1 cup sugar</li>\n      <li>1/2 cup unsalted butter</li>\n      <li>1/4 cup milk</li>\n      <li>1/4 cup cocoa powder</li>\n      <li>1/4 cup chocolate chips</li>\n      <li>1/4 tsp salt</li>\n      <li>1 tsp vanilla extract</li>\n    </ul>\n    <h2>Steps</h2>\n    <ol>\n      <li>In a medium saucepan, melt the butter over medium heat.</li>\n      <li>Add the sugar, milk, cocoa powder, and salt to the saucepan and stir until well combined.</li>\n      <li>Bring the mixture to a boil, stirring constantly, and then reduce the heat to low and simmer for 5 minutes.</li>\n      <li>Remove the saucepan from the heat and stir in the chocolate chips and vanilla extract until the chocolate is melted and the mixture is smooth.</li>\n      <li>Pour the fudge into a greased 8-inch square pan and let it cool completely before cutting into squares.</li>\n    </ol>\n    <h2>More Recipes</h2>\n    <ul>\n      <li><a href=\"#\">Peanut Butter Cookies</a></li>\n      <li><a href=\"#\">Lemon Bars</a></li>\n      <li><a href=\"#\">Chocolate Chip Pancakes</a></li>\n    </ul>\n  </body>\n</html>"
+      },
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "styles.css"
+        ],
+        "name": "styles",
+        "ext": "css",
+        "path": "styles.css",
+        "fileKey": "stylescss",
+        "contents": "",
+        "error": null,
+        "seed": ""
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>DOCTYPE</code> tag.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+?html\\s*?>/gi));"
+    },
+    {
+      "text": "<p>You should have an <code>html</code> element with <code>head</code> and <code>body</code> element.</p>",
+      "testString": "const html = document.querySelectorAll('html')[0];\nconst head = document.querySelectorAll('html > head')[0];\nconst body = document.querySelectorAll('html > body')[0];\n\nassert(html && head && body);"
+    },
+    {
+      "text": "<p>You should have a <code>title</code> element within the <code>head</code> element that contains the text\n<code>The Odin Recipes</code>.</p>",
+      "testString": "assert(document.querySelectorAll('HEAD > TITLE')[0].innerText == 'The Odin Recipes');"
+    },
+    {
+      "text": "<p>You should have a <code>h1</code> element within your <code>body</code> element that contains the text\n<code>Creamy Chocolate Fudge</code>.</p>",
+      "testString": "assert(document.querySelectorAll('BODY > H1')[0].innerText == 'Creamy Chocolate Fudge');"
+    },
+    {
+      "text": "<p>You should have an image with an <code>alt</code> attribute.</p>",
+      "testString": "const img = document.querySelectorAll('IMG')[0];\n\nassert(img && img.alt !='' && img.src != '')"
+    },
+    {
+      "text": "<p>You should have an <code>h2</code> element with the text <code>Description</code>.</p>",
+      "testString": "const h2 = document.querySelectorAll('H2')[0];\n\nassert(h2.innerText == 'Description');"
+    },
+    {
+      "text": "<p>You should have at least two <code>p</code> elements describing the recipe.</p>",
+      "testString": "const paragraphs = document.querySelectorAll('P');\n\nassert(paragraphs.length > 1);"
+    },
+    {
+      "text": "<p>You should have an <code>h2</code> element with the text <code>Ingredients</code>.</p>",
+      "testString": "const h2 = document.querySelectorAll('H2')[1];\n\nassert(h2.innerText == 'Ingredients');"
+    },
+    {
+      "text": "<p>You should have an unordered list <code>&#x3C;ul></code> with some ingredients as the list items <code>&#x3C;li></code>.</p>",
+      "testString": "const unorderedList = document.querySelectorAll('UL')[0];\nconst listItems = document.querySelectorAll('UL > LI');\n\nassert(unorderedList && listItems && listItems.length > 1);"
+    },
+    {
+      "text": "<p>You should have an <code>h2</code> element with the text <code>Steps</code>.</p>",
+      "testString": "const h2 = document.querySelectorAll('H2')[2];\n\nassert(h2.innerText == 'Steps');"
+    },
+    {
+      "text": "<p>You should have an <code>&#x3C;ol></code> with the steps as the list items <code>&#x3C;li></code>.</p>",
+      "testString": "const orderedList = document.querySelectorAll('OL')[0];\nconst listItems = document.querySelectorAll('OL > LI');\n\nassert(orderedList && listItems && listItems.length > 1);"
+    },
+    {
+      "text": "<p>You should have an <code>h2</code> element with the text <code>More Recipes</code>.</p>",
+      "testString": "const h2 = document.querySelectorAll('H2')[3];\n\nassert(h2.innerText == 'More Recipes');"
+    },
+    {
+      "text": "<p>You should have an unordered list <code>&#x3C;ul></code> element with list items <code>&#x3C;li></code> that contain <code>&#x3C;a></code> tags which lead to other recipes.</p>",
+      "testString": "const unorderedList = document.querySelectorAll('UL')[1];\nconst listItems = unorderedList.querySelectorAll('LI');\n\nconst allAreListItems = unorderedList.children.length == listItems.length;\n\nconst containsAnchors =  [...listItems].every(function(listItem) {\n  return listItem.querySelector(\"a\") !== null;\n});\n\nassert(unorderedList && allAreListItems && containsAnchors && listItems.length > 1);"
+    },
+    {
+      "text": "<p>Your anchor tags linking to the recipes should have an <code>href</code> attribute with the value set to <code>#</code>.</p>",
+      "testString": "const anchorTags = document.querySelectorAll(\"a\");\n\nconst allAnchorsHaveHrefHash = [...anchorTags].every(function(anchorTag) {\n  return anchorTag.hasAttribute(\"href\") && anchorTag.getAttribute(\"href\") === \"#\";\n});\n\nassert(allAnchorsHaveHrefHash && anchorTags.length > 0); "
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The website will consist of a main index page which will have links to a few recipes. The website won’t look very pretty by the time you’ve finished.</p>\n<p><strong>User Stories:</strong></p>\n<ol>\n<li>Your recipe page should contain a <code>DOCTYPE</code> tag.</li>\n<li>Your recipe page should include an <code>html</code> element with a <code>head</code> and <code>body</code> element as children.</li>\n<li>You should have a <code>title</code> element within the <code>head</code> element with the text <code>The Odin Recipes</code>.</li>\n<li>You should see an <code>h1</code> element that has the text <code>Creamy Chocolate Fudge</code>.</li>\n<li>You should see a related image with an <code>alt</code> attribute.</li>\n<li>There should be an <code>h2</code> element with the text <code>Description</code> under the image.</li>\n<li>You should see a couple of paragraphs under <code>Description</code> that describe the recipe.</li>\n<li>There should be an <code>h2</code> element with the text <code>Ingredients</code>.</li>\n<li>Under the <code>Ingredients</code> heading there should be an unordered list with the ingredients needed for the recipe.</li>\n<li>Under the list of ingredients add another heading called <code>Steps</code>.</li>\n<li>You should see an ordered list with a couple of steps needed to complete the recipe.</li>\n<li>Under the steps there should be an <code>h2</code> element with the text <code>More Recipes</code>.</li>\n<li>You should see a couple of links to other recipes inside an unordered list which has a couple of list items with anchor elements within.</li>\n<li>These anchor elements should have an <code>href</code> attribute with the value set to <code>#</code>.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "top-build-a-recipe-project",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

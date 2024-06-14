@@ -1,0 +1,45 @@
+{
+  "id": "656bbded100497126ccc6e5d",
+  "title": "Task 8",
+  "challengeType": 19,
+  "dashedName": "task-8",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is a <code>repository</code> in the context of software development?</p>",
+    "answers": [
+      {
+        "answer": "<p>A tool for editing code</p>",
+        "feedback": "<p>A repository is not for editing code.</p>"
+      },
+      {
+        "answer": "<p>A place to store and manage project files</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A type of software bug</p>",
+        "feedback": "<p>A repository is not a software bug.</p>"
+      },
+      {
+        "answer": "<p>An online meeting space for programmers</p>",
+        "feedback": "<p>A repository is not a meeting space.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>repository</code> is a central location where data, often related to software or programming, is stored and managed.</p>\n<p>It's like a database for your code, allowing for version control and collaboration. For instance, <code>The team uses a GitHub repository to store all their project files.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-help-a-coworker-troubleshoot-on-github",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

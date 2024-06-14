@@ -1,0 +1,57 @@
+{
+  "id": "62a2509ba163e020bb9d84ea",
+  "title": "Step 2",
+  "challengeType": 0,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        6,
+        8
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n\n  </head>\n  <body>\n    <div id=\"game\">\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n\n  </head>\n  <body>\n    <div id=\"game\">\n    </div>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>script</code> element.</p>",
+      "testString": "assert.isAtLeast(document.querySelectorAll('script').length, 2);"
+    },
+    {
+      "text": "<p>Your <code>script</code> element should have an opening tag.</p>",
+      "testString": "assert.match(code, /<script\\s*>/i);"
+    },
+    {
+      "text": "<p>Your <code>script</code> element should have a closing tag.</p>",
+      "testString": "assert.match(code, /<\\/script\\s*>/i);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now you can start writing your JavaScript. Begin by creating a <code>script</code> element. This element is used to load JavaScript into your HTML file.</p>\n<pre><code class=\"language-html\">&#x3C;script>\n  // JavaScript code goes here\n&#x3C;/script>\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-javascript-by-building-a-role-playing-game",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "657dc263516a5127ce677b8b",
+  "title": "Task 88",
+  "challengeType": 19,
+  "dashedName": "task-88",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Sophie's opinion about the length of the meetings?</p>",
+    "answers": [
+      {
+        "answer": "<p>They are too long.</p>",
+        "feedback": "<p>Sophie indicates that the duration of the meetings is reasonable, not excessive.</p>"
+      },
+      {
+        "answer": "<p>They are not too long.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>They are shorter than necessary.</p>",
+        "feedback": "<p>There's no mention of the meetings being shorter than necessary, only that they don't last too long.</p>"
+      },
+      {
+        "answer": "<p>They are exactly 45 minutes.</p>",
+        "feedback": "<p>Sophie gives a range of time, not an exact duration, for the meetings.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.86,
+        "finishTimestamp": 22.72
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.86,
+        "dialogue": {
+          "text": "Not too long. They usually take about 30 to 45 minutes.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.36
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When talking about the duration of time something requires, you use the word <code>take.</code> For example, you can say, <code>It takes me 10 minutes to get to the subway.</code></p>\n<p>When expressing opinions about time, phrases like <code>too long</code> or <code>not too long</code> are used. <code>Too long</code> suggests that the time is more than what is preferred, while <code>not too long</code> suggests that the time is just right or reasonable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 91,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

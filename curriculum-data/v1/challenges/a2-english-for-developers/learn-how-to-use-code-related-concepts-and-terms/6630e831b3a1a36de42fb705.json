@@ -1,0 +1,45 @@
+{
+  "id": "6630e831b3a1a36de42fb705",
+  "title": "Task 11",
+  "challengeType": 19,
+  "dashedName": "task-11",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are <code>whole numbers</code> in the context of programming?</p>",
+    "answers": [
+      {
+        "answer": "<p>Numbers with decimal parts</p>",
+        "feedback": "<p><code>Whole numbers</code> do not have decimal parts; they are integers like 0, 1, 2, etc.</p>"
+      },
+      {
+        "answer": "<p>Negative numbers</p>",
+        "feedback": "<p><code>Whole numbers</code> include all positive integers, negative numbers and zero.</p>"
+      },
+      {
+        "answer": "<p>Numbers without fractions or decimals</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Letters and symbols</p>",
+        "feedback": "<p><code>Whole numbers</code> refer to standard numerical digits, not to letters or symbols.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Whole numbers</code> are basic numerical data types in programming and mathematics. They are numbers without fractional or decimal parts, including all positive integers (like 1, 2, 3), negative numbers (like -4, -9) and zero (0).</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

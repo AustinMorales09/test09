@@ -1,0 +1,70 @@
+{
+  "id": "594db4d0dedb4c06a2a4cefd",
+  "title": "Babbage problem",
+  "challengeType": 1,
+  "forumTopicId": 302229,
+  "dashedName": "babbage-problem",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const babbageAns = 99736;\nconst endDigits = 269696;\nconst answer = 25264;",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function babbage(babbageNum, endDigits) {\n\n  return true;\n}",
+      "error": null,
+      "seed": "function babbage(babbageNum, endDigits) {\n\n  return true;\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function babbage(babbageAns, endDigits) {\n  const babbageNum = Math.pow(babbageAns, 2);\n  const babbageStartDigits = parseInt(babbageNum.toString().replace('269696', ''));\n  let answer = 99736;\n\n  // count down from this answer and save any sqrt int result. return lowest one\n  for (let i = babbageStartDigits; i >= 0; i--) {\n    const num = parseInt(i.toString().concat('269696'));\n    const result = Math.sqrt(num);\n    if (result === Math.floor(Math.sqrt(num))) {\n      answer = result;\n    }\n  }\n\n  return answer;\n}",
+        "error": null,
+        "seed": "function babbage(babbageAns, endDigits) {\n  const babbageNum = Math.pow(babbageAns, 2);\n  const babbageStartDigits = parseInt(babbageNum.toString().replace('269696', ''));\n  let answer = 99736;\n\n  // count down from this answer and save any sqrt int result. return lowest one\n  for (let i = babbageStartDigits; i >= 0; i--) {\n    const num = parseInt(i.toString().concat('269696'));\n    const result = Math.sqrt(num);\n    if (result === Math.floor(Math.sqrt(num))) {\n      answer = result;\n    }\n  }\n\n  return answer;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>babbage</code> should be a function.</p>",
+      "testString": "assert(typeof babbage === 'function');"
+    },
+    {
+      "text": "<p><code>babbage(99736, 269696)</code> should not return 99736 (there is a smaller answer).</p>",
+      "testString": "assert.equal(babbage(babbageAns, endDigits), answer);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Charles Babbage, looking ahead to the sorts of problems his Analytical Engine would be able to solve, gave this example:</p>\n<blockquote>\n  What is the smallest positive integer whose square ends in the digits 269,696?\n  <footer style='margin-left: 2em;'>Babbage, letter to Lord Bowden, 1837; see Hollingdale and Tootill, <i>Electronic Computers</i>, second edition, 1970, p. 125.</footer>\n</blockquote>\n<p>He thought the answer might be 99,736, whose square is 9,947,269,696; but he couldn't be certain.</p>\n<p>The task is to find out if Babbage had the right answer.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Implement a function to return the lowest integer that satisfies the Babbage problem. If Babbage was right, return Babbage's number.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

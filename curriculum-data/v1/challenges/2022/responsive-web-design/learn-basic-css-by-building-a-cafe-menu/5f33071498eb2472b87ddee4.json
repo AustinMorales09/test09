@@ -1,0 +1,57 @@
+{
+  "id": "5f33071498eb2472b87ddee4",
+  "title": "Step 1",
+  "challengeType": 0,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "\n",
+      "error": null,
+      "seed": "\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have the <code>&#x3C;!DOCTYPE html></code> declaration.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE html>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>&#x3C;html lang=\"en\"></code> with the language set to english.</p>",
+      "testString": "assert(code.match(/<html\\s+lang\\s*=\\s*('|\")en\\1\\s*>/gi));"
+    },
+    {
+      "text": "<p>You should have a closing <code>&#x3C;/html></code> tag.</p>",
+      "testString": "assert(code.match(/<\\/html>/i));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In this project, you will learn the basics of CSS (Cascading Style Sheets) by building a cafe menu. CSS is the language used to style an HTML document. It describes how HTML elements should be displayed on the screen.</p>\n<p>As you learned in the last few steps of the Cat Photo App, there is a basic structure needed to start building your web page. Every HTML document should have a <code>DOCTYPE</code> declaration and <code>html</code> element. The <code>DOCTYPE</code> tells the browser which version of HTML the document is in. And the <code>html</code> element represents the root element which contains all other elements.</p>\n<pre><code class=\"language-html\">&#x3C;!DOCTYPE html>\n&#x3C;html lang=\"en\">\n&#x3C;!--all other elements go here-->\n&#x3C;/html>\n</code></pre>\n<p>Add the <code>&#x3C;!DOCTYPE html></code> tag, and an <code>html</code> element with a <code>lang</code> attribute of <code>en</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

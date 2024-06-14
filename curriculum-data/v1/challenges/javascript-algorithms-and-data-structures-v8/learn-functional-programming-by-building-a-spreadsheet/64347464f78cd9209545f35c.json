@@ -1,0 +1,89 @@
+{
+  "id": "64347464f78cd9209545f35c",
+  "title": "Step 14",
+  "challengeType": 0,
+  "dashedName": "step-14",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        12,
+        14
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n\n}",
+      "error": null,
+      "seed": "const range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call the <code>.forEach()</code> method on your <code>letters</code> array.</p>",
+      "testString": "assert.match(code, /letters\\.forEach\\(/);"
+    },
+    {
+      "text": "<p>You should pass your <code>createLabel</code> function reference to the <code>.forEach()</code> method.</p>",
+      "testString": "assert.match(code, /letters\\.forEach\\(\\s*(?:\\(\\s*([\\S]*)\\s*\\)|\\s*([\\S]*))\\s*=>\\s*createLabel\\(\\s*\\1\\2\\s*\\)\\s*\\)|letters\\.forEach\\(\\s*createLabel\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should not pass a <code>createLabel</code> function call.</p>",
+      "testString": "assert.notMatch(code, /letters\\.forEach\\(\\s*createLabel\\(\\s*\\)\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now call the <code>.forEach()</code> method of your <code>letters</code> array, and pass your <code>createLabel</code> function reference as the callback.</p>\n<p>You should see some letters appear across the top of your spreadsheet.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

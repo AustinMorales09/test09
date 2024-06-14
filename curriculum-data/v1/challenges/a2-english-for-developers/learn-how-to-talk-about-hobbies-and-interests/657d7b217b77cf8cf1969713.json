@@ -1,0 +1,88 @@
+{
+  "id": "657d7b217b77cf8cf1969713",
+  "title": "Task 20",
+  "challengeType": 19,
+  "dashedName": "task-20",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the options best explains how Bob's usage of <code>have taken</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>He's making a choice.</p>",
+        "feedback": "<p>The meaning of <code>have taken</code> here is not related to choosing something.</p>"
+      },
+      {
+        "answer": "<p>He's accepting someone else's idea.</p>",
+        "feedback": "<p>There was no mention to ideas in this sentence.</p>"
+      },
+      {
+        "answer": "<p>He's expressing how he felt about his activity.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He's picking the camera up from the desk.</p>",
+        "feedback": "<p>He does not talk about picking things up in this case.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 35.46,
+        "finishTimestamp": 37.76
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.3,
+        "dialogue": {
+          "text": "I've taken things way too seriously in the past.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 3.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Have taken</code> shows you did something before. Here's how you might use it:</p>\n<p><strong>Picking up</strong>: <code>I have taken the book.</code> - You took the book from somewhere.</p>\n<p><strong>Choosing</strong>: <code>I have taken the red one.</code> - You picked out the red one for yourself.</p>\n<p><strong>Accepting</strong>: <code>I have taken your idea.</code> - You decided to go with someone's idea.</p>\n<p><strong>Feeling</strong>: <code>I have taken the joke seriously.</code> - You thought the joke was more serious than it was meant to be.</p>\n<p>Each use of <code>have taken</code> depends on what action or decision you made.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

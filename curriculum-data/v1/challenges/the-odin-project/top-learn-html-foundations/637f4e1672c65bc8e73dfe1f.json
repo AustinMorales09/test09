@@ -1,0 +1,41 @@
+{
+  "id": "637f4e1672c65bc8e73dfe1f",
+  "title": "HTML Foundations Question B",
+  "challengeType": 15,
+  "dashedName": "html-foundations-question-b",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why are self-closing tags like <code>&#x3C;br/></code> or <code>&#x3C;img></code> essential in HTML?</p>",
+    "answers": [
+      {
+        "answer": "<p>They prevent formatting issues in HTML documents.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>They indicate empty elements and require no closing tag.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>They improve website performance by reducing code complexity.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>You can think of elements as containers for content. The opening and closing tags tell the browser what content the element contains. The browser can then use that information to determine how it should interpret and format the content.</p>\n<p>There are some HTML elements that do not have a closing tag. These elements often look like this: <code>&#x3C;br /></code> or <code>&#x3C;img/></code>, but some can also be used without the closing forward slash such as <code>&#x3C;br></code> or <code>&#x3C;img></code>. These are known as self-closing tags or empty elements because they don’t wrap any content. You will encounter a few of these in later lessons, but for the most part, elements will have both opening and closing tags.</p>\n<p>HTML has a vast list of predefined tags that you can use to create all kinds of different elements. It is important to use the correct tags for content. Using the correct tags can have a big impact on two aspects of your sites: how they are ranked in search engines; and how accessible they are to users who rely on assistive technologies, like screen readers, to use the internet.</p>\n<p>Using the correct elements for content is called semantic HTML. You will explore this in much more depth later on in the curriculum.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-html-foundations",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "6635f9c305ad6d2a08cb6ad4",
+  "title": "Task 2",
+  "challengeType": 19,
+  "dashedName": "task-2",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is <code>low-code development</code> in the context of programming?</p>",
+    "answers": [
+      {
+        "answer": "<p>Developing software with minimal coding</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Writing code with low efficiency</p>",
+        "feedback": "<p><code>Low-code development</code> is about reducing the amount of code, not about the efficiency of the code written.</p>"
+      },
+      {
+        "answer": "<p>Programming with low-level languages</p>",
+        "feedback": "<p><code>Low-code development</code> refers to minimal hand-coding, not low-level programming languages.</p>"
+      },
+      {
+        "answer": "<p>Developing software without any coding</p>",
+        "feedback": "<p><code>Low-code development</code> involves some coding, though it's minimal, not completely coding-free.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

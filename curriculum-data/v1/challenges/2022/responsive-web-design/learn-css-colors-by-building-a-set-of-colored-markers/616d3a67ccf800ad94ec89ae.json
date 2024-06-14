@@ -1,0 +1,81 @@
+{
+  "id": "616d3a67ccf800ad94ec89ae",
+  "title": "Step 9",
+  "challengeType": 0,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        12
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1 {\n  text-align: center;\n}",
+      "error": null,
+      "seed": "h1 {\n  text-align: center;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an opening <code>div</code> tag.</p>",
+      "testString": "assert(code.match(/<div.*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>div</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/div\\s*>/i));"
+    },
+    {
+      "text": "<p>Your <code>div</code> element should be within your <code>body</code> element.</p>",
+      "testString": "assert(document.querySelector('div')?.parentElement?.localName === 'body');"
+    },
+    {
+      "text": "<p>Your <code>div</code> element should be after the <code>h1</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('h1 + div'));"
+    },
+    {
+      "text": "<p>Your <code>div</code> element should have a <code>class</code> attribute set to <code>container</code>.</p>",
+      "testString": "assert(document.querySelector('div')?.classList?.contains('container'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now you'll add some elements that you'll eventually style into color markers.</p>\n<p>First, within the <code>body</code> element, add a <code>div</code> element and set its <code>class</code> attribute to <code>container</code>. Make sure the <code>div</code> element is below the <code>h1</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

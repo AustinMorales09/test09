@@ -1,0 +1,79 @@
+{
+  "id": "657e5a9dbb276fdf539b8279",
+  "title": "Task 93",
+  "challengeType": 22,
+  "dashedName": "task-93",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Compliance is when we put specific rules, policies, and regulations in place that are important to our industry to practice. It helps _ _ at the workplace.</p>",
+    "blanks": [
+      {
+        "answer": "promote",
+        "feedback": "<p>To support or encourage.</p>"
+      },
+      {
+        "answer": "ethics",
+        "feedback": "<p>Good behavior and honesty.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room2.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 12.78,
+        "finishTimestamp": 22.74
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 10.96,
+        "dialogue": {
+          "text": "Compliance is when we put specific rules, policies and regulations that are important to our industry into practice. It helps promote ethics at the workplace.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 11.46
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>To <code>promote ethics</code> means to support and encourage good behavior and honesty at work. It's about doing the right thing and being fair to everyone.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 96,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

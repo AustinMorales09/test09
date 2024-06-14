@@ -1,0 +1,71 @@
+{
+  "id": "cf1111c1c11feddfaeb4bdef",
+  "title": "Subtract One Number from Another with JavaScript",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cP3yQtk",
+  "forumTopicId": 18314,
+  "dashedName": "subtract-one-number-from-another-with-javascript",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(z){return 'difference = '+z;})(difference);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const difference = 45 - 0;",
+      "error": null,
+      "seed": "const difference = 45 - 0;"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const difference = 45 - 33;",
+        "error": null,
+        "seed": "const difference = 45 - 33;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The variable <code>difference</code> should be equal to <code>12</code>.</p>",
+      "testString": "assert(difference === 12);"
+    },
+    {
+      "text": "<p>You should only subtract one number from <code>45</code>.</p>",
+      "testString": "assert(/difference=45-33;?/.test(__helpers.removeWhiteSpace(__helpers.removeJSComments(code))));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>We can also subtract one number from another.</p>\n<p>JavaScript uses the <code>-</code> symbol for subtraction.</p>\n<p><strong>Example</strong></p>\n<pre><code class=\"language-js\">const myVar = 12 - 6;\n</code></pre>\n<p><code>myVar</code> would have the value <code>6</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Change the <code>0</code> so the difference is <code>12</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

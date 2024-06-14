@@ -1,0 +1,69 @@
+{
+  "id": "6140d10d50636e14695013b2",
+  "title": "Step 9",
+  "challengeType": 0,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Ferris Wheel</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div class=\"wheel\">\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Ferris Wheel</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div class=\"wheel\">\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        21,
+        23
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": ".wheel {\n  border: 2px solid black;\n  border-radius: 50%;\n  margin-left: 50px;\n  position: absolute;\n  height: 55vw;\n  width: 55vw;\n  max-width: 500px;\n  max-height: 500px;\n}\n\n.line {\n  background-color: black;\n  width: 50%;\n  height: 2px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform-origin: 0% 0%;\n}\n\n",
+      "error": null,
+      "seed": ".wheel {\n  border: 2px solid black;\n  border-radius: 50%;\n  margin-left: 50px;\n  position: absolute;\n  height: 55vw;\n  width: 55vw;\n  max-width: 500px;\n  max-height: 500px;\n}\n\n.line {\n  background-color: black;\n  width: 50%;\n  height: 2px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform-origin: 0% 0%;\n}\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a <code>.line:nth-of-type(2)</code> selector.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.line:nth-of-type(2)'));"
+    },
+    {
+      "text": "<p>Your <code>.line:nth-of-type(2)</code> selector should have a <code>transform</code> property set to <code>rotate(60deg)</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.line:nth-of-type(2)')?.transform === 'rotate(60deg)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Create a selector to target your second <code>.line</code> element. Set the <code>transform</code> property to <code>rotate(60deg)</code>.</p>\n<p>Remember that the <code>transform</code> property allows you to manipulate the shape of an element. In this case, using the <code>rotate(60deg)</code> value will rotate the element around its <code>transform-origin</code> point by 60 degrees clockwise.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-animation-by-building-a-ferris-wheel",
+  "hasEditableBoundaries": true,
+  "order": 17,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

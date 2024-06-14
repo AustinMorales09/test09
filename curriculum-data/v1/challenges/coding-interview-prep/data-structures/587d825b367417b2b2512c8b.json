@@ -1,0 +1,82 @@
+{
+  "id": "587d825b367417b2b2512c8b",
+  "title": "Remove an Element from a Max Heap",
+  "challengeType": 1,
+  "forumTopicId": 301710,
+  "dashedName": "remove-an-element-from-a-max-heap",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const MaxHeap = function () {\n  this.heap = [];\n  this.parent = index => {\n    return Math.floor((index - 1) / 2);\n  }\n  this.insert = element => {\n    this.heap.push(element);\n    this.heapifyUp(this.heap.length - 1);\n  }\n  this.heapifyUp = index => {\n    let currentIndex = index,\n    parentIndex = this.parent(currentIndex);\n    while (currentIndex > 0 && this.heap[currentIndex] > this.heap[parentIndex]) {\n      this.swap(currentIndex, parentIndex);\n      currentIndex = parentIndex;\n      parentIndex = this.parent(parentIndex);\n    }\n  }\n  this.swap = (index1, index2) => {\n    [this.heap[index1], this.heap[index2]] = [this.heap[index2], this.heap[index1]];\n  }\n  this.print = () => {\n    return this.heap;\n  }\n  // Only change code below this line\n\n  // Only change code above this line\n};",
+      "error": null,
+      "seed": "const MaxHeap = function () {\n  this.heap = [];\n  this.parent = index => {\n    return Math.floor((index - 1) / 2);\n  }\n  this.insert = element => {\n    this.heap.push(element);\n    this.heapifyUp(this.heap.length - 1);\n  }\n  this.heapifyUp = index => {\n    let currentIndex = index,\n    parentIndex = this.parent(currentIndex);\n    while (currentIndex > 0 && this.heap[currentIndex] > this.heap[parentIndex]) {\n      this.swap(currentIndex, parentIndex);\n      currentIndex = parentIndex;\n      parentIndex = this.parent(parentIndex);\n    }\n  }\n  this.swap = (index1, index2) => {\n    [this.heap[index1], this.heap[index2]] = [this.heap[index2], this.heap[index1]];\n  }\n  this.print = () => {\n    return this.heap;\n  }\n  // Only change code below this line\n\n  // Only change code above this line\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>MaxHeap</code> data structure should exist.</p>",
+      "testString": "assert(\n  (function () {\n    let test = false;\n    if (typeof MaxHeap !== 'undefined') {\n      test = new MaxHeap();\n    }\n    return typeof test == 'object';\n  })()\n);"
+    },
+    {
+      "text": "<p><code>MaxHeap</code> should have a method called <code>print</code>.</p>",
+      "testString": "assert(\n  (function () {\n    let test = false;\n    if (typeof MaxHeap !== 'undefined') {\n      test = new MaxHeap();\n    } else {\n      return false;\n    }\n    return typeof test.print == 'function';\n  })()\n);"
+    },
+    {
+      "text": "<p><code>MaxHeap</code> should have a method called <code>insert</code>.</p>",
+      "testString": "assert(\n  (function () {\n    let test = false;\n    if (typeof MaxHeap !== 'undefined') {\n      test = new MaxHeap();\n    } else {\n      return false;\n    }\n    return typeof test.insert == 'function';\n  })()\n);"
+    },
+    {
+      "text": "<p><code>MaxHeap</code> should have a method called <code>remove</code>.</p>",
+      "testString": "assert(\n  (function () {\n    let test = false;\n    if (typeof MaxHeap !== 'undefined') {\n      test = new MaxHeap();\n    } else {\n      return false;\n    }\n    return typeof test.remove == 'function';\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>remove</code> method should remove the greatest element from the max heap while maintaining the max heap property.</p>",
+      "testString": "function isHeap(arr, i, n) {\n    if( arr[i] < arr[2 * i + 1] || arr[i] < arr[2 * i + 2] ){\n        return false;\n    }\n    if (i > (n - 1) / 2) {\n        return true;\n    }\n    if (isHeap(arr, 2 * i + 1, n) && isHeap(arr, 2 * i + 2, n)) {\n        return true;\n    }\n    return false;\n}\n\n\nassert(\n  (function () {\n    let test = false;\n\n    if (typeof MaxHeap !== 'undefined') {\n      test = new MaxHeap();\n    } else {\n      return false;\n    }\n    \n    let max = Infinity;\n    const [result, vals] = [[], [9, 3, 5, 2, 15, 3, 7, 12, 7, 10, 90]];\n\n    vals.forEach((val) => test.insert(val));\n\n    for (let i = 0; i < vals.length; i++) {\n      const curHeap = test.print();\n      const arr = curHeap[0] === null ? curHeap.slice(1) : curHeap;\n      \n      if (!isHeap(arr, 0, arr.length - 1)) {\n        return false;\n      }\n\n      const removed = test.remove();\n      if (!vals.includes(removed)) return false;\n      if (removed > max) return false\n      max = removed;\n      result.push(removed);\n    }\n    \n    for (let i = 0; i < vals.length; i++) {\n      if (!result.includes(vals[i])) {\n        return false;\n      }\n    }\n    \n    return true;\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that we can add elements to our heap let's see how we can remove elements. Removing and inserting elements both require similar logic. In a max heap you will usually want to remove the greatest value, so this involves simply extracting it from the root of our tree. This will break the heap property of our tree, so we must reestablish it in some way. Typically, for a max heap this is done in the following way:</p>\n<ol>\n  <li>Move the last element in the heap into the root position.</li>\n  <li>If either child of the root is greater than it, swap the root with the child of greater value.</li>\n  <li>Continue swapping until the parent is greater than both children or you reach the last level in the tree.</li>\n</ol>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Instructions: Add a method to our max heap called <code>remove</code>. This method should return the greatest value that has been added to our max heap and remove it from the heap. It should also reorder the heap so the heap property is maintained. After removing an element, the next greatest element remaining in the heap should become the root.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-structures",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 39,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

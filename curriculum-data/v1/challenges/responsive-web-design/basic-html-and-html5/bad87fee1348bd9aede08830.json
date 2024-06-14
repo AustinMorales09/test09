@@ -1,0 +1,74 @@
+{
+  "id": "bad87fee1348bd9aede08830",
+  "title": "Create a Form Element",
+  "challengeType": 0,
+  "forumTopicId": 16817,
+  "dashedName": "create-a-form-element",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>\n\n  <a href=\"#\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n\n  <p>Things cats love:</p>\n  <ul>\n    <li>catnip</li>\n    <li>laser pointers</li>\n    <li>lasagna</li>\n  </ul>\n  <p>Top 3 things cats hate:</p>\n  <ol>\n    <li>flea treatment</li>\n    <li>thunder</li>\n    <li>other cats</li>\n  </ol>\n  <input type=\"text\" placeholder=\"cat photo URL\">\n</main>",
+      "error": null,
+      "seed": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>\n\n  <a href=\"#\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n\n  <p>Things cats love:</p>\n  <ul>\n    <li>catnip</li>\n    <li>laser pointers</li>\n    <li>lasagna</li>\n  </ul>\n  <p>Top 3 things cats hate:</p>\n  <ol>\n    <li>flea treatment</li>\n    <li>thunder</li>\n    <li>other cats</li>\n  </ol>\n  <input type=\"text\" placeholder=\"cat photo URL\">\n</main>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>\n\n  <a href=\"#\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n\n  <p>Things cats love:</p>\n  <ul>\n    <li>catnip</li>\n    <li>laser pointers</li>\n    <li>lasagna</li>\n  </ul>\n  <p>Top 3 things cats hate:</p>\n  <ol>\n    <li>flea treatment</li>\n    <li>thunder</li>\n    <li>other cats</li>\n  </ol>\n  <form action=\"https://www.freecatphotoapp.com/submit-cat-photo\">\n    <input type=\"text\" placeholder=\"cat photo URL\">\n  </form>\n</main>",
+        "error": null,
+        "seed": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>\n\n  <a href=\"#\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n\n  <p>Things cats love:</p>\n  <ul>\n    <li>catnip</li>\n    <li>laser pointers</li>\n    <li>lasagna</li>\n  </ul>\n  <p>Top 3 things cats hate:</p>\n  <ol>\n    <li>flea treatment</li>\n    <li>thunder</li>\n    <li>other cats</li>\n  </ol>\n  <form action=\"https://www.freecatphotoapp.com/submit-cat-photo\">\n    <input type=\"text\" placeholder=\"cat photo URL\">\n  </form>\n</main>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The existing <code>input</code> element should be nested within a <code>form</code> element.</p>",
+      "testString": "const inputElem = document.querySelector('form input');\nassert(\n  inputElem.getAttribute('type') === 'text' &&\n    inputElem.getAttribute('placeholder') === 'cat photo URL'\n);"
+    },
+    {
+      "text": "<p>Your <code>form</code> should have an <code>action</code> attribute which is set to <code>https://www.freecatphotoapp.com/submit-cat-photo</code>.</p>",
+      "testString": "const action = $('form').attr('action');\nassert(action.match(/^https:\\/\\/(www\\.)?freecatphotoapp\\.com\\/submit-cat-photo$/i))"
+    },
+    {
+      "text": "<p>Your <code>form</code> element should have well-formed open and close tags.</p>",
+      "testString": "assert(\n  code.match(/<\\/form>/g) &&\n    code.match(/<form [^<]*>/g) &&\n    code.match(/<\\/form>/g).length === code.match(/<form [^<]*>/g).length\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can build web forms that actually submit data to a server using nothing more than pure HTML. You can do this by specifying an <code>action</code> attribute on your <code>form</code> element.</p>\n<p>For example:</p>\n<pre><code class=\"language-html\">&#x3C;form action=\"url-where-you-want-to-submit-form-data\">\n  &#x3C;input>\n&#x3C;/form>\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Nest the existing <code>input</code> element inside a <code>form</code> element and assign <code>\"https://www.freecatphotoapp.com/submit-cat-photo\"</code> to the <code>action</code> attribute of the <code>form</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-html-and-html5",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

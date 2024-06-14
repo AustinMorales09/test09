@@ -1,0 +1,85 @@
+{
+  "id": "6604080b66ff6e942d8225b1",
+  "title": "Step 36",
+  "challengeType": 0,
+  "dashedName": "step-36",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n    <title>Calorie Counter</title>\n  </head>\n  <body>\n    <main>\n      <h1>Calorie Counter</h1>\n      <div class=\"container\">\n        <form id=\"calorie-counter\">\n          <label for=\"budget\">Budget</label>\n          <input\n            type=\"number\"\n            min=\"0\"\n            id=\"budget\"\n            placeholder=\"Daily calorie budget\"\n            required\n          />\n          <fieldset id=\"breakfast\">\n            <legend>Breakfast</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <fieldset id=\"lunch\">\n            <legend>Lunch</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <fieldset id=\"dinner\">\n            <legend>Dinner</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <fieldset id=\"snacks\">\n            <legend>Snacks</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <fieldset id=\"exercise\">\n            <legend>Exercise</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <div class=\"controls\">\n            <span>\n              <label for=\"entry-dropdown\">Add food or exercise:</label>\n              <select id=\"entry-dropdown\" name=\"options\">\n                <option value=\"breakfast\" selected>Breakfast</option>\n                <option value=\"lunch\">Lunch</option>\n                <option value=\"dinner\">Dinner</option>\n                <option value=\"snacks\">Snacks</option>\n                <option value=\"exercise\">Exercise</option>\n              </select>\n              <button type=\"button\" id=\"add-entry\">Add Entry</button>\n            </span>\n          </div>\n          <div>\n            <button type=\"submit\">\n              Calculate Remaining Calories\n            </button>\n            <button type=\"button\" id=\"clear\">Clear</button>\n          </div>\n        </form>\n        <div id=\"output\" class=\"output hide\"></div>\n      </div>\n    </main>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n    <title>Calorie Counter</title>\n  </head>\n  <body>\n    <main>\n      <h1>Calorie Counter</h1>\n      <div class=\"container\">\n        <form id=\"calorie-counter\">\n          <label for=\"budget\">Budget</label>\n          <input\n            type=\"number\"\n            min=\"0\"\n            id=\"budget\"\n            placeholder=\"Daily calorie budget\"\n            required\n          />\n          <fieldset id=\"breakfast\">\n            <legend>Breakfast</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <fieldset id=\"lunch\">\n            <legend>Lunch</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <fieldset id=\"dinner\">\n            <legend>Dinner</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <fieldset id=\"snacks\">\n            <legend>Snacks</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <fieldset id=\"exercise\">\n            <legend>Exercise</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <div class=\"controls\">\n            <span>\n              <label for=\"entry-dropdown\">Add food or exercise:</label>\n              <select id=\"entry-dropdown\" name=\"options\">\n                <option value=\"breakfast\" selected>Breakfast</option>\n                <option value=\"lunch\">Lunch</option>\n                <option value=\"dinner\">Dinner</option>\n                <option value=\"snacks\">Snacks</option>\n                <option value=\"exercise\">Exercise</option>\n              </select>\n              <button type=\"button\" id=\"add-entry\">Add Entry</button>\n            </span>\n          </div>\n          <div>\n            <button type=\"submit\">\n              Calculate Remaining Calories\n            </button>\n            <button type=\"button\" id=\"clear\">Clear</button>\n          </div>\n        </form>\n        <div id=\"output\" class=\"output hide\"></div>\n      </div>\n    </main>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": ":root {\n  --light-grey: #f5f6f7;\n  --dark-blue: #0a0a23;\n  --fcc-blue: #1b1b32;\n  --light-yellow: #fecc4c;\n  --dark-yellow: #feac32;\n  --light-pink: #ffadad;\n  --dark-red: #850000;\n  --light-green: #acd157;\n}\n\nbody {\n  font-family: \"Lato\", Helvetica, Arial, sans-serif;\n  font-size: 18px;\n  background-color: var(--fcc-blue);\n  color: var(--light-grey);\n}\n\nh1 {\n  text-align: center;\n}\n\n.container {\n  width: 90%;\n  max-width: 680px;\n}\n\nh1,\n.container,\n.output {\n  margin: 20px auto;\n}\n\nlabel,\nlegend {\n  font-weight: bold;\n}\n\n.input-container {\n  display: flex;\n  flex-direction: column;\n}\n\nbutton {\n  cursor: pointer;\n  text-decoration: none;\n  background-color: var(--light-yellow);\n  border: 2px solid var(--dark-yellow);\n}\n\nbutton,\ninput,\nselect {\n  min-height: 24px;\n  color: var(--dark-blue);\n}\n\nfieldset,\nlabel,\nbutton,\ninput,\nselect {\n  margin-bottom: 10px;\n}\n\n.output {\n  border: 2px solid var(--light-grey);\n  padding: 10px;\n  text-align: center;\n}\n\n.hide {\n  display: none;\n}\n\n.output span {\n  font-weight: bold;\n  font-size: 1.2em;\n}\n\n.surplus {\n  color: var(--light-pink);\n}\n\n.deficit {\n  color: var(--light-green);\n}",
+      "error": null,
+      "seed": ":root {\n  --light-grey: #f5f6f7;\n  --dark-blue: #0a0a23;\n  --fcc-blue: #1b1b32;\n  --light-yellow: #fecc4c;\n  --dark-yellow: #feac32;\n  --light-pink: #ffadad;\n  --dark-red: #850000;\n  --light-green: #acd157;\n}\n\nbody {\n  font-family: \"Lato\", Helvetica, Arial, sans-serif;\n  font-size: 18px;\n  background-color: var(--fcc-blue);\n  color: var(--light-grey);\n}\n\nh1 {\n  text-align: center;\n}\n\n.container {\n  width: 90%;\n  max-width: 680px;\n}\n\nh1,\n.container,\n.output {\n  margin: 20px auto;\n}\n\nlabel,\nlegend {\n  font-weight: bold;\n}\n\n.input-container {\n  display: flex;\n  flex-direction: column;\n}\n\nbutton {\n  cursor: pointer;\n  text-decoration: none;\n  background-color: var(--light-yellow);\n  border: 2px solid var(--dark-yellow);\n}\n\nbutton,\ninput,\nselect {\n  min-height: 24px;\n  color: var(--dark-blue);\n}\n\nfieldset,\nlabel,\nbutton,\ninput,\nselect {\n  margin-bottom: 10px;\n}\n\n.output {\n  border: 2px solid var(--light-grey);\n  padding: 10px;\n  text-align: center;\n}\n\n.hide {\n  display: none;\n}\n\n.output span {\n  font-weight: bold;\n  font-size: 1.2em;\n}\n\n.surplus {\n  color: var(--light-pink);\n}\n\n.deficit {\n  color: var(--light-green);\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        17,
+        19
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const calorieCounter = document.getElementById('calorie-counter');\nconst budgetNumberInput = document.getElementById('budget');\nconst entryDropdown = document.getElementById('entry-dropdown');\nconst addEntryButton = document.getElementById('add-entry');\nconst clearButton = document.getElementById('clear');\nconst output = document.getElementById('output');\nlet isError = false;\n\nfunction cleanInputString(str) {\n  const regex = /[+-\\s]/g;\n  return str.replace(regex, '');\n}\n\nfunction isInvalidInput(str) {\n  const regex = /\\d+e\\d+/i;\n  return str.match(regex);\n}\nconsole.log(isInvalidInput(\"1e3\"));",
+      "error": null,
+      "seed": "const calorieCounter = document.getElementById('calorie-counter');\nconst budgetNumberInput = document.getElementById('budget');\nconst entryDropdown = document.getElementById('entry-dropdown');\nconst addEntryButton = document.getElementById('add-entry');\nconst clearButton = document.getElementById('clear');\nconst output = document.getElementById('output');\nlet isError = false;\n\nfunction cleanInputString(str) {\n  const regex = /[+-\\s]/g;\n  return str.replace(regex, '');\n}\n\nfunction isInvalidInput(str) {\n  const regex = /\\d+e\\d+/i;\n  return str.match(regex);\n}\nconsole.log(isInvalidInput(\"1e3\"));"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>console.log</code> below your <code>isInvalidInput</code> function.</p>",
+      "testString": "assert.match(code, /console.log\\(/);"
+    },
+    {
+      "text": "<p>Your console statement should have the value of <code>isInvalidInput(\"10\")</code>.</p>",
+      "testString": "assert.match(code, /console.log\\(isInvalidInput\\(('|\")10\\s*\\1\\);?\\)/);\n"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When you open the console, you should see this result:</p>\n<pre><code class=\"language-js\">[ '1e3', index: 0, input: '1e3', groups: undefined ]\n</code></pre>\n<p>The <code>match</code> method returns an array with any matches found in the string.</p>\n<p>Here is a complete breakdown of that information:</p>\n<ul>\n<li><code>\"1e3\"</code> is the matched value against the <code>/\\d+e\\d+/i</code> regex.</li>\n<li><code>index: 0</code> is the index of the matched value in the string.</li>\n<li><code>input: '1e3'</code> is the original string that was matched.</li>\n<li><code>groups: undefined</code> are the matched groups, which are not used in this case. You will learn more about groups in a later project.</li>\n</ul>\n<p>Now it is time to test for a valid input. Update your console statement to the following: <code>console.log(isInvalidInput(\"10\"))</code>.</p>\n<p>Open up the console to see the result. You will learn more about what this result means in the next step.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-form-validation-by-building-a-calorie-counter",
+  "hasEditableBoundaries": true,
+  "order": 4,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

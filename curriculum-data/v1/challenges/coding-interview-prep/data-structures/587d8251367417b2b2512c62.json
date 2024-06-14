@@ -1,0 +1,78 @@
+{
+  "id": "587d8251367417b2b2512c62",
+  "title": "Create a Linked List Class",
+  "challengeType": 1,
+  "forumTopicId": 301628,
+  "dashedName": "create-a-linked-list-class",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function LinkedList() {\n  var length = 0;\n  var head = null;\n\n  var Node = function(element){\n    this.element = element;\n    this.next = null;\n  };\n\n  this.head = function(){\n    return head;\n  };\n\n  this.size = function(){\n    return length;\n  };\n\n  this.add = function(element){\n    // Only change code below this line\n\n    // Only change code above this line\n  };\n}",
+      "error": null,
+      "seed": "function LinkedList() {\n  var length = 0;\n  var head = null;\n\n  var Node = function(element){\n    this.element = element;\n    this.next = null;\n  };\n\n  this.head = function(){\n    return head;\n  };\n\n  this.size = function(){\n    return length;\n  };\n\n  this.add = function(element){\n    // Only change code below this line\n\n    // Only change code above this line\n  };\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function LinkedList() { \n  var length = 0; \n  var head = null; \n\n  var Node = function(element){\n    this.element = element; \n    this.next = null; \n  }; \n\n  this.head = function(){\n    return head;\n  };\n\n  this.size = function(){\n    return length;\n  };\n\n  this.add = function(element){\n    // Only change code below this line\n    if (head == null) {\n      head = new Node(element);\n    } \n    else {\n      let currentNode = head;\n      while (currentNode.next != null) {\n        // currentNode.next will be last node of linked list after loop\n        currentNode = currentNode.next;\n      }\n      currentNode.next = new Node(element);\n    }\n    length++;\n    // Only change code above this line\n  };\n}",
+        "error": null,
+        "seed": "function LinkedList() { \n  var length = 0; \n  var head = null; \n\n  var Node = function(element){\n    this.element = element; \n    this.next = null; \n  }; \n\n  this.head = function(){\n    return head;\n  };\n\n  this.size = function(){\n    return length;\n  };\n\n  this.add = function(element){\n    // Only change code below this line\n    if (head == null) {\n      head = new Node(element);\n    } \n    else {\n      let currentNode = head;\n      while (currentNode.next != null) {\n        // currentNode.next will be last node of linked list after loop\n        currentNode = currentNode.next;\n      }\n      currentNode.next = new Node(element);\n    }\n    length++;\n    // Only change code above this line\n  };\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>LinkedList</code> class should have a <code>add</code> method.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new LinkedList();\n    return typeof test.add === 'function';\n  })()\n);"
+    },
+    {
+      "text": "<p>Your <code>LinkedList</code> class should assign <code>head</code> to the first node added.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new LinkedList();\n    test.add('cat');\n    return test.head().element === 'cat';\n  })()\n);"
+    },
+    {
+      "text": "<p>The previous <code>node</code> in your <code>LinkedList</code> class should have reference to the newest node created.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new LinkedList();\n    test.add('cat');\n    test.add('dog');\n    test.add('fish');\n    return test.head().next.element === 'dog' && test.head().next.next.element === 'fish';\n  })()\n);"
+    },
+    {
+      "text": "<p>The  <code>size</code> of your <code>LinkedList</code> class should equal the amount of nodes in the linked list.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new LinkedList();\n    test.add('cat');\n    test.add('dog');\n    return test.size() === 2;\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let's create a <code>linked list</code> class. Every linked list should start out with a few basic properties: a <code>head</code> (the first item in your list) and a <code>length</code> (number of items in your list). Sometimes you'll see implementations of linked lists that incorporate a <code>tail</code> for the last element of the list, but for now we'll just stick with these two. Whenever we add an element to the linked list, our <code>length</code> property should be incremented by one.</p>\n<p>We'll want to have a way to add items to our linked list, so the first method we'll want to create is the <code>add</code> method.</p>\n<p>If our list is empty, adding an element to our linked list is straightforward enough: we just wrap that element in a <code>Node</code> class, and we assign that node to the <code>head</code> of our linked list.</p>\n<p>But what if our list already has one or more members? How do we add an element to the list? Recall that each node in a linked list has a <code>next</code> property. To add a node to the list, find the last node in the list, and point that last node's <code>next</code> property at our new node. (Hint: you know you've reached the end of a linked list when a node's <code>next</code> property is <code>null</code>.)</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write an add method that assigns the first node you push to the linked list to the <code>head</code>; after that, whenever adding a node, every node should be referenced by the previous node's <code>next</code> property.</p>\n<p>Note</p>\n<p>Your list's <code>length</code> should increase by one every time an element is added to the linked list.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-structures",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

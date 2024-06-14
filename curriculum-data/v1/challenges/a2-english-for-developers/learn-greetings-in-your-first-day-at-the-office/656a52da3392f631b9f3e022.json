@@ -1,0 +1,83 @@
+{
+  "id": "656a52da3392f631b9f3e022",
+  "title": "Task 51",
+  "challengeType": 22,
+  "dashedName": "task-51",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It is good to _ _ a little instead of just _ all the time.</p>",
+    "blanks": [
+      {
+        "answer": "stand",
+        "feedback": "<p>Think of the two actions that are commonly contrasted in discussions about office ergonomics.</p>"
+      },
+      {
+        "answer": "up",
+        "feedback": "<p>Think of the two actions that are commonly contrasted in discussions about office ergonomics.</p>"
+      },
+      {
+        "answer": "sitting",
+        "feedback": "<p>Think of the two actions that are commonly contrasted in discussions about office ergonomics.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.96,
+        "finishTimestamp": 22.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.46,
+        "dialogue": {
+          "text": "It's good to stand up a little instead of just sitting all the time.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 3.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In workplaces, especially in offices, there's a focus on ergonomics and health. One popular discussion is about the benefits of standing instead of sitting continuously. <code>Stand up</code> refers to the action of rising from a sitting position, while <code>sitting</code> means being in a position where one's weight is supported by one's buttocks rather than one's feet.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 52,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "65f4386ef80894a17d6b1f3d",
+  "title": "Task 9",
+  "challengeType": 22,
+  "dashedName": "task-9",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I _ _ understand the logic better.</p>",
+    "blanks": [
+      {
+        "answer": "should",
+        "feedback": "<p>This word suggests a recommendation or advice from Brian to himself.</p>"
+      },
+      {
+        "answer": "probably",
+        "feedback": "<p>This word adds a sense of likelihood or possibility to Brian's suggestion.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.82,
+        "finishTimestamp": 20.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 3.2,
+        "dialogue": {
+          "text": "I should probably understand the logic better.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 3.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and complete the sentence.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

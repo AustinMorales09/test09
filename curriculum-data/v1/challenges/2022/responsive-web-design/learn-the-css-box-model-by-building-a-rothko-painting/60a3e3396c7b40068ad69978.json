@@ -1,0 +1,69 @@
+{
+  "id": "60a3e3396c7b40068ad69978",
+  "title": "Step 15",
+  "challengeType": 0,
+  "dashedName": "step-15",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        12
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": ".canvas {\n  width: 500px;\n  height: 600px;\n  background-color: #4d0f00;\n}\n\n.frame {\n  border: 50px solid black;\n  width: 500px;\n  padding: 50px;\n\n}",
+      "error": null,
+      "seed": ".canvas {\n  width: 500px;\n  height: 600px;\n  background-color: #4d0f00;\n}\n\n.frame {\n  border: 50px solid black;\n  width: 500px;\n  padding: 50px;\n\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n    <link href=\"./styles.css\" rel=\"stylesheet\">\n  </head>\n  <body>\n    <div class=\"frame\">\n      <div class=\"canvas\">\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n    <link href=\"./styles.css\" rel=\"stylesheet\">\n  </head>\n  <body>\n    <div class=\"frame\">\n      <div class=\"canvas\">\n      </div>\n    </div>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should set the <code>margin</code> property to <code>20px auto</code>.</p>",
+      "testString": "const hasMargin = new __helpers.CSSHelp(document).getCSSRules().some(x => x.style.margin === '20px auto');\nassert(hasMargin);"
+    },
+    {
+      "text": "<p>Your <code>.frame</code> element should have a <code>margin</code> value of <code>20px auto</code>.</p>",
+      "testString": "const frameMargin = new __helpers.CSSHelp(document).getStyle('.frame')?.getPropertyValue('margin');\nassert(frameMargin === '20px auto');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Use margins to adjust the spacing outside of an element.</p>\n<p>Using the <code>margin</code> property, give the <code>.frame</code> element vertical margin of <code>20px</code>, and horizontal margin of <code>auto</code>. This will move the frame down 20 pixels and horizontally center it on the page.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-css-box-model-by-building-a-rothko-painting",
+  "hasEditableBoundaries": true,
+  "order": 5,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

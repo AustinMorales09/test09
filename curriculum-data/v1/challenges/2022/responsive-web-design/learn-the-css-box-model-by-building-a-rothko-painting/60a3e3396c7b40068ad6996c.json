@@ -1,0 +1,49 @@
+{
+  "id": "60a3e3396c7b40068ad6996c",
+  "title": "Step 3",
+  "challengeType": 0,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n  </head>\n  <body>\n    <img src=\"https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-1.png\">\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n  </head>\n  <body>\n    <img src=\"https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-1.png\">\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>img</code> element should have a <code>src</code> of <code>https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-2.png</code></p>",
+      "testString": "assert(document.querySelector('img').getAttribute('src') === 'https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-2.png');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In the CSS box model, every HTML element is treated as a box with four areas.</p>\n<p>Imagine you receive a box from your favorite online retailer -- the content is the item in the box, or in our case, a header, paragraph, or image element.</p>\n<p>Change the <code>src</code> attribute in the <code>&#x3C;img></code> from <code>https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-1.png</code> to <code>https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-2.png</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-css-box-model-by-building-a-rothko-painting",
+  "hasEditableBoundaries": true,
+  "order": 5,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

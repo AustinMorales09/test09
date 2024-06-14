@@ -1,0 +1,57 @@
+{
+  "id": "660ef5105b8ba095307a0e50",
+  "title": "Step 6",
+  "challengeType": 1,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nconsole.log(character);\ncharacter = \"World\";\n",
+      "error": null,
+      "seed": "let character = 'Hello';\nconsole.log(character);\ncharacter = \"World\";\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>console.log</code> a second time.</p>",
+      "testString": "assert.lengthOf(code.match(/console\\.log/g), 2);"
+    },
+    {
+      "text": "<p>You should log <code>character</code> to the console a second time.</p>",
+      "testString": "assert.lengthOf(code.match(/console\\.log\\(\\s*character\\s*\\)/g), 2);"
+    },
+    {
+      "text": "<p>Your new <code>console.log()</code> should come after your reassignment.</p>",
+      "testString": "const reassign = code.split(/\\n+/).findIndex(l => l.match(/character\\s+=\\s+(\"|')World\\1/));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now log your <code>character</code> variable to the console again. You should see the string <code>\"Hello\"</code>, then the string <code>\"World\"</code>, in the console.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

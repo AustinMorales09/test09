@@ -1,0 +1,57 @@
+{
+  "id": "6610b9f7619764fad5fd516d",
+  "title": "Step 10",
+  "challengeType": 1,
+  "dashedName": "step-10",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        6
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nconsole.log(character);\ncharacter = \"World\";\nlet secondCharacter;\nsecondCharacter = \"Test\";\nconsole.log(secondCharacter);",
+      "error": null,
+      "seed": "let character = 'Hello';\nconsole.log(character);\ncharacter = \"World\";\nlet secondCharacter;\nsecondCharacter = \"Test\";\nconsole.log(secondCharacter);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not assign the value <code>\"Test\"</code> to your <code>secondCharacter</code> variable.</p>",
+      "testString": "assert.notEqual(secondCharacter, \"Test\");"
+    },
+    {
+      "text": "<p>You should assign the value of the <code>character</code> variable to your <code>secondCharacter</code> variable. Don't forget your semi-colon.</p>",
+      "testString": "assert.match(code, /secondCharacter\\s*=\\s*character;/);"
+    },
+    {
+      "text": "<p>Your <code>secondCharacter</code> variable should now have the value <code>\"World\"</code>.</p>",
+      "testString": "assert.equal(secondCharacter, \"World\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can also assign the value of a variable to another variable. For example:</p>\n<pre><code class=\"language-js\">let first = \"One\";\nlet second = \"Two\";\nsecond = first;\n</code></pre>\n<p>The <code>second</code> variable would now have the value <code>\"One\"</code>.</p>\n<p>To see this in action, change your <code>secondCharacter</code> assignment from <code>\"Test\"</code> to your <code>character</code> variable.</p>\n<p>Then open the console to see what gets logged.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

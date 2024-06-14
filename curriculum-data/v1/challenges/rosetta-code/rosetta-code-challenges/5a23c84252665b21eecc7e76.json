@@ -1,0 +1,89 @@
+{
+  "id": "5a23c84252665b21eecc7e76",
+  "title": "Gamma function",
+  "challengeType": 1,
+  "forumTopicId": 302271,
+  "dashedName": "gamma-function",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "function round(x) {\n  return Number(x).toPrecision(13);\n}",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function gamma(x) {\n\n}",
+      "error": null,
+      "seed": "function gamma(x) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function gamma(x) {\n  var p = [0.99999999999980993, 676.5203681218851, -1259.1392167224028,\n  771.32342877765313, -176.61502916214059, 12.507343278686905,\n  -0.13857109526572012, 9.9843695780195716e-6, 1.5056327351493116e-7\n  ];\n\n  var g = 7;\n  if (x < 0.5) {\n    return Math.PI / (Math.sin(Math.PI * x) * gamma(1 - x));\n  }\n\n  x -= 1;\n  var a = p[0];\n  var t = x + g + 0.5;\n  for (var i = 1; i < p.length; i++) {\n  a += p[i] / (x + i);\n  }\n\n  var result=Math.sqrt(2 * Math.PI) * Math.pow(t, x + 0.5) * Math.exp(-t) * a;\n\n  return result;\n}",
+        "error": null,
+        "seed": "function gamma(x) {\n  var p = [0.99999999999980993, 676.5203681218851, -1259.1392167224028,\n  771.32342877765313, -176.61502916214059, 12.507343278686905,\n  -0.13857109526572012, 9.9843695780195716e-6, 1.5056327351493116e-7\n  ];\n\n  var g = 7;\n  if (x < 0.5) {\n    return Math.PI / (Math.sin(Math.PI * x) * gamma(1 - x));\n  }\n\n  x -= 1;\n  var a = p[0];\n  var t = x + g + 0.5;\n  for (var i = 1; i < p.length; i++) {\n  a += p[i] / (x + i);\n  }\n\n  var result=Math.sqrt(2 * Math.PI) * Math.pow(t, x + 0.5) * Math.exp(-t) * a;\n\n  return result;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>gamma</code> should be a function.</p>",
+      "testString": "assert(typeof gamma == 'function');"
+    },
+    {
+      "text": "<p><code>gamma(.1)</code> should return a number.</p>",
+      "testString": "assert(typeof gamma(0.1) == 'number');"
+    },
+    {
+      "text": "<p><code>gamma(.1)</code> should return <code>9.513507698668736</code>.</p>",
+      "testString": "assert.equal(round(gamma(0.1)), round(9.513507698668736));"
+    },
+    {
+      "text": "<p><code>gamma(.2)</code> should return <code>4.590843711998803</code>.</p>",
+      "testString": "assert.equal(round(gamma(0.2)), round(4.590843711998803));"
+    },
+    {
+      "text": "<p><code>gamma(.3)</code> should return <code>2.9915689876875904</code>.</p>",
+      "testString": "assert.equal(round(gamma(0.3)), round(2.9915689876875904));"
+    },
+    {
+      "text": "<p><code>gamma(.4)</code> should return <code>2.218159543757687</code>.</p>",
+      "testString": "assert.equal(round(gamma(0.4)), round(2.218159543757687));"
+    },
+    {
+      "text": "<p><code>gamma(.5)</code> should return <code>1.7724538509055159</code>.</p>",
+      "testString": "assert.equal(round(gamma(0.5)), round(1.7724538509055159));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Implement one algorithm (or more) to compute the Gamma function (in the real field only).</p>\n<p>The Gamma function can be defined as:</p>\n<div style='padding-left: 4em;'><big><big>$\\Gamma(x) = \\displaystyle\\int_0^\\infty t^{x-1}e^{-t} dt$</big></big></div>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 54,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

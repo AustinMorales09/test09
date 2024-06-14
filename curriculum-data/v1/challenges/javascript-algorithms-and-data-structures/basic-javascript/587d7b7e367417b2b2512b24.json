@@ -1,0 +1,78 @@
+{
+  "id": "587d7b7e367417b2b2512b24",
+  "title": "Use the Conditional (Ternary) Operator",
+  "challengeType": 1,
+  "forumTopicId": 301181,
+  "dashedName": "use-the-conditional-ternary-operator",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function checkEqual(a, b) {\n\n}\n\ncheckEqual(1, 2);",
+      "error": null,
+      "seed": "function checkEqual(a, b) {\n\n}\n\ncheckEqual(1, 2);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function checkEqual(a, b) {\n  return a === b ? \"Equal\" : \"Not Equal\";\n}",
+        "error": null,
+        "seed": "function checkEqual(a, b) {\n  return a === b ? \"Equal\" : \"Not Equal\";\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>checkEqual</code> should use the conditional operator</p>",
+      "testString": "assert(/.+?\\s*?\\?\\s*?.+?\\s*?:\\s*?.+?/.test(__helpers.removeJSComments(code)));"
+    },
+    {
+      "text": "<p><code>checkEqual(1, 2)</code> should return the string <code>Not Equal</code></p>",
+      "testString": "assert(checkEqual(1, 2) === 'Not Equal');"
+    },
+    {
+      "text": "<p><code>checkEqual(1, 1)</code> should return the string <code>Equal</code></p>",
+      "testString": "assert(checkEqual(1, 1) === 'Equal');"
+    },
+    {
+      "text": "<p><code>checkEqual(1, -1)</code> should return the string <code>Not Equal</code></p>",
+      "testString": "assert(checkEqual(1, -1) === 'Not Equal');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <dfn>conditional operator</dfn>, also called the <dfn>ternary operator</dfn>, can be used as a one line if-else expression.</p>\n<p>The syntax is <code>a ? b : c</code>, where <code>a</code> is the condition, <code>b</code> is the code to run when the condition returns <code>true</code>, and <code>c</code> is the code to run when the condition returns <code>false</code>.</p>\n<p>The following function uses an <code>if/else</code> statement to check a condition:</p>\n<pre><code class=\"language-js\">function findGreater(a, b) {\n  if(a > b) {\n    return \"a is greater\";\n  }\n  else {\n    return \"b is greater or equal\";\n  }\n}\n</code></pre>\n<p>This can be re-written using the conditional operator:</p>\n<pre><code class=\"language-js\">function findGreater(a, b) {\n  return a > b ? \"a is greater\" : \"b is greater or equal\";\n}\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use the conditional operator in the <code>checkEqual</code> function to check if two numbers are equal or not. The function should return either the string <code>Equal</code> or the string <code>Not Equal</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 109,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

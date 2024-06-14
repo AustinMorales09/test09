@@ -1,0 +1,79 @@
+{
+  "id": "656a45d4f36ea1448aa359d2",
+  "title": "Task 36",
+  "challengeType": 22,
+  "dashedName": "task-36",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That sounds interesting! Are you _ any new tools or strategies to create _ content?</p>",
+    "blanks": [
+      {
+        "answer": "using",
+        "feedback": "<p>Utilize tools or strategies.</p>"
+      },
+      {
+        "answer": "engaging",
+        "feedback": "<p>Describes content that captures and holds interest.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 25.84,
+        "finishTimestamp": 31.34
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 6.5,
+        "dialogue": {
+          "text": "That sounds interesting. Are you using any new tools or strategies to create engaging content?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Engaging</code> means interesting or able to attract attention. For example:</p>\n<p><code>She writes engaging stories</code> means her stories are very interesting.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 39,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

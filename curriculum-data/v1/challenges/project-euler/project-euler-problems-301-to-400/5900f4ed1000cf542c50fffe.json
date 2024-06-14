@@ -1,0 +1,65 @@
+{
+  "id": "5900f4ed1000cf542c50fffe",
+  "title": "Problem 384: Rudin-Shapiro sequence",
+  "challengeType": 1,
+  "forumTopicId": 302048,
+  "dashedName": "problem-384-rudin-shapiro-sequence",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function rudinShapiroSequence() {\n\n  return true;\n}\n\nrudinShapiroSequence();",
+      "error": null,
+      "seed": "function rudinShapiroSequence() {\n\n  return true;\n}\n\nrudinShapiroSequence();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>rudinShapiroSequence()</code> should return <code>3354706415856333000</code>.</p>",
+      "testString": "assert.strictEqual(rudinShapiroSequence(), 3354706415856333000);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Define the sequence $a(n)$ as the number of adjacent pairs of ones in the binary expansion of $n$ (possibly overlapping).</p>\n<p>E.g.: $a(5) = a({101}_2) = 0$, $a(6) = a({110}_2) = 1$, $a(7) = a({111}_2) = 2$</p>\n<p>Define the sequence $b(n) = {(-1)}^{a(n)}$. This sequence is called the Rudin-Shapiro sequence.</p>\n<p>Also consider the summatory sequence of $b(n)$: $s(n) = \\displaystyle\\sum_{i = 0}^{n} b(i)$.</p>\n<p>The first couple of values of these sequences are:</p>\n<p>$$\\begin{array}{lr}\nn    &#x26; 0 &#x26; 1 &#x26; 2 &#x26;  3 &#x26; 4 &#x26; 5 &#x26;  6 &#x26; 7 \\\\\na(n) &#x26; 0 &#x26; 0 &#x26; 0 &#x26;  1 &#x26; 0 &#x26; 0 &#x26;  1 &#x26; 2 \\\\\nb(n) &#x26; 1 &#x26; 1 &#x26; 1 &#x26; -1 &#x26; 1 &#x26; 1 &#x26; -1 &#x26; 1 \\\\\ns(n) &#x26; 1 &#x26; 2 &#x26; 3 &#x26;  2 &#x26; 3 &#x26; 4 &#x26;  3 &#x26; 4\n\\end{array}$$</p>\n<p>The sequence $s(n)$ has the remarkable property that all elements are positive and every positive integer $k$ occurs exactly $k$ times.</p>\n<p>Define $g(t, c)$, with $1 ≤ c ≤ t$, as the index in $s(n)$ for which $t$ occurs for the $c$'th time in $s(n)$.</p>\n<p>E.g.: $g(3, 3) = 6$, $g(4, 2) = 7$ and $g(54321, 12345) = 1\\,220\\,847\\,710$.</p>\n<p>Let $F(n)$ be the fibonacci sequence defined by:</p>\n<p>$$\\begin{align}\n&#x26; F(0) = F(1) = 1 \\text{ and} \\\\\n&#x26; F(n) = F(n - 1) + F(n - 2) \\text{ for } n > 1.\n\\end{align}$$</p>\n<p>Define $GF(t) = g(F(t), F(t - 1))$.</p>\n<p>Find $\\sum GF(t)$ for$ 2 ≤ t ≤ 45$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 83,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

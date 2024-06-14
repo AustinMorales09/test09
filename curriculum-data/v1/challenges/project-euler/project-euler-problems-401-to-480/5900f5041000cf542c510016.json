@@ -1,0 +1,65 @@
+{
+  "id": "5900f5041000cf542c510016",
+  "title": "Problem 407: Idempotents",
+  "challengeType": 1,
+  "forumTopicId": 302075,
+  "dashedName": "problem-407-idempotents",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function idempotents() {\n\n  return true;\n}\n\nidempotents();",
+      "error": null,
+      "seed": "function idempotents() {\n\n  return true;\n}\n\nidempotents();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>idempotents()</code> should return <code>39782849136421</code>.</p>",
+      "testString": "assert.strictEqual(idempotents(), 39782849136421);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>If we calculate $a^2\\bmod 6$ for $0 ≤ a ≤ 5$ we get: 0, 1, 4, 3, 4, 1.</p>\n<p>The largest value of a such that $a^2 ≡ a\\bmod 6$ is $4$.</p>\n<p>Let's call $M(n)$ the largest value of $a &#x3C; n$ such that $a^2 ≡ a (\\text{mod } n)$. So $M(6) = 4$.</p>\n<p>Find $\\sum M(n)$ for $1 ≤ n ≤ {10}^7$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

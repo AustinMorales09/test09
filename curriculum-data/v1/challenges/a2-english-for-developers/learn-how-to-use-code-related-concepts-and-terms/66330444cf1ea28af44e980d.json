@@ -1,0 +1,83 @@
+{
+  "id": "66330444cf1ea28af44e980d",
+  "title": "Task 26",
+  "challengeType": 22,
+  "dashedName": "task-26",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I see many functions in our code, but I'm not sure _ each of _ _.</p>",
+    "blanks": [
+      {
+        "answer": "what",
+        "feedback": "<p>This <code>wh-</code> word is used to ask for specific information about the function or role of the items being discussed.</p>"
+      },
+      {
+        "answer": "these",
+        "feedback": "<p>This pronoun refers to a specific group of items previously mentioned, in this case, the functions in the code.</p>"
+      },
+      {
+        "answer": "does",
+        "feedback": "<p>This verb is used to inquire about the action or role of each individual item.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.74,
+        "finishTimestamp": 13.52
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.78,
+        "dialogue": {
+          "text": "I see many functions in our code, but I'm not sure what each of these does.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.28
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Direct questions are straightforward inquiries that clearly ask for specific information. They typically invert the subject and the verb, like in <code>Are you sure?</code> This form is commonly used in everyday conversations, especially when quick and clear answers are needed.</p>\n<p>Indirect questions or statements, on the other hand, are more polite and less direct. They do not invert the subject and the verb and often begin with phrases like <code>I was wondering</code> or <code>Could you tell me</code>. For example, instead of asking <code>Where do you live?</code> you might say, <code>Could you tell me where you live?</code> This makes the question sound less abrupt and more polite, which is particularly useful in formal settings or when you're speaking with someone you don't know well.</p>\n<p>Examples:</p>\n<p>Direct question: <code>What time is it?</code> (inversion of verb <code>is</code> and subject <code>it</code>)</p>\n<p>Indirect statement: <code>Please tell me what time it is.</code> (no inversion)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

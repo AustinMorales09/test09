@@ -1,0 +1,57 @@
+{
+  "id": "5dfa2407b521be39a3de7be1",
+  "title": "Step 14",
+  "challengeType": 0,
+  "dashedName": "step-14",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        6,
+        8
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more <a href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more <a href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>p</code> element should have a nested anchor (<code>a</code>) element with the text <code>cat photos</code>. You may have deleted it or have a typo.</p>",
+      "testString": "const anchor = $('p > a');\nassert(\n  anchor.length &&\n    anchor[0].innerText.toLowerCase().replace(/\\s+/g, ' ') === 'cat photos'\n);"
+    },
+    {
+      "text": "<p>Your anchor (<code>a</code>) element does not have a <code>target</code> attribute. Check that there is a space after the opening tag's name and/or there are spaces before all attribute names.</p>",
+      "testString": "assert(document.querySelector('a').hasAttribute('target'));"
+    },
+    {
+      "text": "<p>The value of the <code>target</code> attribute should be <code>_blank</code>. You have either omitted the value or have a typo. Remember that attribute values should be surrounded with quotation marks.</p>",
+      "testString": "assert(document.querySelector('a').getAttribute('target') === '_blank');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To open links in a new tab, you can use the <code>target</code> attribute on the anchor (<code>a</code>) element.</p>\n<p>The <code>target</code> attribute specifies where to open the linked document. <code>target=\"_blank\"</code> opens the linked document in a new tab or window.</p>\n<p>Here is the basic syntax for an <code>a</code> element with a <code>target</code> attribute:</p>\n<pre><code class=\"language-html\">&#x3C;a href=\"https://www.freecodecamp.org\" target=\"_blank\">freeCodeCamp&#x3C;/a>\n</code></pre>\n<p>Add a <code>target</code> attribute with the value <code>_blank</code> to the anchor (<code>a</code>) element's opening tag, so that the link opens in a new tab.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

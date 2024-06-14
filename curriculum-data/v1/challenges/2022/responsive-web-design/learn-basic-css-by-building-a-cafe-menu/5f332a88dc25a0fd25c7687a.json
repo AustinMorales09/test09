@@ -1,0 +1,65 @@
+{
+  "id": "5f332a88dc25a0fd25c7687a",
+  "title": "Step 6",
+  "challengeType": 0,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        10
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n  </head>\n  <body>\n    <main>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n  </head>\n  <body>\n    <main>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an opening <code>&#x3C;h1></code> tag.</p>",
+      "testString": "assert(code.match(/<h1>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>&#x3C;/h1></code> tag.</p>",
+      "testString": "assert(code.match(/<\\/h1>/i));"
+    },
+    {
+      "text": "<p>You should not change your existing <code>main</code> element.</p>",
+      "testString": "assert($('main').length === 1);"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should be nested in your <code>main</code> element.</p>",
+      "testString": "assert($('h1')[0].parentElement.tagName === \"MAIN\");"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should have the text <code>CAMPER CAFE</code>.</p>",
+      "testString": "assert(code.match(/<h1>CAMPER CAFE<\\/h1>/));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The name of the cafe is <code>CAMPER CAFE</code>. Add an <code>h1</code> element within your <code>main</code> element. Give it the name of the cafe in capitalized letters to make it stand out.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

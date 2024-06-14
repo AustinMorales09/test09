@@ -1,0 +1,88 @@
+{
+  "id": "65d9664a976fb114cf9f1928",
+  "title": "Task 89",
+  "challengeType": 19,
+  "dashedName": "task-89",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Brian asking Sophie about?</p>",
+    "answers": [
+      {
+        "answer": "<p>How she divides her time between work and personal activities</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>How she spends her weekends</p>",
+        "feedback": "<p>Brian's question is broader, focusing on overall time management, not just weekends.</p>"
+      },
+      {
+        "answer": "<p>How she completes her office tasks</p>",
+        "feedback": "<p>The question specifically targets balancing work and life, not just completing work tasks.</p>"
+      },
+      {
+        "answer": "<p>How she plans her office meetings</p>",
+        "feedback": "<p>Brian is asking about her overall balance, not just about scheduling meetings.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 5.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 6.46,
+        "dialogue": {
+          "text": "Sophie, how do you manage your work-life balance and your responsibilities outside of the office?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 6.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 93,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

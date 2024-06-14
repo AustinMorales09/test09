@@ -1,0 +1,87 @@
+{
+  "id": "65d890f37666763b1c08e284",
+  "title": "Task 79",
+  "challengeType": 22,
+  "dashedName": "task-79",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Of course, _ _ _ _.</p>",
+    "blanks": [
+      {
+        "answer": "I'd",
+        "feedback": "<p>This contraction stands for <code>I would</code>, showing willingness to do something.</p>"
+      },
+      {
+        "answer": "be",
+        "feedback": "<p>It's used to link <code>I'd</code> with an adjective expressing a willingness or happiness to do something.</p>"
+      },
+      {
+        "answer": "happy",
+        "feedback": "<p>This word describes the feeling of being pleased or content to do something.</p>"
+      },
+      {
+        "answer": "to",
+        "feedback": "<p>This preposition is used before the base form of a verb.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 3.96,
+        "finishTimestamp": 5.54
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 2.58,
+        "dialogue": {
+          "text": "Of course. I'd be happy to.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 3.08
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>I'd be happy to</code> followed by a verb is a polite and positive way to agree to do something. <code>I'd</code> is a contraction of <code>I would</code>, which is used to talk about a willingness or offer to do something in the future.</p>\n<p>For example, if someone asks if you can help them study English, you can say, <code>I'd be happy to help</code>, meaning you are willing and pleased to help them.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 82,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

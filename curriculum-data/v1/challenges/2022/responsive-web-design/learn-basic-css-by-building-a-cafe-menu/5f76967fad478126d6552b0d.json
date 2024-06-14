@@ -1,0 +1,73 @@
+{
+  "id": "5f76967fad478126d6552b0d",
+  "title": "Step 34",
+  "challengeType": 0,
+  "dashedName": "step-34",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        17,
+        19
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article>\n            <p class=\"flavor\">French Vanilla</p>\n            <p>3.00</p>\n          </article>\n          <article>\n            <p>Caramel Macchiato</p>\n            <p>3.75</p>\n          </article>\n          <article>\n            <p>Pumpkin Spice</p>\n            <p>3.50</p>\n          </article>\n          <article>\n            <p>Hazelnut</p>\n            <p>4.00</p>\n          </article>\n          <article>\n            <p>Mocha</p>\n            <p>4.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article>\n            <p class=\"flavor\">French Vanilla</p>\n            <p>3.00</p>\n          </article>\n          <article>\n            <p>Caramel Macchiato</p>\n            <p>3.75</p>\n          </article>\n          <article>\n            <p>Pumpkin Spice</p>\n            <p>3.50</p>\n          </article>\n          <article>\n            <p>Hazelnut</p>\n            <p>4.00</p>\n          </article>\n          <article>\n            <p>Mocha</p>\n            <p>4.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.flavor {\n  text-align: left;\n}",
+      "error": null,
+      "seed": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.flavor {\n  text-align: left;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add the <code>price</code> class to your <code>p</code> element.</p>",
+      "testString": "const el = document.querySelector('p.price');\nassert.exists(el);"
+    },
+    {
+      "text": "<p>You should only have one element with the <code>price</code> class.</p>",
+      "testString": "const elements = document.querySelectorAll('.price');\nassert.lengthOf(elements, 1);"
+    },
+    {
+      "text": "<p>Your <code>price</code> class should be on the <code>p</code> element with the text <code>3.00</code>.</p>",
+      "testString": "const el = document.querySelector('.price');\nassert.equal(el.innerText, \"3.00\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Next, you want to align the price to the right. Add a class named <code>price</code> to your <code>p</code> element that has <code>3.00</code> as its text.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 33,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

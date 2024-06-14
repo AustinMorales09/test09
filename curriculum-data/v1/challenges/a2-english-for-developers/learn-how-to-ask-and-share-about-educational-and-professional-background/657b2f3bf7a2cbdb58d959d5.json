@@ -1,0 +1,88 @@
+{
+  "id": "657b2f3bf7a2cbdb58d959d5",
+  "title": "Task 83",
+  "challengeType": 19,
+  "dashedName": "task-83",
+  "solutions": [],
+  "question": {
+    "text": "<p>When someone mentions in a discussion about changes, <code>I switched careers last year.</code> What does <code>last year</code> indicate about the timing of their career change?</p>",
+    "answers": [
+      {
+        "answer": "<p>They are planning to switch careers in the near future</p>",
+        "feedback": "<p>This suggests a future action, but <code>last year</code> indicates the change already occurred in the past.</p>"
+      },
+      {
+        "answer": "<p>They have been considering a career change for a long time</p>",
+        "feedback": "<p>Though they might have considered it for a long time, <code>last year</code> specifically identifies when the change took place.</p>"
+      },
+      {
+        "answer": "<p>The career change is happening currently</p>",
+        "feedback": "<p><code>Last year</code> refers to a completed action in the past, not something happening in the present.</p>"
+      },
+      {
+        "answer": "<p>The career switch happened in the previous year</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 11.86,
+        "finishTimestamp": 14.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Anna",
+        "startTime": 1,
+        "finishTime": 4.12,
+        "dialogue": {
+          "text": "During my last year, I took a course in organizational psychology.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 4.62
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>last</code> helps you talk about the time that just passed.</p>\n<p>When you say <code>last year</code>, it means the year that finished before this one.\n<code>Last month</code> is the month that ended before this one.\nAnd <code>last week</code> is the week that came before this week.</p>\n<p>Using words like <code>last year</code>, <code>last month</code>, <code>last week</code>, or <code>last day</code> is a way to talk about things that happened not too long ago.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 87,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

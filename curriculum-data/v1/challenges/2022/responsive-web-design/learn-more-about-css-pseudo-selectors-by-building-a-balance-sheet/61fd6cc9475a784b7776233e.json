@@ -1,0 +1,77 @@
+{
+  "id": "61fd6cc9475a784b7776233e",
+  "title": "Step 7",
+  "challengeType": 0,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        22,
+        24
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Balance Sheet</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <main>\n      <section>\n        <h1>\n          <span class=\"flex\">\n            <span>AcmeWidgetCorp</span>\n            <span>Balance Sheet</span>\n          </span>\n        </h1>\n        <div id=\"years\" aria-hidden=\"true\">\n          <span class=\"year\">2019</span>\n          <span class=\"year\">2020</span>\n          <span class=\"year\">2021</span>\n        </div>\n\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Balance Sheet</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <main>\n      <section>\n        <h1>\n          <span class=\"flex\">\n            <span>AcmeWidgetCorp</span>\n            <span>Balance Sheet</span>\n          </span>\n        </h1>\n        <div id=\"years\" aria-hidden=\"true\">\n          <span class=\"year\">2019</span>\n          <span class=\"year\">2020</span>\n          <span class=\"year\">2021</span>\n        </div>\n\n      </section>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a new <code>div</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('div')?.length === 2);"
+    },
+    {
+      "text": "<p>Your new <code>div</code> element should have the <code>class</code> set to <code>table-wrap</code>.</p>",
+      "testString": "assert(document.querySelector('.table-wrap')?.localName === 'div');"
+    },
+    {
+      "text": "<p>Your <code>.table-wrap</code> element should come after your existing <code>div</code>.</p>",
+      "testString": "assert(document.querySelectorAll('div')?.[1]?.classList?.contains('table-wrap'));"
+    },
+    {
+      "text": "<p>Your <code>.table-wrap</code> element should have three <code>table</code> elements.</p>",
+      "testString": "const children = [...(document.querySelector('.table-wrap')?.children ?? [])];\nassert(children?.length === 3);\nchildren.forEach(child => assert(child?.localName === 'table'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Below your existing <code>div</code> element, add a new <code>div</code> element with a <code>class</code> set to <code>table-wrap</code>. This will be the container for your tables.</p>\n<p>Within that, add three <code>table</code> elements. You will be using CSS to style these into a single table, but using separate tables will help screen readers understand the document flow.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-more-about-css-pseudo-selectors-by-building-a-balance-sheet",
+  "hasEditableBoundaries": true,
+  "order": 10,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

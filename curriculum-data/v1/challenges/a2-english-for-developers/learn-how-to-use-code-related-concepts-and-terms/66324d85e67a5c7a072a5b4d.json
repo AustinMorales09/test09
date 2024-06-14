@@ -1,0 +1,97 @@
+{
+  "id": "66324d85e67a5c7a072a5b4d",
+  "title": "Task 15",
+  "challengeType": 19,
+  "dashedName": "task-15",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah mean by <code>this data type</code> when talking about working with text?</p>",
+    "answers": [
+      {
+        "answer": "<p>She is referring to any data type that can handle text.</p>",
+        "feedback": "<p>Sarah is specific about the data type, not general. She mentions <code>string</code>, which is specifically used for text.</p>"
+      },
+      {
+        "answer": "<p>She is referring to the data type <code>string</code>.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She is talking about a new data type she just invented.</p>",
+        "feedback": "<p>Sarah is explaining well-known data types, not introducing new ones.</p>"
+      },
+      {
+        "answer": "<p>She means the data type used for numbers.</p>",
+        "feedback": "<p>Sarah specifies <code>string</code> for text, not for numbers. For numbers, she mentions <code>int</code>.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 21.08,
+        "finishTimestamp": 27.52
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 4.94,
+        "dialogue": {
+          "text": "For example, if you're working with text, you'd use this data type: string.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "startTime": 5.44,
+        "finishTime": 7.44,
+        "dialogue": {
+          "text": "If it's whole numbers, you'd choose int.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 7.94
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

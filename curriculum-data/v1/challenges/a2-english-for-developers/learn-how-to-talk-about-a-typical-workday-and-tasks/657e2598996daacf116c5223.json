@@ -1,0 +1,106 @@
+{
+  "id": "657e2598996daacf116c5223",
+  "title": "Task 28",
+  "challengeType": 19,
+  "dashedName": "task-28",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>9</code> refer to in Anna's statement?</p>",
+    "answers": [
+      {
+        "answer": "<p>The time they finish work.</p>",
+        "feedback": "<p>Anna is talking about the start of the day, not the end.</p>"
+      },
+      {
+        "answer": "<p>The time they have lunch.</p>",
+        "feedback": "<p><code>9</code> is mentioned in the context of starting work, not lunchtime.</p>"
+      },
+      {
+        "answer": "<p>The time they start work.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The time they leave for work.</p>",
+        "feedback": "<p>The dialogue specifies this as the starting time of work, not the time of leaving home.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0.74,
+        "finishTimestamp": 8.94
+      }
+    },
+    "commands": [
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Anna",
+        "startTime": 1,
+        "finishTime": 4.78,
+        "dialogue": {
+          "text": "Hi Tom, let me tell you what a regular day at our company normally looks like.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "startTime": 5.1,
+        "finishTime": 5.9,
+        "dialogue": {
+          "text": "We start at 9.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "startTime": 6.12,
+        "finishTime": 9.2,
+        "dialogue": {
+          "text": "The first thing to do is log into your computer and check your emails.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 9.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A regular, 8-hour working day in the United States usually goes from <code>9 AM</code> (nine in the morning, or simply <code>9</code>) to <code>5 PM</code> (five in the afternoon, or just <code>5</code>). It is common to represent this saying you have a <code>9-to-5 job</code>, meaning your working hours start at 9 and end at 5 every day.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 29,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

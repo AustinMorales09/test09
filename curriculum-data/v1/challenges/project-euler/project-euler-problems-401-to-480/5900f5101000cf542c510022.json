@@ -1,0 +1,69 @@
+{
+  "id": "5900f5101000cf542c510022",
+  "title": "Problem 419: Look and say sequence",
+  "challengeType": 1,
+  "forumTopicId": 302088,
+  "dashedName": "problem-419-look-and-say-sequence",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function lookAndSaySequence() {\n\n  return true;\n}\n\nlookAndSaySequence();",
+      "error": null,
+      "seed": "function lookAndSaySequence() {\n\n  return true;\n}\n\nlookAndSaySequence();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>lookAndSaySequence()</code> should return a string.</p>",
+      "testString": "assert(typeof lookAndSaySequence() === 'string');"
+    },
+    {
+      "text": "<p><code>lookAndSaySequence()</code> should return the string <code>998567458,1046245404,43363922</code>.</p>",
+      "testString": "assert.strictEqual(lookAndSaySequence(), '998567458,1046245404,43363922');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The look and say sequence goes 1, 11, 21, 1211, 111221, 312211, 13112221, 1113213211, ...</p>\n<p>The sequence starts with 1 and all other members are obtained by describing the previous member in terms of consecutive digits.</p>\n<p>It helps to do this out loud:</p>\n<p>1 is 'one one' $→ 11$</p>\n<p>11 is 'two ones' $→ 21$</p>\n<p>21 is 'one two and one one' $→ 1211$</p>\n<p>1211 is 'one one, one two and two ones' $→ 111221$</p>\n<p>111221 is 'three ones, two twos and one one' $→ 312211$</p>\n<p>...</p>\n<p>Define $A(n)$, $B(n)$ and $C(n)$ as the number of ones, twos and threes in the $n$'th element of the sequence respectively. One can verify that $A(40) = 31\\,254$, $B(40) = 20\\,259$ and $C(40) = 11\\,625$.</p>\n<p>Find $A(n)$, $B(n)$ and $C(n)$ for $n = {10}^{12}$. Give your answer modulo $2^{30}$ as a string and separate your values for $A$, $B$ and $C$ by a comma. E.g. for $n = 40$ the answer would be <code>31254,20259,11625</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

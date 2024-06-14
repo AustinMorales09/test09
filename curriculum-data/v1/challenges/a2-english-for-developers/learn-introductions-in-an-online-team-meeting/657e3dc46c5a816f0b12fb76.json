@@ -1,0 +1,87 @@
+{
+  "id": "657e3dc46c5a816f0b12fb76",
+  "title": "Task 78",
+  "challengeType": 22,
+  "dashedName": "task-78",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I'm here to _ my _ management _. I want to learn more about project _.</p>",
+    "blanks": [
+      {
+        "answer": "improve",
+        "feedback": "<p>Refers to making something better or enhancing one's abilities.</p>"
+      },
+      {
+        "answer": "project",
+        "feedback": "<p>Relates to a specific task or plan that needs to be completed.</p>"
+      },
+      {
+        "answer": "skills",
+        "feedback": "<p>Refers to the abilities or expertise needed to do something well.</p>"
+      },
+      {
+        "answer": "management",
+        "feedback": "<p>This term relates to the process of handling or overseeing projects effectively.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 7.16,
+        "finishTimestamp": 13.5
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 7.34,
+        "dialogue": {
+          "text": "Hi, I'm Sophie and I'm here to improve my project management skills. I want to learn more about project management.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 7.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>To <code>manage</code> means to be in charge of or control something. For example, <code>He manages a small team at work</code> means he is responsible for overseeing the team.</p>\n<p><code>Management</code> refers to the act or skill of managing. Like, <code>Good time management is important for success</code>.</p>\n<p><code>Project management</code> combines these skills specifically for projects. It means planning, organizing, and running projects to reach goals. An example is <code>She is learning project management to lead her team better</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 81,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

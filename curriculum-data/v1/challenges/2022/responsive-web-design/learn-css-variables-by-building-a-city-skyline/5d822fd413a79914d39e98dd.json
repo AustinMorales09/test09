@@ -1,0 +1,77 @@
+{
+  "id": "5d822fd413a79914d39e98dd",
+  "title": "Step 21",
+  "challengeType": 0,
+  "dashedName": "step-21",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        9,
+        21
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />   \n  </head>\n\n  <body>\n    <div class=\"background-buildings\">\n      <div class=\"bb1\">\n        <div class=\"bb1a\"></div>\n        <div class=\"bb1b\"></div>\n        <div class=\"bb1c\"></div>\n        <div class=\"bb1d\"></div>\n      </div>\n      <div class=\"bb2\"></div>\n      <div class=\"bb3\"></div>\n      <div class=\"bb4\"></div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />   \n  </head>\n\n  <body>\n    <div class=\"background-buildings\">\n      <div class=\"bb1\">\n        <div class=\"bb1a\"></div>\n        <div class=\"bb1b\"></div>\n        <div class=\"bb1c\"></div>\n        <div class=\"bb1d\"></div>\n      </div>\n      <div class=\"bb2\"></div>\n      <div class=\"bb3\"></div>\n      <div class=\"bb4\"></div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  margin: 0;\n  overflow: hidden;\n}\n\n.background-buildings {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: flex-end;\n  justify-content: space-evenly;\n}\n\n.bb1 {\n  width: 10%;\n  height: 70%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  --building-color1: #aa80ff;\n}\n\n.bb1a {\n  width: 70%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1b {\n  width: 80%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1c {\n  width: 90%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1d {\n  width: 100%;\n  height: 70%;\n  background-color: var(--building-color1);\n}\n\n.bb2 {\n  width: 10%;\n  height: 50%;\n}\n\n.bb3 {\n  width: 10%;\n  height: 55%;\n}\n\n.bb4 {\n  width: 11%;\n  height: 58%;\n}\n    ",
+      "error": null,
+      "seed": "* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  margin: 0;\n  overflow: hidden;\n}\n\n.background-buildings {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: flex-end;\n  justify-content: space-evenly;\n}\n\n.bb1 {\n  width: 10%;\n  height: 70%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  --building-color1: #aa80ff;\n}\n\n.bb1a {\n  width: 70%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1b {\n  width: 80%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1c {\n  width: 90%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1d {\n  width: 100%;\n  height: 70%;\n  background-color: var(--building-color1);\n}\n\n.bb2 {\n  width: 10%;\n  height: 50%;\n}\n\n.bb3 {\n  width: 10%;\n  height: 55%;\n}\n\n.bb4 {\n  width: 11%;\n  height: 58%;\n}\n    "
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add two new <code>div</code> elements before the <code>.bb1</code> element.</p>",
+      "testString": "const bBuildings = document.querySelector('.background-buildings')?.children;\nassert(![...bBuildings?.[0]?.classList]?.includes('bb1'));\nassert(![...bBuildings?.[1]?.classList]?.includes('bb1'));"
+    },
+    {
+      "text": "<p>You should add one new <code>div</code> element between the <code>.bb3</code> and <code>.bb4</code> element.</p>",
+      "testString": "assert(document.querySelector('.bb3')?.nextElementSibling === document.querySelector('.bb4')?.previousElementSibling);"
+    },
+    {
+      "text": "<p>You should add two new <code>div</code> elements after the <code>.bb4</code> element.</p>",
+      "testString": "const bb4 = document.querySelector('.bb4');\nassert.exists(bb4?.nextElementSibling);\nassert.exists(bb4?.nextElementSibling?.nextElementSibling);"
+    },
+    {
+      "text": "<p>You should add 5 new <code>div</code> elements.</p>",
+      "testString": "assert.equal(document.querySelectorAll('div')?.length, 14);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The buildings are too spaced out. Squeeze them together by adding two empty <code>div</code> elements to the top of the <code>.background-buildings</code> element, two more at the bottom of it, and one more in between <code>.bb3</code> and <code>.bb4</code>. These will be added as evenly-spaced elements across the container, effectively moving the buildings closer to the center.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-variables-by-building-a-city-skyline",
+  "hasEditableBoundaries": true,
+  "order": 14,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

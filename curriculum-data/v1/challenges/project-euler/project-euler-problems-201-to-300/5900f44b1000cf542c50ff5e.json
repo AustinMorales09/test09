@@ -1,0 +1,65 @@
+{
+  "id": "5900f44b1000cf542c50ff5e",
+  "title": "Problem 223: Almost right-angled triangles I",
+  "challengeType": 1,
+  "forumTopicId": 301866,
+  "dashedName": "problem-223-almost-right-angled-triangles-i",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function almostRightAngledTrianglesOne() {\n\n  return true;\n}\n\nalmostRightAngledTrianglesOne();",
+      "error": null,
+      "seed": "function almostRightAngledTrianglesOne() {\n\n  return true;\n}\n\nalmostRightAngledTrianglesOne();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>almostRightAngledTrianglesOne()</code> should return <code>61614848</code>.</p>",
+      "testString": "assert.strictEqual(almostRightAngledTrianglesOne(), 61614848);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let us call an integer sided triangle with sides $a ≤ b ≤ c$ barely acute if the sides satisfy $a^2 + b^2 = c^2 + 1$.</p>\n<p>How many barely acute triangles are there with perimeter $≤ 25\\,000\\,000$?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "6577254891048c8f2c19e961",
+  "title": "Step 8",
+  "challengeType": 20,
+  "dashedName": "step-8",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        1,
+        9
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "    \ndef merge_sort(array):\n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n    \n    merge_sort(left_part)\n",
+      "error": null,
+      "seed": "    \ndef merge_sort(array):\n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n    \n    merge_sort(left_part)\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call <code>merge_sort()</code> again after the previous function call.</p>",
+      "testString": "({\n  test: () => {\n    const transformedCode = code.replace(/\\r/g, \"\");\n    const merge_sort = __helpers.python.getDef(\"\\n\" + transformedCode, \"merge_sort\");\n    const { function_body } = merge_sort;\n\n    assert.match(function_body, /merge_sort\\s*\\(\\s*\\)/);\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Call the <code>merge_sort()</code> function again. Do not pass in any argument for now.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-data-structures-by-building-the-merge-sort-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 9,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

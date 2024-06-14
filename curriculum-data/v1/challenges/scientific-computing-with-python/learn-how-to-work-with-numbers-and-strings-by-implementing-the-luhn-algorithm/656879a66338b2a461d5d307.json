@@ -1,0 +1,53 @@
+{
+  "id": "656879a66338b2a461d5d307",
+  "title": "Step 9",
+  "challengeType": 20,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def verify_card_number(card_number):\n    pass\n\ndef main():\n    card_number = '4111-1111-4555-1142'\n    card_translation = str.maketrans({'-': '', ' ': ''})\n    translated_card_number = card_number.translate(card_translation)\n\n    print(translated_card_number)\n\n    verify_card_number(translated_card_number)\n\nmain()",
+      "error": null,
+      "seed": "def verify_card_number(card_number):\n    pass\n\ndef main():\n    card_number = '4111-1111-4555-1142'\n    card_translation = str.maketrans({'-': '', ' ': ''})\n    translated_card_number = card_number.translate(card_translation)\n\n    print(translated_card_number)\n\n    verify_card_number(translated_card_number)\n\nmain()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have <code>sum_of_odd_digits = 0</code> within the <code>verify_card_number</code> function.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const verify_card_number = __helpers.python.getDef(\"\\n\" + transformedCode, \"verify_card_number\");\n        const { function_body } = verify_card_number;\n\n        assert.match(function_body, /sum_of_odd_digits\\s*=\\s*0/);\n    }\n})"
+    },
+    {
+      "text": "<p>You should not have <code>pass</code> within the <code>verify_card_number</code> function.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const verify_card_number = __helpers.python.getDef(\"\\n\" + transformedCode, \"verify_card_number\");\n        const { function_body } = verify_card_number;\n\n        assert.notMatch(function_body, /pass/);\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<!-- TODO: Find better places to split explanation up. -->\n<p>The Luhn algorithm is as follows:</p>\n<ol>\n<li>From the right to left, double the value of every second digit; if the product is greater than 9, sum the digits of the products.</li>\n<li>Take the sum of all the digits.</li>\n<li>If the sum of all the digits is a multiple of 10, then the number is valid; else it is not valid.</li>\n</ol>\n<p>Assume an example of an account number \"7992739871\" that will have a check digit added, making it of the form 7992739871x:</p>\n<pre><code class=\"language-markdown\">Account number      7   9  9  2  7  3  9   8  7  1  x\nDouble every other  7  18  9  4  7  6  9  16  7  2  x\nSum 2-char digits   7   9  9  4  7  6  9   7  7  2  x\n</code></pre>\n<p>Replace the <code>pass</code> statement with a variable <code>sum_of_odd_digits</code> and a value of <code>0</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-work-with-numbers-and-strings-by-implementing-the-luhn-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

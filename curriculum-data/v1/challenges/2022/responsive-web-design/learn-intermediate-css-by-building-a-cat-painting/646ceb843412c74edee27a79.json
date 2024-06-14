@@ -1,0 +1,77 @@
+{
+  "id": "646ceb843412c74edee27a79",
+  "title": "Step 22",
+  "challengeType": 0,
+  "dashedName": "step-22",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>fCC Cat Painting</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n</head>\n<body>\n    <main>\n      <div class=\"cat-head\">\n        <div class=\"cat-ears\">\n          <div class=\"cat-left-ear\">\n            <div class=\"cat-left-inner-ear\"></div>\n          </div>\n          <div class=\"cat-right-ear\">\n            <div class=\"cat-right-inner-ear\"></div>\n          </div>\n        </div>\n      </div>\n    </main>\n</body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>fCC Cat Painting</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n</head>\n<body>\n    <main>\n      <div class=\"cat-head\">\n        <div class=\"cat-ears\">\n          <div class=\"cat-left-ear\">\n            <div class=\"cat-left-inner-ear\"></div>\n          </div>\n          <div class=\"cat-right-ear\">\n            <div class=\"cat-right-inner-ear\"></div>\n          </div>\n        </div>\n      </div>\n    </main>\n</body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        22,
+        24
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #c9d2fc;\n}\n\n.cat-head {\n  position: absolute;\n  right: 0;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  margin: auto;\n  background: linear-gradient(#5e5e5e 85%, #45454f 100%);\n  width: 205px;\n  height: 180px;\n  border: 1px solid #000;\n  border-radius: 46%;\n}\n\n",
+      "error": null,
+      "seed": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #c9d2fc;\n}\n\n.cat-head {\n  position: absolute;\n  right: 0;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  margin: auto;\n  background: linear-gradient(#5e5e5e 85%, #45454f 100%);\n  width: 205px;\n  height: 180px;\n  border: 1px solid #000;\n  border-radius: 46%;\n}\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>.cat-left-ear</code> selector.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.cat-left-ear'))"
+    },
+    {
+      "text": "<p>Your <code>.cat-left-ear</code> selector should have a <code>border-left</code> property set to <code>35px solid transparent</code></p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.cat-left-ear')?.borderLeft === '35px solid transparent')"
+    },
+    {
+      "text": "<p>Your <code>.cat-left-ear</code> selector should have a <code>border-right</code> property set to <code>35px solid transparent</code></p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.cat-left-ear')?.borderRight === '35px solid transparent')"
+    },
+    {
+      "text": "<p>Your <code>.cat-left-ear</code> selector should have a <code>border-bottom</code> property set to <code>70px solid #5e5e5e</code></p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.cat-left-ear')?.borderBottom === '70px solid rgb(94, 94, 94)')"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You are going to make each ear look like a triangle.</p>\n<p>Using a class selector, give the <code>.cat-left-ear</code> element a left and right border of <code>35px solid transparent</code> each. Also, set the bottom border to <code>70px solid #5e5e5e</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-intermediate-css-by-building-a-cat-painting",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

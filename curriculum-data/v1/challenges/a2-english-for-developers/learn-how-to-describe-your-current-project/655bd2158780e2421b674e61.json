@@ -1,0 +1,88 @@
+{
+  "id": "655bd2158780e2421b674e61",
+  "title": "Task 13",
+  "challengeType": 19,
+  "dashedName": "task-13",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>customer data</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>How many people visit a store</p>",
+        "feedback": "<p>That would be an example of <code>quantitative data</code>.</p>"
+      },
+      {
+        "answer": "<p>Information about customers</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>What people think about a product</p>",
+        "feedback": "<p>This would be a good example of <code>qualitative data</code>.</p>"
+      },
+      {
+        "answer": "<p>Numbers related to store profits</p>",
+        "feedback": "<p>Store profits involve numbers, but customer data refers to information about the customers themselves.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 3.52,
+        "finishTimestamp": 6.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.92,
+        "dialogue": {
+          "text": "Hi, Bob. I'm looking at customer data to find patterns.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Data</code> means information, especially facts or numbers collected to be examined and considered and used to help decision-making.</p>\n<p>There are different types of data, like <code>quantitative data</code>, which is about numbers (like how many people visit a store), and <code>qualitative data</code>, which is about descriptions (like what people think about a product).</p>\n<p><code>Customer data</code> is specific information about customers, like their buying habits or preferences.</p>\n<p>For example, a store might collect data on what times of day customers visit most often, or which products are most popular.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

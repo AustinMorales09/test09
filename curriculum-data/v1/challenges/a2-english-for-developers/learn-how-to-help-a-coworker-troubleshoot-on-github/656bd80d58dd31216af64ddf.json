@@ -1,0 +1,88 @@
+{
+  "id": "656bd80d58dd31216af64ddf",
+  "title": "Task 31",
+  "challengeType": 19,
+  "dashedName": "task-31",
+  "solutions": [],
+  "question": {
+    "text": "<p>What did Tom say about Sarah in his sentence?</p>",
+    "answers": [
+      {
+        "answer": "<p>Sarah helped him with a problem he found</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Sarah found a new problem</p>",
+        "feedback": "<p>She didn't find a new problem.</p>"
+      },
+      {
+        "answer": "<p>Sarah solved a problem for him</p>",
+        "feedback": "<p>She didn't solve a problem for Tom.</p>"
+      },
+      {
+        "answer": "<p>Sarah sent an email about the problem</p>",
+        "feedback": "<p>Tom doesn't mention an email.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.12
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.12,
+        "dialogue": {
+          "text": "Hey, Sarah. I saw your comment on the issue I opened. Thanks for your help.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.62
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-help-a-coworker-troubleshoot-on-github",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 32,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

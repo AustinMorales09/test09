@@ -1,0 +1,53 @@
+{
+  "id": "65c4f0d32ca17ad4b1636b0e",
+  "title": "Step 8",
+  "challengeType": 20,
+  "dashedName": "step-8",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        5,
+        9
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class TreeNode:\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\nclass BinarySearchTree:\n    def __init__(self):\n        pass",
+      "error": null,
+      "seed": "class TreeNode:\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\nclass BinarySearchTree:\n    def __init__(self):\n        pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove the <code>pass</code> statement from the <code>__init__</code> method.</p>",
+      "testString": "({\n  test: () => {\n    const pyClassStr = runPython(\n      `str(_Node(_code).find_class(\"BinarySearchTree\"))`\n    );\n    assert.notInclude(pyClassStr, \"pass\");\n  },\n});\n"
+    },
+    {
+      "text": "<p>You should initialize the <code>root</code> attribute to <code>None</code> using <code>self.root</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /^\\s{8}self\\.root\\s*=\\s*None/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Inside the <code>__init__</code> method, delete <code>pass</code> and initialize <code>root</code> to the value <code>None</code>.</p>\n<p>The <code>root</code> attribute represents the root node of the binary search tree. Since this is the constructor when a new <code>BinarySearchTree</code> object is created, it starts with an empty tree, so the <code>root</code> attribute is set to <code>None</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

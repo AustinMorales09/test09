@@ -1,0 +1,43 @@
+{
+  "id": "647e23788acb466c97ccbf02",
+  "title": "Perform Basic Operations on Numbers in C#",
+  "challengeType": 19,
+  "dashedName": "perform-basic-operations-on-numbers-in-c-sharp",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the value of the following result?</p>\n<pre><code class=\"language-clike\">int result = 3 + 1 * 5 / 2;\n</code></pre>",
+    "answers": [
+      {
+        "answer": "<p>10</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>5</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>6</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [
+    "<p>Complete the <a href=\"https://learn.microsoft.com/training/modules/csharp-basic-operations/\" target=\"_blank\" rel=\"noreferrer\">Perform Basic Operations on Numbers in C#</a> module on Microsoft Learn. Then, answer the question below.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge will be partially completed on the Microsoft Learn platform. Follow these instructions to complete the challenge:</p>\n<ol>\n<li>Go to <a href=\"https://learn.microsoft.com/training/modules/csharp-basic-operations/\" target=\"_blank\" rel=\"noreferrer\">https://learn.microsoft.com/training/modules/csharp-basic-operations/</a> and complete all the tasks for the \"Perform Basic Operations on Numbers in C#\" module. This is <strong>required</strong> to earn the \"Write Your First Code Using C#\" trophy on Microsoft Learn, and qualify for the certification exam.</li>\n<li>When you are finished, come back and correctly answer the question below.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "write-your-first-code-using-c-sharp",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 13,
+  "certification": "foundational-c-sharp-with-microsoft",
+  "superBlock": "foundational-c-sharp-with-microsoft",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "C-Sharp",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

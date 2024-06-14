@@ -1,0 +1,67 @@
+{
+  "id": "587d781c367417b2b2512abf",
+  "title": "Decrease the Opacity of an Element",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/c7aKqu4",
+  "forumTopicId": 301055,
+  "dashedName": "decrease-the-opacity-of-an-element",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  h4 {\n    text-align: center;\n    background-color: rgba(45, 45, 45, 0.1);\n    padding: 10px;\n    font-size: 27px;\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    text-align: left;\n    color: black;\n\n  }\n  #thumbnail {\n    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);\n  }\n  .fullCard {\n    width: 245px;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n  .cardText {\n    margin-bottom: 30px;\n  }\n</style>\n<div class=\"fullCard\" id=\"thumbnail\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Alphabet</h4>\n      <hr>\n      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>",
+      "error": null,
+      "seed": "<style>\n  h4 {\n    text-align: center;\n    background-color: rgba(45, 45, 45, 0.1);\n    padding: 10px;\n    font-size: 27px;\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    text-align: left;\n    color: black;\n\n  }\n  #thumbnail {\n    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);\n  }\n  .fullCard {\n    width: 245px;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n  .cardText {\n    margin-bottom: 30px;\n  }\n</style>\n<div class=\"fullCard\" id=\"thumbnail\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Alphabet</h4>\n      <hr>\n      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  h4 {\n    text-align: center;\n    background-color: rgba(45, 45, 45, 0.1);\n    padding: 10px;\n    font-size: 27px;\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    text-align: left;\n    color: black;\n    opacity: 0.7;\n  }\n  #thumbnail {\n    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);\n  }\n  .fullCard {\n    width: 245px;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n  .cardText {\n    margin-bottom: 30px;\n  }\n</style>\n<div class=\"fullCard\" id=\"thumbnail\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Alphabet</h4>\n      <hr>\n      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>",
+        "error": null,
+        "seed": "<style>\n  h4 {\n    text-align: center;\n    background-color: rgba(45, 45, 45, 0.1);\n    padding: 10px;\n    font-size: 27px;\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    text-align: left;\n    color: black;\n    opacity: 0.7;\n  }\n  #thumbnail {\n    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);\n  }\n  .fullCard {\n    width: 245px;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n  .cardText {\n    margin-bottom: 30px;\n  }\n</style>\n<div class=\"fullCard\" id=\"thumbnail\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Alphabet</h4>\n      <hr>\n      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should set the <code>opacity</code> property to 0.7 on the anchor tags by selecting the class of <code>links</code>.</p>",
+      "testString": "assert(\n  /\\.links\\s*{([\\s\\S]*?;)*\\s*opacity\\s*:\\s*0*\\.70*\\s*(;[\\s\\S]*?|\\s*)}/.test(\n    $('style').text()\n  )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>opacity</code> property in CSS is used to adjust the opacity, or conversely, the transparency for an item.</p>\n<blockquote>A value of 1 is opaque, which isn't transparent at all.<br>A value of 0.5 is half see-through.<br>A value of 0 is completely transparent.</blockquote>\n<p>The value given will apply to the entire element, whether that's an image with some transparency, or the foreground and background colors for a block of text.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Set the <code>opacity</code> of the anchor tags to 0.7 using <code>links</code> class to select them.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-visual-design",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

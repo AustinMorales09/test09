@@ -1,0 +1,57 @@
+{
+  "id": "6610bbed59bc2a0194d85533",
+  "title": "Step 21",
+  "challengeType": 1,
+  "dashedName": "step-21",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        6
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];\nconsole.log(rows[0]);\nrows[2] = 10;\nconsole.log(rows);",
+      "error": null,
+      "seed": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];\nconsole.log(rows[0]);\nrows[2] = 10;\nconsole.log(rows);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>.length</code> property of your <code>rows</code> array.</p>",
+      "testString": "assert.match(code, /rows\\.length/);"
+    },
+    {
+      "text": "<p>You should use <code>rows.length</code> in your bracket notation.</p>",
+      "testString": "assert.match(code, /rows\\[\\s*rows\\.length/);"
+    },
+    {
+      "text": "<p>You should subtract <code>1</code> from the length in your bracket notation.</p>",
+      "testString": "assert.match(code, /rows\\[\\s*rows\\.length\\s*-\\s*1\\s*\\]/)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Notice how the value inside your <code>rows</code> array has been changed directly? This is called <dfn>mutation</dfn>. As you learn more about arrays, you will learn when to mutate an array, and when you should not.</p>\n<p>Before moving on, this is a great opportunity to learn a common array use. Currently, your code accesses the last element in the array with <code>rows[2]</code>. But you may not know how many elements are in an array when you want the last one.</p>\n<p>You can make use of the <code>.length</code> property of an array - this returns the number of elements in the array. To get the last element of any array, you can use the following syntax:</p>\n<pre><code class=\"language-js\">array[array.length - 1]\n</code></pre>\n<p><code>array.length</code> returns the number of elements in the array. By subtracting <code>1</code>, you get the index of the last element in the array. You can apply this same concept to your <code>rows</code> array.</p>\n<p>Update your <code>rows[2]</code> to dynamically access the last element in the <code>rows</code> array. Refer to the example above to help you.</p>\n<p>You should not see anything change in your console.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

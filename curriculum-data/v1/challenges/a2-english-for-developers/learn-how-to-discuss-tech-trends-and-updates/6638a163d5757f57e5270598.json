@@ -1,0 +1,88 @@
+{
+  "id": "6638a163d5757f57e5270598",
+  "title": "Task 46",
+  "challengeType": 19,
+  "dashedName": "task-46",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Sarah describe AI in her statement?</p>",
+    "answers": [
+      {
+        "answer": "<p>AI is a trend that automates specific tasks in development.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>AI increases the need for manual labor in development.</p>",
+        "feedback": "<p>Sarah's description indicates that AI reduces manual effort by automating tasks, not increasing it.</p>"
+      },
+      {
+        "answer": "<p>AI makes all tasks in development slower but more accurate.</p>",
+        "feedback": "<p>Sarah mentions automation of tasks for efficiency; she does not say that it makes tasks slower.</p>"
+      },
+      {
+        "answer": "<p>AI reduces the need for developers in all tasks.</p>",
+        "feedback": "<p>Sarah specifies that AI automates certain tasks, not all tasks, implying that developers are still needed for other areas.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 11.02,
+        "finishTimestamp": 13.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.9,
+        "dialogue": {
+          "text": "It's one of those trends that automate certain tasks in development.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 48,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

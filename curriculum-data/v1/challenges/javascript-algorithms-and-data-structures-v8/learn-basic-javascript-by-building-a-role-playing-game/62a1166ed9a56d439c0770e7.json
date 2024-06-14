@@ -1,0 +1,81 @@
+{
+  "id": "62a1166ed9a56d439c0770e7",
+  "title": "Step 12",
+  "challengeType": 0,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        19
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n      <div id=\"stats\">\n\n      </div>\n      <div id=\"controls\"></div>\n      <div id=\"monsterStats\"></div>\n      <div id=\"text\"></div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n      <div id=\"stats\">\n\n      </div>\n      <div id=\"controls\"></div>\n      <div id=\"monsterStats\"></div>\n      <div id=\"text\"></div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;\nlet monsterHealth;\nlet inventory = [\"stick\"];",
+      "error": null,
+      "seed": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;\nlet monsterHealth;\nlet inventory = [\"stick\"];"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have three <code>span</code> elements within the <code>#stats</code> element.</p>",
+      "testString": "const spans = document.querySelectorAll('#stats > span');\nassert.equal(spans?.length, 3);"
+    },
+    {
+      "text": "<p>You should give the new three <code>span</code> elements a class of <code>stat</code>.</p>",
+      "testString": "assert.exists(document.querySelectorAll('#stats > .stat')?.length, 3);"
+    },
+    {
+      "text": "<p>Your first <code>.stat</code> element should have the provided text <code>XP: 0</code>.</p>",
+      "testString": "assert(document.querySelectorAll('#stats > .stat')?.[0]?.innerText === 'XP: 0');"
+    },
+    {
+      "text": "<p>Your second <code>.stat</code> element should have the provided text <code>Health: 100</code>.</p>",
+      "testString": "assert(document.querySelectorAll('#stats > .stat')?.[1]?.innerText === 'Health: 100');"
+    },
+    {
+      "text": "<p>Your third <code>.stat</code> element should have the provided text <code>Gold: 50</code>.</p>",
+      "testString": "assert(document.querySelectorAll('#stats > .stat')?.[2]?.innerText === 'Gold: 50');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Create three <code>span</code> elements within your <code>#stats</code> element. Give each of them the class <code>stat</code>. Then give the first one the text <code>XP: 0</code>, the second one the text <code>Health: 100</code>, and the third one the text <code>Gold: 50</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-javascript-by-building-a-role-playing-game",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

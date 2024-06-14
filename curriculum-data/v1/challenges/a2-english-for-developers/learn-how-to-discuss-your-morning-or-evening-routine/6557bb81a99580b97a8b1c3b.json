@@ -1,0 +1,124 @@
+{
+  "id": "6557bb81a99580b97a8b1c3b",
+  "title": "Task 24",
+  "challengeType": 22,
+  "dashedName": "task-24",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Well, _ that, I have a balanced breakfast. I often have cereal with some fruit and a glass of orange _. Breakfast is important to _ my energy _ during the morning.</p>",
+    "blanks": [
+      {
+        "answer": "after",
+        "feedback": "<p>The opposite of before</p>"
+      },
+      {
+        "answer": "juice",
+        "feedback": "<p>Sarah includes a glass of juice as part of her breakfast.</p>"
+      },
+      {
+        "answer": "keep",
+        "feedback": "<p>This verb is used to express maintaining or continuing a state.</p>"
+      },
+      {
+        "answer": "up",
+        "feedback": "<p>This preposition is used with <code>keep</code> to mean maintaining a high level of energy.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 37.4,
+        "finishTimestamp": 47.82
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 2.36,
+        "dialogue": {
+          "text": "What's next in your routine?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 3.1
+      },
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 3.1
+      },
+      {
+        "character": "Sarah",
+        "startTime": 3.2,
+        "finishTime": 8.46,
+        "dialogue": {
+          "text": "Well, after that, I have a balanced breakfast. I often have cereal with some fruit and a glass of orange juice.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "startTime": 8.9,
+        "finishTime": 11.42,
+        "dialogue": {
+          "text": "Breakfast is important to keep my energy up during the morning.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 11.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Understanding the sequence of events in a conversation can help you better follow what is being said.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

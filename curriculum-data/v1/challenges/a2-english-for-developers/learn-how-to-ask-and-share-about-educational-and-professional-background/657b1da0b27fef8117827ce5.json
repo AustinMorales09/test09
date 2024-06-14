@@ -1,0 +1,88 @@
+{
+  "id": "657b1da0b27fef8117827ce5",
+  "title": "Task 33",
+  "challengeType": 19,
+  "dashedName": "task-33",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>noticed</code> in Brian's sentence indicate?</p>",
+    "answers": [
+      {
+        "answer": "<p>Brian observed something in the past</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Brian is planning to observe something</p>",
+        "feedback": "<p>The simple past tense <code>noticed</code> indicates a completed action in the past, not a future plan.</p>"
+      },
+      {
+        "answer": "<p>Brian continuously observes something</p>",
+        "feedback": "<p>The simple past tense <code>noticed</code> is used for actions that were completed, not ongoing actions.</p>"
+      },
+      {
+        "answer": "<p>Brian never observes anything</p>",
+        "feedback": "<p><code>Noticed</code> implies that Brian did observe something, not never observing.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 3.58
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 4.58,
+        "dialogue": {
+          "text": "Hey, how's it going? I noticed you're relatively new here.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 5.08
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>You've already learned about the simple past tense. Now, you can explore it further. The simple past tense is often formed by adding <code>-ed</code> to a verb. But, when a verb ends with an <code>e</code>, you just add a <code>d</code>. For example, <code>notice</code> becomes <code>noticed</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

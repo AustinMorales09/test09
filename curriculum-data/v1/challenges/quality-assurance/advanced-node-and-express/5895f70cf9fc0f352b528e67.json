@@ -1,0 +1,33 @@
+{
+  "id": "5895f70cf9fc0f352b528e67",
+  "title": "Implement the Serialization of a Passport User",
+  "challengeType": 2,
+  "forumTopicId": 301556,
+  "dashedName": "implement-the-serialization-of-a-passport-user",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Database connection should be present.</p>",
+      "testString": "async (getUserInput) => {\n  const url = new URL(\"/\", getUserInput(\"url\"));\n  const res = await fetch(url);\n  const data = await res.text();\n  assert.match(\n    data,\n    /Connected to Database/gi,\n    'You successfully connected to the database!'\n  );\n}"
+    },
+    {
+      "text": "<p>Deserialization should now be correctly using the DB and <code>done(null, null)</code> should be called with the <code>doc</code>.</p>",
+      "testString": "async (getUserInput) => {\n  const url = new URL(\"/_api/server.js\", getUserInput(\"url\"));\n  const res = await fetch(url);\n  const data = await res.text();\n  assert.match(\n    data,\n    /null,\\s*doc/gi,\n    'The callback in deserializeUser of (null, null) should be altered to (null, doc)'\n  );\n}"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You are not loading an actual user object since the database is not set up. Connect to the database once, when you start the server, and keep a persistent connection for the full life-cycle of the app. To do this, add your database's connection string (for example: <code>mongodb+srv://&#x3C;username>:&#x3C;password>@cluster0-jvwxi.mongodb.net/?retryWrites=true&#x26;w=majority</code>) to the environment variable <code>MONGO_URI</code>. This is used in the <code>connection.js</code> file.</p>\n<p><em>If you are having issues setting up a free database on MongoDB Atlas, check out this <a href=\"https://www.freecodecamp.org/news/get-started-with-mongodb-atlas/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">tutorial</a>.</em></p>\n<p>Now you want to connect to your database, then start listening for requests. The purpose of this is to not allow requests before your database is connected or if there is a database error. To accomplish this, encompass your serialization and app routes in the following code:</p>\n<pre><code class=\"language-javascript\">myDB(async client => {\n  const myDataBase = await client.db('database').collection('users');\n\n  // Be sure to change the title\n  app.route('/').get((req, res) => {\n    // Change the response to render the Pug template\n    res.render('index', {\n      title: 'Connected to Database',\n      message: 'Please login'\n    });\n  });\n\n  // Serialization and deserialization here...\n\n  // Be sure to add this...\n}).catch(e => {\n  app.route('/').get((req, res) => {\n    res.render('index', { title: e, message: 'Unable to connect to database' });\n  });\n});\n// app.listen out here...\n</code></pre>\n<p>Be sure to uncomment the <code>myDataBase</code> code in <code>deserializeUser</code>, and edit your <code>done(null, null)</code> to include the <code>doc</code>.</p>\n<p>Submit your page when you think you've got it right. If you're running into errors, you can <a href=\"https://forum.freecodecamp.org/t/advanced-node-and-express/567135#implement-the-serialization-of-a-passport-user-5\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">check out the project completed up to this point</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "advanced-node-and-express",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

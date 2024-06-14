@@ -1,0 +1,65 @@
+{
+  "id": "5900f4621000cf542c50ff75",
+  "title": "Problem 246: Tangents to an ellipse",
+  "challengeType": 1,
+  "forumTopicId": 301893,
+  "dashedName": "problem-246-tangents-to-an-ellipse",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function tangentsToAnEllipse() {\n\n  return true;\n}\n\ntangentsToAnEllipse();",
+      "error": null,
+      "seed": "function tangentsToAnEllipse() {\n\n  return true;\n}\n\ntangentsToAnEllipse();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>tangentsToAnEllipse()</code> should return <code>810834388</code>.</p>",
+      "testString": "assert.strictEqual(tangentsToAnEllipse(), 810834388);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A definition for an ellipse is:</p>\n<p>Given a circle $c$ with centre $M$ and radius $r$ and a point $G$ such that $d(G, M) &#x3C; r$, the locus of the points that are equidistant from $c$ and $G$ form an ellipse.</p>\n<p>The construction of the points of the ellipse is shown below.</p>\n<img class=\"img-responsive center-block\" alt=\"animation of ellipse construction\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/tangents-to-an-ellipse-1.gif\" style=\"background-color: white; padding: 10px;\">\n<p>Given are the points $M(-2000, 1500)$ and $G(8000, 1500)$.</p>\n<p>Given is also the circle $c$ with centre $M$ and radius $15\\,000$.</p>\n<p>The locus of the points that are equidistant from $G$ and $c$ form an ellipse $e$.</p>\n<p>From a point $P$ outside $e$ the two tangents $t_1$ and $t_2$ to the ellipse are drawn.</p>\n<p>Let the points where $t_1$ and $t_2$ touch the ellipse be $R$ and $S$.</p>\n<img class=\"img-responsive center-block\" alt=\"circle c with the centre M, radius 15000, and point P outsie of ellipse e; from point P two tangents t_1 and t_2 are drawn to the ellipse, with points touching ellipse are R and S\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/tangents-to-an-ellipse-2.gif\" style=\"background-color: white; padding: 10px;\">\n<p>For how many lattice points $P$ is angle $RPS$ greater than 45°?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 45,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "5900f40c1000cf542c50ff1e",
+  "title": "Problem 159: Digital root sums of factorisations",
+  "challengeType": 1,
+  "forumTopicId": 301790,
+  "dashedName": "problem-159-digital-root-sums-of-factorisations",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function euler159() {\n\n  return true;\n}\n\neuler159();",
+      "error": null,
+      "seed": "function euler159() {\n\n  return true;\n}\n\neuler159();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>euler159()</code> should return <code>14489159</code>.</p>",
+      "testString": "assert.strictEqual(euler159(), 14489159);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A composite number can be factored many different ways.</p>\n<p>For instance, not including multiplication by one, 24 can be factored in 7 distinct ways:</p>\n<p>$$\\begin{align}\n&#x26; 24 = 2 \\times 2 \\times 2 \\times 3\\\\\n&#x26; 24 = 2 \\times 3 \\times 4  \\\\\n&#x26; 24 = 2 \\times 2 \\times 6  \\\\\n&#x26; 24 = 4 \\times 6    \\\\\n&#x26; 24 = 3 \\times 8    \\\\\n&#x26; 24 = 2 \\times 12   \\\\\n&#x26; 24 = 24\n\\end{align}$$</p>\n<p>Recall that the digital root of a number, in base 10, is found by adding together the digits of that number, and repeating that process until a number arrives at less than 10. Thus the digital root of 467 is 8.</p>\n<p>We shall call a Digital Root Sum (DRS) the sum of the digital roots of the individual factors of our number. The chart below demonstrates all of the DRS values for 24.</p>\n<table>\n<thead>\n<tr>\n<th>Factorisation</th>\n<th>Digital Root Sum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2x2x2x3</td>\n<td>9</td>\n</tr>\n<tr>\n<td>2x3x4</td>\n<td>9</td>\n</tr>\n<tr>\n<td>2x2x6</td>\n<td>10</td>\n</tr>\n<tr>\n<td>4x6</td>\n<td>10</td>\n</tr>\n<tr>\n<td>3x8</td>\n<td>11</td>\n</tr>\n<tr>\n<td>2x12</td>\n<td>5</td>\n</tr>\n<tr>\n<td>24</td>\n<td>6</td>\n</tr>\n</tbody>\n</table>\n<p>The maximum Digital Root Sum of 24 is 11. The function $mdrs(n)$ gives the maximum Digital Root Sum of $n$. So $mdrs(24) = 11$.</p>\n<p>Find $\\sum{mdrs(n)}$ for $1 &#x3C; n &#x3C; 1,000,000$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 58,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

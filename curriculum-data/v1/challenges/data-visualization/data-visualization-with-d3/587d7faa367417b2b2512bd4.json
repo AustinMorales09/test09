@@ -1,0 +1,70 @@
+{
+  "id": "587d7faa367417b2b2512bd4",
+  "title": "Add a Hover Effect to a D3 Element",
+  "challengeType": 6,
+  "forumTopicId": 301469,
+  "dashedName": "add-a-hover-effect-to-a-d3-element",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .bar:hover {\n    fill: brown;\n  }\n</style>\n<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => 3 * d)\n       .attr(\"fill\", \"navy\")\n       // Add your code below this line\n\n\n\n       // Add your code above this line\n\n    svg.selectAll(\"text\")\n       .data(dataset)\n       .enter()\n       .append(\"text\")\n       .text((d) => d)\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - (3 * d) - 3);\n\n  </script>\n</body>",
+      "error": null,
+      "seed": "<style>\n  .bar:hover {\n    fill: brown;\n  }\n</style>\n<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => 3 * d)\n       .attr(\"fill\", \"navy\")\n       // Add your code below this line\n\n\n\n       // Add your code above this line\n\n    svg.selectAll(\"text\")\n       .data(dataset)\n       .enter()\n       .append(\"text\")\n       .text((d) => d)\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - (3 * d) - 3);\n\n  </script>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  .bar:hover {\n    fill: brown;\n  }\n</style>\n<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => 3 * d)\n       .attr(\"fill\", \"navy\")\n       // Add your code below this line\n       .attr('class', 'bar')\n       // Add your code above this line\n\n    svg.selectAll(\"text\")\n       .data(dataset)\n       .enter()\n       .append(\"text\")\n       .text((d) => d)\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - (3 * d) - 3);\n  </script>\n</body>",
+        "error": null,
+        "seed": "<style>\n  .bar:hover {\n    fill: brown;\n  }\n</style>\n<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => 3 * d)\n       .attr(\"fill\", \"navy\")\n       // Add your code below this line\n       .attr('class', 'bar')\n       // Add your code above this line\n\n    svg.selectAll(\"text\")\n       .data(dataset)\n       .enter()\n       .append(\"text\")\n       .text((d) => d)\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - (3 * d) - 3);\n  </script>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>rect</code> elements should have a class of <code>bar</code>.</p>",
+      "testString": "assert($('rect').attr('class').trim().split(/\\s+/g).includes('bar'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>It's possible to add effects that highlight a bar when the user hovers over it with the mouse. So far, the styling for the rectangles is applied with the built-in D3 and SVG methods, but you can use CSS as well.</p>\n<p>You set the CSS class on the SVG elements with the <code>attr()</code> method. Then the <code>:hover</code> pseudo-class for your new class holds the style rules for any hover effects.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use the <code>attr()</code> method to add a class of <code>bar</code> to all the <code>rect</code> elements. This changes the <code>fill</code> color of the bar to brown when you mouse over it.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-visualization-with-d3",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 18,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

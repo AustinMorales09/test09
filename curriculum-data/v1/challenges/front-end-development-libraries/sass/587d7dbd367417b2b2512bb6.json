@@ -1,0 +1,86 @@
+{
+  "id": "587d7dbd367417b2b2512bb6",
+  "title": "Create Reusable CSS with Mixins",
+  "challengeType": 0,
+  "forumTopicId": 301455,
+  "dashedName": "create-reusable-css-with-mixins",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style type='text/scss'>\n\n\n\n  #awesome {\n    width: 150px;\n    height: 150px;\n    background-color: green;\n\n  }\n</style>\n\n<div id=\"awesome\"></div>",
+      "error": null,
+      "seed": "<style type='text/scss'>\n\n\n\n  #awesome {\n    width: 150px;\n    height: 150px;\n    background-color: green;\n\n  }\n</style>\n\n<div id=\"awesome\"></div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style type='text/scss'>\n  @mixin border-radius($radius) {\n    -webkit-border-radius: $radius;\n    -moz-border-radius: $radius;\n    -ms-border-radius: $radius;\n    border-radius: $radius;\n  }\n\n  #awesome {\n    width: 150px;\n    height: 150px;\n    background-color: green;\n    @include border-radius(15px);\n  }\n</style>\n\n<div id=\"awesome\"></div>",
+        "error": null,
+        "seed": "<style type='text/scss'>\n  @mixin border-radius($radius) {\n    -webkit-border-radius: $radius;\n    -moz-border-radius: $radius;\n    -ms-border-radius: $radius;\n    border-radius: $radius;\n  }\n\n  #awesome {\n    width: 150px;\n    height: 150px;\n    background-color: green;\n    @include border-radius(15px);\n  }\n</style>\n\n<div id=\"awesome\"></div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should declare a mixin named <code>border-radius</code> which has a parameter named <code>$radius</code>.</p>",
+      "testString": "assert(code.match(/@mixin\\s+?border-radius\\s*?\\(\\s*?\\$radius\\s*?\\)\\s*?{/gi));"
+    },
+    {
+      "text": "<p>Your code should include the <code>-webkit-border-radius</code> vendor prefix that uses the <code>$radius</code> parameter.</p>",
+      "testString": "assert(\n  __helpers.removeWhiteSpace(code).match(/-webkit-border-radius:\\$radius;/gi)\n);"
+    },
+    {
+      "text": "<p>Your code should include the <code>-moz-border-radius</code> vendor prefix that uses the <code>$radius</code> parameter.</p>",
+      "testString": "assert(\n  __helpers.removeWhiteSpace(code).match(/-moz-border-radius:\\$radius;/gi)\n);"
+    },
+    {
+      "text": "<p>Your code should include the <code>-ms-border-radius</code> vendor prefix that uses the <code>$radius</code> parameter.</p>",
+      "testString": "assert(__helpers.removeWhiteSpace(code).match(/-ms-border-radius:\\$radius;/gi));"
+    },
+    {
+      "text": "<p>Your code should include the general <code>border-radius</code> rule that uses the <code>$radius</code> parameter.</p>",
+      "testString": "assert(\n  __helpers.removeWhiteSpace(code).match(/border-radius:\\$radius;/gi).length ==\n    4\n);"
+    },
+    {
+      "text": "<p>Your code should call the <code>border-radius mixin</code> using the <code>@include</code> keyword, setting it to <code>15px</code>.</p>",
+      "testString": "assert(code.match(/@include\\s+?border-radius\\(\\s*?15px\\s*?\\)\\s*;/gi));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In Sass, a <dfn>mixin</dfn> is a group of CSS declarations that can be reused throughout the style sheet.</p>\n<p>Newer CSS features take time before they are fully adopted and ready to use in all browsers. As features are added to browsers, CSS rules using them may need vendor prefixes. Consider <code>box-shadow</code>:</p>\n<pre><code class=\"language-scss\">div {\n  -webkit-box-shadow: 0px 0px 4px #fff;\n  -moz-box-shadow: 0px 0px 4px #fff;\n  -ms-box-shadow: 0px 0px 4px #fff;\n  box-shadow: 0px 0px 4px #fff;\n}\n</code></pre>\n<p>It's a lot of typing to re-write this rule for all the elements that have a <code>box-shadow</code>, or to change each value to test different effects. Mixins are like functions for CSS. Here is how to write one:</p>\n<pre><code class=\"language-scss\">@mixin box-shadow($x, $y, $blur, $c){ \n  -webkit-box-shadow: $x $y $blur $c;\n  -moz-box-shadow: $x $y $blur $c;\n  -ms-box-shadow: $x $y $blur $c;\n  box-shadow: $x $y $blur $c;\n}\n</code></pre>\n<p>The definition starts with <code>@mixin</code> followed by a custom name. The parameters (the <code>$x</code>, <code>$y</code>, <code>$blur</code>, and <code>$c</code> in the example above) are optional. Now any time a <code>box-shadow</code> rule is needed, only a single line calling the mixin replaces having to type all the vendor prefixes. A mixin is called with the <code>@include</code> directive:</p>\n<pre><code class=\"language-scss\">div {\n  @include box-shadow(0px, 0px, 4px, #fff);\n}\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a mixin for <code>border-radius</code> and give it a <code>$radius</code> parameter. It should use all the vendor prefixes from the example. Then use the <code>border-radius</code> mixin to give the <code>#awesome</code> element a border radius of <code>15px</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "sass",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

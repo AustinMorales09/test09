@@ -1,0 +1,61 @@
+{
+  "id": "646c48df8674cf2b91020ecb",
+  "title": "Step 2",
+  "challengeType": 0,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        5
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n</head>\n<body></body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n</head>\n<body></body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add a single <code>meta</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('meta').length === 1);"
+    },
+    {
+      "text": "<p>Your <code>meta</code> element should have a <code>charset</code> attribute set to <code>utf-8</code>.</p>",
+      "testString": "assert(document.querySelector('meta')?.getAttribute('charset')?.toLowerCase() === 'utf-8');"
+    },
+    {
+      "text": "<p>You should add a single <code>title</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('title').length === 1);"
+    },
+    {
+      "text": "<p>Your <code>title</code> element should have the text <code>fCC Cat Painting</code>. Note that spelling and casing matter.</p>",
+      "testString": "assert(document.querySelector('title')?.innerText === 'fCC Cat Painting');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Within your <code>head</code> element, add a <code>meta</code> tag with the <code>charset</code> attribute of <code>utf-8</code>. Also add a <code>title</code> element with the text <code>fCC Cat Painting</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-intermediate-css-by-building-a-cat-painting",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

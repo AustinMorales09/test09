@@ -1,0 +1,88 @@
+{
+  "id": "656d2c2fedbd5f14055b7e7b",
+  "title": "Task 162",
+  "challengeType": 19,
+  "dashedName": "task-162",
+  "solutions": [],
+  "question": {
+    "text": "<p>In the context of the audio, what does <code>I guess</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>Jake is absolutely certain.</p>",
+        "feedback": "<p><code>Guess</code> means there's some uncertainty.</p>"
+      },
+      {
+        "answer": "<p>Jake is not sure. He thinks what he is saying is true.</p>",
+        "feedback": "<p>Jake is making an assumption.</p>"
+      },
+      {
+        "answer": "<p>Jake disagrees with Sarah.</p>",
+        "feedback": "<p>The conversation is not about disagreement.</p>"
+      },
+      {
+        "answer": "<p>Jake can't remember something.</p>",
+        "feedback": "<p>The phrase isn't about forgetting.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 20.92,
+        "finishTimestamp": 24.23
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 4.31,
+        "dialogue": {
+          "text": "I guess this is it for your first day. How was it?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 4.81
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>I guess</code> is a phrase used when someone is not completely sure but wants to make an assumption or express an opinion.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 166,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

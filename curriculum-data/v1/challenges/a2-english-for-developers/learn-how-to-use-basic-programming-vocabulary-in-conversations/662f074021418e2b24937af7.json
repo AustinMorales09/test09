@@ -1,0 +1,91 @@
+{
+  "id": "662f074021418e2b24937af7",
+  "title": "Task 53",
+  "challengeType": 22,
+  "dashedName": "task-53",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Depending on the _ that you're using, _ _ many _ and _ to use.</p>",
+    "blanks": [
+      {
+        "answer": "IDE",
+        "feedback": "<p>It stands for Integrated Development Environment, a software application that provides comprehensive programming facilities.</p>"
+      },
+      {
+        "answer": "there",
+        "feedback": "<p>It is used here to introduce the existence or presence of extensions and plugins.</p>"
+      },
+      {
+        "answer": "are",
+        "feedback": "<p>This verb is used to form expressions about the presence of multiple items.</p>"
+      },
+      {
+        "answer": "extensions",
+        "feedback": "<p>They are software additions that extend the capabilities of the IDE.</p>"
+      },
+      {
+        "answer": "plugins",
+        "feedback": "<p>Similar to extensions, these are software components that add specific features to an existing program, enhancing functionality.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 25.6,
+        "finishTimestamp": 30.06
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.46,
+        "dialogue": {
+          "text": "Depending on the IDE that you're using, there are many extensions and plugins to use.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Fill in the blanks in the dialogue below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 54,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

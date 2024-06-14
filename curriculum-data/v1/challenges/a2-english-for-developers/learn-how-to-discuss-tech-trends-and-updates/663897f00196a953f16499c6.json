@@ -1,0 +1,45 @@
+{
+  "id": "663897f00196a953f16499c6",
+  "title": "Task 40",
+  "challengeType": 19,
+  "dashedName": "task-40",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following sentences correctly uses the word <code>any</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>She needs any help from me.</code></p>",
+        "feedback": "<p>This is a correct because <code>any</code> should be used in negative statements or questions.</p>"
+      },
+      {
+        "answer": "<p><code>Have you seen any good movies lately?</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>I have any time to meet tomorrow.</code></p>",
+        "feedback": "<p>This sentence is incorrect. <code>Any</code> should not be used in affirmative statements without a conditional or negative context.</p>"
+      },
+      {
+        "answer": "<p><code>Any students are welcome to join the club.</code></p>",
+        "feedback": "<p>This use of <code>any</code> is incorrect. It should be <code>All students are welcome to join the club</code> if referring to every student without restriction.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>any</code> is often used in questions and negative sentences to indicate an indefinite amount or number. It helps indicate that the quantity or existence is uncertain or general.</p>\n<p>Examples:</p>\n<p><code>Do you have any questions?</code> - <code>Any</code> is used in a question to ask if there are questions, even one.</p>\n<p><code>I don't have any money.</code> - In this negative sentence, <code>any</code> shows that the speaker has zero money.</p>\n<p>Understanding how to use <code>any</code> correctly is important for forming clear and accurate questions and negative statements. On the other hand, <code>some</code> is often used in affirmative statements to indicate an unspecified amount or number.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

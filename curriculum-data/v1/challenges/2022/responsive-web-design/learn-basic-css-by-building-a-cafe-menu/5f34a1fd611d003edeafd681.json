@@ -1,0 +1,69 @@
+{
+  "id": "5f34a1fd611d003edeafd681",
+  "title": "Step 19",
+  "challengeType": 0,
+  "dashedName": "step-19",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background-color: brown;\n}\nh1, h2, p {\n  text-align: center;\n}",
+      "error": null,
+      "seed": "body {\n  background-color: brown;\n}\nh1, h2, p {\n  text-align: center;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should set the <code>background-color</code> property to <code>burlywood</code>.</p>",
+      "testString": "const hasBackground = new __helpers.CSSHelp(document).getCSSRules().some(x => x.style['background-color'] === 'burlywood');\nassert(hasBackground);"
+    },
+    {
+      "text": "<p>Your <code>body</code> element should have a <code>burlywood</code> background.</p>",
+      "testString": "const bodyBackground = new __helpers.CSSHelp(document).getStyle('body')?.getPropertyValue('background-color');\nassert(bodyBackground === 'burlywood');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>That brown background makes it hard to read the text. Change the <code>body</code> element's background color to be <code>burlywood</code> so it has some color but you are still be able to read the text.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

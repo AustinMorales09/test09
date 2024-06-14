@@ -1,0 +1,79 @@
+{
+  "id": "6579db53194a7c0f617943ac",
+  "title": "Task 27",
+  "challengeType": 22,
+  "dashedName": "task-27",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Excellent. Let's _ up a time for our code review _ .</p>",
+    "blanks": [
+      {
+        "answer": "set",
+        "feedback": "<p>It means to arrange or plan something, here referring to scheduling a review time.</p>"
+      },
+      {
+        "answer": "session",
+        "feedback": "<p>It is a meeting or period planned for a specific purpose, such as reviewing code.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 40.06,
+        "finishTimestamp": 42.68
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.62,
+        "dialogue": {
+          "text": "Excellent. Let's set up a time for our code review session.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.12
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>set up</code> means to arrange or schedule, often used in planning meetings. <code>Session</code> refers to a period allocated for a specific activity, like a <code>code review session</code>, which is a dedicated time for reviewing code.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

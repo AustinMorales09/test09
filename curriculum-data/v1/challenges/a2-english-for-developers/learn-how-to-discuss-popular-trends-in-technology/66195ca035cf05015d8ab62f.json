@@ -1,0 +1,79 @@
+{
+  "id": "66195ca035cf05015d8ab62f",
+  "title": "Task 41",
+  "challengeType": 22,
+  "dashedName": "task-41",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Sarah, _ you _ about Quantum Computing?</p>",
+    "blanks": [
+      {
+        "answer": "have",
+        "feedback": "<p>The auxiliary verb for the Present Perfect structure.</p>"
+      },
+      {
+        "answer": "heard",
+        "feedback": "<p>The verb <code>hear</code>, but in the participle form, to fit the Present Perfect structure.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 2.42
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 3.42,
+        "dialogue": {
+          "text": "Sarah, have you heard about Quantum Computing?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 3.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge is a quick refresher to the <strong>Present Perfect</strong> structure. Remember that, in order to talk about situations that happened in an undetermined moment in the past (when it occurred in the past is not important, only the event matters), it is common to use the Present Perfect structure instead of a <em>Simple Past</em> structure to talk about it.</p>\n<p>Examples:\n<code>Did you see him last week?</code> (I am asking if you saw another person in a specific moment in time - <code>last week</code> - use the Simple Past).\n<code>Have you seen him?</code> (I'm asking if you saw the person, regardless of when it happened - use the Present Perfect).</p>\n<p>In this question, James is asking Sarah if she has heard about a specific type of computing, no matter when it happened.</p>\n<p>Fill in the blanks with the appropriate words.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

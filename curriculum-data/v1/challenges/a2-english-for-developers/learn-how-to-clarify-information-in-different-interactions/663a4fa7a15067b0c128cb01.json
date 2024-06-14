@@ -1,0 +1,83 @@
+{
+  "id": "663a4fa7a15067b0c128cb01",
+  "title": "Task 29",
+  "challengeType": 22,
+  "dashedName": "task-29",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>He's got long dark hair and _ not _ _.</p>",
+    "blanks": [
+      {
+        "answer": "does",
+        "feedback": "<p>This is the auxiliary verb for the Simple Present, but in the third person singular.</p>"
+      },
+      {
+        "answer": "wear",
+        "feedback": "<p>This is the verb related to what you normally do with <code>glasses</code> and clothes in general.</p>"
+      },
+      {
+        "answer": "glasses",
+        "feedback": "<p>A pair of lenses in a frame. You wear them in front of your eyes to see better if things look blurry.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 18.04,
+        "finishTimestamp": 20.68
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.64,
+        "dialogue": {
+          "text": "He's got long dark hair and does not wear glasses.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.14
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When using the third person singular (<code>he</code>, <code>she</code>, or <code>it</code>) in the <code>Simple Present</code> tense, you normally add an <code>-s</code> to the end of a verb. For example, <code>he wears glasses</code>. However, when using the negative form, the <code>-s</code> goes to the auxiliary verb <code>do</code> and gets an extra <code>e</code>, forming <code>does</code>, combined with <code>not</code> and the verb in the regular form. Example: <code>he does not wear glasses</code>.</p>\n<p>One typical characteristic used to describe a person is to mention that they normally have or don't have their glasses on.</p>\n<p>Listen to Sophie's description of Tom and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,67 @@
+{
+  "id": "6569c2cbf6c993ea8cd85682",
+  "title": "Step 33",
+  "challengeType": 20,
+  "dashedName": "step-33",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        35,
+        42
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def merge_sort(array):\n    if len(array) <= 1:\n        return\n    \n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n\n    merge_sort(left_part)\n    merge_sort(right_part)\n\n    left_array_index = 0\n    right_array_index = 0\n    sorted_index = 0\n\n    while left_array_index < len(left_part) and right_array_index < len(right_part):\n        if left_part[left_array_index] < right_part[right_array_index]:\n            array[sorted_index] = left_part[left_array_index]\n            left_array_index += 1\n        else:\n            array[sorted_index] = right_part[right_array_index]\n            right_array_index += 1\n        sorted_index += 1\n\n    while left_array_index < len(left_part):\n        array[sorted_index] = left_part[left_array_index]\n        left_array_index += 1\n        sorted_index += 1\n    \n    while right_array_index < len(right_part):\n        array[sorted_index] = right_part[right_array_index]\n        right_array_index += 1\n        sorted_index += 1\n\n\nif __name__ == '__main__':\n    numbers = [4, 10, 6, 14, 2, 1, 8, 5]\n    print('Unsorted array: ')\n    print(numbers)\n    merge_sort(numbers)\n",
+      "error": null,
+      "seed": "def merge_sort(array):\n    if len(array) <= 1:\n        return\n    \n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n\n    merge_sort(left_part)\n    merge_sort(right_part)\n\n    left_array_index = 0\n    right_array_index = 0\n    sorted_index = 0\n\n    while left_array_index < len(left_part) and right_array_index < len(right_part):\n        if left_part[left_array_index] < right_part[right_array_index]:\n            array[sorted_index] = left_part[left_array_index]\n            left_array_index += 1\n        else:\n            array[sorted_index] = right_part[right_array_index]\n            right_array_index += 1\n        sorted_index += 1\n\n    while left_array_index < len(left_part):\n        array[sorted_index] = left_part[left_array_index]\n        left_array_index += 1\n        sorted_index += 1\n    \n    while right_array_index < len(right_part):\n        array[sorted_index] = right_part[right_array_index]\n        right_array_index += 1\n        sorted_index += 1\n\n\nif __name__ == '__main__':\n    numbers = [4, 10, 6, 14, 2, 1, 8, 5]\n    print('Unsorted array: ')\n    print(numbers)\n    merge_sort(numbers)\n"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "main.py"
+        ],
+        "name": "main",
+        "ext": "py",
+        "path": "main.py",
+        "fileKey": "mainpy",
+        "contents": "def merge_sort(array):\n    if len(array) <= 1:\n        return\n    \n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n\n    merge_sort(left_part)\n    merge_sort(right_part)\n\n    left_array_index = 0\n    right_array_index = 0\n    sorted_index = 0\n\n    while left_array_index < len(left_part) and right_array_index < len(right_part):\n        if left_part[left_array_index] < right_part[right_array_index]:\n            array[sorted_index] = left_part[left_array_index]\n            left_array_index += 1\n        else:\n            array[sorted_index] = right_part[right_array_index]\n            right_array_index += 1\n        sorted_index += 1\n\n    while left_array_index < len(left_part):\n        array[sorted_index] = left_part[left_array_index]\n        left_array_index += 1\n        sorted_index += 1\n\n    while right_array_index < len(right_part):\n        array[sorted_index] = right_part[right_array_index]\n        right_array_index += 1\n        sorted_index += 1\n\n\nif __name__ == '__main__':\n    numbers = [4, 10, 6, 14, 2, 1, 8, 5]\n    print('Unsorted array: ')\n    print(numbers)\n    merge_sort(numbers)\n    print('Sorted array: ' + str(numbers))",
+        "error": null,
+        "seed": "def merge_sort(array):\n    if len(array) <= 1:\n        return\n    \n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n\n    merge_sort(left_part)\n    merge_sort(right_part)\n\n    left_array_index = 0\n    right_array_index = 0\n    sorted_index = 0\n\n    while left_array_index < len(left_part) and right_array_index < len(right_part):\n        if left_part[left_array_index] < right_part[right_array_index]:\n            array[sorted_index] = left_part[left_array_index]\n            left_array_index += 1\n        else:\n            array[sorted_index] = right_part[right_array_index]\n            right_array_index += 1\n        sorted_index += 1\n\n    while left_array_index < len(left_part):\n        array[sorted_index] = left_part[left_array_index]\n        left_array_index += 1\n        sorted_index += 1\n\n    while right_array_index < len(right_part):\n        array[sorted_index] = right_part[right_array_index]\n        right_array_index += 1\n        sorted_index += 1\n\n\nif __name__ == '__main__':\n    numbers = [4, 10, 6, 14, 2, 1, 8, 5]\n    print('Unsorted array: ')\n    print(numbers)\n    merge_sort(numbers)\n    print('Sorted array: ' + str(numbers))"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have <code>print('Sorted array: ' + str(numbers))</code> in your code. Remember to add the space after the colon.</p>",
+      "testString": "({ test: () => assert.match(code, /^\\s{4}print\\s*\\(\\s*(\"|')Sorted array: \\1\\s*\\+\\s*str\\s*\\(\\s*numbers\\s*\\)\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>At this point, the <code>numbers</code> list has been sorted. Call the <code>print</code> function to print string <code>Sorted array: </code> and the sorted list.</p>\n<p>To do that, concatenate <code>'Sorted array: '</code> and <code>str(numbers)</code> in the <code>print()</code> call.</p>\n<p>With that, the merge sort algorithm is complete.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-data-structures-by-building-the-merge-sort-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 9,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 32,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "656ef783bba6976de014eaa8",
+  "title": "Step 24",
+  "challengeType": 20,
+  "dashedName": "step-24",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        12,
+        17
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n    password = ''\n    # Generate password\n    for _ in range(length):\n        password += secrets.choice(all_characters)\n    return password\n\n# new_password = generate_password(8)\n# print(new_password)",
+      "error": null,
+      "seed": "import secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n    password = ''\n    # Generate password\n    for _ in range(length):\n        password += secrets.choice(all_characters)\n    return password\n\n# new_password = generate_password(8)\n# print(new_password)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a <code>while True</code> loop enclosing your existing <code>password</code> declaration and <code>for</code> loop.</p>",
+      "testString": "({ test: () => {\n    \n    const commentless_code = __helpers.python.removeComments(code);\n    const {block_body} = __helpers.python.getBlock(commentless_code, /while\\s+True\\s*/);\n    assert(block_body.match(/^\\s+password\\s*=\\s*(\"|')\\1\\s*^\\s+for\\s+_\\s+in\\s+range\\s*\\(\\s*length\\s*\\s*\\)\\s*:\\s*^\\s+password\\s*\\+=\\s*secrets\\.choice\\s*\\(\\s*all_characters\\s*\\)\\s*$/m));    \n    const {block_body: for_body} = __helpers.python.getBlock(commentless_code, /for\\s+_\\s+in\\s+range\\s*\\(\\s*length\\s*\\s*\\)\\s*/);\n    assert(for_body.match(/^\\s+password\\s*\\+=\\s*secrets\\.choice\\s*\\(\\s*all_characters\\s*\\)\\s*$/m));  \n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Put your <code>password</code> variable declaration and the following <code>for</code> loop inside a <code>while</code> loop. Use <code>True</code> as the condition for your new loop.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

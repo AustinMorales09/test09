@@ -1,0 +1,83 @@
+{
+  "id": "587d7b7e367417b2b2512b23",
+  "title": "Use the parseInt Function",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cm83LSW",
+  "forumTopicId": 301183,
+  "dashedName": "use-the-parseint-function",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function convertToInteger(str) {\n\n}\n\nconvertToInteger(\"56\");",
+      "error": null,
+      "seed": "function convertToInteger(str) {\n\n}\n\nconvertToInteger(\"56\");"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function convertToInteger(str) {\n  return parseInt(str);\n}",
+        "error": null,
+        "seed": "function convertToInteger(str) {\n  return parseInt(str);\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>convertToInteger</code> should use the <code>parseInt()</code> function</p>",
+      "testString": "assert(/parseInt/g.test(__helpers.removeJSComments(code)));"
+    },
+    {
+      "text": "<p><code>convertToInteger(\"56\")</code> should return a number</p>",
+      "testString": "assert(typeof convertToInteger('56') === 'number');"
+    },
+    {
+      "text": "<p><code>convertToInteger(\"56\")</code> should return 56</p>",
+      "testString": "assert(convertToInteger('56') === 56);"
+    },
+    {
+      "text": "<p><code>convertToInteger(\"77\")</code> should return 77</p>",
+      "testString": "assert(convertToInteger('77') === 77);"
+    },
+    {
+      "text": "<p><code>convertToInteger(\"JamesBond\")</code> should return <code>NaN</code></p>",
+      "testString": "assert.isNaN(convertToInteger('JamesBond'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>parseInt()</code> function parses a string and returns an integer. Here's an example:</p>\n<pre><code class=\"language-js\">const a = parseInt(\"007\");\n</code></pre>\n<p>The above function converts the string <code>007</code> to the integer <code>7</code>. If the first character in the string can't be converted into a number, then it returns <code>NaN</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use <code>parseInt()</code> in the <code>convertToInteger</code> function so it converts the input string <code>str</code> into an integer, and returns it.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 107,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

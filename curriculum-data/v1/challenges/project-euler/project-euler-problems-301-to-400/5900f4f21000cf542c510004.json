@@ -1,0 +1,65 @@
+{
+  "id": "5900f4f21000cf542c510004",
+  "title": "Problem 389: Platonic Dice",
+  "challengeType": 1,
+  "forumTopicId": 302053,
+  "dashedName": "problem-389-platonic-dice",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function platonicDice() {\n\n  return true;\n}\n\nplatonicDice();",
+      "error": null,
+      "seed": "function platonicDice() {\n\n  return true;\n}\n\nplatonicDice();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>platonicDice()</code> should return <code>2406376.3623</code>.</p>",
+      "testString": "assert.strictEqual(platonicDice(), 2406376.3623);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>An unbiased single 4-sided die is thrown and its value, $T$, is noted.</p>\n<p>$T$ unbiased 6-sided dice are thrown and their scores are added together. The sum, $C$, is noted.</p>\n<p>$C$ unbiased 8-sided dice are thrown and their scores are added together. The sum, $O$, is noted.</p>\n<p>$O$ unbiased 12-sided dice are thrown and their scores are added together. The sum, $D$, is noted.</p>\n<p>$D$ unbiased 20-sided dice are thrown and their scores are added together. The sum, $I$, is noted.</p>\n<p>Find the variance of $I$, and give your answer rounded to 4 decimal places.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 88,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

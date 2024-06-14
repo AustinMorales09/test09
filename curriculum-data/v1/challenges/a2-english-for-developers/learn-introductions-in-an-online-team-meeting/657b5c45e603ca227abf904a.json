@@ -1,0 +1,88 @@
+{
+  "id": "657b5c45e603ca227abf904a",
+  "title": "Task 7",
+  "challengeType": 19,
+  "dashedName": "task-7",
+  "solutions": [],
+  "question": {
+    "text": "<p>What kind of things does Alice like to create?</p>",
+    "answers": [
+      {
+        "answer": "<p>Food recipes</p>",
+        "feedback": "<p>Alice doesn't talk about food recipes.</p>"
+      },
+      {
+        "answer": "<p>Software that helps people</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Gardening tools</p>",
+        "feedback": "<p>Alice doesn't talk about gardening tools.</p>"
+      },
+      {
+        "answer": "<p>Music albums</p>",
+        "feedback": "<p>Alice doesn't talk about music production.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.44,
+        "finishTimestamp": 8.6
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 5.16,
+        "dialogue": {
+          "text": "I'm a programmer and I love creating software that helps people in their daily activities.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 5.66
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

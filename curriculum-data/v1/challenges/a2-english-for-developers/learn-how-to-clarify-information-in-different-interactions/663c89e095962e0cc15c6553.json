@@ -1,0 +1,116 @@
+{
+  "id": "663c89e095962e0cc15c6553",
+  "title": "Task 44",
+  "challengeType": 19,
+  "dashedName": "task-44",
+  "solutions": [],
+  "question": {
+    "text": "<p>What can we conclude from the dialogue?</p>",
+    "answers": [
+      {
+        "answer": "<p>Tom is absolutely right</p>",
+        "feedback": "<p>No, he isn't. He thought <code>skeuomorph</code> was a plant, but it's not.</p>"
+      },
+      {
+        "answer": "<p><code>Skeuomorph</code> is a digital plant</p>",
+        "feedback": "<p>A <code>skeuomorph</code> could be a virtual image that looked like a plant, but there's more to it.</p>"
+      },
+      {
+        "answer": "<p>Alice came up with a non-existing word just to win the game</p>",
+        "feedback": "<p>Not really. It's a strange word, but it does exist.</p>"
+      },
+      {
+        "answer": "<p>Tom didn't guess the meaning of <code>skeuomorph</code> and Alice explained to him what it is</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 25.7,
+        "finishTimestamp": 33.1
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 2.32,
+        "dialogue": {
+          "text": "Is it a type of rare plant?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 2.59
+      },
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 2.59
+      },
+      {
+        "character": "Alice",
+        "startTime": 2.86,
+        "finishTime": 8.4,
+        "dialogue": {
+          "text": "Not really. It's a design element. It imitates real world objects in digital interfaces.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 8.9
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>skeuomorph</code> is a virtual object in a digital interface that resembles an object from real life. In calendar applications, for instance, you can have an image that looks very similar to a physical calendar to give you the sensation of familiarity.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 46,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

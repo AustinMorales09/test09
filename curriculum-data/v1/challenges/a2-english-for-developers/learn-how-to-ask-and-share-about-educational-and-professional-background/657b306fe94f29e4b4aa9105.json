@@ -1,0 +1,88 @@
+{
+  "id": "657b306fe94f29e4b4aa9105",
+  "title": "Task 89",
+  "challengeType": 19,
+  "dashedName": "task-89",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Anna mean when she says <code>not right away</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>She immediately started working in HR at a tech company</p>",
+        "feedback": "<p><code>Not right away</code> indicates a delay or period before taking action, not immediate action.</p>"
+      },
+      {
+        "answer": "<p>She started working in a different role before moving to HR at a tech company</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She has never worked in HR</p>",
+        "feedback": "<p>The statement implies she did work in HR, just not immediately.</p>"
+      },
+      {
+        "answer": "<p>She was always focused on training and development</p>",
+        "feedback": "<p><code>Not right away</code> suggests a progression or change over time, not a constant focus.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.66,
+        "finishTimestamp": 30.24
+      }
+    },
+    "commands": [
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Anna",
+        "startTime": 1,
+        "finishTime": 7.58,
+        "dialogue": {
+          "text": "Not right away. I worked in a general HR role at a non-tech company first, focusing on training and development.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 8.08
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>not right away</code> is used to indicate that something didn't happen immediately or at the earliest opportunity. It suggests that there was a delay or a period before the action or change took place. This phrase helps to set the timeline of events or actions.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 93,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

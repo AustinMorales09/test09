@@ -1,0 +1,82 @@
+{
+  "id": "5a24c314108439a4d4036178",
+  "title": "Create a Controlled Input",
+  "challengeType": 6,
+  "forumTopicId": 301385,
+  "dashedName": "create-a-controlled-input",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<ControlledInput />, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class ControlledInput extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      input: ''\n    };\n    // Change code below this line\n\n    // Change code above this line\n  }\n  // Change code below this line\n\n  // Change code above this line\n  render() {\n    return (\n      <div>\n        { /* Change code below this line */}\n\n        { /* Change code above this line */}\n        <h4>Controlled Input:</h4>\n        <p>{this.state.input}</p>\n      </div>\n    );\n  }\n};",
+      "error": null,
+      "seed": "class ControlledInput extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      input: ''\n    };\n    // Change code below this line\n\n    // Change code above this line\n  }\n  // Change code below this line\n\n  // Change code above this line\n  render() {\n    return (\n      <div>\n        { /* Change code below this line */}\n\n        { /* Change code above this line */}\n        <h4>Controlled Input:</h4>\n        <p>{this.state.input}</p>\n      </div>\n    );\n  }\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "class ControlledInput extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      input: ''\n    };\n    this.handleChange = this.handleChange.bind(this);\n  }\n  handleChange(event) {\n    this.setState({\n      input: event.target.value\n    });\n  }\n  render() {\n    return (\n      <div>\n        <input\n          value={this.state.input}\n          onChange={this.handleChange} />\n        <h4>Controlled Input:</h4>\n\n        <p>{this.state.input}</p>\n      </div>\n    );\n  }\n};",
+        "error": null,
+        "seed": "class ControlledInput extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      input: ''\n    };\n    this.handleChange = this.handleChange.bind(this);\n  }\n  handleChange(event) {\n    this.setState({\n      input: event.target.value\n    });\n  }\n  render() {\n    return (\n      <div>\n        <input\n          value={this.state.input}\n          onChange={this.handleChange} />\n        <h4>Controlled Input:</h4>\n\n        <p>{this.state.input}</p>\n      </div>\n    );\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>ControlledInput</code> should return a <code>div</code> element which contains an <code>input</code> and a <code>p</code> tag.</p>",
+      "testString": "assert(\n  Enzyme.mount(React.createElement(ControlledInput))\n    .find('div')\n    .children()\n    .find('input').length === 1 &&\n    Enzyme.mount(React.createElement(ControlledInput))\n      .find('div')\n      .children()\n      .find('p').length === 1\n);"
+    },
+    {
+      "text": "<p>The state of <code>ControlledInput</code> should initialize with an <code>input</code> property set to an empty string.</p>",
+      "testString": "assert.strictEqual(\n  Enzyme.mount(React.createElement(ControlledInput)).state('input'),\n  ''\n);"
+    },
+    {
+      "text": "<p>Typing in the input element should update the state and the value of the input, and the <code>p</code> element should render this state as you type.</p>",
+      "testString": "async () => {\n  const waitForIt = (fn) =>\n    new Promise((resolve, reject) => setTimeout(() => resolve(fn()), 250));\n  const mockedComponent = Enzyme.mount(React.createElement(ControlledInput));\n  const _1 = () => {\n    mockedComponent.setState({ input: '' });\n    return waitForIt(() => mockedComponent.state('input'));\n  };\n  const _2 = () => {\n    mockedComponent\n      .find('input')\n      .simulate('change', { target: { value: 'TestInput' } });\n    return waitForIt(() => ({\n      state: mockedComponent.state('input'),\n      text: mockedComponent.find('p').text(),\n      inputVal: mockedComponent.find('input').props().value\n    }));\n  };\n  const before = await _1();\n  const after = await _2();\n  assert(\n    before === '' &&\n      after.state === 'TestInput' &&\n      after.text === 'TestInput' &&\n      after.inputVal === 'TestInput'\n  );\n};"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Your application may have more complex interactions between <code>state</code> and the rendered UI. For example, form control elements for text input, such as <code>input</code> and <code>textarea</code>, maintain their own state in the DOM as the user types. With React, you can move this mutable state into a React component's <code>state</code>. The user's input becomes part of the application <code>state</code>, so React controls the value of that input field. Typically, if you have React components with input fields the user can type into, it will be a controlled input form.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The code editor has the skeleton of a component called <code>ControlledInput</code> to create a controlled <code>input</code> element. The component's <code>state</code> is already initialized with an <code>input</code> property that holds an empty string. This value represents the text a user types into the <code>input</code> field.</p>\n<p>First, create a method called <code>handleChange()</code> that has a parameter called <code>event</code>. When the method is called, it receives an <code>event</code> object that contains a string of text from the <code>input</code> element. You can access this string with <code>event.target.value</code> inside the method. Update the <code>input</code> property of the component's <code>state</code> with this new string.</p>\n<p>In the <code>render</code> method, create the <code>input</code> element above the <code>h4</code> tag. Add a <code>value</code> attribute which is equal to the <code>input</code> property of the component's <code>state</code>. Then add an <code>onChange</code> property set to the <code>handleChange()</code> event handler method.</p>\n<p>When you type in the input box, that text is processed by the <code>handleChange()</code> method, set as the <code>input</code> property in the local <code>state</code>, and rendered as the value in the <code>input</code> box on the page. The component <code>state</code> is the single source of truth regarding the input data.</p>\n<p>Last but not least, don't forget to add the necessary bindings in the constructor.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 27,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

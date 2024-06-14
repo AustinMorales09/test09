@@ -1,0 +1,49 @@
+{
+  "id": "6579ca0923cfa7162089d2f0",
+  "title": "Step 8",
+  "challengeType": 20,
+  "dashedName": "step-8",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        8
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\ncopper['food'] = 'hay'\n\nprint(copper)",
+      "error": null,
+      "seed": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\ncopper['food'] = 'hay'\n\nprint(copper)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should reassign the <code>copper['species']</code> to the string <code>'Cavia porcellus'</code> before the <code>print()</code> call.</p>",
+      "testString": "({ test: () => {\n    const commentless_code = __helpers.python.removeComments(code);\n    assert.match(commentless_code, /^copper\\s*\\[\\s*(\"|')species\\1\\s*\\]\\s*=\\s*(\"|')Cavia porcellus\\2\\s+^print\\s*\\(\\s*copper\\s*\\)/m)\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The same syntax can be used to change the value of an existing key.</p>\n<p>Just before the <code>print()</code> call, access the <code>'species'</code> key and reassign its value to <code>'Cavia porcellus'</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

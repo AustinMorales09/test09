@@ -1,0 +1,81 @@
+{
+  "id": "a103376db3ba46b2d50db289",
+  "title": "Spinal Tap Case",
+  "challengeType": 1,
+  "forumTopicId": 16078,
+  "dashedName": "spinal-tap-case",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function spinalCase(str) {\n  return str;\n}\n\nspinalCase('This Is Spinal Tap');",
+      "error": null,
+      "seed": "function spinalCase(str) {\n  return str;\n}\n\nspinalCase('This Is Spinal Tap');"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function spinalCase(str) {\n  str = str.replace(/([a-z](?=[A-Z]))/g, '$1 ');\n  return str.toLowerCase().replace(/\\ |\\_/g, '-');\n}",
+        "error": null,
+        "seed": "function spinalCase(str) {\n  str = str.replace(/([a-z](?=[A-Z]))/g, '$1 ');\n  return str.toLowerCase().replace(/\\ |\\_/g, '-');\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>spinalCase(\"This Is Spinal Tap\")</code> should return the string <code>this-is-spinal-tap</code>.</p>",
+      "testString": "assert.deepEqual(spinalCase('This Is Spinal Tap'), 'this-is-spinal-tap');"
+    },
+    {
+      "text": "<p><code>spinalCase(\"thisIsSpinalTap\")</code> should return the string <code>this-is-spinal-tap</code>.</p>",
+      "testString": "assert.strictEqual(spinalCase('thisIsSpinalTap'), 'this-is-spinal-tap');"
+    },
+    {
+      "text": "<p><code>spinalCase(\"The_Andy_Griffith_Show\")</code> should return the string <code>the-andy-griffith-show</code>.</p>",
+      "testString": "assert.strictEqual(\n  spinalCase('The_Andy_Griffith_Show'),\n  'the-andy-griffith-show'\n);"
+    },
+    {
+      "text": "<p><code>spinalCase(\"Teletubbies say Eh-oh\")</code> should return the string <code>teletubbies-say-eh-oh</code>.</p>",
+      "testString": "assert.strictEqual(\n  spinalCase('Teletubbies say Eh-oh'),\n  'teletubbies-say-eh-oh'\n);"
+    },
+    {
+      "text": "<p><code>spinalCase(\"AllThe-small Things\")</code> should return the string <code>all-the-small-things</code>.</p>",
+      "testString": "assert.strictEqual(spinalCase('AllThe-small Things'), 'all-the-small-things');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.</p>\n</section>",
+  "translationPending": false,
+  "block": "intermediate-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

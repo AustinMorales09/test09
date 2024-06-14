@@ -1,0 +1,61 @@
+{
+  "id": "660eebd83100d37862268781",
+  "title": "Step 2",
+  "challengeType": 1,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character;",
+      "error": null,
+      "seed": "let character;"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the assignment operator <code>=</code>.</p>",
+      "testString": "assert.match(code, /let\\s+character\\s*=/);"
+    },
+    {
+      "text": "<p>You should use the string <code>\"Hello\"</code>.</p>",
+      "testString": "assert.match(code, /('|\")Hello\\1/);"
+    },
+    {
+      "text": "<p>You should use double quotes for your <code>\"Hello\"</code> string.</p>",
+      "testString": "assert.match(code, /\"Hello\"/);"
+    },
+    {
+      "text": "<p>You should assign <code>\"Hello\"</code> to your <code>character</code> variable.</p>",
+      "testString": "assert.equal(character, \"Hello\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Your <code>character</code> variable currently does not have a value. You can assign a value using the <dfn>assignment</dfn> operator <code>=</code>. For example:</p>\n<pre><code class=\"language-js\">let hello = \"Hello\";\n</code></pre>\n<p>Assigning a value to a variable at the moment of its declaration is known as <dfn>initialization</dfn>.</p>\n<p>Initialize your <code>character</code> variable by assigning it the value <code>\"Hello\"</code> during its declaration.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

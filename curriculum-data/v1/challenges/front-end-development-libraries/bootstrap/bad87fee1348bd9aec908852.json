@@ -1,0 +1,69 @@
+{
+  "id": "bad87fee1348bd9aec908852",
+  "title": "Create a Class to Target with jQuery Selectors",
+  "challengeType": 0,
+  "forumTopicId": 16815,
+  "dashedName": "create-a-class-to-target-with-jquery-selectors",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n      </div>\n    </div>\n  </div>\n</div>",
+      "error": null,
+      "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n      </div>\n    </div>\n  </div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button class=\"target btn btn-default\"></button>\n        <button class=\"target btn btn-default\"></button>\n        <button class=\"target btn btn-default\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button class=\"target btn btn-default\"></button>\n        <button class=\"target btn btn-default\"></button>\n        <button class=\"target btn btn-default\"></button>\n      </div>\n    </div>\n  </div>\n</div>",
+        "error": null,
+        "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button class=\"target btn btn-default\"></button>\n        <button class=\"target btn btn-default\"></button>\n        <button class=\"target btn btn-default\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button class=\"target btn btn-default\"></button>\n        <button class=\"target btn btn-default\"></button>\n        <button class=\"target btn btn-default\"></button>\n      </div>\n    </div>\n  </div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should apply the <code>target</code> class to each of your <code>button</code> elements.</p>",
+      "testString": "assert($('.target').length > 5);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Not every class needs to have corresponding CSS. Sometimes we create classes just for the purpose of selecting these elements more easily using jQuery.</p>\n<p>Give each of your <code>button</code> elements the class <code>target</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "bootstrap",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 25,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

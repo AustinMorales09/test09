@@ -1,0 +1,79 @@
+{
+  "id": "657ec6ac4de4eac8bab2f2a7",
+  "title": "Task 39",
+  "challengeType": 22,
+  "dashedName": "task-39",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Ok, it's a _ _, then.</p>",
+    "blanks": [
+      {
+        "answer": "bike",
+        "feedback": "<p>This word specifies the type of activity planned, indicating it's an outing involving bicycles.</p>"
+      },
+      {
+        "answer": "date",
+        "feedback": "<p>This word refers to a scheduled meeting or event.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Linda",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 44.64,
+        "finishTimestamp": 46.58
+      }
+    },
+    "commands": [
+      {
+        "character": "Linda",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Linda",
+        "startTime": 1,
+        "finishTime": 2.94,
+        "dialogue": {
+          "text": "Okay, it's a bike date, then.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Linda",
+        "opacity": 0,
+        "startTime": 3.44
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>date</code> can be used in different contexts. While it often refers to a romantic meeting between two people, it can also simply mean an appointment or a planned event between friends or colleagues. For example, saying <code>Let's set a date for our next meeting</code> uses <code>date</code> in a non-romantic way, referring to choosing a day for a meeting.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

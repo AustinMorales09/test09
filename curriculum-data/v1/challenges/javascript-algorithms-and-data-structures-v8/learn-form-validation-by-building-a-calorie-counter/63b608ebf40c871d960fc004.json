@@ -1,0 +1,133 @@
+{
+  "id": "63b608ebf40c871d960fc004",
+  "title": "Step 7",
+  "challengeType": 0,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        33,
+        35
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n    <title>Calorie Counter</title>\n  </head>\n  <body>\n    <main>\n      <h1>Calorie Counter</h1>\n      <div class=\"container\">\n        <form id=\"calorie-counter\">\n          <label for=\"budget\">Budget</label>\n          <input\n            type=\"number\"\n            min=\"0\"\n            id=\"budget\"\n            placeholder=\"Daily calorie budget\"\n            required\n          />\n          <fieldset id=\"breakfast\">\n            <legend>Breakfast</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <fieldset id=\"lunch\">\n            <legend>Lunch</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <fieldset id=\"dinner\">\n            <legend>Dinner</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n\n        </form>\n      </div>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n    <title>Calorie Counter</title>\n  </head>\n  <body>\n    <main>\n      <h1>Calorie Counter</h1>\n      <div class=\"container\">\n        <form id=\"calorie-counter\">\n          <label for=\"budget\">Budget</label>\n          <input\n            type=\"number\"\n            min=\"0\"\n            id=\"budget\"\n            placeholder=\"Daily calorie budget\"\n            required\n          />\n          <fieldset id=\"breakfast\">\n            <legend>Breakfast</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <fieldset id=\"lunch\">\n            <legend>Lunch</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n          <fieldset id=\"dinner\">\n            <legend>Dinner</legend>\n            <div class=\"input-container\"></div>\n          </fieldset>\n\n        </form>\n      </div>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": ":root {\n  --light-grey: #f5f6f7;\n  --dark-blue: #0a0a23;\n  --fcc-blue: #1b1b32;\n  --light-yellow: #fecc4c;\n  --dark-yellow: #feac32;\n  --light-pink: #ffadad;\n  --dark-red: #850000;\n  --light-green: #acd157;\n}\n\nbody {\n  font-family: \"Lato\", Helvetica, Arial, sans-serif;\n  font-size: 18px;\n  background-color: var(--fcc-blue);\n  color: var(--light-grey);\n}\n\nh1 {\n  text-align: center;\n}\n\n.container {\n  width: 90%;\n  max-width: 680px;\n}\n\nh1,\n.container,\n.output {\n  margin: 20px auto;\n}\n\nlabel,\nlegend {\n  font-weight: bold;\n}\n\n.input-container {\n  display: flex;\n  flex-direction: column;\n}\n\nbutton {\n  cursor: pointer;\n  text-decoration: none;\n  background-color: var(--light-yellow);\n  border: 2px solid var(--dark-yellow);\n}\n\nbutton,\ninput,\nselect {\n  min-height: 24px;\n  color: var(--dark-blue);\n}\n\nfieldset,\nlabel,\nbutton,\ninput,\nselect {\n  margin-bottom: 10px;\n}\n\n.output {\n  border: 2px solid var(--light-grey);\n  padding: 10px;\n  text-align: center;\n}\n\n.hide {\n  display: none;\n}\n\n.output span {\n  font-weight: bold;\n  font-size: 1.2em;\n}\n\n.surplus {\n  color: var(--light-pink);\n}\n\n.deficit {\n  color: var(--light-green);\n}",
+      "error": null,
+      "seed": ":root {\n  --light-grey: #f5f6f7;\n  --dark-blue: #0a0a23;\n  --fcc-blue: #1b1b32;\n  --light-yellow: #fecc4c;\n  --dark-yellow: #feac32;\n  --light-pink: #ffadad;\n  --dark-red: #850000;\n  --light-green: #acd157;\n}\n\nbody {\n  font-family: \"Lato\", Helvetica, Arial, sans-serif;\n  font-size: 18px;\n  background-color: var(--fcc-blue);\n  color: var(--light-grey);\n}\n\nh1 {\n  text-align: center;\n}\n\n.container {\n  width: 90%;\n  max-width: 680px;\n}\n\nh1,\n.container,\n.output {\n  margin: 20px auto;\n}\n\nlabel,\nlegend {\n  font-weight: bold;\n}\n\n.input-container {\n  display: flex;\n  flex-direction: column;\n}\n\nbutton {\n  cursor: pointer;\n  text-decoration: none;\n  background-color: var(--light-yellow);\n  border: 2px solid var(--dark-yellow);\n}\n\nbutton,\ninput,\nselect {\n  min-height: 24px;\n  color: var(--dark-blue);\n}\n\nfieldset,\nlabel,\nbutton,\ninput,\nselect {\n  margin-bottom: 10px;\n}\n\n.output {\n  border: 2px solid var(--light-grey);\n  padding: 10px;\n  text-align: center;\n}\n\n.hide {\n  display: none;\n}\n\n.output span {\n  font-weight: bold;\n  font-size: 1.2em;\n}\n\n.surplus {\n  color: var(--light-pink);\n}\n\n.deficit {\n  color: var(--light-green);\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a fourth <code>fieldset</code> element in your <code>form</code>.</p>",
+      "testString": "assert.exists(document.querySelectorAll('form fieldset')[3]);"
+    },
+    {
+      "text": "<p>Your fourth <code>fieldset</code> element should come after your third <code>fieldset</code> element.</p>",
+      "testString": "assert.equal(document.querySelectorAll('form fieldset')[3]?.previousElementSibling?.tagName, \"FIELDSET\");"
+    },
+    {
+      "text": "<p>Your fourth <code>fieldset</code> element should have an <code>id</code> set to <code>snacks</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('form fieldset')[3]?.id, \"snacks\");"
+    },
+    {
+      "text": "<p>Your fourth <code>fieldset</code> element should contain a <code>legend</code> element.</p>",
+      "testString": "assert.exists(document.querySelectorAll('form fieldset')[3]?.querySelector('legend'));"
+    },
+    {
+      "text": "<p>Your fourth <code>legend</code> element should have the text <code>Snacks</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('form fieldset')[3]?.querySelector('legend')?.innerText, \"Snacks\");"
+    },
+    {
+      "text": "<p>Your fourth <code>fieldset</code> element should contain a <code>div</code> element.</p>",
+      "testString": "assert.exists(document.querySelectorAll('form fieldset')[3]?.querySelector('div'));"
+    },
+    {
+      "text": "<p>Your fifth <code>div</code> element should have a <code>class</code> set to <code>input-container</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('form fieldset')[3]?.querySelector('div')?.className, \"input-container\");"
+    },
+    {
+      "text": "<p>You should create a fifth <code>fieldset</code> element in your <code>form</code>.</p>",
+      "testString": "assert.exists(document.querySelectorAll('form fieldset')[4]);"
+    },
+    {
+      "text": "<p>Your fifth <code>fieldset</code> element should come after your fourth <code>fieldset</code> element.</p>",
+      "testString": "assert.equal(document.querySelectorAll('form fieldset')[4]?.previousElementSibling?.tagName, \"FIELDSET\");"
+    },
+    {
+      "text": "<p>Your fifth <code>fieldset</code> element should have an <code>id</code> set to <code>exercise</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('form fieldset')[4]?.id, \"exercise\");"
+    },
+    {
+      "text": "<p>Your fifth <code>fieldset</code> element should contain a <code>legend</code> element.</p>",
+      "testString": "assert.exists(document.querySelectorAll('form fieldset')[4]?.querySelector('legend'));"
+    },
+    {
+      "text": "<p>Your fifth <code>legend</code> element should have the text <code>Exercise</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('form fieldset')[4]?.querySelector('legend')?.innerText, \"Exercise\");"
+    },
+    {
+      "text": "<p>Your fifth <code>fieldset</code> element should contain a <code>div</code> element.</p>",
+      "testString": "assert.exists(document.querySelectorAll('form fieldset')[4]?.querySelector('div'));"
+    },
+    {
+      "text": "<p>Your fifth <code>div</code> element should have a <code>class</code> set to <code>input-container</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('form fieldset')[4]?.querySelector('div')?.className, \"input-container\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You need two more of these <code>fieldset</code> code blocks – one for <code>snacks</code> and one for <code>exercise</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-form-validation-by-building-a-calorie-counter",
+  "hasEditableBoundaries": true,
+  "order": 4,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

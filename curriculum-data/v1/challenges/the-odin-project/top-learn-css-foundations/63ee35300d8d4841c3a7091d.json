@@ -1,0 +1,42 @@
+{
+  "id": "63ee35300d8d4841c3a7091d",
+  "videoId": "LGQuIIv2RVA",
+  "title": "CSS Foundations Question D",
+  "challengeType": 15,
+  "dashedName": "css-foundations-question-d",
+  "solutions": [],
+  "question": {
+    "text": "<p>Given an element that has an <code>id</code> of <code>title</code> and a <code>class</code> of <code>primary</code>, how would you use both attributes for a single rule?</p>",
+    "answers": [
+      {
+        "answer": "<pre><code class=\"language-css\">.title.primary {\n  ...\n}\n</code></pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre><code class=\"language-css\">.title > primary {\n  ...\n}\n</code></pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre><code class=\"language-css\">#title.primary { \n  ...\n}\n</code></pre>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Another way to use selectors is to chain them as a list without any separation. Let’s say you had the following HTML:</p>\n<pre><code class=\"language-html\">&#x3C;div>\n  &#x3C;div class=\"subsection header\">Latest Posts&#x3C;/div>\n  &#x3C;p class=\"subsection preview\">This is where a preview for a post might go.&#x3C;/p>\n&#x3C;/div>\n</code></pre>\n<p>You have two elements with the <code>subsection</code> class that have some sort of unique styles, but what if you only want to apply a separate rule to the element that also has <code>header</code> as a second class? Well, you could chain both the <code>class</code> selectors together in your CSS like so:</p>\n<pre><code class=\"language-css\">.subsection.header {\n  color: red;\n}\n</code></pre>\n<p>What <code>.subsection.header</code> does is it selects any element that has both the <code>subsection</code> and <code>header</code> classes. Notice how there isn’t any space between the <code>.subsection</code> and <code>.header</code> <code>class</code> selectors. This syntax basically works for chaining any combination of selectors, except for chaining more than one type selector.</p>\n<p>This can also be used to chain a class and an ID, as shown below:</p>\n<pre><code class=\"language-html\">&#x3C;div>\n  &#x3C;div class=\"subsection header\">Latest Posts&#x3C;/div>\n  &#x3C;p class=\"subsection\" id=\"preview\">This is where a preview for a post might go.&#x3C;/p>\n&#x3C;/div>\n</code></pre>\n<p>You can take the two elements above and combine them with the following:</p>\n<pre><code class=\"language-css\">.subsection.header {\n  color: red;\n}\n\n.subsection#preview {\n  color: blue;\n}\n</code></pre>\n<p>In general, you can’t chain more than one type selector since an element can’t be two different types at once. For example, chaining two type selectors like <code>div</code> and <code>p</code> would give us the selector <code>divp</code>, which wouldn’t work since the selector would try to find a literal <code>&#x3C;divp></code> element, which doesn’t exist.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-css-foundations",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

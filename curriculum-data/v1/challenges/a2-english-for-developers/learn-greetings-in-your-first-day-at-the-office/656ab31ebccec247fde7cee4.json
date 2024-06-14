@@ -1,0 +1,75 @@
+{
+  "id": "656ab31ebccec247fde7cee4",
+  "title": "Task 63",
+  "challengeType": 22,
+  "dashedName": "task-63",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_. My computer and drawing tablet are great, too.</p>",
+    "blanks": [
+      {
+        "answer": "Awesome",
+        "feedback": "<p>Listen for a word that means <code>very good</code> or <code>I really like it.</code></p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 32.3,
+        "finishTimestamp": 36
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.25,
+        "dialogue": {
+          "text": "Awesome. My computer and drawing tablet are great too.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.75
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Awesome</code> is a word people use when they really like something. It's like saying <code>very good!</code> It's an informal way to show approval or admiration.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 64,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

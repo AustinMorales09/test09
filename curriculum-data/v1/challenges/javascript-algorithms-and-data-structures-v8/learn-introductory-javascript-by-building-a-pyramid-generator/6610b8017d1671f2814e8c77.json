@@ -1,0 +1,53 @@
+{
+  "id": "6610b8017d1671f2814e8c77",
+  "title": "Step 8",
+  "challengeType": 1,
+  "dashedName": "step-8",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        6
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nconsole.log(character);\ncharacter = \"World\";\nlet secondCharacter;\n",
+      "error": null,
+      "seed": "let character = 'Hello';\nconsole.log(character);\ncharacter = \"World\";\nlet secondCharacter;\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add a second <code>console.log</code>.</p>",
+      "testString": "assert.lengthOf(code.match(/console\\.log/g), 2);"
+    },
+    {
+      "text": "<p>You should log your <code>secondCharacter</code> variable.</p>",
+      "testString": "assert.match(code, /console\\.log\\(\\s*secondCharacter\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When you declare a variable without initializing it, it is considered <dfn>uninitialized</dfn>. Currently, your <code>secondCharacter</code> variable is uninitialized.</p>\n<p>Add a <code>console.log()</code> to see what the value of your <code>secondCharacter</code> variable is.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

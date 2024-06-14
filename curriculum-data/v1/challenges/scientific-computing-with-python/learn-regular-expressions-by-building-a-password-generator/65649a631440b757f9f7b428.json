@@ -1,0 +1,53 @@
+{
+  "id": "65649a631440b757f9f7b428",
+  "title": "Step 28",
+  "challengeType": 20,
+  "dashedName": "step-28",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        28,
+        30
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, '')\n        ]        \n\n    return password\n\n# new_password = generate_password(8)\n# print(new_password)\n",
+      "error": null,
+      "seed": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, '')\n        ]        \n\n    return password\n\n# new_password = generate_password(8)\n# print(new_password)\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a <code>pattern</code> variable.</p>",
+      "testString": "({ test: () => assert(__userGlobals.has(\"pattern\")) })"
+    },
+    {
+      "text": "<p>You should assign <code>re.compile('i')</code> to your <code>pattern</code> variable.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import re\n    pattern == re.compile('i')\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A regular expression, or regex, is a pattern used to match a specific combination of characters inside a string. It is a valid alternative to <code>if</code>/<code>else</code> conditional statements when you need to match or find patterns inside a string for validation purposes, character replacement, and others.</p>\n<p>The <code>compile()</code> function from the <code>re</code> module compiles the string passed as the argument into a regular expression object that can be used by other <code>re</code> methods.</p>\n<p>Declare a new <code>pattern</code> variable and assign the value of <code>re.compile('i')</code> to this variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

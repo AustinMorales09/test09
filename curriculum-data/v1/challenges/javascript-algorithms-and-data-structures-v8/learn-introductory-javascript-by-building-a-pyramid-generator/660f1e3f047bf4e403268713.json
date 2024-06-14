@@ -1,0 +1,57 @@
+{
+  "id": "660f1e3f047bf4e403268713",
+  "title": "Step 38",
+  "challengeType": 1,
+  "dashedName": "step-38",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        10
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(i);\n}\n\n",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(i);\n}\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a <code>result</code> variable.</p>",
+      "testString": "assert.match(code, /result/);"
+    },
+    {
+      "text": "<p>You should use <code>let</code> to declare your <code>result</code> variable.</p>",
+      "testString": "assert.match(code, /let\\s*result/);"
+    },
+    {
+      "text": "<p>Your <code>result</code> variable should be an empty string.</p>",
+      "testString": "assert.equal(result, \"\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Unfortunately, now you cannot see what your loop is doing.</p>\n<p>Use <code>let</code> to declare a <code>result</code> variable, and assign it an empty string. An empty string is represented by quotation marks with nothing between them, such as <code>\"\"</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 37,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

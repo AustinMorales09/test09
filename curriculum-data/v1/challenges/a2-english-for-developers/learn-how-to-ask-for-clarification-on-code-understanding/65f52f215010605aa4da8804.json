@@ -1,0 +1,79 @@
+{
+  "id": "65f52f215010605aa4da8804",
+  "title": "Task 19",
+  "challengeType": 22,
+  "dashedName": "task-19",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Sure, Tom. I can take a look _ it. Let's start _ identifying the issue.</p>",
+    "blanks": [
+      {
+        "answer": "at",
+        "feedback": "<p>It's a preposition used to indicate the focus or subject of someone's attention, showing what or where you are looking when you examine something.</p>"
+      },
+      {
+        "answer": "by",
+        "feedback": "<p>It introduces the first step in a process or action.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.96,
+        "finishTimestamp": 10.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 4.5,
+        "dialogue": {
+          "text": "Sure, Tom. I can take a look at it. Let's start by identifying the issue.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and complete the sentence.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

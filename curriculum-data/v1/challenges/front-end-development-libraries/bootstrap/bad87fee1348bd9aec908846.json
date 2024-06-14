@@ -1,0 +1,85 @@
+{
+  "id": "bad87fee1348bd9aec908846",
+  "title": "Create a Bootstrap Headline",
+  "challengeType": 0,
+  "forumTopicId": 16812,
+  "dashedName": "create-a-bootstrap-headline",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<h3 class=\"text-primary text-center\">jQuery Playground</h3>",
+        "error": null,
+        "seed": "<h3 class=\"text-primary text-center\">jQuery Playground</h3>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add an <code>h3</code> element to your page.</p>",
+      "testString": "assert($('h3') && $('h3').length > 0);"
+    },
+    {
+      "text": "<p>Your <code>h3</code> element should have a closing tag.</p>",
+      "testString": "assert(\n  code.match(/<\\/h3>/g) &&\n    code.match(/<h3/g) &&\n    code.match(/<\\/h3>/g).length === code.match(/<h3/g).length\n);"
+    },
+    {
+      "text": "<p>Your <code>h3</code> element should be colored by applying the class <code>text-primary</code></p>",
+      "testString": "assert($('h3').hasClass('text-primary'));"
+    },
+    {
+      "text": "<p>Your <code>h3</code> element should be centered by applying the class <code>text-center</code></p>",
+      "testString": "assert($('h3').hasClass('text-center'));"
+    },
+    {
+      "text": "<p>Your <code>h3</code> element should have the text <code>jQuery Playground</code>.</p>",
+      "testString": "assert.isTrue(/jquery(\\s)+playground/gi.test($('h3').text()));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now let's build something from scratch to practice our HTML, CSS and Bootstrap skills.</p>\n<p>We'll build a jQuery playground, which we'll soon put to use in our jQuery challenges.</p>\n<p>To start with, create an <code>h3</code> element, with the text <code>jQuery Playground</code>.</p>\n<p>Color your <code>h3</code> element with the <code>text-primary</code> Bootstrap class, and center it with the <code>text-center</code> Bootstrap class.</p>\n</section>",
+  "translationPending": false,
+  "block": "bootstrap",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 18,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

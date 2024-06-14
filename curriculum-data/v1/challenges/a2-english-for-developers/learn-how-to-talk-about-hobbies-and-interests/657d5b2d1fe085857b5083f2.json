@@ -1,0 +1,75 @@
+{
+  "id": "657d5b2d1fe085857b5083f2",
+  "title": "Task 4",
+  "challengeType": 22,
+  "dashedName": "task-4",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Absolutely. I've been _ about photography for many years.</p>",
+    "blanks": [
+      {
+        "answer": "passionate",
+        "feedback": "<p>In this blank, you add an expression that means very emotional about something or liking it a lot.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.14,
+        "finishTimestamp": 7.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.84,
+        "dialogue": {
+          "text": "Absolutely. I've been passionate about photography for many years.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 5.34
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>You can say you are <code>passionate</code> about something when you not only like something, but also express strong emotions or feelings in relation to it. For example: <code>I am passionate about learning languages. I have studied Spanish, French, Italian, Japanese, and Chinese. I can't wait to start another.</code></p>\n<p>Fill in the sentence with the correct word.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

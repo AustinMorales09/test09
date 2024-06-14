@@ -1,0 +1,83 @@
+{
+  "id": "65daa8143ae77767ad914ba4",
+  "title": "Task 94",
+  "challengeType": 22,
+  "dashedName": "task-94",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I also don’t want to _ _ _, so two months ago I started jogging regularly.</p>",
+    "blanks": [
+      {
+        "answer": "neglect",
+        "feedback": "<p>This word means to ignore or not give enough care to something.</p>"
+      },
+      {
+        "answer": "my",
+        "feedback": "<p>This word shows ownership or that something belongs to the speaker.</p>"
+      },
+      {
+        "answer": "health",
+        "feedback": "<p>It means the general condition of the body and how well it works.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 16.4,
+        "finishTimestamp": 20.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.04,
+        "dialogue": {
+          "text": "I also don't want to neglect my health, so two months ago I started jogging regularly.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 5.54
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>neglect</code> means to not give enough care or attention to something or someone. When you <code>neglect</code> something, you ignore or don't look after it well.</p>\n<p>For example, if you don't eat healthy food or exercise, you might be <code>neglecting your health</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 98,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

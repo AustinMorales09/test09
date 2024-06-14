@@ -1,0 +1,79 @@
+{
+  "id": "656a4e35a774444d1946a899",
+  "title": "Task 57",
+  "challengeType": 22,
+  "dashedName": "task-57",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It's essential to _ our data is _.</p>",
+    "blanks": [
+      {
+        "answer": "ensure",
+        "feedback": "<p>Means to make certain or confirm.</p>"
+      },
+      {
+        "answer": "secure",
+        "feedback": "<p>Means safe or protected.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 43.32,
+        "finishTimestamp": 45.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.6,
+        "dialogue": {
+          "text": "It's essential to ensure our data is secure.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>ensure</code> means to make sure or guarantee something. For example:</p>\n<p><code>We ensure quality by checking every product.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 61,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

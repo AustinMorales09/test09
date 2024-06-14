@@ -1,0 +1,33 @@
+{
+  "id": "589fc831f9fc0f352b528e76",
+  "title": "Handle a Disconnect",
+  "challengeType": 2,
+  "forumTopicId": 301552,
+  "dashedName": "handle-a-disconnect",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Server should handle the event disconnect from a socket.</p>",
+      "testString": "async (getUserInput) => {\n  const url = new URL(\"/_api/server.js\", getUserInput(\"url\"));\n  const res = await fetch(url);\n  const data = await res.text();\n  assert.match(data, /socket.on.*('|\")disconnect('|\")/s, '');\n}"
+    },
+    {
+      "text": "<p>Your client should be listening for <code>'user count'</code> event.</p>",
+      "testString": "async (getUserInput) => {\n  const url = new URL(\"/public/client.js\", getUserInput(\"url\"));\n  const res = await fetch(url);\n  const data = await res.text();\n  assert.match(\n    data,\n    /socket.on.*('|\")user count('|\")/s,\n    'Your client should be connection to server with the connection defined as socket'\n  );\n}"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You may notice that up to now you have only been increasing the user count. Handling a user disconnecting is just as easy as handling the initial connect, except you have to listen for it on each socket instead of on the whole server.</p>\n<p>To do this, add another listener inside the existing <code>'connect'</code> listener that listens for <code>'disconnect'</code> on the socket with no data passed through. You can test this functionality by just logging that a user has disconnected to the console.</p>\n<pre><code class=\"language-js\">socket.on('disconnect', () => {\n  /*anything you want to do on disconnect*/\n});\n</code></pre>\n<p>To make sure clients continuously have the updated count of current users, you should decrease <code>currentUsers</code> by 1 when the disconnect happens then emit the <code>'user count'</code> event with the updated count.</p>\n<p><strong>Note:</strong> Just like <code>'disconnect'</code>, all other events that a socket can emit to the server should be handled within the connecting listener where we have 'socket' defined.</p>\n<p>Submit your page when you think you've got it right. If you're running into errors, you can <a href=\"https://forum.freecodecamp.org/t/advanced-node-and-express/567135#handle-a-disconnect-8\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">check out the project completed up to this point</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "advanced-node-and-express",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "5f356ed63e0fa262326eef05",
+  "title": "Step 23",
+  "challengeType": 0,
+  "dashedName": "step-23",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div id=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div id=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        14
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  /*\n  background-color: burlywood;\n  */\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n#menu {\n  width: 300px;\n}",
+      "error": null,
+      "seed": "body {\n  /*\n  background-color: burlywood;\n  */\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n#menu {\n  width: 300px;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should set the <code>background-color</code> property to <code>burlywood</code>.</p>",
+      "testString": "const hasBackgroundColor = new __helpers.CSSHelp(document).getCSSRules().some(x => x.style['background-color'] === 'burlywood');\nassert(hasBackgroundColor);"
+    },
+    {
+      "text": "<p>Your <code>#menu</code> selector should have a burlywood background.</p>",
+      "testString": "const divBackground = new __helpers.CSSHelp(document).getStyle('#menu')?.getPropertyValue('background-color');\nassert(divBackground === 'burlywood');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now use the existing <code>#menu</code> selector to set the background color of the <code>div</code> element to be <code>burlywood</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

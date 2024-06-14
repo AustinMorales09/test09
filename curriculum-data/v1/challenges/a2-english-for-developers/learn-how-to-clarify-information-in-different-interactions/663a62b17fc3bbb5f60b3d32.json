@@ -1,0 +1,75 @@
+{
+  "id": "663a62b17fc3bbb5f60b3d32",
+  "title": "Task 32",
+  "challengeType": 22,
+  "dashedName": "task-32",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>He also likes _ a scarf or something.</p>",
+    "blanks": [
+      {
+        "answer": "wearing",
+        "feedback": "<p>This blank is related to the verb associated to having clothes or glasses on you. Use the <code>-ing</code> form.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.22,
+        "finishTimestamp": 24.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 2.8,
+        "dialogue": {
+          "text": "He also likes wearing a scarf or something.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When talking about the combination of two verbs, the second verb can come in different forms. In English, when you use the verb <code>like</code>, it is common to use the second verb in the <code>-ing</code> form. Example: <code>They like eating chocolate.</code>, meaning that eating chocolate is something that satisfies them.</p>\n<p>Listen to the dialogue and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 33,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

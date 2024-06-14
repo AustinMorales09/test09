@@ -1,0 +1,78 @@
+{
+  "id": "587d7b8a367417b2b2512b4d",
+  "title": "Use Destructuring Assignment to Pass an Object as a Function's Parameters",
+  "challengeType": 1,
+  "forumTopicId": 301217,
+  "dashedName": "use-destructuring-assignment-to-pass-an-object-as-a-functions-parameters",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const stats = {\n  max: 56.78,\n  standard_deviation: 4.34,\n  median: 34.54,\n  mode: 23.87,\n  min: -0.75,\n  average: 35.85\n};\n\n// Only change code below this line\nconst half = (stats) => (stats.max + stats.min) / 2.0; \n// Only change code above this line",
+      "error": null,
+      "seed": "const stats = {\n  max: 56.78,\n  standard_deviation: 4.34,\n  median: 34.54,\n  mode: 23.87,\n  min: -0.75,\n  average: 35.85\n};\n\n// Only change code below this line\nconst half = (stats) => (stats.max + stats.min) / 2.0; \n// Only change code above this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const stats = {\n  max: 56.78,\n  standard_deviation: 4.34,\n  median: 34.54,\n  mode: 23.87,\n  min: -0.75,\n  average: 35.85\n};\n\nconst half = ( {max, min} ) => (max + min) / 2.0;",
+        "error": null,
+        "seed": "const stats = {\n  max: 56.78,\n  standard_deviation: 4.34,\n  median: 34.54,\n  mode: 23.87,\n  min: -0.75,\n  average: 35.85\n};\n\nconst half = ( {max, min} ) => (max + min) / 2.0;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>stats</code> should be an <code>object</code>.</p>",
+      "testString": "assert(typeof stats === 'object');"
+    },
+    {
+      "text": "<p><code>half(stats)</code> should be <code>28.015</code></p>",
+      "testString": "assert(half(stats) === 28.015);"
+    },
+    {
+      "text": "<p>Destructuring should be used.</p>",
+      "testString": "assert(__helpers.removeWhiteSpace(__helpers.removeJSComments(code)).match(/half=\\({\\w+,\\w+}\\)/));"
+    },
+    {
+      "text": "<p>Destructured parameter should be used.</p>",
+      "testString": "assert(!__helpers.removeJSComments(code).match(/stats\\.max|stats\\.min/));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In some cases, you can destructure the object in a function argument itself.</p>\n<p>Consider the code below:</p>\n<pre><code class=\"language-js\">const profileUpdate = (profileData) => {\n  const { name, age, nationality, location } = profileData;\n\n}\n</code></pre>\n<p>This effectively destructures the object sent into the function. This can also be done in-place:</p>\n<pre><code class=\"language-js\">const profileUpdate = ({ name, age, nationality, location }) => {\n\n}\n</code></pre>\n<p>When <code>profileData</code> is passed to the above function, the values are destructured from the function parameter for use within the function.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use destructuring assignment within the argument to the function <code>half</code> to send only <code>max</code> and <code>min</code> inside the function.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

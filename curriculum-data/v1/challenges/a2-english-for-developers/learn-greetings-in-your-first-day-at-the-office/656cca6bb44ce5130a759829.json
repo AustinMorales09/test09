@@ -1,0 +1,88 @@
+{
+  "id": "656cca6bb44ce5130a759829",
+  "title": "Task 109",
+  "challengeType": 19,
+  "dashedName": "task-109",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Tom mean when he says <code>Of course</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>He is not sure.</p>",
+        "feedback": "<p><code>Of course</code> indicates certainty.</p>"
+      },
+      {
+        "answer": "<p>He is disagreeing.</p>",
+        "feedback": "<p><code>Of course</code> is an affirmation or agreement.</p>"
+      },
+      {
+        "answer": "<p>He strongly agrees.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He needs more information.</p>",
+        "feedback": "<p>Tom is expressing strong agreement, not asking for clarification.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 12.85,
+        "finishTimestamp": 16.1
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.85,
+        "dialogue": {
+          "text": "Of course. Any favorite lunch spot around here, Sophie?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.35
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Of course</code> is a phrase used to express strong agreement or to indicate that something is obvious.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 111,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

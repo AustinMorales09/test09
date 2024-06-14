@@ -1,0 +1,57 @@
+{
+  "id": "65ca0dc5dbf42a11c3cf1098",
+  "title": "Step 51",
+  "challengeType": 20,
+  "dashedName": "step-51",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        66,
+        69
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n    def __str__(self):\n        return str(self.key)\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n        if key < node.key:\n            return self._search(node.left, key)\n        return self._search(node.right, key)\n    \n    def search(self, key):\n        return self._search(self.root, key)\n\n    def _delete(self, node, key):\n        if node is None:\n            return node\n        if key < node.key:\n            node.left = self._delete(node.left, key)\n        elif key > node.key:\n            node.right = self._delete(node.right, key) \n        else:\n            if node.left is None:\n                return node.right\n            elif node.right is None:\n                return node.left   \n            \n            node.key = self._min_value(node.right)\n            node.right = self._delete(node.right, node.key)   \n        \n        return node\n\n    def delete(self, key):\n        self.root = self._delete(self.root, key)\n\n    def _min_value(self, node):\n        while node.left is not None:\n            node = node.left\n        return node.key\n\n    def _inorder_traversal(self, node, result):\n        pass\n\nbst = BinarySearchTree()\n\nnodes = [50, 30, 20, 40, 70, 60, 80]\n\nfor node in nodes:\n    bst.insert(node)\n\n# print('Search for 80:', bst.search(80))\n\n",
+      "error": null,
+      "seed": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n    def __str__(self):\n        return str(self.key)\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n        if key < node.key:\n            return self._search(node.left, key)\n        return self._search(node.right, key)\n    \n    def search(self, key):\n        return self._search(self.root, key)\n\n    def _delete(self, node, key):\n        if node is None:\n            return node\n        if key < node.key:\n            node.left = self._delete(node.left, key)\n        elif key > node.key:\n            node.right = self._delete(node.right, key) \n        else:\n            if node.left is None:\n                return node.right\n            elif node.right is None:\n                return node.left   \n            \n            node.key = self._min_value(node.right)\n            node.right = self._delete(node.right, node.key)   \n        \n        return node\n\n    def delete(self, key):\n        self.root = self._delete(self.root, key)\n\n    def _min_value(self, node):\n        while node.left is not None:\n            node = node.left\n        return node.key\n\n    def _inorder_traversal(self, node, result):\n        pass\n\nbst = BinarySearchTree()\n\nnodes = [50, 30, 20, 40, 70, 60, 80]\n\nfor node in nodes:\n    bst.insert(node)\n\n# print('Search for 80:', bst.search(80))\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove the existing <code>pass</code> keyword from the <code>_inorder_traversal</code> method.</p>",
+      "testString": "({\n  test: () => {\n    assert.isFalse(\n      runPython(\n        `_Node(_code).find_class(\"BinarySearchTree\").find_function(\"_inorder_traversal\").has_pass()`\n      )\n    );\n  },\n});\n"
+    },
+    {
+      "text": "<p>Your check condition should be <code>if node</code>.</p>",
+      "testString": "assert.match(code, /if\\s+node:/);"
+    },
+    {
+      "text": "<p>You should call <code>_inorder_traversal</code> on the <code>node.left</code> inside the <code>if</code> block.</p>",
+      "testString": "assert.match(code, /self\\._inorder_traversal\\(\\s*node\\.left\\s*,\\s*result\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Replace <code>pass</code> with an <code>if</code> statement that checks if the current node (<code>node</code>) is not empty. Then, recursively call <code>_inorder_traversal</code> with <code>node.left</code> and <code>result</code> as the arguments.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 50,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

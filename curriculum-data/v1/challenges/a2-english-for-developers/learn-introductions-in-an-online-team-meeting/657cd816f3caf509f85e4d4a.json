@@ -1,0 +1,88 @@
+{
+  "id": "657cd816f3caf509f85e4d4a",
+  "title": "Task 50",
+  "challengeType": 19,
+  "dashedName": "task-50",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Bob express in the audio?</p>",
+    "answers": [
+      {
+        "answer": "<p>A command to meet Lisa.</p>",
+        "feedback": "<p><code>Would like</code> is used for polite requests or offers, not commands.</p>"
+      },
+      {
+        "answer": "<p>Bob expresses his dislike for Lisa.</p>",
+        "feedback": "<p>The phrase <code>would like</code> is used to express a desire or wish, not dislike.</p>"
+      },
+      {
+        "answer": "<p>Bob asks if Lisa is a front-end developer.</p>",
+        "feedback": "<p>Bob is introducing Lisa, not asking about her.</p>"
+      },
+      {
+        "answer": "<p>Bob is politely introducing Lisa as the new front-end developer.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "desk.png",
+      "characters": [
+        {
+          "character": "Lisa",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 6,
+        "finishTimestamp": 9.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Lisa",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.9,
+        "dialogue": {
+          "text": "I'd like to introduce you to Lisa. She's our new front-end developer.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "opacity": 0,
+        "startTime": 5.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Would like</code> is used to express a desire or wish in a polite way. For example, <code>I would like to show you something</code> indicates a polite intention.</p>\n<p>In spoken English, it's often abbreviated to <code>I'd</code>. For example, <code>I'd like to show you something</code>. This abbreviation is very common in everyday conversation.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 52,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

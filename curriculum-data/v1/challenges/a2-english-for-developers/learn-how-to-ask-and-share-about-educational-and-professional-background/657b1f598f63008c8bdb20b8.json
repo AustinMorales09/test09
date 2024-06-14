@@ -1,0 +1,45 @@
+{
+  "id": "657b1f598f63008c8bdb20b8",
+  "title": "Task 49",
+  "challengeType": 19,
+  "dashedName": "task-49",
+  "solutions": [],
+  "question": {
+    "text": "<p>During a class reunion, an old friend tells you, <code>We met for the first time in art class.</code> What is your friend referring to with <code>met</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>We are meeting right now in art class</p>",
+        "feedback": "<p>The use of <code>met</code> indicates a past event, not something happening currently.</p>"
+      },
+      {
+        "answer": "<p>Our first encounter was in the past, specifically in art class</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>We will meet for the first time soon</p>",
+        "feedback": "<p><code>Met</code> indicates a past action, not a future arrangement.</p>"
+      },
+      {
+        "answer": "<p>We have never been in art class together</p>",
+        "feedback": "<p><code>Met</code> suggests a past meeting.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In the simple past tense, some verbs are irregular and don't follow the regular <code>-ed</code> ending pattern. One example of this is the verb <code>meet</code>, which becomes <code>met</code> in the past tense. This is important to remember when talking about past events.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 51,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

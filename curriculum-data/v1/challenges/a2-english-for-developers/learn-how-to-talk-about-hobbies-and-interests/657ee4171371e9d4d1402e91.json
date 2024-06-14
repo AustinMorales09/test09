@@ -1,0 +1,79 @@
+{
+  "id": "657ee4171371e9d4d1402e91",
+  "title": "Task 48",
+  "challengeType": 22,
+  "dashedName": "task-48",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ _! I love action figures.</p>",
+    "blanks": [
+      {
+        "answer": "You",
+        "feedback": "<p>This word is part of a phrase used for expressing strong confirmation or agreement. The initial letter should be capitalized.</p>"
+      },
+      {
+        "answer": "bet",
+        "feedback": "<p>This word follows the previous one to form a common phrase indicating strong affirmation.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 5.76,
+        "finishTimestamp": 7.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 2.86,
+        "dialogue": {
+          "text": "You bet. I love action figures.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 3.36
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>you bet</code> is used to affirmatively confirm or agree with something. It indicates strong agreement or confirmation.</p>\n<p>For instance, if your friend asks you, <code>Are you coming to the movie tonight?</code>, you can respond with <code>You bet!</code>. This means you are agreeing strongly or saying <code>yes</code> in a very enthusiastic way.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 50,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

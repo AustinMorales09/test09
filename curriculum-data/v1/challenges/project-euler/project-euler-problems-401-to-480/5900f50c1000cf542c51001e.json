@@ -1,0 +1,65 @@
+{
+  "id": "5900f50c1000cf542c51001e",
+  "title": "Problem 415: Titanic sets",
+  "challengeType": 1,
+  "forumTopicId": 302084,
+  "dashedName": "problem-415-titanic-sets",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function titanicSets() {\n\n  return true;\n}\n\ntitanicSets();",
+      "error": null,
+      "seed": "function titanicSets() {\n\n  return true;\n}\n\ntitanicSets();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>titanicSets()</code> should return <code>55859742</code>.</p>",
+      "testString": "assert.strictEqual(titanicSets(), 55859742);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A set of lattice points $S$ is called a titanic set if there exists a line passing through exactly two points in $S$.</p>\n<p>An example of a titanic set is $S = \\{(0, 0), (0, 1), (0, 2), (1, 1), (2, 0), (1, 0)\\}$, where the line passing through (0, 1) and (2, 0) does not pass through any other point in $S$.</p>\n<p>On the other hand, the set {(0, 0), (1, 1), (2, 2), (4, 4)} is not a titanic set since the line passing through any two points in the set also passes through the other two.</p>\n<p>For any positive integer $N$, let $T(N)$ be the number of titanic sets $S$ whose every point ($x$, $y$) satisfies $0 ≤ x$, $y ≤ N$. It can be verified that $T(1) = 11$, $T(2) = 494$, $T(4) = 33\\,554\\,178$, $T(111)\\bmod {10}^8 = 13\\,500\\,401$ and $T({10}^5)\\bmod {10}^8 = 63\\,259\\,062$.</p>\n<p>Find $T({10}^{11})\\bmod {10}^8$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "6579dbc2c1fc601436f2676b",
+  "title": "Task 30",
+  "challengeType": 22,
+  "dashedName": "task-30",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I'm sure we'll _ some valuable _ from our discussion.</p>",
+    "blanks": [
+      {
+        "answer": "gain",
+        "feedback": "<p>It means to acquire or obtain, here referring to acquiring understanding or knowledge.</p>"
+      },
+      {
+        "answer": "insights",
+        "feedback": "<p>These are deep understandings or realizations, especially important ones from a discussion.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 44.38,
+        "finishTimestamp": 47.18
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.8,
+        "dialogue": {
+          "text": "I'm sure we'll gain some valuable insights from our discussion.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Insight</code> refers to a deep understanding or realization about something. To <code>gain</code> means to acquire or obtain something beneficial. <code>Valuable</code> describes something that is very useful or important. For example, in a meeting, gaining insights can mean understanding new ideas or important information that helps in decision-making.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

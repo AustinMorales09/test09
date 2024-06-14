@@ -1,0 +1,74 @@
+{
+  "id": "59667989bf71cf555dd5d2ff",
+  "title": "S-Expressions",
+  "challengeType": 1,
+  "forumTopicId": 302303,
+  "dashedName": "s-expressions",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const simpleSExpr = '(data1 data2 data3)';\nconst simpleSolution = ['data1', 'data2', 'data3'];\n\nconst basicSExpr = '((data \"quoted data\" 123 4.5) (data (!@# (4.5) \"(more\" \"data)\")))';\nconst basicSolution = [[\"data\",\"\\\"quoted data\\\"\",123,4.5],[\"data\",[\"!@#\",[4.5],\"\\\"(more\\\"\",\"\\\"data)\\\"\"]]];",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function parseSexpr(str) {\n\n  return true;\n}",
+      "error": null,
+      "seed": "function parseSexpr(str) {\n\n  return true;\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function parseSexpr(str) {\n  const t = str.match(/\\s*(\"[^\"]*\"|\\(|\\)|\"|[^\\s()\"]+)/g);\n  for (var o, c = 0, i = t.length - 1; i >= 0; i--) {\n    var n,\n      ti = t[i].trim();\n    if (ti == '\"') return;\n    else if (ti == '(') t[i] = '[', c += 1;\n    else if (ti == ')') t[i] = ']', c -= 1;\n    else if ((n = +ti) == ti) t[i] = n;\n    else t[i] = `'${ti.replace('\\'', '\\\\\\'')}'`;\n    if (i > 0 && ti != ']' && t[i - 1].trim() != '(') t.splice(i, 0, ',');\n    if (!c) if (!o) o = true; else return;\n  }\n  return c ? undefined : eval(t.join(''));\n}",
+        "error": null,
+        "seed": "function parseSexpr(str) {\n  const t = str.match(/\\s*(\"[^\"]*\"|\\(|\\)|\"|[^\\s()\"]+)/g);\n  for (var o, c = 0, i = t.length - 1; i >= 0; i--) {\n    var n,\n      ti = t[i].trim();\n    if (ti == '\"') return;\n    else if (ti == '(') t[i] = '[', c += 1;\n    else if (ti == ')') t[i] = ']', c -= 1;\n    else if ((n = +ti) == ti) t[i] = n;\n    else t[i] = `'${ti.replace('\\'', '\\\\\\'')}'`;\n    if (i > 0 && ti != ']' && t[i - 1].trim() != '(') t.splice(i, 0, ',');\n    if (!c) if (!o) o = true; else return;\n  }\n  return c ? undefined : eval(t.join(''));\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>parseSexpr</code> should be a function.</p>",
+      "testString": "assert(typeof parseSexpr === 'function');"
+    },
+    {
+      "text": "<p><code>parseSexpr('(data1 data2 data3)')</code> should return <code>['data1', 'data2', 'data3']</code></p>",
+      "testString": "assert.deepEqual(parseSexpr(simpleSExpr), simpleSolution);"
+    },
+    {
+      "text": "<p><code>parseSexpr('((data \"quoted data\" 123 4.5) (data (!@# (4.5) \"(more\" \"data)\")))')</code> should return <code>[['data', '\"quoted data\"', 123, 4.5], ['data', ['!@#', [4.5], '\"(more\"', '\"data)\"']]]</code>.</p>",
+      "testString": "assert.deepEqual(parseSexpr(basicSExpr), basicSolution);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><a href=\"https://rosettacode.org/wiki/S-expressions\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">S-Expressions</a> are one convenient way to parse and store data.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a simple reader/parser for S-Expressions that handles quoted and unquoted strings, integers and floats.</p>\n<p>The function should read a single but nested S-Expression from a string and return it as a (nested) array.</p>\n<p>Newlines and other whitespace may be ignored unless contained within a quoted string.</p>\n<p>\"<code>()</code>\" inside quoted strings are not interpreted, but treated as part of the string.</p>\n<p>Handling escaped quotes inside a string is optional; thus \"<code>(foo\"bar)</code>\" may be treated as a string \"<code>foo\"bar</code>\", or as an error.</p>\n<p>For this, the reader need not recognize <code>\\</code> for escaping, but should, in addition, recognize numbers if the language has appropriate data types.</p>\n<p>Note that with the exception of <code>()\"</code> (<code>\\</code> if escaping is supported) and whitespace, there are no special characters. Anything else is allowed without quotes.</p>\n<p>The reader should be able to read the following input</p>\n<pre>((data \"quoted data\" 123 4.5)\n(data (!@# (4.5) \"(more\" \"data)\")))\n</pre>\n<p>and turn it into a native data structure.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 105,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

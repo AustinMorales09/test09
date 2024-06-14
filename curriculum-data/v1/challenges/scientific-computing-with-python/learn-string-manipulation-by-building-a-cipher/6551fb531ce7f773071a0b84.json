@@ -1,0 +1,57 @@
+{
+  "id": "6551fb531ce7f773071a0b84",
+  "title": "Step 9",
+  "challengeType": 20,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nprint(type(text))",
+      "error": null,
+      "seed": "text = 'Hello World'\nprint(type(text))"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a variable called <code>shift</code>. Pay attention to place the variable name at the beginning of the line.</p>",
+      "testString": "assert.match(code, /^shift\\s*=/m)"
+    },
+    {
+      "text": "<p>You should assign the value <code>3</code> to your <code>shift</code> variable.</p>",
+      "testString": "assert.match(code, /^shift\\s*=\\s*3\\s*(#.*)?$/m)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As you can see, the output of printing <code>type(text)</code> is <code>&#x3C;class 'str'></code>, which means that your variable is a string, indicated as <code>str</code>.</p>\n<p>Now go to a new line and create another variable called <code>shift</code> and assign the value <code>3</code> to this variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

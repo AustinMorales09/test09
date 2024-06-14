@@ -1,0 +1,49 @@
+{
+  "id": "656ef54070c72161e6feb90f",
+  "title": "Step 22",
+  "challengeType": 20,
+  "dashedName": "step-22",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        20,
+        23
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import secrets\nimport string\n\n\ndef generate_password(length):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    password = ''\n    # Generate password\n    for _ in range(length):\n        password += secrets.choice(all_characters)\n        \n    return password\n    \nnew_password = generate_password(8)\nprint(new_password)",
+      "error": null,
+      "seed": "import secrets\nimport string\n\n\ndef generate_password(length):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    password = ''\n    # Generate password\n    for _ in range(length):\n        password += secrets.choice(all_characters)\n        \n    return password\n    \nnew_password = generate_password(8)\nprint(new_password)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should turn the last two lines of your code into comments.</p>",
+      "testString": "({ test: () => {\n  assert.match(code, /#\\s*new_password\\s*=\\s*generate_password\\s*\\(\\s*8\\s*\\)/);\n  assert.match(code, /#\\s*print\\s*\\(\\s*new_password\\s*\\)/);\n} })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>It seems all fine, but it would be nice to have a way to check that the generated password complies to specific features. For example, a minimum number of special characters, digits, or uppercase/lowercase letters. You are going to take care of that very soon.</p>\n<p>For now, comment out the last two lines of your code.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

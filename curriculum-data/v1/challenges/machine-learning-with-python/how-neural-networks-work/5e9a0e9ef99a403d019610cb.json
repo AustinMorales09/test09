@@ -1,0 +1,41 @@
+{
+  "id": "5e9a0e9ef99a403d019610cb",
+  "title": "Recurrent Neural Networks RNN and Long Short Term Memory LSTM",
+  "challengeType": 11,
+  "videoId": "UVimlsy9eW0",
+  "dashedName": "recurrent-neural-networks-rnn-and-long-short-term-memory-lstm",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are the main neural network components that make up a Long Short Term Memory network?</p>",
+    "answers": [
+      {
+        "answer": "<p>New information and prediction.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Prediction, collected possibilities, and selection.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Prediction, ignoring, forgetting, and selection.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "how-neural-networks-work",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,106 @@
+{
+  "id": "657e56e7034d2d858b6e9e00",
+  "title": "Task 101",
+  "challengeType": 19,
+  "dashedName": "task-101",
+  "solutions": [],
+  "question": {
+    "text": "<p>In David's statement, what do the two uses of <code>we</code> refer to?</p>",
+    "answers": [
+      {
+        "answer": "<p>Both refer to David and his team at FCC Corp.</p>",
+        "feedback": "<p>The second <code>we</code> is not just about FCC Corp.</p>"
+      },
+      {
+        "answer": "<p>Both refer to the entire group, including Maria's team and FCC Corp.</p>",
+        "feedback": "<p>Just the second <code>we</code> indicates the collaboration between both teams.</p>"
+      },
+      {
+        "answer": "<p>The first <code>we</code> refers to Maria's team, and the second <code>we</code> refers to FCC Corp.</p>",
+        "feedback": "<p>This choice reverses the references.</p>"
+      },
+      {
+        "answer": "<p>The first <code>we</code> refers to FCC Corp, and the second <code>we</code> refers to the collaboration between Maria's team and FCC Corp.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "David",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 37.24,
+        "finishTimestamp": 51
+      }
+    },
+    "commands": [
+      {
+        "character": "David",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "David",
+        "startTime": 1,
+        "finishTime": 5.6,
+        "dialogue": {
+          "text": "Wonderful to meet you all. I'm David, the project manager from FCC Corp.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "David",
+        "startTime": 5.6,
+        "finishTime": 9.82,
+        "dialogue": {
+          "text": "I'll be your point of contact and I'll make sure our collaboration is great.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "David",
+        "startTime": 9.82,
+        "finishTime": 14.76,
+        "dialogue": {
+          "text": "We're excited about this project. I'm confident that we can achieve great results.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "David",
+        "opacity": 0,
+        "startTime": 15.26
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this task, you will focus on understanding references made in a conversation.</p>\n<p>David uses the word <code>we</code> twice in his statement, each time referring to different groups. It's important in conversations to understand who is being talked about or represented, especially in professional settings.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 105,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

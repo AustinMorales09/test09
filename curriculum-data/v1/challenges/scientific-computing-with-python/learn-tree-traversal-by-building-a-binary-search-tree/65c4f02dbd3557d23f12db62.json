@@ -1,0 +1,53 @@
+{
+  "id": "65c4f02dbd3557d23f12db62",
+  "title": "Step 4",
+  "challengeType": 20,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class TreeNode:\n    def __init__(self, key):\n        pass",
+      "error": null,
+      "seed": "class TreeNode:\n    def __init__(self, key):\n        pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove the <code>pass</code> statement from the <code>__init__</code> method.</p>",
+      "testString": "({\n  test: () => {\n    assert.isFalse(\n      runPython(\n        `_Node(_code).find_class(\"TreeNode\").find_function(\"__init__\").has_pass()`\n      )\n    );\n  },\n});\n"
+    },
+    {
+      "text": "<p>You should assign the value of the <code>key</code> parameter to the <code>key</code> attribute of the node using <code>self.key</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /^\\s{8}self\\.key\\s*=\\s*key/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Inside the <code>__init__</code> method, delete <code>pass</code> and assign the value of the <code>key</code> parameter to the <code>key</code> attribute of the node using <code>self.key</code>.</p>\n<p>This means that the <code>key</code> attribute of the <code>TreeNode</code> instance will be set to the value passed during the object's creation.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

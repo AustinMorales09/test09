@@ -1,0 +1,88 @@
+{
+  "id": "655b2919ff561b60fcde19ae",
+  "title": "Task 83",
+  "challengeType": 19,
+  "dashedName": "task-83",
+  "solutions": [],
+  "question": {
+    "text": "<p>Where does Maria go and what does she do on Wednesdays?</p>",
+    "answers": [
+      {
+        "answer": "<p>She attends a painting class at a local studio</p>",
+        "feedback": "<p>That is not the activity Maria attends on Wednesdays.</p>"
+      },
+      {
+        "answer": "<p>She goes to a local theater group for practice and performs in small plays</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She visits a friend's house to watch movies</p>",
+        "feedback": "<p>That is not the activity Maria attends on Wednesdays.</p>"
+      },
+      {
+        "answer": "<p>She works late at her office</p>",
+        "feedback": "<p>That is not the activity Maria attends on Wednesdays.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 24.1,
+        "finishTimestamp": 30.48
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 7.38,
+        "dialogue": {
+          "text": "Then on Wednesdays, I go to a local theater group. Practice goes until 9. We perform small plays. It's really fun.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 7.88
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge focuses on understanding <code>where</code> Maria goes and <code>what</code> she does on Wednesdays.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 86,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

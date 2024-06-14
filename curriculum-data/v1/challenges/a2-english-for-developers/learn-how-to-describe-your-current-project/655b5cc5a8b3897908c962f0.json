@@ -1,0 +1,75 @@
+{
+  "id": "655b5cc5a8b3897908c962f0",
+  "title": "Task 1",
+  "challengeType": 22,
+  "dashedName": "task-1",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hey James, what's your _ project about?</p>",
+    "blanks": [
+      {
+        "answer": "cybersecurity",
+        "feedback": "<p>This word refers to the protection of internet-connected systems, including hardware, software, and data, from cyber attacks.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 0.6,
+        "finishTimestamp": 3.28
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.68,
+        "dialogue": {
+          "text": "Hey James, what's your cybersecurity project about?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.18
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Cybersecurity</code> is about keeping computers and online information safe. It stops bad people from stealing or damaging what's on computers and the internet.</p>\n<p>For example, when you use a password to protect your email, or when a website keeps your credit card information safe, that's cybersecurity. It's important because we use computers and the internet a lot.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

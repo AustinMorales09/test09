@@ -1,0 +1,116 @@
+{
+  "id": "663685882305b736cb133f2b",
+  "title": "Task 16",
+  "challengeType": 19,
+  "dashedName": "task-16",
+  "solutions": [],
+  "question": {
+    "text": "<p>What can you say about Alice's reaction?</p>",
+    "answers": [
+      {
+        "answer": "<p>She appreciated the fact that Tom took the time to describe Lisa to her</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She thanks Tom for sharing his lunch with her</p>",
+        "feedback": "<p>Tom's lunch is not mentioned in the dialogue.</p>"
+      },
+      {
+        "answer": "<p>She wants to hire Lisa to work for her</p>",
+        "feedback": "<p>Well, Alice found the description interesting, but not necessarily for that reason.</p>"
+      },
+      {
+        "answer": "<p>She does not seem happy with what she hears.</p>",
+        "feedback": "<p>She thanks Tom for the description, so probably she liked it.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.88,
+        "finishTimestamp": 24
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.08,
+        "dialogue": {
+          "text": "She's a UX/UI designer. She's really creative.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.49
+      },
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 4.49
+      },
+      {
+        "character": "Alice",
+        "startTime": 4.9,
+        "finishTime": 7.12,
+        "dialogue": {
+          "text": "That's interesting. Thanks for the description, Tom.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 7.62
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the dialogue and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "65b25ab9be0c0d3ec4752839",
+  "title": "Task 12",
+  "challengeType": 19,
+  "dashedName": "task-12",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Bob use <code>with</code> to describe the woman's appearance?</p>",
+    "answers": [
+      {
+        "answer": "<p>To talk about her height</p>",
+        "feedback": "<p>Height is described without using <code>with</code>.</p>"
+      },
+      {
+        "answer": "<p>To mention her long blond hair and glasses</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To say how old she is</p>",
+        "feedback": "<p>Age is mentioned not using <code>with</code>.</p>"
+      },
+      {
+        "answer": "<p>To describe her clothes</p>",
+        "feedback": "<p>Clothes are not mentioned in Bob's description.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 7.18,
+        "finishTimestamp": 11.7
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 5.52,
+        "dialogue": {
+          "text": "She's a tall woman in her early 40s with long blonde hair and glasses.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When describing someone's appearance, you often use <code>with</code> followed by a feature.</p>\n<p>Examples:</p>\n<p><code>with glasses</code> for someone who wears glasses</p>\n<p><code>with curly hair</code> for someone who has curly hair, or</p>\n<p><code>with a blue jacket</code> for someone wearing a blue jacket</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

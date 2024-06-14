@@ -1,0 +1,65 @@
+{
+  "id": "5dc2385ff86c76b9248c6eb7",
+  "title": "Step 5",
+  "challengeType": 0,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n  \n    <h1>CatPhotoApp</h1>\n    <h2>Cat Photos</h2>\n    <!-- TODO: Add link to cat photos -->\n    <p>See more cat photos in our gallery.</p>\n    \n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n  \n    <h1>CatPhotoApp</h1>\n    <h2>Cat Photos</h2>\n    <!-- TODO: Add link to cat photos -->\n    <p>See more cat photos in our gallery.</p>\n    \n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>main</code> element should have an opening tag. Opening tags have this syntax: <code>&#x3C;elementName></code>.</p>",
+      "testString": "assert(document.querySelector('main'));"
+    },
+    {
+      "text": "<p>Your <code>main</code> element should have a closing tag. Closing tags have a <code>/</code> just after the <code>&#x3C;</code> character.</p>",
+      "testString": "assert(code.match(/<\\/main\\>/));"
+    },
+    {
+      "text": "<p>Your <code>main</code> element's opening tag should be below the <code>body</code> element's opening tag. You have them in the wrong order.</p>",
+      "testString": "const main = document.querySelector('main');\nassert.equal(main?.previousElementSibling, null);"
+    },
+    {
+      "text": "<p>Your <code>main</code> element's opening tag should be above the <code>h1</code> element. You have them in the wrong order.</p>",
+      "testString": "const collection = [...document.querySelectorAll('main,h1')].map(\n  (node) => node.nodeName\n);\nassert(collection.indexOf('MAIN') < collection.indexOf('H1'));"
+    },
+    {
+      "text": "<p>Your <code>main</code> element's closing tag should be below the <code>p</code> element. You have them in the wrong order.</p>",
+      "testString": "const mainNode = document.querySelector('main');\nconst pNode = document.querySelector('p');\nassert(\n  mainNode.contains(pNode) &&\n    pNode.textContent.toLowerCase().match(/see more cat photos in our gallery/)\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>HTML5 has some elements that identify different content areas. These elements make your HTML easier to read and help with Search Engine Optimization (SEO) and accessibility.</p>\n<p>The <code>main</code> element is used to represent the main content of the body of an HTML document. Content inside the <code>main</code> element should be unique to the document and should not be repeated in other parts of the document.</p>\n<pre><code class=\"language-html\">&#x3C;main>\n  &#x3C;h1>Most important content of the document&#x3C;/h1>\n  &#x3C;p>Some more important content...&#x3C;/p>\n&#x3C;/main>\n</code></pre>\n<p>Identify the main section of this page by adding a <code>&#x3C;main></code> opening tag before the <code>h1</code> element, and a <code>&#x3C;/main></code> closing tag after the <code>p</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

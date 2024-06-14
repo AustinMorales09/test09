@@ -1,0 +1,45 @@
+{
+  "id": "656d1831a6a2fe0465ea9488",
+  "title": "Task 140",
+  "challengeType": 19,
+  "dashedName": "task-140",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the correct possessive form for the nouns <code>server</code> and <code>devices</code>.</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Server maintenances, devices manual</code></p>",
+        "feedback": "<p><code>Server maintenances</code> and <code>devices manual</code> don't show possession. Remember that <code>'s</code> or an apostrophe is needed to indicate that something belongs to someone or something.</p>"
+      },
+      {
+        "answer": "<p><code>Server's maintenance, devices' manual</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Server's maintenance, device's manual</code></p>",
+        "feedback": "<p><code>Server's</code> is correct for singular possession, but be careful with <code>device's</code>. Consider if <code>device</code> is singular or plural in the context.</p>"
+      },
+      {
+        "answer": "<p><code>Servers maintenance, devices' manuals</code></p>",
+        "feedback": "<p>Remember the rule for singular nouns and plurals ending in <code>s</code>.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>To show possession in English, you typically add <code>'s</code> to a name, like <code>Sophie's desk</code>. However, for names ending in <code>s</code>, you often just add an apostrophe <code>'</code>. For example: <code>James' book</code>. It means the book belongs to James.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 143,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

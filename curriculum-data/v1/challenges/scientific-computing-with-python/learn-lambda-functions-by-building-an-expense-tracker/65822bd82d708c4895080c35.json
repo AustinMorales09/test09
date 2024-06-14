@@ -1,0 +1,49 @@
+{
+  "id": "65822bd82d708c4895080c35",
+  "title": "Step 9",
+  "challengeType": 20,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        7
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense}, Category: {expense}')\n\nexpenses = []",
+      "error": null,
+      "seed": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense}, Category: {expense}')\n\nexpenses = []"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should pass <code>f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}'</code> to your <code>print()</code> call. Remember to use double quotes within your single-quoted f-string and vice versa.</p>",
+      "testString": "({ test: () => assert.match(code, /^\\s+print\\s*\\(\\s*f(\"|')Amount: \\{\\s*expense\\s*\\[\\s*(?=[^\\1])(\"|')amount\\2\\s*\\]\\s*\\}, Category: \\{\\s*expense\\s*\\[\\s*(?=[^\\1])(\"|')category\\3\\s*\\]\\s*\\}\\1\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In Python, an important thing to know is that the same type of quote used to define a string cannot be used inside it. For example, the string <code>'I'm a string!'</code> is not valid. To use the single quote inside that string you should either:</p>\n<ul>\n<li>Escape the quote by prepending a backlash to it: <code>'I\\'m a string!'</code></li>\n<li>Or use double quotes to define the string: <code>\"I'm a string!\"</code> (preferred).</li>\n</ul>\n<p>You can access values in a dictionary through its keys. You need to use bracket notation and include the key between the square brackets:</p>\n<pre><code class=\"language-py\">my_dict = {'amount': 50.0, 'category': 'Food'}\nmy_dict['amount'] # 50.0\n</code></pre>\n<p>You are currently interpolating the <code>expense</code> dictionary in your f-string. Modify the f-string expression to access the value of the <code>'amount'</code> key and the <code>'category'</code> key in the <code>expense</code> dictionary.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

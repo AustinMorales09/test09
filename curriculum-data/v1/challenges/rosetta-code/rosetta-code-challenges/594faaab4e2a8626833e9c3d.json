@@ -1,0 +1,77 @@
+{
+  "id": "594faaab4e2a8626833e9c3d",
+  "title": "Tokenize a string with escaping",
+  "challengeType": 1,
+  "forumTopicId": 302338,
+  "dashedName": "tokenize-a-string-with-escaping",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const testStr1 = 'one^|uno||three^^^^|four^^^|^cuatro|';\nconst res1 = ['one|uno', '', 'three^^', 'four^|cuatro', ''];\n\n// TODO add more tests\nconst testStr2 = 'a@&bcd&ef&&@@hi';\nconst res2 = ['a&bcd', 'ef', '', '@hi'];",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function tokenize(str, sep, esc) {\n  return true;\n}",
+      "error": null,
+      "seed": "function tokenize(str, sep, esc) {\n  return true;\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// tokenize :: String -> Character -> Character -> [String]\nfunction tokenize(str, charDelim, charEsc) {\n  const dctParse = str.split('')\n    .reduce((a, x) => {\n      const blnEsc = a.esc;\n      const blnBreak = !blnEsc && x === charDelim;\n      const blnEscChar = !blnEsc && x === charEsc;\n\n      return {\n        esc: blnEscChar,\n        token: blnBreak ? '' : (\n          a.token + (blnEscChar ? '' : x)\n        ),\n        list: a.list.concat(blnBreak ? a.token : [])\n      };\n    }, {\n      esc: false,\n      token: '',\n      list: []\n    });\n\n  return dctParse.list.concat(\n    dctParse.token\n  );\n}",
+        "error": null,
+        "seed": "// tokenize :: String -> Character -> Character -> [String]\nfunction tokenize(str, charDelim, charEsc) {\n  const dctParse = str.split('')\n    .reduce((a, x) => {\n      const blnEsc = a.esc;\n      const blnBreak = !blnEsc && x === charDelim;\n      const blnEscChar = !blnEsc && x === charEsc;\n\n      return {\n        esc: blnEscChar,\n        token: blnBreak ? '' : (\n          a.token + (blnEscChar ? '' : x)\n        ),\n        list: a.list.concat(blnBreak ? a.token : [])\n      };\n    }, {\n      esc: false,\n      token: '',\n      list: []\n    });\n\n  return dctParse.list.concat(\n    dctParse.token\n  );\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>tokenize</code> should be a function.</p>",
+      "testString": "assert(typeof tokenize === 'function');"
+    },
+    {
+      "text": "<p><code>tokenize</code> should return an array.</p>",
+      "testString": "assert(typeof tokenize('a', 'b', 'c') === 'object');"
+    },
+    {
+      "text": "<p><code>tokenize('one^|uno||three^^^^|four^^^|^cuatro|', '|', '^')</code> should return <code>['one|uno', '', 'three^^', 'four^|cuatro', '']</code></p>",
+      "testString": "assert.deepEqual(tokenize(testStr1, '|', '^'), res1);"
+    },
+    {
+      "text": "<p><code>tokenize('a@&#x26;bcd&#x26;ef&#x26;&#x26;@@hi', '&#x26;', '@')</code> should return <code>['a&#x26;bcd', 'ef', '', '@hi']</code></p>",
+      "testString": "assert.deepEqual(tokenize(testStr2, '&', '@'), res2);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Write a function or program that can split a string at each non-escaped occurrence of a separator character.</p>\n<p>It should accept three input parameters:</p>\n<ul>\n  <li>The <strong>string</strong></li>\n  <li>The <strong>separator character</strong></li>\n  <li>The <strong>escape character</strong></li>\n</ul>\n<p>It should output a list of strings.</p>\n<p>Rules for splitting:</p>\n<ul>\n  <li>The fields that were separated by the separators, become the elements of the output list.</li>\n  <li>Empty fields should be preserved, even at the start and end.</li>\n</ul>\n<p>Rules for escaping:</p>\n<ul>\n  <li>\"Escaped\" means preceded by an occurrence of the escape character that is not already escaped itself.</li>\n  <li>When the escape character precedes a character that has no special meaning, it still counts as an escape (but does not do anything special).</li>\n  <li>Each occurrences of the escape character that was used to escape something, should not become part of the output.</li>\n</ul>\n<p>Demonstrate that your function satisfies the following test-case:</p>\n<p>Given the string</p>\n<pre>one^|uno||three^^^^|four^^^|^cuatro|</pre>\n<p>and using <code>|</code> as a separator and <code>^</code> as escape character, your function should output the following array:</p>\n<pre>  ['one|uno', '', 'three^^', 'four^|cuatro', '']\n</pre>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 148,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

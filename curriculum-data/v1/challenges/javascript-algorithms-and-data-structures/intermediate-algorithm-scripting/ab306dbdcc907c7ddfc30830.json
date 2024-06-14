@@ -1,0 +1,85 @@
+{
+  "id": "ab306dbdcc907c7ddfc30830",
+  "title": "Steamroller",
+  "challengeType": 1,
+  "forumTopicId": 16079,
+  "dashedName": "steamroller",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function steamrollArray(arr) {\n  return arr;\n}\n\nsteamrollArray([1, [2], [3, [[4]]]]);",
+      "error": null,
+      "seed": "function steamrollArray(arr) {\n  return arr;\n}\n\nsteamrollArray([1, [2], [3, [[4]]]]);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function steamrollArray(arr) {\n  if (!Array.isArray(arr)) {\n    return [arr];\n  }\n  var out = [];\n  arr.forEach(function(e) {\n    steamrollArray(e).forEach(function(v) {\n      out.push(v);\n    });\n  });\n  return out;\n}",
+        "error": null,
+        "seed": "function steamrollArray(arr) {\n  if (!Array.isArray(arr)) {\n    return [arr];\n  }\n  var out = [];\n  arr.forEach(function(e) {\n    steamrollArray(e).forEach(function(v) {\n      out.push(v);\n    });\n  });\n  return out;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>steamrollArray([[[\"a\"]], [[\"b\"]]])</code> should return <code>[\"a\", \"b\"]</code>.</p>",
+      "testString": "assert.deepEqual(steamrollArray([[['a']], [['b']]]), ['a', 'b']);"
+    },
+    {
+      "text": "<p><code>steamrollArray([1, [2], [3, [[4]]]])</code> should return <code>[1, 2, 3, 4]</code>.</p>",
+      "testString": "assert.deepEqual(steamrollArray([1, [2], [3, [[4]]]]), [1, 2, 3, 4]);"
+    },
+    {
+      "text": "<p><code>steamrollArray([1, [], [3, [[4]]]])</code> should return <code>[1, 3, 4]</code>.</p>",
+      "testString": "assert.deepEqual(steamrollArray([1, [], [3, [[4]]]]), [1, 3, 4]);"
+    },
+    {
+      "text": "<p><code>steamrollArray([1, {}, [3, [[4]]]])</code> should return <code>[1, {}, 3, 4]</code>.</p>",
+      "testString": "assert.deepEqual(steamrollArray([1, {}, [3, [[4]]]]), [1, {}, 3, 4]);"
+    },
+    {
+      "text": "<p>Your solution should not use the <code>Array.prototype.flat()</code> or <code>Array.prototype.flatMap()</code> methods.</p>",
+      "testString": "assert(!__helpers.removeJSComments(code).match(/\\.\\s*flat\\s*\\(/) && !__helpers.removeJSComments(code).match(/\\.\\s*flatMap\\s*\\(/));"
+    },
+    {
+      "text": "<p>Global variables should not be used.</p>",
+      "testString": "steamrollArray([1, {}, [3, [[4]]]])\nassert.deepEqual(steamrollArray([1, {}, [3, [[4]]]]), [1, {}, 3, 4])"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Flatten a nested array. You must account for varying levels of nesting.</p>\n</section>",
+  "translationPending": false,
+  "block": "intermediate-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

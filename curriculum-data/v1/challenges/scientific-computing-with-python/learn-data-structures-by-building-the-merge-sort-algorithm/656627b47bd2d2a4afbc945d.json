@@ -1,0 +1,53 @@
+{
+  "id": "656627b47bd2d2a4afbc945d",
+  "title": "Step 4",
+  "challengeType": 20,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def merge_sort(array):\n    middle_point = len(array) // 2\n",
+      "error": null,
+      "seed": "def merge_sort(array):\n    middle_point = len(array) // 2\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a variable named <code>left_part</code> in your <code>merge_sort</code> function.</p>",
+      "testString": "({\n  test: () => {\n    const transformedCode = code.replace(/\\r/g, \"\");\n    const merge_sort = __helpers.python.getDef(\"\\n\" + transformedCode, \"merge_sort\");\n    const { function_body } = merge_sort;\n\n    assert.match(function_body, /left_part\\s*(?!=)/m);\n  }\n})"
+    },
+    {
+      "text": "<p>You should assign <code>array[:middle_point]</code> to the <code>left_part</code> variable.</p>",
+      "testString": "({\n  test: () => {\n    const transformedCode = code.replace(/\\r/g, \"\");\n    const merge_sort = __helpers.python.getDef(\"\\n\" + transformedCode, \"merge_sort\");\n    const { function_body } = merge_sort;\n\n    assert.match(function_body, /left_part\\s*=\\s*array\\s*\\[\\s*:\\s*middle_point\\s*\\]/);\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In the previous step, you got the mid point. You can use it to divide <code>array</code> into two and assign each part to new variables.</p>\n<p>Use the slice syntax to extract the left half of <code>array</code> and assign it to a variable named <code>left_part</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-data-structures-by-building-the-merge-sort-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 9,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

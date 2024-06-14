@@ -1,0 +1,116 @@
+{
+  "id": "657eec0a21bc7adada04453e",
+  "title": "Task 59",
+  "challengeType": 19,
+  "dashedName": "task-59",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the expression <code>Are you kidding?</code> imply in this context?</p>",
+    "answers": [
+      {
+        "answer": "<p>Confirming a fact</p>",
+        "feedback": "<p>It is not the purpose of this expression.</p>"
+      },
+      {
+        "answer": "<p>Expressing disbelief</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Appreciating interests</p>",
+        "feedback": "<p>While Sarah is talking about her interests, the primary focus is on expressing disbelief.</p>"
+      },
+      {
+        "answer": "<p>Ignoring the conversation</p>",
+        "feedback": "<p>It is not the intended meaning of this expression.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 27.68,
+        "finishTimestamp": 34.22
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 2.6,
+        "dialogue": {
+          "text": "I didn't know you were interested in this.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 2.6
+      },
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 2.6
+      },
+      {
+        "character": "Sarah",
+        "startTime": 2.6,
+        "finishTime": 7.54,
+        "dialogue": {
+          "text": "Are you kidding? I go to at least one convention every year. It's the best moment of the year for me.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 8.04
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 61,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

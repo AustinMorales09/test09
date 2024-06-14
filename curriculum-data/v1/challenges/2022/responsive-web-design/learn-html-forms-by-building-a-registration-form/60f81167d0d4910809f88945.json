@@ -1,0 +1,73 @@
+{
+  "id": "60f81167d0d4910809f88945",
+  "title": "Step 20",
+  "challengeType": 0,
+  "dashedName": "step-20",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        11,
+        21
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Registration Form</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Registration Form</h1>\n    <p>Please fill out this form with the required information</p>\n    <form method=\"post\" action='https://register-demo.freecodecamp.org'>\n      <fieldset>\n        <label for=\"first-name\">Enter Your First Name: <input id=\"first-name\" type=\"text\" /></label>\n        <label for=\"last-name\">Enter Your Last Name: <input id=\"last-name\" type=\"text\" /></label>\n        <label for=\"email\">Enter Your Email: <input id=\"email\" type=\"email\" /></label>\n        <label for=\"new-password\">Create a New Password: <input id=\"new-password\" type=\"password\" /></label>\n      </fieldset>\n      <fieldset></fieldset>\n      <fieldset></fieldset>\n\n    </form>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Registration Form</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Registration Form</h1>\n    <p>Please fill out this form with the required information</p>\n    <form method=\"post\" action='https://register-demo.freecodecamp.org'>\n      <fieldset>\n        <label for=\"first-name\">Enter Your First Name: <input id=\"first-name\" type=\"text\" /></label>\n        <label for=\"last-name\">Enter Your Last Name: <input id=\"last-name\" type=\"text\" /></label>\n        <label for=\"email\">Enter Your Email: <input id=\"email\" type=\"email\" /></label>\n        <label for=\"new-password\">Create a New Password: <input id=\"new-password\" type=\"password\" /></label>\n      </fieldset>\n      <fieldset></fieldset>\n      <fieldset></fieldset>\n\n    </form>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  width: 100%;\n  height: 100vh;\n  margin: 0;\n  background-color: #1b1b32;\n  color: #f5f6f7;\n}\n\nlabel {\n  display: block;\n  margin: 0.5rem 0;\n}\n",
+      "error": null,
+      "seed": "body {\n  width: 100%;\n  height: 100vh;\n  margin: 0;\n  background-color: #1b1b32;\n  color: #f5f6f7;\n}\n\nlabel {\n  display: block;\n  margin: 0.5rem 0;\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add the <code>input</code> element after the last <code>fieldset</code> element.</p>",
+      "testString": "assert.exists(document.querySelectorAll('fieldset')?.[2]?.nextElementSibling?.tagName, 'input');"
+    },
+    {
+      "text": "<p>You should give the <code>input</code> element a <code>type</code> attribute of <code>submit</code>.</p>",
+      "testString": "assert.exists(document.querySelector('fieldset + input[type=\"submit\"]'));"
+    },
+    {
+      "text": "<p>You should give the <code>input</code> element a <code>value</code> attribute of <code>Submit</code>.</p>",
+      "testString": "assert.exists(document.querySelector('fieldset + input[value=\"Submit\"]'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The first <code>input</code> element with a <code>type</code> of <code>submit</code> is automatically set to submit its nearest parent <code>form</code> element.</p>\n<p>To handle the form submission, after the last <code>fieldset</code> element add an <code>input</code> element with the <code>type</code> attribute set to <code>submit</code> and the <code>value</code> attribute set to <code>Submit</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-forms-by-building-a-registration-form",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

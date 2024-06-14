@@ -1,0 +1,88 @@
+{
+  "id": "65569ebbc9ef9f7b5b99827b",
+  "title": "Task 1",
+  "challengeType": 19,
+  "dashedName": "task-1",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is James's impression about Sarah?</p>",
+    "answers": [
+      {
+        "answer": "<p>He thinks she looks very energetic.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He thinks she's tired.</p>",
+        "feedback": "<p>The expression <code>a ton of energy</code> means the opposite, that she has a lot of energy at the moment.</p>"
+      },
+      {
+        "answer": "<p>He thinks she is going to exercise.</p>",
+        "feedback": "<p>Although he says she seems like she has a ton of energy, he doesn't refer to exercises.</p>"
+      },
+      {
+        "answer": "<p>He thinks she looks happy with her new car.</p>",
+        "feedback": "<p>There's no mention of a car in the dialogue.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.38
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 5.38,
+        "dialogue": {
+          "text": "Good morning, Sarah. Wow, it seems like you have a ton of energy this morning.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 5.88
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>It seems like</code> can be used to express an impression you have by looking at something or someone. For example, <code>It seems like it's cold outside!</code> is an expression you can say when you have not left home yet, but you see everyone on the street wearing coats.</p>\n<p>Other examples include <code>It seems like it's going to rain.</code>, or <code>It seems like you're happy today.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

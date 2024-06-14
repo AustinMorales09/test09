@@ -1,0 +1,65 @@
+{
+  "id": "61968e9243a4090cc805531c",
+  "title": "Step 5",
+  "challengeType": 0,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  \n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Penguin</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  </head>\n\n  <body>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  \n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Penguin</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  </head>\n\n  <body>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        9
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100vh;\n\n}",
+      "error": null,
+      "seed": "body {\n  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100vh;\n\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should give <code>body</code> an <code>overflow</code> of <code>--fcc-expected--</code>. But found <code>--fcc-actual--</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('body')?.overflow, 'hidden');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Remove both the horizontal and vertical scrollbars, using only one property.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-transforms-by-building-a-penguin",
+  "hasEditableBoundaries": true,
+  "order": 18,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

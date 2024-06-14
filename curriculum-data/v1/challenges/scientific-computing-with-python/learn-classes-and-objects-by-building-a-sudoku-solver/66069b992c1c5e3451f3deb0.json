@@ -1,0 +1,57 @@
+{
+  "id": "66069b992c1c5e3451f3deb0",
+  "title": "Step 8",
+  "challengeType": 20,
+  "dashedName": "step-8",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        6
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    def spam(self):\n        print('Spam!')\n    \ngameboard = Board()",
+      "error": null,
+      "seed": "class Board:\n    def spam(self):\n        print('Spam!')\n    \ngameboard = Board()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have a <code>spam</code> method in your <code>Board</code> class.</p>",
+      "testString": "({ test: () => assert.isFalse(runPython(`_Node(_code).find_class(\"Board\").has_function(\"spam\")`)) })"
+    },
+    {
+      "text": "<p>You should define an <code>__init__</code> method in your <code>Board</code> class.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"Board\").has_function(\"__init__\")`)) })"
+    },
+    {
+      "text": "<p>Your <code>__init__</code> method should have a <code>self</code> parameter.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"Board\").find_function(\"__init__\").has_args(\"self\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The instantiation creates an empty object. The <code>__init__</code> method is a special method that allows you to instantiate an object to a customized state. When a class implements an <code>__init__</code> method, <code>__init__</code> is automatically called upon instantiation.</p>\n<p>Inside your <code>Board</code> class, delete the <code>spam</code> method and replace it with an <code>__init__</code> method that includes a <code>self</code> parameter.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

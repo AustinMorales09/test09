@@ -1,0 +1,45 @@
+{
+  "id": "65800b96989013fb24aa1b70",
+  "title": "Task 92",
+  "challengeType": 19,
+  "dashedName": "task-92",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the correct sentence that represents the Present Perfect Tense.</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I was into rock climbing and rafting.</code></p>",
+        "feedback": "<p>The sentence is in the past tense, not the Present Perfect Tense. It does not indicate an ongoing situation.</p>"
+      },
+      {
+        "answer": "<p><code>I'm into rock climbing and rafting.</code></p>",
+        "feedback": "<p>The sentence is in the Present tense, not the Present Perfect Tense. It is a correct tense, but does not reflect the duration of an ongoing situation which started in the past, only a fact.</p>"
+      },
+      {
+        "answer": "<p><code>I've been into rock climbing and rafting for a while now.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>I've into rock climbing and rafting.</code></p>",
+        "feedback": "<p>The sentence structure is not correct for expressing the duration of an action or situation. The proper form of the Present Perfect Tense is missing.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The <em>Present Perfect Tense</em> is used to express the duration of an action or situation that started in the past and continues into the present.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 96,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

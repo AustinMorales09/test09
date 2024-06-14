@@ -1,0 +1,42 @@
+{
+  "id": "63ee35450d8d4841c3a70920",
+  "videoId": "LGQuIIv2RVA",
+  "title": "CSS Foundations Question G",
+  "challengeType": 15,
+  "dashedName": "css-foundations-question-g",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following is a difference between internal and external CSS methods?</p>",
+    "answers": [
+      {
+        "answer": "<p>The external method places CSS rules in a separate file, while the internal method places CSS rules within the HTML file itself.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The internal method keeps CSS separate from HTML, while the external method embeds CSS directly in HTML.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The internal method uses <code>&#x3C;link></code> element to link CSS to HTML, while the external method embeds CSS directly in HTML.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Internal CSS (or embedded CSS) involves adding the CSS within the HTML file itself instead of creating a completely separate file. With the internal method, you place all the rules inside of a pair of opening and closing <code>&#x3C;style></code> tags, which are then placed inside of the opening and closing <code>&#x3C;head></code> tags of your HTML file. Since the styles are being placed directly inside of the <code>&#x3C;head></code> tags, you no longer need a <code>&#x3C;link></code> element that the external method requires.</p>\n<p>Besides these differences, the syntax is exactly the same as the external method (selector, curly braces, declarations):</p>\n<pre><code class=\"language-html\">&#x3C;head>\n  &#x3C;style>\n    div {\n      color: white;\n      background-color: black;\n    }\n\n    p {\n      color: red;\n    }\n  &#x3C;/style>\n&#x3C;/head>\n&#x3C;body>...&#x3C;/body>\n</code></pre>\n<p>This method can be useful for adding unique styles to a single page of a website, but it doesn’t keep things separate like the external method, and depending on how many rules and declarations there are it can cause the HTML file to get pretty big.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-css-foundations",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

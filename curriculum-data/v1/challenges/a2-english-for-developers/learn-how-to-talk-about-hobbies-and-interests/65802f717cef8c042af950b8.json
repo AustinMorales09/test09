@@ -1,0 +1,88 @@
+{
+  "id": "65802f717cef8c042af950b8",
+  "title": "Task 104",
+  "challengeType": 19,
+  "dashedName": "task-104",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sophie imply by saying <code>I'll let you know all the details later</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>She will share the details right away.</p>",
+        "feedback": "<p>This contradicts Sophie's statement about providing details later. She indicates the information will be shared in the future.</p>"
+      },
+      {
+        "answer": "<p>She will not provide any details.</p>",
+        "feedback": "<p>Sophie intends to share the details, just not immediately. The phrase suggests a promise to inform later.</p>"
+      },
+      {
+        "answer": "<p>She promises to inform Brian about the rafting plan details at a later time.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She has forgotten about sharing the details.</p>",
+        "feedback": "<p>There's no implication of forgetfulness; Sophie clearly states her intention to inform Brian later.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 20.82,
+        "finishTimestamp": 23.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.08,
+        "dialogue": {
+          "text": "Great. We'll have a lot of fun. I'll let you know all the details later.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>I'll let you know</code> indicates a promise to provide information or updates about a future event or plan.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 108,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

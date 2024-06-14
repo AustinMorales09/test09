@@ -1,0 +1,88 @@
+{
+  "id": "6537e6ece93e5724eeb27c54",
+  "title": "Task 3",
+  "challengeType": 19,
+  "dashedName": "task-3",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Maria's job role at the company?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Graphic Designer</code></p>",
+        "feedback": "<p>Focus on the term Maria used to describe herself.</p>"
+      },
+      {
+        "answer": "<p><code>Team Member</code></p>",
+        "feedback": "<p>Focus on the term Maria used to describe herself.</p>"
+      },
+      {
+        "answer": "<p><code>Team Lead</code></p>",
+        "feedback": "<p>Focus on the term Maria used to describe herself.</p>"
+      },
+      {
+        "answer": "<p><code>CEO</code></p>",
+        "feedback": "<p>Focus on the term Maria used to describe herself.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 2.6,
+        "finishTimestamp": 4
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 2.2,
+        "dialogue": {
+          "text": "I'm Maria, the team lead.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 2.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In English, we often mention our job or role in a company by saying, <code>I'm [name], the [job title]</code>. <code>name</code> refers to the person's name, and <code>job title</code> is their occupation. This lets others know our position or role.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

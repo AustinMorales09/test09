@@ -1,0 +1,79 @@
+{
+  "id": "65f569d173ab3d5100c42fd0",
+  "title": "Task 24",
+  "challengeType": 22,
+  "dashedName": "task-24",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I've tried a _ things, but it could be something more _.</p>",
+    "blanks": [
+      {
+        "answer": "few",
+        "feedback": "<p>It means Tom tried some things but not a lot.</p>"
+      },
+      {
+        "answer": "complicated",
+        "feedback": "<p>It suggests the problem might be more difficult than initially thought.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 16.18,
+        "finishTimestamp": 19.2
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.02,
+        "dialogue": {
+          "text": "I've tried a few things, but it could be something more complicated.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.52
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this task, you'll learn about the phrase <code>a few</code>. It means a small number of things or not many. For example, <code>I tried a few solutions</code> means trying several but not a lot of solutions.</p>\n<p><code>Complicated</code> means something is not simple and can be difficult to understand. For example, <code>This coding problem is complicated</code> means the problem is not easy to solve.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

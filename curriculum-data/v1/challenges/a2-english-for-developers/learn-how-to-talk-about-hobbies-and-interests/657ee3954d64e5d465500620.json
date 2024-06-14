@@ -1,0 +1,88 @@
+{
+  "id": "657ee3954d64e5d465500620",
+  "title": "Task 47",
+  "challengeType": 19,
+  "dashedName": "task-47",
+  "solutions": [],
+  "question": {
+    "text": "<p>Where are the action figures?</p>",
+    "answers": [
+      {
+        "answer": "<p>On a shelf at the back of the person</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>In a box in front of the person</p>",
+        "feedback": "<p>James said the action figures are on a shelf behind you, not in front.</p>"
+      },
+      {
+        "answer": "<p>Hanging above the person's head</p>",
+        "feedback": "<p>James specifically mentioned the shelf is behind, not above.</p>"
+      },
+      {
+        "answer": "<p>Scattered on the floor around the person</p>",
+        "feedback": "<p>James mentioned a specific location - on a shelf, not scattered on the floor.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 5.18
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 6.18,
+        "dialogue": {
+          "text": "Hey, I noticed you have a huge collection of action figures on that shelf behind you. Are you a collector?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 6.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this task, you'll practice understanding how <code>behind</code> is used to describe location.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 49,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

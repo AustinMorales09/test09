@@ -1,0 +1,75 @@
+{
+  "id": "bad87fee1348bd9aedf08820",
+  "title": "Turn an Image into a Link",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pVMPUv/cRdBnUr",
+  "forumTopicId": 18327,
+  "dashedName": "turn-an-image-into-a-link",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>\n\n  <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n\n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n</main>",
+      "error": null,
+      "seed": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>\n\n  <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n\n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n</main>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>\n  \n  <a href=\"#\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n  \n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n</main>",
+        "error": null,
+        "seed": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>\n  \n  <a href=\"#\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n  \n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n</main>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The existing <code>img</code> element should be nested within an <code>a</code> element.</p>",
+      "testString": "assert($('a').children('img').length > 0);"
+    },
+    {
+      "text": "<p>Your <code>a</code> element should be a dead link with an <code>href</code> attribute set to <code>#</code>.</p>",
+      "testString": "assert(new RegExp('#').test($('a').children('img').parent().attr('href')));"
+    },
+    {
+      "text": "<p>Each of your <code>a</code> elements should have a closing tag.</p>",
+      "testString": "assert(\n  code.match(/<\\/a>/g) &&\n    code.match(/<a/g) &&\n    code.match(/<\\/a>/g).length === code.match(/<a/g).length\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can make elements into links by nesting them within an <code>a</code> element.</p>\n<p>Nest your image within an <code>a</code> element. Here's an example:</p>\n<pre><code class=\"language-html\">&#x3C;a href=\"#\">&#x3C;img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"Three kittens running towards the camera.\">&#x3C;/a>\n</code></pre>\n<p>Remember to use <code>#</code> as your <code>a</code> element's <code>href</code> property in order to turn it into a dead link.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Place the existing image element within an <code>a</code> (<em>anchor</em>) element.</p>\n<p>Once you've done this, hover over your image with your cursor. Your cursor's normal pointer should become the link clicking pointer. The photo is now a link.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-html-and-html5",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

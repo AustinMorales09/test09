@@ -1,0 +1,45 @@
+{
+  "id": "6571b300cc1de61d7b4dd383",
+  "title": "Introduction to Flexbox Question E",
+  "challengeType": 15,
+  "dashedName": "introduction-flexbox-question-e",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which properties are set by the <code>flex</code> shorthand?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>flex-basis</code>, <code>flex-wrap</code>, and <code>flex-direction</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>flex-direction</code>, <code>flex</code>, and <code>flex-wrap</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The <code>flex</code> declaration is actually a shorthand for 3 properties that you can set on a flex item. These properties affect how flex items size themselves within their container. You've seen some shorthand properties before, but you haven't officially defined them yet.</p>\n<blockquote>\n<p>Shorthand properties are CSS properties that let you set the values of multiple other CSS properties simultaneously. Using a shorthand property, you can write more concise (and often more readable) stylesheets, saving time and energy.</p>\n</blockquote>\n<p>In this case, <code>flex</code> is actually a shorthand for <code>flex-grow</code>, <code>flex-shrink</code> and <code>flex-basis</code>.</p>\n<img src=\"https://cdn.freecodecamp.org/curriculum/odin-project/flex-box/flexbox-04.png\" alt=\"CSS code setting the flex property to 1 for a div element.\">\n<p>In the above screenshot, <code>flex: 1</code> equates to: <code>flex-grow: 1</code>, <code>flex-shrink: 1</code>, <code>flex-basis: 0</code>.</p>\n<p>Very often, you see the flex shorthand defined with only one value. In that case, that value is applied to <code>flex-grow</code>. So when you put <code>flex: 1</code> on our divs, you were actually specifying a shorthand of <code>flex: 1 1 0</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-introduction-to-flexbox",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

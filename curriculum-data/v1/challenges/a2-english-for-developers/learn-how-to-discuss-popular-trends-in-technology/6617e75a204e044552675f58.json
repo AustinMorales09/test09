@@ -1,0 +1,154 @@
+{
+  "id": "6617e75a204e044552675f58",
+  "title": "Task 5",
+  "challengeType": 19,
+  "dashedName": "task-5",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which answer best describes AI?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Something like a blue sky</code></p>",
+        "feedback": "<p>The discussion is not about the sky. Remember this lesson is about Artificial Intelligence.</p>"
+      },
+      {
+        "answer": "<p><code>Automated Interaction</code></p>",
+        "feedback": "<p>In the discussion, they mention smart machines, but not just for automated interaction. Look for the broader concept.</p>"
+      },
+      {
+        "answer": "<p><code>Something like a smart machine</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Advanced Invention</code></p>",
+        "feedback": "<p>The concept of advanced invention is not mentioned in the discussion. Think about a specific type of intelligence.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 21.1
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.92,
+        "dialogue": {
+          "text": "Hey Tom, have you heard about artificial intelligence?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.25
+      },
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 4.25
+      },
+      {
+        "character": "Tom",
+        "startTime": 4.58,
+        "finishTime": 10.92,
+        "dialogue": {
+          "text": "Absolutely, Sophie. AI is amazing. It's all about teaching machines to think and learn like humans.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 11.17
+      },
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 11.17
+      },
+      {
+        "character": "Sophie",
+        "startTime": 11.42,
+        "finishTime": 14.28,
+        "dialogue": {
+          "text": "That sounds fascinating, but how is it used in the real world?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 14.62
+      },
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 14.62
+      },
+      {
+        "character": "Tom",
+        "startTime": 14.96,
+        "finishTime": 22.1,
+        "dialogue": {
+          "text": "Well, AI is everywhere, from chatbots that help with customer service to self driving cars that use AI to navigate safely.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 22.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this challenge, you’ll practice what you learned in previous challenges. Listen to the dialogue and choose the correct answer.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

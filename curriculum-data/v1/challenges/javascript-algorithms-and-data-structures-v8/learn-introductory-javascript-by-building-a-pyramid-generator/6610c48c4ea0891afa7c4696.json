@@ -1,0 +1,49 @@
+{
+  "id": "6610c48c4ea0891afa7c4696",
+  "title": "Step 53",
+  "challengeType": 1,
+  "dashedName": "step-53",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        9
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(name) {\n  return name;\n}\nconst call = padRow();\nconsole.log(call);\n\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(name) {\n  return name;\n}\nconst call = padRow();\nconsole.log(call);\n\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should pass a string to your <code>padRow()</code> call.</p>",
+      "testString": "assert.match(code, /padRow\\(\\s*(\"|').+\\1\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>If you open your console again, you'll see that your <code>padRow</code> function is returning <code>undefined</code>, even though you defined a return value! This is because parameters need to be given a value when you <strong>call</strong> the function.</p>\n<p>When you pass a value to a function call, that value is referred to as an <dfn>argument</dfn>. Here is an example of calling a <code>demo</code> function and passing <code>\"Naomi\"</code> as the argument for the <code>name</code> parameter.</p>\n<pre><code class=\"language-js\">function demo(name) {\n  return name;\n}\ndemo(\"Naomi\");\n</code></pre>\n<p>Pass your own name as the argument for the <code>name</code> parameter in your <code>padRow</code> call. Remember that your name is a string, so you'll need to use quotes.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 52,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

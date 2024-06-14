@@ -1,0 +1,81 @@
+{
+  "id": "614206033d366c090ca7dd42",
+  "title": "Step 17",
+  "challengeType": 0,
+  "dashedName": "step-17",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n      <img id=\"logo\" alt=\"freeCodeCamp\" src=\"https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg\">\n      <h1>HTML/CSS Quiz</h1>\n      <nav>\n        <ul>\n          <li><a>INFO</a></li>\n          <li><a>HTML</a></li>\n          <li><a>CSS</a></li>\n        </ul>\n      </nav>\n    </header>\n    <main>\n      <form method=\"post\" action=\"https://freecodecamp.org/practice-project/accessibility-quiz\">\n        <section role=\"region\" aria-labelledby=\"student-info\">\n          <h2 id=\"student-info\">Student Info</h2>\n        </section>\n        <section role=\"region\" aria-labelledby=\"html-questions\">\n          <h2 id=\"html-questions\">HTML</h2>\n        </section>\n        <section role=\"region\" aria-labelledby=\"css-questions\">\n          <h2 id=\"css-questions\">CSS</h2>\n        </section>\n      </form>\n    </main>\n  </body>\n</html>\n",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n      <img id=\"logo\" alt=\"freeCodeCamp\" src=\"https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg\">\n      <h1>HTML/CSS Quiz</h1>\n      <nav>\n        <ul>\n          <li><a>INFO</a></li>\n          <li><a>HTML</a></li>\n          <li><a>CSS</a></li>\n        </ul>\n      </nav>\n    </header>\n    <main>\n      <form method=\"post\" action=\"https://freecodecamp.org/practice-project/accessibility-quiz\">\n        <section role=\"region\" aria-labelledby=\"student-info\">\n          <h2 id=\"student-info\">Student Info</h2>\n        </section>\n        <section role=\"region\" aria-labelledby=\"html-questions\">\n          <h2 id=\"html-questions\">HTML</h2>\n        </section>\n        <section role=\"region\" aria-labelledby=\"css-questions\">\n          <h2 id=\"css-questions\">CSS</h2>\n        </section>\n      </form>\n    </main>\n  </body>\n</html>\n"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        37,
+        39
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}\n\nheader {\n  width: 100%;\n  height: 50px;\n  background-color: #1b1b32;\n  display: flex;\n}\n\n#logo {\n  width: max(100px, 18vw);\n  background-color: #0a0a23;\n  aspect-ratio: 35 / 4;\n  padding: 0.4rem;\n}\n\nh1 {\n  color: #f1be32;\n  font-size: min(5vw, 1.2em);\n}\n\nnav {\n  width: 50%;\n  max-width: 300px;\n  height: 50px;\n}\n\nnav > ul {\n  display: flex;\n  justify-content: space-evenly;\n}\n\n\n",
+      "error": null,
+      "seed": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}\n\nheader {\n  width: 100%;\n  height: 50px;\n  background-color: #1b1b32;\n  display: flex;\n}\n\n#logo {\n  width: max(100px, 18vw);\n  background-color: #0a0a23;\n  aspect-ratio: 35 / 4;\n  padding: 0.4rem;\n}\n\nh1 {\n  color: #f1be32;\n  font-size: min(5vw, 1.2em);\n}\n\nnav {\n  width: 50%;\n  max-width: 300px;\n  height: 50px;\n}\n\nnav > ul {\n  display: flex;\n  justify-content: space-evenly;\n}\n\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use a multiple element selector to target the <code>h1</code> and <code>h2</code> elements.</p>",
+      "testString": "const gs = (s) => new __helpers.CSSHelp(document).getStyle(s);\nassert.exists(gs('h1, h2') || gs('h2, h1'));"
+    },
+    {
+      "text": "<p>You should set the first value of the <code>font-family</code> property to <code>Verdana</code>.</p>",
+      "testString": "const gs = (s) => new __helpers.CSSHelp(document).getStyle(s);\nconst style = gs('h1, h2') || gs('h2, h1');\nassert.include(style?.fontFamily, 'Verdana');"
+    },
+    {
+      "text": "<p>You should set the second value of the <code>font-family</code> property to another sans-serif, web safe font. <em>Hint: I would choose Tahoma</em>.</p>",
+      "testString": "// Acceptable fonts: Arial, sans-serif, Helvetica, Tahoma, Trebuchet MS.\nconst gs = (s) => new __helpers.CSSHelp(document).getStyle(s);\nconst style = gs('h1, h2') || gs('h2, h1');\nassert.match(style?.fontFamily, /(Tahoma)|(Arial)|(sans-serif)|(Helvetica)|(Trebuchet MS)/);"
+    },
+    {
+      "text": "<p>You should use an <code>h2</code> element selector to target the <code>h2</code> elements.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('h2'));"
+    },
+    {
+      "text": "<p>You should give <code>h2</code> a <code>border-bottom</code> property of <code>4px solid #dfdfe2</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('h2')?.borderBottom, '4px solid rgb(223, 223, 226)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Typeface plays an important role in the accessibility of a page. Some fonts are easier to read than others, and this is especially true on low-resolution screens.</p>\n<p>Change the font for both the <code>h1</code> and <code>h2</code> elements to <code>Verdana</code>, and use another web-safe font in the sans-serif family as a fallback.</p>\n<p>Also, add a <code>border-bottom</code> of <code>4px solid #dfdfe2</code> to <code>h2</code> elements to make the sections distinct.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-accessibility-by-building-a-quiz",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

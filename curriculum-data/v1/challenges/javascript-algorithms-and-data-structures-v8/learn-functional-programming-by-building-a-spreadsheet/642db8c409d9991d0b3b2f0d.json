@@ -1,0 +1,113 @@
+{
+  "id": "642db8c409d9991d0b3b2f0d",
+  "title": "Step 1",
+  "challengeType": 0,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should access the <code>onload</code> property of the <code>window</code> object.</p>",
+      "testString": "assert.match(code, /window\\.onload/);"
+    },
+    {
+      "text": "<p>You should set the <code>onload</code> property to a function.</p>",
+      "testString": "assert.isFunction(window.onload);"
+    },
+    {
+      "text": "<p>You should use arrow syntax.</p>",
+      "testString": "assert.match(code, /window\\.onload\\s*=\\s*\\(/);"
+    },
+    {
+      "text": "<p>Your <code>onload</code> function should not take any parameters.</p>",
+      "testString": "assert.match(code, /window\\.onload\\s*=\\s*\\(\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should declare a <code>container</code> variable in your <code>onload</code> function.</p>",
+      "testString": "assert.match(code, /window\\.onload\\s*=\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*(?:let|var|const)\\s+container/);"
+    },
+    {
+      "text": "<p>Your <code>container</code> variable should be declared with <code>const</code>.</p>",
+      "testString": "assert.match(code, /window\\.onload\\s*=\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*const\\s+container/);"
+    },
+    {
+      "text": "<p>You should use <code>document.getElementById()</code></p>",
+      "testString": "assert.match(code, /document\\.getElementById\\(/);"
+    },
+    {
+      "text": "<p>You should get the element with the <code>id</code> of <code>container</code>.</p>",
+      "testString": "assert.match(code, /document\\.getElementById\\(\\s*('|\"|`)container\\1\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should assign the <code>#container</code> element to <code>container</code>.</p>",
+      "testString": "assert.match(code, /window\\.onload\\s*=\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*const\\s+container\\s*=\\s*document\\.getElementById\\(\\s*('|\"|`)container\\1\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Your project starts with a basic HTML container and some corresponding CSS. Your first task will be to programmatically generate the cells for your spreadsheet.</p>\n<p>The global <code>window</code> object represents the browser window (or tab). It has an <code>onload</code> property which allows you to define behavior when the window has loaded the entire page, including stylesheets and scripts.</p>\n<p>Start by setting the <code>onload</code> property of <code>window</code> to an arrow function with no parameters. In the function, declare a <code>container</code> variable and assign it the value of getting the element by the <code>id</code> of <code>container</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

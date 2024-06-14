@@ -1,0 +1,97 @@
+{
+  "id": "655b69293e6e9480ed5f6624",
+  "title": "Task 9",
+  "challengeType": 19,
+  "dashedName": "task-9",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is Sophie's team taking lessons?</p>",
+    "answers": [
+      {
+        "answer": "<p>To take a break from work</p>",
+        "feedback": "<p>They are not taking a break from work.</p>"
+      },
+      {
+        "answer": "<p>To improve their computer skills</p>",
+        "feedback": "<p>While improving computer skills might be part of it, the main focus here is another thing.</p>"
+      },
+      {
+        "answer": "<p>To learn how to stay safe online</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>For fun</p>",
+        "feedback": "<p>The context suggests a serious purpose.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 15.2,
+        "finishTimestamp": 21.74
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.14,
+        "dialogue": {
+          "text": "I'm helping our team learn how to stay safe online.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "startTime": 3.8,
+        "finishTime": 7.54,
+        "dialogue": {
+          "text": "We're taking some lessons and practicing what to do if someone tries to steal our identity.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 8.04
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In the context Sophie is speaking, <code>take</code> refers to participating in a particular experience, like a lesson or a course.</p>\n<p>For example, <code>I'm taking a course in cybersecurity</code> means you are participating in a cybersecurity course.</p>\n<p>Other examples are:</p>\n<p><code>She is taking Python classes</code> (she is learning to use Python by attending a course)</p>\n<p><code>They are taking a break</code> (they are spending time resting or not working).</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

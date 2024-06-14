@@ -1,0 +1,65 @@
+{
+  "id": "61b30a286c228bd0c493c09a",
+  "title": "Step 89",
+  "challengeType": 0,
+  "dashedName": "step-89",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker red\">\n        <div class=\"cap\"></div>\n        <div class=\"sleeve\"></div>\n      </div>\n      <div class=\"marker green\">\n        <div class=\"cap\"></div>\n        <div class=\"sleeve\"></div>\n      </div>\n      <div class=\"marker blue\">\n        <div class=\"cap\"></div>\n        <div class=\"sleeve\"></div>\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker red\">\n        <div class=\"cap\"></div>\n        <div class=\"sleeve\"></div>\n      </div>\n      <div class=\"marker green\">\n        <div class=\"cap\"></div>\n        <div class=\"sleeve\"></div>\n      </div>\n      <div class=\"marker blue\">\n        <div class=\"cap\"></div>\n        <div class=\"sleeve\"></div>\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        41,
+        45
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1 {\n  text-align: center;\n}\n\n.container {\n  background-color: rgb(255, 255, 255);\n  padding: 10px 0;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.cap {\n  width: 60px;\n  height: 25px;\n}\n\n.sleeve {\n  width: 110px;\n  height: 25px;\n  background-color: rgba(255, 255, 255, 0.5);\n  border-left: 10px double rgba(0, 0, 0, 0.75);\n}\n\n.cap, .sleeve {\n  display: inline-block;\n}\n\n.red {\n  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));\n  box-shadow: -5px -5px red;\n}\n\n.green {\n  background: linear-gradient(#55680D, #71F53E, #116C31);\n  box-shadow: 5px 5px 5px green;\n}\n\n.blue {\n  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));\n}\n",
+      "error": null,
+      "seed": "h1 {\n  text-align: center;\n}\n\n.container {\n  background-color: rgb(255, 255, 255);\n  padding: 10px 0;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.cap {\n  width: 60px;\n  height: 25px;\n}\n\n.sleeve {\n  width: 110px;\n  height: 25px;\n  background-color: rgba(255, 255, 255, 0.5);\n  border-left: 10px double rgba(0, 0, 0, 0.75);\n}\n\n.cap, .sleeve {\n  display: inline-block;\n}\n\n.red {\n  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));\n  box-shadow: -5px -5px red;\n}\n\n.green {\n  background: linear-gradient(#55680D, #71F53E, #116C31);\n  box-shadow: 5px 5px 5px green;\n}\n\n.blue {\n  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>.blue</code> CSS rule should have a <code>box-shadow</code> shorthand property and with the value <code>0 0 0 5px blue</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.blue')?.boxShadow === 'blue 0px 0px 0px 5px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>But what if you wanted to expand the shadow out further? You can do that with the optional <code>spreadRadius</code> value:</p>\n<pre><code class=\"language-css\">box-shadow: offsetX offsetY blurRadius spreadRadius color;\n</code></pre>\n<p>Like <code>blurRadius</code>, <code>spreadRadius</code> defaults to <code>0</code> if it isn't included.</p>\n<p>Practice by adding a 5 pixel shadow directly around the blue marker.</p>\n<p>In the <code>.blue</code> CSS rule, add the <code>box-shadow</code> property with the values <code>0</code> for <code>offsetX</code>, <code>0</code> for <code>offsetY</code>, <code>0</code> for <code>blurRadius</code>, <code>5px</code> for <code>spreadRadius</code>, and <code>blue</code> for <code>color</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 88,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

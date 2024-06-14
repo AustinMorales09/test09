@@ -1,0 +1,88 @@
+{
+  "id": "655a5bfadf47e1199f9b65eb",
+  "title": "Task 62",
+  "challengeType": 19,
+  "dashedName": "task-62",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Jake mean in his sentence?</p>",
+    "answers": [
+      {
+        "answer": "<p>Sophie will tell Jake about Sarah's morning routine tips</p>",
+        "feedback": "<p><code>Said</code> is in the past tense, indicating that Sophie has already told Jake about the tips.</p>"
+      },
+      {
+        "answer": "<p>Sarah tells Sophie about her morning routine</p>",
+        "feedback": "<p>The sentence indicates Sophie telling Jake about Sarah's tips, not the other way around.</p>"
+      },
+      {
+        "answer": "<p>Sophie told Jake that Sarah has good tips for a morning routine</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Jake asks Sarah for tips directly</p>",
+        "feedback": "<p>Jake mentions Sophie said something about Sarah's tips, he doesn't ask directly.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0.3,
+        "finishTimestamp": 4.22
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 4.92,
+        "dialogue": {
+          "text": "Hey, Sarah, Sophie said you have some good tips for a great morning.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 5.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Past tense verbs are used to talk about actions that happened in the past. Some verbs change their form in the past tense, like <code>say</code> to <code>said</code>. For example:</p>\n<p><code>Yesterday, she said she would join us</code> (Past tense of <code>say</code>)\n<code>He said the meeting was at noon</code> (Describes a past statement about the meeting time)</p>\n<p>Another example of irregular verb is <code>tell</code>, which becomes <code>told</code> in the past tense. For example:</p>\n<p><code>He told me about the plan last week</code> (Past tense of <code>tell</code>)\n<code>Last night, they told stories about our last project</code> (Using <code>told</code> to describe a past action)</p>\n<p>Don't worry if irregular verbs seem tricky; with practice, you'll get the hang of them!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 64,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,108 @@
+{
+  "id": "657e6ffb22adc44942ceb5d4",
+  "title": "Task 113",
+  "challengeType": 22,
+  "dashedName": "task-113",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_. Let me tell you how my week _ goes.</p>",
+    "blanks": [
+      {
+        "answer": "Sometimes",
+        "feedback": "<p>Means not always but on certain occasions. This word should be capitalized.</p>"
+      },
+      {
+        "answer": "usually",
+        "feedback": "<p>Means in most cases or generally.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 8.38
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.66,
+        "dialogue": {
+          "text": "Hey, Sarah. How's work as a QA tester? Is it really challenging?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 6
+      },
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 6
+      },
+      {
+        "character": "Sarah",
+        "startTime": 6.82,
+        "finishTime": 9.38,
+        "dialogue": {
+          "text": "Sometimes. Let me tell you how my week usually goes.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 9.88
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>See if you can get these words right.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 117,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

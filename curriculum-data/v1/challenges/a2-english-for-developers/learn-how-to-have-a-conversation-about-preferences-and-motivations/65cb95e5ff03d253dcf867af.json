@@ -1,0 +1,97 @@
+{
+  "id": "65cb95e5ff03d253dcf867af",
+  "title": "Task 4",
+  "challengeType": 19,
+  "dashedName": "task-4",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Brian asking Maria about?</p>",
+    "answers": [
+      {
+        "answer": "<p>The team's schedule</p>",
+        "feedback": "<p>Brian's question is more about what drives or inspires the team and Maria, not their timetable.</p>"
+      },
+      {
+        "answer": "<p>The reasons behind the team's and her own enthusiasm</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Maria's work tasks</p>",
+        "feedback": "<p>Brian is interested in understanding what motivates people, not specifically what Maria's tasks are.</p>"
+      },
+      {
+        "answer": "<p>The location of the team's office</p>",
+        "feedback": "<p>The conversation is centered around motivation, not the physical location of where the team works.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 6.42
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 4.52,
+        "dialogue": {
+          "text": "Maria, I have a question. Do you know what motivates the team?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "startTime": 4.92,
+        "finishTime": 7.42,
+        "dialogue": {
+          "text": "How about you? What makes you feel motivated?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 7.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In the dialogue, Brian asks a couple of related questions.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

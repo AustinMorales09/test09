@@ -1,0 +1,49 @@
+{
+  "id": "6606beade9200b49aaeecd94",
+  "title": "Step 26",
+  "challengeType": 20,
+  "dashedName": "step-26",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        12,
+        15
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    def __init__(self, board):\n        self.board = board\n\n    def find_empty_cell(self):\n        for row, contents in enumerate(self.board):\n            try:\n                col = contents.index(0)\n                return row, col\n            except ValueError:\n                pass\n        return None\n    def valid_in_row(self, row, num):\n        num not in self.board[row]\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)",
+      "error": null,
+      "seed": "class Board:\n    def __init__(self, board):\n        self.board = board\n\n    def find_empty_cell(self):\n        for row, contents in enumerate(self.board):\n            try:\n                col = contents.index(0)\n                return row, col\n            except ValueError:\n                pass\n        return None\n    def valid_in_row(self, row, num):\n        num not in self.board[row]\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should return <code>num not in self.board[row]</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"Board\").find_function(\"valid_in_row\").find_body().is_equivalent(\"return num not in self.board[row]\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>If <code>num</code> is not in the row, the expression evaluates to <code>True</code> and it means the number is valid for insertion.</p>\n<p>If <code>num</code> is in the row, the expression evaluates to <code>False</code> and insertion would violate the rules.</p>\n<p>Prepend a <code>return</code> keyword to the expression inside the <code>valid_in_row</code> method body, so that the validity of the number can be checked.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

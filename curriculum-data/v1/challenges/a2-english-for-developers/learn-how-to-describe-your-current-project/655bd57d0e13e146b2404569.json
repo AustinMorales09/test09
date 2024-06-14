@@ -1,0 +1,97 @@
+{
+  "id": "655bd57d0e13e146b2404569",
+  "title": "Task 15",
+  "challengeType": 19,
+  "dashedName": "task-15",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is Sarah trying to find patterns in their customers data?</p>",
+    "answers": [
+      {
+        "answer": "<p>To prepare a report for her manager</p>",
+        "feedback": "<p>Sarah does not mention a report.</p>"
+      },
+      {
+        "answer": "<p>To solve a technical issue with the customer database</p>",
+        "feedback": "<p>Sarah doesn't mention technical issues.</p>"
+      },
+      {
+        "answer": "<p>To understand what customers like and what they buy</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To decide on new products to develop</p>",
+        "feedback": "<p>Sarah doesn't mention product development.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 3.52,
+        "finishTimestamp": 9.84
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.28,
+        "dialogue": {
+          "text": "Hi, Bob. I'm looking at customer data to find patterns.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "startTime": 3.72,
+        "finishTime": 7.32,
+        "dialogue": {
+          "text": "We're trying to understand what our customers like and what they buy.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 7.82
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Pay attention to what Sarah says.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

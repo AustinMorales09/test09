@@ -1,0 +1,88 @@
+{
+  "id": "65d86638218150ecf514c478",
+  "title": "Task 64",
+  "challengeType": 22,
+  "dashedName": "task-64",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>He makes sure the _ data and _ are secure, monitors access controls, and conducts investigations when needed.</p>",
+    "blanks": [
+      {
+        "answer": "company's",
+        "feedback": "<p>It shows that the data belongs to the company. For singular nouns, add <code>'s</code> to show possession.</p>"
+      },
+      {
+        "answer": "facilities",
+        "feedback": "<p>This word is the plural form of <code>facility</code>, indicating more than one place. You should change the <code>y</code> to <code>i</code> and add <code>es</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 26.58,
+        "finishTimestamp": 33.52
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 4.2,
+        "dialogue": {
+          "text": "He makes sure that the company's data and facilities are secure,",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "startTime": 4.62,
+        "finishTime": 7.94,
+        "dialogue": {
+          "text": "monitors access controls, and conducts investigations when needed.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 8.44
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The genitive case (<code>'s</code>) is used to show ownership or a relationship between two things.</p>\n<p>For singular nouns, you add <code>'s</code> to the end of the noun to show possession. For example, <code>the cat's toy</code> means the toy that belongs to the cat.</p>\n<p>For plural nouns that already end in <code>-s</code>, you just add an <code>'</code> at the end. For example, <code>the teachers' lounge</code> means the lounge for teachers.</p>\n<p>A <code>facility</code> is a place where a particular activity happens, like a factory, office, or school.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 66,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

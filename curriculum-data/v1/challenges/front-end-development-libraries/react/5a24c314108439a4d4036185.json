@@ -1,0 +1,86 @@
+{
+  "id": "5a24c314108439a4d4036185",
+  "title": "Use && for a More Concise Conditional",
+  "challengeType": 6,
+  "forumTopicId": 301413,
+  "dashedName": "use--for-a-more-concise-conditional",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<MyComponent />, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      display: true\n    }\n    this.toggleDisplay = this.toggleDisplay.bind(this);\n  }\n  toggleDisplay() {\n    this.setState(state => ({\n      display: !state.display\n    }));\n  }\n  render() {\n    // Change code below this line\n    return (\n       <div>\n         <button onClick={this.toggleDisplay}>Toggle Display</button>\n         <h1>Displayed!</h1>\n       </div>\n    );\n  }\n};",
+      "error": null,
+      "seed": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      display: true\n    }\n    this.toggleDisplay = this.toggleDisplay.bind(this);\n  }\n  toggleDisplay() {\n    this.setState(state => ({\n      display: !state.display\n    }));\n  }\n  render() {\n    // Change code below this line\n    return (\n       <div>\n         <button onClick={this.toggleDisplay}>Toggle Display</button>\n         <h1>Displayed!</h1>\n       </div>\n    );\n  }\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      display: true\n    }\n this.toggleDisplay = this.toggleDisplay.bind(this);\n  }\n  toggleDisplay() {\n    this.setState(state => ({\n      display: !state.display\n    }));\n  }\n  render() {\n    // Change code below this line\n    return (\n       <div>\n         <button onClick={this.toggleDisplay}>Toggle Display</button>\n         {this.state.display && <h1>Displayed!</h1>}\n       </div>\n    );\n  }\n};",
+        "error": null,
+        "seed": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      display: true\n    }\n this.toggleDisplay = this.toggleDisplay.bind(this);\n  }\n  toggleDisplay() {\n    this.setState(state => ({\n      display: !state.display\n    }));\n  }\n  render() {\n    // Change code below this line\n    return (\n       <div>\n         <button onClick={this.toggleDisplay}>Toggle Display</button>\n         {this.state.display && <h1>Displayed!</h1>}\n       </div>\n    );\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>MyComponent</code> should exist and render.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n    return mockedComponent.find('MyComponent').length;\n  })()\n);"
+    },
+    {
+      "text": "<p>When <code>display</code> is set to <code>true</code>, a <code>div</code>, <code>button</code>, and <code>h1</code> should render.</p>",
+      "testString": "async () => {\n  const waitForIt = (fn) =>\n    new Promise((resolve, reject) => setTimeout(() => resolve(fn()), 250));\n  const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n  const state_1 = () => {\n    mockedComponent.setState({ display: true });\n    return waitForIt(() => mockedComponent);\n  };\n  const updated = await state_1();\n  assert(\n    updated.find('div').length === 1 &&\n      updated.find('div').children().length === 2 &&\n      updated.find('button').length === 1 &&\n      updated.find('h1').length === 1\n  );\n};"
+    },
+    {
+      "text": "<p>When <code>display</code> is set to <code>false</code>, only a <code>div</code> and <code>button</code> should render.</p>",
+      "testString": "async () => {\n  const waitForIt = (fn) =>\n    new Promise((resolve, reject) => setTimeout(() => resolve(fn()), 250));\n  const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n  const state_1 = () => {\n    mockedComponent.setState({ display: false });\n    return waitForIt(() => mockedComponent);\n  };\n  const updated = await state_1();\n  assert(\n    updated.find('div').length === 1 &&\n      updated.find('div').children().length === 1 &&\n      updated.find('button').length === 1 &&\n      updated.find('h1').length === 0\n  );\n};"
+    },
+    {
+      "text": "<p>The render method should use the <code>&#x26;&#x26;</code> logical operator to check the condition of <code>this.state.display</code>.</p>",
+      "testString": "(getUserInput) => assert(getUserInput('index').includes('&&'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>if/else</code> statements worked in the last challenge, but there's a more concise way to achieve the same result. Imagine that you are tracking several conditions in a component and you want different elements to render depending on each of these conditions. If you write a lot of <code>else if</code> statements to return slightly different UIs, you may repeat code which leaves room for error. Instead, you can use the <code>&#x26;&#x26;</code> logical operator to perform conditional logic in a more concise way. This is possible because you want to check if a condition is <code>true</code>, and if it is, return some markup. Here's an example:</p>\n<pre><code class=\"language-jsx\">{condition &#x26;&#x26; &#x3C;p>markup&#x3C;/p>}\n</code></pre>\n<p>If the <code>condition</code> is <code>true</code>, the markup will be returned. If the condition is <code>false</code>, the operation will immediately return <code>false</code> after evaluating the <code>condition</code> and return nothing. You can include these statements directly in your JSX and string multiple conditions together by writing <code>&#x26;&#x26;</code> after each one. This allows you to handle more complex conditional logic in your <code>render()</code> method without repeating a lot of code.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Solve the previous example again, so the <code>h1</code> only renders if <code>display</code> is <code>true</code>, but use the <code>&#x26;&#x26;</code> logical operator instead of an <code>if/else</code> statement.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 39,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

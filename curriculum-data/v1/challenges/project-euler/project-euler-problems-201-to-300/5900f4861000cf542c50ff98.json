@@ -1,0 +1,65 @@
+{
+  "id": "5900f4861000cf542c50ff98",
+  "title": "Problem 281: Pizza Toppings",
+  "challengeType": 1,
+  "forumTopicId": 301932,
+  "dashedName": "problem-281-pizza-toppings",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function pizzaToppings() {\n\n  return true;\n}\n\npizzaToppings();",
+      "error": null,
+      "seed": "function pizzaToppings() {\n\n  return true;\n}\n\npizzaToppings();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>pizzaToppings()</code> should return <code>1485776387445623</code>.</p>",
+      "testString": "assert.strictEqual(pizzaToppings(), 1485776387445623);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You are given a pizza (perfect circle) that has been cut into $m·n$ equal pieces and you want to have exactly one topping on each slice.</p>\n<p>Let $f(m,n)$ denote the number of ways you can have toppings on the pizza with $m$ different toppings ($m ≥ 2$), using each topping on exactly $n$ slices ($n ≥ 1$). Reflections are considered distinct, rotations are not.</p>\n<p>Thus, for instance, $f(2,1) = 1$, $f(2,2) = f(3,1) = 2$ and $f(3,2) = 16$. $f(3,2)$ is shown below:</p>\n<img class=\"img-responsive center-block\" alt=\"animation with 16 ways to have 3 different toppings on 2 slices each\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/pizza-toppings.gif\" style=\"background-color: white; padding: 10px;\">\n<p>Find the sum of all $f(m,n)$ such that $f(m,n) ≤ {10}^{15}$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 80,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

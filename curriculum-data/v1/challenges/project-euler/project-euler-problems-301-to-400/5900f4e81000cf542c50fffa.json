@@ -1,0 +1,65 @@
+{
+  "id": "5900f4e81000cf542c50fffa",
+  "title": "Problem 379: Least common multiple count",
+  "challengeType": 1,
+  "forumTopicId": 302041,
+  "dashedName": "problem-379-least-common-multiple-count",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function leastCommonMultipleCount() {\n\n  return true;\n}\n\nleastCommonMultipleCount();",
+      "error": null,
+      "seed": "function leastCommonMultipleCount() {\n\n  return true;\n}\n\nleastCommonMultipleCount();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>leastCommonMultipleCount()</code> should return <code>132314136838185</code>.</p>",
+      "testString": "assert.strictEqual(leastCommonMultipleCount(), 132314136838185);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $f(n)$ be the number of couples ($x$, $y$) with $x$ and $y$ positive integers, $x ≤ y$ and the least common multiple of $x$ and $y$ equal to $n$.</p>\n<p>Let $g$ be the summatory function of $f$, i.e.: $g(n) = \\sum f(i)$ for $1 ≤ i ≤ n$.</p>\n<p>You are given that $g({10}^6) = 37\\,429\\,395$.</p>\n<p>Find $g({10}^{12})$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 78,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

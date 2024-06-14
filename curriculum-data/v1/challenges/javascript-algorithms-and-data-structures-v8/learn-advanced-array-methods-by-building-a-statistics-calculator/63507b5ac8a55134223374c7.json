@@ -1,0 +1,93 @@
+{
+  "id": "63507b5ac8a55134223374c7",
+  "title": "Step 2",
+  "challengeType": 0,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <script src=\"./script.js\"></script>\n    <title>Statistics Calculator</title>\n  </head>\n  <body>\n    <h1>Statistics Calculator</h1>\n    <p>Enter a list of comma-separated numbers.</p>\n\n    <form onsubmit=\"calculate();\">\n      <label for=\"numbers\">Numbers:</label>\n      <input type=\"text\" name=\"numbers\" id=\"numbers\" />\n      <button type=\"submit\">Calculate</button>\n    </form>\n    <div class=\"results\">\n      <p>\n        The <dfn>mean</dfn> of a list of numbers is the average, calculated by\n        taking the sum of all numbers and dividing that by the count of numbers.\n      </p>\n      <p class=\"bold\">Mean: <span id=\"mean\"></span></p>\n      <p>\n        The <dfn>median</dfn> of a list of numbers is the number that appears in\n        the middle of the list, when sorted from least to greatest.\n      </p>\n      <p class=\"bold\">Median: <span id=\"median\"></span></p>\n      <p>\n        The <dfn>mode</dfn> of a list of numbers is the number that appears most\n        often in the list.\n      </p>\n      <p class=\"bold\">Mode: <span id=\"mode\"></span></p>\n      <p>\n        The <dfn>range</dfn> of a list of numbers is the difference between the\n        largest and smallest numbers in the list.\n      </p>\n      <p class=\"bold\">Range: <span id=\"range\"></span></p>\n      <p>\n        The <dfn>variance</dfn> of a list of numbers measures how far the values\n        are from the mean, on average.\n      </p>\n      <p class=\"bold\">Variance: <span id=\"variance\"></span></p>\n      <p>\n        The <dfn>standard deviation</dfn> of a list of numbers is the square\n        root of the variance.\n      </p>\n      <p class=\"bold\">\n        Standard Deviation: <span id=\"standardDeviation\"></span>\n      </p>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <script src=\"./script.js\"></script>\n    <title>Statistics Calculator</title>\n  </head>\n  <body>\n    <h1>Statistics Calculator</h1>\n    <p>Enter a list of comma-separated numbers.</p>\n\n    <form onsubmit=\"calculate();\">\n      <label for=\"numbers\">Numbers:</label>\n      <input type=\"text\" name=\"numbers\" id=\"numbers\" />\n      <button type=\"submit\">Calculate</button>\n    </form>\n    <div class=\"results\">\n      <p>\n        The <dfn>mean</dfn> of a list of numbers is the average, calculated by\n        taking the sum of all numbers and dividing that by the count of numbers.\n      </p>\n      <p class=\"bold\">Mean: <span id=\"mean\"></span></p>\n      <p>\n        The <dfn>median</dfn> of a list of numbers is the number that appears in\n        the middle of the list, when sorted from least to greatest.\n      </p>\n      <p class=\"bold\">Median: <span id=\"median\"></span></p>\n      <p>\n        The <dfn>mode</dfn> of a list of numbers is the number that appears most\n        often in the list.\n      </p>\n      <p class=\"bold\">Mode: <span id=\"mode\"></span></p>\n      <p>\n        The <dfn>range</dfn> of a list of numbers is the difference between the\n        largest and smallest numbers in the list.\n      </p>\n      <p class=\"bold\">Range: <span id=\"range\"></span></p>\n      <p>\n        The <dfn>variance</dfn> of a list of numbers measures how far the values\n        are from the mean, on average.\n      </p>\n      <p class=\"bold\">Variance: <span id=\"variance\"></span></p>\n      <p>\n        The <dfn>standard deviation</dfn> of a list of numbers is the square\n        root of the variance.\n      </p>\n      <p class=\"bold\">\n        Standard Deviation: <span id=\"standardDeviation\"></span>\n      </p>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  margin: 0;\n  background-color: rgb(27, 27, 50);\n  text-align: center;\n  color: #fff;\n}\n\nbutton {\n  cursor: pointer;\n  background-color: rgb(59, 59, 79);\n  border: 3px solid white;\n  color: white;\n}\n\ninput {\n  background-color: rgb(10, 10, 35);\n  color: white;\n  border: 1px solid rgb(59, 59, 79);\n}\n\n.bold {\n  font-weight: bold;\n}",
+      "error": null,
+      "seed": "body {\n  margin: 0;\n  background-color: rgb(27, 27, 50);\n  text-align: center;\n  color: #fff;\n}\n\nbutton {\n  cursor: pointer;\n  background-color: rgb(59, 59, 79);\n  border: 3px solid white;\n  color: white;\n}\n\ninput {\n  background-color: rgb(10, 10, 35);\n  color: white;\n  border: 1px solid rgb(59, 59, 79);\n}\n\n.bold {\n  font-weight: bold;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const calculate = () => {\n\n}",
+      "error": null,
+      "seed": "const calculate = () => {\n\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>calculate</code> function should have a <code>value</code> variable.</p>",
+      "testString": "assert.match(calculate.toString(), /value/);"
+    },
+    {
+      "text": "<p>Your <code>calculate</code> function should call <code>document.querySelector()</code> with <code>#numbers</code> as the argument.</p>",
+      "testString": "assert.match(calculate.toString(), /document\\.querySelector\\(\\s*(\"|')#numbers\\1\\s*\\)/)"
+    },
+    {
+      "text": "<p>You should access the <code>value</code> property of your <code>document.querySelector()</code> call.</p>",
+      "testString": "assert.match(calculate.toString(), /document\\.querySelector\\(\\s*(\"|')#numbers\\1\\s*\\)\\.value/);"
+    },
+    {
+      "text": "<p>You should assign the <code>value</code> property to your <code>value</code> variable.</p>",
+      "testString": "assert.match(calculate.toString(), /value\\s*=\\s*document\\.querySelector\\(\\s*(\"|')#numbers\\1\\s*\\)\\.value/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To begin, the <code>calculate</code> function needs to find the number that was entered in the <code>#numbers</code> input field. To do this, use a <code>.querySelector</code> to locate the input field and then use the <code>.value</code> property to get the number entered.</p>\n<p>Store this in a <code>value</code> variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-advanced-array-methods-by-building-a-statistics-calculator",
+  "hasEditableBoundaries": true,
+  "order": 15,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

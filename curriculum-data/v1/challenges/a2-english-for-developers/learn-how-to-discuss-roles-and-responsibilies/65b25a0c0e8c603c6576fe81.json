@@ -1,0 +1,45 @@
+{
+  "id": "65b25a0c0e8c603c6576fe81",
+  "title": "Task 11",
+  "challengeType": 19,
+  "dashedName": "task-11",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following descriptions is in the correct order of adjectives?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>A large square blue box</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>A blue square large box</code></p>",
+        "feedback": "<p>Color should come last, after size and shape.</p>"
+      },
+      {
+        "answer": "<p><code>A large blue square box</code></p>",
+        "feedback": "<p>Shape should come before color, but after size.</p>"
+      },
+      {
+        "answer": "<p><code>A blue large square box</code></p>",
+        "feedback": "<p>Size should come first, then shape and color.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>If there are more adjectives, you often start with size or age, then talk about shape, and finally color. For example, when talking about a balloon, you might say <code>a big round red balloon</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

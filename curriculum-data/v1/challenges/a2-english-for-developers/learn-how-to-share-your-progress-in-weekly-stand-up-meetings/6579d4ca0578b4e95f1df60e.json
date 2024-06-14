@@ -1,0 +1,88 @@
+{
+  "id": "6579d4ca0578b4e95f1df60e",
+  "title": "Task 14",
+  "challengeType": 19,
+  "dashedName": "task-14",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sophie need to do to receive Bob's help?</p>",
+    "answers": [
+      {
+        "answer": "<p>She needs to share the code with him</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She must solve part of the problem herself</p>",
+        "feedback": "<p>Bob doesn't ask Sophie to solve it herself; he just wants her to share the code.</p>"
+      },
+      {
+        "answer": "<p>She should wait until the next meeting</p>",
+        "feedback": "<p>Bob’s offer to help is immediate, contingent on Sophie sharing the code, not waiting until the next meeting.</p>"
+      },
+      {
+        "answer": "<p>She has to write a report about the issue</p>",
+        "feedback": "<p>Bob's condition is to share the code, not to write a report about the issue.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.56,
+        "finishTimestamp": 19.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 5.8,
+        "dialogue": {
+          "text": "Absolutely. I can definitely help you with that. Just share the code with me, and I'll check it out.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this part of the conversation, Bob is offering to help Sophie with her coding problem. He specifies a simple condition for his assistance, which is crucial for Sophie to follow to receive his support effectively.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

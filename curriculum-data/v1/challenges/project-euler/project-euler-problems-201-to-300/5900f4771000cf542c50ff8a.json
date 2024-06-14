@@ -1,0 +1,65 @@
+{
+  "id": "5900f4771000cf542c50ff8a",
+  "title": "Problem 267: Billionaire",
+  "challengeType": 1,
+  "forumTopicId": 301916,
+  "dashedName": "problem-267-billionaire",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function billionaire() {\n\n  return true;\n}\n\nbillionaire();",
+      "error": null,
+      "seed": "function billionaire() {\n\n  return true;\n}\n\nbillionaire();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>billionaire()</code> should return <code>0.999992836187</code>.</p>",
+      "testString": "assert.strictEqual(billionaire(), 0.999992836187);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You are given a unique investment opportunity.</p>\n<p>Starting with £1 of capital, you can choose a fixed proportion, $f$, of your capital to bet on a fair coin toss repeatedly for 1000 tosses.</p>\n<p>Your return is double your bet for heads and you lose your bet for tails.</p>\n<p>For example, if $f = \\frac{1}{4}$, for the first toss you bet £0.25, and if heads comes up you win £0.5 and so then have £1.5. You then bet £0.375 and if the second toss is tails, you have £1.125.</p>\n<p>Choosing $f$ to maximize your chances of having at least £1,000,000,000 after 1,000 flips, what is the chance that you become a billionaire?</p>\n<p>All computations are assumed to be exact (no rounding), but give your answer rounded to 12 digits behind the decimal point in the form 0.abcdefghijkl.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 66,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "64df202aa1342114cd077920",
+  "title": "Step 39",
+  "challengeType": 20,
+  "dashedName": "step-39",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        29,
+        35
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "NUMBER_OF_DISKS = 4\nnumber_of_moves = 2**NUMBER_OF_DISKS - 1\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\n\ndef make_allowed_move(rod1, rod2):    \n    forward = False\n    if not rods[rod2]:\n        forward = True\n    elif rods[rod1] and rods[rod1][-1] < rods[rod2][-1]:\n        forward = True              \n    if forward:\n        print(f'Moving disk {rods[rod1][-1]} from {rod1} to {rod2}')\n        rods[rod2].append(rods[rod1].pop())\n    else:\n        print(f'Moving disk {rods[rod2][-1]} from {rod2} to {rod1}')\n        rods[rod1].append(rods[rod2].pop())\n    \n    # display our progress\n    print(rods, '\\n')\n\ndef move(n, source, auxiliary, target):\n    # display starting configuration\n    print(rods, '\\n')\n    for i in range(number_of_moves):\n        remainder = (i + 1) % 3\n        if remainder == 1:\n            if n % 2 != 0:\n                print(f'Move {i + 1} allowed between {source} and {target}')\n                make_allowed_move(source, target)\n            \n        elif remainder == 2:\n            print(f'Move {i + 1} allowed between {source} and {auxiliary}')\n            make_allowed_move(source, auxiliary)\n        elif remainder == 0:\n            print(f'Move {i + 1} allowed between {auxiliary} and {target}')\n            make_allowed_move(auxiliary, target)\n           \n# initiate call from source A to target C with auxiliary B\nmove(NUMBER_OF_DISKS, 'A', 'B', 'C')",
+      "error": null,
+      "seed": "NUMBER_OF_DISKS = 4\nnumber_of_moves = 2**NUMBER_OF_DISKS - 1\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\n\ndef make_allowed_move(rod1, rod2):    \n    forward = False\n    if not rods[rod2]:\n        forward = True\n    elif rods[rod1] and rods[rod1][-1] < rods[rod2][-1]:\n        forward = True              \n    if forward:\n        print(f'Moving disk {rods[rod1][-1]} from {rod1} to {rod2}')\n        rods[rod2].append(rods[rod1].pop())\n    else:\n        print(f'Moving disk {rods[rod2][-1]} from {rod2} to {rod1}')\n        rods[rod1].append(rods[rod2].pop())\n    \n    # display our progress\n    print(rods, '\\n')\n\ndef move(n, source, auxiliary, target):\n    # display starting configuration\n    print(rods, '\\n')\n    for i in range(number_of_moves):\n        remainder = (i + 1) % 3\n        if remainder == 1:\n            if n % 2 != 0:\n                print(f'Move {i + 1} allowed between {source} and {target}')\n                make_allowed_move(source, target)\n            \n        elif remainder == 2:\n            print(f'Move {i + 1} allowed between {source} and {auxiliary}')\n            make_allowed_move(source, auxiliary)\n        elif remainder == 0:\n            print(f'Move {i + 1} allowed between {auxiliary} and {target}')\n            make_allowed_move(auxiliary, target)\n           \n# initiate call from source A to target C with auxiliary B\nmove(NUMBER_OF_DISKS, 'A', 'B', 'C')"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add an <code>else</code> clause.</p>",
+      "testString": "const tCode = code.replace(/\\r/g, '');\nconst ifBlock = __helpers.python.getBlock(tCode, \"if remainder == 1\");\nassert.match(ifBlock.block_body, /else:/);"
+    },
+    {
+      "text": "<p>You should have <code>print(f'Move {i + 1} allowed between {source} and {auxiliary}')</code> within the <code>else</code> clause.</p>",
+      "testString": "const tCode = code.replace(/\\r/g, '');\nconst ifBlock = __helpers.python.getBlock(tCode, \"if remainder == 1\");\nconst elseBlock = __helpers.python.getBlock(ifBlock.block_body, \"else\");\nassert.match(elseBlock.block_body, /print\\(\\s*f('|\")Move\\s\\{\\s*i\\s*\\+\\s*1\\s*\\}\\sallowed\\sbetween\\s\\{\\s*source\\s*\\}\\sand\\s\\{\\s*auxiliary\\s*\\}\\1\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should have <code># make_allowed_move(source, auxiliary)</code> within the <code>else</code> clause.</p>",
+      "testString": "const tCode = code.replace(/\\r/g, '');\nconst ifBlock = __helpers.python.getBlock(tCode, \"if remainder == 1\");\nconst elseBlock = __helpers.python.getBlock(ifBlock.block_body, \"else\");\nassert.match(elseBlock.block_body, /# *make_allowed_move\\(\\s*source\\s*,\\s*auxiliary\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>If the number of disks is even and the remainder equals <code>1</code>, the move is allowed between the source rod and the auxiliary rod. Add an <code>else</code> clause to print the allowed movement and call <code>make_allowed_move()</code> with the correct arguments.</p>\n<p>If you look at the output, you can see that the execution stops at the third move because of an <code>IndexError</code>. This happens because the code is still incomplete and needs an <code>else</code> clause that you will be writing soon. To make it work, turn your <code>make_allowed_move()</code> call into a comment.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-solving-the-tower-of-hanoi-puzzle",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 38,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

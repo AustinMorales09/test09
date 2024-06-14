@@ -1,0 +1,65 @@
+{
+  "id": "5900f4b11000cf542c50ffc3",
+  "title": "Problem 324: Building a tower",
+  "challengeType": 1,
+  "forumTopicId": 301981,
+  "dashedName": "problem-324-building-a-tower",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function buildingTower() {\n\n  return true;\n}\n\nbuildingTower();",
+      "error": null,
+      "seed": "function buildingTower() {\n\n  return true;\n}\n\nbuildingTower();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>buildingTower()</code> should return <code>96972774</code>.</p>",
+      "testString": "assert.strictEqual(buildingTower(), 96972774);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $f(n)$ represent the number of ways one can fill a $3×3×n$ tower with blocks of $2×1×1$. You're allowed to rotate the blocks in any way you like; however, rotations, reflections etc of the tower itself are counted as distinct.</p>\n<p>For example (with $q = 100\\,000\\,007$):</p>\n<p>$$\\begin{align}\n&#x26; f(2) = 229, \\\\\n&#x26; f(4) = 117\\,805, \\\\\n&#x26; f(10)\\bmod q = 96\\,149\\,360, \\\\\n&#x26; f({10}^3)\\bmod q = 24\\,806\\,056, \\\\\n&#x26; f({10}^6)\\bmod q = 30\\,808\\,124.\n\\end{align}$$</p>\n<p>Find $f({10}^{10000})\\bmod 100\\,000\\,007$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,97 @@
+{
+  "id": "65a5312db639d2f8fd4c31a7",
+  "title": "Task 112",
+  "challengeType": 19,
+  "dashedName": "task-112",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Sarah's opinion about the impact of innovations in people's lives?</p>",
+    "answers": [
+      {
+        "answer": "<p>They make life more complicated</p>",
+        "feedback": "<p>Consider the adjectives Sarah uses to describe the impact of innovations.</p>"
+      },
+      {
+        "answer": "<p>They isolate people from each other</p>",
+        "feedback": "<p>Think about Sarah's comment on being \"connected.\"</p>"
+      },
+      {
+        "answer": "<p>They enrich and connect our lives</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>They are unnecessary and overhyped</p>",
+        "feedback": "<p>Reflect on the enthusiasm and positivity in Sarah's statement.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 46.28,
+        "finishTimestamp": 55.84
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.26,
+        "dialogue": {
+          "text": "Drones are an open door for exciting possibilities, Bob. Your passion for tech gadgets is contagious.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "startTime": 6.46,
+        "finishTime": 10.36,
+        "dialogue": {
+          "text": "It's amazing how these innovations keep making our lives more interesting and connected.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 10.86
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to Sarah and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 115,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

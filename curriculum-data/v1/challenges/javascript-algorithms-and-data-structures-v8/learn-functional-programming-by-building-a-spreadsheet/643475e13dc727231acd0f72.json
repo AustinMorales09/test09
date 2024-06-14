@@ -1,0 +1,113 @@
+{
+  "id": "643475e13dc727231acd0f72",
+  "title": "Step 17",
+  "challengeType": 0,
+  "dashedName": "step-17",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        15,
+        19
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n\n    })\n  })\n}",
+      "error": null,
+      "seed": "const range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n\n    })\n  })\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare an <code>input</code> variable.</p>",
+      "testString": "assert.match(code, /(?:var|let|const)\\s+input/)"
+    },
+    {
+      "text": "<p>You should use <code>const</code> to declare your <code>input</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+input/)"
+    },
+    {
+      "text": "<p>You should call the <code>.createElement()</code> method of the <code>document</code> object.</p>",
+      "testString": "assert.lengthOf(code.match(/document\\.createElement\\(/g), 2)"
+    },
+    {
+      "text": "<p>You should pass the string <code>input</code> to the <code>.createElement()</code> method.</p>",
+      "testString": "assert.match(code, /document\\.createElement\\(\\s*('|\"|`)input\\1\\s*\\)/)"
+    },
+    {
+      "text": "<p>You should assign your new <code>input</code> element to your <code>input</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+input\\s*=\\s*document\\.createElement\\(\\s*('|\"|`)input\\1\\s*\\)/)"
+    },
+    {
+      "text": "<p>You should access the <code>type</code> property of your <code>input</code> element.</p>",
+      "testString": "assert.match(code, /input\\.type/);"
+    },
+    {
+      "text": "<p>You should set the <code>type</code> attribute of your <code>input</code> element to <code>text</code>.</p>",
+      "testString": "assert.match(code, /input\\.type\\s*=\\s*('|\"|`)text\\1/)"
+    },
+    {
+      "text": "<p>You should access the <code>id</code> property of your <code>input</code> element.</p>",
+      "testString": "assert.match(code, /input\\.id/);"
+    },
+    {
+      "text": "<p>You should set the <code>id</code> attribute of your <code>input</code> element to <code>letter + number</code>.</p>",
+      "testString": "assert.match(code, /input\\.id\\s*=\\s*letter\\s\\+\\snumber/)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now in your nested <code>.forEach()</code> call, declare an <code>input</code> variable. Use the <code>.createElement()</code> method of the <code>document</code> object to create an <code>input</code> element. Set the <code>type</code> attribute to <code>text</code> and the <code>id</code> attribute to <code>letter + number</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

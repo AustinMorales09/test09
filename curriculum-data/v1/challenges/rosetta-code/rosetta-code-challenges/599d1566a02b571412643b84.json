@@ -1,0 +1,86 @@
+{
+  "id": "599d1566a02b571412643b84",
+  "title": "Ethiopian multiplication",
+  "challengeType": 1,
+  "forumTopicId": 302257,
+  "dashedName": "ethiopian-multiplication",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function eth_mult(a, b) {\n\n}",
+      "error": null,
+      "seed": "function eth_mult(a, b) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function eth_mult(a, b) {\n  let sum = 0; a = [a]; b = [b];\n\n  let half = a => a / 2,\n    double = a => a * 2,\n    is_even = a => a % 2 == 0;\n\n  while (a[0] !== 1) {\n    a.unshift(Math.floor(half(a[0])));\n    b.unshift(double(b[0]));\n  }\n\n  for (let i = a.length - 1; i > 0; i -= 1) {\n    if (!is_even(a[i])) {\n      sum += b[i];\n    }\n  }\n  return sum + b[0];\n}",
+        "error": null,
+        "seed": "function eth_mult(a, b) {\n  let sum = 0; a = [a]; b = [b];\n\n  let half = a => a / 2,\n    double = a => a * 2,\n    is_even = a => a % 2 == 0;\n\n  while (a[0] !== 1) {\n    a.unshift(Math.floor(half(a[0])));\n    b.unshift(double(b[0]));\n  }\n\n  for (let i = a.length - 1; i > 0; i -= 1) {\n    if (!is_even(a[i])) {\n      sum += b[i];\n    }\n  }\n  return sum + b[0];\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>eth_mult</code> should be a function.</p>",
+      "testString": "assert(typeof eth_mult === 'function');"
+    },
+    {
+      "text": "<p><code>eth_mult(17,34)</code> should return <code>578</code>.</p>",
+      "testString": "assert.equal(eth_mult(17, 34), 578);"
+    },
+    {
+      "text": "<p><code>eth_mult(23,46)</code> should return <code>1058</code>.</p>",
+      "testString": "assert.equal(eth_mult(23, 46), 1058);"
+    },
+    {
+      "text": "<p><code>eth_mult(12,27)</code> should return <code>324</code>.</p>",
+      "testString": "assert.equal(eth_mult(12, 27), 324);"
+    },
+    {
+      "text": "<p><code>eth_mult(56,98)</code> should return <code>5488</code>.</p>",
+      "testString": "assert.equal(eth_mult(56, 98), 5488);"
+    },
+    {
+      "text": "<p><code>eth_mult(63,74)</code> should return <code>4662</code>.</p>",
+      "testString": "assert.equal(eth_mult(63, 74), 4662);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Ethiopian multiplication is a method of multiplying integers using only addition, doubling, and halving.</p>\n<p><strong>Method:</strong></p>\n<ol>\n  <li>Take two numbers to be multiplied and write them down at the top of two columns</li>\n  <li>In the left-hand column repeatedly halve the last number, discarding any remainders, and write the result below the last in the same column, until you write a value of <code>1</code></li>\n  <li>In the right-hand column repeatedly double the last number and write the result below. stop when you add a result in the same row as where the left hand column shows <code>1</code></li>\n  <li>Examine the table produced and discard any row where the value in the left column is even</li>\n  <li>Sum the values in the right-hand column that remain to produce the result of multiplying the original two numbers together</li>\n</ol>\n<p><strong>For example:</strong> <code>17 × 34</code></p>\n<pre>17   34\n</pre>\n<p>Halving the first column:</p>\n<pre>17   34\n8\n4\n2\n1\n</pre>\n<p>Doubling the second column:</p>\n<pre>17   34\n8    68\n4   136\n2   272\n1   544\n</pre>\n<p>Strike-out rows whose first cell is even:</p>\n<pre>17   34\n8    <strike>68</strike>\n4   <strike>136</strike>\n2   <strike>272</strike>\n1   544\n</pre>\n<p>Sum the remaining numbers in the right-hand column:</p>\n<!-- markdownlint-disable MD003 -->\n<pre>17   34\n8    --\n4   ---\n2   ---\n1   544\n   ====\n    578\n</pre>\n<!-- markdownlint-enable MD003 -->\n<p>So <code>17</code> multiplied by <code>34</code>, by the Ethiopian method is <code>578</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The task is to define three named functions/methods/procedures/subroutines:</p>\n<ol>\n  <li>one to halve an integer,</li>\n  <li>one to double an integer, and</li>\n  <li>one to state if an integer is even</li>\n</ol>\n<p>Use these functions to create a function that does Ethiopian multiplication.</p>\n<!-- markdownlint-disable MD046-->\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 39,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

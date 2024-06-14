@@ -1,0 +1,82 @@
+{
+  "id": "587d7da9367417b2b2512b67",
+  "title": "Add Elements to the End of an Array Using concat Instead of push",
+  "challengeType": 1,
+  "forumTopicId": 301226,
+  "dashedName": "add-elements-to-the-end-of-an-array-using-concat-instead-of-push",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function nonMutatingPush(original, newItem) {\n  // Only change code below this line\n  return original.push(newItem);\n\n  // Only change code above this line\n}\n\nconst first = [1, 2, 3];\nconst second = [4, 5];\nnonMutatingPush(first, second);",
+      "error": null,
+      "seed": "function nonMutatingPush(original, newItem) {\n  // Only change code below this line\n  return original.push(newItem);\n\n  // Only change code above this line\n}\n\nconst first = [1, 2, 3];\nconst second = [4, 5];\nnonMutatingPush(first, second);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function nonMutatingPush(original, newItem) {\n  return original.concat(newItem);\n}\nconst first = [1, 2, 3];\nconst second = [4, 5];",
+        "error": null,
+        "seed": "function nonMutatingPush(original, newItem) {\n  return original.concat(newItem);\n}\nconst first = [1, 2, 3];\nconst second = [4, 5];"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should use the <code>concat</code> method.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/\\.concat/g));"
+    },
+    {
+      "text": "<p>Your code should not use the <code>push</code> method.</p>",
+      "testString": "assert(!__helpers.removeJSComments(code).match(/\\.?[\\s\\S]*?push/g));"
+    },
+    {
+      "text": "<p>The <code>first</code> array should not change.</p>",
+      "testString": "assert(JSON.stringify(first) === JSON.stringify([1, 2, 3]));"
+    },
+    {
+      "text": "<p>The <code>second</code> array should not change.</p>",
+      "testString": "assert(JSON.stringify(second) === JSON.stringify([4, 5]));"
+    },
+    {
+      "text": "<p><code>nonMutatingPush([1, 2, 3], [4, 5])</code> should return <code>[1, 2, 3, 4, 5]</code>.</p>",
+      "testString": "assert(\n  JSON.stringify(nonMutatingPush([1, 2, 3], [4, 5])) ===\n    JSON.stringify([1, 2, 3, 4, 5])\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Functional programming is all about creating and using non-mutating functions.</p>\n<p>The last challenge introduced the <code>concat</code> method as a way to merge arrays into a new array without mutating the original arrays. Compare <code>concat</code> to the <code>push</code> method. <code>push</code> adds items to the end of the same array it is called on, which mutates that array. Here's an example:</p>\n<pre><code class=\"language-js\">const arr = [1, 2, 3];\narr.push(4, 5, 6);\n</code></pre>\n<p><code>arr</code> would have a modified value of <code>[1, 2, 3, 4, 5, 6]</code>, which is not the functional programming way.</p>\n<p><code>concat</code> offers a way to merge new items to the end of an array without any mutating side effects.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Change the <code>nonMutatingPush</code> function so it uses <code>concat</code> to merge <code>newItem</code> to the end of <code>original</code> without mutating <code>original</code> or <code>newItem</code> arrays. The function should return an array.</p>\n</section>",
+  "translationPending": false,
+  "block": "functional-programming",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,67 @@
+{
+  "id": "5a90375238fddaf9a66b5d3b",
+  "title": "Align an Item Vertically using align-self",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pByETK/cmzd4fz",
+  "forumTopicId": 301123,
+  "dashedName": "align-an-item-vertically-using-align-self",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n\n  .item3 {\n    background: PaleTurquoise;\n    /* Only change code below this line */\n\n    \n    /* Only change code above this line */\n  }\n\n  .item4{background:LightPink;}\n  .item5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    min-height: 300px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>",
+      "error": null,
+      "seed": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n\n  .item3 {\n    background: PaleTurquoise;\n    /* Only change code below this line */\n\n    \n    /* Only change code above this line */\n  }\n\n  .item4{background:LightPink;}\n  .item5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    min-height: 300px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>.item3 {align-self: end;}</style>",
+        "error": null,
+        "seed": "<style>.item3 {align-self: end;}</style>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>item3</code> class should have a <code>align-self</code> property that has the value of <code>end</code>.</p>",
+      "testString": "assert(code.match(/.item3\\s*?{[\\s\\S]*align-self\\s*?:\\s*?end\\s*?;[\\s\\S]*}/gi));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Just as you can align an item horizontally, there's a way to align an item vertically as well. To do this, you use the <code>align-self</code> property on an item. This property accepts all of the same values as <code>justify-self</code> from the last challenge.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Align the item with the class <code>item3</code> vertically at the <code>end</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "css-grid",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

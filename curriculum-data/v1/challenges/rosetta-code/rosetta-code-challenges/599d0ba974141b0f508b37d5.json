@@ -1,0 +1,82 @@
+{
+  "id": "599d0ba974141b0f508b37d5",
+  "title": "Emirp primes",
+  "challengeType": 1,
+  "forumTopicId": 302253,
+  "dashedName": "emirp-primes",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function emirps(n) {\n\n}",
+      "error": null,
+      "seed": "function emirps(n) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function emirps(num, showEmirps)\n{\n  const is_prime = function(n)\n    {\n    if (!(n % 2) || !(n % 3)) return false;\n    let p = 1;\n    while (p * p < n)\n                    { if (n % (p += 4) == 0 || n % (p += 2) == 0)\n                            { return false; } }\n    return true;\n  };\n  const is_emirp = function(n) {\n    const r = parseInt(n.toString().split('').reverse().join(''));\n    return r != n && is_prime(n) && is_prime(r);\n  };\n\n  let i,\n    arr = [];\n  if (typeof num === 'number') {\n    for (i = 0; arr.length < num; i++) if (is_emirp(i)) arr.push(i);\n    // first x emirps\n    if (showEmirps) return arr;\n    // xth emirp\n    return arr.pop();\n  }\n\n  if (Array.isArray(num)) {\n    for (i = num[0]; i <= num[1]; i++) if (is_emirp(i)) arr.push(i);\n    // emirps between x .. y\n    if (showEmirps) return arr;\n    // number of emirps between x .. y\n    return arr.length;\n  }\n}",
+        "error": null,
+        "seed": "function emirps(num, showEmirps)\n{\n  const is_prime = function(n)\n    {\n    if (!(n % 2) || !(n % 3)) return false;\n    let p = 1;\n    while (p * p < n)\n                    { if (n % (p += 4) == 0 || n % (p += 2) == 0)\n                            { return false; } }\n    return true;\n  };\n  const is_emirp = function(n) {\n    const r = parseInt(n.toString().split('').reverse().join(''));\n    return r != n && is_prime(n) && is_prime(r);\n  };\n\n  let i,\n    arr = [];\n  if (typeof num === 'number') {\n    for (i = 0; arr.length < num; i++) if (is_emirp(i)) arr.push(i);\n    // first x emirps\n    if (showEmirps) return arr;\n    // xth emirp\n    return arr.pop();\n  }\n\n  if (Array.isArray(num)) {\n    for (i = num[0]; i <= num[1]; i++) if (is_emirp(i)) arr.push(i);\n    // emirps between x .. y\n    if (showEmirps) return arr;\n    // number of emirps between x .. y\n    return arr.length;\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>emirps</code> should be a function.</p>",
+      "testString": "assert(typeof emirps === 'function');"
+    },
+    {
+      "text": "<p><code>emirps(20,true)</code> should return <code>[13,17,31,37,71,73,79,97,107,113,149,157,167,179,199,311,337,347,359,389]</code></p>",
+      "testString": "assert.deepEqual(emirps(20, true), [\n  13,\n  17,\n  31,\n  37,\n  71,\n  73,\n  79,\n  97,\n  107,\n  113,\n  149,\n  157,\n  167,\n  179,\n  199,\n  311,\n  337,\n  347,\n  359,\n  389\n]);"
+    },
+    {
+      "text": "<p><code>emirps(1000)</code> should return <code>70529</code></p>",
+      "testString": "assert.deepEqual(emirps(1000), 70529);"
+    },
+    {
+      "text": "<p><code>emirps([7700,8000],true)</code> should return <code>[7717,7757,7817,7841,7867,7879,7901,7927,7949,7951,7963]</code></p>",
+      "testString": "assert.deepEqual(emirps([7700, 8000], true), [\n  7717,\n  7757,\n  7817,\n  7841,\n  7867,\n  7879,\n  7901,\n  7927,\n  7949,\n  7951,\n  7963\n]);"
+    },
+    {
+      "text": "<p><code>emirps([7700,8000],false)</code> should return <code>11</code></p>",
+      "testString": "assert.deepEqual(emirps([7700, 8000], false), 11);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>An emirp (<strong>prime</strong> spelled backwards) are primes that when reversed (in their decimal representation) are a different prime.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that:</p>\n<ul>\n  <li>Shows the first <code>n</code> emirp numbers.</li>\n  <li>Shows the emirp numbers in a range.</li>\n  <li>Shows the number of emirps in a range.</li>\n  <li>Shows the <code>n<sup>th</sup></code> emirp number.</li>\n</ul>\n<p>The function should accept two parameters. The first will receive <code>n</code> or the range as an array. The second will receive a boolean, that specifies if the function returns the emirps as an array or a single number (the number of primes in the range or the <code>n<sup>th</sup></code> prime). According to the parameters the function should return an array or a number.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

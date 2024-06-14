@@ -1,0 +1,65 @@
+{
+  "id": "5900f3ec1000cf542c50fefe",
+  "title": "Problem 127: abc-hits",
+  "challengeType": 1,
+  "forumTopicId": 301754,
+  "dashedName": "problem-127-abc-hits",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function abcHits() {\n\n  return true;\n}\n\nabcHits();",
+      "error": null,
+      "seed": "function abcHits() {\n\n  return true;\n}\n\nabcHits();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>abcHits()</code> should return <code>18407904</code>.</p>",
+      "testString": "assert.strictEqual(abcHits(), 18407904);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The radical of $n$, $rad(n)$, is the product of distinct prime factors of $n$. For example, $504 = 2^3 × 3^2 × 7$, so $rad(504) = 2 × 3 × 7 = 42$.</p>\n<p>We shall define the triplet of positive integers (a, b, c) to be an abc-hit if:</p>\n<ol>\n<li>$GCD(a, b) = GCD(a, c) = GCD(b, c) = 1$</li>\n<li>$a &#x3C; b$</li>\n<li>$a + b = c$</li>\n<li>$rad(abc) &#x3C; c$</li>\n</ol>\n<p>For example, (5, 27, 32) is an abc-hit, because:</p>\n<ol>\n<li>$GCD(5, 27) = GCD(5, 32) = GCD(27, 32) = 1$</li>\n<li>$5 &#x3C; 27$</li>\n<li>$5 + 27 = 32$</li>\n<li>$rad(4320) = 30 &#x3C; 32$</li>\n</ol>\n<p>It turns out that abc-hits are quite rare and there are only thirty-one abc-hits for $c &#x3C; 1000$, with $\\sum{c} = 12523$.</p>\n<p>Find $\\sum{c}$ for $c &#x3C; 120000$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

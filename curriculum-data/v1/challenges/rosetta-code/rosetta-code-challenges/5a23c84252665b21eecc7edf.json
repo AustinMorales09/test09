@@ -1,0 +1,90 @@
+{
+  "id": "5a23c84252665b21eecc7edf",
+  "title": "Least common multiple",
+  "challengeType": 1,
+  "forumTopicId": 302301,
+  "dashedName": "least-common-multiple",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function LCM(A) {\n\n}",
+      "error": null,
+      "seed": "function LCM(A) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function LCM(A) {\n  var n = A.length,\n    a = Math.abs(A[0]);\n  for (var i = 1; i < n; i++) {\n    var b = Math.abs(A[i]),\n      c = a;\n    while (a && b) {\n      a > b ? (a %= b) : (b %= a);\n    }\n    a = Math.abs(c * A[i]) / (a + b);\n  }\n  return a;\n}",
+        "error": null,
+        "seed": "function LCM(A) {\n  var n = A.length,\n    a = Math.abs(A[0]);\n  for (var i = 1; i < n; i++) {\n    var b = Math.abs(A[i]),\n      c = a;\n    while (a && b) {\n      a > b ? (a %= b) : (b %= a);\n    }\n    a = Math.abs(c * A[i]) / (a + b);\n  }\n  return a;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>LCM</code> should be a function.</p>",
+      "testString": "assert(typeof LCM == 'function');"
+    },
+    {
+      "text": "<p><code>LCM([2, 4, 8])</code> should return a number.</p>",
+      "testString": "assert(typeof LCM([2, 4, 8]) == 'number');"
+    },
+    {
+      "text": "<p><code>LCM([2, 4, 8])</code> should return <code>8</code>.</p>",
+      "testString": "assert.equal(LCM([2, 4, 8]), 8);"
+    },
+    {
+      "text": "<p><code>LCM([4, 8, 12])</code> should return <code>24</code>.</p>",
+      "testString": "assert.equal(LCM([4, 8, 12]), 24);"
+    },
+    {
+      "text": "<p><code>LCM([3, 4, 5, 12, 40])</code> should return <code>120</code>.</p>",
+      "testString": "assert.equal(LCM([3, 4, 5, 12, 40]), 120);"
+    },
+    {
+      "text": "<p><code>LCM([11, 33, 90])</code> should return <code>990</code>.</p>",
+      "testString": "assert.equal(LCM([11, 33, 90]), 990);"
+    },
+    {
+      "text": "<p><code>LCM([-50, 25, -45, -18, 90, 447])</code> should return <code>67050</code>.</p>",
+      "testString": "assert.equal(LCM([-50, 25, -45, -18, 90, 447]), 67050);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The least common multiple of 12 and 18 is 36, because 12 is a factor (12 × 3 = 36), and 18 is a factor (18 × 2 = 36), and there is no positive integer less than 36 that has both factors. As a special case, if either $m$ or $n$ is zero, then the least common multiple is zero. One way to calculate the least common multiple is to iterate all the multiples of $m$, until you find one that is also a multiple of $n$. If you already have $gcd$ for <a href=\"https://rosettacode.org/wiki/Greatest_common_divisor\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">greatest common divisor</a>, then this formula calculates $lcm$.</p>\n<p>$$\n\\operatorname{lcm}(m, n) = \\frac{|m \\times n|}{\\operatorname{gcd}(m, n)}\n$$</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Compute the least common multiple of an array of integers. Given <em>m</em> and <em>n</em>, the least common multiple is the smallest positive integer that has both <em>m</em> and <em>n</em> as factors.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 88,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

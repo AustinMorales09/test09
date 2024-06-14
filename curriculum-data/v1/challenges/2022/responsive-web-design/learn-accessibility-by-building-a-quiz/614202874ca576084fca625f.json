@@ -1,0 +1,109 @@
+{
+  "id": "614202874ca576084fca625f",
+  "title": "Step 16",
+  "challengeType": 0,
+  "dashedName": "step-16",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        22,
+        28
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n      <img id=\"logo\" alt=\"freeCodeCamp\" src=\"https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg\">\n      <h1>HTML/CSS Quiz</h1>\n      <nav>\n        <ul>\n          <li><a>INFO</a></li>\n          <li><a>HTML</a></li>\n          <li><a>CSS</a></li>\n        </ul>\n      </nav>\n    </header>\n    <main>\n      <form method=\"post\" action=\"https://freecodecamp.org/practice-project/accessibility-quiz\">\n        <section role=\"region\"></section>\n        <section role=\"region\"></section>\n        <section role=\"region\"></section>\n      </form>\n    </main>\n  </body>\n</html>\n",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n      <img id=\"logo\" alt=\"freeCodeCamp\" src=\"https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg\">\n      <h1>HTML/CSS Quiz</h1>\n      <nav>\n        <ul>\n          <li><a>INFO</a></li>\n          <li><a>HTML</a></li>\n          <li><a>CSS</a></li>\n        </ul>\n      </nav>\n    </header>\n    <main>\n      <form method=\"post\" action=\"https://freecodecamp.org/practice-project/accessibility-quiz\">\n        <section role=\"region\"></section>\n        <section role=\"region\"></section>\n        <section role=\"region\"></section>\n      </form>\n    </main>\n  </body>\n</html>\n"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}\n\nheader {\n  width: 100%;\n  height: 50px;\n  background-color: #1b1b32;\n  display: flex;\n}\n\n#logo {\n  width: max(100px, 18vw);\n  background-color: #0a0a23;\n  aspect-ratio: 35 / 4;\n  padding: 0.4rem;\n}\n\nh1 {\n  color: #f1be32;\n  font-size: min(5vw, 1.2em);\n}\n\nnav {\n  width: 50%;\n  max-width: 300px;\n  height: 50px;\n}\n\nnav > ul {\n  display: flex;\n  justify-content: space-evenly;\n}",
+      "error": null,
+      "seed": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}\n\nheader {\n  width: 100%;\n  height: 50px;\n  background-color: #1b1b32;\n  display: flex;\n}\n\n#logo {\n  width: max(100px, 18vw);\n  background-color: #0a0a23;\n  aspect-ratio: 35 / 4;\n  padding: 0.4rem;\n}\n\nh1 {\n  color: #f1be32;\n  font-size: min(5vw, 1.2em);\n}\n\nnav {\n  width: 50%;\n  max-width: 300px;\n  height: 50px;\n}\n\nnav > ul {\n  display: flex;\n  justify-content: space-evenly;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should give the first <code>section</code> element an <code>aria-labelledby</code> attribute of <code>student-info</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('section')?.[0]?.getAttribute('aria-labelledby'), 'student-info');"
+    },
+    {
+      "text": "<p>You should give the second <code>section</code> element an <code>aria-labelledby</code> attribute of <code>html-questions</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('section')?.[1]?.getAttribute('aria-labelledby'), 'html-questions');"
+    },
+    {
+      "text": "<p>You should give the third <code>section</code> element an <code>aria-labelledby</code> attribute of <code>css-questions</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('section')?.[2]?.getAttribute('aria-labelledby'), 'css-questions');"
+    },
+    {
+      "text": "<p>You should nest one <code>h2</code> element within the first <code>section</code> element.</p>",
+      "testString": "assert.equal(document.querySelectorAll('section')?.[0]?.querySelectorAll('h2')?.length, 1);"
+    },
+    {
+      "text": "<p>You should nest one <code>h2</code> element within the second <code>section</code> element.</p>",
+      "testString": "assert.equal(document.querySelectorAll('section')?.[1]?.querySelectorAll('h2')?.length, 1);"
+    },
+    {
+      "text": "<p>You should nest one <code>h2</code> element within the third <code>section</code> element.</p>",
+      "testString": "assert.equal(document.querySelectorAll('section')?.[2]?.querySelectorAll('h2')?.length, 1);"
+    },
+    {
+      "text": "<p>You should give the first <code>h2</code> element an <code>id</code> attribute of <code>student-info</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('h2')?.[0]?.id, 'student-info');"
+    },
+    {
+      "text": "<p>You should give the second <code>h2</code> element an <code>id</code> attribute of <code>html-questions</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('h2')?.[1]?.id, 'html-questions');"
+    },
+    {
+      "text": "<p>You should give the third <code>h2</code> element an <code>id</code> attribute of <code>css-questions</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('h2')?.[2]?.id, 'css-questions');"
+    },
+    {
+      "text": "<p>You should give the first <code>h2</code> element suitable text content. <em>Hint: I would have chosen <code>Student Info</code></em></p>",
+      "testString": "assert.isAtLeast(document.querySelectorAll('h2')?.[0]?.textContent?.length, 1);"
+    },
+    {
+      "text": "<p>You should give the second <code>h2</code> element suitable text content. <em>Hint: I would have chosen <code>HTML</code></em></p>",
+      "testString": "assert.isAtLeast(document.querySelectorAll('h2')?.[1]?.textContent?.length, 1);"
+    },
+    {
+      "text": "<p>You should give the third <code>h2</code> element suitable text content. <em>Hint: I would have chosen <code>CSS</code></em></p>",
+      "testString": "assert.isAtLeast(document.querySelectorAll('h2')?.[2]?.textContent?.length, 1);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Every <code>region</code> role requires a label, which helps screen reader users understand the purpose of the region. One method for adding a label is to add a heading element inside the region and then reference it with the <code>aria-labelledby</code> attribute.</p>\n<p>Add the following <code>aria-labelledby</code> attributes to the <code>section</code> elements:</p>\n<ul>\n<li><code>student-info</code></li>\n<li><code>html-questions</code></li>\n<li><code>css-questions</code></li>\n</ul>\n<p>Then, within each <code>section</code> element, nest one <code>h2</code> element with an <code>id</code> matching the corresponding <code>aria-labelledby</code> attribute. Give each <code>h2</code> suitable text content.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-accessibility-by-building-a-quiz",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

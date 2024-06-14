@@ -1,0 +1,115 @@
+{
+  "id": "63ee3ff1381756f9716727f2",
+  "title": "CSS Foundations Exercise D",
+  "challengeType": 14,
+  "dashedName": "css-foundations-exercise-d",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Chaining Selectors</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <!-- Use the classes BELOW this line -->\n    <div>\n      <img class=\"avatar proportioned\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-01.jpg\" alt=\"Two cute kittens\">\n      <img class=\"avatar distorted\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-02.jpg\" alt=\"Three cute kittens\">\n    </div>\n    <!-- Use the classes ABOVE this line -->\n    <div>\n      <img class=\"original proportioned\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-01.jpg\" alt=\"Two cute kittens\">\n      <img class=\"original distorted\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-02.jpg\" alt=\"Three cute kittens\">\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Chaining Selectors</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <!-- Use the classes BELOW this line -->\n    <div>\n      <img class=\"avatar proportioned\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-01.jpg\" alt=\"Two cute kittens\">\n      <img class=\"avatar distorted\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-02.jpg\" alt=\"Three cute kittens\">\n    </div>\n    <!-- Use the classes ABOVE this line -->\n    <div>\n      <img class=\"original proportioned\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-01.jpg\" alt=\"Two cute kittens\">\n      <img class=\"original distorted\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-02.jpg\" alt=\"Three cute kittens\">\n    </div>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Chaining Selectors</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <!-- Use the classes BELOW this line -->\n    <div>\n      <img class=\"avatar proportioned\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-01.jpg\" alt=\"Two cute kittens\">\n      <img class=\"avatar distorted\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-02.jpg\" alt=\"Three cute kittens\">\n    </div>\n    <!-- Use the classes ABOVE this line -->\n    <div>\n      <img class=\"avatar proportioned\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-01.jpg\" alt=\"Two cute kittens\">\n      <img class=\"avatar distorted\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-02.jpg\" alt=\"Three cute kittens\">\n  </body>\n</html>",
+        "error": null,
+        "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Chaining Selectors</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <!-- Use the classes BELOW this line -->\n    <div>\n      <img class=\"avatar proportioned\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-01.jpg\" alt=\"Two cute kittens\">\n      <img class=\"avatar distorted\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-02.jpg\" alt=\"Three cute kittens\">\n    </div>\n    <!-- Use the classes ABOVE this line -->\n    <div>\n      <img class=\"avatar proportioned\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-01.jpg\" alt=\"Two cute kittens\">\n      <img class=\"avatar distorted\" src=\"https://cdn.freecodecamp.org/curriculum/odin-project/css-foundations/css-foundations-02.jpg\" alt=\"Three cute kittens\">\n  </body>\n</html>"
+      },
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "styles.css"
+        ],
+        "name": "styles",
+        "ext": "css",
+        "path": "styles.css",
+        "fileKey": "stylescss",
+        "contents": ".avatar.proportioned {\n  height: auto;\n  width: 300px;\n}\n\n.avatar.distorted {\n  height: 400px;\n  width: 200px;\n}",
+        "error": null,
+        "seed": ".avatar.proportioned {\n  height: auto;\n  width: 300px;\n}\n\n.avatar.distorted {\n  height: 400px;\n  width: 200px;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>width</code> of <code>300px</code> on the <code>avatar</code> and <code>proportioned</code> class.</p>",
+      "testString": "const style = new __helpers.CSSHelp(document).getStyle(`.avatar.proportioned`) || new __helpers.CSSHelp(document).getStyle(`.proportioned.avatar`);\nassert(style?.width === '300px');"
+    },
+    {
+      "text": "<p>You should have a height of <code>auto</code> on the <code>avatar</code> and <code>proportioned</code> class.</p>",
+      "testString": "const style = new __helpers.CSSHelp(document).getStyle(`.avatar.proportioned`) || new __helpers.CSSHelp(document).getStyle(`.proportioned.avatar`)\nassert(style?.height === 'auto');"
+    },
+    {
+      "text": "<p>You should use a chaining selector on the <code>avatar</code> and <code>proportioned</code> class.</p>",
+      "testString": "const style = new __helpers.CSSHelp(document).getStyle(`.avatar.proportioned`) || new __helpers.CSSHelp(document).getStyle(`.proportioned.avatar`);\nassert(style);"
+    },
+    {
+      "text": "<p>You should have a <code>width</code> of <code>200px</code> on the <code>avatar</code> and <code>distorted</code> class.</p>",
+      "testString": "const style = new __helpers.CSSHelp(document).getStyle(`.avatar.distorted`) || new __helpers.CSSHelp(document).getStyle(`.distorted.avatar`);\nassert(style?.width === '200px');"
+    },
+    {
+      "text": "<p>You should use a chaining selector on the <code>avatar</code> and <code>distorted</code> class.</p>",
+      "testString": "const style = new __helpers.CSSHelp(document).getStyle(`.avatar.distorted`) || new __helpers.CSSHelp(document).getStyle(`.distorted.avatar`);\nassert(style);"
+    },
+    {
+      "text": "<p>You should have a <code>height</code> two times the width on the <code>avatar</code> and <code>distorted</code> class.</p>",
+      "testString": "const style = new __helpers.CSSHelp(document).getStyle(`.avatar.distorted`) || new __helpers.CSSHelp(document).getStyle(`.distorted.avatar`);\nassert(style?.height === '400px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>With this exercise, we've provided you a completed HTML file, so you will only have to edit the CSS file. For this exercise, it's more important to understand how chaining different selectors works than how to actually add the attributes.</p>\n<ol>\n<li>You should see a <code>width</code> of <code>300px</code> on the <code>avatar</code> and <code>proportioned</code> class.</li>\n<li>You should give it a height so that it retains its original square proportions (don't hardcode in a pixel value for the height!).</li>\n<li>You should give the elements with both the <code>avatar</code> and <code>distorted</code> classes a <code>width</code> of <code>200px</code>.</li>\n<li>You should give it a <code>height</code> twice as big as it's width.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-css-foundations-projects",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

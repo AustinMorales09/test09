@@ -1,0 +1,74 @@
+{
+  "id": "587d7faa367417b2b2512bd3",
+  "title": "Style D3 Labels",
+  "challengeType": 6,
+  "forumTopicId": 301492,
+  "dashedName": "style-d3-labels",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => d * 3)\n       .attr(\"fill\", \"navy\");\n\n    svg.selectAll(\"text\")\n       .data(dataset)\n       .enter()\n       .append(\"text\")\n       .text((d) => d)\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - (3 * d) - 3)\n       // Add your code below this line\n\n\n\n       // Add your code above this line\n  </script>\n</body>",
+      "error": null,
+      "seed": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => d * 3)\n       .attr(\"fill\", \"navy\");\n\n    svg.selectAll(\"text\")\n       .data(dataset)\n       .enter()\n       .append(\"text\")\n       .text((d) => d)\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - (3 * d) - 3)\n       // Add your code below this line\n\n\n\n       // Add your code above this line\n  </script>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => d * 3)\n       .attr(\"fill\", \"navy\");\n\n    svg.selectAll(\"text\")\n       .data(dataset)\n       .enter()\n       .append(\"text\")\n       .text((d) => d)\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - (3 * d) - 3)\n       .style(\"font-size\", 25)\n       .attr(\"fill\", \"red\")\n  </script>\n</body>",
+        "error": null,
+        "seed": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    const w = 500;\n    const h = 100;\n\n    const svg = d3.select(\"body\")\n                  .append(\"svg\")\n                  .attr(\"width\", w)\n                  .attr(\"height\", h);\n\n    svg.selectAll(\"rect\")\n       .data(dataset)\n       .enter()\n       .append(\"rect\")\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - 3 * d)\n       .attr(\"width\", 25)\n       .attr(\"height\", (d, i) => d * 3)\n       .attr(\"fill\", \"navy\");\n\n    svg.selectAll(\"text\")\n       .data(dataset)\n       .enter()\n       .append(\"text\")\n       .text((d) => d)\n       .attr(\"x\", (d, i) => i * 30)\n       .attr(\"y\", (d, i) => h - (3 * d) - 3)\n       .style(\"font-size\", 25)\n       .attr(\"fill\", \"red\")\n  </script>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The labels should all have a <code>fill</code> color of red.</p>",
+      "testString": "assert($('text').css('fill') == 'rgb(255, 0, 0)');"
+    },
+    {
+      "text": "<p>The labels should all have a <code>font-size</code> of <code>25</code> pixels.</p>",
+      "testString": "assert($('text').css('font-size') == '25px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>D3 methods can add styles to the bar labels. The <code>fill</code> attribute sets the color of the text for a <code>text</code> node. The <code>style()</code> method sets CSS rules for other styles, such as <code>font-family</code> or <code>font-size</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Set the <code>font-size</code> of the <code>text</code> elements to <code>25px</code>, and the color of the text to red.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-visualization-with-d3",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 17,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

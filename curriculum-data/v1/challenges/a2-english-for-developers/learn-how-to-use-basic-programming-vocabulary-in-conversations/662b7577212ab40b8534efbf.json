@@ -1,0 +1,88 @@
+{
+  "id": "662b7577212ab40b8534efbf",
+  "title": "Task 25",
+  "challengeType": 19,
+  "dashedName": "task-25",
+  "solutions": [],
+  "question": {
+    "text": "<p>How good is Sophie at Python?</p>",
+    "answers": [
+      {
+        "answer": "<p>Sophie is a beginner at Python.</p>",
+        "feedback": "<p>The phrase <code>pretty well</code> suggests more competence than a beginner level.</p>"
+      },
+      {
+        "answer": "<p>Sophie knows Python, but not very well.</p>",
+        "feedback": "<p><code>Pretty well</code> indicates a higher level of familiarity than this option suggests.</p>"
+      },
+      {
+        "answer": "<p>Sophie is the best at Python.</p>",
+        "feedback": "<p>While <code>pretty well</code> indicates good knowledge, it does not necessarily imply she is the best or an expert.</p>"
+      },
+      {
+        "answer": "<p>Sophie has a good understanding of Python.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 24.84,
+        "finishTimestamp": 27.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.6,
+        "dialogue": {
+          "text": "Sure. I know Python pretty well. What's your question?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Pretty well</code> means a high degree or quite good but not perfect. It's a way to tell someone that you or someone else can do something well enough, but there's still room for improvement.</p>\n<p>For example, <code>I did pretty well in the English test. I got most of the answers right.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

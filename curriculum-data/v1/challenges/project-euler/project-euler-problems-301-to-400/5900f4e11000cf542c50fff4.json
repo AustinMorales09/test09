@@ -1,0 +1,65 @@
+{
+  "id": "5900f4e11000cf542c50fff4",
+  "title": "Problem 373: Circumscribed Circles",
+  "challengeType": 1,
+  "forumTopicId": 302035,
+  "dashedName": "problem-373-circumscribed-circles",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function circumscribedCircles() {\n\n  return true;\n}\n\ncircumscribedCircles();",
+      "error": null,
+      "seed": "function circumscribedCircles() {\n\n  return true;\n}\n\ncircumscribedCircles();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>circumscribedCircles()</code> should return <code>727227472448913</code>.</p>",
+      "testString": "assert.strictEqual(circumscribedCircles(), 727227472448913);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Every triangle has a circumscribed circle that goes through the three vertices. Consider all integer sided triangles for which the radius of the circumscribed circle is integral as well.</p>\n<p>Let $S(n)$ be the sum of the radii of the circumscribed circles of all such triangles for which the radius does not exceed $n$.</p>\n<p>$S(100) = 4\\,950$ and $S(1\\,200) = 1\\,653\\,605$.</p>\n<p>Find $S({10}^7)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 72,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

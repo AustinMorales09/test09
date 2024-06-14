@@ -1,0 +1,79 @@
+{
+  "id": "657ee957cb4719d9031a0be4",
+  "title": "Task 55",
+  "challengeType": 22,
+  "dashedName": "task-55",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It all started when I got my first action figure at a _ _.</p>",
+    "blanks": [
+      {
+        "answer": "comic",
+        "feedback": "<p>It's a story told through a series of drawings that are often combined with text.</p>"
+      },
+      {
+        "answer": "convention",
+        "feedback": "<p>This noun refers to a large meeting or event where people gather to share a common interest.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.56,
+        "finishTimestamp": 26.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 4.42,
+        "dialogue": {
+          "text": "It all started when I got my first action figure at a comic convention.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>comic</code> is a book or magazine with stories told through pictures and words. For example, a <code>comic</code> about Batman shows his adventures in drawings.</p>\n<p>A <code>convention</code> is a big meeting where people who like the same things, like games or books, come together. For example, a science fiction <code>convention</code> is where fans of science fiction stories meet.</p>\n<p>A <code>comic convention</code> is a special event where fans of comics come together to see new comics, meet the people who make them, and sometimes dress up as their favorite characters. It's like a big party for comic book lovers.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 57,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

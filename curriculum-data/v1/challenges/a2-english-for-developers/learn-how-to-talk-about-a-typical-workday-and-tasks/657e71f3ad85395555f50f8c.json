@@ -1,0 +1,88 @@
+{
+  "id": "657e71f3ad85395555f50f8c",
+  "title": "Task 118",
+  "challengeType": 19,
+  "dashedName": "task-118",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah do in the morning before going to work?</p>",
+    "answers": [
+      {
+        "answer": "<p>She goes for a run in the park.</p>",
+        "feedback": "<p>The audio doesn't mention running.</p>"
+      },
+      {
+        "answer": "<p>She watches TV at home.</p>",
+        "feedback": "<p>Watching TV isn't mentioned in her routine.</p>"
+      },
+      {
+        "answer": "<p>She attends a yoga class.</p>",
+        "feedback": "<p>Yoga isn't part of the routine she describes.</p>"
+      },
+      {
+        "answer": "<p>She has breakfast and then goes to the office.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.42,
+        "finishTimestamp": 23.42
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5,
+        "dialogue": {
+          "text": "In the morning, I have breakfast at home and then head to the office at eight.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5.5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio to understand the context. Choose the correct answer to describe what Sarah does as part of her morning routine.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 122,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

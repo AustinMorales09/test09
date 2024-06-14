@@ -1,0 +1,88 @@
+{
+  "id": "656cd22d91db1915cb11f584",
+  "title": "Task 124",
+  "challengeType": 19,
+  "dashedName": "task-124",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sophie suggest they do?</p>",
+    "answers": [
+      {
+        "answer": "<p>Go in separate ways.</p>",
+        "feedback": "<p>Sophie's suggestion implies companionship, not separation.</p>"
+      },
+      {
+        "answer": "<p>Meet at the café later.</p>",
+        "feedback": "<p>Sophie is suggesting they move now, not meet later.</p>"
+      },
+      {
+        "answer": "<p>Go to the café with each other.</p>",
+        "feedback": "<p>Sophie is proposing they both head to the café as a pair.</p>"
+      },
+      {
+        "answer": "<p>Wait for someone else.</p>",
+        "feedback": "<p>There's no mention of waiting for a third person in the conversation.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 28,
+        "finishTimestamp": 30.65
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.2,
+        "dialogue": {
+          "text": "Well, it's not far. Come on, we can go together.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>go together</code> is often used to suggest that two or more people accompany each other to a particular place or participate in an activity together.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 126,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

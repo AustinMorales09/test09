@@ -1,0 +1,92 @@
+{
+  "id": "66384b3e267aef4c6daf5279",
+  "title": "Task 35",
+  "challengeType": 22,
+  "dashedName": "task-35",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It's especially useful when we need to _ _ _ and want to save on server management tasks.</p>",
+    "blanks": [
+      {
+        "answer": "handle",
+        "feedback": "<p>This word means to manage or take care of tasks or problems.</p>"
+      },
+      {
+        "answer": "variable",
+        "feedback": "<p>This word describes things that can change or be different at different times.</p>"
+      },
+      {
+        "answer": "workloads",
+        "feedback": "<p>This word refers to how much work needs to be done. In this context, it changes over time.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Lisa",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 25.82,
+        "finishTimestamp": 31.64
+      }
+    },
+    "commands": [
+      {
+        "character": "Lisa",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Lisa",
+        "startTime": 1,
+        "finishTime": 4.36,
+        "dialogue": {
+          "text": "It's especially useful when we need to handle variable workloads",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "startTime": 4.36,
+        "finishTime": 6.82,
+        "dialogue": {
+          "text": "and want to save on server management tasks.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "opacity": 0,
+        "startTime": 7.32
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Handle</code> means to manage or deal with situations or tasks. For example, <code>She can handle her schoolwork well</code>, showing that she can manage her study tasks effectively.</p>\n<p><code>Variable workloads</code> means the amount of work can change. An example is, <code>The shop has variable workloads; it's very busy on weekends but quiet on weekdays.</code> This shows that the amount of work at the shop changes depending on the day.</p>\n<p>In the context of computing and technology, <code>handle variable workloads</code> refers to the capability of a system or application to manage and perform efficiently under different amounts and types of work or demand. This is especially important in situations where the amount of work or user traffic can change greatly.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

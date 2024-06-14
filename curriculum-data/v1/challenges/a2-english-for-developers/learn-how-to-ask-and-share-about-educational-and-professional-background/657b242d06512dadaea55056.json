@@ -1,0 +1,45 @@
+{
+  "id": "657b242d06512dadaea55056",
+  "title": "Task 72",
+  "challengeType": 19,
+  "dashedName": "task-72",
+  "solutions": [],
+  "question": {
+    "text": "<p>If a friend tells you, <code>I'm going to attend the new art workshop</code>, what are they planning to do?</p>",
+    "answers": [
+      {
+        "answer": "<p>They are planning to teach at the art workshop</p>",
+        "feedback": "<p><code>Attend</code> suggests participating as a learner or member, not as a teacher.</p>"
+      },
+      {
+        "answer": "<p>They might visit the workshop once</p>",
+        "feedback": "<p><code>Attend</code> implies regular or scheduled participation, not a one-time visit.</p>"
+      },
+      {
+        "answer": "<p>They are not interested in art workshops</p>",
+        "feedback": "<p>Saying they will <code>attend</code> indicates interest and intent to participate, not a lack of interest.</p>"
+      },
+      {
+        "answer": "<p>They plan to participate in the art workshop</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>attend</code> means to be present at an event or place. It's often used regarding schools, colleges, meetings, or events. It implies regular participation or presence at a specific place or event.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 75,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

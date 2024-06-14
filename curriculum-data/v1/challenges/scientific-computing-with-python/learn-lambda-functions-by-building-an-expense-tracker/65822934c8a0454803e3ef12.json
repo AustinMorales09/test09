@@ -1,0 +1,53 @@
+{
+  "id": "65822934c8a0454803e3ef12",
+  "title": "Step 8",
+  "challengeType": 20,
+  "dashedName": "step-8",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        7
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        pass\n\nexpenses = []",
+      "error": null,
+      "seed": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        pass\n\nexpenses = []"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should print <code>f'Amount: {expense}, Category: {expense}'</code> in your <code>for</code> loop.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_function(\"print_expenses\").find_for_loops()[0].has_call(\"print(f'Amount: {expense}, Category: {expense}')\")`)) })"
+    },
+    {
+      "text": "<p>You should not have <code>pass</code> inside your loop body.</p>",
+      "testString": "({ test: () => assert.isFalse(runPython(`_Node(_code).find_function(\"print_expenses\").find_for_loops()[0].find_bodies()[0].has_pass()`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Next, you are going to display the details for each expense.</p>\n<p>Inside the <code>for</code> loop, replace <code>pass</code> with a <code>print()</code> call and pass it the following f-string: <code>f'Amount: {expense}, Category: {expense}'</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

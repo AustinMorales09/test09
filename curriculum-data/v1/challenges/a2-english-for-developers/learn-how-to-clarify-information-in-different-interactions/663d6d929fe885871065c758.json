@@ -1,0 +1,79 @@
+{
+  "id": "663d6d929fe885871065c758",
+  "title": "Task 60",
+  "challengeType": 22,
+  "dashedName": "task-60",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Let me _. I believe the documentation is _.</p>",
+    "blanks": [
+      {
+        "answer": "clarify",
+        "feedback": "<p>This blank has to do with making something easier to understand or to make it clear.</p>"
+      },
+      {
+        "answer": "outdated",
+        "feedback": "<p>This blank is related to something that is old and stopped representing the current state of things.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.86,
+        "finishTimestamp": 23.34
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 4.48,
+        "dialogue": {
+          "text": "Let me clarify. I believe the documentation is outdated.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 4.98
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To clarify</code> means to make something clear or easier to understand. For example, if someone doesn't understand your instructions, you can say <code>Let me try to clarify the instructions for you</code>. This means you will try to explain them in a simpler way.</p>\n<p><code>Outdated</code> means something is old and not useful anymore. For example, if you have an old phone that can't run new apps, it is <code>outdated</code>. It's the opposite of <code>updated</code>, which is when something has the most current information available.</p>\n<p>Listen to the dialogue and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 63,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

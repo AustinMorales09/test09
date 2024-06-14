@@ -1,0 +1,73 @@
+{
+  "id": "6476f7a4827bcc61682f2347",
+  "title": "Step 11",
+  "challengeType": 0,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>fCC Cat Painting</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n</head>\n<body>\n    <main>\n      <div class=\"cat-head\"></div>\n    </main>\n</body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>fCC Cat Painting</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n</head>\n<body>\n    <main>\n      <div class=\"cat-head\"></div>\n    </main>\n</body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        9,
+        13
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #c9d2fc;\n}\n\n.cat-head {\n  position: relative;\n  top: 100px;\n  left: 100px;\n  background: linear-gradient(#5e5e5e 85%, #45454f 100%);\n  width: 205px;\n  height: 180px;\n  border: 1px solid #000;\n  border-radius: 46%;\n}",
+      "error": null,
+      "seed": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #c9d2fc;\n}\n\n.cat-head {\n  position: relative;\n  top: 100px;\n  left: 100px;\n  background: linear-gradient(#5e5e5e 85%, #45454f 100%);\n  width: 205px;\n  height: 180px;\n  border: 1px solid #000;\n  border-radius: 46%;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>position</code> property set to <code>absolute</code>. Make sure you add a semi-colon.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.position === 'absolute')"
+    },
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>top</code> property set to any number in <code>px</code>. Make sure you add a semi-colon.</p>",
+      "testString": "// assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.top === '300px')\nassert.match(code, /top:\\s*\\d{1,4}px;/)"
+    },
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>left</code> property set to any number in <code>px</code>. Make sure you add a semi-colon.</p>",
+      "testString": "// assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.left === '400px')\nassert.match(code, /left:\\s*\\d{1,4}px;/)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The next position property is <code>absolute</code>. When you use the <code>absolute</code> value for your <code>position</code> property, the element is taken out of the normal flow of the document, and then its position is determined by the <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> properties.</p>\n<p>Set the position property of your <code>.cat-head</code> element to <code>absolute</code>, then set <code>top</code> and <code>left</code> properties to any pixel value.</p>\n<!-- **Note**: You can experiment with `top`, `left`, `bottom`, and `right` properties here, but the test would only pass for `top` of `300px`, and left of `400px`. -->\n</section>",
+  "translationPending": false,
+  "block": "learn-intermediate-css-by-building-a-cat-painting",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

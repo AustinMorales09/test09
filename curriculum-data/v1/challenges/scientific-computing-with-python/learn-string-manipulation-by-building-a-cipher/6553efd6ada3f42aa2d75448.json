@@ -1,0 +1,49 @@
+{
+  "id": "6553efd6ada3f42aa2d75448",
+  "title": "Step 51",
+  "challengeType": 20,
+  "dashedName": "step-51",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        4
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\nshift = 3\ndef caesar():\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in text.lower():\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + shift) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', text)\n    print('encrypted text:', encrypted_text)\n\ncaesar()",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\nshift = 3\ndef caesar():\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in text.lower():\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + shift) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', text)\n    print('encrypted text:', encrypted_text)\n\ncaesar()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>caesar</code> function should take <code>message</code> and <code>offset</code> as the parameters. Remember to separate the parameters with a comma.</p>",
+      "testString": "assert.match(code, /^def\\s+caesar\\s*\\(\\s*message\\s*,\\s*offset\\s*\\)\\s*:/m)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now you should see the output again. Although this approach works, it doesn't significantly enhance the code's reusability. Repeatedly calling your function will result in the same outcome. However, functions can be declared with <em>parameters</em> to introduce versatility and customization:</p>\n<pre><code class=\"language-py\">def function_name(param_1, param_2):\n    &#x3C;code>\n</code></pre>\n<p>Parameters are variables that you can use inside your function. A function can be declared with different number of parameters. In the example above, <code>param_1</code> and <code>param_2</code> are parameters.</p>\n<p>Modify your function declaration so that it takes two parameters called <code>message</code> and <code>offset</code>.</p>\n<p>After that, you'll see an error appear in the terminal. You'll see how to solve it in the next steps.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 50,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

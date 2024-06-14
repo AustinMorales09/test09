@@ -1,0 +1,45 @@
+{
+  "id": "6619192e29a7f77b7a73d556",
+  "title": "Task 35",
+  "challengeType": 19,
+  "dashedName": "task-35",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>project management</code> involve?</p>",
+    "answers": [
+      {
+        "answer": "<p>Completing tasks randomly</p>",
+        "feedback": "<p><code>Project management</code> is about organizing tasks systematically, not randomly.</p>"
+      },
+      {
+        "answer": "<p>Planning, organizing, and overseeing tasks and resources to complete a project successfully</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Ignoring deadlines and budgets</p>",
+        "feedback": "<p><code>Project management</code> involves considering deadlines and budgets, not ignoring them.</p>"
+      },
+      {
+        "answer": "<p>Avoiding teamwork and collaboration</p>",
+        "feedback": "<p>Collaboration and teamwork are essential in <code>project management</code>. Avoiding them is not a good idea.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Project management</code> means planning, organizing, and overseeing tasks and resources to complete a project successfully. It involves coordinating people and activities, managing budgets, and ensuring the project is completed on time and within budget.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

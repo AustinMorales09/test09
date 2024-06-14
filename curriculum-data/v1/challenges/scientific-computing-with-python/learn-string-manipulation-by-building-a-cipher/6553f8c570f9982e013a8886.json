@@ -1,0 +1,49 @@
+{
+  "id": "6553f8c570f9982e013a8886",
+  "title": "Step 55",
+  "challengeType": 20,
+  "dashedName": "step-55",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        20
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\nshift = 3\n\ndef caesar(message, offset):\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', message)\n    print('encrypted text:', encrypted_text)\n\ncaesar(text, shift)\ncaesar(text, 13)",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\nshift = 3\n\ndef caesar(message, offset):\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', message)\n    print('encrypted text:', encrypted_text)\n\ncaesar(text, shift)\ncaesar(text, 13)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove your two <code>caesar()</code> function calls.</p>",
+      "testString": "({ test: () => {\n    const commentless_code = __helpers.python.removeComments(code);\n    assert.isFalse(/^caesar\\s*\\(\\s*text\\s*,\\s*shift\\s*\\)/m.test(commentless_code))\n    assert.isFalse(/^caesar\\s*\\(\\s*text\\s*,\\s*13\\s*\\)/m.test(commentless_code))\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Currently, every single letter is always encrypted with the same letter, depending on the specified offset. What if the offset were different for each letter? That would be much more difficult to decrypt. This algorithm is referred to as the Vigenère cipher, where the offset for each letter is determined by another text, called the <em>key</em>.</p>\n<p>Start transforming your Caesar cipher into a Vigenère cipher by removing the two function calls.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 54,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

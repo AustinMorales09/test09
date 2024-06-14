@@ -1,0 +1,55 @@
+{
+  "id": "5e8f2f13c4cdbe86b5c72d88",
+  "title": "Introduction to TensorFlow",
+  "challengeType": 11,
+  "videoId": "r9hRyGGjOgQ",
+  "bilibiliIds": {
+    "aid": 675554869,
+    "bvid": "BV1dU4y1w7vw",
+    "cid": 409126541
+  },
+  "dashedName": "introduction-to-tensorflow",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following is <strong>not</strong> a type of tensor?</p>",
+    "answers": [
+      {
+        "answer": "<p>Variable</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Flowing</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Placeholder</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>SparseTensor</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Constant</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The next few video lessons will reference <a href=\"https://colab.research.google.com/drive/1F_EWVKa8rbMXi3_fG0w7AtcscFq7Hi7B#forceEdit=true&#x26;sandboxMode=true\">this Colab notebook</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "tensorflow",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

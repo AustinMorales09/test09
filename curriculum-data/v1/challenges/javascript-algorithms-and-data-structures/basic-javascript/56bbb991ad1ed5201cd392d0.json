@@ -1,0 +1,83 @@
+{
+  "id": "56bbb991ad1ed5201cd392d0",
+  "title": "Build JavaScript Objects",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cWGkbtd",
+  "forumTopicId": 16769,
+  "dashedName": "build-javascript-objects",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(z){return z;})(myDog);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const myDog = {\n  // Only change code below this line\n\n\n  // Only change code above this line\n};",
+      "error": null,
+      "seed": "const myDog = {\n  // Only change code below this line\n\n\n  // Only change code above this line\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const myDog = {\n  \"name\": \"Camper\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"friends\": [\"everything!\"]\n};",
+        "error": null,
+        "seed": "const myDog = {\n  \"name\": \"Camper\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"friends\": [\"everything!\"]\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>myDog</code> should contain the property <code>name</code> and it should be a <code>string</code>.</p>",
+      "testString": "assert(\n  (function (z) {\n    if (\n      z.hasOwnProperty('name') &&\n      z.name !== undefined &&\n      typeof z.name === 'string'\n    ) {\n      return true;\n    } else {\n      return false;\n    }\n  })(myDog)\n);"
+    },
+    {
+      "text": "<p><code>myDog</code> should contain the property <code>legs</code> and it should be a <code>number</code>.</p>",
+      "testString": "assert(\n  (function (z) {\n    if (\n      z.hasOwnProperty('legs') &&\n      z.legs !== undefined &&\n      typeof z.legs === 'number'\n    ) {\n      return true;\n    } else {\n      return false;\n    }\n  })(myDog)\n);"
+    },
+    {
+      "text": "<p><code>myDog</code> should contain the property <code>tails</code> and it should be a <code>number</code>.</p>",
+      "testString": "assert(\n  (function (z) {\n    if (\n      z.hasOwnProperty('tails') &&\n      z.tails !== undefined &&\n      typeof z.tails === 'number'\n    ) {\n      return true;\n    } else {\n      return false;\n    }\n  })(myDog)\n);"
+    },
+    {
+      "text": "<p><code>myDog</code> should contain the property <code>friends</code> and it should be an <code>array</code>.</p>",
+      "testString": "assert(\n  (function (z) {\n    if (\n      z.hasOwnProperty('friends') &&\n      z.friends !== undefined &&\n      Array.isArray(z.friends)\n    ) {\n      return true;\n    } else {\n      return false;\n    }\n  })(myDog)\n);"
+    },
+    {
+      "text": "<p><code>myDog</code> should only contain all the given properties.</p>",
+      "testString": "assert(\n  (function (z) {\n    return Object.keys(z).length === 4;\n  })(myDog)\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You may have heard the term <code>object</code> before.</p>\n<p>Objects are similar to <code>arrays</code>, except that instead of using indexes to access and modify their data, you access the data in objects through what are called <code>properties</code>.</p>\n<p>Objects are useful for storing data in a structured way, and can represent real world objects, like a cat.</p>\n<p>Here's a sample cat object:</p>\n<pre><code class=\"language-js\">const cat = {\n  \"name\": \"Whiskers\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"enemies\": [\"Water\", \"Dogs\"]\n};\n</code></pre>\n<p>In this example, all the properties are stored as strings, such as <code>name</code>, <code>legs</code>, and <code>tails</code>. However, you can also use numbers as properties. You can even omit the quotes for single-word string properties, as follows:</p>\n<pre><code class=\"language-js\">const anotherObject = {\n  make: \"Ford\",\n  5: \"five\",\n  \"model\": \"focus\"\n};\n</code></pre>\n<p>However, if your object has any non-string properties, JavaScript will automatically typecast them as strings.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Make an object that represents a dog called <code>myDog</code> which contains the properties <code>name</code> (a string), <code>legs</code>, <code>tails</code> and <code>friends</code>.</p>\n<p>You can set these object properties to whatever values you want, as long as <code>name</code> is a string, <code>legs</code> and <code>tails</code> are numbers, and <code>friends</code> is an array.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 82,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

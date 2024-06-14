@@ -1,0 +1,79 @@
+{
+  "id": "656a48d41b97ff476586ee9c",
+  "title": "Task 42",
+  "challengeType": 22,
+  "dashedName": "task-42",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That's great, Amy! Tell us when the blog posts are _. I'm looking _ to reading them.</p>",
+    "blanks": [
+      {
+        "answer": "out",
+        "feedback": "<p>Preposition used by Brian after <code>are</code>.</p>"
+      },
+      {
+        "answer": "forward",
+        "feedback": "<p>It expresses Brian's excitement about reading the future blog posts.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 42.4,
+        "finishTimestamp": 47.14
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.74,
+        "dialogue": {
+          "text": "That's great, Amy. Tell us when your blog posts are out. I'm looking forward to reading them.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 6.24
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Brian uses specific expressions in his conversation. <code>To be out</code>, in this context, means to be available or published. For example:</p>\n<p><code>The new book is out next week.</code> means the book will be available then.</p>\n<p><code>Looking forward to + verb-ing</code> is a common way to express excitement about a future event. For example:</p>\n<p><code>I'm looking forward to meeting you.</code> (excited about meeting someone)</p>\n<p><code>She's looking forward to traveling next month.</code> (excited about traveling)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 45,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,93 @@
+{
+  "id": "afcc8d540bea9ea2669306b6",
+  "title": "Repeat a String Repeat a String",
+  "challengeType": 1,
+  "forumTopicId": 16041,
+  "dashedName": "repeat-a-string-repeat-a-string",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function repeatStringNumTimes(str, num) {\n  return str;\n}\n\nrepeatStringNumTimes(\"abc\", 3);",
+      "error": null,
+      "seed": "function repeatStringNumTimes(str, num) {\n  return str;\n}\n\nrepeatStringNumTimes(\"abc\", 3);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function repeatStringNumTimes(str, num) {\n  if (num < 1) return '';\n  return num === 1 ? str : str + repeatStringNumTimes(str, num-1);\n}\n\nrepeatStringNumTimes(\"abc\", 3);",
+        "error": null,
+        "seed": "function repeatStringNumTimes(str, num) {\n  if (num < 1) return '';\n  return num === 1 ? str : str + repeatStringNumTimes(str, num-1);\n}\n\nrepeatStringNumTimes(\"abc\", 3);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>repeatStringNumTimes(\"*\", 3)</code> should return the string <code>***</code>.</p>",
+      "testString": "assert(repeatStringNumTimes('*', 3) === '***');"
+    },
+    {
+      "text": "<p><code>repeatStringNumTimes(\"abc\", 3)</code> should return the string <code>abcabcabc</code>.</p>",
+      "testString": "assert(repeatStringNumTimes('abc', 3) === 'abcabcabc');"
+    },
+    {
+      "text": "<p><code>repeatStringNumTimes(\"abc\", 4)</code> should return the string <code>abcabcabcabc</code>.</p>",
+      "testString": "assert(repeatStringNumTimes('abc', 4) === 'abcabcabcabc');"
+    },
+    {
+      "text": "<p><code>repeatStringNumTimes(\"abc\", 1)</code> should return the string <code>abc</code>.</p>",
+      "testString": "assert(repeatStringNumTimes('abc', 1) === 'abc');"
+    },
+    {
+      "text": "<p><code>repeatStringNumTimes(\"*\", 8)</code> should return the string <code>********</code>.</p>",
+      "testString": "assert(repeatStringNumTimes('*', 8) === '********');"
+    },
+    {
+      "text": "<p><code>repeatStringNumTimes(\"abc\", -2)</code> should return an empty string (<code>\"\"</code>).</p>",
+      "testString": "assert(repeatStringNumTimes('abc', -2) === '');"
+    },
+    {
+      "text": "<p>The built-in <code>repeat()</code> method should not be used.</p>",
+      "testString": "assert(!/\\.repeat/g.test(__helpers.removeJSComments(code)));"
+    },
+    {
+      "text": "<p><code>repeatStringNumTimes(\"abc\", 0)</code> should return <code>\"\"</code>.</p>",
+      "testString": "assert(repeatStringNumTimes('abc', 0) === '');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Repeat a given string <code>str</code> (first argument) for <code>num</code> times (second argument). Return an empty string if <code>num</code> is not a positive number. For the purpose of this challenge, do <em>not</em> use the built-in <code>.repeat()</code> method.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

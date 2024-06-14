@@ -1,0 +1,73 @@
+{
+  "id": "62a3b79d520a7f3d0e25afd6",
+  "title": "Step 15",
+  "challengeType": 0,
+  "dashedName": "step-15",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n      <div id=\"stats\">\n        <span class=\"stat\">XP: <strong><span id=\"xpText\">0</span></strong></span>\n        <span class=\"stat\">Health: <strong><span id=\"healthText\">100</span></strong></span>\n        <span class=\"stat\">Gold: <strong><span id=\"goldText\">50</span></strong></span>\n      </div>\n      <div id=\"controls\">\n        <button id=\"button1\">Go to store</button>\n        <button id=\"button2\">Go to cave</button>\n        <button id=\"button3\">Fight dragon</button>\n      </div>\n      <div id=\"monsterStats\"></div>\n      <div id=\"text\"></div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n      <div id=\"stats\">\n        <span class=\"stat\">XP: <strong><span id=\"xpText\">0</span></strong></span>\n        <span class=\"stat\">Health: <strong><span id=\"healthText\">100</span></strong></span>\n        <span class=\"stat\">Gold: <strong><span id=\"goldText\">50</span></strong></span>\n      </div>\n      <div id=\"controls\">\n        <button id=\"button1\">Go to store</button>\n        <button id=\"button2\">Go to cave</button>\n        <button id=\"button3\">Fight dragon</button>\n      </div>\n      <div id=\"monsterStats\"></div>\n      <div id=\"text\"></div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        10
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;\nlet monsterHealth;\nlet inventory = [\"stick\"];\n\n",
+      "error": null,
+      "seed": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;\nlet monsterHealth;\nlet inventory = [\"stick\"];\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>let</code> to declare a <code>button1</code> variable.</p>",
+      "testString": "assert.match(code, /let\\s+button1/);"
+    },
+    {
+      "text": "<p>You should use <code>document.querySelector()</code>.</p>",
+      "testString": "assert.match(code, /document\\.querySelector/);"
+    },
+    {
+      "text": "<p>You should use the <code>\"#button1\"</code> selector.</p>",
+      "testString": "assert.match(code, /querySelector\\(\\s*('|\")#button1\\1\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>JavaScript interacts with the HTML using the <dfn>Document Object Model</dfn>, or DOM. The DOM is a tree of objects that represents the HTML. You can access the HTML using the <code>document</code> object, which represents your entire HTML document.</p>\n<p>One method for finding specific elements in your HTML is using the <code>querySelector()</code> method. The <code>querySelector()</code> method takes a CSS selector as an argument and returns the first element that matches that selector. For example, to find the <code>&#x3C;h1></code> element in your HTML, you would write:</p>\n<pre><code class=\"language-js\">let h1 = document.querySelector(\"h1\");\n</code></pre>\n<p>Note that <code>h1</code> is a string and matches the CSS selector you would use.</p>\n<p>Create a <code>button1</code> variable and use <code>querySelector()</code> to assign it your element with the <code>id</code> of <code>button1</code>. Remember that CSS <code>id</code> selectors are prefixed with a <code>#</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-javascript-by-building-a-role-playing-game",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

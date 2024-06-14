@@ -1,0 +1,71 @@
+{
+  "id": "bd7123c9c441eddfaeb5bdef",
+  "title": "Understanding Boolean Values",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/c9Me8t4",
+  "forumTopicId": 301176,
+  "dashedName": "understanding-boolean-values",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "welcomeToBooleans();",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function welcomeToBooleans() {\n  // Only change code below this line\n\n  return false; // Change this line\n\n  // Only change code above this line\n}",
+      "error": null,
+      "seed": "function welcomeToBooleans() {\n  // Only change code below this line\n\n  return false; // Change this line\n\n  // Only change code above this line\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function welcomeToBooleans() {\n  return true; // Change this line\n}",
+        "error": null,
+        "seed": "function welcomeToBooleans() {\n  return true; // Change this line\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>welcomeToBooleans()</code> function should return a Boolean (<code>true</code> or <code>false</code>) value.</p>",
+      "testString": "assert(typeof welcomeToBooleans() === 'boolean');"
+    },
+    {
+      "text": "<p><code>welcomeToBooleans()</code> should return <code>true</code>.</p>",
+      "testString": "assert(welcomeToBooleans() === true);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Another data type is the <dfn>Boolean</dfn>. Booleans may only be one of two values: <code>true</code> or <code>false</code>. They are basically little on-off switches, where <code>true</code> is on and <code>false</code> is off. These two states are mutually exclusive.</p>\n<p><strong>Note:</strong> Boolean values are never written with quotes. The strings <code>\"true\"</code> and <code>\"false\"</code> are not Boolean and have no special meaning in JavaScript.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Modify the <code>welcomeToBooleans</code> function so that it returns <code>true</code> instead of <code>false</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 57,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

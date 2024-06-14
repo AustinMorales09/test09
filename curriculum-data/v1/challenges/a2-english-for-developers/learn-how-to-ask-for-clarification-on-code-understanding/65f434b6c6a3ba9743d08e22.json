@@ -1,0 +1,88 @@
+{
+  "id": "65f434b6c6a3ba9743d08e22",
+  "title": "Task 6",
+  "challengeType": 19,
+  "dashedName": "task-6",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah want to know from Brian?</p>",
+    "answers": [
+      {
+        "answer": "<p>Why Brian is working on the code</p>",
+        "feedback": "<p>Sarah's question is about a specific part of the code, not the reason for Brian's work.</p>"
+      },
+      {
+        "answer": "<p>How to fix the code problem</p>",
+        "feedback": "<p>She's asking about Brian's uncertainty, not directly about solutions.</p>"
+      },
+      {
+        "answer": "<p>Which part of the code Brian does not understand</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>If Brian likes the changes she made</p>",
+        "feedback": "<p>Her focus is on understanding his confusion, not on his opinion of the changes.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 10.78,
+        "finishTimestamp": 12.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 2.68,
+        "dialogue": {
+          "text": "What part of the code are you uncertain about?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 3.18
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

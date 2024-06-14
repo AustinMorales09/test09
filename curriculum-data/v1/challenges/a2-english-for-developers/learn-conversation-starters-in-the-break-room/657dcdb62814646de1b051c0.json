@@ -1,0 +1,88 @@
+{
+  "id": "657dcdb62814646de1b051c0",
+  "title": "Task 110",
+  "challengeType": 19,
+  "dashedName": "task-110",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Maria say is <code>just a few blocks away</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>A shopping mall.</p>",
+        "feedback": "<p>Tom didn't ask about a shopping mall; he asked about a place to get money.</p>"
+      },
+      {
+        "answer": "<p>A park.</p>",
+        "feedback": "<p>Maria mentioned this place as a response to a question about an ATM, not a park.</p>"
+      },
+      {
+        "answer": "<p>A gym.</p>",
+        "feedback": "<p>This location is typically related to ATMs and financial services, not a gym.</p>"
+      },
+      {
+        "answer": "<p>A bank.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 5.48,
+        "finishTimestamp": 7.66
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 3.18,
+        "dialogue": {
+          "text": "Yes, there's a bank just a few blocks away.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 3.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>there is</code> is used to state the existence of something in a certain place. Maria uses this structure to inform Tom about the location of the bank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 114,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

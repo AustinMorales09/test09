@@ -1,0 +1,88 @@
+{
+  "id": "656a4a4225a07e491ca4f31e",
+  "title": "Task 44",
+  "challengeType": 19,
+  "dashedName": "task-44",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah mean by her answer?</p>",
+    "answers": [
+      {
+        "answer": "<p>She is busy with data projects</p>",
+        "feedback": "<p>Sarah does not mention being busy.</p>"
+      },
+      {
+        "answer": "<p>She is looking for data projects</p>",
+        "feedback": "<p>Sarah did not say she is looking for projects.</p>"
+      },
+      {
+        "answer": "<p>She is not doing any data projects right now</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She never works on data projects</p>",
+        "feedback": "<p>She does not mention never working on data projects.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 2.74,
+        "finishTimestamp": 5.78
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 4.04,
+        "dialogue": {
+          "text": "Hi, Bob. I'm not working on any data projects at the moment.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.54
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Let's practice!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 48,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

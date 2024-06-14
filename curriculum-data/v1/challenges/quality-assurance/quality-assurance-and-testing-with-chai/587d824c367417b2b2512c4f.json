@@ -1,0 +1,38 @@
+{
+  "id": "587d824c367417b2b2512c4f",
+  "title": "Test if a Value Falls within a Specific Range",
+  "challengeType": 2,
+  "forumTopicId": 301598,
+  "dashedName": "test-if-a-value-falls-within-a-specific-range",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>All tests should pass.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=9').then(\n    (data) => {\n      assert.equal(data.state, 'passed');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct range for the first assertion - <code>approximately(actual, expected, range)</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=9').then(\n    (data) => {\n      assert.equal(data.assertions[0].method, 'approximately');\n      assert.equal(\n        data.assertions[0].args[2],\n        0.5,\n        \"weirdNumbers(0.5) is in the range (0.5, 1.5]. It's within 1 +/- 0.5\"\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct range for the second assertion - <code>approximately(actual, expected, range)</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=9').then(\n    (data) => {\n      assert.equal(data.assertions[1].method, 'approximately');\n      assert.equal(\n        data.assertions[1].args[2],\n        0.8,\n        \"weirdNumbers(0.2) is in the range (0.2, 1.2]. It's within 1 +/- 0.8\"\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As a reminder, this project is being built upon the following starter project on <a href=\"https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Gitpod</a>, or cloned from <a href=\"https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">GitHub</a>.</p>\n<pre><code class=\"language-javascript\">.approximately(actual, expected, delta, [message])\n</code></pre>\n<p>Asserts that the <code>actual</code> is equal to <code>expected</code>, to within a +/- <code>delta</code> range.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Within <code>tests/1_unit-tests.js</code> under the test labeled <code>#10</code> in the <code>Comparisons</code> suite, change each <code>assert</code> to <code>assert.approximately</code> to make the test pass (should evaluate to <code>true</code>).</p>\n<p>Choose the minimum range (3rd parameter) to make the test always pass. It should be less than 1.</p>\n</section>",
+  "translationPending": false,
+  "block": "quality-assurance-and-testing-with-chai",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

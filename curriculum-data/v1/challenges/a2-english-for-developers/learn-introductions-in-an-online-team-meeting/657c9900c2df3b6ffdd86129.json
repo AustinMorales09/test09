@@ -1,0 +1,96 @@
+{
+  "id": "657c9900c2df3b6ffdd86129",
+  "title": "Task 23",
+  "challengeType": 22,
+  "dashedName": "task-23",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Alright, team. This is Alice's _ day with us, so please let me _ you _ _ her.</p>",
+    "blanks": [
+      {
+        "answer": "first",
+        "feedback": "<p>This word describes something that happens before all others in time or order.</p>"
+      },
+      {
+        "answer": "introduce",
+        "feedback": "<p>This word means to present someone by name to another in order to establish an acquaintance.</p>"
+      },
+      {
+        "answer": "all",
+        "feedback": "<p>This word is used to refer to the whole number or entire sum of the team.</p>"
+      },
+      {
+        "answer": "to",
+        "feedback": "<p>This preposition is often used to indicate direction or contact.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 6.18
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.64,
+        "dialogue": {
+          "text": "All right team this is Alice's first day with us",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "startTime": 4.64,
+        "finishTime": 7.18,
+        "dialogue": {
+          "text": "so please let me introduce you all to her.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 7.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Introductions are important when a new team member joins. It helps everyone get to know each other and makes the new person feel welcome.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "616965351e74d4689eb6de30",
+  "title": "Step 5",
+  "challengeType": 0,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        7
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Colored Markers</title>\n  </head>\n  <body>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Colored Markers</title>\n  </head>\n  <body>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have two <code>meta</code> elements.</p>",
+      "testString": "const meta = document.querySelectorAll('meta');\nassert(meta?.length === 2);"
+    },
+    {
+      "text": "<p>Your new <code>meta</code> element should be a self-closing element.</p>",
+      "testString": "assert(code.match(/<\\/meta>/i) === null);"
+    },
+    {
+      "text": "<p>Your new <code>meta</code> element should have a <code>name</code> attribute set to <code>viewport</code>, and a <code>content</code> attribute set to <code>width=device-width, initial-scale=1.0</code>.</p>",
+      "testString": "const meta = [...document.querySelectorAll('meta')];\nconst reValidContent = /^\\s*width\\s*=\\s*device-width\\s*,\\s*initial-scale\\s*=\\s*1(?:\\.0)?\\s*$/;\nconst target = meta?.find(m => m?.getAttribute('name') === 'viewport' && reValidContent.test(m?.getAttribute('content')));\nassert.exists(target);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can have multiple self-closing <code>meta</code> elements on a web page. Each <code>meta</code> element adds information about the page that cannot be expressed by other HTML elements.</p>\n<p>Add another self-closing <code>meta</code> element within the <code>head</code>. Give it a <code>name</code> attribute set to <code>viewport</code> and a <code>content</code> attribute set to <code>width=device-width, initial-scale=1.0</code> so your page looks the same on all devices.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

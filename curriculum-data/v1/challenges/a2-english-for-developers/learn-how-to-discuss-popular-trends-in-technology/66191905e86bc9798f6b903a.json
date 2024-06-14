@@ -1,0 +1,88 @@
+{
+  "id": "66191905e86bc9798f6b903a",
+  "title": "Task 29",
+  "challengeType": 19,
+  "dashedName": "task-29",
+  "solutions": [],
+  "question": {
+    "text": "<p>According to Alice, what kinds of meetings do video conferencing tools allow you to have?</p>",
+    "answers": [
+      {
+        "answer": "<p>Meetings where people send text messages to each other</p>",
+        "feedback": "<p>This option involves text messages and doesn't include real-time conversation with video.</p>"
+      },
+      {
+        "answer": "<p>Meetings where people share documents without speaking</p>",
+        "feedback": "<p>Sharing documents is part of online collaboration, but it doesn't define a face-to-face meeting.</p>"
+      },
+      {
+        "answer": "<p>Meetings where people write letters to each other</p>",
+        "feedback": "<p>Writing letters is a traditional way of communication and not the same as real-time online interaction.</p>"
+      },
+      {
+        "answer": "<p>Meetings where people talk and see each other through the computer or phone</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.48,
+        "finishTimestamp": 18.86
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 5.38,
+        "dialogue": {
+          "text": "Video conferencing tools also made it possible for teams to have face-to-face meetings online.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 5.88
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Face-to-face</code> means you and someone else can see each other directly. It's like having a conversation with a friend or a teacher when you can see their face and they can see yours.</p>\n<p>Example: <code>Even though we are in different countries, we can still have face-to-face meetings online using video conferencing tools.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "63dbd0375d93712ff177d969",
+  "title": "Business Applications of College Algebra: Extra",
+  "challengeType": 15,
+  "videoId": "9n_ZybF0Phc",
+  "dashedName": "business-applications-of-college-algebra-extra",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following is not true of supply and demand graphs?</p>",
+    "answers": [
+      {
+        "answer": "<p>The supply curve has a positive slope</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The demand curve has a negative slope</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The supply curve and demand curve will intersect</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The supply curve and demand curve will always be straight lines</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This video is showing you some economics applications, and creating graphs and formulas.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-business-applications-of-college-algebra",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

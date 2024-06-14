@@ -1,0 +1,45 @@
+{
+  "id": "65704482e7b02272663824e5",
+  "title": "Learn Block and Inline Question G",
+  "challengeType": 15,
+  "dashedName": "learn-block-and-inline-question-g",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following is NOT an <code>inline</code> element?</p>",
+    "answers": [
+      {
+        "answer": "<p>form element</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>anchor element</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>image element</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>span element</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Now that you have some basic understanding of <code>block</code> and inline <code>elements</code>, pull up your list of <code>block</code> and <code>inline</code> elements from a couple questions ago and see if you can identify which of the following elements are <code>block</code> elements and which are <code>inline</code> elements.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-block-and-inline",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "65ca05f7cba1e6fe70527534",
+  "title": "Step 34",
+  "challengeType": 20,
+  "dashedName": "step-34",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        40,
+        44
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n    def __str__(self):\n        return str(self.key)\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n        if key < node.key:\n            return self._search(node.left, key)\n        return self._search(node.right, key)\n    \n    def search(self, key):\n        return self._search(self.root, key)\n\n    def _delete(self, node, key):\n        pass\n\n\nbst = BinarySearchTree()\n\nnodes = [50, 30, 20, 40, 70, 60, 80]\n\nfor node in nodes:\n    bst.insert(node)\n\n# print('Search for 80:', bst.search(80))\n",
+      "error": null,
+      "seed": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n    def __str__(self):\n        return str(self.key)\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n        if key < node.key:\n            return self._search(node.left, key)\n        return self._search(node.right, key)\n    \n    def search(self, key):\n        return self._search(self.root, key)\n\n    def _delete(self, node, key):\n        pass\n\n\nbst = BinarySearchTree()\n\nnodes = [50, 30, 20, 40, 70, 60, 80]\n\nfor node in nodes:\n    bst.insert(node)\n\n# print('Search for 80:', bst.search(80))\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove the <code>pass</code> keyword from the <code>_delete</code> method.</p>",
+      "testString": "({\n  test: () => {\n    assert.isFalse(\n      runPython(\n        `_Node(_code).find_class(\"BinarySearchTree\").find_function(\"_delete\").has_pass()`\n      )\n    );\n  },\n});\n"
+    },
+    {
+      "text": "<p>You should write an <code>if</code> statement that checks if the current <code>node</code> is <code>None</code>.</p>",
+      "testString": "const after_split = code.split('def _delete(self, node, key):')[1];\nassert.match(after_split, /if\\s+node\\s+is\\s+None/);"
+    },
+    {
+      "text": "<p>You should return <code>node</code> inside your <code>if</code> block.</p>",
+      "testString": "const after_split = code.split('def _delete(self, node, key):')[1];\nassert.match(after_split, /return\\s+node/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Inside your <code>_delete</code> method, replace <code>pass</code> with an <code>if</code> statement that checks if the current <code>node</code> is <code>None</code>.</p>\n<p>When the current node is <code>None</code>, the key to be deleted was not found. Therefore, return <code>node</code> from your <code>if</code> block.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 33,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

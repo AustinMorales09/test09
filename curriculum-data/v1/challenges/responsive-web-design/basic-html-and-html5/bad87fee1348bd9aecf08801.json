@@ -1,0 +1,91 @@
+{
+  "id": "bad87fee1348bd9aecf08801",
+  "title": "Introduction to HTML5 Elements",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pVMPUv/cBkZGpt7",
+  "forumTopicId": 301097,
+  "dashedName": "introduction-to-html5-elements",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<h2>CatPhotoApp</h2>\n\n<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+      "error": null,
+      "seed": "<h2>CatPhotoApp</h2>\n\n<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n</main>",
+        "error": null,
+        "seed": "<h2>CatPhotoApp</h2>\n<main>\n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n</main>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have 2 <code>p</code> elements with Kitty Ipsum text.</p>",
+      "testString": "assert($('p').length > 1);"
+    },
+    {
+      "text": "<p>Each of your <code>p</code> elements should have a closing tag.</p>",
+      "testString": "assert(\n  code.match(/<\\/p>/g) &&\n    code.match(/<\\/p>/g).length === code.match(/<p/g).length\n);"
+    },
+    {
+      "text": "<p>Your <code>p</code> element should contain the first few words of the provided additional <code>kitty ipsum</code> text.</p>",
+      "testString": "assert.isTrue(/Purr\\s+jump\\s+eat/gi.test($('p').text()));"
+    },
+    {
+      "text": "<p>Your code should have one <code>main</code> element.</p>",
+      "testString": "assert($('main').length === 1);"
+    },
+    {
+      "text": "<p>The <code>main</code> element should have two paragraph elements as children.</p>",
+      "testString": "assert($('main').children('p').length === 2);"
+    },
+    {
+      "text": "<p>The opening <code>main</code> tag should come before the first paragraph tag.</p>",
+      "testString": "assert(code.match(/<main>\\s*?<p>/g));"
+    },
+    {
+      "text": "<p>The closing <code>main</code> tag should come after the second closing paragraph tag.</p>",
+      "testString": "assert(code.match(/<\\/p>\\s*?<\\/main>/g));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>HTML5 introduces more descriptive HTML tags. These include <code>main</code>, <code>header</code>, <code>footer</code>, <code>nav</code>, <code>video</code>, <code>article</code>, <code>section</code> and others.</p>\n<p>These tags give a descriptive structure to your HTML, make your HTML easier to read, and help with Search Engine Optimization (SEO) and accessibility. The <code>main</code> HTML5 tag helps search engines and other developers find the main content of your page.</p>\n<p>Example usage, a <code>main</code> element with two child elements nested inside it:</p>\n<pre><code class=\"language-html\">&#x3C;main> \n  &#x3C;h1>Hello World&#x3C;/h1>\n  &#x3C;p>Hello Paragraph&#x3C;/p>\n&#x3C;/main>\n</code></pre>\n<p><strong>Note:</strong> Many of the new HTML5 tags and their benefits are covered in the Applied Accessibility section.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Create a second <code>p</code> element with the following kitty ipsum text: <code>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</code></p>\n<p>Then, create a <code>main</code> element and nest only the two <code>p</code> elements inside the <code>main</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-html-and-html5",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

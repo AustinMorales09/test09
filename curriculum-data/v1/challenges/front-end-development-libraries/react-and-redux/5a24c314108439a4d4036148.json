@@ -1,0 +1,96 @@
+{
+  "id": "5a24c314108439a4d4036148",
+  "title": "Connect Redux to the Messages App",
+  "challengeType": 6,
+  "forumTopicId": 301427,
+  "dashedName": "connect-redux-to-the-messages-app",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<AppWrapper />, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "// Redux:\nconst ADD = 'ADD';\n\nconst addMessage = (message) => {\n  return {\n    type: ADD,\n    message: message\n  }\n};\n\nconst messageReducer = (state = [], action) => {\n  switch (action.type) {\n    case ADD:\n      return [\n        ...state,\n        action.message\n      ];\n    default:\n      return state;\n  }\n};\n\nconst store = Redux.createStore(messageReducer);\n\n// React:\nclass Presentational extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      input: '',\n      messages: []\n    }\n    this.handleChange = this.handleChange.bind(this);\n    this.submitMessage = this.submitMessage.bind(this);\n  }\n  handleChange(event) {\n    this.setState({\n      input: event.target.value\n    });\n  }\n  submitMessage() {\n    this.setState((state) => {\n      const currentMessage = state.input;\n      return {\n        input: '',\n        messages: state.messages.concat(currentMessage)\n      };\n    });\n  }\n  render() {\n    return (\n      <div>\n        <h2>Type in a new Message:</h2>\n        <input\n          value={this.state.input}\n          onChange={this.handleChange}/><br/>\n        <button onClick={this.submitMessage}>Submit</button>\n        <ul>\n          {this.state.messages.map( (message, idx) => {\n              return (\n                 <li key={idx}>{message}</li>\n              )\n            })\n          }\n        </ul>\n      </div>\n    );\n  }\n};\n\n// React-Redux:\nconst mapStateToProps = (state) => {\n  return { messages: state }\n};\n\nconst mapDispatchToProps = (dispatch) => {\n  return {\n    submitNewMessage: (newMessage) => {\n       dispatch(addMessage(newMessage))\n    }\n  }\n};\n\nconst Provider = ReactRedux.Provider;\nconst connect = ReactRedux.connect;\n\n// Define the Container component here:\n\n\nclass AppWrapper extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    // Complete the return statement:\n    return (null);\n  }\n};",
+      "error": null,
+      "seed": "// Redux:\nconst ADD = 'ADD';\n\nconst addMessage = (message) => {\n  return {\n    type: ADD,\n    message: message\n  }\n};\n\nconst messageReducer = (state = [], action) => {\n  switch (action.type) {\n    case ADD:\n      return [\n        ...state,\n        action.message\n      ];\n    default:\n      return state;\n  }\n};\n\nconst store = Redux.createStore(messageReducer);\n\n// React:\nclass Presentational extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      input: '',\n      messages: []\n    }\n    this.handleChange = this.handleChange.bind(this);\n    this.submitMessage = this.submitMessage.bind(this);\n  }\n  handleChange(event) {\n    this.setState({\n      input: event.target.value\n    });\n  }\n  submitMessage() {\n    this.setState((state) => {\n      const currentMessage = state.input;\n      return {\n        input: '',\n        messages: state.messages.concat(currentMessage)\n      };\n    });\n  }\n  render() {\n    return (\n      <div>\n        <h2>Type in a new Message:</h2>\n        <input\n          value={this.state.input}\n          onChange={this.handleChange}/><br/>\n        <button onClick={this.submitMessage}>Submit</button>\n        <ul>\n          {this.state.messages.map( (message, idx) => {\n              return (\n                 <li key={idx}>{message}</li>\n              )\n            })\n          }\n        </ul>\n      </div>\n    );\n  }\n};\n\n// React-Redux:\nconst mapStateToProps = (state) => {\n  return { messages: state }\n};\n\nconst mapDispatchToProps = (dispatch) => {\n  return {\n    submitNewMessage: (newMessage) => {\n       dispatch(addMessage(newMessage))\n    }\n  }\n};\n\nconst Provider = ReactRedux.Provider;\nconst connect = ReactRedux.connect;\n\n// Define the Container component here:\n\n\nclass AppWrapper extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    // Complete the return statement:\n    return (null);\n  }\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "// Redux:\nconst ADD = 'ADD';\n\nconst addMessage = (message) => {\n  return {\n    type: ADD,\n    message: message\n  }\n};\n\nconst messageReducer = (state = [], action) => {\n  switch (action.type) {\n    case ADD:\n      return [\n        ...state,\n        action.message\n      ];\n    default:\n      return state;\n  }\n};\n\nconst store = Redux.createStore(messageReducer);\n\n// React:\nclass Presentational extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      input: '',\n      messages: []\n    }\n this.handleChange = this.handleChange.bind(this);\n this.submitMessage = this.submitMessage.bind(this);\n  }\n  handleChange(event) {\n    this.setState({\n      input: event.target.value\n    });\n  }\n  submitMessage() {\n    this.setState((state) => {\n      const currentMessage = state.input;\n      return {\n        input: '',\n        messages: state.messages.concat(currentMessage)\n      };\n    });\n  }\n  render() {\n    return (\n      <div>\n        <h2>Type in a new Message:</h2>\n        <input\n          value={this.state.input}\n          onChange={this.handleChange}/><br/>\n        <button onClick={this.submitMessage}>Submit</button>\n        <ul>\n          {this.state.messages.map( (message, idx) => {\n              return (\n                 <li key={idx}>{message}</li>\n              )\n            })\n          }\n        </ul>\n      </div>\n    );\n  }\n};\n\n// React-Redux:\nconst mapStateToProps = (state) => {\n  return { messages: state }\n};\n\nconst mapDispatchToProps = (dispatch) => {\n  return {\n    submitNewMessage: (newMessage) => {\n       dispatch(addMessage(newMessage))\n    }\n  }\n};\n\nconst Provider = ReactRedux.Provider;\nconst connect = ReactRedux.connect;\n\nconst Container = connect(mapStateToProps, mapDispatchToProps)(Presentational);\n\nclass AppWrapper extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <Provider store={store}>\n        <Container/>\n      </Provider>\n    );\n  }\n};",
+        "error": null,
+        "seed": "// Redux:\nconst ADD = 'ADD';\n\nconst addMessage = (message) => {\n  return {\n    type: ADD,\n    message: message\n  }\n};\n\nconst messageReducer = (state = [], action) => {\n  switch (action.type) {\n    case ADD:\n      return [\n        ...state,\n        action.message\n      ];\n    default:\n      return state;\n  }\n};\n\nconst store = Redux.createStore(messageReducer);\n\n// React:\nclass Presentational extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      input: '',\n      messages: []\n    }\n this.handleChange = this.handleChange.bind(this);\n this.submitMessage = this.submitMessage.bind(this);\n  }\n  handleChange(event) {\n    this.setState({\n      input: event.target.value\n    });\n  }\n  submitMessage() {\n    this.setState((state) => {\n      const currentMessage = state.input;\n      return {\n        input: '',\n        messages: state.messages.concat(currentMessage)\n      };\n    });\n  }\n  render() {\n    return (\n      <div>\n        <h2>Type in a new Message:</h2>\n        <input\n          value={this.state.input}\n          onChange={this.handleChange}/><br/>\n        <button onClick={this.submitMessage}>Submit</button>\n        <ul>\n          {this.state.messages.map( (message, idx) => {\n              return (\n                 <li key={idx}>{message}</li>\n              )\n            })\n          }\n        </ul>\n      </div>\n    );\n  }\n};\n\n// React-Redux:\nconst mapStateToProps = (state) => {\n  return { messages: state }\n};\n\nconst mapDispatchToProps = (dispatch) => {\n  return {\n    submitNewMessage: (newMessage) => {\n       dispatch(addMessage(newMessage))\n    }\n  }\n};\n\nconst Provider = ReactRedux.Provider;\nconst connect = ReactRedux.connect;\n\nconst Container = connect(mapStateToProps, mapDispatchToProps)(Presentational);\n\nclass AppWrapper extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <Provider store={store}>\n        <Container/>\n      </Provider>\n    );\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>AppWrapper</code> should render to the page.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(AppWrapper));\n    return mockedComponent.find('AppWrapper').length === 1;\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>Presentational</code> component should render to page.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(AppWrapper));\n    return mockedComponent.find('Presentational').length === 1;\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>Presentational</code> component should render an <code>h2</code>, <code>input</code>, <code>button</code>, and <code>ul</code> elements.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(AppWrapper));\n    const PresentationalComponent = mockedComponent.find('Presentational');\n    return (\n      PresentationalComponent.find('div').length === 1 &&\n      PresentationalComponent.find('h2').length === 1 &&\n      PresentationalComponent.find('button').length === 1 &&\n      PresentationalComponent.find('ul').length === 1\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>Presentational</code> component should receive <code>messages</code> from the Redux store as a prop.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(AppWrapper));\n    const PresentationalComponent = mockedComponent.find('Presentational');\n    const props = PresentationalComponent.props();\n    return Array.isArray(props.messages);\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>Presentational</code> component should receive the <code>submitMessage</code> action creator as a prop.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(AppWrapper));\n    const PresentationalComponent = mockedComponent.find('Presentational');\n    const props = PresentationalComponent.props();\n    return typeof props.submitNewMessage === 'function';\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you understand how to use <code>connect</code> to connect React to Redux, you can apply what you've learned to your React component that handles messages.</p>\n<p>In the last lesson, the component you connected to Redux was named <code>Presentational</code>, and this wasn't arbitrary. This term <em>generally</em> refers to React components that are not directly connected to Redux. They are simply responsible for the presentation of UI and do this as a function of the props they receive. By contrast, container components are connected to Redux. These are typically responsible for dispatching actions to the store and often pass store state to child components as props.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The code editor has all the code you've written in this section so far. The only change is that the React component is renamed to <code>Presentational</code>. Create a new component held in a constant called <code>Container</code> that uses <code>connect</code> to connect the <code>Presentational</code> component to Redux. Then, in the <code>AppWrapper</code>, render the React Redux <code>Provider</code> component. Pass <code>Provider</code> the Redux <code>store</code> as a prop and render <code>Container</code> as a child. Once everything is set up, you will see the messages app rendered to the page again.</p>\n</section>",
+  "translationPending": false,
+  "block": "react-and-redux",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 7,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    },
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"
+    },
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/react-redux/5.0.7/react-redux.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

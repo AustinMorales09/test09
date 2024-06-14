@@ -1,0 +1,82 @@
+{
+  "id": "587d7b7c367417b2b2512b18",
+  "title": "Add Key-Value Pairs to JavaScript Objects",
+  "challengeType": 1,
+  "forumTopicId": 301153,
+  "dashedName": "add-key-value-pairs-to-javascript-objects",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const foods = {\n  apples: 25,\n  oranges: 32,\n  plums: 28\n};\n\n// Only change code below this line\n\n// Only change code above this line\n\nconsole.log(foods);",
+      "error": null,
+      "seed": "const foods = {\n  apples: 25,\n  oranges: 32,\n  plums: 28\n};\n\n// Only change code below this line\n\n// Only change code above this line\n\nconsole.log(foods);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const foods = {\n  apples: 25,\n  oranges: 32,\n  plums: 28\n};\n\nfoods['bananas'] = 13;\nfoods['grapes']  = 35;\nfoods['strawberries'] = 27;",
+        "error": null,
+        "seed": "const foods = {\n  apples: 25,\n  oranges: 32,\n  plums: 28\n};\n\nfoods['bananas'] = 13;\nfoods['grapes']  = 35;\nfoods['strawberries'] = 27;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>foods</code> should be an object.</p>",
+      "testString": "assert(typeof foods === 'object');"
+    },
+    {
+      "text": "<p>The <code>foods</code> object should have a key <code>bananas</code> with a value of <code>13</code>.</p>",
+      "testString": "assert(foods.bananas === 13);"
+    },
+    {
+      "text": "<p>The <code>foods</code> object should have a key <code>grapes</code> with a value of <code>35</code>.</p>",
+      "testString": "assert(foods.grapes === 35);"
+    },
+    {
+      "text": "<p>The <code>foods</code> object should have a key <code>strawberries</code> with a value of <code>27</code>.</p>",
+      "testString": "assert(foods.strawberries === 27);"
+    },
+    {
+      "text": "<p>The definition of the <code>foods</code> object should not be changed.</p>",
+      "testString": "assert(\n  __helpers.removeJSComments(code).search(/let foods/) === -1 &&\n  __helpers.removeJSComments(code).search(/const\\s+foods\\s*=\\s*{\\s*apples:\\s*25,\\s*oranges:\\s*32,\\s*plums:\\s*28\\s*};/\n) !== -1\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>At their most basic, objects are just collections of <dfn>key-value</dfn> pairs. In other words, they are pieces of data (<dfn>values</dfn>) mapped to unique identifiers called <dfn>properties</dfn> (<dfn>keys</dfn>). Take a look at an example:</p>\n<pre><code class=\"language-js\">const tekkenCharacter = {\n  player: 'Hwoarang',\n  fightingStyle: 'Tae Kwon Doe',\n  human: true\n};\n</code></pre>\n<p>The above code defines a Tekken video game character object called <code>tekkenCharacter</code>. It has three properties, each of which map to a specific value. If you want to add an additional property, such as \"origin\", it can be done by assigning <code>origin</code> to the object:</p>\n<pre><code class=\"language-js\">tekkenCharacter.origin = 'South Korea';\n</code></pre>\n<p>This uses dot notation. If you were to observe the <code>tekkenCharacter</code> object, it will now include the <code>origin</code> property. Hwoarang also had distinct orange hair. You can add this property with bracket notation by doing:</p>\n<pre><code class=\"language-js\">tekkenCharacter['hair color'] = 'dyed orange';\n</code></pre>\n<p>Bracket notation is required if your property has a space in it or if you want to use a variable to name the property. In the above case, the property is enclosed in quotes to denote it as a string and will be added exactly as shown. Without quotes, it will be evaluated as a variable and the name of the property will be whatever value the variable is. Here's an example with a variable:</p>\n<pre><code class=\"language-js\">const eyes = 'eye color';\n\ntekkenCharacter[eyes] = 'brown';\n</code></pre>\n<p>After adding all the examples, the object will look like this:</p>\n<pre><code class=\"language-js\">{\n  player: 'Hwoarang',\n  fightingStyle: 'Tae Kwon Doe',\n  human: true,\n  origin: 'South Korea',\n  'hair color': 'dyed orange',\n  'eye color': 'brown'\n};\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>A <code>foods</code> object has been created with three entries. Using the syntax of your choice, add three more entries to it: <code>bananas</code> with a value of <code>13</code>, <code>grapes</code> with a value of <code>35</code>, and <code>strawberries</code> with a value of <code>27</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-data-structures",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

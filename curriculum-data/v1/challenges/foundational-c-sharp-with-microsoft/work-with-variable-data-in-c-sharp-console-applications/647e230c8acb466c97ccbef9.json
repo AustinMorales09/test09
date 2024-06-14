@@ -1,0 +1,43 @@
+{
+  "id": "647e230c8acb466c97ccbef9",
+  "title": "Challenge Project - Work with Variable Data in C#",
+  "challengeType": 19,
+  "dashedName": "challenge-project-work-with-variable-data-in-c-sharp",
+  "solutions": [],
+  "question": {
+    "text": "<p>To sort a string array, why is it important to use the <code>String.Trim()</code> method on each array element before sorting?</p>",
+    "answers": [
+      {
+        "answer": "<p>Only string arrays with elements trimmed with <code>String.Trim()</code> can sort</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>String.Trim()</code> removes leading white space that would sort before numbers and letters.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The array sort is noticeably faster using <code>String.Trim()</code> on each element.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [
+    "<p>Complete the <a href=\"https://learn.microsoft.com/training/modules/challenge-project-work-variable-data-c-sharp/\" target=\"_blank\" rel=\"noreferrer\">Work with Variable Data in C#</a> challenge project on Microsoft Learn. Then, answer the question below.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge will be partially completed on the Microsoft Learn platform. Follow these instructions to complete the challenge:</p>\n<ol>\n<li>Go to <a href=\"https://learn.microsoft.com/training/modules/challenge-project-work-variable-data-c-sharp/\" target=\"_blank\" rel=\"noreferrer\">https://learn.microsoft.com/training/modules/challenge-project-work-variable-data-c-sharp/</a> and complete all the tasks for the \"Challenge Project - Work with Variable Data in C#\" module. This is <strong>required</strong> to earn the \"Work with Variable Data in C# Console Applications\" trophy on Microsoft Learn, and qualify for the certification exam.</li>\n<li>When you are finished, come back and correctly answer the question below.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "work-with-variable-data-in-c-sharp-console-applications",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 13,
+  "certification": "foundational-c-sharp-with-microsoft",
+  "superBlock": "foundational-c-sharp-with-microsoft",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "C-Sharp",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

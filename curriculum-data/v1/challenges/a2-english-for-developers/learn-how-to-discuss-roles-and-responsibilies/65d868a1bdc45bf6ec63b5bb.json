@@ -1,0 +1,88 @@
+{
+  "id": "65d868a1bdc45bf6ec63b5bb",
+  "title": "Task 66",
+  "challengeType": 22,
+  "dashedName": "task-66",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>He makes sure the company's data and facilities are secure, monitors access controls, and _ _ when needed.</p>",
+    "blanks": [
+      {
+        "answer": "conducts",
+        "feedback": "<p>This word means to do or carry out something carefully, like a project or research. It's third-party singular form of verb.</p>"
+      },
+      {
+        "answer": "investigations",
+        "feedback": "<p>This word means looking very carefully into something to find out more. It's plural form.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 26.58,
+        "finishTimestamp": 33.52
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 4.2,
+        "dialogue": {
+          "text": "He makes sure that the company's data and facilities are secure,",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "startTime": 4.62,
+        "finishTime": 7.94,
+        "dialogue": {
+          "text": "monitors access controls, and conducts investigations when needed.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 8.44
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To conduct</code> means to do or carry out something, like a project or test. For example, <code>The teacher conducts a test</code> means the teacher does or carries out a test.</p>\n<p>An <code>investigation</code> is when you look into something very carefully to find out more about it. For example, <code>The school does investigations to find lost books</code> means the school looks carefully to find books that are missing.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 68,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

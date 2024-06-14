@@ -1,0 +1,70 @@
+{
+  "id": "5cc0c1b32479e176caf3b422",
+  "title": "Check if Tree is Binary Search Tree",
+  "challengeType": 1,
+  "forumTopicId": 301624,
+  "dashedName": "check-if-tree-is-binary-search-tree",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "BinarySearchTree.prototype.push = function(val) {\n  var root = this.root;\n\n  if (!root) {\n    this.root = new Node(val);\n    return;\n  }\n\n  var currentNode = root;\n  var newNode = new Node(val);\n\n  while (currentNode) {\n    if (val < currentNode.value) {\n      if (!currentNode.left) {\n        currentNode.left = newNode;\n        break;\n      } else {\n        currentNode = currentNode.left;\n      }\n    } else {\n      if (!currentNode.right) {\n        currentNode.right = newNode;\n        break;\n      } else {\n        currentNode = currentNode.right;\n      }\n    }\n  }\n};",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "var displayTree = (tree) => console.log(JSON.stringify(tree, null, 2));\nfunction Node(value) {\n  this.value = value;\n  this.left = null;\n  this.right = null;\n}\nfunction BinarySearchTree() {\n  this.root = null;\n}\nfunction isBinarySearchTree(tree) {\n  // Only change code below this line\n  \n  // Only change code above this line\n}",
+      "error": null,
+      "seed": "var displayTree = (tree) => console.log(JSON.stringify(tree, null, 2));\nfunction Node(value) {\n  this.value = value;\n  this.left = null;\n  this.right = null;\n}\nfunction BinarySearchTree() {\n  this.root = null;\n}\nfunction isBinarySearchTree(tree) {\n  // Only change code below this line\n  \n  // Only change code above this line\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "var displayTree = (tree) => console.log(JSON.stringify(tree, null, 2));\nfunction Node(value) {\n  this.value = value;\n  this.left = null;\n  this.right = null;\n}\nfunction BinarySearchTree() {\n  this.root = null;\n}\nfunction isBinarySearchTree(tree) {\n  if (tree.root == null) {\n    return null;\n  } else {\n    let isBST = true;\n    function checkTree(node) {\n      if (node.left != null) {\n        const left = node.left;\n        if (left.value >= node.value) {\n          isBST = false;\n        } else {\n          checkTree(left);\n        }\n      }\n      if (node.right != null) {\n        const right = node.right;\n        if (right.value < node.value) {\n          isBST = false;\n        } else {\n          checkTree(right);\n        }\n      }\n    }\n    checkTree(tree.root);\n    return isBST;\n  }\n};",
+        "error": null,
+        "seed": "var displayTree = (tree) => console.log(JSON.stringify(tree, null, 2));\nfunction Node(value) {\n  this.value = value;\n  this.left = null;\n  this.right = null;\n}\nfunction BinarySearchTree() {\n  this.root = null;\n}\nfunction isBinarySearchTree(tree) {\n  if (tree.root == null) {\n    return null;\n  } else {\n    let isBST = true;\n    function checkTree(node) {\n      if (node.left != null) {\n        const left = node.left;\n        if (left.value >= node.value) {\n          isBST = false;\n        } else {\n          checkTree(left);\n        }\n      }\n      if (node.right != null) {\n        const right = node.right;\n        if (right.value < node.value) {\n          isBST = false;\n        } else {\n          checkTree(right);\n        }\n      }\n    }\n    checkTree(tree.root);\n    return isBST;\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your Binary Search Tree should return true when checked with <code>isBinarySearchTree()</code>.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof BinarySearchTree !== 'undefined') {\n      test = new BinarySearchTree();\n    } else {\n      return false;\n    }\n    test.push(1);\n    test.push(5);\n    test.push(3);\n    test.push(2);\n    test.push(4);\n    return isBinarySearchTree(test) == true;\n  })()\n);"
+    },
+    {
+      "text": "<p><code>isBinarySearchTree()</code> should return false when checked with a tree that is not a binary search tree.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof BinarySearchTree !== 'undefined') {\n      test = new BinarySearchTree();\n    } else {\n      return false;\n    }\n    test.push(1);\n    test.root.left = new Node(1);\n    return isBinarySearchTree(test) == false;\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Since you already know what a binary search tree is, this challenge will establish how it is you can tell that a tree is a binary search tree or not.</p>\n<p>The main distinction of a binary search tree is that the nodes are ordered in an organized fashion. Nodes have at most 2 child nodes (placed to the right and/or left) based on if the child node's value is greater than or equal to (right) or less than (left) the parent node.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>In this challenge, you will create a utility for your tree. Write a JavaScript method <code>isBinarySearchTree</code> which takes a tree as an input and returns a boolean value for whether the tree is a binary search tree or not. Use recursion whenever possible.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-structures",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 29,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

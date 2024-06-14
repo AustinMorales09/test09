@@ -1,0 +1,65 @@
+{
+  "id": "5900f4451000cf542c50ff57",
+  "title": "Problem 216: Investigating the primality of numbers of the form 2n2-1",
+  "challengeType": 1,
+  "forumTopicId": 301858,
+  "dashedName": "problem-216-investigating-the-primality-of-numbers-of-the-form-2n2-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function primalityOfNumbers() {\n\n  return true;\n}\n\nprimalityOfNumbers();",
+      "error": null,
+      "seed": "function primalityOfNumbers() {\n\n  return true;\n}\n\nprimalityOfNumbers();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>primalityOfNumbers()</code> should return <code>5437849</code>.</p>",
+      "testString": "assert.strictEqual(primalityOfNumbers(), 5437849);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Consider numbers $t(n)$ of the form $t(n) = 2n^2 - 1$ with $n > 1$.</p>\n<p>The first such numbers are 7, 17, 31, 49, 71, 97, 127 and 161.</p>\n<p>It turns out that only $49 = 7 \\times 7$ and $161 = 7 \\times 23$ are not prime.</p>\n<p>For $n ≤ 10000$ there are 2202 numbers $t(n)$ that are prime.</p>\n<p>How many numbers $t(n)$ are prime for $n ≤ 50\\,000\\,000$?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "65b622c659539b5863124b5a",
+  "title": "Task 20",
+  "challengeType": 19,
+  "dashedName": "task-20",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sophie think about the ten years Anna has been working with tech companies?</p>",
+    "answers": [
+      {
+        "answer": "<p>She finds it boring.</p>",
+        "feedback": "<p><code>Impressive</code> is used for things we find amazing, not boring.</p>"
+      },
+      {
+        "answer": "<p>She is unhappy about the time.</p>",
+        "feedback": "<p><code>Impressive</code> means she thinks it's good, not bad.</p>"
+      },
+      {
+        "answer": "<p>She is confused.</p>",
+        "feedback": "<p>Sophie understands and is amazed, not confused.</p>"
+      },
+      {
+        "answer": "<p>She thinks it's great someone did something for so long.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 20.62,
+        "finishTimestamp": 23.06
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.44,
+        "dialogue": {
+          "text": "10 years? That's impressive. What does she do exactly?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.94
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,70 @@
+{
+  "id": "5cdafbb0291309899753167f",
+  "title": "Create a JavaScript Promise",
+  "challengeType": 1,
+  "forumTopicId": 301197,
+  "dashedName": "create-a-javascript-promise",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const makeServerRequest = new Promise((resolve, reject) => {\n\n});",
+        "error": null,
+        "seed": "const makeServerRequest = new Promise((resolve, reject) => {\n\n});"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should assign a promise to a declared variable named <code>makeServerRequest</code>.</p>",
+      "testString": "assert(makeServerRequest instanceof Promise);"
+    },
+    {
+      "text": "<p>Your promise should receive a function with <code>resolve</code> and <code>reject</code> as parameters.</p>",
+      "testString": "assert(\n  __helpers.removeJSComments(code).match(\n    /Promise\\s*\\(\\s*(function\\s*\\(\\s*resolve\\s*,\\s*reject\\s*\\)\\s*{|\\(\\s*resolve\\s*,\\s*reject\\s*\\)\\s*=>\\s*{)[^}]*}/g\n  )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A promise in JavaScript is exactly what it sounds like - you use it to make a promise to do something, usually asynchronously. When the task completes, you either fulfill your promise or fail to do so. <code>Promise</code> is a constructor function, so you need to use the <code>new</code> keyword to create one. It takes a function, as its argument, with two parameters - <code>resolve</code> and <code>reject</code>. These are methods used to determine the outcome of the promise. The syntax looks like this:</p>\n<pre><code class=\"language-js\">const myPromise = new Promise((resolve, reject) => {\n\n});\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Create a new promise called <code>makeServerRequest</code>. Pass in a function with <code>resolve</code> and <code>reject</code> parameters to the constructor.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

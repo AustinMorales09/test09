@@ -1,0 +1,86 @@
+{
+  "id": "5a24c314108439a4d4036184",
+  "title": "Render with an If-Else Condition",
+  "challengeType": 6,
+  "forumTopicId": 301410,
+  "dashedName": "render-with-an-if-else-condition",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<MyComponent />, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      display: true\n    }\n    this.toggleDisplay = this.toggleDisplay.bind(this);\n  }\n  toggleDisplay() {\n    this.setState((state) => ({\n      display: !state.display\n    }));\n  }\n  render() {\n    // Change code below this line\n\n    return (\n       <div>\n         <button onClick={this.toggleDisplay}>Toggle Display</button>\n         <h1>Displayed!</h1>\n       </div>\n    );\n  }\n};",
+      "error": null,
+      "seed": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      display: true\n    }\n    this.toggleDisplay = this.toggleDisplay.bind(this);\n  }\n  toggleDisplay() {\n    this.setState((state) => ({\n      display: !state.display\n    }));\n  }\n  render() {\n    // Change code below this line\n\n    return (\n       <div>\n         <button onClick={this.toggleDisplay}>Toggle Display</button>\n         <h1>Displayed!</h1>\n       </div>\n    );\n  }\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      display: true\n    }\n this.toggleDisplay = this.toggleDisplay.bind(this);\n }\n  toggleDisplay() {\n    this.setState((state) => ({\n      display: !state.display\n    }));\n  }\n  render() {\n    // Change code below this line\n    if (this.state.display) {\n      return (\n         <div>\n           <button onClick={this.toggleDisplay}>Toggle Display</button>\n           <h1>Displayed!</h1>\n         </div>\n      );\n    } else {\n      return (\n        <div>\n           <button onClick={this.toggleDisplay}>Toggle Display</button>\n         </div>\n      );\n    }\n  }\n};",
+        "error": null,
+        "seed": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      display: true\n    }\n this.toggleDisplay = this.toggleDisplay.bind(this);\n }\n  toggleDisplay() {\n    this.setState((state) => ({\n      display: !state.display\n    }));\n  }\n  render() {\n    // Change code below this line\n    if (this.state.display) {\n      return (\n         <div>\n           <button onClick={this.toggleDisplay}>Toggle Display</button>\n           <h1>Displayed!</h1>\n         </div>\n      );\n    } else {\n      return (\n        <div>\n           <button onClick={this.toggleDisplay}>Toggle Display</button>\n         </div>\n      );\n    }\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>MyComponent</code> should exist and render.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n    return mockedComponent.find('MyComponent').length === 1;\n  })()\n);"
+    },
+    {
+      "text": "<p>When <code>display</code> is set to <code>true</code>, a <code>div</code>, <code>button</code>, and <code>h1</code> should render.</p>",
+      "testString": "async () => {\n  const waitForIt = (fn) =>\n    new Promise((resolve, reject) => setTimeout(() => resolve(fn()), 250));\n  const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n  const state_1 = () => {\n    mockedComponent.setState({ display: true });\n    return waitForIt(() => mockedComponent);\n  };\n  const updated = await state_1();\n  assert(\n    mockedComponent.find('div').length === 1 &&\n      mockedComponent.find('div').children().length === 2 &&\n      mockedComponent.find('button').length === 1 &&\n      mockedComponent.find('h1').length === 1\n  );\n};"
+    },
+    {
+      "text": "<p>When <code>display</code> is set to <code>false</code>, only a <code>div</code> and <code>button</code> should render.</p>",
+      "testString": "async () => {\n  const waitForIt = (fn) =>\n    new Promise((resolve, reject) => setTimeout(() => resolve(fn()), 250));\n  const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n  const state_1 = () => {\n    mockedComponent.setState({ display: false });\n    return waitForIt(() => mockedComponent);\n  };\n  const updated = await state_1();\n  assert(\n    mockedComponent.find('div').length === 1 &&\n      mockedComponent.find('div').children().length === 1 &&\n      mockedComponent.find('button').length === 1 &&\n      mockedComponent.find('h1').length === 0\n  );\n};"
+    },
+    {
+      "text": "<p>The render method should use an <code>if/else</code> statement to check the condition of <code>this.state.display</code>.</p>",
+      "testString": "(getUserInput) =>\n  assert(\n    getUserInput('index').includes('if') &&\n      getUserInput('index').includes('else')\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Another application of using JavaScript to control your rendered view is to tie the elements that are rendered to a condition. When the condition is true, one view renders. When it's false, it's a different view. You can do this with a standard <code>if/else</code> statement in the <code>render()</code> method of a React component.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>MyComponent contains a <code>boolean</code> in its state which tracks whether you want to display some element in the UI or not. The <code>button</code> toggles the state of this value. Currently, it renders the same UI every time. Rewrite the <code>render()</code> method with an <code>if/else</code> statement so that if <code>display</code> is <code>true</code>, you return the current markup. Otherwise, return the markup without the <code>h1</code> element.</p>\n<p><strong>Note:</strong> You must write an <code>if/else</code> to pass the tests. Use of the ternary operator will not pass here.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 38,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,42 @@
+{
+  "id": "bd7158d8c442eddfaeb5bd10",
+  "title": "Show the Local Weather",
+  "challengeType": 3,
+  "forumTopicId": 302368,
+  "dashedName": "show-the-local-weather",
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><strong>Objective:</strong> Build an app that is functionally similar to this: <a href=\"https://codepen.io/freeCodeCamp/full/bELRjV\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">https://codepen.io/freeCodeCamp/full/bELRjV</a>.</p>\n<p><strong>Rule #1:</strong> Don't look at the example project's code. Figure it out for yourself.</p>\n<p><strong>Rule #2:</strong> Fulfill the below user stories and get all of the tests to pass. Use whichever libraries or APIs you need. Give it your own personal style.</p>\n<p><strong>User Story:</strong> I can see the weather in my current location.</p>\n<p><strong>User Story:</strong> I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.</p>\n<p><strong>User Story:</strong> I can push a button to toggle between Fahrenheit and Celsius.</p>\n<p><strong>Note:</strong> Many internet browsers now require an HTTP Secure (<code>https://</code>) connection to obtain a user's locale via HTML5 Geolocation. For this reason, we recommend using HTML5 Geolocation to get user location and then use the freeCodeCamp Weather API <a href=\"https://weather-proxy.freecodecamp.rocks/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">https://weather-proxy.freecodecamp.rocks/</a> which uses an HTTP Secure connection for the weather. Also, be sure to connect to <a href=\"https://codepen.io\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">CodePen.io</a> via <code>https://</code>.</p>\n<p>When you are finished, include a link to your project on CodePen and click the \"I've completed this challenge\" button.</p>\n<p>You can get feedback on your project by sharing it on the <a href=\"https://forum.freecodecamp.org/c/project-feedback/409\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">freeCodeCamp forum</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "take-home-projects",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

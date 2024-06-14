@@ -1,0 +1,116 @@
+{
+  "id": "657dc65ba83c584136bea3e4",
+  "title": "Task 98",
+  "challengeType": 19,
+  "dashedName": "task-98",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the sentence that correctly uses <code>to assign tasks</code>:</p>",
+    "answers": [
+      {
+        "answer": "<p>Maria assigns the meeting room.</p>",
+        "feedback": "<p><code>Assign tasks</code> means to give work or jobs to do.</p>"
+      },
+      {
+        "answer": "<p>Maria assigns jobs to the team.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Maria assigns the meeting time.</p>",
+        "feedback": "<p><code>Assign tasks</code> means to give work or jobs to do.</p>"
+      },
+      {
+        "answer": "<p>Maria assigns break times.</p>",
+        "feedback": "<p><code>Assign tasks</code> means to give work or jobs to do.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 41.48,
+        "finishTimestamp": 48.72
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.72,
+        "dialogue": {
+          "text": "Does Maria assign tasks during these meetings?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4
+      },
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 4
+      },
+      {
+        "character": "Sophie",
+        "startTime": 4.52,
+        "finishTime": 8.24,
+        "dialogue": {
+          "text": "Sometimes, but we normally discuss tasks we plan on tackling for the week.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 8.74
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To assign tasks</code> means to give specific work or duties to someone. For example, a teacher assigns homework to students.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 101,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

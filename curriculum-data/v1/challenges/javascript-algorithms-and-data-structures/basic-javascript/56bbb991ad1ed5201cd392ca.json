@@ -1,0 +1,71 @@
+{
+  "id": "56bbb991ad1ed5201cd392ca",
+  "title": "Access Array Data with Indexes",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cBZQbTz",
+  "forumTopicId": 16158,
+  "dashedName": "access-array-data-with-indexes",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "if(typeof myArray !== \"undefined\" && typeof myData !== \"undefined\"){(function(y,z){return 'myArray = ' + JSON.stringify(y) + ', myData = ' + JSON.stringify(z);})(myArray, myData);}",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const myArray = [50, 60, 70];\n\n",
+      "error": null,
+      "seed": "const myArray = [50, 60, 70];\n\n"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const myArray = [50, 60, 70];\nconst myData = myArray[0];",
+        "error": null,
+        "seed": "const myArray = [50, 60, 70];\nconst myData = myArray[0];"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The variable <code>myData</code> should equal the first value of <code>myArray</code>.</p>",
+      "testString": "assert(\n  (function () {\n    if (\n      typeof myArray !== 'undefined' &&\n      typeof myData !== 'undefined' &&\n      myArray[0] === myData\n    ) {\n      return true;\n    } else {\n      return false;\n    }\n  })()\n);"
+    },
+    {
+      "text": "<p>The data in variable <code>myArray</code> should be accessed using bracket notation.</p>",
+      "testString": "assert(\n  (function () {\n    if (__helpers.removeJSComments(code).match(/\\s*=\\s*myArray\\[0\\]/g)) {\n      return true;\n    } else {\n      return false;\n    }\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>We can access the data inside arrays using <dfn>indexes</dfn>.</p>\n<p>Array indexes are written in the same bracket notation that strings use, except that instead of specifying a character, they are specifying an entry in the array. Like strings, arrays use <dfn>zero-based</dfn> indexing, so the first element in an array has an index of <code>0</code>.</p>\n<br>\n<p><strong>Example</strong></p>\n<pre><code class=\"language-js\">const array = [50, 60, 70];\nconsole.log(array[0]);\nconst data = array[1];\n</code></pre>\n<p>The <code>console.log(array[0])</code> prints <code>50</code>, and <code>data</code> has the value <code>60</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Create a variable called <code>myData</code> and set it to equal the first value of <code>myArray</code> using bracket notation.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

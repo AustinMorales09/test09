@@ -1,0 +1,85 @@
+{
+  "id": "5900f3c51000cf542c50fed8",
+  "title": "Problem 87: Prime power triples",
+  "challengeType": 1,
+  "forumTopicId": 302201,
+  "dashedName": "problem-87-prime-power-triples",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function primePowerTriples(n) {\n\n  return true;\n}\n\nprimePowerTriples(50);",
+      "error": null,
+      "seed": "function primePowerTriples(n) {\n\n  return true;\n}\n\nprimePowerTriples(50);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function primePowerTriples(n) {\n  function getSievePrimes(max) {\n    const primes = [];\n    const primesMap = new Array(max).fill(true);\n    primesMap[0] = false;\n    primesMap[1] = false;\n\n    for (let i = 2; i <= max; i += 2) {\n      if (primesMap[i]) {\n        primes.push(i);\n        for (let j = i * i; j <= max; j = j + i) {\n          primesMap[j] = false;\n        }\n      }\n      if (i === 2) {\n        i = 1;\n      }\n    }\n    return primes;\n  }\n\n  function getPowersSummed(numbers, powers, limit, curSum) {\n    if (curSum >= limit) {\n      return [];\n    } else if (powers.length === 0) {\n      return [curSum];\n    }\n\n    const powersSummed = [];\n\n    const curPower = powers[0];\n    const powersLeft = powers.slice(1);\n    for (let i = 0; i < numbers.length; i++) {\n      const curNumber = numbers[i];\n      const nextSum = curSum + curNumber ** curPower;\n      if (nextSum >= limit) {\n        return powersSummed;\n      }\n      const result = getPowersSummed(\n        numbers,\n        powersLeft,\n        limit,\n        curSum + curNumber ** curPower\n      );\n      powersSummed.push(...result);\n    }\n    return powersSummed;\n  }\n\n  const maximumBaseNumber = Math.floor(Math.sqrt(n - 2 ** 3 - 2 ** 4)) + 1;\n  const primes = getSievePrimes(maximumBaseNumber);\n  const uniqueSums = new Set(getPowersSummed(primes, [2, 3, 4], n, 0));\n\n  return uniqueSums.size;\n}",
+        "error": null,
+        "seed": "function primePowerTriples(n) {\n  function getSievePrimes(max) {\n    const primes = [];\n    const primesMap = new Array(max).fill(true);\n    primesMap[0] = false;\n    primesMap[1] = false;\n\n    for (let i = 2; i <= max; i += 2) {\n      if (primesMap[i]) {\n        primes.push(i);\n        for (let j = i * i; j <= max; j = j + i) {\n          primesMap[j] = false;\n        }\n      }\n      if (i === 2) {\n        i = 1;\n      }\n    }\n    return primes;\n  }\n\n  function getPowersSummed(numbers, powers, limit, curSum) {\n    if (curSum >= limit) {\n      return [];\n    } else if (powers.length === 0) {\n      return [curSum];\n    }\n\n    const powersSummed = [];\n\n    const curPower = powers[0];\n    const powersLeft = powers.slice(1);\n    for (let i = 0; i < numbers.length; i++) {\n      const curNumber = numbers[i];\n      const nextSum = curSum + curNumber ** curPower;\n      if (nextSum >= limit) {\n        return powersSummed;\n      }\n      const result = getPowersSummed(\n        numbers,\n        powersLeft,\n        limit,\n        curSum + curNumber ** curPower\n      );\n      powersSummed.push(...result);\n    }\n    return powersSummed;\n  }\n\n  const maximumBaseNumber = Math.floor(Math.sqrt(n - 2 ** 3 - 2 ** 4)) + 1;\n  const primes = getSievePrimes(maximumBaseNumber);\n  const uniqueSums = new Set(getPowersSummed(primes, [2, 3, 4], n, 0));\n\n  return uniqueSums.size;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>primePowerTriples(50)</code> should return a number.</p>",
+      "testString": "assert(typeof primePowerTriples(50) === 'number');"
+    },
+    {
+      "text": "<p><code>primePowerTriples(50)</code> should return <code>4</code>.</p>",
+      "testString": "assert.strictEqual(primePowerTriples(50), 4);"
+    },
+    {
+      "text": "<p><code>primePowerTriples(10035)</code> should return <code>684</code>.</p>",
+      "testString": "assert.strictEqual(primePowerTriples(10035), 684);"
+    },
+    {
+      "text": "<p><code>primePowerTriples(500000)</code> should return <code>18899</code>.</p>",
+      "testString": "assert.strictEqual(primePowerTriples(500000), 18899);"
+    },
+    {
+      "text": "<p><code>primePowerTriples(5000000)</code> should return <code>138932</code>.</p>",
+      "testString": "assert.strictEqual(primePowerTriples(5000000), 138932);"
+    },
+    {
+      "text": "<p><code>primePowerTriples(50000000)</code> should return <code>1097343</code>.</p>",
+      "testString": "assert.strictEqual(primePowerTriples(50000000), 1097343);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The smallest number expressible as the sum of a prime square, prime cube, and prime fourth power is <code>28</code>. In fact, there are exactly four numbers below fifty that can be expressed in such a way:</p>\n<div style='margin-left: 4em;'>\n  28 = 2<sup>2</sup> + 2<sup>3</sup> + 2<sup>4</sup><br>\n  33 = 3<sup>2</sup> + 2<sup>3</sup> + 2<sup>4</sup><br>\n  49 = 5<sup>2</sup> + 2<sup>3</sup> + 2<sup>4</sup><br>\n  47 = 2<sup>2</sup> + 3<sup>3</sup> + 2<sup>4</sup>\n</div><br>\n<p>How many numbers below <code>n</code> can be expressed as the sum of a prime square, prime cube, and prime fourth power?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 86,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

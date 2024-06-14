@@ -1,0 +1,45 @@
+{
+  "id": "657cd1925ac059f5034286c3",
+  "title": "Task 54",
+  "challengeType": 19,
+  "dashedName": "task-54",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which question is correct for asking about a person's job?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>What do she does as the team lead?</code></p>",
+        "feedback": "<p>The structure <code>do she does</code> is not correct in English. When asking a question about another person, you use <code>does</code> only once.</p>"
+      },
+      {
+        "answer": "<p><code>What does he does as the team lead?</code></p>",
+        "feedback": "<p>You don't need to use <code>does</code> twice.</p>"
+      },
+      {
+        "answer": "<p><code>What do he does as the team lead?</code></p>",
+        "feedback": "<p>Think about the correct auxiliary verb to use with <code>he.</code></p>"
+      },
+      {
+        "answer": "<p><code>What does she do as the team lead?</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Using the auxiliary verb <code>do</code> can be tricky when the main verb in the sentence is also <code>do</code>.</p>\n<p>But remember, <code>do</code> helps in asking questions, and when it's about someone else, like he or she, it changes to <code>does</code>. The question <code>What does she/he do?</code> is asking for information about a person's job.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 56,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

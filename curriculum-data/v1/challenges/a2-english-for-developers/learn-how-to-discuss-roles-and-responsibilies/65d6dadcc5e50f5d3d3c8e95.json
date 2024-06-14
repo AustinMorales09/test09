@@ -1,0 +1,88 @@
+{
+  "id": "65d6dadcc5e50f5d3d3c8e95",
+  "title": "Task 54",
+  "challengeType": 19,
+  "dashedName": "task-54",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Alice describe the person's behavior?</p>",
+    "answers": [
+      {
+        "answer": "<p>She treats people equally, offers help, and is ready to answer questions.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She avoids helping others.</p>",
+        "feedback": "<p>Alice's description suggests the opposite, highlighting her readiness to assist and provide support.</p>"
+      },
+      {
+        "answer": "<p>She never answers questions.</p>",
+        "feedback": "<p>Alice specifically says the person is always willing to answer questions, contradicting this option.</p>"
+      },
+      {
+        "answer": "<p>She is unfair in her treatment of others.</p>",
+        "feedback": "<p>Being described as <code>fair</code> means she treats everyone equally and justly, which contradicts this choice.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 40.28,
+        "finishTimestamp": 43.56
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 4.28,
+        "dialogue": {
+          "text": "She's fair and supportive, always willing to help and answer questions.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 4.78
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 55,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

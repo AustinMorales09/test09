@@ -1,0 +1,87 @@
+{
+  "id": "587d78a4367417b2b2512ad4",
+  "title": "Adjust the Hue of a Color",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cPp38TZ",
+  "forumTopicId": 301036,
+  "dashedName": "adjust-the-hue-of-a-color",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  body {\n    background-color: #FFFFFF;\n  }\n\n  .green {\n    background-color: #000000;\n  }\n\n  .cyan {\n    background-color: #000000;\n  }\n\n  .blue {\n    background-color: #000000;\n  }\n\n  div {\n    display: inline-block;\n    height: 100px;\n    width: 100px;\n  }\n</style>\n\n<div class=\"green\"></div>\n<div class=\"cyan\"></div>\n<div class=\"blue\"></div>",
+      "error": null,
+      "seed": "<style>\n  body {\n    background-color: #FFFFFF;\n  }\n\n  .green {\n    background-color: #000000;\n  }\n\n  .cyan {\n    background-color: #000000;\n  }\n\n  .blue {\n    background-color: #000000;\n  }\n\n  div {\n    display: inline-block;\n    height: 100px;\n    width: 100px;\n  }\n</style>\n\n<div class=\"green\"></div>\n<div class=\"cyan\"></div>\n<div class=\"blue\"></div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  body {\n    background-color: #FFFFFF;\n  }\n\n  .green {\n    background-color: hsl(120, 100%, 50%);\n  }\n\n  .cyan {\n    background-color:   hsl(180, 100%, 50%);\n  }\n\n  .blue {\n    background-color: hsl(240, 100%, 50%);\n  }\n\n  div {\n    display: inline-block;\n    height: 100px;\n    width: 100px;\n  }\n</style>\n<div class=\"green\"></div>\n<div class=\"cyan\"></div>\n<div class=\"blue\"></div>",
+        "error": null,
+        "seed": "<style>\n  body {\n    background-color: #FFFFFF;\n  }\n\n  .green {\n    background-color: hsl(120, 100%, 50%);\n  }\n\n  .cyan {\n    background-color:   hsl(180, 100%, 50%);\n  }\n\n  .blue {\n    background-color: hsl(240, 100%, 50%);\n  }\n\n  div {\n    display: inline-block;\n    height: 100px;\n    width: 100px;\n  }\n</style>\n<div class=\"green\"></div>\n<div class=\"cyan\"></div>\n<div class=\"blue\"></div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should use the <code>hsl()</code> function to declare the color green.</p>",
+      "testString": "assert(code.match(/\\.green\\s*?{\\s*?background-color\\s*:\\s*?hsl/gi));"
+    },
+    {
+      "text": "<p>Your code should use the <code>hsl()</code> function to declare the color cyan.</p>",
+      "testString": "assert(code.match(/\\.cyan\\s*?{\\s*?background-color\\s*:\\s*?hsl/gi));"
+    },
+    {
+      "text": "<p>Your code should use the <code>hsl()</code> function to declare the color blue.</p>",
+      "testString": "assert(code.match(/\\.blue\\s*?{\\s*?background-color\\s*:\\s*?hsl/gi));"
+    },
+    {
+      "text": "<p>The <code>div</code> element with class <code>green</code> should have a <code>background-color</code> of green.</p>",
+      "testString": "assert($('.green').css('background-color') == 'rgb(0, 255, 0)');"
+    },
+    {
+      "text": "<p>The <code>div</code> element with class <code>cyan</code> should have a <code>background-color</code> of cyan.</p>",
+      "testString": "assert($('.cyan').css('background-color') == 'rgb(0, 255, 255)');"
+    },
+    {
+      "text": "<p>The <code>div</code> element with class <code>blue</code> should have a <code>background-color</code> of blue.</p>",
+      "testString": "assert($('.blue').css('background-color') == 'rgb(0, 0, 255)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Colors have several characteristics including hue, saturation, and lightness. CSS3 introduced the <code>hsl()</code> function as an alternative way to pick a color by directly stating these characteristics.</p>\n<p><strong>Hue</strong> is what people generally think of as 'color'. If you picture a spectrum of colors starting with red on the left, moving through green in the middle, and blue on right, the hue is where a color fits along this line. In <code>hsl()</code>, hue uses a color wheel concept instead of the spectrum, where the angle of the color on the circle is given as a value between 0 and 360.</p>\n<p><strong>Saturation</strong> is the amount of gray in a color. A fully saturated color has no gray in it, and a minimally saturated color is almost completely gray. This is given as a percentage with 100% being fully saturated.</p>\n<p><strong>Lightness</strong> is the amount of white or black in a color. A percentage is given ranging from 0% (black) to 100% (white), where 50% is the normal color.</p>\n<p>Here are a few examples of using <code>hsl()</code> with fully-saturated, normal lightness colors:</p>\n<table><thead><tr><th>Color</th><th>HSL</th></tr></thead><tbody><tr><td>red</td><td>hsl(0, 100%, 50%)</td></tr><tr><td>yellow</td><td>hsl(60, 100%, 50%)</td></tr><tr><td>green</td><td>hsl(120, 100%, 50%)</td></tr><tr><td>cyan</td><td>hsl(180, 100%, 50%)</td></tr><tr><td>blue</td><td>hsl(240, 100%, 50%)</td></tr><tr><td>magenta</td><td>hsl(300, 100%, 50%)</td></tr></tbody></table>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Change the <code>background-color</code> of each <code>div</code> element based on the class names (<code>green</code>, <code>cyan</code>, or <code>blue</code>) using <code>hsl()</code>. All three should have full saturation and normal lightness.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-visual-design",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

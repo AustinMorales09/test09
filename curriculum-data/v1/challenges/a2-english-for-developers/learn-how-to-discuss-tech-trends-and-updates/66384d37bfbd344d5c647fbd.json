@@ -1,0 +1,88 @@
+{
+  "id": "66384d37bfbd344d5c647fbd",
+  "title": "Task 36",
+  "challengeType": 22,
+  "dashedName": "task-36",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It's especially useful when we need to handle variable workloads and want to _ _ server management tasks.</p>",
+    "blanks": [
+      {
+        "answer": "save",
+        "feedback": "<p>This word means to reduce something, such as money or time, often used when talking about reducing costs.</p>"
+      },
+      {
+        "answer": "on",
+        "feedback": "<p>This preposition is used to link the verb with what is being reduced — in this case, the tasks related to server management.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Lisa",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 25.82,
+        "finishTimestamp": 31.64
+      }
+    },
+    "commands": [
+      {
+        "character": "Lisa",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Lisa",
+        "startTime": 1,
+        "finishTime": 4.36,
+        "dialogue": {
+          "text": "It's especially useful when we need to handle variable workloads",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "startTime": 4.36,
+        "finishTime": 6.82,
+        "dialogue": {
+          "text": "and want to save on server management tasks.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "opacity": 0,
+        "startTime": 7.32
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Save on</code> means to reduce the amount of something, like time, money, or effort. For example, <code>By shopping during the sale, she saved on clothing expenses.</code> It shows an past action of reducing spending on clothes.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 37,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

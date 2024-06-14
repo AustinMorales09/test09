@@ -1,0 +1,83 @@
+{
+  "id": "657d9b88332ce98fc894db2c",
+  "title": "Task 15",
+  "challengeType": 22,
+  "dashedName": "task-15",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>What kind of photography do you _ _ _?</p>",
+    "blanks": [
+      {
+        "answer": "enjoy",
+        "feedback": "<p>This word is the verb that starts the phrase indicating a preference.</p>"
+      },
+      {
+        "answer": "the",
+        "feedback": "<p>This word is a part of the phrase that helps to focus on the highest degree of enjoyment.</p>"
+      },
+      {
+        "answer": "most",
+        "feedback": "<p>This word emphasizes the greatest level of preference or enjoyment.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 21.98,
+        "finishTimestamp": 24.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 3.18,
+        "dialogue": {
+          "text": "What kind of photography do you enjoy the most?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 3.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>enjoy the most</code> is used to express a preference or favorite aspect of something.</p>\n<p>The word <code>most</code> in this phrase is a superlative, which means it shows the highest degree or the extreme level of something.</p>\n<p>When you say <code>enjoy the most</code>, you're saying that out of all the things you enjoy, this one thing stands out as the one you like the best. For instance:</p>\n<p><code>I enjoy coding the most</code>, means that of all your activities or interests, coding is your favorite or the one that gives you the greatest pleasure.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

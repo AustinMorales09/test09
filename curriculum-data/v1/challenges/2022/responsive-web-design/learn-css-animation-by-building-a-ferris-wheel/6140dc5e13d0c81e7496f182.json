@@ -1,0 +1,65 @@
+{
+  "id": "6140dc5e13d0c81e7496f182",
+  "title": "Step 17",
+  "challengeType": 0,
+  "dashedName": "step-17",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Ferris Wheel</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div class=\"wheel\">\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Ferris Wheel</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div class=\"wheel\">\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        71,
+        75
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": ".wheel {\n  border: 2px solid black;\n  border-radius: 50%;\n  margin-left: 50px;\n  position: absolute;\n  height: 55vw;\n  width: 55vw;\n  max-width: 500px;\n  max-height: 500px;\n}\n\n.line {\n  background-color: black;\n  width: 50%;\n  height: 2px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform-origin: 0% 0%;\n}\n\n.line:nth-of-type(2) {\n  transform: rotate(60deg);\n}\n.line:nth-of-type(3) {\n  transform: rotate(120deg);\n}\n.line:nth-of-type(4) {\n  transform: rotate(180deg);\n}\n.line:nth-of-type(5) {\n  transform: rotate(240deg);\n}\n.line:nth-of-type(6) {\n  transform: rotate(300deg);\n}\n\n.cabin {\n  background-color: red;\n  width: 20%;\n  height: 20%;\n  position: absolute;\n  border: 2px solid;\n  transform-origin: 50% 0%;\n}\n\n.cabin:nth-of-type(1) {\n  right: -8.5%;\n  top: 50%;\n}\n.cabin:nth-of-type(2) {\n  right: 17%;\n  top: 93.5%;\n}\n.cabin:nth-of-type(3) {\n  right: 67%;\n  top: 93.5%;\n}\n.cabin:nth-of-type(4) {\n  left: -8.5%;\n  top: 50%;\n}\n.cabin:nth-of-type(5) {\n  left: 17%;\n  top: 7%;\n}\n.cabin:nth-of-type(6) {\n  right: 17%;\n  top: 7%;\n}\n\n@keyframes wheel {\n\n}",
+      "error": null,
+      "seed": ".wheel {\n  border: 2px solid black;\n  border-radius: 50%;\n  margin-left: 50px;\n  position: absolute;\n  height: 55vw;\n  width: 55vw;\n  max-width: 500px;\n  max-height: 500px;\n}\n\n.line {\n  background-color: black;\n  width: 50%;\n  height: 2px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform-origin: 0% 0%;\n}\n\n.line:nth-of-type(2) {\n  transform: rotate(60deg);\n}\n.line:nth-of-type(3) {\n  transform: rotate(120deg);\n}\n.line:nth-of-type(4) {\n  transform: rotate(180deg);\n}\n.line:nth-of-type(5) {\n  transform: rotate(240deg);\n}\n.line:nth-of-type(6) {\n  transform: rotate(300deg);\n}\n\n.cabin {\n  background-color: red;\n  width: 20%;\n  height: 20%;\n  position: absolute;\n  border: 2px solid;\n  transform-origin: 50% 0%;\n}\n\n.cabin:nth-of-type(1) {\n  right: -8.5%;\n  top: 50%;\n}\n.cabin:nth-of-type(2) {\n  right: 17%;\n  top: 93.5%;\n}\n.cabin:nth-of-type(3) {\n  right: 67%;\n  top: 93.5%;\n}\n.cabin:nth-of-type(4) {\n  left: -8.5%;\n  top: 50%;\n}\n.cabin:nth-of-type(5) {\n  left: 17%;\n  top: 7%;\n}\n.cabin:nth-of-type(6) {\n  right: 17%;\n  top: 7%;\n}\n\n@keyframes wheel {\n\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>@keyframes wheel</code> rule should have a <code>0%</code> selector.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getCSSRules('keyframes')?.[0]?.cssRules?.[0]?.keyText === '0%');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You now need to define how your animation should start. To do this, create a <code>0%</code> rule within your <code>@keyframes wheel</code> rule. The properties you set in this nested selector will apply at the beginning of your animation.</p>\n<p>As an example, this would be a <code>12%</code> rule:</p>\n<pre><code class=\"language-css\">@keyframes freecodecamp {\n  12% {\n    color: green;\n  }\n}\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-animation-by-building-a-ferris-wheel",
+  "hasEditableBoundaries": true,
+  "order": 17,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

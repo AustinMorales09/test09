@@ -1,0 +1,43 @@
+{
+  "id": "647e23248acb466c97ccbefb",
+  "title": "Convert Data Types Using Casting and Conversion Techniques in C#",
+  "challengeType": 19,
+  "dashedName": "convert-data-types-using-casting-and-conversion-techniques-in-c-sharp",
+  "solutions": [],
+  "question": {
+    "text": "<p>What type of action is being performed when changing a <code>float</code> into an <code>int</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>A narrowing conversion.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A widening conversion.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>An illegal conversion.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [
+    "<p>Complete the <a href=\"https://learn.microsoft.com/training/modules/csharp-convert-cast/\" target=\"_blank\" rel=\"noreferrer\">Convert Data Types Using Casting and Conversion Techniques in C#</a> module on Microsoft Learn. Then, answer the question below.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge will be partially completed on the Microsoft Learn platform. Follow these instructions to complete the challenge:</p>\n<ol>\n<li>Go to <a href=\"https://learn.microsoft.com/training/modules/csharp-convert-cast/\" target=\"_blank\" rel=\"noreferrer\">https://learn.microsoft.com/training/modules/csharp-convert-cast/</a> and complete all the tasks for the \"Convert Data Types Using Casting and Conversion Techniques in C#\" module. This is <strong>required</strong> to earn the \"Work with Variable Data in C# Console Applications\" trophy on Microsoft Learn, and qualify for the certification exam.</li>\n<li>When you are finished, come back and correctly answer the question below.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "work-with-variable-data-in-c-sharp-console-applications",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 13,
+  "certification": "foundational-c-sharp-with-microsoft",
+  "superBlock": "foundational-c-sharp-with-microsoft",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "C-Sharp",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,116 @@
+{
+  "id": "657e31b82090130535456f65",
+  "title": "Task 44",
+  "challengeType": 19,
+  "dashedName": "task-44",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why does Tom thank Anna?</p>",
+    "answers": [
+      {
+        "answer": "<p>For giving him a shorter workday.</p>",
+        "feedback": "<p>The thanks are for information provided, not changes in work hours.</p>"
+      },
+      {
+        "answer": "<p>For helping him with a project.</p>",
+        "feedback": "<p>Helping with a project isn’t mentioned in this context.</p>"
+      },
+      {
+        "answer": "<p>For explaining the workday routine.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>For inviting him to lunch.</p>",
+        "feedback": "<p>Lunch invitation is not part of the conversation.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 47.76,
+        "finishTimestamp": 52.94
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.66,
+        "dialogue": {
+          "text": "Thanks for explaining, Anna. It helps me to understand what to expect.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.66
+      },
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 4.66
+      },
+      {
+        "character": "Anna",
+        "startTime": 5.44,
+        "finishTime": 6.18,
+        "dialogue": {
+          "text": "You're welcome, Tom.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 6.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 45,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

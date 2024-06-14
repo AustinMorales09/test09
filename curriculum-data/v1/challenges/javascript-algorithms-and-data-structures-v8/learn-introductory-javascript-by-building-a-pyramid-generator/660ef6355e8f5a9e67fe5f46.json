@@ -1,0 +1,57 @@
+{
+  "id": "660ef6355e8f5a9e67fe5f46",
+  "title": "Step 15",
+  "challengeType": 1,
+  "dashedName": "step-15",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nlet count = 8;\n",
+      "error": null,
+      "seed": "let character = 'Hello';\nlet count = 8;\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should access the <code>console</code> in your code.</p>",
+      "testString": "assert.match(code, /console/);"
+    },
+    {
+      "text": "<p>You should access the <code>.log()</code> of the <code>console</code>.</p>",
+      "testString": "assert.match(code, /console\\.log/);"
+    },
+    {
+      "text": "<p>You should log <code>count + 1</code> to the console.</p>",
+      "testString": "assert.match(code, /console\\.log\\(\\s*count\\s*\\+\\s*1\\s*\\);?/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>With the <code>number</code> data type, you can perform mathematical operations, like addition. Try printing <code>count + 1</code> to the console.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

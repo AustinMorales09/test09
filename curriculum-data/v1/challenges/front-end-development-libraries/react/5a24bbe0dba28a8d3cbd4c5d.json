@@ -1,0 +1,90 @@
+{
+  "id": "5a24bbe0dba28a8d3cbd4c5d",
+  "title": "Create a Complex JSX Element",
+  "challengeType": 6,
+  "forumTopicId": 301382,
+  "dashedName": "create-a-complex-jsx-element",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(JSX, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "const JSX = (\n<div>\n  <h1>Hello JSX!</h1>\n  <p>Some info</p>\n  <ul>\n    <li>An item</li>\n    <li>Another item</li>\n    <li>A third item</li>\n  </ul>\n</div>);",
+        "error": null,
+        "seed": "const JSX = (\n<div>\n  <h1>Hello JSX!</h1>\n  <p>Some info</p>\n  <ul>\n    <li>An item</li>\n    <li>Another item</li>\n    <li>A third item</li>\n  </ul>\n</div>);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The constant <code>JSX</code> should return a <code>div</code> element.</p>",
+      "testString": "assert(JSX.type === 'div');"
+    },
+    {
+      "text": "<p>The <code>div</code> should contain an <code>h1</code> tag as the first element.</p>",
+      "testString": "assert(JSX.props.children[0].type === 'h1');"
+    },
+    {
+      "text": "<p>The <code>div</code> should contain a <code>p</code> tag as the second element.</p>",
+      "testString": "assert(JSX.props.children[1].type === 'p');"
+    },
+    {
+      "text": "<p>The <code>div</code> should contain a <code>ul</code> tag as the third element.</p>",
+      "testString": "assert(JSX.props.children[2].type === 'ul');"
+    },
+    {
+      "text": "<p>The <code>ul</code> should contain three <code>li</code> elements.</p>",
+      "testString": "assert(\n  JSX.props.children\n    .filter((ele) => ele.type === 'ul')[0]\n    .props.children.filter((ele) => ele.type === 'li').length === 3\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The last challenge was a simple example of JSX, but JSX can represent more complex HTML as well.</p>\n<p>One important thing to know about nested JSX is that it must return a single element.</p>\n<p>This one parent element would wrap all of the other levels of nested elements.</p>\n<p>For instance, several JSX elements written as siblings with no parent wrapper element will not transpile.</p>\n<p>Here's an example:</p>\n<p><strong>Valid JSX:</strong></p>\n<pre><code class=\"language-jsx\">&#x3C;div>\n  &#x3C;p>Paragraph One&#x3C;/p>\n  &#x3C;p>Paragraph Two&#x3C;/p>\n  &#x3C;p>Paragraph Three&#x3C;/p>\n&#x3C;/div>\n</code></pre>\n<p><strong>Invalid JSX:</strong></p>\n<pre><code class=\"language-jsx\">&#x3C;p>Paragraph One&#x3C;/p>\n&#x3C;p>Paragraph Two&#x3C;/p>\n&#x3C;p>Paragraph Three&#x3C;/p>\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Define a new constant <code>JSX</code> that renders a <code>div</code> which contains the following elements in order:</p>\n<p>An <code>h1</code>, a <code>p</code>, and an unordered list that contains three <code>li</code> items. You can include any text you want within each element.</p>\n<p><strong>Note:</strong> When rendering multiple elements like this, you can wrap them all in parentheses, but it's not strictly required. Also notice this challenge uses a <code>div</code> tag to wrap all the child elements within a single parent element. If you remove the <code>div</code>, the JSX will no longer transpile. Keep this in mind, since it will also apply when you return JSX elements in React components.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 1,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

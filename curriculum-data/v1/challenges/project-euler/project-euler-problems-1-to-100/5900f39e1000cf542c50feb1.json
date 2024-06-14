@@ -1,0 +1,73 @@
+{
+  "id": "5900f39e1000cf542c50feb1",
+  "title": "Problem 50: Consecutive prime sum",
+  "challengeType": 1,
+  "forumTopicId": 302161,
+  "dashedName": "problem-50-consecutive-prime-sum",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function consecutivePrimeSum(limit) {\n\n  return true;\n}\n\nconsecutivePrimeSum(1000000);",
+      "error": null,
+      "seed": "function consecutivePrimeSum(limit) {\n\n  return true;\n}\n\nconsecutivePrimeSum(1000000);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "class PrimeSeive {\n  constructor(num) {\n    const seive = Array(Math.floor((num - 1) / 2)).fill(true);\n    const primes = [2];\n    const upper = Math.floor((num - 1) / 2);\n    const sqrtUpper = Math.floor((Math.sqrt(num) - 1) / 2);\n\n    for (let i = 0; i <= sqrtUpper; i++) {\n      if (seive[i]) {\n        // Mark value in seive array\n        const prime = 2 * i + 3;\n        primes.push(prime);\n        // Mark all multiples of this number as false (not prime)\n        const primeSquaredIndex = 2 * i ** 2 + 6 * i + 3;\n        for (let j = primeSquaredIndex; j < upper; j += prime) {\n          seive[j] = false;\n        }\n      }\n    }\n    for (let i = sqrtUpper + 1; i < upper; i++) {\n      if (seive[i]) {\n        primes.push(2 * i + 3);\n      }\n    }\n\n    this._seive = seive;\n    this._primes = primes;\n  }\n\n  isPrime(num) {\n    return num === 2\n      ? true\n      : num % 2 === 0\n        ? false\n        : this.isOddPrime(num);\n  }\n\n  isOddPrime(num) {\n    return this._seive[(num - 3) / 2];\n  }\n\n  get primes() {\n    return this._primes;\n  }\n};\n\nfunction consecutivePrimeSum(limit) {\n  // Initialize seive\n  const primeSeive = new PrimeSeive(limit);\n\n  // Initialize for longest sum < 100\n  let bestPrime = 41;\n  let bestI = 0;\n  let bestJ = 5;\n\n  // Find longest sum < limit\n  let sumOfCurrRange = 41;\n  let i = 0, j = 5;\n  // -- Loop while current some starting at i is < limit\n  while (sumOfCurrRange < limit) {\n    let currSum = sumOfCurrRange;\n    // -- Loop while pushing j towards end of PRIMES list\n    //      keeping sum under limit\n    while (currSum < limit) {\n      if (primeSeive.isPrime(currSum)) {\n        bestPrime = sumOfCurrRange = currSum;\n        bestI = i;\n        bestJ = j;\n      }\n      // -- Increment inner loop\n      j++;\n      currSum += primeSeive.primes[j];\n    }\n    // -- Increment outer loop\n    i++;\n    j = i + (bestJ - bestI);\n    sumOfCurrRange -= primeSeive.primes[i - 1];\n    sumOfCurrRange += primeSeive.primes[j];\n  }\n  // Return\n  return bestPrime;\n}",
+        "error": null,
+        "seed": "class PrimeSeive {\n  constructor(num) {\n    const seive = Array(Math.floor((num - 1) / 2)).fill(true);\n    const primes = [2];\n    const upper = Math.floor((num - 1) / 2);\n    const sqrtUpper = Math.floor((Math.sqrt(num) - 1) / 2);\n\n    for (let i = 0; i <= sqrtUpper; i++) {\n      if (seive[i]) {\n        // Mark value in seive array\n        const prime = 2 * i + 3;\n        primes.push(prime);\n        // Mark all multiples of this number as false (not prime)\n        const primeSquaredIndex = 2 * i ** 2 + 6 * i + 3;\n        for (let j = primeSquaredIndex; j < upper; j += prime) {\n          seive[j] = false;\n        }\n      }\n    }\n    for (let i = sqrtUpper + 1; i < upper; i++) {\n      if (seive[i]) {\n        primes.push(2 * i + 3);\n      }\n    }\n\n    this._seive = seive;\n    this._primes = primes;\n  }\n\n  isPrime(num) {\n    return num === 2\n      ? true\n      : num % 2 === 0\n        ? false\n        : this.isOddPrime(num);\n  }\n\n  isOddPrime(num) {\n    return this._seive[(num - 3) / 2];\n  }\n\n  get primes() {\n    return this._primes;\n  }\n};\n\nfunction consecutivePrimeSum(limit) {\n  // Initialize seive\n  const primeSeive = new PrimeSeive(limit);\n\n  // Initialize for longest sum < 100\n  let bestPrime = 41;\n  let bestI = 0;\n  let bestJ = 5;\n\n  // Find longest sum < limit\n  let sumOfCurrRange = 41;\n  let i = 0, j = 5;\n  // -- Loop while current some starting at i is < limit\n  while (sumOfCurrRange < limit) {\n    let currSum = sumOfCurrRange;\n    // -- Loop while pushing j towards end of PRIMES list\n    //      keeping sum under limit\n    while (currSum < limit) {\n      if (primeSeive.isPrime(currSum)) {\n        bestPrime = sumOfCurrRange = currSum;\n        bestI = i;\n        bestJ = j;\n      }\n      // -- Increment inner loop\n      j++;\n      currSum += primeSeive.primes[j];\n    }\n    // -- Increment outer loop\n    i++;\n    j = i + (bestJ - bestI);\n    sumOfCurrRange -= primeSeive.primes[i - 1];\n    sumOfCurrRange += primeSeive.primes[j];\n  }\n  // Return\n  return bestPrime;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>consecutivePrimeSum(1000)</code> should return a number.</p>",
+      "testString": "assert(typeof consecutivePrimeSum(1000) === 'number');"
+    },
+    {
+      "text": "<p><code>consecutivePrimeSum(1000)</code> should return 953.</p>",
+      "testString": "assert.strictEqual(consecutivePrimeSum(1000), 953);"
+    },
+    {
+      "text": "<p><code>consecutivePrimeSum(1000000)</code> should return 997651.</p>",
+      "testString": "assert.strictEqual(consecutivePrimeSum(1000000), 997651);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The prime 41, can be written as the sum of six consecutive primes:</p>\n<div style='text-align: center;'>41 = 2 + 3 + 5 + 7 + 11 + 13</div>\n<p>This is the longest sum of consecutive primes that adds to a prime below one-hundred.</p>\n<p>The longest sum of consecutive primes below one-thousand that adds to a prime, contains 21 terms, and is equal to 953.</p>\n<p>Which prime, below one-million, can be written as the sum of the most consecutive primes?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 49,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

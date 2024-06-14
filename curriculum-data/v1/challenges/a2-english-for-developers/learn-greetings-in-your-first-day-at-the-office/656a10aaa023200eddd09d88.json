@@ -1,0 +1,88 @@
+{
+  "id": "656a10aaa023200eddd09d88",
+  "title": "Task 26",
+  "challengeType": 19,
+  "dashedName": "task-26",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is a drawing tablet?</p>",
+    "answers": [
+      {
+        "answer": "<p>A book to draw in.</p>",
+        "feedback": "<p>This is a sketchbook, not a drawing tablet.</p>"
+      },
+      {
+        "answer": "<p>A tool for painting walls.</p>",
+        "feedback": "<p>We use brushes or rollers for this, not drawing tablets.</p>"
+      },
+      {
+        "answer": "<p>A tool used with computers to draw.</p>",
+        "feedback": "<p>Yes! Drawing tablets connect to computers.</p>"
+      },
+      {
+        "answer": "<p>A kind of chair.</p>",
+        "feedback": "<p>We don't draw with chairs. Think about a tool used with computers.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.75,
+        "finishTimestamp": 20.3
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 3.4,
+        "dialogue": {
+          "text": "Do you see the desk with a drawing tablet and a computer?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 3.9
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A drawing tablet is a tool that people use with computers to draw or design things.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

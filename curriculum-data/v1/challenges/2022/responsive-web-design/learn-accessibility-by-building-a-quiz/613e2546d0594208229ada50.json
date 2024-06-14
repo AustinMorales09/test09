@@ -1,0 +1,93 @@
+{
+  "id": "613e2546d0594208229ada50",
+  "title": "Step 7",
+  "challengeType": 0,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        14
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n\n    </header>\n    <main></main>\n  </body>\n</html>\n",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n\n    </header>\n    <main></main>\n  </body>\n</html>\n"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}",
+      "error": null,
+      "seed": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add an <code>img</code> element to the <code>header</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('header > img'));"
+    },
+    {
+      "text": "<p>You should add an <code>h1</code> element to the <code>header</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('header > h1'));"
+    },
+    {
+      "text": "<p>You should add a <code>nav</code> element to the <code>header</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('header > nav'));"
+    },
+    {
+      "text": "<p>You should place the <code>img</code>, <code>h1</code>, and <code>nav</code> elements in that order.</p>",
+      "testString": "assert.exists(document.querySelector('img + h1 + nav'));"
+    },
+    {
+      "text": "<p>You should give the <code>img</code> element a <code>src</code> attribute of <code>https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg</code>.</p>",
+      "testString": "assert.equal(document.querySelector('img')?.src, 'https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg');"
+    },
+    {
+      "text": "<p>You should give the <code>img</code> element an <code>id</code> attribute of <code>logo</code>.</p>",
+      "testString": "assert.equal(document.querySelector('img')?.id, 'logo');"
+    },
+    {
+      "text": "<p>You should give the <code>img</code> element an <code>alt</code> attribute of <code>freeCodeCamp</code>.</p>",
+      "testString": "assert.equal(document.querySelector('img')?.alt, 'freeCodeCamp');"
+    },
+    {
+      "text": "<p>You should give the <code>h1</code> element the text <code>HTML/CSS Quiz</code>.</p>",
+      "testString": "assert.include(document.querySelector('h1')?.innerText?.toLowerCase(), 'html/css quiz');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Within the <code>header</code>, provide context about the page by nesting one <code>img</code>, <code>h1</code>, and <code>nav</code> element.</p>\n<p>The <code>img</code> should point to <code>https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg</code>, have an <code>id</code> of <code>logo</code>, and have an <code>alt</code> text of <code>freeCodeCamp</code>.</p>\n<p>The <code>h1</code> should contain the text <code>HTML/CSS Quiz</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-accessibility-by-building-a-quiz",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

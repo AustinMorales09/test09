@@ -1,0 +1,97 @@
+{
+  "id": "661918fafa78d478d0e9dc87",
+  "title": "Task 27",
+  "challengeType": 19,
+  "dashedName": "task-27",
+  "solutions": [],
+  "question": {
+    "text": "<p>In the audio, what does Alice mean when she says <code>no matter where they are</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>Teams can only work together if they are in the office</p>",
+        "feedback": "<p>They can work in other places, too, not only in the office.</p>"
+      },
+      {
+        "answer": "<p>They can work even if they are in different places</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>They can only work together when they are at home</p>",
+        "feedback": "<p>Not really. It does not matter where the people are.</p>"
+      },
+      {
+        "answer": "<p>They can only work together if they are using a collaboration platform</p>",
+        "feedback": "<p>Not necessarily. There are other ways people can work together from different places.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 5.94,
+        "finishTimestamp": 14.18
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 5.78,
+        "dialogue": {
+          "text": "During the pandemic, we worked from home with tools like video conference apps and collaboration platforms.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "startTime": 6.44,
+        "finishTime": 9.24,
+        "dialogue": {
+          "text": "They allow teams to work together no matter where they are.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 9.74
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you say <code>no matter</code>, you're saying that a particular situation or condition doesn't change the outcome or the result. It emphasizes that something will happen or is true regardless of other factors.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,42 @@
+{
+  "id": "63ee354c0d8d4841c3a70921",
+  "videoId": "LGQuIIv2RVA",
+  "title": "CSS Foundations Question H",
+  "challengeType": 15,
+  "dashedName": "css-foundations-question-h",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following is the main disadvantage of using inline CSS?</p>",
+    "answers": [
+      {
+        "answer": "<p>It can quickly become pretty messy once you start adding a lot of declarations to a single element, causing your HTML file to become unnecessarily bloated.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It requires using selectors, which can be complicated for beginners.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Any inline CSS will override the other two methods (internal and external), which can cause unexpected results.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Inline <code>CSS</code> makes it possible to add styles directly to <code>HTML</code> elements, though this method isn’t as recommended:</p>\n<pre><code class=\"language-html\">&#x3C;body>\n  &#x3C;div style=\"color: white; background-color: black;\">...&#x3C;/div>\n&#x3C;/body>\n</code></pre>\n<p>The first thing to note is that there aren't any selectors here, since the styles are being added directly to the opening <code>&#x3C;div></code> tag itself. Next, you have the <code>style</code> attribute, with its value within the pair of quotation marks being the declarations.</p>\n<p>If you need to add a unique style for a single element, this method can work just fine. Generally, though, this isn’t exactly a recommended way for adding CSS to HTML for a few reasons:</p>\n<p>It can quickly become pretty messy once you start adding a lot of declarations to a single element, causing your HTML file to become unnecessarily bloated.\nIf you want many elements to have the same style, you would have to copy + paste the same style to each individual element, causing lots of unnecessary repetition and more bloat.\nAny inline CSS will override the other two methods, which can cause unexpected results. (While you won’t dive into it here, this can actually be taken advantage of).</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-css-foundations",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

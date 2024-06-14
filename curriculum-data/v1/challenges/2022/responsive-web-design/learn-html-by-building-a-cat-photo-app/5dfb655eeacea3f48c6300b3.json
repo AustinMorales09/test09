@@ -1,0 +1,61 @@
+{
+  "id": "5dfb655eeacea3f48c6300b3",
+  "title": "Step 23",
+  "challengeType": 0,
+  "dashedName": "step-23",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        18,
+        22
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n      \n        <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n      \n      </section>\n    </main>\n\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n      \n        <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n      \n      </section>\n    </main>\n\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>figure</code> element should have an opening tag. Opening tags have the following syntax: <code>&#x3C;elementName></code>.</p>",
+      "testString": "assert(document.querySelector('figure'));"
+    },
+    {
+      "text": "<p>Your <code>figure</code> element should have a closing tag. Closing tags have a <code>/</code> just after the <code>&#x3C;</code> character.</p>",
+      "testString": "assert(code.match(/<\\/figure\\>/));"
+    },
+    {
+      "text": "<p>There should be an <code>figure</code> element right above the second <code>section</code> element's closing tag.</p>",
+      "testString": "assert($('section')[1].lastElementChild.nodeName === 'FIGURE');"
+    },
+    {
+      "text": "<p>The lasagna <code>img</code> element should be nested in the <code>figure</code> element.</p>",
+      "testString": "assert(\n  document.querySelector('figure > img') &&\n    document.querySelector('figure > img').getAttribute('src').toLowerCase() ===\n      'https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg'\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>figure</code> element represents self-contained content and will allow you to associate an image with a caption.</p>\n<p>Nest the image you just added within a <code>figure</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

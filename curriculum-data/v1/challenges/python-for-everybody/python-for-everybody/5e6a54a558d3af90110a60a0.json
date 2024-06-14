@@ -1,0 +1,52 @@
+{
+  "id": "5e6a54a558d3af90110a60a0",
+  "title": "Introduction: Why Program?",
+  "challengeType": 11,
+  "videoId": "3muQV-Im3Z0",
+  "bilibiliIds": {
+    "aid": 206882253,
+    "bvid": "BV1Fh411z7tr",
+    "cid": 376314257
+  },
+  "videoLocaleIds": {
+    "espanol": "3muQV-Im3Z0",
+    "italian": "3muQV-Im3Z0",
+    "portuguese": "3muQV-Im3Z0"
+  },
+  "dashedName": "introduction-why-program",
+  "solutions": [],
+  "question": {
+    "text": "<p>Who should learn to program?</p>",
+    "answers": [
+      {
+        "answer": "<p>College students.</p>",
+        "feedback": "<p>College students should learn to program, but there's a better answer.</p>"
+      },
+      {
+        "answer": "<p>People who want to become software developers.</p>",
+        "feedback": "<p>People who want to become software developers should learn to program, but there's a better answer.</p>"
+      },
+      {
+        "answer": "<p>Everyone.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>More resources:</p>\n<p>- <a href=\"https://youtu.be/F7mtLrYzZP8\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Install Python on Windows</a></p>\n<p>- <a href=\"https://youtu.be/wfLnZP-4sZw\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Install Python on MacOS</a></p>\n</section>",
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

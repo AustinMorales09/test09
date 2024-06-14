@@ -1,0 +1,37 @@
+{
+  "id": "6568c0f3792d990efe47949e",
+  "title": "Task 14",
+  "challengeType": 22,
+  "dashedName": "task-14",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>How do you like California _ _?</p>",
+    "blanks": [
+      {
+        "answer": "so",
+        "feedback": "<p>Consider a phrase that inquires about experiences up to the present moment.</p>"
+      },
+      {
+        "answer": "far",
+        "feedback": "<p>Consider a phrase that inquires about experiences up to the present moment.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Maria wants to know about Tom's experience in California from when he arrived up until the current moment.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Fill in the blanks with the appropriate words.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

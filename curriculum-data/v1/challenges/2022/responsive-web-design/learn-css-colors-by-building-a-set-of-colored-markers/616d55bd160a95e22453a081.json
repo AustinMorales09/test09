@@ -1,0 +1,85 @@
+{
+  "id": "616d55bd160a95e22453a081",
+  "title": "Step 14",
+  "challengeType": 0,
+  "dashedName": "step-14",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        15
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker\">\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker\">\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1 {\n  text-align: center;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  background-color: red;\n  margin: auto;\n}\n",
+      "error": null,
+      "seed": "h1 {\n  text-align: center;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  background-color: red;\n  margin: auto;\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your first new <code>div</code> element should have an opening tag.</p>",
+      "testString": "assert([...code.matchAll(/<div.*?>/gi)][2]);"
+    },
+    {
+      "text": "<p>Your first new <code>div</code> element should have a closing tag.</p>",
+      "testString": "assert([...code.matchAll(/<\\/div\\s*>/gi)][2]);"
+    },
+    {
+      "text": "<p>Your second new <code>div</code> element should have an opening tag.</p>",
+      "testString": "assert([...code.matchAll(/<div.*?>/gi)][3]);"
+    },
+    {
+      "text": "<p>Your second new <code>div</code> element should have a closing tag.</p>",
+      "testString": "assert([...code.matchAll(/<\\/div\\s*>/gi)][3]);"
+    },
+    {
+      "text": "<p>Your new <code>div</code> elements should be within the <code>div</code> with the class <code>container</code>.</p>",
+      "testString": "const containerChildren = [...document.querySelector('.container')?.children];\nassert(containerChildren.every(child => child?.localName === 'div') && containerChildren.length === 3);"
+    },
+    {
+      "text": "<p>Your new <code>div</code> elements should both have a class of <code>marker</code>.</p>",
+      "testString": "const containerChildren = [...document.querySelector('.container')?.children];\nassert(containerChildren.every(child => child?.classList?.contains('marker')));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you've got one marker centered with color, it's time to add the other markers.</p>\n<p>In the <code>container</code> <code>div</code>, add two more <code>div</code> elements and give them each a class of <code>marker</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

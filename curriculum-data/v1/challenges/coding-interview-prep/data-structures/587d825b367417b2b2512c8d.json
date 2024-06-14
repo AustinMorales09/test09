@@ -1,0 +1,70 @@
+{
+  "id": "587d825b367417b2b2512c8d",
+  "title": "Create an ES6 JavaScript Map",
+  "challengeType": 1,
+  "forumTopicId": 301635,
+  "dashedName": "create-an-es6-javascript-map",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const myMap = new Map();\n\nmyMap.set(\"freeCodeCamp\", \"Awesome!\");",
+        "error": null,
+        "seed": "const myMap = new Map();\n\nmyMap.set(\"freeCodeCamp\", \"Awesome!\");"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>myMap</code> object should exist.</p>",
+      "testString": "assert(typeof myMap === 'object');"
+    },
+    {
+      "text": "<p><code>myMap</code> should contain the key value pair <code>freeCodeCamp</code>, <code>Awesome!</code>.</p>",
+      "testString": "assert(myMap.get('freeCodeCamp') === 'Awesome!');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The new version of JavaScript provides us with a built-in Map object which provides much of the functionality we wrote by hand in the last challenge. This Map object, although similar to regular JavaScript objects, provides some useful functionality that normal objects lack. For example, an ES6 Map tracks the insertion order of items that are added to it. Here is a more complete overview of its methods:</p>\n<ul>\n<li><code>.has(key)</code> returns true or false based on the presence of a key</li>\n<li><code>.get(key)</code> returns the value associated with a key</li>\n<li><code>.set(key, value)</code> sets a new key, value pair</li>\n<li><code>.delete(key)</code> removes a key, value pair</li>\n<li><code>.clear()</code> removes all key, value pairs</li>\n<li><code>.entries()</code> returns an array of all the keys in insertion order</li>\n<li><code>.values()</code> returns an array of all the values in insertion order</li>\n</ul>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Define a JavaScript Map object and assign to it a variable called myMap. Add the key, value pair <code>freeCodeCamp</code>, <code>Awesome!</code> to it.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-structures",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

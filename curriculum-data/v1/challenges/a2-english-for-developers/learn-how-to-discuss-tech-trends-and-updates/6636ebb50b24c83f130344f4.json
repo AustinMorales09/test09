@@ -1,0 +1,45 @@
+{
+  "id": "6636ebb50b24c83f130344f4",
+  "title": "Task 26",
+  "challengeType": 19,
+  "dashedName": "task-26",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following sentences correctly uses the preposition <code>without</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>She watched TV without loud.</code></p>",
+        "feedback": "<p><code>Without</code> should be used with a noun or noun phrase, not an adjective.</p>"
+      },
+      {
+        "answer": "<p><code>He walked home without an umbrella in the rain.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>They sang a song without happily.</code></p>",
+        "feedback": "<p><code>Without</code> should precede a noun or noun phrase, not an adverb.</p>"
+      },
+      {
+        "answer": "<p><code>She goes to school without by bus.</code></p>",
+        "feedback": "<p>This sentence is grammatically incorrect. <code>Without</code> cannot be used in this context.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>without</code> followed by a verb in its <code>-ing</code> form is used to indicate the absence of an action or condition. It's a common structure used to describe doing something while not doing something else at the same time.</p>\n<p>For example, <code>She left without saying goodbye.</code> This means she left and did not say goodbye.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

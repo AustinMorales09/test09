@@ -1,0 +1,73 @@
+{
+  "id": "62a3b3eab50e193608c19fc6",
+  "title": "Step 9",
+  "challengeType": 0,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;",
+      "error": null,
+      "seed": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>let</code> to declare a variable <code>fighting</code>.</p>",
+      "testString": "assert.match(code, /let\\s+fighting/);"
+    },
+    {
+      "text": "<p>Your <code>fighting</code> variable should not have a value.</p>",
+      "testString": "assert.isUndefined(fighting);"
+    },
+    {
+      "text": "<p>You should not assign a value to your <code>fighting</code> variable.</p>",
+      "testString": "assert.match(code, /let\\s+fighting\\s*;?/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Declare a variable called <code>fighting</code> but do not initialize it with a value.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-javascript-by-building-a-role-playing-game",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "660f039ff313dbb696b007ca",
+  "title": "Step 18",
+  "challengeType": 1,
+  "dashedName": "step-18",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nlet count = 8;\nlet rows = [];",
+      "error": null,
+      "seed": "let character = 'Hello';\nlet count = 8;\nlet rows = [];"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The first element in your array should be the string <code>\"Naomi\"</code>.</p>",
+      "testString": "assert.equal(rows[0], \"Naomi\");"
+    },
+    {
+      "text": "<p>The second element in your array should be the string <code>\"Quincy\"</code>.</p>",
+      "testString": "assert.equal(rows[1], \"Quincy\");"
+    },
+    {
+      "text": "<p>The third element in your array should be the string <code>\"CamperChan\"</code>.</p>",
+      "testString": "assert.equal(rows[2], \"CamperChan\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When an array holds values, or <dfn>elements</dfn>, those values are separated by commas. Here is an array that holds two strings:</p>\n<pre><code class=\"language-js\">let array = [\"first\", \"second\"];\n</code></pre>\n<p>Change your <code>rows</code> declaration to be an array with the strings <code>\"Naomi\"</code>, <code>\"Quincy\"</code>, and <code>\"CamperChan\"</code>. The order of values in an array is important, so follow that order. Remember that strings are case-sensitive.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

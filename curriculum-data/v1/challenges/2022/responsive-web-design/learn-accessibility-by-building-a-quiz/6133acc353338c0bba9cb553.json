@@ -1,0 +1,73 @@
+{
+  "id": "6133acc353338c0bba9cb553",
+  "title": "Step 5",
+  "challengeType": 0,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n\n  </body>\n</html>\n",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n\n  </body>\n</html>\n"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}",
+      "error": null,
+      "seed": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add a <code>title</code> element to the <code>head</code>.</p>",
+      "testString": "assert.exists(document.querySelector('head > title'));"
+    },
+    {
+      "text": "<p>You should not make the <code>title</code> longer than 60 characters.</p>",
+      "testString": "assert.isAtMost(document.querySelector('head > title')?.textContent?.length, 60);"
+    },
+    {
+      "text": "<p>Try being more descriptive with your <code>title</code> element. <em>Hint: At least 15 characters</em></p>",
+      "testString": "assert.isAtLeast(document.querySelector('head > title')?.textContent?.length, 15);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Lastly in the <code>head</code>, the <code>title</code> element is useful for screen readers to understand the content of a page. Furthermore, it is an important part of <em>SEO</em>.</p>\n<p>Give your page a <code>title</code> that is descriptive and concise.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-accessibility-by-building-a-quiz",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "65d6ca37133db041a059b352",
+  "title": "Task 50",
+  "challengeType": 19,
+  "dashedName": "task-50",
+  "solutions": [],
+  "question": {
+    "text": "<p>How long has she been with the group according to Alice?</p>",
+    "answers": [
+      {
+        "answer": "<p>She just joined the group.</p>",
+        "feedback": "<p>Alice's statement implies she has been with the group for years, not that she just joined.</p>"
+      },
+      {
+        "answer": "<p>About a year</p>",
+        "feedback": "<p>Alice mentions it's been <code>about eight years</code>, which is much longer than a year.</p>"
+      },
+      {
+        "answer": "<p>For about eight years</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Less than a year</p>",
+        "feedback": "<p>Alice specifically says <code>about eight years</code>, indicating a much longer period than less than a year.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 29.4,
+        "finishTimestamp": 31.32
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 2.92,
+        "dialogue": {
+          "text": "She's been with us for about eight years now.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 3.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This audio uses the present perfect tense with <code>for + duration</code> to talk about how long someone has been doing something or been part of something.</p>\n<p>The phrase <code>be with</code> is used to describe being a member of a group or organization. For example, <code>She's been with the software development team for three years</code> means she has been a member of the team that develops software for three years.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 51,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

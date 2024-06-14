@@ -1,0 +1,74 @@
+{
+  "id": "587d7fa7367417b2b2512bc8",
+  "title": "Add Classes with D3",
+  "challengeType": 6,
+  "forumTopicId": 301473,
+  "dashedName": "add-classes-with-d3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .bar {\n    width: 25px;\n    height: 100px;\n    display: inline-block;\n    background-color: blue;\n  }\n</style>\n<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    d3.select(\"body\").selectAll(\"div\")\n      .data(dataset)\n      .enter()\n      .append(\"div\")\n      // Add your code below this line\n\n\n\n      // Add your code above this line\n  </script>\n</body>",
+      "error": null,
+      "seed": "<style>\n  .bar {\n    width: 25px;\n    height: 100px;\n    display: inline-block;\n    background-color: blue;\n  }\n</style>\n<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    d3.select(\"body\").selectAll(\"div\")\n      .data(dataset)\n      .enter()\n      .append(\"div\")\n      // Add your code below this line\n\n\n\n      // Add your code above this line\n  </script>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  .bar {\n    width: 25px;\n    height: 100px;\n    display: inline-block;\n    background-color: blue;\n  }\n</style>\n<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    d3.select(\"body\").selectAll(\"div\")\n      .data(dataset)\n      .enter()\n      .append(\"div\")\n      // Add your code below this line\n      .attr(\"class\",\"bar\");\n      // Add your code above this line\n  </script>\n</body>",
+        "error": null,
+        "seed": "<style>\n  .bar {\n    width: 25px;\n    height: 100px;\n    display: inline-block;\n    background-color: blue;\n  }\n</style>\n<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    d3.select(\"body\").selectAll(\"div\")\n      .data(dataset)\n      .enter()\n      .append(\"div\")\n      // Add your code below this line\n      .attr(\"class\",\"bar\");\n      // Add your code above this line\n  </script>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>div</code> elements should have a class of <code>bar</code>.</p>",
+      "testString": "assert($('div').attr('class').trim().split(/\\s+/g).includes('bar'));"
+    },
+    {
+      "text": "<p>Your code should use the <code>attr()</code> method.</p>",
+      "testString": "assert(code.match(/\\.attr/g));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Using a lot of inline styles on HTML elements gets hard to manage, even for smaller apps. It's easier to add a class to elements and style that class one time using CSS rules. D3 has the <code>attr()</code> method to add any HTML attribute to an element, including a class name.</p>\n<p>The <code>attr()</code> method works the same way that <code>style()</code> does. It takes comma-separated values, and can use a callback function. Here's an example to add a class of <code>container</code> to a selection:</p>\n<pre><code class=\"language-js\">selection.attr(\"class\", \"container\");\n</code></pre>\n<p>Note that the <code>class</code> parameter will remain the same whenever you need to add a class and only the <code>container</code> parameter will change.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add the <code>attr()</code> method to the code in the editor and put a class of <code>bar</code> on the <code>div</code> elements.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-visualization-with-d3",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 6,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

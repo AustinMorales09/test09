@@ -1,0 +1,49 @@
+{
+  "id": "65687b182c2a8fb1470e0b97",
+  "title": "Step 20",
+  "challengeType": 20,
+  "dashedName": "step-20",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        9
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def verify_card_number(card_number):\n    sum_of_odd_digits = 0\n    card_number_reversed = card_number[::-1]\n    odd_digits = card_number_reversed[::2]\n\n    for digit in odd_digits:\n        print(digit)\n        \ndef main():\n    card_number = '4111-1111-4555-1142'\n    card_translation = str.maketrans({'-': '', ' ': ''})\n    translated_card_number = card_number.translate(card_translation)\n\n    verify_card_number(translated_card_number)\n\nmain()",
+      "error": null,
+      "seed": "def verify_card_number(card_number):\n    sum_of_odd_digits = 0\n    card_number_reversed = card_number[::-1]\n    odd_digits = card_number_reversed[::2]\n\n    for digit in odd_digits:\n        print(digit)\n        \ndef main():\n    card_number = '4111-1111-4555-1142'\n    card_translation = str.maketrans({'-': '', ' ': ''})\n    translated_card_number = card_number.translate(card_translation)\n\n    verify_card_number(translated_card_number)\n\nmain()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have <code>sum_of_odd_digits += digit</code> within the <code>for</code> loop.</p>",
+      "testString": "const transformedCode = code.replace(/\\r/g, \"\");\nconst verify_card_number = __helpers.python.getDef(\"\\n\" + transformedCode, \"verify_card_number\");\nconst { function_body } = verify_card_number;\n\nassert.match(function_body, /sum_of_odd_digits\\s*\\+=\\s*digit/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Within the <code>for</code> loop, use the <code>+=</code> operator to add the <code>digit</code> to the <code>sum_of_odd_digits</code> variable.</p>\n<p>Doing this your script throws a <code>TypeError</code> because you are trying to add a string to an integer, but don't worry, you will learn more about how to make it work in the next step.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-work-with-numbers-and-strings-by-implementing-the-luhn-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

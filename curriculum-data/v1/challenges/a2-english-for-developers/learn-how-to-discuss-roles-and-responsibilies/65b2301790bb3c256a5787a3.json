@@ -1,0 +1,88 @@
+{
+  "id": "65b2301790bb3c256a5787a3",
+  "title": "Task 4",
+  "challengeType": 19,
+  "dashedName": "task-4",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Bob's statement tell us about the woman?</p>",
+    "answers": [
+      {
+        "answer": "<p>She is looking for a job in the HR department.</p>",
+        "feedback": "<p>Bob's statement indicates she already has a significant role, not that she is seeking employment.</p>"
+      },
+      {
+        "answer": "<p>She works in the HR department.</p>",
+        "feedback": "<p>While she does work there, Bob's statement specifically tells us about her role as the leader, not just a member.</p>"
+      },
+      {
+        "answer": "<p>She is new to the HR department.</p>",
+        "feedback": "<p>Bob's statement focuses on her responsibility, not how long she's been part of the department.</p>"
+      },
+      {
+        "answer": "<p>She is responsible for the HR department.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 2,
+        "finishTimestamp": 3.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 2.9,
+        "dialogue": {
+          "text": "She's now in charge of the HR department.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 3.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

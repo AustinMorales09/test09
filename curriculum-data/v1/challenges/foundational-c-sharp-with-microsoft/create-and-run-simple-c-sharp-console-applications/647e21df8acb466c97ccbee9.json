@@ -1,0 +1,43 @@
+{
+  "id": "647e21df8acb466c97ccbee9",
+  "title": "Create Readable Code with Conventions, Whitespace, and Comments in C#",
+  "challengeType": 19,
+  "dashedName": "create-readable-code-with-conventions-whitespace-and-comments-in-c-sharp",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following is a bad reason to use a code comment?</p>",
+    "answers": [
+      {
+        "answer": "<p>To describe the high-level intent of the code.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To temporarily comment out a line of code while evaluating a feature in a different way.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To explain how a new C# keyword works.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [
+    "<p>Complete the <a href=\"https://learn.microsoft.com/training/modules/csharp-readable-code/\" target=\"_blank\" rel=\"noreferrer\">Create Readable Code with Conventions, Whitespace, and Comments in C#</a> module on Microsoft Learn. Then, answer the question below.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge will be partially completed on the Microsoft Learn platform. Follow these instructions to complete the challenge:</p>\n<ol>\n<li>Go to <a href=\"https://learn.microsoft.com/training/modules/csharp-readable-code/\" target=\"_blank\" rel=\"noreferrer\">https://learn.microsoft.com/training/modules/csharp-readable-code/</a> and complete all the tasks for the \"Create Readable Code with Conventions, Whitespace, and Comments in C#\" module. This is <strong>required</strong> to earn the \"Create and Run Simple C# Console Applications\" trophy on Microsoft Learn, and qualify for the certification exam.</li>\n<li>When you are finished, come back and correctly answer the question below.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "create-and-run-simple-c-sharp-console-applications",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 13,
+  "certification": "foundational-c-sharp-with-microsoft",
+  "superBlock": "foundational-c-sharp-with-microsoft",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "C-Sharp",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

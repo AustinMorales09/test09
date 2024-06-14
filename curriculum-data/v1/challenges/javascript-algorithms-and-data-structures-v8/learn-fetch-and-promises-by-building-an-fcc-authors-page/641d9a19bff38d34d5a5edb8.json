@@ -1,0 +1,93 @@
+{
+  "id": "641d9a19bff38d34d5a5edb8",
+  "title": "Step 1",
+  "challengeType": 0,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>freeCodeCamp News Author Page</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n  </head>\n  <body>\n    <h1 class=\"title\">freeCodeCamp News Author Page</h1>\n\n    <main>\n      <div id=\"author-container\"></div>\n      <button class=\"btn\" id=\"load-more-btn\">Load More Authors</button>\n    </main>\n\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>freeCodeCamp News Author Page</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n  </head>\n  <body>\n    <h1 class=\"title\">freeCodeCamp News Author Page</h1>\n\n    <main>\n      <div id=\"author-container\"></div>\n      <button class=\"btn\" id=\"load-more-btn\">Load More Authors</button>\n    </main>\n\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --main-bg-color: #1b1b32;\n  --light-grey: #f5f6f7;\n  --dark-purple: #5a01a7;\n  --golden-yellow: #feac32;\n}\n\nbody {\n  background-color: var(--main-bg-color);\n  text-align: center;\n}\n\n.title {\n  color: var(--light-grey);\n  margin: 20px 0;\n}\n\n#author-container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n\n.user-card {\n  border-radius: 15px;\n  width: 300px;\n  height: 350px;\n  background-color: var(--light-grey);\n  margin: 20px;\n}\n\n.user-img {\n  width: 150px;\n  height: 150px;\n  object-fit: cover;\n}\n\n.purple-divider {\n  background-color: var(--dark-purple);\n  width: 100%;\n  height: 15px;\n}\n\n.author-name {\n  margin: 10px;\n}\n\n.bio {\n  margin: 20px;\n}\n\n.error-msg {\n  color: var(--light-grey);\n}\n\n.btn {\n  cursor: pointer;\n  width: 200px;\n  margin: 10px;\n  color: var(--main-bg-color);\n  font-size: 14px;\n  background-color: var(--golden-yellow);\n  background-image: linear-gradient(#fecc4c, #ffac33);\n  border-color: var(--golden-yellow);\n  border-width: 3px;\n}",
+      "error": null,
+      "seed": "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --main-bg-color: #1b1b32;\n  --light-grey: #f5f6f7;\n  --dark-purple: #5a01a7;\n  --golden-yellow: #feac32;\n}\n\nbody {\n  background-color: var(--main-bg-color);\n  text-align: center;\n}\n\n.title {\n  color: var(--light-grey);\n  margin: 20px 0;\n}\n\n#author-container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n\n.user-card {\n  border-radius: 15px;\n  width: 300px;\n  height: 350px;\n  background-color: var(--light-grey);\n  margin: 20px;\n}\n\n.user-img {\n  width: 150px;\n  height: 150px;\n  object-fit: cover;\n}\n\n.purple-divider {\n  background-color: var(--dark-purple);\n  width: 100%;\n  height: 15px;\n}\n\n.author-name {\n  margin: 10px;\n}\n\n.bio {\n  margin: 20px;\n}\n\n.error-msg {\n  color: var(--light-grey);\n}\n\n.btn {\n  cursor: pointer;\n  width: 200px;\n  margin: 10px;\n  color: var(--main-bg-color);\n  font-size: 14px;\n  background-color: var(--golden-yellow);\n  background-image: linear-gradient(#fecc4c, #ffac33);\n  border-color: var(--golden-yellow);\n  border-width: 3px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>document.getElementById()</code> to get the <code>#author-container</code> element.</p>",
+      "testString": "assert.match(code, /document\\.getElementById\\(\\s*('|\"|`)author\\-container\\1\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should assign the <code>#author-container</code> element to the variable <code>authorContainer</code>. Don't forget to use <code>const</code> to declare the variable.</p>",
+      "testString": "assert.match(code, /const\\s+authorContainer\\s*\\=\\s*document\\.getElementById\\(\\s*('|\"|`)author\\-container\\1\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should use <code>document.getElementById()</code> to get the <code>#load-more-btn</code> element.</p>",
+      "testString": "assert.match(code, /document\\.getElementById\\(\\s*('|\"|`)load\\-more\\-btn\\1\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should assign the <code>#load-more-btn</code> element to the variable <code>loadMoreBtn</code>. Don't forget to use <code>const</code> to declare the variable.</p>",
+      "testString": "assert.match(code, /const\\s+loadMoreBtn\\s*\\=\\s*document\\.getElementById\\(\\s*('|\"|`)load\\-more\\-btn\\1\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>All the HTML and CSS for this project has been provided for you. You can take a look at the two files to familiarize yourself with them.</p>\n<p>Start by getting the <code>#author-container</code> and <code>#load-more-btn</code> elements with the <code>.getElementById()</code> method. Assign them to the variables <code>authorContainer</code> and <code>loadMoreBtn</code>, respectively.</p>\n<p>The variables will not change, so use <code>const</code> to declare them.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-fetch-and-promises-by-building-an-fcc-authors-page",
+  "hasEditableBoundaries": true,
+  "order": 22,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

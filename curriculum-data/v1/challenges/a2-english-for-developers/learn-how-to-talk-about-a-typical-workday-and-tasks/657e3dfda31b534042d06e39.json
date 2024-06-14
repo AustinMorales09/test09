@@ -1,0 +1,45 @@
+{
+  "id": "657e3dfda31b534042d06e39",
+  "title": "Task 54",
+  "challengeType": 19,
+  "dashedName": "task-54",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence correctly uses <code>must</code> or <code>have to</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I must monitor the entrances because it's a company rule.</code></p>",
+        "feedback": "<p>Company rules suggest an external obligation, more suited to <code>have to</code>.</p>"
+      },
+      {
+        "answer": "<p><code>I have to make sure the security cameras work because I believe it’s crucial.</code></p>",
+        "feedback": "<p>A personal belief about importance aligns more with <code>must</code>.</p>"
+      },
+      {
+        "answer": "<p><code>I must avoid sharing my password with other people as part of the company's security policy.</code></p>",
+        "feedback": "<p>This is a requirement from the company.</p>"
+      },
+      {
+        "answer": "<p><code>I have to check the security cameras as part of my job duties.</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Must</code> and <code>have to</code> express obligation. <code>Must</code> is often used for strong personal or internal obligations, <code>have to</code> is more for external requirements or rules.</p>\n<p>For example: <code>I must finish this report because it's important to me</code> vs. <code>I have to finish this report by 5 PM because my boss said so.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 56,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

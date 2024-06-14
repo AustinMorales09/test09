@@ -1,0 +1,45 @@
+{
+  "id": "657e53d4cbe247b9d039f2c2",
+  "title": "Task 82",
+  "challengeType": 19,
+  "dashedName": "task-82",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does it mean to <code>comply with</code> something in a project?</p>",
+    "answers": [
+      {
+        "answer": "<p>To ignore project guidelines.</p>",
+        "feedback": "<p><code>Comply with</code> means to follow, not ignore, guidelines.</p>"
+      },
+      {
+        "answer": "<p>To follow the rules and requests.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To create new rules for the project.</p>",
+        "feedback": "<p>Complying is about following existing rules, not creating new ones.</p>"
+      },
+      {
+        "answer": "<p>To discuss project plans with friends.</p>",
+        "feedback": "<p>It refers to adhering to project standards, not informal discussions.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Comply with</code> means to act according to a rule, order, or request.</p>\n<p>Usually <code>comply</code> is followed by <code>with</code>. For example, <code>to comply with</code> indicates what needs to be followed.</p>\n<p>For example, <code>Companies must comply with environmental regulations</code> means businesses must follow rules about protecting the environment.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 85,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

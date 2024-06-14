@@ -1,0 +1,87 @@
+{
+  "id": "6581aa0c6583c53b927defa4",
+  "title": "Task 62",
+  "challengeType": 22,
+  "dashedName": "task-62",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That does sound _, Alice. _ the same tasks _ and over can be _.</p>",
+    "blanks": [
+      {
+        "answer": "frustrating",
+        "feedback": "<p>This word describes feeling upset or annoyed, especially because of problems or obstacles.</p>"
+      },
+      {
+        "answer": "Repeating",
+        "feedback": "<p>This word means doing something again or multiple times. It is capitalized.</p>"
+      },
+      {
+        "answer": "over",
+        "feedback": "<p>This word, when used twice with <code>and</code> in between, emphasizes the repetition of an action.</p>"
+      },
+      {
+        "answer": "demotivating",
+        "feedback": "<p>This word describes something that reduces your desire or willingness to do something.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 55.86,
+        "finishTimestamp": 61.78
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 6.92,
+        "dialogue": {
+          "text": "That does sound frustrating, Alice. Repeating the same tasks over and over can be demotivating.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 7.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>over and over</code> means doing the same thing many times, which can make tasks feel boring or pointless. For example, if you have to check the same type of code <code>over and over</code> for errors, it might start to feel monotonous.</p>\n<p>Tom is expressing sympathy for Alice's situation by talking about how doing tasks repeatedly can affect motivation.</p>\n<p>Listen to Tom's statement and fill in the missing words, focusing on the feelings described and the repetition of tasks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 63,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

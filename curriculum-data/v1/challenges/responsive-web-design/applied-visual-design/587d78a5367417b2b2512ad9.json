@@ -1,0 +1,67 @@
+{
+  "id": "587d78a5367417b2b2512ad9",
+  "title": "Use the CSS Transform scale Property to Change the Size of an Element",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/c2MZVSg",
+  "forumTopicId": 301076,
+  "dashedName": "use-the-css-transform-scale-property-to-change-the-size-of-an-element",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .ball {\n    width: 40px;\n    height: 40px;\n    margin: 50 auto;\n    position: fixed;\n    background: linear-gradient(\n      35deg,\n      #ccffff,\n      #ffcccc\n    );\n    border-radius: 50%;\n  }\n  #ball1 {\n    left: 20%;\n  }\n  #ball2 {\n    left: 65%;\n\n  }\n\n\n</style>\n\n<div class=\"ball\" id= \"ball1\"></div>\n<div class=\"ball\" id= \"ball2\"></div>",
+      "error": null,
+      "seed": "<style>\n  .ball {\n    width: 40px;\n    height: 40px;\n    margin: 50 auto;\n    position: fixed;\n    background: linear-gradient(\n      35deg,\n      #ccffff,\n      #ffcccc\n    );\n    border-radius: 50%;\n  }\n  #ball1 {\n    left: 20%;\n  }\n  #ball2 {\n    left: 65%;\n\n  }\n\n\n</style>\n\n<div class=\"ball\" id= \"ball1\"></div>\n<div class=\"ball\" id= \"ball2\"></div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  .ball {\n    width: 40px;\n    height: 40px;\n    margin: 50 auto;\n    position: fixed;\n    background: linear-gradient(\n      35deg,\n      #ccffff,\n      #ffcccc\n    );\n    border-radius: 50%;\n  }\n  #ball1 {\n    left: 20%;\n  }\n  #ball2 {\n    left: 65%;\n    transform: scale(1.5);\n  }\n</style>\n<div class=\"ball\" id= \"ball1\"></div>\n<div class=\"ball\" id= \"ball2\"></div>",
+        "error": null,
+        "seed": "<style>\n  .ball {\n    width: 40px;\n    height: 40px;\n    margin: 50 auto;\n    position: fixed;\n    background: linear-gradient(\n      35deg,\n      #ccffff,\n      #ffcccc\n    );\n    border-radius: 50%;\n  }\n  #ball1 {\n    left: 20%;\n  }\n  #ball2 {\n    left: 65%;\n    transform: scale(1.5);\n  }\n</style>\n<div class=\"ball\" id= \"ball1\"></div>\n<div class=\"ball\" id= \"ball2\"></div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>transform</code> property for <code>#ball2</code> should be set to scale it to 1.5 times its size.</p>",
+      "testString": "assert(\n  code.match(\n    /#ball2\\s*?{\\s*?left:\\s*?65%;\\s*?transform:\\s*?scale\\(1\\.5\\);\\s*?}|#ball2\\s*?{\\s*?transform:\\s*?scale\\(1\\.5\\);\\s*?left:\\s*?65%;\\s*?}/gi\n  )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To change the scale of an element, CSS has the <code>transform</code> property, along with its <code>scale()</code> function. The following code example doubles the size of all the paragraph elements on the page:</p>\n<pre><code class=\"language-css\">p {\n  transform: scale(2);\n}\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Increase the size of the element with the id of <code>ball2</code> to 1.5 times its original size.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-visual-design",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 33,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

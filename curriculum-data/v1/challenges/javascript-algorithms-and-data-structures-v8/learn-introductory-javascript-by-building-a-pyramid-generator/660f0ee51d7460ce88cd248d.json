@@ -1,0 +1,65 @@
+{
+  "id": "660f0ee51d7460ce88cd248d",
+  "title": "Step 28",
+  "challengeType": 1,
+  "dashedName": "step-28",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        9
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];\nlet pushed = rows.push(\"freeCodeCamp\");\nconsole.log(pushed);\nlet popped = rows.pop();\nconsole.log(popped);\nconsole.log(rows);",
+      "error": null,
+      "seed": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];\nlet pushed = rows.push(\"freeCodeCamp\");\nconsole.log(pushed);\nlet popped = rows.pop();\nconsole.log(popped);\nconsole.log(rows);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have a <code>.push()</code> call.</p>",
+      "testString": "assert.notMatch(code, /\\.push\\(/);"
+    },
+    {
+      "text": "<p>You should not have a <code>.pop()</code> call.</p>",
+      "testString": "assert.notMatch(code, /.pull\\(/);"
+    },
+    {
+      "text": "<p>You should not have any log statements.</p>",
+      "testString": "assert.notMatch(code, /console\\.log/);"
+    },
+    {
+      "text": "<p>You should not have a <code>popped</code> variable.</p>",
+      "testString": "assert.notMatch(code, /popped/);"
+    },
+    {
+      "text": "<p>You should not have a <code>pushed</code> variable.</p>",
+      "testString": "assert.notMatch(code, /pushed/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Were you expecting to see <code>4</code> in the console? <code>.push()</code> returns the new length of the array, after adding the value you give it.</p>\n<p>It is important to be aware of what values a method returns. Take some time to experiment with <code>.push()</code> and <code>.pop()</code>. When you are ready, remove all of your <code>.push()</code> and <code>.pop()</code> calls, and your <code>console.log</code> statements.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

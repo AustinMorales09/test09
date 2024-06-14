@@ -1,0 +1,57 @@
+{
+  "id": "65c63da2ed6769a10e141341",
+  "title": "Step 20",
+  "challengeType": 20,
+  "dashedName": "step-20",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        28,
+        32
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        pass\n",
+      "error": null,
+      "seed": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        pass\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove the <code>pass</code> keyword from the <code>_search</code> method.</p>",
+      "testString": "({\n  test: () => {\n    assert.isFalse(\n      runPython(\n        `_Node(_code).find_class(\"BinarySearchTree\").find_function(\"_search\").has_pass()`\n      )\n    );\n  },\n});\n"
+    },
+    {
+      "text": "<p>You should write an <code>if</code> statement that checks if <code>node</code> is <code>None</code> or if <code>node.key</code> is equal to <code>key</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /^\\s{8}if\\s+node\\s+is\\s+None\\s+or\\s+node\\.key\\s*==\\s*key\\s*:/m) })"
+    },
+    {
+      "text": "<p>You should return <code>node</code> from the <code>if</code> block.</p>",
+      "testString": "({ test: () => assert.match(code, /^(\\s{8})if\\s+node\\s+is\\s+None\\s+or\\s+node\\.key\\s*==\\s*key\\s*:\\s*^\\1\\s{4}return\\s+node/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now you are going to define a base case for the recursive search. Remove the current <code>pass</code> and write an <code>if</code> statement that checks two conditions:</p>\n<ul>\n<li>If <code>node</code> is <code>None</code>: This indicates that the search has reached the end of a branch without finding the key.</li>\n<li>If <code>node.key == key</code>: This means that the key has been found in the current node.</li>\n</ul>\n<p>Combine the two conditions with the <code>or</code> operator and return the current node inside the <code>if</code> block.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

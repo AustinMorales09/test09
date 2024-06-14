@@ -1,0 +1,45 @@
+{
+  "id": "656bc3bd0a323317d4117a49",
+  "title": "Task 20",
+  "challengeType": 19,
+  "dashedName": "task-20",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following sentences correctly uses the past continuous tense?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>She was cook dinner when her friend called.</code></p>",
+        "feedback": "<p>Remember, the verb should be in its <code>-ing</code> form. The correct form should be <code>was cooking</code>.</p>"
+      },
+      {
+        "answer": "<p><code>They were watching a movie last night.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>He were studying for the exam when it started to rain.</code></p>",
+        "feedback": "<p>The correct form is <code>was studying</code> for the singular pronoun <code>he</code>.</p>"
+      },
+      {
+        "answer": "<p><code>I was play the piano when the lights went out.</code></p>",
+        "feedback": "<p>The verb should be in its <code>-ing</code> form. The correct sentence is <code>I was playing the piano when the lights went out.</code></p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The past continuous tense is used to talk about actions that were ongoing in the past.</p>\n<p>It is formed using <code>was</code>  for the pronouns <code>I</code>, <code>he</code>, <code>she</code>, <code>it</code>, or <code>were</code> for the pronouns <code>you</code>, <code>we</code>, <code>they</code> followed by a verb ending in <code>-ing</code>. For example:</p>\n<p><code>I was reading</code> means the work was happening over a period of time in the past.</p>\n<p>Past continuous is often used when an action is interrupted by another, as in <code>I was reading when the phone rang.</code> The reading was interrupted by the phone ringing.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-help-a-coworker-troubleshoot-on-github",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

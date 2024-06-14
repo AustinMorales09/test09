@@ -1,0 +1,109 @@
+{
+  "id": "af2170cad53daa0770fabdea",
+  "title": "Mutations",
+  "challengeType": 1,
+  "forumTopicId": 16025,
+  "dashedName": "mutations",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function mutation(arr) {\n  return arr;\n}\n\nmutation([\"hello\", \"hey\"]);",
+      "error": null,
+      "seed": "function mutation(arr) {\n  return arr;\n}\n\nmutation([\"hello\", \"hey\"]);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function mutation(arr) {\n  let hash = Object.create(null);\n\n  arr[0].toLowerCase().split('').forEach(c => hash[c] = true);\n\n  return !arr[1].toLowerCase().split('').filter(c => !hash[c]).length;\n}\n\nmutation([\"hello\", \"hey\"]);",
+        "error": null,
+        "seed": "function mutation(arr) {\n  let hash = Object.create(null);\n\n  arr[0].toLowerCase().split('').forEach(c => hash[c] = true);\n\n  return !arr[1].toLowerCase().split('').filter(c => !hash[c]).length;\n}\n\nmutation([\"hello\", \"hey\"]);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>mutation([\"hello\", \"hey\"])</code> should return <code>false</code>.</p>",
+      "testString": "assert(mutation(['hello', 'hey']) === false);"
+    },
+    {
+      "text": "<p><code>mutation([\"hello\", \"Hello\"])</code> should return <code>true</code>.</p>",
+      "testString": "assert(mutation(['hello', 'Hello']) === true);"
+    },
+    {
+      "text": "<p><code>mutation([\"zyxwvutsrqponmlkjihgfedcba\", \"qrstu\"])</code> should return <code>true</code>.</p>",
+      "testString": "assert(mutation(['zyxwvutsrqponmlkjihgfedcba', 'qrstu']) === true);"
+    },
+    {
+      "text": "<p><code>mutation([\"Mary\", \"Army\"])</code> should return <code>true</code>.</p>",
+      "testString": "assert(mutation(['Mary', 'Army']) === true);"
+    },
+    {
+      "text": "<p><code>mutation([\"Mary\", \"Aarmy\"])</code> should return <code>true</code>.</p>",
+      "testString": "assert(mutation(['Mary', 'Aarmy']) === true);"
+    },
+    {
+      "text": "<p><code>mutation([\"Alien\", \"line\"])</code> should return <code>true</code>.</p>",
+      "testString": "assert(mutation(['Alien', 'line']) === true);"
+    },
+    {
+      "text": "<p><code>mutation([\"floor\", \"for\"])</code> should return <code>true</code>.</p>",
+      "testString": "assert(mutation(['floor', 'for']) === true);"
+    },
+    {
+      "text": "<p><code>mutation([\"hello\", \"neo\"])</code> should return <code>false</code>.</p>",
+      "testString": "assert(mutation(['hello', 'neo']) === false);"
+    },
+    {
+      "text": "<p><code>mutation([\"voodoo\", \"no\"])</code> should return <code>false</code>.</p>",
+      "testString": "assert(mutation(['voodoo', 'no']) === false);"
+    },
+    {
+      "text": "<p><code>mutation([\"ate\", \"date\"])</code> should return <code>false</code>.</p>",
+      "testString": "assert(mutation(['ate', 'date']) === false);"
+    },
+    {
+      "text": "<p><code>mutation([\"Tiger\", \"Zebra\"])</code> should return <code>false</code>.</p>",
+      "testString": "assert(mutation(['Tiger', 'Zebra']) === false);"
+    },
+    {
+      "text": "<p><code>mutation([\"Noel\", \"Ole\"])</code> should return <code>true</code>.</p>",
+      "testString": "assert(mutation(['Noel', 'Ole']) === true);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Return <code>true</code> if the string in the first element of the array contains all of the letters of the string in the second element of the array.</p>\n<p>For example, <code>[\"hello\", \"Hello\"]</code>, should return <code>true</code> because all of the letters in the second string are present in the first, ignoring case.</p>\n<p>The arguments <code>[\"hello\", \"hey\"]</code> should return <code>false</code> because the string <code>hello</code> does not contain a <code>y</code>.</p>\n<p>Lastly, <code>[\"Alien\", \"line\"]</code>, should return <code>true</code> because all of the letters in <code>line</code> are present in <code>Alien</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

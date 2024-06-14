@@ -1,0 +1,135 @@
+{
+  "id": "657b92b25858f24caf6894aa",
+  "title": "Task 39",
+  "challengeType": 19,
+  "dashedName": "task-39",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Sophie’s condition?</p>",
+    "answers": [
+      {
+        "answer": "<p>She will play the guitar without any conditions.</p>",
+        "feedback": "<p>Sophie mentioned a specific condition, so it's not without any conditions.</p>"
+      },
+      {
+        "answer": "<p>She will play the guitar but Tom has to show her some pictures.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She wants to show her pictures to Tom.</p>",
+        "feedback": "<p>There is no mention of Sophie wanting to show pictures.</p>"
+      },
+      {
+        "answer": "<p>She doesn’t want to hear Tom play.</p>",
+        "feedback": "<p>The conversation is about Sophie playing the guitar, not Tom.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 33.58,
+        "finishTimestamp": 38.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.52,
+        "dialogue": {
+          "text": "Cool. I want to hear you play someday.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 3.52
+      },
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 3.52
+      },
+      {
+        "character": "Sophie",
+        "startTime": 3.52,
+        "finishTime": 5.42,
+        "dialogue": {
+          "text": "Only if you show me your favorite pics.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 5.42
+      },
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 5.42
+      },
+      {
+        "character": "Tom",
+        "startTime": 5.78,
+        "finishTime": 6.34,
+        "dialogue": {
+          "text": "It's a deal",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 6.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>only if</code> is used to set a condition for something to happen. It’s like saying <code>this will happen if that happens.</code> It's a way of making an agreement where one action depends on another.</p>\n<p>For example: if your friend says, <code>I'll go out only if it doesn't rain,</code> it means they will go out but the weather must be good - no rain.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

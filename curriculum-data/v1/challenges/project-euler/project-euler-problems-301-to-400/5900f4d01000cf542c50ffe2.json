@@ -1,0 +1,65 @@
+{
+  "id": "5900f4d01000cf542c50ffe2",
+  "title": "Problem 355: Maximal coprime subset",
+  "challengeType": 1,
+  "forumTopicId": 302015,
+  "dashedName": "problem-355-maximal-coprime-subset",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function maximalCoprimeSubset() {\n\n  return true;\n}\n\nmaximalCoprimeSubset();",
+      "error": null,
+      "seed": "function maximalCoprimeSubset() {\n\n  return true;\n}\n\nmaximalCoprimeSubset();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>maximalCoprimeSubset()</code> should return <code>1726545007</code>.</p>",
+      "testString": "assert.strictEqual(maximalCoprimeSubset(), 1726545007);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Define $Co(n)$ to be the maximal possible sum of a set of mutually co-prime elements from $\\{1, 2, \\ldots, n\\}$. For example $Co(10)$ is 30 and hits that maximum on the subset $\\{1, 5, 7, 8, 9\\}$.</p>\n<p>You are given that $Co(30) = 193$ and $Co(100) = 1356$.</p>\n<p>Find $Co(200\\,000)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 54,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,53 @@
+{
+  "id": "6610c1d97b1671140f95cfbb",
+  "title": "Step 49",
+  "challengeType": 1,
+  "dashedName": "step-49",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        10
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow() {\n\n}\nconst call = padRow();\n\n\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow() {\n\n}\nconst call = padRow();\n\n\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add a <code>console.log</code> call.</p>",
+      "testString": "assert.lengthOf(code.match(/console\\.log/g), 2)"
+    },
+    {
+      "text": "<p>You should log your <code>call</code> variable. Don't forget the semi-colon.</p>",
+      "testString": "assert.match(code, /console\\.log\\(\\s*call\\s*\\);/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now add a log statement to print the value of your <code>call</code> variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 48,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "66195f137aa45a02467f9da6",
+  "title": "Task 42",
+  "challengeType": 22,
+  "dashedName": "task-42",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Sarah, have you heard about _ _?</p>",
+    "blanks": [
+      {
+        "answer": "Quantum",
+        "feedback": "<p>A word from physics that describes things at a really tiny level, like atoms and particles. Use capitalization here.</p>"
+      },
+      {
+        "answer": "Computing",
+        "feedback": "<p>The process of using computers to do tasks, like solving problems, storing information, or sending messages. Use capitalization here.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 2.42
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 3.42,
+        "dialogue": {
+          "text": "Sarah, have you heard about Quantum Computing?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 3.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Quantum Computing</code> is the kind of computing performed by a type of super-fast computer that can solve problems much quicker than regular computers. It uses special techniques from quantum physics to do this.</p>\n<p>Listen to the sentence and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 44,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,74 @@
+{
+  "id": "587d7b83367417b2b2512b37",
+  "title": "Understanding the Differences between the freeCodeCamp and Browser Console",
+  "challengeType": 1,
+  "forumTopicId": 301193,
+  "dashedName": "understanding-the-differences-between-the-freecodecamp-and-browser-console",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let output = \"Get this to show once in the freeCodeCamp console and not at all in the browser console\";\n",
+      "error": null,
+      "seed": "let output = \"Get this to show once in the freeCodeCamp console and not at all in the browser console\";\n"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let output = \"Get this to show once in the freeCodeCamp console and not at all in the browser console\";\n\nconsole.log(output);\nconsole.clear();",
+        "error": null,
+        "seed": "let output = \"Get this to show once in the freeCodeCamp console and not at all in the browser console\";\n\nconsole.log(output);\nconsole.clear();"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>console.log()</code> to print the <code>output</code> variable.</p>",
+      "testString": "assert(__helpers.removeWhiteSpace(__helpers.removeJSComments(code)).match(/console\\.log\\(output\\)/));"
+    },
+    {
+      "text": "<p>You should use <code>console.clear()</code> to clear the browser console.</p>",
+      "testString": "assert(\n  __helpers\n    .removeWhiteSpace(__helpers.removeJSComments(code))\n    .match(/console.clear\\(\\)/)\n);"
+    },
+    {
+      "text": "<p>You should clear the console after your log.</p>",
+      "testString": "assert(\n  __helpers\n    .removeWhiteSpace(__helpers.removeJSComments(code))\n    .match(/console\\.log\\(output\\)[\\s\\S]*console.clear\\(\\)/)\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You may have noticed that some freeCodeCamp challenges include their own console. This console behaves a little differently than the browser console.</p>\n<p>There are many methods to use with <code>console</code> to output messages. <code>log</code>, <code>warn</code>, and <code>clear</code> to name a few. The freeCodeCamp console will only output <code>log</code> messages, while the browser console will output all messages. When you make changes to your code, it will automatically run and show the logs. The freeCodeCamp console is then cleared each time your code runs.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>First, open your browser console so you can see the logs. To do that, you can right-click the freeCodeCamp navigation bar at the top and click <code>inspect</code> on most browsers. Then find the <code>console</code> tab in the window that opens.</p>\n<p>After that, use <code>console.log</code> to log the <code>output</code> variable. View the two consoles to see the log. Finally, use <code>console.clear</code> after your log to clear the browser console. View the difference in the two consoles.</p>\n</section>",
+  "translationPending": false,
+  "block": "debugging",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

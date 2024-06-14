@@ -1,0 +1,88 @@
+{
+  "id": "65f530793181a05f4e44a36a",
+  "title": "Task 23",
+  "challengeType": 19,
+  "dashedName": "task-23",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the cause of the issue Tom is talking about?</p>",
+    "answers": [
+      {
+        "answer": "<p>It's related to data processing.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He thinks it's a network connectivity issue.</p>",
+        "feedback": "<p>Network connectivity issues are about connections between computers or systems. Tom is talking about data processing, not connectivity.</p>"
+      },
+      {
+        "answer": "<p>The problem is with the user interface.</p>",
+        "feedback": "<p>User interface (UI) is how people interact with software. Tom's issue is about data processing, not UI.</p>"
+      },
+      {
+        "answer": "<p>It's an issue with the code's security features.</p>",
+        "feedback": "<p>Security features protect software from attacks. Tom suggests the problem is with data processing, not security.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 12.64,
+        "finishTimestamp": 15.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.26,
+        "dialogue": {
+          "text": "Well, I believe it may be related to data processing.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.76
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

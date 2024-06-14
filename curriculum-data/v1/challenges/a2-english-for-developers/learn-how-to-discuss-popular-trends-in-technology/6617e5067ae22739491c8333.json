@@ -1,0 +1,45 @@
+{
+  "id": "6617e5067ae22739491c8333",
+  "title": "Task 7",
+  "challengeType": 19,
+  "dashedName": "task-7",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the correct definition of <code>chatbots</code>.</p>",
+    "answers": [
+      {
+        "answer": "<p>Robots used in manufacturing</p>",
+        "feedback": "<p>This option refers to robots in manufacturing, not chatbots.</p>"
+      },
+      {
+        "answer": "<p>Programs designed to simulate conversation with human users</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Machines used in agriculture</p>",
+        "feedback": "<p>Chatbots are not related to agriculture or farming activities.</p>"
+      },
+      {
+        "answer": "<p>Software used for video editing</p>",
+        "feedback": "<p>Chatbots are focused on interactive communication, not video editing software.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>chatbot</code> is a computer program designed to simulate conversation with human users. Instead of a person, it's a computer that replies to your messages. Companies use chatbots on their websites to help answer questions or provide information. So, when you see a little chat window pop up when you're shopping online, that's a chatbot ready to assist you!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

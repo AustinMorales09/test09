@@ -1,0 +1,88 @@
+{
+  "id": "657b13088693ef4ce21ce0e4",
+  "title": "Task 12",
+  "challengeType": 19,
+  "dashedName": "task-12",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the <code>checkout process</code> typically involve?</p>",
+    "answers": [
+      {
+        "answer": "<p>Signing up for a store's loyalty program</p>",
+        "feedback": "<p>While loyalty programs are part of customer engagement, the checkout process is specifically about completing a transaction.</p>"
+      },
+      {
+        "answer": "<p>Arranging items on shelves in a store</p>",
+        "feedback": "<p>Arranging items is a part of store management, not related to the checkout process of completing a purchase.</p>"
+      },
+      {
+        "answer": "<p>Conducting market research</p>",
+        "feedback": "<p>Market research is important for business strategy, but it's separate from the checkout process, which is directly involved in sales transactions.</p>"
+      },
+      {
+        "answer": "<p>Completing a purchase through payment and receipt of goods</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Candidate",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 28.88,
+        "finishTimestamp": 33.4
+      }
+    },
+    "commands": [
+      {
+        "character": "Candidate",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Candidate",
+        "startTime": 1,
+        "finishTime": 5.52,
+        "dialogue": {
+          "text": "We were responsible for the checkout process and it was a successful implementation.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Candidate",
+        "opacity": 0,
+        "startTime": 6.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The term <code>checkout process</code> refers to the steps involved in completing a purchase, whether in a physical store or online. In a physical store, this usually involves taking items to a cashier, paying, and receiving a receipt. In online shopping, it includes adding items to a cart, entering shipping and payment details, and finalizing the order.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

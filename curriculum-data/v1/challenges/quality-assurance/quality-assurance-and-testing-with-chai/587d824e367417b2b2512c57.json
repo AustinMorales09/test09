@@ -1,0 +1,46 @@
+{
+  "id": "587d824e367417b2b2512c57",
+  "title": "Test if an Object is an Instance of a Constructor",
+  "challengeType": 2,
+  "forumTopicId": 301605,
+  "dashedName": "test-if-an-object-is-an-instance-of-a-constructor",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>All tests should pass.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=17').then(\n    (data) => {\n      assert.equal(data.state, 'passed');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the first assertion - <code>instanceOf</code> vs. <code>notInstanceOf</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=17').then(\n    (data) => {\n      assert.equal(\n        data.assertions[0].method,\n        'notInstanceOf',\n        'myCar is not an instance of Plane'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the second assertion - <code>instanceOf</code> vs. <code>notInstanceOf</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=17').then(\n    (data) => {\n      assert.equal(\n        data.assertions[1].method,\n        'instanceOf',\n        'airlinePlane is an instance of Plane'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the third assertion - <code>instanceOf</code> vs. <code>notInstanceOf</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=17').then(\n    (data) => {\n      assert.equal(\n        data.assertions[2].method,\n        'instanceOf',\n        'everything is an Object in JavaScript...'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the fourth assertion - <code>instanceOf</code> vs. <code>notInstanceOf</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=17').then(\n    (data) => {\n      assert.equal(\n        data.assertions[3].method,\n        'notInstanceOf',\n        'myCar.wheels is not an instance of String'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As a reminder, this project is being built upon the following starter project on <a href=\"https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Gitpod</a>, or cloned from <a href=\"https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">GitHub</a>.</p>\n<p><code>#instanceOf</code> asserts that an object is an instance of a constructor.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Within <code>tests/1_unit-tests.js</code> under the test labeled <code>#18</code> in the <code>Objects</code> suite, change each <code>assert</code> to either <code>assert.instanceOf</code> or <code>assert.notInstanceOf</code> to make the test pass (should evaluate to <code>true</code>). Do not alter the arguments passed to the asserts.</p>\n</section>",
+  "translationPending": false,
+  "block": "quality-assurance-and-testing-with-chai",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "662efb9464339d2518178b6e",
+  "title": "Task 41",
+  "challengeType": 19,
+  "dashedName": "task-41",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>issue</code> mean in a programming context?</p>",
+    "answers": [
+      {
+        "answer": "<p>It means the documentation is incomplete.</p>",
+        "feedback": "<p>While documentation problems can be considered <code>issues</code>, in programming, <code>issue</code> more directly refers to problems within the code itself.</p>"
+      },
+      {
+        "answer": "<p>It refers to the user manual of a software application.</p>",
+        "feedback": "<p>An <code>issue</code> does not relate to user manuals but to problems in the code that need to be fixed.</p>"
+      },
+      {
+        "answer": "<p>It indicates a new feature request.</p>",
+        "feedback": "<p>Feature requests are different from <code>issues</code>; <code>issues</code> denote problems, whereas feature requests are suggestions for new functionality.</p>"
+      },
+      {
+        "answer": "<p>It refers to a problem or bug in the code that needs to be fixed.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>issue</code> can refer to a problem or matter that needs to be dealt with.</p>\n<p>In programming, an <code>issue</code> often refers to a bug or error in the code that needs to be fixed. For example, <code>We found an issue in the latest software update.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

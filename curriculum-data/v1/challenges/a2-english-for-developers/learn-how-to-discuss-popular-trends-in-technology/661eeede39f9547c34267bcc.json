@@ -1,0 +1,45 @@
+{
+  "id": "661eeede39f9547c34267bcc",
+  "title": "Task 101",
+  "challengeType": 19,
+  "dashedName": "task-101",
+  "solutions": [],
+  "question": {
+    "text": "<p>What do architects do?</p>",
+    "answers": [
+      {
+        "answer": "<p>They design buildings and structures.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>They perform medical surgeries.</p>",
+        "feedback": "<p>This is not what <code>architects</code> do.</p>"
+      },
+      {
+        "answer": "<p>They teach in schools.</p>",
+        "feedback": "<p>This option describes professions unrelated to <code>architects</code>.</p>"
+      },
+      {
+        "answer": "<p>They work in IT and software development.</p>",
+        "feedback": "<p>This option is about a different field, not architecture.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Architects</code> are professionals who design buildings and other structures. An <code>architect</code> plans how a building will look, what materials will be used, and how it will be constructed. They create detailed drawings and plans to guide the construction process.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 105,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

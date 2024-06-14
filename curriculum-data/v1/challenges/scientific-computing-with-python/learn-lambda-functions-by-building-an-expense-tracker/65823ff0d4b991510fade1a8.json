@@ -1,0 +1,53 @@
+{
+  "id": "65823ff0d4b991510fade1a8",
+  "title": "Step 21",
+  "challengeType": 20,
+  "dashedName": "step-21",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        13
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n    \ndef total_expenses(expenses):\n    return sum(map(lambda expense: expense['amount'], expenses))\n    \ndef filter_expenses_by_category(expenses, category):\n    pass\n\nexpenses = []",
+      "error": null,
+      "seed": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n    \ndef total_expenses(expenses):\n    return sum(map(lambda expense: expense['amount'], expenses))\n    \ndef filter_expenses_by_category(expenses, category):\n    pass\n\nexpenses = []"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a <code>lambda</code> function that uses a parameter named <code>expense</code> and returns the expression <code>expense['category'] == category</code> inside the <code>filter_expenses_by_category</code> function.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_function(\"filter_expenses_by_category\").has_stmt(\"lambda expense: expense['category'] == category\")`)) })"
+    },
+    {
+      "text": "<p>You should not have <code>pass</code> inside the <code>filter_expenses_by_category</code> function.</p>",
+      "testString": "({ test: () => assert.isFalse(runPython(`_Node(_code).find_function(\"filter_expenses_by_category\").has_pass()`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Within the <code>filter_expenses_by_category</code> function, replace <code>pass</code> with a <code>lambda</code> function. Use <code>expense</code> as the parameter and return the comparison between the value of the <code>'category'</code> key of the <code>expense</code> dictionary and <code>category</code> using the equality operator.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

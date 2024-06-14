@@ -1,0 +1,46 @@
+{
+  "id": "5f8884f4c46685731aabfc41",
+  "title": "Run Functional Tests Using a Headless Browser II",
+  "challengeType": 2,
+  "forumTopicId": 301594,
+  "dashedName": "run-functional-tests-using-a-headless-browser-ii",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>All tests should pass.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=functional&n=6').then(\n    (data) => {\n      assert.equal(data.state, 'passed');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should assert that the headless browser request succeeded.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=functional&n=6').then(\n    (data) => {\n      assert.equal(data.assertions[0].method, 'browser.success');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should assert that the text inside the element <code>span#name</code> is <code>'Amerigo'</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=functional&n=6').then(\n    (data) => {\n      assert.equal(data.assertions[1].method, 'browser.text');\n      assert.match(data.assertions[1].args[0], /('|\")span#name\\1/);\n      assert.match(data.assertions[1].args[1], /('|\")Amerigo\\1/);\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should assert that the text inside the element <code>span#surname</code> is <code>'Vespucci'</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=functional&n=6').then(\n    (data) => {\n      assert.equal(data.assertions[2].method, 'browser.text');\n      assert.match(data.assertions[2].args[0], /('|\")span#surname\\1/);\n      assert.match(data.assertions[2].args[1], /('|\")Vespucci\\1/);\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should assert that the element <code>span#dates</code> exist and its count is 1.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=functional&n=6').then(\n    (data) => {\n      assert.equal(data.assertions[3].method, 'browser.elements');\n      assert.match(data.assertions[3].args[0], /('|\")span#dates\\1/);\n      assert.equal(data.assertions[3].args[1], 1);\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As a reminder, this project is being built upon the following starter project on <a href=\"https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Gitpod</a>, or cloned from <a href=\"https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">GitHub</a>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Within <code>tests/2_functional-tests.js</code>, in the <code>'Submit the surname \"Vespucci\" in the HTML form'</code> test (<code>// #6</code>), automate the following:</p>\n<ol>\n<li>Fill in the form with the surname <code>Vespucci</code></li>\n<li>Press the submit button</li>\n</ol>\n<p>And within the <code>pressButton</code> callback:</p>\n<ol>\n<li>Assert that status is OK <code>200</code></li>\n<li>Assert that the text inside the element <code>span#name</code> is <code>'Amerigo'</code></li>\n<li>Assert that the text inside the element <code>span#surname</code> is <code>'Vespucci'</code></li>\n<li>Assert that the element(s) <code>span#dates</code> exist and their count is <code>1</code></li>\n</ol>\n<p>Do not forget to remove the <code>assert.fail()</code> call.</p>\n</section>",
+  "translationPending": false,
+  "block": "quality-assurance-and-testing-with-chai",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

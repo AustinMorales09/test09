@@ -1,0 +1,49 @@
+{
+  "id": "65646ffeaed2d238c562a014",
+  "title": "Step 8",
+  "challengeType": 20,
+  "dashedName": "step-8",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import string\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n\n# Combine all characters\nall_characters = letters + digits + symbols\n\nprint(all_characters)\n",
+      "error": null,
+      "seed": "import string\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n\n# Combine all characters\nall_characters = letters + digits + symbols\n\nprint(all_characters)\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should import the <code>random</code> module.</p>",
+      "testString": "({ test: () => assert.match(code, /^import\\s+random/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>It is a common convention to place <code>import</code> statements at the top of your code. And additionally, in case of multiple <code>import</code> statements, sort them in alphabetical order to improve readability.</p>\n<p>At the top of your code, import the <code>random</code> module.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

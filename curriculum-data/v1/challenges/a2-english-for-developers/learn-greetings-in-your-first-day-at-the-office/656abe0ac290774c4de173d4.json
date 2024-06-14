@@ -1,0 +1,45 @@
+{
+  "id": "656abe0ac290774c4de173d4",
+  "title": "Task 81",
+  "challengeType": 22,
+  "dashedName": "task-81",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ is the computer right next to me. _ printer across the room is broken. _ are the chairs around the nearby table. _ files in the distant cabinet are archived.</p>",
+    "blanks": [
+      {
+        "answer": "This",
+        "feedback": "<p>The computer is singular and right next to the speaker, indicating immediacy.</p>"
+      },
+      {
+        "answer": "That",
+        "feedback": "<p>Printer is singular, but it's across the room, indicating it's farther away.</p>"
+      },
+      {
+        "answer": "These",
+        "feedback": "<p>Chairs are plural and located around a nearby table, indicating closeness.</p>"
+      },
+      {
+        "answer": "Those",
+        "feedback": "<p>Files are plural, and they're in a distant cabinet, showing they're not close.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>People often refer to items around them using <code>this</code>, <code>that</code>, <code>these</code>, and <code>those</code>. Your task is to identify the correct demonstrative pronouns to complete the sentences. Pay attention to the context, which will give you clues about proximity and number.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Fill in the blanks with <code>This</code>, <code>That</code>, <code>These</code>, and <code>Those</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 82,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

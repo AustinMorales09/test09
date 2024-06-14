@@ -1,0 +1,83 @@
+{
+  "id": "6579d4f3afd265eb0db874f7",
+  "title": "Task 15",
+  "challengeType": 22,
+  "dashedName": "task-15",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I _ have a few ideas on how to _ this issue. _ if I call you later?</p>",
+    "blanks": [
+      {
+        "answer": "might",
+        "feedback": "<p>It indicates that Bob is considering or thinking about different ideas but is not certain.</p>"
+      },
+      {
+        "answer": "approach",
+        "feedback": "<p>This word refers to the methods or ways Bob is thinking of to solve the coding issue.</p>"
+      },
+      {
+        "answer": "Mind",
+        "feedback": "<p>Bob is politely asking Sophie if she would be okay with him calling her later about the issue. This word is capitalized.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.66,
+        "finishTimestamp": 23.74
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 5.08,
+        "dialogue": {
+          "text": "I might have a few ideas on how to approach this issue. Mind if I call you later?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 5.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this sentence, Bob uses <code>might</code> to express possibility. The word <code>approach</code> means a method or way of doing something, particularly in solving problems. <code>Mind if I</code> is a polite way of asking for permission. For example, asking, <code>Mind if I open the window?</code> is a courteous way to ask if it's okay to do something.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

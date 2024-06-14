@@ -1,0 +1,67 @@
+{
+  "id": "657f4add33ea4b1f61ba3dc8",
+  "title": "Step 22",
+  "challengeType": 20,
+  "dashedName": "step-22",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        15
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def convert_to_snake_case(pascal_or_camel_cased_string):\n\n    snake_cased_char_list = [\n        '_' + char.lower() if char.isupper()\n        else char\n        for char in pascal_or_camel_cased_string\n    ]\n\n    return ''.join(snake_cased_char_list).strip('_')\n\ndef main():\n    print(convert_to_snake_case('aLongAndComplexString'))\n\n    \n\nif __name__ == '__main__':\n    main()",
+      "error": null,
+      "seed": "def convert_to_snake_case(pascal_or_camel_cased_string):\n\n    snake_cased_char_list = [\n        '_' + char.lower() if char.isupper()\n        else char\n        for char in pascal_or_camel_cased_string\n    ]\n\n    return ''.join(snake_cased_char_list).strip('_')\n\ndef main():\n    print(convert_to_snake_case('aLongAndComplexString'))\n\n    \n\nif __name__ == '__main__':\n    main()"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "main.py"
+        ],
+        "name": "main",
+        "ext": "py",
+        "path": "main.py",
+        "fileKey": "mainpy",
+        "contents": "def convert_to_snake_case(pascal_or_camel_cased_string):\n\n    snake_cased_char_list = [\n        '_' + char.lower() if char.isupper()\n        else char\n        for char in pascal_or_camel_cased_string\n    ]\n\n    return ''.join(snake_cased_char_list).strip('_')\n\ndef main():\n    print(convert_to_snake_case('IAmAPascalCasedString'))\n\n    \n\nif __name__ == '__main__':\n    main()",
+        "error": null,
+        "seed": "def convert_to_snake_case(pascal_or_camel_cased_string):\n\n    snake_cased_char_list = [\n        '_' + char.lower() if char.isupper()\n        else char\n        for char in pascal_or_camel_cased_string\n    ]\n\n    return ''.join(snake_cased_char_list).strip('_')\n\ndef main():\n    print(convert_to_snake_case('IAmAPascalCasedString'))\n\n    \n\nif __name__ == '__main__':\n    main()"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should change the input string from <code>'aLongAndComplexString'</code> to <code>'IAmAPascalCasedString'</code> inside the <code>main()</code> function.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const main = __helpers.python.getDef(\"\\n\" + transformedCode, \"main\");\n        const { function_body } = main;\n\n        assert.match(function_body, / +print\\(\\s*convert_to_snake_case\\(\\s*'IAmAPascalCasedString'\\s*\\)\\s*\\)/);\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Finally try out this new implementation by executing the program. Change the input string to <code>'IAmAPascalCasedString'</code> and see if it comes out as <code>'i_am_a_pascal_cased_string'</code>, even though that's a lie.</p>\n<p>If you've done everything correctly, you should see the input string converted into snake case, like before.</p>\n<p>Congratulations! Now your <code>convert_to_snake_case()</code> function is ready.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-list-comprehension-by-building-a-case-converter-program",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

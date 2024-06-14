@@ -1,0 +1,53 @@
+{
+  "id": "62a255dae245b52317da824a",
+  "title": "Step 3",
+  "challengeType": 0,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        6,
+        10
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script>\n\n    </script>\n  </head>\n  <body>\n    <div id=\"game\">\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script>\n\n    </script>\n  </head>\n  <body>\n    <div id=\"game\">\n    </div>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add a <code>console.log(\"Hello World\");</code> line to your code.</p>",
+      "testString": "assert.match(code, /console\\.log\\(\\s*('|\")Hello World\\1\\s*\\)\\s*;?/);"
+    },
+    {
+      "text": "<p>Your <code>console.log(\"Hello World\");</code> line should be between your <code>script</code> tags.</p>",
+      "testString": "assert.match(code, /<script\\s*>\\s*console\\.log\\(\\s*('|\")Hello World\\1\\s*\\)\\s*;?\\s*<\\/script>/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>One of the most powerful tools is your developer console. Depending on your browser, this might be opened by pressing <code>F12</code> or <code>Ctrl+Shift+I</code>. On Mac, you can press <code>Option + ⌘ + C</code> and select \"Console\". You can also click the \"Console\" button above the preview window to see our built-in console.</p>\n<p>The developer console will include errors that are produced by your code, but you can also use it to see values of variables in your code, which is helpful for debugging.</p>\n<p>Add a <code>console.log(\"Hello World\");</code> line between your <code>script</code> tags. Then click the \"Console\" button to open the console. You should see the text <code>\"Hello World\"</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-javascript-by-building-a-role-playing-game",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "657b2f0b3bcfe7d9f4151854",
+  "title": "Task 82",
+  "challengeType": 19,
+  "dashedName": "task-82",
+  "solutions": [],
+  "question": {
+    "text": "<p>In Anna's statement, what does <code>therapist or counselor</code> refer to?</p>",
+    "answers": [
+      {
+        "answer": "<p>Jobs in the technology industry</p>",
+        "feedback": "<p><code>Therapist or counselor</code> refers to mental health and emotional support roles, not technology-related jobs.</p>"
+      },
+      {
+        "answer": "<p>Jobs in mental health and emotional support</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Educational courses she wanted to take</p>",
+        "feedback": "<p>While these roles require education, the terms directly refer to the job roles, not the courses.</p>"
+      },
+      {
+        "answer": "<p>Hobbies that she was interested in</p>",
+        "feedback": "<p><code>Therapist or counselor</code> are professional career paths, not hobbies.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.96,
+        "finishTimestamp": 11.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Anna",
+        "startTime": 1,
+        "finishTime": 5.4,
+        "dialogue": {
+          "text": "I actually studied psychology in college. My plan was to become a therapist or counselor",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 5.9
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Therapist</code> and <code>counselor</code> are words for people who help others with their feelings and thoughts. They give advice and support to those who are having a tough time with their emotions or mind.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 86,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

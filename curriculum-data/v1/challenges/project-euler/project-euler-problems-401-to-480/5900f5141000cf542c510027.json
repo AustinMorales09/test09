@@ -1,0 +1,65 @@
+{
+  "id": "5900f5141000cf542c510027",
+  "title": "Problem 423: Consecutive die throws",
+  "challengeType": 1,
+  "forumTopicId": 302093,
+  "dashedName": "problem-423-consecutive-die-throws",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function consecutiveDieThrows() {\n\n  return true;\n}\n\nconsecutiveDieThrows();",
+      "error": null,
+      "seed": "function consecutiveDieThrows() {\n\n  return true;\n}\n\nconsecutiveDieThrows();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>consecutiveDieThrows()</code> should return <code>653972374</code>.</p>",
+      "testString": "assert.strictEqual(consecutiveDieThrows(), 653972374);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $n$ be a positive integer.</p>\n<p>A 6-sided die is thrown $n$ times. Let $c$ be the number of pairs of consecutive throws that give the same value.</p>\n<p>For example, if $n = 7$ and the values of the die throws are (1, 1, 5, 6, 6, 6, 3), then the following pairs of consecutive throws give the same value:</p>\n<p>$$\\begin{align}\n&#x26; (\\underline{1}, \\underline{1}, 5, 6, 6, 6, 3) \\\\\n&#x26; (1, 1, 5, \\underline{6}, \\underline{6}, 6, 3) \\\\\n&#x26; (1, 1, 5, 6, \\underline{6}, \\underline{6}, 3)\n\\end{align}$$</p>\n<p>Therefore, $c = 3$ for (1, 1, 5, 6, 6, 6, 3).</p>\n<p>Define $C(n)$ as the number of outcomes of throwing a 6-sided die $n$ times such that $c$ does not exceed $π(n)$.<sup>1</sup></p>\n<p>For example, $C(3) = 216$, $C(4) = 1290$, $C(11) = 361\\,912\\,500$ and $C(24) = 4\\,727\\,547\\,363\\,281\\,250\\,000$.</p>\n<p>Define $S(L)$ as $\\sum C(n)$ for $1 ≤ n ≤ L$.</p>\n<p>For example, $S(50)\\bmod 1\\,000\\,000\\,007 = 832\\,833\\,871$.</p>\n<p>Find $S(50\\,000\\,000)\\bmod 1\\,000\\,000\\,007$.</p>\n<p><sup>1</sup> $π$ denotes the prime-counting function, i.e. $π(n)$ is the number of primes $≤ n$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

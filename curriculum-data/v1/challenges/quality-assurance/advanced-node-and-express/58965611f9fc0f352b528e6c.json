@@ -1,0 +1,33 @@
+{
+  "id": "58965611f9fc0f352b528e6c",
+  "title": "Logging a User Out",
+  "challengeType": 2,
+  "forumTopicId": 301560,
+  "dashedName": "logging-a-user-out",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>req.logout()</code> should be called in your <code>/logout</code> route.</p>",
+      "testString": "async (getUserInput) => {\n  const url = new URL(\"/_api/server.js\", getUserInput(\"url\"));\n  const res = await fetch(url);\n  const data = await res.text();\n  assert.match(\n    data,\n    /req.logout/gi,\n    'You should be calling req.logout() in your /logout route'\n  );\n}"
+    },
+    {
+      "text": "<p><code>/logout</code> should redirect to the home page.</p>",
+      "testString": "async (getUserInput) => {\n  const url = new URL(\"/logout\", getUserInput(\"url\"));\n  const res = await fetch(url);\n  const data = await res.text();\n  assert.match(\n    data,\n    /Home page/gi,\n    'When a user logs out they should be redirected to the homepage'\n  );\n}"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Creating the logout logic is easy. The route should just unauthenticate the user, and redirect to the home page instead of rendering any view.</p>\n<p>In passport, unauthenticating a user is as easy as just calling <code>req.logout()</code> before redirecting. Add this <code>/logout</code> route to do that:</p>\n<pre><code class=\"language-js\">app.route('/logout')\n  .get((req, res) => {\n    req.logout();\n    res.redirect('/');\n});\n</code></pre>\n<p>You may have noticed that you are not handling missing pages (404). The common way to handle this in Node is with the following middleware. Go ahead and add this in after all your other routes:</p>\n<pre><code class=\"language-js\">app.use((req, res, next) => {\n  res.status(404)\n    .type('text')\n    .send('Not Found');\n});\n</code></pre>\n<p>Submit your page when you think you've got it right. If you're running into errors, you can <a href=\"https://forum.freecodecamp.org/t/advanced-node-and-express/567135#logging-a-user-out-10\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">check out the project completed up to this point</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "advanced-node-and-express",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

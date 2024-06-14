@@ -1,0 +1,79 @@
+{
+  "id": "cf1111c1c12feddfaeb1bdef",
+  "title": "Generate Random Whole Numbers with JavaScript",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cRn6bfr",
+  "forumTopicId": 18186,
+  "dashedName": "generate-random-whole-numbers-with-javascript",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(){return randomWholeNum();})();",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function randomWholeNum() {\n  return Math.random();\n}",
+      "error": null,
+      "seed": "function randomWholeNum() {\n  return Math.random();\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function randomWholeNum() {\n  return Math.floor(Math.random() * 10);\n}",
+        "error": null,
+        "seed": "function randomWholeNum() {\n  return Math.floor(Math.random() * 10);\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The result of <code>randomWholeNum</code> should be a whole number.</p>",
+      "testString": "assert(\n  typeof randomWholeNum() === 'number' &&\n    (function () {\n      var r = randomWholeNum();\n      return Math.floor(r) === r;\n    })()\n);"
+    },
+    {
+      "text": "<p>You should use <code>Math.random</code> to generate a random number.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/Math.random/g).length >= 1);"
+    },
+    {
+      "text": "<p>You should have multiplied the result of <code>Math.random</code> by 10 to make it a number in the range from zero to nine.</p>",
+      "testString": "assert(\n  __helpers.removeJSComments(code).match(/\\s*?Math.random\\s*?\\(\\s*?\\)\\s*?\\*\\s*?10[\\D]\\s*?/g) ||\n    __helpers.removeJSComments(code).match(/\\s*?10\\s*?\\*\\s*?Math.random\\s*?\\(\\s*?\\)\\s*?/g)\n);"
+    },
+    {
+      "text": "<p>You should use <code>Math.floor</code> to remove the decimal part of the number.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/Math.floor/g).length >= 1);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can generate random decimal numbers with <code>Math.random()</code>, but sometimes you need to generate random whole numbers. The following process will give you a random whole number less than <code>20</code>:</p>\n<ol>\n<li>Use <code>Math.random()</code> to generate a random decimal number.</li>\n<li>Multiply that random decimal number by <code>20</code>.</li>\n<li>Use <code>Math.floor()</code> to round this number down to its nearest whole number.</li>\n</ol>\n<p>Remember that <code>Math.random()</code> can never quite return a <code>1</code>, so it's impossible to actually get <code>20</code> since you are rounding down with <code>Math.floor()</code>. This process will give you a random whole number in the range from <code>0</code> to <code>19</code>.</p>\n<p>Putting everything together, this is what your code looks like:</p>\n<pre><code class=\"language-js\">Math.floor(Math.random() * 20);\n</code></pre>\n<p>You are calling <code>Math.random()</code>, multiplying the result by 20, then passing the value to <code>Math.floor()</code> to round the value down to the nearest whole number.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use this technique to generate and return a random whole number in the range from <code>0</code> to <code>9</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 105,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

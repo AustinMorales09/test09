@@ -1,0 +1,78 @@
+{
+  "id": "5a24c314108439a4d403617c",
+  "title": "Use the Lifecycle Method componentWillMount",
+  "challengeType": 6,
+  "forumTopicId": 301423,
+  "dashedName": "use-the-lifecycle-method-componentwillmount",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<MyComponent />, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  componentWillMount() {\n    // Change code below this line\n\n    // Change code above this line\n  }\n  render() {\n    return <div />\n  }\n};",
+      "error": null,
+      "seed": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  componentWillMount() {\n    // Change code below this line\n\n    // Change code above this line\n  }\n  render() {\n    return <div />\n  }\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  componentWillMount() {\n    // Change code below this line\n    console.log('Component is mounting...');\n    // Change code above this line\n  }\n  render() {\n    return <div />\n  }\n};",
+        "error": null,
+        "seed": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  componentWillMount() {\n    // Change code below this line\n    console.log('Component is mounting...');\n    // Change code above this line\n  }\n  render() {\n    return <div />\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>MyComponent</code> should render a <code>div</code> element.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n    return mockedComponent.find('div').length === 1;\n  })()\n);"
+    },
+    {
+      "text": "<p><code>console.log</code> should be called in <code>componentWillMount</code>.</p>",
+      "testString": "assert(\n  (function () {\n    const lifecycle = React.createElement(MyComponent)\n      .type.prototype.componentWillMount.toString()\n      .replace(/ /g, '');\n    return lifecycle.includes('console.log(');\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>React components have several special methods that provide opportunities to perform actions at specific points in the lifecycle of a component. These are called lifecycle methods, or lifecycle hooks, and allow you to catch components at certain points in time. This can be before they are rendered, before they update, before they receive props, before they unmount, and so on. Here is a list of some of the main lifecycle methods: <code>componentWillMount()</code> <code>componentDidMount()</code> <code>shouldComponentUpdate()</code> <code>componentDidUpdate()</code> <code>componentWillUnmount()</code> The next several lessons will cover some of the basic use cases for these lifecycle methods.</p>\n<p><strong>Note:</strong> The <code>componentWillMount</code> Lifecycle method will be deprecated in a future version of 16.X and removed in version 17. Learn more in this <a href=\"https://www.freecodecamp.org/news/how-to-safely-use-reacts-life-cycles-with-fiber-s-async-rendering-fd4469ebbd8f/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">article</a></p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The <code>componentWillMount()</code> method is called before the <code>render()</code> method when a component is being mounted to the DOM. Log something to the console within <code>componentWillMount()</code> - you may want to have your browser console open to see the output.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 31,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

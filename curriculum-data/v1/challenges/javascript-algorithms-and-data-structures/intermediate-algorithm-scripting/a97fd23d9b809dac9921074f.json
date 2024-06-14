@@ -1,0 +1,97 @@
+{
+  "id": "a97fd23d9b809dac9921074f",
+  "title": "Arguments Optional",
+  "challengeType": 1,
+  "forumTopicId": 14271,
+  "dashedName": "arguments-optional",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function addTogether() {\n  return false;\n}\n\naddTogether(2,3);",
+      "error": null,
+      "seed": "function addTogether() {\n  return false;\n}\n\naddTogether(2,3);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function addTogether() {\n  const first = arguments[0];\n  if (typeof(first) !== 'number') {\n    return undefined;\n  }\n  if (arguments.length === 1) {\n    return function(second) {\n      if (typeof(second) !== 'number') {\n        return undefined;\n      }\n      return first + second;\n    };\n  }\n  const second = arguments[1];\n  if (typeof(second) !== 'number') {\n    return undefined;\n  }\n  return first + second;\n}",
+        "error": null,
+        "seed": "function addTogether() {\n  const first = arguments[0];\n  if (typeof(first) !== 'number') {\n    return undefined;\n  }\n  if (arguments.length === 1) {\n    return function(second) {\n      if (typeof(second) !== 'number') {\n        return undefined;\n      }\n      return first + second;\n    };\n  }\n  const second = arguments[1];\n  if (typeof(second) !== 'number') {\n    return undefined;\n  }\n  return first + second;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>addTogether(2, 3)</code> should return 5.</p>",
+      "testString": "assert.deepEqual(addTogether(2, 3), 5);"
+    },
+    {
+      "text": "<p><code>addTogether(23.4, 30)</code> should return 53.4.</p>",
+      "testString": "assert.deepEqual(addTogether(23.4, 30), 53.4);"
+    },
+    {
+      "text": "<p><code>addTogether(\"2\", 3)</code> should return <code>undefined</code>.</p>",
+      "testString": "assert.isUndefined(addTogether('2', 3));"
+    },
+    {
+      "text": "<p><code>addTogether(5, undefined)</code> should return <code>undefined</code>.</p>",
+      "testString": "assert.isUndefined(addTogether(5, undefined));"
+    },
+    {
+      "text": "<p><code>addTogether(\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\")</code> should return <code>undefined</code>.</p>",
+      "testString": "assert.isUndefined(addTogether('https://www.youtube.com/watch?v=dQw4w9WgXcQ'));"
+    },
+    {
+      "text": "<p><code>addTogether(5)</code> should return a function.</p>",
+      "testString": "assert.deepEqual(typeof(addTogether(5)), 'function');"
+    },
+    {
+      "text": "<p><code>addTogether(5)(7)</code> should return 12.</p>",
+      "testString": "assert.deepEqual(addTogether(5)(7), 12);"
+    },
+    {
+      "text": "<p><code>addTogether(2)([3])</code> should return <code>undefined</code>.</p>",
+      "testString": "assert.isUndefined(addTogether(2)([3]));"
+    },
+    {
+      "text": "<p><code>addTogether(2, \"3\")</code> should return <code>undefined</code>.</p>",
+      "testString": "assert.isUndefined(addTogether(2, '3'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Create a function that sums two arguments together. If only one argument is provided, then return a function that expects one argument and returns the sum.</p>\n<p>For example, <code>addTogether(2, 3)</code> should return <code>5</code>, and <code>addTogether(2)</code> should return a function.</p>\n<p>Calling this returned function with a single argument will then return the sum:</p>\n<pre><code class=\"language-js\">var sumTwoAnd = addTogether(2);\n</code></pre>\n<p><code>sumTwoAnd(3)</code> returns <code>5</code>.</p>\n<p>If either argument isn't a valid number, return undefined.</p>\n</section>",
+  "translationPending": false,
+  "block": "intermediate-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

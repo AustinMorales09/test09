@@ -1,0 +1,49 @@
+{
+  "id": "66068fb0bfddba2b7977eb60",
+  "title": "Step 1",
+  "challengeType": 20,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a class named <code>Board</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).has_class(\"Board\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In this project, you will learn about classes and objects by building a sudoku puzzle solver.</p>\n<p>In Python, a class is a blueprint for creating objects. Objects created from a class are instances of that class. You can create a class using this syntax:</p>\n<pre><code class=\"language-py\">class ClassName:\n    pass\n</code></pre>\n<p>Where <code>class</code> is the keyword required to define the class and <code>ClassName</code> is the name of the class, written by convention in <em>PascalCase</em>.</p>\n<p>Begin by creating a <code>Board</code> class.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

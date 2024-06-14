@@ -1,0 +1,45 @@
+{
+  "id": "655a3cc030fb970687d6444d",
+  "title": "Task 50",
+  "challengeType": 19,
+  "dashedName": "task-50",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>compensate later</code> imply?</p>",
+    "answers": [
+      {
+        "answer": "<p>Compensating immediately</p>",
+        "feedback": "<p>Later doesn't imply immediately.</p>"
+      },
+      {
+        "answer": "<p>Not compensating at all</p>",
+        "feedback": "<p>The phrase suggests there will be compensation.</p>"
+      },
+      {
+        "answer": "<p>Making up for something at a time after the usual or expected time</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Compensating at the usual time</p>",
+        "feedback": "<p><code>Later</code> doesn't mean at the usual time.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>later</code> is the comparative form of <code>late</code>, used to indicate a time or event that is after the expected, usual, or planned time. Comparatives are used to compare two things. For example:</p>\n<p><code>We will leave later than planned.</code> (means leaving after the planned time)</p>\n<p><code>She arrived later than me.</code> (indicates she arrived after the speaker)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 51,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

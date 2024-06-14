@@ -1,0 +1,82 @@
+{
+  "id": "587d7b7e367417b2b2512b20",
+  "title": "Use an Array to Store a Collection of Data",
+  "challengeType": 1,
+  "forumTopicId": 301167,
+  "dashedName": "use-an-array-to-store-a-collection-of-data",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let yourArray; // Change this line",
+      "error": null,
+      "seed": "let yourArray; // Change this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let yourArray = ['a string', 100, true, ['one', 2], 'another string'];",
+        "error": null,
+        "seed": "let yourArray = ['a string', 100, true, ['one', 2], 'another string'];"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>yourArray</code> should be an array.</p>",
+      "testString": "assert.strictEqual(Array.isArray(yourArray), true);"
+    },
+    {
+      "text": "<p><code>yourArray</code> should be at least 5 elements long.</p>",
+      "testString": "assert.isAtLeast(yourArray.length, 5);"
+    },
+    {
+      "text": "<p><code>yourArray</code> should contain at least one <code>boolean</code>.</p>",
+      "testString": "assert(yourArray.filter((el) => typeof el === 'boolean').length >= 1);"
+    },
+    {
+      "text": "<p><code>yourArray</code> should contain at least one <code>number</code>.</p>",
+      "testString": "assert(yourArray.filter((el) => typeof el === 'number').length >= 1);"
+    },
+    {
+      "text": "<p><code>yourArray</code> should contain at least one <code>string</code>.</p>",
+      "testString": "assert(yourArray.filter((el) => typeof el === 'string').length >= 1);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The below is an example of the simplest implementation of an array data structure. This is known as a <dfn>one-dimensional array</dfn>, meaning it only has one level, or that it does not have any other arrays nested within it. Notice it contains <dfn>booleans</dfn>, <dfn>strings</dfn>, and <dfn>numbers</dfn>, among other valid JavaScript data types:</p>\n<pre><code class=\"language-js\">let simpleArray = ['one', 2, 'three', true, false, undefined, null];\nconsole.log(simpleArray.length);\n</code></pre>\n<p>The <code>console.log</code> call displays <code>7</code>.</p>\n<p>All arrays have a length property, which as shown above, can be very easily accessed with the syntax <code>Array.length</code>. A more complex implementation of an array can be seen below. This is known as a <dfn>multi-dimensional array</dfn>, or an array that contains other arrays. Notice that this array also contains JavaScript <dfn>objects</dfn>, which we will examine very closely in our next section, but for now, all you need to know is that arrays are also capable of storing complex objects.</p>\n<pre><code class=\"language-js\">let complexArray = [\n  [\n    {\n      one: 1,\n      two: 2\n    },\n    {\n      three: 3,\n      four: 4\n    }\n  ],\n  [\n    {\n      a: \"a\",\n      b: \"b\"\n    },\n    {\n      c: \"c\",\n      d: \"d\"\n    }\n  ]\n];\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>We have defined a variable called <code>yourArray</code>. Complete the statement by assigning an array of at least 5 elements in length to the <code>yourArray</code> variable. Your array should contain at least one <dfn>string</dfn>, one <dfn>number</dfn>, and one <dfn>boolean</dfn>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-data-structures",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

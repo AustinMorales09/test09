@@ -1,0 +1,89 @@
+{
+  "id": "a8e512fbe388ac2f9198f0fa",
+  "title": "Wherefore art thou",
+  "challengeType": 1,
+  "forumTopicId": 16092,
+  "dashedName": "wherefore-art-thou",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function whatIsInAName(collection, source) {\n\n}\n\nwhatIsInAName([{ first: \"Romeo\", last: \"Montague\" }, { first: \"Mercutio\", last: null }, { first: \"Tybalt\", last: \"Capulet\" }], { last: \"Capulet\" });",
+      "error": null,
+      "seed": "function whatIsInAName(collection, source) {\n\n}\n\nwhatIsInAName([{ first: \"Romeo\", last: \"Montague\" }, { first: \"Mercutio\", last: null }, { first: \"Tybalt\", last: \"Capulet\" }], { last: \"Capulet\" });"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function whatIsInAName(collection, source) {\n  const arr = [];\n  const keys = Object.keys(source);\n  collection.forEach(function(e) {\n    if(keys.every(function(key) {return e[key] === source[key];})) {\n      arr.push(e);\n    }\n  });\n  return arr;\n}",
+        "error": null,
+        "seed": "function whatIsInAName(collection, source) {\n  const arr = [];\n  const keys = Object.keys(source);\n  collection.forEach(function(e) {\n    if(keys.every(function(key) {return e[key] === source[key];})) {\n      arr.push(e);\n    }\n  });\n  return arr;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>whatIsInAName([{ first: \"Romeo\", last: \"Montague\" }, { first: \"Mercutio\", last: null }, { first: \"Tybalt\", last: \"Capulet\" }], { last: \"Capulet\" })</code> should return <code>[{ first: \"Tybalt\", last: \"Capulet\" }]</code>.</p>",
+      "testString": "assert.deepEqual(\n  whatIsInAName(\n    [\n      { first: 'Romeo', last: 'Montague' },\n      { first: 'Mercutio', last: null },\n      { first: 'Tybalt', last: 'Capulet' }\n    ],\n    { last: 'Capulet' }\n  ),\n  [{ first: 'Tybalt', last: 'Capulet' }]\n);"
+    },
+    {
+      "text": "<p><code>whatIsInAName([{ \"apple\": 1 }, { \"apple\": 1 }, { \"apple\": 1, \"bat\": 2 }], { \"apple\": 1 })</code> should return <code>[{ \"apple\": 1 }, { \"apple\": 1 }, { \"apple\": 1, \"bat\": 2 }]</code>.</p>",
+      "testString": "assert.deepEqual(\n  whatIsInAName([{ apple: 1 }, { apple: 1 }, { apple: 1, bat: 2 }], {\n    apple: 1\n  }),\n  [{ apple: 1 }, { apple: 1 }, { apple: 1, bat: 2 }]\n);"
+    },
+    {
+      "text": "<p><code>whatIsInAName([{ \"apple\": 1, \"bat\": 2 }, { \"bat\": 2 }, { \"apple\": 1, \"bat\": 2, \"cookie\": 2 }], { \"apple\": 1, \"bat\": 2 })</code> should return <code>[{ \"apple\": 1, \"bat\": 2 }, { \"apple\": 1, \"bat\": 2, \"cookie\": 2 }]</code>.</p>",
+      "testString": "assert.deepEqual(\n  whatIsInAName(\n    [{ apple: 1, bat: 2 }, { bat: 2 }, { apple: 1, bat: 2, cookie: 2 }],\n    { apple: 1, bat: 2 }\n  ),\n  [\n    { apple: 1, bat: 2 },\n    { apple: 1, bat: 2, cookie: 2 }\n  ]\n);"
+    },
+    {
+      "text": "<p><code>whatIsInAName([{ \"apple\": 1, \"bat\": 2 }, { \"apple\": 1 }, { \"apple\": 1, \"bat\": 2, \"cookie\": 2 }], { \"apple\": 1, \"cookie\": 2 })</code> should return <code>[{ \"apple\": 1, \"bat\": 2, \"cookie\": 2 }]</code>.</p>",
+      "testString": "assert.deepEqual(\n  whatIsInAName(\n    [{ apple: 1, bat: 2 }, { apple: 1 }, { apple: 1, bat: 2, cookie: 2 }],\n    { apple: 1, cookie: 2 }\n  ),\n  [{ apple: 1, bat: 2, cookie: 2 }]\n);"
+    },
+    {
+      "text": "<p><code>whatIsInAName([{ \"apple\": 1, \"bat\": 2 }, { \"apple\": 1 }, { \"apple\": 1, \"bat\": 2, \"cookie\": 2 }, { \"bat\":2 }], { \"apple\": 1, \"bat\": 2 })</code> should return <code>[{ \"apple\": 1, \"bat\": 2 }, { \"apple\": 1, \"bat\": 2, \"cookie\":2 }]</code>.</p>",
+      "testString": "assert.deepEqual(\n  whatIsInAName(\n    [\n      { apple: 1, bat: 2 },\n      { apple: 1 },\n      { apple: 1, bat: 2, cookie: 2 },\n      { bat: 2 }\n    ],\n    { apple: 1, bat: 2 }\n  ),\n  [\n    { apple: 1, bat: 2 },\n    { apple: 1, bat: 2, cookie: 2 }\n  ]\n);"
+    },
+    {
+      "text": "<p><code>whatIsInAName([{\"a\": 1, \"b\": 2, \"c\": 3}], {\"a\": 1, \"b\": 9999, \"c\": 3})</code> should return <code>[]</code></p>",
+      "testString": "assert.deepEqual(\n  whatIsInAName([{ a: 1, b: 2, c: 3 }], { a: 1, b: 9999, c: 3 }),\n  []\n);"
+    },
+    {
+      "text": "<p><code>whatIsInAName([{\"a\": 1, \"b\": 2, \"c\": 3, \"d\": 9999}], {\"a\": 1, \"b\": 9999, \"c\": 3})</code> should return <code>[]</code></p>",
+      "testString": "assert.deepEqual(\n  whatIsInAName([{ a: 1, b: 2, c: 3, d: 9999 }], { a: 1, b: 9999, c: 3 }),\n  []\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument). Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.</p>\n<p>For example, if the first argument is <code>[{ first: \"Romeo\", last: \"Montague\" }, { first: \"Mercutio\", last: null }, { first: \"Tybalt\", last: \"Capulet\" }]</code>, and the second argument is <code>{ last: \"Capulet\" }</code>, then you must return the third object from the array (the first argument), because it contains the name and its value, that was passed on as the second argument.</p>\n</section>",
+  "translationPending": false,
+  "block": "intermediate-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

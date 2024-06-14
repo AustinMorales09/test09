@@ -1,0 +1,77 @@
+{
+  "id": "61764fdda535587e1fefb3aa",
+  "title": "Step 19",
+  "challengeType": 0,
+  "dashedName": "step-19",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        11,
+        18
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker one\">\n      </div>\n      <div class=\"marker\">\n      </div>\n      <div class=\"marker\">\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker one\">\n      </div>\n      <div class=\"marker\">\n      </div>\n      <div class=\"marker\">\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1 {\n  text-align: center;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.one {\n  background-color: red;\n}\n",
+      "error": null,
+      "seed": "h1 {\n  text-align: center;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.one {\n  background-color: red;\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add the class <code>two</code> to the second marker <code>div</code> element in the <code>container</code> <code>div</code>.</p>",
+      "testString": "const containerSecondChild = [...document.querySelector('.container')?.children][1];\nassert(containerSecondChild?.classList?.contains('two'));"
+    },
+    {
+      "text": "<p>Your second marker <code>div</code> should have the classes <code>marker</code> and <code>two</code>.</p>",
+      "testString": "const containerSecondChild = [...document.querySelector('.container')?.children][1];\nassert(containerSecondChild?.classList?.contains('marker') && containerSecondChild.classList?.contains('two'));"
+    },
+    {
+      "text": "<p>You should add the class <code>three</code> to the third marker <code>div</code> element in the <code>container</code> <code>div</code>.</p>",
+      "testString": "const containerThirdChild = [...document.querySelector('.container')?.children][2];\nassert(containerThirdChild?.classList?.contains('three'));"
+    },
+    {
+      "text": "<p>Your third marker <code>div</code> should have the classes <code>marker</code> and <code>three</code>.</p>",
+      "testString": "const containerThirdChild = [...document.querySelector('.container')?.children][2];\nassert(containerThirdChild?.classList?.contains('marker') && containerThirdChild?.classList?.contains('three'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Add the class <code>two</code> to the second marker <code>div</code>, and add the class <code>three</code> to the third marker <code>div</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

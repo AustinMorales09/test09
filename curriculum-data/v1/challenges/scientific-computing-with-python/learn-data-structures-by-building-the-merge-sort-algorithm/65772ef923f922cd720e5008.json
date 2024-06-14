@@ -1,0 +1,49 @@
+{
+  "id": "65772ef923f922cd720e5008",
+  "title": "Step 7",
+  "challengeType": 20,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        8
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def merge_sort(array):\n    \n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n    \n    merge_sort()",
+      "error": null,
+      "seed": "def merge_sort(array):\n    \n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n    \n    merge_sort()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should pass <code>left_part</code> as the argument to your <code>merge_sort()</code> call.</p>",
+      "testString": "({\n  test: () => {\n    const transformedCode = code.replace(/\\r/g, \"\");\n    const merge_sort = __helpers.python.getDef(\"\\n\" + transformedCode, \"merge_sort\");\n    const { function_body } = merge_sort;\n\n    assert.match(function_body, /merge_sort\\s*\\(\\s*left_part\\s*\\)/);\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Pass <code>left_part</code> as the argument to the <code>merge_sort()</code> call you added in the last step.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-data-structures-by-building-the-merge-sort-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 9,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

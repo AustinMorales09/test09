@@ -1,0 +1,71 @@
+{
+  "id": "bd7123c9c450eddfaeb5bdef",
+  "title": "Use Bracket Notation to Find the Nth Character in a String",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cWPVJua",
+  "forumTopicId": 18343,
+  "dashedName": "use-bracket-notation-to-find-the-nth-character-in-a-string",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(v){return v;})(thirdLetterOfLastName);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Setup\nconst lastName = \"Lovelace\";\n\n// Only change code below this line\nconst thirdLetterOfLastName = lastName; // Change this line",
+      "error": null,
+      "seed": "// Setup\nconst lastName = \"Lovelace\";\n\n// Only change code below this line\nconst thirdLetterOfLastName = lastName; // Change this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const lastName = \"Lovelace\";\nconst thirdLetterOfLastName = lastName[2];",
+        "error": null,
+        "seed": "const lastName = \"Lovelace\";\nconst thirdLetterOfLastName = lastName[2];"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>thirdLetterOfLastName</code> variable should have the value of <code>v</code>.</p>",
+      "testString": "assert(thirdLetterOfLastName === 'v');"
+    },
+    {
+      "text": "<p>You should use bracket notation.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/thirdLetterOfLastName\\s*=\\s*lastName\\s*\\[\\s*\\d\\s*\\]/));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can also use <dfn>bracket notation</dfn> to get the character at other positions within a string.</p>\n<p>Remember that computers start counting at <code>0</code>, so the first character is actually the zeroth character.</p>\n<p>Example:</p>\n<pre><code class=\"language-js\">const firstName = \"Ada\";\nconst secondLetterOfFirstName = firstName[1];\n</code></pre>\n<p><code>secondLetterOfFirstName</code> would have a value of the string <code>d</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Let's try to set <code>thirdLetterOfLastName</code> to equal the third letter of the <code>lastName</code> variable using bracket notation.</p>\n<p><strong>Hint:</strong> Try looking at the example above if you get stuck.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,53 @@
+{
+  "id": "6610c21b3ef82015573ffbbe",
+  "title": "Step 50",
+  "challengeType": 1,
+  "dashedName": "step-50",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        8
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow() {\n\n}\nconst call = padRow();\nconsole.log(call);\n\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow() {\n\n}\nconst call = padRow();\nconsole.log(call);\n\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>padRow</code> function should use the <code>return</code> keyword.</p>",
+      "testString": "assert.match(padRow.toString(), /return/);"
+    },
+    {
+      "text": "<p>Your <code>padRow</code> function should return the string <code>\"Hello!\"</code>.</p>",
+      "testString": "assert.equal(padRow(), \"Hello!\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Your <code>call</code> variable has an <code>undefined</code> value, even though you defined it! This is because your <code>padRow</code> function does not currently return a value. By default, functions return <code>undefined</code> as their value.</p>\n<p>In order to return something else, you need to use the <code>return</code> keyword. Here is an example of a function that returns the string <code>\"Functions are cool!\"</code>:</p>\n<pre><code class=\"language-js\">function demo() {\n  return \"Functions are cool!\";\n}\n</code></pre>\n<p>Use the <code>return</code> keyword to have your function return the string <code>\"Hello!\"</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 49,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

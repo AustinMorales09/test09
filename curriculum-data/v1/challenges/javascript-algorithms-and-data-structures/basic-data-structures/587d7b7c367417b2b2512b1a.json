@@ -1,0 +1,82 @@
+{
+  "id": "587d7b7c367417b2b2512b1a",
+  "title": "Access Property Names with Bracket Notation",
+  "challengeType": 1,
+  "forumTopicId": 301150,
+  "dashedName": "access-property-names-with-bracket-notation",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let foods = {\n  apples: 25,\n  oranges: 32,\n  plums: 28,\n  bananas: 13,\n  grapes: 35,\n  strawberries: 27\n};\n\nfunction checkInventory(scannedItem) {\n  // Only change code below this line\n\n  // Only change code above this line\n}\n\nconsole.log(checkInventory(\"apples\"));",
+      "error": null,
+      "seed": "let foods = {\n  apples: 25,\n  oranges: 32,\n  plums: 28,\n  bananas: 13,\n  grapes: 35,\n  strawberries: 27\n};\n\nfunction checkInventory(scannedItem) {\n  // Only change code below this line\n\n  // Only change code above this line\n}\n\nconsole.log(checkInventory(\"apples\"));"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let foods = {\n  apples: 25,\n  oranges: 32,\n  plums: 28,\n  bananas: 13,\n  grapes: 35,\n  strawberries: 27\n};\n\nfunction checkInventory(scannedItem) {\n  return foods[scannedItem];\n}",
+        "error": null,
+        "seed": "let foods = {\n  apples: 25,\n  oranges: 32,\n  plums: 28,\n  bananas: 13,\n  grapes: 35,\n  strawberries: 27\n};\n\nfunction checkInventory(scannedItem) {\n  return foods[scannedItem];\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>checkInventory</code> should be a function.</p>",
+      "testString": "assert.strictEqual(typeof checkInventory, 'function');"
+    },
+    {
+      "text": "<p>The <code>foods</code> object should have only the following key-value pairs: <code>apples: 25</code>, <code>oranges: 32</code>, <code>plums: 28</code>, <code>bananas: 13</code>, <code>grapes: 35</code>, <code>strawberries: 27</code>.</p>",
+      "testString": "assert.deepEqual(foods, {\n  apples: 25,\n  oranges: 32,\n  plums: 28,\n  bananas: 13,\n  grapes: 35,\n  strawberries: 27\n});"
+    },
+    {
+      "text": "<p><code>checkInventory(\"apples\")</code> should return <code>25</code>.</p>",
+      "testString": "assert.strictEqual(checkInventory('apples'), 25);"
+    },
+    {
+      "text": "<p><code>checkInventory(\"bananas\")</code> should return <code>13</code>.</p>",
+      "testString": "assert.strictEqual(checkInventory('bananas'), 13);"
+    },
+    {
+      "text": "<p><code>checkInventory(\"strawberries\")</code> should return <code>27</code>.</p>",
+      "testString": "assert.strictEqual(checkInventory('strawberries'), 27);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In the first object challenge we mentioned the use of bracket notation as a way to access property values using the evaluation of a variable. For instance, imagine that our <code>foods</code> object is being used in a program for a supermarket cash register. We have some function that sets the <code>selectedFood</code> and we want to check our <code>foods</code> object for the presence of that food. This might look like:</p>\n<pre><code class=\"language-js\">let selectedFood = getCurrentFood(scannedItem);\nlet inventory = foods[selectedFood];\n</code></pre>\n<p>This code will evaluate the value stored in the <code>selectedFood</code> variable and return the value of that key in the <code>foods</code> object, or <code>undefined</code> if it is not present. Bracket notation is very useful because sometimes object properties are not known before runtime or we need to access them in a more dynamic way.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>We've defined a function, <code>checkInventory</code>, which receives a scanned item as an argument. Return the current value of the <code>scannedItem</code> key in the <code>foods</code> object. You can assume that only valid keys will be provided as an argument to <code>checkInventory</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-data-structures",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

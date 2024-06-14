@@ -1,0 +1,88 @@
+{
+  "id": "657e539471b4aa82c7402c15",
+  "title": "Task 97",
+  "challengeType": 19,
+  "dashedName": "task-97",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is David's role as he mentions in his statement?</p>",
+    "answers": [
+      {
+        "answer": "<p>He is the lead developer on the project.</p>",
+        "feedback": "<p>This choice isn't correct. David's role as a point of contact doesn't specifically imply he's the lead developer.</p>"
+      },
+      {
+        "answer": "<p>He is the team's main contact for communication and collaboration.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He is responsible for handling all the technical issues in the project.</p>",
+        "feedback": "<p>While David might assist with issues, his stated role is more about communication and support, not solely technical problems.</p>"
+      },
+      {
+        "answer": "<p>He is the external consultant for the team.</p>",
+        "feedback": "<p>David's role as a point of contact suggests he is part of the team, not an external consultant.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "David",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 42.1,
+        "finishTimestamp": 46.32
+      }
+    },
+    "commands": [
+      {
+        "character": "David",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "David",
+        "startTime": 1,
+        "finishTime": 5.22,
+        "dialogue": {
+          "text": "I'll be your point of contact and I'll make sure our collaboration is great.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "David",
+        "opacity": 0,
+        "startTime": 5.72
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Point of contact</code> refers to the person you can talk to or ask questions when you need help or information.</p>\n<p>This person acts as the main communicator or liaison for a specific matter or project. For example, <code>Laura is our point of contact for the new project</code> means you can go to Laura for information or assistance related to that project.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 101,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "655220953ba90d80514d7ee2",
+  "title": "Step 27",
+  "challengeType": 20,
+  "dashedName": "step-27",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        8
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n\nfor char in text:\n    index = alphabet.find(char)\n    print(char)",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n\nfor char in text:\n    index = alphabet.find(char)\n    print(char)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add <code>index</code> as the second argument to your existing <code>print(char)</code> call. Don't forget to separate the arguments with a comma.</p>",
+      "testString": "({test: () => {\n    const commentless_code = __helpers.python.removeComments(code);\n    const {block_body} = __helpers.python.getBlock(commentless_code, /for\\s+char\\s+in\\s+text\\s*/);\n    assert(block_body.match(/print\\s*\\(\\s*char\\s*,\\s*index\\s*\\)\\s*$/));\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Currently, the <code>print()</code> function is taking a single argument <code>char</code>, but it can take multiple arguments, separated by a comma.</p>\n<p>Add a second argument to <code>print(char)</code> so that it prints the character and its index inside the alphabet.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "6553f6b4ec51112d44d737c8",
+  "title": "Step 48",
+  "challengeType": 20,
+  "dashedName": "step-48",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        14
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        encrypted_text += char\n    else:\n        index = alphabet.find(char)\n        new_index = (index + shift) % len(alphabet)\n        encrypted_text += alphabet[new_index]\nprint('encrypted text:', encrypted_text)",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        encrypted_text += char\n    else:\n        index = alphabet.find(char)\n        new_index = (index + shift) % len(alphabet)\n        encrypted_text += alphabet[new_index]\nprint('encrypted text:', encrypted_text)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should print <code>'plain text:', text</code> after your for loop.</p>",
+      "testString": "({ test: () => assert.match(code, /^print\\s*\\(\\s*(\"|')plain\\stext:\\1\\s*,\\s*text\\s*\\)\\s*^print/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Right before the <code>print</code> call, add another one and pass <code>'plain text:', text</code> as the arguments to <code>print()</code>. Use the same indentation.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 47,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

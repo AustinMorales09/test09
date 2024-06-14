@@ -1,0 +1,86 @@
+{
+  "id": "594810f028c0303b75339ad5",
+  "title": "Y combinator",
+  "challengeType": 1,
+  "forumTopicId": 302345,
+  "dashedName": "y-combinator",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "var factorial = Y(f => n => (n > 1 ? n * f(n - 1) : 1));",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function Y(f) {\n  return function() {\n\n  };\n}\n\nvar factorial = Y(function(f) {\n  return function (n) {\n    return n > 1 ? n * f(n - 1) : 1;\n  };\n});",
+      "error": null,
+      "seed": "function Y(f) {\n  return function() {\n\n  };\n}\n\nvar factorial = Y(function(f) {\n  return function (n) {\n    return n > 1 ? n * f(n - 1) : 1;\n  };\n});"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "var Y = f => (x => x(x))(y => f(x => y(y)(x)));",
+        "error": null,
+        "seed": "var Y = f => (x => x(x))(y => f(x => y(y)(x)));"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Y should return a function.</p>",
+      "testString": "assert.equal(typeof Y((f) => (n) => n), 'function');"
+    },
+    {
+      "text": "<p>factorial(1) should return 1.</p>",
+      "testString": "assert.equal(factorial(1), 1);"
+    },
+    {
+      "text": "<p>factorial(2) should return 2.</p>",
+      "testString": "assert.equal(factorial(2), 2);"
+    },
+    {
+      "text": "<p>factorial(3) should return 6.</p>",
+      "testString": "assert.equal(factorial(3), 6);"
+    },
+    {
+      "text": "<p>factorial(4) should return 24.</p>",
+      "testString": "assert.equal(factorial(4), 24);"
+    },
+    {
+      "text": "<p>factorial(10) should return 3628800.</p>",
+      "testString": "assert.equal(factorial(10), 3628800);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In strict <a href=\"https://www.freecodecamp.org/news/the-principles-of-functional-programming/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">functional programming</a> and the lambda calculus, functions (lambda expressions) don't have state and are only allowed to refer to arguments of enclosing functions. This rules out the usual definition of a recursive function wherein a function is associated with the state of a variable and this variable's state is used in the body of the function.</p>\n<p>The Y combinator is itself a stateless function that, when applied to another stateless function, returns a recursive version of the function. The Y combinator is the simplest of the class of such functions, called fixed-point combinators.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Define the stateless Y combinator function and use it to compute the factorials. The <code>factorial(N)</code> function is already given to you.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 156,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

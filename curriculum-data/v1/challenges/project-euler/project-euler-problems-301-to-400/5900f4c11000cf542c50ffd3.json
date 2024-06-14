@@ -1,0 +1,65 @@
+{
+  "id": "5900f4c11000cf542c50ffd3",
+  "title": "Problem 341: Golomb's self-describing sequence",
+  "challengeType": 1,
+  "forumTopicId": 302000,
+  "dashedName": "problem-341-golombs-self-describing-sequence",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function golombsSequence() {\n\n  return true;\n}\n\ngolombsSequence();",
+      "error": null,
+      "seed": "function golombsSequence() {\n\n  return true;\n}\n\ngolombsSequence();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>golombsSequence()</code> should return <code>56098610614277016</code>.</p>",
+      "testString": "assert.strictEqual(golombsSequence(), 56098610614277016);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The Golomb's self-describing sequence ($G(n)$) is the only nondecreasing sequence of natural numbers such that $n$ appears exactly $G(n)$ times in the sequence. The values of $G(n)$ for the first few $n$ are</p>\n<p>$$\\begin{array}{c}\nn    &#x26; 1 &#x26; 2 &#x26; 3 &#x26; 4 &#x26; 5 &#x26; 6 &#x26; 7 &#x26; 8 &#x26; 9 &#x26; 10 &#x26; 11 &#x26; 12 &#x26; 13 &#x26; 14 &#x26; 15 &#x26; \\ldots \\\\\nG(n) &#x26; 1 &#x26; 2 &#x26; 2 &#x26; 3 &#x26; 3 &#x26; 4 &#x26; 4 &#x26; 4 &#x26; 5 &#x26; 5  &#x26;  5 &#x26;  6 &#x26;  6 &#x26;  6 &#x26;  6 &#x26; \\ldots\n\\end{array}$$</p>\n<p>You are given that $G({10}^3) = 86$, $G({10}^6) = 6137$.</p>\n<p>You are also given that $\\sum G(n^3) = 153\\,506\\,976$ for $1 ≤ n &#x3C; {10}^3$.</p>\n<p>Find $\\sum G(n^3)$ for $1 ≤ n &#x3C; {10}^6$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

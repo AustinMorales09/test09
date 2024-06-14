@@ -1,0 +1,75 @@
+{
+  "id": "65daa8cce1b9206995e4aec3",
+  "title": "Task 95",
+  "challengeType": 22,
+  "dashedName": "task-95",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I also don’t want to neglect my health, so two months _ I started jogging regularly.</p>",
+    "blanks": [
+      {
+        "answer": "ago",
+        "feedback": "<p>This word is used to indicate that the event happened in the past.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 16.4,
+        "finishTimestamp": 20.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.04,
+        "dialogue": {
+          "text": "I also don't want to neglect my health, so two months ago I started jogging regularly.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 5.54
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>ago</code> is used to talk about past events.</p>\n<p>For example, if you say <code>I moved here a year ago</code>, it means that one year has passed since you moved to your current location. It's a way to measure time backwards from the present.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 99,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

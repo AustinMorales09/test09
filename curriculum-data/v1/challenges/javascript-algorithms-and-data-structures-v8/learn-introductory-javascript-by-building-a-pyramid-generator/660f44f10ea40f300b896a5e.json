@@ -1,0 +1,73 @@
+{
+  "id": "660f44f10ea40f300b896a5e",
+  "title": "Step 81",
+  "challengeType": 1,
+  "dashedName": "step-81",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        13,
+        21
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\nif (\"\") {\n  console.log(\"Condition is true\");\n} else if (5 < 10) {\n  console.log(\"5 is less than 10\");\n} else {\n  console.log(\"This is the else block\");\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\nif (\"\") {\n  console.log(\"Condition is true\");\n} else if (5 < 10) {\n  console.log(\"5 is less than 10\");\n} else {\n  console.log(\"This is the else block\");\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have an <code>if</code> statement.</p>",
+      "testString": "assert.notMatch(code, /if\\s*\\(/);"
+    },
+    {
+      "text": "<p>You should not have an <code>else if</code> statement.</p>",
+      "testString": "assert.notMatch(code, /else\\s+if\\s*\\(/);"
+    },
+    {
+      "text": "<p>You should not have an <code>else</code> statement.</p>",
+      "testString": "assert.notMatch(code, /else\\s*\\{/);"
+    },
+    {
+      "text": "<p>You should use <code>let</code> to declare a <code>continueLoop</code> variable.</p>",
+      "testString": "assert.match(code, /let\\s+continueLoop/);"
+    },
+    {
+      "text": "<p>Your <code>continueLoop</code> variable should have the value <code>false</code>.</p>",
+      "testString": "assert.isFalse(continueLoop);"
+    },
+    {
+      "text": "<p>You should use <code>let</code> to declare a <code>done</code> variable.</p>",
+      "testString": "assert.match(code, /let\\s+done/);"
+    },
+    {
+      "text": "<p>Your <code>done</code> variable should have the value <code>0</code>.</p>",
+      "testString": "assert.strictEqual(done, 0);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you have practiced working with <code>if...else if...else</code> statements, you can remove them from your code.</p>\n<p>Once you complete that, use <code>let</code> to declare a <code>continueLoop</code> variable and assign it the boolean <code>false</code>. Then use <code>let</code> to declare a <code>done</code> variable and assign it the value <code>0</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 80,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "663d74ac95bdc08a3cfce6f5",
+  "title": "Task 63",
+  "challengeType": 22,
+  "dashedName": "task-63",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>We discussed it yesterday and we decided to move the testing phase a week later. I'm _ _ about this.</p>",
+    "blanks": [
+      {
+        "answer": "pretty",
+        "feedback": "<p>In this context, it means the same as <code>very</code>.</p>"
+      },
+      {
+        "answer": "sure",
+        "feedback": "<p>Preceded by <code>pretty</code>, it means you are confident that something is true.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.72,
+        "finishTimestamp": 29.74
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 7.02,
+        "dialogue": {
+          "text": "We discussed it yesterday and we decided to move the testing phase a week later. I'm pretty sure about this.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 7.52
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you are <code>pretty sure</code> about something, you are almost 100% certain that it is true. Example: <code>I'm pretty sure I know that guy.</code> (this means you really believe you know the person and that you saw them in the past).</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 66,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

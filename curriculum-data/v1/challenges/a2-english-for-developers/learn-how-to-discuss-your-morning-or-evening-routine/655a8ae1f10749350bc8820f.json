@@ -1,0 +1,79 @@
+{
+  "id": "655a8ae1f10749350bc8820f",
+  "title": "Task 70",
+  "challengeType": 22,
+  "dashedName": "task-70",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Plan _ and _ meals for weekdays. Involve the kids in setting the table as well.</p>",
+    "blanks": [
+      {
+        "answer": "simple",
+        "feedback": "<p>An adjective describing the ease of preparing the meals.</p>"
+      },
+      {
+        "answer": "quick",
+        "feedback": "<p>Describes the speed of preparing the meals, making them suitable for busy weekdays.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 37.06,
+        "finishTimestamp": 41.6
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5.54,
+        "dialogue": {
+          "text": "Plan simple and quick meals for weekdays. Involve the kids in setting the table as well.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.04
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Adjectives usually come before the nouns they describe, and there's a specific order: opinion, size, age, shape, color, origin, material, purpose. For example: <code>A beautiful old Italian painting</code> (opinion, age, origin)</p>\n<p>In the phrase <code>simple and quick meals</code>, <code>simple</code> (describing ease) and <code>quick</code> (describing speed) are adjectives. The order is flexible because they belong to different categories (opinion and speed).</p>\n<p>Listen to Sarah's advice and focus on the use and order of adjectives.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 72,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

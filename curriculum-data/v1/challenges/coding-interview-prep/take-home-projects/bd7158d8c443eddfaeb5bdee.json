@@ -1,0 +1,42 @@
+{
+  "id": "bd7158d8c443eddfaeb5bdee",
+  "title": "Build a Pinterest Clone",
+  "challengeType": 4,
+  "forumTopicId": 302352,
+  "dashedName": "build-a-pinterest-clone",
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><strong>Objective:</strong> Build an app that is functionally similar to this: <a href=\"https://build-a-pinterest-clone.freecodecamp.rocks/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">https://build-a-pinterest-clone.freecodecamp.rocks/</a>.</p>\n<p>Fulfill the below user stories and get all of the tests to pass. Use whichever libraries or APIs you need. Give it your own personal style.</p>\n<p><strong>User Story:</strong> As an unauthenticated user, I can login with GitHub.</p>\n<p><strong>User Story:</strong> As an authenticated user, I can link to images.</p>\n<p><strong>User Story:</strong> As an authenticated user, I can delete images that I've linked to.</p>\n<p><strong>User Story:</strong> As an authenticated user, I can see a Pinterest-style wall of all the images I've linked to.</p>\n<p><strong>User Story:</strong> As an unauthenticated user, I can browse other users' walls of images.</p>\n<p><strong>User Story:</strong> As an authenticated user, if I upload an image that is broken, it will be replaced by a placeholder image. (can use jQuery broken image detection)</p>\n<p><strong>Hint:</strong> Masonry.js is a library that allows for Pinterest-style image grids.</p>\n<p>Once you've finished implementing these user stories, enter the URL to your live app and, optionally, your GitHub repository. Then click the \"I've completed this challenge\" button.</p>\n<p>You can get feedback on your project by sharing it on the <a href=\"https://forum.freecodecamp.org/c/project-feedback/409\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">freeCodeCamp forum</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "take-home-projects",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

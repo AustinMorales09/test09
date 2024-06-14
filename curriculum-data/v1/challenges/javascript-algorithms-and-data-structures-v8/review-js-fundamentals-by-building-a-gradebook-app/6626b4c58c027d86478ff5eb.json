@@ -1,0 +1,61 @@
+{
+  "id": "6626b4c58c027d86478ff5eb",
+  "title": "Step 3",
+  "challengeType": 1,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        26,
+        35
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function getAverage(scores) {\n  let sum = 0;\n\n  for (const score of scores) {\n    sum += score;\n  }\n\n  return sum / scores.length;\n}\n\nfunction getGrade(score) {\n  if (score === 100) {\n    return \"A++\";\n  } else if (score >= 90) {\n    return \"A\";\n  } else if (score >= 80) {\n    return \"B\";\n  } else if (score >= 70) {\n    return \"C\";\n  } else if (score >= 60) {\n    return \"D\";\n  } else {\n    return \"F\";\n  }\n}\n\nfunction hasPassingGrade(score) {\n  \n}\n\n\nconsole.log(hasPassingGrade(100));\nconsole.log(hasPassingGrade(53));\nconsole.log(hasPassingGrade(87));",
+      "error": null,
+      "seed": "function getAverage(scores) {\n  let sum = 0;\n\n  for (const score of scores) {\n    sum += score;\n  }\n\n  return sum / scores.length;\n}\n\nfunction getGrade(score) {\n  if (score === 100) {\n    return \"A++\";\n  } else if (score >= 90) {\n    return \"A\";\n  } else if (score >= 80) {\n    return \"B\";\n  } else if (score >= 70) {\n    return \"C\";\n  } else if (score >= 60) {\n    return \"D\";\n  } else {\n    return \"F\";\n  }\n}\n\nfunction hasPassingGrade(score) {\n  \n}\n\n\nconsole.log(hasPassingGrade(100));\nconsole.log(hasPassingGrade(53));\nconsole.log(hasPassingGrade(87));"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>hasPassingGrade</code> function should return a boolean value.</p>",
+      "testString": "assert.strictEqual(typeof hasPassingGrade(100), \"boolean\");"
+    },
+    {
+      "text": "<p>Your <code>hasPassingGrade</code> function should return <code>true</code> if the grade is an <code>\"A\"</code>.</p>",
+      "testString": "assert.isTrue(hasPassingGrade(100));"
+    },
+    {
+      "text": "<p>Your <code>hasPassingGrade</code> function should return <code>false</code> if the grade is an <code>\"F\"</code>.</p>",
+      "testString": "assert.isFalse(hasPassingGrade(53));"
+    },
+    {
+      "text": "<p>Your <code>hasPassingGrade</code> function should return <code>true</code> for all passing grades.</p>",
+      "testString": "assert.isTrue(hasPassingGrade(87));\nassert.isTrue(hasPassingGrade(60));\nassert.isTrue(hasPassingGrade(73));\nassert.isTrue(hasPassingGrade(96));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The teacher is really happy with the program you have created so far. But now they want to have an easy way to check if a student has a passing grade. A passing grade is anything that is not an <code>\"F\"</code>.</p>\n<p>Complete the function <code>hasPassingGrade</code> that takes a student score as a parameter. Your function should return <code>true</code> if the student has a passing grade and <code>false</code> if they do not.</p>\n<p><strong>Tips</strong></p>\n<ul>\n<li>Use the <code>getGrade</code> function to get the student's grade. Then check if the grade is passing or not.</li>\n</ul>\n</section>",
+  "translationPending": false,
+  "block": "review-js-fundamentals-by-building-a-gradebook-app",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "5900f4431000cf542c50ff56",
+  "title": "Problem 215: Crack-free Walls",
+  "challengeType": 1,
+  "forumTopicId": 301857,
+  "dashedName": "problem-215-crack-free-walls",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function crackFreeWalls() {\n\n  return true;\n}\n\ncrackFreeWalls();",
+      "error": null,
+      "seed": "function crackFreeWalls() {\n\n  return true;\n}\n\ncrackFreeWalls();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>crackFreeWalls()</code> should return <code>806844323190414</code>.</p>",
+      "testString": "assert.strictEqual(crackFreeWalls(), 806844323190414);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Consider the problem of building a wall out of 2×1 and 3×1 bricks (horizontal×vertical dimensions) such that, for extra strength, the gaps between horizontally-adjacent bricks never line up in consecutive layers, i.e. never form a \"running crack\".</p>\n<p>For example, the following 9×3 wall is not acceptable due to the running crack shown in red:</p>\n<img class=\"img-responsive center-block\" alt=\"9x3 wall with one lined up gap between horizontally-adjacent bricks\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/crack-free-walls.gif\" style=\"background-color: white; padding: 10px;\">\n<p>There are eight ways of forming a crack-free 9×3 wall, written $W(9,3) = 8$.</p>\n<p>Calculate $W(32,10)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "5f344fad8bf01691e71a30eb",
+  "title": "Step 10",
+  "challengeType": 0,
+  "dashedName": "step-10",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        16
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have an opening <code>&#x3C;style></code> tag.</p>",
+      "testString": "assert(code.match(/<style\\s*>/i));"
+    },
+    {
+      "text": "<p>Your code should have a closing <code>&#x3C;/style></code> tag.</p>",
+      "testString": "assert(code.match(/<\\/style\\s*>/));"
+    },
+    {
+      "text": "<p>Your <code>style</code> element should be nested in your <code>head</code> element.</p>",
+      "testString": "assert(code.match(/<head\\s*>[\\w\\W\\s]*<style\\s*>[\\w\\W\\s]*<\\/style\\s*>[\\w\\W\\s]*<\\/head\\s*>/i))"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Up until now, you have been limited regarding the presentation and appearance of the content you create. To start taking control, add a <code>style</code> element within the <code>head</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

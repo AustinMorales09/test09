@@ -1,0 +1,88 @@
+{
+  "id": "657b68caf6debb2975503948",
+  "title": "Task 20",
+  "challengeType": 19,
+  "dashedName": "task-20",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Bob expressing in his sentence?</p>",
+    "answers": [
+      {
+        "answer": "<p>A negative opinion about Alice’s presence</p>",
+        "feedback": "<p>Think about how the phrase <code>nice to</code> usually conveys positive feelings.</p>"
+      },
+      {
+        "answer": "<p>A neutral statement about Alice’s presence</p>",
+        "feedback": "<p>Consider the warmth usually conveyed by the phrase <code>nice to</code>.</p>"
+      },
+      {
+        "answer": "<p>An apology for Alice’s presence</p>",
+        "feedback": "<p>Reflect on the purpose of the phrase <code>nice to</code> in welcoming contexts.</p>"
+      },
+      {
+        "answer": "<p>A positive and welcoming sentiment about Alice’s presence</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.72,
+        "finishTimestamp": 18.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 2.26,
+        "dialogue": {
+          "text": "It's nice to have you here, Alice.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 2.76
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>It’s nice to</code> is used to express a positive sentiment or feeling about something or someone.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

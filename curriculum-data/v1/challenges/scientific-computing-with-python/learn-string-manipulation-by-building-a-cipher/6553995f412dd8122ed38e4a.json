@@ -1,0 +1,57 @@
+{
+  "id": "6553995f412dd8122ed38e4a",
+  "title": "Step 43",
+  "challengeType": 20,
+  "dashedName": "step-43",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        13
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        encrypted_text += char\n    index = alphabet.find(char)\n    new_index = index + shift\n    encrypted_text += alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        encrypted_text += char\n    index = alphabet.find(char)\n    new_index = index + shift\n    encrypted_text += alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create an <code>else</code> clause. Remember to include the final colon.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {block_body} = __helpers.python.getBlock(commentless_code, /for\\s+char\\s+in\\s+text\\.lower\\s*\\(\\s*\\)\\s*/);\nassert(block_body.match(/else\\s*:/));"
+    },
+    {
+      "text": "<p>You should indent the lines of code after your <code>else</code> clause except the <code>print()</code> call.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {block_body} = __helpers.python.getBlock(commentless_code, /else/);\nassert(block_body.match(/index\\s*=\\s*alphabet\\.find\\s*\\(\\s*char\\s*\\)\\s*new_index\\s*=\\s*index\\s*\\+\\s*shift\\s*encrypted_text\\s*\\+=\\s*alphabet\\s*\\[\\s*new_index\\s*\\]\\s*$/));"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A conditional statement can also have an <code>else</code> clause. This clause can be added to the end of an <code>if</code> statement to execute alternative code if the condition of the <code>if</code> statement is false:</p>\n<pre><code class=\"language-py\">if x != 0:\n    print(x)\nelse:\n    print('x = 0')\n</code></pre>\n<p>As you can see in your output, when the loop iterations reach the space, a space is added to the encrypted string. Then the code outside the <code>if</code> block executes and a <code>c</code> is added to the encrypted string.</p>\n<p>To fix it, add an <code>else</code> clause after <code>encrypted_text += char</code> and indent all the subsequent lines of code except the <code>print()</code> call.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

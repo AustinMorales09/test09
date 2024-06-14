@@ -1,0 +1,79 @@
+{
+  "id": "65f58a1bc78dd4a0a22a8168",
+  "title": "Task 29",
+  "challengeType": 22,
+  "dashedName": "task-29",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Brian, I've _ an issue in the code, and I can't quite _ what's causing it.</p>",
+    "blanks": [
+      {
+        "answer": "encountered",
+        "feedback": "<p>This word means Sophie found an issue while working on the code.</p>"
+      },
+      {
+        "answer": "pinpoint",
+        "feedback": "<p>This word means to find the exact cause of the problem, which Sophie is having trouble with.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.92,
+        "dialogue": {
+          "text": "Brian, I've encountered an issue in the code, and I can't quite pinpoint what's causing it.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 6.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Encounter</code>, especially in its past form <code>encountered</code>, means to come across something, usually unexpectedly. For example, <code>I encountered an error while testing the software.</code> It implies finding something without looking for it.</p>\n<p><code>Pinpoint</code> means to identify something very precisely. For instance, <code>After reviewing the code, I was able to pinpoint the error.</code> This means finding exactly where and what the problem is.</p>\n<p>In coding, finding issues can often be about <code>encountering</code> unexpected problems and trying to <code>pinpoint</code> their causes.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 31,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "66361836f505f333d344da43",
+  "title": "Task 16",
+  "challengeType": 22,
+  "dashedName": "task-16",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I see. _ we _ try it on some of our more demanding projects.</p>",
+    "blanks": [
+      {
+        "answer": "Maybe",
+        "feedback": "<p>This word introduces a suggestion and indicates that the speaker is considering a possibility but has not decided yet.</p>"
+      },
+      {
+        "answer": "could",
+        "feedback": "<p>This modal verb suggests possibility, making the suggestion tentative and not definitive.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 25.86,
+        "finishTimestamp": 29.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.06,
+        "dialogue": {
+          "text": "I see. Maybe we could try it on some of our more demanding projects.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 5.56
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>maybe we could try it</code> is a polite way to suggest an action. <code>Maybe</code> introduces the suggestion. The modal verb <code>could</code> is used here to express possibility or potential, implying that the action is not certain but is one option to consider.</p>\n<p>For example, saying <code>Maybe we could go to the cinema tonight</code> suggests that going to the cinema is one possibility among others, depending on other factors like availability or interest.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

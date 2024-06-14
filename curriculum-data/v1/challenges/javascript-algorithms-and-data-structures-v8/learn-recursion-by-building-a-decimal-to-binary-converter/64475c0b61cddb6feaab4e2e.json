@@ -1,0 +1,85 @@
+{
+  "id": "64475c0b61cddb6feaab4e2e",
+  "title": "Step 13",
+  "challengeType": 0,
+  "dashedName": "step-13",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Decimal to Binary Converter</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Decimal to Binary Converter</h1>\n    <div class=\"input-container\">\n      <label for=\"number-input\">Enter a decimal number:</label>\n      <input\n        value=\"\"\n        type=\"number\"\n        name=\"decimal number input\"\n        id=\"number-input\"\n        class=\"number-input\"\n      />\n      <button class=\"convert-btn\" id=\"convert-btn\">Convert</button>\n    </div>\n    <output id=\"result\" for=\"number-input\"></output>\n    <div id=\"animation-container\"></div>\n    <script src=\"script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Decimal to Binary Converter</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Decimal to Binary Converter</h1>\n    <div class=\"input-container\">\n      <label for=\"number-input\">Enter a decimal number:</label>\n      <input\n        value=\"\"\n        type=\"number\"\n        name=\"decimal number input\"\n        id=\"number-input\"\n        class=\"number-input\"\n      />\n      <button class=\"convert-btn\" id=\"convert-btn\">Convert</button>\n    </div>\n    <output id=\"result\" for=\"number-input\"></output>\n    <div id=\"animation-container\"></div>\n    <script src=\"script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n:root {\n  --light-grey: #f5f6f7;\n  --dark-blue: #1b1b32;\n  --orange: #f1be32;\n}\n\nbody {\n  background-color: var(--dark-blue);\n  font-family: \"Times New Roman\", Times, serif;\n  font-size: 18px;\n  color: var(--light-grey);\n  padding: 0 15px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\nh1 {\n  text-align: center;\n  font-size: 2.3rem;\n  margin: 20px 0;\n}\n\n.input-container {\n  margin: 10px 0;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  justify-content: center;\n  align-items: center;\n}\n\n.convert-btn {\n  background-color: var(--orange);\n  cursor: pointer;\n  border: none;\n  padding: 4px;\n}\n\n.number-input {\n  height: 25px;\n}\n\n#result {\n  margin: 10px 0;\n  min-width: 200px;\n  width: fit-content;\n  min-height: 80px;\n  word-break: break-word;\n  padding: 15px;\n  border: 5px solid var(--orange);\n  font-size: 2rem;\n  text-align: center;\n}\n\n#animation-container {\n  margin: auto;\n  max-width: 300px;\n}\n\n.animation-frame {\n  margin: 250px auto 0;\n  padding: 15px 10px;\n  border: 5px solid var(--orange);\n  font-size: 1.2rem;\n  text-align: center;\n}\n\n@media screen and (min-width: 500px) {\n  .input-container {\n    flex-direction: row;\n  }\n\n  #result {\n    max-width: 460px;\n  }\n}",
+      "error": null,
+      "seed": "*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n:root {\n  --light-grey: #f5f6f7;\n  --dark-blue: #1b1b32;\n  --orange: #f1be32;\n}\n\nbody {\n  background-color: var(--dark-blue);\n  font-family: \"Times New Roman\", Times, serif;\n  font-size: 18px;\n  color: var(--light-grey);\n  padding: 0 15px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\nh1 {\n  text-align: center;\n  font-size: 2.3rem;\n  margin: 20px 0;\n}\n\n.input-container {\n  margin: 10px 0;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  justify-content: center;\n  align-items: center;\n}\n\n.convert-btn {\n  background-color: var(--orange);\n  cursor: pointer;\n  border: none;\n  padding: 4px;\n}\n\n.number-input {\n  height: 25px;\n}\n\n#result {\n  margin: 10px 0;\n  min-width: 200px;\n  width: fit-content;\n  min-height: 80px;\n  word-break: break-word;\n  padding: 15px;\n  border: 5px solid var(--orange);\n  font-size: 2rem;\n  text-align: center;\n}\n\n#animation-container {\n  margin: auto;\n  max-width: 300px;\n}\n\n.animation-frame {\n  margin: 250px auto 0;\n  padding: 15px 10px;\n  border: 5px solid var(--orange);\n  font-size: 1.2rem;\n  text-align: center;\n}\n\n@media screen and (min-width: 500px) {\n  .input-container {\n    flex-direction: row;\n  }\n\n  #result {\n    max-width: 460px;\n  }\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        12
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const numberInput = document.getElementById(\"number-input\");\nconst convertBtn = document.getElementById(\"convert-btn\");\nconst result = document.getElementById(\"result\");\n\nconst checkUserInput = () => {\n  if (\n    !numberInput.value ||\n    isNaN(parseInt(numberInput.value)) ||\n    parseInt(numberInput.value) < 0\n  ) {\n\n  }\n\n  console.log(numberInput.value);\n};\n\nconvertBtn.addEventListener(\"click\", checkUserInput);\n\nnumberInput.addEventListener(\"keydown\", (e) => {\n  if (e.key === \"Enter\") {\n    checkUserInput();\n  }\n});",
+      "error": null,
+      "seed": "const numberInput = document.getElementById(\"number-input\");\nconst convertBtn = document.getElementById(\"convert-btn\");\nconst result = document.getElementById(\"result\");\n\nconst checkUserInput = () => {\n  if (\n    !numberInput.value ||\n    isNaN(parseInt(numberInput.value)) ||\n    parseInt(numberInput.value) < 0\n  ) {\n\n  }\n\n  console.log(numberInput.value);\n};\n\nconvertBtn.addEventListener(\"click\", checkUserInput);\n\nnumberInput.addEventListener(\"keydown\", (e) => {\n  if (e.key === \"Enter\") {\n    checkUserInput();\n  }\n});"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call the <code>alert()</code> method within the body of your <code>if</code> statement within <code>checkUserInput</code>.</p>",
+      "testString": "assert.match(String(checkUserInput), /if\\s*\\(\\s*.+\\s*\\)\\s*\\{\\s*(window\\s*.)?\\s*alert\\(/);"
+    },
+    {
+      "text": "<p>When there is a falsy value in the <code>#number-input</code> element and the <code>checkUserInput()</code> function is called, the <code>alert()</code> method should display the text <code>Please provide a decimal number greater than or equal to 0</code>.</p>",
+      "testString": "const numberInput = document.getElementById(\"number-input\");\nlet alertMessage;\nwindow.alert = (message) => alertMessage = message; // Override alert and store message\n\nnumberInput.value = '';\ncheckUserInput();\n\nassert.strictEqual(alertMessage.trim().replace(/[.,?!]+$/g, '').toLowerCase(), 'please provide a decimal number greater than or equal to 0');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now you can alert the user if they don't enter a number, or the number is invalid before you attempt to convert it into binary.</p>\n<p>In the body of the <code>if</code> statement, use the <code>alert()</code> method to display the text <code>Please provide a decimal number greater than or equal to 0</code>.</p>\n<p>Note that <code>alert()</code> is a method on the <code>window</code> object in the browser, so you can use either <code>window.alert()</code> or <code>alert()</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-building-a-decimal-to-binary-converter",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,81 @@
+{
+  "id": "6557716aadbd2d9c42c0e69a",
+  "title": "Step 19",
+  "challengeType": 20,
+  "dashedName": "step-19",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        6
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "my_graph = {\n    'A': 'B',\n    'B': ['A', 'C'],\n    'C': 'B'\n}",
+      "error": null,
+      "seed": "my_graph = {\n    'A': 'B',\n    'B': ['A', 'C'],\n    'C': 'B'\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your dictionary should have 4 keys called <code>'A'</code>, <code>'B'</code>, <code>'C'</code>, and <code>'D'</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    key_list = [\"A\", \"B\", \"C\", \"D\"]\n    len(my_graph) == 4 and all(key in my_graph for key in key_list)\n  `))\n})"
+    },
+    {
+      "text": "<p><code>my_graph['A']</code> should be a list.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    type(my_graph[\"A\"]) is list\n  `))\n})"
+    },
+    {
+      "text": "<p><code>my_graph['A']</code> should be a list containing <code>'B'</code> and <code>'D'</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    len(my_graph[\"A\"]) == 2 and \"B\" in my_graph[\"A\"] and \"D\" in my_graph[\"A\"]\n  `))\n})"
+    },
+    {
+      "text": "<p><code>my_graph['B']</code> should be a list.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    type(my_graph[\"B\"]) is list\n  `))\n})"
+    },
+    {
+      "text": "<p><code>my_graph['B']</code> should be a list containing <code>'A'</code> and <code>'C'</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    len(my_graph[\"B\"]) == 2 and \"A\" in my_graph[\"B\"] and \"C\" in my_graph[\"B\"]\n  `))\n})"
+    },
+    {
+      "text": "<p><code>my_graph['C']</code> should be a list.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    type(my_graph[\"C\"]) is list\n  `))\n})"
+    },
+    {
+      "text": "<p><code>my_graph['C']</code> should be a list containing <code>'B'</code> and <code>'D'</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    len(my_graph[\"C\"]) == 2 and \"B\" in my_graph[\"C\"] and \"D\" in my_graph[\"C\"]\n  `))\n})"
+    },
+    {
+      "text": "<p><code>my_graph['D']</code> should be a list.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    type(my_graph[\"D\"]) is list\n  `))\n})"
+    },
+    {
+      "text": "<p><code>my_graph['D']</code> should be a list containing <code>'A'</code> and <code>'C'</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    len(my_graph[\"D\"]) == 2 and \"A\" in my_graph[\"D\"] and \"C\" in my_graph[\"D\"]\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Add one last node, <code>'D'</code>, which is connected with <code>'A'</code> and <code>'C'</code>.</p>\n<p>Modify your dictionary to represent this structure. Again, use a list to represent multiple connections.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

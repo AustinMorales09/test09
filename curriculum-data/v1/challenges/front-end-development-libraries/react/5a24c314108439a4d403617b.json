@@ -1,0 +1,90 @@
+{
+  "id": "5a24c314108439a4d403617b",
+  "title": "Pass a Callback as Props",
+  "challengeType": 6,
+  "forumTopicId": 301400,
+  "dashedName": "pass-a-callback-as-props",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<MyApp />, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class MyApp extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      inputValue: ''\n    }\n    this.handleChange = this.handleChange.bind(this);\n  }\n  handleChange(event) {\n    this.setState({\n      inputValue: event.target.value\n    });\n  }\n  render() {\n    return (\n       <div>\n        { /* Change code below this line */ }\n\n        { /* Change code above this line */ }\n       </div>\n    );\n  }\n};\n\nclass GetInput extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <div>\n        <h3>Get Input:</h3>\n        <input\n          value={this.props.input}\n          onChange={this.props.handleChange}/>\n      </div>\n    );\n  }\n};\n\nclass RenderInput extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <div>\n        <h3>Input Render:</h3>\n        <p>{this.props.input}</p>\n      </div>\n    );\n  }\n};",
+      "error": null,
+      "seed": "class MyApp extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      inputValue: ''\n    }\n    this.handleChange = this.handleChange.bind(this);\n  }\n  handleChange(event) {\n    this.setState({\n      inputValue: event.target.value\n    });\n  }\n  render() {\n    return (\n       <div>\n        { /* Change code below this line */ }\n\n        { /* Change code above this line */ }\n       </div>\n    );\n  }\n};\n\nclass GetInput extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <div>\n        <h3>Get Input:</h3>\n        <input\n          value={this.props.input}\n          onChange={this.props.handleChange}/>\n      </div>\n    );\n  }\n};\n\nclass RenderInput extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <div>\n        <h3>Input Render:</h3>\n        <p>{this.props.input}</p>\n      </div>\n    );\n  }\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "class MyApp extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      inputValue: ''\n    }\n  this.handleChange = this.handleChange.bind(this);\n  }\n  handleChange(event) {\n    this.setState({\n      inputValue: event.target.value\n    });\n  }\n  render() {\n    return (\n       <div>\n         <GetInput\n           input={this.state.inputValue}\n           handleChange={this.handleChange}/>\n         <RenderInput\n           input={this.state.inputValue}/>\n       </div>\n    );\n  }\n};\n\nclass GetInput extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <div>\n        <h3>Get Input:</h3>\n        <input\n          value={this.props.input}\n          onChange={this.props.handleChange}/>\n      </div>\n    );\n  }\n};\n\nclass RenderInput extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <div>\n        <h3>Input Render:</h3>\n        <p>{this.props.input}</p>\n      </div>\n    );\n  }\n};",
+        "error": null,
+        "seed": "class MyApp extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      inputValue: ''\n    }\n  this.handleChange = this.handleChange.bind(this);\n  }\n  handleChange(event) {\n    this.setState({\n      inputValue: event.target.value\n    });\n  }\n  render() {\n    return (\n       <div>\n         <GetInput\n           input={this.state.inputValue}\n           handleChange={this.handleChange}/>\n         <RenderInput\n           input={this.state.inputValue}/>\n       </div>\n    );\n  }\n};\n\nclass GetInput extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <div>\n        <h3>Get Input:</h3>\n        <input\n          value={this.props.input}\n          onChange={this.props.handleChange}/>\n      </div>\n    );\n  }\n};\n\nclass RenderInput extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <div>\n        <h3>Input Render:</h3>\n        <p>{this.props.input}</p>\n      </div>\n    );\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>MyApp</code> component should render.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(MyApp));\n    return mockedComponent.find('MyApp').length === 1;\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>GetInput</code> component should render.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(MyApp));\n    return mockedComponent.find('GetInput').length === 1;\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>RenderInput</code> component should render.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(MyApp));\n    return mockedComponent.find('RenderInput').length === 1;\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>GetInput</code> component should receive the <code>MyApp</code> state property <code>inputValue</code> as props and contain an <code>input</code> element which modifies <code>MyApp</code> state.</p>",
+      "testString": "async () => {\n  const waitForIt = (fn) =>\n    new Promise((resolve, reject) => setTimeout(() => resolve(fn()), 250));\n  const mockedComponent = Enzyme.mount(React.createElement(MyApp));\n  const state_1 = () => {\n    mockedComponent.setState({ inputValue: '' });\n    return waitForIt(() => mockedComponent.state());\n  };\n  const state_2 = () => {\n    mockedComponent\n      .find('input')\n      .simulate('change', { target: { value: 'TestInput' } });\n    return waitForIt(() => mockedComponent.state());\n  };\n  const updated_1 = await state_1();\n  const updated_2 = await state_2();\n  assert(updated_1.inputValue === '' && updated_2.inputValue === 'TestInput');\n};"
+    },
+    {
+      "text": "<p>The <code>RenderInput</code> component should receive the <code>MyApp</code> state property <code>inputValue</code> as props.</p>",
+      "testString": "async () => {\n  const waitForIt = (fn) =>\n    new Promise((resolve, reject) => setTimeout(() => resolve(fn()), 250));\n  const mockedComponent = Enzyme.mount(React.createElement(MyApp));\n  const state_1 = () => {\n    mockedComponent.setState({ inputValue: 'TestName' });\n    return waitForIt(() => mockedComponent);\n  };\n  const updated_1 = await state_1();\n  assert(updated_1.find('p').text().includes('TestName'));\n};"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can pass <code>state</code> as props to child components, but you're not limited to passing data. You can also pass handler functions or any method that's defined on a React component to a child component. This is how you allow child components to interact with their parent components. You pass methods to a child just like a regular prop. It's assigned a name and you have access to that method name under <code>this.props</code> in the child component.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>There are three components outlined in the code editor. The <code>MyApp</code> component is the parent that will render the <code>GetInput</code> and <code>RenderInput</code> child components. Add the <code>GetInput</code> component to the render method in <code>MyApp</code>, then pass it a prop called <code>input</code> assigned to <code>inputValue</code> from <code>MyApp</code>'s <code>state</code>. Also create a prop called <code>handleChange</code> and pass the input handler <code>handleChange</code> to it.</p>\n<p>Next, add <code>RenderInput</code> to the render method in <code>MyApp</code>, then create a prop called <code>input</code> and pass the <code>inputValue</code> from <code>state</code> to it. Once you are finished you will be able to type in the <code>input</code> field in the <code>GetInput</code> component, which then calls the handler method in its parent via props. This updates the input in the <code>state</code> of the parent, which is passed as props to both children. Observe how the data flows between the components and how the single source of truth remains the <code>state</code> of the parent component. Admittedly, this example is a bit contrived, but should serve to illustrate how data and callbacks can be passed between React components.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 30,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

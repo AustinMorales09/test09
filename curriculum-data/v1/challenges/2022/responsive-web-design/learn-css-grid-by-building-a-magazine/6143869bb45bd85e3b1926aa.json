@@ -1,0 +1,97 @@
+{
+  "id": "6143869bb45bd85e3b1926aa",
+  "title": "Step 4",
+  "challengeType": 0,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        17,
+        23
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Magazine</title>\n    <link\n      href=\"https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap\"\n      rel=\"stylesheet\"\n    />\n    <link\n      rel=\"stylesheet\"\n      href=\"https://use.fontawesome.com/releases/v5.8.2/css/all.css\"\n    />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <main>\n      <section class=\"heading\">\n\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Magazine</title>\n    <link\n      href=\"https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap\"\n      rel=\"stylesheet\"\n    />\n    <link\n      rel=\"stylesheet\"\n      href=\"https://use.fontawesome.com/releases/v5.8.2/css/all.css\"\n    />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <main>\n      <section class=\"heading\">\n\n      </section>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a <code>header</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('header'));"
+    },
+    {
+      "text": "<p>Your <code>header</code> element should be within your <code>.heading</code> element.</p>",
+      "testString": "assert(document.querySelector('header')?.parentElement?.className === 'heading');"
+    },
+    {
+      "text": "<p>Your <code>header</code> element should have the <code>class</code> set to <code>hero</code>.</p>",
+      "testString": "assert(document.querySelector('header')?.className === 'hero');"
+    },
+    {
+      "text": "<p>You should create an <code>img</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('img'));"
+    },
+    {
+      "text": "<p>Your <code>img</code> element should be within your <code>header</code> element.</p>",
+      "testString": "assert(document.querySelector('img')?.parentElement?.localName === 'header');"
+    },
+    {
+      "text": "<p>Your <code>img</code> element should have the <code>src</code> set to <code>https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png</code>.</p>",
+      "testString": "assert(document.querySelector('img')?.getAttribute('src') === 'https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png');"
+    },
+    {
+      "text": "<p>Your <code>img</code> element should have the <code>alt</code> set to <code>freecodecamp logo</code>.</p>",
+      "testString": "assert(document.querySelector('img')?.getAttribute('alt') === 'freecodecamp logo');"
+    },
+    {
+      "text": "<p>Your <code>img</code> element should have the <code>loading</code> attribute set to <code>lazy</code>.</p>",
+      "testString": "assert(document.querySelector('img')?.getAttribute('loading') === 'lazy');"
+    },
+    {
+      "text": "<p>Your <code>img</code> element should have the <code>class</code> set to <code>hero-img</code>.</p>",
+      "testString": "assert(document.querySelector('img')?.className === 'hero-img');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Within your <code>.heading</code> element, create a <code>header</code> element with the <code>class</code> set to <code>hero</code>.</p>\n<p>In that element, create an <code>img</code> element with the <code>src</code> set to <code>https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png</code>, the <code>alt</code> set to <code>freecodecamp logo</code>, and the <code>class</code> set to <code>hero-img</code>.</p>\n<p>The <code>loading</code> attribute on an <code>img</code> element can be set to <code>lazy</code> to tell the browser not to fetch the image resource until it is needed (as in, when the user scrolls the image into view). As an additional benefit, lazy loaded elements will not load until the non-lazy elements are loaded - this means users with slow internet connections can view the content of your page without having to wait for the images to load.</p>\n<p>Give your new <code>img</code> element a <code>loading</code> attribute set to <code>lazy</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-grid-by-building-a-magazine",
+  "hasEditableBoundaries": true,
+  "order": 15,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

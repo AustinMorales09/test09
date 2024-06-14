@@ -1,0 +1,33 @@
+{
+  "id": "657dcee413423174ca3747f5",
+  "title": "Task 112",
+  "challengeType": 22,
+  "dashedName": "task-112",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hi Maria! I'm still getting to know the area. _ there an ATM nearby?</p>",
+    "blanks": [
+      {
+        "answer": "Is",
+        "feedback": "<p>Tom is asking a question, so he needs to start with the correct question word order.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>To elaborate a question using <code>there is</code> you just need to change the order of the verb to be, like so:</p>\n<p><code>There is an ATM nearby</code> -> <code>Is there an ATM nearby?</code></p>\n<p>This form is useful when you're not sure if the place or item exists in that area and you want to ask about it.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 116,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

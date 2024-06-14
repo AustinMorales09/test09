@@ -1,0 +1,65 @@
+{
+  "id": "5900f4421000cf542c50ff55",
+  "title": "Problem 214: Totient Chains",
+  "challengeType": 1,
+  "forumTopicId": 301856,
+  "dashedName": "problem-214-totient-chains",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function totientChains() {\n\n  return true;\n}\n\ntotientChains();",
+      "error": null,
+      "seed": "function totientChains() {\n\n  return true;\n}\n\ntotientChains();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>totientChains()</code> should return <code>1677366278943</code>.</p>",
+      "testString": "assert.strictEqual(totientChains(), 1677366278943);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $φ$ be Euler's totient function, i.e. for a natural number $n$, $φ(n)$ is the number of $k$, $1 ≤ k ≤ n$, for which $gcd(k,n) = 1$.</p>\n<p>By iterating $φ$, each positive integer generates a decreasing chain of numbers ending in 1. E.g. if we start with 5 the sequence 5,4,2,1 is generated. Here is a listing of all chains with length 4:</p>\n<p>$$\\begin{align}\n5,4,2,1 &#x26; \\\\\n7,6,2,1 &#x26; \\\\\n8,4,2,1 &#x26; \\\\\n9,6,2,1 &#x26; \\\\\n10,4,2,1 &#x26; \\\\\n12,4,2,1 &#x26; \\\\\n14,6,2,1 &#x26; \\\\\n18,6,2,1 &#x26;\n\\end{align}$$</p>\n<p>Only two of these chains start with a prime, their sum is 12.</p>\n<p>What is the sum of all primes less than $40\\,000\\,000$ which generate a chain of length 25?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

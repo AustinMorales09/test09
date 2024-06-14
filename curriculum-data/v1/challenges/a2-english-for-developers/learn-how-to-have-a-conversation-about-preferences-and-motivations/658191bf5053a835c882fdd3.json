@@ -1,0 +1,88 @@
+{
+  "id": "658191bf5053a835c882fdd3",
+  "title": "Task 45",
+  "challengeType": 19,
+  "dashedName": "task-45",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Alice mean with her answer <code>I totally get that, Tom</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>She doesn't believe Tom</p>",
+        "feedback": "<p>Think about what saying you <code>get</code> something means in a conversation.</p>"
+      },
+      {
+        "answer": "<p>She is confused by what Tom said</p>",
+        "feedback": "<p>Consider if <code>I totally get that</code> sounds like confusion.</p>"
+      },
+      {
+        "answer": "<p>She is surprised by Tom's feelings</p>",
+        "feedback": "<p>Does <code>I totally get that</code> show surprise, or something else?</p>"
+      },
+      {
+        "answer": "<p>She understands how Tom feels</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.7,
+        "finishTimestamp": 18.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 2.28,
+        "dialogue": {
+          "text": "I totally get that, Tom.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 2.78
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Alice is responding to Tom's statement. Let's think about what Alice means with her answer.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 46,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

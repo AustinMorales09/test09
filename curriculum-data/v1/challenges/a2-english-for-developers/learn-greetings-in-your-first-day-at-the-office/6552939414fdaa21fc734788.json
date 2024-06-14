@@ -1,0 +1,88 @@
+{
+  "id": "6552939414fdaa21fc734788",
+  "title": "Task 11",
+  "challengeType": 19,
+  "dashedName": "task-11",
+  "solutions": [],
+  "question": {
+    "text": "<p>Listen to the dialogue and select the correct meaning of <code>Welcome aboard</code>.</p>",
+    "answers": [
+      {
+        "answer": "<p>Maria is happy Tom visited California.</p>",
+        "feedback": "<p>Incorrect. The phrase doesn't comment on Tom's visit to California.</p>"
+      },
+      {
+        "answer": "<p>Maria is greeting Tom on a boat.</p>",
+        "feedback": "<p>Incorrect. The dialogue isn't about being on a boat.</p>"
+      },
+      {
+        "answer": "<p>Maria is welcoming Tom to the team.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Maria is introducing Tom to the board of directors.</p>",
+        "feedback": "<p>Incorrect. Maria isn't introducing Tom to any board of directors.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 8.46,
+        "finishTimestamp": 11.85
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 3.89,
+        "dialogue": {
+          "text": "Welcome aboard, Tom. How do you like California so far?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 4.39
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>Welcome aboard</code> is used to greet someone who has just joined a group, team, or organization. It's a warm way of saying \"We're glad you're here with us now\".</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

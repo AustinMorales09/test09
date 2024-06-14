@@ -1,0 +1,65 @@
+{
+  "id": "5900f5361000cf542c510048",
+  "title": "Problem 457: A polynomial modulo the square of a prime",
+  "challengeType": 1,
+  "forumTopicId": 302131,
+  "dashedName": "problem-457-a-polynomial-modulo-the-square-of-a-prime",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function polynomialModuloSquareOfPrime() {\n\n  return true;\n}\n\npolynomialModuloSquareOfPrime();",
+      "error": null,
+      "seed": "function polynomialModuloSquareOfPrime() {\n\n  return true;\n}\n\npolynomialModuloSquareOfPrime();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>polynomialModuloSquareOfPrime()</code> should return <code>2647787126797397000</code>.</p>",
+      "testString": "assert.strictEqual(polynomialModuloSquareOfPrime(), 2647787126797397000);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $f(n) = n^2 - 3n - 1$.</p>\n<p>Let $p$ be a prime.</p>\n<p>Let $R(p)$ be the smallest positive integer $n$ such that $f(n)\\bmod p^2 = 0$ if such an integer $n$ exists, otherwise $R(p) = 0$.</p>\n<p>Let $SR(L)$ be $\\sum R(p)$ for all primes not exceeding $L$.</p>\n<p>Find $SR({10}^7)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 56,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

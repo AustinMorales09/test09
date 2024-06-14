@@ -1,0 +1,65 @@
+{
+  "id": "5900f49b1000cf542c50ffad",
+  "title": "Problem 302: Strong Achilles Numbers",
+  "challengeType": 1,
+  "forumTopicId": 301956,
+  "dashedName": "problem-302-strong-achilles-numbers",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function strongAchillesNumbers() {\n\n  return true;\n}\n\nstrongAchillesNumbers();",
+      "error": null,
+      "seed": "function strongAchillesNumbers() {\n\n  return true;\n}\n\nstrongAchillesNumbers();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>strongAchillesNumbers()</code> should return <code>1170060</code>.</p>",
+      "testString": "assert.strictEqual(strongAchillesNumbers(), 1170060);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A positive integer $n$ is powerful if $p^2$ is a divisor of $n$ for every prime factor $p$ in $n$.</p>\n<p>A positive integer $n$ is a perfect power if $n$ can be expressed as a power of another positive integer.</p>\n<p>A positive integer $n$ is an Achilles number if $n$ is powerful but not a perfect power. For example, 864 and 1800 are Achilles numbers: $864 = 2^5 \\times 3^3$ and $1800 = 2^3 \\times 3^2 \\times 5^2$.</p>\n<p>We shall call a positive integer $S$ a Strong Achilles number if both $S$ and $φ(S)$ are Achilles numbers. $φ$ denotes Euler's totient function.</p>\n<p>For example, 864 is a Strong Achilles number: $φ(864) = 288 = 2^5 \\times 3^2$. However, 1800 isn't a Strong Achilles number because: $φ(1800) = 480 = 2^5 \\times 3^1 \\times 5^1$.</p>\n<p>There are 7 Strong Achilles numbers below ${10}^4$ and 656 below ${10}^8$.</p>\n<p>How many Strong Achilles numbers are there below ${10}^{18}$?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,29 @@
+{
+  "id": "587d8247367417b2b2512c37",
+  "title": "Hide Potentially Dangerous Information Using helmet.hidePoweredBy()",
+  "challengeType": 2,
+  "forumTopicId": 301580,
+  "dashedName": "hide-potentially-dangerous-information-using-helmet-hidepoweredby",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>helmet.hidePoweredBy() middleware should be mounted correctly</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/app-info').then(\n    (data) => {\n      assert.include(data.appStack, 'hidePoweredBy');\n      assert.notEqual(data.headers['x-powered-by'], 'Express');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As a reminder, this project is being built upon the following starter project on <a href=\"https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-infosec/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Gitpod</a>, or cloned from <a href=\"https://github.com/freeCodeCamp/boilerplate-infosec/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">GitHub</a>.</p>\n<p>Hackers can exploit known vulnerabilities in Express/Node if they see that your site is powered by Express. <code>X-Powered-By: Express</code> is sent in every request coming from Express by default. Use the <code>helmet.hidePoweredBy()</code> middleware to remove the X-Powered-By header.</p>\n</section>",
+  "translationPending": false,
+  "block": "information-security-with-helmetjs",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 9,
+  "certification": "information-security",
+  "superBlock": "information-security",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

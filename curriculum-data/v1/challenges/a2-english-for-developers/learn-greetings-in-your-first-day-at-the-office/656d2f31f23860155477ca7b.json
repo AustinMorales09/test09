@@ -1,0 +1,88 @@
+{
+  "id": "656d2f31f23860155477ca7b",
+  "title": "Task 166",
+  "challengeType": 19,
+  "dashedName": "task-166",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Jake wish for Sarah?</p>",
+    "answers": [
+      {
+        "answer": "<p>A peaceful night.</p>",
+        "feedback": "<p>Jake doesn't talk about the night.</p>"
+      },
+      {
+        "answer": "<p>A wonderful meal.</p>",
+        "feedback": "<p>She doesn't talk about food.</p>"
+      },
+      {
+        "answer": "<p>A good rest.</p>",
+        "feedback": "<p>There's no mention of rest.</p>"
+      },
+      {
+        "answer": "<p>A great evening.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 27.46,
+        "finishTimestamp": 29.1
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 2.64,
+        "dialogue": {
+          "text": "Sure. Have a great evening.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 3.14
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Have a great evening</code> is a kind expression wishing someone a pleasant time for the rest of the day, specifically the evening.</p>\n<p><code>Evening</code> is the time of day after afternoon and before night. When someone says <code>Have a great evening</code>, they hope you have a good time during that part of the day.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 170,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

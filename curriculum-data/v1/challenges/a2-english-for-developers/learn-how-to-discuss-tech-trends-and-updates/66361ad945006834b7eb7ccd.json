@@ -1,0 +1,88 @@
+{
+  "id": "66361ad945006834b7eb7ccd",
+  "title": "Task 17",
+  "challengeType": 19,
+  "dashedName": "task-17",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which words or expressions does Brian use to make a suggestion?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I see, we try it</code></p>",
+        "feedback": "<p>This option misses the key modal and adverb that soften the suggestion and express possibility.</p>"
+      },
+      {
+        "answer": "<p><code>some of our</code></p>",
+        "feedback": "<p>These words detail the possible amount of projects to use it on but do not contribute to the formulation of the suggestion itself.</p>"
+      },
+      {
+        "answer": "<p><code>more demanding projects</code></p>",
+        "feedback": "<p>While these words describe the nature of the projects, they are not part of the phrase that makes the suggestion.</p>"
+      },
+      {
+        "answer": "<p><code>Maybe, could</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 25.86,
+        "finishTimestamp": 29.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.06,
+        "dialogue": {
+          "text": "I see. Maybe we could try it on some of our more demanding projects.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 5.56
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

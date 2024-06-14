@@ -1,0 +1,42 @@
+{
+  "id": "63ee35240d8d4841c3a7091b",
+  "videoId": "LGQuIIv2RVA",
+  "title": "CSS Foundations Question B",
+  "challengeType": 15,
+  "dashedName": "css-foundations-question-b",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the syntax for class and ID selectors?</p>",
+    "answers": [
+      {
+        "answer": "<p>To select a <code>class</code> you use <code>$</code> and to select an <code>id</code> you use <code>#</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To select a <code>class</code> you use <code>.</code> and to select an <code>id</code> you use <code>*</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To select a <code>class</code> you use <code>.</code> and to select an <code>id</code> you use <code>#</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Class selectors will select all elements with the given <code>class</code>, which is just an attribute you place on an HTML element. Here’s how you add a class to an HTML tag and select it in CSS:</p>\n<pre><code class=\"language-html\">&#x3C;!-- index.html -->\n\n&#x3C;div class=\"alert-text\">\n  Please agree to our terms of service.\n&#x3C;/div>\n</code></pre>\n<pre><code class=\"language-css\">/* styles.css */\n\n.alert-text {\n  color: red;\n}\n</code></pre>\n<p>Note the syntax for <code>class</code> selectors: a period immediately followed by the case-sensitive value of the class attribute. Classes aren’t required to be unique, so you can use the same <code>class</code> on as many elements as you want.</p>\n<p>Another thing you can do with the <code>class</code> attribute is to add multiple classes to a single element as a space-separated list, such as <code>class=\"alert-text severe-alert\"</code>. Since whitespace is used to separate <code>class</code> names like this, you should never use spaces for multi-worded names and should use a hyphen instead.</p>\n<h2>ID Selectors</h2>\n<p>ID selectors are similar to <code>class</code> selectors. They select an element with the given <code>id</code>, which is another attribute you place on an HTML element:</p>\n<pre><code class=\"language-html\">&#x3C;!-- index.html -->\n\n&#x3C;div id=\"title\">My Awesome 90's Page&#x3C;/div>\n</code></pre>\n<pre><code class=\"language-css\">/* styles.css */\n\n#title {\n  background-color: red;\n}\n</code></pre>\n<p>Instead of a period, you use a hashtag immediately followed by the case-sensitive value of the <code>id</code> attribute. A common pitfall is people overusing the <code>id</code> attribute when they don’t necessarily need to, and when classes will suffice. While there are cases where using an <code>id</code> makes sense or is needed, such as taking advantage of specificity or having links redirect to a section on the current page, you should use <code>id</code>s sparingly (if at all).</p>\n<p>The major difference between classes and IDs is that an element can only have one <code>id</code>. An <code>id</code> cannot be repeated on a single page, and the <code>id</code> attribute should not contain any whitespace at all.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-css-foundations",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

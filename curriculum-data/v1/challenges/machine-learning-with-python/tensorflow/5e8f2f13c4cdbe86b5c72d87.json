@@ -1,0 +1,46 @@
+{
+  "id": "5e8f2f13c4cdbe86b5c72d87",
+  "title": "Introduction: Machine Learning Fundamentals",
+  "challengeType": 11,
+  "videoId": "KwL1qTR5MT8",
+  "bilibiliIds": {
+    "aid": 293071716,
+    "bvid": "BV1Yf4y1n7R2",
+    "cid": 409125921
+  },
+  "dashedName": "introduction-machine-learning-fundamentals",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which statement below is <strong>false</strong>?</p>",
+    "answers": [
+      {
+        "answer": "<p>Neural networks are modeled after the way the human brain works.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Computer programs that play tic-tac-toe or chess against human players are examples of simple artificial intelligence.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Machine learning is a subset of artificial intelligence.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "tensorflow",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

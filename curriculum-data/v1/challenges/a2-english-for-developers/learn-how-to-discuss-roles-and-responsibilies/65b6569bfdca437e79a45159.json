@@ -1,0 +1,83 @@
+{
+  "id": "65b6569bfdca437e79a45159",
+  "title": "Task 27",
+  "challengeType": 22,
+  "dashedName": "task-27",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Word is that she's _ _ _.</p>",
+    "blanks": [
+      {
+        "answer": "strict",
+        "feedback": "<p>This word means she enforces rules strongly.</p>"
+      },
+      {
+        "answer": "but",
+        "feedback": "<p>This word shows contrast between being <code>strict</code> and another quality.</p>"
+      },
+      {
+        "answer": "fair",
+        "feedback": "<p>This word means she treats everyone equally and justly.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 30.92,
+        "finishTimestamp": 32.72
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 2.8,
+        "dialogue": {
+          "text": "Word is that she's strict but fair.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 3.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Strict</code> means someone enforces rules strongly. For example, <code>My teacher is strict about homework deadlines.</code> It means the teacher insists that everyone hands in their homework on time.</p>\n<p><code>Fair</code> means treating everyone equally and justly. For example, <code>The judge was fair in her decision</code>, meaning the judge made a decision based on the rules and without favoritism.</p>\n<p><code>But</code> is a word used to connect two ideas that might seem opposite or different. It shows contrast. For example, <code>I like apples but not oranges.</code> This statement shows a preference for apples over oranges.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

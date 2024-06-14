@@ -1,0 +1,65 @@
+{
+  "id": "5900f5221000cf542c510033",
+  "title": "Problem 436: Unfair wager",
+  "challengeType": 1,
+  "forumTopicId": 302107,
+  "dashedName": "problem-436-unfair-wager",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function unfairWager() {\n\n  return true;\n}\n\nunfairWager();",
+      "error": null,
+      "seed": "function unfairWager() {\n\n  return true;\n}\n\nunfairWager();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>unfairWager()</code> should return <code>0.5276662759</code>.</p>",
+      "testString": "assert.strictEqual(unfairWager(), 0.5276662759);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Julie proposes the following wager to her sister Louise.</p>\n<p>She suggests they play a game of chance to determine who will wash the dishes.</p>\n<p>For this game, they shall use a generator of independent random numbers uniformly distributed between 0 and 1.</p>\n<p>The game starts with $S = 0$.</p>\n<p>The first player, Louise, adds to $S$ different random numbers from the generator until $S > 1$ and records her last random number '$x$'.</p>\n<p>The second player, Julie, continues adding to $S$ different random numbers from the generator until $S > 2$ and records her last random number '$y$'.</p>\n<p>The player with the highest number wins and the loser washes the dishes, i.e. if $y > x$ the second player wins.</p>\n<p>For example, if the first player draws 0.62 and 0.44, the first player turn ends since $0.62 + 0.44 > 1$ and $x = 0.44$. If the second players draws 0.1, 0.27 and 0.91, the second player turn ends since $0.62 + 0.44 + 0.1 + 0.27 + 0.91 > 2$ and $y = 0.91$. Since $y > x$, the second player wins.</p>\n<p>Louise thinks about it for a second, and objects: \"That's not fair\".</p>\n<p>What is the probability that the second player wins? Give your answer rounded to 10 places behind the decimal point in the form 0.abcdefghij</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

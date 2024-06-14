@@ -1,0 +1,45 @@
+{
+  "id": "657b6ea501ca10ae78922b0d",
+  "title": "Task 24",
+  "challengeType": 19,
+  "dashedName": "task-24",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the question that correctly uses <code>do</code> to ask about daily activities.</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Do you write code every day?</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Do you writes code every day?</code></p>",
+        "feedback": "<p>Remember, after <code>do,</code> the main verb should not end in <code>s.</code></p>"
+      },
+      {
+        "answer": "<p><code>Writes you code every day?</code></p>",
+        "feedback": "<p>The word order is incorrect in this option; <code>do</code> should be at the beginning</p>"
+      },
+      {
+        "answer": "<p><code>You do write code every day?</code></p>",
+        "feedback": "<p>This option uses <code>do</code> in a statement, not a question.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Now that you know how to use <code>do</code> to form questions about hobbies, let's use <code>do</code> to ask about daily routines. This is useful for finding out about someone's everyday activities, which is a common topic of small talk.</p>\n<p>Note: When you use <code>do</code> as an auxiliary verb in a question, the main verb must stay in its base form. For example:</p>\n<p>Statement: <code>She works as a Full Stack dev.</code></p>\n<p>Question: <code>Does she work as a Full Stack dev?</code></p>\n<p><code>work</code> stays as <code>work</code> and does not change to <code>works</code>, even when asking about a third person singular subject like <code>he,</code> <code>she,</code> or <code>it.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

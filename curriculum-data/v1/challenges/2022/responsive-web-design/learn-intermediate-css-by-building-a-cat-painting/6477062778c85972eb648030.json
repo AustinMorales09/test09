@@ -1,0 +1,85 @@
+{
+  "id": "6477062778c85972eb648030",
+  "title": "Step 16",
+  "challengeType": 0,
+  "dashedName": "step-16",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>fCC Cat Painting</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n</head>\n<body>\n    <main>\n      <div class=\"cat-head\"></div>\n      <div class=\"box\"></div>\n    </main>\n</body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>fCC Cat Painting</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n</head>\n<body>\n    <main>\n      <div class=\"cat-head\"></div>\n      <div class=\"box\"></div>\n    </main>\n</body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        9,
+        12
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #c9d2fc;\n}\n\n.cat-head {\n  position: sticky;\n  top: 0;\n  background: linear-gradient(#5e5e5e 85%, #45454f 100%);\n  width: 205px;\n  height: 180px;\n  border: 1px solid #000;\n  border-radius: 46%;\n}\n\n.box {\n  width: 400px;\n  height: 600px;\n  background-color: #000;\n  position: absolute;\n  left: 650px;\n  top: 800px;\n}",
+      "error": null,
+      "seed": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #c9d2fc;\n}\n\n.cat-head {\n  position: sticky;\n  top: 0;\n  background: linear-gradient(#5e5e5e 85%, #45454f 100%);\n  width: 205px;\n  height: 180px;\n  border: 1px solid #000;\n  border-radius: 46%;\n}\n\n.box {\n  width: 400px;\n  height: 600px;\n  background-color: #000;\n  position: absolute;\n  left: 650px;\n  top: 800px;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>position</code> property set to <code>absolute</code>. Make sure you add a semi-colon.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.position === 'absolute')"
+    },
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>top</code> property set to <code>0</code>. Make sure you add a semi-colon.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.top === '0px')"
+    },
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>left</code> property set to <code>0</code>. Make sure you add a semi-colon.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.left === '0px')"
+    },
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>right</code> property set to <code>0</code>. Make sure you add a semi-colon.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.right === '0px')"
+    },
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>bottom</code> property set to <code>0</code>. Make sure you add a semi-colon.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.bottom === '0px')"
+    },
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>margin</code> property set to <code>auto</code>. Make sure you add a semi-colon.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.margin === 'auto')"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You should now center the cat head.</p>\n<p>Give the <code>.cat-head</code> element a <code>position</code> property set to <code>absolute</code>. Set a value of <code>0</code> for the <code>right</code>, <code>left</code>, <code>top</code>, <code>bottom</code> properties, then set its <code>margin</code> property on all sides to <code>auto</code>. That's one way to center an element vertically and horizontally using CSS positioning.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-intermediate-css-by-building-a-cat-painting",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

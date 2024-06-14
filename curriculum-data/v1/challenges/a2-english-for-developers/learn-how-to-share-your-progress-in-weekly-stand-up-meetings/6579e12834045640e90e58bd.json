@@ -1,0 +1,83 @@
+{
+  "id": "6579e12834045640e90e58bd",
+  "title": "Task 53",
+  "challengeType": 22,
+  "dashedName": "task-53",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Also, I would _ that we regularly review and update these _ as our projects _.</p>",
+    "blanks": [
+      {
+        "answer": "advise",
+        "feedback": "<p>It means Bob is recommending regular updates to the guidelines.</p>"
+      },
+      {
+        "answer": "guidelines",
+        "feedback": "<p>These are the proposed rules or instructions for coding practices.</p>"
+      },
+      {
+        "answer": "evolve",
+        "feedback": "<p>It suggests that the projects will change and develop over time, affecting the guidelines.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.88,
+        "finishTimestamp": 29.14
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.26,
+        "dialogue": {
+          "text": "Also, I would advise that we regularly review and update these guidelines as our projects involve.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.76
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Advise</code> means to recommend a course of action, often based on knowledge or experience. For example, <code>I advise checking the document for errors</code> suggests a recommendation for careful review. <code>Evolve</code> refers to gradual development or change over time. In a work context, <code>Our strategy will evolve with market trends</code> means the strategy will adapt as market conditions change.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 55,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "657fff7dabba2ff23993b08c",
+  "title": "Task 80",
+  "challengeType": 19,
+  "dashedName": "task-80",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>I appreciate it, but</code> signify in this context?</p>",
+    "answers": [
+      {
+        "answer": "<p>Complete acceptance</p>",
+        "feedback": "<p>It implies agreeing entirely, which is not the case in this context.</p>"
+      },
+      {
+        "answer": "<p>Partial acceptance</p>",
+        "feedback": "<p>It suggests agreeing partially, which doesn’t fit the intention of the phrase.</p>"
+      },
+      {
+        "answer": "<p>Gratitude followed by a polite decline</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Agreement without reservation</p>",
+        "feedback": "<p>It indicates complete agreement, which is not the meaning conveyed by this expression.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.06,
+        "finishTimestamp": 26.54
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.48,
+        "dialogue": {
+          "text": "Thanks for the invite, Sarah. I appreciate it, but I'm not really into sci-fi.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.98
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 83,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

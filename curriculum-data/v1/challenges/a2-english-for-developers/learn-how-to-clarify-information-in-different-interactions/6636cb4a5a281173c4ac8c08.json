@@ -1,0 +1,88 @@
+{
+  "id": "6636cb4a5a281173c4ac8c08",
+  "title": "Task 18",
+  "challengeType": 19,
+  "dashedName": "task-18",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is the delivery man asking for Tom?</p>",
+    "answers": [
+      {
+        "answer": "<p>Because Tom needs to deliver something for him</p>",
+        "feedback": "<p>It's actually the other way around.</p>"
+      },
+      {
+        "answer": "<p>Because he wants to buy Tom some lunch</p>",
+        "feedback": "<p>He's there to deliver something for Tom, not to buy him lunch.</p>"
+      },
+      {
+        "answer": "<p>Because he has a package for Tom</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Because he wants to give Tom a ride</p>",
+        "feedback": "<p>This is not mentioned in the dialogue.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Delivery Man",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 2.72
+      }
+    },
+    "commands": [
+      {
+        "character": "Delivery Man",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Delivery Man",
+        "startTime": 1,
+        "finishTime": 3.72,
+        "dialogue": {
+          "text": "Hi there. I have a package for Tom. Do you know him?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Delivery Man",
+        "opacity": 0,
+        "startTime": 4.22
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>package</code> is a box or a bag that contains items. People use packages to send or receive things in the mail or to store items together. When you buy something at an online store, for instance, you normally receive that <code>package</code> back at home some time later.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

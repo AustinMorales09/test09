@@ -1,0 +1,88 @@
+{
+  "id": "656d27271410d4125ee2ad5a",
+  "title": "Task 153",
+  "challengeType": 19,
+  "dashedName": "task-153",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the purpose of the <code>access card</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>To show Sarah's identity.</p>",
+        "feedback": "<p>It doesn't specifically mention identification.</p>"
+      },
+      {
+        "answer": "<p>To allow Sarah to buy things.</p>",
+        "feedback": "<p>There's no mention of financial transactions.</p>"
+      },
+      {
+        "answer": "<p>To store Sarah's data.</p>",
+        "feedback": "<p>It doesn't talk about data storage.</p>"
+      },
+      {
+        "answer": "<p>To grant Sarah entry to certain areas.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.18,
+        "finishTimestamp": 6.24
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 2.75,
+        "dialogue": {
+          "text": "I'm here to give you your access card.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 3.25
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The term <code>access card</code> refers to a card that gives the holder permission to enter or access a specific place. The word <code>your</code> before <code>access card</code> demonstrates that this card belongs to Sarah.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 157,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

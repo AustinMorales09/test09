@@ -1,0 +1,77 @@
+{
+  "id": "60f1a9cbd23023082e149fee",
+  "title": "Step 10",
+  "challengeType": 0,
+  "dashedName": "step-10",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Registration Form</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Registration Form</h1>\n    <p>Please fill out this form with the required information</p>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Registration Form</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Registration Form</h1>\n    <p>Please fill out this form with the required information</p>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        6
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  width: 100%;\n  height: 100vh;\n  margin: 0;\n}",
+      "error": null,
+      "seed": "body {\n  width: 100%;\n  height: 100vh;\n  margin: 0;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add the <code>background-color</code> within the <code>body</code> element selector.</p>",
+      "testString": "assert.isNotEmpty(new __helpers.CSSHelp(document).getStyle('body')?.backgroundColor);"
+    },
+    {
+      "text": "<p>You should give the <code>background-color</code> a value of <code>#1b1b32</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('body')?.backgroundColor, 'rgb(27, 27, 50)');"
+    },
+    {
+      "text": "<p>You should add the <code>color</code> within the <code>body</code> element selector.</p>",
+      "testString": "assert.isNotEmpty(new __helpers.CSSHelp(document).getStyle('body')?.color);"
+    },
+    {
+      "text": "<p>You should give the <code>color</code> a value of <code>#f5f6f7</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('body')?.color, 'rgb(245, 246, 247)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>That is better. Now, make the background easy on the eyes, by changing the <code>body</code> <code>background-color</code> to <code>#1b1b32</code>. Then, to see the text, change the <code>color</code> to <code>#f5f6f7</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-forms-by-building-a-registration-form",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

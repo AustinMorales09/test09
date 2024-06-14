@@ -1,0 +1,49 @@
+{
+  "id": "656ef7f792734072dedd8319",
+  "title": "Step 25",
+  "challengeType": 20,
+  "dashedName": "step-25",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        12,
+        19
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n    return password\n\n# new_password = generate_password(8)\n# print(new_password)",
+      "error": null,
+      "seed": "import secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n    return password\n\n# new_password = generate_password(8)\n# print(new_password)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a <code>constraints</code> variable after your <code>for</code> loop and assign an empty list to this variable.</p>",
+      "testString": "({ test: () =>\n  {\n    const transformedCode = code.replace(/\\r/g, \"\");\n    const generate_pw = __helpers.python.getDef(\"\\n\"+transformedCode, \"generate_password\");\n    const {function_body} = generate_pw;     \n    assert(function_body.match(/^(\\s*)for.*:.*^\\1constraints\\s*=\\s*\\[\\s*\\]/ms));\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>After your <code>for</code> loop, create a <code>constraints</code> variable and assign an empty list to this variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

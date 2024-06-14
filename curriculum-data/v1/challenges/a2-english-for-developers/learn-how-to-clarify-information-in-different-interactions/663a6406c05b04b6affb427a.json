@@ -1,0 +1,75 @@
+{
+  "id": "663a6406c05b04b6affb427a",
+  "title": "Task 33",
+  "challengeType": 22,
+  "dashedName": "task-33",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>He also likes wearing a _ or something.</p>",
+    "blanks": [
+      {
+        "answer": "scarf",
+        "feedback": "<p>An accessory you normally wear around your neck to keep warm.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.22,
+        "finishTimestamp": 24.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 2.8,
+        "dialogue": {
+          "text": "He also likes wearing a scarf or something.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>scarf</code> (<code>scarves</code> in the plural) is a long piece of cloth that you wrap around your neck to keep warm. People also wear scarves to make their outfits look nicer. They come in many colors and materials.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

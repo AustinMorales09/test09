@@ -1,0 +1,53 @@
+{
+  "id": "664599653fcd6e97104f9261",
+  "title": "Step 80",
+  "challengeType": 1,
+  "dashedName": "step-80",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        13,
+        19
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\nif (\"\") {\n  console.log(\"Condition is true\");\n} else if (5 < 10) {\n  console.log(\"5 is less than 10\");\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\nif (\"\") {\n  console.log(\"Condition is true\");\n} else if (5 < 10) {\n  console.log(\"5 is less than 10\");\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an <code>else</code> block.</p>",
+      "testString": "assert.match(code, /else\\s*\\{/);"
+    },
+    {
+      "text": "<p>Your <code>else</code> block should log the string <code>\"This is the else block\"</code> to the console.</p>",
+      "testString": "assert.match(code, /console\\.log\\(\\s*('|\"|`)This\\s+is\\s+the\\s+else\\s+block\\1\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Sometimes you will want to run different code when all of the <code>if...else if</code> conditions are <code>false</code>. You can do this by adding an <code>else</code> block.</p>\n<p>An <code>else</code> block will only evaluate if the conditions in the <code>if</code> and <code>else if</code> blocks are not met.</p>\n<p>Here the <code>else</code> block is added to the <code>else if</code> block.</p>\n<pre><code class=\"language-js\">\nif (condition) {\n  // this code will run if condition is true\n} else if (condition2) {\n  // this code will run if the first condition is false\n} else {\n  // this code will run \n  // if the first and second conditions are false\n}\n</code></pre>\n<p>Add an <code>else</code> block to the <code>else if</code> block. Inside the <code>else</code> block, log the string <code>\"This is the else block\"</code> to the console.</p>\n<p>To see the results in the console, you can manually change the <code>&#x3C;</code> in the <code>else if</code> statement to <code>></code>. That will make the condition <code>false</code> and the <code>else</code> block will run.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 79,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

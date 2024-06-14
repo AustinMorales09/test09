@@ -1,0 +1,81 @@
+{
+  "id": "64498473a17adc26ef0ecc2d",
+  "title": "Step 35",
+  "challengeType": 0,
+  "dashedName": "step-35",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        22,
+        26
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  sum,\n  average,\n  median\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nconst evalFormula = (x, cells) => {\n  const idToText = id => cells.find(cell => cell.id === id);\n}\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      input.onchange = update;\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n  const element = event.target;\n  const value = element.value.replace(/\\s/g, \"\");\n  if (!value.includes(element.id) && value.startsWith('=')) {\n\n  }\n}",
+      "error": null,
+      "seed": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  sum,\n  average,\n  median\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nconst evalFormula = (x, cells) => {\n  const idToText = id => cells.find(cell => cell.id === id);\n}\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      input.onchange = update;\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n  const element = event.target;\n  const value = element.value.replace(/\\s/g, \"\");\n  if (!value.includes(element.id) && value.startsWith('=')) {\n\n  }\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should return the <code>value</code> property of the return value of the <code>.find()</code> method.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>\\s*(?:cell\\.id\\s*===\\s*id|id\\s*===\\s*cell\\.id)\\s*\\)\\.value/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Your <code>idToText</code> function currently returns an <code>input</code> element. Update it to return the <code>value</code> of that <code>input</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

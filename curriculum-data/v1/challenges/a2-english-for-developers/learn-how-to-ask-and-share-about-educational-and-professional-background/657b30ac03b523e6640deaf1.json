@@ -1,0 +1,111 @@
+{
+  "id": "657b30ac03b523e6640deaf1",
+  "title": "Task 90",
+  "challengeType": 22,
+  "dashedName": "task-90",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Tom: That's a cool _. _ you immediately start working as a tech recruiter after college?</p>\n<p>Anna: Not right away. I _ in a general HR role at a non-tech company first, focusing on training and development.</p>",
+    "blanks": [
+      {
+        "answer": "twist",
+        "feedback": "<p>It refers to an interesting or unexpected change in a situation.</p>"
+      },
+      {
+        "answer": "Did",
+        "feedback": "<p>The auxiliary verb used to form a question in the past simple tense. The first letter should be capitalized.</p>"
+      },
+      {
+        "answer": "worked",
+        "feedback": "<p>Past tense form of <code>work</code>, indicating an action completed in the past.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 18.82,
+        "finishTimestamp": 30.24
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.44,
+        "dialogue": {
+          "text": "That's a cool twist. Did you immediately start working as a tech recruiter after college?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.5
+      },
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 5.5
+      },
+      {
+        "character": "Anna",
+        "startTime": 5.84,
+        "finishTime": 12.42,
+        "dialogue": {
+          "text": "Not right away. I worked in a general HR role at a nontech company first, focusing on training and development.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 12.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This task is a review exercise. You will practice filling in the blanks with words that you have already learned.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 94,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

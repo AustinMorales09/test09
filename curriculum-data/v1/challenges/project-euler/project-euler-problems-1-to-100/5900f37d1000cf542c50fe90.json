@@ -1,0 +1,77 @@
+{
+  "id": "5900f37d1000cf542c50fe90",
+  "title": "Problem 17: Number letter counts",
+  "challengeType": 1,
+  "forumTopicId": 301804,
+  "dashedName": "problem-17-number-letter-counts",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function numberLetterCounts(limit) {\n\n  return true;\n}\n\nnumberLetterCounts(5);",
+      "error": null,
+      "seed": "function numberLetterCounts(limit) {\n\n  return true;\n}\n\nnumberLetterCounts(5);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function numberLetterCounts(limit) {\n  const dictionary = {\n    0: '',\n    1: 'one',\n    2: 'two',\n    3: 'three',\n    4: 'four',\n    5: 'five',\n    6: 'six',\n    7: 'seven',\n    8: 'eight',\n    9: 'nine',\n    10: 'ten',\n    11: 'eleven',\n    12: 'twelve',\n    13: 'thirteen',\n    14: 'fourteen',\n    15: 'fifteen',\n    16: 'sixteen',\n    17: 'seventeen',\n    18: 'eighteen',\n    19: 'nineteen',\n    20: 'twenty',\n    30: 'thirty',\n    40: 'forty',\n    50: 'fifty',\n    60: 'sixty',\n    70: 'seventy',\n    80: 'eighty',\n    90: 'ninety',\n    1000: 'onethousand'\n  };\n\n  let numString = '';\n\n  function convertToString(num) {\n    // check dictionary for number\n    if (dictionary[num]) {\n      return dictionary[num];\n    } else {\n      const hundreds = Math.floor(num / 100);\n      const tens =  Math.floor((num / 10) % 10) * 10;\n      const remainder = num % 10;\n\n      let tempStr = '';\n\n      if (hundreds === 0) {\n        tempStr += dictionary[tens] + dictionary[remainder];\n      } else {\n        tempStr += dictionary[hundreds] + 'hundred';\n\n        if (tens !== 0 || remainder !== 0) {\n          tempStr += 'and';\n        }\n\n        if (tens < 20) {\n          const lessThanTwenty = tens + remainder;\n          tempStr += dictionary[lessThanTwenty];\n        } else {\n          tempStr += dictionary[tens] + dictionary[remainder];\n        }\n      }\n      return tempStr;\n    }\n  }\n\n  for (let i = 1; i <= limit; i++) {\n    numString += convertToString(i);\n  }\n  return numString.length;\n}",
+        "error": null,
+        "seed": "function numberLetterCounts(limit) {\n  const dictionary = {\n    0: '',\n    1: 'one',\n    2: 'two',\n    3: 'three',\n    4: 'four',\n    5: 'five',\n    6: 'six',\n    7: 'seven',\n    8: 'eight',\n    9: 'nine',\n    10: 'ten',\n    11: 'eleven',\n    12: 'twelve',\n    13: 'thirteen',\n    14: 'fourteen',\n    15: 'fifteen',\n    16: 'sixteen',\n    17: 'seventeen',\n    18: 'eighteen',\n    19: 'nineteen',\n    20: 'twenty',\n    30: 'thirty',\n    40: 'forty',\n    50: 'fifty',\n    60: 'sixty',\n    70: 'seventy',\n    80: 'eighty',\n    90: 'ninety',\n    1000: 'onethousand'\n  };\n\n  let numString = '';\n\n  function convertToString(num) {\n    // check dictionary for number\n    if (dictionary[num]) {\n      return dictionary[num];\n    } else {\n      const hundreds = Math.floor(num / 100);\n      const tens =  Math.floor((num / 10) % 10) * 10;\n      const remainder = num % 10;\n\n      let tempStr = '';\n\n      if (hundreds === 0) {\n        tempStr += dictionary[tens] + dictionary[remainder];\n      } else {\n        tempStr += dictionary[hundreds] + 'hundred';\n\n        if (tens !== 0 || remainder !== 0) {\n          tempStr += 'and';\n        }\n\n        if (tens < 20) {\n          const lessThanTwenty = tens + remainder;\n          tempStr += dictionary[lessThanTwenty];\n        } else {\n          tempStr += dictionary[tens] + dictionary[remainder];\n        }\n      }\n      return tempStr;\n    }\n  }\n\n  for (let i = 1; i <= limit; i++) {\n    numString += convertToString(i);\n  }\n  return numString.length;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>numberLetterCounts(5)</code> should return a number.</p>",
+      "testString": "assert(typeof numberLetterCounts(5) === 'number');"
+    },
+    {
+      "text": "<p><code>numberLetterCounts(5)</code> should return 19.</p>",
+      "testString": "assert.strictEqual(numberLetterCounts(5), 19);"
+    },
+    {
+      "text": "<p><code>numberLetterCounts(150)</code> should return 1903.</p>",
+      "testString": "assert.strictEqual(numberLetterCounts(150), 1903);"
+    },
+    {
+      "text": "<p><code>numberLetterCounts(1000)</code> should return 21124.</p>",
+      "testString": "assert.strictEqual(numberLetterCounts(1000), 21124);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>If the numbers 1 to 5 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.</p>\n<p>If all the numbers from 1 to given <code>limit</code> inclusive were written out in words, how many letters would be used?</p>\n<p><strong>Note:</strong> Do not count spaces or hyphens. For example, 342 (three hundred and forty-two) contains 23 letters and 115 (one hundred and fifteen) contains 20 letters. The use of \"and\" when writing out numbers is in compliance with British usage.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

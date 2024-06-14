@@ -1,0 +1,65 @@
+{
+  "id": "5900f4651000cf542c50ff77",
+  "title": "Problem 248: Numbers for which Euler’s totient function equals 13!",
+  "challengeType": 1,
+  "forumTopicId": 301895,
+  "dashedName": "problem-248-numbers-for-which-eulers-totient-function-equals-13",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function eulersTotientFunctionEquals() {\n\n  return true;\n}\n\neulersTotientFunctionEquals();",
+      "error": null,
+      "seed": "function eulersTotientFunctionEquals() {\n\n  return true;\n}\n\neulersTotientFunctionEquals();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>eulersTotientFunctionEquals()</code> should return <code>23507044290</code>.</p>",
+      "testString": "assert.strictEqual(eulersTotientFunctionEquals(), 23507044290);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The first number $n$ for which $φ(n) = 13!$ is $6\\,227\\,180\\,929$.</p>\n<p>Find the ${150\\,000}^{\\text{th}}$ such number.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 47,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

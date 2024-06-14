@@ -1,0 +1,47 @@
+{
+  "id": "64a66c917a7d00f97013ed0d",
+  "title": "The Box Model Question F",
+  "challengeType": 15,
+  "dashedName": "the-box-model-question-f",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the fundamental concept in CSS that helps you understand the structure of elements as rectangular boxes?</p>",
+    "answers": [
+      {
+        "answer": "<p>Box-sizing</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Box-shadow</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Box model</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Border-box</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [
+    "<p>Add a border to every element on the page and see how the boxes are laid out.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The first important concept that you need to understand to be successful in CSS is the box model. It isn’t complicated, but skipping over it now will cause you much frustration down the line.</p>\n<p>Every single thing on a webpage is a rectangular box. These boxes can have other boxes in them and can sit alongside one another. You can get a rough idea of how this works by sticking a border on every item on the page like this:</p>\n<pre><code class=\"language-css\">* {\n  border: 1px solid red;\n}\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "top-the-box-model",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

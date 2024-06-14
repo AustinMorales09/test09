@@ -1,0 +1,121 @@
+{
+  "id": "61537485c4f2a624f18d7794",
+  "title": "Step 1",
+  "challengeType": 0,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should contain the <code>DOCTYPE</code> reference.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE/gi));"
+    },
+    {
+      "text": "<p>You should include a space after the <code>DOCTYPE</code> reference.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+/gi));"
+    },
+    {
+      "text": "<p>You should define <code>html</code> as the document type.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+html/gi));"
+    },
+    {
+      "text": "<p>You should close the <code>DOCTYPE</code> declaration with a <code>></code> after the type.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+html\\s*>/gi));"
+    },
+    {
+      "text": "<p>Your <code>html</code> element should have an opening tag.</p>",
+      "testString": "assert(code.match(/<html\\s*>|<html\\s+lang\\s*=\\s*('|\")en\\1\\s*>/gi));"
+    },
+    {
+      "text": "<p>Your <code>html</code> element should have a closing tag.</p>",
+      "testString": "assert(code.match(/<\\/html\\s*>/));"
+    },
+    {
+      "text": "<p>Your opening <code>&#x3C;html></code> tag should have the <code>lang</code> attribute with <code>en</code> as the value.</p>",
+      "testString": "assert(code.match(/<html\\s+lang\\s*=\\s*('|\")en\\1\\s*>/));"
+    },
+    {
+      "text": "<p>Your <code>DOCTYPE</code> declaration should be at the beginning of your HTML.</p>",
+      "testString": "assert(__helpers.removeHtmlComments(code).match(/^\\s*<!DOCTYPE\\s+html\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<head\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/head\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<body\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/body\\s*>/i));"
+    },
+    {
+      "text": "<p>The <code>head</code> and <code>body</code> elements should be siblings.</p>",
+      "testString": "assert(document.querySelector('head')?.nextElementSibling?.localName === 'body');"
+    },
+    {
+      "text": "<p>The <code>head</code> element should be within the <code>html</code> element.</p>",
+      "testString": "assert([...document.querySelector('html')?.children].some(x => x?.localName === 'head'));"
+    },
+    {
+      "text": "<p>The <code>body</code> element should be within the <code>html</code> element.</p>",
+      "testString": "assert([...document.querySelector('html')?.children].some(x => x?.localName === 'body'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Begin with your standard HTML boilerplate. Add a <code>DOCTYPE</code> declaration, an <code>html</code> element, a <code>head</code> element, and a <code>body</code> element.</p>\n<p>Add the <code>lang</code> attribute to the opening <code>&#x3C;html></code> tag with <code>en</code> set as the value.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-flexbox-by-building-a-photo-gallery",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

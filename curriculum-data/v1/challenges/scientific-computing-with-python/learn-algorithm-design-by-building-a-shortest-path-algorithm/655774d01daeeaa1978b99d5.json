@@ -1,0 +1,53 @@
+{
+  "id": "655774d01daeeaa1978b99d5",
+  "title": "Step 29",
+  "challengeType": 20,
+  "dashedName": "step-29",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        15
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\n\ndef shortest_path(graph, start):\n    unvisited = []\n    distances = {}\n    for node in graph:\n        unvisited.append(node)\n        if node == start:\n            distances[node] = 0",
+      "error": null,
+      "seed": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\n\ndef shortest_path(graph, start):\n    unvisited = []\n    distances = {}\n    for node in graph:\n        unvisited.append(node)\n        if node == start:\n            distances[node] = 0"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an <code>else</code> clause.</p>",
+      "testString": "({ test: () =>  {\n    const shortest = __helpers.python.getDef(code, \"shortest_path\");\n    const {function_body} = shortest;    \n    assert(function_body.match(/^(\\s*)if.*:.*^\\1else\\s*:/ms));\n  }\n})"
+    },
+    {
+      "text": "<p>You should assign <code>float('inf')</code> to <code>distances[node]</code> inside your new <code>else</code> clause.</p>",
+      "testString": "({ test: () =>  {\n    const commentless_code = __helpers.python.removeComments(code);\n    const {block_body} = __helpers.python.getBlock(commentless_code, \"else\");\n    assert(block_body.match(/^\\s+distances\\s*\\[\\s*node\\s*\\]\\s*=\\s*float\\s*\\(\\s*(\"|')inf\\1\\s*\\)\\s*$/));\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>At the beginning, all the other nodes in the graph are considered to be at infinite distance from the source node, because the distance has not been determined yet.</p>\n<p>Create an <code>else</code> clause and assign an infinite value to the node in the <code>distances</code> dictionary. For that, use the <code>float()</code> function with the string <code>'inf'</code> as argument to generate a floating point number representing the positive infinity.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

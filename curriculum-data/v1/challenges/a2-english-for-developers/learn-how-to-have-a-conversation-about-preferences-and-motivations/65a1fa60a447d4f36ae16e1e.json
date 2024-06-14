@@ -1,0 +1,88 @@
+{
+  "id": "65a1fa60a447d4f36ae16e1e",
+  "title": "Task 67",
+  "challengeType": 19,
+  "dashedName": "task-67",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Alice expressing in her statement to Tom?</p>",
+    "answers": [
+      {
+        "answer": "<p>That demotivation is rare and unusual</p>",
+        "feedback": "<p>Consider the phrase <code>we all have our moments</code> in Alice's statement.</p>"
+      },
+      {
+        "answer": "<p>The importance of keeping problems to oneself</p>",
+        "feedback": "<p>Think about what Alice suggests is <code>good to do</code> in response to demotivation.</p>"
+      },
+      {
+        "answer": "<p>The need to compete with each other at work</p>",
+        "feedback": "<p>Reflect on the terms <code>share</code> and <code>support</code> and how they relate to competition.</p>"
+      },
+      {
+        "answer": "<p>The value of sharing feelings and supporting one another</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 65.58,
+        "finishTimestamp": 70.3
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 5.72,
+        "dialogue": {
+          "text": "Of course, Tom. We all have our moments of demotivation and it's good to share and support each other.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 6.22
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 68,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

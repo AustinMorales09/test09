@@ -1,0 +1,53 @@
+{
+  "id": "65821fcc010c3245718f2a06",
+  "title": "Step 3",
+  "challengeType": 20,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def add_expense(expenses, amount, category):\n    pass\n\nexpenses = []",
+      "error": null,
+      "seed": "def add_expense(expenses, amount, category):\n    pass\n\nexpenses = []"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have <code>expenses.append()</code> in your function.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_function(\"add_expense\").has_stmt(\"expenses.append()\")`)) })"
+    },
+    {
+      "text": "<p>You should not have <code>pass</code> in your function.</p>",
+      "testString": "({ test: () => assert.isFalse(runPython(`_Node(_code).find_function(\"add_expense\").has_pass()`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>expenses</code> parameter of your <code>add_expense</code> function will be a list of expenses. You want to be able to add items at the end of your list. For that you'll use the <code>.append()</code> list method:</p>\n<pre><code class=\"language-py\">my_list = [2, 4, 7]\nmy_list.append(3)\n</code></pre>\n<p>In the example above, after appending <code>3</code>, <code>my_list</code> would be <code>[2, 4, 7, 3]</code>.</p>\n<p>Replace <code>pass</code> with a call to the <code>.append()</code> method on the <code>expenses</code> list. Don't pass any arguments to <code>.append()</code> for now.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

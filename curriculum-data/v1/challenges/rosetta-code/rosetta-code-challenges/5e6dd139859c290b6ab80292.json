@@ -1,0 +1,90 @@
+{
+  "id": "5e6dd139859c290b6ab80292",
+  "title": "Longest increasing subsequence",
+  "challengeType": 1,
+  "forumTopicId": 385272,
+  "dashedName": "longest-increasing-subsequence",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function findSequence(input) {\n\n}",
+      "error": null,
+      "seed": "function findSequence(input) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function findSequence(input) {\n    var len = input.length;\n    var result = []\n    for (var i = 0; i < len; i++) result.push(1)\n\n    for (var i = 0; i < len; i++)\n        for (var j = i - 1; j >= 0; j--)\n            if (input[i] > input[j] && result[j] >= result[i])\n                result[i] = result[j] + 1;\n\n    var maxValue = Math.max.apply(null, result);\n    var maxIndex = result.indexOf(Math.max.apply(Math, result));\n    var output = [];\n    output.push(input[maxIndex]);\n    for (var i = maxIndex; i >= 0; i--) {\n        if (maxValue == 0) break;\n        if (input[maxIndex] > input[i] && result[i] == maxValue - 1) {\n            output.push(input[i]);\n            maxValue--;\n        }\n    }\n    output.reverse();\n    return output;\n}",
+        "error": null,
+        "seed": "function findSequence(input) {\n    var len = input.length;\n    var result = []\n    for (var i = 0; i < len; i++) result.push(1)\n\n    for (var i = 0; i < len; i++)\n        for (var j = i - 1; j >= 0; j--)\n            if (input[i] > input[j] && result[j] >= result[i])\n                result[i] = result[j] + 1;\n\n    var maxValue = Math.max.apply(null, result);\n    var maxIndex = result.indexOf(Math.max.apply(Math, result));\n    var output = [];\n    output.push(input[maxIndex]);\n    for (var i = maxIndex; i >= 0; i--) {\n        if (maxValue == 0) break;\n        if (input[maxIndex] > input[i] && result[i] == maxValue - 1) {\n            output.push(input[i]);\n            maxValue--;\n        }\n    }\n    output.reverse();\n    return output;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>findSequence</code> should be a function.</p>",
+      "testString": "assert(typeof findSequence == 'function');"
+    },
+    {
+      "text": "<p><code>findSequence([3, 10, 2, 1, 20])</code> should return a array.</p>",
+      "testString": "assert(Array.isArray(findSequence([3, 10, 2, 1, 20])));"
+    },
+    {
+      "text": "<p><code>findSequence([3, 10, 2, 1, 20])</code> should return <code>[3, 10, 20]</code>.</p>",
+      "testString": "assert.deepEqual(findSequence([3, 10, 2, 1, 20]), [3, 10, 20]);"
+    },
+    {
+      "text": "<p><code>findSequence([2, 7, 3, 5, 8])</code> should return <code>[2, 3, 5, 8]</code>.</p>",
+      "testString": "assert.deepEqual(findSequence([2, 7, 3, 5, 8]), [2, 3, 5, 8]);"
+    },
+    {
+      "text": "<p><code>findSequence([2, 6, 4, 5, 1])</code> should return <code>[2, 4, 5]</code>.</p>",
+      "testString": "assert.deepEqual(findSequence([2, 6, 4, 5, 1]), [2, 4, 5]);"
+    },
+    {
+      "text": "<p><code>findSequence([10, 22, 9, 33, 21, 50, 60, 80])</code> should return <code>[10, 22, 33, 50, 60, 80]</code>.</p>",
+      "testString": "assert.deepEqual(findSequence([10, 22, 9, 33, 21, 50, 60, 80]), [\n  10,\n  22,\n  33,\n  50,\n  60,\n  80\n]);"
+    },
+    {
+      "text": "<p><code>findSequence([0, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15])</code> should return <code>[0, 2, 6, 9, 11, 15</code>.</p>",
+      "testString": "assert.deepEqual(\n  findSequence([0, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15]),\n  [0, 2, 6, 9, 11, 15]\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The longest increasing subsequence problem is to find a subsequence of a given sequence in which the subsequence's elements are in sorted order, lowest to highest, and in which the subsequence is as long as possible. An example:</p>\n<p>For the following array:</p>\n<pre><code class=\"language-js\">const array = [3, 10, 2, 1, 20];\n</code></pre>\n<p>Longest increasing sequence is:</p>\n<p>$\\{3, 10, 20\\}$</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that takes an array of numbers as a parameter and returns the longest increasing subsequence.</p>\n<p>It is guaranteed that every array will have a longest increasing subsequence.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 95,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "658153bbda68b527d415c463",
+  "title": "Task 16",
+  "challengeType": 19,
+  "dashedName": "task-16",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Brian find challenging?</p>",
+    "answers": [
+      {
+        "answer": "<p>Loose schedules</p>",
+        "feedback": "<p>This phrase implies having a flexible or open timetable, which is the opposite of the context.</p>"
+      },
+      {
+        "answer": "<p>Flexible deadlines</p>",
+        "feedback": "<p>This phrase suggests having adjustable timeframes for completing tasks, while Brian's challenge is with the strictness of the deadlines.</p>"
+      },
+      {
+        "answer": "<p>Tight deadlines</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Ample time</p>",
+        "feedback": "<p>This phrase means having plenty of time, which is different from what Brian means.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 26.66,
+        "finishTimestamp": 31.58
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.92,
+        "dialogue": {
+          "text": "Dealing with many tight deadlines and feeling like I'm rushing to complete tasks.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 6.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>tight deadlines</code> means you have to finish your work very soon.</p>\n<p><code>Tight</code> here means there is not much time. <code>Deadlines</code> are the days or times you must finish your work by. When deadlines are tight, you need to work fast and well to finish everything on time.</p>\n<p>It can make you feel like you need to hurry.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

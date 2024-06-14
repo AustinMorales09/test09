@@ -1,0 +1,65 @@
+{
+  "id": "5900f4201000cf542c50ff33",
+  "title": "Problem 180: Rational zeros of a function of three variables",
+  "challengeType": 1,
+  "forumTopicId": 301816,
+  "dashedName": "problem-180-rational-zeros-of-a-function-of-three-variables",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function rationalZeros() {\n\n  return true;\n}\n\nrationalZeros();",
+      "error": null,
+      "seed": "function rationalZeros() {\n\n  return true;\n}\n\nrationalZeros();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>rationalZeros()</code> should return <code>285196020571078980</code>.</p>",
+      "testString": "assert.strictEqual(rationalZeros(), 285196020571078980);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>For any integer $n$, consider the three functions</p>\n<p>$$\\begin{align}\n&#x26; f_{1,n}(x,y,z) = x^{n + 1} + y^{n + 1} − z^{n + 1}\\\\\n&#x26; f_{2,n}(x,y,z) = (xy + yz + zx) \\times (x^{n - 1} + y^{n - 1} − z^{n - 1})\\\\\n&#x26; f_{3,n}(x,y,z) = xyz \\times (x^{n - 2} + y^{n - 2} − z^{n - 2})\n\\end{align}$$</p>\n<p>and their combination</p>\n<p>$$\\begin{align}\n&#x26; f_n(x,y,z) = f_{1,n}(x,y,z) + f_{2,n}(x,y,z) − f_{3,n}(x,y,z)\n\\end{align}$$</p>\n<p>We call $(x,y,z)$ a golden triple of order $k$ if $x$, $y$, and $z$ are all rational numbers of the form $\\frac{a}{b}$ with $0 &#x3C; a &#x3C; b ≤ k$ and there is (at least) one integer $n$, so that $f_n(x,y,z) = 0$.</p>\n<p>Let $s(x,y,z) = x + y + z$.</p>\n<p>Let $t = \\frac{u}{v}$ be the sum of all distinct $s(x,y,z)$ for all golden triples $(x,y,z)$ of order 35. All the $s(x,y,z)$ and $t$ must be in reduced form.</p>\n<p>Find $u + v$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 79,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

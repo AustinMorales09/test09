@@ -1,0 +1,88 @@
+{
+  "id": "65b25eacb57dd5493ebaf184",
+  "title": "Task 16",
+  "challengeType": 19,
+  "dashedName": "task-16",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is she excellent at her job according to Bob?</p>",
+    "answers": [
+      {
+        "answer": "<p>Because she arrives late</p>",
+        "feedback": "<p>Being <code>organized and serious</code> about work usually means being punctual, not late.</p>"
+      },
+      {
+        "answer": "<p>Because she is very funny and relaxed</p>",
+        "feedback": "<p>Bob's description suggests she is focused and well-planned, not funny and relaxed.</p>"
+      },
+      {
+        "answer": "<p>Because she focuses deeply on her work and keeps things in order</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Because she doesn't like her job</p>",
+        "feedback": "<p>Bob implies that her attitude and method make her good at her job, not disliking it.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.74,
+        "finishTimestamp": 17.22
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.48,
+        "dialogue": {
+          "text": "She's quite serious and organized, which makes her excellent at her job.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.98
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

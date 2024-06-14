@@ -1,0 +1,49 @@
+{
+  "id": "64ddd280d69fa818ca782d50",
+  "title": "Step 29",
+  "challengeType": 20,
+  "dashedName": "step-29",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        9
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "NUMBER_OF_DISKS = 3\nnumber_of_moves = 2**NUMBER_OF_DISKS - 1\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\n\n\ndef move(n, source, auxiliary, target):\n    # display starting configuration\n    print(rods)\n    for i in range(number_of_moves):\n        remainder = (i + 1) % 3\n        if remainder == 1:\n            print(f'Move {i + 1} allowed between {source} and {target}')\n            forward = False\n            if not rods[target]:\n                forward = True\n            elif rods[source] and rods[source][-1] < rods[target][-1]:\n                forward = True              \n            if forward:\n                print(f'Moving disk {rods[source][-1]} from {source} to {target}')\n                rods[target].append(rods[source].pop())\n            else:\n                print(f'Moving disk {rods[target][-1]} from {target} to {source}')\n                rods[source].append(rods[target].pop())\n            \n            # display our progress\n            print(rods)\n        elif remainder == 2:\n            print(f'Move {i + 1} allowed between {source} and {auxiliary}')\n        elif remainder == 0:\n            print(f'Move {i + 1} allowed between {auxiliary} and {target}')\n\n# initiate call from source A to target C with auxiliary B\nmove(NUMBER_OF_DISKS, 'A', 'B', 'C')",
+      "error": null,
+      "seed": "NUMBER_OF_DISKS = 3\nnumber_of_moves = 2**NUMBER_OF_DISKS - 1\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\n\n\ndef move(n, source, auxiliary, target):\n    # display starting configuration\n    print(rods)\n    for i in range(number_of_moves):\n        remainder = (i + 1) % 3\n        if remainder == 1:\n            print(f'Move {i + 1} allowed between {source} and {target}')\n            forward = False\n            if not rods[target]:\n                forward = True\n            elif rods[source] and rods[source][-1] < rods[target][-1]:\n                forward = True              \n            if forward:\n                print(f'Moving disk {rods[source][-1]} from {source} to {target}')\n                rods[target].append(rods[source].pop())\n            else:\n                print(f'Moving disk {rods[target][-1]} from {target} to {source}')\n                rods[source].append(rods[target].pop())\n            \n            # display our progress\n            print(rods)\n        elif remainder == 2:\n            print(f'Move {i + 1} allowed between {source} and {auxiliary}')\n        elif remainder == 0:\n            print(f'Move {i + 1} allowed between {auxiliary} and {target}')\n\n# initiate call from source A to target C with auxiliary B\nmove(NUMBER_OF_DISKS, 'A', 'B', 'C')"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare an empty function named <code>make_allowed_move</code>. Remember to use the <code>pass</code> keyword inside the function body with the correct indentation.</p>",
+      "testString": "({ test: () => assert(runPython(`\n      import inspect\n      inspect.isfunction(make_allowed_move)\n  `)) \n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As you can see, disk 1 is going back and forth every three moves. This happens because you still need to take care of movements between the other rods.\nInstead of repeating the same code you wrote during the previous few steps and changing the rods, it would be better to move that code inside a function to call in each conditional statement. Declare an empty function named <code>make_allowed_move()</code> and don't forget the <code>pass</code> keyword.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-solving-the-tower-of-hanoi-puzzle",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

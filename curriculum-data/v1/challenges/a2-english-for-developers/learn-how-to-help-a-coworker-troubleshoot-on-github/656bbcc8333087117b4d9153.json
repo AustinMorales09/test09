@@ -1,0 +1,88 @@
+{
+  "id": "656bbcc8333087117b4d9153",
+  "title": "Task 15",
+  "challengeType": 19,
+  "dashedName": "task-15",
+  "solutions": [],
+  "question": {
+    "text": "<p>What problem is Bob facing with the code?</p>",
+    "answers": [
+      {
+        "answer": "<p>The code won't compile and shows strange errors</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The code is compiling without any errors</p>",
+        "feedback": "<p>Bob actually says the code won't compile and there are errors.</p>"
+      },
+      {
+        "answer": "<p>He can't push changes to the repository</p>",
+        "feedback": "<p>Bob managed to push changes, but the issue is with compiling the code.</p>"
+      },
+      {
+        "answer": "<p>The repository is not accepting any new changes</p>",
+        "feedback": "<p>Bob successfully pushed changes, the issue happened during the code compilation.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.18,
+        "finishTimestamp": 15.6
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 7.42,
+        "dialogue": {
+          "text": "I pushed some changes to the repository earlier, but now the code won't compile. It's showing some strange errors.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 7.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Bob talks about a technical issue. He mentions pushing changes to a repository, which means he uploaded new code. However, he's facing a problem.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-help-a-coworker-troubleshoot-on-github",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

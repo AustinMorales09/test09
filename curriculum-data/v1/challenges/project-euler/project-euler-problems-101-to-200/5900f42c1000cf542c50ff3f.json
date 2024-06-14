@@ -1,0 +1,65 @@
+{
+  "id": "5900f42c1000cf542c50ff3f",
+  "title": "Problem 192: Best Approximations",
+  "challengeType": 1,
+  "forumTopicId": 301830,
+  "dashedName": "problem-192-best-approximations",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function bestApproximations() {\n\n  return true;\n}\n\nbestApproximations();",
+      "error": null,
+      "seed": "function bestApproximations() {\n\n  return true;\n}\n\nbestApproximations();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>bestApproximations()</code> should return <code>57060635927998344</code>.</p>",
+      "testString": "assert.strictEqual(bestApproximations(), 57060635927998344);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $x$ be a real number.</p>\n<p>A best approximation to $x$ for the denominator bound $d$ is a rational number $\\frac{r}{s}$ in reduced form, with $s ≤ d$, such that any rational number which is closer to $x$ than $\\frac{r}{s}$ has a denominator larger than $d$:</p>\n<p>$$|\\frac{p}{q} - x| &#x3C; |\\frac{r}{s} - x| ⇒ q > d$$</p>\n<p>For example, the best approximation to $\\sqrt{13}$ for the denominator bound $20$ is $\\frac{18}{5}$ and the best approximation to $\\sqrt{13}$ for the denominator bound $30$ is $\\frac{101}{28}$.</p>\n<p>Find the sum of all denominators of the best approximations to $\\sqrt{n}$ for the denominator bound ${10}^{12}$, where $n$ is not a perfect square and $1 &#x3C; n ≤ 100000$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 91,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "657edbc3e12e35cfc1d80358",
+  "title": "Task 41",
+  "challengeType": 19,
+  "dashedName": "task-41",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>huge collection</code> mean here?</p>",
+    "answers": [
+      {
+        "answer": "<p>A few items</p>",
+        "feedback": "<p><code>Huge collection</code> means many items, not just a few.</p>"
+      },
+      {
+        "answer": "<p>Many different items</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A new hobby</p>",
+        "feedback": "<p>This means someone just started collecting, but <code>huge collection</code> suggests they have been collecting for a while.</p>"
+      },
+      {
+        "answer": "<p>A neat arrangement of items</p>",
+        "feedback": "<p>This talks about how items are arranged, but <code>huge collection</code> focuses on having many items.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.1
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 5.1,
+        "dialogue": {
+          "text": "Hey, I noticed you have a huge collection of action figures on that shelf behind you.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 5.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The term <code>huge collection</code> is used to describe the quantity and variety of items collected over time.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

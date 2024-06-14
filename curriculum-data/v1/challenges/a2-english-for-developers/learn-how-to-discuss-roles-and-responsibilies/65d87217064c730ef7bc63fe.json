@@ -1,0 +1,88 @@
+{
+  "id": "65d87217064c730ef7bc63fe",
+  "title": "Task 73",
+  "challengeType": 19,
+  "dashedName": "task-73",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is emphasized as important?</p>",
+    "answers": [
+      {
+        "answer": "<p>Keeping meetings confidential</p>",
+        "feedback": "<p>The emphasis is on not sharing sensitive information like access codes, not specifically about meetings.</p>"
+      },
+      {
+        "answer": "<p>Not sharing access codes or passwords</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Recording office conversations</p>",
+        "feedback": "<p>The focus is on security measures related to access information, not recording conversations.</p>"
+      },
+      {
+        "answer": "<p>Checking emails regularly</p>",
+        "feedback": "<p>The discussion centers on the importance of keeping access information private, not on email habits.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 44.1,
+        "finishTimestamp": 49.4
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 6.3,
+        "dialogue": {
+          "text": "Yes, there is one thing he emphasizes: you mustn't share your access codes or passwords with anyone.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 6.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 75,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

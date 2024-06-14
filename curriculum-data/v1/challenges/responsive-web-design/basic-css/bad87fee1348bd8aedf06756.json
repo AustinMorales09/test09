@@ -1,0 +1,91 @@
+{
+  "id": "bad87fee1348bd8aedf06756",
+  "title": "Override Class Declarations by Styling ID Attributes",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cRkpDhB",
+  "forumTopicId": 18251,
+  "dashedName": "override-class-declarations-by-styling-id-attributes",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n  .pink-text {\n    color: pink;\n  }\n  .blue-text {\n    color: blue;\n  }\n</style>\n<h1 class=\"pink-text blue-text\">Hello World!</h1>",
+      "error": null,
+      "seed": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n  .pink-text {\n    color: pink;\n  }\n  .blue-text {\n    color: blue;\n  }\n</style>\n<h1 class=\"pink-text blue-text\">Hello World!</h1>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n  .pink-text {\n    color: pink;\n  }\n  .blue-text {\n    color: blue;\n  }\n  #orange-text {\n    color: orange;\n  }  \n</style>\n<h1 id=\"orange-text\"  class=\"pink-text blue-text\">Hello World!</h1>",
+        "error": null,
+        "seed": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n  .pink-text {\n    color: pink;\n  }\n  .blue-text {\n    color: blue;\n  }\n  #orange-text {\n    color: orange;\n  }  \n</style>\n<h1 id=\"orange-text\"  class=\"pink-text blue-text\">Hello World!</h1>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>h1</code> element should have the class <code>pink-text</code>.</p>",
+      "testString": "assert($('h1').hasClass('pink-text'));"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should have the class <code>blue-text</code>.</p>",
+      "testString": "assert($('h1').hasClass('blue-text'));"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should have the id of <code>orange-text</code>.</p>",
+      "testString": "assert($('h1').attr('id') === 'orange-text');"
+    },
+    {
+      "text": "<p>There should be only one <code>h1</code> element.</p>",
+      "testString": "assert($('h1').length === 1);"
+    },
+    {
+      "text": "<p>Your <code>orange-text</code> id should have a CSS declaration.</p>",
+      "testString": "assert(code.match(/#orange-text\\s*{/gi));"
+    },
+    {
+      "text": "<p>Your <code>h1</code> should not have any <code>style</code> attributes.</p>",
+      "testString": "assert(!code.match(/<h1.*style.*>/gi));"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should be orange.</p>",
+      "testString": "assert($('h1').css('color') === 'rgb(255, 165, 0)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>We just proved that browsers read CSS from top to bottom in order of their declaration. That means that, in the event of a conflict, the browser will use whichever CSS declaration came last. Notice that if we even had put <code>blue-text</code> before <code>pink-text</code> in our <code>h1</code> element's classes, it would still look at the declaration order and not the order of their use!</p>\n<p>But we're not done yet. There are other ways that you can override CSS. Do you remember id attributes?</p>\n<p>Let's override your <code>pink-text</code> and <code>blue-text</code> classes, and make your <code>h1</code> element orange, by giving the <code>h1</code> element an id and then styling that id.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Give your <code>h1</code> element the <code>id</code> attribute of <code>orange-text</code>. Remember, id styles look like this:</p>\n<pre><code class=\"language-html\">&#x3C;h1 id=\"orange-text\">\n</code></pre>\n<p>Leave the <code>blue-text</code> and <code>pink-text</code> classes on your <code>h1</code> element.</p>\n<p>Create a CSS declaration for your <code>orange-text</code> id in your <code>style</code> element. Here's an example of what this looks like:</p>\n<pre><code class=\"language-css\">#brown-text {\n  color: brown;\n}\n</code></pre>\n<p><strong>Note:</strong> It doesn't matter whether you declare this CSS above or below <code>pink-text</code> class, since the <code>id</code> attribute will always take precedence.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-css",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

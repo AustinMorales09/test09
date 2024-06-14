@@ -1,0 +1,88 @@
+{
+  "id": "65a39b443701060c7297158e",
+  "title": "Task 90",
+  "challengeType": 19,
+  "dashedName": "task-90",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Brian want?</p>",
+    "answers": [
+      {
+        "answer": "<p>To continue having a lot of motivation</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To have less motivation over time</p>",
+        "feedback": "<p>Brian wants to keep the excitement high, not low.</p>"
+      },
+      {
+        "answer": "<p>To only have motivation for easy problems</p>",
+        "feedback": "<p>Brian likes solving problems, not just the easy ones.</p>"
+      },
+      {
+        "answer": "<p>To find motivation outside of work</p>",
+        "feedback": "<p>Brian talks about being excited by solving problems, not about where to find motivation.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 49.3,
+        "finishTimestamp": 55.76
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 7.46,
+        "dialogue": {
+          "text": "Knowing that we solve problems is really exciting, Lisa. I hope we keep getting as much motivation from it as we can.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 7.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When someone says <code>as much as</code>, they are talking about doing something as fully as possible. Like <code>if you eat as much cake as you can</code>, you eat a lot until you can't eat any more.</p>\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 92,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

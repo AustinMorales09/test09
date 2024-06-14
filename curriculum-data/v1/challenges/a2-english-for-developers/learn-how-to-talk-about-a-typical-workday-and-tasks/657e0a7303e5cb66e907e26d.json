@@ -1,0 +1,45 @@
+{
+  "id": "657e0a7303e5cb66e907e26d",
+  "title": "Task 10",
+  "challengeType": 19,
+  "dashedName": "task-10",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>handle</code> mean in a work context?</p>",
+    "answers": [
+      {
+        "answer": "<p>To manage or deal with.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To ignore.</p>",
+        "feedback": "<p><code>Handle</code> implies taking action, not ignoring.</p>"
+      },
+      {
+        "answer": "<p>To postpone.</p>",
+        "feedback": "<p><code>Handle</code> means dealing with something, not postponing it.</p>"
+      },
+      {
+        "answer": "<p>To complete.</p>",
+        "feedback": "<p>While <code>handle</code> can lead to completion, it primarily focuses on the process of managing or dealing.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>handle</code> means to manage or deal with something, especially effectively and competently. In a work context, it often refers to how someone manages tasks or projects. For example, <code>She handles client requests very efficiently</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

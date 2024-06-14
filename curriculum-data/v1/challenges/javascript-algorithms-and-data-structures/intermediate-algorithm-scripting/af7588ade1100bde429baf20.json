@@ -1,0 +1,81 @@
+{
+  "id": "af7588ade1100bde429baf20",
+  "title": "Missing letters",
+  "challengeType": 1,
+  "forumTopicId": 16023,
+  "dashedName": "missing-letters",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function fearNotLetter(str) {\n  return str;\n}\n\nfearNotLetter(\"abce\");",
+      "error": null,
+      "seed": "function fearNotLetter(str) {\n  return str;\n}\n\nfearNotLetter(\"abce\");"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function fearNotLetter (str) {\n  for (var i = str.charCodeAt(0); i <= str.charCodeAt(str.length - 1); i++) {\n    var letter = String.fromCharCode(i);\n    if (str.indexOf(letter) === -1) {\n      return letter;\n    }\n  }\n\n  return undefined;\n}",
+        "error": null,
+        "seed": "function fearNotLetter (str) {\n  for (var i = str.charCodeAt(0); i <= str.charCodeAt(str.length - 1); i++) {\n    var letter = String.fromCharCode(i);\n    if (str.indexOf(letter) === -1) {\n      return letter;\n    }\n  }\n\n  return undefined;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>fearNotLetter(\"abce\")</code> should return the string <code>d</code>.</p>",
+      "testString": "assert.deepEqual(fearNotLetter('abce'), 'd');"
+    },
+    {
+      "text": "<p><code>fearNotLetter(\"abcdefghjklmno\")</code> should return the string <code>i</code>.</p>",
+      "testString": "assert.deepEqual(fearNotLetter('abcdefghjklmno'), 'i');"
+    },
+    {
+      "text": "<p><code>fearNotLetter(\"stvwx\")</code> should return the string <code>u</code>.</p>",
+      "testString": "assert.deepEqual(fearNotLetter('stvwx'), 'u');"
+    },
+    {
+      "text": "<p><code>fearNotLetter(\"bcdf\")</code> should return the string <code>e</code>.</p>",
+      "testString": "assert.deepEqual(fearNotLetter('bcdf'), 'e');"
+    },
+    {
+      "text": "<p><code>fearNotLetter(\"abcdefghijklmnopqrstuvwxyz\")</code> should return <code>undefined</code>.</p>",
+      "testString": "assert.isUndefined(fearNotLetter('abcdefghijklmnopqrstuvwxyz'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Find the missing letter in the passed letter range and return it.</p>\n<p>If all letters are present in the range, return <code>undefined</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "intermediate-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

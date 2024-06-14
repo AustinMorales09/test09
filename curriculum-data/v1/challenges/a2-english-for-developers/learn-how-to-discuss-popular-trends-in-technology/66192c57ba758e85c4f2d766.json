@@ -1,0 +1,45 @@
+{
+  "id": "66192c57ba758e85c4f2d766",
+  "title": "Task 31",
+  "challengeType": 19,
+  "dashedName": "task-31",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>Python is likely to remain popular</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>Python will disappear soon.</p>",
+        "feedback": "<p><code>Likely to remain</code> suggests a prediction about the future, not disappearance.</p>"
+      },
+      {
+        "answer": "<p>Python will be popular for a short time.</p>",
+        "feedback": "<p><code>Likely to remain</code> implies a lasting popularity, not just a short-lived trend.</p>"
+      },
+      {
+        "answer": "<p>Python is expected to continue being popular.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Python will only be used by a few people.</p>",
+        "feedback": "<p><code>Likely to remain</code> indicates that Python will continue to be widely used, not limited to a few users.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you say something <code>is likely to</code>, it means something is expected or probable to happen. It indicates a high chance that a particular action will occur in the future. For example, if a certain programming language is easy to use, you might say it is likely to remain popular, meaning it will probably stay popular in the future.</p>\n<p>In English, you can use verbs with the word <code>to</code> before them to talk about different actions. For example, <code>to eat</code>, <code>to run</code>, or <code>to learn</code>. When you talk about something that needs to happen or might happen in the future, you use this structure. For instance, <code>I want to eat</code>, <code>She likes to run</code>, or <code>They need to learn</code>.</p>\n<p>So, <code>to + infinitive</code> is a way you express actions that could or should occur, often indicating plans, desires, or possibilities.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 32,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "65823634a308cb4d6bcc5fa6",
+  "title": "Step 13",
+  "challengeType": 20,
+  "dashedName": "step-13",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        13
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n\ndef total_expenses(expenses):\n    pass\n    \ntest = lambda x: x * 2\nprint(test(3))\n\nexpenses = []",
+      "error": null,
+      "seed": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n\ndef total_expenses(expenses):\n    pass\n    \ntest = lambda x: x * 2\nprint(test(3))\n\nexpenses = []"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have <code>print(map(test, [2, 3, 5, 8]))</code> in your code.</p>",
+      "testString": "({ test: () => assert.match(code, /^print\\s*\\(\\s*map\\s*\\(\\s*test\\s*,\\s*\\[\\s*2\\s*,\\s*3\\s*,\\s*5\\s*,\\s*8\\s*\\]\\s*\\)\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Lambda functions can be valuably combined with the <code>map()</code> function, which executes a specified function for each element in a collection of objects, such as a list:</p>\n<pre><code class=\"language-py\">map(lambda x: x * 2, [1, 2, 3])\n</code></pre>\n<p>The function to execute is passed as the first argument, and the iterable is passed as the second argument.</p>\n<p>The result of the example above would be <code>[2, 4, 6]</code>, where each item in the list passed to <code>map()</code> has been doubled by the action of the lambda function.</p>\n<p>Modify your <code>print()</code> call to print the result of calling <code>map()</code> with <code>test</code> as the first argument, and <code>[2, 3, 5, 8]</code> as the second argument. You won't be able to see a readable output yet.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

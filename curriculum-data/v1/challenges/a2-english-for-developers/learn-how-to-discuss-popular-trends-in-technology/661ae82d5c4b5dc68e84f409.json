@@ -1,0 +1,45 @@
+{
+  "id": "661ae82d5c4b5dc68e84f409",
+  "title": "Task 61",
+  "challengeType": 19,
+  "dashedName": "task-61",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>biometrics</code> involve?</p>",
+    "answers": [
+      {
+        "answer": "<p>Using unique body characteristics for security</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Cooking delicious meals</p>",
+        "feedback": "<p>Cooking delicious meals is unrelated to the definition of biometrics.</p>"
+      },
+      {
+        "answer": "<p>Fixing electronic devices</p>",
+        "feedback": "<p>Fixing electronic devices is not the focus of biometrics; it involves unique physical traits for security.</p>"
+      },
+      {
+        "answer": "<p>Learning new languages</p>",
+        "feedback": "<p>Learning new languages is not the main idea of biometrics; it focuses on unique body features for security.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In simple terms, <code>biometrics</code> refers to using unique characteristics of your body, like your face or fingerprints, for security or identification.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 64,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

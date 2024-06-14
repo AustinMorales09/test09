@@ -1,0 +1,49 @@
+{
+  "id": "6564a9fe51964c229d5b7f4c",
+  "title": "Step 2",
+  "challengeType": 20,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def merge_sort():\n    pass",
+      "error": null,
+      "seed": "def merge_sort():\n    pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>merge_sort</code> function should take a single parameter: <code>array</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import inspect\n    str(inspect.signature(merge_sort)) == '(array)'    \n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You'll need a parameter that denotes the data collection to be sorted. Create a parameter called <code>array</code> in the <code>merge_sort</code> function.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-data-structures-by-building-the-merge-sort-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 9,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

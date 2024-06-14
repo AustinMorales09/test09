@@ -1,0 +1,107 @@
+{
+  "id": "663c215247722dbc339af6a3",
+  "title": "Task 41",
+  "challengeType": 22,
+  "dashedName": "task-41",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Tom: You're on the right track. It's a kind of coffee machine.</p>\n<p>Alice: Ah, _ it. Okay, your _.</p>",
+    "blanks": [
+      {
+        "answer": "got",
+        "feedback": "<p>It's the verb <code>get</code>, in its past form. Combined with <code>it</code>, it means you understood what was said.</p>"
+      },
+      {
+        "answer": "turn",
+        "feedback": "<p>The time for you or someone else to play in a game.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 15.72,
+        "finishTimestamp": 21.4
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.94,
+        "dialogue": {
+          "text": "You're on the right track. It's a kind of coffee machine.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.17
+      },
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 4.17
+      },
+      {
+        "character": "Alice",
+        "startTime": 4.4,
+        "finishTime": 6.68,
+        "dialogue": {
+          "text": "Ah, got it. Okay, your turn.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 7.18
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When someone explains something to you and you want to tell them you understood what was being said, you can simply say <code>got it</code>. That means you understood the explanation.</p>\n<p><code>Your turn</code> means it is your time to do something in a game or activity. For example, if you are playing a board game and someone says, <code>it's your turn</code>, it means you should play next. <code>Turns</code>, in this context, are the times when different people do something one after the other.</p>\n<p>Listen to the dialogue and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

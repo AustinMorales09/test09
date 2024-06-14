@@ -1,0 +1,73 @@
+{
+  "id": "5900f3951000cf542c50fea8",
+  "title": "Problem 41: Pandigital prime",
+  "challengeType": 1,
+  "forumTopicId": 302078,
+  "dashedName": "problem-41-pandigital-prime",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function pandigitalPrime(n) {\n\n  return n;\n}\n\npandigitalPrime(7);",
+      "error": null,
+      "seed": "function pandigitalPrime(n) {\n\n  return n;\n}\n\npandigitalPrime(7);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function pandigitalPrime(n) {\n  function isPrime(num) {\n    for (let i = 2, s = Math.sqrt(num); i <= s; i++) {\n      if (num % i === 0) {\n        return false;\n      }\n    }\n    return num !== 1;\n  }\n\n  function getPermutations(n) {\n    if (n === 1) {\n      permutations.push(digitsArr.join(''));\n    } else {\n      for (let i = 0; i < n - 1; i++) {\n        getPermutations(n - 1);\n        // swap(n % 2 === 0 ? i : 0, n - 1);\n        if (n % 2 === 0) {\n          swap(i, n - 1);\n        } else {\n          swap(0, n - 1);\n        }\n      }\n      getPermutations(n - 1);\n    }\n  }\n  function swap(x, y) {\n    let temp = digitsArr[x];\n    digitsArr[x] = digitsArr[y];\n    digitsArr[y] = temp;\n  }\n  let max = 0;\n  let permutations = [];\n  let digitsArr;\n  let pandigitalNum = '';\n\n  for (let max = n; max > 0; max--) {\n    pandigitalNum += max;\n  }\n\n  for (let i = 0; i < pandigitalNum.length; i++) {\n    if (max > 0) {\n      break;\n    } else {\n      permutations = [];\n      const currMax = pandigitalNum.slice(i);\n      digitsArr = currMax.split('');\n      getPermutations(digitsArr.length);\n\n      // sort permutations in descending order\n      permutations.sort(function(a, b) {\n        return b - a;\n      });\n\n      for (let perm of permutations) {\n        const thisPerm = parseInt(perm);\n        if (isPrime(thisPerm)) {\n          max = thisPerm;\n          break;\n        }\n      }\n    }\n  }\n\n  return max;\n}",
+        "error": null,
+        "seed": "function pandigitalPrime(n) {\n  function isPrime(num) {\n    for (let i = 2, s = Math.sqrt(num); i <= s; i++) {\n      if (num % i === 0) {\n        return false;\n      }\n    }\n    return num !== 1;\n  }\n\n  function getPermutations(n) {\n    if (n === 1) {\n      permutations.push(digitsArr.join(''));\n    } else {\n      for (let i = 0; i < n - 1; i++) {\n        getPermutations(n - 1);\n        // swap(n % 2 === 0 ? i : 0, n - 1);\n        if (n % 2 === 0) {\n          swap(i, n - 1);\n        } else {\n          swap(0, n - 1);\n        }\n      }\n      getPermutations(n - 1);\n    }\n  }\n  function swap(x, y) {\n    let temp = digitsArr[x];\n    digitsArr[x] = digitsArr[y];\n    digitsArr[y] = temp;\n  }\n  let max = 0;\n  let permutations = [];\n  let digitsArr;\n  let pandigitalNum = '';\n\n  for (let max = n; max > 0; max--) {\n    pandigitalNum += max;\n  }\n\n  for (let i = 0; i < pandigitalNum.length; i++) {\n    if (max > 0) {\n      break;\n    } else {\n      permutations = [];\n      const currMax = pandigitalNum.slice(i);\n      digitsArr = currMax.split('');\n      getPermutations(digitsArr.length);\n\n      // sort permutations in descending order\n      permutations.sort(function(a, b) {\n        return b - a;\n      });\n\n      for (let perm of permutations) {\n        const thisPerm = parseInt(perm);\n        if (isPrime(thisPerm)) {\n          max = thisPerm;\n          break;\n        }\n      }\n    }\n  }\n\n  return max;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>pandigitalPrime(4)</code> should return a number.</p>",
+      "testString": "assert(typeof pandigitalPrime(4) === 'number');"
+    },
+    {
+      "text": "<p><code>pandigitalPrime(4)</code> should return 4231.</p>",
+      "testString": "assert(pandigitalPrime(4) == 4231);"
+    },
+    {
+      "text": "<p><code>pandigitalPrime(7)</code> should return 7652413.</p>",
+      "testString": "assert(pandigitalPrime(7) == 7652413);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>We shall say that an <code>n</code>-digit number is pandigital if it makes use of all the digits 1 to <code>n</code> exactly once. For example, 2143 is a 4-digit pandigital and is also prime.</p>\n<p>What is the largest <code>n</code>-length digit pandigital prime that exists?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,70 @@
+{
+  "id": "587d7b8a367417b2b2512b4f",
+  "title": "Write Concise Object Literal Declarations Using Object Property Shorthand",
+  "challengeType": 1,
+  "forumTopicId": 301225,
+  "dashedName": "write-concise-object-literal-declarations-using-object-property-shorthand",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const createPerson = (name, age, gender) => {\n  // Only change code below this line\n  return {\n    name: name,\n    age: age,\n    gender: gender\n  };\n  // Only change code above this line\n};",
+      "error": null,
+      "seed": "const createPerson = (name, age, gender) => {\n  // Only change code below this line\n  return {\n    name: name,\n    age: age,\n    gender: gender\n  };\n  // Only change code above this line\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const createPerson = (name, age, gender) => {\n  // Only change code below this line\n  /*return {\n    name: name,\n    age: age,\n    gender: gender\n  };*/\n  return {\n    name,\n    age,\n    gender\n  };\n  // Only change code above this line\n};",
+        "error": null,
+        "seed": "const createPerson = (name, age, gender) => {\n  // Only change code below this line\n  /*return {\n    name: name,\n    age: age,\n    gender: gender\n  };*/\n  return {\n    name,\n    age,\n    gender\n  };\n  // Only change code above this line\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>createPerson(\"Zodiac Hasbro\", 56, \"male\")</code> should return <code>{name: \"Zodiac Hasbro\", age: 56, gender: \"male\"}</code>.</p>",
+      "testString": "assert.deepEqual(\n  { name: 'Zodiac Hasbro', age: 56, gender: 'male' },\n  createPerson('Zodiac Hasbro', 56, 'male')\n);"
+    },
+    {
+      "text": "<p>Your code should not use <code>key:value</code>.</p>",
+      "testString": "assert(!__helpers.removeJSComments(code).match(/:/g))"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>ES6 adds some nice support for easily defining object literals.</p>\n<p>Consider the following code:</p>\n<pre><code class=\"language-js\">const getMousePosition = (x, y) => ({\n  x: x,\n  y: y\n});\n</code></pre>\n<p><code>getMousePosition</code> is a simple function that returns an object containing two properties. ES6 provides the syntactic sugar to eliminate the redundancy of having to write <code>x: x</code>. You can simply write <code>x</code> once, and it will be converted to<code>x: x</code> (or something equivalent) under the hood. Here is the same function from above rewritten to use this new syntax:</p>\n<pre><code class=\"language-js\">const getMousePosition = (x, y) => ({ x, y });\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use object property shorthand with object literals to create and return an object with <code>name</code>, <code>age</code> and <code>gender</code> properties.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

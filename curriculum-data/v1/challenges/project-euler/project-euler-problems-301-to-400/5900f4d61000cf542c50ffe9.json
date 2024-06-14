@@ -1,0 +1,65 @@
+{
+  "id": "5900f4d61000cf542c50ffe9",
+  "title": "Problem 362: Squarefree factors",
+  "challengeType": 1,
+  "forumTopicId": 302023,
+  "dashedName": "problem-362-squarefree-factors",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function squarefreeFactors() {\n\n  return true;\n}\n\nsquarefreeFactors();",
+      "error": null,
+      "seed": "function squarefreeFactors() {\n\n  return true;\n}\n\nsquarefreeFactors();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>squarefreeFactors()</code> should return <code>457895958010</code>.</p>",
+      "testString": "assert.strictEqual(squarefreeFactors(), 457895958010);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Consider the number 54.</p>\n<p>54 can be factored in 7 distinct ways into one or more factors larger than 1:</p>\n<p>$$54, 2 × 27, 3 × 18, 6 × 9, 3 × 3 × 6, 2 × 3 × 9 \\text{ and } 2 × 3 × 3 × 3$$</p>\n<p>If we require that the factors are all squarefree only two ways remain: $3 × 3 × 6$ and $2 × 3 × 3 × 3$.</p>\n<p>Let's call $Fsf(n)$ the number of ways $n$ can be factored into one or more squarefree factors larger than 1, so $Fsf(54) = 2$.</p>\n<p>Let $S(n)$ be $\\sum Fsf(k)$ for $k = 2$ to $n$.</p>\n<p>$S(100) = 193$.</p>\n<p>Find $S(10\\,000\\,000\\,000)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 61,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

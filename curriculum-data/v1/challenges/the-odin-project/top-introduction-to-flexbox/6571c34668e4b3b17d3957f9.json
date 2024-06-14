@@ -1,0 +1,45 @@
+{
+  "id": "6571c34668e4b3b17d3957f9",
+  "title": "Introduction to Flexbox Question H",
+  "challengeType": 15,
+  "dashedName": "introduction-flexbox-question-h",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which CSS property changes the main axis direction in flex containers to arrange items from top to bottom?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>align-items</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>flex-flow</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>flex-direction</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>justify-content</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>No matter which direction you're using, you need to think of your flex-containers as having 2 axes: the main axis and the cross axis. It is the direction of these axes that changes when the <code>flex-direction</code> is changed. In most circumstances, <code>flex-direction: row</code> puts the main axis horizontal (left-to-right), and <code>column</code> puts the main axis vertical (top-to-bottom).</p>\n<p>In other words, in our very first example, you put <code>display: flex</code> on a div and it arranged its children horizontally. This is a demonstration of <code>flex-direction: row</code>, the default setting. The following example is very similar. If you uncomment the line that says <code>flex-direction: column</code>, those divs will stack vertically.</p>\n<iframe allowfullscreen=\"true\" allowpaymentrequest=\"true\" allowtransparency=\"true\" class=\"cp_embed_iframe \" frameborder=\"0\" height=\"400\" width=\"100%\" name=\"cp_embed_1\" scrolling=\"no\" src=\"https://codepen.io/TheOdinProjectExamples/embed/BaZKPdw?height=400&amp;default-tab=html%2Cresult&amp;slug-hash=BaZKPdw&amp;editable=true&amp;user=TheOdinProjectExamples&amp;name=cp_embed_1\" style=\"width: 100%; overflow:hidden; display:block;\" title=\"CodePen Embed\" loading=\"lazy\" id=\"cp_embed_BaZKPdw\"></iframe>\n</section>",
+  "translationPending": false,
+  "block": "top-introduction-to-flexbox",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

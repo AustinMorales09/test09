@@ -1,0 +1,69 @@
+{
+  "id": "6196aead7ac7bf1584b17a7f",
+  "title": "Step 18",
+  "challengeType": 0,
+  "dashedName": "step-18",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  \n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Penguin</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  </head>\n\n  <body>\n    <div class=\"left-mountain\"></div>\n    <div class=\"penguin\"></div>\n    <div class=\"ground\"></div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  \n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Penguin</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  </head>\n\n  <body>\n    <div class=\"left-mountain\"></div>\n    <div class=\"penguin\"></div>\n    <div class=\"ground\"></div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        9,
+        35
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100vh;\n  overflow: hidden;\n}\n\n.left-mountain {\n  width: 300px;\n  height: 300px;\n  background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));\n  position: absolute;\n  transform: skew(0deg, 44deg);\n  z-index: 2;\n\n}\n\n.penguin {\n  width: 300px;\n  height: 300px;\n  margin: auto;\n  margin-top: 75px;\n}\n\n.ground {\n  width: 100vw;\n  height: 400px;\n  background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));\n  z-index: 3;\n  position: absolute;\n  \n}",
+      "error": null,
+      "seed": "body {\n  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100vh;\n  overflow: hidden;\n}\n\n.left-mountain {\n  width: 300px;\n  height: 300px;\n  background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));\n  position: absolute;\n  transform: skew(0deg, 44deg);\n  z-index: 2;\n\n}\n\n.penguin {\n  width: 300px;\n  height: 300px;\n  margin: auto;\n  margin-top: 75px;\n}\n\n.ground {\n  width: 100vw;\n  height: 400px;\n  background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));\n  z-index: 3;\n  position: absolute;\n  \n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should give <code>.left-mountain</code> a <code>margin-top</code> of <code>100px</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.left-mountain')?.marginTop, '100px');"
+    },
+    {
+      "text": "<p>You should give <code>.ground</code> a <code>margin-top</code> of <code>-58px</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.ground')?.marginTop, '-58px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To overlap the mountain and <code>.ground</code> elements better, give the mountain a <code>margin-top</code> of <code>100px</code>, and the <code>.ground</code> element a <code>margin-top</code> of <code>-58px</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-transforms-by-building-a-penguin",
+  "hasEditableBoundaries": true,
+  "order": 18,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

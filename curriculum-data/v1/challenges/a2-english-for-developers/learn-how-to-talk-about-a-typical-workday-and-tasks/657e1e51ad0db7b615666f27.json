@@ -1,0 +1,88 @@
+{
+  "id": "657e1e51ad0db7b615666f27",
+  "title": "Task 25",
+  "challengeType": 19,
+  "dashedName": "task-25",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>tips</code> mean in Tom's statement?</p>",
+    "answers": [
+      {
+        "answer": "<p>A tool for time management.</p>",
+        "feedback": "<p><code>Tips</code> in this context is not a physical tool, but helpful information.</p>"
+      },
+      {
+        "answer": "<p>A request for help.</p>",
+        "feedback": "<p><code>Tips</code> is not a request for help, but advice given to help others.</p>"
+      },
+      {
+        "answer": "<p>An invitation to lunch.</p>",
+        "feedback": "<p><code>Tips</code> does not refer to an invitation, but to advice or suggestions.</p>"
+      },
+      {
+        "answer": "<p>Suggestion or pieces of advice.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 58.29,
+        "finishTimestamp": 63
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.71,
+        "dialogue": {
+          "text": "Thanks for sharing, Sophie. I want to get more organized and your tips are a great help to me.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 6.21
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Tip</code> often refers to advice or a suggestion that is helpful in a particular situation.</p>\n<p>For example, <code>Sophie gave Tom some tips on time management</code> means Sophie offered helpful advice about managing time more effectively.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

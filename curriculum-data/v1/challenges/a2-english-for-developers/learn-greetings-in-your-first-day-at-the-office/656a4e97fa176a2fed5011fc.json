@@ -1,0 +1,88 @@
+{
+  "id": "656a4e97fa176a2fed5011fc",
+  "title": "Task 41",
+  "challengeType": 19,
+  "dashedName": "task-41",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Tom ask Sophie about her origin after stating his own?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>And you?</code></p>",
+        "feedback": "<p>Tom uses a common follow-up question after sharing his own origin.</p>"
+      },
+      {
+        "answer": "<p><code>How about you?</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>What about you?</code></p>",
+        "feedback": "<p>Tom uses a common follow-up question after sharing his own origin.</p>"
+      },
+      {
+        "answer": "<p><code>You from where?</code></p>",
+        "feedback": "<p>Tom uses a common follow-up question after sharing his own origin.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 8.2,
+        "finishTimestamp": 10.22
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 2.8,
+        "dialogue": {
+          "text": "I'm from Texas. How about you?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 3.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>After stating your own origin or background, it's polite and engaging to ask the other person about theirs. This creates an opportunity for both to share more about themselves.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

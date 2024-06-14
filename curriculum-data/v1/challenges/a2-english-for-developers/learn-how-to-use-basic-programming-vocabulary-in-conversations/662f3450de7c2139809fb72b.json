@@ -1,0 +1,45 @@
+{
+  "id": "662f3450de7c2139809fb72b",
+  "title": "Task 69",
+  "challengeType": 19,
+  "dashedName": "task-69",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which stuation is an appropriate use of <code>no worries</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>Your friend apologizes for being late, and you respond, <code>No worries!</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>You are giving directions to someone who looks lost and say, <code>No worries, turn left here.</code></p>",
+        "feedback": "<p>While meant to be reassuring, <code>no worries</code> doesn't make sense in this context as it is typically not used to give directions but rather to dismiss concerns.</p>"
+      },
+      {
+        "answer": "<p>A coworker asks for a report urgently and you reply, <code>No worries</code>, without providing the report.</p>",
+        "feedback": "<p>This use might imply indifference or dismissal without addressing the coworker’s urgent need, which is not appropriate.</p>"
+      },
+      {
+        "answer": "<p>You are warning someone about a serious risk and say, <code>No worries, but be careful.</code></p>",
+        "feedback": "<p>Using <code>no worries</code> in a situation involving serious risk could undermine the seriousness of the warning.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 71,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

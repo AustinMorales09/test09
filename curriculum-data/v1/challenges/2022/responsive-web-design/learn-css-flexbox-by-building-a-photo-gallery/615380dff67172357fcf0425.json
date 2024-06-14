@@ -1,0 +1,77 @@
+{
+  "id": "615380dff67172357fcf0425",
+  "title": "Step 11",
+  "challengeType": 0,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n    <div class=\"gallery\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg\">\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n    <div class=\"gallery\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg\">\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        6
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  box-sizing: border-box;\n}\n\n",
+      "error": null,
+      "seed": "* {\n  box-sizing: border-box;\n}\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>.gallery img</code> selector.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.gallery img'));"
+    },
+    {
+      "text": "<p>Your <code>.gallery img</code> selector should have a <code>width</code> property set to <code>100%</code> as the value.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.gallery img')?.width === '100%');"
+    },
+    {
+      "text": "<p>Your <code>.gallery img</code> selector should have a <code>max-width</code> property set to <code>350px</code> as the value.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.gallery img')?.maxWidth, '350px');"
+    },
+    {
+      "text": "<p>Your <code>.gallery img</code> selector should have a <code>height</code> property set to <code>300px</code> as the value.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.gallery img')?.height, '300px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now your images are too big.</p>\n<p>Create a <code>.gallery img</code> selector to target them. Give them all a <code>width</code> of <code>100%</code> and a <code>max-width</code> of <code>350px</code>.</p>\n<p>Also set the <code>height</code> property to <code>300px</code> to keep your images a uniform size.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-flexbox-by-building-a-photo-gallery",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

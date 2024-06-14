@@ -1,0 +1,93 @@
+{
+  "id": "5900f36f1000cf542c50fe82",
+  "title": "Problem 3: Largest prime factor",
+  "challengeType": 1,
+  "forumTopicId": 301952,
+  "dashedName": "problem-3-largest-prime-factor",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function largestPrimeFactor(number) {\n\n  return true;\n}\n\nlargestPrimeFactor(13195);",
+      "error": null,
+      "seed": "function largestPrimeFactor(number) {\n\n  return true;\n}\n\nlargestPrimeFactor(13195);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const largestPrimeFactor = (number) => {\n  let largestFactor = number;\n\n  for (let i = 2; i <= Math.sqrt(largestFactor); i++) {\n    if (!(largestFactor % i)) {\n      let factor = largestFactor / i;\n      let candidate = largestPrimeFactor(factor);\n\n      return i > candidate ? i : candidate;\n    }\n  }\n\n  return largestFactor;\n}",
+        "error": null,
+        "seed": "const largestPrimeFactor = (number) => {\n  let largestFactor = number;\n\n  for (let i = 2; i <= Math.sqrt(largestFactor); i++) {\n    if (!(largestFactor % i)) {\n      let factor = largestFactor / i;\n      let candidate = largestPrimeFactor(factor);\n\n      return i > candidate ? i : candidate;\n    }\n  }\n\n  return largestFactor;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>largestPrimeFactor(2)</code> should return a number.</p>",
+      "testString": "assert(typeof largestPrimeFactor(2) === 'number');"
+    },
+    {
+      "text": "<p><code>largestPrimeFactor(2)</code> should return 2.</p>",
+      "testString": "assert.strictEqual(largestPrimeFactor(2), 2);"
+    },
+    {
+      "text": "<p><code>largestPrimeFactor(3)</code> should return 3.</p>",
+      "testString": "assert.strictEqual(largestPrimeFactor(3), 3);"
+    },
+    {
+      "text": "<p><code>largestPrimeFactor(5)</code> should return 5.</p>",
+      "testString": "assert.strictEqual(largestPrimeFactor(5), 5);"
+    },
+    {
+      "text": "<p><code>largestPrimeFactor(7)</code> should return 7.</p>",
+      "testString": "assert.strictEqual(largestPrimeFactor(7), 7);"
+    },
+    {
+      "text": "<p><code>largestPrimeFactor(8)</code> should return 2.</p>",
+      "testString": "assert.strictEqual(largestPrimeFactor(8), 2);"
+    },
+    {
+      "text": "<p><code>largestPrimeFactor(13195)</code> should return 29.</p>",
+      "testString": "assert.strictEqual(largestPrimeFactor(13195), 29);"
+    },
+    {
+      "text": "<p><code>largestPrimeFactor(600851475143)</code> should return 6857.</p>",
+      "testString": "assert.strictEqual(largestPrimeFactor(600851475143), 6857);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The prime factors of 13195 are 5, 7, 13 and 29.</p>\n<p>What is the largest prime factor of the given <code>number</code>?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

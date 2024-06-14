@@ -1,0 +1,88 @@
+{
+  "id": "66429ebe414f867b59b7843c",
+  "title": "Task 86",
+  "challengeType": 19,
+  "dashedName": "task-86",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is Maria thanking Bob?</p>",
+    "answers": [
+      {
+        "answer": "<p>Because he noticed they would spend too much at the party</p>",
+        "feedback": "<p>Actually, he was thinking about spending some more to have food for everyone.</p>"
+      },
+      {
+        "answer": "<p>Because Bob was thinking about everyone's comfort when he double checked the food</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Because Bob's parties are always a success</p>",
+        "feedback": "<p>We don't know about Bob's parties, but Maria wants this one to be a success.</p>"
+      },
+      {
+        "answer": "<p>Because he bought vegetarian food for her</p>",
+        "feedback": "<p>We don't know for sure if Maria is a vegetarian based on this dialogue.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 44.38,
+        "finishTimestamp": 47.84
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 4.46,
+        "dialogue": {
+          "text": "Thanks for double checking anyway. We want the team party to be a success.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 4.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to Maria and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 90,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

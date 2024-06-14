@@ -1,0 +1,83 @@
+{
+  "id": "657d6008a37af78962d30873",
+  "title": "Task 8",
+  "challengeType": 22,
+  "dashedName": "task-8",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ _ have you _ into photography?</p>",
+    "blanks": [
+      {
+        "answer": "How",
+        "feedback": "<p>First word of the expression to ask about duration of time <code>_ long</code>. Capitalize as it is in the beginning of the question.</p>"
+      },
+      {
+        "answer": "long",
+        "feedback": "<p>Second word of the expression to ask about duration of time <code>How _</code>.</p>"
+      },
+      {
+        "answer": "been",
+        "feedback": "<p>The verb to be in the form you use in the Present Perfect tense.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 12.76,
+        "finishTimestamp": 14.28
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 2.52,
+        "dialogue": {
+          "text": "How long have you been into photography?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 3.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In the beginning of the dialogue, Maria says <code>Are you into photography?</code> to ask if Bob likes photography. Now that she knows he does, she asks <code>How long have you been into photography?</code> to know the amount of time that has passed since he started enjoying it.</p>\n<p>Since the question is about duration from the past up until the present, you use the <em>Present Perfect</em> tense.</p>\n<p>Also, remember that the form of the verb <code>to be</code> for the Present Perfect is <code>been</code>. For example: <code>I have been in a traffic jam for an hour. I can't wait to go home.</code></p>\n<p>When you want to ask questions related to duration, start the question with <code>How long</code>. Examples: <code>How long is this movie?</code>, <code>How long have you two been married?</code></p>\n<p>Fill in the blanks with the appropriate words.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

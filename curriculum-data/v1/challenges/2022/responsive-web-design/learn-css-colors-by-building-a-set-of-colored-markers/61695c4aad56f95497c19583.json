@@ -1,0 +1,61 @@
+{
+  "id": "61695c4aad56f95497c19583",
+  "title": "Step 3",
+  "challengeType": 0,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        5
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n  </head>\n  <body>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n  </head>\n  <body>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an opening <code>title</code> tag.</p>",
+      "testString": "assert(code.match(/<title\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>title</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/title\\s*>/i));"
+    },
+    {
+      "text": "<p>Your project should have the title <code>Colored Markers</code>.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.equal(title?.text?.trim()?.toLowerCase(), 'colored markers')"
+    },
+    {
+      "text": "<p>Remember, casing and spelling matter for the title text.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.equal(title?.text?.trim(), 'Colored Markers');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Remember that the <code>title</code> element gives search engines extra information about the page. It also displays the content of that <code>title</code> element in two more ways:</p>\n<ul>\n<li>in the title bar when the page is open</li>\n<li>in the browser tab for the page when you hover on it. Even if that tab is not active, once you hover on the tab, the <code>title</code> text is displayed.</li>\n</ul>\n<p>Within the <code>head</code> element, nest a <code>title</code> element with the text <code>Colored Markers</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

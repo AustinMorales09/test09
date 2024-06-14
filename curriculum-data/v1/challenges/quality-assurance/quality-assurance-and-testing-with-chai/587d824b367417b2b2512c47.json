@@ -1,0 +1,42 @@
+{
+  "id": "587d824b367417b2b2512c47",
+  "title": "Test if a Variable or Function is Defined",
+  "challengeType": 2,
+  "forumTopicId": 301602,
+  "dashedName": "test-if-a-variable-or-function-is-defined",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>All tests should pass.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=1').then(\n    (data) => {\n      assert.equal(data.state, 'passed');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the first assertion - <code>isDefined</code> vs. <code>isUndefined</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=1').then(\n    (data) => {\n      assert.equal(\n        data.assertions[0].method,\n        'isDefined',\n        'Null is not undefined'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the second assertion - <code>isDefined</code> vs. <code>isUndefined</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=1').then(\n    (data) => {\n      assert.equal(\n        data.assertions[1].method,\n        'isUndefined',\n        'Undefined is undefined'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the third assertion - <code>isDefined</code> vs. <code>isUndefined</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=1').then(\n    (data) => {\n      assert.equal(\n        data.assertions[2].method,\n        'isDefined',\n        'A string is not undefined'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As a reminder, this project is being built upon the following starter project on <a href=\"https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Gitpod</a>, or cloned from <a href=\"https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">GitHub</a>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Within <code>tests/1_unit-tests.js</code> under the test labeled <code>#2</code> in the <code>Basic Assertions</code> suite, change each <code>assert</code> to either <code>assert.isDefined()</code> or <code>assert.isUndefined()</code> to make the test pass (should evaluate to <code>true</code>). Do not alter the arguments passed to the asserts.</p>\n</section>",
+  "translationPending": false,
+  "block": "quality-assurance-and-testing-with-chai",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

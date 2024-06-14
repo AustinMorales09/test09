@@ -1,0 +1,76 @@
+{
+  "id": "657e1bd636d5d3a7085a6876",
+  "title": "Task 21",
+  "challengeType": 22,
+  "dashedName": "task-21",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>When I don't go to a café around here, I usually _ my lunch and eat at my desk while I check my progress.</p>",
+    "blanks": [
+      {
+        "answer": "bring",
+        "feedback": "<p>Sophie is talking about taking her lunch with her to work.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 45.04,
+        "finishTimestamp": 49.74
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.7,
+        "dialogue": {
+          "text": "When I don't go to a café around here, I usually bring my lunch and eat at my desk while I check my progress.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 6.2
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>to bring</code> means to take something or someone with you to the place where you are going.</p>\n<p>For example, <code>I bring my phone to work every day.</code> It's often used when talking about taking items from one place to another.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

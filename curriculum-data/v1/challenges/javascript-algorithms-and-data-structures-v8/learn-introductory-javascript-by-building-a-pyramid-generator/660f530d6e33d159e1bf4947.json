@@ -1,0 +1,53 @@
+{
+  "id": "660f530d6e33d159e1bf4947",
+  "title": "Step 112",
+  "challengeType": 1,
+  "dashedName": "step-112",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        17
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\nlet inverted = true;\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\nfor (let i = 1; i <= count; i++) {\n  if (inverted) {\n    rows.unshift(padRow(i, count));\n  }\n\n}\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\nlet inverted = true;\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\nfor (let i = 1; i <= count; i++) {\n  if (inverted) {\n    rows.unshift(padRow(i, count));\n  }\n\n}\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add an <code>else</code> block.</p>",
+      "testString": "assert.match(code, /if\\s*\\(\\s*inverted\\s*\\)\\s*\\{\\s*rows\\.unshift\\(\\s*padRow\\(\\s*i\\s*,\\s*count\\s*\\)\\s*\\);\\s*\\}\\s*else\\s*\\{/);"
+    },
+    {
+      "text": "<p>Your <code>else</code> block should be empty.</p>",
+      "testString": "assert.match(code, /if\\s*\\(\\s*inverted\\s*\\)\\s*\\{\\s*rows\\.unshift\\(\\s*padRow\\(\\s*i\\s*,\\s*count\\s*\\)\\s*\\);\\s*\\}\\s*else\\s*\\{\\s*\\}/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>If your pyramid is not inverted, then you will want to have an <code>else</code> block that builds the pyramid in the normal order.</p>\n<p>In earlier steps, you learned how to work with <code>else</code> statement like this:</p>\n<pre><code class=\"language-js\">if (condition) {\n  // if condition is true, run this code\n} else {\n  // if condition is false, run this code\n}\n</code></pre>\n<p>Add an <code>else</code> block to your <code>if</code> block.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 111,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

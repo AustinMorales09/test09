@@ -1,0 +1,45 @@
+{
+  "id": "657cbdc0c360a3b53767d73f",
+  "title": "Task 48",
+  "challengeType": 19,
+  "dashedName": "task-48",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>leading a team</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>Following instructions</p>",
+        "feedback": "<p><code>Leading</code> is different from <code>following.</code> If you lead, you are the one giving instructions, not receiving them.</p>"
+      },
+      {
+        "answer": "<p>Guiding the team</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Doing all the work alone</p>",
+        "feedback": "<p>Leading involves working with the team, not doing everything alone. It's about managing and working together.</p>"
+      },
+      {
+        "answer": "<p>Asking for help</p>",
+        "feedback": "<p>While a good leader might ask for help, this choice doesn't capture the full responsibility of leading a team, which is about guiding and decision-making.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Leading a team</code> means being in charge of a group of people and guiding them to achieve their goals. It's like being the captain of a ship.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 50,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

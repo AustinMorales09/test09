@@ -1,0 +1,88 @@
+{
+  "id": "656a4b9e4822ba4a9893459e",
+  "title": "Task 49",
+  "challengeType": 19,
+  "dashedName": "task-49",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Bob commenting about Sarah's break and asking about the courses?</p>",
+    "answers": [
+      {
+        "answer": "<p>That she is enjoying her break and if she thinks the courses are fun</p>",
+        "feedback": "<p>Bob's focus is on the productivity of the break, not just enjoyment or fun.</p>"
+      },
+      {
+        "answer": "<p>That she is working during her break and if she thinks the courses are difficult</p>",
+        "feedback": "<p>Bob comments on the break being productive, not about the fact Sarah is working during the break.</p>"
+      },
+      {
+        "answer": "<p>That she is planning more courses during her break and if she thinks they are easy</p>",
+        "feedback": "<p>Bob is not asking about the level of difficulty of the courses.</p>"
+      },
+      {
+        "answer": "<p>That her break is productive and if she thinks the courses are helpful</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.76,
+        "finishTimestamp": 21.32
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.56,
+        "dialogue": {
+          "text": "That's a productive break, Sarah. Are you finding the courses helpful?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 5.06
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Practice time!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 53,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

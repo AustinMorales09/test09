@@ -1,0 +1,65 @@
+{
+  "id": "5900f4091000cf542c50ff1c",
+  "title": "Problem 157: Solving the diophantine equation",
+  "challengeType": 1,
+  "forumTopicId": 301788,
+  "dashedName": "problem-157-solving-the-diophantine-equation",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function diophantineEquation() {\n\n  return true;\n}\n\ndiophantineEquation();",
+      "error": null,
+      "seed": "function diophantineEquation() {\n\n  return true;\n}\n\ndiophantineEquation();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>diophantineEquation()</code> should return <code>53490</code>.</p>",
+      "testString": "assert.strictEqual(diophantineEquation(), 53490);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Consider the diophantine equation $\\frac{1}{a} + \\frac{1}{b} = \\frac{p}{{10}^n}$ with $a$, $b$, $p$, $n$ positive integers and $a ≤ b$.</p>\n<p>For $n = 1$ this equation has 20 solutions that are listed below:</p>\n<p>$$\\begin{array}{lllll}\n\\frac{1}{1}  + \\frac{1}{1}  = \\frac{20}{10} &#x26; \\frac{1}{1} + \\frac{1}{2}  = \\frac{15}{10}\n&#x26; \\frac{1}{1}  + \\frac{1}{5}  = \\frac{12}{10} &#x26; \\frac{1}{1} + \\frac{1}{10} = \\frac{11}{10}\n&#x26; \\frac{1}{2}  + \\frac{1}{2}  = \\frac{10}{10} \\\\\n\\frac{1}{2}  + \\frac{1}{5}  = \\frac{7}{10}   &#x26; \\frac{1}{2} + \\frac{1}{10} = \\frac{6}{10}\n&#x26; \\frac{1}{3}  + \\frac{1}{6}  = \\frac{5}{10}   &#x26; \\frac{1}{3} + \\frac{1}{15} = \\frac{4}{10}\n&#x26; \\frac{1}{4}  + \\frac{1}{4}  = \\frac{5}{10} \\\\\n\\frac{1}{4}  + \\frac{1}{4}  = \\frac{5}{10}  &#x26; \\frac{1}{5}  + \\frac{1}{5}  = \\frac{4}{10}\n&#x26; \\frac{1}{5}  + \\frac{1}{10} = \\frac{3}{10}  &#x26; \\frac{1}{6}  + \\frac{1}{30} = \\frac{2}{10}\n&#x26; \\frac{1}{10} + \\frac{1}{10} = \\frac{2}{10} \\\\\n\\frac{1}{11} + \\frac{1}{110} = \\frac{1}{10} &#x26; \\frac{1}{12} + \\frac{1}{60}  = \\frac{1}{10}\n&#x26; \\frac{1}{14} + \\frac{1}{35}  = \\frac{1}{10} &#x26; \\frac{1}{15} + \\frac{1}{30}  = \\frac{1}{10}\n&#x26; \\frac{1}{20} + \\frac{1}{20}  = \\frac{1}{10}\n\\end{array}$$</p>\n<p>How many solutions has this equation for $1 ≤ n ≤ 9$?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 56,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

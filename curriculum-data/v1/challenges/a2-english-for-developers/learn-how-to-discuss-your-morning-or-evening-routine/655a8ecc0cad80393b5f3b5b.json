@@ -1,0 +1,75 @@
+{
+  "id": "655a8ecc0cad80393b5f3b5b",
+  "title": "Task 74",
+  "challengeType": 22,
+  "dashedName": "task-74",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That makes sense! What do you do before _ to sleep, Sarah?</p>",
+    "blanks": [
+      {
+        "answer": "going",
+        "feedback": "<p>The gerund form of the verb <code>go</code>, used here after the preposition <code>before</code> to describe the activity before sleep.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 66.62,
+        "finishTimestamp": 69.96
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 4.34,
+        "dialogue": {
+          "text": "That makes sense. What do you do before going to sleep, Sarah?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 4.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In Jake's question, pay attention to the verb form following the preposition and its use in the sentence.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 76,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

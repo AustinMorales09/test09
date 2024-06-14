@@ -1,0 +1,45 @@
+{
+  "id": "6630b88fdd1eb2675cba64ec",
+  "title": "Task 4",
+  "challengeType": 19,
+  "dashedName": "task-4",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence correctly uses a preposition at the end?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>What are you speaking of?</code></p>",
+        "feedback": "<p>While <code>of</code> is a preposition, this sentence sounds a bit awkward or formal. It would be more natural to ask, <code>What are you talking about?</code></p>"
+      },
+      {
+        "answer": "<p><code>What are you looking for?</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Where is it belong?</code></p>",
+        "feedback": "<p>The correct sentence should be <code>Where does it belong?</code> without the preposition at the end, as <code>belong</code> does not typically require a preposition.</p>"
+      },
+      {
+        "answer": "<p><code>Who do you want to meet with she?</code></p>",
+        "feedback": "<p>The correct form should be <code>Who do you want to meet with?</code> <code>With she</code> is grammatically incorrect; it should be <code>with her</code>.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Prepositions are words that link nouns, pronouns, or phrases to other words within a sentence and often indicate time, place, or relationship, like <code>with</code>, <code>for</code>, <code>about</code>. They can also appear at the end of a question or sentence, which is common in spoken English.</p>\n<p>Examples:</p>\n<p>When someone asks <code>who are you going with?</code> the preposition <code>with</code> is used at the end to inquire about the company one will have.</p>\n<p><code>What are you excited about?</code> In this question, <code>about</code> is used at the end to inquire regarding the subject or event that is causing excitement.</p>\n<p><code>Who are you waiting for?</code> Here, <code>for</code> is placed at the end of the question to ask about the person for whom someone is waiting.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

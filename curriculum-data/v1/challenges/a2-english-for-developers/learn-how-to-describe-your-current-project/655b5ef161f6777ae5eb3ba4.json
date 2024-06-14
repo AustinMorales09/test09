@@ -1,0 +1,88 @@
+{
+  "id": "655b5ef161f6777ae5eb3ba4",
+  "title": "Task 3",
+  "challengeType": 19,
+  "dashedName": "task-3",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is James checking the network in his project?</p>",
+    "answers": [
+      {
+        "answer": "<p>For learning about networks</p>",
+        "feedback": "<p>James might learn something new, but that's not what the context refers to.</p>"
+      },
+      {
+        "answer": "<p>For finding problems</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>For fun</p>",
+        "feedback": "<p>The context indicates a professional purpose.</p>"
+      },
+      {
+        "answer": "<p>For making a report</p>",
+        "feedback": "<p>The sentence specifies looking for another thing</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 3.94,
+        "finishTimestamp": 6.38
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 3.44,
+        "dialogue": {
+          "text": "Hi Sophie, I'm checking our network for problems.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 3.94
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The preposition <code>for</code> is often used to explain the reason why we do something. Notice how <code>for</code> is followed by the reason or purpose of the action:</p>\n<p><code>I'm studying English for my job</code> - <code>for my job</code> explains the reason for studying English.</p>\n<p><code>I go to the gym for my health</code> - it means they go to the gym to stay healthy.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

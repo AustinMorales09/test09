@@ -1,0 +1,83 @@
+{
+  "id": "6638a290bc4a5458dd6ebf07",
+  "title": "Task 47",
+  "challengeType": 22,
+  "dashedName": "task-47",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I was _ _ _ using AI in tasks like code analysis and bug detection.</p>",
+    "blanks": [
+      {
+        "answer": "actually",
+        "feedback": "<p>This word is used to emphasize a fact or a point that might be surprising.</p>"
+      },
+      {
+        "answer": "thinking",
+        "feedback": "<p>This is part of the phrase which means to consider doing something.</p>"
+      },
+      {
+        "answer": "of",
+        "feedback": "<p>This word completes the phrase used here to indicate Sarah's consideration of an idea.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 16.72,
+        "finishTimestamp": 20.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5.2,
+        "dialogue": {
+          "text": "I was actually thinking of using AI in tasks like code analysis and bug detection.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>actually</code> is often used to express a fact or to correct a previous statement or assumption. It adds emphasis to what is being said and can introduce new, often surprising information.</p>\n<p>For example, <code>She isn't just my colleague; she's actually my sister.</code></p>\n<p>The phrase <code>think of</code> is used to express the idea of considering or planning to do something. When using <code>think of</code>, it is common to follow it with a verb in its <code>-ing</code> form (gerund). This structure is used to talk about possible actions or intentions.</p>\n<p>For instance, <code>I'm thinking of starting a new project.</code> It means considering starting something new.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 49,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

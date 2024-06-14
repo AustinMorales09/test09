@@ -1,0 +1,88 @@
+{
+  "id": "656ab3bfc9e49d4841672043",
+  "title": "Task 64",
+  "challengeType": 19,
+  "dashedName": "task-64",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Tom implying with <code>are great, too</code>? Why does Tom say <code>are great, too</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>He doesn't like his computer.</p>",
+        "feedback": "<p><code>Too</code> means <code>also</code>. Think about what else Tom thinks is good.</p>"
+      },
+      {
+        "answer": "<p>He only likes his drawing tablet.</p>",
+        "feedback": "<p><code>Too</code> means <code>also</code>. Think about what else Tom thinks is good.</p>"
+      },
+      {
+        "answer": "<p>He thinks both his computer and drawing tablet are good, like something else he talked about.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He doesn't think they're good.</p>",
+        "feedback": "<p><code>Too</code> means <code>also</code>. Think about what else Tom thinks is good.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 32.3,
+        "finishTimestamp": 36
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.25,
+        "dialogue": {
+          "text": "Awesome. My computer and drawing tablet are great too.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.75
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When someone says <code>too</code> at the end of a sentence, they mean <code>also</code> or <code>as well</code>. For example, <code>I like it too</code> means <code>I also like it</code>.  Adding <code>too</code> at the end of a statement implies agreement or adds emphasis that a similar condition or fact applies to what's being discussed.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 65,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

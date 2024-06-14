@@ -1,0 +1,49 @@
+{
+  "id": "6569b743630ee592a65a7e2f",
+  "title": "Step 26",
+  "challengeType": 20,
+  "dashedName": "step-26",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def merge_sort(array):\n\n   \n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n\n    merge_sort(left_part)\n    merge_sort(right_part)\n\n    left_array_index = 0\n    right_array_index = 0\n    sorted_index = 0\n\n    while left_array_index < len(left_part) and right_array_index < len(right_part):\n        if left_part[left_array_index] < right_part[right_array_index]:\n            array[sorted_index] = left_part[left_array_index]\n            left_array_index += 1\n        else:\n            array[sorted_index] = right_part[right_array_index]\n            right_array_index += 1\n        sorted_index += 1\n\n    while left_array_index < len(left_part):\n        array[sorted_index] = left_part[left_array_index]\n        left_array_index += 1\n        sorted_index += 1\n   \n    while right_array_index < len(right_part):\n        array[sorted_index] = right_part[right_array_index]\n        right_array_index += 1\n        sorted_index += 1",
+      "error": null,
+      "seed": "def merge_sort(array):\n\n   \n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n\n    merge_sort(left_part)\n    merge_sort(right_part)\n\n    left_array_index = 0\n    right_array_index = 0\n    sorted_index = 0\n\n    while left_array_index < len(left_part) and right_array_index < len(right_part):\n        if left_part[left_array_index] < right_part[right_array_index]:\n            array[sorted_index] = left_part[left_array_index]\n            left_array_index += 1\n        else:\n            array[sorted_index] = right_part[right_array_index]\n            right_array_index += 1\n        sorted_index += 1\n\n    while left_array_index < len(left_part):\n        array[sorted_index] = left_part[left_array_index]\n        left_array_index += 1\n        sorted_index += 1\n   \n    while right_array_index < len(right_part):\n        array[sorted_index] = right_part[right_array_index]\n        right_array_index += 1\n        sorted_index += 1"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create an <code>if</code> statement to check if <code>len(array) &#x3C;= 1</code>. Don't forget to use the <code>pass</code> keyword in the body of the <code>if</code> statement.</p>",
+      "testString": "({\n    test: () => assert(runPython(`\n      _Node(_code).find_function(\"merge_sort\").find_ifs()[0].find_conditions()[0].is_equivalent(\"len(array) <= 1\")\n    `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Before testing the <code>merge_sort()</code> function, you need to create a base case that stops the function execution when the length of <code>array</code> is less than or equal to <code>1</code>.</p>\n<p>This base case will stop the recursion call. Without it, the merge sort operation would continue to run even when the list has been sorted or has no element in it.</p>\n<p>Right after the function declaration, create an <code>if</code> statement with this condition: <code>len(array) &#x3C;= 1</code>. Use the <code>pass</code> keyword in the function's body.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-data-structures-by-building-the-merge-sort-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 9,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

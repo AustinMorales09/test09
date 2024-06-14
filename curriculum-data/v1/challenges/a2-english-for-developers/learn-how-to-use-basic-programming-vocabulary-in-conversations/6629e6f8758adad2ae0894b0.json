@@ -1,0 +1,79 @@
+{
+  "id": "6629e6f8758adad2ae0894b0",
+  "title": "Task 9",
+  "challengeType": 22,
+  "dashedName": "task-9",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Yeah. The _ _ is that there are so many out there.</p>",
+    "blanks": [
+      {
+        "answer": "crazy",
+        "feedback": "<p>This adjective is used to describe something that is surprising, unusual, or hard to believe.</p>"
+      },
+      {
+        "answer": "part",
+        "feedback": "<p>This noun introduces a specific aspect or element of the situation being discussed.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 6,
+        "finishTimestamp": 9.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.02,
+        "dialogue": {
+          "text": "Yeah, the crazy part is that there are so many out there.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.52
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>crazy part</code> is used to express that something is surprising or unexpected. It's like saying <code>the surprising thing is</code> or <code>the unexpected thing is</code>.</p>\n<p>For example, <code>The crazy part is that he finished all the work in one day.</code> This means it's surprising that he could do it so quickly.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

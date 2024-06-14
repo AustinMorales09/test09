@@ -1,0 +1,95 @@
+{
+  "id": "bad82fee1348bd9aedf08721",
+  "title": "Use RGB to Mix Colors",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cm24JU6",
+  "forumTopicId": 18368,
+  "dashedName": "use-rgb-to-mix-colors",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .red-text {\n    color: #000000;\n  }\n  .orchid-text {\n    color: #000000;\n  }\n  .sienna-text {\n    color: #000000;\n  }\n  .blue-text {\n    color: #000000;\n  }\n</style>\n\n<h1 class=\"red-text\">I am red!</h1>\n\n<h1 class=\"orchid-text\">I am orchid!</h1>\n\n<h1 class=\"sienna-text\">I am sienna!</h1>\n\n<h1 class=\"blue-text\">I am blue!</h1>",
+      "error": null,
+      "seed": "<style>\n  .red-text {\n    color: #000000;\n  }\n  .orchid-text {\n    color: #000000;\n  }\n  .sienna-text {\n    color: #000000;\n  }\n  .blue-text {\n    color: #000000;\n  }\n</style>\n\n<h1 class=\"red-text\">I am red!</h1>\n\n<h1 class=\"orchid-text\">I am orchid!</h1>\n\n<h1 class=\"sienna-text\">I am sienna!</h1>\n\n<h1 class=\"blue-text\">I am blue!</h1>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  .red-text {\n    color: rgb(255, 0, 0);\n  }\n  .orchid-text {\n    color: rgb(218, 112, 214);\n  }\n  .sienna-text {\n    color: rgb(160, 82, 45);\n  }\n  .blue-text {\n    color:rgb(0, 0, 255);\n  }\n</style>\n\n<h1 class=\"red-text\">I am red!</h1>\n\n<h1 class=\"orchid-text\">I am orchid!</h1>\n\n<h1 class=\"sienna-text\">I am sienna!</h1>\n\n<h1 class=\"blue-text\">I am blue!</h1>",
+        "error": null,
+        "seed": "<style>\n  .red-text {\n    color: rgb(255, 0, 0);\n  }\n  .orchid-text {\n    color: rgb(218, 112, 214);\n  }\n  .sienna-text {\n    color: rgb(160, 82, 45);\n  }\n  .blue-text {\n    color:rgb(0, 0, 255);\n  }\n</style>\n\n<h1 class=\"red-text\">I am red!</h1>\n\n<h1 class=\"orchid-text\">I am orchid!</h1>\n\n<h1 class=\"sienna-text\">I am sienna!</h1>\n\n<h1 class=\"blue-text\">I am blue!</h1>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>h1</code> element with the text <code>I am red!</code> should have the <code>color</code> red.</p>",
+      "testString": "assert($('.red-text').css('color') === 'rgb(255, 0, 0)');"
+    },
+    {
+      "text": "<p>You should use <code>rgb</code> for the color red.</p>",
+      "testString": "assert(\n  code.match(\n    /\\.red-text\\s*{\\s*color\\s*:\\s*rgb\\(\\s*255\\s*,\\s*0\\s*,\\s*0\\s*\\)\\s*;?\\s*}/gi\n  )\n);"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element with the text <code>I am orchid!</code> should have the <code>color</code> orchid.</p>",
+      "testString": "assert($('.orchid-text').css('color') === 'rgb(218, 112, 214)');"
+    },
+    {
+      "text": "<p>You should use <code>rgb</code> for the color orchid.</p>",
+      "testString": "assert(\n  code.match(\n    /\\.orchid-text\\s*{\\s*color\\s*:\\s*rgb\\(\\s*218\\s*,\\s*112\\s*,\\s*214\\s*\\)\\s*;?\\s*}/gi\n  )\n);"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element with the text <code>I am blue!</code> should have the <code>color</code> blue.</p>",
+      "testString": "assert($('.blue-text').css('color') === 'rgb(0, 0, 255)');"
+    },
+    {
+      "text": "<p>You should use <code>rgb</code> for the color blue.</p>",
+      "testString": "assert(\n  code.match(\n    /\\.blue-text\\s*{\\s*color\\s*:\\s*rgb\\(\\s*0\\s*,\\s*0\\s*,\\s*255\\s*\\)\\s*;?\\s*}/gi\n  )\n);"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element with the text <code>I am sienna!</code> should have the <code>color</code> sienna.</p>",
+      "testString": "assert($('.sienna-text').css('color') === 'rgb(160, 82, 45)');"
+    },
+    {
+      "text": "<p>You should use <code>rgb</code> for the color sienna.</p>",
+      "testString": "assert(\n  code.match(\n    /\\.sienna-text\\s*{\\s*color\\s*:\\s*rgb\\(\\s*160\\s*,\\s*82\\s*,\\s*45\\s*\\)\\s*;?\\s*}/gi\n  )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Just like with hex code, you can mix colors in RGB by using combinations of different values.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Replace the hex codes in our <code>style</code> element with their correct RGB values.</p>\n<table><tbody><tr><th>Color</th><th>RGB</th></tr><tr><td>Blue</td><td><code>rgb(0, 0, 255)</code></td></tr><tr><td>Red</td><td><code>rgb(255, 0, 0)</code></td></tr><tr><td>Orchid</td><td><code>rgb(218, 112, 214)</code></td></tr><tr><td>Sienna</td><td><code>rgb(160, 82, 45)</code></td></tr></tbody></table>\n</section>",
+  "translationPending": false,
+  "block": "basic-css",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,97 @@
+{
+  "id": "65fc932d577d505c57e9551a",
+  "title": "Task 24",
+  "challengeType": 19,
+  "dashedName": "task-24",
+  "solutions": [],
+  "question": {
+    "text": "<p>Where does Maria think they can create their best ideas?</p>",
+    "answers": [
+      {
+        "answer": "<p>In a formal meeting</p>",
+        "feedback": "<p>Think about how Maria talks about working together and sharing ideas.</p>"
+      },
+      {
+        "answer": "<p>While working alone</p>",
+        "feedback": "<p>Maria mentions enjoying working with others. Does she say she prefers to be alone?</p>"
+      },
+      {
+        "answer": "<p>At a creative workshop</p>",
+        "feedback": "<p>Maria talks about a specific group of people she works with. Is it a workshop?</p>"
+      },
+      {
+        "answer": "<p>Collaborating with the creative team</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 36.7,
+        "finishTimestamp": 43.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 5.78,
+        "dialogue": {
+          "text": "Well, collaborating with our creative team and brainstorming many ideas really inspires me.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "startTime": 6.14,
+        "finishTime": 7.92,
+        "dialogue": {
+          "text": "It's where we generate our best concepts.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 8.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

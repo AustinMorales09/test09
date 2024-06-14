@@ -1,0 +1,65 @@
+{
+  "id": "5900f5471000cf542c510059",
+  "title": "Problem 474: Last digits of divisors",
+  "challengeType": 1,
+  "forumTopicId": 302151,
+  "dashedName": "problem-474-last-digits-of-divisors",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function lastDigitsOfDivisors() {\n\n  return true;\n}\n\nlastDigitsOfDivisors();",
+      "error": null,
+      "seed": "function lastDigitsOfDivisors() {\n\n  return true;\n}\n\nlastDigitsOfDivisors();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>lastDigitsOfDivisors()</code> should return <code>9690646731515010</code>.</p>",
+      "testString": "assert.strictEqual(lastDigitsOfDivisors(), 9690646731515010);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>For a positive integer $n$ and digits $d$, we define $F(n, d)$ as the number of the divisors of $n$ whose last digits equal $d$.</p>\n<p>For example, $F(84, 4) = 3$. Among the divisors of 84 (1, 2, 3, 4, 6, 7, 12, 14, 21, 28, 42, 84), three of them (4, 14, 84) have the last digit 4.</p>\n<p>We can also verify that $F(12!, 12) = 11$ and $F(50!, 123) = 17\\,888$.</p>\n<p>Find $F({10}^6!, 65\\,432) \\text{ modulo } ({10}^{16} + 61)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 73,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

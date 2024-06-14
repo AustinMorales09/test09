@@ -1,0 +1,88 @@
+{
+  "id": "6557c30b85e792bd0c1e8206",
+  "title": "Task 25",
+  "challengeType": 19,
+  "dashedName": "task-25",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah typically have for breakfast?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Toast, eggs, and coffee</code></p>",
+        "feedback": "<p>This choice doesn't match Sarah's description.</p>"
+      },
+      {
+        "answer": "<p><code>Cereal, fruit, and orange juice</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Pancakes and maple syrup</code></p>",
+        "feedback": "<p>Pancakes and syrup are not mentioned by Sarah.</p>"
+      },
+      {
+        "answer": "<p><code>Oatmeal and bananas</code></p>",
+        "feedback": "<p>This choice is not what Sarah mentions.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 39.6,
+        "finishTimestamp": 44.86
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.26,
+        "dialogue": {
+          "text": "Well, after that, I have a balanced breakfast. I often have cereal with some fruit and a glass of orange juice.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.76
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

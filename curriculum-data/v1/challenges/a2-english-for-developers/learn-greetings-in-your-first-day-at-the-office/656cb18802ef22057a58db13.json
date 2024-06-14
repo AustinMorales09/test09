@@ -1,0 +1,46 @@
+{
+  "id": "656cb18802ef22057a58db13",
+  "title": "Task 87",
+  "challengeType": 19,
+  "dashedName": "task-87",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which article would you use in place of the blank in this sentence: <code>You must be _ Sofia, the project manager.</code></p>",
+    "answers": [
+      {
+        "answer": "<p><code>an</code></p>",
+        "feedback": "<p>You don't need <code>an</code> before a person's name.</p>"
+      },
+      {
+        "answer": "<p><code>a</code></p>",
+        "feedback": "<p>You don't need <code>a</code> before a person's name.</p>"
+      },
+      {
+        "answer": "<p><code>the</code></p>",
+        "feedback": "<p>You don't need <code>the</code> before a person's name.</p>"
+      },
+      {
+        "answer": "<p>No article should be used.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In English, we use names to directly refer to specific people. See this example:</p>\n<p><code>Hello! You're Amy, correct?</code></p>\n<p>In English, names directly refer to specific people. Saying <code>Amy</code> identifies a particular person with that name. Using <code>the</code> or <code>an</code> before a name, like <code>the Amy</code> or <code>an Amy</code>, sounds unusual because names are already unique and specific.</p>\n<p>Think of names as unique labels for people. So, you don't need <code>a</code>, <code>an</code>, or <code>the</code> before a person's name. Just use the name by itself!</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>How would you complete the following sentence.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 88,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

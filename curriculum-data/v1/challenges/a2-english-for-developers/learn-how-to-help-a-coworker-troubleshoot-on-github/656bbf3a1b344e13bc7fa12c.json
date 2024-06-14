@@ -1,0 +1,45 @@
+{
+  "id": "656bbf3a1b344e13bc7fa12c",
+  "title": "Task 12",
+  "challengeType": 19,
+  "dashedName": "task-12",
+  "solutions": [],
+  "question": {
+    "text": "<p>What do <code>strange</code> and <code>error</code> imply in programming?</p>",
+    "answers": [
+      {
+        "answer": "<p>Something unusual and a mistake in the code</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A new feature and a successful result</p>",
+        "feedback": "<p><code>Strange</code> suggests something unexpected, and an <code>error</code> indicates a problem, not success.</p>"
+      },
+      {
+        "answer": "<p>An easy task and a correct outcome</p>",
+        "feedback": "<p><code>Strange</code> points to something unusual, and an <code>error</code> means there's a mistake, not an easy task or correct outcome.</p>"
+      },
+      {
+        "answer": "<p>A regular process and an accurate calculation</p>",
+        "feedback": "<p><code>Strange</code> means unusual, not regular, and an <code>error</code> in code implies a mistake, not accuracy.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Strange</code> means unusual or not expected. It's like finding something different from what you normally see. For example: <code>A strange sound in a car might mean a problem.</code></p>\n<p>An <code>error</code> is a mistake, especially one that stops something from working correctly. For instance: <code>An error in a code means there is a mistake that needs fixing.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-help-a-coworker-troubleshoot-on-github",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

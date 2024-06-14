@@ -1,0 +1,79 @@
+{
+  "id": "56533eb9ac21ba0edf2244cc",
+  "title": "Accessing Nested Objects",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cRnRnfa",
+  "forumTopicId": 16161,
+  "dashedName": "accessing-nested-objects",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(x) { \n  if(typeof x != 'undefined') { \n    return \"gloveBoxContents = \" + x;\n  }\n  return \"gloveBoxContents is undefined\";\n})(gloveBoxContents);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const myStorage = {\n  \"car\": {\n    \"inside\": {\n      \"glove box\": \"maps\",\n      \"passenger seat\": \"crumbs\"\n     },\n    \"outside\": {\n      \"trunk\": \"jack\"\n    }\n  }\n};\n\nconst gloveBoxContents = undefined;",
+      "error": null,
+      "seed": "const myStorage = {\n  \"car\": {\n    \"inside\": {\n      \"glove box\": \"maps\",\n      \"passenger seat\": \"crumbs\"\n     },\n    \"outside\": {\n      \"trunk\": \"jack\"\n    }\n  }\n};\n\nconst gloveBoxContents = undefined;"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const myStorage = {\n  \"car\":{\n    \"inside\":{\n      \"glove box\":\"maps\",\n      \"passenger seat\":\"crumbs\"\n    },\n    \"outside\":{\n      \"trunk\":\"jack\"\n    }\n  }\n};\nconst gloveBoxContents = myStorage.car.inside[\"glove box\"];",
+        "error": null,
+        "seed": "const myStorage = {\n  \"car\":{\n    \"inside\":{\n      \"glove box\":\"maps\",\n      \"passenger seat\":\"crumbs\"\n    },\n    \"outside\":{\n      \"trunk\":\"jack\"\n    }\n  }\n};\nconst gloveBoxContents = myStorage.car.inside[\"glove box\"];"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>gloveBoxContents</code> should equal the string <code>maps</code>.</p>",
+      "testString": "assert(gloveBoxContents === 'maps');"
+    },
+    {
+      "text": "<p>Your code should use dot notation, where possible, to access <code>myStorage</code>.</p>",
+      "testString": "assert.match(code, /myStorage\\.car\\.inside/);"
+    },
+    {
+      "text": "<p><code>gloveBoxContents</code> should still be declared with <code>const</code>.</p>",
+      "testString": "assert.match(code, /const\\s+gloveBoxContents\\s*=/);"
+    },
+    {
+      "text": "<p>You should not change the <code>myStorage</code> object.</p>",
+      "testString": "const expectedMyStorage = {\n  \"car\":{\n    \"inside\":{\n      \"glove box\":\"maps\",\n      \"passenger seat\":\"crumbs\"\n    },\n    \"outside\":{\n      \"trunk\":\"jack\"\n    }\n  }\n};\nassert.deepStrictEqual(myStorage, expectedMyStorage);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The sub-properties of objects can be accessed by chaining together the dot or bracket notation.</p>\n<p>Here is a nested object:</p>\n<pre><code class=\"language-js\">const ourStorage = {\n  \"desk\": {\n    \"drawer\": \"stapler\"\n  },\n  \"cabinet\": {\n    \"top drawer\": { \n      \"folder1\": \"a file\",\n      \"folder2\": \"secrets\"\n    },\n    \"bottom drawer\": \"soda\"\n  }\n};\n\nourStorage.cabinet[\"top drawer\"].folder2;\nourStorage.desk.drawer;\n</code></pre>\n<p><code>ourStorage.cabinet[\"top drawer\"].folder2</code> would be the string <code>secrets</code>, and <code>ourStorage.desk.drawer</code> would be the string <code>stapler</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Access the <code>myStorage</code> object and assign the contents of the <code>glove box</code> property to the <code>gloveBoxContents</code> variable. Use dot notation for all properties where possible, otherwise use bracket notation.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 92,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

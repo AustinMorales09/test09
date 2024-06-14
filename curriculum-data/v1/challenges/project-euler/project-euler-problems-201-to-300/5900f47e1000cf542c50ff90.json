@@ -1,0 +1,65 @@
+{
+  "id": "5900f47e1000cf542c50ff90",
+  "title": "Problem 273: Sum of Squares",
+  "challengeType": 1,
+  "forumTopicId": 301923,
+  "dashedName": "problem-273-sum-of-squares",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function sumOfSquares() {\n\n  return true;\n}\n\nsumOfSquares();",
+      "error": null,
+      "seed": "function sumOfSquares() {\n\n  return true;\n}\n\nsumOfSquares();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>sumOfSquares()</code> should return <code>2032447591196869000</code>.</p>",
+      "testString": "assert.strictEqual(sumOfSquares(), 2032447591196869000);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Consider equations of the form: $a^2 + b^2 = N$, $0 ≤ a ≤ b$, $a$, $b$ and $N$ integer.</p>\n<p>For $N = 65$ there are two solutions:</p>\n<p>$a = 1, b = 8$ and $a = 4, b = 7$.</p>\n<p>We call $S(N)$ the sum of the values of $a$ of all solutions of $a^2 + b^2 = N$, $0 ≤ a ≤ b$, $a$, $b$ and $N$ integer.</p>\n<p>Thus $S(65) = 1 + 4 = 5$.</p>\n<p>Find $\\sum S(N)$, for all squarefree $N$ only divisible by primes of the form $4k + 1$ with $4k + 1 &#x3C; 150$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 72,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

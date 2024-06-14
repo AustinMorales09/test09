@@ -1,0 +1,81 @@
+{
+  "id": "bad87fee1348bd9bec908846",
+  "title": "Create a Bootstrap Row",
+  "challengeType": 0,
+  "forumTopicId": 16813,
+  "dashedName": "create-a-bootstrap-row",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n\n</div>",
+      "error": null,
+      "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\"></div>\n</div>",
+        "error": null,
+        "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\"></div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add a <code>div</code> element below your <code>h3</code> element.</p>",
+      "testString": "assert(\n  $('div').length > 1 &&\n    $('div.row h3.text-primary').length == 0 &&\n    $('div.row + h3.text-primary').length == 0 &&\n    $('h3.text-primary + div.row').length > 0\n);"
+    },
+    {
+      "text": "<p>Your <code>div</code> element should have the class <code>row</code></p>",
+      "testString": "assert($('div').hasClass('row'));"
+    },
+    {
+      "text": "<p>Your <code>row div</code> should be nested inside the <code>container-fluid div</code></p>",
+      "testString": "assert($('div.container-fluid div.row').length > 0);"
+    },
+    {
+      "text": "<p>Your <code>div</code> element should have a closing tag.</p>",
+      "testString": "assert(\n  code.match(/<\\/div>/g) &&\n    code.match(/<div/g) &&\n    code.match(/<\\/div>/g).length === code.match(/<div/g).length\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now we'll create a Bootstrap row for our inline elements.</p>\n<p>Create a <code>div</code> element below the <code>h3</code> tag, with a class of <code>row</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "bootstrap",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 20,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,74 @@
+{
+  "id": "587d7db0367417b2b2512b83",
+  "title": "Use Inheritance So You Don't Repeat Yourself",
+  "challengeType": 1,
+  "forumTopicId": 301334,
+  "dashedName": "use-inheritance-so-you-dont-repeat-yourself",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function Cat(name) {\n  this.name = name;\n}\n\nCat.prototype = {\n  constructor: Cat,\n  eat: function() {\n    console.log(\"nom nom nom\");\n  }\n};\n\nfunction Bear(name) {\n  this.name = name;\n}\n\nBear.prototype = {\n  constructor: Bear,\n  eat: function() {\n    console.log(\"nom nom nom\");\n  }\n};\n\nfunction Animal() { }\n\nAnimal.prototype = {\n  constructor: Animal,\n\n};",
+      "error": null,
+      "seed": "function Cat(name) {\n  this.name = name;\n}\n\nCat.prototype = {\n  constructor: Cat,\n  eat: function() {\n    console.log(\"nom nom nom\");\n  }\n};\n\nfunction Bear(name) {\n  this.name = name;\n}\n\nBear.prototype = {\n  constructor: Bear,\n  eat: function() {\n    console.log(\"nom nom nom\");\n  }\n};\n\nfunction Animal() { }\n\nAnimal.prototype = {\n  constructor: Animal,\n\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function Cat(name) {\n  this.name = name;\n}\n\nCat.prototype = {\n  constructor: Cat\n};\n\nfunction Bear(name) {\n  this.name = name;\n}\n\nBear.prototype = {\n  constructor: Bear\n};\n\nfunction Animal() { }\n\nAnimal.prototype = {\n  constructor: Animal,\n  eat: function() {\n    console.log(\"nom nom nom\");\n  }\n};",
+        "error": null,
+        "seed": "function Cat(name) {\n  this.name = name;\n}\n\nCat.prototype = {\n  constructor: Cat\n};\n\nfunction Bear(name) {\n  this.name = name;\n}\n\nBear.prototype = {\n  constructor: Bear\n};\n\nfunction Animal() { }\n\nAnimal.prototype = {\n  constructor: Animal,\n  eat: function() {\n    console.log(\"nom nom nom\");\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>Animal.prototype</code> should have the <code>eat</code> property.</p>",
+      "testString": "assert(Animal.prototype.hasOwnProperty('eat'));"
+    },
+    {
+      "text": "<p><code>Bear.prototype</code> should not have the <code>eat</code> property.</p>",
+      "testString": "assert(!Bear.prototype.hasOwnProperty('eat'));"
+    },
+    {
+      "text": "<p><code>Cat.prototype</code> should not have the <code>eat</code> property.</p>",
+      "testString": "assert(!Cat.prototype.hasOwnProperty('eat'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>There's a principle in programming called <dfn>Don't Repeat Yourself (DRY)</dfn>. The reason repeated code is a problem is because any change requires fixing code in multiple places. This usually means more work for programmers and more room for errors.</p>\n<p>Notice in the example below that the <code>describe</code> method is shared by <code>Bird</code> and <code>Dog</code>:</p>\n<pre><code class=\"language-js\">Bird.prototype = {\n  constructor: Bird,\n  describe: function() {\n    console.log(\"My name is \" + this.name);\n  }\n};\n\nDog.prototype = {\n  constructor: Dog,\n  describe: function() {\n    console.log(\"My name is \" + this.name);\n  }\n};\n</code></pre>\n<p>The <code>describe</code> method is repeated in two places. The code can be edited to follow the DRY principle by creating a <code>supertype</code> (or parent) called <code>Animal</code>:</p>\n<pre><code class=\"language-js\">function Animal() { };\n\nAnimal.prototype = {\n  constructor: Animal, \n  describe: function() {\n    console.log(\"My name is \" + this.name);\n  }\n};\n</code></pre>\n<p>Since <code>Animal</code> includes the <code>describe</code> method, you can remove it from <code>Bird</code> and <code>Dog</code>:</p>\n<pre><code class=\"language-js\">Bird.prototype = {\n  constructor: Bird\n};\n\nDog.prototype = {\n  constructor: Dog\n};\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The <code>eat</code> method is repeated in both <code>Cat</code> and <code>Bear</code>. Edit the code in the spirit of DRY by moving the <code>eat</code> method to the <code>Animal</code> <code>supertype</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "object-oriented-programming",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

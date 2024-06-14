@@ -1,0 +1,45 @@
+{
+  "id": "657e5c7a5c7ef6ec6f39dc5e",
+  "title": "Task 98",
+  "challengeType": 19,
+  "dashedName": "task-98",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is a <code>security breach</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>A new security system.</p>",
+        "feedback": "<p>A breach is about breaking security, not setting it up.</p>"
+      },
+      {
+        "answer": "<p>A meeting about safety.</p>",
+        "feedback": "<p>It's an incident, not a meeting.</p>"
+      },
+      {
+        "answer": "<p>Unauthorized access to systems or data.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A reward for good security.</p>",
+        "feedback": "<p>A breach is a problem, not a reward.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>security breach</code> is when someone gets unauthorized access to a system or data. This can be a big problem in workplaces, especially when it involves private information.</p>\n<p>For example: <code>A security breach occurred when an outsider accessed confidential files.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 101,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

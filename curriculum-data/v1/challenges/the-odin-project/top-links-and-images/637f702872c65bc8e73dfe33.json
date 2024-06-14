@@ -1,0 +1,44 @@
+{
+  "id": "637f702872c65bc8e73dfe33",
+  "videoId": "ta3Oxx7Yqbo",
+  "title": "Links and Images Question D",
+  "challengeType": 15,
+  "dashedName": "links-and-images-question-d",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the difference between an absolute and a relative link?</p>",
+    "answers": [
+      {
+        "answer": "<p>An absolute link is a link to another page on the current website. A relative link is a link to another website.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>An absolute link is a link to another website. A relative link is a link another page on the current website.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>There is no difference between absolute and relative links.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [
+    "<p>Watch Kevin Powell’s HTML File Structure video above.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Generally, there are two kinds of links you will create:</p>\n<ul>\n<li>\n<p>Links to pages on other websites on the internet</p>\n</li>\n<li>\n<p>Links to pages located on your own websites</p>\n</li>\n</ul>\n<h2>Absolute Links</h2>\n<p>Links to pages on other websites on the internet are called absolute links. A typical absolute link will be made up of the following parts: <code>protocol://domain/path</code>. An absolute link will always contain the protocol and domain of the destination.</p>\n<p>You’ve already seen an absolute link in action. The link you created to The Odin Project’s About page earlier was an absolute link as it contains the protocol and domain.</p>\n<p><code>https://www.theodinproject.com/about</code></p>\n<h2>Relative Links</h2>\n<p>Links to other pages within your own website are called relative links. Relative links do not include the domain name, since it is another page on the same site, it assumes the domain name will be the same as the page you created the link on.</p>\n<p>Relative links only include the file path to the other page, relative to the page you are creating the link on. This is quite abstract, let’s see this in action using an example.</p>\n<p>Within the <code>odin-links-and-images</code> directory, create another HTML file named <code>about.html</code> and paste the following code into it:</p>\n<pre><code class=\"language-html\">&#x3C;!DOCTYPE html>\n&#x3C;html lang=\"en\">\n  &#x3C;head>\n    &#x3C;meta charset=\"UTF-8\">\n    &#x3C;title>Odin Links and Images&#x3C;/title>\n  &#x3C;/head>\n\n  &#x3C;body>\n    &#x3C;h1>About Page&#x3C;/h1>\n  &#x3C;/body>\n&#x3C;/html>\n</code></pre>\n<p>Back in the <code>index</code> page, add the following anchor element to create a link to the <code>about</code> page:</p>\n<pre><code class=\"language-html\">&#x3C;body>\n  &#x3C;h1>Homepage&#x3C;/h1>\n\t&#x3C;a href=\"https://www.theodinproject.com/about\">click me&#x3C;/a>\n\n\t&#x3C;a href=\"about.html\">About&#x3C;/a>\n&#x3C;/body>\n</code></pre>\n<p>Open the <code>index.html</code> file in a browser and click on the about link to make sure it is all wired together correctly. Clicking the link should go to the <code>about</code> page you just created.</p>\n<p>This works because the <code>index</code> and <code>about</code> page are in the same directory. That means you can simply use its name (<code>about.html</code>) as the link’s <code>href</code> value.</p>\n<p>But you will usually want to organize your website directories a little better. Normally you would only have the <code>index.html</code> at the root directory and all other HTML files in their own directory.</p>\n<p>Create a directory named <code>pages</code> within the <code>odin-links-and-images</code> directory and move the <code>about.html</code> file into this new directory.</p>\n<p>Refresh the <code>index</code> page in the browser and then click on the <code>about</code> link. It will now be broken. This is because the location of the <code>about</code> page file has changed.</p>\n<p>To fix this, you just need to update the <code>about</code> link <code>href</code> value to include the <code>pages/</code> directory since that is the new location of the <code>about.html</code> file relative to the <code>index.html</code> file.</p>\n<pre><code class=\"language-html\">&#x3C;body>\n  &#x3C;h1>Homepage&#x3C;/h1>\n  &#x3C;a href=\"pages/about.html\">About&#x3C;/a>\n&#x3C;/body>\n</code></pre>\n<p>Refresh the <code>index</code> page in the browser and try clicking the <code>about</code> link again, it should now be back in working order.</p>\n<p>In many cases, this will work just fine; however, you can still run into unexpected issues with this approach. Prepending <code>./</code> before the link will in most cases prevent such issues. By adding <code>./</code> you are specifying to your code that it should start looking for the file/directory relative to the <strong>current</strong> directory.</p>\n<pre><code class=\"language-html\">&#x3C;body>\n  &#x3C;h1>Homepage&#x3C;/h1>\n  &#x3C;a href=\"./pages/about.html\">About&#x3C;/a>\n&#x3C;/body>\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "top-links-and-images",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

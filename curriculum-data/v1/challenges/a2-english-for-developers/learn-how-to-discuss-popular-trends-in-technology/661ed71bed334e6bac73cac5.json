@@ -1,0 +1,45 @@
+{
+  "id": "661ed71bed334e6bac73cac5",
+  "title": "Task 89",
+  "challengeType": 19,
+  "dashedName": "task-89",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Augmented Reality do?</p>",
+    "answers": [
+      {
+        "answer": "<p>It creates a completely new world.</p>",
+        "feedback": "<p>Augmented Reality enhances the real world but doesn't create an entirely new one.</p>"
+      },
+      {
+        "answer": "<p>It mixes digital information with the real world.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It turns everything into a game.</p>",
+        "feedback": "<p>Augmented Reality can be used for games, but it's not its sole purpose.</p>"
+      },
+      {
+        "answer": "<p>It replaces the real world with a virtual one.</p>",
+        "feedback": "<p>Augmented Reality adds to the real world instead of replacing it.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Augmented Reality</code> (abbreviated as <code>AR</code>) is like magic for your devices. It's a special technology that mixes digital information with the real world around you. Imagine seeing helpful information, like directions or fun virtual creatures, right on your phone or tablet as if they're part of your everyday surroundings. It makes the world more exciting by adding a layer of digital wonder to what you see.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 93,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

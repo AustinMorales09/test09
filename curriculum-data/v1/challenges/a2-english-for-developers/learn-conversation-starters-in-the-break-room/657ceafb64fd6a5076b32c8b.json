@@ -1,0 +1,32 @@
+{
+  "id": "657ceafb64fd6a5076b32c8b",
+  "title": "Task 66",
+  "challengeType": 22,
+  "dashedName": "task-66",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>When does she often _ team meetings?</p>",
+    "blanks": [
+      {
+        "answer": "hold",
+        "feedback": "<p>The verb <code>hold</code> is used when someone organizes or carries out a meeting or an event. It's not about physically holding something, but about managing an event.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you use the verb <code>hold</code> in the context of meetings, it means to have or conduct a meeting. Like saying, <code>Our school holds an assembly every Friday.</code> It means this school has assemblies every Friday.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 68,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

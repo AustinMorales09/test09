@@ -1,0 +1,82 @@
+{
+  "id": "5951ed8945deab770972ae56",
+  "title": "Towers of Hanoi",
+  "challengeType": 1,
+  "forumTopicId": 302341,
+  "dashedName": "towers-of-hanoi",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const res3 = towerOfHanoi(3, 'A', 'B', 'C');\nconst res3Moves = [['A', 'B'], ['A', 'C'], ['B', 'C'], ['A', 'B'], ['C', 'A'], ['C', 'B'], ['A', 'B']];\nconst res5 = towerOfHanoi(5, 'X', 'Y', 'Z');\nconst res7First10Moves = [['A', 'B'], ['A', 'C'], ['B', 'C'], ['A', 'B'], ['C', 'A'], ['C', 'B'], ['A', 'B'], ['A', 'C'], ['B', 'C'], ['B', 'A']];",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function towerOfHanoi(n, a, b, c) {\n\n  return [[]];\n}",
+      "error": null,
+      "seed": "function towerOfHanoi(n, a, b, c) {\n\n  return [[]];\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function towerOfHanoi(n, a, b, c) {\n  const res = [];\n  towerOfHanoiHelper(n, a, c, b, res);\n  return res;\n}\n\nfunction towerOfHanoiHelper(n, a, b, c, res) {\n  if (n > 0) {\n    towerOfHanoiHelper(n - 1, a, c, b, res);\n    res.push([a, c]);\n    towerOfHanoiHelper(n - 1, b, a, c, res);\n  }\n}",
+        "error": null,
+        "seed": "function towerOfHanoi(n, a, b, c) {\n  const res = [];\n  towerOfHanoiHelper(n, a, c, b, res);\n  return res;\n}\n\nfunction towerOfHanoiHelper(n, a, b, c, res) {\n  if (n > 0) {\n    towerOfHanoiHelper(n - 1, a, c, b, res);\n    res.push([a, c]);\n    towerOfHanoiHelper(n - 1, b, a, c, res);\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>towerOfHanoi</code> should be a function.</p>",
+      "testString": "assert(typeof towerOfHanoi === 'function');"
+    },
+    {
+      "text": "<p><code>towerOfHanoi(3, ...)</code> should return 7 moves.</p>",
+      "testString": "assert(res3.length === 7);"
+    },
+    {
+      "text": "<p><code>towerOfHanoi(3, 'A', 'B', 'C')</code> should return <code>[['A','B'], ['A','C'], ['B','C'], ['A','B'], ['C','A'], ['C','B'], ['A','B']]</code>.</p>",
+      "testString": "assert.deepEqual(towerOfHanoi(3, 'A', 'B', 'C'), res3Moves);"
+    },
+    {
+      "text": "<p><code>towerOfHanoi(5, \"X\", \"Y\", \"Z\")</code> 10th move should be Y -> X.</p>",
+      "testString": "assert.deepEqual(res5[9], ['Y', 'X']);"
+    },
+    {
+      "text": "<p><code>towerOfHanoi(7, 'A', 'B', 'C')</code> first ten moves should be <code>[['A','B'], ['A','C'], ['B','C'], ['A','B'], ['C','A'], ['C','B'], ['A','B'], ['A','C'], ['B','C'], ['B','A']]</code></p>",
+      "testString": "assert.deepEqual(towerOfHanoi(7, 'A', 'B', 'C').slice(0, 10), res7First10Moves);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Solve the Towers of Hanoi problem. The number of objects will be given as the first parameter, followed by the strings used to identify each stack of objects. Create a nested array containing the list of moves, <code>[\"source\", \"destination\"]</code>.</p>\n<p>For example, the parameters <code>(4, 'A', 'B', 'C')</code>, will result in nested array of moves <code>[['A', 'C'], ['B', 'A']]</code>, indicating that the 1st move was to move an object from stack <code>A</code> to <code>C</code> and the 2nd move was to move an object from stack <code>B</code> to <code>A</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that returns the moves to stack the objects in a nested array.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 151,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

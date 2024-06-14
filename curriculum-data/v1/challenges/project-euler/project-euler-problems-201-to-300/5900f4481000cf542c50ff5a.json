@@ -1,0 +1,65 @@
+{
+  "id": "5900f4481000cf542c50ff5a",
+  "title": "Problem 219: Skew-cost coding",
+  "challengeType": 1,
+  "forumTopicId": 301861,
+  "dashedName": "problem-219-skew-cost-coding",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function skewCostCoding() {\n\n  return true;\n}\n\nskewCostCoding();",
+      "error": null,
+      "seed": "function skewCostCoding() {\n\n  return true;\n}\n\nskewCostCoding();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>skewCostCoding()</code> should return <code>64564225042</code>.</p>",
+      "testString": "assert.strictEqual(skewCostCoding(), 64564225042);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $A$ and $B$ be bit strings (sequences of 0's and 1's).</p>\n<p>If $A$ is equal to the <u>left</u>most length($A$) bits of $B$, then $A$ is said to be a prefix of $B$.</p>\n<p>For example, 00110 is a prefix of <u>00110</u>1001, but not of 00111 or 100110.</p>\n<p>A prefix-free code of size $n$ is a collection of $n$ distinct bit strings such that no string is a prefix of any other. For example, this is a prefix-free code of size 6:</p>\n<p>$$0000, 0001, 001, 01, 10, 11$$</p>\n<p>Now suppose that it costs one penny to transmit a '0' bit, but four pence to transmit a '1'. Then the total cost of the prefix-free code shown above is 35 pence, which happens to be the cheapest possible for the skewed pricing scheme in question. In short, we write $Cost(6) = 35$.</p>\n<p>What is $Cost(10^9)$?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

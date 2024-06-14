@@ -1,0 +1,45 @@
+{
+  "id": "6629e2c8d7ddd4c836958a4c",
+  "title": "Task 7",
+  "challengeType": 19,
+  "dashedName": "task-7",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Brian mean when he says Sophie has been learning <code>a lot</code> about programming languages?</p>",
+    "answers": [
+      {
+        "answer": "<p>She has learned a little.</p>",
+        "feedback": "<p><code>A lot</code> indicates a large amount, not a little.</p>"
+      },
+      {
+        "answer": "<p>She hasn't learned anything.</p>",
+        "feedback": "<p><code>A lot</code> suggests she has learned a significant amount, not nothing.</p>"
+      },
+      {
+        "answer": "<p>She has learned a significant amount.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She is not interested in programming languages.</p>",
+        "feedback": "<p>Learning <code>a lot</code> implies interest and effort, not a lack of interest.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

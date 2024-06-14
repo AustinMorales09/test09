@@ -1,0 +1,80 @@
+{
+  "id": "657e6117bebfda097995f2b7",
+  "title": "Task 107",
+  "challengeType": 22,
+  "dashedName": "task-107",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Yes, you have to attend the training _ _. It helps you stay updated on the latest regulations and best practices.</p>",
+    "blanks": [
+      {
+        "answer": "every",
+        "feedback": "<p>Indicates each one of a series.</p>"
+      },
+      {
+        "answer": "year",
+        "feedback": "<p>A period of 12 months.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room2.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 58.28,
+        "finishTimestamp": 65.04
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 7.86,
+        "dialogue": {
+          "text": "Yes, you have to attend the training every year. It helps you stay updated on the latest regulations and best practices.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 8.26
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listening to details about job requirements, like how often to attend training and why it's necessary, is key for understanding workplace expectations and staying competent in your role.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 110,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

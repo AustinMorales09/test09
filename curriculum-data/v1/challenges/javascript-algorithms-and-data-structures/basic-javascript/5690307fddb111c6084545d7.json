@@ -1,0 +1,75 @@
+{
+  "id": "5690307fddb111c6084545d7",
+  "title": "Logical Order in If Else Statements",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cwNvMUV",
+  "forumTopicId": 18228,
+  "dashedName": "logical-order-in-if-else-statements",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function orderMyLogic(val) {\n  if (val < 10) {\n    return \"Less than 10\";\n  } else if (val < 5) {\n    return \"Less than 5\";\n  } else {\n    return \"Greater than or equal to 10\";\n  }\n}\n\norderMyLogic(7);",
+      "error": null,
+      "seed": "function orderMyLogic(val) {\n  if (val < 10) {\n    return \"Less than 10\";\n  } else if (val < 5) {\n    return \"Less than 5\";\n  } else {\n    return \"Greater than or equal to 10\";\n  }\n}\n\norderMyLogic(7);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function orderMyLogic(val) {\n  if(val < 5) {\n    return \"Less than 5\";\n  } else if (val < 10) {\n    return \"Less than 10\";\n  } else {\n    return \"Greater than or equal to 10\";\n  }\n}",
+        "error": null,
+        "seed": "function orderMyLogic(val) {\n  if(val < 5) {\n    return \"Less than 5\";\n  } else if (val < 10) {\n    return \"Less than 10\";\n  } else {\n    return \"Greater than or equal to 10\";\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>orderMyLogic(4)</code> should return the string <code>Less than 5</code></p>",
+      "testString": "assert(orderMyLogic(4) === 'Less than 5');"
+    },
+    {
+      "text": "<p><code>orderMyLogic(6)</code> should return the string <code>Less than 10</code></p>",
+      "testString": "assert(orderMyLogic(6) === 'Less than 10');"
+    },
+    {
+      "text": "<p><code>orderMyLogic(11)</code> should return the string <code>Greater than or equal to 10</code></p>",
+      "testString": "assert(orderMyLogic(11) === 'Greater than or equal to 10');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Order is important in <code>if</code>, <code>else if</code> statements.</p>\n<p>The function is executed from top to bottom so you will want to be careful of what statement comes first.</p>\n<p>Take these two functions as an example.</p>\n<p>Here's the first:</p>\n<pre><code class=\"language-js\">function foo(x) {\n  if (x &#x3C; 1) {\n    return \"Less than one\";\n  } else if (x &#x3C; 2) {\n    return \"Less than two\";\n  } else {\n    return \"Greater than or equal to two\";\n  }\n}\n</code></pre>\n<p>And the second just switches the order of the statements:</p>\n<pre><code class=\"language-js\">function bar(x) {\n  if (x &#x3C; 2) {\n    return \"Less than two\";\n  } else if (x &#x3C; 1) {\n    return \"Less than one\";\n  } else {\n    return \"Greater than or equal to two\";\n  }\n}\n</code></pre>\n<p>While these two functions look nearly identical if we pass a number to both we get different outputs.</p>\n<pre><code class=\"language-js\">foo(0)\nbar(0)\n</code></pre>\n<p><code>foo(0)</code> will return the string <code>Less than one</code>, and <code>bar(0)</code> will return the string <code>Less than two</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Change the order of logic in the function so that it will return the correct statements in all cases.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 72,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

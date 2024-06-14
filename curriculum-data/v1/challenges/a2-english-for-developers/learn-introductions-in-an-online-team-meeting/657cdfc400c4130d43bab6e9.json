@@ -1,0 +1,83 @@
+{
+  "id": "657cdfc400c4130d43bab6e9",
+  "title": "Task 56",
+  "challengeType": 22,
+  "dashedName": "task-56",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I'm excited to work with _ _ you and learn from _ expertise.</p>",
+    "blanks": [
+      {
+        "answer": "all",
+        "feedback": "<p>This word is used to include everyone in the group.</p>"
+      },
+      {
+        "answer": "of",
+        "feedback": "<p>This word helps to link <code>all</code> with <code>you</code>, forming a phrase that refers to the entire group.</p>"
+      },
+      {
+        "answer": "your",
+        "feedback": "<p>It indicates possession or relation to the group being addressed.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "desk.png",
+      "characters": [
+        {
+          "character": "Lisa",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.6,
+        "finishTimestamp": 25.54
+      }
+    },
+    "commands": [
+      {
+        "character": "Lisa",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Lisa",
+        "startTime": 1,
+        "finishTime": 3.94,
+        "dialogue": {
+          "text": "I'm excited to work with all of you and learn from your expertise.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "opacity": 0,
+        "startTime": 4.44
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>All of you</code> is a phrase used to include every person in a group. For example, <code>I want to thank all of you for coming</code> means thanking every person who came.</p>\n<p>The word <code>your</code> can refer to something that belongs to either an individual or a group, depending on the context.</p>\n<p>When talking to one person, <code>your</code> refers to something belonging to that individual. For example, <code>Your book is on the table</code> means the book belongs to the individual you're speaking to.</p>\n<p>In contrast, when speaking to a group, <code>your</code> can refer to something that belongs to all of them. For example, <code>Your project is impressive</code> means the project belonging to the entire group is impressive. Understanding the context helps to determine if <code>your</code> is singular or plural.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 58,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

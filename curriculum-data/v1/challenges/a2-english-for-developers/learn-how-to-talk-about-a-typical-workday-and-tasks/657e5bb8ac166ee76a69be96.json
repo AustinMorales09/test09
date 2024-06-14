@@ -1,0 +1,75 @@
+{
+  "id": "657e5bb8ac166ee76a69be96",
+  "title": "Task 96",
+  "challengeType": 22,
+  "dashedName": "task-96",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Do we have to report every security _?</p>",
+    "blanks": [
+      {
+        "answer": "incident",
+        "feedback": "<p>An event that could be harmful to safety or security.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room2.png",
+      "characters": [
+        {
+          "character": "Linda",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 40.84,
+        "finishTimestamp": 42.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Linda",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Linda",
+        "startTime": 1,
+        "finishTime": 3.14,
+        "dialogue": {
+          "text": "Do we have to report every security incident?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Linda",
+        "opacity": 0,
+        "startTime": 3.64
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>An <code>incident</code> is normally an event that happens and is out of the ordinary sequence of events, more often than not causing trouble ot harm to someone.\nExample: <code>Many people lost their homes after the flood last week. What an unfortunate incident.</code></p>\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 99,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

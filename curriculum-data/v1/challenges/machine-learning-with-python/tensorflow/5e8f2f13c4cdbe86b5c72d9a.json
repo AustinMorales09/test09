@@ -1,0 +1,46 @@
+{
+  "id": "5e8f2f13c4cdbe86b5c72d9a",
+  "title": "Convolutional Neural Networks: Picking a Pretrained Model",
+  "challengeType": 11,
+  "videoId": "h1XUt1AgIOI",
+  "bilibiliIds": {
+    "aid": 463063633,
+    "bvid": "BV1qL411x73q",
+    "cid": 409132626
+  },
+  "dashedName": "convolutional-neural-networks-picking-a-pretrained-model",
+  "solutions": [],
+  "question": {
+    "text": "<p>Fill in the blanks below to use Google's pre-trained MobileNet V2 model as a base for a convolutional neural network:</p>\n<pre><code class=\"language-py\">base_model = tf.__A__.applications.__B__(input_shape=(160, 160, 3),\n                                               include_top=__C__,\n                                               weights='imagenet'\n                                               )\n</code></pre>",
+    "answers": [
+      {
+        "answer": "<p>A: <code>keras</code></p>\n<p>B: <code>MobileNetV2</code></p>\n<p>C: <code>False</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A: <code>Keras</code></p>\n<p>B: <code>MobileNetV2</code></p>\n<p>C: <code>True</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A: <code>keras</code></p>\n<p>B: <code>mobile_net_v2</code></p>\n<p>C: <code>False</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "tensorflow",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

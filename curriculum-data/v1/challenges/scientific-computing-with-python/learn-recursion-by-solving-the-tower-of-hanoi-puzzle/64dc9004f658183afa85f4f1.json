@@ -1,0 +1,53 @@
+{
+  "id": "64dc9004f658183afa85f4f1",
+  "title": "Step 4",
+  "challengeType": 20,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        6
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "rods = {\n    'A': range(3, 0, -1),\n    'B': [],\n    'C': []\n}",
+      "error": null,
+      "seed": "rods = {\n    'A': range(3, 0, -1),\n    'B': [],\n    'C': []\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should pass your <code>'A'</code> key to the <code>type()</code> function.</p>",
+      "testString": "({ test: () => assert.match(code, /type\\s*\\(\\s*rods\\s*\\[\\s*('|\")\\s*A\\s*\\1\\s*\\]\\s*\\)/) })"
+    },
+    {
+      "text": "<p>You should print the type of <code>rods['A']</code> using the <code>print()</code> function.</p>",
+      "testString": "({ test: () => assert.match(code, /print\\s*\\(\\s*type\\s*\\(\\s*rods\\s*\\[\\s*('|\")\\s*A\\s*\\1\\s*\\]\\s*\\)\\s*\\)/) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now check the data type of your <code>'A'</code> key by passing it to the <code>type()</code> function and print the result on the terminal.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-solving-the-tower-of-hanoi-puzzle",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

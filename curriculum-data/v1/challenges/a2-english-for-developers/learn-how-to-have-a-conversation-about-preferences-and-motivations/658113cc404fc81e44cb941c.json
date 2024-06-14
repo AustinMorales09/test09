@@ -1,0 +1,87 @@
+{
+  "id": "658113cc404fc81e44cb941c",
+  "title": "Task 5",
+  "challengeType": 22,
+  "dashedName": "task-5",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hi, Brian! _, one _ that really motivates me _ learning new _.</p>",
+    "blanks": [
+      {
+        "answer": "Well",
+        "feedback": "<p>This word is often used to start a conversation or answer a question. It's capitalized.</p>"
+      },
+      {
+        "answer": "thing",
+        "feedback": "<p>Maria talks about one specific item or idea that makes her feel motivated.</p>"
+      },
+      {
+        "answer": "is",
+        "feedback": "<p>This is the verb <code>to be</code> conjugated in the third person singular.</p>"
+      },
+      {
+        "answer": "things",
+        "feedback": "<p>Maria uses this word to talk about more than one item or idea she likes to learn. It is the plural form of <code>thing</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 7.48,
+        "finishTimestamp": 11.1
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 4.62,
+        "dialogue": {
+          "text": "Hi, Brian. Well, one thing that really motivates me is learning new things.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 5.12
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>You can talk about one item or many items using singular and plural. When you say <code>one thing</code>, you are talking about a single item or idea.</p>\n<p>When you add an <code>s</code> at the end of a word, like <code>things</code>, it means you are talking about more than one item or idea.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

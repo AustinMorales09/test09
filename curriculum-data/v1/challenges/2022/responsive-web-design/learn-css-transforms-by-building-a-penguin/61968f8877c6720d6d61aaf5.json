@@ -1,0 +1,73 @@
+{
+  "id": "61968f8877c6720d6d61aaf5",
+  "title": "Step 6",
+  "challengeType": 0,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        14
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  \n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Penguin</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  </head>\n\n  <body>\n\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  \n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Penguin</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  </head>\n\n  <body>\n\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100vh;\n  overflow: hidden;\n}",
+      "error": null,
+      "seed": "body {\n  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100vh;\n  overflow: hidden;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add a new <code>div</code>.</p>",
+      "testString": "assert.exists(document.querySelector('div'));"
+    },
+    {
+      "text": "<p>You should give the <code>div</code> a <code>class</code> of <code>ground</code>.</p>",
+      "testString": "assert.include(document.querySelector('div')?.className, 'ground');"
+    },
+    {
+      "text": "<p>You should place the <code>div</code> within the <code>body</code>.</p>",
+      "testString": "assert.exists(document.querySelector('body > div.ground'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Within the <code>body</code>, add a <code>div</code> with a <code>class</code> of <code>ground</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-transforms-by-building-a-penguin",
+  "hasEditableBoundaries": true,
+  "order": 18,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

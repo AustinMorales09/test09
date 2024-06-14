@@ -1,0 +1,75 @@
+{
+  "id": "655a4a5af997350c187bd779",
+  "title": "Task 52",
+  "challengeType": 22,
+  "dashedName": "task-52",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I have a friend _ does that in her routine. Any other suggestions?</p>",
+    "blanks": [
+      {
+        "answer": "who",
+        "feedback": "<p>This reflexive pronoun is used here to introduce additional information about the friend, specifically what she does in her routine.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room1.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 39.7,
+        "finishTimestamp": 43.04
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.34,
+        "dialogue": {
+          "text": "I have a friend who does that in her routine. Any other suggestions?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Who</code> can be used as a relative pronoun to introduce a clause that gives more information about a person or people. It links a description or action specifically to a person. For example:</p>\n<p><code>She is someone who always knows what to do.</code> (links the knowing what to do to the person)</p>\n<p><code>He's the data analyst who helped me a lot.</code> (describes the data analyst with the action of helping)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 53,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

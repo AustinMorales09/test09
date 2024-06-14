@@ -1,0 +1,94 @@
+{
+  "id": "5a23c84252665b21eecc7eb0",
+  "title": "I before E except after C",
+  "challengeType": 1,
+  "forumTopicId": 302288,
+  "dashedName": "i-before-e-except-after-c",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function IBeforeExceptC(word) {\n\n}",
+      "error": null,
+      "seed": "function IBeforeExceptC(word) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function IBeforeExceptC(word)\n{\n    if(word.indexOf(\"c\")==-1 && word.indexOf(\"ie\")!=-1)\n        return true;\n    else if(word.indexOf(\"cei\")!=-1)\n        return true;\n    return false;\n}",
+        "error": null,
+        "seed": "function IBeforeExceptC(word)\n{\n    if(word.indexOf(\"c\")==-1 && word.indexOf(\"ie\")!=-1)\n        return true;\n    else if(word.indexOf(\"cei\")!=-1)\n        return true;\n    return false;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>IBeforeExceptC</code> should be a function.</p>",
+      "testString": "assert(typeof IBeforeExceptC == 'function');"
+    },
+    {
+      "text": "<p><code>IBeforeExceptC(\"receive\")</code> should return a boolean.</p>",
+      "testString": "assert(typeof IBeforeExceptC('receive') == 'boolean');"
+    },
+    {
+      "text": "<p><code>IBeforeExceptC(\"receive\")</code> should return <code>true</code>.</p>",
+      "testString": "assert.equal(IBeforeExceptC('receive'), true);"
+    },
+    {
+      "text": "<p><code>IBeforeExceptC(\"science\")</code> should return <code>false</code>.</p>",
+      "testString": "assert.equal(IBeforeExceptC('science'), false);"
+    },
+    {
+      "text": "<p><code>IBeforeExceptC(\"imperceivable\")</code> should return <code>true</code>.</p>",
+      "testString": "assert.equal(IBeforeExceptC('imperceivable'), true);"
+    },
+    {
+      "text": "<p><code>IBeforeExceptC(\"inconceivable\")</code> should return <code>true</code>.</p>",
+      "testString": "assert.equal(IBeforeExceptC('inconceivable'), true);"
+    },
+    {
+      "text": "<p><code>IBeforeExceptC(\"insufficient\")</code> should return <code>false</code>.</p>",
+      "testString": "assert.equal(IBeforeExceptC('insufficient'), false);"
+    },
+    {
+      "text": "<p><code>IBeforeExceptC(\"omniscient\")</code> should return <code>false</code>.</p>",
+      "testString": "assert.equal(IBeforeExceptC('omniscient'), false);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><strong><a href=\"http://www.rosettacode.org/wiki/I_before_E_except_after_C\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">\"I before E, except after C\"</a></strong> is a general rule for English language spelling. If one is unsure whether a word is spelled with the digraph <code>ei</code> or <code>ie</code>, the rhyme suggests that the correct order is <code>ie</code> unless the preceding letter is <code>c</code>, in which case it may be <code>ei</code>.</p>\n<p>Using the words provided, check if the two sub-clauses of the phrase are plausible individually:</p>\n<ol>\n  <li>\n    <i>\"I before E when not preceded by C\".</i>\n  </li>\n  <li>\n    <i>\"E before I when preceded by C\".</i>\n  </li>\n</ol>\n<p>If both sub-phrases are plausible then the original phrase can be said to be plausible.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that accepts a word and check if the word follows this rule. The function should return true if the word follows the rule and false if it does not.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 70,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

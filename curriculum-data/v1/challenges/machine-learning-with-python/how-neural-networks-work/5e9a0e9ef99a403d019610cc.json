@@ -1,0 +1,45 @@
+{
+  "id": "5e9a0e9ef99a403d019610cc",
+  "title": "Deep Learning Demystified",
+  "challengeType": 11,
+  "videoId": "bejQ-W9BGJg",
+  "dashedName": "deep-learning-demystified",
+  "solutions": [],
+  "question": {
+    "text": "<p>How should you assign weights to input neurons before training your network for the first time?</p>",
+    "answers": [
+      {
+        "answer": "<p>From smallest to largest.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Completely randomly.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Alphabetically.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>None of the above.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "how-neural-networks-work",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

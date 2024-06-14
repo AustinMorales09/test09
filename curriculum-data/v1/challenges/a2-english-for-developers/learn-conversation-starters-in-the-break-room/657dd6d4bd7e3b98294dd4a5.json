@@ -1,0 +1,32 @@
+{
+  "id": "657dd6d4bd7e3b98294dd4a5",
+  "title": "Task 121",
+  "challengeType": 22,
+  "dashedName": "task-121",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Absolutely! There is a gym. There are also great _ not too far away.</p>",
+    "blanks": [
+      {
+        "answer": "coffee shops",
+        "feedback": "<p>Maria is referring to places where you can get a coffee and often sit to enjoy your drink or meet with friends.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Coffee shops</code> are cozy spots where people can purchase coffee and small bites to eat. They are also places where many like to sit to do some work or catch up with friends.</p>\n<p>When you hear the phrase <code>not too far away</code>, it means the coffee shops are at a good distance — they're easy to get to, but not right next door.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 125,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

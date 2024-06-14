@@ -1,0 +1,57 @@
+{
+  "id": "660f1bf673487ae0bb25b900",
+  "title": "Step 36",
+  "challengeType": 1,
+  "dashedName": "step-36",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        8
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n\n}",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>console.log()</code>.</p>",
+      "testString": "assert.match(code, /console\\.log/)"
+    },
+    {
+      "text": "<p>You should log the value of <code>i</code>.</p>",
+      "testString": "assert.match(code, /console\\.log\\(\\s*i\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should log the value of <code>i</code> in your <code>for</code> loop.</p>",
+      "testString": "assert.match(code, /for\\s*\\(\\s*let\\s+i\\s*=\\s*0;\\s*i\\s*<\\s*count;\\s*i\\s*=\\s*i\\s*\\+\\s*1\\s*\\)\\s*\\{\\s*console\\.log\\(\\s*i\\s*\\);?\\s*\\}/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Your loop should now run eight times. Inside the body of the loop, print the value of the <code>i</code> iterator and see what happens.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

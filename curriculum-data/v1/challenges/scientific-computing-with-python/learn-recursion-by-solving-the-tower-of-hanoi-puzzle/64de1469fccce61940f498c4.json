@@ -1,0 +1,69 @@
+{
+  "id": "64de1469fccce61940f498c4",
+  "title": "Step 2",
+  "challengeType": 20,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "rods = {}",
+      "error": null,
+      "seed": "rods = {}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>rods</code> dictionary should have an <code>'A'</code> key.</p>",
+      "testString": "({ test: () => assert(runPython(`'A' in rods`)) })"
+    },
+    {
+      "text": "<p><code>rods['A']</code> should be an empty list.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    rods['A'] == []\n  `))\n})"
+    },
+    {
+      "text": "<p>Your <code>rods</code> dictionary should have a <code>'B'</code> key.</p>",
+      "testString": "({ test: () => assert(runPython(`'B' in rods`)) })"
+    },
+    {
+      "text": "<p><code>rods['B']</code> should be an empty list.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    rods['B'] == []\n  `))\n})"
+    },
+    {
+      "text": "<p>Your <code>rods</code> dictionary should have a <code>'C'</code> key.</p>",
+      "testString": "({ test: () => assert(runPython(`'C' in rods`)) })"
+    },
+    {
+      "text": "<p><code>rods['C']</code> should be an empty list.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    rods['C'] == []\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>rods</code> dictionary will represent the three rods with their disks. Give it the strings <code>'A'</code>, <code>'B'</code>, and <code>'C'</code> as keys and set each of them to an empty list.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-solving-the-tower-of-hanoi-puzzle",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,70 @@
+{
+  "id": "587d7b7a367417b2b2512b12",
+  "title": "Copy Array Items Using slice()",
+  "challengeType": 1,
+  "forumTopicId": 301158,
+  "dashedName": "copy-array-items-using-slice",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function forecast(arr) {\n  // Only change code below this line\n\n  return arr;\n}\n\n// Only change code above this line\nconsole.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));",
+      "error": null,
+      "seed": "function forecast(arr) {\n  // Only change code below this line\n\n  return arr;\n}\n\n// Only change code above this line\nconsole.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function forecast(arr) {\n  return arr.slice(2,4);\n}",
+        "error": null,
+        "seed": "function forecast(arr) {\n  return arr.slice(2,4);\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>forecast</code> should return <code>[\"warm\", \"sunny\"]</code></p>",
+      "testString": "assert.deepEqual(\n  forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']),\n  ['warm', 'sunny']\n);"
+    },
+    {
+      "text": "<p>The <code>forecast</code> function should utilize the <code>slice()</code> method</p>",
+      "testString": "assert(/\\.slice\\(/.test(__helpers.removeJSComments(code)));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The next method we will cover is <code>slice()</code>. Rather than modifying an array, <code>slice()</code> copies or <em>extracts</em> a given number of elements to a new array, leaving the array it is called upon untouched. <code>slice()</code> takes only 2 parameters — the first is the index at which to begin extraction, and the second is the index at which to stop extraction (extraction will occur up to, but not including the element at this index). Consider this:</p>\n<pre><code class=\"language-js\">let weatherConditions = ['rain', 'snow', 'sleet', 'hail', 'clear'];\n\nlet todaysWeather = weatherConditions.slice(1, 3);\n</code></pre>\n<p><code>todaysWeather</code> would have the value <code>['snow', 'sleet']</code>, while <code>weatherConditions</code> would still have <code>['rain', 'snow', 'sleet', 'hail', 'clear']</code>.</p>\n<p>In effect, we have created a new array by extracting elements from an existing array.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>We have defined a function, <code>forecast</code>, that takes an array as an argument. Modify the function using <code>slice()</code> to extract information from the argument array and return a new array that contains the string elements <code>warm</code> and <code>sunny</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-data-structures",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

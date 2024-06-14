@@ -1,0 +1,81 @@
+{
+  "id": "adf08ec01beb4f99fc7a68f2",
+  "title": "Falsy Bouncer",
+  "challengeType": 1,
+  "forumTopicId": 16014,
+  "dashedName": "falsy-bouncer",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function bouncer(arr) {\n  return arr;\n}\n\nbouncer([7, \"ate\", \"\", false, 9]);",
+      "error": null,
+      "seed": "function bouncer(arr) {\n  return arr;\n}\n\nbouncer([7, \"ate\", \"\", false, 9]);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function bouncer(arr) {\n  return arr.filter(e => e);\n}\n\nbouncer([7, \"ate\", \"\", false, 9]);",
+        "error": null,
+        "seed": "function bouncer(arr) {\n  return arr.filter(e => e);\n}\n\nbouncer([7, \"ate\", \"\", false, 9]);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>bouncer([7, \"ate\", \"\", false, 9])</code> should return <code>[7, \"ate\", 9]</code>.</p>",
+      "testString": "assert.deepEqual(bouncer([7, 'ate', '', false, 9]), [7, 'ate', 9]);"
+    },
+    {
+      "text": "<p><code>bouncer([\"a\", \"b\", \"c\"])</code> should return <code>[\"a\", \"b\", \"c\"]</code>.</p>",
+      "testString": "assert.deepEqual(bouncer(['a', 'b', 'c']), ['a', 'b', 'c']);"
+    },
+    {
+      "text": "<p><code>bouncer([false, null, 0, NaN, undefined, \"\"])</code> should return <code>[]</code>.</p>",
+      "testString": "assert.deepEqual(bouncer([false, null, 0, NaN, undefined, '']), []);"
+    },
+    {
+      "text": "<p><code>bouncer([null, NaN, 1, 2, undefined])</code> should return <code>[1, 2]</code>.</p>",
+      "testString": "assert.deepEqual(bouncer([null, NaN, 1, 2, undefined]), [1, 2]);"
+    },
+    {
+      "text": "<p>You should not mutate <code>arr</code>.</p>",
+      "testString": "const arr = ['a', false, 0, 'Naomi'];\nbouncer(arr);\nassert.deepEqual(arr, ['a', false, 0, 'Naomi'])"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Remove all falsy values from an array. Return a new array; do not mutate the original array.</p>\n<p>Falsy values in JavaScript are <code>false</code>, <code>null</code>, <code>0</code>, <code>\"\"</code>, <code>undefined</code>, and <code>NaN</code>.</p>\n<p>Hint: Try converting each value to a Boolean.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

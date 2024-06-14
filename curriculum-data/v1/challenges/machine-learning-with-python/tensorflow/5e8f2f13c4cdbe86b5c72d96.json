@@ -1,0 +1,47 @@
+{
+  "id": "5e8f2f13c4cdbe86b5c72d96",
+  "title": "Convolutional Neural Networks",
+  "challengeType": 11,
+  "videoId": "_1kTP7uoU9E",
+  "bilibiliIds": {
+    "aid": 805604251,
+    "bvid": "BV1D34y1S7zS",
+    "cid": 409131358
+  },
+  "dashedName": "convolutional-neural-networks",
+  "solutions": [],
+  "question": {
+    "text": "<p>Dense neural networks analyze input on a global scale and recognize patterns in specific areas. Convolutional neural networks...:</p>",
+    "answers": [
+      {
+        "answer": "<p>also analyze input globally and extract features from specific areas.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>do not work well for image classification or object detection.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>scan through the entire input a little at a time and learn local patterns.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The next few video lessons will reference <a href=\"https://colab.research.google.com/drive/1ZZXnCjFEOkp_KdNcNabd14yok0BAIuwS#forceEdit=true&#x26;sandboxMode=true\">this Colab notebook</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "tensorflow",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "65811619cf9fad1fe57fd7b8",
+  "title": "Task 10",
+  "challengeType": 19,
+  "dashedName": "task-10",
+  "solutions": [],
+  "question": {
+    "text": "<p>In <code>I love exploring many new technologies</code>, how is <code>exploring</code> used?</p>",
+    "answers": [
+      {
+        "answer": "<p>As a verb in the present continuous structure</p>",
+        "feedback": "<p>Present continuous are for actions happening now. This is not showing an action happening now.</p>"
+      },
+      {
+        "answer": "<p>As a verb in the simple present structure</p>",
+        "feedback": "<p>Simple present verbs don't end in <code>-ing</code>.</p>"
+      },
+      {
+        "answer": "<p>As a verb in the gerund form</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>As a verb in the past participle form</p>",
+        "feedback": "<p>Past participles are for perfect tenses or as adjectives. This is not used like that here.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 11.76,
+        "finishTimestamp": 17.26
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 6.5,
+        "dialogue": {
+          "text": "I love exploring many new technologies and improving my skills. It keeps me excited about our projects.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Verbs ending in <code>-ing</code> can be gerunds or present participles.</p>\n<p>A <strong>gerund</strong> acts like a noun and is used to talk about the activity itself. For example, in <code>Coding is fun</code>, <code>Coding</code> is a gerund because it's the subject of the sentence, just like a noun.</p>\n<p>The <strong>present continuous tense</strong> is formed using the verb <code>to be</code> and a present participle to describe actions that are happening right now. For example, in <code>She is coding</code>, <code>is coding</code> is in the present continuous tense because it shows what she is doing at this moment.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

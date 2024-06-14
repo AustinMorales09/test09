@@ -1,0 +1,75 @@
+{
+  "id": "657fb980a9b567e860b77f2c",
+  "title": "Task 77",
+  "challengeType": 22,
+  "dashedName": "task-77",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>There's a big _ next month. Would you like to come?</p>",
+    "blanks": [
+      {
+        "answer": "convention",
+        "feedback": "<p>The word is used to describe a large gathering, usually organized around a specific interest or theme, like sci-fi in this case.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 18.7,
+        "finishTimestamp": 21.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.66,
+        "dialogue": {
+          "text": "There's a big convention next month. Would you like to come?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.16
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In the dialogue, Sarah mentions that there's a big event next month. Listen to the audio and complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 80,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

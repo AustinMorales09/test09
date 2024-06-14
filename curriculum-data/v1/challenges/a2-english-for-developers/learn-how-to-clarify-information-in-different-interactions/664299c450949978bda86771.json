@@ -1,0 +1,75 @@
+{
+  "id": "664299c450949978bda86771",
+  "title": "Task 83",
+  "challengeType": 22,
+  "dashedName": "task-83",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I just wanted to make sure everyone _ enough choices.</p>",
+    "blanks": [
+      {
+        "answer": "has",
+        "feedback": "<p>The verb <code>have</code>, but remember that you should use the 3rd person singular form with <code>everyone</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 39.14,
+        "finishTimestamp": 41.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.76,
+        "dialogue": {
+          "text": "I just wanted to make sure everyone has enough choices.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.26
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When using words like <code>everybody</code> or <code>everyone</code>, which mean all the people in a group, we treat them as if they are one person. This is why we use 3rd person singular verbs with them. For example, you say, <code>Everybody IS here</code> (instead of <code>are</code>) or <code>Everyone LIKES ice cream</code> (instead of <code>like</code>). Even though these words refer to many people, the verb form used is the same as for one person, like <code>he</code> or <code>she</code>.</p>\n<p>Listen to Bob and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 87,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

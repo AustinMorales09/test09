@@ -1,0 +1,46 @@
+{
+  "id": "5e8f2f13c4cdbe86b5c72d95",
+  "title": "Neural Networks: Creating a Model",
+  "challengeType": 11,
+  "videoId": "K8bz1bmOCTw",
+  "bilibiliIds": {
+    "aid": 848109040,
+    "bvid": "BV1EL4y1878f",
+    "cid": 409130886
+  },
+  "dashedName": "neural-networks-creating-a-model",
+  "solutions": [],
+  "question": {
+    "text": "<p>Fill in the blanks below to build a sequential model of dense layers:</p>\n<pre><code class=\"language-py\">model = __A__.__B__([\n    __A__.layers.Flatten(input_shape=(28, 28)),\n    __A__.layers.__C__(128, activation='relu'),\n    __A__.layers.__C__(10, activation='softmax')\n])\n</code></pre>",
+    "answers": [
+      {
+        "answer": "<p>A: <code>keras</code></p>\n<p>B: <code>Sequential</code></p>\n<p>C: <code>Dense</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A: <code>tf</code></p>\n<p>B: <code>Sequential</code></p>\n<p>C: <code>Categorical</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A: <code>keras</code></p>\n<p>B: <code>sequential</code></p>\n<p>C: <code>dense</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "tensorflow",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

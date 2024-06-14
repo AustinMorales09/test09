@@ -1,0 +1,65 @@
+{
+  "id": "5900f48a1000cf542c50ff9d",
+  "title": "Problem 286: Scoring probabilities",
+  "challengeType": 1,
+  "forumTopicId": 301937,
+  "dashedName": "problem-286-scoring-probabilities",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function scoringProbabilities() {\n\n  return true;\n}\n\nscoringProbabilities();",
+      "error": null,
+      "seed": "function scoringProbabilities() {\n\n  return true;\n}\n\nscoringProbabilities();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>scoringProbabilities()</code> should return <code>52.6494571953</code>.</p>",
+      "testString": "assert.strictEqual(scoringProbabilities(), 52.6494571953);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Barbara is a mathematician and a basketball player. She has found that the probability of scoring a point when shooting from a distance $x$ is exactly ($1 - \\frac{x}{q}$), where $q$ is a real constant greater than 50.</p>\n<p>During each practice run, she takes shots from distances $x = 1, x = 2, \\ldots, x = 50$ and, according to her records, she has precisely a 2 % chance to score a total of exactly 20 points.</p>\n<p>Find $q$ and give your answer rounded to 10 decimal places.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 85,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

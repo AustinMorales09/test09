@@ -1,0 +1,71 @@
+{
+  "id": "587d774e367417b2b2512aa0",
+  "title": "Wrap Content in the article Element",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cPp79S3",
+  "forumTopicId": 301029,
+  "dashedName": "wrap-content-in-the-article-element",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<h1>Deep Thoughts with Master Camper Cat</h1>\n<main>\n  <div>\n    <h2>The Garfield Files: Lasagna as Training Fuel?</h2>\n    <p>The internet is littered with varying opinions on nutritional paradigms, from catnip paleo to hairball cleanses. But let's turn our attention to an often overlooked fitness fuel, and examine the protein-carb-NOM trifecta that is lasagna...</p>\n  </div>\n\n  <img src=\"samuraiSwords.jpeg\" alt=\"\">\n\n  <article>\n    <h2>Defeating your Foe: the Red Dot is Ours!</h2>\n    <p>Felines the world over have been waging war on the most persistent of foes. This red nemesis combines both cunning stealth and lightning speed. But chin up, fellow fighters, our time for victory may soon be near...</p>\n  </article>\n\n  <img src=\"samuraiSwords.jpeg\" alt=\"\">\n\n  <article>\n    <h2>Is Chuck Norris a Cat Person?</h2>\n    <p>Chuck Norris is widely regarded as the premier martial artist on the planet, and it's a complete coincidence that anyone who disagrees with this fact mysteriously disappears soon after. But the real question is, is he a cat person?...</p>\n  </article>\n</main>",
+      "error": null,
+      "seed": "<h1>Deep Thoughts with Master Camper Cat</h1>\n<main>\n  <div>\n    <h2>The Garfield Files: Lasagna as Training Fuel?</h2>\n    <p>The internet is littered with varying opinions on nutritional paradigms, from catnip paleo to hairball cleanses. But let's turn our attention to an often overlooked fitness fuel, and examine the protein-carb-NOM trifecta that is lasagna...</p>\n  </div>\n\n  <img src=\"samuraiSwords.jpeg\" alt=\"\">\n\n  <article>\n    <h2>Defeating your Foe: the Red Dot is Ours!</h2>\n    <p>Felines the world over have been waging war on the most persistent of foes. This red nemesis combines both cunning stealth and lightning speed. But chin up, fellow fighters, our time for victory may soon be near...</p>\n  </article>\n\n  <img src=\"samuraiSwords.jpeg\" alt=\"\">\n\n  <article>\n    <h2>Is Chuck Norris a Cat Person?</h2>\n    <p>Chuck Norris is widely regarded as the premier martial artist on the planet, and it's a complete coincidence that anyone who disagrees with this fact mysteriously disappears soon after. But the real question is, is he a cat person?...</p>\n  </article>\n</main>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<h1>Deep Thoughts with Master Camper Cat</h1>\n<main>\n  <article>\n    <h2>The Garfield Files: Lasagna as Training Fuel?</h2>\n    <p>The internet is littered with varying opinions on nutritional paradigms, from catnip paleo to hairball cleanses. But let's turn our attention to an often overlooked fitness fuel, and examine the protein-carb-NOM trifecta that is lasagna...</p>\n  </article>\n\n  <img src=\"samuraiSwords.jpeg\" alt=\"\">\n\n  <article>\n    <h2>Defeating your Foe: the Red Dot is Ours!</h2>\n    <p>Felines the world over have been waging war on the most persistent of foes. This red nemesis combines both cunning stealth and lightning speed. But chin up, fellow fighters, our time for victory may soon be near...</p>\n  </article>\n\n  <img src=\"samuraiSwords.jpeg\" alt=\"\">\n\n  <article>\n    <h2>Is Chuck Norris a Cat Person?</h2>\n    <p>Chuck Norris is widely regarded as the premier martial artist on the planet, and it's a complete coincidence that anyone who disagrees with this fact mysteriously disappears soon after. But the real question is, is he a cat person?...</p>\n  </article>\n</main>",
+        "error": null,
+        "seed": "<h1>Deep Thoughts with Master Camper Cat</h1>\n<main>\n  <article>\n    <h2>The Garfield Files: Lasagna as Training Fuel?</h2>\n    <p>The internet is littered with varying opinions on nutritional paradigms, from catnip paleo to hairball cleanses. But let's turn our attention to an often overlooked fitness fuel, and examine the protein-carb-NOM trifecta that is lasagna...</p>\n  </article>\n\n  <img src=\"samuraiSwords.jpeg\" alt=\"\">\n\n  <article>\n    <h2>Defeating your Foe: the Red Dot is Ours!</h2>\n    <p>Felines the world over have been waging war on the most persistent of foes. This red nemesis combines both cunning stealth and lightning speed. But chin up, fellow fighters, our time for victory may soon be near...</p>\n  </article>\n\n  <img src=\"samuraiSwords.jpeg\" alt=\"\">\n\n  <article>\n    <h2>Is Chuck Norris a Cat Person?</h2>\n    <p>Chuck Norris is widely regarded as the premier martial artist on the planet, and it's a complete coincidence that anyone who disagrees with this fact mysteriously disappears soon after. But the real question is, is he a cat person?...</p>\n  </article>\n</main>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have three <code>article</code> tags.</p>",
+      "testString": "assert($('article').length == 3);"
+    },
+    {
+      "text": "<p>Your code should not have any <code>div</code> tags.</p>",
+      "testString": "assert($('div').length == 0);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><code>article</code> is another one of the new HTML5 elements that add semantic meaning to your markup. <code>article</code> is a sectioning element and is used to wrap independent, self-contained content. The tag works well with blog entries, forum posts, or news articles.</p>\n<p>Determining whether content can stand alone is usually a judgment call, but you can use a couple of simple tests. Ask yourself if you removed all surrounding context, would that content still make sense? Similarly, for text, would the content hold up if it were in an RSS feed?</p>\n<p>Remember that folks using assistive technologies rely on organized, semantically meaningful markup to better understand your work.</p>\n<p><strong>Note:</strong> The <code>section</code> element is also new with HTML5, and has a slightly different semantic meaning than <code>article</code>. An <code>article</code> is for standalone content, and a <code>section</code> is for grouping thematically related content. They can be used within each other, as needed. For example, if a book is the <code>article</code>, then each chapter is a <code>section</code>. When there's no relationship between groups of content, then use a <code>div</code>.</p>\n<p><code>&#x3C;div></code> - groups content\n<code>&#x3C;section></code> - groups related content\n<code>&#x3C;article></code> - groups independent, self-contained content</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Camper Cat used <code>article</code> tags to wrap the posts on his blog page, but he forgot to use them around the top one. Change the <code>div</code> tag to use an <code>article</code> tag instead.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-accessibility",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

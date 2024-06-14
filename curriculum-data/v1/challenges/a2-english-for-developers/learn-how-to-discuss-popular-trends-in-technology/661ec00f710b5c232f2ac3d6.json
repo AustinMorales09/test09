@@ -1,0 +1,45 @@
+{
+  "id": "661ec00f710b5c232f2ac3d6",
+  "title": "Task 80",
+  "challengeType": 19,
+  "dashedName": "task-80",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the most appropriate response when someone asks, \"What projects are you working on these days?\"</p>",
+    "answers": [
+      {
+        "answer": "<p>I was involved in projects that happened in the past.</p>",
+        "feedback": "<p><code>These days</code> implies the current or recent time, not the past.</p>"
+      },
+      {
+        "answer": "<p>I have plans for future projects.</p>",
+        "feedback": "<p><code>These days</code> focuses on the present or recent time, not the future.</p>"
+      },
+      {
+        "answer": "<p>I'm currently working on these projects at the moment.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>I have projects to work on every day.</p>",
+        "feedback": "<p>While working on projects every day is a common practice, <code>these days</code> specifically refers to the current time.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>These days</code> is a casual expression used to refer to the current time or the present period. It suggests a recent or ongoing timeframe, often in the context of discussing trends, activities, or situations happening in the near past or present.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 83,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

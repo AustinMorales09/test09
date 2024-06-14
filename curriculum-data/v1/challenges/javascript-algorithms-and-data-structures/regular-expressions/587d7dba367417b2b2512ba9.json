@@ -1,0 +1,98 @@
+{
+  "id": "587d7dba367417b2b2512ba9",
+  "title": "Positive and Negative Lookahead",
+  "challengeType": 1,
+  "forumTopicId": 301360,
+  "dashedName": "positive-and-negative-lookahead",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let sampleWord = \"astronaut\";\nlet pwRegex = /change/; // Change this line\nlet result = pwRegex.test(sampleWord);",
+      "error": null,
+      "seed": "let sampleWord = \"astronaut\";\nlet pwRegex = /change/; // Change this line\nlet result = pwRegex.test(sampleWord);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let pwRegex =  /(?=\\w{6})(?=\\w*\\d{2})/;",
+        "error": null,
+        "seed": "let pwRegex =  /(?=\\w{6})(?=\\w*\\d{2})/;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your regex should use two positive <code>lookaheads</code>.</p>",
+      "testString": "assert(pwRegex.source.match(/\\(\\?=.*?\\)\\(\\?=.*?\\)/) !== null);"
+    },
+    {
+      "text": "<p>Your regex should not match the string <code>astronaut</code></p>",
+      "testString": "pwRegex.lastIndex = 0;\nassert(!pwRegex.test('astronaut'));"
+    },
+    {
+      "text": "<p>Your regex should not match the string <code>banan1</code></p>",
+      "testString": "pwRegex.lastIndex = 0;\nassert(!pwRegex.test('banan1'));"
+    },
+    {
+      "text": "<p>Your regex should match the string <code>bana12</code></p>",
+      "testString": "pwRegex.lastIndex = 0;\nassert(pwRegex.test('bana12'));"
+    },
+    {
+      "text": "<p>Your regex should match the string <code>abc123</code></p>",
+      "testString": "pwRegex.lastIndex = 0;\nassert(pwRegex.test('abc123'));"
+    },
+    {
+      "text": "<p>Your regex should not match the string <code>12345</code></p>",
+      "testString": "pwRegex.lastIndex = 0;\nassert(!pwRegex.test('12345'));"
+    },
+    {
+      "text": "<p>Your regex should match the string <code>8pass99</code></p>",
+      "testString": "pwRegex.lastIndex = 0;\nassert(pwRegex.test('8pass99'));"
+    },
+    {
+      "text": "<p>Your regex should not match the string <code>1a2bcde</code></p>",
+      "testString": "pwRegex.lastIndex = 0;\nassert(!pwRegex.test('1a2bcde'));"
+    },
+    {
+      "text": "<p>Your regex should match the string <code>astr1on11aut</code></p>",
+      "testString": "pwRegex.lastIndex = 0;\nassert(pwRegex.test('astr1on11aut'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><dfn>Lookaheads</dfn> are patterns that tell JavaScript to look-ahead in your string to check for patterns further along. This can be useful when you want to search for multiple patterns over the same string.</p>\n<p>There are two kinds of lookaheads: <dfn>positive lookahead</dfn> and <dfn>negative lookahead</dfn>.</p>\n<p>A positive lookahead will look to make sure the element in the search pattern is there, but won't actually match it. A positive lookahead is used as <code>(?=...)</code> where the <code>...</code> is the required part that is not matched.</p>\n<p>On the other hand, a negative lookahead will look to make sure the element in the search pattern is not there. A negative lookahead is used as <code>(?!...)</code> where the <code>...</code> is the pattern that you do not want to be there. The rest of the pattern is returned if the negative lookahead part is not present.</p>\n<p>Lookaheads are a bit confusing but some examples will help.</p>\n<pre><code class=\"language-js\">let quit = \"qu\";\nlet noquit = \"qt\";\nlet quRegex= /q(?=u)/;\nlet qRegex = /q(?!u)/;\nquit.match(quRegex);\nnoquit.match(qRegex);\n</code></pre>\n<p>Both of these <code>match</code> calls would return <code>[\"q\"]</code>.</p>\n<p>A more practical use of lookaheads is to check two or more patterns in one string. Here is a (naively) simple password checker that looks for between 3 and 6 characters and at least one number:</p>\n<pre><code class=\"language-js\">let password = \"abc123\";\nlet checkPass = /(?=\\w{3,6})(?=\\D*\\d)/;\ncheckPass.test(password);\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use lookaheads in the <code>pwRegex</code> to match passwords that are greater than 5 characters long, and have two consecutive digits.</p>\n</section>",
+  "translationPending": false,
+  "block": "regular-expressions",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

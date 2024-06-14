@@ -1,0 +1,88 @@
+{
+  "id": "65b25bcc98b00d41d06d2a2b",
+  "title": "Task 14",
+  "challengeType": 19,
+  "dashedName": "task-14",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Bob mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>You will know who she is as soon as you see her.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>You will not know who she is.</p>",
+        "feedback": "<p>Bob's statement suggests the opposite, that you will indeed know her when you see her.</p>"
+      },
+      {
+        "answer": "<p>You will meet her for the first time.</p>",
+        "feedback": "<p>To <code>recognize</code> someone means you have seen or known them before, not that it's the first meeting.</p>"
+      },
+      {
+        "answer": "<p>You will forget who she is.</p>",
+        "feedback": "<p><code>Recognizing</code> someone means remembering them, not forgetting.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 11.94,
+        "finishTimestamp": 13.22
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 2.28,
+        "dialogue": {
+          "text": "You'll recognize her right away.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 2.78
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

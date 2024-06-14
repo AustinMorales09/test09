@@ -1,0 +1,45 @@
+{
+  "id": "655a21f5512be1f7dbfe4cad",
+  "title": "Task 36",
+  "challengeType": 19,
+  "dashedName": "task-36",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>sleepy</code> mean in the sentence <code>I'm here because I feel sleepy during the mornings</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>Feeling fully awake and energetic</p>",
+        "feedback": "<p><code>Sleepy</code> indicates a need for sleep, not being fully awake.</p>"
+      },
+      {
+        "answer": "<p>Unable to sleep</p>",
+        "feedback": "<p><code>Sleepy</code> means feeling tired, not the inability to sleep.</p>"
+      },
+      {
+        "answer": "<p>Excited and active</p>",
+        "feedback": "<p><code>Sleepy</code> describes a state of tiredness, not excitement or activity.</p>"
+      },
+      {
+        "answer": "<p>Feeling tired and in need of sleep</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Words ending in <code>y</code> often describe a state or quality. For example:</p>\n<p>If you add <code>y</code> to the noun <code>sleep</code>, you create the adjective <code>sleepy</code>, which means feeling a need to sleep or being tired.</p>\n<p>The <code>y</code> transforms the noun <code>sleep</code> into an adjective describing a condition. Similarly:</p>\n<p><code>snow</code> + <code>y</code> = <code>snowy</code> (having a lot of snow)\n<code>rain</code> + <code>y</code> = <code>rainy</code> (having a lot of rain)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 37,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

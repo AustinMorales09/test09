@@ -1,0 +1,65 @@
+{
+  "id": "5900f4231000cf542c50ff34",
+  "title": "Problem 181: Investigating in how many ways objects of two different colours can be grouped",
+  "challengeType": 1,
+  "forumTopicId": 301817,
+  "dashedName": "problem-181-investigating-in-how-many-ways-objects-of-two-different-colours-can-be-grouped",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function colorsGrouping() {\n\n  return true;\n}\n\ncolorsGrouping();",
+      "error": null,
+      "seed": "function colorsGrouping() {\n\n  return true;\n}\n\ncolorsGrouping();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>colorsGrouping()</code> should return <code>83735848679360670</code>.</p>",
+      "testString": "assert.strictEqual(colorsGrouping(), 83735848679360670);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Having three black objects $B$ and one white object $W$ they can be grouped in 7 ways like this:</p>\n<p>$$(BBBW)\\;(B,BBW)\\;(B,B,BW)\\;(B,B,B,W)\\;(B,BB,W)\\;(BBB,W)\\;(BB,BW)$$</p>\n<p>In how many ways can sixty black objects $B$ and forty white objects $W$ be thus grouped?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 80,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

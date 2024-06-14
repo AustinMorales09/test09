@@ -1,0 +1,51 @@
+{
+  "id": "5e7b9f080b6c005b0e76f063",
+  "title": "Files as a Sequence",
+  "challengeType": 11,
+  "videoId": "cIA0EokbaHE",
+  "bilibiliIds": {
+    "aid": 974380307,
+    "bvid": "BV1p44y1m7br",
+    "cid": 376388846
+  },
+  "dashedName": "files-as-a-sequence",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the word 'continue' do in the middle of a loop?</p>",
+    "answers": [
+      {
+        "answer": "<p>Skips to the code directly after the loop.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Skips to the next line in the code.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Skips to the next iteration of the loop.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Skips the next block of code.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>More resources:</p>\n<p>- <a href=\"https://www.youtube.com/watch?v=il1j4wkte2E\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Exercise</a></p>\n</section>",
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

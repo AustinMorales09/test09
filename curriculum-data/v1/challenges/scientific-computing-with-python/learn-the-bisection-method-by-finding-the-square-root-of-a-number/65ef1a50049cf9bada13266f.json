@@ -1,0 +1,53 @@
+{
+  "id": "65ef1a50049cf9bada13266f",
+  "title": "Step 7",
+  "challengeType": 20,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        8
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):\n    if square_target < 0:\n        raise ValueError('Square root of negative number is not defined in real numbers')\n    if square_target == 1:\n        root = 1\n        print(f'The square root of {square_target} is 1')\n    ",
+      "error": null,
+      "seed": "def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):\n    if square_target < 0:\n        raise ValueError('Square root of negative number is not defined in real numbers')\n    if square_target == 1:\n        root = 1\n        print(f'The square root of {square_target} is 1')\n    "
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an <code>elif</code> statement to check the condition <code>square_target == 0</code>.</p>",
+      "testString": "({\n    test: () => \n    {\n        assert(runPython(`_Node(_code).find_function(\"square_root_bisection\").find_ifs()[1].find_conditions()[1].is_equivalent(\"square_target == 0\")`));\n    }\n})\n"
+    },
+    {
+      "text": "<p>You should assign the value <code>0</code> to the <code>root</code> variable and pass the argument <code>f'The square root of {square_target} is 0'</code> to a <code>print</code> call.</p>",
+      "testString": "\n({\n    test: () => \n    {        \n        assert(runPython(`_Node(_code).find_function(\"square_root_bisection\").find_ifs()[1].find_bodies()[1].is_equivalent(\"root = 0\\\\nprint(f'The square root of {square_target} is 0')\")`));\n    }\n})\n"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Create an <code>elif</code> statement to check if <code>square_target</code> is equal to <code>0</code>. If it is, assign the value <code>0</code> to the <code>root</code> variable. Also, print the message <code>'The square root of {square_target} is 0'</code>. Remember to format the message using an f-string.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-bisection-method-by-finding-the-square-root-of-a-number",
+  "hasEditableBoundaries": true,
+  "order": 4,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

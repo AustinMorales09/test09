@@ -1,0 +1,87 @@
+{
+  "id": "65d752c6240228a36a5a3ac3",
+  "title": "Task 61",
+  "challengeType": 22,
+  "dashedName": "task-61",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>He's been with us for some time, nearly 10 years. He's _ and _ _ _. He always has this vigilant look, probably a result of his job.</p>",
+    "blanks": [
+      {
+        "answer": "tall",
+        "feedback": "<p>This adjective is used to describe someone's height as above average.</p>"
+      },
+      {
+        "answer": "has",
+        "feedback": "<p>It's used to indicate possession of a physical feature.</p>"
+      },
+      {
+        "answer": "curly",
+        "feedback": "<p>This word describes the type of hair as having curls or waves.</p>"
+      },
+      {
+        "answer": "hair",
+        "feedback": "<p>It's the physical feature being described.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 10.96,
+        "finishTimestamp": 18.72
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 8.76,
+        "dialogue": {
+          "text": "He's been with us for some time, nearly 10 years. He's tall and has curly hair. He always has this vigilant look, probably a result of his job.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 9.26
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>To describe someone's appearance, you often use adjectives like <code>tall</code> (above average) or <code>short</code> (below average) for height.</p>\n<p>You can use <code>have</code> to describe someone possessing a feature. For instance, <code>She has blue eyes.</code> This means that the person possesses the feature of blue-colored eyes.</p>\n<p><code>Curly hair</code> means the hair is not straight or flat but has lots of curls or waves.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 63,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

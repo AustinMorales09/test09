@@ -1,0 +1,125 @@
+{
+  "id": "663bd0951a16faada79364bd",
+  "title": "Task 37",
+  "challengeType": 19,
+  "dashedName": "task-37",
+  "solutions": [],
+  "question": {
+    "text": "<p>Based on Alice's answer, what can we understand from the situation?</p>",
+    "answers": [
+      {
+        "answer": "<p>Alice refuses to play because she can't hear anything</p>",
+        "feedback": "<p>The word <code>sounds</code> here has to do with something else.</p>"
+      },
+      {
+        "answer": "<p>Alice says she thinks the idea is not good</p>",
+        "feedback": "<p>Actually, she likes it and says it seems <code>fun</code>.</p>"
+      },
+      {
+        "answer": "<p>Alice likes it and they are probably going to play the game</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Alice likes it so much that she starts the game and names an object.</p>",
+        "feedback": "<p>Alice just made a comment about the game. She didn't start it.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 8.1
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.78,
+        "dialogue": {
+          "text": "Hey, Alice, want to play a guessing game?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "startTime": 4.26,
+        "finishTime": 8.1,
+        "dialogue": {
+          "text": "I'll name some objects with strange names and you try to guess what they are.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 8.38
+      },
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 8.38
+      },
+      {
+        "character": "Alice",
+        "startTime": 8.66,
+        "finishTime": 9.1,
+        "dialogue": {
+          "text": "Sounds fun.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 9.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Fun</code> is when you enjoy yourself and feel happy doing something. For example, <code>Playing games with friends or going to the park can be fun</code>, because playing games is something that makes you smile and feel good.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 39,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,87 @@
+{
+  "id": "65a5000506fe76d745652a33",
+  "title": "Task 100",
+  "challengeType": 22,
+  "dashedName": "task-100",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>The camera _, the _, and the number of apps _ are what I like the _.</p>",
+    "blanks": [
+      {
+        "answer": "quality",
+        "feedback": "<p>This noun refers to how good or bad something is, often used to talk about the sharpness and clarity of photos taken by a camera.</p>"
+      },
+      {
+        "answer": "speed",
+        "feedback": "<p>This noun describes how quickly a device performs tasks or processes information.</p>"
+      },
+      {
+        "answer": "available",
+        "feedback": "<p>This adjective means something can be accessed or used, like apps in an app store.</p>"
+      },
+      {
+        "answer": "most",
+        "feedback": "<p>This word is used to indicate the highest degree or the greatest amount of something.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 25.24,
+        "finishTimestamp": 29.84
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5.6,
+        "dialogue": {
+          "text": "The camera quality, the speed, and the number of apps available are what I like the most.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Speed</code> in technology often refers to how fast a device or internet connection can operate, like when downloading files or opening apps. For example, <code>This computer's speed allows me to edit videos without waiting.</code></p>\n<p>When something is <code>available</code>, it means you can use it or get it. For example, <code>My favorite game is available on both Android and iOS devices.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 103,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

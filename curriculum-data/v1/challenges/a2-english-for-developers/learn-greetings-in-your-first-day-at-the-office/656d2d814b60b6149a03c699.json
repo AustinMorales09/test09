@@ -1,0 +1,88 @@
+{
+  "id": "656d2d814b60b6149a03c699",
+  "title": "Task 165",
+  "challengeType": 19,
+  "dashedName": "task-165",
+  "solutions": [],
+  "question": {
+    "text": "<p>After answering Jake's question, Why does Sarah say <code>See you tomorrow</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>They will meet now.</p>",
+        "feedback": "<p>It's about the future, not now.</p>"
+      },
+      {
+        "answer": "<p>They will never meet again.</p>",
+        "feedback": "<p>It's a positive statement.</p>"
+      },
+      {
+        "answer": "<p>She hopes to see him tomorrow.</p>",
+        "feedback": "<p>This is about meeting again soon.</p>"
+      },
+      {
+        "answer": "<p>She doesn't want to see him.</p>",
+        "feedback": "<p>It's a friendly phrase.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 25.04,
+        "finishTimestamp": 27.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.3,
+        "dialogue": {
+          "text": "Good, really good. See you tomorrow, then?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 3.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>See you tomorrow</code> is a casual way of saying goodbye and expressing the hope to meet the person the next day.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 169,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

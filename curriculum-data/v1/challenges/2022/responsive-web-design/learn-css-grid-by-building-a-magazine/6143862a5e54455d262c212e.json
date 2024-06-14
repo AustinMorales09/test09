@@ -1,0 +1,81 @@
+{
+  "id": "6143862a5e54455d262c212e",
+  "title": "Step 3",
+  "challengeType": 0,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        17,
+        19
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Magazine</title>\n    <link\n      href=\"https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap\"\n      rel=\"stylesheet\"\n    />\n    <link\n      rel=\"stylesheet\"\n      href=\"https://use.fontawesome.com/releases/v5.8.2/css/all.css\"\n    />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Magazine</title>\n    <link\n      href=\"https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap\"\n      rel=\"stylesheet\"\n    />\n    <link\n      rel=\"stylesheet\"\n      href=\"https://use.fontawesome.com/releases/v5.8.2/css/all.css\"\n    />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>main</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('main'));"
+    },
+    {
+      "text": "<p>Your <code>main</code> element should be within your <code>body</code> element.</p>",
+      "testString": "assert(document.querySelector('main')?.parentElement?.localName === 'body');"
+    },
+    {
+      "text": "<p>You should have a <code>section</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('section'));"
+    },
+    {
+      "text": "<p>Your <code>section</code> element should be within your <code>main</code> element.</p>",
+      "testString": "assert(document.querySelector('section')?.parentElement?.localName === 'main');"
+    },
+    {
+      "text": "<p>Your <code>section</code> element should have the <code>class</code> set to <code>heading</code>.</p>",
+      "testString": "assert(document.querySelector('section')?.classList?.contains('heading'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Within your <code>body</code>, create a <code>main</code> element. Then in that element, create a <code>section</code> with a <code>class</code> set to <code>heading</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-grid-by-building-a-magazine",
+  "hasEditableBoundaries": true,
+  "order": 15,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

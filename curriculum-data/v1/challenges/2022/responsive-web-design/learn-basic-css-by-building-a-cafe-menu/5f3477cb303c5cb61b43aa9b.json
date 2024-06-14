@@ -1,0 +1,73 @@
+{
+  "id": "5f3477cb303c5cb61b43aa9b",
+  "title": "Step 18",
+  "challengeType": 0,
+  "dashedName": "step-18",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1, h2, p {\n  text-align: center;\n}\n",
+      "error": null,
+      "seed": "h1, h2, p {\n  text-align: center;\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use a <code>body</code> selector.</p>",
+      "testString": "const hasBody = new __helpers.CSSHelp(document).getStyle('body');\nassert(hasBody);"
+    },
+    {
+      "text": "<p>You should set the <code>background-color</code> property to <code>brown</code>.</p>",
+      "testString": "const hasBackground = new __helpers.CSSHelp(document).getCSSRules().some(x => x.style['background-color'] === 'brown');\nassert(hasBackground);"
+    },
+    {
+      "text": "<p>Your <code>body</code> element should have a <code>brown</code> background.</p>",
+      "testString": "const bodyBackground = new __helpers.CSSHelp(document).getStyle('body')?.getPropertyValue('background-color');\nassert(bodyBackground === 'brown');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The text is centered again so the link to the CSS file is working. Add another style to the file that changes the <code>background-color</code> property to <code>brown</code> for the <code>body</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

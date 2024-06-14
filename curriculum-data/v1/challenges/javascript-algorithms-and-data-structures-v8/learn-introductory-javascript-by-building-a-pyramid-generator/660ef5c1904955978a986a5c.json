@@ -1,0 +1,57 @@
+{
+  "id": "660ef5c1904955978a986a5c",
+  "title": "Step 14",
+  "challengeType": 1,
+  "dashedName": "step-14",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\n",
+      "error": null,
+      "seed": "let character = 'Hello';\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a second <code>let</code> keyword in your code.</p>",
+      "testString": "assert.lengthOf(code.match(/let/g), 2);"
+    },
+    {
+      "text": "<p>You should use <code>let</code> to declare a <code>count</code> variable.</p>",
+      "testString": "assert.match(code, /let\\s+count/);"
+    },
+    {
+      "text": "<p>You should assign the number <code>8</code> to your <code>count</code> variable.</p>",
+      "testString": "assert.equal(count, 8);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Use <code>let</code> to declare a <code>count</code> variable. Assign it the <dfn>number</dfn> <code>8</code>. When using a number value, you do not use quotes. For example:</p>\n<pre><code class=\"language-js\">let money = 100;\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

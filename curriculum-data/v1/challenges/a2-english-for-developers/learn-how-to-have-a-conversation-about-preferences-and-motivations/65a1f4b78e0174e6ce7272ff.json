@@ -1,0 +1,88 @@
+{
+  "id": "65a1f4b78e0174e6ce7272ff",
+  "title": "Task 65",
+  "challengeType": 19,
+  "dashedName": "task-65",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is Tom thanking Alice?</p>",
+    "answers": [
+      {
+        "answer": "<p>For giving him advice</p>",
+        "feedback": "<p>Consider what Tom specifically mentions making him feel good.</p>"
+      },
+      {
+        "answer": "<p>For solving his problems</p>",
+        "feedback": "<p>Think about whether Tom mentions a solution or something else.</p>"
+      },
+      {
+        "answer": "<p>For agreeing with him</p>",
+        "feedback": "<p>Reflect on the essence of Tom's gratitude toward Alice.</p>"
+      },
+      {
+        "answer": "<p>For listening to him</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 62,
+        "finishTimestamp": 65.38
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.38,
+        "dialogue": {
+          "text": "Thanks for listening, by the way. It feels good to talk about these things.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.88
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Tom expresses his appreciation to Alice.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 66,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

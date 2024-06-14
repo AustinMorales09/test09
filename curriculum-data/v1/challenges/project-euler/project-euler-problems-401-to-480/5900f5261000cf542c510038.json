@@ -1,0 +1,65 @@
+{
+  "id": "5900f5261000cf542c510038",
+  "title": "Problem 441: The inverse summation of coprime couples",
+  "challengeType": 1,
+  "forumTopicId": 302113,
+  "dashedName": "problem-441-the-inverse-summation-of-coprime-couples",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function inverseSummationCoprimeCouples() {\n\n  return true;\n}\n\ninverseSummationCoprimeCouples();",
+      "error": null,
+      "seed": "function inverseSummationCoprimeCouples() {\n\n  return true;\n}\n\ninverseSummationCoprimeCouples();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>inverseSummationCoprimeCouples()</code> should return <code>5000088.8395</code>.</p>",
+      "testString": "assert.strictEqual(inverseSummationCoprimeCouples(), 5000088.8395);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>For an integer $M$, we define $R(M)$ as the sum of $\\frac{1}{p·q}$ for all the integer pairs $p$ and $q$ which satisfy all of these conditions:</p>\n<ul>\n<li>$1 ≤ p &#x3C; q ≤ M$</li>\n<li>$p + q ≥ M$</li>\n<li>$p$ and $q$ are coprime.</li>\n</ul>\n<p>We also define $S(N)$ as the sum of $R(i)$ for $2 ≤ i ≤ N$.</p>\n<p>We can verify that $S(2) = R(2) = \\frac{1}{2}$, $S(10) ≈ 6.9147$ and $S(100) ≈ 58.2962$.</p>\n<p>Find $S({10}^7)$. Give your answer rounded to four decimal places.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

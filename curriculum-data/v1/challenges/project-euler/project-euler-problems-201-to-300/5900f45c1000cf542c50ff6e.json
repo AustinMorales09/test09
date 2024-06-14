@@ -1,0 +1,65 @@
+{
+  "id": "5900f45c1000cf542c50ff6e",
+  "title": "Problem 239: Twenty-two Foolish Primes",
+  "challengeType": 1,
+  "forumTopicId": 301884,
+  "dashedName": "problem-239-twenty-two-foolish-primes",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function twentyTwoFoolishPrimes() {\n\n  return true;\n}\n\ntwentyTwoFoolishPrimes();",
+      "error": null,
+      "seed": "function twentyTwoFoolishPrimes() {\n\n  return true;\n}\n\ntwentyTwoFoolishPrimes();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>twentyTwoFoolishPrimes()</code> should return <code>0.001887854841</code>.</p>",
+      "testString": "assert.strictEqual(twentyTwoFoolishPrimes(), 0.001887854841);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A set of disks numbered 1 through 100 are placed in a line in random order.</p>\n<p>What is the probability that we have a partial derangement such that exactly 22 prime number discs are found away from their natural positions? (Any number of non-prime disks may also be found in or out of their natural positions.)</p>\n<p>Give your answer rounded to 12 places behind the decimal point in the form 0.abcdefghijkl.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 38,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

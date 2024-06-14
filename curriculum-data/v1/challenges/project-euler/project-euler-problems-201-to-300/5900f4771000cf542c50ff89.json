@@ -1,0 +1,65 @@
+{
+  "id": "5900f4771000cf542c50ff89",
+  "title": "Problem 266: Pseudo Square Root",
+  "challengeType": 1,
+  "forumTopicId": 301915,
+  "dashedName": "problem-266-pseudo-square-root",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function pseudoSquareRoot() {\n\n  return true;\n}\n\npseudoSquareRoot();",
+      "error": null,
+      "seed": "function pseudoSquareRoot() {\n\n  return true;\n}\n\npseudoSquareRoot();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>pseudoSquareRoot()</code> should return <code>1096883702440585</code>.</p>",
+      "testString": "assert.strictEqual(pseudoSquareRoot(), 1096883702440585);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The divisors of 12 are: 1,2,3,4,6 and 12.</p>\n<p>The largest divisor of 12 that does not exceed the square root of 12 is 3.</p>\n<p>We shall call the largest divisor of an integer $n$ that does not exceed the square root of $n$ the pseudo square root ($PSR$) of $n$.</p>\n<p>It can be seen that $PSR(3102) = 47$.</p>\n<p>Let $p$ be the product of the primes below 190. Find $PSR(p)\\bmod {10}^{16}$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 65,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

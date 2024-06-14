@@ -1,0 +1,53 @@
+{
+  "id": "65ef198fde24dfb7ff675b42",
+  "title": "Step 4",
+  "challengeType": 20,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):\n    if square_target < 0:\n        pass\n",
+      "error": null,
+      "seed": "def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):\n    if square_target < 0:\n        pass\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove the <code>pass</code> keyword.</p>",
+      "testString": "({\n    test: () => {\n        assert.isFalse(runPython(`_Node(_code).find_function(\"square_root_bisection\").find_ifs()[0].find_bodies()[0].has_pass()`))\n    }\n})"
+    },
+    {
+      "text": "<p>You should raise a <code>ValueError</code> with the message <code>'Square root of negative number is not defined in real numbers'</code> inside the <code>if</code> body.</p>",
+      "testString": "({\n    test: () => {\n        \n        assert(runPython(`_Node(_code).find_function(\"square_root_bisection\").find_ifs()[0].find_bodies()[0].is_equivalent(\"raise ValueError('Square root of negative number is not defined in real numbers')\")`))\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>raise</code> statement allows you to force a specific exception to occur. It consists of the <code>raise</code> keyword followed by the exception type, and enables you to provide a custom error message:</p>\n<pre><code class=\"language-py\">raise ValueError(\"Invalid value\")\n</code></pre>\n<p>When the code above runs, a <code>ValueError</code> is raised and the message <code>\"Invalid value\"</code> is shown to the user.</p>\n<p>If the <code>square_target</code> is less than <code>0</code>, no real-valued square root can be computed. Therefore, raise a <code>ValueError</code> with the message <code>'Square root of negative number is not defined in real numbers'</code>. Don't forget to remove the <code>pass</code> keyword.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-bisection-method-by-finding-the-square-root-of-a-number",
+  "hasEditableBoundaries": true,
+  "order": 4,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

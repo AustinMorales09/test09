@@ -1,0 +1,45 @@
+{
+  "id": "656ab6f67515b149a377009d",
+  "title": "Task 71",
+  "challengeType": 19,
+  "dashedName": "task-71",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following sentences uses <code>they're</code> correctly?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I left my keys over they're.</code></p>",
+        "feedback": "<p>The correct word here should be <code>there</code>, referring to a place.</p>"
+      },
+      {
+        "answer": "<p><code>They're shoes are brand new.</code></p>",
+        "feedback": "<p>The correct word should be <code>their</code> to indicate possession.</p>"
+      },
+      {
+        "answer": "<p><code>They're going to the concert tonight.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>The books are over they're.</code></p>",
+        "feedback": "<p>Again, the correct word to refer to a location would be <code>there</code>.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>They're</code>, <code>their</code>, and <code>there</code> sound similar but have different meanings. <code>They're</code> is a contraction of <code>they are</code>, <code>their</code> is a possessive pronoun of <code>they</code>, and <code>there</code> refers to a place or introduces a sentence or clause.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 72,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

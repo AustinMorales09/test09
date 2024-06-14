@@ -1,0 +1,82 @@
+{
+  "id": "587d7b7b367417b2b2512b13",
+  "title": "Copy an Array with the Spread Operator",
+  "challengeType": 1,
+  "forumTopicId": 301157,
+  "dashedName": "copy-an-array-with-the-spread-operator",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function copyMachine(arr, num) {\n  let newArr = [];\n  while (num >= 1) {\n    // Only change code below this line\n\n    // Only change code above this line\n    num--;\n  }\n  return newArr;\n}\n\nconsole.log(copyMachine([true, false, true], 2));",
+      "error": null,
+      "seed": "function copyMachine(arr, num) {\n  let newArr = [];\n  while (num >= 1) {\n    // Only change code below this line\n\n    // Only change code above this line\n    num--;\n  }\n  return newArr;\n}\n\nconsole.log(copyMachine([true, false, true], 2));"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function copyMachine(arr,num){\n    let newArr=[];\n    while(num >=1){\n    newArr.push([...arr]);\n    num--;\n    }\n    return newArr;\n}\nconsole.log(copyMachine([true, false, true], 2));",
+        "error": null,
+        "seed": "function copyMachine(arr,num){\n    let newArr=[];\n    while(num >=1){\n    newArr.push([...arr]);\n    num--;\n    }\n    return newArr;\n}\nconsole.log(copyMachine([true, false, true], 2));"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>copyMachine([true, false, true], 2)</code> should return <code>[[true, false, true], [true, false, true]]</code></p>",
+      "testString": "assert.deepEqual(copyMachine([true, false, true], 2), [\n  [true, false, true],\n  [true, false, true]\n]);"
+    },
+    {
+      "text": "<p><code>copyMachine([1, 2, 3], 5)</code> should return <code>[[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]</code></p>",
+      "testString": "assert.deepEqual(copyMachine([1, 2, 3], 5), [\n  [1, 2, 3],\n  [1, 2, 3],\n  [1, 2, 3],\n  [1, 2, 3],\n  [1, 2, 3]\n]);"
+    },
+    {
+      "text": "<p><code>copyMachine([true, true, null], 1)</code> should return <code>[[true, true, null]]</code></p>",
+      "testString": "assert.deepEqual(copyMachine([true, true, null], 1), [[true, true, null]]);"
+    },
+    {
+      "text": "<p><code>copyMachine([\"it works\"], 3)</code> should return <code>[[\"it works\"], [\"it works\"], [\"it works\"]]</code></p>",
+      "testString": "assert.deepEqual(copyMachine(['it works'], 3), [\n  ['it works'],\n  ['it works'],\n  ['it works']\n]);"
+    },
+    {
+      "text": "<p>The <code>copyMachine</code> function should utilize the <code>spread operator</code> with array <code>arr</code></p>",
+      "testString": "assert(__helpers.removeJSComments(__helpers.removeJSComments(code)).match(/\\.\\.\\.\\s*arr/));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>While <code>slice()</code> allows us to be selective about what elements of an array to copy, among several other useful tasks, ES6's new <dfn>spread operator</dfn> allows us to easily copy <em>all</em> of an array's elements, in order, with a simple and highly readable syntax. The spread syntax simply looks like this: <code>...</code></p>\n<p>In practice, we can use the spread operator to copy an array like so:</p>\n<pre><code class=\"language-js\">let thisArray = [true, true, undefined, false, null];\nlet thatArray = [...thisArray];\n</code></pre>\n<p><code>thatArray</code> equals <code>[true, true, undefined, false, null]</code>. <code>thisArray</code> remains unchanged and <code>thatArray</code> contains the same elements as <code>thisArray</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>We have defined a function, <code>copyMachine</code> which takes <code>arr</code> (an array) and <code>num</code> (a number) as arguments. The function is supposed to return a new array made up of <code>num</code> copies of <code>arr</code>. We have done most of the work for you, but it doesn't work quite right yet. Modify the function using spread syntax so that it works correctly (hint: another method we have already covered might come in handy here!).</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-data-structures",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

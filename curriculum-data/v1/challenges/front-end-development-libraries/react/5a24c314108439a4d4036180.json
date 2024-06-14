@@ -1,0 +1,86 @@
+{
+  "id": "5a24c314108439a4d4036180",
+  "title": "Optimize Re-Renders with shouldComponentUpdate",
+  "challengeType": 6,
+  "forumTopicId": 301398,
+  "dashedName": "optimize-re-renders-with-shouldcomponentupdate",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<Controller />, document.getElementById('root'));",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class OnlyEvens extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  shouldComponentUpdate(nextProps, nextState) {\n    console.log('Should I update?');\n    // Change code below this line\n    return true;\n    // Change code above this line\n  }\n  componentDidUpdate() {\n    console.log('Component re-rendered.');\n  }\n  render() {\n    return <h1>{this.props.value}</h1>;\n  }\n}\n\nclass Controller extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      value: 0\n    };\n    this.addValue = this.addValue.bind(this);\n  }\n  addValue() {\n    this.setState(state => ({\n      value: state.value + 1\n    }));\n  }\n  render() {\n    return (\n      <div>\n        <button onClick={this.addValue}>Add</button>\n        <OnlyEvens value={this.state.value} />\n      </div>\n    );\n  }\n}",
+      "error": null,
+      "seed": "class OnlyEvens extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  shouldComponentUpdate(nextProps, nextState) {\n    console.log('Should I update?');\n    // Change code below this line\n    return true;\n    // Change code above this line\n  }\n  componentDidUpdate() {\n    console.log('Component re-rendered.');\n  }\n  render() {\n    return <h1>{this.props.value}</h1>;\n  }\n}\n\nclass Controller extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      value: 0\n    };\n    this.addValue = this.addValue.bind(this);\n  }\n  addValue() {\n    this.setState(state => ({\n      value: state.value + 1\n    }));\n  }\n  render() {\n    return (\n      <div>\n        <button onClick={this.addValue}>Add</button>\n        <OnlyEvens value={this.state.value} />\n      </div>\n    );\n  }\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "class OnlyEvens extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  shouldComponentUpdate(nextProps, nextState) {\n    console.log('Should I update?');\n    // Change code below this line\n    return nextProps.value % 2 === 0;\n    // Change code above this line\n  }\n  componentDidUpdate() {\n    console.log('Component re-rendered.');\n  }\n  render() {\n    return <h1>{this.props.value}</h1>;\n  }\n}\n\nclass Controller extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      value: 0\n    };\n    this.addValue = this.addValue.bind(this);\n  }\n  addValue() {\n    this.setState(state => ({\n      value: state.value + 1\n    }));\n  }\n  render() {\n    return (\n      <div>\n        <button onClick={this.addValue}>Add</button>\n        <OnlyEvens value={this.state.value} />\n      </div>\n    );\n  }\n}",
+        "error": null,
+        "seed": "class OnlyEvens extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  shouldComponentUpdate(nextProps, nextState) {\n    console.log('Should I update?');\n    // Change code below this line\n    return nextProps.value % 2 === 0;\n    // Change code above this line\n  }\n  componentDidUpdate() {\n    console.log('Component re-rendered.');\n  }\n  render() {\n    return <h1>{this.props.value}</h1>;\n  }\n}\n\nclass Controller extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      value: 0\n    };\n    this.addValue = this.addValue.bind(this);\n  }\n  addValue() {\n    this.setState(state => ({\n      value: state.value + 1\n    }));\n  }\n  render() {\n    return (\n      <div>\n        <button onClick={this.addValue}>Add</button>\n        <OnlyEvens value={this.state.value} />\n      </div>\n    );\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>Controller</code> component should render the <code>OnlyEvens</code> component as a child.</p>",
+      "testString": "assert(\n  (() => {\n    const mockedComponent = Enzyme.mount(React.createElement(Controller));\n    return (\n      mockedComponent.find('Controller').length === 1 &&\n      mockedComponent.find('OnlyEvens').length === 1\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>shouldComponentUpdate</code> method should be defined on the <code>OnlyEvens</code> component.</p>",
+      "testString": "assert(\n  (() => {\n    const child = React.createElement(OnlyEvens)\n      .type.prototype.shouldComponentUpdate.toString()\n      .replace(/s/g, '');\n    return child !== 'undefined';\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>OnlyEvens</code> component should return an <code>h1</code> tag which renders the value of <code>this.props.value</code>.</p>",
+      "testString": "(() => {\n  const mockedComponent = Enzyme.mount(React.createElement(Controller));\n  const first = () => {\n    mockedComponent.setState({ value: 1000 });\n    return mockedComponent.find('h1').html();\n  };\n  const second = () => {\n    mockedComponent.setState({ value: 10 });\n    return mockedComponent.find('h1').html();\n  };\n  const firstValue = first();\n  const secondValue = second();\n  assert(firstValue === '<h1>1000</h1>' && secondValue === '<h1>10</h1>');\n})();"
+    },
+    {
+      "text": "<p><code>OnlyEvens</code> should re-render only when <code>nextProps.value</code> is even.</p>",
+      "testString": "(() => {\n  const mockedComponent = Enzyme.mount(React.createElement(Controller));\n  const first = () => {\n    mockedComponent.setState({ value: 8 });\n    return mockedComponent.find('h1').text();\n  };\n  const second = () => {\n    mockedComponent.setState({ value: 7 });\n    return mockedComponent.find('h1').text();\n  };\n  const third = () => {\n    mockedComponent.setState({ value: 42 });\n    return mockedComponent.find('h1').text();\n  };\n  const firstValue = first();\n  const secondValue = second();\n  const thirdValue = third();\n  assert(firstValue === '8' && secondValue === '8' && thirdValue === '42');\n})();"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>So far, if any component receives new <code>state</code> or new <code>props</code>, it re-renders itself and all its children. This is usually okay. But React provides a lifecycle method you can call when child components receive new <code>state</code> or <code>props</code>, and declare specifically if the components should update or not. The method is <code>shouldComponentUpdate()</code>, and it takes <code>nextProps</code> and <code>nextState</code> as parameters.</p>\n<p>This method is a useful way to optimize performance. For example, the default behavior is that your component re-renders when it receives new <code>props</code>, even if the <code>props</code> haven't changed. You can use <code>shouldComponentUpdate()</code> to prevent this by comparing the <code>props</code>. The method must return a <code>boolean</code> value that tells React whether or not to update the component. You can compare the current props (<code>this.props</code>) to the next props (<code>nextProps</code>) to determine if you need to update or not, and return <code>true</code> or <code>false</code> accordingly.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The <code>shouldComponentUpdate()</code> method is added in a component called <code>OnlyEvens</code>. Currently, this method returns <code>true</code> so <code>OnlyEvens</code> re-renders every time it receives new <code>props</code>. Modify the method so <code>OnlyEvens</code> updates only if the <code>value</code> of its new props is even. Click the <code>Add</code> button and watch the order of events in your browser's console as the lifecycle hooks are triggered.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 34,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

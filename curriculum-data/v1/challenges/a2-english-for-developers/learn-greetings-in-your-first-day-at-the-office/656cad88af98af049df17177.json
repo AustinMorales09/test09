@@ -1,0 +1,88 @@
+{
+  "id": "656cad88af98af049df17177",
+  "title": "Task 82",
+  "challengeType": 19,
+  "dashedName": "task-82",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Tom mean by saying <code>This is so cool</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>He thinks the temperature is very cold.</p>",
+        "feedback": "<p>The phrase isn't about the actual temperature.</p>"
+      },
+      {
+        "answer": "<p>He doesn't like what he sees.</p>",
+        "feedback": "<p>Tom's reaction is positive, not negative.</p>"
+      },
+      {
+        "answer": "<p>He is very excited and impressed.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He is feeling relaxed.</p>",
+        "feedback": "<p>The phrase indicates excitement more than relaxation.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 43.68,
+        "finishTimestamp": 49.1
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 6.15,
+        "dialogue": {
+          "text": "This is so cool. A standing desk, an ergonomic chair, and an ergonomic mouse.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 6.65
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Expressions like <code>This is so cool</code> are informal ways to show admiration or excitement about something.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 83,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

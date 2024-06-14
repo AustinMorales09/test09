@@ -1,0 +1,73 @@
+{
+  "id": "61408e4ae3e35d08feb260eb",
+  "title": "Step 11",
+  "challengeType": 0,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n      <img id=\"logo\" alt=\"freeCodeCamp\" src=\"https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg\">\n      <h1>HTML/CSS Quiz</h1>\n      <nav></nav>\n    </header>\n    <main></main>\n  </body>\n</html>\n",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n      <img id=\"logo\" alt=\"freeCodeCamp\" src=\"https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg\">\n      <h1>HTML/CSS Quiz</h1>\n      <nav></nav>\n    </header>\n    <main></main>\n  </body>\n</html>\n"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        21,
+        23
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}\n\nheader {\n  width: 100%;\n  height: 50px;\n  background-color: #1b1b32;\n  display: flex;\n}\n\n#logo {\n  width: max(100px, 18vw);\n  background-color: #0a0a23;\n  aspect-ratio: 35 / 4;\n  padding: 0.4rem;\n}\n\n",
+      "error": null,
+      "seed": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}\n\nheader {\n  width: 100%;\n  height: 50px;\n  background-color: #1b1b32;\n  display: flex;\n}\n\n#logo {\n  width: max(100px, 18vw);\n  background-color: #0a0a23;\n  aspect-ratio: 35 / 4;\n  padding: 0.4rem;\n}\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>h1</code> element selector.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('h1'));"
+    },
+    {
+      "text": "<p>You should give the <code>h1</code> a <code>color</code> of <code>#f1be32</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('h1')?.color, 'rgb(241, 190, 50)');"
+    },
+    {
+      "text": "<p>You should give the <code>h1</code> a <code>font-size</code> of <code>min(5vw, 1.2em)</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('h1')?.fontSize, 'min(5vw, 1.2em)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Change the <code>h1</code> font color to <code>#f1be32</code>, and set the font size to <code>min(5vw, 1.2em)</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-accessibility-by-building-a-quiz",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

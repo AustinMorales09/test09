@@ -1,0 +1,133 @@
+{
+  "id": "5d5a813321b9e3db6c106a46",
+  "title": "Step 1",
+  "challengeType": 0,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should contain the <code>DOCTYPE</code> reference.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE/gi));"
+    },
+    {
+      "text": "<p>You should include a space after the <code>DOCTYPE</code> reference.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+/gi));"
+    },
+    {
+      "text": "<p>You should define the document type to be <code>html</code>.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+html/gi));"
+    },
+    {
+      "text": "<p>You should close the <code>DOCTYPE</code> declaration with a <code>></code> after the type.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+html\\s*>/gi));"
+    },
+    {
+      "text": "<p>Your <code>html</code> element should have an opening tag. Don't forget the <code>lang</code> attribute.</p>",
+      "testString": "assert(code.match(/<html\\s+lang\\s*=\\s*('|\")en\\1\\s*>/gi));"
+    },
+    {
+      "text": "<p>Your <code>html</code> element should have a closing tag.</p>",
+      "testString": "assert(code.match(/<\\/html\\s*>/));"
+    },
+    {
+      "text": "<p>Your <code>DOCTYPE</code> declaration should be at the beginning of your HTML.</p>",
+      "testString": "assert(__helpers.removeHtmlComments(code).match(/^\\s*<!DOCTYPE\\s+html\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<head\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/head\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<body\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/body\\s*>/i));"
+    },
+    {
+      "text": "<p>The <code>head</code> and <code>body</code> elements should be siblings.</p>",
+      "testString": "assert(document.querySelector('head')?.nextElementSibling?.localName === 'body');"
+    },
+    {
+      "text": "<p>The <code>head</code> element should be within the <code>html</code> element.</p>",
+      "testString": "assert([...document.querySelector('html')?.children].some(x => x?.localName === 'head'));"
+    },
+    {
+      "text": "<p>The <code>body</code> element should be within the <code>html</code> element.</p>",
+      "testString": "assert([...document.querySelector('html')?.children].some(x => x?.localName === 'body'));"
+    },
+    {
+      "text": "<p>Your code should have a <code>meta</code> element.</p>",
+      "testString": "const meta = document.querySelector('meta');\nassert.exists(meta);"
+    },
+    {
+      "text": "<p>Your <code>meta</code> element should have a <code>charset</code> attribute with the value <code>UTF-8</code>.</p>",
+      "testString": "assert.match(code, /<meta[\\s\\S]+?charset=('|\"|`)UTF-8\\1/i)"
+    },
+    {
+      "text": "<p>Your code should have a <code>title</code> element.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.exists(title);"
+    },
+    {
+      "text": "<p>You should have a closing <code>title</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/title\\s*>/i));"
+    },
+    {
+      "text": "<p>Your code should have a <code>link</code> element.</p>",
+      "testString": "const link = document.querySelector('head > link');\nassert.exists(link);"
+    },
+    {
+      "text": "<p>You should have a <code>div</code> element.</p>",
+      "testString": "const div = document.querySelector('div');\nassert.exists(div);"
+    },
+    {
+      "text": "<p>Your <code>div</code> element should have an <code>id</code> attribute with the value <code>game</code>.</p>",
+      "testString": "const div = document.querySelector('div');\nassert.equal(div?.id, 'game');"
+    },
+    {
+      "text": "<p>Your <code>div</code> element should be within the <code>body</code> element.</p>",
+      "testString": "const div = document.querySelector('div');\nassert.equal(div?.parentElement?.localName, 'body');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>JavaScript is a powerful language which allows you to build websites that are interactive.</p>\n<p><em>Note</em>: For all remaining projects in this curriculum, you will need a basic level of knowledge in HTML and CSS. If you are new to HTML and CSS, please go through the <a href=\"https://www.freecodecamp.org/learn/2022/responsive-web-design/\">Responsive Web Design Certification</a>.</p>\n<p>To get started, create your standard HTML boilerplate with a <code>DOCTYPE</code>, <code>html</code>, <code>head</code>, and <code>body</code>, then add a <code>meta</code> tag for the <code>charset</code>. Add a <code>title</code> element and use the text <code>RPG - Dragon Repeller</code> for it. Include a <code>link</code> tag for your stylesheet to link the <code>styles.css</code> file.</p>\n<p>Finally, create a <code>div</code> element with <code>id</code> set to <code>game</code> within your <code>body</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-javascript-by-building-a-role-playing-game",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

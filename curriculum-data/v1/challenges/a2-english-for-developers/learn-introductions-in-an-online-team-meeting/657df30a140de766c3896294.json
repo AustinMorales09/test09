@@ -1,0 +1,83 @@
+{
+  "id": "657df30a140de766c3896294",
+  "title": "Task 71",
+  "challengeType": 22,
+  "dashedName": "task-71",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Okay, team. _ help Lisa with the _ she _ to start.</p>",
+    "blanks": [
+      {
+        "answer": "Let's",
+        "feedback": "<p>This word is a contraction of <code>let us</code>, used to suggest a proposal or offer for the group. First word is capitalized.</p>"
+      },
+      {
+        "answer": "support",
+        "feedback": "<p>Refers to the help or assistance provided to someone.</p>"
+      },
+      {
+        "answer": "needs",
+        "feedback": "<p>Indicates what Lisa needs.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 58.82,
+        "finishTimestamp": 62.18
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.36,
+        "dialogue": {
+          "text": "Okay, team, let's help Lisa with the support she needs to start.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.86
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In a team context, <code>to support</code> means to provide help or assistance to someone. It's about making sure team members have what they need to succeed.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 73,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

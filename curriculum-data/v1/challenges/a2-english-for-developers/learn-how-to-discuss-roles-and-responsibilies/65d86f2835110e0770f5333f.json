@@ -1,0 +1,83 @@
+{
+  "id": "65d86f2835110e0770f5333f",
+  "title": "Task 72",
+  "challengeType": 22,
+  "dashedName": "task-72",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Yes, _ _ one thing he _: you mustn't share your access codes or passwords with anyone.</p>",
+    "blanks": [
+      {
+        "answer": "there",
+        "feedback": "<p>This word starts the phrase to indicate something exists or is present.</p>"
+      },
+      {
+        "answer": "is",
+        "feedback": "<p>It's used with <code>there</code> to indicate the presence of a single item or fact.</p>"
+      },
+      {
+        "answer": "emphasizes",
+        "feedback": "<p>It means to give special importance or attention to something. It's third-party singular form of verb.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 44.1,
+        "finishTimestamp": 49.4
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 6.3,
+        "dialogue": {
+          "text": "Yes, there is one thing he emphasizes: you mustn't share your access codes or passwords with anyone.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 6.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>there is</code> is used to say something exists or is present. When talking about more than one thing, you use <code>there are</code>.</p>\n<p>For example, <code>There is a book on the table</code> means one book is present, and <code>There are books on the table</code> means more than one book is present.</p>\n<p>The word <code>emphasize</code> means to give special importance to something. For example, <code>The teacher emphasizes the importance of homework</code> means the teacher makes it clear that homework is very important.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 74,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

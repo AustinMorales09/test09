@@ -1,0 +1,55 @@
+{
+  "id": "5e7b9f050b6c005b0e76f057",
+  "title": "Intermediate Expressions",
+  "challengeType": 11,
+  "videoId": "dKgUaIa5ATg",
+  "bilibiliIds": {
+    "aid": 334428894,
+    "bvid": "BV1uw411R7gH",
+    "cid": 376318468
+  },
+  "dashedName": "intermediate-expressions",
+  "solutions": [],
+  "question": {
+    "text": "<p>What will print out after running this code:</p>\n<pre><code class=\"language-python\">width = 15\nheight = 12.0\nprint(height/3)\n</code></pre>",
+    "answers": [
+      {
+        "answer": "<p>39</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>4</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>4.0</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>5.0</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>5</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>More resources:</p>\n<p>- <a href=\"https://youtu.be/t_4DPwsaGDY\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Exercise 1</a></p>\n<p>- <a href=\"https://youtu.be/wgkC8SxraAQ\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Exercise 2</a></p>\n</section>",
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

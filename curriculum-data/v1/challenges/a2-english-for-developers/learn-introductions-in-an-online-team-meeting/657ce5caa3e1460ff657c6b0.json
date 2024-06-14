@@ -1,0 +1,36 @@
+{
+  "id": "657ce5caa3e1460ff657c6b0",
+  "title": "Task 60",
+  "challengeType": 22,
+  "dashedName": "task-60",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ there any specific area you're interested in? _ there any questions you have for Tom?</p>",
+    "blanks": [
+      {
+        "answer": "Is",
+        "feedback": "<p>This is used for asking about a singular item or concept. This word is capitalized.</p>"
+      },
+      {
+        "answer": "Are",
+        "feedback": "<p>This is used for inquiring about multiple items or concepts. This word is capitalized.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Practicing the correct usage of <code>is there</code> and <code>are there</code> in questions is crucial. Remember, <code>is there</code> is used for singular nouns and <code>are there</code> for plural nouns. This task will help you understand how to form questions correctly using these phrases.</p>\n<p>The sentence below doesn't have an audio, you need to deduct the correct words by understanding the context.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 62,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

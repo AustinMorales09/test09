@@ -1,0 +1,77 @@
+{
+  "id": "6176519636a76b810ab1219a",
+  "title": "Step 20",
+  "challengeType": 0,
+  "dashedName": "step-20",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker one\">\n      </div>\n      <div class=\"marker two\">\n      </div>\n      <div class=\"marker three\">\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker one\">\n      </div>\n      <div class=\"marker two\">\n      </div>\n      <div class=\"marker three\">\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        14,
+        16
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1 {\n  text-align: center;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.one {\n  background-color: red;\n}\n\n\n",
+      "error": null,
+      "seed": "h1 {\n  text-align: center;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.one {\n  background-color: red;\n}\n\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use a class selector to target the class <code>two</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.two'));"
+    },
+    {
+      "text": "<p>Your <code>.two</code> CSS rule should have a <code>background-color</code> property set to <code>green</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.two')?.backgroundColor === 'green');"
+    },
+    {
+      "text": "<p>You should use a class selector to target the class <code>three</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.three'));"
+    },
+    {
+      "text": "<p>Your <code>.three</code> CSS rule should have a <code>background-color</code> property set to <code>blue</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.three')?.backgroundColor === 'blue');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Create a CSS rule that targets the class <code>two</code> and set its <code>background-color</code> property to <code>green</code>.</p>\n<p>Also, create a separate CSS rule that targets the class <code>three</code> and set its <code>background-color</code> to <code>blue</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

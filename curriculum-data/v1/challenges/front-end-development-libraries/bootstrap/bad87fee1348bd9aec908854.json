@@ -1,0 +1,81 @@
+{
+  "id": "bad87fee1348bd9aec908854",
+  "title": "Label Bootstrap Wells",
+  "challengeType": 0,
+  "forumTopicId": 18223,
+  "dashedName": "label-bootstrap-wells",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n\n      <div class=\"well\" id=\"left-well\">\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n\n      <div class=\"well\" id=\"right-well\">\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n      </div>\n    </div>\n  </div>\n</div>",
+      "error": null,
+      "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n\n      <div class=\"well\" id=\"left-well\">\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n\n      <div class=\"well\" id=\"right-well\">\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n      </div>\n    </div>\n  </div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <h4>#left-well</h4>\n      <div class=\"well\" id=\"left-well\">\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <h4>#right-well</h4>\n      <div class=\"well\" id=\"right-well\">\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n      </div>\n    </div>\n  </div>\n</div>",
+        "error": null,
+        "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <h4>#left-well</h4>\n      <div class=\"well\" id=\"left-well\">\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <h4>#right-well</h4>\n      <div class=\"well\" id=\"right-well\">\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n      </div>\n    </div>\n  </div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add an <code>h4</code> element to each of your <code>&#x3C;div class=\"col-xs-6\"></code> elements.</p>",
+      "testString": "assert(\n  $('.col-xs-6').children('h4') && $('.col-xs-6').children('h4').length > 1\n);"
+    },
+    {
+      "text": "<p>One <code>h4</code> element should have the text <code>#left-well</code>.</p>",
+      "testString": "assert(new RegExp('#left-well', 'gi').test($('h4').text()));"
+    },
+    {
+      "text": "<p>One <code>h4</code> element should have the text <code>#right-well</code>.</p>",
+      "testString": "assert(new RegExp('#right-well', 'gi').test($('h4').text()));"
+    },
+    {
+      "text": "<p>All of your <code>h4</code> elements should have closing tags.</p>",
+      "testString": "assert(\n  code.match(/<\\/h4>/g) &&\n    code.match(/<h4/g) &&\n    code.match(/<\\/h4>/g).length === code.match(/<h4/g).length\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>For the sake of clarity, let's label both of our wells with their ids.</p>\n<p>Above your left-well, inside its <code>col-xs-6</code> <code>div</code> element, add a <code>h4</code> element with the text <code>#left-well</code>.</p>\n<p>Above your right-well, inside its <code>col-xs-6</code> <code>div</code> element, add a <code>h4</code> element with the text <code>#right-well</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "bootstrap",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 27,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

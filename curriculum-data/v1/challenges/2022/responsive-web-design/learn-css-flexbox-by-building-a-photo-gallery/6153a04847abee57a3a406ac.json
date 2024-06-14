@@ -1,0 +1,65 @@
+{
+  "id": "6153a04847abee57a3a406ac",
+  "title": "Step 21",
+  "challengeType": 0,
+  "dashedName": "step-21",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n    <div class=\"gallery\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg\">\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n    <div class=\"gallery\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg\">\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        19,
+        30
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-family: sans-serif;\n  background: #f5f6f7;\n}\n\n.header {\n  text-align: center;\n  text-transform: uppercase;\n  padding: 32px;\n  background-color: #0a0a23;\n  color: #fff;\n  border-bottom: 4px solid #fdb347;\n}\n\n.gallery {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 20px 10px;\n}\n\n.gallery img {\n  width: 100%;\n  max-width: 350px;\n  height: 300px;\n  object-fit: cover;\n}",
+      "error": null,
+      "seed": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-family: sans-serif;\n  background: #f5f6f7;\n}\n\n.header {\n  text-align: center;\n  text-transform: uppercase;\n  padding: 32px;\n  background-color: #0a0a23;\n  color: #fff;\n  border-bottom: 4px solid #fdb347;\n}\n\n.gallery {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 20px 10px;\n}\n\n.gallery img {\n  width: 100%;\n  max-width: 350px;\n  height: 300px;\n  object-fit: cover;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>.gallery</code> selector should have a <code>gap</code> property with <code>16px</code> set as the value.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.gallery')?.gap === '16px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Your images need some space between them.</p>\n<p>The <code>gap</code> CSS shorthand property sets the gaps, also known as gutters, between rows and columns. The <code>gap</code> property and its <code>row-gap</code> and <code>column-gap</code> sub-properties provide this functionality for flex, grid, and multi-column layout. You apply the property to the container element.</p>\n<p>Give your <code>.gallery</code> flex container a <code>gap</code> property with <code>16px</code> as the value.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-flexbox-by-building-a-photo-gallery",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

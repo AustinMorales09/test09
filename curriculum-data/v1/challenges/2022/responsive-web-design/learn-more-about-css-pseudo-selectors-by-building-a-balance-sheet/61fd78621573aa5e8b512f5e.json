@@ -1,0 +1,97 @@
+{
+  "id": "61fd78621573aa5e8b512f5e",
+  "title": "Step 15",
+  "challengeType": 0,
+  "dashedName": "step-15",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        46,
+        49
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Balance Sheet</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <main>\n      <section>\n        <h1>\n          <span class=\"flex\">\n            <span>AcmeWidgetCorp</span>\n            <span>Balance Sheet</span>\n          </span>\n        </h1>\n        <div id=\"years\" aria-hidden=\"true\">\n          <span class=\"year\">2019</span>\n          <span class=\"year\">2020</span>\n          <span class=\"year\">2021</span>\n        </div>\n        <div class=\"table-wrap\">\n          <table>\n            <caption>Assets</caption>\n            <thead>\n              <tr>\n                <td></td>\n                <th><span class=\"sr-only year\">2019</span></th>\n                <th><span class=\"sr-only year\">2020</span></th>\n                <th class=\"current\"><span class=\"sr-only year\">2021</span></th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"data\">\n                <th>Cash <span class=\"description\">This is the cash we currently have on hand.</span></th>\n                <td>$25</td>\n                <td>$30</td>\n                <td class=\"current\">$28</td>\n              </tr>\n              <tr class=\"data\">\n                <th>Checking <span class=\"description\">Our primary transactional account.</span></th>\n                <td>$54</td>\n                <td>$56</td>\n                <td class=\"current\">$53</td>\n              </tr>\n              <tr class=\"data\">\n              </tr>\n              <tr class=\"total\">\n              </tr>\n            </tbody>\n          </table>\n          <table>\n          </table>\n          <table>\n          </table>\n        </div>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Balance Sheet</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <main>\n      <section>\n        <h1>\n          <span class=\"flex\">\n            <span>AcmeWidgetCorp</span>\n            <span>Balance Sheet</span>\n          </span>\n        </h1>\n        <div id=\"years\" aria-hidden=\"true\">\n          <span class=\"year\">2019</span>\n          <span class=\"year\">2020</span>\n          <span class=\"year\">2021</span>\n        </div>\n        <div class=\"table-wrap\">\n          <table>\n            <caption>Assets</caption>\n            <thead>\n              <tr>\n                <td></td>\n                <th><span class=\"sr-only year\">2019</span></th>\n                <th><span class=\"sr-only year\">2020</span></th>\n                <th class=\"current\"><span class=\"sr-only year\">2021</span></th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"data\">\n                <th>Cash <span class=\"description\">This is the cash we currently have on hand.</span></th>\n                <td>$25</td>\n                <td>$30</td>\n                <td class=\"current\">$28</td>\n              </tr>\n              <tr class=\"data\">\n                <th>Checking <span class=\"description\">Our primary transactional account.</span></th>\n                <td>$54</td>\n                <td>$56</td>\n                <td class=\"current\">$53</td>\n              </tr>\n              <tr class=\"data\">\n              </tr>\n              <tr class=\"total\">\n              </tr>\n            </tbody>\n          </table>\n          <table>\n          </table>\n          <table>\n          </table>\n        </div>\n      </section>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your third <code>tr</code> should have a <code>th</code> element.</p>",
+      "testString": "assert(document.querySelector('tbody')?.querySelectorAll('tr')?.[2]?.querySelector('th'));"
+    },
+    {
+      "text": "<p>Your <code>th</code> element should have the text <code>Savings Funds set aside for emergencies.</code>.</p>",
+      "testString": "assert(document.querySelector('tbody')?.querySelectorAll('tr')?.[2]?.querySelector('th')?.innerText === 'Savings Funds set aside for emergencies.');"
+    },
+    {
+      "text": "<p>You should wrap the text <code>Funds set aside for emergencies.</code> in a <code>span</code> element.</p>",
+      "testString": "assert(document.querySelector('tbody')?.querySelectorAll('tr')?.[2]?.querySelector('th > span')?.textContent === 'Funds set aside for emergencies.');"
+    },
+    {
+      "text": "<p>Your <code>span</code> element should have the <code>class</code> attribute set to <code>description</code>.</p>",
+      "testString": "assert(document.querySelector('tbody')?.querySelectorAll('tr')?.[2]?.querySelector('th > span')?.classList?.contains('description'));"
+    },
+    {
+      "text": "<p>You should have three <code>td</code> elements.</p>",
+      "testString": "assert(document.querySelector('tbody')?.querySelectorAll('tr')?.[2]?.querySelectorAll('td').length === 3);"
+    },
+    {
+      "text": "<p>Your first <code>td</code> element should have the text <code>$500</code>.</p>",
+      "testString": "assert(document.querySelector('tbody')?.querySelectorAll('tr')?.[2]?.querySelectorAll('td')?.[0]?.textContent === '$500');"
+    },
+    {
+      "text": "<p>Your second <code>td</code> element should have the text <code>$650</code>.</p>",
+      "testString": "assert(document.querySelector('tbody')?.querySelectorAll('tr')?.[2]?.querySelectorAll('td')?.[1]?.textContent === '$650');"
+    },
+    {
+      "text": "<p>Your third <code>td</code> element should have the text <code>$728</code>.</p>",
+      "testString": "assert(document.querySelector('tbody')?.querySelectorAll('tr')?.[2]?.querySelectorAll('td')?.[2]?.textContent === '$728');"
+    },
+    {
+      "text": "<p>Your third <code>td</code> element should have the <code>class</code> set to <code>current</code>.</p>",
+      "testString": "assert(document.querySelector('tbody')?.querySelectorAll('tr')?.[2]?.querySelectorAll('td')?.[2]?.classList?.contains('current'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In your third <code>tr</code> element, add a <code>th</code> element with the text <code>Savings Funds set aside for emergencies.</code>. Wrap that text, except for <code>Savings </code>, in a <code>span</code> element with the <code>class</code> attribute set to <code>description</code>.</p>\n<p>Following that, add three <code>td</code> elements with the following text (in order): <code>$500</code>, <code>$650</code>, <code>$728</code>. Give the third <code>td</code> element a <code>class</code> attribute set to <code>current</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-more-about-css-pseudo-selectors-by-building-a-balance-sheet",
+  "hasEditableBoundaries": true,
+  "order": 10,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

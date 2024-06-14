@@ -1,0 +1,45 @@
+{
+  "id": "657e5d8f7f2274f2b1a8efcc",
+  "title": "Task 100",
+  "challengeType": 19,
+  "dashedName": "task-100",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the difference between <code>every</code> and <code>any</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Every</code> is only used in questions; <code>any</code> is used for all items.</p>",
+        "feedback": "<p><code>Every</code> is for all items, not just in questions.</p>"
+      },
+      {
+        "answer": "<p><code>Every</code> and <code>any</code> both mean only one item.</p>",
+        "feedback": "<p>Both words have broader meanings than just one item.</p>"
+      },
+      {
+        "answer": "<p><code>Every</code> means none; <code>any</code> means all.</p>",
+        "feedback": "<p><code>Every</code> means all, not none.</p>"
+      },
+      {
+        "answer": "<p><code>Every</code> refers to all items in a group; <code>any</code> is used for one or more, often in questions.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Every</code> and <code>any</code> are often used in sentences but have different meanings.</p>\n<p><code>Every</code> is used to talk about all items in a group or category. For example, <code>Every student must complete the assignment</code> means all students.</p>\n<p>On the other hand, <code>any</code> is used in questions or negative sentences to mean one, some, or all. For example, <code>Can any student answer the question?</code> means if there is even one student who can answer.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 103,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

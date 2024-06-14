@@ -1,0 +1,75 @@
+{
+  "id": "587d78b0367417b2b2512b08",
+  "title": "Create a Media Query",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pzrPu4/cqwKrtm",
+  "forumTopicId": 301139,
+  "dashedName": "create-a-media-query",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  p {\n    font-size: 20px;\n  }\n\n  /* Only change code below this line */\n\n  /* Only change code above this line */\n</style>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>",
+      "error": null,
+      "seed": "<style>\n  p {\n    font-size: 20px;\n  }\n\n  /* Only change code below this line */\n\n  /* Only change code above this line */\n</style>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  p {\n    font-size: 20px;\n  }\n\n  @media (max-height: 800px) {\n    p {\n      font-size: 10px;\n    }\n  }\n</style>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>",
+        "error": null,
+        "seed": "<style>\n  p {\n    font-size: 20px;\n  }\n\n  @media (max-height: 800px) {\n    p {\n      font-size: 10px;\n    }\n  }\n</style>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a <code>@media</code> query for devices with a <code>height</code> less than or equal to <code>800px</code>.</p>",
+      "testString": "const media = new __helpers.CSSHelp(document).getCSSRules('media');\nassert(media.some(x => x.media?.mediaText?.includes('(max-height: 800px)')));"
+    },
+    {
+      "text": "<p>Your <code>p</code> element should have a <code>font-size</code> of <code>10px</code> when the device <code>height</code> is less than or equal to <code>800px</code>.</p>",
+      "testString": "const rules = new __helpers.CSSHelp(document).getRuleListsWithinMedia('(max-height: 800px)');\nassert(rules?.find(x => x.selectorText === 'p')?.style?.fontSize === \"10px\");"
+    },
+    {
+      "text": "<p>Your <code>p</code> element should have an initial <code>font-size</code> of <code>20px</code> when the device <code>height</code> is more than <code>800px</code>.</p>",
+      "testString": "const ifPFirst = new __helpers.CSSHelp(document).getCSSRules()?.find(x => x?.selectorText === 'p' || x?.media);\nassert(ifPFirst?.style?.fontSize === '20px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Media Queries are a new technique introduced in CSS3 that change the presentation of content based on different viewport sizes. The viewport is a user's visible area of a web page, and is different depending on the device used to access the site.</p>\n<p>Media Queries consist of a media type, and if that media type matches the type of device the document is displayed on, the styles are applied. You can have as many selectors and styles inside your media query as you want.</p>\n<p>Here's an example of a media query that returns the content when the device's width is less than or equal to <code>100px</code>:</p>\n<pre><code class=\"language-css\">@media (max-width: 100px) { /* CSS Rules */ }\n</code></pre>\n<p>and the following media query returns the content when the device's height is more than or equal to <code>350px</code>:</p>\n<pre><code class=\"language-css\">@media (min-height: 350px) { /* CSS Rules */ }\n</code></pre>\n<p>Remember, the CSS inside the media query is applied only if the media type matches that of the device being used.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add a media query, so that the <code>p</code> tag has a <code>font-size</code> of <code>10px</code> when the device's height is less than or equal to <code>800px</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "responsive-web-design-principles",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

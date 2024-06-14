@@ -1,0 +1,109 @@
+{
+  "id": "646d39c156fe94b7482c3ab6",
+  "title": "Step 61",
+  "challengeType": 0,
+  "dashedName": "step-61",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        22,
+        32
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  sum,\n  average,\n  median\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nconst evalFormula = (x, cells) => {\n  const idToText = id => cells.find(cell => cell.id === id).value;\n  const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;\n  const rangeFromString = (num1, num2) => range(parseInt(num1), parseInt(num2));\n  const elemValue = num => character => idToText(character + num);\n  const addCharacters = character1 => character2 => num => charRange(character1, character2).map(elemValue(num));\n  const rangeExpanded = x.replace(rangeRegex, (_match, char1, num1, char2, num2) => rangeFromString(num1, num2).map(addCharacters(char1)(char2)));\n\n}\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      input.onchange = update;\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n  const element = event.target;\n  const value = element.value.replace(/\\s/g, \"\");\n  if (!value.includes(element.id) && value.startsWith('=')) {\n\n  }\n}",
+      "error": null,
+      "seed": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  sum,\n  average,\n  median\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nconst evalFormula = (x, cells) => {\n  const idToText = id => cells.find(cell => cell.id === id).value;\n  const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;\n  const rangeFromString = (num1, num2) => range(parseInt(num1), parseInt(num2));\n  const elemValue = num => character => idToText(character + num);\n  const addCharacters = character1 => character2 => num => charRange(character1, character2).map(elemValue(num));\n  const rangeExpanded = x.replace(rangeRegex, (_match, char1, num1, char2, num2) => rangeFromString(num1, num2).map(addCharacters(char1)(char2)));\n\n}\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      input.onchange = update;\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n  const element = event.target;\n  const value = element.value.replace(/\\s/g, \"\");\n  if (!value.includes(element.id) && value.startsWith('=')) {\n\n  }\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a <code>cellRegex</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>\\s*(?:cell\\.id\\s*===\\s*id|id\\s*===\\s*cell\\.id)\\s*\\)\\.value\\s*;?\\s*const\\s+rangeRegex\\s*=\\s*\\/\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\):\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\)\\/(gi|ig)\\s*;?\\s*const\\s+rangeFromString\\s*=\\s*\\(\\s*num1\\s*,\\s*num2\\s*\\)\\s*=>\\s*range\\(\\s*parseInt\\(\\s*num1\\s*\\)\\s*,\\s*parseInt\\(\\s*num2\\s*\\)\\s*\\)\\s*;?\\s*const\\s+elemValue\\s*=\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*(\\(\\s*character\\s*\\)|character)\\s*=>\\s*idToText\\(\\s*character\\s*\\+\\s*num\\s*\\)\\s*;?\\s*const\\s+addCharacters\\s*=\\s*(\\(\\s*character1\\s*\\)|character1)\\s*=>\\s*(\\(\\s*character2\\s*\\)|character2)\\s*=>\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*charRange\\(\\s*character1\\s*,\\s*character2\\s*\\)\\.map\\(\\s*elemValue\\(\\s*num\\s*\\)\\s*\\)\\s*;?\\s*const\\s+rangeExpanded\\s*=\\s*x\\.replace\\(\\s*rangeRegex\\s*,\\s*\\(\\s*_match\\s*,\\s*char1\\s*,\\s*num1\\s*,\\s*char2\\s*,\\s*num2\\s*\\)\\s*=>\\s*rangeFromString\\(\\s*num1\\s*,\\s*num2\\s*\\)\\.map\\(\\s*addCharacters\\s*\\(\\s*char1\\s*\\)\\(\\s*char2\\s*\\)\\s*\\)\\s*\\)\\s*;?\\s*(?:var|let|const)\\s+cellRegex/);"
+    },
+    {
+      "text": "<p>You should use <code>const</code> to declare your <code>cellRegex</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>\\s*(?:cell\\.id\\s*===\\s*id|id\\s*===\\s*cell\\.id)\\s*\\)\\.value\\s*;?\\s*const\\s+rangeRegex\\s*=\\s*\\/\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\):\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\)\\/(gi|ig)\\s*;?\\s*const\\s+rangeFromString\\s*=\\s*\\(\\s*num1\\s*,\\s*num2\\s*\\)\\s*=>\\s*range\\(\\s*parseInt\\(\\s*num1\\s*\\)\\s*,\\s*parseInt\\(\\s*num2\\s*\\)\\s*\\)\\s*;?\\s*const\\s+elemValue\\s*=\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*(\\(\\s*character\\s*\\)|character)\\s*=>\\s*idToText\\(\\s*character\\s*\\+\\s*num\\s*\\)\\s*;?\\s*const\\s+addCharacters\\s*=\\s*(\\(\\s*character1\\s*\\)|character1)\\s*=>\\s*(\\(\\s*character2\\s*\\)|character2)\\s*=>\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*charRange\\(\\s*character1\\s*,\\s*character2\\s*\\)\\.map\\(\\s*elemValue\\(\\s*num\\s*\\)\\s*\\)\\s*;?\\s*const\\s+rangeExpanded\\s*=\\s*x\\.replace\\(\\s*rangeRegex\\s*,\\s*\\(\\s*_match\\s*,\\s*char1\\s*,\\s*num1\\s*,\\s*char2\\s*,\\s*num2\\s*\\)\\s*=>\\s*rangeFromString\\(\\s*num1\\s*,\\s*num2\\s*\\)\\.map\\(\\s*addCharacters\\s*\\(\\s*char1\\s*\\)\\(\\s*char2\\s*\\)\\s*\\)\\s*\\)\\s*;?\\s*const\\s+cellRegex/);"
+    },
+    {
+      "text": "<p>You should assign a regular expression to your <code>cellRegex</code> variables.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>\\s*(?:cell\\.id\\s*===\\s*id|id\\s*===\\s*cell\\.id)\\s*\\)\\.value\\s*;?\\s*const\\s+rangeRegex\\s*=\\s*\\/\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\):\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\)\\/(gi|ig)\\s*;?\\s*const\\s+rangeFromString\\s*=\\s*\\(\\s*num1\\s*,\\s*num2\\s*\\)\\s*=>\\s*range\\(\\s*parseInt\\(\\s*num1\\s*\\)\\s*,\\s*parseInt\\(\\s*num2\\s*\\)\\s*\\)\\s*;?\\s*const\\s+elemValue\\s*=\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*(\\(\\s*character\\s*\\)|character)\\s*=>\\s*idToText\\(\\s*character\\s*\\+\\s*num\\s*\\)\\s*;?\\s*const\\s+addCharacters\\s*=\\s*(\\(\\s*character1\\s*\\)|character1)\\s*=>\\s*(\\(\\s*character2\\s*\\)|character2)\\s*=>\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*charRange\\(\\s*character1\\s*,\\s*character2\\s*\\)\\.map\\(\\s*elemValue\\(\\s*num\\s*\\)\\s*\\)\\s*;?\\s*const\\s+rangeExpanded\\s*=\\s*x\\.replace\\(\\s*rangeRegex\\s*,\\s*\\(\\s*_match\\s*,\\s*char1\\s*,\\s*num1\\s*,\\s*char2\\s*,\\s*num2\\s*\\)\\s*=>\\s*rangeFromString\\(\\s*num1\\s*,\\s*num2\\s*\\)\\.map\\(\\s*addCharacters\\s*\\(\\s*char1\\s*\\)\\(\\s*char2\\s*\\)\\s*\\)\\s*\\)\\s*;?\\s*const\\s+cellRegex\\s*=\\s*\\//);"
+    },
+    {
+      "text": "<p>Your regular expression should use a character class to match the characters from <code>A</code> to <code>J</code>.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>\\s*(?:cell\\.id\\s*===\\s*id|id\\s*===\\s*cell\\.id)\\s*\\)\\.value\\s*;?\\s*const\\s+rangeRegex\\s*=\\s*\\/\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\):\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\)\\/(gi|ig)\\s*;?\\s*const\\s+rangeFromString\\s*=\\s*\\(\\s*num1\\s*,\\s*num2\\s*\\)\\s*=>\\s*range\\(\\s*parseInt\\(\\s*num1\\s*\\)\\s*,\\s*parseInt\\(\\s*num2\\s*\\)\\s*\\)\\s*;?\\s*const\\s+elemValue\\s*=\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*(\\(\\s*character\\s*\\)|character)\\s*=>\\s*idToText\\(\\s*character\\s*\\+\\s*num\\s*\\)\\s*;?\\s*const\\s+addCharacters\\s*=\\s*(\\(\\s*character1\\s*\\)|character1)\\s*=>\\s*(\\(\\s*character2\\s*\\)|character2)\\s*=>\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*charRange\\(\\s*character1\\s*,\\s*character2\\s*\\)\\.map\\(\\s*elemValue\\(\\s*num\\s*\\)\\s*\\)\\s*;?\\s*const\\s+rangeExpanded\\s*=\\s*x\\.replace\\(\\s*rangeRegex\\s*,\\s*\\(\\s*_match\\s*,\\s*char1\\s*,\\s*num1\\s*,\\s*char2\\s*,\\s*num2\\s*\\)\\s*=>\\s*rangeFromString\\(\\s*num1\\s*,\\s*num2\\s*\\)\\.map\\(\\s*addCharacters\\s*\\(\\s*char1\\s*\\)\\(\\s*char2\\s*\\)\\s*\\)\\s*\\)\\s*;?\\s*const\\s+cellRegex\\s*=\\s*\\/\\[A-J\\]/);"
+    },
+    {
+      "text": "<p>Your regular expression should use a character class to match the digits from <code>1</code> to <code>9</code>.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>\\s*(?:cell\\.id\\s*===\\s*id|id\\s*===\\s*cell\\.id)\\s*\\)\\.value\\s*;?\\s*const\\s+rangeRegex\\s*=\\s*\\/\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\):\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\)\\/(gi|ig)\\s*;?\\s*const\\s+rangeFromString\\s*=\\s*\\(\\s*num1\\s*,\\s*num2\\s*\\)\\s*=>\\s*range\\(\\s*parseInt\\(\\s*num1\\s*\\)\\s*,\\s*parseInt\\(\\s*num2\\s*\\)\\s*\\)\\s*;?\\s*const\\s+elemValue\\s*=\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*(\\(\\s*character\\s*\\)|character)\\s*=>\\s*idToText\\(\\s*character\\s*\\+\\s*num\\s*\\)\\s*;?\\s*const\\s+addCharacters\\s*=\\s*(\\(\\s*character1\\s*\\)|character1)\\s*=>\\s*(\\(\\s*character2\\s*\\)|character2)\\s*=>\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*charRange\\(\\s*character1\\s*,\\s*character2\\s*\\)\\.map\\(\\s*elemValue\\(\\s*num\\s*\\)\\s*\\)\\s*;?\\s*const\\s+rangeExpanded\\s*=\\s*x\\.replace\\(\\s*rangeRegex\\s*,\\s*\\(\\s*_match\\s*,\\s*char1\\s*,\\s*num1\\s*,\\s*char2\\s*,\\s*num2\\s*\\)\\s*=>\\s*rangeFromString\\(\\s*num1\\s*,\\s*num2\\s*\\)\\.map\\(\\s*addCharacters\\s*\\(\\s*char1\\s*\\)\\(\\s*char2\\s*\\)\\s*\\)\\s*\\)\\s*;?\\s*const\\s+cellRegex\\s*=\\s*\\/\\[A-J\\]\\[1-9\\]/);"
+    },
+    {
+      "text": "<p>Your regular expression should use a character class to match the digits from <code>0</code> to <code>9</code>.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>\\s*(?:cell\\.id\\s*===\\s*id|id\\s*===\\s*cell\\.id)\\s*\\)\\.value\\s*;?\\s*const\\s+rangeRegex\\s*=\\s*\\/\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\):\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\)\\/(gi|ig)\\s*;?\\s*const\\s+rangeFromString\\s*=\\s*\\(\\s*num1\\s*,\\s*num2\\s*\\)\\s*=>\\s*range\\(\\s*parseInt\\(\\s*num1\\s*\\)\\s*,\\s*parseInt\\(\\s*num2\\s*\\)\\s*\\)\\s*;?\\s*const\\s+elemValue\\s*=\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*(\\(\\s*character\\s*\\)|character)\\s*=>\\s*idToText\\(\\s*character\\s*\\+\\s*num\\s*\\)\\s*;?\\s*const\\s+addCharacters\\s*=\\s*(\\(\\s*character1\\s*\\)|character1)\\s*=>\\s*(\\(\\s*character2\\s*\\)|character2)\\s*=>\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*charRange\\(\\s*character1\\s*,\\s*character2\\s*\\)\\.map\\(\\s*elemValue\\(\\s*num\\s*\\)\\s*\\)\\s*;?\\s*const\\s+rangeExpanded\\s*=\\s*x\\.replace\\(\\s*rangeRegex\\s*,\\s*\\(\\s*_match\\s*,\\s*char1\\s*,\\s*num1\\s*,\\s*char2\\s*,\\s*num2\\s*\\)\\s*=>\\s*rangeFromString\\(\\s*num1\\s*,\\s*num2\\s*\\)\\.map\\(\\s*addCharacters\\s*\\(\\s*char1\\s*\\)\\(\\s*char2\\s*\\)\\s*\\)\\s*\\)\\s*;?\\s*const\\s+cellRegex\\s*=\\s*\\/\\[A-J\\]\\[1-9\\]\\[0-9\\]/);"
+    },
+    {
+      "text": "<p>Your third character class should be optional.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>\\s*(?:cell\\.id\\s*===\\s*id|id\\s*===\\s*cell\\.id)\\s*\\)\\.value\\s*;?\\s*const\\s+rangeRegex\\s*=\\s*\\/\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\):\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\)\\/(gi|ig)\\s*;?\\s*const\\s+rangeFromString\\s*=\\s*\\(\\s*num1\\s*,\\s*num2\\s*\\)\\s*=>\\s*range\\(\\s*parseInt\\(\\s*num1\\s*\\)\\s*,\\s*parseInt\\(\\s*num2\\s*\\)\\s*\\)\\s*;?\\s*const\\s+elemValue\\s*=\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*(\\(\\s*character\\s*\\)|character)\\s*=>\\s*idToText\\(\\s*character\\s*\\+\\s*num\\s*\\)\\s*;?\\s*const\\s+addCharacters\\s*=\\s*(\\(\\s*character1\\s*\\)|character1)\\s*=>\\s*(\\(\\s*character2\\s*\\)|character2)\\s*=>\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*charRange\\(\\s*character1\\s*,\\s*character2\\s*\\)\\.map\\(\\s*elemValue\\(\\s*num\\s*\\)\\s*\\)\\s*;?\\s*const\\s+rangeExpanded\\s*=\\s*x\\.replace\\(\\s*rangeRegex\\s*,\\s*\\(\\s*_match\\s*,\\s*char1\\s*,\\s*num1\\s*,\\s*char2\\s*,\\s*num2\\s*\\)\\s*=>\\s*rangeFromString\\(\\s*num1\\s*,\\s*num2\\s*\\)\\.map\\(\\s*addCharacters\\s*\\(\\s*char1\\s*\\)\\(\\s*char2\\s*\\)\\s*\\)\\s*\\)\\s*;?\\s*const\\s+cellRegex\\s*=\\s*\\/\\[A-J\\]\\[1-9\\]\\[0-9\\]\\?/);"
+    },
+    {
+      "text": "<p>Your regular expression should be case-insensitive and global.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>\\s*(?:cell\\.id\\s*===\\s*id|id\\s*===\\s*cell\\.id)\\s*\\)\\.value\\s*;?\\s*const\\s+rangeRegex\\s*=\\s*\\/\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\):\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\)\\/(gi|ig)\\s*;?\\s*const\\s+rangeFromString\\s*=\\s*\\(\\s*num1\\s*,\\s*num2\\s*\\)\\s*=>\\s*range\\(\\s*parseInt\\(\\s*num1\\s*\\)\\s*,\\s*parseInt\\(\\s*num2\\s*\\)\\s*\\)\\s*;?\\s*const\\s+elemValue\\s*=\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*(\\(\\s*character\\s*\\)|character)\\s*=>\\s*idToText\\(\\s*character\\s*\\+\\s*num\\s*\\)\\s*;?\\s*const\\s+addCharacters\\s*=\\s*(\\(\\s*character1\\s*\\)|character1)\\s*=>\\s*(\\(\\s*character2\\s*\\)|character2)\\s*=>\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*charRange\\(\\s*character1\\s*,\\s*character2\\s*\\)\\.map\\(\\s*elemValue\\(\\s*num\\s*\\)\\s*\\)\\s*;?\\s*const\\s+rangeExpanded\\s*=\\s*x\\.replace\\(\\s*rangeRegex\\s*,\\s*\\(\\s*_match\\s*,\\s*char1\\s*,\\s*num1\\s*,\\s*char2\\s*,\\s*num2\\s*\\)\\s*=>\\s*rangeFromString\\(\\s*num1\\s*,\\s*num2\\s*\\)\\.map\\(\\s*addCharacters\\s*\\(\\s*char1\\s*\\)\\(\\s*char2\\s*\\)\\s*\\)\\s*\\)\\s*;?\\s*const\\s+cellRegex\\s*=\\s*\\/\\[A-J\\]\\[1-9\\]\\[0-9\\]\\?\\/(gi|ig)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Declare a variable <code>cellRegex</code> to match cell references. It should match a letter from <code>A</code> to <code>J</code>, followed by a digit from <code>1</code> to <code>9</code>, and an optional digit from <code>0</code> to <code>9</code>. Make the regular expression case-insensitive and global.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 60,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

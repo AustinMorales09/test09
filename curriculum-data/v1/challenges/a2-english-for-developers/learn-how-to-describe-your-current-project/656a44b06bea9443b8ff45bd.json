@@ -1,0 +1,92 @@
+{
+  "id": "656a44b06bea9443b8ff45bd",
+  "title": "Task 34",
+  "challengeType": 22,
+  "dashedName": "task-34",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It's exciting. I'm _ some experts and I'm _ information for the articles. It's _ me busy, but I enjoy it.</p>",
+    "blanks": [
+      {
+        "answer": "interviewing",
+        "feedback": "<p>Amy is talking to experts to get their views.</p>"
+      },
+      {
+        "answer": "getting",
+        "feedback": "<p>She is collecting or receiving information.</p>"
+      },
+      {
+        "answer": "keeping",
+        "feedback": "<p>The activities are making Amy busy.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Amy",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 18.64,
+        "finishTimestamp": 25.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Amy",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Amy",
+        "startTime": 1,
+        "finishTime": 5.7,
+        "dialogue": {
+          "text": "It's exciting. I'm interviewing some experts and I'm getting information for the articles.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Amy",
+        "startTime": 5.98,
+        "finishTime": 7.8,
+        "dialogue": {
+          "text": "It's keeping me busy, but I enjoy it.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Amy",
+        "opacity": 0,
+        "startTime": 8.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Amy describes her current activities using verbs ending in <code>-ing</code>. Understanding these verbs will help you to know what she is doing right now for her project.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 37,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

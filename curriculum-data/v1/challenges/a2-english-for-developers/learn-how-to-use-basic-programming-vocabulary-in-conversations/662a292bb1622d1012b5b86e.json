@@ -1,0 +1,79 @@
+{
+  "id": "662a292bb1622d1012b5b86e",
+  "title": "Task 15",
+  "challengeType": 22,
+  "dashedName": "task-15",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That's awesome! _ _ time have you spent on it?</p>",
+    "blanks": [
+      {
+        "answer": "How",
+        "feedback": "<p>This word starts questions about quantities, conditions, or reasons.</p>"
+      },
+      {
+        "answer": "much",
+        "feedback": "<p>It is used with uncountable nouns like <code>time</code> to inquire about the quantity.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.02,
+        "finishTimestamp": 12
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 3.98,
+        "dialogue": {
+          "text": "That's awesome. How much time have you spent on it?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 4.48
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Learn to use <code>how much</code> and <code>how many</code> to ask about quantities. <code>How much</code> is used with uncountable nouns to ask about the volume or extent of something, like <code>time</code>, <code>water</code>, or <code>money</code>. For example, <code>How much money do you have?</code> asks about the quantity of money, which you cannot count individually.</p>\n<p><code>How many</code> is used with countable nouns when you can count the items, like <code>books</code>, <code>apples</code>, or <code>people</code>. For example, <code>How many books do you own?</code> asks for a countable number of books.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

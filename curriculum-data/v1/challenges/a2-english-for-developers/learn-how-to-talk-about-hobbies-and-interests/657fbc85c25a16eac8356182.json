@@ -1,0 +1,88 @@
+{
+  "id": "657fbc85c25a16eac8356182",
+  "title": "Task 72",
+  "challengeType": 19,
+  "dashedName": "task-72",
+  "solutions": [],
+  "question": {
+    "text": "<p>What type of games does Sarah mention playing within her sci-fi community?</p>",
+    "answers": [
+      {
+        "answer": "<p>RPGs (Role-Playing Games)</p>",
+        "feedback": "<p>RPGs (Role-Playing Games) involve immersive storytelling and character development, but they aren't explicitly mentioned in Sarah's dialogue.</p>"
+      },
+      {
+        "answer": "<p>Puzzle Games</p>",
+        "feedback": "<p>Puzzle games involve solving challenges or puzzles, which Sarah doesn't specifically mention in the conversation.</p>"
+      },
+      {
+        "answer": "<p>Strategy Games</p>",
+        "feedback": "<p>Strategy games focus on planning and decision-making; however, they're not referenced in Sarah's dialogue about her community activities.</p>"
+      },
+      {
+        "answer": "<p>Movie-related Games</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.1,
+        "finishTimestamp": 18.34
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.24,
+        "dialogue": {
+          "text": "Well, we have movie marathons, conventions, and we even play some movie-related video games together.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.74
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Sarah mentions various activities within her sci-fi community. Identify the specific gaming activity she refers to in the dialogue.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 75,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

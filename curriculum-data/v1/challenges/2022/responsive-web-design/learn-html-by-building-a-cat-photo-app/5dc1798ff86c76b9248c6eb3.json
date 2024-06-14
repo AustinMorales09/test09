@@ -1,0 +1,77 @@
+{
+  "id": "5dc1798ff86c76b9248c6eb3",
+  "title": "Step 2",
+  "challengeType": 0,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        5
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <h1>CatPhotoApp</h1>\n    \n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <h1>CatPhotoApp</h1>\n    \n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>h1</code> element should have an opening tag. Opening tags have this syntax: <code>&#x3C;elementName></code>.</p>",
+      "testString": "assert(document.querySelector('h1'));"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should have a closing tag. Closing tags have a <code>/</code> just after the <code>&#x3C;</code> character.</p>",
+      "testString": "assert(code.match(/<\\/h1\\>/));"
+    },
+    {
+      "text": "<p>You should only have one <code>h1</code> element. Remove the extra.</p>",
+      "testString": "assert(\n  document.querySelector('h1') && document.querySelectorAll('h1').length === 1\n);"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element's text should be 'CatPhotoApp'. You have either omitted the text or have a typo.</p>",
+      "testString": "assert(document.querySelector('h1').innerText.toLowerCase() === 'catphotoapp');"
+    },
+    {
+      "text": "<p>Your <code>h2</code> element should have an opening tag. Opening tags have this syntax: <code>&#x3C;elementName></code>.</p>",
+      "testString": "assert(document.querySelector('h2'));"
+    },
+    {
+      "text": "<p>Your <code>h2</code> element should have a closing tag. Closing tags have a <code>/</code> just after the <code>&#x3C;</code> character.</p>",
+      "testString": "assert(code.match(/<\\/h2\\>/));"
+    },
+    {
+      "text": "<p>Your <code>h2</code> element's text should be 'Cat Photos'. Only place the text <code>Cat Photos</code> between the opening and closing <code>h2</code> tags.</p>",
+      "testString": "assert(document.querySelector('h2').innerText.toLowerCase() === 'cat photos');"
+    },
+    {
+      "text": "<p>Your <code>h2</code> element should be below the <code>h1</code> element. The <code>h1</code> element has greater importance and must be above the <code>h2</code> element.</p>",
+      "testString": "const collection = [...document.querySelectorAll('h1,h2')].map(\n  (node) => node.nodeName\n);\nassert(collection.indexOf('H1') < collection.indexOf('H2'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>h1</code> through <code>h6</code> heading elements are used to signify the importance of content below them. The lower the number, the higher the importance, so <code>h2</code> elements have less importance than <code>h1</code> elements.</p>\n<pre><code class=\"language-html\">&#x3C;h1>most important heading element&#x3C;/h1>\n&#x3C;h2>second most important heading element&#x3C;/h2>\n&#x3C;h3>third most important heading element&#x3C;/h3>\n&#x3C;h4>fourth most important heading element&#x3C;/h4>\n&#x3C;h5>fifth most important heading element&#x3C;/h5>\n&#x3C;h6>least important heading element&#x3C;/h6>\n</code></pre>\n<p>Only use one <code>h1</code> element per page and place lower importance headings below higher importance headings.</p>\n<p>Below the <code>h1</code> element, add an <code>h2</code> element with this text:</p>\n<p><code>Cat Photos</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

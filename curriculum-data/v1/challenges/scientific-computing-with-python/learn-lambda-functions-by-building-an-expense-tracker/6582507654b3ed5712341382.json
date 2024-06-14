@@ -1,0 +1,57 @@
+{
+  "id": "6582507654b3ed5712341382",
+  "title": "Step 30",
+  "challengeType": 20,
+  "dashedName": "step-30",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        13,
+        26
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n    \ndef total_expenses(expenses):\n    return sum(map(lambda expense: expense['amount'], expenses))\n    \ndef filter_expenses_by_category(expenses, category):\n    return filter(lambda expense: expense['category'] == category, expenses)\n    \ndef main():\n    expenses = []\n    while True:\n        print('\\nExpense Tracker')\n        print('1. Add an expense')\n        print('2. List all expenses')\n        print('3. Show total expenses')\n        print('4. Filter expenses by category')\n        print('5. Exit')\n        \n        choice = input('Enter your choice: ')\n",
+      "error": null,
+      "seed": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n    \ndef total_expenses(expenses):\n    return sum(map(lambda expense: expense['amount'], expenses))\n    \ndef filter_expenses_by_category(expenses, category):\n    return filter(lambda expense: expense['category'] == category, expenses)\n    \ndef main():\n    expenses = []\n    while True:\n        print('\\nExpense Tracker')\n        print('1. Add an expense')\n        print('2. List all expenses')\n        print('3. Show total expenses')\n        print('4. Filter expenses by category')\n        print('5. Exit')\n        \n        choice = input('Enter your choice: ')\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create an <code>if</code> statement that checks if <code>choice</code> is equal to <code>'1'</code> in your <code>while</code> loop.</p>",
+      "testString": "({ test: () => assert(runPython(`\ncond = _Node(_code).find_function(\"main\").find_whiles()[0].find_bodies()[0].find_ifs()[0].find_conditions()[0]\ncond.is_equivalent(\"choice == '1'\") or cond.is_equivalent(\"'1' == choice\")\n`)) })"
+    },
+    {
+      "text": "<p>You should declare a variable named <code>amount</code> in your <code>if</code> statement body.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_function(\"main\").find_whiles()[0].find_bodies()[0].find_ifs()[0].find_bodies()[0].has_variable(\"amount\")\n`)) })"
+    },
+    {
+      "text": "<p>You should assign an empty <code>input()</code> call to your <code>amount</code> variable.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_function(\"main\").find_whiles()[0].find_bodies()[0].find_ifs()[0].find_bodies()[0].find_variable(\"amount\").is_equivalent(\"amount = input()\")\n`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You are going to use conditional statements to check the user's choice. If the choice is <code>'1'</code>, it means the user wants to add an expense.</p>\n<p>Still in the <code>while</code> loop, under the <code>choice</code> variable, write an <code>if</code> statement to check if <code>choice</code> equals the string <code>'1'</code>. If it's true, it will be the starting point for adding a new expense.</p>\n<p>Inside the <code>if</code> statement body, declare a variable <code>amount</code> and assign it an empty <code>input()</code> call.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 29,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

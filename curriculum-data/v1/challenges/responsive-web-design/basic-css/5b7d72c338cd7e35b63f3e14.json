@@ -1,0 +1,66 @@
+{
+  "id": "5b7d72c338cd7e35b63f3e14",
+  "title": "Improve Compatibility with Browser Fallbacks",
+  "challengeType": 0,
+  "forumTopicId": 301087,
+  "dashedName": "improve-compatibility-with-browser-fallbacks",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  :root {\n    --red-color: red;\n  }\n  .red-box {\n\n    background: var(--red-color);\n    height: 200px;\n    width:200px;\n  }\n</style>\n<div class=\"red-box\"></div>",
+      "error": null,
+      "seed": "<style>\n  :root {\n    --red-color: red;\n  }\n  .red-box {\n\n    background: var(--red-color);\n    height: 200px;\n    width:200px;\n  }\n</style>\n<div class=\"red-box\"></div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  :root {\n    --red-color: red;\n  }\n  .red-box {\n    background: red;\n    background: var(--red-color);\n    height: 200px;\n    width:200px;\n  }\n</style>\n<div class=\"red-box\"></div>",
+        "error": null,
+        "seed": "<style>\n  :root {\n    --red-color: red;\n  }\n  .red-box {\n    background: red;\n    background: var(--red-color);\n    height: 200px;\n    width:200px;\n  }\n</style>\n<div class=\"red-box\"></div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>.red-box</code> rule should include a fallback with the <code>background</code> set to <code>red</code> immediately before the existing <code>background</code> declaration.</p>",
+      "testString": "assert(\n  code\n    .replace(/\\s/g, '')\n    .match(\n      /\\.red-box{background:(red|#ff0000|#f00|rgb\\(255,0,0\\)|rgb\\(100%,0%,0%\\)|hsl\\(0,100%,50%\\));background:var\\(--red-color\\);height:200px;width:200px;}/gi\n    )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When working with CSS you will likely run into browser compatibility issues at some point. This is why it's important to provide browser fallbacks to avoid potential problems.</p>\n<p>When your browser parses the CSS of a webpage, it ignores any properties that it doesn't recognize or support. For example, if you use a CSS variable to assign a background color on a site, Internet Explorer will ignore the background color because it does not support CSS variables. In that case, the browser will use whatever value it has for that property. If it can't find any other value set for that property, it will revert to the default value, which is typically not ideal.</p>\n<p>This means that if you do want to provide a browser fallback, it's as easy as providing another more widely supported value immediately before your declaration. That way an older browser will have something to fall back on, while a newer browser will just interpret whatever declaration comes later in the cascade.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>It looks like a variable is being used to set the background color of the <code>.red-box</code> class. Let's improve our browser compatibility by adding another <code>background</code> declaration right before the existing declaration and set its value to <code>red</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-css",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

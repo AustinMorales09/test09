@@ -1,0 +1,90 @@
+{
+  "id": "587d7b7d367417b2b2512b1c",
+  "title": "Check if an Object has a Property",
+  "challengeType": 1,
+  "forumTopicId": 301155,
+  "dashedName": "check-if-an-object-has-a-property",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let users = {\n  Alan: {\n    age: 27,\n    online: true\n  },\n  Jeff: {\n    age: 32,\n    online: true\n  },\n  Sarah: {\n    age: 48,\n    online: true\n  },\n  Ryan: {\n    age: 19,\n    online: true\n  }\n};\n\nfunction isEveryoneHere(userObj) {\n  // Only change code below this line\n  \n  // Only change code above this line\n}\n\nconsole.log(isEveryoneHere(users));",
+      "error": null,
+      "seed": "let users = {\n  Alan: {\n    age: 27,\n    online: true\n  },\n  Jeff: {\n    age: 32,\n    online: true\n  },\n  Sarah: {\n    age: 48,\n    online: true\n  },\n  Ryan: {\n    age: 19,\n    online: true\n  }\n};\n\nfunction isEveryoneHere(userObj) {\n  // Only change code below this line\n  \n  // Only change code above this line\n}\n\nconsole.log(isEveryoneHere(users));"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let users = {\n  Alan: {\n    age: 27,\n    online: true\n  },\n  Jeff: {\n    age: 32,\n    online: true\n  },\n  Sarah: {\n    age: 48,\n    online: true\n  },\n  Ryan: {\n    age: 19,\n    online: true\n  }\n};\n\nfunction isEveryoneHere(userObj) {\n  return [\n    'Alan',\n    'Jeff',\n    'Sarah',\n    'Ryan'\n  ].every(user => userObj.hasOwnProperty(user));\n}\n\nconsole.log(isEveryoneHere(users));",
+        "error": null,
+        "seed": "let users = {\n  Alan: {\n    age: 27,\n    online: true\n  },\n  Jeff: {\n    age: 32,\n    online: true\n  },\n  Sarah: {\n    age: 48,\n    online: true\n  },\n  Ryan: {\n    age: 19,\n    online: true\n  }\n};\n\nfunction isEveryoneHere(userObj) {\n  return [\n    'Alan',\n    'Jeff',\n    'Sarah',\n    'Ryan'\n  ].every(user => userObj.hasOwnProperty(user));\n}\n\nconsole.log(isEveryoneHere(users));"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>users</code> object should not be accessed directly</p>",
+      "testString": "\nassert(__helpers.removeJSComments(code).match(/users/gm).length <= 2)\n"
+    },
+    {
+      "text": "<p>The <code>users</code> object should only contain the keys <code>Alan</code>, <code>Jeff</code>, <code>Sarah</code>, and <code>Ryan</code></p>",
+      "testString": "assert(\n  'Alan' in users &&\n    'Jeff' in users &&\n    'Sarah' in users &&\n    'Ryan' in users &&\n    Object.keys(users).length === 4\n);"
+    },
+    {
+      "text": "<p>The function <code>isEveryoneHere</code> should return <code>true</code> if <code>Alan</code>, <code>Jeff</code>, <code>Sarah</code>, and <code>Ryan</code> are properties on the object passed to it.</p>",
+      "testString": "assert(isEveryoneHere(users) === true);"
+    },
+    {
+      "text": "<p>The function <code>isEveryoneHere</code> should return <code>false</code> if <code>Alan</code> is not a property on the object passed to it.</p>",
+      "testString": "assert(\n  (function () {\n    delete users.Alan;\n    return isEveryoneHere(users);\n  })() === false\n);"
+    },
+    {
+      "text": "<p>The function <code>isEveryoneHere</code> should return <code>false</code> if <code>Jeff</code> is not a property on the object passed to it.</p>",
+      "testString": "assert(\n  (function () {\n    delete users.Jeff;\n    return isEveryoneHere(users);\n  })() === false\n);"
+    },
+    {
+      "text": "<p>The function <code>isEveryoneHere</code> should return <code>false</code> if <code>Sarah</code> is not a property on the object passed to it.</p>",
+      "testString": "assert(\n  (function () {\n    delete users.Sarah;\n    return isEveryoneHere(users);\n  })() === false\n);"
+    },
+    {
+      "text": "<p>The function <code>isEveryoneHere</code> should return <code>false</code> if <code>Ryan</code> is not a property on the object passed to it.</p>",
+      "testString": "assert(\n  (function () {\n    delete users.Ryan;\n    return isEveryoneHere(users);\n  })() === false\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now we can add, modify, and remove keys from objects. But what if we just wanted to know if an object has a specific property? JavaScript provides us with two different ways to do this. One uses the <code>hasOwnProperty()</code> method and the other uses the <code>in</code> keyword. If we have an object <code>users</code> with a property of <code>Alan</code>, we could check for its presence in either of the following ways:</p>\n<pre><code class=\"language-js\">users.hasOwnProperty('Alan');\n'Alan' in users;\n</code></pre>\n<p>Both of these would return <code>true</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Finish writing the function so that it returns <code>true</code> if the object passed to it contains all four names, <code>Alan</code>, <code>Jeff</code>, <code>Sarah</code> and <code>Ryan</code> and returns <code>false</code> otherwise.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-data-structures",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "656cc3b856f1d01011bfc027",
+  "title": "Task 94",
+  "challengeType": 19,
+  "dashedName": "task-94",
+  "solutions": [],
+  "question": {
+    "text": "<p>Based on the dialogue, at what approximate time of the day is the meal Tom is mentioning?</p>",
+    "answers": [
+      {
+        "answer": "<p>Morning</p>",
+        "feedback": "<p><code>Breakfast</code> is the meal usually eaten in the morning.</p>"
+      },
+      {
+        "answer": "<p>Midday</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Afternoon</p>",
+        "feedback": "<p><code>Lunch</code> is before the afternoon begins.</p>"
+      },
+      {
+        "answer": "<p>Evening</p>",
+        "feedback": "<p><code>Dinner</code> is the meal usually eaten in the evening. Tom specifically mentioned <code>lunch time</code>, which is around midday.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 3.3
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.9,
+        "dialogue": {
+          "text": "Wow, I'm so hungry. Is it lunchtime?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In English, the three main meals of the day are <code>breakfast</code>, <code>lunch</code>, and <code>dinner</code>. <code>Breakfast</code> is typically eaten in the morning, <code>lunch</code> is around midday, and <code>dinner</code> is in the evening.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 96,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

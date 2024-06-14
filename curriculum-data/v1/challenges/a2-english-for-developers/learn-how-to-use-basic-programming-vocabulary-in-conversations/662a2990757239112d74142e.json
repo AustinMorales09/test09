@@ -1,0 +1,75 @@
+{
+  "id": "662a2990757239112d74142e",
+  "title": "Task 16",
+  "challengeType": 22,
+  "dashedName": "task-16",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That's awesome! How much time have you _ on it?</p>",
+    "blanks": [
+      {
+        "answer": "spent",
+        "feedback": "<p>It is the past participle of <code>spend</code>, used with <code>have</code> to form the <strong>Present Perfect</strong> tense.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.02,
+        "finishTimestamp": 12
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 3.98,
+        "dialogue": {
+          "text": "That's awesome. How much time have you spent on it?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 4.48
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Let's review the present perfect tense in this task. It is used to describe actions or situations that occurred at an unspecified time before now. It is formed using <code>have/has</code> + past participle. For example, <code>She has visited Paris.</code></p>\n<p>The phrase <code>spend time on</code> is used to describe using a certain amount of time to a specific activity, task, or subject. An example is <code>She spends a lot of time on her homework.</code> The past participle of <code>spend</code> is <code>spent</code>.</p>\n<p>Listen to Brian and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

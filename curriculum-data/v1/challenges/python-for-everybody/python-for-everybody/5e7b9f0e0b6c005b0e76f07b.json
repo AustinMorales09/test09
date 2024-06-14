@@ -1,0 +1,50 @@
+{
+  "id": "5e7b9f0e0b6c005b0e76f07b",
+  "title": "Web Services: XML",
+  "challengeType": 11,
+  "videoId": "_pZ0srbg7So",
+  "bilibiliIds": {
+    "aid": 761920032,
+    "bvid": "BV1n64y1x7KW",
+    "cid": 377332379
+  },
+  "dashedName": "web-services-xml",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is wrong with the following XML?:</p>\n<pre><code class=\"language-xml\">&#x3C;person>\n  &#x3C;name>Chuck&#x3C;/name>\n  &#x3C;phone type=\"intl\">\n    +1 734 303 4456\n  &#x3C;email hide=\"yes\" />\n&#x3C;/person>\n</code></pre>",
+    "answers": [
+      {
+        "answer": "<p>Email tag is missing closing tag.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Spacing will cause XML to be invalid.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Phone tag is missing closing tag.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Plain text should be encoded using UTF-8.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

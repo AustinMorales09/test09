@@ -1,0 +1,36 @@
+{
+  "id": "6617f532491c4f7393c859a7",
+  "title": "Task 13",
+  "challengeType": 22,
+  "dashedName": "task-13",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Programmers must consider the _ implications of their code, ensuring they behave _ while developing software.</p>",
+    "blanks": [
+      {
+        "answer": "ethical",
+        "feedback": "<p>In this case, we are using a quality to describe <code>implications</code>. Use the adjective instead.</p>"
+      },
+      {
+        "answer": "ethically",
+        "feedback": "<p>In this case, we are mentioning how someone should behave. Use the adverb instead.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Ethical</code> and <code>ethically</code> both refer to doing things that are morally right and fair. <code>ethical</code> is an adjective used to describe something that is right or good according to moral principles. On the other hand, <code>ethically</code> is an adverb that describes how something is done in a moral or fair way, indicating the manner in which an action is performed.</p>\n<p>In English, both adjectives and adverbs are used to provide more information about verbs, adjectives, or other adverbs in a sentence. However, they serve different roles:</p>\n<p><code>Adjectives</code> are words that describe or modify nouns (people, places, things, or ideas). They provide more information about the noun, giving details such as size, color, shape, or emotion. For example, in the phrase <code>a green apple</code>, the word <code>green</code> is an adjective because it describes the noun \"apple.\"</p>\n<p><code>Adverbs</code>, on the other hand, are words that modify verbs, adjectives, or other adverbs. They provide information about how an action is done, when it happened, where it happened, or to what extent. Adverbs often end in <code>-ly</code>, but not always. For example, in the phrase <code>She sings elegantly</code>, the word <code>elegantly</code> is an adverb because it describes how the action of singing is done.</p>\n<p>Read the sentence and fill in the blanks with the correct term: <code>ethical</code> or <code>ethically</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,53 @@
+{
+  "id": "6553f3fc92741c2bf8ded140",
+  "title": "Step 52",
+  "challengeType": 20,
+  "dashedName": "step-52",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        18
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\nshift = 3\ndef caesar(message, offset):\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in text.lower():\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + shift) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', text)\n    print('encrypted text:', encrypted_text)\n\ncaesar()",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\nshift = 3\ndef caesar(message, offset):\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in text.lower():\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + shift) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', text)\n    print('encrypted text:', encrypted_text)\n\ncaesar()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should rename all occurrences of <code>text</code> to <code>message</code>.</p>",
+      "testString": "assert.match(code, /for\\s+char\\s+in\\s+message\\.lower\\s*\\(\\s*\\)\\s*:/);\nassert.match(code, /print\\s*\\(\\s*(\"|')(plain text|(plain )?message):\\1\\s*,\\s*message\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should rename <code>shift</code> to <code>offset</code>.</p>",
+      "testString": "assert.match(code, /new_index\\s*=\\s*\\(\\s*index\\s*\\+\\s*offset\\s*\\)\\s*%\\s*len\\s*\\(\\s*alphabet\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Inside your function body, rename the <code>text</code> and <code>shift</code> variables to <code>message</code> and <code>offset</code>, respectively.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 51,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

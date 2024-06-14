@@ -1,0 +1,88 @@
+{
+  "id": "656a4758b0f85e45d03f9e17",
+  "title": "Task 39",
+  "challengeType": 19,
+  "dashedName": "task-39",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is one of the new methods Amy is using for her content?</p>",
+    "answers": [
+      {
+        "answer": "<p>She is writing detailed articles</p>",
+        "feedback": "<p>Amy does not mention writing articles.</p>"
+      },
+      {
+        "answer": "<p>She is using video interviews</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She is creating podcasts</p>",
+        "feedback": "<p>Amy does not mention podcasts.</p>"
+      },
+      {
+        "answer": "<p>She is taking photographs</p>",
+        "feedback": "<p>Amy does not mention photography.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Amy",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 31.98,
+        "finishTimestamp": 38.96
+      }
+    },
+    "commands": [
+      {
+        "character": "Amy",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Amy",
+        "startTime": 1,
+        "finishTime": 7.98,
+        "dialogue": {
+          "text": "Yes, I am. I'm experimenting with video interviews and interactive infographics to make the content more engaging for our readers.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Amy",
+        "opacity": 0,
+        "startTime": 8.48
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Let's practice!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

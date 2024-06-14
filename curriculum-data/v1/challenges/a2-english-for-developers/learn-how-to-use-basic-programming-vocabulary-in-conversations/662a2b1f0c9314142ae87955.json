@@ -1,0 +1,88 @@
+{
+  "id": "662a2b1f0c9314142ae87955",
+  "title": "Task 17",
+  "challengeType": 19,
+  "dashedName": "task-17",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Brian want to know from Sophie?</p>",
+    "answers": [
+      {
+        "answer": "<p>What she thinks about the time commitment required</p>",
+        "feedback": "<p>Brian is asking the specific amount of time she has spent, not her opinion about the time required.</p>"
+      },
+      {
+        "answer": "<p>How much time she has dedicated to her activity</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>If she enjoyed the time she spent on her activity</p>",
+        "feedback": "<p>Brian's question focuses on the quantity of time, not her enjoyment of it.</p>"
+      },
+      {
+        "answer": "<p>Who she was with when she spent the time</p>",
+        "feedback": "<p>Brian’s question is specifically about the amount of time, not about who was with her.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.02,
+        "finishTimestamp": 12
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 3.98,
+        "dialogue": {
+          "text": "That's awesome. How much time have you spent on it?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 4.48
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

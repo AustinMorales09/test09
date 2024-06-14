@@ -1,0 +1,85 @@
+{
+  "id": "646493b7dc53b5d45c9c50fc",
+  "title": "Step 87",
+  "challengeType": 0,
+  "dashedName": "step-87",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Decimal to Binary Converter</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Decimal to Binary Converter</h1>\n    <div class=\"input-container\">\n      <label for=\"number-input\">Enter a decimal number:</label>\n      <input\n        value=\"\"\n        type=\"number\"\n        name=\"decimal number input\"\n        id=\"number-input\"\n        class=\"number-input\"\n      />\n      <button class=\"convert-btn\" id=\"convert-btn\">Convert</button>\n    </div>\n    <output id=\"result\" for=\"number-input\"></output>\n    <div id=\"animation-container\"></div>\n    <script src=\"script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Decimal to Binary Converter</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Decimal to Binary Converter</h1>\n    <div class=\"input-container\">\n      <label for=\"number-input\">Enter a decimal number:</label>\n      <input\n        value=\"\"\n        type=\"number\"\n        name=\"decimal number input\"\n        id=\"number-input\"\n        class=\"number-input\"\n      />\n      <button class=\"convert-btn\" id=\"convert-btn\">Convert</button>\n    </div>\n    <output id=\"result\" for=\"number-input\"></output>\n    <div id=\"animation-container\"></div>\n    <script src=\"script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n:root {\n  --light-grey: #f5f6f7;\n  --dark-blue: #1b1b32;\n  --orange: #f1be32;\n}\n\nbody {\n  background-color: var(--dark-blue);\n  font-family: \"Times New Roman\", Times, serif;\n  font-size: 18px;\n  color: var(--light-grey);\n  padding: 0 15px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\nh1 {\n  text-align: center;\n  font-size: 2.3rem;\n  margin: 20px 0;\n}\n\n.input-container {\n  margin: 10px 0;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  justify-content: center;\n  align-items: center;\n}\n\n.convert-btn {\n  background-color: var(--orange);\n  cursor: pointer;\n  border: none;\n  padding: 4px;\n}\n\n.number-input {\n  height: 25px;\n}\n\n#result {\n  margin: 10px 0;\n  min-width: 200px;\n  width: fit-content;\n  min-height: 80px;\n  word-break: break-word;\n  padding: 15px;\n  border: 5px solid var(--orange);\n  font-size: 2rem;\n  text-align: center;\n}\n\n#animation-container {\n  margin: auto;\n  max-width: 300px;\n}\n\n.animation-frame {\n  margin: 250px auto 0;\n  padding: 15px 10px;\n  border: 5px solid var(--orange);\n  font-size: 1.2rem;\n  text-align: center;\n}\n\n@media screen and (min-width: 500px) {\n  .input-container {\n    flex-direction: row;\n  }\n\n  #result {\n    max-width: 460px;\n  }\n}",
+      "error": null,
+      "seed": "*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n:root {\n  --light-grey: #f5f6f7;\n  --dark-blue: #1b1b32;\n  --orange: #f1be32;\n}\n\nbody {\n  background-color: var(--dark-blue);\n  font-family: \"Times New Roman\", Times, serif;\n  font-size: 18px;\n  color: var(--light-grey);\n  padding: 0 15px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\nh1 {\n  text-align: center;\n  font-size: 2.3rem;\n  margin: 20px 0;\n}\n\n.input-container {\n  margin: 10px 0;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  justify-content: center;\n  align-items: center;\n}\n\n.convert-btn {\n  background-color: var(--orange);\n  cursor: pointer;\n  border: none;\n  padding: 4px;\n}\n\n.number-input {\n  height: 25px;\n}\n\n#result {\n  margin: 10px 0;\n  min-width: 200px;\n  width: fit-content;\n  min-height: 80px;\n  word-break: break-word;\n  padding: 15px;\n  border: 5px solid var(--orange);\n  font-size: 2rem;\n  text-align: center;\n}\n\n#animation-container {\n  margin: auto;\n  max-width: 300px;\n}\n\n.animation-frame {\n  margin: 250px auto 0;\n  padding: 15px 10px;\n  border: 5px solid var(--orange);\n  font-size: 1.2rem;\n  text-align: center;\n}\n\n@media screen and (min-width: 500px) {\n  .input-container {\n    flex-direction: row;\n  }\n\n  #result {\n    max-width: 460px;\n  }\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        5
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const numberInput = document.getElementById(\"number-input\");\nconst convertBtn = document.getElementById(\"convert-btn\");\nconst result = document.getElementById(\"result\");\n\nconst animationData = [\n  {\n    inputVal: 5,\n    marginTop: 300,\n    addElDelay: 1000\n  },\n  {\n    inputVal: 2,\n    marginTop: -200,\n    addElDelay: 1500\n  },\n  {\n    inputVal: 1,\n    marginTop: -200,\n    addElDelay: 2000\n  }\n];\n\nconst decimalToBinary = (input) => {\n  if (input === 0 || input === 1) {\n    return String(input);\n  } else {\n    return decimalToBinary(Math.floor(input / 2)) + (input % 2);\n  }\n};\n\nconst showAnimation = () => {\n  setTimeout(() => {\n    console.log(\"free\");\n  }, 500);\n  setTimeout(() => {\n    console.log(\"Code\");\n  }, 1000);\n  setTimeout(() => {\n    console.log(\"Camp\");\n  }, 1500);\n};\n\nconst checkUserInput = () => {\n  const inputInt = parseInt(numberInput.value);\n\n  if (!numberInput.value || isNaN(inputInt) || inputInt < 0) {\n    alert(\"Please provide a decimal number greater than or equal to 0\");\n    return;\n  }\n\n  if (inputInt === 5) {\n    showAnimation();\n    return;\n  }\n\n  result.textContent = decimalToBinary(inputInt);\n  numberInput.value = \"\";\n};\n\nconvertBtn.addEventListener(\"click\", checkUserInput);\n\nnumberInput.addEventListener(\"keydown\", (e) => {\n  if (e.key === \"Enter\") {\n    checkUserInput();\n  }\n});",
+      "error": null,
+      "seed": "const numberInput = document.getElementById(\"number-input\");\nconst convertBtn = document.getElementById(\"convert-btn\");\nconst result = document.getElementById(\"result\");\n\nconst animationData = [\n  {\n    inputVal: 5,\n    marginTop: 300,\n    addElDelay: 1000\n  },\n  {\n    inputVal: 2,\n    marginTop: -200,\n    addElDelay: 1500\n  },\n  {\n    inputVal: 1,\n    marginTop: -200,\n    addElDelay: 2000\n  }\n];\n\nconst decimalToBinary = (input) => {\n  if (input === 0 || input === 1) {\n    return String(input);\n  } else {\n    return decimalToBinary(Math.floor(input / 2)) + (input % 2);\n  }\n};\n\nconst showAnimation = () => {\n  setTimeout(() => {\n    console.log(\"free\");\n  }, 500);\n  setTimeout(() => {\n    console.log(\"Code\");\n  }, 1000);\n  setTimeout(() => {\n    console.log(\"Camp\");\n  }, 1500);\n};\n\nconst checkUserInput = () => {\n  const inputInt = parseInt(numberInput.value);\n\n  if (!numberInput.value || isNaN(inputInt) || inputInt < 0) {\n    alert(\"Please provide a decimal number greater than or equal to 0\");\n    return;\n  }\n\n  if (inputInt === 5) {\n    showAnimation();\n    return;\n  }\n\n  result.textContent = decimalToBinary(inputInt);\n  numberInput.value = \"\";\n};\n\nconvertBtn.addEventListener(\"click\", checkUserInput);\n\nnumberInput.addEventListener(\"keydown\", (e) => {\n  if (e.key === \"Enter\") {\n    checkUserInput();\n  }\n});"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>document.getElementById()</code> method to get the <code>#animation-container</code> element.</p>",
+      "testString": "assert.match(code, /document\\.getElementById\\(\\s*('|\"|`)animation-container\\1\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should use <code>const</code> to declare a variable called <code>animationContainer</code> and assign it the <code>#animation-container</code> element.</p>",
+      "testString": "assert.match(code, /const\\s+animationContainer\\s*=\\s*document\\.getElementById\\(\\s*('|\"|`)animation-container\\1\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now you'll start building the animation itself.</p>\n<p>First, use the <code>document.getElementById()</code> method to select the element with the id <code>animation-container</code> and assign it to a variable called <code>animationContainer</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-building-a-decimal-to-binary-converter",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 86,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

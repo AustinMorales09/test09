@@ -1,0 +1,57 @@
+{
+  "id": "6551f3bfed58796ebb1268dc",
+  "title": "Step 5",
+  "challengeType": 20,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nprint(text)",
+      "error": null,
+      "seed": "text = 'Hello World'\nprint(text)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should still call the <code>print()</code> function.</p>",
+      "testString": "assert.match(code, /print\\s*\\(.*\\)/)"
+    },
+    {
+      "text": "<p>You should pass <code>text[6]</code> to the <code>print()</code> function by including it between the parentheses. Pay attention to place the function call at the beginning of the line.</p>",
+      "testString": "assert.match(code, /^print\\s*\\(\\s*text\\s*\\[\\s*6\\s*\\]\\s*\\)/m)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Each string character can be referenced by a numerical index. The index count starts at zero. So the first character of a string has an index of <code>0</code>. For example, in the string <code>'Hello World'</code>, <code>'H'</code> is at index <code>0</code>, <code>'e'</code> is at index <code>1</code>, and so on.</p>\n<p>Each character of a string can be accessed by using bracket notation. You need to write the variable name followed by square brackets and add the index of the character between the brackets:</p>\n<pre><code class=\"language-py\">text = 'Hello World'\nr = text[8]\n</code></pre>\n<p>Now, instead of printing <code>text</code>, print just the character at index <code>6</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

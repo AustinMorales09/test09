@@ -1,0 +1,79 @@
+{
+  "id": "65fc94ba65ed765d55195bc0",
+  "title": "Task 27",
+  "challengeType": 22,
+  "dashedName": "task-27",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>The problem is _ many _ issues that slow our progress down.</p>",
+    "blanks": [
+      {
+        "answer": "encountering",
+        "feedback": "<p>This word means to find something or someone without planning to, especially problems. It ends with <code>-ing</code>.</p>"
+      },
+      {
+        "answer": "technical",
+        "feedback": "<p>This word is used for problems with machines or computers that need special knowledge to understand or fix.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 48.3,
+        "finishTimestamp": 52.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.32,
+        "dialogue": {
+          "text": "The problem is encountering many technical issues that slow our progress down.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 5.82
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>To <code>encounter</code> means to find something by chance that you were not expecting. Like when you say, <code>I encountered a cat on my way home,</code> it means you saw a cat unexpectedly. Brian is talking about having unexpected problems at work.</p>\n<p>Listen and fill in the missing words about the problems Brian talks about that make their work difficult.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

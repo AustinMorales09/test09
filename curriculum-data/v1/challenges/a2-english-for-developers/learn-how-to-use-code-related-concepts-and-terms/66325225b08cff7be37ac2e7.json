@@ -1,0 +1,45 @@
+{
+  "id": "66325225b08cff7be37ac2e7",
+  "title": "Task 19",
+  "challengeType": 19,
+  "dashedName": "task-19",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence uses a relative pronoun correctly?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>The teacher which teaches us math is very kind.</code></p>",
+        "feedback": "<p><code>which</code> is typically used for things, not people. The correct pronoun here should be <code>who</code>.</p>"
+      },
+      {
+        "answer": "<p><code>The car, that won the race, is very fast.</code></p>",
+        "feedback": "<p>In this sentence, the use of <code>that</code> is correct grammatically, but the commas are unnecessary. It should be: <code>The car that won the race is very fast.</code></p>"
+      },
+      {
+        "answer": "<p><code>She is the one who made the cake.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>The flowers whom are on the table smell lovely.</code></p>",
+        "feedback": "<p><code>Whom</code> is used for objects of verbs or prepositions when referring to people, not for things like flowers. The correct pronoun here should be <code>which</code> or <code>that</code>.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Relative pronouns like <code>who</code>, <code>whom</code>, <code>which</code>, and <code>that</code> are used to connect relative clauses to a noun or pronoun.</p>\n<p><code>Who</code> and <code>whom</code> refer to people. The difference is <code>who</code> is the subject of a verb, while <code>whom</code> is used as the object of a verb or preposition.</p>\n<p><code>Which</code> is used for specific things or animals, and <code>that</code> can be used for people, things, or animals in defining clauses.</p>\n<p>Examples:</p>\n<p><code>The programmer who wrote this code is brilliant.</code> (<code>who</code> refers to the programmer)</p>\n<p><code>The artist whom we met at the gallery is internationally recognized.</code> (<code>whom</code> refers to the artist)</p>\n<p><code>The tool that you lent me was useful.</code> (<code>that</code> refers to the tool)</p>\n<p><code>The book, which I bought yesterday, is already a bestseller.</code> (<code>which</code> refers to the book)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

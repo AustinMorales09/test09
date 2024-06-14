@@ -1,0 +1,74 @@
+{
+  "id": "594810f028c0303b75339acb",
+  "title": "100 doors",
+  "challengeType": 1,
+  "forumTopicId": 302217,
+  "dashedName": "100-doors",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const solution = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function getFinalOpenedDoors(numDoors) {\n\n}",
+      "error": null,
+      "seed": "function getFinalOpenedDoors(numDoors) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function getFinalOpenedDoors(numDoors) {\n  // this is the final pattern (always squares).\n  // thus, the most efficient solution simply returns an array of squares up to numDoors).\n  const finalState = [];\n  let i = 1;\n  while (Math.pow(i, 2) <= numDoors) {\n    finalState.push(Math.pow(i, 2));\n    i++;\n  }\n  return finalState;\n}",
+        "error": null,
+        "seed": "function getFinalOpenedDoors(numDoors) {\n  // this is the final pattern (always squares).\n  // thus, the most efficient solution simply returns an array of squares up to numDoors).\n  const finalState = [];\n  let i = 1;\n  while (Math.pow(i, 2) <= numDoors) {\n    finalState.push(Math.pow(i, 2));\n    i++;\n  }\n  return finalState;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>getFinalOpenedDoors</code> should be a function.</p>",
+      "testString": "assert(typeof getFinalOpenedDoors === 'function');"
+    },
+    {
+      "text": "<p><code>getFinalOpenedDoors</code> should return an array.</p>",
+      "testString": "assert(Array.isArray(getFinalOpenedDoors(100)));"
+    },
+    {
+      "text": "<p><code>getFinalOpenedDoors</code> should produce the correct result.</p>",
+      "testString": "assert.deepEqual(getFinalOpenedDoors(100), solution);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>There are 100 doors in a row that are all initially closed. You make 100 passes by the doors. The first time through, visit every door and 'toggle' the door (if the door is closed, open it; if it is open, close it). The second time, only visit every 2nd door (i.e., door #2, #4, #6, ...) and toggle it. The third time, visit every 3rd door (i.e., door #3, #6, #9, ...), etc., until you only visit the 100th door.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Implement a function to determine the state of the doors after the last pass. Return the final result in an array, with only the door number included in the array if it is open.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

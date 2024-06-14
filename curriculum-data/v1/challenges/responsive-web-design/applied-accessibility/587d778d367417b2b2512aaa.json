@@ -1,0 +1,79 @@
+{
+  "id": "587d778d367417b2b2512aaa",
+  "title": "Make Elements Only Visible to a Screen Reader by Using Custom CSS",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cJ8QGkhJ",
+  "forumTopicId": 301020,
+  "dashedName": "make-elements-only-visible-to-a-screen-reader-by-using-custom-css",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<head>\n  <style>\n  .sr-only {\n    position: ;\n    left: ;\n    width: ;\n    height: ;\n    top: auto;\n    overflow: hidden;\n  }\n  </style>\n</head>\n<body>\n  <header>\n    <h1>Training</h1>\n    <nav>\n      <ul>\n        <li><a href=\"#stealth\">Stealth &amp; Agility</a></li>\n        <li><a href=\"#combat\">Combat</a></li>\n        <li><a href=\"#weapons\">Weapons</a></li>\n      </ul>\n    </nav>\n  </header>\n  <section>\n    <h2>Master Camper Cat's Beginner Three Week Training Program</h2>\n    <figure>\n      <!-- Stacked bar chart of weekly training -->\n      <p>[Stacked bar chart]</p>\n      <br />\n      <figcaption>Breakdown per week of time to spend training in stealth, combat, and weapons.</figcaption>\n    </figure>\n    <table class=\"sr-only\">\n      <caption>Hours of Weekly Training in Stealth, Combat, and Weapons</caption>\n      <thead>\n        <tr>\n          <th></th>\n          <th scope=\"col\">Stealth &amp; Agility</th>\n          <th scope=\"col\">Combat</th>\n          <th scope=\"col\">Weapons</th>\n          <th scope=\"col\">Total</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <th scope=\"row\">Week One</th>\n          <td>3</td>\n          <td>5</td>\n          <td>2</td>\n          <td>10</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Week Two</th>\n          <td>4</td>\n          <td>5</td>\n          <td>3</td>\n          <td>12</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Week Three</th>\n          <td>4</td>\n          <td>6</td>\n          <td>3</td>\n          <td>13</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n  <section id=\"stealth\">\n    <h2>Stealth &amp; Agility Training</h2>\n    <article><h3>Climb foliage quickly using a minimum spanning tree approach</h3></article>\n    <article><h3>No training is NP-complete without parkour</h3></article>\n  </section>\n  <section id=\"combat\">\n    <h2>Combat Training</h2>\n    <article><h3>Dispatch multiple enemies with multithreaded tactics</h3></article>\n    <article><h3>Goodbye, world: 5 proven ways to knock out an opponent</h3></article>\n  </section>\n  <section id=\"weapons\">\n    <h2>Weapons Training</h2>\n    <article><h3>Swords: the best tool to literally divide and conquer</h3></article>\n    <article><h3>Breadth-first or depth-first in multi-weapon training?</h3></article>\n  </section>\n  <footer>&copy; 2018 Camper Cat</footer>\n</body>",
+      "error": null,
+      "seed": "<head>\n  <style>\n  .sr-only {\n    position: ;\n    left: ;\n    width: ;\n    height: ;\n    top: auto;\n    overflow: hidden;\n  }\n  </style>\n</head>\n<body>\n  <header>\n    <h1>Training</h1>\n    <nav>\n      <ul>\n        <li><a href=\"#stealth\">Stealth &amp; Agility</a></li>\n        <li><a href=\"#combat\">Combat</a></li>\n        <li><a href=\"#weapons\">Weapons</a></li>\n      </ul>\n    </nav>\n  </header>\n  <section>\n    <h2>Master Camper Cat's Beginner Three Week Training Program</h2>\n    <figure>\n      <!-- Stacked bar chart of weekly training -->\n      <p>[Stacked bar chart]</p>\n      <br />\n      <figcaption>Breakdown per week of time to spend training in stealth, combat, and weapons.</figcaption>\n    </figure>\n    <table class=\"sr-only\">\n      <caption>Hours of Weekly Training in Stealth, Combat, and Weapons</caption>\n      <thead>\n        <tr>\n          <th></th>\n          <th scope=\"col\">Stealth &amp; Agility</th>\n          <th scope=\"col\">Combat</th>\n          <th scope=\"col\">Weapons</th>\n          <th scope=\"col\">Total</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <th scope=\"row\">Week One</th>\n          <td>3</td>\n          <td>5</td>\n          <td>2</td>\n          <td>10</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Week Two</th>\n          <td>4</td>\n          <td>5</td>\n          <td>3</td>\n          <td>12</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Week Three</th>\n          <td>4</td>\n          <td>6</td>\n          <td>3</td>\n          <td>13</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n  <section id=\"stealth\">\n    <h2>Stealth &amp; Agility Training</h2>\n    <article><h3>Climb foliage quickly using a minimum spanning tree approach</h3></article>\n    <article><h3>No training is NP-complete without parkour</h3></article>\n  </section>\n  <section id=\"combat\">\n    <h2>Combat Training</h2>\n    <article><h3>Dispatch multiple enemies with multithreaded tactics</h3></article>\n    <article><h3>Goodbye, world: 5 proven ways to knock out an opponent</h3></article>\n  </section>\n  <section id=\"weapons\">\n    <h2>Weapons Training</h2>\n    <article><h3>Swords: the best tool to literally divide and conquer</h3></article>\n    <article><h3>Breadth-first or depth-first in multi-weapon training?</h3></article>\n  </section>\n  <footer>&copy; 2018 Camper Cat</footer>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<head>\n  <style>\n  .sr-only {\n    position: absolute;\n    left: -10000px;\n    width: 1px;\n    height: 1px;\n    top: auto;\n    overflow: hidden;\n  }\n  </style>\n</head>\n<body>\n  <header>\n    <h1>Training</h1>\n    <nav>\n      <ul>\n        <li><a href=\"#stealth\">Stealth &amp; Agility</a></li>\n        <li><a href=\"#combat\">Combat</a></li>\n        <li><a href=\"#weapons\">Weapons</a></li>\n      </ul>\n    </nav>\n  </header>\n  <section>\n    <h2>Master Camper Cat's Beginner Three Week Training Program</h2>\n    <figure>\n      <!-- Stacked bar chart of weekly training -->\n      <p>[Stacked bar chart]</p>\n      <br />\n      <figcaption>Breakdown per week of time to spend training in stealth, combat, and weapons.</figcaption>\n    </figure>\n    <table class=\"sr-only\">\n      <caption>Hours of Weekly Training in Stealth, Combat, and Weapons</caption>\n      <thead>\n        <tr>\n          <th></th>\n          <th scope=\"col\">Stealth &amp; Agility</th>\n          <th scope=\"col\">Combat</th>\n          <th scope=\"col\">Weapons</th>\n          <th scope=\"col\">Total</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <th scope=\"row\">Week One</th>\n          <td>3</td>\n          <td>5</td>\n          <td>2</td>\n          <td>10</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Week Two</th>\n          <td>4</td>\n          <td>5</td>\n          <td>3</td>\n          <td>12</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Week Three</th>\n          <td>4</td>\n          <td>6</td>\n          <td>3</td>\n          <td>13</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n  <section id=\"stealth\">\n    <h2>Stealth &amp; Agility Training</h2>\n    <article><h3>Climb foliage quickly using a minimum spanning tree approach</h3></article>\n    <article><h3>No training is NP-complete without parkour</h3></article>\n  </section>\n  <section id=\"combat\">\n    <h2>Combat Training</h2>\n    <article><h3>Dispatch multiple enemies with multithreaded tactics</h3></article>\n    <article><h3>Goodbye, world: 5 proven ways to knock out an opponent</h3></article>\n  </section>\n  <section id=\"weapons\">\n    <h2>Weapons Training</h2>\n    <article><h3>Swords: the best tool to literally divide and conquer</h3></article>\n    <article><h3>Breadth-first or depth-first in multi-weapon training?</h3></article>\n  </section>\n  <footer>&copy; 2018 Camper Cat</footer>\n</body>",
+        "error": null,
+        "seed": "<head>\n  <style>\n  .sr-only {\n    position: absolute;\n    left: -10000px;\n    width: 1px;\n    height: 1px;\n    top: auto;\n    overflow: hidden;\n  }\n  </style>\n</head>\n<body>\n  <header>\n    <h1>Training</h1>\n    <nav>\n      <ul>\n        <li><a href=\"#stealth\">Stealth &amp; Agility</a></li>\n        <li><a href=\"#combat\">Combat</a></li>\n        <li><a href=\"#weapons\">Weapons</a></li>\n      </ul>\n    </nav>\n  </header>\n  <section>\n    <h2>Master Camper Cat's Beginner Three Week Training Program</h2>\n    <figure>\n      <!-- Stacked bar chart of weekly training -->\n      <p>[Stacked bar chart]</p>\n      <br />\n      <figcaption>Breakdown per week of time to spend training in stealth, combat, and weapons.</figcaption>\n    </figure>\n    <table class=\"sr-only\">\n      <caption>Hours of Weekly Training in Stealth, Combat, and Weapons</caption>\n      <thead>\n        <tr>\n          <th></th>\n          <th scope=\"col\">Stealth &amp; Agility</th>\n          <th scope=\"col\">Combat</th>\n          <th scope=\"col\">Weapons</th>\n          <th scope=\"col\">Total</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <th scope=\"row\">Week One</th>\n          <td>3</td>\n          <td>5</td>\n          <td>2</td>\n          <td>10</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Week Two</th>\n          <td>4</td>\n          <td>5</td>\n          <td>3</td>\n          <td>12</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Week Three</th>\n          <td>4</td>\n          <td>6</td>\n          <td>3</td>\n          <td>13</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n  <section id=\"stealth\">\n    <h2>Stealth &amp; Agility Training</h2>\n    <article><h3>Climb foliage quickly using a minimum spanning tree approach</h3></article>\n    <article><h3>No training is NP-complete without parkour</h3></article>\n  </section>\n  <section id=\"combat\">\n    <h2>Combat Training</h2>\n    <article><h3>Dispatch multiple enemies with multithreaded tactics</h3></article>\n    <article><h3>Goodbye, world: 5 proven ways to knock out an opponent</h3></article>\n  </section>\n  <section id=\"weapons\">\n    <h2>Weapons Training</h2>\n    <article><h3>Swords: the best tool to literally divide and conquer</h3></article>\n    <article><h3>Breadth-first or depth-first in multi-weapon training?</h3></article>\n  </section>\n  <footer>&copy; 2018 Camper Cat</footer>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should set the <code>position</code> property of the <code>sr-only</code> class to a value of <code>absolute</code>.</p>",
+      "testString": "assert($('.sr-only').css('position') == 'absolute');"
+    },
+    {
+      "text": "<p>Your code should set the <code>left</code> property of the <code>sr-only</code> class to a value of <code>-10000px</code>.</p>",
+      "testString": "assert($('.sr-only').css('left') == '-10000px');"
+    },
+    {
+      "text": "<p>Your code should set the <code>width</code> property of the <code>sr-only</code> class to a value of <code>1</code> pixel.</p>",
+      "testString": "assert(code.match(/width:\\s*?1px/gi));"
+    },
+    {
+      "text": "<p>Your code should set the <code>height</code> property of the <code>sr-only</code> class to a value of <code>1</code> pixel.</p>",
+      "testString": "assert(code.match(/height:\\s*?1px/gi));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Have you noticed that all of the applied accessibility challenges so far haven't used any CSS? This shows the importance of using a logical document outline and semantically meaningful tags around your content before introducing the visual design aspect.</p>\n<p>However, CSS's magic can also improve accessibility on your page when you want to visually hide content meant only for screen readers. This happens when information is in a visual format (like a chart), but screen reader users need an alternative presentation (like a table) to access the data. CSS is used to position the screen reader-only elements off the visual area of the browser window.</p>\n<p>Here's an example of the CSS rules that accomplish this:</p>\n<pre><code class=\"language-css\">.sr-only {\n  position: absolute;\n  left: -10000px;\n  width: 1px;\n  height: 1px;\n  top: auto;\n  overflow: hidden;\n}\n</code></pre>\n<p><strong>Note:</strong> The following CSS approaches will NOT do the same thing:</p>\n<ul>\n<li><code>display: none;</code> or <code>visibility: hidden;</code> hides content for everyone, including screen reader users</li>\n<li>Zero values for pixel sizes, such as <code>width: 0px; height: 0px;</code> removes that element from the flow of your document, meaning screen readers will ignore it</li>\n</ul>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Camper Cat created a really cool stacked bar chart for his training page, and put the data into a table for his visually impaired users. The table already has an <code>sr-only</code> class, but the CSS rules aren't filled in yet. Give the <code>position</code> an <code>absolute</code> value, the <code>left</code> a <code>-10000px</code> value, and the <code>width</code> and <code>height</code> both <code>1px</code> values.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-accessibility",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

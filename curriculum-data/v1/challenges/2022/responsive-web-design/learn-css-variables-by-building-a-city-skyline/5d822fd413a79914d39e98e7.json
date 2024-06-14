@@ -1,0 +1,133 @@
+{
+  "id": "5d822fd413a79914d39e98e7",
+  "title": "Step 31",
+  "challengeType": 0,
+  "dashedName": "step-31",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />   \n  </head>\n\n  <body>\n    <div class=\"background-buildings\">\n      <div></div>\n      <div></div>\n      <div class=\"bb1\">\n        <div class=\"bb1a\"></div>\n        <div class=\"bb1b\"></div>\n        <div class=\"bb1c\"></div>\n        <div class=\"bb1d\"></div>\n      </div>\n      <div class=\"bb2\"></div>\n      <div class=\"bb3\"></div>\n      <div></div>\n      <div class=\"bb4\"></div>\n      <div></div>\n      <div></div>\n    </div>\n\n    <div class=\"foreground-buildings\">\n      <div class=\"fb1\"></div>\n      <div class=\"fb2\"></div>\n      <div class=\"fb3\"></div>\n      <div class=\"fb4\"></div>\n      <div class=\"fb5\"></div>\n      <div class=\"fb6\"></div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />   \n  </head>\n\n  <body>\n    <div class=\"background-buildings\">\n      <div></div>\n      <div></div>\n      <div class=\"bb1\">\n        <div class=\"bb1a\"></div>\n        <div class=\"bb1b\"></div>\n        <div class=\"bb1c\"></div>\n        <div class=\"bb1d\"></div>\n      </div>\n      <div class=\"bb2\"></div>\n      <div class=\"bb3\"></div>\n      <div></div>\n      <div class=\"bb4\"></div>\n      <div></div>\n      <div></div>\n    </div>\n\n    <div class=\"foreground-buildings\">\n      <div class=\"fb1\"></div>\n      <div class=\"fb2\"></div>\n      <div class=\"fb3\"></div>\n      <div class=\"fb4\"></div>\n      <div class=\"fb5\"></div>\n      <div class=\"fb6\"></div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        82,
+        84
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": ":root {\n  --building-color1: #aa80ff;\n  --building-color2: #66cc99;\n  --building-color3: #cc6699;\n  --building-color4: #538cc6;\n}\n\n* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  margin: 0;\n  overflow: hidden;\n}\n\n.background-buildings {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: flex-end;\n  justify-content: space-evenly;\n}\n\n.bb1 {\n  width: 10%;\n  height: 70%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.bb1a {\n  width: 70%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1b {\n  width: 80%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1c {\n  width: 90%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1d {\n  width: 100%;\n  height: 70%;\n  background-color: var(--building-color1);\n}\n\n.bb2 {\n  width: 10%;\n  height: 50%;\n  background-color: var(--building-color2);\n}\n\n.bb3 {\n  width: 10%;\n  height: 55%;\n  background-color: var(--building-color3);\n}\n\n.bb4 {\n  width: 11%;\n  height: 58%;\n  background-color: var(--building-color4);\n}\n\n.foreground-buildings {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n}\n\n    ",
+      "error": null,
+      "seed": ":root {\n  --building-color1: #aa80ff;\n  --building-color2: #66cc99;\n  --building-color3: #cc6699;\n  --building-color4: #538cc6;\n}\n\n* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  margin: 0;\n  overflow: hidden;\n}\n\n.background-buildings {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: flex-end;\n  justify-content: space-evenly;\n}\n\n.bb1 {\n  width: 10%;\n  height: 70%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.bb1a {\n  width: 70%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1b {\n  width: 80%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1c {\n  width: 90%;\n  height: 10%;\n  background-color: var(--building-color1);\n}\n\n.bb1d {\n  width: 100%;\n  height: 70%;\n  background-color: var(--building-color1);\n}\n\n.bb2 {\n  width: 10%;\n  height: 50%;\n  background-color: var(--building-color2);\n}\n\n.bb3 {\n  width: 10%;\n  height: 55%;\n  background-color: var(--building-color3);\n}\n\n.bb4 {\n  width: 11%;\n  height: 58%;\n  background-color: var(--building-color4);\n}\n\n.foreground-buildings {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n}\n\n    "
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a <code>.fb1</code> selector.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.fb1'));"
+    },
+    {
+      "text": "<p>You should give the <code>.fb1</code> selector a <code>width</code> of <code>10%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.fb1')?.width, '10%');"
+    },
+    {
+      "text": "<p>You should give the <code>.fb1</code> selector a <code>height</code> of <code>60%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.fb1')?.height, '60%');"
+    },
+    {
+      "text": "<p>You should create a <code>.fb2</code> selector.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.fb2'));"
+    },
+    {
+      "text": "<p>You should give the <code>.fb2</code> selector a <code>width</code> of <code>10%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.fb2')?.width, '10%');"
+    },
+    {
+      "text": "<p>You should give the <code>.fb2</code> selector a <code>height</code> of <code>40%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.fb2')?.height, '40%');"
+    },
+    {
+      "text": "<p>You should create a <code>.fb3</code> selector.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.fb3'));"
+    },
+    {
+      "text": "<p>You should give the <code>.fb3</code> selector a <code>width</code> of <code>10%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.fb3')?.width, '10%');"
+    },
+    {
+      "text": "<p>You should give the <code>.fb3</code> selector a <code>height</code> of <code>35%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.fb3')?.height, '35%');"
+    },
+    {
+      "text": "<p>You should create a <code>.fb4</code> selector.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.fb4'));"
+    },
+    {
+      "text": "<p>You should give the <code>.fb4</code> selector a <code>width</code> of <code>8%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.fb4')?.width, '8%');"
+    },
+    {
+      "text": "<p>You should give the <code>.fb4</code> selector a <code>height</code> of <code>45%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.fb4')?.height, '45%');"
+    },
+    {
+      "text": "<p>You should create a <code>.fb5</code> selector.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.fb5'));"
+    },
+    {
+      "text": "<p>You should give the <code>.fb5</code> selector a <code>width</code> of <code>10%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.fb5')?.width, '10%');"
+    },
+    {
+      "text": "<p>You should give the <code>.fb5</code> selector a <code>height</code> of <code>33%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.fb5')?.height, '33%');"
+    },
+    {
+      "text": "<p>You should create a <code>.fb6</code> selector.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.fb6'));"
+    },
+    {
+      "text": "<p>You should give the <code>.fb6</code> selector a <code>width</code> of <code>9%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.fb6')?.width, '9%');"
+    },
+    {
+      "text": "<p>You should give the <code>.fb6</code> selector a <code>height</code> of <code>38%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.fb6')?.height, '38%');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Give the six new elements these <code>width</code> and <code>height</code> values: <code>10%</code> and <code>60%</code> to <code>.fb1</code>, <code>10%</code> and <code>40%</code> to <code>.fb2</code>, <code>10%</code> and <code>35%</code> to <code>.fb3</code>, <code>8%</code> and <code>45%</code> to <code>.fb4</code>, <code>10%</code> and <code>33%</code> to <code>.fb5</code>, and <code>9%</code> and <code>38%</code> to <code>.fb6</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-variables-by-building-a-city-skyline",
+  "hasEditableBoundaries": true,
+  "order": 14,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

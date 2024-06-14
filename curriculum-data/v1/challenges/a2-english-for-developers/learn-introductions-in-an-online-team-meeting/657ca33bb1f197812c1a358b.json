@@ -1,0 +1,97 @@
+{
+  "id": "657ca33bb1f197812c1a358b",
+  "title": "Task 26",
+  "challengeType": 19,
+  "dashedName": "task-26",
+  "solutions": [],
+  "question": {
+    "text": "<p>In Bob's sentence, who does the pronoun <code>us</code> refer to?</p>",
+    "answers": [
+      {
+        "answer": "<p>Alice</p>",
+        "feedback": "<p><code>Us</code> does not refer to a single person like Alice.</p>"
+      },
+      {
+        "answer": "<p>Bob and the team</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The listeners</p>",
+        "feedback": "<p><code>Us</code> does not directly refer to the audience listening to the conversation.</p>"
+      },
+      {
+        "answer": "<p>The new project</p>",
+        "feedback": "<p><code>Us</code> refers to people, not objects or projects.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 6.18
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.64,
+        "dialogue": {
+          "text": "All right team this is Alice's first day with us",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "startTime": 4.64,
+        "finishTime": 7.18,
+        "dialogue": {
+          "text": "so please let me introduce you all to her.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 7.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

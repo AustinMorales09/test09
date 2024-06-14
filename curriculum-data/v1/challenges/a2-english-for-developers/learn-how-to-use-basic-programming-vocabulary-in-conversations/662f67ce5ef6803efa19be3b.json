@@ -1,0 +1,83 @@
+{
+  "id": "662f67ce5ef6803efa19be3b",
+  "title": "Task 77",
+  "challengeType": 22,
+  "dashedName": "task-77",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I'll send you the _. It has helped _ _ I know.</p>",
+    "blanks": [
+      {
+        "answer": "title",
+        "feedback": "<p>It refers to the name of a book, movie, or other works. In this case, Sarah is referring to a book.</p>"
+      },
+      {
+        "answer": "many",
+        "feedback": "<p>It is used to describe a large number or quantity, emphasizing the volume.</p>"
+      },
+      {
+        "answer": "people",
+        "feedback": "<p>It refers to human beings collectively, typically used to discuss groups or a number of individuals.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 39.2,
+        "finishTimestamp": 41.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.7,
+        "dialogue": {
+          "text": "I'll send you the title. It has helped many people I know.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.2
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>title</code> refers to the name of a book, article, movie or other work. In this context, it refers to the name of the book Sarah is recommending.</p>\n<p>An example is, <code>The title of my favorite book is 'The Great Gatsby'.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 79,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

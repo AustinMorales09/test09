@@ -1,0 +1,77 @@
+{
+  "id": "61537c9eecea6a335db6da79",
+  "title": "Step 5",
+  "challengeType": 0,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        15
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a <code>div</code> element in your <code>body</code> element.</p>",
+      "testString": "assert(document.querySelector('body')?.querySelectorAll('div')?.length >= 1);"
+    },
+    {
+      "text": "<p>Your new <code>div</code> element should have a <code>class</code> with <code>gallery</code> set as the value.</p>",
+      "testString": "assert(document.querySelector('body')?.querySelector('.gallery'));"
+    },
+    {
+      "text": "<p>Your new <code>div</code> element should come after your <code>.header</code> element.</p>",
+      "testString": "assert(document.querySelector('header')?.nextElementSibling?.classList?.contains('gallery'));"
+    },
+    {
+      "text": "<p>Your <code>.gallery</code> element should have nine <code>img</code> elements.</p>",
+      "testString": "assert(document.querySelector('.gallery')?.querySelectorAll('img')?.length === 9);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Below your <code>.header</code> element, create a new <code>div</code> element and assign it a <code>class</code> of <code>gallery</code>. This <code>div</code> will act as a container for the gallery images.</p>\n<p>Inside that <code>.gallery</code> element, create nine <code>img</code> elements.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-flexbox-by-building-a-photo-gallery",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

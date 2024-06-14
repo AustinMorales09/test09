@@ -1,0 +1,65 @@
+{
+  "id": "5900f5481000cf542c51005b",
+  "title": "Problem 476: Circle Packing II",
+  "challengeType": 1,
+  "forumTopicId": 302153,
+  "dashedName": "problem-476-circle-packing-ii",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function circlePackingTwo() {\n\n  return true;\n}\n\ncirclePackingTwo();",
+      "error": null,
+      "seed": "function circlePackingTwo() {\n\n  return true;\n}\n\ncirclePackingTwo();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>circlePackingTwo()</code> should return <code>110242.87794</code>.</p>",
+      "testString": "assert.strictEqual(circlePackingTwo(), 110242.87794);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $R(a, b, c)$ be the maximum area covered by three non-overlapping circles inside a triangle with edge lengths $a$, $b$ and $c$.</p>\n<p>Let $S(n)$ be the average value of $R(a, b, c)$ over all integer triplets $(a, b, c)$ such that $1 ≤ a ≤ b ≤ c &#x3C; a + b ≤ n$.</p>\n<p>You are given $S(2) = R(1, 1, 1) ≈ 0.31998$, $S(5) ≈ 1.25899$.</p>\n<p>Find $S(1803)$ rounded to 5 decimal places behind the decimal point.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 75,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

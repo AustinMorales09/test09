@@ -1,0 +1,46 @@
+{
+  "id": "5e7b9f180b6c005b0e76f08f",
+  "title": "Relational Databases: Join Operation",
+  "challengeType": 11,
+  "videoId": "jvDw3D9GKac",
+  "bilibiliIds": {
+    "aid": 804461215,
+    "bvid": "BV1Ry4y1j7tv",
+    "cid": 377542880
+  },
+  "dashedName": "relational-databases-join-operation",
+  "solutions": [],
+  "question": {
+    "text": "<p>When using a JOIN clause in an SQL statement, what does ON do?</p>",
+    "answers": [
+      {
+        "answer": "<p>It indicates what tables to perform the JOIN on.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It specifies the fields to use for the JOIN.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It indicates how the two tables are to be joined.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 51,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "6553ed69ece88d29594748aa",
+  "title": "Step 50",
+  "challengeType": 20,
+  "dashedName": "step-50",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        18,
+        20
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\ntext = 'Hello Zaira'\nshift = 3\n\ndef caesar():\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in text.lower():\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + shift) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', text)\n    print('encrypted text:', encrypted_text)\n\n",
+      "error": null,
+      "seed": "\ntext = 'Hello Zaira'\nshift = 3\n\ndef caesar():\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in text.lower():\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + shift) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', text)\n    print('encrypted text:', encrypted_text)\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call your <code>caesar</code> function. Make sure to write the function call at the beginning of the line.</p>",
+      "testString": "({ test: () => assert.match(code, /^caesar\\s*\\(\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To execute, a function need to be called (or invoked) by appending a pair of parentheses after its name, like this:</p>\n<pre><code class=\"language-py\">function_name()\n</code></pre>\n<p>At the end of your code, call your <code>caesar</code> function. Pay attention to the indentation.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 49,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

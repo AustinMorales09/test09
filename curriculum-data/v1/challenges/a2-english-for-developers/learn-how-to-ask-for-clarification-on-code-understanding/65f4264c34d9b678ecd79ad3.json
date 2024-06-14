@@ -1,0 +1,83 @@
+{
+  "id": "65f4264c34d9b678ecd79ad3",
+  "title": "Task 3",
+  "challengeType": 22,
+  "dashedName": "task-3",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Of course, Brian. I can _ what I was trying to _ there. What part of the code are you _ about?</p>",
+    "blanks": [
+      {
+        "answer": "explain",
+        "feedback": "<p>It means Sarah is offering to make something clear to Brian.</p>"
+      },
+      {
+        "answer": "achieve",
+        "feedback": "<p>It refers to what Sarah intended to accomplish with her code.</p>"
+      },
+      {
+        "answer": "uncertain",
+        "feedback": "<p>It indicates Brian is not sure about a part of the code.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 7.46,
+        "finishTimestamp": 12.66
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.2,
+        "dialogue": {
+          "text": "Of course, Brian. I can explain what I was trying to achieve there. What part of the code are you uncertain about?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Uncertain</code> means not being sure about something, like feeling unsure about a decision. The opposite is <code>certain</code>, which means being sure. For example, <code>I am certain this is the right way</code> means being sure about the direction.</p>\n<p><code>Achieve</code> means to successfully reach a goal after effort, such as <code>achieve a good result in a test</code>. In coding, <code>achieve</code> often refers to the goals a programmer wants to accomplish with their code.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

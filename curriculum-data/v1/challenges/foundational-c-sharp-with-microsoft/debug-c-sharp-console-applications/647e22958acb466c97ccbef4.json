@@ -1,0 +1,43 @@
+{
+  "id": "647e22958acb466c97ccbef4",
+  "title": "Guided Project - Debug and Handle Exceptions in a C# Console Application Using Visual Studio Code",
+  "challengeType": 19,
+  "dashedName": "guided-project-debug-and-handle-exceptions-in-a-c-sharp-console-application-using-visual-studio-code",
+  "solutions": [],
+  "question": {
+    "text": "<p>When is an <code>ArgumentOutOfRangeException</code> exception thrown?</p>",
+    "answers": [
+      {
+        "answer": "<p>An <code>ArgumentOutOfRangeException</code> exception is thrown when an attempt is made to index an array outside the bounds of the array.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>An <code>ArgumentOutOfRangeException</code> exception is thrown when the value of an argument is outside the allowable range of values as defined by the method.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>An <code>ArgumentOutOfRangeException</code> exception is thrown when an attempt is made to store a value of one type in an array of another type.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [
+    "<p>Complete the <a href=\"https://learn.microsoft.com/training/modules/guided-project-debug-handle-exceptions-c-sharp-console-application/\" target=\"_blank\" rel=\"noreferrer\">Debug and Handle Exceptions in a C# Console Application Using Visual Studio Code</a> guided project on Microsoft Learn. Then, answer the question below.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge will be partially completed on the Microsoft Learn platform. Follow these instructions to complete the challenge:</p>\n<ol>\n<li>Go to <a href=\"https://learn.microsoft.com/training/modules/guided-project-debug-handle-exceptions-c-sharp-console-application/\" target=\"_blank\" rel=\"noreferrer\">https://learn.microsoft.com/training/modules/guided-project-debug-handle-exceptions-c-sharp-console-application/</a> and complete all the tasks for the \"Guided Project - Debug and Handle Exceptions in a C# Console Application Using Visual Studio Code\" module. This is <strong>required</strong> to earn the \"Debug C# Console Applications\" trophy on Microsoft Learn, and qualify for the certification exam.</li>\n<li>When you are finished, come back and correctly answer the question below.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "debug-c-sharp-console-applications",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 13,
+  "certification": "foundational-c-sharp-with-microsoft",
+  "superBlock": "foundational-c-sharp-with-microsoft",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "C-Sharp",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

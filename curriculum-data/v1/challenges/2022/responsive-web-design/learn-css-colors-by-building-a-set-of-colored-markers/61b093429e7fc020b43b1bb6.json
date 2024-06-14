@@ -1,0 +1,73 @@
+{
+  "id": "61b093429e7fc020b43b1bb6",
+  "title": "Step 76",
+  "challengeType": 0,
+  "dashedName": "step-76",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        11,
+        15
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker red\">\n        <div class=\"sleeve\"></div>\n      </div>\n      <div class=\"marker green\">\n      </div>\n      <div class=\"marker blue\">\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker red\">\n        <div class=\"sleeve\"></div>\n      </div>\n      <div class=\"marker green\">\n      </div>\n      <div class=\"marker blue\">\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1 {\n  text-align: center;\n}\n\n.container {\n  background-color: rgb(255, 255, 255);\n  padding: 10px 0;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.sleeve {\n  width: 110px;\n  height: 25px;\n  background-color: rgba(255, 255, 255, 0.5);\n}\n\n.red {\n  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));\n}\n\n.green {\n  background: linear-gradient(#55680D, #71F53E, #116C31);\n}\n\n.blue {\n  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));\n}\n",
+      "error": null,
+      "seed": "h1 {\n  text-align: center;\n}\n\n.container {\n  background-color: rgb(255, 255, 255);\n  padding: 10px 0;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.sleeve {\n  width: 110px;\n  height: 25px;\n  background-color: rgba(255, 255, 255, 0.5);\n}\n\n.red {\n  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));\n}\n\n.green {\n  background: linear-gradient(#55680D, #71F53E, #116C31);\n}\n\n.blue {\n  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your new <code>div</code> element should be within the red marker <code>div</code>.</p>",
+      "testString": "const redMarkerChildren = [...document.querySelector('div.red')?.children];\nassert(redMarkerChildren.every(child => child?.localName === 'div') && redMarkerChildren.length === 2);"
+    },
+    {
+      "text": "<p>Your new <code>div</code> element should have a class of <code>cap</code>.</p>",
+      "testString": "const redMarkerChildren = [...document.querySelector('div.red')?.children];\nassert(redMarkerChildren.some(child => child?.classList?.contains('cap')));"
+    },
+    {
+      "text": "<p>Your cap <code>div</code> should be before the sleeve <code>div</code>.</p>",
+      "testString": "const redMarkerChildren = [...document.querySelector('div.red')?.children];\nconst cap = document.querySelector('div.cap');\nconst sleeve = document.querySelector('div.sleeve');\nassert(redMarkerChildren.indexOf(cap) < redMarkerChildren.indexOf(sleeve));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Your sleeve is looking good, but it would look even better if it was positioned more toward the right side of the marker. One way to do that is to add another element before the sleeve to push it to the right.</p>\n<p>Add a new <code>div</code> with the class <code>cap</code> before the sleeve <code>div</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 75,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

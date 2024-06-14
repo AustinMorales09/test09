@@ -1,0 +1,61 @@
+{
+  "id": "6551eebe6cbb2e6cadf9b468",
+  "title": "Step 2",
+  "challengeType": 20,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "number = 5",
+      "error": null,
+      "seed": "number = 5"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have <code>number = 5</code> in your code.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.isFalse(/number\\s*=\\s*5/.test(commentless_code))"
+    },
+    {
+      "text": "<p>You should declare a variable called <code>text</code>. Pay attention to place the variable name at the beginning of the line.</p>",
+      "testString": "assert.match(code, /^text\\s*=/m)"
+    },
+    {
+      "text": "<p>You should assign the string <code>'Hello World'</code> to your <code>text</code> variable. Remember to use either single or double quotes to enclose the string and pay attention to the letter case.</p>",
+      "testString": "assert.match(code, /^text\\s*=\\s*(\"|')Hello World\\1\\s*(#.*)?$/m)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Variables can store values of different data types. You just assigned an integer value, but if you want to represent some text, you need to assign a string. Strings are sequences of characters enclosed by single or double quotes, but you cannot start a string with a single quote and end it with a double quote or vice versa:</p>\n<pre><code class=\"language-py\">string_1 = \"I am a string\"\nstring_2 = 'I am also a string'\nstring_3 = 'This is not valid\"\n</code></pre>\n<p>Delete your <code>number</code> variable and its value. Then, declare another variable called <code>text</code> and assign the string <code>'Hello World'</code> to this variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

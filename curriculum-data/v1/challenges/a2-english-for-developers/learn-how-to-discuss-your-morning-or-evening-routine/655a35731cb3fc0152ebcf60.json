@@ -1,0 +1,45 @@
+{
+  "id": "655a35731cb3fc0152ebcf60",
+  "title": "Task 44",
+  "challengeType": 19,
+  "dashedName": "task-44",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the expert mean when saying hitting the snooze button <code>disrupts your sleep cycle</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>It makes the sleep cycle longer</code></p>",
+        "feedback": "<p><code>To disrupt</code> implies interference, not necessarily lengthening the sleep cycle.</p>"
+      },
+      {
+        "answer": "<p><code>It interrupts the natural pattern of your sleep</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>It improves the quality of sleep</code></p>",
+        "feedback": "<p><code>Disrupts</code> indicates a negative impact, not an improvement in sleep quality.</p>"
+      },
+      {
+        "answer": "<p><code>It has no effect on the sleep cycle</code></p>",
+        "feedback": "<p><code>Disrupts</code> specifically implies that there is an impact or interference with the sleep cycle.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To disrupt</code> is a verb that means to interrupt or prevent something from continuing in its usual way. For example:\n<code>Loud noises disrupt my concentration</code> (interrupts the concentration)</p>\n<p>The term <code>sleep cycle</code> refers to the natural pattern of sleep, including different stages the body goes through while sleeping. For example:</p>\n<p><code>A good sleep cycle is vital for restful sleep</code> (refers to a healthy pattern of sleep)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 45,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

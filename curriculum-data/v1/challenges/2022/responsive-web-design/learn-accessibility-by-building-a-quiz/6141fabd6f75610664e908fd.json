@@ -1,0 +1,85 @@
+{
+  "id": "6141fabd6f75610664e908fd",
+  "title": "Step 14",
+  "challengeType": 0,
+  "dashedName": "step-14",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        21,
+        25
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n      <img id=\"logo\" alt=\"freeCodeCamp\" src=\"https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg\">\n      <h1>HTML/CSS Quiz</h1>\n      <nav>\n        <ul>\n          <li><a>INFO</a></li>\n          <li><a>HTML</a></li>\n          <li><a>CSS</a></li>\n        </ul>\n      </nav>\n    </header>\n    <main>\n\n    </main>\n  </body>\n</html>\n",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n      <img id=\"logo\" alt=\"freeCodeCamp\" src=\"https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg\">\n      <h1>HTML/CSS Quiz</h1>\n      <nav>\n        <ul>\n          <li><a>INFO</a></li>\n          <li><a>HTML</a></li>\n          <li><a>CSS</a></li>\n        </ul>\n      </nav>\n    </header>\n    <main>\n\n    </main>\n  </body>\n</html>\n"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}\n\nheader {\n  width: 100%;\n  height: 50px;\n  background-color: #1b1b32;\n  display: flex;\n}\n\n#logo {\n  width: max(100px, 18vw);\n  background-color: #0a0a23;\n  aspect-ratio: 35 / 4;\n  padding: 0.4rem;\n}\n\nh1 {\n  color: #f1be32;\n  font-size: min(5vw, 1.2em);\n}\n\nnav {\n  width: 50%;\n  max-width: 300px;\n  height: 50px;\n}\n\nnav > ul {\n  display: flex;\n  justify-content: space-evenly;\n}",
+      "error": null,
+      "seed": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}\n\nheader {\n  width: 100%;\n  height: 50px;\n  background-color: #1b1b32;\n  display: flex;\n}\n\n#logo {\n  width: max(100px, 18vw);\n  background-color: #0a0a23;\n  aspect-ratio: 35 / 4;\n  padding: 0.4rem;\n}\n\nh1 {\n  color: #f1be32;\n  font-size: min(5vw, 1.2em);\n}\n\nnav {\n  width: 50%;\n  max-width: 300px;\n  height: 50px;\n}\n\nnav > ul {\n  display: flex;\n  justify-content: space-evenly;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should nest a <code>form</code> element within your <code>main</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('main > form'));"
+    },
+    {
+      "text": "<p>You should nest three <code>section</code> elements within your <code>form</code> element.</p>",
+      "testString": "assert.equal(document.querySelectorAll('main > form > section')?.length, 3);"
+    },
+    {
+      "text": "<p>You should give the <code>form</code> element an <code>action</code> attribute.</p>",
+      "testString": "assert.notEmpty(document.querySelector('main > form')?.action);"
+    },
+    {
+      "text": "<p>You should give the <code>action</code> attribute a value of <code>https://freecodecamp.org/practice-project/accessibility-quiz</code>.</p>",
+      "testString": "assert.equal(document.querySelector('main > form')?.action, 'https://freecodecamp.org/practice-project/accessibility-quiz');"
+    },
+    {
+      "text": "<p>You should give the <code>form</code> element a <code>method</code> attribute.</p>",
+      "testString": "assert.notEmpty(document.querySelector('main > form')?.method);"
+    },
+    {
+      "text": "<p>You should give the <code>form</code> element a <code>method</code> attribute with a value of <code>post</code>.</p>",
+      "testString": "assert.equal(document.querySelector('main > form')?.method?.toLowerCase(), 'post');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As this is a quiz, you will need a form for users to submit answers. You can semantically separate the content within the form using <code>section</code> elements.</p>\n<p>Within the <code>main</code> element, create a form with three nested <code>section</code> elements. Then, make the form submit to <code>https://freecodecamp.org/practice-project/accessibility-quiz</code>, using the correct method.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-accessibility-by-building-a-quiz",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

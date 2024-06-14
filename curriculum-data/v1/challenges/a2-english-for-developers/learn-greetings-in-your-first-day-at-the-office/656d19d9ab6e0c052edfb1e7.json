@@ -1,0 +1,75 @@
+{
+  "id": "656d19d9ab6e0c052edfb1e7",
+  "title": "Task 143",
+  "challengeType": 22,
+  "dashedName": "task-143",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Sophie is a great workmate. She is very kind and _.</p>",
+    "blanks": [
+      {
+        "answer": "helpful",
+        "feedback": "<p>Brian is describing Sophie's positive attributes. He's referring to her willingness to assist or support.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 18.75,
+        "finishTimestamp": 22.3
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 4.5,
+        "dialogue": {
+          "text": "Sophie is a great workmate. She's very kind and helpful.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Someone who is <code>helpful</code> is ready to give assistance or support. When you describe someone as helpful, you mean they offer help or provide solutions to problems you might face.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 146,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

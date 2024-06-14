@@ -1,0 +1,45 @@
+{
+  "id": "657b5cec02f00e23028cdbd5",
+  "title": "Task 8",
+  "challengeType": 19,
+  "dashedName": "task-8",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are daily activities?</p>",
+    "answers": [
+      {
+        "answer": "<p>Special occasions</p>",
+        "feedback": "<p>Daily activities do not refer to rare events.</p>"
+      },
+      {
+        "answer": "<p>Things people do every day</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Weekend plans</p>",
+        "feedback": "<p>Daily activities refer to everyday actions, not just weekends.</p>"
+      },
+      {
+        "answer": "<p>Travel destinations</p>",
+        "feedback": "<p>Daily activities are not places.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Daily activities</code> refer to the things that people do on a regular basis in their everyday lives, such as eating, working, studying, or exercising.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

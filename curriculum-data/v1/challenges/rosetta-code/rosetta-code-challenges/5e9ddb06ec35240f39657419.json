@@ -1,0 +1,86 @@
+{
+  "id": "5e9ddb06ec35240f39657419",
+  "title": "FizzBuzz",
+  "challengeType": 1,
+  "forumTopicId": 385370,
+  "dashedName": "fizzbuzz",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function fizzBuzz() {\n\n}",
+      "error": null,
+      "seed": "function fizzBuzz() {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function fizzBuzz() {\n    let res=[];\n    for (let i =1; i < 101; i++) {\n        if (i % 3 === 0  && i % 5 === 0) {\n            res.push(\"FizzBuzz\");\n        }\n        else if (i % 3 === 0) {\n            res.push(\"Fizz\");\n        }\n        else if (i % 5 === 0) {\n            res.push(\"Buzz\");\n        } \n        else {\n            res.push(i);\n        }\n    }\n    return res;\n}",
+        "error": null,
+        "seed": "function fizzBuzz() {\n    let res=[];\n    for (let i =1; i < 101; i++) {\n        if (i % 3 === 0  && i % 5 === 0) {\n            res.push(\"FizzBuzz\");\n        }\n        else if (i % 3 === 0) {\n            res.push(\"Fizz\");\n        }\n        else if (i % 5 === 0) {\n            res.push(\"Buzz\");\n        } \n        else {\n            res.push(i);\n        }\n    }\n    return res;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>fizzBuzz</code> should be a function.</p>",
+      "testString": "assert(typeof fizzBuzz == 'function');"
+    },
+    {
+      "text": "<p><code>fizzBuzz()</code> should return an Array.</p>",
+      "testString": "assert(Array.isArray(fizzBuzz()) == true);"
+    },
+    {
+      "text": "<p>Numbers divisible by only 3 should return <code>\"Fizz\"</code>.</p>",
+      "testString": "assert.equal(fizzBuzz()[2], 'Fizz');"
+    },
+    {
+      "text": "<p>Numbers divisible by only 5 should return <code>\"Buzz\"</code>.</p>",
+      "testString": "assert.equal(fizzBuzz()[99], 'Buzz');"
+    },
+    {
+      "text": "<p>Numbers divisible by both 3 and 5 should return <code>\"FizzBuzz\"</code>.</p>",
+      "testString": "assert.equal(fizzBuzz()[89], 'FizzBuzz');"
+    },
+    {
+      "text": "<p>Numbers not divisible by either 3 or 5 should return the number itself.</p>",
+      "testString": "assert.equal(fizzBuzz()[12], 13);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Write a program that generates an array of integers from 1 to 100 (inclusive). But:</p>\n<ul>\n    <li>for multiples of 3, add <code>\"Fizz\"</code> to the array instead of the number</li>\n    <li>for multiples of 5, add <code>\"Buzz\"</code> to the array instead of the number</li>\n    <li>for multiples of 3 and 5, add <code>\"FizzBuzz\"</code> to the array instead of the number</li>\n</ul>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Your program should return an array containing the results based on the rules above.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 52,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

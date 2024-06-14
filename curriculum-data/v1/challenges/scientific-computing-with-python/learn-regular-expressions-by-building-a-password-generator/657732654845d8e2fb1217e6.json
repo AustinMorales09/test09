@@ -1,0 +1,49 @@
+{
+  "id": "657732654845d8e2fb1217e6",
+  "title": "Step 62",
+  "challengeType": 20,
+  "dashedName": "step-62",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        29,
+        31
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n       \n        constraints = [\n            (nums, r'\\d'),\n            (lowercase, r'[a-z]'),\n            (uppercase, r'[A-Z]'),            \n            (special_chars, fr'[{symbols}]')            \n        ]\n\n        # Check constraints\n        count = 0\n        if all([]):\n            break\n    \n    return password\n\n# new_password = generate_password(8)\n# print(new_password)",
+      "error": null,
+      "seed": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n       \n        constraints = [\n            (nums, r'\\d'),\n            (lowercase, r'[a-z]'),\n            (uppercase, r'[A-Z]'),            \n            (special_chars, fr'[{symbols}]')            \n        ]\n\n        # Check constraints\n        count = 0\n        if all([]):\n            break\n    \n    return password\n\n# new_password = generate_password(8)\n# print(new_password)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should pass <code>[constraint &#x3C;= len(re.findall(pattern, password)) for constraint, pattern in constraints]</code> to the <code>all()</code> function.</p>",
+      "testString": "({ test: () => assert(runPython(`\n  _Node(_code).find_function(\"generate_password\").find_while(\"True\").find_bodies()[0].find_ifs()[0].find_conditions()[0].is_equivalent(\"all([constraint <= len(re.findall(pattern, password)) for constraint, pattern in constraints])\")\n`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Right now, <code>all()</code> is taking an empty list as the argument. Populate that empty list using the comprehension syntax so that the list stores the results of evaluating the expression <code>constraint &#x3C;= len(re.findall(pattern, password))</code> for each <code>constraint</code>-<code>pattern</code> tuple in the <code>constraints</code> list.</p>\n<p>In this way, you'll break out of the <code>while</code> loop only after all the requirements are fulfilled.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 61,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

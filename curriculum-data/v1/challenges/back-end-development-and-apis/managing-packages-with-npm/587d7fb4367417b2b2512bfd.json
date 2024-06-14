@@ -1,0 +1,38 @@
+{
+  "id": "587d7fb4367417b2b2512bfd",
+  "title": "Add Keywords to Your package.json",
+  "challengeType": 2,
+  "forumTopicId": 301526,
+  "dashedName": "add-keywords-to-your-package-json",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>package.json should have a valid \"keywords\" key</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/package.json').then(\n    (data) => {\n      var packJson = JSON.parse(data);\n      assert(packJson.keywords, '\"keywords\" is missing');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>\"keywords\" field should be an Array</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/package.json').then(\n    (data) => {\n      var packJson = JSON.parse(data);\n      assert.isArray(packJson.keywords, '\"keywords\" is not an array');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>\"keywords\" should include \"freecodecamp\"</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/package.json').then(\n    (data) => {\n      var packJson = JSON.parse(data);\n      assert.include(\n        packJson.keywords,\n        'freecodecamp',\n        '\"keywords\" does not include \"freecodecamp\"'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>keywords</code> field is where you can describe your project using related keywords. Here's an example:</p>\n<pre><code class=\"language-json\">\"keywords\": [ \"descriptive\", \"related\", \"words\" ],\n</code></pre>\n<p>As you can see, this field is structured as an array of double-quoted strings.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add an array of suitable strings to the <code>keywords</code> field in the package.json file of your project.</p>\n<p>One of the keywords should be \"freecodecamp\".</p>\n</section>",
+  "translationPending": false,
+  "block": "managing-packages-with-npm",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,75 @@
+{
+  "id": "65ff086669d84512c7d132f1",
+  "title": "Task 4",
+  "challengeType": 22,
+  "dashedName": "task-4",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It's all about teaching machines to think and learn _ humans.</p>",
+    "blanks": [
+      {
+        "answer": "like",
+        "feedback": "<p>They teach machines to think in a similar way to humans. What word indicates that similarity in this context?</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.42,
+        "finishTimestamp": 9.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.5,
+        "dialogue": {
+          "text": "It's all about teaching machines to think and learn like humans.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>like</code> is a preposition used to describe the similarity between two things, people, or concepts. It indicates that there are shared qualities or characteristics between the compared elements. It’s commonly used in comparisons to highlight similarities. Example: <code>Her eyes are blue like the sky.</code></p>\n<p>Fill in the blank with proper word.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

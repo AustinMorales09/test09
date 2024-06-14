@@ -1,0 +1,79 @@
+{
+  "id": "56533eb9ac21ba0edf2244c2",
+  "title": "Return a Value from a Function with Return",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cy87wue",
+  "forumTopicId": 18271,
+  "dashedName": "return-a-value-from-a-function-with-return",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function timesFive(num) {\n  return num * 5;\n}\ntimesFive(10);",
+        "error": null,
+        "seed": "function timesFive(num) {\n  return num * 5;\n}\ntimesFive(10);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>timesFive</code> should be a function</p>",
+      "testString": "assert(typeof timesFive === 'function');"
+    },
+    {
+      "text": "<p><code>timesFive(5)</code> should return <code>25</code></p>",
+      "testString": "assert(timesFive(5) === 25);"
+    },
+    {
+      "text": "<p><code>timesFive(2)</code> should return <code>10</code></p>",
+      "testString": "assert(timesFive(2) === 10);"
+    },
+    {
+      "text": "<p><code>timesFive(0)</code> should return <code>0</code></p>",
+      "testString": "assert(timesFive(0) === 0);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>We can pass values into a function with <dfn>arguments</dfn>. You can use a <code>return</code> statement to send a value back out of a function.</p>\n<p><strong>Example</strong></p>\n<pre><code class=\"language-js\">function plusThree(num) {\n  return num + 3;\n}\n\nconst answer = plusThree(5);\n</code></pre>\n<p><code>answer</code> has the value <code>8</code>.</p>\n<p><code>plusThree</code> takes an <dfn>argument</dfn> for <code>num</code> and returns a value equal to <code>num + 3</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Create a function <code>timesFive</code> that accepts one argument, multiplies it by <code>5</code>, and returns the new value.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 50,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

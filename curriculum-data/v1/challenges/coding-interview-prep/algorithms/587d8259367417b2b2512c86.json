@@ -1,0 +1,81 @@
+{
+  "id": "587d8259367417b2b2512c86",
+  "title": "Implement Insertion Sort",
+  "challengeType": 1,
+  "forumTopicId": 301613,
+  "dashedName": "implement-insertion-sort",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "function isSorted(a){\n  for(let i = 0; i < a.length - 1; i++)\n    if(a[i] > a[i + 1])\n      return false;\n  return true;\n}\n\nfunction isBuiltInSortUsed(){\n  let sortUsed = false;\n  Array.prototype.sort = () => sortUsed = true;\n  insertionSort([0, 1]);\n  return !sortUsed;\n}",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function insertionSort(array) {\n  // Only change code below this line\n  return array;\n  // Only change code above this line\n}",
+      "error": null,
+      "seed": "function insertionSort(array) {\n  // Only change code below this line\n  return array;\n  // Only change code above this line\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function insertionSort (array) {\n  for (let currentIndex = 0; currentIndex < array.length; currentIndex++) {\n    let current = array[currentIndex];\n    let j = currentIndex - 1;\n    while (j > -1 && array[j] > current) {\n      array[j + 1] = array[j];\n      j--;\n    }\n    array[j + 1] = current;\n  }\n  return array;\n}",
+        "error": null,
+        "seed": "function insertionSort (array) {\n  for (let currentIndex = 0; currentIndex < array.length; currentIndex++) {\n    let current = array[currentIndex];\n    let j = currentIndex - 1;\n    while (j > -1 && array[j] > current) {\n      array[j + 1] = array[j];\n      j--;\n    }\n    array[j + 1] = current;\n  }\n  return array;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>insertionSort</code> should be a function.</p>",
+      "testString": "assert(typeof insertionSort == 'function');"
+    },
+    {
+      "text": "<p><code>insertionSort</code> should return a sorted array (least to greatest).</p>",
+      "testString": "assert(\n  isSorted(\n    insertionSort([\n      1,\n      4,\n      2,\n      8,\n      345,\n      123,\n      43,\n      32,\n      5643,\n      63,\n      123,\n      43,\n      2,\n      55,\n      1,\n      234,\n      92\n    ])\n  )\n);"
+    },
+    {
+      "text": "<p><code>insertionSort([1,4,2,8,345,123,43,32,5643,63,123,43,2,55,1,234,92])</code> should return an array that is unchanged except for order.</p>",
+      "testString": "assert.sameMembers(\n  insertionSort([\n    1,\n    4,\n    2,\n    8,\n    345,\n    123,\n    43,\n    32,\n    5643,\n    63,\n    123,\n    43,\n    2,\n    55,\n    1,\n    234,\n    92\n  ]),\n  [1, 4, 2, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234, 92]\n);"
+    },
+    {
+      "text": "<p><code>insertionSort([5, 4, 33, 2, 8])</code> should return <code>[2, 4, 5, 8, 33]</code>.</p>",
+      "testString": "assert.deepEqual(insertionSort([5, 4, 33, 2, 8]), [2, 4, 5, 8, 33])"
+    },
+    {
+      "text": "<p><code>insertionSort</code> should not use the built-in <code>.sort()</code> method.</p>",
+      "testString": "assert(isBuiltInSortUsed());"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The next sorting method we'll look at is insertion sort. This method works by building up a sorted array at the beginning of the list. It begins the sorted array with the first element. Then it inspects the next element and swaps it backwards into the sorted array until it is in sorted position. It continues iterating through the list and swapping new items backwards into the sorted portion until it reaches the end. This algorithm has quadratic time complexity in the average and worst cases.</p>\n<p><strong>Instructions:</strong> Write a function <code>insertionSort</code> which takes an array of integers as input and returns an array of these integers in sorted order from least to greatest.</p>\n</section>",
+  "translationPending": false,
+  "block": "algorithms",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

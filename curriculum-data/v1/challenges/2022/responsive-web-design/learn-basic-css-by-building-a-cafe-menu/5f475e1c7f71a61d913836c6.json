@@ -1,0 +1,73 @@
+{
+  "id": "5f475e1c7f71a61d913836c6",
+  "title": "Step 90",
+  "challengeType": 0,
+  "dashedName": "step-90",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        34,
+        36
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p class=\"established\">Est. 2020</p>\n        <hr>\n        <section>\n          <h2>Coffee</h2>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg\" alt=\"coffee icon\"/>\n          <article class=\"item\">\n            <p class=\"flavor\">French Vanilla</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Caramel Macchiato</p><p class=\"price\">3.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Pumpkin Spice</p><p class=\"price\">3.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Hazelnut</p><p class=\"price\">4.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Mocha</p><p class=\"price\">4.50</p>\n          </article>\n        </section>\n        <section>\n          <h2>Desserts</h2>\n          <article class=\"item\">\n            <p class=\"dessert\">Donut</p><p class=\"price\">1.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cherry Pie</p><p class=\"price\">2.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cheesecake</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cinnamon Roll</p><p class=\"price\">2.50</p>\n          </article>\n        </section>\n      </main>\n      <hr class=\"bottom-line\">\n      <footer>\n        <p>\n          <a href=\"https://www.freecodecamp.org\" target=\"_blank\">Visit our website</a>\n        </p>\n        <p class=\"address\">123 Free Code Camp Drive</p>\n      </footer>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p class=\"established\">Est. 2020</p>\n        <hr>\n        <section>\n          <h2>Coffee</h2>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg\" alt=\"coffee icon\"/>\n          <article class=\"item\">\n            <p class=\"flavor\">French Vanilla</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Caramel Macchiato</p><p class=\"price\">3.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Pumpkin Spice</p><p class=\"price\">3.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Hazelnut</p><p class=\"price\">4.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Mocha</p><p class=\"price\">4.50</p>\n          </article>\n        </section>\n        <section>\n          <h2>Desserts</h2>\n          <article class=\"item\">\n            <p class=\"dessert\">Donut</p><p class=\"price\">1.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cherry Pie</p><p class=\"price\">2.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cheesecake</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cinnamon Roll</p><p class=\"price\">2.50</p>\n          </article>\n        </section>\n      </main>\n      <hr class=\"bottom-line\">\n      <footer>\n        <p>\n          <a href=\"https://www.freecodecamp.org\" target=\"_blank\">Visit our website</a>\n        </p>\n        <p class=\"address\">123 Free Code Camp Drive</p>\n      </footer>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n  font-family: sans-serif;\n  padding: 20px;\n}\n\nh1 {\n  font-size: 40px;\n  margin-top: 0;\n  margin-bottom: 15px;\n}\n\nh2 {\n  font-size: 30px;\n}\n\n.established {\n  font-style: italic;\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 20px;\n  max-width: 500px;\n}\n\nimg {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n}\n\nhr {\n  height: 2px;\n  background-color: brown;\n  border-color: brown;\n}\n\n.bottom-line {\n  margin-top: 25px;\n}\n\nh1, h2 {\n  font-family: Impact, serif;\n}\n\n.item p {\n  display: inline-block;\n  margin-top: 5px;\n  margin-bottom: 5px;\n  font-size: 18px;\n}\n\n.flavor, .dessert {\n  text-align: left;\n  width: 75%;\n}\n\n.price {\n  text-align: right;\n  width: 25%;\n}\n\n/* FOOTER */\n\nfooter {\n  font-size: 14px;\n}\n\n.address {\n  margin-bottom: 5px;\n}\n\na {\n  color: black;\n}\n\na:visited {\n  color: black;\n}\n\na:hover {\n  color: brown;\n}\n\na:active {\n  color: brown;\n}",
+      "error": null,
+      "seed": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n  font-family: sans-serif;\n  padding: 20px;\n}\n\nh1 {\n  font-size: 40px;\n  margin-top: 0;\n  margin-bottom: 15px;\n}\n\nh2 {\n  font-size: 30px;\n}\n\n.established {\n  font-style: italic;\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 20px;\n  max-width: 500px;\n}\n\nimg {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n}\n\nhr {\n  height: 2px;\n  background-color: brown;\n  border-color: brown;\n}\n\n.bottom-line {\n  margin-top: 25px;\n}\n\nh1, h2 {\n  font-family: Impact, serif;\n}\n\n.item p {\n  display: inline-block;\n  margin-top: 5px;\n  margin-bottom: 5px;\n  font-size: 18px;\n}\n\n.flavor, .dessert {\n  text-align: left;\n  width: 75%;\n}\n\n.price {\n  text-align: right;\n  width: 25%;\n}\n\n/* FOOTER */\n\nfooter {\n  font-size: 14px;\n}\n\n.address {\n  margin-bottom: 5px;\n}\n\na {\n  color: black;\n}\n\na:visited {\n  color: black;\n}\n\na:hover {\n  color: brown;\n}\n\na:active {\n  color: brown;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add a second <code>img</code> element.</p>",
+      "testString": "assert($('img').length === 2);"
+    },
+    {
+      "text": "<p>Your new <code>img</code> element should have a <code>src</code> of <code>https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg</code>.</p>",
+      "testString": "assert($('img').last().attr('src') === 'https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg');"
+    },
+    {
+      "text": "<p>Your new <code>img</code> element should have an <code>alt</code> of <code>pie icon</code>.</p>",
+      "testString": "assert($('img').last().attr('alt').match(/pie icon/i));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Add one last image under the <code>Desserts</code> heading using the url <code>https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg</code>. Give the image an <code>alt</code> value of <code>pie icon</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 89,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

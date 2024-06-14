@@ -1,0 +1,65 @@
+{
+  "id": "5900f4861000cf542c50ff99",
+  "title": "Problem 282: The Ackermann function",
+  "challengeType": 1,
+  "forumTopicId": 301933,
+  "dashedName": "problem-282-the-ackermann-function",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function ackermanFunction() {\n\n  return true;\n}\n\nackermanFunction();",
+      "error": null,
+      "seed": "function ackermanFunction() {\n\n  return true;\n}\n\nackermanFunction();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>ackermanFunction()</code> should return <code>1098988351</code>.</p>",
+      "testString": "assert.strictEqual(ackermanFunction(), 1098988351);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>For non-negative integers $m$, $n$, the Ackermann function $A(m, n)$ is defined as follows:</p>\n<p>$$A(m, n) =\n\\begin{cases}\nn + 1                 &#x26; \\text{if $m = 0$}             \\\\\nA(m - 1, 1)           &#x26; \\text{if $m > 0$ and $n = 0$} \\\\\nA(m - 1, A(m, n - 1)) &#x26; \\text{if $m > 0$ and $n > 0$}\n\\end{cases}$$</p>\n<p>For example $A(1, 0) = 2$, $A(2, 2) = 7$ and $A(3, 4) = 125$.</p>\n<p>Find $\\displaystyle\\sum_{n = 0}^6 A(n, n)$ and give your answer mod ${14}^8$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 81,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

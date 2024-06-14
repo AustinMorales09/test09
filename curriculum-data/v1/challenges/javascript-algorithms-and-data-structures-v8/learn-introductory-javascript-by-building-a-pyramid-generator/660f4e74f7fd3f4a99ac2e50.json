@@ -1,0 +1,61 @@
+{
+  "id": "660f4e74f7fd3f4a99ac2e50",
+  "title": "Step 105",
+  "challengeType": 1,
+  "dashedName": "step-105",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        21,
+        28
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\nconst numbers = [1, 2, 3];\n\n\nconst unshifted = numbers.unshift(5);\nconsole.log(unshifted);\nconsole.log(numbers);\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\nconst numbers = [1, 2, 3];\n\n\nconst unshifted = numbers.unshift(5);\nconsole.log(unshifted);\nconsole.log(numbers);\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>const</code> to declare a <code>shifted</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+shifted/);"
+    },
+    {
+      "text": "<p>You should call <code>.shift()</code> on your <code>numbers</code> array.</p>",
+      "testString": "assert.deepEqual(numbers, [5, 2, 3]);"
+    },
+    {
+      "text": "<p>You should assign the result of your <code>.shift()</code> call to your <code>shifted</code> variable.</p>",
+      "testString": "assert.equal(shifted, 1);"
+    },
+    {
+      "text": "<p>You should log your <code>shifted</code> variable.</p>",
+      "testString": "assert.match(code, /console\\.log\\(\\s*shifted\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Notice that like <code>.push()</code>, <code>.unshift()</code> returns the new length of the array after the element is added.</p>\n<p>Arrays also have a <code>.shift()</code> method. This will remove the <strong>first</strong> element of the array, unlike <code>.pop()</code> which removes the last element. Here is an example of the <code>.shift()</code> method:</p>\n<pre><code class=\"language-js\">const numbers = [1, 2, 3];\nnumbers.shift();\n</code></pre>\n<p>The <code>numbers</code> array would be <code>[2, 3]</code>.</p>\n<p>Declare a <code>shifted</code> variable, assign it the result of calling <code>.shift()</code> on your <code>numbers</code> array, and print the variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 104,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

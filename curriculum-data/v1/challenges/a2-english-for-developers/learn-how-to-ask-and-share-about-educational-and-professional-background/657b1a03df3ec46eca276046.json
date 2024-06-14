@@ -1,0 +1,79 @@
+{
+  "id": "657b1a03df3ec46eca276046",
+  "title": "Task 25",
+  "challengeType": 22,
+  "dashedName": "task-25",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Yes, our team _ involved in a project to _ the company's website.</p>",
+    "blanks": [
+      {
+        "answer": "was",
+        "feedback": "<p>This is the past tense form of <code>is</code>, used for singular subjects.</p>"
+      },
+      {
+        "answer": "redesign",
+        "feedback": "<p>This word means to design something again in a different way.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Second Candidate",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 28.12,
+        "finishTimestamp": 32.2
+      }
+    },
+    "commands": [
+      {
+        "character": "Second Candidate",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Second Candidate",
+        "startTime": 1,
+        "finishTime": 5.08,
+        "dialogue": {
+          "text": "Yes, our team was involved in a project to redesign the company's website.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Second Candidate",
+        "opacity": 0,
+        "startTime": 5.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the dialogue and fill in the blanks with the correct words.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

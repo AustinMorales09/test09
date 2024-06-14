@@ -1,0 +1,53 @@
+{
+  "id": "6610c8cfe4cf4d278e35c156",
+  "title": "Step 60",
+  "challengeType": 1,
+  "dashedName": "step-60",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        10
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow() {\n\n}\nconst call = padRow();\nconsole.log(call);\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow() {\n\n}\nconst call = padRow();\nconsole.log(call);\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have a <code>call</code> declaration.</p>",
+      "testString": "assert.notMatch(code, /const\\s*call/);"
+    },
+    {
+      "text": "<p>You should not log your <code>call</code> variable.</p>",
+      "testString": "assert.notMatch(code, /call/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As expected, your function now returns <code>undefined</code> again. Your <code>call</code> variable is not necessary any more, so remove the <code>call</code> declaration and the <code>console.log</code> for the <code>call</code> variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 59,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

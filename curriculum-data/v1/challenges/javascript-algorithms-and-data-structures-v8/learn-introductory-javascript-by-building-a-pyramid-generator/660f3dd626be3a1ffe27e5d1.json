@@ -1,0 +1,57 @@
+{
+  "id": "660f3dd626be3a1ffe27e5d1",
+  "title": "Step 74",
+  "challengeType": 1,
+  "dashedName": "step-74",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        9,
+        13
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\nfor (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\nfor (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should start a multi-line comment with <code>/*</code>.</p>",
+      "testString": "assert.match(code, /\\/\\*/);"
+    },
+    {
+      "text": "<p>You should end a multi-line comment with <code>*/</code>.</p>",
+      "testString": "assert.match(code, /\\*\\//);"
+    },
+    {
+      "text": "<p>Your entire <code>for</code> loop should be commented out.</p>",
+      "testString": "const stripped = __helpers.removeJSComments(code);\nassert.lengthOf(stripped.match(/for/g), 1);\nassert.notMatch(stripped, /rows\\.push/);\nassert.notMatch(stripped, /i <= count/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>JavaScript also has support for multi-line comments. A multi-line comment starts with <code>/*</code> and ends with <code>*/</code>.</p>\n<p>Unlike a single-line comment, a multi-line comment will encapsulate multiple lines.</p>\n<p>Use <code>/*</code> and <code>*/</code> to turn your current <code>for</code> loop, including the body, into a multi-line comment.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 73,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

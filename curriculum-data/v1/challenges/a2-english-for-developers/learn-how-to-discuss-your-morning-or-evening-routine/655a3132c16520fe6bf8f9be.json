@@ -1,0 +1,45 @@
+{
+  "id": "655a3132c16520fe6bf8f9be",
+  "title": "Task 41",
+  "challengeType": 19,
+  "dashedName": "task-41",
+  "solutions": [],
+  "question": {
+    "text": "<p>In the context of an alarm clock, what does <code>hitting the snooze button multiple times</code> imply?</p>",
+    "answers": [
+      {
+        "answer": "<p>Setting multiple alarms at once</p>",
+        "feedback": "<p>While this could be a strategy, <code>multiple times</code> in this context refers to repeatedly delaying the alarm.</p>"
+      },
+      {
+        "answer": "<p>Checking the time frequently</p>",
+        "feedback": "<p>Hitting the snooze button is about delaying the alarm, not checking the time.</p>"
+      },
+      {
+        "answer": "<p>Delaying the alarm several times before getting up</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Turning off the alarm after it rings once</p>",
+        "feedback": "<p><code>Multiple times</code> implies the action is repeated, not done just once.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Multiple times</code> means many times or on several occasions. It's used to indicate that an action or event happens repeatedly. For example:</p>\n<p><code>He checked his phone multiple times during the meeting</code> (indicates he checked his phone many times)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

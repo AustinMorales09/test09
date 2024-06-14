@@ -1,0 +1,88 @@
+{
+  "id": "657ca996f3fdf683f408f632",
+  "title": "Task 32",
+  "challengeType": 19,
+  "dashedName": "task-32",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>several</code> imply in Bob's phrase?</p>",
+    "answers": [
+      {
+        "answer": "<p>Working on two projects.</p>",
+        "feedback": "<p><code>Several</code> usually means more than two.</p>"
+      },
+      {
+        "answer": "<p>Working on a large number of projects.</p>",
+        "feedback": "<p><code>Several</code> implies more than a few but not a very large number.</p>"
+      },
+      {
+        "answer": "<p>Working on a few projects, more than two but not many.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Working on one major project.</p>",
+        "feedback": "<p><code>Several</code> indicates multiple items, not just one.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.96,
+        "finishTimestamp": 18.6
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.64,
+        "dialogue": {
+          "text": "She's been with the company for five years now working on several projects.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5.14
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Several</code> is a word used to indicate an unspecified quantity that is more than two but not many. It's often used when the exact number is not important or not known.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 33,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

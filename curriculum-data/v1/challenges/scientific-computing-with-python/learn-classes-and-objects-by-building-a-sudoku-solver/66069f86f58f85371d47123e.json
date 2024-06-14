@@ -1,0 +1,49 @@
+{
+  "id": "66069f86f58f85371d47123e",
+  "title": "Step 11",
+  "challengeType": 20,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        18
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    def __init__(self, board):\n        pass\n\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)",
+      "error": null,
+      "seed": "class Board:\n    def __init__(self, board):\n        pass\n\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should delete <code>pass</code> and assign the <code>board</code> parameter to <code>self.board</code> inside the <code>__init__</code> method.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"Board\").find_function(\"__init__\").find_body().is_equivalent(\"self.board = board\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>An attribute is a variable associated with an object, which is used to store data as regular variables.</p>\n<p>Inside the <code>__init__</code> method, assign the <code>board</code> parameter (which is passed when creating an instance of the <code>Board</code> class) to an instance attribute <code>board</code> using <code>self.board</code>.</p>\n<p><code>self.board</code> refers to the <code>board</code> attribute of the instance of the class. It's a variable that belongs to the object created from the <code>Board</code> class.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

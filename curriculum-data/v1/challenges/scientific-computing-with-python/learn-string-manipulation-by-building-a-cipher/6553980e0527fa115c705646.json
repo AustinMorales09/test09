@@ -1,0 +1,57 @@
+{
+  "id": "6553980e0527fa115c705646",
+  "title": "Step 42",
+  "challengeType": 20,
+  "dashedName": "step-42",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        13
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        print('space!')\n    index = alphabet.find(char)\n    new_index = index + shift\n    encrypted_text += alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        print('space!')\n    index = alphabet.find(char)\n    new_index = index + shift\n    encrypted_text += alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have <code>print('space!')</code> in your code.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.notMatch(commentless_code, /print\\s*\\(\\s*(\"|')space!\\1\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should use the <code>+=</code> operator to add <code>char</code> to the current value of <code>encrypted_text</code> inside your new <code>if</code> statement.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);    \nconst {block_body} = __helpers.python.getBlock(commentless_code, /if\\s+char\\s*==\\s*(\"|')\\s\\3\\s*/);\nassert(block_body.match(/encrypted_text\\s*\\+=\\s*char/));"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now, instead of printing <code>'space!'</code>, use the addition assignment operator to add the space (currently stored in <code>char</code>) to the current value of <code>encrypted_text</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 41,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

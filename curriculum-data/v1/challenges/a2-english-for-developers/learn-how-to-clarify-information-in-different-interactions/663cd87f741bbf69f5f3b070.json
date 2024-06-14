@@ -1,0 +1,97 @@
+{
+  "id": "663cd87f741bbf69f5f3b070",
+  "title": "Task 52",
+  "challengeType": 19,
+  "dashedName": "task-52",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the odd thing in the project details Maria mentions?</p>",
+    "answers": [
+      {
+        "answer": "<p>The project is too expensive</p>",
+        "feedback": "<p>Money is not mentioned in her comment.</p>"
+      },
+      {
+        "answer": "<p>The times Brian mentioned in a previous conversation are different from what is in the documentation</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>There are not enough people and too many tasks</p>",
+        "feedback": "<p>She doesn't comment about the allocation of people to the tasks.</p>"
+      },
+      {
+        "answer": "<p>The team will only be able to wake up, work, and sleep every day during the project</p>",
+        "feedback": "<p>Waking up and sleeping were only mentioned as examples. Maria does not make comments about that.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 8
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 5.06,
+        "dialogue": {
+          "text": "Hey Brian, I was looking at the project details and I noticed something a bit odd.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "startTime": 5.52,
+        "finishTime": 9,
+        "dialogue": {
+          "text": "The timeline you mentioned doesn't match what I found in the documentation.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 9.5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Maria and Brian had a conversation about this project before. In it, Brian gave Maria a <code>timeline</code>. A <code>timeline</code> is a list of events in the order they happen. For example, you can make a <code>timeline</code> of your day, starting with the moment when you wake up and ending with the moment when you go to sleep. It helps you see what happens first, next, and last. In projects, it is important to have a <code>timeline</code> to understand when and in what sequence certain tasks happen.</p>\n<p><code>To match</code> means that one piece of information is the same as another piece of information. If two things <code>don't match</code>, they are not the same. For example, if your friend's name is spelled differently on two lists, his name on the first list <code>doesn't match</code> his name on the second. It means they are different from each other.</p>\n<p>The <code>documentation</code> of a project is a collection of papers or files that give important information about it. It includes details like what the project is about, the steps to complete it, and any rules or guidelines to follow. It helps everyone involved in the project understand what to do and how to do it.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 55,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

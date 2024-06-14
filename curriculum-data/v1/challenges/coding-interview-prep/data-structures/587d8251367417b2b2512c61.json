@@ -1,0 +1,70 @@
+{
+  "id": "587d8251367417b2b2512c61",
+  "title": "Work with Nodes in a Linked List",
+  "challengeType": 1,
+  "forumTopicId": 301721,
+  "dashedName": "work-with-nodes-in-a-linked-list",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "var Node = function(element) {\n  this.element = element;\n  this.next = null;\n};\nvar Kitten = new Node('Kitten');\nvar Puppy = new Node('Puppy');\n\nKitten.next = Puppy;\n// Only change code below this line",
+      "error": null,
+      "seed": "var Node = function(element) {\n  this.element = element;\n  this.next = null;\n};\nvar Kitten = new Node('Kitten');\nvar Puppy = new Node('Puppy');\n\nKitten.next = Puppy;\n// Only change code below this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>Puppy</code> node should have a reference to a <code>Cat</code> node.</p>",
+      "testString": "assert(Puppy.next.element === 'Cat');"
+    },
+    {
+      "text": "<p>Your <code>Cat</code> node should have a reference to a <code>Dog</code> node.</p>",
+      "testString": "assert(Cat.next.element === 'Dog');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Another common data structure you'll run into in computer science is the <dfn>linked list</dfn>. A linked list is a linear collection of data elements, called 'nodes', each of which points to the next. Each <dfn>node</dfn> in a linked list contains two key pieces of information: the <code>element</code> itself, and a reference to the next <code>node</code>.</p>\n<p>Imagine that you are in a conga line. You have your hands on the next person in the line, and the person behind you has their hands on you. You can see the person straight ahead of you, but they are blocking the view of the other people ahead in line. A node is just like a person in a conga line: they know who they are and they can only see the next person in line, but they are not aware of the other people ahead or behind them.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>In our code editor, we've created two nodes, <code>Kitten</code> and <code>Puppy</code>, and we've manually connected the <code>Kitten</code> node to the <code>Puppy</code> node.</p>\n<p>Create a <code>Cat</code> and <code>Dog</code> node and manually add them to the line.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-structures",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,29 @@
+{
+  "id": "589a8eb3f9fc0f352b528e72",
+  "title": "Implementation of Social Authentication III",
+  "challengeType": 2,
+  "forumTopicId": 301558,
+  "dashedName": "implementation-of-social-authentication-iii",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>GitHub strategy setup should be complete.</p>",
+      "testString": "async (getUserInput) => {\n  const url = new URL(\"/_api/auth.js\", getUserInput(\"url\"));\n  const res = await fetch(url);\n  const data = await res.text();\n  assert.match(\n    data,\n    /GitHubStrategy[^]*myDataBase/gi,\n    'Strategy should use now use the database to search for the user'\n  );\n  assert.match(\n    data,\n    /GitHubStrategy[^]*cb/gi,\n    'Strategy should return the callback function \"cb\"'\n  );\n}"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The final part of the strategy is handling the profile returned from GitHub. We need to load the user's database object if it exists, or create one if it doesn't, and populate the fields from the profile, then return the user's object. GitHub supplies us a unique <em>id</em> within each profile which we can use to search with to serialize the user with (already implemented). Below is an example implementation you can use in your project--it goes within the function that is the second argument for the new strategy, right below where <code>console.log(profile);</code> currently is:</p>\n<pre><code class=\"language-js\">myDataBase.findOneAndUpdate(\n  { id: profile.id },\n  {\n    $setOnInsert: {\n      id: profile.id,\n      username: profile.username,\n      name: profile.displayName || 'John Doe',\n      photo: profile.photos[0].value || '',\n      email: Array.isArray(profile.emails)\n        ? profile.emails[0].value\n        : 'No public email',\n      created_on: new Date(),\n      provider: profile.provider || ''\n    },\n    $set: {\n      last_login: new Date()\n    },\n    $inc: {\n      login_count: 1\n    }\n  },\n  { upsert: true, new: true },\n  (err, doc) => {\n    return cb(null, doc.value);\n  }\n);\n</code></pre>\n<p><code>findOneAndUpdate</code> allows you to search for an object and update it. If the object doesn't exist, it will be inserted and made available to the callback function. In this example, we always set <code>last_login</code>, increment the <code>login_count</code> by <code>1</code>, and only populate the majority of the fields when a new object (new user) is inserted. Notice the use of default values. Sometimes a profile returned won't have all the information filled out or the user will keep it private. In this case, you handle it to prevent an error.</p>\n<p>You should be able to login to your app now. Try it!</p>\n<p>Submit your page when you think you've got it right. If you're running into errors, you can <a href=\"https://forum.freecodecamp.org/t/advanced-node-and-express/567135#implementation-of-social-authentication-iii-5\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">check out the project completed up to this point</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "advanced-node-and-express",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

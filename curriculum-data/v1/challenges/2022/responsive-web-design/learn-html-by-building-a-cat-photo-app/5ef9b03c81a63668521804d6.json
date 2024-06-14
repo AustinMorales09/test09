@@ -1,0 +1,61 @@
+{
+  "id": "5ef9b03c81a63668521804d6",
+  "title": "Step 35",
+  "challengeType": 0,
+  "dashedName": "step-35",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        34,
+        37
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n          <figcaption>Cats <em>love</em> lasagna.</figcaption>  \n        </figure>\n        <h3>Top 3 things cats hate:</h3>\n        <ol>\n          <li>flea treatment</li>\n          <li>thunder</li>\n          <li>other cats</li>\n        </ol>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg\" alt=\"Five cats looking around a field.\">\n          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  \n        </figure>\n      </section>\n      <section>\n        <h2>Cat Form</h2>\n        \n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n          <figcaption>Cats <em>love</em> lasagna.</figcaption>  \n        </figure>\n        <h3>Top 3 things cats hate:</h3>\n        <ol>\n          <li>flea treatment</li>\n          <li>thunder</li>\n          <li>other cats</li>\n        </ol>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg\" alt=\"Five cats looking around a field.\">\n          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  \n        </figure>\n      </section>\n      <section>\n        <h2>Cat Form</h2>\n        \n      </section>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>form</code> element should have an opening tag and closing tag. You may be missing one or both of the required tags, or have them in the wrong order.</p>",
+      "testString": "assert(document.querySelector('form') && code.match(/<\\/form>/g));"
+    },
+    {
+      "text": "<p>Your <code>form</code> element tags are not in the correct order.</p>",
+      "testString": "const noSpaces = code.replace(/\\s/g, '');\nassert(noSpaces.indexOf('<form>') < noSpaces.indexOf('</form>'));"
+    },
+    {
+      "text": "<p>The <code>form</code> element nested in the last <code>section</code> element should be below the <code>h2</code> element. You have the <code>h2</code> element and the <code>form</code> element in the wrong order.</p>",
+      "testString": "assert(document.querySelector('form').previousElementSibling.nodeName === 'H2');"
+    },
+    {
+      "text": "<p>The <code>form</code> element should have no content. Remove any HTML elements or text between the <code>form</code> element's tags.</p>",
+      "testString": "assert($('form')[0].innerHTML.trim().length === 0);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now you will add a web form to collect information from users.</p>\n<p>The <code>form</code> element is used to get information from a user like their name, email, and other details.</p>\n<p>After the <code>Cat Form</code> heading, add a <code>form</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

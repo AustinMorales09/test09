@@ -1,0 +1,45 @@
+{
+  "id": "657dbfb128eaef185f5fb51b",
+  "title": "Task 81",
+  "challengeType": 19,
+  "dashedName": "task-81",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>ongoing</code> mean in the context of projects?</p>",
+    "answers": [
+      {
+        "answer": "<p>Projects that are in progress.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Projects that are finished.</p>",
+        "feedback": "<p><code>Ongoing</code> is the opposite of finished.</p>"
+      },
+      {
+        "answer": "<p>Projects that are not started.</p>",
+        "feedback": "<p>If a project has not started, it cannot be ongoing.</p>"
+      },
+      {
+        "answer": "<p>Projects that are postponed.</p>",
+        "feedback": "<p><code>Postponed</code> means delayed, which is not the same as ongoing.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>ongoing</code> describes something that is currently in progress, continuing, or not yet finished.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 84,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

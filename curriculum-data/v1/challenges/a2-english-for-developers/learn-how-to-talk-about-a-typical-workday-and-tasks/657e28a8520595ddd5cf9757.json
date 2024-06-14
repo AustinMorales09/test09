@@ -1,0 +1,120 @@
+{
+  "id": "657e28a8520595ddd5cf9757",
+  "title": "Task 32",
+  "challengeType": 22,
+  "dashedName": "task-32",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>After that, you'll _ attend the daily team _ at 9:30. During the meeting, the team _ project updates.</p>",
+    "blanks": [
+      {
+        "answer": "probably",
+        "feedback": "<p>Almost sure it will happen.</p>"
+      },
+      {
+        "answer": "meeting",
+        "feedback": "<p>A formal gathering with colleagues.</p>"
+      },
+      {
+        "answer": "discusses",
+        "feedback": "<p>To talk about or give information about something.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.75,
+        "finishTimestamp": 18.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.44,
+        "dialogue": {
+          "text": "Sounds good. What do I do after checking emails?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 3.44
+      },
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 3.44
+      },
+      {
+        "character": "Anna",
+        "startTime": 4.28,
+        "finishTime": 7.24,
+        "dialogue": {
+          "text": "After that, you'll probably attend the daily team meeting at 9.30.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "startTime": 7.72,
+        "finishTime": 10.1,
+        "dialogue": {
+          "text": "During the meeting, the team discusses project updates.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 10.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Professional settings often involve specific vocabulary related to meetings and discussions.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 33,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

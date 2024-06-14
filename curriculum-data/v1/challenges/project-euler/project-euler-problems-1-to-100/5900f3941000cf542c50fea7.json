@@ -1,0 +1,77 @@
+{
+  "id": "5900f3941000cf542c50fea7",
+  "title": "Problem 40: Champernowne's constant",
+  "challengeType": 1,
+  "forumTopicId": 302066,
+  "dashedName": "problem-40-champernownes-constant",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function champernownesConstant(n) {\n\n  return true;\n}\n\nchampernownesConstant(100);",
+      "error": null,
+      "seed": "function champernownesConstant(n) {\n\n  return true;\n}\n\nchampernownesConstant(100);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function champernownesConstant(n) {\n  let fractionalPart = '';\n  for (let i = 0; fractionalPart.length <= n; i++) {\n    fractionalPart += i.toString();\n  }\n\n  let product = 1;\n  for (let i = 0; i < n.toString().length; i++) {\n    const index = 10 ** i;\n    product *= parseInt(fractionalPart[index], 10);\n  }\n\n  return product;\n}",
+        "error": null,
+        "seed": "function champernownesConstant(n) {\n  let fractionalPart = '';\n  for (let i = 0; fractionalPart.length <= n; i++) {\n    fractionalPart += i.toString();\n  }\n\n  let product = 1;\n  for (let i = 0; i < n.toString().length; i++) {\n    const index = 10 ** i;\n    product *= parseInt(fractionalPart[index], 10);\n  }\n\n  return product;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>champernownesConstant(100)</code> should return a number.</p>",
+      "testString": "assert(typeof champernownesConstant(100) === 'number');"
+    },
+    {
+      "text": "<p><code>champernownesConstant(100)</code> should return 5.</p>",
+      "testString": "assert.strictEqual(champernownesConstant(100), 5);"
+    },
+    {
+      "text": "<p><code>champernownesConstant(1000)</code> should return 15.</p>",
+      "testString": "assert.strictEqual(champernownesConstant(1000), 15);"
+    },
+    {
+      "text": "<p><code>champernownesConstant(1000000)</code> should return 210.</p>",
+      "testString": "assert.strictEqual(champernownesConstant(1000000), 210);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>An irrational decimal fraction is created by concatenating the positive integers:</p>\n<p>0.12345678910<strong>1</strong>112131415161718192021...</p>\n<p>It can be seen that the 12<sup>th</sup> digit of the fractional part is 1.</p>\n<p>If <em>d<sub>n</sub></em> represents the <em>n</em><sup>th</sup> digit of the fractional part, find the value of the following expression.</p>\n<p>d<sub>1</sub> × d<sub>10</sub> × d<sub>100</sub> × d<sub>1000</sub> × d<sub>10000</sub> × d<sub>100000</sub> × d<sub>1000000</sub></p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 39,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

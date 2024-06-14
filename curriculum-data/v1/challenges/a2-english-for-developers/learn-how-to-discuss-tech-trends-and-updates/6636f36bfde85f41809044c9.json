@@ -1,0 +1,45 @@
+{
+  "id": "6636f36bfde85f41809044c9",
+  "title": "Task 29",
+  "challengeType": 19,
+  "dashedName": "task-29",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following sentences correctly uses a comparative form?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>This computer is more fast than the old one.</code></p>",
+        "feedback": "<p><code>Fast</code> is a one-syllable adjective, so the correct comparative form is <code>faster</code>, not <code>more fast</code>.</p>"
+      },
+      {
+        "answer": "<p><code>She is smarter than her classmate.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>He can run more quick than me.</code></p>",
+        "feedback": "<p><code>Quick</code> is a one-syllable adjective; the correct comparative form is <code>quicker</code>, not <code>more quick</code>.</p>"
+      },
+      {
+        "answer": "<p><code>I am more happier today than yesterday.</code></p>",
+        "feedback": "<p><code>Happy</code> has two syllables but generally follows the rule for short adjectives; the correct form is <code>happier</code>, not <code>more happier</code>.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Comparatives are used to compare two things or people. For short adjectives, typically those with one or two syllables, you add <code>-er</code> to the end of the word, like <code>tall</code> becomes <code>taller</code> and <code>small</code> becomes <code>smaller</code>. For words which end in <code>-y</code>, you change the <code>y</code> to <code>i</code> and add <code>-er</code>, like <code>happy</code> becomes <code>happier</code>.</p>\n<p>Examples:</p>\n<p><code>He is taller than his brother.</code> - <code>Taller</code> is the comparative form of <code>tall</code>, used because the speaker is comparing the height of two people.</p>\n<p><code>This box is smaller than that one.</code> - <code>Smaller</code> is the comparative form of <code>small</code>, used to compare the size of two boxes.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

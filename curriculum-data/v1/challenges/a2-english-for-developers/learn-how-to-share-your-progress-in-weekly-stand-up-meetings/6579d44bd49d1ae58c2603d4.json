@@ -1,0 +1,88 @@
+{
+  "id": "6579d44bd49d1ae58c2603d4",
+  "title": "Task 12",
+  "challengeType": 19,
+  "dashedName": "task-12",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Bob respond to Sophie's request for help?</p>",
+    "answers": [
+      {
+        "answer": "<p>He refuses to help her</p>",
+        "feedback": "<p>Bob's response is the opposite; he strongly affirms his willingness to help.</p>"
+      },
+      {
+        "answer": "<p>He agrees to help, but seems unsure</p>",
+        "feedback": "<p>Bob's use of <code>absolutely</code> and <code>definitely</code> indicates strong certainty, not uncertainty.</p>"
+      },
+      {
+        "answer": "<p>He says he will try to help later</p>",
+        "feedback": "<p>Bob confidently agrees to help, rather than just trying to help later.</p>"
+      },
+      {
+        "answer": "<p>He confidently agrees to help her</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.56,
+        "finishTimestamp": 17.28
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.72,
+        "dialogue": {
+          "text": "Absolutely. I can definitely help you with that.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.22
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this dialogue, Bob responds to Sophie's request for help with a coding problem. His choice of words reflects not only his willingness to assist but also his certainty and confidence in being able to provide the needed help.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

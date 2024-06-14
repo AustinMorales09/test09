@@ -1,0 +1,83 @@
+{
+  "id": "65a39a1ed201f80945939c52",
+  "title": "Task 87",
+  "challengeType": 22,
+  "dashedName": "task-87",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Yeah. Also, the _ of solving complex problems and _ practical solutions is really _.</p>",
+    "blanks": [
+      {
+        "answer": "satisfaction",
+        "feedback": "<p>This word describes the good feeling you get when you do something well or achieve what you wanted.</p>"
+      },
+      {
+        "answer": "finding",
+        "feedback": "<p>This word means discovering or coming up with something, like an answer or solution.</p>"
+      },
+      {
+        "answer": "thrilling",
+        "feedback": "<p>This adjective means very exciting. It often describes something that makes your heart beat faster because it's so exciting or fun.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Lisa",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 43.1,
+        "finishTimestamp": 48.68
+      }
+    },
+    "commands": [
+      {
+        "character": "Lisa",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Lisa",
+        "startTime": 1,
+        "finishTime": 6.58,
+        "dialogue": {
+          "text": "Yeah. Also, the satisfaction of solving complex problems and finding practical solutions is really thrilling.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "opacity": 0,
+        "startTime": 7.08
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When something is <code>thrilling</code>, it makes you feel very excited and happy. It's like when you ride a fast roller coaster or solve a difficult puzzle, and you feel a rush of excitement because it's so fun or interesting.</p>\n<p>Lisa talks about how she feels when she solves hard problems and comes up with useful answers.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 89,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

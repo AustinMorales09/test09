@@ -1,0 +1,65 @@
+{
+  "id": "5900f3e21000cf542c50fef4",
+  "title": "Problem 117: Red, green, and blue tiles",
+  "challengeType": 1,
+  "forumTopicId": 301743,
+  "dashedName": "problem-117-red-green-and-blue-tiles",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function redGreenBlueTilesTwo() {\n\n  return true;\n}\n\nredGreenBlueTilesTwo();",
+      "error": null,
+      "seed": "function redGreenBlueTilesTwo() {\n\n  return true;\n}\n\nredGreenBlueTilesTwo();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>redGreenBlueTilesTwo()</code> should return <code>100808458960497</code>.</p>",
+      "testString": "assert.strictEqual(redGreenBlueTilesTwo(), 100808458960497);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Using a combination of black square tiles and oblong tiles chosen from: red tiles measuring two units, green tiles measuring three units, and blue tiles measuring four units, it is possible to tile a row measuring five units in length in exactly fifteen different ways.</p>\n<img class=\"img-responsive center-block\" alt=\"Possible ways of placing red, green and blue oblongs on a row with length of five units\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/red-green-and-blue-tiles.png\" style=\"background-color: white; padding: 10px;\">\n<p>How many ways can a row measuring fifty units in length be tiled?</p>\n<p><strong>Note</strong>: This is related to Problem 116.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

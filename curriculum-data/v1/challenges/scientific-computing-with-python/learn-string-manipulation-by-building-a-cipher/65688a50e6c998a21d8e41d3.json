@@ -1,0 +1,57 @@
+{
+  "id": "65688a50e6c998a21d8e41d3",
+  "title": "Step 30",
+  "challengeType": 20,
+  "dashedName": "step-30",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\n\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n\nfor char in text.lower():\n    index = alphabet.find(char)\n    print(char, index)\n    new_index = index + shift\n",
+      "error": null,
+      "seed": "text = 'Hello World'\n\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n\nfor char in text.lower():\n    index = alphabet.find(char)\n    print(char, index)\n    new_index = index + shift\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should still have <code>text = 'Hello World'</code> in your code.</p>",
+      "testString": "assert.match(code, /^text\\s*=\\s*(\"|')Hello World\\1/m)"
+    },
+    {
+      "text": "<p>You should access the first letter in <code>text</code> with <code>text[0]</code>.</p>",
+      "testString": "assert.match(code, /^text\\s*\\[\\s*0\\s*\\]\\s*/m)"
+    },
+    {
+      "text": "<p>You should use the <code>=</code> operator to assign a character of your choice to <code>text[0]</code>. Don't forget to enclose the character in either single or double quotes.</p>",
+      "testString": "assert.match(code, /^text\\s*\\[\\s*0\\s*\\]\\s*\\=\\s*(\"|').\\1/m)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Strings are immutable, which means they cannot be changed once created. For example, you might think that the following code changes the value of <code>my_string</code> into the string <code>'train'</code>, but this is not valid:</p>\n<pre><code class=\"language-py\">my_string = 'brain'\nmy_string[0] = 't'\n</code></pre>\n<p>Confirm that by using the bracket notation to access the first letter in <code>text</code> and try to change it into a character of your choice. You will see the ouput disappear and an error appear.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 29,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

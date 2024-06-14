@@ -1,0 +1,65 @@
+{
+  "id": "5900f4b91000cf542c50ffcb",
+  "title": "Problem 332: Spherical triangles",
+  "challengeType": 1,
+  "forumTopicId": 301990,
+  "dashedName": "problem-332-spherical-triangles",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function sphericalTriangles() {\n\n  return true;\n}\n\nsphericalTriangles();",
+      "error": null,
+      "seed": "function sphericalTriangles() {\n\n  return true;\n}\n\nsphericalTriangles();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>sphericalTriangles()</code> should return <code>2717.751525</code>.</p>",
+      "testString": "assert.strictEqual(sphericalTriangles(), 2717.751525);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A spherical triangle is a figure formed on the surface of a sphere by three great circular arcs intersecting pairwise in three vertices.</p>\n<img class=\"img-responsive center-block\" alt=\"spherical triangle formed on the surface of a sphere\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/spherical-triangles.jpg\" style=\"background-color: white; padding: 10px;\">\n<p>Let $C(r)$ be the sphere with the centre (0,0,0) and radius $r$.</p>\n<p>Let $Z(r)$ be the set of points on the surface of $C(r)$ with integer coordinates.</p>\n<p>Let $T(r)$ be the set of spherical triangles with vertices in $Z(r)$. Degenerate spherical triangles, formed by three points on the same great arc, are <u>not</u> included in $T(r)$.</p>\n<p>Let $A(r)$ be the area of the smallest spherical triangle in $T(r)$.</p>\n<p>For example $A(14)$ is 3.294040 rounded to six decimal places.</p>\n<p>Find $\\displaystyle \\sum_{r = 1}^{50} A(r)$. Give your answer rounded to six decimal places.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 31,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

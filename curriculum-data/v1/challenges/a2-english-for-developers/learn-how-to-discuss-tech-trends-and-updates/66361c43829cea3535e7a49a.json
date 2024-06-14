@@ -1,0 +1,87 @@
+{
+  "id": "66361c43829cea3535e7a49a",
+  "title": "Task 18",
+  "challengeType": 22,
+  "dashedName": "task-18",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I think so. _ _ we _ _ some of these tools to see if they can help us?</p>",
+    "blanks": [
+      {
+        "answer": "Why",
+        "feedback": "<p>This word starts the suggestion, introducing the idea of questioning the action to prompt consideration.</p>"
+      },
+      {
+        "answer": "don't",
+        "feedback": "<p>This contraction of <code>do not</code> used in a question to form a suggestion, softening the proposal.</p>"
+      },
+      {
+        "answer": "check",
+        "feedback": "<p>This verb is part of the phrase meaning to explore or examine something.</p>"
+      },
+      {
+        "answer": "out",
+        "feedback": "<p>This preposition completes the phrase emphasizing the action of exploring or examining in more detail.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 30.5,
+        "finishTimestamp": 34.5
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5,
+        "dialogue": {
+          "text": "I think so. Why don't we check out some of these tools to see if they can help us?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5.5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>why don't</code> is often used to make a suggestion or offer. It is followed by a subject (like <code>we</code>, <code>you</code>, or <code>they</code>) and a base verb. The structure is <code>why don't + subject + base verb</code>. It's a polite way of suggesting an action or asking someone to do something.</p>\n<p>Examples:</p>\n<p><code>Why don't we go to the cinema tonight?</code> The speaker suggests going to the cinema.</p>\n<p><code>Why don't you try restarting the computer?</code> The speaker suggests restarting the computer as a solution.</p>\n<p>The phrase <code>check out</code> means to examine or look at something more closely, commonly used when suggesting to explore or learn more about something. For instance, <code>Let's check out the new restaurant</code> implies visiting and trying the restaurant.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,53 @@
+{
+  "id": "6553a44b1801991847d8cc69",
+  "title": "Step 47",
+  "challengeType": 20,
+  "dashedName": "step-47",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        14
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        encrypted_text += char\n    else:\n        index = alphabet.find(char)\n        new_index = (index + shift) % len(alphabet)\n        encrypted_text += alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        encrypted_text += char\n    else:\n        index = alphabet.find(char)\n        new_index = (index + shift) % len(alphabet)\n        encrypted_text += alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should print <code>'encrypted text:', encrypted_text</code> after your for loop.</p>",
+      "testString": "({ test: () => assert.match(code, /^print\\s*\\(\\s*(\"|')encrypted\\stext:\\1\\s*,\\s*encrypted_text\\s*\\)/m) })"
+    },
+    {
+      "text": "<p>You should not have <code>print('char:', char, 'encrypted text:', encrypted_text)</code> in your code.</p>",
+      "testString": "({ test: () => {\n    const commentless_code = __helpers.python.removeComments(code);\n    assert.notMatch(commentless_code, /print\\s*\\(\\s*(\"|')char:\\1\\s*,\\s*char\\s*,\\s*(\"|')encrypted\\stext:\\2\\s*,\\s*encrypted_text\\s*\\)/)\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Next, modify your <code>print()</code> call to print <code>'encrypted text:', encrypted_text</code> and put it outside the <code>for</code> loop, so that the encrypted string is printed one time.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 46,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

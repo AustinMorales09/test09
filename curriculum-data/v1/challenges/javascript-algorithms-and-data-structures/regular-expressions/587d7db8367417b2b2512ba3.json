@@ -1,0 +1,82 @@
+{
+  "id": "587d7db8367417b2b2512ba3",
+  "title": "Match Whitespace",
+  "challengeType": 1,
+  "forumTopicId": 301359,
+  "dashedName": "match-whitespace",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let sample = \"Whitespace is important in separating words\";\nlet countWhiteSpace = /change/; // Change this line\nlet result = sample.match(countWhiteSpace);",
+      "error": null,
+      "seed": "let sample = \"Whitespace is important in separating words\";\nlet countWhiteSpace = /change/; // Change this line\nlet result = sample.match(countWhiteSpace);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let sample = \"Whitespace is important in separating words\";\nlet countWhiteSpace = /\\s/g;\nlet result = sample.match(countWhiteSpace);",
+        "error": null,
+        "seed": "let sample = \"Whitespace is important in separating words\";\nlet countWhiteSpace = /\\s/g;\nlet result = sample.match(countWhiteSpace);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your regex should use the global flag.</p>",
+      "testString": "assert(countWhiteSpace.global);"
+    },
+    {
+      "text": "<p>Your regex should use the shorthand character <code>\\s</code> to match all whitespace characters.</p>",
+      "testString": "assert(/\\\\s/.test(countWhiteSpace.source));"
+    },
+    {
+      "text": "<p>Your regex should find eight spaces in the string <code>Men are from Mars and women are from Venus.</code></p>",
+      "testString": "assert(\n  'Men are from Mars and women are from Venus.'.match(countWhiteSpace).length ==\n    8\n);"
+    },
+    {
+      "text": "<p>Your regex should find three spaces in the string <code>Space: the final frontier.</code></p>",
+      "testString": "assert('Space: the final frontier.'.match(countWhiteSpace).length == 3);"
+    },
+    {
+      "text": "<p>Your regex should find no spaces in the string <code>MindYourPersonalSpace</code></p>",
+      "testString": "assert('MindYourPersonalSpace'.match(countWhiteSpace) == null);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The challenges so far have covered matching letters of the alphabet and numbers. You can also match the whitespace or spaces between letters.</p>\n<p>You can search for whitespace using <code>\\s</code>, which is a lowercase <code>s</code>. This pattern not only matches whitespace, but also carriage return, tab, form feed, and new line characters. You can think of it as similar to the character class <code>[ \\r\\t\\f\\n\\v]</code>.</p>\n<pre><code class=\"language-js\">let whiteSpace = \"Whitespace. Whitespace everywhere!\"\nlet spaceRegex = /\\s/g;\nwhiteSpace.match(spaceRegex);\n</code></pre>\n<p>This <code>match</code> call would return <code>[\" \", \" \"]</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Change the regex <code>countWhiteSpace</code> to look for multiple whitespace characters in a string.</p>\n</section>",
+  "translationPending": false,
+  "block": "regular-expressions",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

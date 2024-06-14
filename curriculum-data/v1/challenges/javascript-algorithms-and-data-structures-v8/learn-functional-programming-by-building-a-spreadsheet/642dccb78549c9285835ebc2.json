@@ -1,0 +1,101 @@
+{
+  "id": "642dccb78549c9285835ebc2",
+  "title": "Step 2",
+  "challengeType": 0,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "window.onload = () => {\n  const container = document.getElementById(\"container\");\n\n}",
+      "error": null,
+      "seed": "window.onload = () => {\n  const container = document.getElementById(\"container\");\n\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a <code>createLabel</code> variable in your <code>onload</code> function.</p>",
+      "testString": "assert.match(code, /window\\.onload\\s*=\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*(?:const\\s+container\\s*=\\s*document\\.getElementById\\(\\s*('|\"|`)container\\1\\s*\\)\\s*;?)?\\s*(?:let|var|const)\\s+createLabel/);"
+    },
+    {
+      "text": "<p>Your <code>createLabel</code> variable should be declared after your <code>container</code> variable.</p>",
+      "testString": "assert.match(code, /window\\.onload\\s*=\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*const\\s+container\\s*=\\s*document\\.getElementById\\(\\s*('|\"|`)container\\1\\s*\\)\\s*;?\\s*(?:let|var|const)\\s+createLabel/);"
+    },
+    {
+      "text": "<p>Your <code>createLabel</code> variable should be declared with <code>const</code>.</p>",
+      "testString": "assert.match(code, /window\\.onload\\s*=\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*const\\s+container\\s*=\\s*document\\.getElementById\\(\\s*('|\"|`)container\\1\\s*\\)\\s*;?\\s*const\\s+createLabel/);"
+    },
+    {
+      "text": "<p>Your <code>createLabel</code> variable should be an arrow function.</p>",
+      "testString": "assert.match(code, /window\\.onload\\s*=\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*const\\s+container\\s*=\\s*document\\.getElementById\\(\\s*('|\"|`)container\\1\\s*\\)\\s*;?\\s*const\\s+createLabel\\s*=\\s*(\\(.*\\)|[^\\s()]+)\\s*=>/);"
+    },
+    {
+      "text": "<p>Your <code>createLabel</code> function should have a <code>name</code> parameter.</p>",
+      "testString": "assert.match(code, /window\\.onload\\s*=\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*const\\s+container\\s*=\\s*document\\.getElementById\\(\\s*('|\"|`)container\\1\\s*\\)\\s*;?\\s*const\\s+createLabel\\s*=\\s*(\\(\\s*name\\s*\\)|name)\\s*=>/);"
+    },
+    {
+      "text": "<p>Your <code>createLabel</code> function should be empty.</p>",
+      "testString": "assert.match(code, /window\\.onload\\s*=\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*const\\s+container\\s*=\\s*document\\.getElementById\\(\\s*('|\"|`)container\\1\\s*\\)\\s*;?\\s*const\\s+createLabel\\s*=\\s*(\\(\\s*name\\s*\\)|name)\\s*=>\\s*\\{\\s*\\}/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Functions are ideal for reusable logic. When a function itself needs to reuse logic, you can declare a nested function to handle that logic. Here is an example of a nested function:</p>\n<pre><code class=\"language-js\">const outer = () => {\n  const inner = () => {\n\n  };\n};\n</code></pre>\n<p>Declare a nested <code>createLabel</code> function using arrow syntax. It should take a <code>name</code> parameter.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

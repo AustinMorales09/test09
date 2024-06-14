@@ -1,0 +1,88 @@
+{
+  "id": "657b236691c67b197cd382f4",
+  "title": "Task 2",
+  "challengeType": 19,
+  "dashedName": "task-2",
+  "solutions": [],
+  "question": {
+    "text": "<p>In Alice's introduction, which pronoun does she use to refer to herself?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>You</code></p>",
+        "feedback": "<p><code>You</code> is used to refer to the person being spoken to, not the speaker.</p>"
+      },
+      {
+        "answer": "<p><code>He</code></p>",
+        "feedback": "<p><code>He</code> is a pronoun used to refer to a male individual, not the speaker if they are female.</p>"
+      },
+      {
+        "answer": "<p><code>She</code></p>",
+        "feedback": "<p><code>She</code> is used to refer to another female individual, not the speaker herself.</p>"
+      },
+      {
+        "answer": "<p><code>I</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 3.82
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 4.82,
+        "dialogue": {
+          "text": "Hi, everyone. My name is Alice and I'm happy to be part of the team.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 5.32
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Pronouns are used for personal reference.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

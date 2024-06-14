@@ -1,0 +1,57 @@
+{
+  "id": "65ef1c0a03fcabc04ded7e69",
+  "title": "Step 12",
+  "challengeType": 20,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        15,
+        19
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):\n    if square_target < 0:\n        raise ValueError('Square root of negative number is not defined in real numbers')\n    if square_target == 1:\n        root = 1\n        print(f'The square root of {square_target} is 1')\n    elif square_target == 0:\n        root = 0\n        print(f'The square root of {square_target} is 0')\n\n    else:\n        low = 0\n        high = max(1, square_target)\n        root = None\n        \n        for _ in range(max_iterations):\n            pass\n",
+      "error": null,
+      "seed": "def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):\n    if square_target < 0:\n        raise ValueError('Square root of negative number is not defined in real numbers')\n    if square_target == 1:\n        root = 1\n        print(f'The square root of {square_target} is 1')\n    elif square_target == 0:\n        root = 0\n        print(f'The square root of {square_target} is 0')\n\n    else:\n        low = 0\n        high = max(1, square_target)\n        root = None\n        \n        for _ in range(max_iterations):\n            pass\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove the <code>pass</code> keyword.</p>",
+      "testString": "({\n    test: () => \n    {\n        assert.isFalse(runPython(`_Node(_code).find_function(\"square_root_bisection\").find_ifs()[1].find_bodies()[2].find_for_loops()[0].find_bodies()[0].has_pass()`))\n        \n    }\n\n})\n"
+    },
+    {
+      "text": "<p>You should declare a variable <code>mid</code> and assign it <code>(low + high) / 2</code> inside the body of the <code>for</code> loop.</p>",
+      "testString": "({\n    test: () => \n    {\n        assert(runPython(`\n\tnode = _Node(_code).find_function(\"square_root_bisection\").find_ifs()[1].find_bodies()[2].find_for_loops()[0].find_bodies()[0].find_variable(\"mid\")\n\tvalues = [\"mid = (low + high) / 2\", \"mid = (high + low) / 2\"]\n\tany(node.is_equivalent(val) for val in values)\n\t`))\n        \n    }\n\n})"
+    },
+    {
+      "text": "<p>You should declare a variable <code>square_mid</code> and assign it <code>mid**2</code> inside the body of the for loop.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_function(\"square_root_bisection\").find_ifs()[1].find_bodies()[2].find_for_loops()[0].find_bodies()[0].find_variable(\"square_mid\").is_equivalent(\"square_mid = mid**2\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Inside the for loop, calculate the midpoint of the interval ranging from <code>low</code> to <code>high</code>. Assign this value to a variable <code>mid</code>.</p>\n<p>Also, calculate the square of the midpoint (<code>mid</code>) and store it in the variable <code>square_mid</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-bisection-method-by-finding-the-square-root-of-a-number",
+  "hasEditableBoundaries": true,
+  "order": 4,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

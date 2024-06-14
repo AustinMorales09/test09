@@ -1,0 +1,46 @@
+{
+  "id": "5e8f2f13c4cdbe86b5c72d97",
+  "title": "Convolutional Neural Networks: The Convolutional Layer",
+  "challengeType": 11,
+  "videoId": "LrdmcQpTyLw",
+  "bilibiliIds": {
+    "aid": 805608595,
+    "bvid": "BV1Q34y1S7nr",
+    "cid": 409131585
+  },
+  "dashedName": "convolutional-neural-networks-the-convolutional-layer",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are the three main properties of each convolutional layer?</p>",
+    "answers": [
+      {
+        "answer": "<p>Input size, the number of filters, and the sample size of the filters.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Input size, input dimensions, and the color values of the input.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Input size, input padding, and stride.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "tensorflow",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

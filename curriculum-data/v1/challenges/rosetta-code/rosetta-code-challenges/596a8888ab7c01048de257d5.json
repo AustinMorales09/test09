@@ -1,0 +1,81 @@
+{
+  "id": "596a8888ab7c01048de257d5",
+  "title": "Deepcopy",
+  "challengeType": 1,
+  "forumTopicId": 302247,
+  "dashedName": "deepcopy",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const obj1 = { test: 'test' };\nconst obj2 = {\n  t: 'test',\n  a: ['an', 'array']\n};\nconst obj3 = {\n  t: 'try',\n  o: obj2\n};",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function deepcopy(obj) {\n\n  return true;\n}",
+      "error": null,
+      "seed": "function deepcopy(obj) {\n\n  return true;\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function deepcopy(obj) {\n  return JSON.parse(JSON.stringify(obj));\n}",
+        "error": null,
+        "seed": "function deepcopy(obj) {\n  return JSON.parse(JSON.stringify(obj));\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>deepcopy</code> should be a function.</p>",
+      "testString": "assert(typeof deepcopy === 'function');"
+    },
+    {
+      "text": "<p><code>deepcopy({test: \"test\"})</code> should return an object.</p>",
+      "testString": "assert(typeof deepcopy(obj1) === 'object');"
+    },
+    {
+      "text": "<p><code>deepcopy</code> should not return the same object that was provided.</p>",
+      "testString": "assert(deepcopy(obj2) != obj2);"
+    },
+    {
+      "text": "<p>When passed an object containing an array, <code>deepcopy</code> should return a deep copy of the object.</p>",
+      "testString": "assert.deepEqual(deepcopy(obj2), obj2);"
+    },
+    {
+      "text": "<p>When passed an object containing another object, <code>deepcopy</code>  should return a deep copy of the object.</p>",
+      "testString": "assert.deepEqual(deepcopy(obj3), obj3);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Write a function that returns a deep copy of a given object. The copy must not be the same object that was given.</p>\n<p>This task will not test for:</p>\n<ul>\n  <li>Objects with properties that are functions</li>\n  <li>Date objects or object with properties that are Date objects</li>\n  <li>RegEx or object with properties that are RegEx objects</li>\n  <li>Prototype copying</li>\n</ul>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

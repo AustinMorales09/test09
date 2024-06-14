@@ -1,0 +1,67 @@
+{
+  "id": "587d78a7367417b2b2512ae2",
+  "title": "Create Visual Direction by Fading an Element from Left to Right",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cGJqqAE",
+  "forumTopicId": 301054,
+  "dashedName": "create-visual-direction-by-fading-an-element-from-left-to-right",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n\n  #ball {\n    width: 70px;\n    height: 70px;\n    margin: 50px auto;\n    position: fixed;\n    left: 20%;\n    border-radius: 50%;\n    background: linear-gradient(\n      35deg,\n      #ccffff,\n      #ffcccc\n    );\n    animation-name: fade;\n    animation-duration: 3s;\n  }\n\n  @keyframes fade {\n    50% {\n      left: 60%;\n\n    }\n  }\n\n</style>\n\n<div id=\"ball\"></div>",
+      "error": null,
+      "seed": "<style>\n\n  #ball {\n    width: 70px;\n    height: 70px;\n    margin: 50px auto;\n    position: fixed;\n    left: 20%;\n    border-radius: 50%;\n    background: linear-gradient(\n      35deg,\n      #ccffff,\n      #ffcccc\n    );\n    animation-name: fade;\n    animation-duration: 3s;\n  }\n\n  @keyframes fade {\n    50% {\n      left: 60%;\n\n    }\n  }\n\n</style>\n\n<div id=\"ball\"></div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  #ball {\n    width: 70px;\n    height: 70px;\n    margin: 50px auto;\n    position: fixed;\n    left: 20%;\n    border-radius: 50%;\n    background: linear-gradient(\n      35deg,\n      #ccffff,\n      #ffcccc\n    );\n    animation-name: fade;\n    animation-duration: 3s;\n  }\n\n  @keyframes fade {\n    50% {\n      left: 60%;\n      opacity: 0.1;\n    }\n  }\n</style>\n<div id=\"ball\"></div>",
+        "error": null,
+        "seed": "<style>\n  #ball {\n    width: 70px;\n    height: 70px;\n    margin: 50px auto;\n    position: fixed;\n    left: 20%;\n    border-radius: 50%;\n    background: linear-gradient(\n      35deg,\n      #ccffff,\n      #ffcccc\n    );\n    animation-name: fade;\n    animation-duration: 3s;\n  }\n\n  @keyframes fade {\n    50% {\n      left: 60%;\n      opacity: 0.1;\n    }\n  }\n</style>\n<div id=\"ball\"></div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>keyframes</code> rule for fade should set the <code>opacity</code> property to 0.1 at 50%.</p>",
+      "testString": "assert(\n  code.match(\n    /@keyframes fade\\s*?{\\s*?50%\\s*?{\\s*?(?:left:\\s*?60%;\\s*?opacity:\\s*?0?\\.1;|opacity:\\s*?0?\\.1;\\s*?left:\\s*?60%;)/gi\n  )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>For this challenge, you'll change the <code>opacity</code> of an animated element so it gradually fades as it reaches the right side of the screen.</p>\n<p>In the displayed animation, the round element with the gradient background moves to the right by the 50% mark of the animation per the <code>@keyframes</code> rule.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Target the element with the id of <code>ball</code> and add the <code>opacity</code> property set to 0.1 at <code>50%</code>, so the element fades as it moves to the right.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-visual-design",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "657ee214b9ad1ad2b6f8325c",
+  "title": "Task 44",
+  "challengeType": 19,
+  "dashedName": "task-44",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does James notice about the collection of action figures?</p>",
+    "answers": [
+      {
+        "answer": "<p>It is huge and on a shelf.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It is small and on the floor.</p>",
+        "feedback": "<p>James mentions that the collection is huge and on a shelf, not small and on the floor.</p>"
+      },
+      {
+        "answer": "<p>It is being sold.</p>",
+        "feedback": "<p>James just notices its size and location, not mentioning it being sold.</p>"
+      },
+      {
+        "answer": "<p>It is not very interesting.</p>",
+        "feedback": "<p>James's observation implies he finds the collection interesting because he asks if Sarah is a collector.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 5.18
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 6.18,
+        "dialogue": {
+          "text": "Hey, I noticed you have a huge collection of action figures on that shelf behind you. Are you a collector?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 6.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen and choose the right answer.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 46,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

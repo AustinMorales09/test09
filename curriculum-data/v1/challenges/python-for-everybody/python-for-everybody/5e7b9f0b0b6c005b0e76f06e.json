@@ -1,0 +1,54 @@
+{
+  "id": "5e7b9f0b0b6c005b0e76f06e",
+  "title": "Regular Expressions",
+  "challengeType": 11,
+  "videoId": "Yud_COr6pZo",
+  "bilibiliIds": {
+    "aid": 759422542,
+    "bvid": "BV1W64y167YD",
+    "cid": 376387549
+  },
+  "dashedName": "regular-expressions",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which regex matches only a white space character?</p>",
+    "answers": [
+      {
+        "answer": "<p>\\S</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>\\s</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>_</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>\\.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

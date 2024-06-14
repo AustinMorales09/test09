@@ -1,0 +1,49 @@
+{
+  "id": "6606b224a69a293f98f8db8f",
+  "title": "Step 17",
+  "challengeType": 20,
+  "dashedName": "step-17",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        7
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    def __init__(self, board):\n        self.board = board\n    def find_empty_cell(self):\n        for row, contents in enumerate(self.board):\n            col = contents.index(0)\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)",
+      "error": null,
+      "seed": "class Board:\n    def __init__(self, board):\n        self.board = board\n    def find_empty_cell(self):\n        for row, contents in enumerate(self.board):\n            col = contents.index(0)\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should put the assignment of <code>col</code> inside a <code>try</code> block and create an <code>except</code> clause.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"Board\").find_function(\"find_empty_cell\").find_for_loops()[0].find_bodies()[0].is_equivalent(\"try:\\\\n  col = contents.index(0)\\\\nexcept:\\\\n  pass\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>.index()</code> method raises a <code>ValueError</code> exception when the value is not found. To prevent the program from halting execution, you'll nest this line of code inside a <code>try</code> block. The <code>try</code> statement is used to encapsulate code that might raise an exception. The <code>except</code> clause, on the other hand, offers alternative code to execute if an exception occurs:</p>\n<pre><code class=\"language-py\">try:\n    &#x3C;code>\nexcept:\n    &#x3C;code>\n</code></pre>\n<p>Put the assignment of <code>col</code> inside a <code>try</code> block. Then, create an <code>except</code> clause and fill its body with <code>pass</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

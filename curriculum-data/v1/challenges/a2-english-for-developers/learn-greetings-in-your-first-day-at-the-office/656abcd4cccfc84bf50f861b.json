@@ -1,0 +1,45 @@
+{
+  "id": "656abcd4cccfc84bf50f861b",
+  "title": "Task 79",
+  "challengeType": 19,
+  "dashedName": "task-79",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence correctly differentiates between <code>these</code> and <code>those</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>These is my monitor and those is my speakers.</code></p>",
+        "feedback": "<p>Look for a sentence that uses <code>these</code> for multiple items nearby and <code>those</code> for multiple items at a distance or not being directly addressed.</p>"
+      },
+      {
+        "answer": "<p><code>Those are my papers on the table, and these is my stapler.</code></p>",
+        "feedback": "<p>Look for a sentence that uses <code>these</code> for multiple items nearby and <code>those</code> for multiple items at a distance or not being directly addressed.</p>"
+      },
+      {
+        "answer": "<p><code>These are my folders, and those are my files in the cabinet.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Those are my phone, and these are my charger on the shelf.</code></p>",
+        "feedback": "<p>Look for a sentence that uses <code>these</code> for multiple items nearby and <code>those</code> for multiple items at a distance or not being directly addressed.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In an office setting, it's common to point out items using <code>these</code> and <code>those</code>. Remember, <code>these</code> points to items near you, while <code>those</code> points to items further away.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 80,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

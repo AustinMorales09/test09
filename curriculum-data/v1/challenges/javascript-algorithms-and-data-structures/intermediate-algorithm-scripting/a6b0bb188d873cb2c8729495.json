@@ -1,0 +1,89 @@
+{
+  "id": "a6b0bb188d873cb2c8729495",
+  "title": "Convert HTML Entities",
+  "challengeType": 1,
+  "forumTopicId": 16007,
+  "dashedName": "convert-html-entities",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function convertHTML(str) {\n  return str;\n}\n\nconvertHTML(\"Dolce & Gabbana\");",
+      "error": null,
+      "seed": "function convertHTML(str) {\n  return str;\n}\n\nconvertHTML(\"Dolce & Gabbana\");"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "var MAP = { '&': '&amp;',\n            '<': '&lt;',\n            '>': '&gt;',\n            '\"': '&quot;',\n            \"'\": '&apos;'};\n\nfunction convertHTML(str) {\n  return str.replace(/[&<>\"']/g, function(c) {\n    return MAP[c];\n  });\n}",
+        "error": null,
+        "seed": "var MAP = { '&': '&amp;',\n            '<': '&lt;',\n            '>': '&gt;',\n            '\"': '&quot;',\n            \"'\": '&apos;'};\n\nfunction convertHTML(str) {\n  return str.replace(/[&<>\"']/g, function(c) {\n    return MAP[c];\n  });\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>convertHTML(\"Dolce &#x26; Gabbana\")</code> should return the string <code>Dolce &#x26;amp; Gabbana</code>.</p>",
+      "testString": "assert.match(convertHTML('Dolce & Gabbana'), /Dolce &amp; Gabbana/);"
+    },
+    {
+      "text": "<p><code>convertHTML(\"Hamburgers &#x3C; Pizza &#x3C; Tacos\")</code> should return the string <code>Hamburgers &#x26;lt; Pizza &#x26;lt; Tacos</code>.</p>",
+      "testString": "assert.match(\n  convertHTML('Hamburgers < Pizza < Tacos'),\n  /Hamburgers &lt; Pizza &lt; Tacos/\n);"
+    },
+    {
+      "text": "<p><code>convertHTML(\"Sixty > twelve\")</code> should return the string <code>Sixty &#x26;gt; twelve</code>.</p>",
+      "testString": "assert.match(convertHTML('Sixty > twelve'), /Sixty &gt; twelve/);"
+    },
+    {
+      "text": "<p><code>convertHTML('Stuff in \"quotation marks\"')</code> should return the string <code>Stuff in &#x26;quot;quotation marks&#x26;quot;</code>.</p>",
+      "testString": "assert.match(\n  convertHTML('Stuff in \"quotation marks\"'),\n  /Stuff in &quot;quotation marks&quot;/\n);"
+    },
+    {
+      "text": "<p><code>convertHTML(\"Schindler's List\")</code> should return the string <code>Schindler&#x26;apos;s List</code>.</p>",
+      "testString": "assert.match(convertHTML(\"Schindler's List\"), /Schindler&apos;s List/);"
+    },
+    {
+      "text": "<p><code>convertHTML(\"&#x3C;>\")</code> should return the string <code>&#x26;lt;&#x26;gt;</code>.</p>",
+      "testString": "assert.match(convertHTML('<>'), /&lt;&gt;/);"
+    },
+    {
+      "text": "<p><code>convertHTML(\"abc\")</code> should return the string <code>abc</code>.</p>",
+      "testString": "assert.strictEqual(convertHTML('abc'), 'abc');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Convert the characters <code>&#x26;</code>, <code>&#x3C;</code>, <code>></code>, <code>\"</code> (double quote), and <code>'</code> (apostrophe), in a string to their corresponding HTML entities.</p>\n</section>",
+  "translationPending": false,
+  "block": "intermediate-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

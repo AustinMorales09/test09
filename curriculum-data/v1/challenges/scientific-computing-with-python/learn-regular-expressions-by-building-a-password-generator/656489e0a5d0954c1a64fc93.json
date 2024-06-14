@@ -1,0 +1,49 @@
+{
+  "id": "656489e0a5d0954c1a64fc93",
+  "title": "Step 7",
+  "challengeType": 20,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        11
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import string\n\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n# Combine all characters\nall_characters = letters + digits + symbols\n",
+      "error": null,
+      "seed": "import string\n\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n# Combine all characters\nall_characters = letters + digits + symbols\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should print your <code>all_characters</code> variable.</p>",
+      "testString": "({ test: () => assert.match(code, /^print\\s*\\(\\s*all_characters\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now print the <code>all_characters</code> variable to see what it looks like.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

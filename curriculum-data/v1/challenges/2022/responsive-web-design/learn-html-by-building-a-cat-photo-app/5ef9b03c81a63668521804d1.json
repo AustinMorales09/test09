@@ -1,0 +1,57 @@
+{
+  "id": "5ef9b03c81a63668521804d1",
+  "title": "Step 26",
+  "challengeType": 0,
+  "dashedName": "step-26",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        18,
+        24
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n          <figcaption>Cats <em>love</em> lasagna.</figcaption>  \n        </figure>\n        \n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n          <figcaption>Cats <em>love</em> lasagna.</figcaption>  \n        </figure>\n        \n      </section>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>There should be an <code>h3</code> element right above the second <code>section</code> element's closing tag. Make sure it has an opening and closing tag.</p>",
+      "testString": "assert(\n  document.querySelectorAll('main > section')[1].lastElementChild.nodeName ===\n    'H3' && code.match(/<\\/h3\\>/g).length === 2\n);"
+    },
+    {
+      "text": "<p>The new <code>h3</code> element should have the text <code>Top 3 things cats hate:</code>. Make sure to include the colon at the end of the text.</p>",
+      "testString": "assert(\n  document\n    .querySelectorAll('main > section')[1]\n    .lastElementChild.innerText.toLowerCase()\n    .replace(/\\s+/g, ' ') === 'top 3 things cats hate:'\n);"
+    },
+    {
+      "text": "<p>There should be a <code>figure</code> above the new <code>h3</code> element. You may have accidentally deleted the <code>figure</code> element.</p>",
+      "testString": "const secondSectionLastElemNode = document.querySelectorAll('main > section')[1]\n  .lastElementChild;\nassert(\n  secondSectionLastElemNode.nodeName === 'H3' &&\n    secondSectionLastElemNode.previousElementSibling.nodeName === 'FIGURE'\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>After the <code>figure</code> element, add another <code>h3</code> element with the text:</p>\n<p><code>Top 3 things cats hate:</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

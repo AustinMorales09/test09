@@ -1,0 +1,79 @@
+{
+  "id": "664298c6fd5b8d77b7f2d6fb",
+  "title": "Task 82",
+  "challengeType": 22,
+  "dashedName": "task-82",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I just wanted to make _ everyone has enough _.</p>",
+    "blanks": [
+      {
+        "answer": "sure",
+        "feedback": "<p>Preceded by <code>make</code> it means to be careful and check if something is correct.</p>"
+      },
+      {
+        "answer": "choices",
+        "feedback": "<p>The same as possibilities to select from or options.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 39.14,
+        "finishTimestamp": 41.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.76,
+        "dialogue": {
+          "text": "I just wanted to make sure everyone has enough choices.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.26
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>To <code>make sure</code> means to check something carefully to be certain that it is correct or that something has been done. For example, you can say <code>I wanted to make sure the door is locked</code>, when you check the lock to confirm it is secure.</p>\n<p><code>Choices</code> are the different options you can pick from. For example, if you are choosing a flavor of ice cream, the <code>choices</code> might be chocolate, vanilla, or strawberry. It means you have more than one possibility to select from.</p>\n<p>Listen to Bob and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 86,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

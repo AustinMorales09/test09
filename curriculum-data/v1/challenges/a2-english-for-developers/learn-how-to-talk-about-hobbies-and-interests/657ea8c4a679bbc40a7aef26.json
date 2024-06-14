@@ -1,0 +1,88 @@
+{
+  "id": "657ea8c4a679bbc40a7aef26",
+  "title": "Task 34",
+  "challengeType": 19,
+  "dashedName": "task-34",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the phrase <code>sure</code> convey in this context?</p>",
+    "answers": [
+      {
+        "answer": "<p>Rejection</p>",
+        "feedback": "<p>Rejection implies a negative response, which is not the case here.</p>"
+      },
+      {
+        "answer": "<p>Uncertainty</p>",
+        "feedback": "<p>Uncertainty suggests doubt or indecision, which is not reflected in the dialogue.</p>"
+      },
+      {
+        "answer": "<p>Enthusiastic agreement</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Disinterest</p>",
+        "feedback": "<p>Disinterest implies a lack of interest, which contradicts Jake's positive response.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 41.4,
+        "finishTimestamp": 42.74
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 2.34,
+        "dialogue": {
+          "text": "Sure! I'd love to.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 2.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Sure</code> is a friendly way to say <code>yes</code> or agree to something. It's like saying <code>definitely</code> or <code>of course</code>.</p>\n<p>When someone invites you to do something and you want to say yes in a casual and positive way, you can use <code>Sure</code>. It shows that you are happy to accept the invitation.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

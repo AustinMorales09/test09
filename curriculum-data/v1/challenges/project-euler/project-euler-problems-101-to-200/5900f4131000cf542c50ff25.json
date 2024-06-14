@@ -1,0 +1,65 @@
+{
+  "id": "5900f4131000cf542c50ff25",
+  "title": "Problem 166: Criss Cross",
+  "challengeType": 1,
+  "forumTopicId": 301800,
+  "dashedName": "problem-166-criss-cross",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function crissCross() {\n\n  return true;\n}\n\ncrissCross();",
+      "error": null,
+      "seed": "function crissCross() {\n\n  return true;\n}\n\ncrissCross();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>crissCross()</code> should return <code>7130034</code>.</p>",
+      "testString": "assert.strictEqual(crissCross(), 7130034);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A 4x4 grid is filled with digits $d$, $0 ≤ d ≤ 9$.</p>\n<p>It can be seen that in the grid</p>\n<p>$$\\begin{array}{}\n6 &#x26; 3 &#x26; 3 &#x26; 0 \\\\\n5 &#x26; 0 &#x26; 4 &#x26; 3 \\\\\n0 &#x26; 7 &#x26; 1 &#x26; 4 \\\\\n1 &#x26; 2 &#x26; 4 &#x26; 5\n\\end{array}$$</p>\n<p>the sum of each row and each column has the value 12. Moreover the sum of each diagonal is also 12.</p>\n<p>In how many ways can you fill a 4x4 grid with the digits $d$, $0 ≤ d ≤ 9$ so that each row, each column, and both diagonals have the same sum?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 65,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

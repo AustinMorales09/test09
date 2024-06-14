@@ -1,0 +1,77 @@
+{
+  "id": "615f171d05def3218035dc85",
+  "title": "Step 12",
+  "challengeType": 0,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n    <div class=\"gallery\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg\">\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n    <div class=\"gallery\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg\">\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        6
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  box-sizing: border-box;\n}\n\n\n\n.gallery img {\n  width: 100%;\n  max-width: 350px;\n  height: 300px;\n}\n",
+      "error": null,
+      "seed": "* {\n  box-sizing: border-box;\n}\n\n\n\n.gallery img {\n  width: 100%;\n  max-width: 350px;\n  height: 300px;\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>body</code> selector.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('body'));"
+    },
+    {
+      "text": "<p>Your <code>body</code> selector should have a <code>margin</code> property set to 0 as the value.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('body')?.marginTop, '0px');\n\nassert.equal(new __helpers.CSSHelp(document).getStyle('body')?.marginBottom, '0px');\n\nassert.equal(new __helpers.CSSHelp(document).getStyle('body')?.marginLeft, '0px');\n\nassert.equal(new __helpers.CSSHelp(document).getStyle('body')?.marginRight, '0px');"
+    },
+    {
+      "text": "<p>Your <code>body</code> selector should have a <code>font-family</code> property set to <code>sans-serif</code> as the value.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('body')?.fontFamily === 'sans-serif');"
+    },
+    {
+      "text": "<p>Your <code>body</code> selector should have a <code>background-color</code> property set to <code>#f5f6f7</code> as the value.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('body')?.backgroundColor === 'rgb(245, 246, 247)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Remove the margin from your body element, set the <code>font-family</code> to <code>sans-serif</code>, and give it a <code>background-color</code> of <code>#f5f6f7</code> as the value.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-flexbox-by-building-a-photo-gallery",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

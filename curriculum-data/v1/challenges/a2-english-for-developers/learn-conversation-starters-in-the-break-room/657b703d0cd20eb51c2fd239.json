@@ -1,0 +1,45 @@
+{
+  "id": "657b703d0cd20eb51c2fd239",
+  "title": "Task 26",
+  "challengeType": 19,
+  "dashedName": "task-26",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the sentence that correctly uses <code>don't</code> to express what someone does not do.</p>",
+    "answers": [
+      {
+        "answer": "<p>I don't coding on weekends.</p>",
+        "feedback": "<p>Incorrect: <code>coding</code> should be in the base form <code>code</code> when used with <code>don't.</code></p>"
+      },
+      {
+        "answer": "<p>I don't code on weekends.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>I don't codes on weekends.</p>",
+        "feedback": "<p>The verb should not have an <code>s</code> at the end when used with <code>don't.</code></p>"
+      },
+      {
+        "answer": "<p>I does not code on weekends.</p>",
+        "feedback": "<p><code>does not</code> is used with third-person singular subjects (he, she, it); with <code>I,</code> it should be <code>don't.</code></p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Let's practice creating negative sentences with an auxiliary verb.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

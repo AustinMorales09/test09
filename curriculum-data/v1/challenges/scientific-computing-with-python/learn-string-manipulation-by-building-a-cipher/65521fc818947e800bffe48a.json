@@ -1,0 +1,57 @@
+{
+  "id": "65521fc818947e800bffe48a",
+  "title": "Step 26",
+  "challengeType": 20,
+  "dashedName": "step-26",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        6
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nfor char in text:\n    print(char)",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nfor char in text:\n    print(char)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a new variable named <code>index</code> at the beginning of your <code>for</code> loop.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {block_body} = __helpers.python.getBlock(commentless_code, /for\\s+char\\s+in\\s+text\\s*/);\nassert(block_body.match(/^\\s*index\\s*=/));"
+    },
+    {
+      "text": "<p>You should assign <code>alphabet.find(char)</code> to your new <code>index</code> variable.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {block_body} = __helpers.python.getBlock(commentless_code, /for\\s+char\\s+in\\s+text\\s*/);\nassert(block_body.match(/index\\s*=\\s*alphabet\\.find\\s*\\(\\s*char\\s*\\)\\s*(#.*)?$/m));"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Inside the <code>for</code> loop, before printing the current character, declare a variable called <code>index</code> and assign the value returned by <code>alphabet.find(char)</code> to this variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

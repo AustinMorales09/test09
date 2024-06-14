@@ -1,0 +1,37 @@
+{
+  "id": "589a69f5f9fc0f352b528e71",
+  "title": "Implementation of Social Authentication II",
+  "challengeType": 2,
+  "forumTopicId": 301557,
+  "dashedName": "implementation-of-social-authentication-ii",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>passport-github dependency should be added.</p>",
+      "testString": "async (getUserInput) => {\n  const url = new URL(\"/_api/package.json\", getUserInput(\"url\"));\n  const res = await fetch(url);\n  const packJson = await res.json();\n  assert.property(\n    packJson.dependencies,\n    'passport-github',\n    'Your project should list \"passport-github\" as a dependency'\n  );\n}"
+    },
+    {
+      "text": "<p>passport-github should be required.</p>",
+      "testString": "async (getUserInput) => {\n  const url = new URL(\"/_api/auth.js\", getUserInput(\"url\"));\n  const res = await fetch(url);\n  const data = await res.text();\n  assert.match(\n    data,\n    /require.*(\"|')passport-github(\"|')/gi,\n    'You should have required passport-github'\n  );\n}"
+    },
+    {
+      "text": "<p>GitHub strategy should be setup correctly thus far.</p>",
+      "testString": "async (getUserInput) => {\n  const url = new URL(\"/_api/auth.js\", getUserInput(\"url\"));\n  const res = await fetch(url);\n  const data = await res.text();\n  assert.match(\n    data,\n    /passport\\.use.*new GitHubStrategy/gis,\n    'Passport should use a new GitHubStrategy'\n  );\n  assert.match(\n    data,\n    /callbackURL:\\s*(\"|').*(\"|')/gi,\n    'You should have a callbackURL'\n  );\n  assert.match(\n    data,\n    /process\\.env(\\.GITHUB_CLIENT_SECRET|\\[(?<q>\"|')GITHUB_CLIENT_SECRET\\k<q>\\])/g,\n    'You should use process.env.GITHUB_CLIENT_SECRET'\n  );\n  assert.match(\n    data,\n    /process\\.env(\\.GITHUB_CLIENT_ID|\\[(?<q>\"|')GITHUB_CLIENT_ID\\k<q>\\])/g,\n    'You should use process.env.GITHUB_CLIENT_ID'\n  );\n}"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The last part of setting up your GitHub authentication is to create the strategy itself. <code>passport-github@~1.1.0</code> has already been added as a dependency, so require it in your <code>auth.js</code> file as <code>GithubStrategy</code> like this: <code>const GitHubStrategy = require('passport-github').Strategy;</code>. Do not forget to require and configure <code>dotenv</code> to use your environment variables.</p>\n<p>To set up the GitHub strategy, you have to tell Passport to use an instantiated <code>GitHubStrategy</code>, which accepts 2 arguments: an object (containing <code>clientID</code>, <code>clientSecret</code>, and <code>callbackURL</code>) and a function to be called when a user is successfully authenticated, which will determine if the user is new and what fields to save initially in the user's database object. This is common across many strategies, but some may require more information as outlined in that specific strategy's GitHub README. For example, Google requires a <em>scope</em> as well which determines what kind of information your request is asking to be returned and asks the user to approve such access.</p>\n<p>The current strategy you are implementing authenticates users using a GitHub account and OAuth 2.0 tokens. The client ID and secret obtained when creating an application are supplied as options when creating the strategy. The strategy also requires a <code>verify</code> callback, which receives the access token and optional refresh token, as well as <code>profile</code> which contains the authenticated user's GitHub profile. The <code>verify</code> callback must call <code>cb</code> providing a user to complete authentication.</p>\n<p>Here's how your new strategy should look at this point:</p>\n<pre><code class=\"language-js\">passport.use(new GitHubStrategy({\n  clientID: process.env.GITHUB_CLIENT_ID,\n  clientSecret: process.env.GITHUB_CLIENT_SECRET,\n  callbackURL: /*INSERT CALLBACK URL ENTERED INTO GITHUB HERE*/\n},\n  function(accessToken, refreshToken, profile, cb) {\n    console.log(profile);\n    //Database logic here with callback containing your user object\n  }\n));\n</code></pre>\n<p>Your authentication won't be successful yet, and it will actually throw an error without the database logic and callback, but it should log your GitHub profile to your console if you try it!</p>\n<p>Submit your page when you think you've got it right. If you're running into errors, you can <a href=\"https://forum.freecodecamp.org/t/advanced-node-and-express/567135#implementation-of-social-authentication-ii-4\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">check out the project completed up to this point</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "advanced-node-and-express",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

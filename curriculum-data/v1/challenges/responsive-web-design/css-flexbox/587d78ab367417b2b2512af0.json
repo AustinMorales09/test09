@@ -1,0 +1,67 @@
+{
+  "id": "587d78ab367417b2b2512af0",
+  "title": "Use display: flex to Position Two Boxes",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pVaDAv/cgz3QS7",
+  "forumTopicId": 301105,
+  "dashedName": "use-display-flex-to-position-two-boxes",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  #box-container {\n    height: 500px;\n\n  }\n\n  #box-1 {\n    background-color: dodgerblue;\n    width: 50%;\n    height: 50%;\n  }\n\n  #box-2 {\n    background-color: orangered;\n    width: 50%;\n    height: 50%;\n  }\n</style>\n<div id=\"box-container\">\n  <div id=\"box-1\"></div>\n  <div id=\"box-2\"></div>\n</div>",
+      "error": null,
+      "seed": "<style>\n  #box-container {\n    height: 500px;\n\n  }\n\n  #box-1 {\n    background-color: dodgerblue;\n    width: 50%;\n    height: 50%;\n  }\n\n  #box-2 {\n    background-color: orangered;\n    width: 50%;\n    height: 50%;\n  }\n</style>\n<div id=\"box-container\">\n  <div id=\"box-1\"></div>\n  <div id=\"box-2\"></div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  #box-container {\n    height: 500px;\n    display: flex;\n  }\n\n  #box-1 {\n    background-color: dodgerblue;\n    width: 50%;\n    height: 50%;\n  }\n\n  #box-2 {\n    background-color: orangered;\n    width: 50%;\n    height: 50%;\n  }\n</style>\n<div id=\"box-container\">\n  <div id=\"box-1\"></div>\n  <div id=\"box-2\"></div>\n</div>",
+        "error": null,
+        "seed": "<style>\n  #box-container {\n    height: 500px;\n    display: flex;\n  }\n\n  #box-1 {\n    background-color: dodgerblue;\n    width: 50%;\n    height: 50%;\n  }\n\n  #box-2 {\n    background-color: orangered;\n    width: 50%;\n    height: 50%;\n  }\n</style>\n<div id=\"box-container\">\n  <div id=\"box-1\"></div>\n  <div id=\"box-2\"></div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>#box-container</code> should have the <code>display</code> property set to a value of <code>flex</code>.</p>",
+      "testString": "assert($('#box-container').css('display') == 'flex');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>This section uses alternating challenge styles to show how to use CSS to position elements in a flexible way. First, a challenge will explain theory, then a practical challenge using a simple tweet component will apply the flexbox concept.</p>\n<p>Placing the CSS property <code>display: flex;</code> on an element allows you to use other flex properties to build a responsive page.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add the CSS property <code>display</code> to <code>#box-container</code> and set its value to <code>flex</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "css-flexbox",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

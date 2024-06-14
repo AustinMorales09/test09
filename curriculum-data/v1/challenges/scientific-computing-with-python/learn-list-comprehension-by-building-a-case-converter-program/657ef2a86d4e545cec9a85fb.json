@@ -1,0 +1,53 @@
+{
+  "id": "657ef2a86d4e545cec9a85fb",
+  "title": "Step 4",
+  "challengeType": 20,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    snake_cased_char_list = []\n    for char in pascal_or_camel_cased_string:\n        pass",
+      "error": null,
+      "seed": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    snake_cased_char_list = []\n    for char in pascal_or_camel_cased_string:\n        pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should write a new if statement with char.isupper() as the condition. Remember to add the colon at the end and use the pass keyword to fill the if statement body.</p>",
+      "testString": "({\n    test: () => {        \n        const commentless_code = __helpers.python.removeComments(code)\n        const transformedCode = commentless_code.replace(/\\r/g, \"\");\n        const {function_body} = __helpers.python.getDef(\"\\n\" + commentless_code, \"convert_to_snake_case\");\n        assert.match(function_body, /\\s+if\\s+char\\.isupper\\s*\\(\\s*\\)\\s*:\\s+pass/);\n    }\n})"
+    },
+    {
+      "text": "<p>You should replace the <code>pass</code> statement in the loop body with the <code>if</code> statement.</p>",
+      "testString": "({\n   test: () => {\n        const commentless_code = __helpers.python.removeComments(code)\n        const {block_body} = __helpers.python.getBlock(commentless_code, /for\\s+char\\s+in\\s+pascal_or_camel_cased_string\\s*/);\n        assert.notMatch(block_body, /^\\s+pass/);\n\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Uppercase characters in camel case or pascal case indicate the start of new words.</p>\n<p>Inside the loop body, use an <code>if</code> statement in conjunction with the <code>.isupper()</code> string method to check for uppercase characters and move <code>pass</code> inside the new <code>if</code> statement.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-list-comprehension-by-building-a-case-converter-program",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

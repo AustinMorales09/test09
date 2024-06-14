@@ -1,0 +1,65 @@
+{
+  "id": "5900f5361000cf542c510049",
+  "title": "Problem 458: Permutations of Project",
+  "challengeType": 1,
+  "forumTopicId": 302132,
+  "dashedName": "problem-458-permutations-of-project",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function permutationsOfProject() {\n\n  return true;\n}\n\npermutationsOfProject();",
+      "error": null,
+      "seed": "function permutationsOfProject() {\n\n  return true;\n}\n\npermutationsOfProject();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>permutationsOfProject()</code> should return <code>423341841</code>.</p>",
+      "testString": "assert.strictEqual(permutationsOfProject(), 423341841);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Consider the alphabet $A$ made out of the letters of the word <code>project</code>: $A = \\{c, e, j, o, p, r, t\\}$.</p>\n<p>Let $T(n)$ be the number of strings of length $n$ consisting of letters from $A$ that do not have a substring that is one of the 5040 permutations of <code>project</code>.</p>\n<p>$T(7) = 7^7 - 7! = 818\\,503$.</p>\n<p>Find $T({10}^{12})$. Give the last 9 digits of your answer.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 57,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "6636f47542d2a4421a433d8e",
+  "title": "Task 30",
+  "challengeType": 19,
+  "dashedName": "task-30",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following sentences correctly uses a comparative form for a long adjective?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>This car is beautifuller than the other.</code></p>",
+        "feedback": "<p><code>Beautiful</code> is a long adjective; the correct comparative form is <code>more beautiful</code>, not <code>beautifuller</code>.</p>"
+      },
+      {
+        "answer": "<p><code>She felt more sadly than before.</code></p>",
+        "feedback": "<p><code>Sad</code> is a short adjective, so the correct form should be <code>sadder</code>, not <code>more sadly</code>.</p>"
+      },
+      {
+        "answer": "<p><code>He is intelligenter than his brother.</code></p>",
+        "feedback": "<p><code>Intelligent</code> is a long adjective; the correct comparative form is <code>more intelligent</code>, not <code>intelligenter</code>.</p>"
+      },
+      {
+        "answer": "<p><code>That solution is more practical than the one we tried yesterday.</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>For longer adjectives, typically those with two or more syllables, you use <code>more</code> or <code>less</code> before the adjective to form comparatives. This structure helps compare qualities or characteristics of different items or people.</p>\n<p>Examples:</p>\n<p><code>This book is more interesting than the one I read last week.</code> <code>More interesting</code> is the comparative form of <code>interesting</code>, used to compare the level of interest between two books.</p>\n<p><code>He is less experienced than his colleague.</code> <code>Less experienced</code> is the comparative form of <code>experienced</code>, used to compare the amount of experience between two individuals.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 31,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

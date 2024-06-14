@@ -1,0 +1,89 @@
+{
+  "id": "657e736ce426b15d9f3a3f99",
+  "title": "Task 122",
+  "challengeType": 19,
+  "dashedName": "task-122",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah do as part of her job?</p>",
+    "answers": [
+      {
+        "answer": "<p>She performs the same task every day.</p>",
+        "feedback": "<p>The audio indicates she does different tasks.</p>"
+      },
+      {
+        "answer": "<p>She has a variety of tasks, and does a different one each day.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She only works on Mondays.</p>",
+        "feedback": "<p>She mentions working more than just one day.</p>"
+      },
+      {
+        "answer": "<p>She never tests the software.</p>",
+        "feedback": "<p>Testing software is a part of her daily tasks.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 33.9,
+        "finishTimestamp": 38.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6,
+        "dialogue": {
+          "text": "After that, during the morning, I start testing the software. I have a different task to do each day.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Sarah's work as a QA tester involves a variety of tasks. Understanding this variety is important to comprehend how such roles can differ day by day.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Listen to the audio to understand the context. Choose the correct answer to describe the variation in Sarah's tasks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 126,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

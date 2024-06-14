@@ -1,0 +1,71 @@
+{
+  "id": "587d78a3367417b2b2512ace",
+  "title": "Push Elements Left or Right with the float Property",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/c2MDqu2",
+  "forumTopicId": 301066,
+  "dashedName": "push-elements-left-or-right-with-the-float-property",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<head>\n  <style>\n    #left {\n\n      width: 50%;\n    }\n    #right {\n\n      width: 40%;\n    }\n    aside, section {\n      padding: 2px;\n      background-color: #ccc;\n    }\n  </style>\n</head>\n<body>\n  <header>\n    <h1>Welcome!</h1>\n  </header>\n  <section id=\"left\">\n    <h2>Content</h2>\n    <p>Good stuff</p>\n  </section>\n  <aside id=\"right\">\n    <h2>Sidebar</h2>\n    <p>Links</p>\n  </aside>\n</body>",
+      "error": null,
+      "seed": "<head>\n  <style>\n    #left {\n\n      width: 50%;\n    }\n    #right {\n\n      width: 40%;\n    }\n    aside, section {\n      padding: 2px;\n      background-color: #ccc;\n    }\n  </style>\n</head>\n<body>\n  <header>\n    <h1>Welcome!</h1>\n  </header>\n  <section id=\"left\">\n    <h2>Content</h2>\n    <p>Good stuff</p>\n  </section>\n  <aside id=\"right\">\n    <h2>Sidebar</h2>\n    <p>Links</p>\n  </aside>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<head>\n  <style>\n    #left {\n      float: left;\n      width: 50%;\n    }\n    #right {\n      float: right;\n      width: 40%;\n    }\n    aside, section {\n      padding: 2px;\n      background-color: #ccc;\n    }\n  </style>\n</head>\n<body>\n  <header>\n    <h1>Welcome!</h1>\n  </header>\n  <section id=\"left\">\n    <h2>Content</h2>\n    <p>Good stuff</p>\n  </section>\n  <aside id=\"right\">\n    <h2>Sidebar</h2>\n    <p>Links</p>\n  </aside>\n</body>",
+        "error": null,
+        "seed": "<head>\n  <style>\n    #left {\n      float: left;\n      width: 50%;\n    }\n    #right {\n      float: right;\n      width: 40%;\n    }\n    aside, section {\n      padding: 2px;\n      background-color: #ccc;\n    }\n  </style>\n</head>\n<body>\n  <header>\n    <h1>Welcome!</h1>\n  </header>\n  <section id=\"left\">\n    <h2>Content</h2>\n    <p>Good stuff</p>\n  </section>\n  <aside id=\"right\">\n    <h2>Sidebar</h2>\n    <p>Links</p>\n  </aside>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The element with id <code>left</code> should have a <code>float</code> value of <code>left</code>.</p>",
+      "testString": "assert($('#left').css('float') == 'left');"
+    },
+    {
+      "text": "<p>The element with id <code>right</code> should have a <code>float</code> value of <code>right</code>.</p>",
+      "testString": "assert($('#right').css('float') == 'right');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The next positioning tool does not actually use <code>position</code>, but sets the <code>float</code> property of an element. Floating elements are removed from the normal flow of a document and pushed to either the <code>left</code> or <code>right</code> of their containing parent element. It's commonly used with the <code>width</code> property to specify how much horizontal space the floated element requires.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The given markup would work well as a two-column layout, with the <code>section</code> and <code>aside</code> elements next to each other. Give the <code>#left</code> item a <code>float</code> of <code>left</code> and the <code>#right</code> item a <code>float</code> of <code>right</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-visual-design",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

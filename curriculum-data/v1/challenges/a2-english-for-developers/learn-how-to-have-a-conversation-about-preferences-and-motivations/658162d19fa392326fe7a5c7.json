@@ -1,0 +1,75 @@
+{
+  "id": "658162d19fa392326fe7a5c7",
+  "title": "Task 41",
+  "challengeType": 22,
+  "dashedName": "task-41",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hey, Alice. Yeah, I feel a bit _.</p>",
+    "blanks": [
+      {
+        "answer": "demotivated",
+        "feedback": "<p>This word is used to describe how Tom feels. It ends with <code>ed</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 5.3,
+        "finishTimestamp": 8.48
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.18,
+        "dialogue": {
+          "text": "Hey, Alice. Yeah, I feel a bit demotivated.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you see <code>-ed</code> at the end of a word like <code>demotivate</code>, it's talking about how you feel.</p>\n<p><code>Demotivate</code> is when something makes you not want to do things. If you're feeling <code>demotivated</code>, it means something has made you lose your want to do things.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

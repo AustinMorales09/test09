@@ -1,0 +1,79 @@
+{
+  "id": "6633e43c32afebfaef45da26",
+  "title": "Task 9",
+  "challengeType": 22,
+  "dashedName": "task-9",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>If you see her today, she_ _ a black and green jacket and a beige shirt.</p>",
+    "blanks": [
+      {
+        "answer": "'s",
+        "feedback": "<p>The verb to be for <code>he</code>, <code>she</code> or <code>it</code> in its contracted form.</p>"
+      },
+      {
+        "answer": "wearing",
+        "feedback": "<p>The verb used to refer to the clothes you have on your body. Use its <code>-ing</code> form.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 10.58,
+        "finishTimestamp": 14.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.86,
+        "dialogue": {
+          "text": "If you see her today, she's wearing a black and green jacket and a beige shirt.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.36
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When talking about the clothes a person has in their body when you see them, you normally use a combination of the verb <code>to be</code> with the verb <code>wear</code> in the <code>-ing</code> form. Examples: <code>Paul is wearing jeans and a T-shirt.</code> <code>I am wearing a blue jacket.</code></p>\n<p>Listen to the sentence and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

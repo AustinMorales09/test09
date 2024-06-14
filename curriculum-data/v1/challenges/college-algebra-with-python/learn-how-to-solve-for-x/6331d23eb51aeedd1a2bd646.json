@@ -1,0 +1,48 @@
+{
+  "id": "6331d23eb51aeedd1a2bd646",
+  "title": "Solving for X",
+  "challengeType": 15,
+  "videoId": "_U9PEFKjyb8",
+  "dashedName": "solving-for-x",
+  "solutions": [],
+  "question": {
+    "text": "<p>In Python, what is the library you import to solve algebra problems with variables?</p>",
+    "answers": [
+      {
+        "answer": "<p>symba</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>math</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>sympsons</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>sympy</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [
+    "<p>Add the code to solve for x from the video to your algebra Colab notebook.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This first video will show you the essence of algebra and then how Python code does the same task in a different way.</p>\n<p>Here is the <a href=\"https://colab.research.google.com/drive/11Zi77gs1FKoEqfPqYa2HtTENiWZyQAO2?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Colab notebook to go along with this video.</a> Add the code from the video to your algebra Colab notebook to see how to solve for X using Python. Then change the code if you want, test it, and compare it to paper-and-pencil solving. Remember the equation input needs to be in Python syntax.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-solve-for-x",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

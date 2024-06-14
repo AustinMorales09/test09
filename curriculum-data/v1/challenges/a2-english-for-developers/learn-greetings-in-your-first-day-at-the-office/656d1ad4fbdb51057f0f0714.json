@@ -1,0 +1,116 @@
+{
+  "id": "656d1ad4fbdb51057f0f0714",
+  "title": "Task 145",
+  "challengeType": 19,
+  "dashedName": "task-145",
+  "solutions": [],
+  "question": {
+    "text": "<p>In the dialogue, how does Brian respond when Sophie says, <code>Oh, come on, Brian!</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>He disagrees.</p>",
+        "feedback": "<p>Brian doesn't show any sign of disagreement.</p>"
+      },
+      {
+        "answer": "<p>He says Sophie is wrong.</p>",
+        "feedback": "<p>Brian doesn't say Sophie is incorrect.</p>"
+      },
+      {
+        "answer": "<p>He confirms what he said.</p>",
+        "feedback": "<p><code>It is true</code> means Brian is standing by his previous statement.</p>"
+      },
+      {
+        "answer": "<p>He changes the topic.</p>",
+        "feedback": "<p>Brian continues on the same topic, praising Sophie.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Brian",
+          "position": {
+            "x": 75,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.84,
+        "finishTimestamp": 28.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 1.44,
+        "dialogue": {
+          "text": "Oh, come on, Brian.",
+          "align": "left"
+        }
+      },
+      {
+        "character": "Brian",
+        "startTime": 2,
+        "finishTime": 7.25,
+        "dialogue": {
+          "text": "But it's true. She's the person to go to if you need help.",
+          "align": "right"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 7.75
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 7.75
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>it is true</code> is used to confirm or agree with what someone else said. It means that something is correct or factual.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 148,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

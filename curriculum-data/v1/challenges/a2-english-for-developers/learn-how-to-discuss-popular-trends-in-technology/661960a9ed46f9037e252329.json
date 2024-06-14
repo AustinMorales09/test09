@@ -1,0 +1,88 @@
+{
+  "id": "661960a9ed46f9037e252329",
+  "title": "Task 43",
+  "challengeType": 19,
+  "dashedName": "task-43",
+  "solutions": [],
+  "question": {
+    "text": "<p>What trend in technology is James asking Sarah about?</p>",
+    "answers": [
+      {
+        "answer": "<p>Biotechnology</p>",
+        "feedback": "<p>Biotechnology is not discussed in this dialogue.</p>"
+      },
+      {
+        "answer": "<p>Quantum Computing</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Cybersecurity</p>",
+        "feedback": "<p>Biotechnology is mentioned later in this dialogue, but it's not what James is asking about now.</p>"
+      },
+      {
+        "answer": "<p>5G technology</p>",
+        "feedback": "<p>5G technology is not discussed in this dialogue.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 2.42
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 3.42,
+        "dialogue": {
+          "text": "Sarah, have you heard about Quantum Computing?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 3.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you ask someone <code>have you heard about it?</code>, you want to know if the other person has any information about the topic that they can share with you.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 45,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

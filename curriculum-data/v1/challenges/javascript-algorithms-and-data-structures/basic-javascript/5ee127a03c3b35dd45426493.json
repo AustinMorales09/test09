@@ -1,0 +1,74 @@
+{
+  "id": "5ee127a03c3b35dd45426493",
+  "title": "Assigning the Value of One Variable to Another",
+  "challengeType": 1,
+  "forumTopicId": 418265,
+  "dashedName": "assigning-the-value-of-one-variable-to-another",
+  "challengeFiles": [
+    {
+      "head": "if (typeof a != 'undefined') {\n  a = undefined;\n}\nif (typeof b != 'undefined') {\n  b = undefined;\n}",
+      "tail": "(function(a, b) {\n  return 'a = ' + a + ', b = ' + b;\n})(a, b);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Setup\nvar a;\na = 7;\nvar b;\n\n// Only change code below this line",
+      "error": null,
+      "seed": "// Setup\nvar a;\na = 7;\nvar b;\n\n// Only change code below this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "var a;\na = 7;\nvar b;\nb = a;",
+        "error": null,
+        "seed": "var a;\na = 7;\nvar b;\nb = a;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not change code above the specified comment.</p>",
+      "testString": "assert(/var a;/.test(__helpers.removeJSComments(code)) && /a = 7;/.test(__helpers.removeJSComments(code)) && /var b;/.test(__helpers.removeJSComments(code)));"
+    },
+    {
+      "text": "<p><code>b</code> should have a value of <code>7</code>.</p>",
+      "testString": "assert(typeof b === 'number' && b === 7);"
+    },
+    {
+      "text": "<p><code>a</code> should be assigned to <code>b</code> with <code>=</code>.</p>",
+      "testString": "assert(/b\\s*=\\s*a\\s*/g.test(__helpers.removeJSComments(code)));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>After a value is assigned to a variable using the <dfn>assignment</dfn> operator, you can assign the value of that variable to another variable using the <dfn>assignment</dfn> operator.</p>\n<pre><code class=\"language-js\">var myVar;\nmyVar = 5;\nvar myNum;\nmyNum = myVar;\n</code></pre>\n<p>The above declares a <code>myVar</code> variable with no value, then assigns it the value <code>5</code>. Next, a variable named <code>myNum</code> is declared with no value. Then, the contents of <code>myVar</code> (which is <code>5</code>) is assigned to the variable <code>myNum</code>. Now, <code>myNum</code> also has the value of <code>5</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Assign the contents of <code>a</code> to variable <code>b</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

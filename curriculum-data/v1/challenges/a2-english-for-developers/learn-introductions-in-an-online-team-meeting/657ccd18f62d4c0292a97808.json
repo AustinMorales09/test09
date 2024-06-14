@@ -1,0 +1,88 @@
+{
+  "id": "657ccd18f62d4c0292a97808",
+  "title": "Task 37",
+  "challengeType": 19,
+  "dashedName": "task-37",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the main responsibility of a <code>UX/UI designer</code> like Linda?</p>",
+    "answers": [
+      {
+        "answer": "<p>Managing company finances.</p>",
+        "feedback": "<p>This is not related to UX/UI design, which is about creating user-friendly digital products.</p>"
+      },
+      {
+        "answer": "<p>Designing user-friendly websites and applications.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Teaching computer programming.</p>",
+        "feedback": "<p>UX/UI design is different from teaching programming; it's about designing digital interfaces.</p>"
+      },
+      {
+        "answer": "<p>Organizing company events.</p>",
+        "feedback": "<p>Organizing events is not typically a responsibility of a UX/UI designer.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Linda",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 27.18,
+        "finishTimestamp": 30.38
+      }
+    },
+    "commands": [
+      {
+        "character": "Linda",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.2,
+        "dialogue": {
+          "text": "Finally this is Linda our UX UI designer.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Linda",
+        "opacity": 0,
+        "startTime": 4.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>UX</code> stands for <code>User Experience</code>, and <code>UI</code> stands for <code>User Interface</code>. A <code>UX/UI designer</code> works on designing websites or applications to make them easy and pleasant to use.</p>\n<p>The <code>UX</code> part focuses on the overall feel of the experience, while <code>UI</code> focuses on the specific layout and design of the interface.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 38,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

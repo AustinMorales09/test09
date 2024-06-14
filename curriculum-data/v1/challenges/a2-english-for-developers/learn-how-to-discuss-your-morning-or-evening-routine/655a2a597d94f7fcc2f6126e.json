@@ -1,0 +1,45 @@
+{
+  "id": "655a2a597d94f7fcc2f6126e",
+  "title": "Task 40",
+  "challengeType": 19,
+  "dashedName": "task-40",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>hit the snooze button</code> mean in the context of an alarm clock?</p>",
+    "answers": [
+      {
+        "answer": "<p>To turn off the alarm clock permanently</p>",
+        "feedback": "<p>Hitting the snooze button delays the alarm temporarily, not turning it off permanently.</p>"
+      },
+      {
+        "answer": "<p>To press the button on the alarm clock for more sleep time</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To set the alarm clock for the first time</p>",
+        "feedback": "<p>The phrase specifically refers to delaying the alarm, not setting it initially.</p>"
+      },
+      {
+        "answer": "<p>To increase the volume of the alarm</p>",
+        "feedback": "<p>Hitting the snooze button delays the alarm, rather than increasing its volume.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>hit the snooze button</code> refers to the action of delaying the alarm clock to sleep a little longer.</p>\n<p>The verb <code>hit</code> in this context means to press, and <code>snooze button</code> is a feature on alarm clocks that allows for a brief delay in the alarm.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 41,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,82 @@
+{
+  "id": "5a23c84252665b21eecc7ed2",
+  "title": "Knapsack problem/Bounded",
+  "challengeType": 1,
+  "forumTopicId": 323652,
+  "dashedName": "knapsack-problembounded",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function findBestPack(data, maxweight) {\n\n}",
+      "error": null,
+      "seed": "function findBestPack(data, maxweight) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function findBestPack(data, maxweight) {\n  var m = [[0]]; // maximum pack value found so far\n  var b = [[0]]; // best combination found so far\n  var opts = [0]; // item index for 0 of item 0\n  var P = [1]; // item encoding for 0 of item 0\n  var choose = 0;\n  for (var j = 0; j < data.length; j++) {\n    opts[j + 1] = opts[j] + data[j].pieces; // item index for 0 of item j+1\n    P[j + 1] = P[j] * (1 + data[j].pieces); // item encoding for 0 of item j+1\n  }\n  for (var j = 0; j < opts[data.length]; j++) {\n    m[0][j + 1] = b[0][j + 1] = 0; // best values and combos for empty pack: nothing\n  }\n  for (var w = 1; w <= maxweight; w++) {\n    m[w] = [0];\n    b[w] = [0];\n    for (var j = 0; j < data.length; j++) {\n      var N = data[j].pieces; // how many of these can we have?\n      var base = opts[j]; // what is the item index for 0 of these?\n      for (var n = 1; n <= N; n++) {\n        var W = n * data[j].weight; // how much do these items weigh?\n        var s = w >= W ? 1 : 0; // can we carry this many?\n        var v = s * n * data[j].value; // how much are they worth?\n        var I = base + n; // what is the item number for this many?\n        var wN = w - s * W; // how much other stuff can we be carrying?\n        var C = n * P[j] + b[wN][base]; // encoded combination\n        m[w][I] = Math.max(m[w][I - 1], v + m[wN][base]); // best value\n        choose = b[w][I] = m[w][I] > m[w][I - 1] ? C : b[w][I - 1];\n      }\n    }\n  }\n\n  var best = [];\n  for (var j = data.length - 1; j >= 0; j--) {\n    best[j] = Math.floor(choose / P[j]);\n    choose -= best[j] * P[j];\n  }\n\n  var wgt = 0;\n  var val = 0;\n  for (var i = 0; i < best.length; i++) {\n    if (0 == best[i]) continue;\n    wgt += best[i] * data[i].weight;\n    val += best[i] * data[i].value;\n  }\n\n  return val;\n}",
+        "error": null,
+        "seed": "function findBestPack(data, maxweight) {\n  var m = [[0]]; // maximum pack value found so far\n  var b = [[0]]; // best combination found so far\n  var opts = [0]; // item index for 0 of item 0\n  var P = [1]; // item encoding for 0 of item 0\n  var choose = 0;\n  for (var j = 0; j < data.length; j++) {\n    opts[j + 1] = opts[j] + data[j].pieces; // item index for 0 of item j+1\n    P[j + 1] = P[j] * (1 + data[j].pieces); // item encoding for 0 of item j+1\n  }\n  for (var j = 0; j < opts[data.length]; j++) {\n    m[0][j + 1] = b[0][j + 1] = 0; // best values and combos for empty pack: nothing\n  }\n  for (var w = 1; w <= maxweight; w++) {\n    m[w] = [0];\n    b[w] = [0];\n    for (var j = 0; j < data.length; j++) {\n      var N = data[j].pieces; // how many of these can we have?\n      var base = opts[j]; // what is the item index for 0 of these?\n      for (var n = 1; n <= N; n++) {\n        var W = n * data[j].weight; // how much do these items weigh?\n        var s = w >= W ? 1 : 0; // can we carry this many?\n        var v = s * n * data[j].value; // how much are they worth?\n        var I = base + n; // what is the item number for this many?\n        var wN = w - s * W; // how much other stuff can we be carrying?\n        var C = n * P[j] + b[wN][base]; // encoded combination\n        m[w][I] = Math.max(m[w][I - 1], v + m[wN][base]); // best value\n        choose = b[w][I] = m[w][I] > m[w][I - 1] ? C : b[w][I - 1];\n      }\n    }\n  }\n\n  var best = [];\n  for (var j = data.length - 1; j >= 0; j--) {\n    best[j] = Math.floor(choose / P[j]);\n    choose -= best[j] * P[j];\n  }\n\n  var wgt = 0;\n  var val = 0;\n  for (var i = 0; i < best.length; i++) {\n    if (0 == best[i]) continue;\n    wgt += best[i] * data[i].weight;\n    val += best[i] * data[i].value;\n  }\n\n  return val;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>findBestPack([{ name:'map', weight:9, value:150, pieces:1 }, { name:'compass', weight:13, value:35, pieces:1 }, { name:'water', weight:153, value:200, pieces:2 }, { name:'sandwich', weight:50, value:60, pieces:2 }, { name:'glucose', weight:15, value:60, pieces:2 }, { name:'tin', weight:68, value:45, pieces:3 }, { name:'banana', weight:27, value:60, pieces:3 }, { name:'apple', weight:39, value:40, pieces:3 }, { name:'cheese', weight:23, value:30, pieces:1 }, { name:'beer', weight:52, value:10, pieces:3 }, { name:'suntan, cream', weight:11, value:70, pieces:1 }, { name:'camera', weight:32, value:30, pieces:1 }, { name:'T-shirt', weight:24, value:15, pieces:2 }], 300)</code> should return <code>755</code>.</p>",
+      "testString": "assert.equal(\n  findBestPack(\n    [\n      { name: 'map', weight: 9, value: 150, pieces: 1 },\n      { name: 'compass', weight: 13, value: 35, pieces: 1 },\n      { name: 'water', weight: 153, value: 200, pieces: 2 },\n      { name: 'sandwich', weight: 50, value: 60, pieces: 2 },\n      { name: 'glucose', weight: 15, value: 60, pieces: 2 },\n      { name: 'tin', weight: 68, value: 45, pieces: 3 },\n      { name: 'banana', weight: 27, value: 60, pieces: 3 },\n      { name: 'apple', weight: 39, value: 40, pieces: 3 },\n      { name: 'cheese', weight: 23, value: 30, pieces: 1 },\n      { name: 'beer', weight: 52, value: 10, pieces: 3 },\n      { name: 'suntan, cream', weight: 11, value: 70, pieces: 1 },\n      { name: 'camera', weight: 32, value: 30, pieces: 1 },\n      { name: 'T-shirt', weight: 24, value: 15, pieces: 2 }\n    ],\n    300\n  ),\n  755\n);"
+    },
+    {
+      "text": "<p><code>findBestPack([{ name:'map', weight:9, value:150, pieces:1 }, { name:'compass', weight:13, value:35, pieces:1 }, { name:'water', weight:153, value:200, pieces:2 }, { name:'sandwich', weight:50, value:60, pieces:2 }, { name:'glucose', weight:15, value:60, pieces:2 }, { name:'tin', weight:68, value:45, pieces:3 }, { name:'banana', weight:27, value:60, pieces:3 }, { name:'apple', weight:39, value:40, pieces:3 }, { name:'cheese', weight:23, value:30, pieces:1 }, { name:'beer', weight:52, value:10, pieces:3 }, { name:'suntan, cream', weight:11, value:70, pieces:1 }, { name:'camera', weight:32, value:30, pieces:1 }, { name:'T-shirt', weight:24, value:15, pieces:2 }], 400)</code> should return <code>875</code>.</p>",
+      "testString": "assert.equal(\n  findBestPack(\n    [\n      { name: 'map', weight: 9, value: 150, pieces: 1 },\n      { name: 'compass', weight: 13, value: 35, pieces: 1 },\n      { name: 'water', weight: 153, value: 200, pieces: 2 },\n      { name: 'sandwich', weight: 50, value: 60, pieces: 2 },\n      { name: 'glucose', weight: 15, value: 60, pieces: 2 },\n      { name: 'tin', weight: 68, value: 45, pieces: 3 },\n      { name: 'banana', weight: 27, value: 60, pieces: 3 },\n      { name: 'apple', weight: 39, value: 40, pieces: 3 },\n      { name: 'cheese', weight: 23, value: 30, pieces: 1 },\n      { name: 'beer', weight: 52, value: 10, pieces: 3 },\n      { name: 'suntan, cream', weight: 11, value: 70, pieces: 1 },\n      { name: 'camera', weight: 32, value: 30, pieces: 1 },\n      { name: 'T-shirt', weight: 24, value: 15, pieces: 2 }\n    ],\n    400\n  ),\n  875\n);"
+    },
+    {
+      "text": "<p><code>findBestPack([{ name:'map', weight:9, value:150, pieces:1 }, { name:'compass', weight:13, value:35, pieces:1 }, { name:'water', weight:153, value:200, pieces:2 }, { name:'sandwich', weight:50, value:60, pieces:2 }, { name:'glucose', weight:15, value:60, pieces:2 }, { name:'tin', weight:68, value:45, pieces:3 }, { name:'banana', weight:27, value:60, pieces:3 }, { name:'apple', weight:39, value:40, pieces:3 }, { name:'cheese', weight:23, value:30, pieces:1 }, { name:'beer', weight:52, value:10, pieces:3 }, { name:'suntan, cream', weight:11, value:70, pieces:1 }, { name:'camera', weight:32, value:30, pieces:1 }, { name:'T-shirt', weight:24, value:15, pieces:2 }], 500)</code> should return <code>1015</code>.</p>",
+      "testString": "assert.equal(\n  findBestPack(\n    [\n      { name: 'map', weight: 9, value: 150, pieces: 1 },\n      { name: 'compass', weight: 13, value: 35, pieces: 1 },\n      { name: 'water', weight: 153, value: 200, pieces: 2 },\n      { name: 'sandwich', weight: 50, value: 60, pieces: 2 },\n      { name: 'glucose', weight: 15, value: 60, pieces: 2 },\n      { name: 'tin', weight: 68, value: 45, pieces: 3 },\n      { name: 'banana', weight: 27, value: 60, pieces: 3 },\n      { name: 'apple', weight: 39, value: 40, pieces: 3 },\n      { name: 'cheese', weight: 23, value: 30, pieces: 1 },\n      { name: 'beer', weight: 52, value: 10, pieces: 3 },\n      { name: 'suntan, cream', weight: 11, value: 70, pieces: 1 },\n      { name: 'camera', weight: 32, value: 30, pieces: 1 },\n      { name: 'T-shirt', weight: 24, value: 15, pieces: 2 }\n    ],\n    500\n  ),\n  1015\n);"
+    },
+    {
+      "text": "<p><code>findBestPack([{ name:'map', weight:9, value:150, pieces:1 }, { name:'compass', weight:13, value:35, pieces:1 }, { name:'water', weight:153, value:200, pieces:2 }, { name:'sandwich', weight:50, value:60, pieces:2 }, { name:'glucose', weight:15, value:60, pieces:2 }, { name:'tin', weight:68, value:45, pieces:3 }, { name:'banana', weight:27, value:60, pieces:3 }, { name:'apple', weight:39, value:40, pieces:3 }, { name:'cheese', weight:23, value:30, pieces:1 }, { name:'beer', weight:52, value:10, pieces:3 }, { name:'suntan, cream', weight:11, value:70, pieces:1 }, { name:'camera', weight:32, value:30, pieces:1 }, { name:'T-shirt', weight:24, value:15, pieces:2 }], 600)</code> should return <code>1120</code>.</p>",
+      "testString": "assert.equal(\n  findBestPack(\n    [\n      { name: 'map', weight: 9, value: 150, pieces: 1 },\n      { name: 'compass', weight: 13, value: 35, pieces: 1 },\n      { name: 'water', weight: 153, value: 200, pieces: 2 },\n      { name: 'sandwich', weight: 50, value: 60, pieces: 2 },\n      { name: 'glucose', weight: 15, value: 60, pieces: 2 },\n      { name: 'tin', weight: 68, value: 45, pieces: 3 },\n      { name: 'banana', weight: 27, value: 60, pieces: 3 },\n      { name: 'apple', weight: 39, value: 40, pieces: 3 },\n      { name: 'cheese', weight: 23, value: 30, pieces: 1 },\n      { name: 'beer', weight: 52, value: 10, pieces: 3 },\n      { name: 'suntan, cream', weight: 11, value: 70, pieces: 1 },\n      { name: 'camera', weight: 32, value: 30, pieces: 1 },\n      { name: 'T-shirt', weight: 24, value: 15, pieces: 2 }\n    ],\n    600\n  ),\n  1120\n);"
+    },
+    {
+      "text": "<p><code>findBestPack([{ name:'map', weight:9, value:150, pieces:1 }, { name:'compass', weight:13, value:35, pieces:1 }, { name:'water', weight:153, value:200, pieces:2 }, { name:'sandwich', weight:50, value:60, pieces:2 }, { name:'glucose', weight:15, value:60, pieces:2 }, { name:'tin', weight:68, value:45, pieces:3 }, { name:'banana', weight:27, value:60, pieces:3 }, { name:'apple', weight:39, value:40, pieces:3 }, { name:'cheese', weight:23, value:30, pieces:1 }, { name:'beer', weight:52, value:10, pieces:3 }, { name:'suntan, cream', weight:11, value:70, pieces:1 }, { name:'camera', weight:32, value:30, pieces:1 }, { name:'T-shirt', weight:24, value:15, pieces:2 }], 700)</code> should return <code>1225</code>.</p>",
+      "testString": "assert.equal(\n  findBestPack(\n    [\n      { name: 'map', weight: 9, value: 150, pieces: 1 },\n      { name: 'compass', weight: 13, value: 35, pieces: 1 },\n      { name: 'water', weight: 153, value: 200, pieces: 2 },\n      { name: 'sandwich', weight: 50, value: 60, pieces: 2 },\n      { name: 'glucose', weight: 15, value: 60, pieces: 2 },\n      { name: 'tin', weight: 68, value: 45, pieces: 3 },\n      { name: 'banana', weight: 27, value: 60, pieces: 3 },\n      { name: 'apple', weight: 39, value: 40, pieces: 3 },\n      { name: 'cheese', weight: 23, value: 30, pieces: 1 },\n      { name: 'beer', weight: 52, value: 10, pieces: 3 },\n      { name: 'suntan, cream', weight: 11, value: 70, pieces: 1 },\n      { name: 'camera', weight: 32, value: 30, pieces: 1 },\n      { name: 'T-shirt', weight: 24, value: 15, pieces: 2 }\n    ],\n    700\n  ),\n  1225\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The bounded knapsack problem is defined as follows:</p>\n<p>You are given an array of objects representing items to be put in a knapsack. The objects have 4 attributes: name, pieces (the number of the particular item), weight, and value. The items need to be selected so that the total weight does not exceed the maximum weight and the value is maximized. Keep in mind that each item can appear between 0 and <code>pieces</code> times.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function to solve the knapsack problem. The function is given the array of objects and the maximum weight as parameters. It should return the maximum total value possible.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 80,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

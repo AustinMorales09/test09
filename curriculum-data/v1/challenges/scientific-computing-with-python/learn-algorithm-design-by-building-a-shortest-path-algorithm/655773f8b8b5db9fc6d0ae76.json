@@ -1,0 +1,53 @@
+{
+  "id": "655773f8b8b5db9fc6d0ae76",
+  "title": "Step 25",
+  "challengeType": 20,
+  "dashedName": "step-25",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        10
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\n\ndef shortest_path(graph, start):\n    pass",
+      "error": null,
+      "seed": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\n\ndef shortest_path(graph, start):\n    pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a variable called <code>unvisited</code> inside the <code>shortest_path</code> function.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_function(\"shortest_path\").has_variable(\"unvisited\")`)) })"
+    },
+    {
+      "text": "<p>You should assign an empty list to your <code>unvisited</code> variable. Remember to delete <code>pass</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_function(\"shortest_path\").find_body().is_equivalent(\"unvisited = []\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To keep track of the visited nodes, you need a list of all the nodes in the graph. Once a node is visited, it will be removed from that list.</p>\n<p>Now, replace the <code>pass</code> keyword with a variable named <code>unvisited</code> and assign it an empty list.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

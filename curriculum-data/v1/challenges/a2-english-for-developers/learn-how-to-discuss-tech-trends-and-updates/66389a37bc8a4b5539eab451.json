@@ -1,0 +1,97 @@
+{
+  "id": "66389a37bc8a4b5539eab451",
+  "title": "Task 42",
+  "challengeType": 19,
+  "dashedName": "task-42",
+  "solutions": [],
+  "question": {
+    "text": "<p>What kind of ideas does Bob need from Sarah?</p>",
+    "answers": [
+      {
+        "answer": "<p>Ideas for new AI research topics</p>",
+        "feedback": "<p>Bob is looking for practical advice on using AI in programming, not necessarily new research topics.</p>"
+      },
+      {
+        "answer": "<p>Suggestions on AI tools for advanced developers</p>",
+        "feedback": "<p>Bob's question implies he's a beginner in using AI, so he likely needs more basic guidance rather than advanced tools.</p>"
+      },
+      {
+        "answer": "<p>General information about what AI is</p>",
+        "feedback": "<p>While general information could be useful, Bob specifically asks for ideas on how to use AI, which suggests a need for more applied guidance.</p>"
+      },
+      {
+        "answer": "<p>Practical advice on how to start using AI in his programming projects</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 5.66
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.56,
+        "dialogue": {
+          "text": "Sarah, I'm hearing a lot about AI in programming these days,",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "startTime": 4.6,
+        "finishTime": 6.66,
+        "dialogue": {
+          "text": "but I don't know how to use it. Any ideas?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 7.16
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 44,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

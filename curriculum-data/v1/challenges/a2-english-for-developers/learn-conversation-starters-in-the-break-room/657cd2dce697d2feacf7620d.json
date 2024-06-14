@@ -1,0 +1,80 @@
+{
+  "id": "657cd2dce697d2feacf7620d",
+  "title": "Task 55",
+  "challengeType": 22,
+  "dashedName": "task-55",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Those are great traits for someone in her position, I think. What _ she _ as the team lead?</p>",
+    "blanks": [
+      {
+        "answer": "does",
+        "feedback": "<p>You're looking for the correct auxiliary verb that goes with <code>she</code> when asking a question. Remember, <code>she</code> requires a different form of <code>do</code> than <code>I</code> or <code>you.</code></p>"
+      },
+      {
+        "answer": "do",
+        "feedback": "<p>You're looking for the main verb <code>do</code> to inquire about her job activities</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 12.3,
+        "finishTimestamp": 16.88
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.58,
+        "dialogue": {
+          "text": "Those are great traits for someone in her position, I think. What does she do as the team lead?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 6.08
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Now you will practice listening for the correct form of <code>do</code>. Listen carefully to how Tom asks about Maria's job as a team lead.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 57,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "65a78f35fab096c5694079db",
+  "title": "Task 134",
+  "challengeType": 22,
+  "dashedName": "task-134",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>With open _, there's always a _ for continuous improvement.</p>",
+    "blanks": [
+      {
+        "answer": "source",
+        "feedback": "<p>Refers to a model where the source code is available for anyone to see, modify, and distribute.</p>"
+      },
+      {
+        "answer": "chance",
+        "feedback": "<p>This noun means an opportunity or possibility for something to happen or be done, especially something desirable.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 57.44,
+        "finishTimestamp": 60.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4,
+        "dialogue": {
+          "text": "With open source, there's always a chance for continuous improvement.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>There's always a chance</code> means that there is a possibility or opportunity for something to happen. For example, <code>In a lottery, there's always a chance to win,</code> means that anyone who buys a ticket has the opportunity to win the prize.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 138,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

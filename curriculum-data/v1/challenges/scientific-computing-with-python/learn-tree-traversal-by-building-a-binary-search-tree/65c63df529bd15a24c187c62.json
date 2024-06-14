@@ -1,0 +1,53 @@
+{
+  "id": "65c63df529bd15a24c187c62",
+  "title": "Step 21",
+  "challengeType": 20,
+  "dashedName": "step-21",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        28,
+        33
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n",
+      "error": null,
+      "seed": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should write another <code>if</code> statement to check if <code>key</code> &#x3C; <code>node.key</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"BinarySearchTree\").find_function(\"_search\").find_ifs()[1].find_conditions()[0].is_equivalent(\"key < node.key\")`)) })"
+    },
+    {
+      "text": "<p>You should return <code>self._search(node.left, key)</code> from your new <code>if</code> block.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"BinarySearchTree\").find_function(\"_search\").find_ifs()[1].find_bodies()[0].is_equivalent(\"return self._search(node.left, key)\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Write another <code>if</code> statement that checks if the target key is less than the key of the current node.</p>\n<p>Inside the <code>if</code> block, return the result of calling the <code>_search</code> method with the left child of the current node and <code>key</code> as the arguments.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

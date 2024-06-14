@@ -1,0 +1,45 @@
+{
+  "id": "66362781eb0d663b5eabc353",
+  "title": "Task 24",
+  "challengeType": 19,
+  "dashedName": "task-24",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is <code>serverless computing</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>A new type of computer</p>",
+        "feedback": "<p><code>Serverless computing</code> is not a physical device but a cloud computing model.</p>"
+      },
+      {
+        "answer": "<p>A computer without servers</p>",
+        "feedback": "<p>The term <code>serverless</code> is more about not having to manage servers, not the absence of servers.</p>"
+      },
+      {
+        "answer": "<p>A cloud computing model</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>An internet-free computing method</p>",
+        "feedback": "<p><code>Serverless computing</code> relies on the internet and cloud services; it is not internet-free.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Serverless computing</code> is a <code>cloud computing</code> execution model where the cloud provider runs the server and dynamically manages the allocation of machine resources. The pricing is based on the actual amount of resources consumed by an application, rather than on pre-purchased units of capacity. It's called <code>serverless</code> because the developers do not have to deal with servers - they just upload their code, and the cloud provider takes care of the rest.</p>\n<p>For example, in <code>serverless computing</code>, you might upload a function to a cloud service, and it runs only when needed.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

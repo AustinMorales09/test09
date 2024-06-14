@@ -1,0 +1,57 @@
+{
+  "id": "660f5179b3b0ca558f6b4d4f",
+  "title": "Step 110",
+  "challengeType": 1,
+  "dashedName": "step-110",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        15
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\nlet inverted = true;\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\nfor (let i = 1; i <= count; i++) {\n\n  rows.unshift(padRow(i, count));\n}\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\nlet inverted = true;\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\nfor (let i = 1; i <= count; i++) {\n\n  rows.unshift(padRow(i, count));\n}\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use an <code>if</code> statement.</p>",
+      "testString": "assert.match(code, /if\\s*\\(/);"
+    },
+    {
+      "text": "<p>Your <code>if</code> statement should check if <code>inverted</code> is <code>true</code>.</p>",
+      "testString": "assert.match(code, /if\\s*\\(\\s*inverted/);"
+    },
+    {
+      "text": "<p>Your <code>if</code> condition should not use any comparison operators.</p>",
+      "testString": "assert.match(code, /if\\s*\\(\\s*inverted\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Use an <code>if</code> statement to check if <code>inverted</code> is true. Remember that you do not need to use an equality operator here.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 109,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

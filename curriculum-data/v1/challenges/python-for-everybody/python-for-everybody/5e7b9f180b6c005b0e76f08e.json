@@ -1,0 +1,46 @@
+{
+  "id": "5e7b9f180b6c005b0e76f08e",
+  "title": "Relational Databases: Relationship Building",
+  "challengeType": 11,
+  "videoId": "CSbqczsHVnc",
+  "bilibiliIds": {
+    "aid": 376996473,
+    "bvid": "BV1jo4y1S7VY",
+    "cid": 377532966
+  },
+  "dashedName": "relational-databases-relationship-building",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the INSERT command do in SQL?</p>",
+    "answers": [
+      {
+        "answer": "<p>It defines a new row by listing the fields we want to include followed by the values we want placed in the new row.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It defines a new column by listing the rows we want to include followed by the values we want placed in the new column.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It defines a new table by listing the rows and fields we want to include followed by the values that we want placed in the table.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 50,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

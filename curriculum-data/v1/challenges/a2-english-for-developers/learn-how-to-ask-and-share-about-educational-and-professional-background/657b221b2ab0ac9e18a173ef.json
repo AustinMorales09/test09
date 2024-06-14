@@ -1,0 +1,36 @@
+{
+  "id": "657b221b2ab0ac9e18a173ef",
+  "title": "Task 59",
+  "challengeType": 22,
+  "dashedName": "task-59",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>She knew the _ time of the meeting. She arrived _ at 3 pm.</p>",
+    "blanks": [
+      {
+        "answer": "exact",
+        "feedback": "<p>This word is an adjective, describing the noun <code>time</code>.</p>"
+      },
+      {
+        "answer": "exactly",
+        "feedback": "<p>This word is an adverb, showing that her arrival time was very precise.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Let's look at <code>exactly</code> and <code>exact</code>. You use <code>exactly</code> to show something is just right or very true. It is an adverb. For example, <code>You did it exactly right!</code>.</p>\n<p><code>Exact</code> is an adjective, and it describes something very correct or precise, like in <code>the exact time</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 61,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

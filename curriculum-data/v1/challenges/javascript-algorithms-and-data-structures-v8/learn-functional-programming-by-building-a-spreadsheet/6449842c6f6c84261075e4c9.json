@@ -1,0 +1,113 @@
+{
+  "id": "6449842c6f6c84261075e4c9",
+  "title": "Step 34",
+  "challengeType": 0,
+  "dashedName": "step-34",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        22,
+        26
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  sum,\n  average,\n  median\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nconst evalFormula = (x, cells) => {\n\n}\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      input.onchange = update;\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n  const element = event.target;\n  const value = element.value.replace(/\\s/g, \"\");\n  if (!value.includes(element.id) && value.startsWith('=')) {\n\n  }\n}",
+      "error": null,
+      "seed": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  sum,\n  average,\n  median\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nconst evalFormula = (x, cells) => {\n\n}\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      input.onchange = update;\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n  const element = event.target;\n  const value = element.value.replace(/\\s/g, \"\");\n  if (!value.includes(element.id) && value.startsWith('=')) {\n\n  }\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare an <code>idToText</code> variable in your <code>evalFormula</code> function.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*(?:const|let|var)\\s+idToText/);"
+    },
+    {
+      "text": "<p>You should use <code>const</code> to declare your <code>idToText</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText/);"
+    },
+    {
+      "text": "<p>Your <code>idToText</code> variable should be an arrow function.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\([^)]*\\)|[^\\s()]+)\\s*=>/);"
+    },
+    {
+      "text": "<p>Your <code>idToText</code> function should have an <code>id</code> parameter.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>/);"
+    },
+    {
+      "text": "<p>Your <code>idToText</code> function should return the result of calling the <code>.find()</code> method on your <code>cells</code> array. Your callback function should use an implicit return.</p>",
+      "testString": "assert.notMatch(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>\\s*\\{/);"
+    },
+    {
+      "text": "<p>Your <code>idToText</code> function should use an implicit return.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(/);"
+    },
+    {
+      "text": "<p>You should pass a callback function to your <code>.find()</code> method. Use arrow syntax.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\([^)]*\\)|[^\\s()]+)\\s*=>/);"
+    },
+    {
+      "text": "<p>Your callback function should have a <code>cell</code> parameter.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>/);"
+    },
+    {
+      "text": "<p>Your callback function should return whether <code>cell.id</code> is strictly equal to <code>id</code>.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>\\s*(?:cell\\.id\\s*===\\s*id|id\\s*===\\s*cell\\.id)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In your <code>evalFormula</code>, declare an <code>idToText</code> arrow function which takes an <code>id</code> parameter.</p>\n<p>Your <code>idToText</code> function should return the result of calling <code>.find()</code> on the <code>cells</code> array with a callback function that takes an <code>cell</code> parameter and returns <code>cell.id === id</code>.</p>\n<p>Both of your functions should use implicit returns.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 33,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

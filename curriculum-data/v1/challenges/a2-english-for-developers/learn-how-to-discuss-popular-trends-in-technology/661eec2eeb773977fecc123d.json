@@ -1,0 +1,75 @@
+{
+  "id": "661eec2eeb773977fecc123d",
+  "title": "Task 98",
+  "challengeType": 22,
+  "dashedName": "task-98",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That sounds fun. Are there _ practical applications for AR?</p>",
+    "blanks": [
+      {
+        "answer": "any",
+        "feedback": "<p>Sophie is asking about various practical applications of AR <em>without specifying one</em>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 24.8,
+        "finishTimestamp": 28
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.2,
+        "dialogue": {
+          "text": "That sounds fun. Are there any practical applications for AR?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In previous challenges, you learned how to use a word to say it doesn't matter which one or how many. Now, you can review it in this challenge.</p>\n<p>Listen to the audio and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 102,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

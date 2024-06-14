@@ -1,0 +1,65 @@
+{
+  "id": "5900f48f1000cf542c50ffa2",
+  "title": "Problem 291: Panaitopol Primes",
+  "challengeType": 1,
+  "forumTopicId": 301943,
+  "dashedName": "problem-291-panaitopol-primes",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function panaitopolPrimes() {\n\n  return true;\n}\n\npanaitopolPrimes();",
+      "error": null,
+      "seed": "function panaitopolPrimes() {\n\n  return true;\n}\n\npanaitopolPrimes();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>panaitopolPrimes()</code> should return <code>4037526</code>.</p>",
+      "testString": "assert.strictEqual(panaitopolPrimes(), 4037526);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A prime number $p$ is called a Panaitopol prime if $p = \\frac{x^4 - y^4}{x^3 + y^3}$ for some positive integers $x$ and $y$.</p>\n<p>Find how many Panaitopol primes are less than $5 × {10}^{15}$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 90,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

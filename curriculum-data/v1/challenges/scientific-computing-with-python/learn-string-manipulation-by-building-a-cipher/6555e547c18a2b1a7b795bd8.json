@@ -1,0 +1,49 @@
+{
+  "id": "6555e547c18a2b1a7b795bd8",
+  "title": "Step 93",
+  "challengeType": 20,
+  "dashedName": "step-93",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        31,
+        36
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'mrttaqrhknsw ih puggrur'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction=1):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    final_message = ''\n\n    for char in message.lower():\n\n        # Append any non-letter character to the message\n        if not char.isalpha():\n            final_message += char\n        else:        \n            # Find the right key character to encode/decode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted/decrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            final_message += alphabet[new_index]\n    \n    return final_message\n\ndef encrypt(message, key):\n    return vigenere(message, key)\n    \ndef decrypt(message, key):\n    return vigenere(message, key, -1)\nprint(f'\\nEncrypted text: {text}')\nprint(f'Key: {custom_key}')\ndecryption = decrypt(text, custom_key)\n#print(decryption)",
+      "error": null,
+      "seed": "text = 'mrttaqrhknsw ih puggrur'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction=1):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    final_message = ''\n\n    for char in message.lower():\n\n        # Append any non-letter character to the message\n        if not char.isalpha():\n            final_message += char\n        else:        \n            # Find the right key character to encode/decode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted/decrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            final_message += alphabet[new_index]\n    \n    return final_message\n\ndef encrypt(message, key):\n    return vigenere(message, key)\n    \ndef decrypt(message, key):\n    return vigenere(message, key, -1)\nprint(f'\\nEncrypted text: {text}')\nprint(f'Key: {custom_key}')\ndecryption = decrypt(text, custom_key)\n#print(decryption)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should uncomment your last <code>print()</code> call and change it to use <code>f'\\nDecrypted text: {decryption}\\n'</code> as the argument.</p>",
+      "testString": "({\n  test: () => {\n    const commentless_code = __helpers.python.removeComments(code);\n    assert.match(commentless_code, /^print\\s*\\(\\s*f(\"|')\\\\nDecrypted\\stext:\\s\\{\\s*decryption\\s*\\}\\\\n\\1\\s*\\)/m)\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Uncomment your last <code>print()</code> call and change it to use the f-string <code>f'\\nDecrypted text: {decryption}\\n'</code> as the argument.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 92,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

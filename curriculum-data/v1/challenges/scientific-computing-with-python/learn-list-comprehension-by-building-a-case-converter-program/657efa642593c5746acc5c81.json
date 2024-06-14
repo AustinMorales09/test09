@@ -1,0 +1,53 @@
+{
+  "id": "657efa642593c5746acc5c81",
+  "title": "Step 5",
+  "challengeType": 20,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        6
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    snake_cased_char_list = []\n    for char in pascal_or_camel_cased_string:\n        if char.isupper():\n            pass",
+      "error": null,
+      "seed": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    snake_cased_char_list = []\n    for char in pascal_or_camel_cased_string:\n        if char.isupper():\n            pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should assign the modified character to a variable named <code>converted_character</code>.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const convert_to_snake_case = __helpers.python.getDef(\"\\n\" + transformedCode, \"convert_to_snake_case\");\n        const { function_body } = convert_to_snake_case;\n\n        assert.match(function_body, / +converted_character\\s*=\\s*(\"|')_\\1\\s*\\+\\s*char\\.lower\\s*\\(\\s*\\)/);\n    }\n})"
+    },
+    {
+      "text": "<p>You should not have <code>pass</code> in your <code>if</code> statement.</p>",
+      "testString": "({\n    test: () => {\n        const commentless_code = __helpers.python.removeComments(code);\n        const {block_body} = __helpers.python.getBlock(commentless_code, /if\\s+char\\.isupper\\s*\\(\\s*\\)\\s*/);\n        assert.notMatch(block_body, /pass/);\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Inside the <code>if</code> statement body, you need to convert any uppercase character to lowercase and prepend an underscore to this lowercase character.</p>\n<p>Use the <code>.lower()</code> string method to convert uppercase characters to lowercase characters. You can then concatenate an underscore to the character using the plus sign.</p>\n<pre><code class=\"language-python\">'_' + char.lower()\n</code></pre>\n<p>Assign the modified character to a variable named <code>converted_character</code> inside the if statement body.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-list-comprehension-by-building-a-case-converter-program",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

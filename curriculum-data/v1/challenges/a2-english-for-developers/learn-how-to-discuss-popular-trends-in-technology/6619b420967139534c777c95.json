@@ -1,0 +1,87 @@
+{
+  "id": "6619b420967139534c777c95",
+  "title": "Task 51",
+  "challengeType": 22,
+  "dashedName": "task-51",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>They're _ for _ things like _ and _.</p>",
+    "blanks": [
+      {
+        "answer": "useful",
+        "feedback": "<p>Something that can help you perform a task.</p>"
+      },
+      {
+        "answer": "studying",
+        "feedback": "<p>The act of spending time learning something. Since it is preceded by <code>for</code>, it goes in the <code>-ing</code> form here.</p>"
+      },
+      {
+        "answer": "molecules",
+        "feedback": "<p>Groups of two or more atoms together. Very small parts of everything. Use the plural form here.</p>"
+      },
+      {
+        "answer": "drugs",
+        "feedback": "<p>Substances that can change the way your body acts or feels. They can be legal or illegal. Use the plural form here.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 20.16,
+        "finishTimestamp": 23.08
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.92,
+        "dialogue": {
+          "text": "They're useful for studying things like molecules and drugs.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you say something is <code>useful</code>, you mean it can help you to perform a certain task or activity. Example: <code>Computers are very useful for calculating things.</code> As you can see, after <code>useful</code>, we have the preposition <code>for</code>, meaning any verb that comes after it has to be in the <code>-ing</code> form (see the example).</p>\n<p><code>Molecules</code> are like tiny building blocks that make up everything. Everything you see and touch is made from molecules. They are groups of two or more atoms together.</p>\n<p><code>Drugs</code> are substances that change how our bodies feel or work. There are two kinds: medicine and illegal drugs. People can take drugs as pills, liquids, or in other ways.</p>\n<p>Fill in the blanks with the correct word from the dialogue.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 53,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

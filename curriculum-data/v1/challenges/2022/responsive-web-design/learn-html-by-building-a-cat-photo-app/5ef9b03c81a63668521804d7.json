@@ -1,0 +1,69 @@
+{
+  "id": "5ef9b03c81a63668521804d7",
+  "title": "Step 36",
+  "challengeType": 0,
+  "dashedName": "step-36",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        35,
+        38
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n          <figcaption>Cats <em>love</em> lasagna.</figcaption>  \n        </figure>\n        <h3>Top 3 things cats hate:</h3>\n        <ol>\n          <li>flea treatment</li>\n          <li>thunder</li>\n          <li>other cats</li>\n        </ol>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg\" alt=\"Five cats looking around a field.\">\n          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  \n        </figure>\n      </section>\n      <section>\n        <h2>Cat Form</h2>\n        <form>\n        </form>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n          <figcaption>Cats <em>love</em> lasagna.</figcaption>  \n        </figure>\n        <h3>Top 3 things cats hate:</h3>\n        <ol>\n          <li>flea treatment</li>\n          <li>thunder</li>\n          <li>other cats</li>\n        </ol>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg\" alt=\"Five cats looking around a field.\">\n          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  \n        </figure>\n      </section>\n      <section>\n        <h2>Cat Form</h2>\n        <form>\n        </form>\n      </section>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>form</code> element should have an opening tag and closing tag in the correct order. You may be missing one or both of the required tags, or have them in the wrong order.</p>",
+      "testString": "const noSpaces = code.replace(/\\s/g, '');\nassert(\n  document.querySelector('form') &&\n    code.match(/<\\/form>/g) &&\n    noSpaces.indexOf('<form') < noSpaces.indexOf('</form>')\n);"
+    },
+    {
+      "text": "<p>Your <code>form</code> element nested in the last <code>section</code> element should be below the <code>h2</code> element. You have the <code>h2</code> element and the <code>form</code> element in the wrong order.</p>",
+      "testString": "assert(document.querySelector('form').previousElementSibling.nodeName === 'H2');"
+    },
+    {
+      "text": "<p>Your <code>form</code> element should have no content. Remove any HTML elements or text between the <code>form</code> element's tags.</p>",
+      "testString": "assert($('form')[0].innerHTML.trim().length === 0);"
+    },
+    {
+      "text": "<p>Your <code>form</code> element does not have an <code>action</code> attribute. Check that there is a space after the opening tag's name and/or there are spaces before all attribute names.</p>",
+      "testString": "const form = document.querySelector('form');\nassert(form.hasAttribute('action'));"
+    },
+    {
+      "text": "<p>Your <code>form</code> element should have an <code>action</code> attribute with the value <code>https://freecatphotoapp.com/submit-cat-photo</code>.</p>",
+      "testString": "const form = document.querySelector('form');\nassert(\n  form\n    .getAttribute('action')\n    .match(/^https:\\/\\/freecatphotoapp\\.com\\/submit-cat-photo$/)\n);"
+    },
+    {
+      "text": "<p>Although you have set the <code>action</code> attribute to the correct URL, it is recommended to always surround the value of an attribute with quotation marks.</p>",
+      "testString": "assert(\n  !/\\<form\\s+action\\s*=\\s*https:\\/\\/freecatphotoapp\\.com\\/submit-cat-photo/.test(\n    code\n  )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>action</code> attribute indicates where form data should be sent.</p>\n<p>Here is an example of a <code>form</code> element with an <code>action</code> attribute:</p>\n<pre><code class=\"language-html\">&#x3C;form action=\"/submit-url\">&#x3C;/form>\n</code></pre>\n<p>In the example, <code>action=\"/submit-url\"</code> tells the browser that the form data should be sent to the path <code>/submit-url</code>.</p>\n<p>Add an <code>action</code> attribute with the value <code>https://freecatphotoapp.com/submit-cat-photo</code> to the <code>form</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

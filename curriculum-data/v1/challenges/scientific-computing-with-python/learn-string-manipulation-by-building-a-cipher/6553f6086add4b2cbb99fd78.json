@@ -1,0 +1,53 @@
+{
+  "id": "6553f6086add4b2cbb99fd78",
+  "title": "Step 54",
+  "challengeType": 20,
+  "dashedName": "step-54",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        19
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\nshift = 3\n\ndef caesar(message, offset):\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', message)\n    print('encrypted text:', encrypted_text)\n\ncaesar(text, shift)",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\nshift = 3\n\ndef caesar(message, offset):\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', message)\n    print('encrypted text:', encrypted_text)\n\ncaesar(text, shift)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call your function again, this time passing <code>text</code> and <code>13</code> as arguments.</p>",
+      "testString": "({ test: () => assert.match(code, /^caesar\\s*\\(\\s*text\\s*,\\s*13\\s*\\)/m) })"
+    },
+    {
+      "text": "<p>You should keep the existing function call.</p>",
+      "testString": "({ test: () => assert.match(code, /^caesar\\s*\\(\\s*text\\s*,\\s*shift\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>At the bottom of your code, after your existing <code>caesar(text, shift)</code> call, call your function again.</p>\n<p>This time, pass the <code>text</code> variable and the integer <code>13</code> as arguments.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 53,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

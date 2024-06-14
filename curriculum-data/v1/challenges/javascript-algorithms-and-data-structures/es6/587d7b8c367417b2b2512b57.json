@@ -1,0 +1,66 @@
+{
+  "id": "587d7b8c367417b2b2512b57",
+  "title": "Use * to Import Everything from a File",
+  "challengeType": 1,
+  "forumTopicId": 301210,
+  "dashedName": "use--to-import-everything-from-a-file",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "\n// Only change code above this line\n\nstringFunctions.uppercaseString(\"hello\");\nstringFunctions.lowercaseString(\"WORLD!\");",
+      "error": null,
+      "seed": "\n// Only change code above this line\n\nstringFunctions.uppercaseString(\"hello\");\nstringFunctions.lowercaseString(\"WORLD!\");"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "import * as stringFunctions from \"./string_functions.js\";\n\n// add code above this line\nstringFunctions.uppercaseString(\"hello\");\nstringFunctions.lowercaseString(\"WORLD!\");",
+        "error": null,
+        "seed": "import * as stringFunctions from \"./string_functions.js\";\n\n// add code above this line\nstringFunctions.uppercaseString(\"hello\");\nstringFunctions.lowercaseString(\"WORLD!\");"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should properly use <code>import * as</code> syntax.</p>",
+      "testString": "assert(\n  __helpers.removeJSComments(code).match(\n    /import\\s*\\*\\s*as\\s+stringFunctions\\s+from\\s*('|\")\\.\\/string_functions\\.js\\1/g\n  )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Suppose you have a file and you wish to import all of its contents into the current file. This can be done with the <code>import * as</code> syntax. Here's an example where the contents of a file named <code>math_functions.js</code> are imported into a file in the same directory:</p>\n<pre><code class=\"language-js\">import * as myMathModule from \"./math_functions.js\";\n</code></pre>\n<p>The above <code>import</code> statement will create an object called <code>myMathModule</code>. This is just a variable name, you can name it anything. The object will contain all of the exports from <code>math_functions.js</code> in it, so you can access the functions like you would any other object property. Here's how you can use the <code>add</code> and <code>subtract</code> functions that were imported:</p>\n<pre><code class=\"language-js\">myMathModule.add(2,3);\nmyMathModule.subtract(5,3);\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The code in this file requires the contents of the file: <code>string_functions.js</code>, that is in the same directory as the current file. Use the <code>import * as</code> syntax to import everything from the file into an object called <code>stringFunctions</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

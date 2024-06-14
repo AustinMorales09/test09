@@ -1,0 +1,88 @@
+{
+  "id": "656a421a905e792eca05d447",
+  "title": "Task 39",
+  "challengeType": 19,
+  "dashedName": "task-39",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sophie ask Tom to know about his origin?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>How are you from?</code></p>",
+        "feedback": "<p>Listen again.</p>"
+      },
+      {
+        "answer": "<p><code>Where you go?</code></p>",
+        "feedback": "<p>Listen again.</p>"
+      },
+      {
+        "answer": "<p><code>Why are you here?</code></p>",
+        "feedback": "<p>Listen again.</p>"
+      },
+      {
+        "answer": "<p><code>Where are you from?</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.98,
+        "finishTimestamp": 7.88
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 1.9,
+        "dialogue": {
+          "text": "Where are you from, Tom?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 2.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you want to know about someone's origin or the place they grew up, you can ask <code>Where are you from?</code>. This question is a common way to know more about a person's background.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

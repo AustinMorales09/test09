@@ -1,0 +1,44 @@
+{
+  "id": "656ab50005c38348b94da7a3",
+  "title": "Task 67",
+  "challengeType": 22,
+  "dashedName": "task-67",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ _ very friendly clients. I love those templates! _ _ just my style.</p>",
+    "blanks": [
+      {
+        "answer": "They",
+        "feedback": "<p>Consider which pronoun you'd use to represent a group or multiple items and match it with the appropriate verb form.</p>"
+      },
+      {
+        "answer": "are",
+        "feedback": "<p>Consider which pronoun you'd use to represent a group or multiple items and match it with the appropriate verb form.</p>"
+      },
+      {
+        "answer": "They",
+        "feedback": "<p>Consider which pronoun you'd use to represent a group or multiple items and match it with the appropriate verb form.</p>"
+      },
+      {
+        "answer": "are",
+        "feedback": "<p>Consider which pronoun you'd use to represent a group or multiple items and match it with the appropriate verb form.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When referring to a group of people or things, we often use <code>they</code> as the subject. Usually after a subject there's a verb. When <code>they</code> is followed by the verb <code>to be</code> in the present simple, it is conjugated as <code>are</code>. Example: <code>They are my colleagues.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 68,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

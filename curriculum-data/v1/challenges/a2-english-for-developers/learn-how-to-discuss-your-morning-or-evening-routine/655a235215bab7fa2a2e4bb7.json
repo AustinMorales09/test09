@@ -1,0 +1,45 @@
+{
+  "id": "655a235215bab7fa2a2e4bb7",
+  "title": "Task 37",
+  "challengeType": 19,
+  "dashedName": "task-37",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>healthy</code> imply?</p>",
+    "answers": [
+      {
+        "answer": "<p>Unhealthy or harmful</p>",
+        "feedback": "<p><code>Healthy</code> refers to good health, not being unhealthy or harmful.</p>"
+      },
+      {
+        "answer": "<p>Promoting or indicative of good health</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Staying the same without changes</p>",
+        "feedback": "<p><code>Healthy</code> relates to health, not to a lack of change.</p>"
+      },
+      {
+        "answer": "<p>Feeling unwell or sick</p>",
+        "feedback": "<p><code>Healthy</code> implies good health, not feeling unwell or sick.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The <code>y</code> ending can also turn nouns into adjectives that describe a characteristic or quality.</p>\n<p><code>Healthy</code> comes from the noun <code>health</code> and means having or showing good health. Like <code>sleepy</code>, the <code>y</code> changes the noun into an adjective. Other examples:</p>\n<p><code>Wealthy</code> (having a lot of wealth), <code>Cloudy</code> (full of or covered with clouds)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 38,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

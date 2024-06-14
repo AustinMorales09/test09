@@ -1,0 +1,88 @@
+{
+  "id": "657e77d93552a0c1b00f775a",
+  "title": "Task 30",
+  "challengeType": 19,
+  "dashedName": "task-30",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the expression <code>Would you like to</code> convey?</p>",
+    "answers": [
+      {
+        "answer": "<p>A direct question about preferences</p>",
+        "feedback": "<p>While it involves preferences, the expression is more of an invitation than a direct question.</p>"
+      },
+      {
+        "answer": "<p>A casual statement of fact</p>",
+        "feedback": "<p>It goes beyond a simple statement of fact.</p>"
+      },
+      {
+        "answer": "<p>An enthusiastic invitation or suggestion</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A rhetorical question</p>",
+        "feedback": "<p>It is a genuine invitation, not a rhetorical question.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Linda",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 39,
+        "finishTimestamp": 41.06
+      }
+    },
+    "commands": [
+      {
+        "character": "Linda",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Linda",
+        "startTime": 1,
+        "finishTime": 3.06,
+        "dialogue": {
+          "text": "Would you like to go cycling with me one of these days?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Linda",
+        "opacity": 0,
+        "startTime": 3.56
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>Would you like to</code> is often used when proposing or suggesting an activity. When Linda says <code>Would you like to go cycling with me one of these days?</code>, it's similar to saying <code>Hey, let's go cycling together.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 31,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

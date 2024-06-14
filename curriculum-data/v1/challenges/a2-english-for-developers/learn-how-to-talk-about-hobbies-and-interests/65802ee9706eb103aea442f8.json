@@ -1,0 +1,45 @@
+{
+  "id": "65802ee9706eb103aea442f8",
+  "title": "Task 103",
+  "challengeType": 19,
+  "dashedName": "task-103",
+  "solutions": [],
+  "question": {
+    "text": "<p><code>Really? That sounds great! ...</code></p>",
+    "answers": [
+      {
+        "answer": "<p><code>I would love to join you.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>I should love to join you.</code></p>",
+        "feedback": "<p>It might imply a sense of obligation rather than genuine willingness and enthusiasm.</p>"
+      },
+      {
+        "answer": "<p><code>I could love to join you.</code></p>",
+        "feedback": "<p>It implies possibility but lacks the definitive affirmation expressed in the original response.</p>"
+      },
+      {
+        "answer": "<p><code>I might love to join you.</code></p>",
+        "feedback": "<p>It suggests a possibility but lacks the definitive affirmation expressed in the original response.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Choose the correct expanded form of the contraction <code>I'd</code> that could conclude the following sentence:</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 107,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

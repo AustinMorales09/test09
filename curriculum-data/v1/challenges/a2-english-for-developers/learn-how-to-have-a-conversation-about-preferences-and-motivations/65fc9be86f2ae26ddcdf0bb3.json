@@ -1,0 +1,97 @@
+{
+  "id": "65fc9be86f2ae26ddcdf0bb3",
+  "title": "Task 36",
+  "challengeType": 19,
+  "dashedName": "task-36",
+  "solutions": [],
+  "question": {
+    "text": "<p>What can boost their motivation according to Maria?</p>",
+    "answers": [
+      {
+        "answer": "<p>Having a big team</p>",
+        "feedback": "<p>Think about what specifically makes the team more motivated, not just the size of the team.</p>"
+      },
+      {
+        "answer": "<p>Taking a long break</p>",
+        "feedback": "<p>Consider if breaks are mentioned as a way to increase motivation.</p>"
+      },
+      {
+        "answer": "<p>Seeing the team inspired</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Solving problems quickly</p>",
+        "feedback": "<p>Reflect on whether the speed of solving problems is what Maria highlights as motivating.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 60.96,
+        "finishTimestamp": 68.8
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 5.7,
+        "dialogue": {
+          "text": "But do you know what else is great? Seeing the team's enthusiasm after solving these issues.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "startTime": 6.16,
+        "finishTime": 8.84,
+        "dialogue": {
+          "text": "When you see the team inspired, it can boost your motivation.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 9.34
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to Maria and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

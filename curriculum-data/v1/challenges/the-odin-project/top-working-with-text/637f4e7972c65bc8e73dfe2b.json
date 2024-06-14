@@ -1,0 +1,41 @@
+{
+  "id": "637f4e7972c65bc8e73dfe2b",
+  "title": "Working With Text Question E",
+  "challengeType": 15,
+  "dashedName": "working-with-text-question-e",
+  "solutions": [],
+  "question": {
+    "text": "<p>What relationship do two elements have if they are at the same level of nesting?</p>",
+    "answers": [
+      {
+        "answer": "<p>The elements are each other's parents.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The elements are each other's children.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The elements are siblings.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>You may have noticed that in all the examples in this lesson you indent any elements that are within other elements. This is known as nesting elements.</p>\n<p>When you nest elements within other elements, you create a parent and child relationship between them. The nested elements are the children and the element they are nested within is the parent.</p>\n<p>In the following example, the <code>body</code> element is the parent and the <code>p</code> is the child:</p>\n<pre><code class=\"language-html\">&#x3C;html>\n  &#x3C;head>\n  &#x3C;/head>\n  &#x3C;body>\n    &#x3C;p>Lorem ipsum dolor sit amet.&#x3C;/p>\n  &#x3C;/body>\n &#x3C;/html>\n</code></pre>\n<p>Just as in human relationships, HTML parent elements can have many children. Elements at the same level of nesting are considered to be siblings.</p>\n<p>For example, the two <code>p</code> elements in the following code are siblings, since they are both children of the <code>body</code> tag and are at the same level of nesting as each other:</p>\n<pre><code class=\"language-html\">&#x3C;html>\n  &#x3C;head>\n  &#x3C;/head>\n  &#x3C;body>\n    &#x3C;p>Lorem ipsum dolor sit amet.&#x3C;/p>\n    &#x3C;p>Ut enim ad minim veniam.&#x3C;/p>\n  &#x3C;/body>\n &#x3C;/html>\n</code></pre>\n<p>You use indentation to make the level of nesting clear and readable for yourselves and other developers who will work with your HTML in the future. It is recommended to indent any child elements by two spaces.</p>\n<p>The parent, child, and sibling relationships between elements will become much more important later when you start styling your HTML with CSS and adding behavior with JavaScript. For now, however, it is just important to know the distinction between how elements are related and the terminology used to describe their relationships.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-working-with-text",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

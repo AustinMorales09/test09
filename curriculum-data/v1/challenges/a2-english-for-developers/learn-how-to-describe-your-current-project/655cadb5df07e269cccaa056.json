@@ -1,0 +1,79 @@
+{
+  "id": "655cadb5df07e269cccaa056",
+  "title": "Task 29",
+  "challengeType": 22,
+  "dashedName": "task-29",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hi, Brian. What's _ with your _?</p>",
+    "blanks": [
+      {
+        "answer": "happening",
+        "feedback": "<p>Asks about current events or activities in Brian's work.</p>"
+      },
+      {
+        "answer": "project",
+        "feedback": "<p>Refers to the specific work or task Brian is involved in.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Amy",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 2.14
+      }
+    },
+    "commands": [
+      {
+        "character": "Amy",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Amy",
+        "startTime": 1,
+        "finishTime": 3.14,
+        "dialogue": {
+          "text": "Hi, Brian. What's happening with your project?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Amy",
+        "opacity": 0,
+        "startTime": 3.64
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Let's practice!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 32,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

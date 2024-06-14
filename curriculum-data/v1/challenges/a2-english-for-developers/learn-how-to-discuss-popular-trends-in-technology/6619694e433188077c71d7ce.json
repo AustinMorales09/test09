@@ -1,0 +1,79 @@
+{
+  "id": "6619694e433188077c71d7ce",
+  "title": "Task 47",
+  "challengeType": 22,
+  "dashedName": "task-47",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I know a little. Quantum Computing uses special computers to perform calculations _ _.</p>",
+    "blanks": [
+      {
+        "answer": "extremely",
+        "feedback": "<p>The adverb for <code>extreme</code>. Also used as intensifier to an adjective or to another adverb.</p>"
+      },
+      {
+        "answer": "quickly",
+        "feedback": null
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.36,
+        "finishTimestamp": 11.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.08,
+        "dialogue": {
+          "text": "I know a little. Quantum Computing uses special computers to perform calculations extremely quickly.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Normally, what differentiates an adjective from an adverb is the suffix <code>-ly</code> in the end, added to an adjective to create an adverb. Examples: <code>extreme</code> (adjective) x <code>extremely</code> (adverb) / <code>quick</code> (adjective) x <code>quickly</code> (adverb).</p>\n<p>Also, know that it is possible to use an adverb like <code>extremely</code> to intensify an adjective or even another adverb. If you say that something happens <code>quickly</code>, it is a fast action. If it is <code>extremely quickly</code>, the action is super fast.</p>\n<p>Fill in the blanks according to what Sarah says in the dialogue.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 49,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

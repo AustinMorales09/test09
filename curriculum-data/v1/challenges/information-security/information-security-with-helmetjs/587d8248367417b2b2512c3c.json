@@ -1,0 +1,34 @@
+{
+  "id": "587d8248367417b2b2512c3c",
+  "title": "Ask Browsers to Access Your Site via HTTPS Only with helmet.hsts()",
+  "challengeType": 2,
+  "forumTopicId": 301573,
+  "dashedName": "ask-browsers-to-access-your-site-via-https-only-with-helmet-hsts",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>helmet.hsts() middleware should be mounted correctly</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/app-info').then(\n    (data) => {\n      assert.include(data.appStack, 'hsts');\n      assert.property(data.headers, 'strict-transport-security');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>maxAge should be equal to 7776000 s (90 days)</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/app-info').then(\n    (data) => {\n      assert.match(\n        data.headers['strict-transport-security'],\n        /^max-age=7776000;?/\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As a reminder, this project is being built upon the following starter project on <a href=\"https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-infosec/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Gitpod</a>, or cloned from <a href=\"https://github.com/freeCodeCamp/boilerplate-infosec/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">GitHub</a>.</p>\n<p>HTTP Strict Transport Security (HSTS) is a web security policy which helps to protect websites against protocol downgrade attacks and cookie hijacking. If your website can be accessed via HTTPS you can ask user’s browsers to avoid using insecure HTTP. By setting the header Strict-Transport-Security, you tell the browsers to use HTTPS for the future requests in a specified amount of time. This will work for the requests coming after the initial request.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Configure <code>helmet.hsts()</code> to use HTTPS for the next 90 days. Pass the config object <code>{maxAge: timeInSeconds, force: true}</code>. You can create a variable <code>ninetyDaysInSeconds = 90*24*60*60;</code> to use for the <code>timeInSeconds</code>. Gitpod already has hsts enabled. To override its settings you need to set the field \"force\" to true in the config object. We will intercept and restore the Gitpod header, after inspecting it for testing.</p>\n<p>Note: Configuring HTTPS on a custom website requires the acquisition of a domain, and an SSL/TLS Certificate.</p>\n</section>",
+  "translationPending": false,
+  "block": "information-security-with-helmetjs",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 9,
+  "certification": "information-security",
+  "superBlock": "information-security",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

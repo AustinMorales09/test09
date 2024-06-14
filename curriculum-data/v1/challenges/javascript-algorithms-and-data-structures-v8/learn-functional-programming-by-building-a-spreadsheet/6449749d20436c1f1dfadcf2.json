@@ -1,0 +1,93 @@
+{
+  "id": "6449749d20436c1f1dfadcf2",
+  "title": "Step 28",
+  "challengeType": 0,
+  "dashedName": "step-28",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        39,
+        41
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  sum,\n  average,\n  median\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n\n}",
+      "error": null,
+      "seed": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  sum,\n  average,\n  median\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>window.onload</code> function should access the <code>onchange</code> property of the <code>input</code> element.</p>",
+      "testString": "assert.match(window.onload.toString(), /input\\.onchange/);"
+    },
+    {
+      "text": "<p>Your <code>window.onload</code> function should set the <code>onchange</code> property to <code>update</code>.</p>",
+      "testString": "assert.match(window.onload.toString(), /input\\.onchange\\s*=\\s*update/);"
+    },
+    {
+      "text": "<p>Your <code>window.onload</code> function should not call your <code>update</code> function.</p>",
+      "testString": "assert.notMatch(window.onload.toString(), /update\\(\\s*\\)/);"
+    },
+    {
+      "text": "<p>Your <code>input</code> elements should all have your <code>update</code> function as the <code>onchange</code> property.</p>",
+      "testString": "const inputs = document.querySelectorAll('input');\ninputs.forEach(input => {\n  assert.property(input, 'onchange');\n  assert.equal(input.onchange, update);\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In your <code>window.onload</code> function, you need to tell your <code>input</code> elements to call the <code>update</code> function when the value changes. You can do this by directly setting the <code>onchange</code> property.</p>\n<p>Set the <code>onchange</code> property to be a reference to your <code>update</code> function.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

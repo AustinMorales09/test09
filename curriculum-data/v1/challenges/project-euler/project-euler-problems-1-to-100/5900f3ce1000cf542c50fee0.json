@@ -1,0 +1,81 @@
+{
+  "id": "5900f3ce1000cf542c50fee0",
+  "title": "Problem 97: Large non-Mersenne prime",
+  "challengeType": 1,
+  "forumTopicId": 302214,
+  "dashedName": "problem-97-large-non-mersenne-prime",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function largeNonMersennePrime(multiplier, power) {\n\n  return true;\n}\n\nlargeNonMersennePrime(19, 6833086);",
+      "error": null,
+      "seed": "function largeNonMersennePrime(multiplier, power) {\n\n  return true;\n}\n\nlargeNonMersennePrime(19, 6833086);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function largeNonMersennePrime(multiplier, power) {\n  function modStepsResults(number, other, mod, startValue, step) {\n    let result = startValue;\n    for (let i = 0; i < other; i++) {\n      result = step(number, result) % mod;\n    }\n    return result;\n  }\n\n  const numOfDigits = 10;\n  const mod = 10 ** numOfDigits;\n  const digitsAfterPower = modStepsResults(2, power, mod, 1, (a, b) => a * b);\n  const digitsAfterMultiply = modStepsResults(\n    digitsAfterPower,\n    multiplier,\n    mod,\n    0,\n    (a, b) => a + b\n  );\n  const lastDigits = (digitsAfterMultiply + 1) % mod;\n\n  return lastDigits.toString().padStart(10, '0');\n}",
+        "error": null,
+        "seed": "function largeNonMersennePrime(multiplier, power) {\n  function modStepsResults(number, other, mod, startValue, step) {\n    let result = startValue;\n    for (let i = 0; i < other; i++) {\n      result = step(number, result) % mod;\n    }\n    return result;\n  }\n\n  const numOfDigits = 10;\n  const mod = 10 ** numOfDigits;\n  const digitsAfterPower = modStepsResults(2, power, mod, 1, (a, b) => a * b);\n  const digitsAfterMultiply = modStepsResults(\n    digitsAfterPower,\n    multiplier,\n    mod,\n    0,\n    (a, b) => a + b\n  );\n  const lastDigits = (digitsAfterMultiply + 1) % mod;\n\n  return lastDigits.toString().padStart(10, '0');\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>largeNonMersennePrime(19, 6833086)</code> should return a string.</p>",
+      "testString": "assert(typeof largeNonMersennePrime(19, 6833086) === 'string');"
+    },
+    {
+      "text": "<p><code>largeNonMersennePrime(19, 6833086)</code> should return the string <code>3637590017</code>.</p>",
+      "testString": "assert.strictEqual(largeNonMersennePrime(19, 6833086), '3637590017');"
+    },
+    {
+      "text": "<p><code>largeNonMersennePrime(27, 7046834)</code> should return the string <code>0130771969</code>.</p>",
+      "testString": "assert.strictEqual(largeNonMersennePrime(27, 7046834), '0130771969');"
+    },
+    {
+      "text": "<p><code>largeNonMersennePrime(6679881, 6679881)</code> should return the string <code>4455386113</code>.</p>",
+      "testString": "assert.strictEqual(largeNonMersennePrime(6679881, 6679881), '4455386113');"
+    },
+    {
+      "text": "<p><code>largeNonMersennePrime(28433, 7830457)</code> should return the string <code>8739992577</code>.</p>",
+      "testString": "assert.strictEqual(largeNonMersennePrime(28433, 7830457), '8739992577');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The first known prime found to exceed one million digits was discovered in 1999, and is a Mersenne prime of the form $2^{6972593} − 1$; it contains exactly 2,098,960 digits. Subsequently other Mersenne primes, of the form $2^p − 1$, have been found which contain more digits.</p>\n<p>However, in 2004 there was found a massive non-Mersenne prime which contains 2,357,207 digits: $28433 × 2^{7830457} + 1$.</p>\n<p>Find the last ten digits of that non-Mersenne prime in the form $multiplier × 2^{power} + 1$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 96,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

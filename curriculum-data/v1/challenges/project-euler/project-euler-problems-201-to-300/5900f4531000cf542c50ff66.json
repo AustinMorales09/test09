@@ -1,0 +1,65 @@
+{
+  "id": "5900f4531000cf542c50ff66",
+  "title": "Problem 231: The prime factorisation of binomial coefficients",
+  "challengeType": 1,
+  "forumTopicId": 301875,
+  "dashedName": "problem-231-the-prime-factorisation-of-binomial-coefficients",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function primeFactorisation() {\n\n  return true;\n}\n\nprimeFactorisation();",
+      "error": null,
+      "seed": "function primeFactorisation() {\n\n  return true;\n}\n\nprimeFactorisation();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>primeFactorisation()</code> should return <code>7526965179680</code>.</p>",
+      "testString": "assert.strictEqual(primeFactorisation(), 7526965179680);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The binomial coefficient $\\displaystyle\\binom{10}{3} = 120$.</p>\n<p>$120 = 2^3 × 3 × 5 = 2 × 2 × 2 × 3 × 5$, and $2 + 2 + 2 + 3 + 5 = 14$.</p>\n<p>So the sum of the terms in the prime factorisation of $\\displaystyle\\binom{10}{3}$ is $14$.</p>\n<p>Find the sum of the terms in the prime factorisation of $\\binom{20\\,000\\,000}{15\\,000\\,000}$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

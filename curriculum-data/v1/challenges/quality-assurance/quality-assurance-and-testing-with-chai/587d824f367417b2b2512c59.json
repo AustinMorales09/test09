@@ -1,0 +1,38 @@
+{
+  "id": "587d824f367417b2b2512c59",
+  "title": "Run Functional Tests on API Endpoints using Chai-HTTP II",
+  "challengeType": 2,
+  "forumTopicId": 301592,
+  "dashedName": "run-functional-tests-on-api-endpoints-using-chai-http-ii",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>All tests should pass</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=functional&n=1').then(\n    (data) => {\n      assert.equal(data.state, 'passed');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should test for <code>res.status</code> == 200</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=functional&n=1').then(\n    (data) => {\n      assert.equal(data.assertions[0].method, 'equal');\n      assert.equal(data.assertions[0].args[0], 'res.status');\n      assert.equal(data.assertions[0].args[1], '200');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should test for <code>res.text</code> == <code>'hello &#x3C;your_name>'</code></p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=functional&n=1').then(\n    (data) => {\n      assert.equal(data.assertions[1].method, 'equal');\n      assert.equal(data.assertions[1].args[0], 'res.text');\n      assert.match(data.assertions[1].args[1], /hello [\\w\\d_-]/);\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As a reminder, this project is being built upon the following starter project on <a href=\"https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Gitpod</a>, or cloned from <a href=\"https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">GitHub</a>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Within <code>tests/2_functional-tests.js</code>, alter the <code>'Test GET /hello with your name'</code> test (<code>// #2</code>) to assert the <code>status</code> and the <code>text</code> of the response to make the test pass.</p>\n<p>Send your name as a URL query by appending <code>?name=&#x3C;your_name></code> to the route. The endpoint responds with <code>'hello &#x3C;your_name>'</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "quality-assurance-and-testing-with-chai",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

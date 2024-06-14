@@ -1,0 +1,53 @@
+{
+  "id": "6606d32096165654b8e73f21",
+  "title": "Step 40",
+  "challengeType": 20,
+  "dashedName": "step-40",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        18,
+        24
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    def __init__(self, board):\n        self.board = board\n\n    def find_empty_cell(self):\n        for row, contents in enumerate(self.board):\n            try:\n                col = contents.index(0)\n                return row, col\n            except ValueError:\n                pass\n        return None\n\n    def valid_in_row(self, row, num):\n        return num not in self.board[row]\n\n    def valid_in_col(self, col, num):\n        return all(self.board[row][col] != num for row in range(9))\n    def valid_in_square(self, row, col, num):\n        row_start = (row // 3) * 3\n        col_start = (col // 3) * 3\n        for row_no in range(row_start, row_start + 3):\n            pass\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)",
+      "error": null,
+      "seed": "class Board:\n    def __init__(self, board):\n        self.board = board\n\n    def find_empty_cell(self):\n        for row, contents in enumerate(self.board):\n            try:\n                col = contents.index(0)\n                return row, col\n            except ValueError:\n                pass\n        return None\n\n    def valid_in_row(self, row, num):\n        return num not in self.board[row]\n\n    def valid_in_col(self, col, num):\n        return all(self.board[row][col] != num for row in range(9))\n    def valid_in_square(self, row, col, num):\n        row_start = (row // 3) * 3\n        col_start = (col // 3) * 3\n        for row_no in range(row_start, row_start + 3):\n            pass\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a <code>for</code> loop that iterates over <code>range(col_start, col_start + 3)</code> inside the existing loop body.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"Board\").find_function(\"valid_in_square\").find_for_loops()[0].find_for_loops()[0].find_for_iter().is_equivalent(\"range(col_start, col_start + 3)\")`)) })"
+    },
+    {
+      "text": "<p>Your <code>for</code> loop should use <code>col_no</code> as the loop variable.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"Board\").find_function(\"valid_in_square\").find_for_loops()[0].find_for_loops()[0].find_for_vars().is_equivalent(\"col_no\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Inside the loop created in the previous step, nest another <code>for</code> loop to iterate over a sequence of three elements starting at <code>col_start</code>. Use the <code>range()</code> function to generate this sequence and <code>col_no</code> as the loop variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 39,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

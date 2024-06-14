@@ -1,0 +1,81 @@
+{
+  "id": "5a24c314108439a4d403615a",
+  "title": "Remove an Item from an Array",
+  "challengeType": 6,
+  "forumTopicId": 301447,
+  "dashedName": "remove-an-item-from-an-array",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const immutableReducer = (state = [0,1,2,3,4,5], action) => {\n  switch(action.type) {\n    case 'REMOVE_ITEM':\n      // Don't mutate state here or the tests will fail\n      return\n    default:\n      return state;\n  }\n};\n\nconst removeItem = (index) => {\n  return {\n    type: 'REMOVE_ITEM',\n    index\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);",
+      "error": null,
+      "seed": "const immutableReducer = (state = [0,1,2,3,4,5], action) => {\n  switch(action.type) {\n    case 'REMOVE_ITEM':\n      // Don't mutate state here or the tests will fail\n      return\n    default:\n      return state;\n  }\n};\n\nconst removeItem = (index) => {\n  return {\n    type: 'REMOVE_ITEM',\n    index\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const immutableReducer = (state = [0,1,2,3,4,5], action) => {\n  switch(action.type) {\n    case 'REMOVE_ITEM':\n      return [\n        ...state.slice(0, action.index),\n        ...state.slice(action.index + 1)\n      ];\n    default:\n      return state;\n  }\n};\n\nconst removeItem = (index) => {\n  return {\n    type: 'REMOVE_ITEM',\n    index\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);",
+        "error": null,
+        "seed": "const immutableReducer = (state = [0,1,2,3,4,5], action) => {\n  switch(action.type) {\n    case 'REMOVE_ITEM':\n      return [\n        ...state.slice(0, action.index),\n        ...state.slice(action.index + 1)\n      ];\n    default:\n      return state;\n  }\n};\n\nconst removeItem = (index) => {\n  return {\n    type: 'REMOVE_ITEM',\n    index\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The Redux store should exist and initialize with a state equal to <code>[0,1,2,3,4,5]</code></p>",
+      "testString": "assert(\n  (function () {\n    const initialState = store.getState();\n    return (\n      Array.isArray(initialState) === true &&\n      DeepEqual(initialState, [0, 1, 2, 3, 4, 5])\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p><code>removeItem</code> and <code>immutableReducer</code> both should be functions.</p>",
+      "testString": "assert(\n  typeof removeItem === 'function' && typeof immutableReducer === 'function'\n);"
+    },
+    {
+      "text": "<p>Dispatching the <code>removeItem</code> action creator should remove items from the state and should NOT mutate state.</p>",
+      "testString": "assert(\n  (function () {\n    const initialState = store.getState();\n    const isFrozen = DeepFreeze(initialState);\n    store.dispatch(removeItem(3));\n    const state_1 = store.getState();\n    store.dispatch(removeItem(2));\n    const state_2 = store.getState();\n    store.dispatch(removeItem(0));\n    store.dispatch(removeItem(0));\n    store.dispatch(removeItem(0));\n    const state_3 = store.getState();\n    return (\n      isFrozen &&\n      DeepEqual(state_1, [0, 1, 2, 4, 5]) &&\n      DeepEqual(state_2, [0, 1, 4, 5]) &&\n      DeepEqual(state_3, [5])\n    );\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Time to practice removing items from an array. The spread operator can be used here as well. Other useful JavaScript methods include <code>slice()</code> and <code>concat()</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The reducer and action creator were modified to remove an item from an array based on the index of the item. Finish writing the reducer so a new state array is returned with the item at the specific index removed.</p>\n</section>",
+  "translationPending": false,
+  "block": "redux",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 15,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"
+    },
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.2.0/redux-thunk.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

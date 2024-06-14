@@ -1,0 +1,79 @@
+{
+  "id": "661aeb62c0cf70c99147fbe9",
+  "title": "Task 63",
+  "challengeType": 22,
+  "dashedName": "task-63",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I _ _ about facial recognition and fingerprint scanning.</p>",
+    "blanks": [
+      {
+        "answer": "keep",
+        "feedback": "<p>A verb similar to <code>continue</code>.</p>"
+      },
+      {
+        "answer": "hearing",
+        "feedback": "<p>The verb you use when you receive information or news. Since it is preceded by <code>keep</code>, use the <code>-ing</code> form.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 3.26,
+        "finishTimestamp": 6.3
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.04,
+        "dialogue": {
+          "text": "I keep hearing about facial recognition and fingerprint scanning.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.54
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The structure <code>keep + verb-ing</code> means to do an action consistently or repeatedly over time.\nFor example, in the dialogue, Tom means he regularly or repeatedly receives information or news about a particular topic by saying <code>keep hearing about</code>. In this case, the news he hears is about <code>facial recognition</code> and <code>fingerprint scanning</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 66,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

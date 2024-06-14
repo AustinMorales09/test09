@@ -1,0 +1,83 @@
+{
+  "id": "662f659f6ad8103db5d73490",
+  "title": "Task 75",
+  "challengeType": 22,
+  "dashedName": "task-75",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Of course! I have a book _ _ _.</p>",
+    "blanks": [
+      {
+        "answer": "on",
+        "feedback": "<p>This preposition is used here to indicate that the book is about the subject of OOP's principles.</p>"
+      },
+      {
+        "answer": "OOP's",
+        "feedback": "<p>This possessive form shows that the noun followed belongs to Object-Oriented Programming.</p>"
+      },
+      {
+        "answer": "principles",
+        "feedback": "<p>They are the basic ideas or rules that guide the structure and functioning of OOP.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 36.22,
+        "finishTimestamp": 38.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.7,
+        "dialogue": {
+          "text": "Of course! I have a book on OOP's principles.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.2
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The preposition <code>on</code> is often used to specify the subject or topic of a book or discussion. In this context, it connects the book to the topic it covers, which is <code>Object-Oriented Programming</code> (also known as <code>OOP</code>).</p>\n<p>The word <code>principle</code> refers to the fundamental theories or beliefs that form the basis for a system, in this case, the core ideas of OOP.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 77,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

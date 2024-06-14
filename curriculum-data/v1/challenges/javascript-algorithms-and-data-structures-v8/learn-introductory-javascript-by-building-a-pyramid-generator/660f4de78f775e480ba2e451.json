@@ -1,0 +1,61 @@
+{
+  "id": "660f4de78f775e480ba2e451",
+  "title": "Step 104",
+  "challengeType": 1,
+  "dashedName": "step-104",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        21,
+        25
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\nconst numbers = [1, 2, 3];\n\nconsole.log(numbers);\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\nconst numbers = [1, 2, 3];\n\nconsole.log(numbers);\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare your <code>unshifted</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+unshifted/);"
+    },
+    {
+      "text": "<p>You should call the <code>.unshift()</code> method on your <code>numbers</code> array.</p>",
+      "testString": "assert.match(code, /numbers\\.unshift\\(/);"
+    },
+    {
+      "text": "<p>You should pass <code>5</code> as the argument to your <code>.unshift()</code> call.</p>",
+      "testString": "assert.deepEqual(numbers, [5,1,2,3]);"
+    },
+    {
+      "text": "<p>You should assign the result of your <code>.unshift()</code> call to your <code>unshifted</code> variable.</p>",
+      "testString": "assert.equal(unshifted, 4);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>.unshift()</code> method of an array allows you to add a value to the <strong>beginning</strong> of the array, unlike <code>.push()</code> which adds the value at the end of the array. Here is an example:</p>\n<pre><code class=\"language-js\">const numbers = [1, 2, 3];\nnumbers.unshift(5);\n</code></pre>\n<p>The <code>numbers</code> array would now be <code>[5, 1, 2, 3]</code>.</p>\n<p>Use <code>const</code> to declare an <code>unshifted</code> variable, and assign it the result of calling <code>.unshift()</code> on your <code>numbers</code> array. Pass <code>5</code> as the argument. Then print your <code>unshifted</code> variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 103,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

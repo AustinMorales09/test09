@@ -1,0 +1,79 @@
+{
+  "id": "6579e19be475334667ba4333",
+  "title": "Task 57",
+  "challengeType": 22,
+  "dashedName": "task-57",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Great. I'm happy for you to _ the _ if that's ok with you.</p>",
+    "blanks": [
+      {
+        "answer": "lead",
+        "feedback": "<p>In this context, it means taking charge of the task of defining coding standards.</p>"
+      },
+      {
+        "answer": "effort",
+        "feedback": "<p>Here, it refers to the work involved in leading the development of coding standards.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 34.1,
+        "finishTimestamp": 37.56
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.46,
+        "dialogue": {
+          "text": "Great. I'm happy for you to lead the effort if that's okay with you.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To lead</code> means to be in charge or to guide others in a task or project. For example, <code>to lead a team</code> means being responsible for guiding and managing the team. <code>Effort</code> refers to the work or energy put into doing something. Saying <code>putting effort into work</code> means working hard or diligently on a task.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 59,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "60a3e3396c7b40068ad6996b",
+  "title": "Step 2",
+  "challengeType": 0,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        7
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n  </head>\n  <body>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n  </head>\n  <body>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have a <code>meta</code> tag.</p>",
+      "testString": "assert(document.querySelectorAll('meta').length === 1);"
+    },
+    {
+      "text": "<p>The <code>meta</code> tag should set the <code>charset</code> to <code>UTF-8</code>.</p>",
+      "testString": "assert(document.querySelector('meta').getAttribute('charset')?.toLowerCase() === 'utf-8');"
+    },
+    {
+      "text": "<p>Your code should have a <code>title</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('title').length === 1);"
+    },
+    {
+      "text": "<p>The <code>title</code> should be <code>Rothko Painting</code>.</p>",
+      "testString": "assert(document.querySelector('title').innerText === 'Rothko Painting');"
+    },
+    {
+      "text": "<p>Your code should have an <code>img</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('img').length === 1);"
+    },
+    {
+      "text": "<p>The <code>img</code> element should have a <code>src</code> of <code>https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-1.png</code>.</p>",
+      "testString": "assert(document.querySelector('img').getAttribute('src') === 'https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-1.png');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Within the <code>head</code> element, add a <code>meta</code> tag which sets the <code>charset</code> to <code>UTF-8</code>, and a <code>title</code> element with the value <code>Rothko Painting</code>.</p>\n<p>Within the <code>body</code> element, add an <code>img</code> element with a <code>src</code> of <code>https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-1.png</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-css-box-model-by-building-a-rothko-painting",
+  "hasEditableBoundaries": true,
+  "order": 5,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

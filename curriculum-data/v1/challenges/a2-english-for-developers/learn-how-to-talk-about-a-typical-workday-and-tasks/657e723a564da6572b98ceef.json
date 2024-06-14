@@ -1,0 +1,88 @@
+{
+  "id": "657e723a564da6572b98ceef",
+  "title": "Task 119",
+  "challengeType": 19,
+  "dashedName": "task-119",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the first thing Sarah does when she arrives at work?</p>",
+    "answers": [
+      {
+        "answer": "<p>She starts testing software immediately.</p>",
+        "feedback": "<p>The audio mentions checking emails first, not immediate software testing.</p>"
+      },
+      {
+        "answer": "<p>She attends a team meeting.</p>",
+        "feedback": "<p>Team meetings are not mentioned as the first activity.</p>"
+      },
+      {
+        "answer": "<p>She checks her emails and messages.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She takes a coffee break.</p>",
+        "feedback": "<p>A coffee break isn't the first thing she does.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 26.48,
+        "finishTimestamp": 29.94
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 4.46,
+        "dialogue": {
+          "text": "After I arrive, I check my emails and messages from the team.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Understanding how someone starts their workday can provide insights into their job and daily responsibilities. This comprehension is important for workplace communication.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 123,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,77 @@
+{
+  "id": "5dfa30b9eacea3f48c6300ad",
+  "title": "Step 15",
+  "challengeType": 0,
+  "dashedName": "step-15",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an <code>img</code> element with a <code>src</code> value of <code>https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg</code>. You may have accidentally deleted it.</p>",
+      "testString": "assert(\n  document.querySelector('img') &&\n    document.querySelector('img').getAttribute('src') ===\n      'https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg'\n);"
+    },
+    {
+      "text": "<p>Your anchor (<code>a</code>) element should have an opening tag. Opening tags have this syntax: <code>&#x3C;elementName></code>.</p>",
+      "testString": "assert(document.querySelectorAll('a').length >= 2);"
+    },
+    {
+      "text": "<p>You are missing a closing (<code>a</code>) tag after the image.</p>",
+      "testString": "assert(document.querySelectorAll('a').length === 2);"
+    },
+    {
+      "text": "<p>Your anchor (<code>a</code>) element should have a closing tag. Closing tags have a <code>/</code> just after the <code>&#x3C;</code> character.</p>",
+      "testString": "assert(code.match(/<\\/a>/g).length >= 2);"
+    },
+    {
+      "text": "<p>You should only add one closing anchor (<code>a</code>) tag. Please remove any extras.</p>",
+      "testString": "assert(code.match(/<\\/a>/g).length === 2);"
+    },
+    {
+      "text": "<p>Your anchor (<code>a</code>) element does not have an <code>href</code> attribute. Check that there is a space after the opening tag's name and/or there are spaces before all attribute names.</p>",
+      "testString": "assert(document.querySelector('a').hasAttribute('href'));"
+    },
+    {
+      "text": "<p>Your anchor (<code>a</code>) element should link to <code>https://freecatphotoapp.com</code>. You have either omitted the URL or have a typo.</p>",
+      "testString": "assert(\n  document.querySelectorAll('a')[1].getAttribute('href') ===\n    'https://freecatphotoapp.com'\n);"
+    },
+    {
+      "text": "<p>Your <code>img</code> element should be nested within the anchor (<code>a</code>) element. The entire <code>img</code> element should be inside the opening and closing tags of the anchor (<code>a</code>) element.</p>",
+      "testString": "assert(document.querySelector('img').parentNode.nodeName === 'A');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In previous steps you used an anchor element to turn text into a link. Other types of content can also be turned into a link by wrapping it in anchor tags.</p>\n<p>Here is an example of turning an image into a link:</p>\n<pre><code class=\"language-html\">&#x3C;a href=\"example-link\">\n  &#x3C;img src=\"image-link.jpg\" alt=\"A photo of a cat.\">\n&#x3C;/a>\n</code></pre>\n<p>Turn the image into a link by surrounding it with necessary element tags. Use <code>https://freecatphotoapp.com</code> as the anchor's <code>href</code> attribute value.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "56533eb9ac21ba0edf2244d0",
+  "title": "Comparison with the Equality Operator",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cKyVMAL",
+  "forumTopicId": 16784,
+  "dashedName": "comparison-with-the-equality-operator",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Setup\nfunction testEqual(val) {\n  if (val) { // Change this line\n    return \"Equal\";\n  }\n  return \"Not Equal\";\n}\n\ntestEqual(10);",
+      "error": null,
+      "seed": "// Setup\nfunction testEqual(val) {\n  if (val) { // Change this line\n    return \"Equal\";\n  }\n  return \"Not Equal\";\n}\n\ntestEqual(10);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function testEqual(val) {\n  if (val == 12) {\n    return \"Equal\";\n  }\n  return \"Not Equal\";\n}",
+        "error": null,
+        "seed": "function testEqual(val) {\n  if (val == 12) {\n    return \"Equal\";\n  }\n  return \"Not Equal\";\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>testEqual(10)</code> should return the string <code>Not Equal</code></p>",
+      "testString": "assert(testEqual(10) === 'Not Equal');"
+    },
+    {
+      "text": "<p><code>testEqual(12)</code> should return the string <code>Equal</code></p>",
+      "testString": "assert(testEqual(12) === 'Equal');"
+    },
+    {
+      "text": "<p><code>testEqual(\"12\")</code> should return the string <code>Equal</code></p>",
+      "testString": "assert(testEqual('12') === 'Equal');"
+    },
+    {
+      "text": "<p>You should use the <code>==</code> operator</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/==/g) && !__helpers.removeJSComments(code).match(/===/g));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>There are many <dfn>comparison operators</dfn> in JavaScript. All of these operators return a boolean <code>true</code> or <code>false</code> value.</p>\n<p>The most basic operator is the equality operator <code>==</code>. The equality operator compares two values and returns <code>true</code> if they're equivalent or <code>false</code> if they are not. Note that equality is different from assignment (<code>=</code>), which assigns the value on the right of the operator to a variable on the left.</p>\n<pre><code class=\"language-js\">function equalityTest(myVal) {\n  if (myVal == 10) {\n    return \"Equal\";\n  }\n  return \"Not Equal\";\n}\n</code></pre>\n<p>If <code>myVal</code> is equal to <code>10</code>, the equality operator returns <code>true</code>, so the code in the curly braces will execute, and the function will return <code>Equal</code>. Otherwise, the function will return <code>Not Equal</code>. In order for JavaScript to compare two different <dfn>data types</dfn> (for example, <code>numbers</code> and <code>strings</code>), it must convert one type to another. This is known as Type Coercion. Once it does, however, it can compare terms as follows:</p>\n<pre><code class=\"language-js\">1   ==  1  // true\n1   ==  2  // false\n1   == '1' // true\n\"3\" ==  3  // true\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add the equality operator to the indicated line so that the function will return the string <code>Equal</code> when <code>val</code> is equivalent to <code>12</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 59,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

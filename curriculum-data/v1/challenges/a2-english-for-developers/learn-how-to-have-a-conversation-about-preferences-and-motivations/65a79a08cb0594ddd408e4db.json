@@ -1,0 +1,88 @@
+{
+  "id": "65a79a08cb0594ddd408e4db",
+  "title": "Task 141",
+  "challengeType": 19,
+  "dashedName": "task-141",
+  "solutions": [],
+  "question": {
+    "text": "<p>What will Tom try to do?</p>",
+    "answers": [
+      {
+        "answer": "<p>Start his own company</p>",
+        "feedback": "<p>Think about what Tom specifically mentions about using his time.</p>"
+      },
+      {
+        "answer": "<p>Take a long vacation</p>",
+        "feedback": "<p>Consider whether Tom's focus is on relaxation or being proactive.</p>"
+      },
+      {
+        "answer": "<p>Find a project for his free time</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Learn a new language</p>",
+        "feedback": "<p>Reflect on whether Tom's interest is in language learning or engaging in a project.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 66.68,
+        "finishTimestamp": 72.28
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 6.6,
+        "dialogue": {
+          "text": "Thanks for sharing your motivations. I think I'll see if I can find a project to dedicate some spare time to.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 7.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to Tom and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 145,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

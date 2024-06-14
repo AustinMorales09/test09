@@ -1,0 +1,103 @@
+{
+  "id": "663d762ab138308b52969b04",
+  "title": "Task 64",
+  "challengeType": 22,
+  "dashedName": "task-64",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Brian: We discussed it yesterday and we decided to move the testing phase a week later. I'm pretty sure about this.</p>\n<p>Maria: Alright, that makes _.</p>",
+    "blanks": [
+      {
+        "answer": "sense",
+        "feedback": "<p>Preceded by <code>make</code> or <code>makes</code>, it means that</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.72,
+        "finishTimestamp": 31.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 7.02,
+        "dialogue": {
+          "text": "We discussed it yesterday and we decided to move the testing phase a week later. I'm pretty sure about this.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 7.31
+      },
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 7.31
+      },
+      {
+        "character": "Maria",
+        "startTime": 7.6,
+        "finishTime": 8.9,
+        "dialogue": {
+          "text": "Alright, that makes sense.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 9.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Makes sense</code> means something is clear and easy to understand. For example, if someone explains why they were late and you understand their reason, you can say, <code>That makes sense.</code></p>\n<p>Listen to the dialogue and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 67,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

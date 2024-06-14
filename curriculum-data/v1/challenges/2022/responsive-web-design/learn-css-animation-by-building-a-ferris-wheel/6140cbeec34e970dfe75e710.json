@@ -1,0 +1,77 @@
+{
+  "id": "6140cbeec34e970dfe75e710",
+  "title": "Step 3",
+  "challengeType": 0,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Ferris Wheel</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div class=\"wheel\">\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Ferris Wheel</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div class=\"wheel\">\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n      <span class=\"line\"></span>\n\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n      <div class=\"cabin\"></div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>.wheel</code> selector.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.wheel'));"
+    },
+    {
+      "text": "<p>Your <code>.wheel</code> selector should have a <code>border</code> property set to <code>2px solid black</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.wheel')?.border === '2px solid black');"
+    },
+    {
+      "text": "<p>Your <code>.wheel</code> selector should have a <code>border-radius</code> property set to <code>50%</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.wheel')?.borderRadius === '50%');"
+    },
+    {
+      "text": "<p>Your <code>.wheel</code> selector should have a <code>margin-left</code> property set to <code>50px</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.wheel')?.marginLeft === '50px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Create a selector for your <code>.wheel</code> element. Start by setting the <code>border</code> to <code>2px solid black</code>, the <code>border-radius</code> to <code>50%</code>, and the <code>margin-left</code> to <code>50px</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-animation-by-building-a-ferris-wheel",
+  "hasEditableBoundaries": true,
+  "order": 17,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "5900f4671000cf542c50ff7a",
+  "title": "Problem 251: Cardano Triplets",
+  "challengeType": 1,
+  "forumTopicId": 301899,
+  "dashedName": "problem-251-cardano-triplets",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function cardanoTriplets() {\n\n  return true;\n}\n\ncardanoTriplets();",
+      "error": null,
+      "seed": "function cardanoTriplets() {\n\n  return true;\n}\n\ncardanoTriplets();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>cardanoTriplets()</code> should return <code>18946051</code>.</p>",
+      "testString": "assert.strictEqual(cardanoTriplets(), 18946051);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A triplet of positive integers ($a$,$b$,$c$) is called a Cardano Triplet if it satisfies the condition:</p>\n<p>$$\\sqrt[3]{a + b \\sqrt{c}} + \\sqrt[3]{a - b \\sqrt{c}} = 1$$</p>\n<p>For example, (2,1,5) is a Cardano Triplet.</p>\n<p>There exist 149 Cardano Triplets for which $a + b + c ≤ 1000$.</p>\n<p>Find how many Cardano Triplets exist such that $a + b + c ≤ 110\\,000\\,000$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 50,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,53 @@
+{
+  "id": "660f3ba3cceef11b6ba08b59",
+  "title": "Step 72",
+  "challengeType": 1,
+  "dashedName": "step-72",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        12
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\nfor (let i = 1; i < count; i++) {\n  rows.push(padRow(i, count));\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\nfor (let i = 1; i < count; i++) {\n  rows.push(padRow(i, count));\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>for</code> loop should not check if <code>i</code> is less than <code>count</code>.</p>",
+      "testString": "assert.notMatch(code, /i\\s*<\\s*count/);"
+    },
+    {
+      "text": "<p>Your <code>for</code> loop should check if <code>i</code> is less than or equal to <code>count</code>.</p>",
+      "testString": "assert.match(code, /i\\s*<=\\s*count/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Unfortunately, now the bottom of the pyramid has disappeared. This is because you have created another <dfn>off-by-one error</dfn>.</p>\n<p>Your original loop went for <code>i</code> values from <code>0</code> to <code>7</code>, because <code>count</code> is <code>8</code> and your condition requires <code>i</code> to be less than <code>count</code>. Your loop is now running for <code>i</code> values from <code>1</code> to <code>7</code>.</p>\n<p>Your loop needs to be updated to run when <code>i</code> is <code>8</code>, too. Looking at your logic, this means your loop should run when <code>i</code> is <dfn>less than or equal to</dfn> <code>count</code>. You can use the less than or equal to operator <code>&#x3C;=</code> for this.</p>\n<p>Update your loop condition to run while <code>i</code> is less than or equal to <code>count</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 71,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

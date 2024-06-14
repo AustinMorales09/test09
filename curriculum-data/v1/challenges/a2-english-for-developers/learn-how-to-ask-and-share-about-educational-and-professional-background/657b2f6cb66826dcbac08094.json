@@ -1,0 +1,88 @@
+{
+  "id": "657b2f6cb66826dcbac08094",
+  "title": "Task 84",
+  "challengeType": 19,
+  "dashedName": "task-84",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>organizational psychology</code> typically involve?</p>",
+    "answers": [
+      {
+        "answer": "<p>It deals with organizing office spaces</p>",
+        "feedback": "<p>While organization is a part of the field, <code>organizational psychology</code> primarily focuses on people and behavior, not physical space.</p>"
+      },
+      {
+        "answer": "<p>It's about the psychology of organizing events</p>",
+        "feedback": "<p><code>Organizational psychology</code> is not specifically about event planning but rather about behavior in workplace groups.</p>"
+      },
+      {
+        "answer": "<p>It's the study of how people behave and interact in workplace groups</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It focuses on individual psychological treatment</p>",
+        "feedback": "<p><code>Organizational psychology</code> looks at group dynamics in workplaces, not individual therapy.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 11.86,
+        "finishTimestamp": 14.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Anna",
+        "startTime": 1,
+        "finishTime": 4.12,
+        "dialogue": {
+          "text": "During my last year, I took a course in organizational psychology.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 4.62
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Organizational psychology</code> is a field of psychology that studies how people interact within groups, particularly in workplace settings. It focuses on understanding workplace dynamics, employee behavior, and organizational structure to improve the work environment and increase productivity.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 88,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,75 @@
+{
+  "id": "65daa3bcb0ef255d206f91b8",
+  "title": "Task 92",
+  "challengeType": 22,
+  "dashedName": "task-92",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Tell me about your responsibilities _ work.</p>",
+    "blanks": [
+      {
+        "answer": "beyond",
+        "feedback": "<p>The word is used to talk about something that goes past a certain limit.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.14,
+        "finishTimestamp": 11.84
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 3.7,
+        "dialogue": {
+          "text": "Tell me about your responsibilities beyond work.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 4.2
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>beyond</code> is used to talk about something that is further or more than something else.</p>\n<p>For example, <code>His kindness goes beyond just helping friends; he volunteers at shelters too.</code> In this sentence, <code>beyond</code> is used to express that his kindness is not limited to helping friends but extends to more actions, such as volunteering at shelters.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 96,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

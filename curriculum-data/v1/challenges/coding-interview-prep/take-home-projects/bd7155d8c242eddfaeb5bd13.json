@@ -1,0 +1,42 @@
+{
+  "id": "bd7155d8c242eddfaeb5bd13",
+  "title": "Build a Recipe Box",
+  "challengeType": 3,
+  "forumTopicId": 302354,
+  "dashedName": "build-a-recipe-box",
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><strong>Objective:</strong> Build an app that is functionally similar to this: <a href=\"https://codepen.io/freeCodeCamp/full/dNVazZ/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">https://codepen.io/freeCodeCamp/full/dNVazZ/</a>.</p>\n<p>Fulfill the below user stories and get all of the tests to pass. Use whichever libraries or APIs you need. Give it your own personal style.</p>\n<p><strong>User Story:</strong> I can create recipes that have names and ingredients.</p>\n<p><strong>User Story:</strong> I can see an index view where the names of all the recipes are visible.</p>\n<p><strong>User Story:</strong> I can click into any of those recipes to view it.</p>\n<p><strong>User Story:</strong> I can edit these recipes.</p>\n<p><strong>User Story:</strong> I can delete these recipes.</p>\n<p><strong>User Story:</strong> All new recipes I add are saved in my browser's local storage. If I refresh the page, these recipes will still be there.</p>\n<p><strong>Hint:</strong> You should prefix your local storage keys on CodePen, i.e. <code>_username_recipes</code></p>\n<p>When you are finished, include a link to your project on CodePen and click the \"I've completed this challenge\" button.</p>\n<p>You can get feedback on your project by sharing it on the <a href=\"https://forum.freecodecamp.org/c/project-feedback/409\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">freeCodeCamp forum</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "take-home-projects",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

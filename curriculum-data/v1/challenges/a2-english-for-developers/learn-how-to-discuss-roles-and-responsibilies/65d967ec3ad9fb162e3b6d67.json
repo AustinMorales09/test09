@@ -1,0 +1,83 @@
+{
+  "id": "65d967ec3ad9fb162e3b6d67",
+  "title": "Task 90",
+  "challengeType": 22,
+  "dashedName": "task-90",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It's not always easy, but _ _ _ to make it work.</p>",
+    "blanks": [
+      {
+        "answer": "I've",
+        "feedback": "<p>It's the contraction for <code>I have</code>, indicating possession or experience.</p>"
+      },
+      {
+        "answer": "found",
+        "feedback": "<p>It the past participle of <code>find</code>, used here to indicate discovering or realizing.</p>"
+      },
+      {
+        "answer": "ways",
+        "feedback": "<p>It refers to methods or strategies to achieve a goal.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 5.98,
+        "finishTimestamp": 8.7
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.72,
+        "dialogue": {
+          "text": "It's not always easy, but I've found ways to make it work.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.22
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>I've found ways to</code> followed by a verb means someone has discovered methods to do something or solve a problem. <code>I've</code> is a contraction for <code>I have</code>, and <code>found</code> is the past participle of <code>find</code>, indicating the action of discovering or realizing something.</p>\n<p>For example, <code>I've found ways to save money</code> means I have discovered methods to keep more money.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 94,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,78 @@
+{
+  "id": "595668ca4cfe1af2fb9818d4",
+  "title": "Harshad or Niven series",
+  "challengeType": 1,
+  "forumTopicId": 302281,
+  "dashedName": "harshad-or-niven-series",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function isHarshadOrNiven(n) {\n  const res = [];\n\n  return res;\n}",
+      "error": null,
+      "seed": "function isHarshadOrNiven(n) {\n  const res = [];\n\n  return res;\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function isHarshadOrNiven(n) {\n  function isHarshad(num) {\n    let s = 0;\n    const nStr = num.toString();\n    for (let i = 0; i < nStr.length; ++i) {\n      s += parseInt(nStr.charAt(i), 10);\n    }\n    return n % s === 0;\n  }\n\n  const res = [];\n  let count = 0;\n\n  while (count < 10) {\n    n++;\n    if (isHarshad(n)) {\n      count++;\n      res.push(n);\n    }\n  }\n\n  return res;\n}",
+        "error": null,
+        "seed": "function isHarshadOrNiven(n) {\n  function isHarshad(num) {\n    let s = 0;\n    const nStr = num.toString();\n    for (let i = 0; i < nStr.length; ++i) {\n      s += parseInt(nStr.charAt(i), 10);\n    }\n    return n % s === 0;\n  }\n\n  const res = [];\n  let count = 0;\n\n  while (count < 10) {\n    n++;\n    if (isHarshad(n)) {\n      count++;\n      res.push(n);\n    }\n  }\n\n  return res;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>isHarshadOrNiven</code> should be a function.</p>",
+      "testString": "assert(typeof isHarshadOrNiven === 'function');"
+    },
+    {
+      "text": "<p><code>isHarshadOrNiven(10)</code> should return <code>[12, 18, 20, 21, 24, 27, 30, 36, 40, 42]</code></p>",
+      "testString": "assert.deepEqual(isHarshadOrNiven(10), [12, 18, 20, 21, 24, 27, 30, 36, 40, 42]);"
+    },
+    {
+      "text": "<p><code>isHarshadOrNiven(400)</code> should return <code>[402, 405, 407, 408, 410, 414, 420, 423, 432, 440]</code></p>",
+      "testString": "assert.deepEqual(isHarshadOrNiven(400), [402, 405, 407, 408, 410, 414, 420, 423, 432, 440]);"
+    },
+    {
+      "text": "<p><code>isHarshadOrNiven(1000)</code> should return <code>[1002, 1008, 1010, 1011, 1012, 1014, 1015, 1016, 1017, 1020]</code></p>",
+      "testString": "assert.deepEqual(isHarshadOrNiven(1000), [1002, 1008, 1010, 1011, 1012, 1014, 1015, 1016, 1017, 1020]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The Harshad or Niven numbers are positive integers ≥ 1 that are divisible by the sum of their digits.</p>\n<p>For example, <code>42</code> is a Harshad number as <code>42</code> is divisible by <code>(4 + 2)</code> without remainder.</p>\n<p>Assume that the series is defined as the numbers in increasing order.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Implement a function to generate successive members of the Harshad sequence.</p>\n<p>Use it to return an array with ten members of the sequence, starting with first Harshad number greater than <code>n</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 64,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

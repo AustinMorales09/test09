@@ -1,0 +1,45 @@
+{
+  "id": "657e6f00a5b48342ab1ec702",
+  "title": "Task 109",
+  "challengeType": 19,
+  "dashedName": "task-109",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does a <code>QA Tester</code> do?</p>",
+    "answers": [
+      {
+        "answer": "<p>Cooks in a restaurant.</p>",
+        "feedback": "<p><code>QA Tester</code> is a job in technology, not cooking.</p>"
+      },
+      {
+        "answer": "<p>Tests software for problems.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Teaches in a school.</p>",
+        "feedback": "<p><code>QA Tester</code> is about technology, not teaching.</p>"
+      },
+      {
+        "answer": "<p>Drives a bus.</p>",
+        "feedback": "<p>It's a role in software, not driving.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>QA (Quality Assurance) Tester</code> is someone who checks software to make sure it works well and has no problems. <code>Quality</code> means how good or bad something is, and <code>assurance</code> means making sure about something. A QA Tester's job is to test software to ensure its <code>quality</code> is good and it works as it should.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 113,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

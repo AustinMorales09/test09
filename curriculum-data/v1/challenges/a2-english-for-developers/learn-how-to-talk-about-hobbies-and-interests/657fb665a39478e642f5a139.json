@@ -1,0 +1,88 @@
+{
+  "id": "657fb665a39478e642f5a139",
+  "title": "Task 67",
+  "challengeType": 19,
+  "dashedName": "task-67",
+  "solutions": [],
+  "question": {
+    "text": "<p>What activities does Sarah mention as part of her sci-fi <code>fandom</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>Cooking classes</p>",
+        "feedback": "<p>They are not mentioned by Sarah and are unrelated to the context.</p>"
+      },
+      {
+        "answer": "<p>Movie marathons</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Gardening sessions</p>",
+        "feedback": "<p>Gardening sessions are not included in the activities mentioned by Sarah.</p>"
+      },
+      {
+        "answer": "<p>Yoga workshops</p>",
+        "feedback": "<p>They not related to the activities discussed in the dialogue.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.1,
+        "finishTimestamp": 18.34
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.24,
+        "dialogue": {
+          "text": "Well, we have movie marathons, conventions, and we even play some movie-related video games together.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.74
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>marathon</code> is a very long race where people run 42 kilometers. It can also mean watching many movies or TV shows one after another without stopping.</p>\n<p>A <code>convention</code> is a big meeting where people who like the same things, like comics or movies, come together to talk and learn about their hobbies.</p>\n<p><code>Movie-related</code> means anything that has to do with movies. For example, movie posters or toys from a movie are <code>movie-related</code>.</p>\n<p><code>Play together</code> means to do games or activities with other people at the same time, like playing a board game or playing soccer in a park.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 70,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

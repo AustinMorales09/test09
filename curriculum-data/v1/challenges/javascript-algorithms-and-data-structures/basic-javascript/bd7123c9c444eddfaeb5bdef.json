@@ -1,0 +1,71 @@
+{
+  "id": "bd7123c9c444eddfaeb5bdef",
+  "title": "Declare String Variables",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/c2QvWU6",
+  "forumTopicId": 17557,
+  "dashedName": "declare-string-variables",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "if(typeof myFirstName !== \"undefined\" && typeof myLastName !== \"undefined\"){(function(){return myFirstName + ', ' + myLastName;})();}",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "var myFirstName = \"Alan\";\nvar myLastName = \"Turing\";",
+        "error": null,
+        "seed": "var myFirstName = \"Alan\";\nvar myLastName = \"Turing\";"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>myFirstName</code> should be a string with at least one character in it.</p>",
+      "testString": "assert(\n  (function () {\n    if (\n      typeof myFirstName !== 'undefined' &&\n      typeof myFirstName === 'string' &&\n      myFirstName.length > 0\n    ) {\n      return true;\n    } else {\n      return false;\n    }\n  })()\n);"
+    },
+    {
+      "text": "<p><code>myLastName</code> should be a string with at least one character in it.</p>",
+      "testString": "assert(\n  (function () {\n    if (\n      typeof myLastName !== 'undefined' &&\n      typeof myLastName === 'string' &&\n      myLastName.length > 0\n    ) {\n      return true;\n    } else {\n      return false;\n    }\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Previously you used the following code to declare a variable:</p>\n<pre><code class=\"language-js\">var myName;\n</code></pre>\n<p>But you can also declare a string variable like this:</p>\n<pre><code class=\"language-js\">var myName = \"your name\";\n</code></pre>\n<p><code>\"your name\"</code> is called a <dfn>string</dfn> <dfn>literal</dfn>. A string literal, or string, is a series of zero or more characters enclosed in single or double quotes.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Create two new string variables: <code>myFirstName</code> and <code>myLastName</code> and assign them the values of your first and last name, respectively.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

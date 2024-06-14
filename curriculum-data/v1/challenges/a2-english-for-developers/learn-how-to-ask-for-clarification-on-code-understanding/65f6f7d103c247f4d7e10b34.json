@@ -1,0 +1,83 @@
+{
+  "id": "65f6f7d103c247f4d7e10b34",
+  "title": "Task 40",
+  "challengeType": 22,
+  "dashedName": "task-40",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Understood. We can investigate this together, and by the end of _, we should have a _ picture of _ happening.</p>",
+    "blanks": [
+      {
+        "answer": "it",
+        "feedback": "<p>It's a pronoun used to refer to a thing previously mentioned or easily identified. Here, it refers to the situation they are discussing.</p>"
+      },
+      {
+        "answer": "clearer",
+        "feedback": "<p>Brian is comparing the current understanding with what it will be after the investigation. He believes it will be more <code>clear</code>.</p>"
+      },
+      {
+        "answer": "what's",
+        "feedback": "<p>It's a contraction of <code>what is</code>. This phrase asks about something that is happening or occurring.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 20.74,
+        "finishTimestamp": 26.28
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 6.54,
+        "dialogue": {
+          "text": "Understood. We can investigate this together, and by the end of it, we should have a clearer picture of what's happening.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 7.04
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>clear</code> means easy to understand or see. When you want to compare something and show it is more <code>clear</code>, you add <code>er</code> at the end to make <code>clearer</code>.</p>\n<p>For example:</p>\n<ul>\n<li>This explanation is <code>clear</code>.</li>\n<li>This explanation is <code>clearer</code> than the other one.</li>\n</ul>\n<p>Notice how <code>clearer</code> is used to compare two things, indicating that one is more easy to understand than the other.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

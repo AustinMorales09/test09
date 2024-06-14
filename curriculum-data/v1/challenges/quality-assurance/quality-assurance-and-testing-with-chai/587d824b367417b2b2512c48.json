@@ -1,0 +1,42 @@
+{
+  "id": "587d824b367417b2b2512c48",
+  "title": "Use Assert.isOK and Assert.isNotOK",
+  "challengeType": 2,
+  "forumTopicId": 301607,
+  "dashedName": "use-assert-isok-and-assert-isnotok",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>All tests should pass.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=2').then(\n    (data) => {\n      assert.equal(data.state, 'passed');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the first assertion - <code>isOk</code> vs. <code>isNotOk</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=2').then(\n    (data) => {\n      assert.equal(data.assertions[0].method, 'isNotOk', 'Null is falsy');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the second assertion - <code>isOk</code> vs. <code>isNotOk</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=2').then(\n    (data) => {\n      assert.equal(data.assertions[1].method, 'isOk', 'A string is truthy');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the third assertion - <code>isOk</code> vs. <code>isNotOk</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=2').then(\n    (data) => {\n      assert.equal(data.assertions[2].method, 'isOk', 'true is truthy');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As a reminder, this project is being built upon the following starter project on <a href=\"https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Gitpod</a>, or cloned from <a href=\"https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">GitHub</a>.</p>\n<p><code>isOk()</code> will test for a truthy value, and <code>isNotOk()</code> will test for a falsy value.</p>\n<p>To learn more about truthy and falsy values, try our <a href=\"https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/falsy-bouncer\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Falsy Bouncer</a> challenge.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Within <code>tests/1_unit-tests.js</code> under the test labeled <code>#3</code> in the <code>Basic Assertions</code> suite, change each <code>assert</code> to either <code>assert.isOk()</code> or <code>assert.isNotOk()</code> to make the test pass (should evaluate to <code>true</code>). Do not alter the arguments passed to the asserts.</p>\n</section>",
+  "translationPending": false,
+  "block": "quality-assurance-and-testing-with-chai",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

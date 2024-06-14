@@ -1,0 +1,79 @@
+{
+  "id": "66389c04cffc4f55e6e0f798",
+  "title": "Task 43",
+  "challengeType": 22,
+  "dashedName": "task-43",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>AI in programming _ _ smart computers to help write code or find errors.</p>",
+    "blanks": [
+      {
+        "answer": "involves",
+        "feedback": "<p>This word means to include something as a part of something else, particularly as a necessary component.</p>"
+      },
+      {
+        "answer": "using",
+        "feedback": "<p>It refers to the act of applying something for a particular purpose.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.52,
+        "finishTimestamp": 10.72
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5.2,
+        "dialogue": {
+          "text": "AI in programming involves using smart computers to help write code or find errors.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>involve</code> means to include something as a necessary part or component. In various contexts, it can imply that a person, thing, or situation is actively engaged in something or requires something as part of the process.</p>\n<p><code>Involve</code> is often followed by another verb in the <code>-ing</code> form (gerund) to describe actions or processes that are a part of something.</p>\n<p>Examples:</p>\n<p><code>The job involves working with computers.</code> It means working with computers is a necessary part of the job.</p>\n<p><code>Planning a holiday involves choosing destinations and booking hotels.</code> This indicates that these activities are a necessary part of planning a holiday.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 45,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

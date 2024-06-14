@@ -1,0 +1,53 @@
+{
+  "id": "656710d1e0ec62253426db24",
+  "title": "Step 18",
+  "challengeType": 20,
+  "dashedName": "step-18",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        21,
+        23
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def merge_sort(array):\n    \n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n\n    merge_sort(left_part)\n    merge_sort(right_part)\n\n    left_array_index = 0\n    right_array_index = 0\n    sorted_index = 0\n\n    while left_array_index < len(left_part) and right_array_index < len(right_part):\n        if left_part[left_array_index] < right_part[right_array_index]:\n            array[sorted_index] = left_part[left_array_index]\n            left_array_index += 1\n        else:\n            array[sorted_index] = right_part[right_array_index]\n            right_array_index += 1\n        sorted_index += 1\n",
+      "error": null,
+      "seed": "def merge_sort(array):\n    \n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n\n    merge_sort(left_part)\n    merge_sort(right_part)\n\n    left_array_index = 0\n    right_array_index = 0\n    sorted_index = 0\n\n    while left_array_index < len(left_part) and right_array_index < len(right_part):\n        if left_part[left_array_index] < right_part[right_array_index]:\n            array[sorted_index] = left_part[left_array_index]\n            left_array_index += 1\n        else:\n            array[sorted_index] = right_part[right_array_index]\n            right_array_index += 1\n        sorted_index += 1\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>while</code> loop should have this condition: <code>left_array_index &#x3C; len(left_part)</code>. Don't forget to use the <code>pass</code> keyword in the body of the loop.</p>",
+      "testString": "({\n  test: () => {\n    const transformedCode = code.replace(/\\r/g, \"\");\n    const merge_sort = __helpers.python.getDef(\"\\n\" + transformedCode, \"merge_sort\");\n    const { function_body } = merge_sort;\n\n    assert.match(function_body, /^\\s{4}while\\s+left_array_index\\s*<\\s*len\\(\\s*left_part\\s*\\):/m);\n  }\n})"
+    },
+    {
+      "text": "<p>You should have the <code>pass</code> keyword in the body of your <code>while</code> loop</p>",
+      "testString": "({\n  test: () => {\n    const transformedCode = code.replace(/\\r/g, \"\");\n    const merge_sort = __helpers.python.getDef(\"\\n\" + transformedCode, \"merge_sort\");\n    const { function_body } = merge_sort;\n\n    assert.match(function_body, /while\\s+left_array_index\\s*<\\s*len\\(\\s*left_part\\s*\\):[^}]*\\bpass\\b/);\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>while</code> loop you created compares one element from <code>left_part</code> with another in <code>right_part</code>, then adds the smaller element to the main <code>array</code> list.</p>\n<p>It will continue this operation until there are no elements left to be compared. But <code>left_part</code> may still have elements left while <code>right_part</code> has none, and vice versa.</p>\n<p>Create another <code>while</code> loop to copy the remaining elements in <code>left_part</code> into the <code>array</code> list. Use <code>left_array_index &#x3C; len(left_part)</code> for the <code>while</code> condition.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-data-structures-by-building-the-merge-sort-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 9,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

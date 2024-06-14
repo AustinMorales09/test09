@@ -1,0 +1,88 @@
+{
+  "id": "656cd9f4e30e6d1d81f0e62d",
+  "title": "Task 135",
+  "challengeType": 22,
+  "dashedName": "task-135",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>This is Brian. He _ a web developer. This is Tom. He _ from Texas.</p>",
+    "blanks": [
+      {
+        "answer": "is",
+        "feedback": "<p>For third person singular (<code>he</code>, <code>she</code>, <code>it</code>), the verb <code>be</code> is conjugated as <code>is</code>.</p>"
+      },
+      {
+        "answer": "is",
+        "feedback": "<p>For third person singular (<code>he</code>, <code>she</code>, <code>it</code>), the verb <code>be</code> is conjugated as <code>is</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 7,
+        "finishTimestamp": 16.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.76,
+        "dialogue": {
+          "text": "Brian, let me introduce you to Tom. Tom, this is Brian. He's a web developer.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "startTime": 5.8,
+        "finishTime": 10,
+        "dialogue": {
+          "text": "Brian, this is Tom. He's our new graphic designer and he is from Texas.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 10.5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>be</code> has different forms based on the subject. For third person singular (<code>he</code>, <code>she</code>, <code>it</code>), the correct form is <code>is</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 138,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

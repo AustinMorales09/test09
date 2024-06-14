@@ -1,0 +1,46 @@
+{
+  "id": "5e7b9f0d0b6c005b0e76f075",
+  "title": "Networking: Using urllib in Python",
+  "challengeType": 11,
+  "videoId": "7lFM1T_CxBs",
+  "bilibiliIds": {
+    "aid": 546908270,
+    "bvid": "BV1Xq4y1H7e6",
+    "cid": 377331524
+  },
+  "dashedName": "networking-using-urllib-in-python",
+  "solutions": [],
+  "question": {
+    "text": "<p>What will the output of the following code be like?:</p>\n<pre><code class=\"language-python\">import urllib.request\nfhand = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')\nfor line in fhand:\n    print(line.decode().strip())\n</code></pre>",
+    "answers": [
+      {
+        "answer": "<p>Just contents of \"romeo.txt\".</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A header and the contents of \"romeo.txt\".</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A header, a footer, and the contents of \"romeo.txt\".</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 33,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

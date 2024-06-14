@@ -1,0 +1,49 @@
+{
+  "id": "656490295d346850a4c4f2b5",
+  "title": "Step 19",
+  "challengeType": 20,
+  "dashedName": "step-19",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        12,
+        18
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import secrets\nimport string\n\n\ndef generate_password(length):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n    password = ''\n    # Generate password\n    for _ in range(length):\n        password += secrets.choice(all_characters)\n    ",
+      "error": null,
+      "seed": "import secrets\nimport string\n\n\ndef generate_password(length):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n    password = ''\n    # Generate password\n    for _ in range(length):\n        password += secrets.choice(all_characters)\n    "
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should return <code>password</code> at the end of your function.</p>",
+      "testString": "({ test: () =>\n  {\n    const transformedCode = code.replace(/\\r/g, \"\");\n    const generate_pw = __helpers.python.getDef(\"\\n\"+transformedCode, \"generate_password\");\n    const {function_body} = generate_pw;     \n    assert(function_body.match(/^(\\s*)for\\s+\\w\\s+in\\s+range\\s*\\(\\s*length\\s*\\)\\s*:.+^\\1return\\s+password/ms));\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>After the loop, add a <code>return</code> statement to your function so it returns the <code>password</code> variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

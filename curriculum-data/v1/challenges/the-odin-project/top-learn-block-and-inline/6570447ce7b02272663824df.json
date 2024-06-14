@@ -1,0 +1,37 @@
+{
+  "id": "6570447ce7b02272663824df",
+  "title": "Learn Block and Inline Question A",
+  "challengeType": 15,
+  "dashedName": "learn-block-and-inline-question-a",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following statements about block elements is true?</p>",
+    "answers": [
+      {
+        "answer": "<p>Block elements take up only the space necessary for their content.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Block elements start on a new line and take up the full width available.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Most of the elements that you have learned about so far are block elements. In other words, their default style is <code>display: block</code>. By default, block elements will appear on the page stacked atop each other, each new element starting on a new line.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-block-and-inline",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

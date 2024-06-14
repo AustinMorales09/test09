@@ -1,0 +1,45 @@
+{
+  "id": "65800b1c13005dfa9df75d73",
+  "title": "Task 91",
+  "challengeType": 19,
+  "dashedName": "task-91",
+  "solutions": [],
+  "question": {
+    "text": "<p>What word describes <code>extreme sports</code> like <code>rock climbing</code> and <code>rafting</code> the best?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Risky</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Calm</code></p>",
+        "feedback": "<p>This word means peaceful and quiet, not like the thrilling and risky nature of <code>extreme sports</code>.</p>"
+      },
+      {
+        "answer": "<p><code>Everyday</code></p>",
+        "feedback": "<p>This means something that happens all the time, which doesn't fit the special and adventurous feel of <code>extreme sports</code>.</p>"
+      },
+      {
+        "answer": "<p><code>Easy</code></p>",
+        "feedback": "<p>This suggests something is not hard to do, which is not true for the challenging nature of <code>extreme sports</code>.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Extreme sports</code> are exciting activities with a lot of risk. They often need special gear and care because they are adventurous.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 95,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

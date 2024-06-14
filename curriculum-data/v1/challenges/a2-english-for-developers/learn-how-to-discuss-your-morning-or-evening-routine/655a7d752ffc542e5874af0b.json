@@ -1,0 +1,88 @@
+{
+  "id": "655a7d752ffc542e5874af0b",
+  "title": "Task 66",
+  "challengeType": 19,
+  "dashedName": "task-66",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>could</code> in Jake's question imply?</p>",
+    "answers": [
+      {
+        "answer": "<p>He is making a polite request</p>",
+        "feedback": "<p>While <code>could</code> is used for polite requests, in this context, Jake is not making a request but discussing potential ideas.</p>"
+      },
+      {
+        "answer": "<p>He is talking about a past ability</p>",
+        "feedback": "<p><code>Could</code> does express past abilities, but Jake is not referring to past abilities in this sentence.</p>"
+      },
+      {
+        "answer": "<p>He is asking her to suggest some possible ideas</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He is asking for permission</p>",
+        "feedback": "<p><code>Could</code> can be used to ask for permission, but in this dialogue, Jake is not asking for permission; he is discussing possibilities.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 10.06,
+        "finishTimestamp": 11.7
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 2.64,
+        "dialogue": {
+          "text": "Do you have any ideas that could help?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 3.14
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Understanding the difference between <code>can</code> and <code>could</code> is crucial in English.</p>\n<p><code>Can</code> is used to express ability, possibility, or to ask permission in the present or future.</p>\n<p><code>Could</code> is often used for polite requests, suggestions, or to talk about ability in the past. For example:</p>\n<p><code>I can code very well</code> (present ability)\n<code>Can I leave early today?</code> (asking for permission)</p>\n<p><code>Could you pass me that tool, please?</code> (polite request)\n<code>When I first learned programming, I could spend hours debugging without getting tired</code> (past ability)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 68,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

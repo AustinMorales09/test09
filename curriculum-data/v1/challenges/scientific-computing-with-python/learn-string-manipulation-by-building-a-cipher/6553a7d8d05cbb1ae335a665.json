@@ -1,0 +1,53 @@
+{
+  "id": "6553a7d8d05cbb1ae335a665",
+  "title": "Step 45",
+  "challengeType": 20,
+  "dashedName": "step-45",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        14
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        encrypted_text += char\n    else:\n        index = alphabet.find(char)\n        new_index = index + shift\n        encrypted_text += alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        encrypted_text += char\n    else:\n        index = alphabet.find(char)\n        new_index = index + shift\n        encrypted_text += alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have <code>new_index = (index + shift) % 26</code> in your <code>else</code> statement.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);  \nconst {block_body} = __helpers.python.getBlock(commentless_code, /else/);\nassert(block_body.match(/new_index\\s*=\\s*\\(\\s*index\\s*\\+\\s*shift\\s*\\)\\s*%\\s*26/));"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When the loop reaches the letter <code>Z</code>, the sum <code>index + shift</code> exceeds the last index of the string <code>alphabet</code>. Therefore, <code>alphabet[new_index]</code> is trying to use an invalid index, which causes an <code>IndexError</code> to be thrown.</p>\n<p>You can notice that the output in the terminal stops at the space immediately before the <code>Z</code>, the last <code>print</code> before the error is thrown.</p>\n<p>In this case, the modulo operator (<code>%</code>) can be used to return the remainder of the division between two numbers. For example: <code>5 % 2</code> is equal to <code>1</code>, because 5 divided by 2 has a quotient of 2 and a remainder of 1.</p>\n<p>Surround <code>index + shift</code> with parentheses, and modulo the expression with <code>26</code>, which is the <code>alphabet</code> length.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 44,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

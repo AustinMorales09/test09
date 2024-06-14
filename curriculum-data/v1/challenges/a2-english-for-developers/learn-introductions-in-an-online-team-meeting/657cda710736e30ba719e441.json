@@ -1,0 +1,88 @@
+{
+  "id": "657cda710736e30ba719e441",
+  "title": "Task 54",
+  "challengeType": 19,
+  "dashedName": "task-54",
+  "solutions": [],
+  "question": {
+    "text": "<p>What aspect of Bob's statement to Lisa is considered surprising?</p>",
+    "answers": [
+      {
+        "answer": "<p>That Lisa can talk to Sarah at any time.</p>",
+        "feedback": "<p>While this is part of the statement, it's not the surprising element.</p>"
+      },
+      {
+        "answer": "<p>That Lisa can talk to Sarah at any time even in a virtual setting.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>That Lisa might have questions.</p>",
+        "feedback": "<p>Having questions is quite normal and not the surprising part of the statement.</p>"
+      },
+      {
+        "answer": "<p>That Lisa is talking to Sarah, not Bob.</p>",
+        "feedback": "<p>The statement is about whom Lisa can talk to, not about who is currently talking.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.86,
+        "finishTimestamp": 19.94
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.08,
+        "dialogue": {
+          "text": "You can talk to her anytime, even in this virtual setting, if you have questions, Lisa.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In Bob's statement, he uses the word <code>even</code> to introduce a surprising or notable aspect. <code>Even</code> is often used to emphasize something that may not be expected or is additional to what has already been mentioned.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 56,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

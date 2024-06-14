@@ -1,0 +1,79 @@
+{
+  "id": "657b602d5bf54224a94cbfa6",
+  "title": "Task 11",
+  "challengeType": 22,
+  "dashedName": "task-11",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>In my previous job, I developed mobile apps for _ _.</p>",
+    "blanks": [
+      {
+        "answer": "small",
+        "feedback": "<p>Describes the size of the businesses as not very big.</p>"
+      },
+      {
+        "answer": "businesses",
+        "feedback": "<p>This word refers to companies or commercial organizations. It is in its plural form.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.14,
+        "finishTimestamp": 12.58
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 4.44,
+        "dialogue": {
+          "text": "In my previous job, I developed mobile apps for small businesses.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 4.94
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Small</code> means not big, often with fewer employees or less money. For example: <code>She works for a small company.</code></p>\n<p><code>Large</code> means big, usually with many employees or a lot of money. For instance, <code>He got a job at a large corporation.</code></p>\n<p><code>A business</code> means one company. <code>Many businesses</code> means several companies. Notice how <code>-es</code> was added to the word to make it plural.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,75 @@
+{
+  "id": "587d781b367417b2b2512abc",
+  "title": "Adjust the background-color Property of Text",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cEDqwA6",
+  "forumTopicId": 301032,
+  "dashedName": "adjust-the-background-color-property-of-text",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  h4 {\n    text-align: center;\n    height: 25px;\n\n\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    text-align: left;\n    color: black;\n  }\n  .fullCard {\n    width: 245px;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n  .cardText {\n    margin-bottom: 30px;\n  }\n</style>\n<div class=\"fullCard\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Alphabet</h4>\n      <hr>\n      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>",
+      "error": null,
+      "seed": "<style>\n  h4 {\n    text-align: center;\n    height: 25px;\n\n\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    text-align: left;\n    color: black;\n  }\n  .fullCard {\n    width: 245px;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n  .cardText {\n    margin-bottom: 30px;\n  }\n</style>\n<div class=\"fullCard\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Alphabet</h4>\n      <hr>\n      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  h4 {\n    text-align: center;\n    padding: 10px;\n    background-color: rgba(45, 45, 45, 0.1);\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    text-align: left;\n    color: black;\n  }\n  .fullCard {\n    width: 245px;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n  .cardText {\n    margin-bottom: 30px;\n  }\n</style>\n<div class=\"fullCard\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Alphabet</h4>\n      <hr>\n      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>",
+        "error": null,
+        "seed": "<style>\n  h4 {\n    text-align: center;\n    padding: 10px;\n    background-color: rgba(45, 45, 45, 0.1);\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    text-align: left;\n    color: black;\n  }\n  .fullCard {\n    width: 245px;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n  .cardText {\n    margin-bottom: 30px;\n  }\n</style>\n<div class=\"fullCard\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Alphabet</h4>\n      <hr>\n      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should add a <code>background-color</code> property to the <code>h4</code> element set to <code>rgba(45, 45, 45, 0.1)</code>.</p>",
+      "testString": "assert(\n  /(background-color|background):rgba\\(45,45,45,0?\\.1\\)(;?}|;)/gi.test(\n    code.replace(/\\s/g, '')\n  )\n);"
+    },
+    {
+      "text": "<p>Your code should add a <code>padding</code> property to the <code>h4</code> element and set it to 10 pixels.</p>",
+      "testString": "assert(\n  $('h4').css('padding-top') == '10px' &&\n    $('h4').css('padding-right') == '10px' &&\n    $('h4').css('padding-bottom') == '10px' &&\n    $('h4').css('padding-left') == '10px'\n);"
+    },
+    {
+      "text": "<p>The <code>height</code> property on the <code>h4</code> element should be removed.</p>",
+      "testString": "assert(!($('h4').css('height') == '25px'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Instead of adjusting your overall background or the color of the text to make the foreground easily readable, you can add a <code>background-color</code> to the element holding the text you want to emphasize. This challenge uses <code>rgba()</code> instead of <code>hex</code> codes or normal <code>rgb()</code>.</p>\n<blockquote>rgba stands for:<br>  r = red<br>  g = green<br>  b = blue<br>  a = alpha/level of opacity</blockquote>\n<p>The RGB values can range from 0 to 255. The alpha value can range from 1, which is fully opaque or a solid color, to 0, which is fully transparent or clear. <code>rgba()</code> is great to use in this case, as it allows you to adjust the opacity. This means you don't have to completely block out the background.</p>\n<p>You'll use <code>background-color: rgba(45, 45, 45, 0.1)</code> for this challenge. It produces a dark gray color that is nearly transparent given the low opacity value of 0.1.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>To make the text stand out more, adjust the <code>background-color</code> of the <code>h4</code> element to the given <code>rgba()</code> value.</p>\n<p>Also for the <code>h4</code>, remove the <code>height</code> property and add <code>padding</code> of 10px.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-visual-design",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,82 @@
+{
+  "id": "587d7fa7367417b2b2512bc4",
+  "title": "Work with Data in D3",
+  "challengeType": 6,
+  "forumTopicId": 301497,
+  "dashedName": "work-with-data-in-d3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    // Add your code below this line\n\n\n\n    // Add your code above this line\n  </script>\n</body>",
+      "error": null,
+      "seed": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    // Add your code below this line\n\n\n\n    // Add your code above this line\n  </script>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    d3.select(\"body\")\n      .selectAll(\"h2\")\n      .data(dataset)\n      .enter()\n      .append(\"h2\")\n      .text(\"New Title\")\n\n  </script>\n</body>",
+        "error": null,
+        "seed": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    d3.select(\"body\")\n      .selectAll(\"h2\")\n      .data(dataset)\n      .enter()\n      .append(\"h2\")\n      .text(\"New Title\")\n\n  </script>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your document should have 9 <code>h2</code> elements.</p>",
+      "testString": "assert($('h2').length == 9);"
+    },
+    {
+      "text": "<p>The text in the <code>h2</code> elements should say <code>New Title</code>. The capitalization and spacing should match exactly.</p>",
+      "testString": "assert(\n  $('h2')\n    .text()\n    .match(/New Title/g).length == 9\n);"
+    },
+    {
+      "text": "<p>Your code should use the <code>data()</code> method.</p>",
+      "testString": "assert(code.match(/\\.data/g));"
+    },
+    {
+      "text": "<p>Your code should use the <code>enter()</code> method.</p>",
+      "testString": "assert(code.match(/\\.enter/g));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The D3 library focuses on a data-driven approach. When you have a set of data, you can apply D3 methods to display it on the page. Data comes in many formats, but this challenge uses a simple array of numbers.</p>\n<p>The first step is to make D3 aware of the data. The <code>data()</code> method is used on a selection of DOM elements to attach the data to those elements. The data set is passed as an argument to the method.</p>\n<p>A common workflow pattern is to create a new element in the document for each piece of data in the set. D3 has the <code>enter()</code> method for this purpose.</p>\n<p>When <code>enter()</code> is combined with the <code>data()</code> method, it looks at the selected elements from the page and compares them to the number of data items in the set. If there are fewer elements than data items, it creates the missing elements.</p>\n<p>Here is an example that selects a <code>ul</code> element and creates a new list item based on the number of entries in the array:</p>\n<pre><code class=\"language-html\">&#x3C;body>\n  &#x3C;ul>&#x3C;/ul>\n  &#x3C;script>\n    const dataset = [\"a\", \"b\", \"c\"];\n    d3.select(\"ul\").selectAll(\"li\")\n      .data(dataset)\n      .enter()\n      .append(\"li\")\n      .text(\"New item\");\n  &#x3C;/script>\n&#x3C;/body>\n</code></pre>\n<p>It may seem confusing to select elements that don't exist yet. This code is telling D3 to first select the <code>ul</code> on the page. Next, select all list items, which returns an empty selection. Then the <code>data()</code> method reviews the dataset and runs the following code three times, once for each item in the array. The <code>enter()</code> method sees there are no <code>li</code> elements on the page, but it needs 3 (one for each piece of data in <code>dataset</code>). New <code>li</code> elements are appended to the <code>ul</code> and have the text <code>New item</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Select the <code>body</code> node, then select all <code>h2</code> elements. Have D3 create and append an <code>h2</code> tag for each item in the <code>dataset</code> array. The text in the <code>h2</code> should say <code>New Title</code>. Your code should use the <code>data()</code> and <code>enter()</code> methods.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-visualization-with-d3",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 2,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

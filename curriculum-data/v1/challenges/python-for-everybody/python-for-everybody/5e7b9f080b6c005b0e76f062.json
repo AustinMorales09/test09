@@ -1,0 +1,54 @@
+{
+  "id": "5e7b9f080b6c005b0e76f062",
+  "title": "Reading Files",
+  "challengeType": 11,
+  "videoId": "Fo1tW09KIwo",
+  "bilibiliIds": {
+    "aid": 334439927,
+    "bvid": "BV1pw411R7UK",
+    "cid": 376532076
+  },
+  "dashedName": "reading-files",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is used to indicate a new line in a string?</p>",
+    "answers": [
+      {
+        "answer": "<p>\\n</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>{new_line}</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>{n}</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>/n</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>/new</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

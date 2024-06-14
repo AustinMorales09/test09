@@ -1,0 +1,75 @@
+{
+  "id": "6636d1246df2f077a703512c",
+  "title": "Task 20",
+  "challengeType": 22,
+  "dashedName": "task-20",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>He's _ of the design team, but he's not at his desk right now.</p>",
+    "blanks": [
+      {
+        "answer": "part",
+        "feedback": "<p>Combined with <code>of</code>, you have an expression to say someone is a member or is included in a group.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.16,
+        "finishTimestamp": 7.34
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.18,
+        "dialogue": {
+          "text": "He's part of the design team, but he's not at his desk right now.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>You say that someone is <code>part of</code> something, when this person belongs to or is included in a group or a place. For example, if you say <code>you are part of a team</code>, you are one of the members who work together in that team.</p>\n<p>Listen to the dialogue and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

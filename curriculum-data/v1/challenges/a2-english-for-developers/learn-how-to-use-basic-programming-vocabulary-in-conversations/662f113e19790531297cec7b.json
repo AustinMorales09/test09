@@ -1,0 +1,45 @@
+{
+  "id": "662f113e19790531297cec7b",
+  "title": "Task 58",
+  "challengeType": 19,
+  "dashedName": "task-58",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is <code>object-oriented programming</code> in the context of programming?</p>",
+    "answers": [
+      {
+        "answer": "<p>A programming paradigm based on objects</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>An internet technology</p>",
+        "feedback": "<p><code>Object-oriented programming</code> is a concept in programming, not specifically an internet technology.</p>"
+      },
+      {
+        "answer": "<p>A type of computer hardware</p>",
+        "feedback": "<p><code>OOP</code> is a programming paradigm, not a physical hardware device.</p>"
+      },
+      {
+        "answer": "<p>A software application</p>",
+        "feedback": "<p>While <code>OOP</code> can be used in software applications, it is itself a programming concept, not an application.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Object-oriented programming</code> (OOP) is a programming paradigm based on the concept of <code>objects</code>, which can contain data and code: data in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods).</p>\n<p>A common example of <code>OOP</code> is creating a class in a programming language like Java or Python. This class defines the structure of objects, including their attributes and methods. For instance, a <code>Car</code> class might include attributes like <code>color</code> and <code>model</code>, and methods like <code>drive()</code> and <code>brake()</code>.</p>\n<p>The term <code>oriented</code> in this context means aligned or directed towards a particular purpose or principle.</p>\n<p>For example, freeCodeCamp's Responsive Web Design curriculum is described as <code>project-oriented</code> because it is structured around completing projects, which means the teaching method is focused on practical application rather than just theoretical knowledge.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 60,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

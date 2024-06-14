@@ -1,0 +1,45 @@
+{
+  "id": "657ce061cda4a42a99c65d89",
+  "title": "Task 60",
+  "challengeType": 19,
+  "dashedName": "task-60",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the correct question for asking about someone’s usual work location.</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Where do she work from?</code></p>",
+        "feedback": "<p>Remember, when making questions with <code>does,</code> use the base form of the main verb without <code>s.</code></p>"
+      },
+      {
+        "answer": "<p><code>Where does he works from?</code></p>",
+        "feedback": "<p>Remember, when making questions with <code>does,</code> use the base form of the main verb without <code>s.</code></p>"
+      },
+      {
+        "answer": "<p><code>Where does she work from?</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Where she does work from?</code></p>",
+        "feedback": "<p>Remember, when making questions with <code>does,</code> use the base form of the main verb without <code>s.</code></p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Where</code> is a question word used when you want to know about a place or location.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 62,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

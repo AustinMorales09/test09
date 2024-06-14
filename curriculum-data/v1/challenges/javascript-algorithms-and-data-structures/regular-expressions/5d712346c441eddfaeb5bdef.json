@@ -1,0 +1,94 @@
+{
+  "id": "5d712346c441eddfaeb5bdef",
+  "title": "Match All Numbers",
+  "challengeType": 1,
+  "forumTopicId": 18181,
+  "dashedName": "match-all-numbers",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let movieName = \"2001: A Space Odyssey\";\nlet numRegex = /change/; // Change this line\nlet result = movieName.match(numRegex).length;",
+      "error": null,
+      "seed": "let movieName = \"2001: A Space Odyssey\";\nlet numRegex = /change/; // Change this line\nlet result = movieName.match(numRegex).length;"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let movieName = \"2001: A Space Odyssey\";\nlet numRegex = /\\d/g; // Change this line\nlet result = movieName.match(numRegex).length;",
+        "error": null,
+        "seed": "let movieName = \"2001: A Space Odyssey\";\nlet numRegex = /\\d/g; // Change this line\nlet result = movieName.match(numRegex).length;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your regex should use the shortcut character to match digit characters</p>",
+      "testString": "assert(/\\\\d/.test(numRegex.source));"
+    },
+    {
+      "text": "<p>Your regex should use the global flag.</p>",
+      "testString": "assert(numRegex.global);"
+    },
+    {
+      "text": "<p>Your regex should find 1 digit in the string <code>9</code>.</p>",
+      "testString": "assert('9'.match(numRegex).length == 1);"
+    },
+    {
+      "text": "<p>Your regex should find 2 digits in the string <code>Catch 22</code>.</p>",
+      "testString": "assert('Catch 22'.match(numRegex).length == 2);"
+    },
+    {
+      "text": "<p>Your regex should find 3 digits in the string <code>101 Dalmatians</code>.</p>",
+      "testString": "assert('101 Dalmatians'.match(numRegex).length == 3);"
+    },
+    {
+      "text": "<p>Your regex should find no digits in the string <code>One, Two, Three</code>.</p>",
+      "testString": "assert('One, Two, Three'.match(numRegex) == null);"
+    },
+    {
+      "text": "<p>Your regex should find 2 digits in the string <code>21 Jump Street</code>.</p>",
+      "testString": "assert('21 Jump Street'.match(numRegex).length == 2);"
+    },
+    {
+      "text": "<p>Your regex should find 4 digits in the string <code>2001: A Space Odyssey</code>.</p>",
+      "testString": "assert('2001: A Space Odyssey'.match(numRegex).length == 4);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You've learned shortcuts for common string patterns like alphanumerics. Another common pattern is looking for just digits or numbers.</p>\n<p>The shortcut to look for digit characters is <code>\\d</code>, with a lowercase <code>d</code>. This is equal to the character class <code>[0-9]</code>, which looks for a single character of any number between zero and nine.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use the shorthand character class <code>\\d</code> to count how many digits are in movie titles. Written out numbers (\"six\" instead of 6) do not count.</p>\n</section>",
+  "translationPending": false,
+  "block": "regular-expressions",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

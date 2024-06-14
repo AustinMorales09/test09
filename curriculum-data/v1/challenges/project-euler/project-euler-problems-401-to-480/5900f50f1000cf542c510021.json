@@ -1,0 +1,65 @@
+{
+  "id": "5900f50f1000cf542c510021",
+  "title": "Problem 418: Factorisation triples",
+  "challengeType": 1,
+  "forumTopicId": 302087,
+  "dashedName": "problem-418-factorisation-triples",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function factorisationTriples() {\n\n  return true;\n}\n\nfactorisationTriples();",
+      "error": null,
+      "seed": "function factorisationTriples() {\n\n  return true;\n}\n\nfactorisationTriples();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>factorisationTriples()</code> should return <code>1177163565297340400</code>.</p>",
+      "testString": "assert.strictEqual(factorisationTriples(), 1177163565297340400);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $n$ be a positive integer. An integer triple ($a$, $b$, $c$) is called a factorisation triple of $n$ if:</p>\n<ul>\n<li>$1 ≤ a ≤ b ≤ c$</li>\n<li>$a \\times b \\times c = n$.</li>\n</ul>\n<p>Define $f(n)$ to be $a + b + c$ for the factorisation triple ($a$, $b$, $c$) of $n$ which minimises $\\frac{c}{a}$. One can show that this triple is unique.</p>\n<p>For example, $f(165) = 19$, $f(100\\,100) = 142$ and $f(20!) = 4\\,034\\,872$.</p>\n<p>Find $f(43!)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

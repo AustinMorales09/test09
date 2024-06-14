@@ -1,0 +1,61 @@
+{
+  "id": "660f0da9bf1035c9097af20a",
+  "title": "Step 27",
+  "challengeType": 1,
+  "dashedName": "step-27",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        6
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];\nrows.push(\"freeCodeCamp\");\n\nlet popped = rows.pop();\nconsole.log(popped);\nconsole.log(rows);",
+      "error": null,
+      "seed": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];\nrows.push(\"freeCodeCamp\");\n\nlet popped = rows.pop();\nconsole.log(popped);\nconsole.log(rows);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a <code>pushed</code> variable.</p>",
+      "testString": "assert.match(code, /pushed/);"
+    },
+    {
+      "text": "<p>You should use <code>let</code> to declare your <code>pushed</code> variable.</p>",
+      "testString": "assert.match(code, /let\\s+pushed/);"
+    },
+    {
+      "text": "<p>You should assign <code>rows.push(\"freeCodeCamp\")</code> to your <code>pushed</code> variable.</p>",
+      "testString": "assert.equal(pushed, 4);"
+    },
+    {
+      "text": "<p>You should log your <code>pushed</code> variable.</p>",
+      "testString": "assert.match(code, /console\\.log\\(\\s*pushed\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You should have seen <code>\"freeCodeCamp\"</code> printed to the console. This is because <code>.pop()</code> returns the value that was removed from the array - and you pushed <code>\"freeCodeCamp\"</code> to the end of the array earlier.</p>\n<p>But what does <code>.push()</code> return? Assign your existing <code>rows.push()</code> to a new <code>pushed</code> variable, and log it.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

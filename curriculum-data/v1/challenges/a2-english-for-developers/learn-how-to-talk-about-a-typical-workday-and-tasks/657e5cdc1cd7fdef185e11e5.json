@@ -1,0 +1,45 @@
+{
+  "id": "657e5cdc1cd7fdef185e11e5",
+  "title": "Task 99",
+  "challengeType": 19,
+  "dashedName": "task-99",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>immediately</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>Right away, without waiting.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>At a slow pace.</p>",
+        "feedback": "<p>Immediately means quickly, not slowly.</p>"
+      },
+      {
+        "answer": "<p>After a long time.</p>",
+        "feedback": "<p>It's about acting fast, not after a delay.</p>"
+      },
+      {
+        "answer": "<p>Only if you want to.</p>",
+        "feedback": "<p>Immediately means it must be done now, not optionally.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Immediately</code> means doing something right away, without any delay. In a job, you might be asked to do important tasks immediately, especially in urgent situations. For example, <code>report the fire immediately</code> means to tell someone about the fire as soon as possible.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 102,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

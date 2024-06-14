@@ -1,0 +1,46 @@
+{
+  "id": "5e8f2f13c4cdbe86b5c72d8c",
+  "title": "Core Learning Algorithms: The Training Process",
+  "challengeType": 11,
+  "videoId": "_cEwvqVoBhI",
+  "bilibiliIds": {
+    "aid": 335593652,
+    "bvid": "BV12R4y1H7Fi",
+    "cid": 409128047
+  },
+  "dashedName": "core-learning-algorithms-the-training-process",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are epochs?</p>",
+    "answers": [
+      {
+        "answer": "<p>The number of times the model will see the same data.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A type of graph.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The number of elements you feed to the model at once.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "tensorflow",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

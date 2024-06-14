@@ -1,0 +1,45 @@
+{
+  "id": "657e4e482e3a38992b212c6f",
+  "title": "Task 77",
+  "challengeType": 19,
+  "dashedName": "task-77",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>policy</code> mean in a workplace?</p>",
+    "answers": [
+      {
+        "answer": "<p>A formal rule or principle guiding decisions.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A casual suggestion.</p>",
+        "feedback": "<p>Policies are formal and more than just suggestions.</p>"
+      },
+      {
+        "answer": "<p>A personal belief.</p>",
+        "feedback": "<p>Policies are organizational, not personal.</p>"
+      },
+      {
+        "answer": "<p>A recreational activity.</p>",
+        "feedback": "<p>They are related to professional conduct, not recreation.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>policy</code> (in the plural, <code>policies</code>) is a principle or rule to guide decisions and achieve rational outcomes. Policies are often adopted by an organization to guide employees.</p>\n<p>For instance, <code>The company’s privacy policy protects client information.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 80,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

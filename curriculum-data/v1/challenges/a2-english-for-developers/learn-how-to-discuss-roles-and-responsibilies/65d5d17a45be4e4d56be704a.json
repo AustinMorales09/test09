@@ -1,0 +1,83 @@
+{
+  "id": "65d5d17a45be4e4d56be704a",
+  "title": "Task 33",
+  "challengeType": 22,
+  "dashedName": "task-33",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hey, _ you _ _ with Anna from HR?</p>",
+    "blanks": [
+      {
+        "answer": "have",
+        "feedback": "<p>This is part of the present perfect tense, used here to talk about past experiences up to now.</p>"
+      },
+      {
+        "answer": "ever",
+        "feedback": "<p>This word is used to ask if the action has happened at any time up to now.</p>"
+      },
+      {
+        "answer": "worked",
+        "feedback": "<p>This is the past participle of <code>work</code>, used to inquire about the experience of working.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 2.88
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.88,
+        "dialogue": {
+          "text": "Hey, have you ever worked with Anna from HR?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.38
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>ever</code> is used in the present perfect tense to talk about experiences at any time up to now. It's often found in questions to ask if someone has done something at least once in their life.</p>\n<p>For example, <code>Have you ever visited Paris?</code> means <code>At any time in your life, did you visit Paris?</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

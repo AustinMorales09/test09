@@ -1,0 +1,105 @@
+{
+  "id": "64496d1e5af8c0148fbef96d",
+  "title": "Step 24",
+  "challengeType": 0,
+  "dashedName": "step-24",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        9
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      container.appendChild(input);\n    })\n  })\n}",
+      "error": null,
+      "seed": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      container.appendChild(input);\n    })\n  })\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a <code>length</code> variable after your <code>sorted</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*(?:var|let|const)\\s+length/);"
+    },
+    {
+      "text": "<p>You should use <code>const</code> to declare your <code>length</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length/);"
+    },
+    {
+      "text": "<p>You should assign the length of the <code>sorted</code> array to your <code>length</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?/);"
+    },
+    {
+      "text": "<p>You should declare a <code>middle</code> variable after your <code>length</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?\\s*(?:var|let|const)\\s+middle/);"
+    },
+    {
+      "text": "<p>You should use <code>const</code> to declare your <code>middle</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?\\s*const\\s+middle/);"
+    },
+    {
+      "text": "<p>You should assign <code>middle</code> the value of dividing your <code>length</code> variable by <code>2</code>.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?\\s*const\\s+middle\\s*=\\s*length\\s*\\/\\s*2/);"
+    },
+    {
+      "text": "<p>You should subtract <code>1</code> from your <code>length / 2</code> calculation.</p>",
+      "testString": "assert.match(code, /const\\s+median\\s*=\\s*nums\\s*=>\\s*\\{\\s*const\\s+sorted\\s*=\\s*nums\\.slice\\(\\s*\\)\\.sort\\(\\s*\\(\\s*a\\s*,\\s*b\\s*\\)\\s*=>\\s*a\\s*-\\s*b\\s*\\)\\s*\\s*;?\\s*const\\s+length\\s*=\\s*sorted\\.length\\s*;?\\s*const\\s+middle\\s*=\\s*length\\s*\\/\\s*2\\s*-\\s*1/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now declare a <code>length</code> variable and assign it the length of your sorted array, and a <code>middle</code> variable that has the value of the length divided by <code>2</code>, subtracted by <code>1</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

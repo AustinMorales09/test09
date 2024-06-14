@@ -1,0 +1,103 @@
+{
+  "id": "587d7dbe367417b2b2512bb9",
+  "title": "Use @for to Create a Sass Loop",
+  "challengeType": 0,
+  "forumTopicId": 301462,
+  "dashedName": "use-for-to-create-a-sass-loop",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style type='text/scss'>\n\n\n\n</style>\n\n<p class=\"text-1\">Hello</p>\n<p class=\"text-2\">Hello</p>\n<p class=\"text-3\">Hello</p>\n<p class=\"text-4\">Hello</p>\n<p class=\"text-5\">Hello</p>",
+      "error": null,
+      "seed": "<style type='text/scss'>\n\n\n\n</style>\n\n<p class=\"text-1\">Hello</p>\n<p class=\"text-2\">Hello</p>\n<p class=\"text-3\">Hello</p>\n<p class=\"text-4\">Hello</p>\n<p class=\"text-5\">Hello</p>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style type='text/scss'>\n\n@for $i from 1 through 5 {\n  .text-#{$i} { font-size: 15px * $i; }\n}\n\n</style>\n\n<p class=\"text-1\">Hello</p>\n<p class=\"text-2\">Hello</p>\n<p class=\"text-3\">Hello</p>\n<p class=\"text-4\">Hello</p>\n<p class=\"text-5\">Hello</p>",
+        "error": null,
+        "seed": "<style type='text/scss'>\n\n@for $i from 1 through 5 {\n  .text-#{$i} { font-size: 15px * $i; }\n}\n\n</style>\n\n<p class=\"text-1\">Hello</p>\n<p class=\"text-2\">Hello</p>\n<p class=\"text-3\">Hello</p>\n<p class=\"text-4\">Hello</p>\n<p class=\"text-5\">Hello</p>"
+      }
+    ],
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style type='text/scss'>\n\n@for $i from 1 to 6 {\n  .text-#{$i} { font-size: 15px * $i; }\n}\n\n</style>\n\n<p class=\"text-1\">Hello</p>\n<p class=\"text-2\">Hello</p>\n<p class=\"text-3\">Hello</p>\n<p class=\"text-4\">Hello</p>\n<p class=\"text-5\">Hello</p>",
+        "error": null,
+        "seed": "<style type='text/scss'>\n\n@for $i from 1 to 6 {\n  .text-#{$i} { font-size: 15px * $i; }\n}\n\n</style>\n\n<p class=\"text-1\">Hello</p>\n<p class=\"text-2\">Hello</p>\n<p class=\"text-3\">Hello</p>\n<p class=\"text-4\">Hello</p>\n<p class=\"text-5\">Hello</p>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should use the <code>@for</code> directive.</p>",
+      "testString": "assert(code.match(/@for /g));"
+    },
+    {
+      "text": "<p>Your <code>.text-1</code> class should have a <code>font-size</code> of 15px.</p>",
+      "testString": "assert($('.text-1').css('font-size') == '15px');"
+    },
+    {
+      "text": "<p>Your <code>.text-2</code> class should have a <code>font-size</code> of 30px.</p>",
+      "testString": "assert($('.text-2').css('font-size') == '30px');"
+    },
+    {
+      "text": "<p>Your <code>.text-3</code> class should have a <code>font-size</code> of 45px.</p>",
+      "testString": "assert($('.text-3').css('font-size') == '45px');"
+    },
+    {
+      "text": "<p>Your <code>.text-4</code> class should have a <code>font-size</code> of 60px.</p>",
+      "testString": "assert($('.text-4').css('font-size') == '60px');"
+    },
+    {
+      "text": "<p>Your <code>.text-5</code> class should have a <code>font-size</code> of 75px.</p>",
+      "testString": "assert($('.text-5').css('font-size') == '75px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>@for</code> directive adds styles in a loop, very similar to a <code>for</code> loop in JavaScript.</p>\n<p><code>@for</code> is used in two ways: \"start through end\" or \"start to end\". The main difference is that the \"start <strong>to</strong> end\" <em>excludes</em> the end number as part of the count, and \"start <strong>through</strong> end\" <em>includes</em> the end number as part of the count.</p>\n<p>Here's a start <strong>through</strong> end example:</p>\n<pre><code class=\"language-scss\">@for $i from 1 through 12 {\n  .col-#{$i} { width: 100%/12 * $i; }\n}\n</code></pre>\n<p>The <code>#{$i}</code> part is the syntax to combine a variable (<code>i</code>) with text to make a string. When the Sass file is converted to CSS, it looks like this:</p>\n<pre><code class=\"language-scss\">.col-1 {\n  width: 8.33333%;\n}\n\n.col-2 {\n  width: 16.66667%;\n}\n\n...\n\n.col-12 {\n  width: 100%;\n}\n</code></pre>\n<p>This is a powerful way to create a grid layout. Now you have twelve options for column widths available as CSS classes.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a <code>@for</code> directive that takes a variable <code>$j</code> that goes from 1 <strong>to</strong> 6.</p>\n<p>It should create 5 classes called <code>.text-1</code> to <code>.text-5</code> where each has a <code>font-size</code> set to 15px multiplied by the index.</p>\n</section>",
+  "translationPending": false,
+  "block": "sass",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

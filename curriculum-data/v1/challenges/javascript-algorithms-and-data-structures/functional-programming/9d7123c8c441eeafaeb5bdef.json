@@ -1,0 +1,78 @@
+{
+  "id": "9d7123c8c441eeafaeb5bdef",
+  "title": "Remove Elements from an Array Using slice Instead of splice",
+  "challengeType": 1,
+  "forumTopicId": 301236,
+  "dashedName": "remove-elements-from-an-array-using-slice-instead-of-splice",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const _inputCities = [\"Chicago\", \"Delhi\", \"Islamabad\", \"London\", \"Berlin\"];",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function nonMutatingSplice(cities) {\n\n  return cities.splice(3);\n}",
+      "error": null,
+      "seed": "function nonMutatingSplice(cities) {\n\n  return cities.splice(3);\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function nonMutatingSplice(cities) {\n  return cities.slice(0,3);\n}",
+        "error": null,
+        "seed": "function nonMutatingSplice(cities) {\n  return cities.slice(0,3);\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should use the <code>slice</code> method.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/\\.slice/g));"
+    },
+    {
+      "text": "<p>Your code should not use the <code>splice</code> method.</p>",
+      "testString": "assert(!__helpers.removeJSComments(code).match(/\\.?[\\s\\S]*?splice/g));"
+    },
+    {
+      "text": "<p>You should not mutate the original array passed to the function.</p>",
+      "testString": "assert.deepEqual(_inputCities, [\"Chicago\", \"Delhi\", \"Islamabad\", \"London\", \"Berlin\"]);"
+    },
+    {
+      "text": "<p><code>nonMutatingSplice([\"Chicago\", \"Delhi\", \"Islamabad\", \"London\", \"Berlin\"])</code> should return <code>[\"Chicago\", \"Delhi\", \"Islamabad\"]</code>.</p>",
+      "testString": "assert.deepEqual(nonMutatingSplice(_inputCities), [\"Chicago\", \"Delhi\", \"Islamabad\"]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A common pattern while working with arrays is when you want to remove items and keep the rest of the array. JavaScript offers the <code>splice</code> method for this, which takes arguments for the index of where to start removing items, then the number of items to remove. If the second argument is not provided, the default is to remove items through the end. However, the <code>splice</code> method mutates the original array it is called on. Here's an example:</p>\n<pre><code class=\"language-js\">const cities = [\"Chicago\", \"Delhi\", \"Islamabad\", \"London\", \"Berlin\"];\ncities.splice(3, 1);\n</code></pre>\n<p>Here <code>splice</code> returns the string <code>London</code> and deletes it from the cities array. <code>cities</code> will have the value <code>[\"Chicago\", \"Delhi\", \"Islamabad\", \"Berlin\"]</code>.</p>\n<p>As we saw in the last challenge, the <code>slice</code> method does not mutate the original array, but returns a new one which can be saved into a variable. Recall that the <code>slice</code> method takes two arguments for the indices to begin and end the slice (the end is non-inclusive), and returns those items in a new array. Using the <code>slice</code> method instead of <code>splice</code> helps to avoid any array-mutating side effects.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Rewrite the function <code>nonMutatingSplice</code> by using <code>slice</code> instead of <code>splice</code>. It should limit the provided <code>cities</code> array to a length of 3, and return a new array with only the first three items.</p>\n<p>Do not mutate the original array provided to the function.</p>\n</section>",
+  "translationPending": false,
+  "block": "functional-programming",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

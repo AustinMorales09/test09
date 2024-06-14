@@ -1,0 +1,43 @@
+{
+  "id": "647e236d8acb466c97ccbf01",
+  "title": "Guided Project - Calculate Final GPA",
+  "challengeType": 19,
+  "dashedName": "guided-project-calculate-final-gpa",
+  "solutions": [],
+  "question": {
+    "text": "<p>Suppose <code>decimal gradePointAverage = 3.99872831m;</code>.</p>\n<p>What is the value of <code>(int) gradePointAverage</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>3.99</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>4</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>3</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [
+    "<p>Complete the <a href=\"https://learn.microsoft.com/training/modules/guided-project-calculate-final-gpa/\" target=\"_blank\" rel=\"noreferrer\">Calculate Final GPA</a> guided project on Microsoft Learn. Then, answer the question below.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge will be partially completed on the Microsoft Learn platform. Follow these instructions to complete the challenge:</p>\n<ol>\n<li>Go to <a href=\"https://learn.microsoft.com/training/modules/guided-project-calculate-final-gpa/\" target=\"_blank\" rel=\"noreferrer\">https://learn.microsoft.com/training/modules/guided-project-calculate-final-gpa/</a> and complete all the tasks for the \"Guided Project - Calculate Final GPA\" module. This is <strong>required</strong> to earn the \"Write Your First Code Using C#\" trophy on Microsoft Learn, and qualify for the certification exam.</li>\n<li>When you are finished, come back and correctly answer the question below.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "write-your-first-code-using-c-sharp",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 13,
+  "certification": "foundational-c-sharp-with-microsoft",
+  "superBlock": "foundational-c-sharp-with-microsoft",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "C-Sharp",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

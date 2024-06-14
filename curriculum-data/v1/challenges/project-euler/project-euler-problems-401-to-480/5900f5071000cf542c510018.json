@@ -1,0 +1,65 @@
+{
+  "id": "5900f5071000cf542c510018",
+  "title": "Problem 410: Circle and tangent line",
+  "challengeType": 1,
+  "forumTopicId": 302079,
+  "dashedName": "problem-410-circle-and-tangent-line",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function circleAndTangentLine() {\n\n  return true;\n}\n\ncircleAndTangentLine();",
+      "error": null,
+      "seed": "function circleAndTangentLine() {\n\n  return true;\n}\n\ncircleAndTangentLine();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>circleAndTangentLine()</code> should return <code>799999783589946600</code>.</p>",
+      "testString": "assert.strictEqual(circleAndTangentLine(), 799999783589946600);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $C$ be the circle with radius $r$, $x^2 + y^2 = r^2$. We choose two points $P(a, b)$ and $Q(-a, c)$ so that the line passing through $P$ and $Q$ is tangent to $C$.</p>\n<p>For example, the quadruplet $(r, a, b, c) = (2, 6, 2, -7)$ satisfies this property.</p>\n<p>Let $F(R, X)$ be the number of the integer quadruplets $(r, a, b, c)$ with this property, and with $0 &#x3C; r ≤ R$ and $0 &#x3C; a ≤ X$.</p>\n<p>We can verify that $F(1, 5) = 10$, $F(2, 10) = 52$ and $F(10, 100) = 3384$.</p>\n<p>Find $F({10}^8, {10}^9) + F({10}^9, {10}^8)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

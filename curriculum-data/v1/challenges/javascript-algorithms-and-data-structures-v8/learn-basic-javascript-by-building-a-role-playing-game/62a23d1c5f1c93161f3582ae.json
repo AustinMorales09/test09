@@ -1,0 +1,97 @@
+{
+  "id": "62a23d1c5f1c93161f3582ae",
+  "title": "Step 19",
+  "challengeType": 0,
+  "dashedName": "step-19",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        19,
+        23
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n  </head>\n  <body>\n    <div id=\"game\">\n      <div id=\"stats\">\n        <span class=\"stat\">XP: <strong><span id=\"xpText\">0</span></strong></span>\n        <span class=\"stat\">Health: <strong><span id=\"healthText\">100</span></strong></span>\n        <span class=\"stat\">Gold: <strong><span id=\"goldText\">50</span></strong></span>\n      </div>\n      <div id=\"controls\">\n        <button id=\"button1\">Go to store</button>\n        <button id=\"button2\">Go to cave</button>\n        <button id=\"button3\">Fight dragon</button>\n      </div>\n      <div id=\"monsterStats\">\n\n      </div>\n      <div id=\"text\"></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n  </head>\n  <body>\n    <div id=\"game\">\n      <div id=\"stats\">\n        <span class=\"stat\">XP: <strong><span id=\"xpText\">0</span></strong></span>\n        <span class=\"stat\">Health: <strong><span id=\"healthText\">100</span></strong></span>\n        <span class=\"stat\">Gold: <strong><span id=\"goldText\">50</span></strong></span>\n      </div>\n      <div id=\"controls\">\n        <button id=\"button1\">Go to store</button>\n        <button id=\"button2\">Go to cave</button>\n        <button id=\"button3\">Fight dragon</button>\n      </div>\n      <div id=\"monsterStats\">\n\n      </div>\n      <div id=\"text\"></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;\nlet monsterHealth;\nlet inventory = [\"stick\"];\n\nconst button1 = document.querySelector(\"#button1\");\nconst button2 = document.querySelector(\"#button2\");\nconst button3 = document.querySelector(\"#button3\");",
+      "error": null,
+      "seed": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;\nlet monsterHealth;\nlet inventory = [\"stick\"];\n\nconst button1 = document.querySelector(\"#button1\");\nconst button2 = document.querySelector(\"#button2\");\nconst button3 = document.querySelector(\"#button3\");"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>#monsterStats</code> element should have two <code>span</code> elements.</p>",
+      "testString": "const spans = document.querySelectorAll(`#monsterStats > span`);\nassert.equal(spans.length, 2);"
+    },
+    {
+      "text": "<p>Your new <code>span</code> elements should both have a <code>class</code> value of <code>stat</code>.</p>",
+      "testString": "const spans = document.querySelectorAll(`#monsterStats > span`);\nassert.equal(spans[0].className, 'stat');\nassert.equal(spans[1].className, 'stat');"
+    },
+    {
+      "text": "<p>Your first <code>span</code> element should have a <code>strong</code> element with an empty nested <code>span</code> element.</p>",
+      "testString": "const spans = document.querySelectorAll(`#monsterStats > span`);\nconst strong = spans[0]?.querySelector('strong');\nconst span = strong?.querySelector('span');\nassert.exists(strong);\nassert.exists(span);"
+    },
+    {
+      "text": "<p>Your second <code>span</code> element should have a <code>strong</code> element with an empty nested <code>span</code> element.</p>",
+      "testString": "const spans = document.querySelectorAll(`#monsterStats > span`);\nconst strong = spans[1]?.querySelector('strong');\nconst span = strong?.querySelector('span');\nassert.exists(strong);\nassert.exists(span);"
+    },
+    {
+      "text": "<p>Your first <code>span</code> element should have the text <code>Monster Name: </code>. Make sure the spacing is correct.</p>",
+      "testString": "const spans = document.querySelectorAll(`#monsterStats > span`);\nassert.match(spans[0].innerHTML, /Monster Name:\\s+/);"
+    },
+    {
+      "text": "<p>Your second <code>span</code> element should have the text <code>Health: </code>. Make sure the spacing is correct.</p>",
+      "testString": "const spans = document.querySelectorAll(`#monsterStats > span`);\nassert.match(spans[1].innerHTML, /Health:\\s+/);"
+    },
+    {
+      "text": "<p>Your <code>strong</code> and <code>span</code> elements should come after the text.</p>",
+      "testString": "const spans = document.querySelectorAll(`#monsterStats > span`);\nassert.match(spans[0].innerHTML, /Monster Name:\\s+<strong>/);\nassert.match(spans[1].innerHTML, /Health:\\s+<strong>/);"
+    },
+    {
+      "text": "<p>Your first inner <code>span</code> element should have an <code>id</code> of <code>monsterName</code>.</p>",
+      "testString": "const spans = document.querySelectorAll(`#monsterStats > span`);\nconst span = spans[0]?.querySelector('span');\nconst spanId = span?.id;\nassert.equal(spanId, 'monsterName');"
+    },
+    {
+      "text": "<p>Your second inner <code>span</code> element should have an <code>id</code> of <code>monsterHealth</code>.</p>",
+      "testString": "const spans = document.querySelectorAll(`#monsterStats > span`);\nconst span = spans[1]?.querySelector('span');\nconst spanId = span?.id;\nassert.equal(spanId, 'monsterHealth');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Similar to your <code>#stats</code> element, your <code>#monsterStats</code> element needs two <code>span</code> elements. Give them the class <code>stat</code> and give the first element the text <code>Monster Name: </code> and the second the text <code>Health: </code>. After the text in each, add a <code>strong</code> element with an empty nested <code>span</code> element. Give the first inner <code>span</code> element an <code>id</code> of <code>monsterName</code> and the second inner <code>span</code> element an <code>id</code> of <code>monsterHealth</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-javascript-by-building-a-role-playing-game",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

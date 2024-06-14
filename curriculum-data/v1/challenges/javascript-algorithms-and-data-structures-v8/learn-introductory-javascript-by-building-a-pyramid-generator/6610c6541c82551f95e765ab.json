@@ -1,0 +1,57 @@
+{
+  "id": "6610c6541c82551f95e765ab",
+  "title": "Step 55",
+  "challengeType": 1,
+  "dashedName": "step-55",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        10
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(name) {\n\n  return character + name;\n}\n\nconst call = padRow(\"CamperChan\");\nconsole.log(call);\n\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(name) {\n\n  return character + name;\n}\n\nconst call = padRow(\"CamperChan\");\nconsole.log(call);\n\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your function should declare a <code>test</code> variable.</p>",
+      "testString": "assert.match(padRow.toString(), /var\\s+test/);"
+    },
+    {
+      "text": "<p>You should initialise <code>test</code> with the value <code>\"Testing\"</code>. Don't forget the semi-colon.</p>",
+      "testString": "assert.match(padRow.toString(), /var\\s+test\\s*=\\s*('|\")Testing\\1;/)"
+    },
+    {
+      "text": "<p>Your <code>test</code> variable should come before your <code>return</code> keyword.</p>",
+      "testString": "const str = padRow.toString();\nassert.isBelow(str.indexOf(\"test\"), str.indexOf(\"return\"));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Variables can also be declared inside a function. These variables are considered to be in the <dfn>local scope</dfn>, or <dfn>block scope</dfn>. A variable declared inside a function can only be used inside that function. If you try to access it outside of the function, you get a reference error.</p>\n<p>To see this in action, use <code>const</code> to declare a <code>test</code> variable in your <code>padRow</code> function. Initialise it with the value <code>\"Testing\"</code>.</p>\n<p>Then, below your function, try to log <code>test</code> to the console. You will see an error because it is not defined outside of the function's local scope. Remove that <code>console.log</code> to pass the tests and continue.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 54,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

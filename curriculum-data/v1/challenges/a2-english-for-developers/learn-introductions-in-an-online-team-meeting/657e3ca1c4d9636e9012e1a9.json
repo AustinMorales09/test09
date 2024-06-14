@@ -1,0 +1,88 @@
+{
+  "id": "657e3ca1c4d9636e9012e1a9",
+  "title": "Task 77",
+  "challengeType": 19,
+  "dashedName": "task-77",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is James asking Sophie to do?</p>",
+    "answers": [
+      {
+        "answer": "<p>To explain the details of a project.</p>",
+        "feedback": "<p>This option doesn't align with the request.</p>"
+      },
+      {
+        "answer": "<p>To discuss her work experience in depth.</p>",
+        "feedback": "<p>He is not asking for a detailed discussion of work experience.</p>"
+      },
+      {
+        "answer": "<p>To provide a detailed report of her team's performance.</p>",
+        "feedback": "<p>James's request is not about reporting on team performance.</p>"
+      },
+      {
+        "answer": "<p>To give a short introduction about herself.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.14,
+        "finishTimestamp": 5.8
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 2.66,
+        "dialogue": {
+          "text": "Can you briefly introduce yourself?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 3.16
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>James is making a request to Sophie.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 80,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

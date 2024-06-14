@@ -1,0 +1,83 @@
+{
+  "id": "657e597aecc28ed883309243",
+  "title": "Task 91",
+  "challengeType": 22,
+  "dashedName": "task-91",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It's _ to protect _ information and maintain our _.</p>",
+    "blanks": [
+      {
+        "answer": "essential",
+        "feedback": "<p>A synonym to very important.</p>"
+      },
+      {
+        "answer": "sensitive",
+        "feedback": "<p>Referring to information something that could trouble the user if disclosed.</p>"
+      },
+      {
+        "answer": "reputation",
+        "feedback": "<p>How people or companies are known.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room2.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 34.42,
+        "finishTimestamp": 39.62
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 6.2,
+        "dialogue": {
+          "text": "It's essential to protect sensitive information and maintain our reputation.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 6.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 94,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

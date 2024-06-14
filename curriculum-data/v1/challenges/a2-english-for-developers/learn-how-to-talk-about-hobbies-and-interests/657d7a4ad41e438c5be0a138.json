@@ -1,0 +1,75 @@
+{
+  "id": "657d7a4ad41e438c5be0a138",
+  "title": "Task 13",
+  "challengeType": 22,
+  "dashedName": "task-13",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>For nearly a decade now. It started as a _, but it has become a significant part of my life.</p>",
+    "blanks": [
+      {
+        "answer": "hobby",
+        "feedback": "<p>This word indicates an activity done for pleasure, not as a job.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.38,
+        "finishTimestamp": 19.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.52,
+        "dialogue": {
+          "text": "For nearly a decade now. It started as a hobby, but it's become a significant part of my life.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 7.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you say you do something <code>as a hobby</code>, it means that you do this regularly for enjoyment, not professionally or as an obligation.\nFor example: <code>I love skateboarding. I do this as a hobby, though. I don't intend to become a professional skateboarder.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

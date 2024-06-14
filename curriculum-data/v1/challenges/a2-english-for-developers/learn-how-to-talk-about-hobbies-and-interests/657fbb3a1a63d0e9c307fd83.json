@@ -1,0 +1,88 @@
+{
+  "id": "657fbb3a1a63d0e9c307fd83",
+  "title": "Task 69",
+  "challengeType": 19,
+  "dashedName": "task-69",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the term <code>movie marathon</code> imply?</p>",
+    "answers": [
+      {
+        "answer": "<p>Watching a single movie</p>",
+        "feedback": "<p>It is not the focus of context.</p>"
+      },
+      {
+        "answer": "<p>Watching movies consecutively</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Attending a convention</p>",
+        "feedback": "<p>It is a different activity.</p>"
+      },
+      {
+        "answer": "<p>Playing video games</p>",
+        "feedback": "<p>It is not related to the concept in the context.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.1,
+        "finishTimestamp": 18.34
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.24,
+        "dialogue": {
+          "text": "Well, we have movie marathons, conventions, and we even play some movie-related video games together.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.74
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>movie marathon</code> is an extended session of watching movies, usually centered around a specific theme or genre.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 72,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

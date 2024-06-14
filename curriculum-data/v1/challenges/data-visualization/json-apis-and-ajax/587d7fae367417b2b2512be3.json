@@ -1,0 +1,90 @@
+{
+  "id": "587d7fae367417b2b2512be3",
+  "title": "Get JSON with the JavaScript XMLHttpRequest Method",
+  "challengeType": 6,
+  "forumTopicId": 301502,
+  "dashedName": "get-json-with-the-javascript-xmlhttprequest-method",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    document.getElementById('getMessage').onclick = function(){\n      // Add your code below this line\n\n\n      // Add your code above this line\n    };\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n\n<h1>Cat Photo Finder</h1>\n<p class=\"message box\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>",
+      "error": null,
+      "seed": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    document.getElementById('getMessage').onclick = function(){\n      // Add your code below this line\n\n\n      // Add your code above this line\n    };\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n\n<h1>Cat Photo Finder</h1>\n<p class=\"message box\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<script>\n  document.addEventListener('DOMContentLoaded',function(){\n    document.getElementById('getMessage').onclick = function(){\n      const req = new XMLHttpRequest();\n      req.open('GET', '/json/cats.json', true);\n      req.send();\n      req.onload = () => {\n        const json = JSON.parse(req.responseText);\n        document.getElementsByClassName('message')[0].innerHTML = JSON.stringify(json);\n      };\n    };\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n\n<h1>Cat Photo Finder</h1>\n<p class=\"message box\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>",
+        "error": null,
+        "seed": "<script>\n  document.addEventListener('DOMContentLoaded',function(){\n    document.getElementById('getMessage').onclick = function(){\n      const req = new XMLHttpRequest();\n      req.open('GET', '/json/cats.json', true);\n      req.send();\n      req.onload = () => {\n        const json = JSON.parse(req.responseText);\n        document.getElementsByClassName('message')[0].innerHTML = JSON.stringify(json);\n      };\n    };\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n\n<h1>Cat Photo Finder</h1>\n<p class=\"message box\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should create a new <code>XMLHttpRequest</code>.</p>",
+      "testString": "assert(code.match(/new\\s+?XMLHttpRequest\\(\\s*?\\)/g));"
+    },
+    {
+      "text": "<p>Your code should use the <code>open</code> method to initialize a <code>GET</code> request to the freeCodeCamp Cat Photo API.</p>",
+      "testString": "assert(\n  code.match(\n    /\\.open\\(\\s*?('|\")GET\\1\\s*?,\\s*?('|\")\\/json\\/cats\\.json\\2\\s*?,\\s*?true\\s*?\\)/g\n  )\n);"
+    },
+    {
+      "text": "<p>Your code should use the <code>send</code> method to send the request.</p>",
+      "testString": "assert(code.match(/\\.send\\(\\s*\\)/g));"
+    },
+    {
+      "text": "<p>Your code should have an <code>onload</code> event handler set to a function.</p>",
+      "testString": "assert(\n  code.match(/\\.onload\\s*=\\s*(function|\\(\\s*?\\))\\s*?(\\(\\s*?\\)|\\=\\>)\\s*?{/g)\n);"
+    },
+    {
+      "text": "<p>Your code should use the <code>JSON.parse</code> method to parse the <code>responseText</code>.</p>",
+      "testString": "assert(code.match(/JSON\\s*\\.parse\\(\\s*.*\\.responseText\\s*\\)/g));"
+    },
+    {
+      "text": "<p>Your code should get the element with class <code>message</code> and change its inner HTML to the string of JSON data.</p>",
+      "testString": "assert(\n  code.match(\n    /document\\s*\\.getElementsByClassName\\(\\s*?('|\")message\\1\\s*?\\)\\[0\\]\\s*\\.innerHTML\\s*?=\\s*?JSON\\.stringify\\(.+?\\)/g\n  )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can also request data from an external source. This is where APIs come into play.</p>\n<p>Remember that APIs - or Application Programming Interfaces - are tools that computers use to communicate with one another. You'll learn how to update HTML with the data we get from APIs using a technology called AJAX.</p>\n<p>Most web APIs transfer data in a format called JSON. JSON stands for JavaScript Object Notation.</p>\n<p>JSON syntax looks very similar to JavaScript object literal notation. JSON has object properties and their current values, sandwiched between a <code>{</code> and a <code>}</code>.</p>\n<p>These properties and their values are often referred to as \"key-value pairs\".</p>\n<p>However, JSON transmitted by APIs are sent as <code>bytes</code>, and your application receives it as a <code>string</code>. These can be converted into JavaScript objects, but they are not JavaScript objects by default. The <code>JSON.parse</code> method parses the string and constructs the JavaScript object described by it.</p>\n<p>You can request the JSON from freeCodeCamp's Cat Photo API. Here's the code you can put in your click event to do this:</p>\n<pre><code class=\"language-js\">const req = new XMLHttpRequest();\nreq.open(\"GET\",'/json/cats.json',true);\nreq.send();\nreq.onload = function(){\n  const json = JSON.parse(req.responseText);\n  document.getElementsByClassName('message')[0].innerHTML = JSON.stringify(json);\n};\n</code></pre>\n<p>Here's a review of what each piece is doing. The JavaScript <code>XMLHttpRequest</code> object has a number of properties and methods that are used to transfer data. First, an instance of the <code>XMLHttpRequest</code> object is created and saved in the <code>req</code> variable. Next, the <code>open</code> method initializes a request - this example is requesting data from an API, therefore is a <code>GET</code> request. The second argument for <code>open</code> is the URL of the API you are requesting data from. The third argument is a Boolean value where <code>true</code> makes it an asynchronous request. The <code>send</code> method sends the request. Finally, the <code>onload</code> event handler parses the returned data and applies the <code>JSON.stringify</code> method to convert the JavaScript object into a string. This string is then inserted as the message text.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Update the code to create and send a <code>GET</code> request to the freeCodeCamp Cat Photo API. Then click the <code>Get Message</code> button. Your AJAX function will replace the <code>The message will go here</code> text with the raw JSON output from the API.</p>\n</section>",
+  "translationPending": false,
+  "block": "json-apis-and-ajax",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 2,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

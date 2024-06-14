@@ -1,0 +1,79 @@
+{
+  "id": "656a584f57a1a9338e3cb347",
+  "title": "Task 61",
+  "challengeType": 22,
+  "dashedName": "task-61",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>But hey, now _ desk is just like _ desk.</p>",
+    "blanks": [
+      {
+        "answer": "your",
+        "feedback": "<p><code>Your</code> indicates possession for the listener, while <code>my</code> indicates possession for the speaker. In this dialogue, Sophie is making a comparison between Tom's desk (the listener's) and her own desk (the speaker's).</p>"
+      },
+      {
+        "answer": "my",
+        "feedback": "<p><code>Your</code> indicates possession for the listener, while <code>my</code> indicates possession for the speaker. In this dialogue, Sophie is making a comparison between Tom's desk (the listener's) and her own desk (the speaker's).</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 28.62,
+        "finishTimestamp": 32.08
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.96,
+        "dialogue": {
+          "text": "But hey, now your desk is just like my desk. You're in luck.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.46
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Words like <code>your</code> and <code>my</code> are used to show possession. <code>Your</code> refers to something belonging to the person you are speaking to, while <code>my</code> refers to something that belongs to you.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 62,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

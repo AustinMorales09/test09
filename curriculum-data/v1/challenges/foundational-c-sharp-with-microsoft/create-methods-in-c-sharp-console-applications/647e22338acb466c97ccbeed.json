@@ -1,0 +1,43 @@
+{
+  "id": "647e22338acb466c97ccbeed",
+  "title": "Challenge Project - Create a Mini-Game",
+  "challengeType": 19,
+  "dashedName": "challenge-project-create-a-mini-game",
+  "solutions": [],
+  "question": {
+    "text": "<p>A developer wants to create a method that returns a value in an array. Which of the following options would be a good choice for a method signature?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>string GetValueAtIndex(string[] array, int index)</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>bool GetValueAtIndex(string[] array, int index)</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>int GetValueAtIndex(int index)</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [
+    "<p>Complete the <a href=\"https://learn.microsoft.com/training/modules/challenge-project-create-mini-game/\" target=\"_blank\" rel=\"noreferrer\">Create a Mini-Game</a> challenge project on Microsoft Learn. Then, answer the question below.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge will be partially completed on the Microsoft Learn platform. Follow these instructions to complete the challenge:</p>\n<ol>\n<li>Go to <a href=\"https://learn.microsoft.com/training/modules/challenge-project-create-mini-game/\" target=\"_blank\" rel=\"noreferrer\">https://learn.microsoft.com/training/modules/challenge-project-create-mini-game/</a> and complete all the tasks for the \"Challenge Project - Create a Mini-Game\" module. This is <strong>required</strong> to earn the \"Create Methods in C# Console Applications\" trophy on Microsoft Learn, and qualify for the certification exam.</li>\n<li>When you are finished, come back and correctly answer the question below.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "create-methods-in-c-sharp-console-applications",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 13,
+  "certification": "foundational-c-sharp-with-microsoft",
+  "superBlock": "foundational-c-sharp-with-microsoft",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "C-Sharp",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

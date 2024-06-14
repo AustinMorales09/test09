@@ -1,0 +1,89 @@
+{
+  "id": "62a3a75d8466a12e009eff76",
+  "title": "Step 7",
+  "challengeType": 0,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let xp = 0;",
+      "error": null,
+      "seed": "let xp = 0;"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use <code>let</code> to declare a variable called <code>health</code>.</p>",
+      "testString": "assert.match(code, /let\\s+health/);"
+    },
+    {
+      "text": "<p>You should initialize a variable called <code>health</code> with a value of <code>100</code>.</p>",
+      "testString": "assert.match(code, /let\\s+health\\s*=\\s*100/);"
+    },
+    {
+      "text": "<p>You should use <code>let</code> to declare a variable called <code>gold</code>.</p>",
+      "testString": "assert.match(code, /let\\s+gold/);"
+    },
+    {
+      "text": "<p>You should initialize a variable called <code>gold</code> with a value of <code>50</code>.</p>",
+      "testString": "assert.match(code, /let\\s+gold\\s*=\\s*50/);"
+    },
+    {
+      "text": "<p><code>health</code> should have a value of <code>100</code>.</p>",
+      "testString": "assert.equal(health, 100);"
+    },
+    {
+      "text": "<p><code>gold</code> should have a value of <code>50</code>.</p>",
+      "testString": "assert.equal(gold, 50);"
+    },
+    {
+      "text": "<p><code>xp</code> should still have a value of <code>0</code>.</p>",
+      "testString": "assert.equal(xp, 0);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Initialize another variable called <code>health</code> with a value of <code>100</code>, and a variable called <code>gold</code> with a value of <code>50</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-javascript-by-building-a-role-playing-game",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

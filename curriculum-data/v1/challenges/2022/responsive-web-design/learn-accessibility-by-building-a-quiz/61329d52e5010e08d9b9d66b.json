@@ -1,0 +1,77 @@
+{
+  "id": "61329d52e5010e08d9b9d66b",
+  "title": "Step 4",
+  "challengeType": 0,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        8
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n\n  </body>\n</html>\n",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n\n  </body>\n</html>\n"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}",
+      "error": null,
+      "seed": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add a new <code>meta</code> element to the <code>head</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('meta').length, 3);"
+    },
+    {
+      "text": "<p>You should give the <code>meta</code> a <code>name</code> attribute of <code>description</code>.</p>",
+      "testString": "assert.exists(document.querySelector('meta[name=\"description\"]'));"
+    },
+    {
+      "text": "<p>You should give the <code>meta</code> a <code>content</code> attribute.</p>",
+      "testString": "assert.notEmpty(document.querySelector('meta[name=\"description\"]')?.content);"
+    },
+    {
+      "text": "<p>The <code>content</code> attribute value should not be more than 165 characters. <em>This is Google's maximum description length.</em></p>",
+      "testString": "assert.isAtMost(document.querySelector('meta[name=\"description\"]')?.content?.length, 165);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Another important <code>meta</code> element for accessibility and SEO is the <code>description</code> definition. The value of the <code>content</code> attribute is used by search engines to provide a description of your page.</p>\n<p>Add a <code>meta</code> element with the <code>name</code> attribute set to <code>description</code>, and give it a useful <code>content</code> attribute.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-accessibility-by-building-a-quiz",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

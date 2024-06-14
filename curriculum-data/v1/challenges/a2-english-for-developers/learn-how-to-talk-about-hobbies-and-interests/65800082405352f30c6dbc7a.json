@@ -1,0 +1,97 @@
+{
+  "id": "65800082405352f30c6dbc7a",
+  "title": "Task 82",
+  "challengeType": 19,
+  "dashedName": "task-82",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the expression <code>have a blast</code> convey in this context?</p>",
+    "answers": [
+      {
+        "answer": "<p>A wish for a successful event</p>",
+        "feedback": "<p>It might be more general and formal than the specific wish for enjoyment conveyed by the context.</p>"
+      },
+      {
+        "answer": "<p>An invitation to join the event</p>",
+        "feedback": "<p>An invitation is different from expressing wishes for someone's enjoyment at the event.</p>"
+      },
+      {
+        "answer": "<p>Well wishes for enjoyment at the event</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A request for event details</p>",
+        "feedback": "<p>This expression doesn't involve asking for details but rather extends wishes for fun and enjoyment at the event.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.06,
+        "finishTimestamp": 28.88
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.48,
+        "dialogue": {
+          "text": "Thanks for the invite, Sarah. I appreciate it, but I'm not really into sci-fi.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "startTime": 5.84,
+        "finishTime": 7.82,
+        "dialogue": {
+          "text": "I hope you have a blast at the convention, though.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 8.32
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 85,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

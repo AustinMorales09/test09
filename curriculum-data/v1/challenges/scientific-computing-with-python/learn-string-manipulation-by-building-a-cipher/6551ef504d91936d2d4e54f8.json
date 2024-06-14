@@ -1,0 +1,53 @@
+{
+  "id": "6551ef504d91936d2d4e54f8",
+  "title": "Step 4",
+  "challengeType": 20,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nprint()",
+      "error": null,
+      "seed": "text = 'Hello World'\nprint()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should pass <code>text</code> to the <code>print()</code> function by adding the name of this variable within the opening and closing parentheses. Pay attention to place the function call at the beginning of the line.</p>",
+      "testString": "assert.match(code, /^print\\s*\\(\\s*text\\s*\\)/m)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>An <em>argument</em> is an object or an expression passed to a function — added between the opening and closing parentheses — when it is called:</p>\n<pre><code class=\"language-py\">greet = 'Hello!'\nprint(greet)\n</code></pre>\n<p>The code in the example above would print the string <code>'Hello!'</code>, which is the value of the variable <code>greet</code> passed to <code>print()</code> as the argument.</p>\n<p>Print your <code>text</code> variable to the screen by passing the <code>text</code> variable as the argument to the <code>print()</code> function.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

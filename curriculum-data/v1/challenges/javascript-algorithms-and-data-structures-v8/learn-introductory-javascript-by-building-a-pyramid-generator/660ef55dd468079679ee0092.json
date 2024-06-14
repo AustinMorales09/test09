@@ -1,0 +1,61 @@
+{
+  "id": "660ef55dd468079679ee0092",
+  "title": "Step 11",
+  "challengeType": 1,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        7
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nconsole.log(character);\ncharacter = \"World\";\nlet secondCharacter;\nsecondCharacter = character;\nconsole.log(secondCharacter);",
+      "error": null,
+      "seed": "let character = 'Hello';\nconsole.log(character);\ncharacter = \"World\";\nlet secondCharacter;\nsecondCharacter = character;\nconsole.log(secondCharacter);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have any <code>console.log()</code> statements in your code.</p>",
+      "testString": "assert.notMatch(code, /console/);"
+    },
+    {
+      "text": "<p>You should not reassign the value of <code>character</code>.</p>",
+      "testString": "assert.isAtMost(code.match(/character/).length, 1);"
+    },
+    {
+      "text": "<p>Your <code>character</code> variable should have the value <code>\"Hello\"</code>.</p>",
+      "testString": "assert.equal(character, \"Hello\");"
+    },
+    {
+      "text": "<p>You should not have a <code>secondCharacter</code> variable.</p>",
+      "testString": "assert.notMatch(code, /secondCharacter/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You are now ready to declare your next variable. Remove both <code>console.log</code> statements, and the <code>character</code> reassignment.</p>\n<p>Also remove your <code>secondCharacter</code> variable, but leave the <code>character</code> initialization unchanged.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,78 @@
+{
+  "id": "5cfa550e84205a357704ccb6",
+  "title": "Use Destructuring Assignment to Extract Values from Objects",
+  "challengeType": 1,
+  "forumTopicId": 301216,
+  "dashedName": "use-destructuring-assignment-to-extract-values-from-objects",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const HIGH_TEMPERATURES = {\n  yesterday: 75,\n  today: 77,\n  tomorrow: 80\n};\n\n// Only change code below this line\n\nconst today = HIGH_TEMPERATURES.today;\nconst tomorrow = HIGH_TEMPERATURES.tomorrow;\n\n// Only change code above this line",
+      "error": null,
+      "seed": "const HIGH_TEMPERATURES = {\n  yesterday: 75,\n  today: 77,\n  tomorrow: 80\n};\n\n// Only change code below this line\n\nconst today = HIGH_TEMPERATURES.today;\nconst tomorrow = HIGH_TEMPERATURES.tomorrow;\n\n// Only change code above this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const HIGH_TEMPERATURES = {\n  yesterday: 75,\n  today: 77,\n  tomorrow: 80\n};\n\nconst { today, tomorrow } = HIGH_TEMPERATURES;",
+        "error": null,
+        "seed": "const HIGH_TEMPERATURES = {\n  yesterday: 75,\n  today: 77,\n  tomorrow: 80\n};\n\nconst { today, tomorrow } = HIGH_TEMPERATURES;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove the ES5 assignment syntax.</p>",
+      "testString": "assert(\n  !__helpers.removeJSComments(code).match(/today\\s*=\\s*HIGH_TEMPERATURES\\.(today|tomorrow)/g)\n);"
+    },
+    {
+      "text": "<p>You should use destructuring to create the <code>today</code> variable.</p>",
+      "testString": "assert(\n  __helpers.removeJSComments(code).match(/(var|let|const)\\s*{\\s*(today[^}]*|[^,]*,\\s*today)\\s*}\\s*=\\s*HIGH_TEMPERATURES(;|\\s+|\\/\\/)/g)\n);"
+    },
+    {
+      "text": "<p>You should use destructuring to create the <code>tomorrow</code> variable.</p>",
+      "testString": "assert(\n  __helpers.removeJSComments(code).match(/(var|let|const)\\s*{\\s*(tomorrow[^}]*|[^,]*,\\s*tomorrow)\\s*}\\s*=\\s*HIGH_TEMPERATURES(;|\\s+|\\/\\/)/g)\n);"
+    },
+    {
+      "text": "<p><code>today</code> should be equal to <code>77</code> and <code>tomorrow</code> should be equal to <code>80</code>.</p>",
+      "testString": "assert(today === 77 && tomorrow === 80);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><dfn>Destructuring assignment</dfn> is special syntax introduced in ES6, for neatly assigning values taken directly from an object.</p>\n<p>Consider the following ES5 code:</p>\n<pre><code class=\"language-js\">const user = { name: 'John Doe', age: 34 };\n\nconst name = user.name;\nconst age = user.age;\n</code></pre>\n<p><code>name</code> would have a value of the string <code>John Doe</code>, and <code>age</code> would have the number <code>34</code>.</p>\n<p>Here's an equivalent assignment statement using the ES6 destructuring syntax:</p>\n<pre><code class=\"language-js\">const { name, age } = user;\n</code></pre>\n<p>Again, <code>name</code> would have a value of the string <code>John Doe</code>, and <code>age</code> would have the number <code>34</code>.</p>\n<p>Here, the <code>name</code> and <code>age</code> variables will be created and assigned the values of their respective values from the <code>user</code> object. You can see how much cleaner this is.</p>\n<p>You can extract as many or few values from the object as you want.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Replace the two assignments with an equivalent destructuring assignment. It should still assign the variables <code>today</code> and <code>tomorrow</code> the values of <code>today</code> and <code>tomorrow</code> from the <code>HIGH_TEMPERATURES</code> object.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

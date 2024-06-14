@@ -1,0 +1,45 @@
+{
+  "id": "657e6f8bfecef34627817aa6",
+  "title": "Task 111",
+  "challengeType": 19,
+  "dashedName": "task-111",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>challenging</code> mean in a job?</p>",
+    "answers": [
+      {
+        "answer": "<p>Difficult and testing your skills or determination.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Easy and not requiring much effort.</p>",
+        "feedback": "<p>Challenging means the opposite of easy.</p>"
+      },
+      {
+        "answer": "<p>Relaxing and stress-free.</p>",
+        "feedback": "<p>Challenging work is usually not relaxing.</p>"
+      },
+      {
+        "answer": "<p>Unimportant and simple.</p>",
+        "feedback": "<p>It refers to tasks that are significant and require effort.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Challenging</code> means something that is difficult in a way that tests your ability or determination. When work is challenging, it requires effort, skill, or strong problem-solving.</p>\n<p>For instance, <code>Designing a new software can be challenging</code> means it takes a lot of effort and skill.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 115,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

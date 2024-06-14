@@ -1,0 +1,88 @@
+{
+  "id": "657df6018a70e468f5dc016a",
+  "title": "Task 75",
+  "challengeType": 19,
+  "dashedName": "task-75",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is James communicating?</p>",
+    "answers": [
+      {
+        "answer": "<p>That he is the team leader.</p>",
+        "feedback": "<p>James doesn't mention being a team leader.</p>"
+      },
+      {
+        "answer": "<p>That he is there to help with training.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>That he is new to the company.</p>",
+        "feedback": "<p>James's introduction is not about his time at the company.</p>"
+      },
+      {
+        "answer": "<p>That he is looking for help from the team.</p>",
+        "feedback": "<p>James's introduction is not about asking for help.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 3.7
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 4.7,
+        "dialogue": {
+          "text": "Good morning. I'm James. I'm here to help you with your training.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 5.2
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 78,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

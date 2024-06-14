@@ -1,0 +1,77 @@
+{
+  "id": "5a24c314108439a4d403614c",
+  "title": "Get State from the Redux Store",
+  "challengeType": 6,
+  "forumTopicId": 301443,
+  "dashedName": "get-state-from-the-redux-store",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const store = Redux.createStore(\n  (state = 5) => state\n);\n\n// Change code below this line",
+      "error": null,
+      "seed": "const store = Redux.createStore(\n  (state = 5) => state\n);\n\n// Change code below this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const store = Redux.createStore(\n  (state = 5) => state\n);\n\n// Change code below this line\nconst currentState = store.getState();",
+        "error": null,
+        "seed": "const store = Redux.createStore(\n  (state = 5) => state\n);\n\n// Change code below this line\nconst currentState = store.getState();"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The Redux store should have a value of 5 for the initial state.</p>",
+      "testString": "assert(store.getState() === 5);"
+    },
+    {
+      "text": "<p>A variable <code>currentState</code> should exist and should be assigned the current state of the Redux store.</p>",
+      "testString": "(getUserInput) =>\n  assert(\n    currentState === 5 && getUserInput('index').includes('store.getState()')\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The Redux store object provides several methods that allow you to interact with it. For example, you can retrieve the current <code>state</code> held in the Redux store object with the <code>getState()</code> method.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The code from the previous challenge is re-written more concisely in the code editor. Use <code>store.getState()</code> to retrieve the <code>state</code> from the <code>store</code>, and assign this to a new variable <code>currentState</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "redux",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 1,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"
+    },
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.2.0/redux-thunk.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "65a851a6389e6cbf2c2cf158",
+  "title": "Task 38",
+  "challengeType": 22,
+  "dashedName": "task-38",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Well, I was _ the code when I saw that the problem might be _ to the recent updates.</p>",
+    "blanks": [
+      {
+        "answer": "investigating",
+        "feedback": "<p>Means to carefully examine or look into something in detail. This verbs ends with <code>-ing</code></p>"
+      },
+      {
+        "answer": "related",
+        "feedback": "<p>Means to have a connection or association with something.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 11.96,
+        "finishTimestamp": 16.64
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5.68,
+        "dialogue": {
+          "text": "Well, I was investigating the code when I saw that the problem might be related to the recent updates.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.18
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To investigate</code> means to carefully examine something, and <code>to be related to</code> means to be connected or associated with something. For example:</p>\n<p><code>He is investigating the error in the program</code></p>\n<p><code>Her success is related to her hard work.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-help-a-coworker-troubleshoot-on-github",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 39,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

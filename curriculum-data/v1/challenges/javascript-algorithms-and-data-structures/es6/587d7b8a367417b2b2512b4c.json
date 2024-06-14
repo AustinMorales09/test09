@@ -1,0 +1,78 @@
+{
+  "id": "587d7b8a367417b2b2512b4c",
+  "title": "Destructuring via rest elements",
+  "challengeType": 1,
+  "forumTopicId": 301218,
+  "dashedName": "use-destructuring-assignment-with-the-rest-parameter-to-reassign-array-elements",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function removeFirstTwo(list) {\n  return list;\n}\n\nconst source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\nconst sourceWithoutFirstTwo = removeFirstTwo(source);",
+      "error": null,
+      "seed": "function removeFirstTwo(list) {\n  return list;\n}\n\nconst source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\nconst sourceWithoutFirstTwo = removeFirstTwo(source);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function removeFirstTwo(list) {\n  // comment with 'slice' to check comments are removed in tests\n  const [, , ...shorterList] = list;\n  return shorterList;\n}\n\nconst source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\nconst sourceWithoutFirstTwo = removeFirstTwo(source);",
+        "error": null,
+        "seed": "function removeFirstTwo(list) {\n  // comment with 'slice' to check comments are removed in tests\n  const [, , ...shorterList] = list;\n  return shorterList;\n}\n\nconst source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\nconst sourceWithoutFirstTwo = removeFirstTwo(source);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>removeFirstTwo([1, 2, 3, 4, 5])</code> should be <code>[3, 4, 5]</code></p>",
+      "testString": "assert.deepEqual(removeFirstTwo([1, 2, 3, 4, 5]), [3, 4, 5]);"
+    },
+    {
+      "text": "<p><code>removeFirstTwo()</code> should not modify <code>list</code></p>",
+      "testString": "const _testArr = [1, 2, 3, 4, 5];\nremoveFirstTwo(_testArr);\nassert.deepEqual(_testArr, [1, 2, 3, 4, 5])"
+    },
+    {
+      "text": "<p><code>Array.slice()</code> should not be used.</p>",
+      "testString": "assert(!__helpers.removeJSComments(code).match(/\\.\\s*slice\\s*\\(/));"
+    },
+    {
+      "text": "<p>You should use the rest syntax.</p>",
+      "testString": "assert.match(code, /\\.\\.\\./);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In some situations involving array destructuring, we might want to collect the rest of the elements into a separate array.</p>\n<p>The result is similar to <code>Array.prototype.slice()</code>, as shown below:</p>\n<pre><code class=\"language-js\">const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];\nconsole.log(a, b);\nconsole.log(arr);\n</code></pre>\n<p>The console would display the values <code>1, 2</code> and <code>[3, 4, 5, 7]</code>.</p>\n<p>Variables <code>a</code> and <code>b</code> take the first and second values from the array. After that, because of the rest syntax presence, <code>arr</code> gets the rest of the values in the form of an array. The rest element only works correctly as the last variable in the list. As in, you cannot use the rest syntax to catch a subarray that leaves out the last element of the original array.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use a destructuring assignment with the rest syntax to emulate the behavior of <code>Array.prototype.slice()</code>. <code>removeFirstTwo()</code> should return a sub-array of the original array <code>list</code> with the first two elements omitted.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,137 @@
+{
+  "id": "646d4b3d80ea98d824c8a4f9",
+  "title": "Step 105",
+  "challengeType": 0,
+  "dashedName": "step-105",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        28,
+        45
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const infixToFunction = {\n  \"+\": (x, y) => x + y,\n  \"-\": (x, y) => x - y,\n  \"*\": (x, y) => x * y,\n  \"/\": (x, y) => x / y,\n}\n\nconst infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](parseFloat(arg1), parseFloat(arg2)));\n\nconst highPrecedence = str => {\n  const regex = /([\\d.]+)([*\\/])([\\d.]+)/;\n  const str2 = infixEval(str, regex);\n  return str === str2 ? str : highPrecedence(str2);\n}\n\nconst isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  \n  sum,\n  average,\n  median,\n  even: nums => nums.filter(isEven),\n  someeven: nums => nums.some(isEven),\n  everyeven: nums => nums.every(isEven),\n  firsttwo: nums => nums.slice(0, 2),\n  lasttwo: nums => nums.slice(-2),\n  has2: nums => nums.includes(2),\n  increment: nums => nums.map(num => num + 1),\n  random: ([x, y]) => Math.floor(Math.random() * y + x),\n  range: nums => range(...nums),\n  nodupes: nums => [...new Set(nums).values()]\n}\n\nconst applyFunction = str => {\n  const noHigh = highPrecedence(str);\n  const infix = /([\\d.]+)([+-])([\\d.]+)/;\n  const str2 = infixEval(noHigh, infix);\n  const functionCall = /([a-z0-9]*)\\(([0-9., ]*)\\)(?!.*\\()/i;\n  const toNumberList = args => args.split(\",\").map(parseFloat);\n  const apply = (fn, args) => spreadsheetFunctions[fn.toLowerCase()](toNumberList(args));\n  return str2.replace(functionCall, (match, fn, args) => spreadsheetFunctions.hasOwnProperty(fn.toLowerCase()) ? apply(fn, args) : match);\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nconst evalFormula = (x, cells) => {\n  const idToText = id => cells.find(cell => cell.id === id).value;\n  const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;\n  const rangeFromString = (num1, num2) => range(parseInt(num1), parseInt(num2));\n  const elemValue = num => character => idToText(character + num);\n  const addCharacters = character1 => character2 => num => charRange(character1, character2).map(elemValue(num));\n  const rangeExpanded = x.replace(rangeRegex, (_match, char1, num1, char2, num2) => rangeFromString(num1, num2).map(addCharacters(char1)(char2)));\n  const cellRegex = /[A-J][1-9][0-9]?/gi;\n  const cellExpanded = rangeExpanded.replace(cellRegex, match => idToText(match.toUpperCase()));\n  const functionExpanded = applyFunction(cellExpanded);\n  return functionExpanded === x ? functionExpanded : evalFormula(functionExpanded, cells);\n}\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      input.onchange = update;\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n  const element = event.target;\n  const value = element.value.replace(/\\s/g, \"\");\n  if (!value.includes(element.id) && value.startsWith('=')) {\n    element.value = evalFormula(value.slice(1), Array.from(document.getElementById(\"container\").children));\n  }\n}",
+      "error": null,
+      "seed": "const infixToFunction = {\n  \"+\": (x, y) => x + y,\n  \"-\": (x, y) => x - y,\n  \"*\": (x, y) => x * y,\n  \"/\": (x, y) => x / y,\n}\n\nconst infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](parseFloat(arg1), parseFloat(arg2)));\n\nconst highPrecedence = str => {\n  const regex = /([\\d.]+)([*\\/])([\\d.]+)/;\n  const str2 = infixEval(str, regex);\n  return str === str2 ? str : highPrecedence(str2);\n}\n\nconst isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  \n  sum,\n  average,\n  median,\n  even: nums => nums.filter(isEven),\n  someeven: nums => nums.some(isEven),\n  everyeven: nums => nums.every(isEven),\n  firsttwo: nums => nums.slice(0, 2),\n  lasttwo: nums => nums.slice(-2),\n  has2: nums => nums.includes(2),\n  increment: nums => nums.map(num => num + 1),\n  random: ([x, y]) => Math.floor(Math.random() * y + x),\n  range: nums => range(...nums),\n  nodupes: nums => [...new Set(nums).values()]\n}\n\nconst applyFunction = str => {\n  const noHigh = highPrecedence(str);\n  const infix = /([\\d.]+)([+-])([\\d.]+)/;\n  const str2 = infixEval(noHigh, infix);\n  const functionCall = /([a-z0-9]*)\\(([0-9., ]*)\\)(?!.*\\()/i;\n  const toNumberList = args => args.split(\",\").map(parseFloat);\n  const apply = (fn, args) => spreadsheetFunctions[fn.toLowerCase()](toNumberList(args));\n  return str2.replace(functionCall, (match, fn, args) => spreadsheetFunctions.hasOwnProperty(fn.toLowerCase()) ? apply(fn, args) : match);\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nconst evalFormula = (x, cells) => {\n  const idToText = id => cells.find(cell => cell.id === id).value;\n  const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;\n  const rangeFromString = (num1, num2) => range(parseInt(num1), parseInt(num2));\n  const elemValue = num => character => idToText(character + num);\n  const addCharacters = character1 => character2 => num => charRange(character1, character2).map(elemValue(num));\n  const rangeExpanded = x.replace(rangeRegex, (_match, char1, num1, char2, num2) => rangeFromString(num1, num2).map(addCharacters(char1)(char2)));\n  const cellRegex = /[A-J][1-9][0-9]?/gi;\n  const cellExpanded = rangeExpanded.replace(cellRegex, match => idToText(match.toUpperCase()));\n  const functionExpanded = applyFunction(cellExpanded);\n  return functionExpanded === x ? functionExpanded : evalFormula(functionExpanded, cells);\n}\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      input.onchange = update;\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n  const element = event.target;\n  const value = element.value.replace(/\\s/g, \"\");\n  if (!value.includes(element.id) && value.startsWith('=')) {\n    element.value = evalFormula(value.slice(1), Array.from(document.getElementById(\"container\").children));\n  }\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+        "error": null,
+        "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+      },
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "styles.css"
+        ],
+        "name": "styles",
+        "ext": "css",
+        "path": "styles.css",
+        "fileKey": "stylescss",
+        "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+        "error": null,
+        "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+      },
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const infixToFunction = {\n  \"+\": (x, y) => x + y,\n  \"-\": (x, y) => x - y,\n  \"*\": (x, y) => x * y,\n  \"/\": (x, y) => x / y,\n}\n\nconst infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](parseFloat(arg1), parseFloat(arg2)));\n\nconst highPrecedence = str => {\n  const regex = /([\\d.]+)([*\\/])([\\d.]+)/;\n  const str2 = infixEval(str, regex);\n  return str === str2 ? str : highPrecedence(str2);\n}\n\nconst isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  \"\": x => x,  \n  sum,\n  average,\n  median,\n  even: nums => nums.filter(isEven),\n  someeven: nums => nums.some(isEven),\n  everyeven: nums => nums.every(isEven),\n  firsttwo: nums => nums.slice(0, 2),\n  lasttwo: nums => nums.slice(-2),\n  has2: nums => nums.includes(2),\n  increment: nums => nums.map(num => num + 1),\n  random: ([x, y]) => Math.floor(Math.random() * y + x),\n  range: nums => range(...nums),\n  nodupes: nums => [...new Set(nums).values()]\n}\n\nconst applyFunction = str => {\n  const noHigh = highPrecedence(str);\n  const infix = /([\\d.]+)([+-])([\\d.]+)/;\n  const str2 = infixEval(noHigh, infix);\n  const functionCall = /([a-z0-9]*)\\(([0-9., ]*)\\)(?!.*\\()/i;\n  const toNumberList = args => args.split(\",\").map(parseFloat);\n  const apply = (fn, args) => spreadsheetFunctions[fn.toLowerCase()](toNumberList(args));\n  return str2.replace(functionCall, (match, fn, args) => spreadsheetFunctions.hasOwnProperty(fn.toLowerCase()) ? apply(fn, args) : match);\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nconst evalFormula = (x, cells) => {\n  const idToText = id => cells.find(cell => cell.id === id).value;\n  const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;\n  const rangeFromString = (num1, num2) => range(parseInt(num1), parseInt(num2));\n  const elemValue = num => character => idToText(character + num);\n  const addCharacters = character1 => character2 => num => charRange(character1, character2).map(elemValue(num));\n  const rangeExpanded = x.replace(rangeRegex, (_match, char1, num1, char2, num2) => rangeFromString(num1, num2).map(addCharacters(char1)(char2)));\n  const cellRegex = /[A-J][1-9][0-9]?/gi;\n  const cellExpanded = rangeExpanded.replace(cellRegex, match => idToText(match.toUpperCase()));\n  const functionExpanded = applyFunction(cellExpanded);\n  return functionExpanded === x ? functionExpanded : evalFormula(functionExpanded, cells);\n}\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      input.onchange = update;\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n  const element = event.target;\n  const value = element.value.replace(/\\s/g, \"\");\n  if (!value.includes(element.id) && value.startsWith('=')) {\n    element.value = evalFormula(value.slice(1), Array.from(document.getElementById(\"container\").children));\n  }\n}",
+        "error": null,
+        "seed": "const infixToFunction = {\n  \"+\": (x, y) => x + y,\n  \"-\": (x, y) => x - y,\n  \"*\": (x, y) => x * y,\n  \"/\": (x, y) => x / y,\n}\n\nconst infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](parseFloat(arg1), parseFloat(arg2)));\n\nconst highPrecedence = str => {\n  const regex = /([\\d.]+)([*\\/])([\\d.]+)/;\n  const str2 = infixEval(str, regex);\n  return str === str2 ? str : highPrecedence(str2);\n}\n\nconst isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  \"\": x => x,  \n  sum,\n  average,\n  median,\n  even: nums => nums.filter(isEven),\n  someeven: nums => nums.some(isEven),\n  everyeven: nums => nums.every(isEven),\n  firsttwo: nums => nums.slice(0, 2),\n  lasttwo: nums => nums.slice(-2),\n  has2: nums => nums.includes(2),\n  increment: nums => nums.map(num => num + 1),\n  random: ([x, y]) => Math.floor(Math.random() * y + x),\n  range: nums => range(...nums),\n  nodupes: nums => [...new Set(nums).values()]\n}\n\nconst applyFunction = str => {\n  const noHigh = highPrecedence(str);\n  const infix = /([\\d.]+)([+-])([\\d.]+)/;\n  const str2 = infixEval(noHigh, infix);\n  const functionCall = /([a-z0-9]*)\\(([0-9., ]*)\\)(?!.*\\()/i;\n  const toNumberList = args => args.split(\",\").map(parseFloat);\n  const apply = (fn, args) => spreadsheetFunctions[fn.toLowerCase()](toNumberList(args));\n  return str2.replace(functionCall, (match, fn, args) => spreadsheetFunctions.hasOwnProperty(fn.toLowerCase()) ? apply(fn, args) : match);\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nconst evalFormula = (x, cells) => {\n  const idToText = id => cells.find(cell => cell.id === id).value;\n  const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;\n  const rangeFromString = (num1, num2) => range(parseInt(num1), parseInt(num2));\n  const elemValue = num => character => idToText(character + num);\n  const addCharacters = character1 => character2 => num => charRange(character1, character2).map(elemValue(num));\n  const rangeExpanded = x.replace(rangeRegex, (_match, char1, num1, char2, num2) => rangeFromString(num1, num2).map(addCharacters(char1)(char2)));\n  const cellRegex = /[A-J][1-9][0-9]?/gi;\n  const cellExpanded = rangeExpanded.replace(cellRegex, match => idToText(match.toUpperCase()));\n  const functionExpanded = applyFunction(cellExpanded);\n  return functionExpanded === x ? functionExpanded : evalFormula(functionExpanded, cells);\n}\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      input.onchange = update;\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n  const element = event.target;\n  const value = element.value.replace(/\\s/g, \"\");\n  if (!value.includes(element.id) && value.startsWith('=')) {\n    element.value = evalFormula(value.slice(1), Array.from(document.getElementById(\"container\").children));\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>spreadsheetFunctions</code> object should have an empty string property.</p>",
+      "testString": "assert.property(spreadsheetFunctions, \"\");"
+    },
+    {
+      "text": "<p>Your empty string property should be a function.</p>",
+      "testString": "assert.isFunction(spreadsheetFunctions[\"\"]);"
+    },
+    {
+      "text": "<p>Your empty string property function should return the argument.</p>",
+      "testString": "assert.deepEqual(spreadsheetFunctions[\"\"]([1,2,3]), [1,2,3]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Finally, to handle potential edge cases, add an empty string property (you will need to use quotes) which is a function that takes a single argument and returns that argument.</p>\n<p>With that, your spreadsheet project is now complete. You are welcome to experiment with adding support for even more functions.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 104,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "6554a88d5af937226f4a9121",
+  "title": "Step 63",
+  "challengeType": 20,
+  "dashedName": "step-63",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        14,
+        20
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\ntext = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:\n            # Find the right key character to encode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n            \n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', message)\n    print('encrypted text:', encrypted_text)\n",
+      "error": null,
+      "seed": "\ntext = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:\n            # Find the right key character to encode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n            \n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', message)\n    print('encrypted text:', encrypted_text)\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a variable called <code>offset</code>.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {block_body} = __helpers.python.getBlock(commentless_code, /else/);\nassert(block_body.match(/offset\\s*=/));"
+    },
+    {
+      "text": "<p>Your <code>offset</code> variable should store the value of <code>alphabet.index(key_char)</code>.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {block_body} = __helpers.python.getBlock(commentless_code, /else/);\nassert(block_body.match(/offset\\s*=\\s*alphabet\\.index\\s*\\(\\s*key_char\\s*\\)/));"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>.index()</code> method is identical to the <code>.find()</code> method but it throws a <code>ValueError</code> exception if it is unable to find the substring.</p>\n<p>A <code>ValueError</code> is a built-in exception that is raised when an argument with the right type but inappropriate value is passed to a function.</p>\n<p>After incrementing <code>key_index</code>, declare a variable named <code>offset</code>. Find the index that <code>key_char</code> has in <code>alphabet</code> and assign it to <code>offset</code>. Use the <code>.index()</code> to find the index.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 62,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

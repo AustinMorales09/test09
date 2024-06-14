@@ -1,0 +1,88 @@
+{
+  "id": "657e11ce088244825548e702",
+  "title": "Task 15",
+  "challengeType": 19,
+  "dashedName": "task-15",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is one of Sophie's tasks during her workday?</p>",
+    "answers": [
+      {
+        "answer": "<p>Designing posters.</p>",
+        "feedback": "<p>Poster designing is not mentioned in the context of web development tasks.</p>"
+      },
+      {
+        "answer": "<p>Writing reports.</p>",
+        "feedback": "<p>Sophie talks about programming tasks, not writing reports.</p>"
+      },
+      {
+        "answer": "<p>Testing websites.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Making phone calls.</p>",
+        "feedback": "<p>Making phone calls is not listed among Sophie's web development tasks.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 31.92,
+        "finishTimestamp": 35.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5,
+        "dialogue": {
+          "text": "During the day, I work on coding, test the websites and debug issues.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 5.5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Understanding specific vocabulary related to a profession, like web development, is crucial.</p>\n<p>Terms like <code>coding</code>, <code>test the websites</code>, and <code>debug issues</code> are common in this field.</p>\n<p><code>Coding</code> refers to writing computer code, <code>testing websites</code> means checking if a website works correctly, and <code>debugging</code> is about finding and fixing errors in the code.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

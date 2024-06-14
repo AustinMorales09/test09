@@ -1,0 +1,57 @@
+{
+  "id": "6577319039f4f7de9251b822",
+  "title": "Step 61",
+  "challengeType": 20,
+  "dashedName": "step-61",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        29,
+        35
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n       \n        constraints = [\n            (nums, r'\\d'),\n            (lowercase, r'[a-z]'),\n            (uppercase, r'[A-Z]'),            \n            (special_chars, fr'[{symbols}]')            \n        ]\n\n        # Check constraints\n        count = 0\n        for constraint, pattern in constraints:\n            if constraint <= len(re.findall(pattern, password)):\n                count += 1\n            \n        if count == 4:\n            break\n\n    return password\n\n# new_password = generate_password(8)\n# print(new_password)",
+      "error": null,
+      "seed": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n       \n        constraints = [\n            (nums, r'\\d'),\n            (lowercase, r'[a-z]'),\n            (uppercase, r'[A-Z]'),            \n            (special_chars, fr'[{symbols}]')            \n        ]\n\n        # Check constraints\n        count = 0\n        for constraint, pattern in constraints:\n            if constraint <= len(re.findall(pattern, password)):\n                count += 1\n            \n        if count == 4:\n            break\n\n    return password\n\n# new_password = generate_password(8)\n# print(new_password)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should replace your existing <code>for</code> loop and two <code>if</code> statements with a single <code>if</code> statement.</p>",
+      "testString": "({ test: () => {\n  assert.match(code, /^(\\s{8})if\\s+.+:\\s*^\\1\\s{4}break/ms);\n  assert.isFalse(/if\\s+count\\s*==\\s*4\\s*:/.test(code));\n} })"
+    },
+    {
+      "text": "<p>Your new <code>if</code> condition should be <code>all([])</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n  _Node(_code).find_function(\"generate_password\").find_while(\"True\").find_bodies()[0].find_if(\"all([])\")\n`)) })"
+    },
+    {
+      "text": "<p>You should have <code>break</code> inside your new <code>if</code> body.</p>",
+      "testString": "({ test: () => assert(runPython(`\n  _Node(_code).find_function(\"generate_password\").find_while(\"True\").find_bodies()[0].find_if(\"all([])\").find_bodies()[0].is_equivalent(\"break\")\n`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Instead of using a loop and a counter variable, you can achieve the same result with a different approach, which you are going to implement in the next few steps.</p>\n<p><code>all()</code> is a built-in Python function that returns <code>True</code> if all the elements inside a given iterable evaluate to <code>True</code>. Otherwise, it returns <code>False</code>.</p>\n<p>Replace your existing <code>for</code> loop and two <code>if</code> statements with a single <code>if</code> statement. For the <code>if</code> condition, use a call to the <code>all()</code> function and pass an empty list as the argument to the function call.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 60,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

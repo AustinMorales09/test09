@@ -1,0 +1,45 @@
+{
+  "id": "661bd3fc29debe22a71eedb5",
+  "title": "Task 66",
+  "challengeType": 19,
+  "dashedName": "task-66",
+  "solutions": [],
+  "question": {
+    "text": "<p>What do <code>physical or behavioral traits</code> include in biometrics?</p>",
+    "answers": [
+      {
+        "answer": "<p>Random objects</p>",
+        "feedback": "<p>Random objects don't fit the idea of personal characteristics used in biometrics.</p>"
+      },
+      {
+        "answer": "<p>Magical powers</p>",
+        "feedback": "<p>Magical powers are unrelated to the concept of unique personal features in biometrics.</p>"
+      },
+      {
+        "answer": "<p>Colorful patterns</p>",
+        "feedback": "<p>Colorful patterns do not represent the specific traits of your body or behavior.</p>"
+      },
+      {
+        "answer": "<p>Special characteristics of your body or behavior</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Physical or behavioral traits</code> are special things about your body or how you act. It can be your face, fingerprints, or the way you move. Biometrics uses these things to keep things safe.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 69,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

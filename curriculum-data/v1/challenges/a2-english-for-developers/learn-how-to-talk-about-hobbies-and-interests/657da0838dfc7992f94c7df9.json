@@ -1,0 +1,88 @@
+{
+  "id": "657da0838dfc7992f94c7df9",
+  "title": "Task 23",
+  "challengeType": 19,
+  "dashedName": "task-23",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are Bob's recommendations for beginners?</p>",
+    "answers": [
+      {
+        "answer": "<p>Buying a brand-new camera as soon as possible.</p>",
+        "feedback": "<p>Bob doesn't mention buying anything.</p>"
+      },
+      {
+        "answer": "<p>Cleaning the lenses, using a tripod and taking photography courses.</p>",
+        "feedback": "<p>These may be good recommendations, but Bob doesn't make any of them.</p>"
+      },
+      {
+        "answer": "<p>Concentrating on the basic things, learning about the camera you use, and enjoying what you do.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Trying photography and abandoning if you see it's not for you.</p>",
+        "feedback": "<p>Bob doesn't encourage anyone to quit photography.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 38.32,
+        "finishTimestamp": 43.28
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 5.96,
+        "dialogue": {
+          "text": "So I always recommend starting with the basics, learning about your camera, and trying to have fun.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.46
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>You say you <code>recommend</code> that someone does something when you tell this person that what you suggest is a good, maybe the best choice for them. For example: <code>I recommend that you read this book. It's the best on the topic.</code> When you have actions following the verb <code>recommend</code>, use them in the <code>-ing</code> form. For example: <code>I recommend reading this book if you want to understand this topic better.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

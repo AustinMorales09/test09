@@ -1,0 +1,53 @@
+{
+  "id": "658212ba98182f3e855e85f9",
+  "title": "Step 1",
+  "challengeType": 20,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>def</code> keyword to declare a function named <code>add_expense</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import inspect    \n    inspect.isfunction(add_expense)\n  `))\n})"
+    },
+    {
+      "text": "<p>Your <code>add_expense</code> function should take three parameters: <code>expenses</code>, <code>amount</code> and <code>category</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import inspect    \n    sig = str(inspect.signature(add_expense))\n    sig == '(expenses, amount, category)'\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In this project, you're going to build a simple, yet functional expense tracker in Python.</p>\n<p>Start by defining a function named <code>add_expense</code> that takes three parameters: <code>expenses</code>, <code>amount</code> and <code>category</code>. Use the <code>pass</code> keyword to fill the function body.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

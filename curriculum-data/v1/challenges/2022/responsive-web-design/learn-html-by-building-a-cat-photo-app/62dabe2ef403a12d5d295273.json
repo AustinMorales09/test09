@@ -1,0 +1,61 @@
+{
+  "id": "62dabe2ef403a12d5d295273",
+  "title": "Step 13",
+  "challengeType": 0,
+  "dashedName": "step-13",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        6,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more <a href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n      <a href=\"https://freecatphotoapp.com\">link to cat pictures</a>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more <a href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n      <a href=\"https://freecatphotoapp.com\">link to cat pictures</a>\n      <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should only have one paragraph (<code>p</code>) element.</p>",
+      "testString": "assert.isTrue(document.querySelectorAll('p').length === 1);"
+    },
+    {
+      "text": "<p>Your code should only have one anchor (<code>a</code>) element.</p>",
+      "testString": "assert.isTrue(document.querySelectorAll('a').length === 1);"
+    },
+    {
+      "text": "<p>Do not make any changes to the elements you created in the previous step.</p>",
+      "testString": "assert.strictEqual(document.querySelector('p').innerHTML, 'See more <a href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.')"
+    },
+    {
+      "text": "<p>There should not be <code>cat photos</code> text below the <code>p</code> element.</p>",
+      "testString": "const pNextSibling = document.querySelector('p').nextSibling;\nassert(\n  pNextSibling.nodeName === '#text' && !/cat\\s*photos/.test(pNextSibling.nodeValue) ||\n  pNextSibling.nodeName === 'IMG'\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you turned the text <code>cat photos</code> inside the <code>p</code> element into a link, you don't need the second link below the <code>p</code> element. Delete the entire anchor element below the <code>p</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

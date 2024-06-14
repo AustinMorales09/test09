@@ -1,0 +1,86 @@
+{
+  "id": "594ecc0d9a8cf816e3340187",
+  "title": "Taxicab numbers",
+  "challengeType": 1,
+  "forumTopicId": 302337,
+  "dashedName": "taxicab-numbers",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const res4 = [1729, 4104, 13832, 20683];\nconst res25 = [\n  1729, 4104, 13832, 20683, 32832, 39312, 40033, 46683, 64232, 65728, 110656,\n  110808, 134379, 149389, 165464, 171288, 195841, 216027, 216125, 262656, 314496, 320264, 327763,\n  373464, 402597\n];\n\nconst res39From20To29 = [314496, 320264, 327763, 373464, 402597, 439101, 443889, 513000, 513856];",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function taxicabNumbers(n) {\n\n  return true;\n}",
+      "error": null,
+      "seed": "function taxicabNumbers(n) {\n\n  return true;\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function taxicabNumbers(nNumbers) {\n  const cubeN = [];\n  const s3s = {};\n\n  const e = 100;\n  for (let n = 1; n < e; n += 1) {\n    cubeN[n] = n * n * n;\n  }\n\n  for (let a = 1; a < e - 1; a += 1) {\n    const a3 = cubeN[a];\n    for (let b = a; b < e; b += 1) {\n      const b3 = cubeN[b];\n      const s3 = a3 + b3;\n\n      let abs = s3s[s3];\n      if (!abs) {\n        s3s[s3] = abs = [];\n      }\n      abs.push([a, b]);\n    }\n  }\n\n  let i = 0;\n  const res = [];\n  Object.keys(s3s).forEach(s3 => {\n    const abs = s3s[s3];\n    if (abs.length >= 2) { // No two cube pairs found\n      i += 1;\n      if (i <= nNumbers) {\n        res.push(s3);\n      }\n    }\n  });\n  return res.map(item => parseInt(item, 10));\n}",
+        "error": null,
+        "seed": "function taxicabNumbers(nNumbers) {\n  const cubeN = [];\n  const s3s = {};\n\n  const e = 100;\n  for (let n = 1; n < e; n += 1) {\n    cubeN[n] = n * n * n;\n  }\n\n  for (let a = 1; a < e - 1; a += 1) {\n    const a3 = cubeN[a];\n    for (let b = a; b < e; b += 1) {\n      const b3 = cubeN[b];\n      const s3 = a3 + b3;\n\n      let abs = s3s[s3];\n      if (!abs) {\n        s3s[s3] = abs = [];\n      }\n      abs.push([a, b]);\n    }\n  }\n\n  let i = 0;\n  const res = [];\n  Object.keys(s3s).forEach(s3 => {\n    const abs = s3s[s3];\n    if (abs.length >= 2) { // No two cube pairs found\n      i += 1;\n      if (i <= nNumbers) {\n        res.push(s3);\n      }\n    }\n  });\n  return res.map(item => parseInt(item, 10));\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>taxicabNumbers</code> should be a function.</p>",
+      "testString": "assert(typeof taxicabNumbers === 'function');"
+    },
+    {
+      "text": "<p><code>taxicabNumbers</code> should return an array.</p>",
+      "testString": "assert(typeof taxicabNumbers(2) === 'object');"
+    },
+    {
+      "text": "<p><code>taxicabNumbers</code> should return an array of numbers.</p>",
+      "testString": "assert(typeof taxicabNumbers(100)[0] === 'number');"
+    },
+    {
+      "text": "<p><code>taxicabNumbers(4)</code> should return [1729, 4104, 13832, 20683].</p>",
+      "testString": "assert.deepEqual(taxicabNumbers(4), res4);"
+    },
+    {
+      "text": "<p><code>taxicabNumbers(25)</code> should return [1729, 4104, 13832, 20683, 32832, 39312, 40033, 46683, 64232, 65728, 110656, 110808, 134379, 149389, 165464, 171288, 195841, 216027, 216125, 262656, 314496, 320264, 327763, 373464, 402597]</p>",
+      "testString": "assert.deepEqual(taxicabNumbers(25), res25);"
+    },
+    {
+      "text": "<p><code>taxicabNumbers(39)</code> resulting numbers from 20 - 29 should be [314496,320264,327763,373464,402597,439101,443889,513000,513856].</p>",
+      "testString": "assert.deepEqual(taxicabNumbers(39).slice(20, 29), res39From20To29);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A taxicab number (the definition that is being used here) is a positive integer that can be expressed as the sum of two positive cubes in more than one way.</p>\n<p>The first taxicab number is <code>1729</code>, which is:</p>\n<p>1<sup>3</sup> + 12<sup>3</sup> and</p>\n<p>9<sup>3</sup> + 10<sup>3</sup>.</p>\n<p>Taxicab numbers are also known as:</p>\n<ul>\n  <li>taxi numbers</li>\n  <li>taxi-cab numbers</li>\n  <li>taxi cab numbers</li>\n  <li>Hardy-Ramanujan numbers</li>\n</ul>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that returns the lowest <code>n</code> taxicab numbers. For each of the taxicab numbers, show the number as well as its constituent cubes.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 147,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

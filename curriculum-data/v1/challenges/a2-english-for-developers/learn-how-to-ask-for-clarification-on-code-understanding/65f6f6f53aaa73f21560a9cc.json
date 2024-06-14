@@ -1,0 +1,88 @@
+{
+  "id": "65f6f6f53aaa73f21560a9cc",
+  "title": "Task 39",
+  "challengeType": 19,
+  "dashedName": "task-39",
+  "solutions": [],
+  "question": {
+    "text": "<p>What do Sophie's uses of <code>could</code> and <code>should</code> indicate?</p>",
+    "answers": [
+      {
+        "answer": "<p>She is confident that the issue is a performance bottleneck.</p>",
+        "feedback": "<p><code>Could</code> suggests a possibility, not certainty. <code>Should</code> indicates an action she plans to take, not a conclusion.</p>"
+      },
+      {
+        "answer": "<p>She needs to confirm if the issue is a performance bottleneck.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She has already resolved the performance bottleneck.</p>",
+        "feedback": "<p><code>Should</code> indicates a future action to confirm, not that the issue has already been resolved.</p>"
+      },
+      {
+        "answer": "<p>She dismisses the possibility of a performance bottleneck.</p>",
+        "feedback": "<p><code>Could</code> shows she is considering it as a possibility, not dismissing it.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.72,
+        "finishTimestamp": 20.54
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.82,
+        "dialogue": {
+          "text": "It could be a performance bottleneck, but I should confirm it.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.32
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 41,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

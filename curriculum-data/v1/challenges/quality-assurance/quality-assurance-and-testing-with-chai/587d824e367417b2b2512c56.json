@@ -1,0 +1,50 @@
+{
+  "id": "587d824e367417b2b2512c56",
+  "title": "Test if a Value is of a Specific Data Structure Type",
+  "challengeType": 2,
+  "forumTopicId": 301601,
+  "dashedName": "test-if-a-value-is-of-a-specific-data-structure-type",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>All tests should pass.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=16').then(\n    (data) => {\n      assert.equal(data.state, 'passed');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the first assertion - <code>typeOf</code> vs. <code>notTypeOf</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=16').then(\n    (data) => {\n      assert.equal(\n        data.assertions[0].method,\n        'typeOf',\n        'myCar is typeOf Object'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the second assertion - <code>typeOf</code> vs. <code>notTypeOf</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=16').then(\n    (data) => {\n      assert.equal(\n        data.assertions[1].method,\n        'typeOf',\n        'Car.model is a String'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the third assertion - <code>typeOf</code> vs. <code>notTypeOf</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=16').then(\n    (data) => {\n      assert.equal(\n        data.assertions[2].method,\n        'notTypeOf',\n        'Plane.wings is a Number (not a String)'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the fourth assertion - <code>typeOf</code> vs. <code>notTypeOf</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=16').then(\n    (data) => {\n      assert.equal(\n        data.assertions[3].method,\n        'typeOf',\n        'Plane.engines is an Array'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>You should choose the correct method for the fifth assertion - <code>typeOf</code> vs. <code>notTypeOf</code>.</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/get-tests?type=unit&n=16').then(\n    (data) => {\n      assert.equal(\n        data.assertions[4].method,\n        'typeOf',\n        'Car.wheels is a Number'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As a reminder, this project is being built upon the following starter project on <a href=\"https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Gitpod</a>, or cloned from <a href=\"https://github.com/freeCodeCamp/boilerplate-mochachai/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">GitHub</a>.</p>\n<p><code>#typeOf</code> asserts that value's type is the given string, as determined by <code>Object.prototype.toString</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Within <code>tests/1_unit-tests.js</code> under the test labeled <code>#17</code> in the <code>Objects</code> suite, change each <code>assert</code> to either <code>assert.typeOf</code> or <code>assert.notTypeOf</code> to make the test pass (should evaluate to <code>true</code>). Do not alter the arguments passed to the asserts.</p>\n</section>",
+  "translationPending": false,
+  "block": "quality-assurance-and-testing-with-chai",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

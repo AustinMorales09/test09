@@ -1,0 +1,78 @@
+{
+  "id": "594810f028c0303b75339ad0",
+  "title": "Align columns",
+  "challengeType": 1,
+  "forumTopicId": 302224,
+  "dashedName": "align-columns",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const _testText = [\n  'Given$a$text$file$of$many$lines',\n  'where$fields$within$a$line$',\n  'are$delineated$by$a$single$\"dollar\"$character',\n  'write$a$program',\n  'that$aligns$each$column$of$fields$',\n  'by$ensuring$that$words$in$each$',\n  'column$are$separated$by$at$least$one$space.',\n  'Further,$allow$for$each$word$in$a$column$to$be$either$left$',\n  'justified,$right$justified',\n  'or$center$justified$within$its$column.'\n];\n\nconst rightAligned = '     Given          a      text   file     of     many     lines\\n' +\n'     where     fields    within      a   line \\n' +\n'       are delineated        by      a single \"dollar\" character\\n' +\n'     write          a   program\\n' +\n'      that     aligns      each column     of   fields \\n' +\n'        by   ensuring      that  words     in     each \\n' +\n'    column        are separated     by     at    least       one space.\\n' +\n'  Further,      allow       for   each   word       in         a column to be either left \\n' +\n'justified,      right justified\\n' +\n'        or     center justified within    its  column.';\n\nconst leftAligned = 'Given      a          text      file   of     many     lines    \\n' +\n'where      fields     within    a      line   \\n' +\n'are        delineated by        a      single \"dollar\" character\\n' +\n'write      a          program  \\n' +\n'that       aligns     each      column of     fields   \\n' +\n'by         ensuring   that      words  in     each     \\n' +\n'column     are        separated by     at     least    one       space.\\n' +\n'Further,   allow      for       each   word   in       a         column to be either left \\n' +\n'justified, right      justified\\n' +\n'or         center     justified within its    column. ';\n\nconst centerAligned = '  Given        a        text     file    of     many     lines  \\n' +\n'  where      fields    within     a     line  \\n' +\n'   are     delineated    by       a    single \\\"dollar\\\" character\\n' +\n'  write        a       program \\n' +\n'   that      aligns     each    column   of    fields  \\n' +\n'    by      ensuring    that    words    in     each   \\n' +\n'  column      are     separated   by     at    least      one    space.\\n' +\n' Further,    allow       for     each   word     in        a     column to be either left \\n' +\n'justified,   right    justified\\n' +\n'    or       center   justified within  its   column. ';",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function formatText(input, justification) {\n\n}\n\nconst testText = [\n  'Given$a$text$file$of$many$lines',\n  'where$fields$within$a$line$',\n  'are$delineated$by$a$single$\"dollar\"$character',\n  'write$a$program',\n  'that$aligns$each$column$of$fields$',\n  'by$ensuring$that$words$in$each$',\n  'column$are$separated$by$at$least$one$space.',\n  'Further,$allow$for$each$word$in$a$column$to$be$either$left$',\n  'justified,$right$justified',\n  'or$center$justified$within$its$column.'\n];",
+      "error": null,
+      "seed": "function formatText(input, justification) {\n\n}\n\nconst testText = [\n  'Given$a$text$file$of$many$lines',\n  'where$fields$within$a$line$',\n  'are$delineated$by$a$single$\"dollar\"$character',\n  'write$a$program',\n  'that$aligns$each$column$of$fields$',\n  'by$ensuring$that$words$in$each$',\n  'column$are$separated$by$at$least$one$space.',\n  'Further,$allow$for$each$word$in$a$column$to$be$either$left$',\n  'justified,$right$justified',\n  'or$center$justified$within$its$column.'\n];"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "String.prototype.repeat = function (n) { return new Array(1 + parseInt(n)).join(this); };\n\nfunction formatText(input, justification) {\n  let x, y, max, cols = 0, diff, left, right;\n  for (x = 0; x < input.length; x++) {\n    input[x] = input[x].split('$');\n    if (input[x].length > cols) {\n      cols = input[x].length;\n    }\n  }\n  for (x = 0; x < cols; x++) {\n    max = 0;\n    for (y = 0; y < input.length; y++) {\n      if (input[y][x] && max < input[y][x].length) {\n        max = input[y][x].length;\n      }\n    }\n    for (y = 0; y < input.length; y++) {\n      if (input[y][x]) {\n        diff = (max - input[y][x].length) / 2;\n        left = ' '.repeat(Math.floor(diff));\n        right = ' '.repeat(Math.ceil(diff));\n        if (justification === 'left') {\n          right += left; left = '';\n        }\n        if (justification === 'right') {\n          left += right; right = '';\n        }\n        input[y][x] = left + input[y][x] + right;\n      }\n    }\n  }\n  for (x = 0; x < input.length; x++) {\n    input[x] = input[x].join(' ');\n  }\n  input = input.join('\\n');\n  return input;\n}",
+        "error": null,
+        "seed": "String.prototype.repeat = function (n) { return new Array(1 + parseInt(n)).join(this); };\n\nfunction formatText(input, justification) {\n  let x, y, max, cols = 0, diff, left, right;\n  for (x = 0; x < input.length; x++) {\n    input[x] = input[x].split('$');\n    if (input[x].length > cols) {\n      cols = input[x].length;\n    }\n  }\n  for (x = 0; x < cols; x++) {\n    max = 0;\n    for (y = 0; y < input.length; y++) {\n      if (input[y][x] && max < input[y][x].length) {\n        max = input[y][x].length;\n      }\n    }\n    for (y = 0; y < input.length; y++) {\n      if (input[y][x]) {\n        diff = (max - input[y][x].length) / 2;\n        left = ' '.repeat(Math.floor(diff));\n        right = ' '.repeat(Math.ceil(diff));\n        if (justification === 'left') {\n          right += left; left = '';\n        }\n        if (justification === 'right') {\n          left += right; right = '';\n        }\n        input[y][x] = left + input[y][x] + right;\n      }\n    }\n  }\n  for (x = 0; x < input.length; x++) {\n    input[x] = input[x].join(' ');\n  }\n  input = input.join('\\n');\n  return input;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>formatText</code> should be a function.</p>",
+      "testString": "assert(typeof formatText === 'function');"
+    },
+    {
+      "text": "<p><code>formatText(testText, 'right')</code> should produce text with columns justified to the right.</p>",
+      "testString": "assert.strictEqual(formatText(_testText, 'right'), rightAligned);"
+    },
+    {
+      "text": "<p><code>formatText(testText, 'left')</code> should produce text with columns justified to the left.</p>",
+      "testString": "assert.strictEqual(formatText(_testText, 'left'), leftAligned);"
+    },
+    {
+      "text": "<p><code>formatText(testText, 'center')</code> should produce text with columns justified to the center.</p>",
+      "testString": "assert.strictEqual(formatText(_testText, 'center'), centerAligned);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Given an array of many lines, where fields within a line are delineated by a single <code>$</code> character, write a program that aligns each column of fields by ensuring that words in each column are separated by at least one space. Further, allow for each word in a column to be either left justified, right justified, or center justified within its column.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use the following text to test your programs:</p>\n<pre><code class=\"language-js\">const testText = [\n  'Given$a$text$file$of$many$lines',\n  'where$fields$within$a$line$',\n  'are$delineated$by$a$single$\"dollar\"$character',\n  'write$a$program',\n  'that$aligns$each$column$of$fields',\n  'by$ensuring$that$words$in$each$',\n  'column$are$separated$by$at$least$one$space.',\n  'Further,$allow$for$each$word$in$a$column$to$be$either$left$',\n  'justified,$right$justified',\n  'or$center$justified$within$its$column.'\n];\n</code></pre>\n<p><strong>Note that:</strong></p>\n<ul>\n<li>The example input texts lines may, or may not, have trailing dollar characters.</li>\n<li>All columns should share the same alignment.</li>\n<li>Consecutive space characters produced adjacent to the end of lines are insignificant for the purposes of the task.</li>\n<li>Output text will be viewed in a mono-spaced font on a plain text editor or basic terminal. Lines in it should be joined using new line character (<code>\\n</code>).</li>\n<li>The minimum space between columns should be computed from the text and not hard-coded.</li>\n<li>It is not a requirement to add separating characters between or around columns.</li>\n</ul>\n<p>For example, one of the lines from the <code>testText</code>, after justifying to the right, left and center respectively:</p>\n<pre><code class=\"language-js\">'    column        are separated     by     at    least       one space.\\n'\n'column     are        separated by     at     least    one       space.\\n'\n'  column      are     separated   by     at    least      one    space.\\n'\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

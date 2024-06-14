@@ -1,0 +1,49 @@
+{
+  "id": "6565c234de8cdf673c96bdf3",
+  "title": "Step 67",
+  "challengeType": 20,
+  "dashedName": "step-67",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        36,
+        39
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):   \n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, r'\\d'),\n            (special_chars, fr'[{symbols}]'),\n            (uppercase, r'[A-Z]'),\n            (lowercase, r'[a-z]')\n        ]\n\n        # Check constraints        \n        if all(\n            constraint <= len(re.findall(pattern, password))\n            for constraint, pattern in constraints\n        ):\n            break\n    \n    return password\n    \nnew_password = generate_password(length=8, nums=1, special_chars=1, uppercase=1, lowercase=1)\nprint(new_password)",
+      "error": null,
+      "seed": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):   \n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, r'\\d'),\n            (special_chars, fr'[{symbols}]'),\n            (uppercase, r'[A-Z]'),\n            (lowercase, r'[a-z]')\n        ]\n\n        # Check constraints        \n        if all(\n            constraint <= len(re.findall(pattern, password))\n            for constraint, pattern in constraints\n        ):\n            break\n    \n    return password\n    \nnew_password = generate_password(length=8, nums=1, special_chars=1, uppercase=1, lowercase=1)\nprint(new_password)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should change the order of <code>length=8</code> and <code>nums=1</code> in your <code>generate_password()</code> call.</p>",
+      "testString": "({ test: () => assert.match(code, /^new_password\\s*=\\s*generate_password\\s*\\(\\s*nums\\s*=\\s*1\\s*,\\s*length\\s*=\\s*8\\s*,\\s*special_chars\\s*=\\s*1\\s*,\\s*uppercase\\s*=\\s*1\\s*,\\s*lowercase\\s*=\\s*1\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As long as all the arguments in a function call are keyword arguments, the order of the arguments doesn't matter.</p>\n<p>To confirm this, try to change the order of <code>length=8</code> and <code>nums=1</code> in your function call.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 66,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

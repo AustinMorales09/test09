@@ -1,0 +1,46 @@
+{
+  "id": "6363d23a9078df117ce4c3ff",
+  "title": "Applications of Linear Systems: Extra",
+  "challengeType": 15,
+  "videoId": "ZtypoUnNdAY",
+  "dashedName": "applications-of-linear-systems-extra",
+  "solutions": [],
+  "question": {
+    "text": "<p>How can you make use of a Colab notebook to solve practical business problems?</p>",
+    "answers": [
+      {
+        "answer": "<p>Modify the equations in the code you already wrote</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Copy your existing code and then modify it as necessary</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Write new code based on the functions you already know</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>All of the above</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The next video contains more examples of how to set up equations and use your Colab notebook to solve them.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-applications-of-linear-systems",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

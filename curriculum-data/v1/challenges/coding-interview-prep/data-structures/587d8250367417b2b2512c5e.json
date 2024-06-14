@@ -1,0 +1,78 @@
+{
+  "id": "587d8250367417b2b2512c5e",
+  "title": "Learn how a Stack Works",
+  "challengeType": 1,
+  "forumTopicId": 301705,
+  "dashedName": "learn-how-a-stack-works",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "var homeworkStack = [\"BIO12\",\"HIS80\",\"MAT122\",\"PSY44\"];\n// Only change code below this line",
+      "error": null,
+      "seed": "var homeworkStack = [\"BIO12\",\"HIS80\",\"MAT122\",\"PSY44\"];\n// Only change code below this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>homeworkStack</code> should only contain 4 elements.</p>",
+      "testString": "assert(homeworkStack.length === 4);"
+    },
+    {
+      "text": "<p>The last element in <code>homeworkStack</code> should be <code>\"CS50\"</code>.</p>",
+      "testString": "assert(homeworkStack[3] === 'CS50');"
+    },
+    {
+      "text": "<p><code>homeworkStack</code> should not contain <code>\"PSY44\"</code>.</p>",
+      "testString": "assert(homeworkStack.indexOf('PSY44') === -1);"
+    },
+    {
+      "text": "<p>The initial declaration of the <code>homeworkStack</code> should not be changed.</p>",
+      "testString": "assert(\n  __helpers.removeJSComments(code).match(/=/g).length === 1 &&\n    /homeworkStack\\s*=\\s*\\[\"BIO12\"\\s*,\\s*\"HIS80\"\\s*,\\s*\"MAT122\"\\s*,\\s*\"PSY44\"\\]/.test(\n      __helpers.removeJSComments(code)\n    )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You are probably familiar with stack of books on your table. You have likely used the undo feature of a text editor. You are also probably used to hitting the back button on your phone to go back to the previous view in your app.</p>\n<p>You know what they all have in common? They all store the data in a way so that you can traverse backwards.</p>\n<p>The topmost book in the stack was the one that was put there last. If you remove that book from your stack's top, you would expose the book that was put there before the last book and so on.</p>\n<p>If you think about it, in all the above examples, you are getting <dfn>Last-In-First-Out</dfn> type of service. We will try to mimic this with our code.</p>\n<p>This data storage scheme is called a <dfn>Stack</dfn>. In particular, we would have to implement the <code>push()</code> method that pushes JavaScript objects at the top of the stack; and <code>pop()</code> method, that removes the JavaScript object that's at the top of the stack at the current moment.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Here we have a stack of homework assignments represented as an array: <code>\"BIO12\"</code> is at the base, and <code>\"PSY44\"</code> is at the top of the stack.</p>\n<p>Modify the given array and treat it like a <code>stack</code> using the JavaScript methods mentioned above. Remove the top element <code>\"PSY44\"</code> from the stack. Then add <code>\"CS50\"</code> to be the new top element of the stack.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-structures",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

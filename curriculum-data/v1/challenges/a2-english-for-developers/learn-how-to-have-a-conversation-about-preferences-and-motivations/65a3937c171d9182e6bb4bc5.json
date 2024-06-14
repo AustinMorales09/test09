@@ -1,0 +1,79 @@
+{
+  "id": "65a3937c171d9182e6bb4bc5",
+  "title": "Task 84",
+  "challengeType": 22,
+  "dashedName": "task-84",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I'm also interested in the _ that tech _ offer.</p>",
+    "blanks": [
+      {
+        "answer": "flexibility",
+        "feedback": "<p>This noun describes the ability to change or adapt easily according to different situations or needs.</p>"
+      },
+      {
+        "answer": "roles",
+        "feedback": "<p>This word refers to the specific functions or positions that individuals can have within a group or organization.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 35.1,
+        "finishTimestamp": 38.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 4.26,
+        "dialogue": {
+          "text": "I'm also interested in the flexibility that tech roles offer.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 4.76
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>role</code> refers to the function or part an individual plays in a particular situation or activity. For example, in a software development team, one person's <code>role</code> might be to write code, while another's is to test it.</p>\n<p><code>Flexibility</code> means the ability to adapt to different situations or to have a variety of work conditions, such as choosing your work hours or working from different locations.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 86,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

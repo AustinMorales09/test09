@@ -1,0 +1,71 @@
+{
+  "id": "cf1231c1c11feddfaeb5bdef",
+  "title": "Multiply Two Numbers with JavaScript",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cP3y3Aq",
+  "forumTopicId": 18243,
+  "dashedName": "multiply-two-numbers-with-javascript",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(z){return 'product = '+z;})(product);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const product = 8 * 0;",
+      "error": null,
+      "seed": "const product = 8 * 0;"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const product = 8 * 10;",
+        "error": null,
+        "seed": "const product = 8 * 10;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The variable <code>product</code> should be equal to 80.</p>",
+      "testString": "assert(product === 80);"
+    },
+    {
+      "text": "<p>You should use the <code>*</code> operator.</p>",
+      "testString": "assert(/\\*/.test(__helpers.removeJSComments(code)));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>We can also multiply one number by another.</p>\n<p>JavaScript uses the <code>*</code> symbol for multiplication of two numbers.</p>\n<p><strong>Example</strong></p>\n<pre><code class=\"language-js\">const myVar = 13 * 13;\n</code></pre>\n<p><code>myVar</code> would have the value <code>169</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Change the <code>0</code> so that product will equal <code>80</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

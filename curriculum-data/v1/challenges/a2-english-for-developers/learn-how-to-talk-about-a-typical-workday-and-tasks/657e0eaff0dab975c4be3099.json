@@ -1,0 +1,75 @@
+{
+  "id": "657e0eaff0dab975c4be3099",
+  "title": "Task 12",
+  "challengeType": 22,
+  "dashedName": "task-12",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That makes sense. How do you _ your projects?</p>",
+    "blanks": [
+      {
+        "answer": "handle",
+        "feedback": "<p>Think about the word that means to manage or deal with something, especially in a work context.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.1,
+        "finishTimestamp": 25.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.52,
+        "dialogue": {
+          "text": "That makes sense. How do you handle your projects?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In professional settings, it's common to discuss how tasks or projects are managed.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "64e33a488b4a2717fa22ebf3",
+  "title": "Step 15",
+  "challengeType": 20,
+  "dashedName": "step-15",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        12
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "NUMBER_OF_DISKS = 3\nnumber_of_moves = 2**NUMBER_OF_DISKS - 1\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\n\ndef move(n, source, auxiliary, target):\n    \n    print(rods)\n\n# initiate call from source A to target C with auxiliary B\nmove(NUMBER_OF_DISKS, 'A', 'B', 'C')",
+      "error": null,
+      "seed": "NUMBER_OF_DISKS = 3\nnumber_of_moves = 2**NUMBER_OF_DISKS - 1\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\n\ndef move(n, source, auxiliary, target):\n    \n    print(rods)\n\n# initiate call from source A to target C with auxiliary B\nmove(NUMBER_OF_DISKS, 'A', 'B', 'C')"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the provided text to add a comment before your <code>print()</code> call.</p>",
+      "testString": "({ test: () => assert.match(code, /#\\s*display\\sstarting\\sconfiguration\\s+print\\s*\\(\\s*rods\\s*\\)/) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Add another comment before your <code>print()</code> call saying <code>display starting configuration</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-solving-the-tower-of-hanoi-puzzle",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

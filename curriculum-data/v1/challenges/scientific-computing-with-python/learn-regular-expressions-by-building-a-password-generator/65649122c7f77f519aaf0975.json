@@ -1,0 +1,53 @@
+{
+  "id": "65649122c7f77f519aaf0975",
+  "title": "Step 20",
+  "challengeType": 20,
+  "dashedName": "step-20",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        20,
+        22
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import secrets\nimport string\n\n\ndef generate_password(length):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    password = ''\n    # Generate password\n    for _ in range(length):\n        password += secrets.choice(all_characters)\n        \n    return password\n    \n",
+      "error": null,
+      "seed": "import secrets\nimport string\n\n\ndef generate_password(length):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    password = ''\n    # Generate password\n    for _ in range(length):\n        password += secrets.choice(all_characters)\n        \n    return password\n    \n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call <code>generate_password</code> passing <code>8</code> as the argument.</p>",
+      "testString": "({ test: () => assert.match(code, /generate_password\\s*\\(\\s*8\\s*\\)/) })"
+    },
+    {
+      "text": "<p>You should assign <code>generate_password(8)</code> to the variable <code>new_password</code>.</p>",
+      "testString": "({\n  test: () => {\n    assert(__userGlobals.has(\"new_password\"));\n    assert.match(code, /^new_password\\s*=\\s*generate_password\\s*\\(\\s*8\\s*\\)/m);\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Finally, declare a variable <code>new_password</code> and assign it the result of calling <code>generate_password</code>. Pass <code>8</code> as the argument to your <code>generate_password</code> call.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

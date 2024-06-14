@@ -1,0 +1,88 @@
+{
+  "id": "65a35281e6f8f4303df075e5",
+  "title": "Task 69",
+  "challengeType": 19,
+  "dashedName": "task-69",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Brian want to know from Lisa?</p>",
+    "answers": [
+      {
+        "answer": "<p>Her motivation to work late hours</p>",
+        "feedback": "<p>Consider what the question is specifically targeting about Lisa's career.</p>"
+      },
+      {
+        "answer": "<p>What motivates her to solve technical problems</p>",
+        "feedback": "<p>Think about whether Brian's question is about Lisa's problem-solving skills.</p>"
+      },
+      {
+        "answer": "<p>Which tech gadgets she prefers</p>",
+        "feedback": "<p>Reflect on whether the question is about preferences for gadgets or career choices.</p>"
+      },
+      {
+        "answer": "<p>What motivated her to pick a tech career</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.18
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.18,
+        "dialogue": {
+          "text": "Hey, Lisa, what motivated you to choose a career in tech?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 5.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Brian asks Lisa a question about her career choice.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 71,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

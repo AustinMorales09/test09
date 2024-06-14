@@ -1,0 +1,65 @@
+{
+  "id": "5900f4be1000cf542c50ffd0",
+  "title": "Problem 337: Totient Stairstep Sequences",
+  "challengeType": 1,
+  "forumTopicId": 301995,
+  "dashedName": "problem-337-totient-stairstep-sequences",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function totientStairstepSequences() {\n\n  return true;\n}\n\ntotientStairstepSequences();",
+      "error": null,
+      "seed": "function totientStairstepSequences() {\n\n  return true;\n}\n\ntotientStairstepSequences();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>totientStairstepSequences()</code> should return <code>85068035</code>.</p>",
+      "testString": "assert.strictEqual(totientStairstepSequences(), 85068035);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $\\{a_1, a_2, \\ldots, a_n\\}$ be an integer sequence of length $n$ such that:</p>\n<ul>\n<li>$a_1 = 6$</li>\n<li>for all $1 ≤ i &#x3C; n$ : $φ(a_i) &#x3C; φ(a_{i + 1}) &#x3C; a_i &#x3C; a_{i + 1}$</li>\n</ul>\n<p>$φ$ denotes Euler's totient function.</p>\n<p>Let $S(N)$ be the number of such sequences with $a_n ≤ N$.</p>\n<p>For example, $S(10) = 4$: {6}, {6, 8}, {6, 8, 9} and {6, 10}.</p>\n<p>We can verify that $S(100) = 482\\,073\\,668$ and $S(10\\,000)\\bmod {10}^8 = 73\\,808\\,307$.</p>\n<p>Find $S(20\\,000\\,000)\\bmod {10}^8$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

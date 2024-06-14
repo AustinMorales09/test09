@@ -1,0 +1,57 @@
+{
+  "id": "5f344f9c805cd193c33d829c",
+  "title": "Step 11",
+  "challengeType": 0,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        5,
+        8
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n    <style>\n    </style>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n    <style>\n    </style>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an <code>h1</code> selector in your <code>style</code> element.</p>",
+      "testString": "const hasSelector = new __helpers.CSSHelp(document).getStyle('h1');\nassert(hasSelector);"
+    },
+    {
+      "text": "<p>Your <code>text-align</code> property should have a value of <code>center</code>.</p>",
+      "testString": "const hasTextAlign = new __helpers.CSSHelp(document).getCSSRules().some(x => x.style['text-align'] === 'center');\nassert(hasTextAlign);"
+    },
+    {
+      "text": "<p>Your <code>h1</code> selector should set the <code>text-align</code> property to <code>center</code>.</p>",
+      "testString": "const h1TextAlign = new __helpers.CSSHelp(document).getStyle('h1')?.getPropertyValue('text-align');\nassert(h1TextAlign === 'center');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can add style to an element by specifying it in the <code>style</code> element and setting a property for it like this:</p>\n<pre><code class=\"language-css\">element {\n property: value;\n}\n</code></pre>\n<p>Center the content of the <code>h1</code> element by setting its <code>text-align</code> property to the value <code>center</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

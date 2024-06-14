@@ -1,0 +1,57 @@
+{
+  "id": "66458f0a05df478aa627629e",
+  "title": "Step 79",
+  "challengeType": 1,
+  "dashedName": "step-79",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        13,
+        17
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\nif (\"\") {\n  console.log(\"Condition is true\");\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\nif (\"\") {\n  console.log(\"Condition is true\");\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an <code>else if</code> statement.</p>",
+      "testString": "assert.match(code, /else\\s+if\\s*\\(/);"
+    },
+    {
+      "text": "<p>Your <code>else if</code> statement should check if <code>5</code> is less than <code>10</code>.</p>",
+      "testString": "assert.match(code, /else\\s+if\\s*\\(\\s*5\\s*<\\s*10\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should log the string <code>\"5 is less than 10\"</code> to the console.</p>",
+      "testString": "assert.match(code, /console\\.log\\(\\s*('|\"|`)5\\s+is\\s+less\\s+than\\s+10\\1\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The text is gone again! Empty strings evaluate to <code>false</code>, making them a <dfn>falsy value</dfn>. You will learn more about truthy and falsy values in future projects.</p>\n<p>In addition to <code>if</code> statements, JavaScript also has <dfn>else if</dfn> statements. <code>else if</code> statements allow you to check multiple conditions in a single block of code.</p>\n<p>Here is the syntax for an <code>else if</code> statement:</p>\n<pre><code class=\"language-js\">if (condition1) {\n  // code to run if condition1 is true\n} else if (condition2) {\n  // code to run if condition2 is true\n} else if (condition3) {\n  // code to run if condition3 is true\n} \n</code></pre>\n<p>If the first condition is <code>false</code>, JavaScript will check the next condition in the chain. If the second condition is <code>false</code>, JavaScript will check the third condition, and so on.</p>\n<p>Below your <code>if</code> statement, add an <code>else if</code> statement that checks if <code>5</code> is less than <code>10</code>. Then inside the body of the <code>else if</code> statement, log the string <code>\"5 is less than 10\"</code> to the console.</p>\n<p>Check the console to see the results.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 78,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

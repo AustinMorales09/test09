@@ -1,0 +1,57 @@
+{
+  "id": "6578b57361f2f132a02e2a18",
+  "title": "Step 4",
+  "challengeType": 20,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        6
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\n",
+      "error": null,
+      "seed": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not modify the assignment of your dictionary.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    copper == {\"species\": \"guinea pig\", \"age\": 2}\n  `))\n})"
+    },
+    {
+      "text": "<p>You should use <code>copper['species']</code> to access the value of the <code>'species'</code> key.</p>",
+      "testString": "({ test: () => assert.match(code, /copper\\s*\\[\\s*(\"|')species\\1\\s*\\]/) })"
+    },
+    {
+      "text": "<p>You should call <code>print()</code> passing <code>copper['species']</code> as argument.</p>",
+      "testString": "({ test: () => assert.match(code, /^print\\s*\\(\\s*copper\\s*\\[\\s*(\"|')species\\1\\s*\\]\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can access the data stored in a dictionary through its keys:</p>\n<pre><code class=\"language-py\">my_dict = {\n    'name': 'Michael',\n    'occupation': 'Lumberjack'\n}\n\nmy_dict['name'] # 'Michael'\n</code></pre>\n<p>After your dictionary, follow the example above to access the <code>'species'</code> key of <code>copper</code> and print the result.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

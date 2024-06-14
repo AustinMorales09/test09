@@ -1,0 +1,89 @@
+{
+  "id": "6153893900438b4643590367",
+  "title": "Step 13",
+  "challengeType": 0,
+  "dashedName": "step-13",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n    <div class=\"gallery\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg\">\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <header class=\"header\">\n      <h1>css flexbox photo gallery</h1>\n    </header>\n    <div class=\"gallery\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg\">\n      <img src=\"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg\">\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        9,
+        11
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  box-sizing: border-box;\n}\nbody  {\n  margin: 0;\n  font-family: sans-serif;\n  background-color: #f5f6f7;\n}\n\n\n\n.gallery img {\n  width: 100%;\n  max-width: 350px;\n  height: 300px;\n}",
+      "error": null,
+      "seed": "* {\n  box-sizing: border-box;\n}\nbody  {\n  margin: 0;\n  font-family: sans-serif;\n  background-color: #f5f6f7;\n}\n\n\n\n.gallery img {\n  width: 100%;\n  max-width: 350px;\n  height: 300px;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>.header</code> selector.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.header'));"
+    },
+    {
+      "text": "<p>Your <code>.header</code> selector should have a <code>text-align</code> property set to <code>center</code> as the value.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.header')?.textAlign, 'center');"
+    },
+    {
+      "text": "<p>Your <code>.header</code> selector should have a <code>text-transform</code> property set to <code>uppercase</code> as the value.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.header')?.textTransform, 'uppercase');"
+    },
+    {
+      "text": "<p>Your <code>.header</code> selector should have a <code>padding</code> property set to <code>32px</code> as the value.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.header')?.padding, '32px');"
+    },
+    {
+      "text": "<p>Your <code>.header</code> selector should have a <code>background-color</code> property set to <code>#0a0a23</code> as the value.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.header')?.backgroundColor, 'rgb(10, 10, 35)');"
+    },
+    {
+      "text": "<p>Your <code>.header</code> selector should have a <code>color</code> property set to <code>#fff</code> as the value.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.header')?.color, 'rgb(255, 255, 255)');"
+    },
+    {
+      "text": "<p>Your <code>.header</code> selector should have a <code>border-bottom</code> property set to <code>4px solid #fdb347</code> as the value.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.header')?.borderBottom, '4px solid rgb(253, 179, 71)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Align your <code>.header</code> text in the center. Make the text uppercase using the <code>text-transform</code> property with <code>uppercase</code> as the value.</p>\n<p>Give it a padding of <code>32px</code> on all sides. Set the background to <code>#0a0a23</code> and the text to <code>#fff</code> as the color values.</p>\n<p>Add a <code>border-bottom</code> with <code>4px solid #fdb347</code> as the value.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-flexbox-by-building-a-photo-gallery",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

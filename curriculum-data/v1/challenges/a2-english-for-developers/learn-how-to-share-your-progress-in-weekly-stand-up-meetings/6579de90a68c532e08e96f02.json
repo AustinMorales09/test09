@@ -1,0 +1,79 @@
+{
+  "id": "6579de90a68c532e08e96f02",
+  "title": "Task 45",
+  "challengeType": 22,
+  "dashedName": "task-45",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That's a great idea. Let's _ this. We can _ learn from each other.</p>",
+    "blanks": [
+      {
+        "answer": "arrange",
+        "feedback": "<p>It means to plan or set up, here referring to organizing the code review session.</p>"
+      },
+      {
+        "answer": "definitely",
+        "feedback": "<p>It emphasizes certainty, showing Sophie's strong agreement about learning from each other.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 25.24,
+        "finishTimestamp": 28.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.68,
+        "dialogue": {
+          "text": "That's a great idea. Let's arrange this we can definitely learn from each other",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 5.18
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Arrange</code> means to plan or organize something, especially events or meetings. For example, <code>We need to arrange a team meeting</code> suggests scheduling and preparing for a meeting. <code>Definitely</code> is used to emphasize certainty or agreement, showing strong positive confirmation, like <code>I will definitely attend the meeting</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 46,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

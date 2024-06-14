@@ -1,0 +1,79 @@
+{
+  "id": "587d778b367417b2b2512aa8",
+  "title": "Add an Accessible Date Picker",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cR3bRbCV",
+  "forumTopicId": 301008,
+  "dashedName": "add-an-accessible-date-picker",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<body>\n  <header>\n    <h1>Tournaments</h1>\n  </header>\n  <main>\n    <section>\n      <h2>Mortal Kombat Tournament Survey</h2>\n      <form>\n        <p>Tell us the best date for the competition</p>\n        <label for=\"pickdate\">Preferred Date:</label>\n\n        <!-- Only change code below this line -->\n\n\n\n        <!-- Only change code above this line -->\n\n        <input type=\"submit\" name=\"submit\" value=\"Submit\">\n      </form>\n    </section>\n  </main>\n  <footer>&copy; 2018 Camper Cat</footer>\n</body>",
+      "error": null,
+      "seed": "<body>\n  <header>\n    <h1>Tournaments</h1>\n  </header>\n  <main>\n    <section>\n      <h2>Mortal Kombat Tournament Survey</h2>\n      <form>\n        <p>Tell us the best date for the competition</p>\n        <label for=\"pickdate\">Preferred Date:</label>\n\n        <!-- Only change code below this line -->\n\n\n\n        <!-- Only change code above this line -->\n\n        <input type=\"submit\" name=\"submit\" value=\"Submit\">\n      </form>\n    </section>\n  </main>\n  <footer>&copy; 2018 Camper Cat</footer>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<body>\n  <header>\n    <h1>Tournaments</h1>\n  </header>\n  <main>\n    <section>\n      <h2>Mortal Kombat Tournament Survey</h2>\n      <form>\n        <p>Tell us the best date for the competition</p>\n        <label for=\"pickdate\">Preferred Date:</label>\n        <input type=\"date\" id=\"pickdate\" name=\"date\">\n        <input type=\"submit\" name=\"submit\" value=\"Submit\">\n      </form>\n    </section>\n  </main>\n  <footer>&copy; 2018 Camper Cat</footer>\n</body>",
+        "error": null,
+        "seed": "<body>\n  <header>\n    <h1>Tournaments</h1>\n  </header>\n  <main>\n    <section>\n      <h2>Mortal Kombat Tournament Survey</h2>\n      <form>\n        <p>Tell us the best date for the competition</p>\n        <label for=\"pickdate\">Preferred Date:</label>\n        <input type=\"date\" id=\"pickdate\" name=\"date\">\n        <input type=\"submit\" name=\"submit\" value=\"Submit\">\n      </form>\n    </section>\n  </main>\n  <footer>&copy; 2018 Camper Cat</footer>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should add one <code>input</code> tag for the date selector field.</p>",
+      "testString": "assert($('input').length == 2);"
+    },
+    {
+      "text": "<p>Your <code>input</code> tag should have a <code>type</code> attribute with a value of <code>date</code>.</p>",
+      "testString": "assert($('input').attr('type') == 'date');"
+    },
+    {
+      "text": "<p>Your <code>input</code> tag should have an <code>id</code> attribute with a value of <code>pickdate</code>.</p>",
+      "testString": "assert($('input').attr('id') == 'pickdate');"
+    },
+    {
+      "text": "<p>Your <code>input</code> tag should have a <code>name</code> attribute with a value of <code>date</code>.</p>",
+      "testString": "assert($('input').attr('name') == 'date');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Forms often include the <code>input</code> field, which can be used to create several different form controls. The <code>type</code> attribute on this element indicates what kind of <code>input</code> element will be created.</p>\n<p>You may have noticed the <code>text</code> and <code>submit</code> input types in prior challenges, and HTML5 introduced an option to specify a <code>date</code> field. Depending on browser support, a date picker shows up in the <code>input</code> field when it's in focus, which makes filling in a form easier for all users.</p>\n<p>For older browsers, the type will default to <code>text</code>, so it helps to show users the expected date format in the <code>label</code> or <code>placeholder</code> text just in case.</p>\n<p>Here's an example:</p>\n<pre><code class=\"language-html\">&#x3C;label for=\"input1\">Enter a date:&#x3C;/label>\n&#x3C;input type=\"date\" id=\"input1\" name=\"input1\">\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Camper Cat is setting up a Mortal Kombat tournament and wants to ask his competitors to see what date works best. Add an <code>input</code> tag with a <code>type</code> attribute of <code>date</code>, an <code>id</code> attribute of <code>pickdate</code>, and a <code>name</code> attribute of <code>date</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-accessibility",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

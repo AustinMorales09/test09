@@ -1,0 +1,88 @@
+{
+  "id": "65b62b2ca1c4a46c49ab0812",
+  "title": "Task 25",
+  "challengeType": 19,
+  "dashedName": "task-25",
+  "solutions": [],
+  "question": {
+    "text": "<p>Who does she make happy according to Bob?</p>",
+    "answers": [
+      {
+        "answer": "<p>All the people</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Only herself</p>",
+        "feedback": "<p>Bob mentions that she makes sure <code>everyone</code> is happy, not just herself.</p>"
+      },
+      {
+        "answer": "<p>Just the teachers</p>",
+        "feedback": "<p>Bob says <code>everyone</code>, which means all the people, not just a specific group like teachers.</p>"
+      },
+      {
+        "answer": "<p>Only the students</p>",
+        "feedback": "<p>Bob mentions <code>everyone</code>, indicating all people involved.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 26.98,
+        "finishTimestamp": 30.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.64,
+        "dialogue": {
+          "text": "She makes sure we follow the rules and that everyone is happy.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 5.14
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

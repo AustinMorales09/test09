@@ -1,0 +1,86 @@
+{
+  "id": "5a24bbe0dba28a8d3cbd4c5f",
+  "title": "Render HTML Elements to the DOM",
+  "challengeType": 6,
+  "forumTopicId": 301406,
+  "dashedName": "render-html-elements-to-the-dom",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "const JSX = (\n  <div>\n    <h1>Hello World</h1>\n    <p>Lets render this to the DOM</p>\n  </div>\n);\n// Add your code below this line",
+      "error": null,
+      "seed": "const JSX = (\n  <div>\n    <h1>Hello World</h1>\n    <p>Lets render this to the DOM</p>\n  </div>\n);\n// Add your code below this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "const JSX = (\n<div>\n  <h1>Hello World</h1>\n  <p>Lets render this to the DOM</p>\n</div>\n);\n// Add your code below this line\nReactDOM.render(JSX, document.getElementById('challenge-node'));",
+        "error": null,
+        "seed": "const JSX = (\n<div>\n  <h1>Hello World</h1>\n  <p>Lets render this to the DOM</p>\n</div>\n);\n// Add your code below this line\nReactDOM.render(JSX, document.getElementById('challenge-node'));"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The constant <code>JSX</code> should return a <code>div</code> element.</p>",
+      "testString": "assert(JSX.type === 'div');"
+    },
+    {
+      "text": "<p>The <code>div</code> should contain an <code>h1</code> tag as the first element.</p>",
+      "testString": "assert(JSX.props.children[0].type === 'h1');"
+    },
+    {
+      "text": "<p>The <code>div</code> should contain a <code>p</code> tag as the second element.</p>",
+      "testString": "assert(JSX.props.children[1].type === 'p');"
+    },
+    {
+      "text": "<p>The provided JSX element should render to the DOM node with id <code>challenge-node</code>.</p>",
+      "testString": "assert(\n  document.getElementById('challenge-node').childNodes[0].innerHTML ===\n    '<h1>Hello World</h1><p>Lets render this to the DOM</p>'\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>So far, you've learned that JSX is a convenient tool to write readable HTML within JavaScript. With React, we can render this JSX directly to the HTML DOM using React's rendering API known as ReactDOM.</p>\n<p>ReactDOM offers a simple method to render React elements to the DOM which looks like this: <code>ReactDOM.render(componentToRender, targetNode)</code>, where the first argument is the React element or component that you want to render, and the second argument is the DOM node that you want to render the component to.</p>\n<p>As you would expect, <code>ReactDOM.render()</code> must be called after the JSX element declarations, just like how you must declare variables before using them.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The code editor has a simple JSX component. Use the <code>ReactDOM.render()</code> method to render this component to the page. You can pass defined JSX elements directly in as the first argument and use <code>document.getElementById()</code> to select the DOM node to render them to. There is a <code>div</code> with <code>id='challenge-node'</code> available for you to use. Make sure you don't change the <code>JSX</code> constant.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 3,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

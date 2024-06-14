@@ -1,0 +1,49 @@
+{
+  "id": "657f465f8e718b19c5105ae5",
+  "title": "Step 19",
+  "challengeType": 20,
+  "dashedName": "step-19",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        13,
+        19
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    # snake_cased_char_list = []\n    # for char in pascal_or_camel_cased_string:\n    #     if char.isupper():\n    #       converted_character = '_' + char.lower()\n    #       snake_cased_char_list.append(converted_character)\n    #     else:\n    #         snake_cased_char_list.append(char)\n    # snake_cased_string = ''.join(snake_cased_char_list)\n    # clean_snake_cased_string = snake_cased_string.strip('_')\n\n    # return clean_snake_cased_string\n\n    snake_cased_char_list = [\n        '_' + char.lower() if char.isupper()\n        else char\n        \n    ]\n\n\n\ndef main():\n    print(convert_to_snake_case('aLongAndComplexString'))\n\nif __name__ == '__main__':\n    main()",
+      "error": null,
+      "seed": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    # snake_cased_char_list = []\n    # for char in pascal_or_camel_cased_string:\n    #     if char.isupper():\n    #       converted_character = '_' + char.lower()\n    #       snake_cased_char_list.append(converted_character)\n    #     else:\n    #         snake_cased_char_list.append(char)\n    # snake_cased_string = ''.join(snake_cased_char_list)\n    # clean_snake_cased_string = snake_cased_string.strip('_')\n\n    # return clean_snake_cased_string\n\n    snake_cased_char_list = [\n        '_' + char.lower() if char.isupper()\n        else char\n        \n    ]\n\n\n\ndef main():\n    print(convert_to_snake_case('aLongAndComplexString'))\n\nif __name__ == '__main__':\n    main()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add <code>for char in pascal_or_camel_cased_string</code> after <code>else char</code> within the square braces of <code>snake_cased_char_list</code>.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const convert_to_snake_case = __helpers.python.getDef(\"\\n\" + transformedCode, \"convert_to_snake_case\");\n        const { function_body } = convert_to_snake_case;\n\n        assert.match(function_body, / +snake_cased_char_list\\s*=\\s*\\[\\s*'_'\\s*\\+\\s*char\\.lower\\(\\s*\\)\\s+if\\s+char\\.isupper\\(\\s*\\)\\s*else\\s*char\\s*for\\s+char\\s+in\\s+pascal_or_camel_cased_string\\s*\\]/);\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The final piece of the puzzle is the input string itself. The list comprehension needs to know about the object it'll iterate upon.</p>\n<p>In this case, you need to iterate upon all the characters of the string.</p>\n<pre><code class=\"language-py\">snake_cased_char_list = [\n    '_' + char.lower() if char.isupper()\n    else char\n    for char in pascal_or_camel_cased_string\n]\n</code></pre>\n<p>And there you have it. These three lines of code do the same task as the <code>for</code> loop you worked on previously while being cleaner and somewhat faster.</p>\n<p>Add this last line of code to iterate over the characters of the string in your list comprehension and make sure that you're writing it within the pair of square braces.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-list-comprehension-by-building-a-case-converter-program",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "64dc976bf864693e668d67e8",
+  "title": "Step 12",
+  "challengeType": 20,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        9,
+        11
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "NUMBER_OF_DISKS = 3\nnumber_of_moves = 2**NUMBER_OF_DISKS - 1\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\ndef move():\n    print(rods)\n",
+      "error": null,
+      "seed": "NUMBER_OF_DISKS = 3\nnumber_of_moves = 2**NUMBER_OF_DISKS - 1\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\ndef move():\n    print(rods)\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call your <code>move()</code> function.</p>",
+      "testString": "({test: () => assert.match(code, /^move\\(\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now call your function and see the output on the terminal.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-solving-the-tower-of-hanoi-puzzle",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

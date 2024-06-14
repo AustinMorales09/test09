@@ -1,0 +1,88 @@
+{
+  "id": "657e54f51fe1c983d840cb70",
+  "title": "Task 99",
+  "challengeType": 19,
+  "dashedName": "task-99",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is David's role in this collaboration?</p>",
+    "answers": [
+      {
+        "answer": "<p>He is committed to providing technical support.</p>",
+        "feedback": "<p>David doesn't work with techinical support.</p>"
+      },
+      {
+        "answer": "<p>He is dedicated to ensuring effective collaboration.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He will lead the project team.</p>",
+        "feedback": "<p>Maria is the lead.</p>"
+      },
+      {
+        "answer": "<p>He will manage the project's finances.</p>",
+        "feedback": "<p>David doesn't mention finances</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "David",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 42.1,
+        "finishTimestamp": 46.32
+      }
+    },
+    "commands": [
+      {
+        "character": "David",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "David",
+        "startTime": 1,
+        "finishTime": 5.22,
+        "dialogue": {
+          "text": "I'll be your point of contact and I'll make sure our collaboration is great.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "David",
+        "opacity": 0,
+        "startTime": 5.72
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 103,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

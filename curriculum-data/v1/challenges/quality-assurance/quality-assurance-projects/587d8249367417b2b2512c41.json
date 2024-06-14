@@ -1,0 +1,78 @@
+{
+  "id": "587d8249367417b2b2512c41",
+  "title": "Metric-Imperial Converter",
+  "challengeType": 4,
+  "forumTopicId": 301570,
+  "dashedName": "metric-imperial-converter",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You can provide your own project, not the example URL.</p>",
+      "testString": "getUserInput => {\n  assert(\n    !/.*\\/metric-imperial-converter\\.freecodecamp\\.rocks/.test(\n      getUserInput('url')\n    )\n  );\n};"
+    },
+    {
+      "text": "<p>You can <code>GET</code> <code>/api/convert</code> with a single parameter containing an accepted number and unit and have it converted. (Hint: Split the input by looking for the index of the first character which will mark the start of the unit)</p>",
+      "testString": ""
+    },
+    {
+      "text": "<p>You can convert <code>'gal'</code> to <code>'L'</code> and vice versa. (1 gal to 3.78541 L)</p>",
+      "testString": "async getUserInput => {\n  try {\n    const data1 = await $.get(getUserInput('url') + '/api/convert?input=1gal');\n    assert.equal(data1.returnNum, 3.78541);\n    assert.equal(data1.returnUnit, 'L');\n    const data2 = await $.get(getUserInput('url') + '/api/convert?input=10gal');\n    assert.equal(data2.returnNum, 37.8541);\n    assert.equal(data2.returnUnit, 'L');\n    const data3 = await $.get(getUserInput('url') + '/api/convert?input=1l');\n    assert.equal(data3.returnNum, 0.26417);\n    assert.equal(data3.returnUnit, 'gal');\n    const data4 = await $.get(getUserInput('url') + '/api/convert?input=10l');\n    assert.equal(data4.returnNum, 2.64172);\n    assert.equal(data4.returnUnit, 'gal');\n  } catch (xhr) {\n    throw new Error(xhr.responseText || xhr.message);\n  }\n};"
+    },
+    {
+      "text": "<p>You can convert <code>'lbs'</code> to <code>'kg'</code> and vice versa. (1 lbs to 0.453592 kg)</p>",
+      "testString": "async getUserInput => {\n  try {\n    const data1 = await $.get(getUserInput('url') + '/api/convert?input=1lbs');\n    assert.equal(data1.returnNum, 0.45359);\n    assert.equal(data1.returnUnit, 'kg');\n    const data2 = await $.get(getUserInput('url') + '/api/convert?input=10lbs');\n    assert.equal(data2.returnNum, 4.53592);\n    assert.equal(data2.returnUnit, 'kg');\n    const data3 = await $.get(getUserInput('url') + '/api/convert?input=1kg');\n    assert.equal(data3.returnNum, 2.20462);\n    assert.equal(data3.returnUnit, 'lbs');\n    const data4 = await $.get(getUserInput('url') + '/api/convert?input=10kg');\n    assert.equal(data4.returnNum, 22.04624);\n    assert.equal(data4.returnUnit, 'lbs');\n  } catch (xhr) {\n    throw new Error(xhr.responseText || xhr.message);\n  }\n};"
+    },
+    {
+      "text": "<p>You can convert <code>'mi'</code> to <code>'km'</code> and vice versa. (1 mi to 1.60934 km)</p>",
+      "testString": "async getUserInput => {\n  try {\n    const data1 = await $.get(getUserInput('url') + '/api/convert?input=1mi');\n    assert.equal(data1.returnNum, 1.60934);\n    assert.equal(data1.returnUnit, 'km');\n    const data2 = await $.get(getUserInput('url') + '/api/convert?input=10mi');\n    assert.equal(data2.returnNum, 16.0934);\n    assert.equal(data2.returnUnit, 'km');\n    const data3 = await $.get(getUserInput('url') + '/api/convert?input=1km');\n    assert.equal(data3.returnNum, 0.62137);\n    assert.equal(data3.returnUnit, 'mi');\n    const data4 = await $.get(getUserInput('url') + '/api/convert?input=10km');\n    assert.equal(data4.returnNum, 6.21373);\n    assert.equal(data4.returnUnit, 'mi');\n  } catch (xhr) {\n    throw new Error(xhr.responseText || xhr.message);\n  }\n};"
+    },
+    {
+      "text": "<p>All incoming units should be accepted in both upper and lower case, but should be returned in both the <code>initUnit</code> and <code>returnUnit</code> in lower case, except for liter, which should be represented as an uppercase <code>'L'</code>.</p>",
+      "testString": "async getUserInput => {\n  try {\n    const data1 = await $.get(getUserInput('url') + '/api/convert?input=1gal');\n    assert.equal(data1.initUnit, 'gal');\n    assert.equal(data1.returnUnit, 'L');\n    const data2 = await $.get(getUserInput('url') + '/api/convert?input=10L');\n    assert.equal(data2.initUnit, 'L');\n    assert.equal(data2.returnUnit, 'gal');\n    const data3 = await $.get(getUserInput('url') + '/api/convert?input=1l');\n    assert.equal(data3.initUnit, 'L');\n    assert.equal(data3.returnUnit, 'gal');\n    const data4 = await $.get(getUserInput('url') + '/api/convert?input=10KM');\n    assert.equal(data4.initUnit, 'km');\n    assert.equal(data4.returnUnit, 'mi');\n  } catch (xhr) {\n    throw new Error(xhr.responseText || xhr.message);\n  }\n};"
+    },
+    {
+      "text": "<p>If the unit of measurement is invalid, returned will be <code>'invalid unit'</code>.</p>",
+      "testString": "async getUserInput => {\n  try {\n    const data = await $.get(getUserInput('url') + '/api/convert?input=1min');\n    assert(data.error === 'invalid unit' || data === 'invalid unit');\n  } catch (xhr) {\n    throw new Error(xhr.responseText || xhr.message);\n  }\n};"
+    },
+    {
+      "text": "<p>If the number is invalid, returned will be <code>'invalid number'</code>.</p>",
+      "testString": "async getUserInput => {\n  try {\n    const data = await $.get(\n      getUserInput('url') + '/api/convert?input=1//2gal'\n    );\n    assert(data.error === 'invalid number' || data === 'invalid number');\n  } catch (xhr) {\n    throw new Error(xhr.responseText || xhr.message);\n  }\n};"
+    },
+    {
+      "text": "<p>If both the unit and number are invalid, returned will be <code>'invalid number and unit'</code>.</p>",
+      "testString": "async getUserInput => {\n  try {\n    const data = await $.get(\n      getUserInput('url') + '/api/convert?input=1//2min'\n    );\n    assert(\n      data.error === 'invalid number and unit' ||\n        data === 'invalid number and unit'\n    );\n  } catch (xhr) {\n    throw new Error(xhr.responseText || xhr.message);\n  }\n};"
+    },
+    {
+      "text": "<p>You can use fractions, decimals or both in the parameter (ie. 5, 1/2, 2.5/6), but if nothing is provided it will default to 1.</p>",
+      "testString": "async getUserInput => {\n  try {\n    const data1 = await $.get(getUserInput('url') + '/api/convert?input=mi');\n    assert.approximately(data1.initNum, 1, 0.001);\n    assert.approximately(data1.returnNum, 1.60934, 0.001);\n    assert.equal(data1.returnUnit, 'km');\n    const data2 = await $.get(getUserInput('url') + '/api/convert?input=1/5mi');\n    assert.approximately(data2.initNum, 1 / 5, 0.1);\n    assert.approximately(data2.returnNum, 0.32187, 0.001);\n    assert.equal(data2.returnUnit, 'km');\n    const data3 = await $.get(\n      getUserInput('url') + '/api/convert?input=1.5/7km'\n    );\n    assert.approximately(data3.initNum, 1.5 / 7, 0.001);\n    assert.approximately(data3.returnNum, 0.13315, 0.001);\n    assert.equal(data3.returnUnit, 'mi');\n    const data4 = await $.get(\n      getUserInput('url') + '/api/convert?input=3/2.7km'\n    );\n    assert.approximately(data4.initNum, 3 / 2.7, 0.001);\n    assert.approximately(data4.returnNum, 0.69041, 0.001);\n    assert.equal(data4.returnUnit, 'mi');\n  } catch (err) {\n    throw new Error(err.responseText || err.message);\n  }\n};"
+    },
+    {
+      "text": "<p>Your return will consist of the <code>initNum</code>, <code>initUnit</code>, <code>returnNum</code>, <code>returnUnit</code>, and <code>string</code> spelling out units in the format <code>'{initNum} {initUnitString} converts to {returnNum} {returnUnitString}'</code> with the result rounded to 5 decimals.</p>",
+      "testString": "async getUserInput => {\n  try {\n    const data = await $.get(getUserInput('url') + '/api/convert?input=2mi');\n    assert.equal(data.initNum, 2);\n    assert.equal(data.initUnit, 'mi');\n    assert.approximately(data.returnNum, 3.21868, 0.001);\n    assert.equal(data.returnUnit, 'km', 'returnUnit did not match');\n    assert.equal(data.string, '2 miles converts to 3.21868 kilometers');\n  } catch (xhr) {\n    throw new Error(xhr.responseText || xhr.message);\n  }\n};"
+    },
+    {
+      "text": "<p>All 16 unit tests are complete and passing.</p>",
+      "testString": "async getUserInput => {\n  try {\n    const getTests = await $.get(getUserInput('url') + '/_api/get-tests');\n    assert.isArray(getTests);\n    const unitTests = getTests.filter(test => {\n      return !!test.context.match(/Unit Tests/gi);\n    });\n    assert.isAtLeast(unitTests.length, 16, 'At least 16 tests passed');\n    unitTests.forEach(test => {\n      assert.equal(test.state, 'passed', 'Tests in Passed State');\n      assert.isAtLeast(\n        test.assertions.length,\n        1,\n        'At least one assertion per test'\n      );\n    });\n  } catch (err) {\n    throw new Error(err.responseText || err.message);\n  }\n};"
+    },
+    {
+      "text": "<p>All 5 functional tests are complete and passing.</p>",
+      "testString": "async getUserInput => {\n  try {\n    const getTests = await $.get(getUserInput('url') + '/_api/get-tests');\n    assert.isArray(getTests);\n    const functTests = getTests.filter(test => {\n      return !!test.context.match(/Functional Tests/gi);\n    });\n    assert.isAtLeast(functTests.length, 5, 'At least 5 tests passed');\n    functTests.forEach(test => {\n      assert.equal(test.state, 'passed', 'Tests in Passed State');\n      assert.isAtLeast(\n        test.assertions.length,\n        1,\n        'At least one assertion per test'\n      );\n    });\n  } catch (err) {\n    throw new Error(err.responseText || err.message);\n  }\n};"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Build a full stack JavaScript app that is functionally similar to this: <a href=\"https://metric-imperial-converter.freecodecamp.rocks/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">https://metric-imperial-converter.freecodecamp.rocks/</a>. Working on this project will involve you writing your code using one of the following methods:</p>\n<ul>\n<li>Clone <a href=\"https://github.com/freeCodeCamp/boilerplate-project-metricimpconverter/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">this GitHub repo</a> and complete your project locally.</li>\n<li>Use <a href=\"https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-project-metricimpconverter/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">our Gitpod starter project</a> to complete your project.</li>\n<li>Use a site builder of your choice to complete the project. Be sure to incorporate all the files from our GitHub repo.</li>\n</ul>\n<p><strong>Note:</strong> This project's tests do not work when using <code>glitch.com</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<ul>\n<li>Complete the necessary conversion logic in <code>/controllers/convertHandler.js</code></li>\n<li>Complete the necessary routes in <code>/routes/api.js</code></li>\n<li>Copy the <code>sample.env</code> file to <code>.env</code> and set the variables appropriately</li>\n<li>To run the tests automatically, add <code>NODE_ENV=test</code> in your <code>.env</code> file</li>\n<li>To run the tests in the console, use the command <code>npm run test</code>.</li>\n</ul>\n<p>Write the following tests in <code>tests/1_unit-tests.js</code>:</p>\n<ul>\n<li><code>convertHandler</code> should correctly read a whole number input.</li>\n<li><code>convertHandler</code> should correctly read a decimal number input.</li>\n<li><code>convertHandler</code> should correctly read a fractional input.</li>\n<li><code>convertHandler</code> should correctly read a fractional input with a decimal.</li>\n<li><code>convertHandler</code> should correctly return an error on a double-fraction (i.e. <code>3/2/3</code>).</li>\n<li><code>convertHandler</code> should correctly default to a numerical input of <code>1</code> when no numerical input is provided.</li>\n<li><code>convertHandler</code> should correctly read each valid input unit.</li>\n<li><code>convertHandler</code> should correctly return an error for an invalid input unit.</li>\n<li><code>convertHandler</code> should return the correct return unit for each valid input unit.</li>\n<li><code>convertHandler</code> should correctly return the spelled-out string unit for each valid input unit.</li>\n<li><code>convertHandler</code> should correctly convert <code>gal</code> to <code>L</code>.</li>\n<li><code>convertHandler</code> should correctly convert <code>L</code> to <code>gal</code>.</li>\n<li><code>convertHandler</code> should correctly convert <code>mi</code> to <code>km</code>.</li>\n<li><code>convertHandler</code> should correctly convert <code>km</code> to <code>mi</code>.</li>\n<li><code>convertHandler</code> should correctly convert <code>lbs</code> to <code>kg</code>.</li>\n<li><code>convertHandler</code> should correctly convert <code>kg</code> to <code>lbs</code>.</li>\n</ul>\n<p>Write the following tests in <code>tests/2_functional-tests.js</code>:</p>\n<ul>\n<li>Convert a valid input such as <code>10L</code>: <code>GET</code> request to <code>/api/convert</code>.</li>\n<li>Convert an invalid input such as <code>32g</code>: <code>GET</code> request to <code>/api/convert</code>.</li>\n<li>Convert an invalid number such as <code>3/7.2/4kg</code>: <code>GET</code> request to <code>/api/convert</code>.</li>\n<li>Convert an invalid number AND unit such as <code>3/7.2/4kilomegagram</code>: <code>GET</code> request to <code>/api/convert</code>.</li>\n<li>Convert with no number such as <code>kg</code>: <code>GET</code> request to <code>/api/convert</code>.</li>\n</ul>\n</section>",
+  "translationPending": false,
+  "block": "quality-assurance-projects",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

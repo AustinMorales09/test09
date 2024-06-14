@@ -1,0 +1,69 @@
+{
+  "id": "5f3477ae8466a9a3d2cc953c",
+  "title": "Step 15",
+  "challengeType": 0,
+  "dashedName": "step-15",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        12
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n    <style>\n      h1, h2, p {\n        text-align: center;\n      }\n    </style>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n    <style>\n      h1, h2, p {\n        text-align: center;\n      }\n    </style>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1, h2, p {\n  text-align: center;\n}",
+      "error": null,
+      "seed": "h1, h2, p {\n  text-align: center;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have any <code>style</code> tags in your code.</p>",
+      "testString": "assert(!code.match(/style/i));"
+    },
+    {
+      "text": "<p>You should not have any CSS selectors in your HTML file.</p>",
+      "testString": "(getUserInput) => {\n  const html = getUserInput('editableContents');\n  assert(!html.includes('style'));\n  assert(!html.includes('text-align'));\n}"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you have the CSS in the <code>styles.css</code> file, go ahead and remove the <code>style</code> element and all its content. Once it is removed, the text that was centered will shift back to the left.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

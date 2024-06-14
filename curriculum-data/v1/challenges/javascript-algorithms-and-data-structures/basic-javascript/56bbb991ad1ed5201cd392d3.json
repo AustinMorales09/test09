@@ -1,0 +1,71 @@
+{
+  "id": "56bbb991ad1ed5201cd392d3",
+  "title": "Delete Properties from a JavaScript Object",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cDqKdTv",
+  "forumTopicId": 17560,
+  "dashedName": "delete-properties-from-a-javascript-object",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(z){return z;})(myDog);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Setup\nconst myDog = {\n  \"name\": \"Happy Coder\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"friends\": [\"freeCodeCamp Campers\"],\n  \"bark\": \"woof\"\n};\n\n// Only change code below this line\n",
+      "error": null,
+      "seed": "// Setup\nconst myDog = {\n  \"name\": \"Happy Coder\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"friends\": [\"freeCodeCamp Campers\"],\n  \"bark\": \"woof\"\n};\n\n// Only change code below this line\n"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const myDog = {\n  \"name\": \"Happy Coder\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"friends\": [\"freeCodeCamp Campers\"],\n  \"bark\": \"woof\"\n};\ndelete myDog.tails;",
+        "error": null,
+        "seed": "const myDog = {\n  \"name\": \"Happy Coder\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"friends\": [\"freeCodeCamp Campers\"],\n  \"bark\": \"woof\"\n};\ndelete myDog.tails;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should delete the property <code>tails</code> from <code>myDog</code>.</p>",
+      "testString": "assert(typeof myDog === 'object' && myDog.tails === undefined);"
+    },
+    {
+      "text": "<p>You should not modify the <code>myDog</code> setup.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/\"tails\": 1/g).length > 0);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>We can also delete properties from objects like this:</p>\n<pre><code class=\"language-js\">delete ourDog.bark;\n</code></pre>\n<p>Example:</p>\n<pre><code class=\"language-js\">const ourDog = {\n  \"name\": \"Camper\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"friends\": [\"everything!\"],\n  \"bark\": \"bow-wow\"\n};\n\ndelete ourDog.bark;\n</code></pre>\n<p>After the last line shown above, <code>ourDog</code> looks like:</p>\n<pre><code class=\"language-js\">{\n  \"name\": \"Camper\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"friends\": [\"everything!\"]\n}\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Delete the <code>tails</code> property from <code>myDog</code>. You may use either dot or bracket notation.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 88,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

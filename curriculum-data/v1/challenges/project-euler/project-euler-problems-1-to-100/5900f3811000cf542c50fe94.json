@@ -1,0 +1,81 @@
+{
+  "id": "5900f3811000cf542c50fe94",
+  "title": "Problem 21: Amicable numbers",
+  "challengeType": 1,
+  "forumTopicId": 301851,
+  "dashedName": "problem-21-amicable-numbers",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function sumAmicableNum(n) {\n\n  return n;\n}\n\nsumAmicableNum(10000);",
+      "error": null,
+      "seed": "function sumAmicableNum(n) {\n\n  return n;\n}\n\nsumAmicableNum(10000);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const sumAmicableNum = (n) => {\n  const fsum = (n) => {\n    let sum = 1;\n    for (let i = 2; i <= Math.floor(Math.sqrt(n)); i++)\n      if (Math.floor(n % i) === 0)\n        sum += i + Math.floor(n / i);\n    return sum;\n  };\n  let d = [];\n  let amicableSum = 0;\n  for (let i=2; i<n; i++) d[i] = fsum(i);\n  for (let i=2; i<n; i++) {\n    let dsum = d[i];\n    if (d[dsum]===i && i!==dsum) amicableSum += i+dsum;\n  }\n  return amicableSum/2;\n};",
+        "error": null,
+        "seed": "const sumAmicableNum = (n) => {\n  const fsum = (n) => {\n    let sum = 1;\n    for (let i = 2; i <= Math.floor(Math.sqrt(n)); i++)\n      if (Math.floor(n % i) === 0)\n        sum += i + Math.floor(n / i);\n    return sum;\n  };\n  let d = [];\n  let amicableSum = 0;\n  for (let i=2; i<n; i++) d[i] = fsum(i);\n  for (let i=2; i<n; i++) {\n    let dsum = d[i];\n    if (d[dsum]===i && i!==dsum) amicableSum += i+dsum;\n  }\n  return amicableSum/2;\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>sumAmicableNum(1000)</code> should return a number.</p>",
+      "testString": "assert(typeof sumAmicableNum(1000) === 'number');"
+    },
+    {
+      "text": "<p><code>sumAmicableNum(1000)</code> should return 504.</p>",
+      "testString": "assert.strictEqual(sumAmicableNum(1000), 504);"
+    },
+    {
+      "text": "<p><code>sumAmicableNum(2000)</code> should return 2898.</p>",
+      "testString": "assert.strictEqual(sumAmicableNum(2000), 2898);"
+    },
+    {
+      "text": "<p><code>sumAmicableNum(5000)</code> should return 8442.</p>",
+      "testString": "assert.strictEqual(sumAmicableNum(5000), 8442);"
+    },
+    {
+      "text": "<p><code>sumAmicableNum(10000)</code> should return 31626.</p>",
+      "testString": "assert.strictEqual(sumAmicableNum(10000), 31626);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let d(<code>n</code>) be defined as the sum of proper divisors of <code>n</code> (numbers less than <code>n</code> which divide evenly into <code>n</code>).</p>\n<p>If d(<code>a</code>) = <code>b</code> and d(<code>b</code>) = <code>a</code>, where <code>a</code> ≠ <code>b</code>, then <code>a</code> and <code>b</code> are an amicable pair and each of <code>a</code> and <code>b</code> are called amicable numbers.</p>\n<p>For example, the proper divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 and 110; therefore d(220) = 284. The proper divisors of 284 are 1, 2, 4, 71 and 142; so d(284) = 220.</p>\n<p>Evaluate the sum of all the amicable numbers under <code>n</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

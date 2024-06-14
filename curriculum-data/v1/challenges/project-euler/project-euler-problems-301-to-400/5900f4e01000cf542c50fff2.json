@@ -1,0 +1,65 @@
+{
+  "id": "5900f4e01000cf542c50fff2",
+  "title": "Problem 371: Licence plates",
+  "challengeType": 1,
+  "forumTopicId": 302033,
+  "dashedName": "problem-371-licence-plates",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function licensePlates() {\n\n  return true;\n}\n\nlicensePlates();",
+      "error": null,
+      "seed": "function licensePlates() {\n\n  return true;\n}\n\nlicensePlates();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>licensePlates()</code> should return <code>40.66368097</code>.</p>",
+      "testString": "assert.strictEqual(licensePlates(), 40.66368097);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Oregon licence plates consist of three letters followed by a three digit number (each digit can be from [0...9]).</p>\n<p>While driving to work Seth plays the following game:</p>\n<p>Whenever the numbers of two licence plates seen on his trip add to 1000 that's a win.</p>\n<p>E.g. <code>MIC-012</code> and <code>HAN-988</code> is a win and <code>RYU-500</code> and <code>SET-500</code> too (as long as he sees them in the same trip).</p>\n<p>Find the expected number of plates he needs to see for a win. Give your answer rounded to 8 decimal places behind the decimal point.</p>\n<p><strong>Note:</strong> We assume that each licence plate seen is equally likely to have any three digit number on it.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 70,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

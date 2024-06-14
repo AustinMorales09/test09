@@ -1,0 +1,46 @@
+{
+  "id": "6363d26c9078df117ce4c405",
+  "title": "Simple and Compound Interest",
+  "challengeType": 15,
+  "videoId": "iMPFK7wXNPg",
+  "dashedName": "simple-and-compound-interest",
+  "solutions": [],
+  "question": {
+    "text": "<p>In percent increase formulas, what does the \"principle\" refer to?</p>",
+    "answers": [
+      {
+        "answer": "<p>the main amount</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>the ending amount</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>the starting amount</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>the (1 + rate) multiplier</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This video will help you understand the equations of simple and compound interest, and what it all means.</p>\n<p>Here is the <a href=\"https://colab.research.google.com/drive/1IVBaeX84arJXS73raRROaxbz4qMyFVb6?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Colab notebook to go along with this video.</a></p>\n<p>Here is an additional <a href=\"https://colab.research.google.com/drive/1-HWYmzKn6HmEUWMBv7G525CpoQpm8TnN?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Colab notebook that shows you one way to put many of these interest and payment formulas into Python functions.</a> Also you will see an example of using some formulas to output results, notice a trend, and follow up with other formulas to analyze patterns.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-simple-and-compound-interest",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

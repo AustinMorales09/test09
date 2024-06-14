@@ -1,0 +1,88 @@
+{
+  "id": "6579d7f5a745c0fac805d356",
+  "title": "Task 21",
+  "challengeType": 19,
+  "dashedName": "task-21",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Sophie expressing in her response to Bob?</p>",
+    "answers": [
+      {
+        "answer": "<p>She is happy to receive Bob's help and values his opinion</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She is declining Bob's offer to help</p>",
+        "feedback": "<p>Sophie's response <code>I'd appreciate your input</code> shows she welcomes Bob's help, not declines it.</p>"
+      },
+      {
+        "answer": "<p>She is unsure about Bob's ability to help</p>",
+        "feedback": "<p><code>I'd appreciate your input</code> implies she trusts and values Bob's help, showing no uncertainty.</p>"
+      },
+      {
+        "answer": "<p>She is asking Bob for a favor unrelated to work</p>",
+        "feedback": "<p>Sophie's statement is specifically about appreciating Bob's input on her work problem.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 24.32,
+        "finishTimestamp": 26.22
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 2.9,
+        "dialogue": {
+          "text": "Not at all. I'd appreciate your input.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this part of the dialogue, Sophie is responding to Bob's offer to help. Her reply indicates her attitude towards receiving assistance and her expectations for the input she hopes to receive. Understanding this response is key to grasping the dynamics of professional teamwork.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

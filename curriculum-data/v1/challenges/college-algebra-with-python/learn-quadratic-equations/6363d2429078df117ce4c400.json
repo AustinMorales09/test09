@@ -1,0 +1,46 @@
+{
+  "id": "6363d2429078df117ce4c400",
+  "title": "Quadratics",
+  "challengeType": 15,
+  "videoId": "pPLBL3L0OGg",
+  "dashedName": "quadratics",
+  "solutions": [],
+  "question": {
+    "text": "<p>In Python code, what is the formula for the x value of the vertex?</p>",
+    "answers": [
+      {
+        "answer": "<p>x = -b/2a</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>x = -b/(2 * a)</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>x = b/2a</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>x = -b/2*a</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This video show you how to solve quadratic equations, and explain the coefficients (\"A,\" \"B,\" and \"C\") in the standard form and how to use them to find the roots and vertex.</p>\n<p>Here is the <a href=\"https://colab.research.google.com/drive/1jr_k4awSSW1CBs9ma9oS_WnDblDjX3pc?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Colab notebook to go along with this video.</a></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-quadratic-equations",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

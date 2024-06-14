@@ -1,0 +1,65 @@
+{
+  "id": "5900f5111000cf542c510023",
+  "title": "Problem 420: 2x2 positive integer matrix",
+  "challengeType": 1,
+  "forumTopicId": 302090,
+  "dashedName": "problem-420-2x2-positive-integer-matrix",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function positiveIntegerMatrix() {\n\n  return true;\n}\n\npositiveIntegerMatrix();",
+      "error": null,
+      "seed": "function positiveIntegerMatrix() {\n\n  return true;\n}\n\npositiveIntegerMatrix();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>positiveIntegerMatrix()</code> should return <code>145159332</code>.</p>",
+      "testString": "assert.strictEqual(positiveIntegerMatrix(), 145159332);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A positive integer matrix is a matrix whose elements are all positive integers.</p>\n<p>Some positive integer matrices can be expressed as a square of a positive integer matrix in two different ways. Here is an example:</p>\n<p>$$\\begin{pmatrix}\n40 &#x26; 12 \\\\\n48 &#x26; 40\n\\end{pmatrix} =\n{\\begin{pmatrix}\n2 &#x26; 3 \\\\\n12 &#x26; 2\n\\end{pmatrix}}^2 =\n{\\begin{pmatrix}\n6 &#x26; 1 \\\\\n4 &#x26; 6\n\\end{pmatrix}}^2$$</p>\n<p>We define $F(N)$ as the number of the 2x2 positive integer matrices which have a trace less than N and which can be expressed as a square of a positive integer matrix in two different ways.</p>\n<p>We can verify that $F(50) = 7$ and $F(1000) = 1019$.</p>\n<p>Find $F({10}^7)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,101 @@
+{
+  "id": "641cdf57c3f7ee276e1d9b32",
+  "title": "Step 5",
+  "challengeType": 0,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width\" />\n    <title>Learn Regular Expressions by Building a Spam Filter</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n\n  <body>\n    <header class=\"main-text\">\n      <h1 class=\"title\">Is this Spam?</h1>\n      <p class=\"description\">\n        Enter a phrase to check if it would be marked as spam or not.\n      </p>\n    </header>\n\n    <main>\n      <label class=\"message-label\" for=\"message-input\">Message: </label>\n      <textarea\n        placeholder=\"Enter message here\"\n        value=\"\"\n        type=\"text\"\n        name=\"message\"\n        id=\"message-input\"\n        rows=\"10\"\n        cols=\"40\"\n      ></textarea>\n      <button class=\"btn\" id=\"check-message-btn\" type=\"button\">\n        Check message\n      </button>\n      <p id=\"result\"></p>\n    </main>\n\n    <footer class=\"footer\">&copy; freeCodeCamp</footer>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width\" />\n    <title>Learn Regular Expressions by Building a Spam Filter</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n\n  <body>\n    <header class=\"main-text\">\n      <h1 class=\"title\">Is this Spam?</h1>\n      <p class=\"description\">\n        Enter a phrase to check if it would be marked as spam or not.\n      </p>\n    </header>\n\n    <main>\n      <label class=\"message-label\" for=\"message-input\">Message: </label>\n      <textarea\n        placeholder=\"Enter message here\"\n        value=\"\"\n        type=\"text\"\n        name=\"message\"\n        id=\"message-input\"\n        rows=\"10\"\n        cols=\"40\"\n      ></textarea>\n      <button class=\"btn\" id=\"check-message-btn\" type=\"button\">\n        Check message\n      </button>\n      <p id=\"result\"></p>\n    </main>\n\n    <footer class=\"footer\">&copy; freeCodeCamp</footer>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n:root {\n  --dark-grey: #1b1b32;\n  --light-grey: #f5f6f7;\n  --golden-yellow: #fecc4c;\n  --yellow: #ffcc4c;\n  --gold: #feac32;\n  --orange: #ffac33;\n  --dark-orange: #f89808;\n}\n\nbody {\n  background-color: var(--dark-grey);\n  color: var(--light-grey);\n}\n\nbody,\n#message-input:placeholder-shown {\n  text-align: center;\n}\n\ntextarea {\n  max-width: 90%;\n}\n\n.main-text {\n  margin: 25px 0;\n}\n\n.title {\n  font-size: 2.5rem;\n}\n\n.description {\n  margin-top: 15px;\n  font-size: 1.4rem;\n}\n\n.message-label {\n  display: block;\n  margin-bottom: 20px;\n  font-size: 1.5rem;\n}\n\n#message-input:placeholder-shown,\ntextarea {\n  font-size: 1.1rem;\n}\n\n.btn {\n  display: block;\n  cursor: pointer;\n  width: 200px;\n  margin: 10px auto;\n  color: var(--dark-grey);\n  background-color: var(--gold);\n  background-image: linear-gradient(var(--golden-yellow), var(--orange));\n  border-color: var(--gold);\n  border-width: 3px;\n}\n\n.btn:hover {\n  background-image: linear-gradient(var(--yellow), var(--dark-orange));\n}\n\n#result {\n  font-size: 2rem;\n  margin: 20px 0;\n}\n\n.footer {\n  margin-top: 10px;\n}",
+      "error": null,
+      "seed": "*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n:root {\n  --dark-grey: #1b1b32;\n  --light-grey: #f5f6f7;\n  --golden-yellow: #fecc4c;\n  --yellow: #ffcc4c;\n  --gold: #feac32;\n  --orange: #ffac33;\n  --dark-orange: #f89808;\n}\n\nbody {\n  background-color: var(--dark-grey);\n  color: var(--light-grey);\n}\n\nbody,\n#message-input:placeholder-shown {\n  text-align: center;\n}\n\ntextarea {\n  max-width: 90%;\n}\n\n.main-text {\n  margin: 25px 0;\n}\n\n.title {\n  font-size: 2.5rem;\n}\n\n.description {\n  margin-top: 15px;\n  font-size: 1.4rem;\n}\n\n.message-label {\n  display: block;\n  margin-bottom: 20px;\n  font-size: 1.5rem;\n}\n\n#message-input:placeholder-shown,\ntextarea {\n  font-size: 1.1rem;\n}\n\n.btn {\n  display: block;\n  cursor: pointer;\n  width: 200px;\n  margin: 10px auto;\n  color: var(--dark-grey);\n  background-color: var(--gold);\n  background-image: linear-gradient(var(--golden-yellow), var(--orange));\n  border-color: var(--gold);\n  border-width: 3px;\n}\n\n.btn:hover {\n  background-image: linear-gradient(var(--yellow), var(--dark-orange));\n}\n\n#result {\n  font-size: 2rem;\n  margin: 20px 0;\n}\n\n.footer {\n  margin-top: 10px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        6,
+        15
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const messageInput = document.getElementById(\"message-input\");\nconst result = document.getElementById(\"result\");\nconst checkMessageButton = document.getElementById(\"check-message-btn\");\n\nconst isSpam = (msg) => false;\n\ncheckMessageButton.addEventListener(\"click\", () => {\n  if (messageInput.value === \"\") {\n    alert(\"Please enter a message.\");\n    return;\n  }\n\n\n});",
+      "error": null,
+      "seed": "const messageInput = document.getElementById(\"message-input\");\nconst result = document.getElementById(\"result\");\nconst checkMessageButton = document.getElementById(\"check-message-btn\");\n\nconst isSpam = (msg) => false;\n\ncheckMessageButton.addEventListener(\"click\", () => {\n  if (messageInput.value === \"\") {\n    alert(\"Please enter a message.\");\n    return;\n  }\n\n\n});"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the assignment operator to set the <code>textContent</code> property of the <code>result</code> element.</p>",
+      "testString": "assert.match(code, /checkMessageButton\\.addEventListener\\(\\s*('|\"|`)click\\1\\s*,\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*if\\s*\\(\\s*messageInput\\.value\\s*===\\s*('|\"|`)\\2\\s*\\)\\s*\\{\\s*alert\\(\\s*('|\"|`)Please enter a message\\.\\3\\s*\\)\\s*;?\\s*return\\s*;?\\s*\\}\\s*result\\.textContent\\s*\\=\\s*/)"
+    },
+    {
+      "text": "<p>You should call the <code>isSpam()</code> function after the assignment operator <code>=</code> and before the <code>?</code> ternary operator.</p>",
+      "testString": "assert.match(code, /checkMessageButton\\.addEventListener\\(\\s*('|\"|`)click\\1\\s*,\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*if\\s*\\(\\s*messageInput\\.value\\s*===\\s*('|\"|`)\\2\\s*\\)\\s*\\{\\s*alert\\(\\s*('|\"|`)Please enter a message\\.\\3\\s*\\)\\s*;?\\s*return\\s*;?\\s*\\}\\s*result\\.textContent\\s*\\=\\s*isSpam\\(.*\\)\\s*\\?/)"
+    },
+    {
+      "text": "<p>You should use ternary syntax to check the truthiness of <code>isSpam(messageInput.value)</code>.</p>",
+      "testString": "assert.match(code, /checkMessageButton\\.addEventListener\\(\\s*('|\"|`)click\\1\\s*,\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*if\\s*\\(\\s*messageInput\\.value\\s*===\\s*('|\"|`)\\2\\s*\\)\\s*\\{\\s*alert\\(\\s*('|\"|`)Please enter a message\\.\\3\\s*\\)\\s*;?\\s*return\\s*;?\\s*\\}\\s*result\\.textContent\\s*\\=\\s*isSpam\\(\\s*messageInput\\.value\\s*\\)\\s*\\?/)"
+    },
+    {
+      "text": "<p>The truthy expression of your ternary should set the <code>textContent</code> property of the <code>result</code> element to <code>Oh no! This looks like a spam message.</code>.</p>",
+      "testString": "assert.match(code, /checkMessageButton\\.addEventListener\\(\\s*('|\"|`)click\\1\\s*,\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*if\\s*\\(\\s*messageInput\\.value\\s*===\\s*('|\"|`)\\2\\s*\\)\\s*\\{\\s*alert\\(\\s*('|\"|`)Please enter a message\\.\\3\\s*\\)\\s*;?\\s*return\\s*;?\\s*\\}\\s*result\\.textContent\\s*\\=\\s*isSpam\\(\\s*messageInput\\.value\\s*\\)\\s*\\?\\s*('|\"|`)Oh no! This looks like a spam message.\\4\\s*:/);"
+    },
+    {
+      "text": "<p>The falsy expression of your ternary should set the <code>textContent</code> property of the <code>result</code> element to <code>This message does not seem to contain any spam.</code>.</p>",
+      "testString": "assert.match(code, /checkMessageButton\\.addEventListener\\(\\s*('|\"|`)click\\1\\s*,\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*if\\s*\\(\\s*messageInput\\.value\\s*===\\s*('|\"|`)\\2\\s*\\)\\s*\\{\\s*alert\\(\\s*('|\"|`)Please enter a message\\.\\3\\s*\\)\\s*;?\\s*return\\s*;?\\s*\\}\\s*result\\.textContent\\s*\\=\\s*isSpam\\(\\s*messageInput\\.value\\s*\\)\\s*\\?\\s*('|\"|`)Oh no! This looks like a spam message.\\4\\s*:\\s*('|\"|`)This message does not seem to contain any spam.\\5\\s*;?\\s*/);"
+    },
+    {
+      "text": "<p>After your ternary, set the <code>value</code> property on the <code>messageInput</code> element to an empty string.</p>",
+      "testString": "assert.match(code, /checkMessageButton\\.addEventListener\\(\\s*('|\"|`)click\\1\\s*,\\s*\\(\\s*\\)\\s*=>\\s*\\{\\s*if\\s*\\(\\s*messageInput\\.value\\s*===\\s*('|\"|`)\\2\\s*\\)\\s*\\{\\s*alert\\(\\s*('|\"|`)Please enter a message\\.\\3\\s*\\)\\s*;?\\s*return\\s*;?\\s*\\}\\s*result\\.textContent\\s*\\=\\s*isSpam\\(\\s*messageInput\\.value\\s*\\)\\s*\\?\\s*('|\"|`)Oh no! This looks like a spam message.\\4\\s*:\\s*('|\"|`)This message does not seem to contain any spam.\\5\\s*;?\\s*messageInput\\.value\\s*=\\s*('|\"|`)\\6\\s*;?\\s*\\}/)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Back in your event listener, you need to update the text of the <code>result</code> element. You can use a <code>ternary</code> operator to achieve this task.</p>\n<p>Here is an example of assigning the result of a ternary operator to an element's text content:</p>\n<pre><code class=\"language-js\">el.textContent = condition ? \"Use this text if the condition is true\" : \"Use this text if the condition is false\";\n</code></pre>\n<p>After the <code>if</code> statement, use a ternary operator to check the truthiness of calling <code>isSpam()</code> with <code>messageInput.value</code> as the argument. If true, set the <code>textContent</code> property on the <code>result</code> element to <code>Oh no! This looks like a spam message.</code>. Otherwise, set it to <code>This message does not seem to contain any spam.</code></p>\n<p>Then set the <code>messageInput</code> element's <code>value</code> property to an empty string.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-spam-filter",
+  "hasEditableBoundaries": true,
+  "order": 13,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

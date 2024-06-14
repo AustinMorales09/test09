@@ -1,0 +1,82 @@
+{
+  "id": "587d7b88367417b2b2512b44",
+  "title": "Write Arrow Functions with Parameters",
+  "challengeType": 1,
+  "forumTopicId": 301223,
+  "dashedName": "write-arrow-functions-with-parameters",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "var myConcat = function(arr1, arr2) {\n  return arr1.concat(arr2);\n};\n\nconsole.log(myConcat([1, 2], [3, 4, 5]));",
+      "error": null,
+      "seed": "var myConcat = function(arr1, arr2) {\n  return arr1.concat(arr2);\n};\n\nconsole.log(myConcat([1, 2], [3, 4, 5]));"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const myConcat = (arr1, arr2) =>  {\n  return arr1.concat(arr2);\n};\n\nconsole.log(myConcat([1, 2], [3, 4, 5]));",
+        "error": null,
+        "seed": "const myConcat = (arr1, arr2) =>  {\n  return arr1.concat(arr2);\n};\n\nconsole.log(myConcat([1, 2], [3, 4, 5]));"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should replace the <code>var</code> keyword.</p>",
+      "testString": "assert.notMatch(code, /var/g);"
+    },
+    {
+      "text": "<p><code>myConcat</code> should be a constant variable (by using <code>const</code>).</p>",
+      "testString": "assert.match(code, /const\\s+myConcat/g);"
+    },
+    {
+      "text": "<p><code>myConcat</code> should be an arrow function with two parameters</p>",
+      "testString": "assert(\n  /myConcat=\\(\\w+,\\w+\\)=>/.test(__helpers.removeJSComments(code).replace(/\\s/g, '')) &&\n    typeof myConcat === 'function'\n);"
+    },
+    {
+      "text": "<p><code>myConcat()</code> should return <code>[1, 2, 3, 4, 5]</code>.</p>",
+      "testString": "assert.deepEqual(myConcat([1, 2], [3, 4, 5]), [1, 2, 3, 4, 5]);"
+    },
+    {
+      "text": "<p>The <code>function</code> keyword should not be used.</p>",
+      "testString": "assert.notMatch(code, /function/g);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Just like a regular function, you can pass arguments into an arrow function.</p>\n<pre><code class=\"language-js\">const doubler = (item) => item * 2;\ndoubler(4);\n</code></pre>\n<p><code>doubler(4)</code> would return the value <code>8</code>.</p>\n<p>If an arrow function has a single parameter, the parentheses enclosing the parameter may be omitted.</p>\n<pre><code class=\"language-js\">const doubler = item => item * 2;\n</code></pre>\n<p>It is possible to pass more than one argument into an arrow function.</p>\n<pre><code class=\"language-js\">const multiplier = (item, multi) => item * multi;\nmultiplier(4, 2);\n</code></pre>\n<p><code>multiplier(4, 2)</code> would return the value <code>8</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Rewrite the <code>myConcat</code> function which appends contents of <code>arr2</code> to <code>arr1</code> so that the function uses arrow function syntax.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,103 @@
+{
+  "id": "661eb97a2eb89a1ecd9a507a",
+  "title": "Task 76",
+  "challengeType": 22,
+  "dashedName": "task-76",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Tom: Is it safe?</p>\n<p>Alice: It's _ secure, but like any technology, it has its challenges and privacy concerns.</p>",
+    "blanks": [
+      {
+        "answer": "generally",
+        "feedback": "<p>You need the adverb here. Remember to add <code>-ly</code> at the end of the word to transform the adjective into an adverb.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.5,
+        "finishTimestamp": 25.86
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 1.96,
+        "dialogue": {
+          "text": "Is it safe?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 2.24
+      },
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 2.24
+      },
+      {
+        "character": "Alice",
+        "startTime": 2.52,
+        "finishTime": 7.36,
+        "dialogue": {
+          "text": "It's generally secure, but like any technology, it has its challenges and privacy concerns.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 7.86
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>General</code> is an adjective used to describe things that are common, usual, or involve everyone or everything. For example, you might talk about a general rule, meaning a rule that applies in most cases.\n<code>Generally</code> is an adverb that indicates something happening in a widespread or usual manner. It's used to talk about actions or situations that tend to occur frequently or generally, though there may be exceptions.</p>\n<p>Listen to the audio and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 79,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

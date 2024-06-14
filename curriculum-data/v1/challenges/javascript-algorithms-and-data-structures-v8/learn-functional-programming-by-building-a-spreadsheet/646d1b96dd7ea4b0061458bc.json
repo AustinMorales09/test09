@@ -1,0 +1,85 @@
+{
+  "id": "646d1b96dd7ea4b0061458bc",
+  "title": "Step 51",
+  "challengeType": 0,
+  "dashedName": "step-51",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        22,
+        30
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  sum,\n  average,\n  median\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nconst evalFormula = (x, cells) => {\n  const idToText = id => cells.find(cell => cell.id === id).value;\n  const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;\n  const rangeFromString = (num1, num2) => range(parseInt(num1), parseInt(num2));\n  const elemValue = num => character => idToText(character + num);\n  const addCharacters = character1 => character2 => num => charRange(character1, character2).map();\n}\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      input.onchange = update;\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n  const element = event.target;\n  const value = element.value.replace(/\\s/g, \"\");\n  if (!value.includes(element.id) && value.startsWith('=')) {\n\n  }\n}",
+      "error": null,
+      "seed": "const isEven = num => num % 2 === 0;\nconst sum = nums => nums.reduce((acc, el) => acc + el, 0);\nconst average = nums => sum(nums) / nums.length;\n\nconst median = nums => {\n  const sorted = nums.slice().sort((a, b) => a - b);\n  const length = sorted.length;\n  const middle = length / 2 - 1;\n  return isEven(length)\n    ? average([sorted[middle], sorted[middle + 1]])\n    : sorted[Math.ceil(middle)];\n}\n\nconst spreadsheetFunctions = {\n  sum,\n  average,\n  median\n}\n\nconst range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nconst evalFormula = (x, cells) => {\n  const idToText = id => cells.find(cell => cell.id === id).value;\n  const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;\n  const rangeFromString = (num1, num2) => range(parseInt(num1), parseInt(num2));\n  const elemValue = num => character => idToText(character + num);\n  const addCharacters = character1 => character2 => num => charRange(character1, character2).map();\n}\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n    createLabel(number);\n    letters.forEach(letter => {\n      const input = document.createElement(\"input\");\n      input.type = \"text\";\n      input.id = letter + number;\n      input.ariaLabel = letter + number;\n      input.onchange = update;\n      container.appendChild(input);\n    })\n  })\n}\n\nconst update = event => {\n  const element = event.target;\n  const value = element.value.replace(/\\s/g, \"\");\n  if (!value.includes(element.id) && value.startsWith('=')) {\n\n  }\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not call your <code>elemValue</code> function.</p>",
+      "testString": "assert.notMatch(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>\\s*(?:cell\\.id\\s*===\\s*id|id\\s*===\\s*cell\\.id)\\s*\\)\\.value\\s*;?\\s*const\\s+rangeRegex\\s*=\\s*\\/\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\):\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\)\\/(gi|ig)\\s*;?\\s*const\\s+rangeFromString\\s*=\\s*\\(\\s*num1\\s*,\\s*num2\\s*\\)\\s*=>\\s*range\\(\\s*parseInt\\(\\s*num1\\s*\\)\\s*,\\s*parseInt\\(\\s*num2\\s*\\)\\s*\\)\\s*;?\\s*const\\s+elemValue\\s*=\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*(\\(\\s*character\\s*\\)|character)\\s*=>\\s*idToText\\(\\s*character\\s*\\+\\s*num\\s*\\)\\s*;?\\s*const\\s+addCharacters\\s*=\\s*(\\(\\s*character1\\s*\\)|character1)\\s*=>\\s*(\\(\\s*character2\\s*\\)|character2)\\s*=>\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*charRange\\(\\s*character1\\s*,\\s*character2\\s*\\)\\.map\\(\\s*elemValue\\(\\s*\\)\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should pass a reference to <code>elemValue</code> as the callback to your <code>.map()</code> method.</p>",
+      "testString": "assert.match(code, /const\\s+evalFormula\\s*=\\s*\\(\\s*x\\s*,\\s*cells\\s*\\)\\s*=>\\s*{\\s*const\\s+idToText\\s*=\\s*(\\(\\s*id\\s*\\)|id)\\s*=>\\s*cells\\.find\\(\\s*(\\(\\s*cell\\s*\\)|cell)\\s*=>\\s*(?:cell\\.id\\s*===\\s*id|id\\s*===\\s*cell\\.id)\\s*\\)\\.value\\s*;?\\s*const\\s+rangeRegex\\s*=\\s*\\/\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\):\\(\\[A-J\\]\\)\\(\\[1-9\\]\\[0-9\\]\\?\\)\\/(gi|ig)\\s*;?\\s*const\\s+rangeFromString\\s*=\\s*\\(\\s*num1\\s*,\\s*num2\\s*\\)\\s*=>\\s*range\\(\\s*parseInt\\(\\s*num1\\s*\\)\\s*,\\s*parseInt\\(\\s*num2\\s*\\)\\s*\\)\\s*;?\\s*const\\s+elemValue\\s*=\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*(\\(\\s*character\\s*\\)|character)\\s*=>\\s*idToText\\(\\s*character\\s*\\+\\s*num\\s*\\)\\s*;?\\s*const\\s+addCharacters\\s*=\\s*(\\(\\s*character1\\s*\\)|character1)\\s*=>\\s*(\\(\\s*character2\\s*\\)|character2)\\s*=>\\s*(\\(\\s*num\\s*\\)|num)\\s*=>\\s*charRange\\(\\s*character1\\s*,\\s*character2\\s*\\)\\.map\\(\\s*elemValue\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can pass a function <dfn>reference</dfn> as a callback parameter. A function reference is a function name without the parentheses. For example:</p>\n<pre><code class=\"language-js\">const myFunc = (val) => `value: ${val}`;\nconst array = [1, 2, 3];\nconst newArray = array.map(myFunc);\n</code></pre>\n<p>The <code>.map()</code> method here will call the <code>myFunc</code> function, passing the same arguments that a <code>.map()</code> callback takes. The first argument is the value of the array at the current iteration, so <code>newArray</code> would be <code>[value: 1, value: 2, value: 3]</code>.</p>\n<p>Pass a reference to your <code>elemValue</code> function as the callback to your <code>.map()</code> method.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 50,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

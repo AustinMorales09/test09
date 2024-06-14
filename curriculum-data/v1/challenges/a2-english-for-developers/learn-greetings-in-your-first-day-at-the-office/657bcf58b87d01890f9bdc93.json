@@ -1,0 +1,88 @@
+{
+  "id": "657bcf58b87d01890f9bdc93",
+  "title": "Task 28",
+  "challengeType": 19,
+  "dashedName": "task-28",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Maria use to describe Tom's desk?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>The desk near the window</code></p>",
+        "feedback": "<p>Listen closely to the items Maria mentions.</p>"
+      },
+      {
+        "answer": "<p><code>The desk with a drawing tablet and a computer</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>The desk with a coffee mug on it</code></p>",
+        "feedback": "<p>Listen closely to the items Maria mentions.</p>"
+      },
+      {
+        "answer": "<p><code>The desk next to hers</code></p>",
+        "feedback": "<p>Listen closely to the items Maria mentions.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.75,
+        "finishTimestamp": 20.3
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 3.4,
+        "dialogue": {
+          "text": "Do you see the desk with a drawing tablet and a computer?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 3.9
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Describing objects or places with their characteristics or things related to them helps the listener to identify them easily.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "657b115008a62d41c0d7482f",
+  "title": "Task 5",
+  "challengeType": 19,
+  "dashedName": "task-5",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>web applications</code> refer to in the context of programming?</p>",
+    "answers": [
+      {
+        "answer": "<p>Mobile apps that are downloaded from app stores</p>",
+        "feedback": "<p>While mobile apps are a type of application, <code>web applications</code> specifically refer to those accessed through a web browser.</p>"
+      },
+      {
+        "answer": "<p>Programs that run on a web server and are accessed via a web browser</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Physical hardware used in networking</p>",
+        "feedback": "<p>Web applications are software, not physical hardware.</p>"
+      },
+      {
+        "answer": "<p>Websites that only provide information without user interaction</p>",
+        "feedback": "<p>Web applications are interactive and functional, not just informational.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Candidate",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.92,
+        "finishTimestamp": 16.22
+      }
+    },
+    "commands": [
+      {
+        "character": "Candidate",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Candidate",
+        "startTime": 1,
+        "finishTime": 7.3,
+        "dialogue": {
+          "text": "I was there for three years. I was responsible for developing web applications and maintaining the company's database.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Candidate",
+        "opacity": 0,
+        "startTime": 7.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In the context of programming and technology, the term <code>web applications</code> refers to software programs that run on a web server and are accessed through a web browser. They are an essential part of modern technology, allowing users to perform functions or access services over the internet.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

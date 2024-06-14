@@ -1,0 +1,69 @@
+{
+  "id": "612e89d254fe5d3df7d6693d",
+  "title": "Step 10",
+  "challengeType": 0,
+  "dashedName": "step-10",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>Piano</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div id=\"piano\">\n      <div class=\"keys\">\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>Piano</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div id=\"piano\">\n      <div class=\"keys\">\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "html {\n  box-sizing: border-box;\n}",
+      "error": null,
+      "seed": "html {\n  box-sizing: border-box;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>*, ::before, ::after</code> selector.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('*, ::before, ::after'));"
+    },
+    {
+      "text": "<p>Your <code>*, ::before, ::after</code> selector should have the <code>box-sizing</code> property set to <code>inherit</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('*, ::before, ::after')?.boxSizing === 'inherit');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you have reset the <code>html</code> box model, you need to pass that on to the elements within as well. To do this, you can set the <code>box-sizing</code> property to <code>inherit</code>, which will tell the targeted elements to use the same value as the parent element.</p>\n<p>You will also need to target the pseudo-elements, which are special keywords that follow a selector. The two pseudo-elements you will be using are the <code>::before</code> and <code>::after</code> pseudo-elements.</p>\n<p>The <code>::before</code> selector creates a pseudo-element which is the first child of the selected element, while the <code>::after</code> selector creates a pseudo-element which is the last child of the selected element. These pseudo-elements are often used to create cosmetic content, which you will see later in this project.</p>\n<p>For now, create a CSS selector to target all elements with <code>*</code>, and include the pseudo-elements with <code>::before</code> and <code>::after</code>. Set the <code>box-sizing</code> property to <code>inherit</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-responsive-web-design-by-building-a-piano",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

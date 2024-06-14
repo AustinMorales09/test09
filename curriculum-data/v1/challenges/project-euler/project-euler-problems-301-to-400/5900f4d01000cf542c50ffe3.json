@@ -1,0 +1,65 @@
+{
+  "id": "5900f4d01000cf542c50ffe3",
+  "title": "Problem 356: Largest roots of cubic polynomials",
+  "challengeType": 1,
+  "forumTopicId": 302016,
+  "dashedName": "problem-356-largest-roots-of-cubic-polynomials",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function rootsOfCubicPolynomials() {\n\n  return true;\n}\n\nrootsOfCubicPolynomials();",
+      "error": null,
+      "seed": "function rootsOfCubicPolynomials() {\n\n  return true;\n}\n\nrootsOfCubicPolynomials();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>rootsOfCubicPolynomials()</code> should return <code>28010159</code>.</p>",
+      "testString": "assert.strictEqual(rootsOfCubicPolynomials(), 28010159);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $a_n$ be the largest real root of a polynomial $g(x) = x^3 - 2^n \\times x^2 + n$.</p>\n<p>For example, $a_2 = 3.86619826\\ldots$</p>\n<p>Find the last eight digits of $\\displaystyle\\sum_{i = 1}^{30} \\lfloor {a_i}^{987654321}\\rfloor$.</p>\n<p><strong>Note:</strong> $\\lfloor a\\rfloor$ represents the floor function.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 55,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

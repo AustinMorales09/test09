@@ -1,0 +1,45 @@
+{
+  "id": "657e50dd1f6ff2a9873f9ff0",
+  "title": "Task 72",
+  "challengeType": 19,
+  "dashedName": "task-72",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>compliance</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>Ignoring work rules.</p>",
+        "feedback": "<p><code>Compliance</code> is about following rules, not ignoring them.</p>"
+      },
+      {
+        "answer": "<p>Following rules and doing what is required.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Choosing when to come to work.</p>",
+        "feedback": "<p><code>Compliance</code> involves sticking to set times, not choosing.</p>"
+      },
+      {
+        "answer": "<p>Deciding what tasks to do.</p>",
+        "feedback": "<p>It’s about following set tasks, not personal choice.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Compliance</code> means following rules and doing what is required in a job. It is about making sure we do things the right way.</p>\n<p>For example, <code>In our job, compliance with safety rules keeps everyone safe.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 75,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

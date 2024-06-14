@@ -1,0 +1,73 @@
+{
+  "id": "5d822fd413a79914d39e98d0",
+  "title": "Step 8",
+  "challengeType": 0,
+  "dashedName": "step-8",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        11
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />\n  </head>\n  <body>\n\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />\n  </head>\n  <body>\n\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  margin: 0;\n  overflow: hidden;\n}\n",
+      "error": null,
+      "seed": "* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  margin: 0;\n  overflow: hidden;\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a <code>div</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('div'));"
+    },
+    {
+      "text": "<p>Your <code>div</code> element should be within the <code>body</code>.</p>",
+      "testString": "assert(document.querySelector('div')?.parentElement?.localName === 'body');"
+    },
+    {
+      "text": "<p>Your <code>div</code> element should have a class of <code>background-buildings</code></p>",
+      "testString": "assert([...document.querySelector('div')?.classList]?.includes('background-buildings'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Create a <code>div</code> element in the <code>body</code> with a class of <code>background-buildings</code>. This will be a container for a group of buildings.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-variables-by-building-a-city-skyline",
+  "hasEditableBoundaries": true,
+  "order": 14,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

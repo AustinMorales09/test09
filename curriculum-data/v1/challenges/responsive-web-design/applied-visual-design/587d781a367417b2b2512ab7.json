@@ -1,0 +1,75 @@
+{
+  "id": "587d781a367417b2b2512ab7",
+  "title": "Use the strong Tag to Make Text Bold",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/ceJNBSb",
+  "forumTopicId": 301080,
+  "dashedName": "use-the-strong-tag-to-make-text-bold",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  h4 {\n    text-align: center;\n    height: 25px;\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    text-align: left;\n    color: black;\n  }\n  .fullCard {\n    width: 245px;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n  .cardText {\n    margin-bottom: 30px;\n  }\n</style>\n<div class=\"fullCard\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Google</h4>\n      <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>",
+      "error": null,
+      "seed": "<style>\n  h4 {\n    text-align: center;\n    height: 25px;\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    text-align: left;\n    color: black;\n  }\n  .fullCard {\n    width: 245px;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n  .cardText {\n    margin-bottom: 30px;\n  }\n</style>\n<div class=\"fullCard\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Google</h4>\n      <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  h4 {\n    text-align: center;\n    height: 25px;\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    text-align: left;\n    color: black;\n  }\n  .fullCard {\n    width: 245px;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n  .cardText {\n    margin-bottom: 30px;\n  }\n</style>\n<div class=\"fullCard\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Google</h4>\n      <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at <strong>Stanford University</strong>.</p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>",
+        "error": null,
+        "seed": "<style>\n  h4 {\n    text-align: center;\n    height: 25px;\n  }\n  p {\n    text-align: justify;\n  }\n  .links {\n    text-align: left;\n    color: black;\n  }\n  .fullCard {\n    width: 245px;\n    border: 1px solid #ccc;\n    border-radius: 5px;\n    margin: 10px 5px;\n    padding: 4px;\n  }\n  .cardContent {\n    padding: 10px;\n  }\n  .cardText {\n    margin-bottom: 30px;\n  }\n</style>\n<div class=\"fullCard\">\n  <div class=\"cardContent\">\n    <div class=\"cardText\">\n      <h4>Google</h4>\n      <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at <strong>Stanford University</strong>.</p>\n    </div>\n    <div class=\"cardLinks\">\n      <a href=\"https://en.wikipedia.org/wiki/Larry_Page\" target=\"_blank\" class=\"links\">Larry Page</a><br><br>\n      <a href=\"https://en.wikipedia.org/wiki/Sergey_Brin\" target=\"_blank\" class=\"links\">Sergey Brin</a>\n    </div>\n  </div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should add one <code>strong</code> tag to the markup.</p>",
+      "testString": "assert($('strong').length == 1);"
+    },
+    {
+      "text": "<p>The <code>strong</code> tag should be inside the <code>p</code> tag.</p>",
+      "testString": "assert($('p').children('strong').length == 1);"
+    },
+    {
+      "text": "<p>The <code>strong</code> tag should wrap around the words <code>Stanford University</code>.</p>",
+      "testString": "assert(\n  $('strong')\n    .text()\n    .match(/^Stanford University\\.?$/gi)\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To make text bold, you can use the <code>strong</code> tag. This is often used to draw attention to text and symbolize that it is important. With the <code>strong</code> tag, the browser applies the CSS of <code>font-weight: bold;</code> to the element.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Wrap a <code>strong</code> tag around the text <code>Stanford University</code> inside the <code>p</code> tag (do not include the period).</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-visual-design",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

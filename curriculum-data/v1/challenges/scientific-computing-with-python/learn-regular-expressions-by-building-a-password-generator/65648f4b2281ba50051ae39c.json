@@ -1,0 +1,53 @@
+{
+  "id": "65648f4b2281ba50051ae39c",
+  "title": "Step 17",
+  "challengeType": 20,
+  "dashedName": "step-17",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        11,
+        15
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import secrets\nimport string\n\ndef generate_password(length):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n    password = ''\n    # Generate password\n    ",
+      "error": null,
+      "seed": "import secrets\nimport string\n\ndef generate_password(length):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n    password = ''\n    # Generate password\n    "
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should write a <code>for</code> loop that iterates over <code>range(length)</code>.</p>",
+      "testString": "({ test: () =>\n  {\n    const transformedCode = code.replace(/\\r/g, \"\");\n    const generate_pw = __helpers.python.getDef(\"\\n\"+transformedCode, \"generate_password\");\n    const {function_body} = generate_pw;    \n    assert(function_body.match(/for\\s+i\\s+in\\s+range\\s*\\(\\s*length\\s*\\)\\s*:/));\n  }\n})"
+    },
+    {
+      "text": "<p>You should use the <code>+=</code> operator to add a random character from <code>all_characters</code> to the current value of <code>password</code>.</p>",
+      "testString": "({ test: () =>\n  {\n    const generate_pwd = __helpers.python.getDef(code, \"generate_password\");\n    const {function_body} = generate_pwd;    \n    assert(function_body.match(/^(\\s*)for\\s+i\\s+in\\s+range\\s*\\(\\s*length\\s*\\)\\s*:\\s*^\\1\\1password\\s*\\+=\\s*secrets\\.choice\\s*\\(\\s*all_characters\\s*\\)/m));\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Next, write a <code>for</code> loop with <code>i</code> as the loop variable. Use the <code>range()</code> function to iterate up to the value of the <code>length</code>.</p>\n<p>Inside the loop, use the addition assignment operator to add a random character from <code>all_characters</code> to the current value of <code>password</code>. Use the <code>choice()</code> function from the <code>secrets</code> module for that.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

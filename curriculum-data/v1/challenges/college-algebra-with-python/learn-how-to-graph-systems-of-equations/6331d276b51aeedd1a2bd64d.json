@@ -1,0 +1,46 @@
+{
+  "id": "6331d276b51aeedd1a2bd64d",
+  "title": "Graphing Systems of Equations: Extra",
+  "challengeType": 15,
+  "videoId": "q8ad1tTFqns",
+  "dashedName": "graphing-systems-of-equations-extra",
+  "solutions": [],
+  "question": {
+    "text": "<p>If you want to create an interactive plot with a slider to zoom in and out, where does most of the graphing code appear?</p>",
+    "answers": [
+      {
+        "answer": "<p>Within the interactive() function</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>In the slider</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Within the function that the interactive() calls</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Before all of the functions</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This next video will give you a deeper dive into what you can do with graphing systems of equations, graphing inequalities, and shading above or below the line. You will also see how to download the graph to your computer or your Google Drive.</p>\n<p>Here is the <a href=\"https://colab.research.google.com/drive/1m5oG62NzUHRzBghGCPRfr1SzvbywRWPV?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Colab notebook used in this video.</a></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-graph-systems-of-equations",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

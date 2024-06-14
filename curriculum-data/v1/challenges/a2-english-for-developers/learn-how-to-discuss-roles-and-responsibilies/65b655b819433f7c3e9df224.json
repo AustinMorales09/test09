@@ -1,0 +1,79 @@
+{
+  "id": "65b655b819433f7c3e9df224",
+  "title": "Task 26",
+  "challengeType": 22,
+  "dashedName": "task-26",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ _ that she's strict but fair.</p>",
+    "blanks": [
+      {
+        "answer": "Word",
+        "feedback": "<p>This is the information or rumor being shared. The first letter should be upperclass.</p>"
+      },
+      {
+        "answer": "is",
+        "feedback": "<p>This verb connects the information to what is being said about it.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 30.92,
+        "finishTimestamp": 32.72
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 2.8,
+        "dialogue": {
+          "text": "Word is that she's strict but fair.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 3.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>word is</code> is used when sharing information or rumors you've heard from others. It's like saying <code>people say</code> or <code>I've heard</code>.</p>\n<p>For example, if someone says, <code>Word is that the new update will make the program faster</code>, they mean they've heard the new update will improve the program's speed.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

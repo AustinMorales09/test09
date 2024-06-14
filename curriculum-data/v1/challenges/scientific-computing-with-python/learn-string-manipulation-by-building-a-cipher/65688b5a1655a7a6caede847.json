@@ -1,0 +1,53 @@
+{
+  "id": "65688b5a1655a7a6caede847",
+  "title": "Step 31",
+  "challengeType": 20,
+  "dashedName": "step-31",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\ntext[0] = 'C'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n\nfor char in text.lower():\n    index = alphabet.find(char)\n    print(char, index)\n    new_index = index + shift\n",
+      "error": null,
+      "seed": "text = 'Hello World'\ntext[0] = 'C'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n\nfor char in text.lower():\n    index = alphabet.find(char)\n    print(char, index)\n    new_index = index + shift\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have <code>text[0] = 'C'</code> in your code.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.isFalse( /text\\s*\\[\\s*0\\s*\\]\\s*\\=\\s*(\"|')\\w\\1/.test(commentless_code));"
+    },
+    {
+      "text": "<p>You should reassign <code>text</code> the string <code>'Albatross'</code>. Do not modify <code>text = 'Hello World'</code>.</p>",
+      "testString": "({test: () => {\n    const commentless_code = __helpers.python.removeComments(code);\n    assert.match(commentless_code.replace(/\\r/g, ''), /text\\s*=\\s*(\"|')Hello World\\1\\s+text\\s*=\\s*(\"|')Albatross\\2/m);\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When you try to change the individual characters of a string as you did in the previous step, you get a <code>TypeError</code>, which occurs when an object of inappropriate type is used in your code.</p>\n<p>As you can see from the error message, strings do not support item assignment, because they are immutable. However, a variable can be reassigned another string:</p>\n<pre><code class=\"language-py\">message = 'Hello World'\nmessage = 'Hello there!'\n</code></pre>\n<p>Delete the <code>text[0]</code> line and reassign <code>text</code> the string <code>'Albatross'</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

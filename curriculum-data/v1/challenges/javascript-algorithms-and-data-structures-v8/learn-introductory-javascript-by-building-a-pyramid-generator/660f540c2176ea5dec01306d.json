@@ -1,0 +1,75 @@
+{
+  "id": "660f540c2176ea5dec01306d",
+  "title": "Step 115",
+  "challengeType": 1,
+  "dashedName": "step-115",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\nlet inverted = true;\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\nfor (let i = 1; i <= count; i++) {\n  if (inverted) {\n    rows.unshift(padRow(i, count));\n  } else {\n    rows.push(padRow(i, count));\n  }\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\nlet inverted = true;\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\nfor (let i = 1; i <= count; i++) {\n  if (inverted) {\n    rows.unshift(padRow(i, count));\n  } else {\n    rows.push(padRow(i, count));\n  }\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const character = \"!\";\nconst count = 10;\nconst rows = [];\nlet inverted = false;\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\nfor (let i = 1; i <= count; i++) {\n  if (inverted) {\n    rows.unshift(padRow(i, count));\n  } else {\n    rows.push(padRow(i, count));\n  }\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+        "error": null,
+        "seed": "const character = \"!\";\nconst count = 10;\nconst rows = [];\nlet inverted = false;\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\nfor (let i = 1; i <= count; i++) {\n  if (inverted) {\n    rows.unshift(padRow(i, count));\n  } else {\n    rows.push(padRow(i, count));\n  }\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should set <code>character</code> to <code>\"!\"</code>.</p>",
+      "testString": "assert.equal(character, \"!\");"
+    },
+    {
+      "text": "<p>You should set <code>count</code> to <code>10</code>.</p>",
+      "testString": "assert.equal(count, 10);"
+    },
+    {
+      "text": "<p>You should set <code>inverted</code> to <code>false</code>.</p>",
+      "testString": "assert.equal(inverted, false);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Nice work! Experiment with different values for your <code>character</code>, <code>count</code>, and <code>inverted</code> variables.</p>\n<p>When you are ready to move on to your next project, set <code>character</code> to <code>\"!\"</code>, <code>count</code> to <code>10</code>, and <code>inverted</code> to <code>false</code> to continue.</p>\n<p>Congratulations on completing your first JavaScript project!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 114,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

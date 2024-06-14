@@ -1,0 +1,88 @@
+{
+  "id": "657e1d9d0f894eafabc6d23c",
+  "title": "Task 24",
+  "challengeType": 19,
+  "dashedName": "task-24",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why does Sophie use a time management app?</p>",
+    "answers": [
+      {
+        "answer": "<p>To track how she spends her time.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To communicate with her team.</p>",
+        "feedback": "<p>Sophie mentions time tracking, not team communication.</p>"
+      },
+      {
+        "answer": "<p>To play games during breaks.</p>",
+        "feedback": "<p>The app is mentioned in the context of managing time, not for entertainment.</p>"
+      },
+      {
+        "answer": "<p>To find new projects to work on.</p>",
+        "feedback": "<p>Finding new projects is not mentioned as a use for the app.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 54.68,
+        "finishTimestamp": 57.7
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.02,
+        "dialogue": {
+          "text": "I use this time management app to track how I spend my time.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.52
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Discussing tools or methods for managing tasks is common in professional settings.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

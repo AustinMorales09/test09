@@ -1,0 +1,49 @@
+{
+  "id": "657f456223b8c1187b461987",
+  "title": "Step 18",
+  "challengeType": 20,
+  "dashedName": "step-18",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        13,
+        18
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    # snake_cased_char_list = []\n    # for char in pascal_or_camel_cased_string:\n    #     if char.isupper():\n    #       converted_character = '_' + char.lower()\n    #       snake_cased_char_list.append(converted_character)\n    #     else:\n    #         snake_cased_char_list.append(char)\n    # snake_cased_string = ''.join(snake_cased_char_list)\n    # clean_snake_cased_string = snake_cased_string.strip('_')\n\n    # return clean_snake_cased_string\n\n    snake_cased_char_list = [\n        '_' + char.lower() if char.isupper()\n        \n    ]\n\n\n\ndef main():\n    print(convert_to_snake_case('aLongAndComplexString'))\n\nif __name__ == '__main__':\n    main()",
+      "error": null,
+      "seed": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    # snake_cased_char_list = []\n    # for char in pascal_or_camel_cased_string:\n    #     if char.isupper():\n    #       converted_character = '_' + char.lower()\n    #       snake_cased_char_list.append(converted_character)\n    #     else:\n    #         snake_cased_char_list.append(char)\n    # snake_cased_string = ''.join(snake_cased_char_list)\n    # clean_snake_cased_string = snake_cased_string.strip('_')\n\n    # return clean_snake_cased_string\n\n    snake_cased_char_list = [\n        '_' + char.lower() if char.isupper()\n        \n    ]\n\n\n\ndef main():\n    print(convert_to_snake_case('aLongAndComplexString'))\n\nif __name__ == '__main__':\n    main()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add <code>else char</code> after <code>'_' + char.lower() if char.isupper()</code> within the square braces of <code>snake_cased_char_list</code>.</p>",
+      "testString": "const transformedCode = code.replace(/\\r/g, \"\");\nconst convert_to_snake_case = __helpers.python.getDef(\"\\n\" + transformedCode, \"convert_to_snake_case\");\nconst { function_body } = convert_to_snake_case;\n\nassert.match(function_body, / +snake_cased_char_list\\s*=\\s*\\[\\s*(\"|')_\\1\\s*\\+\\s*char\\.lower\\(\\s*\\)\\s+if\\s+char\\.isupper\\(\\s*\\)\\s*else\\s+char\\s*\\]/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When you start a list comprehension with an <code>if</code> statement like this, Python requires you to also add an <code>else</code> clause to the expression.</p>\n<pre><code class=\"language-py\">snake_cased_char_list = [\n    '_' + char.lower() if char.isupper()\n    else char\n]\n</code></pre>\n<p>Python will interpret this updated expression as \"append <code>'_' + char.lower()</code> to the list if <code>char</code> is in uppercase, append <code>char</code> as is otherwise\" and this covers the case for both the capital and lowercase letters in the input string.</p>\n<p>Add an <code>else</code> clause inside the pair of square braces.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-list-comprehension-by-building-a-case-converter-program",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

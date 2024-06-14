@@ -1,0 +1,53 @@
+{
+  "id": "6557743527cb92a06417ea97",
+  "title": "Step 26",
+  "challengeType": 20,
+  "dashedName": "step-26",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        10
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\n\ndef shortest_path(graph, start):\n    unvisited = []",
+      "error": null,
+      "seed": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\n\ndef shortest_path(graph, start):\n    unvisited = []"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a <code>for</code> loop to iterate over <code>graph</code> inside the <code>shortest_path</code> function.</p>",
+      "testString": "({ test: () =>  {\n    const commentless_code = __helpers.python.removeComments(code);\n    const {function_body} = __helpers.python.getDef(commentless_code, \"shortest_path\");    \n    assert(function_body.match(/^\\s*for\\s+\\w+\\s+in\\s+graph\\s*:/m));\n  }\n})"
+    },
+    {
+      "text": "<p>You should append each node to <code>unvisited</code> inside your <code>for</code> loop.</p>",
+      "testString": "({ test: () =>  {\n    const commentless_code = __helpers.python.removeComments(code);\n    const block_regex = /for\\s+(\\w+)\\s+in\\s+graph\\s*/;\n    const {block_body} = __helpers.python.getBlock(commentless_code, block_regex);\n    const loop_condition = commentless_code.match(block_regex);\n    const regex = new RegExp(`^\\\\s+unvisited\\\\.append\\\\s*\\\\(\\\\s*${loop_condition[1]}\\\\s*\\\\)`, \"m\");\n    assert(block_body.match(regex));\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Create a <code>for</code> loop to iterate over your graph, and use the <code>.append()</code> method to add each node to the end of the <code>unvisited</code> list.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

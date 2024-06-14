@@ -1,0 +1,82 @@
+{
+  "id": "5a24c314108439a4d403617d",
+  "title": "Use the Lifecycle Method componentDidMount",
+  "challengeType": 6,
+  "forumTopicId": 301422,
+  "dashedName": "use-the-lifecycle-method-componentdidmount",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<MyComponent />, document.getElementById('root'));",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      activeUsers: null\n    };\n  }\n  componentDidMount() {\n    setTimeout(() => {\n      this.setState({\n        activeUsers: 1273\n      });\n    }, 2500);\n  }\n  render() {\n    return (\n      <div>\n        {/* Change code below this line */}\n        <h1>Active Users: </h1>\n        {/* Change code above this line */}\n      </div>\n    );\n  }\n}",
+      "error": null,
+      "seed": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      activeUsers: null\n    };\n  }\n  componentDidMount() {\n    setTimeout(() => {\n      this.setState({\n        activeUsers: 1273\n      });\n    }, 2500);\n  }\n  render() {\n    return (\n      <div>\n        {/* Change code below this line */}\n        <h1>Active Users: </h1>\n        {/* Change code above this line */}\n      </div>\n    );\n  }\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      activeUsers: null\n    };\n  }\n  componentDidMount() {\n    setTimeout(() => {\n      this.setState({\n        activeUsers: 1273\n      });\n    }, 2500);\n  }\n  render() {\n    return (\n      <div>\n        <h1>Active Users: {this.state.activeUsers}</h1>\n      </div>\n    );\n  }\n}",
+        "error": null,
+        "seed": "class MyComponent extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      activeUsers: null\n    };\n  }\n  componentDidMount() {\n    setTimeout(() => {\n      this.setState({\n        activeUsers: 1273\n      });\n    }, 2500);\n  }\n  render() {\n    return (\n      <div>\n        <h1>Active Users: {this.state.activeUsers}</h1>\n      </div>\n    );\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>MyComponent</code> should render a <code>div</code> element which wraps an <code>h1</code> tag.</p>",
+      "testString": "assert(\n  (() => {\n    const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n    return (\n      mockedComponent.find('div').length === 1 &&\n      mockedComponent.find('h1').length === 1\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p>Component state should be updated with a timeout function in <code>componentDidMount</code>.</p>",
+      "testString": "assert(\n  (() => {\n    const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n    return new RegExp('setTimeout(.|\\n)+setState(.|\\n)+activeUsers').test(\n      String(mockedComponent.instance().componentDidMount)\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>h1</code> tag should render the <code>activeUsers</code> value from <code>MyComponent</code>'s state.</p>",
+      "testString": "(() => {\n  const mockedComponent = Enzyme.mount(React.createElement(MyComponent));\n  const first = () => {\n    mockedComponent.setState({ activeUsers: 1237 });\n    return mockedComponent.find('h1').text();\n  };\n  const second = () => {\n    mockedComponent.setState({ activeUsers: 1000 });\n    return mockedComponent.find('h1').text();\n  };\n  assert(new RegExp('1237').test(first()) && new RegExp('1000').test(second()));\n})();"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Most web developers, at some point, need to call an API endpoint to retrieve data. If you're working with React, it's important to know where to perform this action.</p>\n<p>The best practice with React is to place API calls or any calls to your server in the lifecycle method <code>componentDidMount()</code>. This method is called after a component is mounted to the DOM. Any calls to <code>setState()</code> here will trigger a re-rendering of your component. When you call an API in this method, and set your state with the data that the API returns, it will automatically trigger an update once you receive the data.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>There is a mock API call in <code>componentDidMount()</code>. It sets state after 2.5 seconds to simulate calling a server to retrieve data. This example requests the current total active users for a site. In the render method, render the value of <code>activeUsers</code> in the <code>h1</code> after the text <code>Active Users:</code>. Watch what happens in the preview, and feel free to change the timeout to see the different effects.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 32,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

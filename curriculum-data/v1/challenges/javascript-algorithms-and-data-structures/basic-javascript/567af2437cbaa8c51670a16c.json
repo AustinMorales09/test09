@@ -1,0 +1,86 @@
+{
+  "id": "567af2437cbaa8c51670a16c",
+  "title": "Testing Objects for Properties",
+  "challengeType": 1,
+  "forumTopicId": 18324,
+  "dashedName": "testing-objects-for-properties",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function checkObj(obj, checkProp) {\n  // Only change code below this line\n  return \"Change Me!\";\n  // Only change code above this line\n}",
+      "error": null,
+      "seed": "function checkObj(obj, checkProp) {\n  // Only change code below this line\n  return \"Change Me!\";\n  // Only change code above this line\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function checkObj(obj, checkProp) {\n  if(obj.hasOwnProperty(checkProp)) {\n    return obj[checkProp];\n  } else {\n    return \"Not Found\";\n  }\n}",
+        "error": null,
+        "seed": "function checkObj(obj, checkProp) {\n  if(obj.hasOwnProperty(checkProp)) {\n    return obj[checkProp];\n  } else {\n    return \"Not Found\";\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>checkObj({gift: \"pony\", pet: \"kitten\", bed: \"sleigh\"}, \"gift\")</code> should return the string <code>pony</code>.</p>",
+      "testString": "assert(\n  checkObj({ gift: 'pony', pet: 'kitten', bed: 'sleigh' }, 'gift') === 'pony'\n);"
+    },
+    {
+      "text": "<p><code>checkObj({gift: \"pony\", pet: \"kitten\", bed: \"sleigh\"}, \"pet\")</code> should return the string <code>kitten</code>.</p>",
+      "testString": "assert(\n  checkObj({ gift: 'pony', pet: 'kitten', bed: 'sleigh' }, 'pet') === 'kitten'\n);"
+    },
+    {
+      "text": "<p><code>checkObj({gift: \"pony\", pet: \"kitten\", bed: \"sleigh\"}, \"house\")</code> should return the string <code>Not Found</code>.</p>",
+      "testString": "assert(\n  checkObj({ gift: 'pony', pet: 'kitten', bed: 'sleigh' }, 'house') ===\n    'Not Found'\n);"
+    },
+    {
+      "text": "<p><code>checkObj({city: \"Seattle\"}, \"city\")</code> should return the string <code>Seattle</code>.</p>",
+      "testString": "assert(checkObj({ city: 'Seattle' }, 'city') === 'Seattle');"
+    },
+    {
+      "text": "<p><code>checkObj({city: \"Seattle\"}, \"district\")</code> should return the string <code>Not Found</code>.</p>",
+      "testString": "assert(checkObj({ city: 'Seattle' }, 'district') === 'Not Found');"
+    },
+    {
+      "text": "<p><code>checkObj({pet: \"kitten\", bed: \"sleigh\"}, \"gift\")</code> should return the string <code>Not Found</code>.</p>",
+      "testString": "assert(checkObj({ pet: 'kitten', bed: 'sleigh' }, 'gift') === 'Not Found');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To check if a property on a given object exists or not, you can use the <code>.hasOwnProperty()</code> method. <code>someObject.hasOwnProperty(someProperty)</code> returns <code>true</code> or <code>false</code> depending on if the property is found on the object or not.</p>\n<p><strong>Example</strong></p>\n<pre><code class=\"language-js\">function checkForProperty(object, property) {\n  return object.hasOwnProperty(property);\n}\n\ncheckForProperty({ top: 'hat', bottom: 'pants' }, 'top'); // true\ncheckForProperty({ top: 'hat', bottom: 'pants' }, 'middle'); // false\n</code></pre>\n<p>The first <code>checkForProperty</code> function call returns <code>true</code>, while the second returns <code>false</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Modify the function <code>checkObj</code> to test if the object passed to the function parameter <code>obj</code> contains the specific property passed to the function parameter <code>checkProp</code>. If the property passed to <code>checkProp</code> is found on <code>obj</code>, return that property's value. If not, return <code>Not Found</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 90,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

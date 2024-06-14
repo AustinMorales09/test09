@@ -1,0 +1,65 @@
+{
+  "id": "5900f54a1000cf542c51005c",
+  "title": "Problem 477: Number Sequence Game",
+  "challengeType": 1,
+  "forumTopicId": 302154,
+  "dashedName": "problem-477-number-sequence-game",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function numberSequenceGame() {\n\n  return true;\n}\n\nnumberSequenceGame();",
+      "error": null,
+      "seed": "function numberSequenceGame() {\n\n  return true;\n}\n\nnumberSequenceGame();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>numberSequenceGame()</code> should return <code>25044905874565164</code>.</p>",
+      "testString": "assert.strictEqual(numberSequenceGame(), 25044905874565164);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The number sequence game starts with a sequence $S$ of $N$ numbers written on a line.</p>\n<p>Two players alternate turns. At his turn, a player must select and remove either the first or the last number remaining in the sequence.</p>\n<p>The player score is the sum of all the numbers he has taken. Each player attempts to maximize his own sum.</p>\n<p>If $N = 4$ and $S = \\{1, 2, 10, 3\\}$, then each player maximizes his score as follows:</p>\n<ul>\n<li>Player 1: removes the first number (1)</li>\n<li>Player 2: removes the last number from the remaining sequence (3)</li>\n<li>Player 1: removes the last number from the remaining sequence (10)</li>\n<li>Player 2: removes the remaining number (2)</li>\n</ul>\n<p>Player 1 score is $1 + 10 = 11$.</p>\n<p>Let $F(N)$ be the score of player 1 if both players follow the optimal strategy for the sequence $S = \\{s_1, s_2, \\ldots, s_N\\}$ defined as:</p>\n<ul>\n<li>$s_1 = 0$</li>\n<li>$s_{i + 1} = ({s_i}^2 + 45)$ modulo $1\\,000\\,000\\,007$</li>\n</ul>\n<p>The sequence begins with $S = \\{0, 45, 2\\,070, 4\\,284\\,945, 753\\,524\\,550, 478\\,107\\,844, 894\\,218\\,625, \\ldots\\}$.</p>\n<p>You are given $F(2) = 45$, $F(4) = 4\\,284\\,990$, $F(100) = 26\\,365\\,463\\,243$, $F(104) = 2\\,495\\,838\\,522\\,951$.</p>\n<p>Find $F({10}^8)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 76,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

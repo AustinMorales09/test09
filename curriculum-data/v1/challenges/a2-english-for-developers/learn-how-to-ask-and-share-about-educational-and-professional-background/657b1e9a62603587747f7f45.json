@@ -1,0 +1,88 @@
+{
+  "id": "657b1e9a62603587747f7f45",
+  "title": "Task 47",
+  "challengeType": 19,
+  "dashedName": "task-47",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Brian want to know from Sophie?</p>",
+    "answers": [
+      {
+        "answer": "<p>If Sophie only did tech things</p>",
+        "feedback": "<p>Brian knows Sophie's time was not all about tech.</p>"
+      },
+      {
+        "answer": "<p>If Sophie had a good time, even if it was not all about tech</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>What tech things Sophie learned</p>",
+        "feedback": "<p>Brian is asking about Sophie's feelings, not what she learned.</p>"
+      },
+      {
+        "answer": "<p>If Sophie will do more tech things later</p>",
+        "feedback": "<p>Brian is asking about the past, not what Sophie will do.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 31.8,
+        "finishTimestamp": 36.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.22,
+        "dialogue": {
+          "text": "I see. Did you enjoy your time there, even if it wasn't entirely tech-focused?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 5.72
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you want to ask someone about their experiences related to a past event, you can say <code>Did you enjoy...?</code></p>\n<p>This is a simple way to ask about someone's preferences or satisfaction.</p>\n<p><code>Even if</code> is used to introduce a condition or situation that contrasts with the main part of the question or statement. It helps to provide more context or specify conditions under which something occurred or was felt.</p>\n<p>For example, <code>Did you enjoy your vacation, even if it rained every day?</code> adds a contrasting condition to the question about the vacation.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 49,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

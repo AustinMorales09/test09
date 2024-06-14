@@ -1,0 +1,83 @@
+{
+  "id": "663316fdcce39d9144ae40cd",
+  "title": "Task 33",
+  "challengeType": 22,
+  "dashedName": "task-33",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Got it. So, that means I should read the function names and comments to know _ _ functions _.</p>",
+    "blanks": [
+      {
+        "answer": "what",
+        "feedback": "<p>This word introduces a clause, leading to information that explains the activities or responsibilities of these functions.</p>"
+      },
+      {
+        "answer": "these",
+        "feedback": "<p>This pronoun refers back to a specific group of functions previously discussed or understood from the context.</p>"
+      },
+      {
+        "answer": "do",
+        "feedback": "<p>This verb completes the indirect statement, indicating the actions performed by the functions.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 20.68,
+        "finishTimestamp": 25.86
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 6.18,
+        "dialogue": {
+          "text": "Got it. So that means I should read the function names and comments to what these functions do.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 6.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>what</code> can be used to introduce a clause. It typically introduces noun clauses, providing more information about a noun or acting as a part of a statement.</p>\n<p>A noun clause is a clause that functions as a noun within a larger sentence. It typically includes a subject and a verb, and can act as the subject, object, or complement in a sentence.</p>\n<p>For example, in the sentence <code>She doesn't know what to buy</code>, <code>what to buy</code> is a clause where <code>what</code> stands for the thing that she needs to decide on purchasing.</p>\n<p>Another example is <code>Tell me what you heard.</code> <code>What you heard</code> is the clause, with <code>what</code> explaining the specific things that were heard, acting as the object of the verb <code>heard</code>.</p>\n<p><code>These</code> is a plural demonstrative pronoun refers to specific items previously mentioned or understood from the context.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

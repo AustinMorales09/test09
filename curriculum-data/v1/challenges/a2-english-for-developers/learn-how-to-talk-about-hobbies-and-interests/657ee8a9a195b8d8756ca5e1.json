@@ -1,0 +1,75 @@
+{
+  "id": "657ee8a9a195b8d8756ca5e1",
+  "title": "Task 54",
+  "challengeType": 22,
+  "dashedName": "task-54",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I've been a collector _ I was 8 or 9 years old.</p>",
+    "blanks": [
+      {
+        "answer": "since",
+        "feedback": "<p>The preposition expresses the starting point of an action or situation in this context.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 20.72,
+        "finishTimestamp": 23.24
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.52,
+        "dialogue": {
+          "text": "I've been a collector since I was 8 or 9 years old.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In the Present Perfect Tense, time periods are often indicated using the prepositions <code>for</code> or <code>since</code>. <code>For</code> expresses the duration of an action or situation, while <code>since</code> indicates the starting point of the action or situation. In this dialogue, Sarah mentions the time period to express when her passion for collecting started.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 56,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

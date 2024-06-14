@@ -1,0 +1,78 @@
+{
+  "id": "594810f028c0303b75339ace",
+  "title": "Accumulator factory",
+  "challengeType": 1,
+  "forumTopicId": 302222,
+  "dashedName": "accumulator-factory",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const testFn = typeof accumulator(3) === 'function' && accumulator(3);\nif (testFn) {\n  testFn(-4);\n  testFn(1.5);\n}",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function accumulator(sum) {\n\n}",
+      "error": null,
+      "seed": "function accumulator(sum) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function accumulator(sum) {\n  return function(n) {\n    return sum += n;\n  };\n}",
+        "error": null,
+        "seed": "function accumulator(sum) {\n  return function(n) {\n    return sum += n;\n  };\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>accumulator</code> should be a function.</p>",
+      "testString": "assert(typeof accumulator === 'function');"
+    },
+    {
+      "text": "<p><code>accumulator(0)</code> should return a function.</p>",
+      "testString": "assert(typeof accumulator(0) === 'function');"
+    },
+    {
+      "text": "<p><code>accumulator(0)(2)</code> should return a number.</p>",
+      "testString": "assert(typeof accumulator(0)(2) === 'number');"
+    },
+    {
+      "text": "<p>Passing in the values 3, -4, 1.5, and 5 should return 5.5.</p>",
+      "testString": "assert(testFn(5) === 5.5);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A problem posed by Paul Graham is that of creating a function that takes a single (numeric) argument and which returns another function that is an accumulator. The returned accumulator function in turn also takes a single numeric argument, and returns the sum of all the numeric values passed in so far to that accumulator (including the initial value passed when the accumulator was created).</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Create a function that takes a number $n$ and generates accumulator functions that return the sum of every number ever passed to them.</p>\n<p><strong>Rules:</strong></p>\n<p>Do not use global variables.</p>\n<p><strong>Hint:</strong></p>\n<p>Closures save outer state.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,48 @@
+{
+  "id": "6331d2b0b51aeedd1a2bd655",
+  "title": "Solving Systems",
+  "challengeType": 15,
+  "videoId": "CNGUQzXfC6c",
+  "dashedName": "solving-systems",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following can SymPy do that matplotlib can't do?</p>",
+    "answers": [
+      {
+        "answer": "<p>Solve for a variable</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Display an x-y axis</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Graph an equation or two</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Show tic marks on the graph</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [
+    "<p>Add code to your notebook to solve and graph systems of equations</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The first video will show you the math behind solving a system of two equations without graphing, how you can factor an equation, and solve for a certain variable.</p>\n<p>Here is the <a href=\"https://colab.research.google.com/drive/1UfyQiXCedAAv5kcqgi_pGYV-HkSgN8YD?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Colab notebook used in this video.</a></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-solve-systems-of-equations",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

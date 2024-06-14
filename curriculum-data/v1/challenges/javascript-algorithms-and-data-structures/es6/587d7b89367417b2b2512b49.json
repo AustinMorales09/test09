@@ -1,0 +1,78 @@
+{
+  "id": "587d7b89367417b2b2512b49",
+  "title": "Use Destructuring Assignment to Assign Variables from Objects",
+  "challengeType": 1,
+  "forumTopicId": 301215,
+  "dashedName": "use-destructuring-assignment-to-assign-variables-from-objects",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const HIGH_TEMPERATURES = {\n  yesterday: 75,\n  today: 77,\n  tomorrow: 80\n};\n\n// Only change code below this line\n  \nconst highToday = HIGH_TEMPERATURES.today;\nconst highTomorrow = HIGH_TEMPERATURES.tomorrow; \n\n// Only change code above this line",
+      "error": null,
+      "seed": "const HIGH_TEMPERATURES = {\n  yesterday: 75,\n  today: 77,\n  tomorrow: 80\n};\n\n// Only change code below this line\n  \nconst highToday = HIGH_TEMPERATURES.today;\nconst highTomorrow = HIGH_TEMPERATURES.tomorrow; \n\n// Only change code above this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const HIGH_TEMPERATURES = {\n  yesterday: 75,\n  today: 77,\n  tomorrow: 80\n};\n\nconst { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;",
+        "error": null,
+        "seed": "const HIGH_TEMPERATURES = {\n  yesterday: 75,\n  today: 77,\n  tomorrow: 80\n};\n\nconst { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove the ES5 assignment syntax.</p>",
+      "testString": "assert(\n  !__helpers.removeJSComments(code).match(/highToday = HIGH_TEMPERATURES\\.today/g) &&\n    !__helpers.removeJSComments(code).match(/highTomorrow = HIGH_TEMPERATURES\\.tomorrow/g)\n);"
+    },
+    {
+      "text": "<p>You should use destructuring to create the <code>highToday</code> variable.</p>",
+      "testString": "assert(\n  __helpers.removeJSComments(code).match(\n    /(var|const|let)\\s*{\\s*(today\\s*:\\s*highToday[^}]*|[^,]*,\\s*today\\s*:\\s*highToday\\s*)}\\s*=\\s*HIGH_TEMPERATURES(;|\\s+|\\/\\/)/g\n  )\n);"
+    },
+    {
+      "text": "<p>You should use destructuring to create the <code>highTomorrow</code> variable.</p>",
+      "testString": "assert(\n  __helpers.removeJSComments(code).match(\n    /(var|const|let)\\s*{\\s*(tomorrow\\s*:\\s*highTomorrow[^}]*|[^,]*,\\s*tomorrow\\s*:\\s*highTomorrow\\s*)}\\s*=\\s*HIGH_TEMPERATURES(;|\\s+|\\/\\/)/g\n  )\n);"
+    },
+    {
+      "text": "<p><code>highToday</code> should be equal to <code>77</code> and <code>highTomorrow</code> should be equal to <code>80</code>.</p>",
+      "testString": "assert(highToday === 77 && highTomorrow === 80);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Destructuring allows you to assign a new variable name when extracting values. You can do this by putting the new name after a colon when assigning the value.</p>\n<p>Using the same object from the last example:</p>\n<pre><code class=\"language-js\">const user = { name: 'John Doe', age: 34 };\n</code></pre>\n<p>Here's how you can give new variable names in the assignment:</p>\n<pre><code class=\"language-js\">const { name: userName, age: userAge } = user;\n</code></pre>\n<p>You may read it as \"get the value of <code>user.name</code> and assign it to a new variable named <code>userName</code>\" and so on. The value of <code>userName</code> would be the string <code>John Doe</code>, and the value of <code>userAge</code> would be the number <code>34</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Replace the two assignments with an equivalent destructuring assignment. It should still assign the variables <code>highToday</code> and <code>highTomorrow</code> the values of <code>today</code> and <code>tomorrow</code> from the <code>HIGH_TEMPERATURES</code> object.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "6633203e58595e93ef54ba3b",
+  "title": "Task 34",
+  "challengeType": 19,
+  "dashedName": "task-34",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence uses <code>what</code> correctly?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>She knows what does he like.</code></p>",
+        "feedback": "<p>This is incorrect. The correct structure should be <code>She knows what he likes</code>, without the auxiliary verb <code>does</code> in the clause.</p>"
+      },
+      {
+        "answer": "<p><code>What she is watching is very interesting?</code></p>",
+        "feedback": "<p>This sentence incorrectly ends with a question mark as it is not a question but a statement.</p>"
+      },
+      {
+        "answer": "<p><code>I don't understand what you mean.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Tell me what is your name.</code></p>",
+        "feedback": "<p>This is incorrect. The correct question form is <code>What is your name?</code> or <code>Tell me what your name is.</code></p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

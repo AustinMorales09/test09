@@ -1,0 +1,78 @@
+{
+  "id": "587d7dbb367417b2b2512bac",
+  "title": "Remove Whitespace from Start and End",
+  "challengeType": 1,
+  "forumTopicId": 301362,
+  "dashedName": "remove-whitespace-from-start-and-end",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let hello = \"   Hello, World!  \";\nlet wsRegex = /change/; // Change this line\nlet result = hello; // Change this line",
+      "error": null,
+      "seed": "let hello = \"   Hello, World!  \";\nlet wsRegex = /change/; // Change this line\nlet result = hello; // Change this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let hello = \"   Hello, World!  \";\nlet wsRegex = /^(\\s+)(.+[^\\s])(\\s+)$/;\nlet result = hello.replace(wsRegex, '$2');",
+        "error": null,
+        "seed": "let hello = \"   Hello, World!  \";\nlet wsRegex = /^(\\s+)(.+[^\\s])(\\s+)$/;\nlet result = hello.replace(wsRegex, '$2');"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>result</code> should be equal to the string <code>Hello, World!</code></p>",
+      "testString": "assert(result === 'Hello, World!');"
+    },
+    {
+      "text": "<p>Your solution should not use the <code>String.prototype.trim()</code> method.</p>",
+      "testString": "assert(!__helpers.removeJSComments(code).match(/\\.?[\\s\\S]*?trim/));"
+    },
+    {
+      "text": "<p>The <code>result</code> variable should not directly be set to a string</p>",
+      "testString": "assert(!__helpers.removeJSComments(code).match(/result\\s*=\\s*[\"'`].*?[\"'`]/));"
+    },
+    {
+      "text": "<p>The value of the <code>hello</code> variable should not be changed.</p>",
+      "testString": "assert(hello === '   Hello, World!  ');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Sometimes whitespace characters around strings are not wanted but are there. Typical processing of strings is to remove the whitespace at the start and end of it.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a regex and use the appropriate string methods to remove whitespace at the beginning and end of strings.</p>\n<p><strong>Note:</strong> The <code>String.prototype.trim()</code> method would work here, but you'll need to complete this challenge using regular expressions.</p>\n</section>",
+  "translationPending": false,
+  "block": "regular-expressions",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 32,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

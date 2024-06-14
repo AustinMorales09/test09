@@ -1,0 +1,88 @@
+{
+  "id": "657b15dbcafe4d5f39a5de82",
+  "title": "Task 21",
+  "challengeType": 19,
+  "dashedName": "task-21",
+  "solutions": [],
+  "question": {
+    "text": "<p>In the context of Anna's question, what does <code>previous</code> refer to?</p>",
+    "answers": [
+      {
+        "answer": "<p>Past roles and responsibilities</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Future roles and responsibilities</p>",
+        "feedback": "<p><code>Previous</code> refers to something that has already happened, not something in the future.</p>"
+      },
+      {
+        "answer": "<p>Current roles and responsibilities</p>",
+        "feedback": "<p><code>Previous</code> means something that happened before now, not what is happening currently.</p>"
+      },
+      {
+        "answer": "<p>Unrelated roles and responsibilities</p>",
+        "feedback": "<p><code>Previous</code> specifically relates to roles and responsibilities that were held before, not those unrelated.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Anna",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.76
+      }
+    },
+    "commands": [
+      {
+        "character": "Anna",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Anna",
+        "startTime": 1,
+        "finishTime": 5.76,
+        "dialogue": {
+          "text": "Hello, thanks for coming in today. Could you tell me about your previous roles and responsibilities?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Anna",
+        "opacity": 0,
+        "startTime": 6.26
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>previous</code> is used to describe something that happened before the current time or situation. It's often used to refer to past experiences, jobs, or events.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

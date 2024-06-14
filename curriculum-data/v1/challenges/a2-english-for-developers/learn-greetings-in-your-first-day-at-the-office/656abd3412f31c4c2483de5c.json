@@ -1,0 +1,45 @@
+{
+  "id": "656abd3412f31c4c2483de5c",
+  "title": "Task 80",
+  "challengeType": 19,
+  "dashedName": "task-80",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence uses the demonstrative pronouns correctly?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>This are my shoes.</code></p>",
+        "feedback": "<p>Remember to match the number (singular/plural) of the noun with the appropriate demonstrative pronoun. Also, consider the implied distance or immediacy of the items being talked about.</p>"
+      },
+      {
+        "answer": "<p><code>Those is my hat over there.</code></p>",
+        "feedback": "<p>Remember to match the number (singular/plural) of the noun with the appropriate demonstrative pronoun. Also, consider the implied distance or immediacy of the items being talked about.</p>"
+      },
+      {
+        "answer": "<p><code>These are my glasses on the table.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>This keys belong to me.</code></p>",
+        "feedback": "<p>Remember to match the number (singular/plural) of the noun with the appropriate demonstrative pronoun. Also, consider the implied distance or immediacy of the items being talked about.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Demonstrative pronouns <code>this</code>, <code>these</code>, and <code>those</code> are used to point out specific things. <code>This</code> refers to a singular item nearby, <code>these</code> to multiple items nearby, and <code>those</code> to items further away.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 81,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

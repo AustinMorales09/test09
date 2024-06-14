@@ -1,0 +1,91 @@
+{
+  "id": "56533eb9ac21ba0edf2244b6",
+  "title": "Escape Sequences in Strings",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cvmqRh6",
+  "forumTopicId": 17567,
+  "dashedName": "escape-sequences-in-strings",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const myStr = \"\"; // Change this line",
+      "error": null,
+      "seed": "const myStr = \"\"; // Change this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const myStr = \"FirstLine\\n\\t\\\\SecondLine\\nThirdLine\";",
+        "error": null,
+        "seed": "const myStr = \"FirstLine\\n\\t\\\\SecondLine\\nThirdLine\";"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>myStr</code> should not contain any spaces</p>",
+      "testString": "assert(!/ /.test(myStr));"
+    },
+    {
+      "text": "<p><code>myStr</code> should contain the strings <code>FirstLine</code>, <code>SecondLine</code> and <code>ThirdLine</code> (remember case sensitivity)</p>",
+      "testString": "assert(\n  /FirstLine/.test(myStr) && /SecondLine/.test(myStr) && /ThirdLine/.test(myStr)\n);"
+    },
+    {
+      "text": "<p><code>FirstLine</code> should be followed by the newline character <code>\\n</code></p>",
+      "testString": "assert(/FirstLine\\n/.test(myStr));"
+    },
+    {
+      "text": "<p><code>myStr</code> should contain a tab character <code>\\t</code> which follows a newline character</p>",
+      "testString": "assert(/\\n\\t/.test(myStr));"
+    },
+    {
+      "text": "<p><code>SecondLine</code> should be preceded by the backslash character <code>\\</code></p>",
+      "testString": "assert(/\\\\SecondLine/.test(myStr));"
+    },
+    {
+      "text": "<p>There should be a newline character between <code>SecondLine</code> and <code>ThirdLine</code></p>",
+      "testString": "assert(/SecondLine\\nThirdLine/.test(myStr));"
+    },
+    {
+      "text": "<p><code>myStr</code> should only contain characters shown in the instructions</p>",
+      "testString": "assert(myStr === 'FirstLine\\n\\t\\\\SecondLine\\nThirdLine');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Quotes are not the only characters that can be <dfn>escaped</dfn> inside a string. Escape sequences allow you to use characters you may not otherwise be able to use in a string.</p>\n<table><thead><tr><th>Code</th><th>Output</th></tr></thead><tbody><tr><td><code>\\'</code></td><td>single quote</td></tr><tr><td><code>\\\"</code></td><td>double quote</td></tr><tr><td><code>\\\\</code></td><td>backslash</td></tr><tr><td><code>\\n</code></td><td>newline</td></tr><tr><td><code>\\t</code></td><td>tab</td></tr><tr><td><code>\\r</code></td><td>carriage return</td></tr><tr><td><code>\\b</code></td><td>backspace</td></tr><tr><td><code>\\f</code></td><td>form feed</td></tr></tbody></table>\n<p><em>Note that the backslash itself must be escaped in order to display as a backslash.</em></p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Assign the following three lines of text into the single variable <code>myStr</code> using escape sequences.</p>\n<pre>\nFirstLine\n    \\SecondLine\nThirdLine\n</pre>\n<p>You will need to use escape sequences to insert special characters correctly. You will also need to follow the spacing as it looks above, with no spaces between escape sequences or words.</p>\n<p><strong>Note:</strong> The indentation for <code>SecondLine</code> is achieved with the tab escape character, not spaces.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

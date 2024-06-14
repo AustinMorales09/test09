@@ -1,0 +1,49 @@
+{
+  "id": "657f4345abe7f2161f99f1ad",
+  "title": "Step 16",
+  "challengeType": 20,
+  "dashedName": "step-16",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        12,
+        16
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    # snake_cased_char_list = []\n    # for char in pascal_or_camel_cased_string:\n    #     if char.isupper():\n    #       converted_character = '_' + char.lower()\n    #       snake_cased_char_list.append(converted_character)\n    #     else:\n    #         snake_cased_char_list.append(char)\n    # snake_cased_string = ''.join(snake_cased_char_list)\n    # clean_snake_cased_string = snake_cased_string.strip('_')\n\n    # return clean_snake_cased_string\n    pass\n\n\n\ndef main():\n    print(convert_to_snake_case('aLongAndComplexString'))\n\nif __name__ == '__main__':\n    main()",
+      "error": null,
+      "seed": "def convert_to_snake_case(pascal_or_camel_cased_string):\n    # snake_cased_char_list = []\n    # for char in pascal_or_camel_cased_string:\n    #     if char.isupper():\n    #       converted_character = '_' + char.lower()\n    #       snake_cased_char_list.append(converted_character)\n    #     else:\n    #         snake_cased_char_list.append(char)\n    # snake_cased_string = ''.join(snake_cased_char_list)\n    # clean_snake_cased_string = snake_cased_string.strip('_')\n\n    # return clean_snake_cased_string\n    pass\n\n\n\ndef main():\n    print(convert_to_snake_case('aLongAndComplexString'))\n\nif __name__ == '__main__':\n    main()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare an empty list named <code>snake_cased_char_list</code> within <code>convert_to_snake_case</code>.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const convert_to_snake_case = __helpers.python.getDef(\"\\n\" + transformedCode, \"convert_to_snake_case\");\n        const { function_body } = convert_to_snake_case;\n\n        assert.match(function_body, /clean_snake_cased_string\\s+    snake_cased_char_list\\s*=\\s*\\[\\n*\\s*\\n*\\]/);\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Start by replacing <code>pass</code> with the variable <code>snake_cased_char_list</code> and assign it an empty list. Use the square brace notation to create the list but do not put anything between the braces.</p>\n<p>Put the braces in separate lines so that you have some space between them, where you can work on the code for the list comprehension.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-list-comprehension-by-building-a-case-converter-program",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

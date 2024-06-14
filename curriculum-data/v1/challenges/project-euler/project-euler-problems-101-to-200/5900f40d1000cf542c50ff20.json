@@ -1,0 +1,65 @@
+{
+  "id": "5900f40d1000cf542c50ff20",
+  "title": "Problem 161: Triominoes",
+  "challengeType": 1,
+  "forumTopicId": 301795,
+  "dashedName": "problem-161-triominoes",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function triominoes() {\n\n  return true;\n}\n\ntriominoes();",
+      "error": null,
+      "seed": "function triominoes() {\n\n  return true;\n}\n\ntriominoes();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>triominoes()</code> should return <code>20574308184277972</code>.</p>",
+      "testString": "assert.strictEqual(triominoes(), 20574308184277972);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A triomino is a shape consisting of three squares joined via the edges.</p>\n<p>There are two basic forms:</p>\n<img class=\"img-responsive center-block\" alt=\"two basic triominoes forms\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/triominoes-1.gif\" style=\"background-color: white; padding: 10px;\">\n<p>If all possible orientations are taken into account there are six:</p>\n<img class=\"img-responsive center-block\" alt=\"triominoes forms including orientation\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/triominoes-2.gif\" style=\"background-color: white; padding: 10px;\">\n<p>Any n by m grid for which nxm is divisible by 3 can be tiled with triominoes. If we consider tilings that can be obtained by reflection or rotation from another tiling as different there are 41 ways a 2 by 9 grid can be tiled with triominoes:</p>\n<img class=\"img-responsive center-block\" alt=\"animation showing 41 ways of filling 2x9 grid with triominoes\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/triominoes-3.gif\" style=\"background-color: white; padding: 10px;\">\n<p>In how many ways can a 9 by 12 grid be tiled in this way by triominoes?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 60,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

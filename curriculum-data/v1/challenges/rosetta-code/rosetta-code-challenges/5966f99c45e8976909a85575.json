@@ -1,0 +1,78 @@
+{
+  "id": "5966f99c45e8976909a85575",
+  "title": "Day of the week",
+  "challengeType": 1,
+  "forumTopicId": 302245,
+  "dashedName": "day-of-the-week",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const firstSolution = [1977, 1983, 1988, 1994, 2005, 2011, 2016];\nconst secondSolution = [2011, 2016, 2022, 2033, 2039, 2044, 2050, 2061, 2067, 2072, 2078, 2089, 2095, 2101, 2107, 2112, 2118];",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function findXmasSunday(start, end) {\n\n  return true;\n}",
+      "error": null,
+      "seed": "function findXmasSunday(start, end) {\n\n  return true;\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function findXmasSunday(start, end) {\n  const xmasSunday = [];\n  for (let year = start; year <= end; year++) {\n    const xmas = new Date(year, 11, 25);\n    if (xmas.getDay() === 0) {\n      xmasSunday.push(year);\n    }\n  }\n  return xmasSunday;\n}",
+        "error": null,
+        "seed": "function findXmasSunday(start, end) {\n  const xmasSunday = [];\n  for (let year = start; year <= end; year++) {\n    const xmas = new Date(year, 11, 25);\n    if (xmas.getDay() === 0) {\n      xmasSunday.push(year);\n    }\n  }\n  return xmasSunday;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>findXmasSunday</code> should be a function.</p>",
+      "testString": "assert(typeof findXmasSunday === 'function');"
+    },
+    {
+      "text": "<p><code>findXmasSunday(2000, 2100)</code> should return an array.</p>",
+      "testString": "assert(typeof findXmasSunday(2000, 2100) === 'object');"
+    },
+    {
+      "text": "<p><code>findXmasSunday(1970, 2017)</code> should return <code>[1977, 1983, 1988, 1994, 2005, 2011, 2016]</code></p>",
+      "testString": "assert.deepEqual(findXmasSunday(1970, 2017), firstSolution);"
+    },
+    {
+      "text": "<p><code>findXmasSunday(2008, 2121)</code> should return <code>[2011, 2016, 2022, 2033, 2039, 2044, 2050, 2061, 2067, 2072, 2078, 2089, 2095, 2101, 2107, 2112, 2118]</code></p>",
+      "testString": "assert.deepEqual(findXmasSunday(2008, 2121), secondSolution);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A company decides that whenever Xmas falls on a Sunday they will give their workers all extra paid holidays so that, together with any public holidays, workers will not have to work the following week (between the 25th of December and the first of January).</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that takes a start year and an end year and return an array of all the years where the 25th of December will be a Sunday.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "665732e62eb8b30c249b5c2c",
+  "title": "Step 24",
+  "challengeType": 1,
+  "dashedName": "step-24",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        8
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];\nlet cities = [\"London\", \"New York\", \"Mumbai\"];\nconsole.log(cities);\ncities[cities.length - 1] = \"Mexico City\";\nconsole.log(cities);\nconsole.log(rows);",
+      "error": null,
+      "seed": "let character = 'Hello';\nlet count = 8;\nlet rows = [\"Naomi\", \"Quincy\", \"CamperChan\"];\nlet cities = [\"London\", \"New York\", \"Mumbai\"];\nconsole.log(cities);\ncities[cities.length - 1] = \"Mexico City\";\nconsole.log(cities);\nconsole.log(rows);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove all references to your <code>cities</code> variable.</p>",
+      "testString": "assert.notMatch(code, /cities/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now you are ready to move onto the next set of array lessons.</p>\n<p>Remove all of your code from the previous step.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

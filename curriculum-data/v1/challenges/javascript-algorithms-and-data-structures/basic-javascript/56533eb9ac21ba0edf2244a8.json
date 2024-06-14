@@ -1,0 +1,71 @@
+{
+  "id": "56533eb9ac21ba0edf2244a8",
+  "title": "Storing Values with the Assignment Operator",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cEanysE",
+  "forumTopicId": 18310,
+  "dashedName": "storing-values-with-the-assignment-operator",
+  "challengeFiles": [
+    {
+      "head": "if (typeof a != 'undefined') {\n  a = undefined;\n}",
+      "tail": "(function(a){return \"a = \" + a;})(a);",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Setup\nvar a;\n\n// Only change code below this line",
+      "error": null,
+      "seed": "// Setup\nvar a;\n\n// Only change code below this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "var a;\na = 7;",
+        "error": null,
+        "seed": "var a;\na = 7;"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not change code above the specified comment.</p>",
+      "testString": "assert(/var a;/.test(__helpers.removeJSComments(code)));"
+    },
+    {
+      "text": "<p><code>a</code> should have a value of 7.</p>",
+      "testString": "assert(typeof a === 'number' && a === 7);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In JavaScript, you can store a value in a variable with the <dfn>assignment</dfn> operator (<code>=</code>).</p>\n<pre><code class=\"language-js\">myVariable = 5;\n</code></pre>\n<p>This assigns the <code>Number</code> value <code>5</code> to <code>myVariable</code>.</p>\n<p>If there are any calculations to the right of the <code>=</code> operator, those are performed before the value is assigned to the variable on the left of the operator.</p>\n<pre><code class=\"language-js\">var myVar;\nmyVar = 5;\n</code></pre>\n<p>First, this code creates a variable named <code>myVar</code>. Then, the code assigns <code>5</code> to <code>myVar</code>. Now, if <code>myVar</code> appears again in the code, the program will treat it as if it is <code>5</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Assign the value <code>7</code> to variable <code>a</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

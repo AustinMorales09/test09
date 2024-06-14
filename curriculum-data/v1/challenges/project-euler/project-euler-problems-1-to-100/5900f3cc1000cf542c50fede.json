@@ -1,0 +1,81 @@
+{
+  "id": "5900f3cc1000cf542c50fede",
+  "title": "Problem 95: Amicable chains",
+  "challengeType": 1,
+  "forumTopicId": 302212,
+  "dashedName": "problem-95-amicable-chains",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function amicableChains(limit) {\n\n  return true;\n}\n\namicableChains(300);",
+      "error": null,
+      "seed": "function amicableChains(limit) {\n\n  return true;\n}\n\namicableChains(300);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function amicableChains(limit) {\n  function getSmallestMember(chain) {\n    let smallest = chain[0];\n    for (let i = 1; i < chain.length; i++) {\n      if (smallest > chain[i]) {\n        smallest = chain[i];\n      }\n    }\n    return smallest;\n  }\n\n  function getFactorsSums(limit) {\n    const factorsSums = new Array(limit + 1).fill(1);\n    for (let i = 2; i <= limit / 2; i++) {\n      for (let j = 2 * i; j <= limit; j += i) {\n        factorsSums[j] += i;\n      }\n    }\n    return factorsSums;\n  }\n\n  const factorsSums = getFactorsSums(limit);\n  const checkedNumbers = new Set();\n\n  let longestChain = 0;\n  let smallestMember = 0;\n  for (let i = 0; i <= limit; i++) {\n    const curChain = [];\n    let curNumber = i;\n    while (!checkedNumbers.has(curNumber) && factorsSums[curNumber] <= limit) {\n      curNumber = factorsSums[curNumber];\n\n      const chainStart = curChain.indexOf(curNumber);\n      if (chainStart === -1) {\n        curChain.push(curNumber);\n        continue;\n      }\n\n      const chainLength = curChain.length - chainStart;\n      if (chainLength > longestChain) {\n        longestChain = chainLength;\n        smallestMember = getSmallestMember(curChain.slice(chainStart));\n      }\n      break;\n    }\n\n    for (let j = 0; j < curChain.length; j++) {\n      checkedNumbers.add(curChain[j]);\n    }\n  }\n\n  return smallestMember;\n}",
+        "error": null,
+        "seed": "function amicableChains(limit) {\n  function getSmallestMember(chain) {\n    let smallest = chain[0];\n    for (let i = 1; i < chain.length; i++) {\n      if (smallest > chain[i]) {\n        smallest = chain[i];\n      }\n    }\n    return smallest;\n  }\n\n  function getFactorsSums(limit) {\n    const factorsSums = new Array(limit + 1).fill(1);\n    for (let i = 2; i <= limit / 2; i++) {\n      for (let j = 2 * i; j <= limit; j += i) {\n        factorsSums[j] += i;\n      }\n    }\n    return factorsSums;\n  }\n\n  const factorsSums = getFactorsSums(limit);\n  const checkedNumbers = new Set();\n\n  let longestChain = 0;\n  let smallestMember = 0;\n  for (let i = 0; i <= limit; i++) {\n    const curChain = [];\n    let curNumber = i;\n    while (!checkedNumbers.has(curNumber) && factorsSums[curNumber] <= limit) {\n      curNumber = factorsSums[curNumber];\n\n      const chainStart = curChain.indexOf(curNumber);\n      if (chainStart === -1) {\n        curChain.push(curNumber);\n        continue;\n      }\n\n      const chainLength = curChain.length - chainStart;\n      if (chainLength > longestChain) {\n        longestChain = chainLength;\n        smallestMember = getSmallestMember(curChain.slice(chainStart));\n      }\n      break;\n    }\n\n    for (let j = 0; j < curChain.length; j++) {\n      checkedNumbers.add(curChain[j]);\n    }\n  }\n\n  return smallestMember;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>amicableChains(300)</code> should return a number.</p>",
+      "testString": "assert(typeof amicableChains(300) === 'number');"
+    },
+    {
+      "text": "<p><code>amicableChains(300)</code> should return <code>220</code>.</p>",
+      "testString": "assert.strictEqual(amicableChains(300), 220);"
+    },
+    {
+      "text": "<p><code>amicableChains(15000)</code> should return <code>220</code>.</p>",
+      "testString": "assert.strictEqual(amicableChains(15000), 220);"
+    },
+    {
+      "text": "<p><code>amicableChains(100000)</code> should return <code>12496</code>.</p>",
+      "testString": "assert.strictEqual(amicableChains(100000), 12496);"
+    },
+    {
+      "text": "<p><code>amicableChains(1000000)</code> should return <code>14316</code>.</p>",
+      "testString": "assert.strictEqual(amicableChains(1000000), 14316);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The proper divisors of a number are all the divisors excluding the number itself. For example, the proper divisors of 28 are 1, 2, 4, 7, and 14. As the sum of these divisors is equal to 28, we call it a perfect number.</p>\n<p>Interestingly the sum of the proper divisors of 220 is 284 and the sum of the proper divisors of 284 is 220, forming a chain of two numbers. For this reason, 220 and 284 are called an amicable pair.</p>\n<p>Perhaps less well known are longer chains. For example, starting with 12496, we form a chain of five numbers:</p>\n<p>$$\n12496 → 14288 → 15472 → 14536 → 14264 \\,(→ 12496 → \\cdots)\n$$</p>\n<p>Since this chain returns to its starting point, it is called an amicable chain.</p>\n<p>Find the smallest member of the longest amicable chain with no element exceeding <code>limit</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 94,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

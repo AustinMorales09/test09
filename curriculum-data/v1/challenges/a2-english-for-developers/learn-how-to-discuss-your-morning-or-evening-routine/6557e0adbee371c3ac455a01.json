@@ -1,0 +1,88 @@
+{
+  "id": "6557e0adbee371c3ac455a01",
+  "title": "Task 32",
+  "challengeType": 19,
+  "dashedName": "task-32",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does James imply when he says, <code>I'll try some of these tips.</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>He plans to try some of Sarah's habits in the future</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He tried some of Sarah's habits in the past</p>",
+        "feedback": "<p><code>I'll</code> indicates a future action, not something that has already happened.</p>"
+      },
+      {
+        "answer": "<p>He is currently trying Sarah's habits</p>",
+        "feedback": "<p>The use of <code>I'll</code> suggests a future intention, not something happening currently.</p>"
+      },
+      {
+        "answer": "<p>He has no intention of trying Sarah's habits</p>",
+        "feedback": "<p>James's statement <code>I'll try</code> indicates a plan or intention to try them, contradicting this option.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 68.24,
+        "finishTimestamp": 70.96
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 3.72,
+        "dialogue": {
+          "text": "Thanks for sharing, Sarah. I'll try some of these tips.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 4.22
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>You probably remember that <code>I'll</code> is the contracted form of <code>I will</code>, a modal verb used to express future intentions, decisions, or plans made at the moment of speaking. For example:</p>\n<p><code>I'll call you tomorrow.</code> (future intention to call)\n<code>I'll take the bus to work.</code> (decision made about taking the bus)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 32,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

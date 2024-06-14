@@ -1,0 +1,45 @@
+{
+  "id": "65daa9fa35b2dd6c6e29636d",
+  "title": "Task 96",
+  "challengeType": 19,
+  "dashedName": "task-96",
+  "solutions": [],
+  "question": {
+    "text": "<p>If I read a book three weeks ago, when did I finish reading it?</p>",
+    "answers": [
+      {
+        "answer": "<p>I finished reading the book yesterday.</p>",
+        "feedback": "<p><code>Yesterday</code> is too recent compared to the timeframe mentioned.</p>"
+      },
+      {
+        "answer": "<p>I finished reading the book last month.</p>",
+        "feedback": "<p><code>Last month</code> might not accurately match the timeframe depending on the current date.</p>"
+      },
+      {
+        "answer": "<p>I finished reading it three weeks back.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>I am still reading the book.</p>",
+        "feedback": "<p>If you finished the book <code>three weeks ago</code>, you are not still reading it.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Choose the right answer of using <code>ago</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 100,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

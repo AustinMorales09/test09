@@ -1,0 +1,48 @@
+{
+  "id": "6363d2649078df117ce4c404",
+  "title": "Demand and Revenue",
+  "challengeType": 15,
+  "videoId": "8PIZmiMFmfk",
+  "dashedName": "demand-and-revenue",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following business equations is not correct?</p>",
+    "answers": [
+      {
+        "answer": "<p>Profit = Revenue - Cost</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Revenue = Price * Demand</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Cost = Fixed Expenses + Variable Expenses</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Marginal Revenue = Margins + Revenue</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [
+    "<p>Complete the problems on pages 155 and 163 from \"Business Math, a Step-by-Step Handbook (2021)\".</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this video, you will write code to develop a demand function from two points. You will see how price affects the profit graph and how all of these equations relate to each other.</p>\n<p>Here is the <a href=\"https://colab.research.google.com/drive/1foxkSd90q1tHCSqyY6NFAEnMfH0nNwXe?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Colab notebook to go along with this video.</a></p>\n<p><strong>Here is a link to the textbook you will need to complete the assignment for this video:</strong></p>\n<p>- <a href=\"https://lyryx.com/subjects/business/business-mathematics/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Business Math, a Step-by-Step Handbook (2021) by Jean-Paul Oliver</a></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-business-applications-of-college-algebra",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,81 @@
+{
+  "id": "5efc4f528d6a74d05e68af74",
+  "title": "Step 56",
+  "challengeType": 0,
+  "dashedName": "step-56",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        43,
+        45
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n          <figcaption>Cats <em>love</em> lasagna.</figcaption>  \n        </figure>\n        <h3>Top 3 things cats hate:</h3>\n        <ol>\n          <li>flea treatment</li>\n          <li>thunder</li>\n          <li>other cats</li>\n        </ol>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg\" alt=\"Five cats looking around a field.\">\n          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  \n        </figure>\n      </section>\n      <section>\n        <h2>Cat Form</h2>\n        <form action=\"https://freecatphotoapp.com/submit-cat-photo\">\n          <fieldset>\n            <legend>Is your cat an indoor or outdoor cat?</legend>\n            <label><input id=\"indoor\" type=\"radio\" name=\"indoor-outdoor\" value=\"indoor\"> Indoor</label>\n            <label><input id=\"outdoor\" type=\"radio\" name=\"indoor-outdoor\" value=\"outdoor\"> Outdoor</label>\n          </fieldset>\n          <fieldset>\n            <legend>What's your cat's personality?</legend>\n            <input id=\"loving\" type=\"checkbox\"> Loving\n          </fieldset>\n          <input type=\"text\" name=\"catphotourl\" placeholder=\"cat photo URL\" required>\n          <button type=\"submit\">Submit</button>\n        </form>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n          <figcaption>Cats <em>love</em> lasagna.</figcaption>  \n        </figure>\n        <h3>Top 3 things cats hate:</h3>\n        <ol>\n          <li>flea treatment</li>\n          <li>thunder</li>\n          <li>other cats</li>\n        </ol>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg\" alt=\"Five cats looking around a field.\">\n          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  \n        </figure>\n      </section>\n      <section>\n        <h2>Cat Form</h2>\n        <form action=\"https://freecatphotoapp.com/submit-cat-photo\">\n          <fieldset>\n            <legend>Is your cat an indoor or outdoor cat?</legend>\n            <label><input id=\"indoor\" type=\"radio\" name=\"indoor-outdoor\" value=\"indoor\"> Indoor</label>\n            <label><input id=\"outdoor\" type=\"radio\" name=\"indoor-outdoor\" value=\"outdoor\"> Outdoor</label>\n          </fieldset>\n          <fieldset>\n            <legend>What's your cat's personality?</legend>\n            <input id=\"loving\" type=\"checkbox\"> Loving\n          </fieldset>\n          <input type=\"text\" name=\"catphotourl\" placeholder=\"cat photo URL\" required>\n          <button type=\"submit\">Submit</button>\n        </form>\n      </section>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should make sure the checkbox is still present.</p>",
+      "testString": "assert($('input[type=\"checkbox\"]')[0]);"
+    },
+    {
+      "text": "<p>Your checkbox should still have an <code>id</code> attribute with the value <code>loving</code>.  Expected <code>--fcc-expected--</code>, but found <code>--fcc-actual--</code>.</p>",
+      "testString": "assert.equal($('input[type=\"checkbox\"]')[0].id, 'loving');"
+    },
+    {
+      "text": "<p>The text <code>Loving</code> should be wrapped in a <code>label</code> element.</p>",
+      "testString": "const checkboxInputElem = $('input[type=\"checkbox\"]')[0];\nassert(\n  /Loving/i.test(checkboxInputElem.nextElementSibling.innerText.replace(/\\s+/g, ' '))\n);"
+    },
+    {
+      "text": "<p>You will need to add a new <code>label</code> element in which to nest the text <code>Loving</code>. Make sure it has both an opening and closing tag.</p>",
+      "testString": "assert(\n  document.querySelectorAll('label').length === 3 &&\n    code.match(/<\\/label\\>/g).length === 3\n);"
+    },
+    {
+      "text": "<p>The new <code>label</code> element should be located directly to the right of your checkbox. Make sure there is a space between the two elements.</p>",
+      "testString": "const checkboxInputElem = $('input[type=\"checkbox\"]')[0];\nassert(checkboxInputElem.nextElementSibling.nodeName === 'LABEL');"
+    },
+    {
+      "text": "<p>The new <code>label</code> element does not have a <code>for</code> attribute. Check that there is a space after the opening tag's name.</p>",
+      "testString": "const labelElem = $('input[type=\"checkbox\"]')[0].nextElementSibling;\nassert(labelElem.hasAttribute('for'));"
+    },
+    {
+      "text": "<p>The new <code>label</code> element should have a <code>for</code> attribute with the value <code>loving</code>.  Expected <code>--fcc-expected--</code>, but found <code>--fcc-actual--</code>.</p>",
+      "testString": "const labelElem = $('input[type=\"checkbox\"]')[0].nextElementSibling;\nassert.equal(labelElem.getAttribute('for'), 'loving');"
+    },
+    {
+      "text": "<p>The text <code>Loving</code> should be nested within the new <code>label</code> element. You have either omitted the text or have a typo.</p>",
+      "testString": "const labelElem = document.querySelector('label[for=\"loving\"]');\nassert(labelElem.textContent.replace(/\\s/g, '').match(/Loving/i));"
+    },
+    {
+      "text": "<p>There should be a space between your checkbox and your new <code>label</code> element.</p>",
+      "testString": "assert.match(code, />\\s+<label\\s+for\\s*=\\s*('|\")loving/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>There's another way to associate an <code>input</code> element's text with the element itself. You can nest the text within a <code>label</code> element and add a <code>for</code> attribute with the same value as the <code>input</code> element's <code>id</code> attribute.</p>\n<p>Here is an example of using the <code>for</code> attribute to associate a <code>label</code> with an <code>input</code> element:</p>\n<pre><code class=\"language-html\">&#x3C;label for=\"breakfast\"> Breakfast &#x3C;/label>\n&#x3C;input id=\"breakfast\" type=\"radio\" name=\"meal\" value=\"breakfast\">\n</code></pre>\n<p>Associate the text <code>Loving</code> with the checkbox by nesting only the text <code>Loving</code> in a <code>label</code> element and giving it an appropriate <code>for</code> attribute.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 55,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,78 @@
+{
+  "id": "587d7fae367417b2b2512be5",
+  "title": "Convert JSON Data to HTML",
+  "challengeType": 6,
+  "forumTopicId": 16807,
+  "dashedName": "convert-json-data-to-html",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    document.getElementById('getMessage').onclick = function(){\n      const req = new XMLHttpRequest();\n      req.open(\"GET\",'/json/cats.json',true);\n      req.send();\n      req.onload = function(){\n        const json = JSON.parse(req.responseText);\n        let html = \"\";\n        // Add your code below this line\n\n\n        // Add your code above this line\n        document.getElementsByClassName('message')[0].innerHTML = html;\n      };\n    };\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n\n<h1>Cat Photo Finder</h1>\n<p class=\"message box\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>",
+      "error": null,
+      "seed": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    document.getElementById('getMessage').onclick = function(){\n      const req = new XMLHttpRequest();\n      req.open(\"GET\",'/json/cats.json',true);\n      req.send();\n      req.onload = function(){\n        const json = JSON.parse(req.responseText);\n        let html = \"\";\n        // Add your code below this line\n\n\n        // Add your code above this line\n        document.getElementsByClassName('message')[0].innerHTML = html;\n      };\n    };\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n\n<h1>Cat Photo Finder</h1>\n<p class=\"message box\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    document.getElementById('getMessage').onclick = function(){\n      const req = new XMLHttpRequest();\n      req.open(\"GET\",'/json/cats.json',true);\n      req.send();\n      req.onload = function(){\n        const json = JSON.parse(req.responseText);\n        let html = \"\";\n        // Add your code below this line\n        json.forEach(function(val) {\n          var keys = Object.keys(val);\n          html += \"<div class = 'cat'>\";\n          keys.forEach(function(key) {\n          html += \"<strong>\" + key + \"</strong>: \" + val[key] + \"<br>\";\n        });\n        html += \"</div><br>\";\n        });\n        // Add your code above this line\n        document.getElementsByClassName('message')[0].innerHTML = html;\n      };\n    };\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n\n<h1>Cat Photo Finder</h1>\n<p class=\"message\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>",
+        "error": null,
+        "seed": "<script>\n  document.addEventListener('DOMContentLoaded', function(){\n    document.getElementById('getMessage').onclick = function(){\n      const req = new XMLHttpRequest();\n      req.open(\"GET\",'/json/cats.json',true);\n      req.send();\n      req.onload = function(){\n        const json = JSON.parse(req.responseText);\n        let html = \"\";\n        // Add your code below this line\n        json.forEach(function(val) {\n          var keys = Object.keys(val);\n          html += \"<div class = 'cat'>\";\n          keys.forEach(function(key) {\n          html += \"<strong>\" + key + \"</strong>: \" + val[key] + \"<br>\";\n        });\n        html += \"</div><br>\";\n        });\n        // Add your code above this line\n        document.getElementsByClassName('message')[0].innerHTML = html;\n      };\n    };\n  });\n</script>\n\n<style>\n  body {\n    text-align: center;\n    font-family: \"Helvetica\", sans-serif;\n  }\n  h1 {\n    font-size: 2em;\n    font-weight: bold;\n  }\n  .box {\n    border-radius: 5px;\n    background-color: #eee;\n    padding: 20px 5px;\n  }\n  button {\n    color: white;\n    background-color: #4791d0;\n    border-radius: 5px;\n    border: 1px solid #4791d0;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    background-color: #0F5897;\n    border: 1px solid #0F5897;\n  }\n</style>\n\n<h1>Cat Photo Finder</h1>\n<p class=\"message\">\n  The message will go here\n</p>\n<p>\n  <button id=\"getMessage\">\n    Get Message\n  </button>\n</p>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should store the data in the <code>html</code> variable</p>",
+      "testString": "assert(__helpers.removeWhiteSpace(code).match(/html(\\+=|=html\\+)/g))"
+    },
+    {
+      "text": "<p>Your code should use a <code>forEach</code> method to loop over the JSON data from the API.</p>",
+      "testString": "assert(code.match(/json\\.forEach/g));"
+    },
+    {
+      "text": "<p>Your code should wrap the key names in <code>strong</code> tags.</p>",
+      "testString": "assert(code.match(/<strong>.+<\\/strong>/g));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you're getting data from a JSON API, you can display it in the HTML.</p>\n<p>You can use a <code>forEach</code> method to loop through the data since the cat photo objects are held in an array. As you get to each item, you can modify the HTML elements.</p>\n<p>First, declare an html variable with <code>let html = \"\";</code>.</p>\n<p>Then, loop through the JSON, adding HTML to the variable that wraps the key names in <code>strong</code> tags, followed by the value. When the loop is finished, you render it.</p>\n<p>Here's the code that does this:</p>\n<pre><code class=\"language-js\">let html = \"\";\njson.forEach(function(val) {\n  const keys = Object.keys(val);\n  html += \"&#x3C;div class = 'cat'>\";\n  keys.forEach(function(key) {\n    html += \"&#x3C;strong>\" + key + \"&#x3C;/strong>: \" + val[key] + \"&#x3C;br>\";\n  });\n  html += \"&#x3C;/div>&#x3C;br>\";\n});\n</code></pre>\n<p><strong>Note:</strong> For this challenge, you need to add new HTML elements to the page, so you cannot rely on <code>textContent</code>. Instead, you need to use <code>innerHTML</code>, which can make a site vulnerable to cross-site scripting attacks.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add a <code>forEach</code> method to loop over the JSON data and create the HTML elements to display it.</p>\n<p>Here is some example JSON:</p>\n<pre><code class=\"language-json\">[\n  {\n    \"id\":0,\n      \"imageLink\":\"https://cdn.freecodecamp.org/curriculum/legacy-json-apis-ajax/funny-cat.jpg\",\n      \"altText\":\"A white cat wearing a green helmet shaped melon on its head. \",\n      \"codeNames\":[ \"Juggernaut\", \"Mrs. Wallace\", \"Buttercup\"\n    ]\n  }\n]\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "json-apis-and-ajax",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 5,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

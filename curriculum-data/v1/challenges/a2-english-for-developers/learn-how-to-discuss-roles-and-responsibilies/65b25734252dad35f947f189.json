@@ -1,0 +1,88 @@
+{
+  "id": "65b25734252dad35f947f189",
+  "title": "Task 9",
+  "challengeType": 19,
+  "dashedName": "task-9",
+  "solutions": [],
+  "question": {
+    "text": "<p>Based on Bob's description, how old is the woman?</p>",
+    "answers": [
+      {
+        "answer": "<p>Exactly 40 years old</p>",
+        "feedback": "<p><code>In her early 40s</code> suggests a range, not a specific age like 40.</p>"
+      },
+      {
+        "answer": "<p>Between 40 and 43 years old</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>In her 50s</p>",
+        "feedback": "<p>Bob mentions she is in her early 40s, not her 50s.</p>"
+      },
+      {
+        "answer": "<p>Younger than 40</p>",
+        "feedback": "<p><code>In her early 40s</code> means she is at least 40 but not much older than that.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 7.18,
+        "finishTimestamp": 11.7
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 5.52,
+        "dialogue": {
+          "text": "She's a tall woman in her early 40s with long blonde hair and glasses.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

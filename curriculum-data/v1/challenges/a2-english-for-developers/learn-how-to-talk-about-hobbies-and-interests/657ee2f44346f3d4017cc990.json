@@ -1,0 +1,45 @@
+{
+  "id": "657ee2f44346f3d4017cc990",
+  "title": "Task 46",
+  "challengeType": 19,
+  "dashedName": "task-46",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>behind you</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>At the back side of you</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>In front of you</p>",
+        "feedback": "<p><code>Behind you</code> means it's at your back, not in front.</p>"
+      },
+      {
+        "answer": "<p>Above your head</p>",
+        "feedback": "<p>It means something is over you, not necessarily at your back.</p>"
+      },
+      {
+        "answer": "<p>Below your feet</p>",
+        "feedback": "<p>It means something is under you, not what <code>behind you</code> means.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The preposition <code>behind</code> means that an object is located at the back side of another object.</p>\n<p>For example, <code>My bag is behind me.</code> This means your bag is located at the back side of where you are sitting.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 48,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

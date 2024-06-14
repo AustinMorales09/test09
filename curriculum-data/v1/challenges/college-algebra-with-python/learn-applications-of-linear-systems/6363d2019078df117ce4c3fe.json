@@ -1,0 +1,49 @@
+{
+  "id": "6363d2019078df117ce4c3fe",
+  "title": "Word Problems",
+  "challengeType": 15,
+  "videoId": "3ZM3XMn1QYo",
+  "dashedName": "word-problems",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following key words indicate subtraction?</p>",
+    "answers": [
+      {
+        "answer": "<p>plus, more, increase, up</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>difference, less, decrease, down</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>of, by, factor, area, times</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>out of, per, divided, quotient</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [
+    "<p>Complete the problems on pages 63, 75, 85, and 118 from \"Business Math, a Step-by-Step Handbook (2021)\".</p>",
+    "<p>Complete the problems on pages 304, 308, and 321 from \"Algebra and Trigonometry\".</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This first video will look at key words that tell you what math operation to use. Then you will see how to apply some of your code to different problems.</p>\n<p><strong>Here are links to the textbooks you will need to complete the assignments for this video:</strong></p>\n<p>- <a href=\"https://lyryx.com/subjects/business/business-mathematics/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Business Math, a Step-by-Step Handbook (2021) by Jean-Paul Oliver</a></p>\n<p>- <a href=\"https://openstax.org/details/books/algebra-and-trigonometry\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Algebra and Trigonometry by Jay Abramson</a></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-applications-of-linear-systems",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

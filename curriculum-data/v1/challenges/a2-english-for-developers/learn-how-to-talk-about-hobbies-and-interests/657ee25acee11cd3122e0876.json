@@ -1,0 +1,88 @@
+{
+  "id": "657ee25acee11cd3122e0876",
+  "title": "Task 45",
+  "challengeType": 19,
+  "dashedName": "task-45",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does James use the word <code>on</code> in his sentence?</p>",
+    "answers": [
+      {
+        "answer": "<p>To indicate the location of the action figures</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To suggest that the action figures are moving</p>",
+        "feedback": "<p>James's usage of <code>on</code> indicates a position, not movement.</p>"
+      },
+      {
+        "answer": "<p>To express dissatisfaction</p>",
+        "feedback": "<p>The word <code>on</code> in this context does not express emotions or opinions.</p>"
+      },
+      {
+        "answer": "<p>To indicate ownership</p>",
+        "feedback": "<p><code>On</code> is used to describe the position of the action figures, not ownership.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 5.18
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 6.18,
+        "dialogue": {
+          "text": "Hey, I noticed you have a huge collection of action figures on that shelf behind you. Are you a collector?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 6.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The preposition <code>on</code> indicates that something is positioned above and touching or supported by something else.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 47,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

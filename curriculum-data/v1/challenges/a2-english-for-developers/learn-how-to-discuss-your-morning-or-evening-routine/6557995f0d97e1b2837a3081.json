@@ -1,0 +1,45 @@
+{
+  "id": "6557995f0d97e1b2837a3081",
+  "title": "Task 15",
+  "challengeType": 19,
+  "dashedName": "task-15",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which word would you use to describe someone who is paying full attention and is ready to act?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Relaxed</code></p>",
+        "feedback": "<p><code>Relaxed</code> is used to describe someone calm or a situation that is not strict.</p>"
+      },
+      {
+        "answer": "<p><code>Quick</code></p>",
+        "feedback": "<p><code>Quick</code> describes something done in a short time, not how someone is paying attention.</p>"
+      },
+      {
+        "answer": "<p><code>Tall</code></p>",
+        "feedback": "<p><code>Tall</code> is used to describe the height of someone or something, not how they are paying attention.</p>"
+      },
+      {
+        "answer": "<p><code>Alert</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Remember, adjectives are words that describe or give more information about nouns. They can tell you how something looks, feels, or acts. For example:</p>\n<p><code>Quick</code> describes something done in a short time.\n<code>Relaxed</code> describes something or someone calm and not strict.\n<code>Alert</code> describes being fully aware and paying attention.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

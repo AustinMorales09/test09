@@ -1,0 +1,49 @@
+{
+  "id": "656eec2f40d18056cc58b229",
+  "title": "Step 30",
+  "challengeType": 20,
+  "dashedName": "step-30",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        28,
+        32
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, '')\n        ]        \n\n    return password\n    \n# new_password = generate_password(8)\n# print(new_password)    \npattern = re.compile('i')\nquote = 'Not all those who wander are lost.'\nprint(pattern.search(quote))",
+      "error": null,
+      "seed": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, '')\n        ]        \n\n    return password\n    \n# new_password = generate_password(8)\n# print(new_password)    \npattern = re.compile('i')\nquote = 'Not all those who wander are lost.'\nprint(pattern.search(quote))"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should modify your <code>pattern</code> variable into <code>re.compile('l')</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import re\n    pattern == re.compile('l')\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The value <code>None</code> is returned since <code>'i'</code> is not found inside the parsed string.</p>\n<p>Now, modify the string passed to <code>re.compile()</code> into <code>'l'</code> and see the result.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 29,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

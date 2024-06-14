@@ -1,0 +1,93 @@
+{
+  "id": "5a23c84252665b21eecc7ede",
+  "title": "Leap year",
+  "challengeType": 1,
+  "forumTopicId": 302300,
+  "dashedName": "leap-year",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function isLeapYear(year) {\n\n}",
+      "error": null,
+      "seed": "function isLeapYear(year) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function isLeapYear(year) {\n  return year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;\n}",
+        "error": null,
+        "seed": "function isLeapYear(year) {\n  return year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>isLeapYear</code> should be a function.</p>",
+      "testString": "assert(typeof isLeapYear == 'function');"
+    },
+    {
+      "text": "<p><code>isLeapYear()</code> should return a boolean.</p>",
+      "testString": "assert(typeof isLeapYear(2018) == 'boolean');"
+    },
+    {
+      "text": "<p><code>isLeapYear(2018)</code> should return <code>false</code>.</p>",
+      "testString": "assert.equal(isLeapYear(2018), false);"
+    },
+    {
+      "text": "<p><code>isLeapYear(2016)</code> should return <code>true</code>.</p>",
+      "testString": "assert.equal(isLeapYear(2016), true);"
+    },
+    {
+      "text": "<p><code>isLeapYear(2000)</code> should return <code>true</code>.</p>",
+      "testString": "assert.equal(isLeapYear(2000), true);"
+    },
+    {
+      "text": "<p><code>isLeapYear(1900)</code> should return <code>false</code>.</p>",
+      "testString": "assert.equal(isLeapYear(1900), false);"
+    },
+    {
+      "text": "<p><code>isLeapYear(1996)</code> should return <code>true</code>.</p>",
+      "testString": "assert.equal(isLeapYear(1996), true);"
+    },
+    {
+      "text": "<p><code>isLeapYear(1800)</code> should return <code>false</code>.</p>",
+      "testString": "assert.equal(isLeapYear(1800), false);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Determine whether a given year is a leap year in the Gregorian calendar.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 87,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

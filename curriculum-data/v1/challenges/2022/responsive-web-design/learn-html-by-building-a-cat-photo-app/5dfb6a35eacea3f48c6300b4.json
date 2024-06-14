@@ -1,0 +1,69 @@
+{
+  "id": "5dfb6a35eacea3f48c6300b4",
+  "title": "Step 24",
+  "challengeType": 0,
+  "dashedName": "step-24",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        18,
+        23
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n          \n        </figure>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n          \n        </figure>\n      </section>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>figcaption</code> element should have an opening tag. Opening tags have the following syntax: <code>&#x3C;elementName></code>.</p>",
+      "testString": "assert(document.querySelector('figcaption'));"
+    },
+    {
+      "text": "<p>Your <code>figcaption</code> element should have a closing tag. Closing tags have a <code>/</code> just after the <code>&#x3C;</code> character.</p>",
+      "testString": "assert(code.match(/<\\/figcaption\\>/));"
+    },
+    {
+      "text": "<p>The <code>figcaption</code> element should be nested in the <code>figure</code> element.</p>",
+      "testString": "assert(\n  document.querySelector('figure > figcaption') &&\n    document.querySelector('figure > figcaption')\n);"
+    },
+    {
+      "text": "<p>The lasagna <code>img</code> element should be nested in the <code>figure</code> element.</p>",
+      "testString": "assert(\n  document.querySelector('figure > img') &&\n    document.querySelector('figure > img').getAttribute('src').toLowerCase() ===\n      'https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg'\n);"
+    },
+    {
+      "text": "<p>The <code>figcaption</code> element nested in the <code>figure</code> element should be below the <code>img</code> element. You have them in the wrong order.</p>",
+      "testString": "assert(\n  document.querySelector('figcaption').previousElementSibling.nodeName === 'IMG'\n);"
+    },
+    {
+      "text": "<p>Your <code>figcaption</code> element's text should be <code>Cats love lasagna.</code> You have either omitted the text or have a typo.</p>",
+      "testString": "assert(\n  document.querySelector('figcaption').innerText.match(/Cats love lasagna.?$/i)\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A figure caption (<code>figcaption</code>) element is used to add a caption to describe the image contained within the <code>figure</code> element.</p>\n<p>Here is an example of a <code>figcaption</code> element with the caption of <code>A cute cat</code>:</p>\n<pre><code class=\"language-html\">&#x3C;figure>\n  &#x3C;img src=\"image.jpg\" alt=\"A description of the image\">\n  &#x3C;figcaption>A cute cat&#x3C;/figcaption>\n&#x3C;/figure>\n</code></pre>\n<p>After the image nested in the <code>figure</code> element, add a <code>figcaption</code> element with text set to:</p>\n<p><code>Cats love lasagna.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

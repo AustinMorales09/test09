@@ -1,0 +1,88 @@
+{
+  "id": "661ebaf8b803451ff4b50a69",
+  "title": "Task 77",
+  "challengeType": 19,
+  "dashedName": "task-77",
+  "solutions": [],
+  "question": {
+    "text": "<p>Listen and indicate Alice's idea about biometrics.</p>",
+    "answers": [
+      {
+        "answer": "<p>It is secure to use it with privacy.</p>",
+        "feedback": "<p>Alice mentions that, like other technologies, it also has privacy concerns.</p>"
+      },
+      {
+        "answer": "<p>There are potential problems related to privacy that should be dealt with in biometrics.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It has no impact on privacy.</p>",
+        "feedback": "<p>It might. If used incorrectly, there can be privacy concerns, according to Alice.</p>"
+      },
+      {
+        "answer": "<p>It makes sure all the user data is private.</p>",
+        "feedback": "<p>Alice doesn't mention that. On the contrary, there are things that you should consider when using biometrics to prevent the disclosure of private data.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 21.02,
+        "finishTimestamp": 25.86
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 5.84,
+        "dialogue": {
+          "text": "It's generally secure, but like any technology, it has its challenges and privacy concerns.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 6.34
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Privacy concerns</code> refers to worries or issues related to the protection of personal information. When someone mentions <code>privacy concerns</code>, they are talking about potential problems or anxieties regarding the safeguarding of private details from being misused or disclosed.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 80,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

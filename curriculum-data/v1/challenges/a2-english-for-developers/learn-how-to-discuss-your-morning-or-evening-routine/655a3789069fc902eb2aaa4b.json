@@ -1,0 +1,75 @@
+{
+  "id": "655a3789069fc902eb2aaa4b",
+  "title": "Task 46",
+  "challengeType": 22,
+  "dashedName": "task-46",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Set one alarm and get up when it _.</p>",
+    "blanks": [
+      {
+        "answer": "rings",
+        "feedback": "<p>The verb is conjugated in the third person singular because it refers to the alarm clock.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room1.png",
+      "characters": [
+        {
+          "character": "Expert",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.82,
+        "finishTimestamp": 22.28
+      }
+    },
+    "commands": [
+      {
+        "character": "Expert",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Expert",
+        "startTime": 1,
+        "finishTime": 3.46,
+        "dialogue": {
+          "text": "Set one alarm and get up when it rings.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "opacity": 0,
+        "startTime": 3.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>to ring</code> refers to the action of making a sound, particularly a clear resonant sound. It's commonly used to describe the sound made by bells, telephones, or alarms. For example:</p>\n<p><code>The phone will ring at 9 AM to remind me of the meeting.</code> (indicates the phone making a sound)</p>\n<p><code>I wake up when my alarm clock rings.</code> (describes the alarm making a sound to wake someone up)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 47,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

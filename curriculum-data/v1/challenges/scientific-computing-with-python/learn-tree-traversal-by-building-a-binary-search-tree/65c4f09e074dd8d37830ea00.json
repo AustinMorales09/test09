@@ -1,0 +1,49 @@
+{
+  "id": "65c4f09e074dd8d37830ea00",
+  "title": "Step 6",
+  "challengeType": 20,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        6,
+        8
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class TreeNode:\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n",
+      "error": null,
+      "seed": "class TreeNode:\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a class named <code>BinarySearchTree</code>. Remember to use the <code>pass</code> keyword.</p>",
+      "testString": "({\n  test: () => {\n    assert(runPython(`\n      import inspect\n      inspect.isclass(BinarySearchTree)\n    `));\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Create another empty class called <code>BinarySearchTree</code> that represents a binary search tree.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

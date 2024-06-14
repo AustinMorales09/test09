@@ -1,0 +1,79 @@
+{
+  "id": "655a4e0c1176be0e1b785c96",
+  "title": "Task 53",
+  "challengeType": 22,
+  "dashedName": "task-53",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Yes, _ start your day by checking your phone or emails _.</p>",
+    "blanks": [
+      {
+        "answer": "don't",
+        "feedback": "<p>Used here for a negative command, advising against an action.</p>"
+      },
+      {
+        "answer": "immediately",
+        "feedback": "<p>Means to do something right away or without any delay.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room1.png",
+      "characters": [
+        {
+          "character": "Expert",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 43.42,
+        "finishTimestamp": 47.06
+      }
+    },
+    "commands": [
+      {
+        "character": "Expert",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Expert",
+        "startTime": 1,
+        "finishTime": 4.64,
+        "dialogue": {
+          "text": "Yes. Don't start your day by checking your phone or emails immediately.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "opacity": 0,
+        "startTime": 5.14
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The adverb <code>immediately</code> means without delay or right away. It's used to emphasize the urgency or the need to do something at once. For example:</p>\n<p><code>This issue has to be fixed immediately.</code> (do it right away without delay)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 54,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

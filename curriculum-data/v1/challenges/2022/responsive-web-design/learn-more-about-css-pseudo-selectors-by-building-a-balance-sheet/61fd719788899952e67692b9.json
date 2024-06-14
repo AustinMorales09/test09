@@ -1,0 +1,77 @@
+{
+  "id": "61fd719788899952e67692b9",
+  "title": "Step 9",
+  "challengeType": 0,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        23,
+        27
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Balance Sheet</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <main>\n      <section>\n        <h1>\n          <span class=\"flex\">\n            <span>AcmeWidgetCorp</span>\n            <span>Balance Sheet</span>\n          </span>\n        </h1>\n        <div id=\"years\" aria-hidden=\"true\">\n          <span class=\"year\">2019</span>\n          <span class=\"year\">2020</span>\n          <span class=\"year\">2021</span>\n        </div>\n        <div class=\"table-wrap\">\n          <table>\n            <caption>Assets</caption>\n          </table>\n          <table>\n          </table>\n          <table>\n          </table>\n        </div>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Balance Sheet</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <main>\n      <section>\n        <h1>\n          <span class=\"flex\">\n            <span>AcmeWidgetCorp</span>\n            <span>Balance Sheet</span>\n          </span>\n        </h1>\n        <div id=\"years\" aria-hidden=\"true\">\n          <span class=\"year\">2019</span>\n          <span class=\"year\">2020</span>\n          <span class=\"year\">2021</span>\n        </div>\n        <div class=\"table-wrap\">\n          <table>\n            <caption>Assets</caption>\n          </table>\n          <table>\n          </table>\n          <table>\n          </table>\n        </div>\n      </section>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your first <code>table</code> element should have a <code>thead</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('table')?.[0]?.querySelector('thead'));"
+    },
+    {
+      "text": "<p>Your first <code>table</code> element should have a <code>tbody</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('table')?.[0]?.querySelector('tbody'));"
+    },
+    {
+      "text": "<p>Your <code>thead</code> element should be immediately below your <code>caption</code> element.</p>",
+      "testString": "assert(document.querySelector('caption')?.nextElementSibling?.localName === 'thead');"
+    },
+    {
+      "text": "<p>Your <code>tbody</code> element should be immediately below your <code>thead</code> element.</p>",
+      "testString": "assert(document.querySelector('thead')?.nextElementSibling?.localName === 'tbody');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>thead</code> and <code>tbody</code> elements are used to indicate which portion of your table is the header, and which portion contains the primary data or content.</p>\n<p>Add a <code>thead</code> and <code>tbody</code> to your first <code>table</code>, below the <code>caption</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-more-about-css-pseudo-selectors-by-building-a-balance-sheet",
+  "hasEditableBoundaries": true,
+  "order": 10,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "5f3477aefa51bfc29327200b",
+  "title": "Step 14",
+  "challengeType": 0,
+  "dashedName": "step-14",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n    <style>\n      h1, h2, p {\n        text-align: center;\n      }\n    </style>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n    <style>\n      h1, h2, p {\n        text-align: center;\n      }\n    </style>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "\n",
+      "error": null,
+      "seed": "\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>styles.css</code> file should have the <code>h1, h2, p</code> type selector.</p>",
+      "testString": "(getUserInput) => {\n  assert(getUserInput('editableContents').replace(/[\\s\\n]*/g, \"\").match(/(h1|h2|p),(h1|h2|p),(h1|h2|p){/));\n}"
+    },
+    {
+      "text": "<p>Your selector should set the <code>text-align</code> property to <code>center</code>.</p>",
+      "testString": "(getUserInput) => {\n  assert(getUserInput('editableContents').match(/text-align:\\s*center;?/));\n}"
+    },
+    {
+      "text": "<p>Your code should not contain the <code>&#x3C;style></code> tags.</p>",
+      "testString": "  assert.isFalse(/<\\/html>(\\n|.)*<\\/?\\s*style\\s*>/.test(code));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You have styled three elements by writing CSS inside the <code>style</code> tags. This works, but since there will be many more styles, it's best to put all the styles in a separate file and link to it.</p>\n<p>We have created a separate <code>styles.css</code> file for you and switched the editor view to that file. You can change between files with the tabs at the top of the editor.</p>\n<p>Start by rewriting the styles you have created into the <code>styles.css</code> file. Make sure to exclude the opening and closing <code>style</code> tags.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

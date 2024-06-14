@@ -1,0 +1,49 @@
+{
+  "id": "65c4f33bc3c3d8db7f732787",
+  "title": "Step 16",
+  "challengeType": 20,
+  "dashedName": "step-16",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        18,
+        20
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class TreeNode:\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\nclass BinarySearchTree:\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n            node.right = self._insert(node.right, key)\n        return node\n\n",
+      "error": null,
+      "seed": "class TreeNode:\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\nclass BinarySearchTree:\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n            node.right = self._insert(node.right, key)\n        return node\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should define an <code>insert</code> method with a <code>self</code> parameter within the <code>BinarySearchTree</code> class. Remember the <code>pass</code> keyword.</p>",
+      "testString": "({ test: () => assert.match(code, /^\\s{4}def\\s+insert\\s*\\(\\s*self\\s*\\)\\s*:/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now, to perform the actual insertion, define an empty <code>insert</code> method within the <code>BinarySearchTree</code> class and give it a <code>self</code> parameter.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

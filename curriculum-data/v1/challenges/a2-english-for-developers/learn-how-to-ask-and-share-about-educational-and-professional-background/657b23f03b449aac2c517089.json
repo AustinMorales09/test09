@@ -1,0 +1,75 @@
+{
+  "id": "657b23f03b449aac2c517089",
+  "title": "Task 70",
+  "challengeType": 22,
+  "dashedName": "task-70",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I'm mostly self-taught, and I _ a lot of online courses.</p>",
+    "blanks": [
+      {
+        "answer": "took",
+        "feedback": "<p>This word is the past tense form of <code>take</code>. It's used to talk about actions that happened in the past.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 8,
+        "finishTimestamp": 10.82
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 3.82,
+        "dialogue": {
+          "text": "I'm mostly self-taught and I took a lot of online courses.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 4.32
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>took</code> is what you use instead of <code>take</code> when you're talking about something that happened in the past, like yesterday or last year.</p>\n<p>Most verbs get <code>-ed</code> added to them for the past tense, like <code>play</code> becomes <code>played</code>. But <code>take</code> is different; it changes to <code>took</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 73,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

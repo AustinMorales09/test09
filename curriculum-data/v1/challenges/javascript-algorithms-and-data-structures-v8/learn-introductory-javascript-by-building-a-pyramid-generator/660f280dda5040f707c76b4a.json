@@ -1,0 +1,57 @@
+{
+  "id": "660f280dda5040f707c76b4a",
+  "title": "Step 44",
+  "challengeType": 1,
+  "dashedName": "step-44",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        8
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character);\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character);\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>.repeat()</code> method.</p>",
+      "testString": "assert.match(code, /\\.repeat\\(/);"
+    },
+    {
+      "text": "<p>You should use the <code>.repeat()</code> method on your <code>character</code> variable.</p>",
+      "testString": "assert.match(code, /character\\.repeat\\(/);"
+    },
+    {
+      "text": "<p>You should pass <code>i</code> to your <code>.repeat()</code> method.</p>",
+      "testString": "assert.match(code, /character\\.repeat\\(\\s*i\\s*\\)/)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now you have a series of <code>#</code> characters, but the pyramid shape is still missing. Fortunately, the <code>i</code> variable represents the current \"row\" number in your loop, enabling you to use it for crafting a pyramid-like structure.</p>\n<p>To achieve this, you will use the <code>.repeat()</code> method available to strings. This method accepts a number as an argument, specifying the number of times to repeat the target string. For example, using <code>.repeat()</code> to generate the string <code>\"Code! Code! Code!\"</code>:</p>\n<pre><code class=\"language-js\">const activity = \"Code! \";\nactivity.repeat(3);\n</code></pre>\n<p>Use the <code>.repeat()</code> method on your <code>character</code>, and give it <code>i</code> for the number.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

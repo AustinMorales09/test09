@@ -1,0 +1,49 @@
+{
+  "id": "65647c71a5d2bd431596f629",
+  "title": "Step 14",
+  "challengeType": 20,
+  "dashedName": "step-14",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        14
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import secrets\nimport string\n\n\ndef generate_password():    \n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n",
+      "error": null,
+      "seed": "import secrets\nimport string\n\n\ndef generate_password():    \n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>generate_password</code> function should take a <code>length</code> parameter.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import inspect\n    sig = str(inspect.signature(generate_password))\n    sig == \"(length)\"\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Your <code>generate_password</code> function needs a few parameters. Start by adding a <code>length</code> parameter.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

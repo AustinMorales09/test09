@@ -1,0 +1,88 @@
+{
+  "id": "65a85090914872be8ca97793",
+  "title": "Task 37",
+  "challengeType": 19,
+  "dashedName": "task-37",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Tom asking Sarah about?</p>",
+    "answers": [
+      {
+        "answer": "<p>Why she didn’t solve the issue</p>",
+        "feedback": "<p>Tom's question is about what Sarah found, not about why she didn't solve the issue.</p>"
+      },
+      {
+        "answer": "<p>If she needs help with the issue</p>",
+        "feedback": "<p>Tom's question focuses on Sarah's findings, not on offering help.</p>"
+      },
+      {
+        "answer": "<p>What she discovered about the issue</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>If she knew about the issue</p>",
+        "feedback": "<p>Tom knows Sarah's aware of the issue.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.7,
+        "finishTimestamp": 11.38
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 2.68,
+        "dialogue": {
+          "text": "That's great. What did you find?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 3.18
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This task tests your comprehension of what Tom is asking Sarah.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-help-a-coworker-troubleshoot-on-github",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 38,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "656a2fa76e9c4636f6ac7a49",
+  "title": "Task 31",
+  "challengeType": 19,
+  "dashedName": "task-31",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is Brian taking a break at the moment?</p>",
+    "answers": [
+      {
+        "answer": "<p>Because he has finished all his work</p>",
+        "feedback": "<p>Brian did not mention being finished with work.</p>"
+      },
+      {
+        "answer": "<p>To learn more about frontend development and improve his skills</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Because he is waiting for new tasks</p>",
+        "feedback": "<p>Brian does not mention needing new tasks.</p>"
+      },
+      {
+        "answer": "<p>To take time off without any specific plan</p>",
+        "feedback": "<p>Brian mentions a specific plan.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 5.8,
+        "finishTimestamp": 11.38
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 6.58,
+        "dialogue": {
+          "text": "I'm taking a short break to learn more about front end. It's good to stop a bit and refresh my skills.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 7.08
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Let's practice!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,66 @@
+{
+  "id": "5a94fe0569fb03452672e45c",
+  "title": "Divide the Grid Into an Area Template",
+  "challengeType": 0,
+  "forumTopicId": 301130,
+  "dashedName": "divide-the-grid-into-an-area-template",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n  .item5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    min-height: 300px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n    grid-template-areas:\n    /* Only change code below this line */\n      \"header header header\"\n      \"advert content content\"\n      \"advert footer footer\";\n    /* Only change code above this line */\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>",
+      "error": null,
+      "seed": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n  .item5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    min-height: 300px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n    grid-template-areas:\n    /* Only change code below this line */\n      \"header header header\"\n      \"advert content content\"\n      \"advert footer footer\";\n    /* Only change code above this line */\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n  .item5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    min-height: 300px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n\n    grid-template-areas:\n      \"header header header\"\n      \"advert content content\"\n      \"footer footer footer\";\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>",
+        "error": null,
+        "seed": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n  .item5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    min-height: 300px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n\n    grid-template-areas:\n      \"header header header\"\n      \"advert content content\"\n      \"footer footer footer\";\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>container</code> class should have a <code>grid-template-areas</code> property similar to the example but with the <code>footer</code> area spanning the whole bottom row.</p>",
+      "testString": "assert(\n  __helpers\n    .removeCssComments(code)\n    .match(\n      /.container\\s*?{[\\s\\S]*grid-template-areas\\s*?:\\s*?\"\\s*?header\\s*?header\\s*?header\\s*?\"\\s*?\"\\s*?advert\\s*?content\\s*?content\\s*?\"\\s*?\"\\s*?footer\\s*?footer\\s*?footer\\s*?\"\\s*?;[\\s\\S]*}/gi\n    )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can group cells of your grid together into an <dfn>area</dfn> and give the area a custom name. Do this by using <code>grid-template-areas</code> on the container like this:</p>\n<pre><code class=\"language-css\">grid-template-areas:\n  \"header header header\"\n  \"advert content content\"\n  \"advert footer footer\";\n</code></pre>\n<p>The code above groups the cells of the grid into four areas: <code>header</code>, <code>advert</code>, <code>content</code>, and <code>footer</code>. Every word represents a cell and every pair of quotation marks represent a row.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Change the template so the <code>footer</code> area spans the entire bottom row. Defining the areas won't have any visual effect right now. Later, you will make an item use an area to see how it works.</p>\n</section>",
+  "translationPending": false,
+  "block": "css-grid",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,92 @@
+{
+  "id": "657e5280003334b1726df8a2",
+  "title": "Task 81",
+  "challengeType": 22,
+  "dashedName": "task-81",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Compliance is when we put specific _, _, and _ that are important to our _ into practice. It helps promote _ at the workplace.</p>",
+    "blanks": [
+      {
+        "answer": "rules",
+        "feedback": "<p>Instructions that must be followed.</p>"
+      },
+      {
+        "answer": "policies",
+        "feedback": "<p>Guidelines set by an organization.</p>"
+      },
+      {
+        "answer": "regulations",
+        "feedback": "<p>Official rules made by authorities.</p>"
+      },
+      {
+        "answer": "industry",
+        "feedback": "<p>A specific sector of business or economy.</p>"
+      },
+      {
+        "answer": "ethics",
+        "feedback": "<p>Moral principles and standards.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room2.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 12.48,
+        "finishTimestamp": 22.74
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 11.26,
+        "dialogue": {
+          "text": "Compliance is when we put specific rules, policies and regulations that are important to our industry into practice. It helps promote ethics at the workplace.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 11.76
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Understanding the concept of compliance in the workplace involves knowing about rules, policies, regulations, and how they relate to ethics. This comprehension is important in many professional settings.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 84,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,116 @@
+{
+  "id": "6641495568b04c48f699b7f9",
+  "title": "Task 70",
+  "challengeType": 19,
+  "dashedName": "task-70",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Maria react to Brian's comment.</p>",
+    "answers": [
+      {
+        "answer": "<p>She understands there was a mix-up and thanks Brian for the clarification</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She goes to the bank to get the extra money necessary</p>",
+        "feedback": "<p>There is nothing in the dialogue that gives out that idea.</p>"
+      },
+      {
+        "answer": "<p>She says she got the money</p>",
+        "feedback": "<p>Even though she uses the verb <code>got</code> in her answer, that's not what she means.</p>"
+      },
+      {
+        "answer": "<p>She thanks Brian for cleaning the office</p>",
+        "feedback": "<p>That's not what Brian did. He just explained that there was a mix-up.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 40.12,
+        "finishTimestamp": 49.14
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 7.38,
+        "dialogue": {
+          "text": "The budget we agreed upon was indeed $15,000, not $10,000. It should cover all the expenses.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 7.74
+      },
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 7.74
+      },
+      {
+        "character": "Maria",
+        "startTime": 8.1,
+        "finishTime": 10.02,
+        "dialogue": {
+          "text": "Got it, Brian. Thanks for clearing that up.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 10.52
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Got it!</code> means you understand something. For example, if someone explains how to do a task and you understand, you can say, <code>Got it!</code> It means you know what to do now.</p>\n<p><code>To clear up</code> means to make something easy to understand or to fix a misunderstanding. For example, if there is confusion about meeting time and you explain it clearly, you can ask if you <code>cleared up</code> the confusion. It means you make everything clear for everyone involved.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 73,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

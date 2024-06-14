@@ -1,0 +1,88 @@
+{
+  "id": "657d9d6b3838fa9030d5b9d8",
+  "title": "Task 16",
+  "challengeType": 19,
+  "dashedName": "task-16",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the phrase <code>enjoy the most</code> convey in this context?</p>",
+    "answers": [
+      {
+        "answer": "<p>Forced participation</p>",
+        "feedback": "<p>Forced participation suggests a lack of choice or willingness, which is not the focus in this context.</p>"
+      },
+      {
+        "answer": "<p>Casual interest</p>",
+        "feedback": "<p>Casual interest implies a mild or passing interest, which is not the case with Bob's photography passion.</p>"
+      },
+      {
+        "answer": "<p>Preferred aspect</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Routine obligation</p>",
+        "feedback": "<p>Routine obligation suggests a sense of duty, which is not the case with Bob's photography passion.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 21.98,
+        "finishTimestamp": 24.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 3.18,
+        "dialogue": {
+          "text": "What kind of photography do you enjoy the most?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 3.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>enjoy the most</code> is used to indicate one's preferred or favorite aspect of an activity.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

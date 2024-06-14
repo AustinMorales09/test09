@@ -1,0 +1,34 @@
+{
+  "id": "587d7fb2367417b2b2512bf5",
+  "title": "Get Route Parameter Input from the Client",
+  "challengeType": 2,
+  "forumTopicId": 301513,
+  "dashedName": "get-route-parameter-input-from-the-client",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Test 1 : Your echo server should repeat words correctly</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/eChOtEsT/echo').then(\n    (data) => {\n      assert.equal(\n        data.echo,\n        'eChOtEsT',\n        'Test 1: the echo server is not working as expected'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    },
+    {
+      "text": "<p>Test 2 : Your echo server should repeat words correctly</p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/ech0-t3st/echo').then(\n    (data) => {\n      assert.equal(\n        data.echo,\n        'ech0-t3st',\n        'Test 2: the echo server is not working as expected'\n      );\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When building an API, we have to allow users to communicate to us what they want to get from our service. For example, if the client is requesting information about a user stored in the database, they need a way to let us know which user they're interested in. One possible way to achieve this result is by using route parameters. Route parameters are named segments of the URL, delimited by slashes (/). Each segment captures the value of the part of the URL which matches its position. The captured values can be found in the <code>req.params</code> object.</p>\n<blockquote>route_path: '/user/:userId/book/:bookId'<br>actual_request_URL: '/user/546/book/6754' <br>req.params: {userId: '546', bookId: '6754'}</blockquote>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Build an echo server, mounted at the route <code>GET /:word/echo</code>. Respond with a JSON object, taking the structure <code>{echo: word}</code>. You can find the word to be repeated at <code>req.params.word</code>. You can test your route from your browser's address bar, visiting some matching routes, e.g. <code>your-app-rootpath/freecodecamp/echo</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-node-and-express",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 5,
+  "certification": "back-end-development-and-apis",
+  "superBlock": "back-end-development-and-apis",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

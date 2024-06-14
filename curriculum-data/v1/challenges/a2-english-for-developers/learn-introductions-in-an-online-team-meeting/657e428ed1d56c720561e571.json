@@ -1,0 +1,88 @@
+{
+  "id": "657e428ed1d56c720561e571",
+  "title": "Task 83",
+  "challengeType": 19,
+  "dashedName": "task-83",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the phrase <code>Let's get started</code> typically mean in a meeting?</p>",
+    "answers": [
+      {
+        "answer": "<p>It's a request for everyone to leave the meeting.</p>",
+        "feedback": "<p><code>Let's get started</code> is about beginning something, not ending it or leaving.</p>"
+      },
+      {
+        "answer": "<p>It means to begin the meeting or start the planned activities.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It's an instruction to stop working and take a break.</p>",
+        "feedback": "<p>The phrase is used to initiate work or activity, not to take breaks.</p>"
+      },
+      {
+        "answer": "<p>It indicates that the meeting will continue later.</p>",
+        "feedback": "<p><code>Let's get started</code> is used for starting immediately, not for postponing.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.8,
+        "finishTimestamp": 23.7
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 1.9,
+        "dialogue": {
+          "text": "Let's get started!",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 2.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Let's get started</code> is a phrase used to initiate an activity, meeting, or session. It signals that it's time to begin the planned activities. For example, at the start of a meeting, someone might say, <code>Let's get started with the first topic</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 86,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

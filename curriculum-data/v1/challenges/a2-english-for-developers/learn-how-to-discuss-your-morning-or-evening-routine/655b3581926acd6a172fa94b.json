@@ -1,0 +1,97 @@
+{
+  "id": "655b3581926acd6a172fa94b",
+  "title": "Task 92",
+  "challengeType": 19,
+  "dashedName": "task-92",
+  "solutions": [],
+  "question": {
+    "text": "<p>What time does he start his day?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>He starts his day at 8</code></p>",
+        "feedback": "<p>Brian doesn't mention 8.</p>"
+      },
+      {
+        "answer": "<p><code>He wakes up by 7</code></p>",
+        "feedback": "<p>The preposition <code>by</code> is incorrect.</p>"
+      },
+      {
+        "answer": "<p><code>He wakes up at 6</code></p>",
+        "feedback": "<p>The correct time Brian starts his day is not 6.</p>"
+      },
+      {
+        "answer": "<p><code>He starts his day at 7</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.12,
+        "finishTimestamp": 14.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.04,
+        "dialogue": {
+          "text": "Nothing out of the ordinary, Sophie. On Saturday, I wake up early at 7.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "startTime": 5.32,
+        "finishTime": 11.24,
+        "dialogue": {
+          "text": "I run in the park near my place in the morning. In the afternoon, I visit my parents and I have lunch with them.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 11.74
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 96,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

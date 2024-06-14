@@ -1,0 +1,85 @@
+{
+  "id": "5a24c314108439a4d4036159",
+  "title": "Use the Spread Operator on Arrays",
+  "challengeType": 6,
+  "forumTopicId": 301452,
+  "dashedName": "use-the-spread-operator-on-arrays",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const immutableReducer = (state = ['Do not mutate state!'], action) => {\n  switch(action.type) {\n    case 'ADD_TO_DO':\n      // Don't mutate state here or the tests will fail\n      return\n    default:\n      return state;\n  }\n};\n\nconst addToDo = (todo) => {\n  return {\n    type: 'ADD_TO_DO',\n    todo\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);",
+      "error": null,
+      "seed": "const immutableReducer = (state = ['Do not mutate state!'], action) => {\n  switch(action.type) {\n    case 'ADD_TO_DO':\n      // Don't mutate state here or the tests will fail\n      return\n    default:\n      return state;\n  }\n};\n\nconst addToDo = (todo) => {\n  return {\n    type: 'ADD_TO_DO',\n    todo\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const immutableReducer = (state = ['Do not mutate state!'], action) => {\n  switch(action.type) {\n    case 'ADD_TO_DO':\n      return [\n        ...state,\n        action.todo\n      ];\n    default:\n      return state;\n  }\n};\n\nconst addToDo = (todo) => {\n  return {\n    type: 'ADD_TO_DO',\n    todo\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);",
+        "error": null,
+        "seed": "const immutableReducer = (state = ['Do not mutate state!'], action) => {\n  switch(action.type) {\n    case 'ADD_TO_DO':\n      return [\n        ...state,\n        action.todo\n      ];\n    default:\n      return state;\n  }\n};\n\nconst addToDo = (todo) => {\n  return {\n    type: 'ADD_TO_DO',\n    todo\n  }\n}\n\nconst store = Redux.createStore(immutableReducer);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The Redux store should exist and initialize with a state equal to <code>[\"Do not mutate state!\"]</code>.</p>",
+      "testString": "assert(\n  (function () {\n    const initialState = store.getState();\n    return (\n      Array.isArray(initialState) === true &&\n      initialState[0] === 'Do not mutate state!'\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p><code>addToDo</code> and <code>immutableReducer</code> both should be functions.</p>",
+      "testString": "assert(typeof addToDo === 'function' && typeof immutableReducer === 'function');"
+    },
+    {
+      "text": "<p>Dispatching an action of type <code>ADD_TO_DO</code> on the Redux store should add a <code>todo</code> item and should NOT mutate state.</p>",
+      "testString": "assert(\n  (function () {\n    const initialState = store.getState();\n    const isFrozen = DeepFreeze(initialState);\n    store.dispatch(addToDo('__TEST__TO__DO__'));\n    const finalState = store.getState();\n    const expectedState = ['Do not mutate state!', '__TEST__TO__DO__'];\n    return isFrozen && DeepEqual(finalState, expectedState);\n  })()\n);"
+    },
+    {
+      "text": "<p>The spread operator should be used to return new state.</p>",
+      "testString": "(getUserInput) => assert(getUserInput('index').includes('...state'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>One solution from ES6 to help enforce state immutability in Redux is the spread operator: <code>...</code>. The spread operator has a variety of applications, one of which is well-suited to the previous challenge of producing a new array from an existing array. This is relatively new, but commonly used syntax. For example, if you have an array <code>myArray</code> and write:</p>\n<pre><code class=\"language-js\">let newArray = [...myArray];\n</code></pre>\n<p><code>newArray</code> is now a clone of <code>myArray</code>. Both arrays still exist separately in memory. If you perform a mutation like <code>newArray.push(5)</code>, <code>myArray</code> doesn't change. The <code>...</code> effectively <em>spreads</em> out the values in <code>myArray</code> into a new array. To clone an array but add additional values in the new array, you could write <code>[...myArray, 'new value']</code>. This would return a new array composed of the values in <code>myArray</code> and the string <code>new value</code> as the last value. The spread syntax can be used multiple times in array composition like this, but it's important to note that it only makes a shallow copy of the array. That is to say, it only provides immutable array operations for one-dimensional arrays.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use the spread operator to return a new copy of state when a to-do is added.</p>\n</section>",
+  "translationPending": false,
+  "block": "redux",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 14,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"
+    },
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.2.0/redux-thunk.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

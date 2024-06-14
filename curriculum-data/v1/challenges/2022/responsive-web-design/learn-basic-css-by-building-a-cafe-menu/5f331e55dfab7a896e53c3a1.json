@@ -1,0 +1,57 @@
+{
+  "id": "5f331e55dfab7a896e53c3a1",
+  "title": "Step 3",
+  "challengeType": 0,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        6
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Cafe Menu</title>\n  </head>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Cafe Menu</title>\n  </head>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>meta</code> tag.</p>",
+      "testString": "assert(code.match(/<meta.*?\\/?>/is));"
+    },
+    {
+      "text": "<p>Your <code>meta</code> tag should have a <code>charset</code> attribute.</p>",
+      "testString": "assert(code.match(/<meta\\s+charset\\s*=/i));"
+    },
+    {
+      "text": "<p>Your <code>charset</code> attribute should have a value of <code>utf-8</code>.</p>",
+      "testString": "assert(code.match(/charset\\s*=\\s*('|\")utf-8\\1/i));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>title</code> is one of several elements that provide extra information not visible on the web page, but it is useful for search engines or how the page gets displayed.</p>\n<p>Inside the <code>head</code> element, nest a <code>meta</code> element with an attribute named <code>charset</code> set to the value <code>utf-8</code> to tell the browser how to encode characters for the page. Note that <code>meta</code> elements are self-closing.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,83 @@
+{
+  "id": "662b871f32087113511f262a",
+  "title": "Task 32",
+  "challengeType": 22,
+  "dashedName": "task-32",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hey, Tom. I'm _ some _ _ my code. I can't figure out what's wrong.</p>",
+    "blanks": [
+      {
+        "answer": "having",
+        "feedback": "<p>It shows an ongoing action or state, indicating Sarah is currently experiencing difficulties.</p>"
+      },
+      {
+        "answer": "trouble",
+        "feedback": "<p>This noun describes difficulties or problems with something specific.</p>"
+      },
+      {
+        "answer": "with",
+        "feedback": "<p>This preposition is used to connect the difficulty someone is having to the object of their difficulty, in this case, <code>my code</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.26
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5.26,
+        "dialogue": {
+          "text": "Hey, Tom. I'm having some trouble with my code. I can't figure out what's wrong.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5.76
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The <code>be</code> + <code>ing</code> form of verb is used to talk about actions happening at the moment.</p>\n<p>The phrase <code>have trouble with</code> is used to express difficulty in dealing with a specific issue or object. For example, <code>She is having trouble with her computer</code> means she is experiencing difficulties using her computer.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 33,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "6579d56623c2d8ee0f2bea87",
+  "title": "Task 17",
+  "challengeType": 19,
+  "dashedName": "task-17",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Bob asking Sophie?</p>",
+    "answers": [
+      {
+        "answer": "<p>If she will call him later</p>",
+        "feedback": "<p>Bob is offering to make the call himself, not asking Sophie to call him.</p>"
+      },
+      {
+        "answer": "<p>To schedule a meeting right away</p>",
+        "feedback": "<p>Bob's question is about calling later, not scheduling an immediate meeting.</p>"
+      },
+      {
+        "answer": "<p>For her opinion about the meeting</p>",
+        "feedback": "<p>Bob's request is specific to calling Sophie later, not about her opinion on the meeting.</p>"
+      },
+      {
+        "answer": "<p>Permission to call her later</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.48,
+        "finishTimestamp": 23.74
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 2.26,
+        "dialogue": {
+          "text": "Mind if I call you later?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 2.76
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this sentence, Bob is using a polite and indirect way to ask Sophie for permission to call her at a later time. This type of request is common in professional settings as a way to respect the other person's time and consent.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

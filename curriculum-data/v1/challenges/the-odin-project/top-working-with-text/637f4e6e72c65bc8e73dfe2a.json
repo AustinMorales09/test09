@@ -1,0 +1,41 @@
+{
+  "id": "637f4e6e72c65bc8e73dfe2a",
+  "title": "Working With Text Question D",
+  "challengeType": 15,
+  "dashedName": "working-with-text-question-d",
+  "solutions": [],
+  "question": {
+    "text": "<p>What element should you use to make text italicized to add emphasis?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>&#x3C;strong>This is an italic message&#x3C;/strong></code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>&#x3C;em>This is an italic message&#x3C;/em></code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>&#x3C;italic>This is an italic message&#x3C;/italic></code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The <code>em</code> element makes text italic. It also semantically places emphasis on the text, which again may affect things like screen readers. To define an emphasized element you wrap text content in an <code>&#x3C;em></code> tag.</p>\n<p>To use <code>em</code> on its own:</p>\n<iframe allowfullscreen=\"true\" allowpaymentrequest=\"true\" allowtransparency=\"true\" class=\"cp_embed_iframe \" frameborder=\"0\" height=\"300\" width=\"100%\" name=\"cp_embed_6\" scrolling=\"no\" src=\"https://codepen.io/TheOdinProjectExamples/embed/wvewqpp?height=300&amp;theme-id=dark&amp;default-tab=html%2Cresult&amp;slug-hash=wvewqpp&amp;user=TheOdinProjectExamples&amp;name=cp_embed_6\" style=\"width: 100%; overflow:hidden; display:block;\" title=\"CodePen Embed\" loading=\"lazy\" id=\"cp_embed_wvewqpp\"></iframe>\n<p>Again, like the <code>strong</code> element, you will find yourself mostly using the <code>em</code> element with other text elements:</p>\n<iframe allowfullscreen=\"true\" allowpaymentrequest=\"true\" allowtransparency=\"true\" class=\"cp_embed_iframe \" frameborder=\"0\" height=\"300\" width=\"100%\" name=\"cp_embed_7\" scrolling=\"no\" src=\"https://codepen.io/TheOdinProjectExamples/embed/VwWZzyj?height=300&amp;theme-id=dark&amp;default-tab=html%2Cresult&amp;slug-hash=VwWZzyj&amp;user=TheOdinProjectExamples&amp;name=cp_embed_7\" style=\"width: 100%; overflow:hidden; display:block;\" title=\"CodePen Embed\" loading=\"lazy\" id=\"cp_embed_VwWZzyj\"></iframe>\n</section>",
+  "translationPending": false,
+  "block": "top-working-with-text",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

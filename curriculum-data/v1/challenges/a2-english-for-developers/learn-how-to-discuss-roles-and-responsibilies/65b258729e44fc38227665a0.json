@@ -1,0 +1,79 @@
+{
+  "id": "65b258729e44fc38227665a0",
+  "title": "Task 10",
+  "challengeType": 22,
+  "dashedName": "task-10",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>She is a tall woman in her early 40s, with _ _ hair and glasses.</p>",
+    "blanks": [
+      {
+        "answer": "long",
+        "feedback": "<p>This word describes the length of the hair and comes first.</p>"
+      },
+      {
+        "answer": "blond",
+        "feedback": "<p>This word describes the color of the hair and follows the length.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 7.18,
+        "finishTimestamp": 11.7
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 5.52,
+        "dialogue": {
+          "text": "She's a tall woman in her early 40s with long blonde hair and glasses.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you describe something with more than one adjective, there's a specific order. For example, for describing hair, the length (like <code>long</code>) usually comes before the color (like <code>blond</code>).</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

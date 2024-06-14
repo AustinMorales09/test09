@@ -1,0 +1,78 @@
+{
+  "id": "598f48a36c8c40764b4e52b3",
+  "title": "Prevent Object Mutation",
+  "challengeType": 1,
+  "forumTopicId": 301207,
+  "dashedName": "prevent-object-mutation",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function freezeObj() {\n  const MATH_CONSTANTS = {\n    PI: 3.14\n  };\n  // Only change code below this line\n\n\n  // Only change code above this line\n  try {\n    MATH_CONSTANTS.PI = 99;\n  } catch(ex) {\n    console.log(ex);\n  }\n  return MATH_CONSTANTS.PI;\n}\nconst PI = freezeObj();",
+      "error": null,
+      "seed": "function freezeObj() {\n  const MATH_CONSTANTS = {\n    PI: 3.14\n  };\n  // Only change code below this line\n\n\n  // Only change code above this line\n  try {\n    MATH_CONSTANTS.PI = 99;\n  } catch(ex) {\n    console.log(ex);\n  }\n  return MATH_CONSTANTS.PI;\n}\nconst PI = freezeObj();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function freezeObj() {\n  const MATH_CONSTANTS = {\n    PI: 3.14\n  };\n  Object.freeze(MATH_CONSTANTS);\n\n  try {\n    MATH_CONSTANTS.PI = 99;\n  } catch(ex) {\n    console.log(ex);\n  }\n  return MATH_CONSTANTS.PI;\n}\nconst PI = freezeObj();",
+        "error": null,
+        "seed": "function freezeObj() {\n  const MATH_CONSTANTS = {\n    PI: 3.14\n  };\n  Object.freeze(MATH_CONSTANTS);\n\n  try {\n    MATH_CONSTANTS.PI = 99;\n  } catch(ex) {\n    console.log(ex);\n  }\n  return MATH_CONSTANTS.PI;\n}\nconst PI = freezeObj();"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not replace the <code>const</code> keyword.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/const/g));"
+    },
+    {
+      "text": "<p><code>MATH_CONSTANTS</code> should be a constant variable (by using <code>const</code>).</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/const\\s+MATH_CONSTANTS/g));"
+    },
+    {
+      "text": "<p>You should not change the original declaration of <code>MATH_CONSTANTS</code>.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(\n   /const\\s+MATH_CONSTANTS\\s+=\\s+{\\s+PI:\\s+3.14\\s+};/g\n));"
+    },
+    {
+      "text": "<p><code>PI</code> should equal <code>3.14</code>.</p>",
+      "testString": "assert(PI === 3.14);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As seen in the previous challenge, <code>const</code> declaration alone doesn't really protect your data from mutation. To ensure your data doesn't change, JavaScript provides a function <code>Object.freeze</code> to prevent data mutation.</p>\n<p>Any attempt at changing the object will be rejected, with an error thrown if the script is running in strict mode.</p>\n<pre><code class=\"language-js\">let obj = {\n  name:\"FreeCodeCamp\",\n  review:\"Awesome\"\n};\nObject.freeze(obj);\nobj.review = \"bad\";\nobj.newProp = \"Test\";\nconsole.log(obj); \n</code></pre>\n<p>The <code>obj.review</code> and <code>obj.newProp</code> assignments will result in errors, because our editor runs in strict mode by default, and the console will display the value <code>{ name: \"FreeCodeCamp\", review: \"Awesome\" }</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>In this challenge you are going to use <code>Object.freeze</code> to prevent mathematical constants from changing. You need to freeze the <code>MATH_CONSTANTS</code> object so that no one is able to alter the value of <code>PI</code>, add, or delete properties.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

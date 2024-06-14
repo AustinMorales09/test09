@@ -1,0 +1,79 @@
+{
+  "id": "663c1e666a0636bad7df73fc",
+  "title": "Task 40",
+  "challengeType": 22,
+  "dashedName": "task-40",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>You're on the right _. It's a kind of coffee _.</p>",
+    "blanks": [
+      {
+        "answer": "track",
+        "feedback": "<p>It's a synonym to <code>way</code> or <code>road</code>. Preceded by <code>on the right</code>, it means you had a good guess.</p>"
+      },
+      {
+        "answer": "machine",
+        "feedback": "<p>It's a tool with moving parts that helps you do things. In this case, it's something that makes coffee.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 15.72,
+        "finishTimestamp": 18.66
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.94,
+        "dialogue": {
+          "text": "You're on the right track. It's a kind of coffee machine.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.44
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When someone says <code>you're on the right track</code> when you are answering a question, what they mean is that your answer was a good one. It was not necessarily 100% correct, but you had a good idea to answer what was being asked of you.</p>\n<p>A <code>coffee machine</code>, you probably guessed it, is a machine used for making coffee. A <code>percolator</code> is one example of a <code>coffee machine</code>.</p>\n<p>Listen to the sentence and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

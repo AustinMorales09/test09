@@ -1,0 +1,47 @@
+{
+  "id": "64a6702e7a7d00f97013ed0e",
+  "title": "The Box Model Question G",
+  "challengeType": 15,
+  "dashedName": "the-box-model-question-g",
+  "solutions": [],
+  "question": {
+    "text": "<p>From inside to outside, what is the order of box-model properties?</p>",
+    "answers": [
+      {
+        "answer": "<p>Content, Margin, Padding, Border</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Margin, Padding, Content, Border</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Content, Padding, Border, Margin</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Padding, Content, Border, Margin</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [
+    "<p>Add a border to every element on the page and see how the boxes are laid out.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<img src=\"https://cdn.freecodecamp.org/curriculum/odin-project/the-box-model/box-model-lines.png\" alt=\"an image showing the odin project website surrounded by red borders indicating that the site is build out of multiple components\" style=\"width: 95%; height: 95%;\">\n<p>OK, so there might be some circles in the above image… but when it comes to layout, they fit together like rectangular boxes and not circles. In the end, laying out a webpage and positioning all its elements is deciding how you are going to nest and stack these boxes.</p>\n<p>The only real complication here is that there are many ways to manipulate the size of these boxes, and the space between them, using padding, margin, and border. But to sum it up briefly:</p>\n<ul>\n<li><code>padding</code> increases the space between the border of a box and the content of the box.</li>\n<li><code>margin</code> increases the space between the borders of a box and the borders of adjacent boxes.</li>\n<li><code>border</code> adds space (even if it’s only a pixel or two) between the margin and the padding.</li>\n</ul>\n<p>Be sure to study the diagrams carefully.</p>\n<img src=\"https://cdn.freecodecamp.org/curriculum/odin-project/the-box-model/the-box-model.png\" alt=\"Visual representation of CSS box model with text, surrounded by 'padding' in pink, a purple 'border', and 'margin' indicated by blue arrows, explaining space between text, box edge, and window edge.\">\n</section>",
+  "translationPending": false,
+  "block": "top-the-box-model",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

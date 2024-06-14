@@ -1,0 +1,94 @@
+{
+  "id": "5a24c314108439a4d4036183",
+  "title": "Use Advanced JavaScript in React Render Method",
+  "challengeType": 6,
+  "forumTopicId": 301415,
+  "dashedName": "use-advanced-javascript-in-react-render-method",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "var possibleAnswers = [\n  'It is certain',\n  'It is decidedly so',\n  'Without a doubt',\n  'Yes, definitely',\n  'You may rely on it',\n  'As I see it, yes',\n  'Outlook good',\n  'Yes',\n  'Signs point to yes',\n  'Reply hazy try again',\n  'Ask again later',\n  'Better not tell you now',\n  'Cannot predict now',\n  'Concentrate and ask again',\n  \"Don't count on it\",\n  'My reply is no',\n  'My sources say no',\n  'Outlook not so good',\n  'Very doubtful',\n  'Most likely'\n];\nReactDOM.render(<MagicEightBall />, document.getElementById('root'));",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "const inputStyle = {\n  width: 235,\n  margin: 5\n};\n\nclass MagicEightBall extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      userInput: '',\n      randomIndex: ''\n    };\n    this.ask = this.ask.bind(this);\n    this.handleChange = this.handleChange.bind(this);\n  }\n  ask() {\n    if (this.state.userInput) {\n      this.setState({\n        randomIndex: Math.floor(Math.random() * 20),\n        userInput: ''\n      });\n    }\n  }\n  handleChange(event) {\n    this.setState({\n      userInput: event.target.value\n    });\n  }\n  render() {\n    const possibleAnswers = [\n      'It is certain',\n      'It is decidedly so',\n      'Without a doubt',\n      'Yes, definitely',\n      'You may rely on it',\n      'As I see it, yes',\n      'Outlook good',\n      'Yes',\n      'Signs point to yes',\n      'Reply hazy try again',\n      'Ask again later',\n      'Better not tell you now',\n      'Cannot predict now',\n      'Concentrate and ask again',\n      \"Don't count on it\",\n      'My reply is no',\n      'My sources say no',\n      'Most likely',\n      'Outlook not so good',\n      'Very doubtful'\n    ];\n    const answer = 'change me!'; // Change this line\n    return (\n      <div>\n        <input\n          type='text'\n          value={this.state.userInput}\n          onChange={this.handleChange}\n          style={inputStyle}\n        />\n        <br />\n        <button onClick={this.ask}>Ask the Magic Eight Ball!</button>\n        <br />\n        <h3>Answer:</h3>\n        <p>\n          {/* Change code below this line */}\n\n          {/* Change code above this line */}\n        </p>\n      </div>\n    );\n  }\n}",
+      "error": null,
+      "seed": "const inputStyle = {\n  width: 235,\n  margin: 5\n};\n\nclass MagicEightBall extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      userInput: '',\n      randomIndex: ''\n    };\n    this.ask = this.ask.bind(this);\n    this.handleChange = this.handleChange.bind(this);\n  }\n  ask() {\n    if (this.state.userInput) {\n      this.setState({\n        randomIndex: Math.floor(Math.random() * 20),\n        userInput: ''\n      });\n    }\n  }\n  handleChange(event) {\n    this.setState({\n      userInput: event.target.value\n    });\n  }\n  render() {\n    const possibleAnswers = [\n      'It is certain',\n      'It is decidedly so',\n      'Without a doubt',\n      'Yes, definitely',\n      'You may rely on it',\n      'As I see it, yes',\n      'Outlook good',\n      'Yes',\n      'Signs point to yes',\n      'Reply hazy try again',\n      'Ask again later',\n      'Better not tell you now',\n      'Cannot predict now',\n      'Concentrate and ask again',\n      \"Don't count on it\",\n      'My reply is no',\n      'My sources say no',\n      'Most likely',\n      'Outlook not so good',\n      'Very doubtful'\n    ];\n    const answer = 'change me!'; // Change this line\n    return (\n      <div>\n        <input\n          type='text'\n          value={this.state.userInput}\n          onChange={this.handleChange}\n          style={inputStyle}\n        />\n        <br />\n        <button onClick={this.ask}>Ask the Magic Eight Ball!</button>\n        <br />\n        <h3>Answer:</h3>\n        <p>\n          {/* Change code below this line */}\n\n          {/* Change code above this line */}\n        </p>\n      </div>\n    );\n  }\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "const inputStyle = {\n  width: 235,\n  margin: 5\n};\n\nclass MagicEightBall extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      userInput: '',\n      randomIndex: ''\n    };\n    this.ask = this.ask.bind(this);\n    this.handleChange = this.handleChange.bind(this);\n  }\n  ask() {\n    if (this.state.userInput) {\n      this.setState({\n        randomIndex: Math.floor(Math.random() * 20),\n        userInput: ''\n      });\n    }\n  }\n  handleChange(event) {\n    this.setState({\n      userInput: event.target.value\n    });\n  }\n  render() {\n    const possibleAnswers = [\n      'It is certain',\n      'It is decidedly so',\n      'Without a doubt',\n      'Yes, definitely',\n      'You may rely on it',\n      'As I see it, yes',\n      'Outlook good',\n      'Yes',\n      'Signs point to yes',\n      'Reply hazy try again',\n      'Ask again later',\n      'Better not tell you now',\n      'Cannot predict now',\n      'Concentrate and ask again',\n      \"Don't count on it\",\n      'My reply is no',\n      'My sources say no',\n      'Outlook not so good',\n      'Very doubtful',\n      'Most likely'\n    ];\n    const answer = possibleAnswers[this.state.randomIndex];\n    return (\n      <div>\n        <input\n          type='text'\n          value={this.state.userInput}\n          onChange={this.handleChange}\n          style={inputStyle}\n        />\n        <br />\n        <button onClick={this.ask}>Ask the Magic Eight Ball!</button>\n        <br />\n        <h3>Answer:</h3>\n        <p>{answer}</p>\n      </div>\n    );\n  }\n}",
+        "error": null,
+        "seed": "const inputStyle = {\n  width: 235,\n  margin: 5\n};\n\nclass MagicEightBall extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      userInput: '',\n      randomIndex: ''\n    };\n    this.ask = this.ask.bind(this);\n    this.handleChange = this.handleChange.bind(this);\n  }\n  ask() {\n    if (this.state.userInput) {\n      this.setState({\n        randomIndex: Math.floor(Math.random() * 20),\n        userInput: ''\n      });\n    }\n  }\n  handleChange(event) {\n    this.setState({\n      userInput: event.target.value\n    });\n  }\n  render() {\n    const possibleAnswers = [\n      'It is certain',\n      'It is decidedly so',\n      'Without a doubt',\n      'Yes, definitely',\n      'You may rely on it',\n      'As I see it, yes',\n      'Outlook good',\n      'Yes',\n      'Signs point to yes',\n      'Reply hazy try again',\n      'Ask again later',\n      'Better not tell you now',\n      'Cannot predict now',\n      'Concentrate and ask again',\n      \"Don't count on it\",\n      'My reply is no',\n      'My sources say no',\n      'Outlook not so good',\n      'Very doubtful',\n      'Most likely'\n    ];\n    const answer = possibleAnswers[this.state.randomIndex];\n    return (\n      <div>\n        <input\n          type='text'\n          value={this.state.userInput}\n          onChange={this.handleChange}\n          style={inputStyle}\n        />\n        <br />\n        <button onClick={this.ask}>Ask the Magic Eight Ball!</button>\n        <br />\n        <h3>Answer:</h3>\n        <p>{answer}</p>\n      </div>\n    );\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>MagicEightBall</code> component should exist and should render to the page.</p>",
+      "testString": "assert.strictEqual(\n  Enzyme.mount(React.createElement(MagicEightBall)).find('MagicEightBall')\n    .length,\n  1\n);"
+    },
+    {
+      "text": "<p><code>MagicEightBall</code>'s first child should be an <code>input</code> element.</p>",
+      "testString": "assert.strictEqual(\n  Enzyme.mount(React.createElement(MagicEightBall))\n    .children()\n    .childAt(0)\n    .name(),\n  'input'\n);"
+    },
+    {
+      "text": "<p><code>MagicEightBall</code>'s third child should be a <code>button</code> element.</p>",
+      "testString": "assert.strictEqual(\n  Enzyme.mount(React.createElement(MagicEightBall))\n    .children()\n    .childAt(2)\n    .name(),\n  'button'\n);"
+    },
+    {
+      "text": "<p><code>MagicEightBall</code>'s state should be initialized with a property of <code>userInput</code> and a property of <code>randomIndex</code> both set to a value of an empty string.</p>",
+      "testString": "assert(\n  Enzyme.mount(React.createElement(MagicEightBall)).state('randomIndex') ===\n    '' &&\n    Enzyme.mount(React.createElement(MagicEightBall)).state('userInput') === ''\n);"
+    },
+    {
+      "text": "<p>When <code>MagicEightBall</code> is first mounted to the DOM, it should return an empty <code>p</code> element.</p>",
+      "testString": "assert(\n  Enzyme.mount(React.createElement(MagicEightBall)).find('p').length === 1 &&\n    Enzyme.mount(React.createElement(MagicEightBall)).find('p').text() === ''\n);"
+    },
+    {
+      "text": "<p>When text is entered into the <code>input</code> element and the button is clicked, the <code>MagicEightBall</code> component should return a <code>p</code> element that contains a random element from the <code>possibleAnswers</code> array.</p>",
+      "testString": "(() => {\n  const comp = Enzyme.mount(React.createElement(MagicEightBall));\n  const simulate = () => {\n    comp.find('input').simulate('change', { target: { value: 'test?' } });\n    comp.find('button').simulate('click');\n  };\n  const result = () => comp.find('p').text();\n  const _1 = () => {\n    simulate();\n    return result();\n  };\n  const _2 = () => {\n    simulate();\n    return result();\n  };\n  const _3 = () => {\n    simulate();\n    return result();\n  };\n  const _4 = () => {\n    simulate();\n    return result();\n  };\n  const _5 = () => {\n    simulate();\n    return result();\n  };\n  const _6 = () => {\n    simulate();\n    return result();\n  };\n  const _7 = () => {\n    simulate();\n    return result();\n  };\n  const _8 = () => {\n    simulate();\n    return result();\n  };\n  const _9 = () => {\n    simulate();\n    return result();\n  };\n  const _10 = () => {\n    simulate();\n    return result();\n  };\n  const _1_val = _1();\n  const _2_val = _2();\n  const _3_val = _3();\n  const _4_val = _4();\n  const _5_val = _5();\n  const _6_val = _6();\n  const _7_val = _7();\n  const _8_val = _8();\n  const _9_val = _9();\n  const _10_val = _10();\n  const actualAnswers = [\n    _1_val,\n    _2_val,\n    _3_val,\n    _4_val,\n    _5_val,\n    _6_val,\n    _7_val,\n    _8_val,\n    _9_val,\n    _10_val\n  ];\n  const hasIndex = actualAnswers.filter(\n    (answer, i) => possibleAnswers.indexOf(answer) !== -1\n  );\n  const notAllEqual = new Set(actualAnswers);\n  assert(notAllEqual.size > 1 && hasIndex.length === 10);\n})();"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In previous challenges, you learned how to inject JavaScript code into JSX code using curly braces, <code>{ }</code>, for tasks like accessing props, passing props, accessing state, inserting comments into your code, and most recently, styling your components. These are all common use cases to put JavaScript in JSX, but they aren't the only way that you can utilize JavaScript code in your React components.</p>\n<p>You can also write JavaScript directly in your <code>render</code> methods, before the <code>return</code> statement, <em><strong>without</strong></em> inserting it inside of curly braces. This is because it is not yet within the JSX code. When you want to use a variable later in the JSX code <em>inside</em> the <code>return</code> statement, you place the variable name inside curly braces.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>In the code provided, the <code>render</code> method has an array that contains 20 phrases to represent the answers found in the classic 1980's Magic Eight Ball toy. The button click event is bound to the <code>ask</code> method, so each time the button is clicked a random number will be generated and stored as the <code>randomIndex</code> in state. On line 52, delete the string <code>change me!</code> and reassign the <code>answer</code> const so your code randomly accesses a different index of the <code>possibleAnswers</code> array each time the component updates. Finally, insert the <code>answer</code> const inside the <code>p</code> tags.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 37,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

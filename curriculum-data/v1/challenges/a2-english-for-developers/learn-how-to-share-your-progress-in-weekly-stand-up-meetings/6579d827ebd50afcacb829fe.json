@@ -1,0 +1,88 @@
+{
+  "id": "6579d827ebd50afcacb829fe",
+  "title": "Task 22",
+  "challengeType": 19,
+  "dashedName": "task-22",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Bob imply with his statement?</p>",
+    "answers": [
+      {
+        "answer": "<p>He wants to change the topic of the meeting</p>",
+        "feedback": "<p>Bob's statement is about contributing an idea, not changing the topic.</p>"
+      },
+      {
+        "answer": "<p>He has an additional idea or suggestion to offer</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He is not interested in Sophie's problem</p>",
+        "feedback": "<p>Bob expresses interest in offering a suggestion, showing engagement with Sophie's problem.</p>"
+      },
+      {
+        "answer": "<p>He is asking for a break from the meeting</p>",
+        "feedback": "<p>Bob’s statement is about making a suggestion, not about taking a break from the meeting.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 26.86,
+        "finishTimestamp": 29.04
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.18,
+        "dialogue": {
+          "text": "I'd like to suggest something as well.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 3.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this dialogue, Bob indicates his desire to contribute an idea or suggestion to the discussion. Understanding the context and intent behind such statements is crucial in professional communication, especially in collaborative settings.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

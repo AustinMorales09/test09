@@ -1,0 +1,79 @@
+{
+  "id": "656cd1ca72b3e615a33c05b6",
+  "title": "Task 123",
+  "challengeType": 22,
+  "dashedName": "task-123",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Well, _ _ far.</p>",
+    "blanks": [
+      {
+        "answer": "it's",
+        "feedback": "<p>Sophie is negating or contradicting the idea that the café is at a significant distance.</p>"
+      },
+      {
+        "answer": "not",
+        "feedback": "<p>Sophie is negating or contradicting the idea that the café is at a significant distance.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 28,
+        "finishTimestamp": 30.65
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.2,
+        "dialogue": {
+          "text": "Well, it's not far. Come on, we can go together.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In English, you can use a certain structure to indicate that something is not in a particular state or condition in the present.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 125,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

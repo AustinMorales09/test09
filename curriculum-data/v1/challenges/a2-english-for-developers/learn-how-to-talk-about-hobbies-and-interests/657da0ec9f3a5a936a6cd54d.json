@@ -1,0 +1,83 @@
+{
+  "id": "657da0ec9f3a5a936a6cd54d",
+  "title": "Task 24",
+  "challengeType": 22,
+  "dashedName": "task-24",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>So I always recommend _ with the basics, _ about your camera, and _ to have fun.</p>",
+    "blanks": [
+      {
+        "answer": "starting",
+        "feedback": "<p>This blank requires a verb similar in meaning to <code>begin</code>. Use the <code>-ing</code> form.</p>"
+      },
+      {
+        "answer": "learning",
+        "feedback": "<p>The act of getting knowledge about something. Use the <code>-ing</code> form.</p>"
+      },
+      {
+        "answer": "trying",
+        "feedback": "<p>Attempting to do something. Use the <code>-ing</code> form.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 38.32,
+        "finishTimestamp": 43.28
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 5.96,
+        "dialogue": {
+          "text": "So I always recommend starting with the basics, learning about your camera, and trying to have fun.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.46
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Now practice the usage of <code>recommend</code> + verb in the <code>-ing</code> form by filling in the blanks with what Bob recommends that Maria do.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

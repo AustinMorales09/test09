@@ -1,0 +1,45 @@
+{
+  "id": "663856f8cf403151ac9d9e8a",
+  "title": "Task 39",
+  "challengeType": 19,
+  "dashedName": "task-39",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>AI</code> refer to in programming?</p>",
+    "answers": [
+      {
+        "answer": "<p>A programming language</p>",
+        "feedback": "<p><code>AI</code> is not a language but a field in computer science focused on creating intelligent machines.</p>"
+      },
+      {
+        "answer": "<p>Artificial Intelligence</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>An internet browser</p>",
+        "feedback": "<p><code>AI</code> refers to intelligent machine behavior, not to internet browsers.</p>"
+      },
+      {
+        "answer": "<p>A type of computer hardware</p>",
+        "feedback": "<p><code>AI</code> is about software capabilities, not the physical components of a computer.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>AI</code> stands for Artificial Intelligence. It is a branch of computer science dealing with the creation of intelligent machines that work and react like humans. <code>AI</code> can be involved in tasks like learning, problem-solving, perception, and language understanding.</p>\n<p>In programming, <code>AI</code> can be used to develop systems that perform complex tasks, which might otherwise require human intelligence. Examples include voice assistants, chatbots, and recommendation systems.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 41,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

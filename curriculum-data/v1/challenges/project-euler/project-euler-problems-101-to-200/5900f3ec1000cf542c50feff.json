@@ -1,0 +1,69 @@
+{
+  "id": "5900f3ec1000cf542c50feff",
+  "title": "Problem 128: Hexagonal tile differences",
+  "challengeType": 1,
+  "forumTopicId": 301755,
+  "dashedName": "problem-128-hexagonal-tile-differences",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function hexagonalTile(tileIndex) {\n\n  return true;\n}\n\nhexagonalTile(10);",
+      "error": null,
+      "seed": "function hexagonalTile(tileIndex) {\n\n  return true;\n}\n\nhexagonalTile(10);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "class PrimeSeive {\n  constructor(num) {\n    const seive = Array(Math.floor((num - 1) / 2)).fill(true);\n    const upper = Math.floor((num - 1) / 2);\n    const sqrtUpper = Math.floor((Math.sqrt(num) - 1) / 2);\n\n    for (let i = 0; i <= sqrtUpper; i++) {\n      if (seive[i]) {\n        // Mark value in seive array\n        const prime = 2 * i + 3;\n        // Mark all multiples of this number as false (not prime)\n        const primeSquaredIndex = 2 * i ** 2 + 6 * i + 3;\n        for (let j = primeSquaredIndex; j < upper; j += prime) {\n          seive[j] = false;\n        }\n      }\n    }\n\n    this._seive = seive;\n  }\n\n  isPrime(num) {\n    return num === 2\n      ? true\n      : num % 2 === 0\n        ? false\n        : this.isOddPrime(num);\n  }\n\n  isOddPrime(num) {\n    return this._seive[(num - 3) / 2];\n  }\n};\n\nfunction hexagonalTile(tileIndex) {\n  const primeSeive = new PrimeSeive(tileIndex * 420);\n  let count = 1;\n  let n = 1;\n  let number = 0;\n\n  while (count < tileIndex) {\n    if (primeSeive.isPrime(6*n - 1) &&\n        primeSeive.isPrime(6*n + 1) &&\n        primeSeive.isPrime(12*n + 5)) {\n      number = 3*n*n - 3*n + 2;\n      count++;\n      if (count >= tileIndex) break;\n    }\n    if (primeSeive.isPrime(6*n + 5) &&\n        primeSeive.isPrime(6*n - 1) &&\n        primeSeive.isPrime(12*n - 7) && n != 1) {\n      number = 3*n*n + 3*n + 1;\n      count++;\n    }\n    n++;\n  }\n  return number;\n}",
+        "error": null,
+        "seed": "class PrimeSeive {\n  constructor(num) {\n    const seive = Array(Math.floor((num - 1) / 2)).fill(true);\n    const upper = Math.floor((num - 1) / 2);\n    const sqrtUpper = Math.floor((Math.sqrt(num) - 1) / 2);\n\n    for (let i = 0; i <= sqrtUpper; i++) {\n      if (seive[i]) {\n        // Mark value in seive array\n        const prime = 2 * i + 3;\n        // Mark all multiples of this number as false (not prime)\n        const primeSquaredIndex = 2 * i ** 2 + 6 * i + 3;\n        for (let j = primeSquaredIndex; j < upper; j += prime) {\n          seive[j] = false;\n        }\n      }\n    }\n\n    this._seive = seive;\n  }\n\n  isPrime(num) {\n    return num === 2\n      ? true\n      : num % 2 === 0\n        ? false\n        : this.isOddPrime(num);\n  }\n\n  isOddPrime(num) {\n    return this._seive[(num - 3) / 2];\n  }\n};\n\nfunction hexagonalTile(tileIndex) {\n  const primeSeive = new PrimeSeive(tileIndex * 420);\n  let count = 1;\n  let n = 1;\n  let number = 0;\n\n  while (count < tileIndex) {\n    if (primeSeive.isPrime(6*n - 1) &&\n        primeSeive.isPrime(6*n + 1) &&\n        primeSeive.isPrime(12*n + 5)) {\n      number = 3*n*n - 3*n + 2;\n      count++;\n      if (count >= tileIndex) break;\n    }\n    if (primeSeive.isPrime(6*n + 5) &&\n        primeSeive.isPrime(6*n - 1) &&\n        primeSeive.isPrime(12*n - 7) && n != 1) {\n      number = 3*n*n + 3*n + 1;\n      count++;\n    }\n    n++;\n  }\n  return number;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>hexagonalTile(10)</code> should return <code>271</code>.</p>",
+      "testString": "assert.strictEqual(hexagonalTile(10), 271);"
+    },
+    {
+      "text": "<p><code>hexagonalTile(2000)</code> should return <code>14516824220</code>.</p>",
+      "testString": "assert.strictEqual(hexagonalTile(2000), 14516824220);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A hexagonal tile with number 1 is surrounded by a ring of six hexagonal tiles, starting at \"12 o'clock\" and numbering the tiles 2 to 7 in an anti-clockwise direction.</p>\n<p>New rings are added in the same fashion, with the next rings being numbered 8 to 19, 20 to 37, 38 to 61, and so on. The diagram below shows the first three rings.</p>\n<img class=\"img-responsive center-block\" alt=\"three first rings of arranged hexagonal tiles with numbers 1 to 37, and with highlighted tiles 8 and 17\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/hexagonal-tile-differences.png\" style=\"background-color: white; padding: 10px;\">\n<p>By finding the difference between tile $n$ and each of its six neighbours we shall define $PD(n)$ to be the number of those differences which are prime.</p>\n<p>For example, working clockwise around tile 8 the differences are 12, 29, 11, 6, 1, and 13. So $PD(8) = 3$.</p>\n<p>In the same way, the differences around tile 17 are 1, 17, 16, 1, 11, and 10, hence $PD(17) = 2$.</p>\n<p>It can be shown that the maximum value of $PD(n)$ is $3$.</p>\n<p>If all of the tiles for which $PD(n) = 3$ are listed in ascending order to form a sequence, the 10th tile would be 271.</p>\n<p>Find the 2000th tile in this sequence.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

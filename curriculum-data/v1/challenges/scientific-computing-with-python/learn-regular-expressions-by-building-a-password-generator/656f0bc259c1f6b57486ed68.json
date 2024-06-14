@@ -1,0 +1,49 @@
+{
+  "id": "656f0bc259c1f6b57486ed68",
+  "title": "Step 33",
+  "challengeType": 20,
+  "dashedName": "step-33",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        28,
+        32
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, '')\n        ]        \n\n    return password\n    \n# new_password = generate_password(8)\n# print(new_password)\npattern = 'l+'\nquote = 'Not all those who wander are lost.'\nprint(re.search(pattern, quote))",
+      "error": null,
+      "seed": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, '')\n        ]        \n\n    return password\n    \n# new_password = generate_password(8)\n# print(new_password)\npattern = 'l+'\nquote = 'Not all those who wander are lost.'\nprint(re.search(pattern, quote))"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should modify your existing <code>print()</code> call replacing <code>search()</code> with <code>findall()</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /^print\\s*\\(\\s*re\\.findall\\s*\\(\\s*pattern\\s*,\\s*quote\\s*\\)\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To check that the generated password meets the required features, you are going to use the <code>findall()</code> function from the <code>re</code> module. It's similar to <code>search</code> but it returns a list with all the occurrences of the matched pattern.</p>\n<p>Replace the <code>search()</code> call with <code>findall()</code> and check the output.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 32,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "bad87fee1348bd9aec908850",
+  "title": "Apply the Default Bootstrap Button Style",
+  "challengeType": 0,
+  "forumTopicId": 16657,
+  "dashedName": "apply-the-default-bootstrap-button-style",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button></button>\n        <button></button>\n        <button></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button></button>\n        <button></button>\n        <button></button>\n      </div>\n    </div>\n  </div>\n</div>",
+      "error": null,
+      "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button></button>\n        <button></button>\n        <button></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button></button>\n        <button></button>\n        <button></button>\n      </div>\n    </div>\n  </div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n      </div>\n    </div>\n  </div>\n</div>",
+        "error": null,
+        "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <div class=\"well\">\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n        <button class=\"btn btn-default\"></button>\n      </div>\n    </div>\n  </div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should apply the <code>btn</code> class to each of your <code>button</code> elements.</p>",
+      "testString": "assert($('.btn').length > 5);"
+    },
+    {
+      "text": "<p>You should apply the <code>btn-default</code> class to each of your <code>button</code> elements.</p>",
+      "testString": "assert($('.btn-default').length > 5);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Bootstrap has another button class called <code>btn-default</code>.</p>\n<p>Apply both the <code>btn</code> and <code>btn-default</code> classes to each of your <code>button</code> elements.</p>\n</section>",
+  "translationPending": false,
+  "block": "bootstrap",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 24,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

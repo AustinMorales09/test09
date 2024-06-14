@@ -1,0 +1,73 @@
+{
+  "id": "61329b210dac0b08047fd6ab",
+  "title": "Step 3",
+  "challengeType": 0,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        7
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n\n  </body>\n</html>\n",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n\n  </body>\n</html>\n"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}",
+      "error": null,
+      "seed": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create another <code>meta</code> element in the <code>head</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('head > meta')?.length, 2);"
+    },
+    {
+      "text": "<p>You should give the <code>meta</code> a <code>name</code> attribute of <code>viewport</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('head > meta[name=\"viewport\"]')?.length, 1);"
+    },
+    {
+      "text": "<p>You should give the <code>meta</code> a <code>content</code> attribute of <code>width=device-width, initial-scale=1</code>.</p>",
+      "testString": "assert.equal(document.querySelectorAll('head > meta[content=\"width=device-width, initial-scale=1.0\"]')?.length || document.querySelectorAll('head > meta[content=\"width=device-width, initial-scale=1\"]')?.length, 1);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Continuing with the <code>meta</code> elements, a <code>viewport</code> definition tells the browser how to render the page. Including one betters visual accessibility on mobile, and improves <em>SEO</em> (search engine optimization).</p>\n<p>Add a <code>viewport</code> definition with a <code>content</code> attribute detailing the <code>width</code> and <code>initial-scale</code> of the page.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-accessibility-by-building-a-quiz",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

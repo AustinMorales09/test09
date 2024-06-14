@@ -1,0 +1,66 @@
+{
+  "id": "587d7daf367417b2b2512b80",
+  "title": "Remember to Set the Constructor Property when Changing the Prototype",
+  "challengeType": 1,
+  "forumTopicId": 301323,
+  "dashedName": "remember-to-set-the-constructor-property-when-changing-the-prototype",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function Dog(name) {\n  this.name = name;\n}\n\n// Only change code below this line\nDog.prototype = {\n\n  numLegs: 4,\n  eat: function() {\n    console.log(\"nom nom nom\");\n  },\n  describe: function() {\n    console.log(\"My name is \" + this.name);\n  }\n};",
+      "error": null,
+      "seed": "function Dog(name) {\n  this.name = name;\n}\n\n// Only change code below this line\nDog.prototype = {\n\n  numLegs: 4,\n  eat: function() {\n    console.log(\"nom nom nom\");\n  },\n  describe: function() {\n    console.log(\"My name is \" + this.name);\n  }\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function Dog(name) {\n  this.name = name;\n}\nDog.prototype = {\n  constructor: Dog,\n  numLegs: 4,\n  eat: function() {\n    console.log(\"nom nom nom\");\n  },\n  describe: function() {\n    console.log(\"My name is \" + this.name);\n  }\n};",
+        "error": null,
+        "seed": "function Dog(name) {\n  this.name = name;\n}\nDog.prototype = {\n  constructor: Dog,\n  numLegs: 4,\n  eat: function() {\n    console.log(\"nom nom nom\");\n  },\n  describe: function() {\n    console.log(\"My name is \" + this.name);\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>Dog.prototype</code> should set the <code>constructor</code> property.</p>",
+      "testString": "assert(Dog.prototype.constructor === Dog);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>There is one crucial side effect of manually setting the prototype to a new object. It erases the <code>constructor</code> property! This property can be used to check which constructor function created the instance, but since the property has been overwritten, it now gives false results:</p>\n<pre><code class=\"language-js\">duck.constructor === Bird;\nduck.constructor === Object;\nduck instanceof Bird;\n</code></pre>\n<p>In order, these expressions would evaluate to <code>false</code>, <code>true</code>, and <code>true</code>.</p>\n<p>To fix this, whenever a prototype is manually set to a new object, remember to define the <code>constructor</code> property:</p>\n<pre><code class=\"language-js\">Bird.prototype = {\n  constructor: Bird,\n  numLegs: 2,\n  eat: function() {\n    console.log(\"nom nom nom\");\n  },\n  describe: function() {\n    console.log(\"My name is \" + this.name); \n  }\n};\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Define the <code>constructor</code> property on the <code>Dog</code> <code>prototype</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "object-oriented-programming",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

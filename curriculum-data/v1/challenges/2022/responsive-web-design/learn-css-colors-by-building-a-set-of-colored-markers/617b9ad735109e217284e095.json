@@ -1,0 +1,65 @@
+{
+  "id": "617b9ad735109e217284e095",
+  "title": "Step 27",
+  "challengeType": 0,
+  "dashedName": "step-27",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker one\">\n      </div>\n      <div class=\"marker two\">\n      </div>\n      <div class=\"marker three\">\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker one\">\n      </div>\n      <div class=\"marker two\">\n      </div>\n      <div class=\"marker three\">\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        9
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1 {\n  text-align: center;\n}\n\n.container {\n  background-color: rgb(0, 0, 0);\n  padding: 10px 0;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.one {\n  background-color: rgb(255, 0, 0);\n}\n\n.two {\n  background-color: rgb(0, 255, 0);\n}\n\n.three {\n  background-color: rgb(0, 0, 255);\n}\n",
+      "error": null,
+      "seed": "h1 {\n  text-align: center;\n}\n\n.container {\n  background-color: rgb(0, 0, 0);\n  padding: 10px 0;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  margin: 10px auto;\n}\n\n.one {\n  background-color: rgb(255, 0, 0);\n}\n\n.two {\n  background-color: rgb(0, 255, 0);\n}\n\n.three {\n  background-color: rgb(0, 0, 255);\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>.container</code> CSS rule should have a <code>background-color</code> property set to <code>rgb(255, 255, 255)</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.container')?.backgroundColor === 'rgb(255, 255, 255)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that you have the primary RGB colors, it's time to combine them.</p>\n<p>For the <code>rgb</code> function in the <code>.container</code> rule, set the red, green, and blue values to the max of <code>255</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

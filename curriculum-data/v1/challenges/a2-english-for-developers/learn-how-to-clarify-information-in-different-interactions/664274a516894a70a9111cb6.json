@@ -1,0 +1,88 @@
+{
+  "id": "664274a516894a70a9111cb6",
+  "title": "Task 78",
+  "challengeType": 19,
+  "dashedName": "task-78",
+  "solutions": [],
+  "question": {
+    "text": "<p>What seemed to be Bob's mix-up?</p>",
+    "answers": [
+      {
+        "answer": "<p>Bob thought this was a private birthday party</p>",
+        "feedback": "<p>Not really. They were both discussing the team party from the beginning.</p>"
+      },
+      {
+        "answer": "<p>Bob thought everybody in the team was a vegetarian</p>",
+        "feedback": "<p>If he did, they wouldn't be discussing <code>chicken wings</code>, would they?</p>"
+      },
+      {
+        "answer": "<p>Bob thought he was talking with Maria's twin sister</p>",
+        "feedback": "<p>The twin was just used as an example.</p>"
+      },
+      {
+        "answer": "<p>Bob probably thought about another team party</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 20.86,
+        "finishTimestamp": 25.52
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 5.66,
+        "dialogue": {
+          "text": "You know, now that I think about it, I think I confused it with another event. Sorry.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.16
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Now that I think about it</code> means you have remembered or realized something after thinking more. For example, if you forgot where you put your keys but then remember, you might say, <code>Now that I think about it, they are on the table.</code> It means you have thought again and found new information.</p>\n<p><code>To confuse something with something else</code> means to mix up two things and think one is the other. For example, if you see someone’s twin and think it is your friend, you can say <code>Sorry. I confused your twin with you</code>. It means you mistake one thing for another.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 82,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

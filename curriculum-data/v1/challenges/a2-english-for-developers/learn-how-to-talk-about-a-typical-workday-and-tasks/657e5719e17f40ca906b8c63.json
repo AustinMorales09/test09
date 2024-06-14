@@ -1,0 +1,45 @@
+{
+  "id": "657e5719e17f40ca906b8c63",
+  "title": "Task 86",
+  "challengeType": 19,
+  "dashedName": "task-86",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>protection</code> refer to?</p>",
+    "answers": [
+      {
+        "answer": "<p>Making something look nice.</p>",
+        "feedback": "<p>Protection is about safety, not appearance.</p>"
+      },
+      {
+        "answer": "<p>Keeping something or someone safe.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Taking a long break.</p>",
+        "feedback": "<p>Protection is about safety measures, not taking breaks</p>"
+      },
+      {
+        "answer": "<p>Speaking loudly.</p>",
+        "feedback": "<p>It's related to safety, not the volume of speaking.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Protection</code> means keeping something safe from harm or damage. In many jobs, protecting data or people is very important. For example, <code>Wearing helmets provides protection to workers on a construction site.</code></p>\n<p><code>Protect</code> means to keep something safe. It's important in jobs where you need to take care of information or people. For example, companies must protect important details about customers.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 89,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "65a74ac67e7fbd97ef282812",
+  "title": "Task 124",
+  "challengeType": 22,
+  "dashedName": "task-124",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>But I can't stand _ this great software _ private.</p>",
+    "blanks": [
+      {
+        "answer": "seeing",
+        "feedback": "<p>This word, ending in <code>-ing</code>, means to observe or witness something happening..</p>"
+      },
+      {
+        "answer": "being",
+        "feedback": "<p>Also ending in <code>-ing</code>, this word is used to describe the state or condition of something.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 29.18,
+        "finishTimestamp": 32.32
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.14,
+        "dialogue": {
+          "text": "But I can't stand seeing this great software being private.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.64
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and complete the sentence.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 128,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

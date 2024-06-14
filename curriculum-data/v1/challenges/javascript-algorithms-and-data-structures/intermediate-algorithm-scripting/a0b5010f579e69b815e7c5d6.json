@@ -1,0 +1,85 @@
+{
+  "id": "a0b5010f579e69b815e7c5d6",
+  "title": "Search and Replace",
+  "challengeType": 1,
+  "forumTopicId": 16045,
+  "dashedName": "search-and-replace",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function myReplace(str, before, after) {\n  return str;\n}\n\nmyReplace(\"A quick brown fox jumped over the lazy dog\", \"jumped\", \"leaped\");",
+      "error": null,
+      "seed": "function myReplace(str, before, after) {\n  return str;\n}\n\nmyReplace(\"A quick brown fox jumped over the lazy dog\", \"jumped\", \"leaped\");"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function myReplace(str, before, after) {\n  if (before.charAt(0) === before.charAt(0).toUpperCase()) {\n    after = after.charAt(0).toUpperCase() + after.substring(1);\n  } else {\n    after = after.charAt(0).toLowerCase() + after.substring(1);\n  }\n  return str.replace(before, after);\n}",
+        "error": null,
+        "seed": "function myReplace(str, before, after) {\n  if (before.charAt(0) === before.charAt(0).toUpperCase()) {\n    after = after.charAt(0).toUpperCase() + after.substring(1);\n  } else {\n    after = after.charAt(0).toLowerCase() + after.substring(1);\n  }\n  return str.replace(before, after);\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>myReplace(\"Let us go to the store\", \"store\", \"mall\")</code> should return the string <code>Let us go to the mall</code>.</p>",
+      "testString": "assert.deepEqual(\n  myReplace('Let us go to the store', 'store', 'mall'),\n  'Let us go to the mall'\n);"
+    },
+    {
+      "text": "<p><code>myReplace(\"He is Sleeping on the couch\", \"Sleeping\", \"sitting\")</code> should return the string <code>He is Sitting on the couch</code>.</p>",
+      "testString": "assert.deepEqual(\n  myReplace('He is Sleeping on the couch', 'Sleeping', 'sitting'),\n  'He is Sitting on the couch'\n);"
+    },
+    {
+      "text": "<p><code>myReplace(\"I think we should look up there\", \"up\", \"Down\")</code> should return the string <code>I think we should look down there</code>.</p>",
+      "testString": "assert.deepEqual(\n  myReplace('I think we should look up there', 'up', 'Down'),\n  'I think we should look down there'\n);"
+    },
+    {
+      "text": "<p><code>myReplace(\"This has a spellngi error\", \"spellngi\", \"spelling\")</code> should return the string <code>This has a spelling error</code>.</p>",
+      "testString": "assert.deepEqual(\n  myReplace('This has a spellngi error', 'spellngi', 'spelling'),\n  'This has a spelling error'\n);"
+    },
+    {
+      "text": "<p><code>myReplace(\"His name is Tom\", \"Tom\", \"john\")</code> should return the string <code>His name is John</code>.</p>",
+      "testString": "assert.deepEqual(\n  myReplace('His name is Tom', 'Tom', 'john'),\n  'His name is John'\n);"
+    },
+    {
+      "text": "<p><code>myReplace(\"Let us get back to more Coding\", \"Coding\", \"algorithms\")</code> should return the string <code>Let us get back to more Algorithms</code>.</p>",
+      "testString": "assert.deepEqual(\n  myReplace('Let us get back to more Coding', 'Coding', 'algorithms'),\n  'Let us get back to more Algorithms'\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Perform a search and replace on the sentence using the arguments provided and return the new sentence.</p>\n<p>First argument is the sentence to perform the search and replace on.</p>\n<p>Second argument is the word that you will be replacing (before).</p>\n<p>Third argument is what you will be replacing the second argument with (after).</p>\n<p><strong>Note:</strong> Preserve the case of the first character in the original word when you are replacing it. For example if you mean to replace the word <code>Book</code> with the word <code>dog</code>, it should be replaced as <code>Dog</code></p>\n</section>",
+  "translationPending": false,
+  "block": "intermediate-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

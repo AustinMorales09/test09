@@ -1,0 +1,88 @@
+{
+  "id": "65d75185d536899fd3c01977",
+  "title": "Task 60",
+  "challengeType": 19,
+  "dashedName": "task-60",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is his role in the company according to Maria?</p>",
+    "answers": [
+      {
+        "answer": "<p>He organizes company events.</p>",
+        "feedback": "<p>Maria's statement focuses on security, not organizing events.</p>"
+      },
+      {
+        "answer": "<p>He is in charge of security operations.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He is in charge of hiring new employees.</p>",
+        "feedback": "<p>Maria mentions security operations, not hiring processes.</p>"
+      },
+      {
+        "answer": "<p>He manages the IT department.</p>",
+        "feedback": "<p>The focus is on security operations, not IT management.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.4,
+        "finishTimestamp": 10.4
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 5,
+        "dialogue": {
+          "text": "Yeah, I've seen him around. He's responsible for security operations in our company.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 5.5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 62,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

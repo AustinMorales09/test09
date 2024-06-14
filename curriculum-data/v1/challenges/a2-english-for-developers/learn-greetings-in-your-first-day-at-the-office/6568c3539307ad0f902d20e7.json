@@ -1,0 +1,88 @@
+{
+  "id": "6568c3539307ad0f902d20e7",
+  "title": "Task 16",
+  "challengeType": 19,
+  "dashedName": "task-16",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which state is Tom comparing California to?</p>",
+    "answers": [
+      {
+        "answer": "<p>Texas</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Washington</p>",
+        "feedback": "<p>Listen again.</p>"
+      },
+      {
+        "answer": "<p>California</p>",
+        "feedback": "<p>Listen again.</p>"
+      },
+      {
+        "answer": "<p>Alaska</p>",
+        "feedback": "<p>Listen again.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 11.9,
+        "finishTimestamp": 15.18
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.78,
+        "dialogue": {
+          "text": "I like it. It's different from Texas, but I like it here.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.28
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Tom is comparing his experience in California to his previous experience in Texas. When you want to highlight differences between two things, you can use the phrase <code>different from</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

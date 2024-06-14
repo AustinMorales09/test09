@@ -1,0 +1,121 @@
+{
+  "id": "a5de63ebea8dbee56860f4f2",
+  "title": "Diff Two Arrays",
+  "challengeType": 1,
+  "forumTopicId": 16008,
+  "dashedName": "diff-two-arrays",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function diffArray(arr1, arr2) {\n  const newArr = [];\n  return newArr;\n}\n\ndiffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);",
+      "error": null,
+      "seed": "function diffArray(arr1, arr2) {\n  const newArr = [];\n  return newArr;\n}\n\ndiffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function diffArray(arr1, arr2) {\n  if (arr1.length === 0) return arr2;\n  if (arr2.length === 0) return arr1;\n\n  const set1 = new Set(arr1);\n  const set2 = new Set(arr2);\n  \n  const newArr = [];\n\n  set1.forEach(element => {\n    if (!set2.has(element)) newArr.push(element);\n\n  });\n\n  set2.forEach(element => {\n    if (!set1.has(element)) newArr.push(element);\n\n  });\n\n  return newArr;\n  \n}\n",
+        "error": null,
+        "seed": "function diffArray(arr1, arr2) {\n  if (arr1.length === 0) return arr2;\n  if (arr2.length === 0) return arr1;\n\n  const set1 = new Set(arr1);\n  const set2 = new Set(arr2);\n  \n  const newArr = [];\n\n  set1.forEach(element => {\n    if (!set2.has(element)) newArr.push(element);\n\n  });\n\n  set2.forEach(element => {\n    if (!set1.has(element)) newArr.push(element);\n\n  });\n\n  return newArr;\n  \n}\n"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5])</code> should return an array.</p>",
+      "testString": "assert(typeof diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]) === 'object');"
+    },
+    {
+      "text": "<p><code>[\"diorite\", \"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> should return <code>[\"pink wool\"]</code>.</p>",
+      "testString": "assert.sameMembers(\n  diffArray(\n    ['diorite', 'andesite', 'grass', 'dirt', 'pink wool', 'dead shrub'],\n    ['diorite', 'andesite', 'grass', 'dirt', 'dead shrub']\n  ),\n  ['pink wool']\n);"
+    },
+    {
+      "text": "<p><code>[\"diorite\", \"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> should return an array with one item.</p>",
+      "testString": "assert(\n  diffArray(\n    ['diorite', 'andesite', 'grass', 'dirt', 'pink wool', 'dead shrub'],\n    ['diorite', 'andesite', 'grass', 'dirt', 'dead shrub']\n  ).length === 1\n);"
+    },
+    {
+      "text": "<p><code>[\"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> should return <code>[\"diorite\", \"pink wool\"]</code>.</p>",
+      "testString": "assert.sameMembers(\n  diffArray(\n    ['andesite', 'grass', 'dirt', 'pink wool', 'dead shrub'],\n    ['diorite', 'andesite', 'grass', 'dirt', 'dead shrub']\n  ),\n  ['diorite', 'pink wool']\n);"
+    },
+    {
+      "text": "<p><code>[\"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> should return an array with two items.</p>",
+      "testString": "assert(\n  diffArray(\n    ['andesite', 'grass', 'dirt', 'pink wool', 'dead shrub'],\n    ['diorite', 'andesite', 'grass', 'dirt', 'dead shrub']\n  ).length === 2\n);"
+    },
+    {
+      "text": "<p><code>[\"andesite\", \"grass\", \"dirt\", \"dead shrub\"], [\"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> should return <code>[]</code>.</p>",
+      "testString": "assert.sameMembers(\n  diffArray(\n    ['andesite', 'grass', 'dirt', 'dead shrub'],\n    ['andesite', 'grass', 'dirt', 'dead shrub']\n  ),\n  []\n);"
+    },
+    {
+      "text": "<p><code>[\"andesite\", \"grass\", \"dirt\", \"dead shrub\"], [\"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> should return an empty array.</p>",
+      "testString": "assert(\n  diffArray(\n    ['andesite', 'grass', 'dirt', 'dead shrub'],\n    ['andesite', 'grass', 'dirt', 'dead shrub']\n  ).length === 0\n);"
+    },
+    {
+      "text": "<p><code>[1, 2, 3, 5], [1, 2, 3, 4, 5]</code> should return <code>[4]</code>.</p>",
+      "testString": "assert.sameMembers(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]), [4]);"
+    },
+    {
+      "text": "<p><code>[1, 2, 3, 5], [1, 2, 3, 4, 5]</code> should return an array with one item.</p>",
+      "testString": "assert(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]).length === 1);"
+    },
+    {
+      "text": "<p><code>[1, \"calf\", 3, \"piglet\"], [1, \"calf\", 3, 4]</code> should return <code>[\"piglet\", 4]</code>.</p>",
+      "testString": "assert.sameMembers(diffArray([1, 'calf', 3, 'piglet'], [1, 'calf', 3, 4]), [\n  'piglet',\n  4\n]);"
+    },
+    {
+      "text": "<p><code>[1, \"calf\", 3, \"piglet\"], [1, \"calf\", 3, 4]</code> should return an array with two items.</p>",
+      "testString": "assert(diffArray([1, 'calf', 3, 'piglet'], [1, 'calf', 3, 4]).length === 2);"
+    },
+    {
+      "text": "<p><code>[], [\"snuffleupagus\", \"cookie monster\", \"elmo\"]</code> should return <code>[\"snuffleupagus\", \"cookie monster\", \"elmo\"]</code>.</p>",
+      "testString": "assert.sameMembers(diffArray([], ['snuffleupagus', 'cookie monster', 'elmo']), [\n  'snuffleupagus',\n  'cookie monster',\n  'elmo'\n]);"
+    },
+    {
+      "text": "<p><code>[], [\"snuffleupagus\", \"cookie monster\", \"elmo\"]</code> should return an array with three items.</p>",
+      "testString": "assert(diffArray([], ['snuffleupagus', 'cookie monster', 'elmo']).length === 3);"
+    },
+    {
+      "text": "<p><code>[1, \"calf\", 3, \"piglet\"], [7, \"filly\"]</code> should return <code>[1, \"calf\", 3, \"piglet\", 7, \"filly\"]</code>.</p>",
+      "testString": "assert.sameMembers(diffArray([1, 'calf', 3, 'piglet'], [7, 'filly']), [\n  1,\n  'calf',\n  3,\n  'piglet',\n  7,\n  'filly'\n]);"
+    },
+    {
+      "text": "<p><code>[1, \"calf\", 3, \"piglet\"], [7, \"filly\"]</code> should return an array with six items.</p>",
+      "testString": "assert(diffArray([1, 'calf', 3, 'piglet'], [7, 'filly']).length === 6);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.</p>\n<p><strong>Note:</strong> You can return the array with its elements in any order.</p>\n</section>",
+  "translationPending": false,
+  "block": "intermediate-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

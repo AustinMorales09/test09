@@ -1,0 +1,65 @@
+{
+  "id": "616d595270d902f0e7086e18",
+  "title": "Step 15",
+  "challengeType": 0,
+  "dashedName": "step-15",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker\">\n      </div>\n      <div class=\"marker\">\n      </div>\n      <div class=\"marker\">\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Colored Markers</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>CSS Color Markers</h1>\n    <div class=\"container\">\n      <div class=\"marker\">\n      </div>\n      <div class=\"marker\">\n      </div>\n      <div class=\"marker\">\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        11
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1 {\n  text-align: center;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  background-color: red;\n  margin: auto;\n}\n",
+      "error": null,
+      "seed": "h1 {\n  text-align: center;\n}\n\n.marker {\n  width: 200px;\n  height: 25px;\n  background-color: red;\n  margin: auto;\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>.marker</code> CSS rule should have a <code>margin</code> property set to <code>10px auto</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.marker')?.margin === '10px auto');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>While you have three separate marker <code>div</code> elements, they look like one big rectangle. You should add some space between them to make it easier to see each element.</p>\n<p>When the shorthand <code>margin</code> property has two values, it sets <code>margin-top</code> and <code>margin-bottom</code> to the first value, and <code>margin-left</code> and <code>margin-right</code> to the second value.</p>\n<p>In your <code>.marker</code> CSS rule, set the <code>margin</code> property to <code>10px auto</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

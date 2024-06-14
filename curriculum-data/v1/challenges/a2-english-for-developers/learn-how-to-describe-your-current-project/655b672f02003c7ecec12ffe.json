@@ -1,0 +1,88 @@
+{
+  "id": "655b672f02003c7ecec12ffe",
+  "title": "Task 7",
+  "challengeType": 19,
+  "dashedName": "task-7",
+  "solutions": [],
+  "question": {
+    "text": "<p>What will James do if he finds problems?</p>",
+    "answers": [
+      {
+        "answer": "<p>If he finds problems, he will take a break</p>",
+        "feedback": "<p>This option doesn't align with the proactive approach James mentions.</p>"
+      },
+      {
+        "answer": "<p>If he finds problems, he will report them</p>",
+        "feedback": "<p>That's a good idea, but it's not what he says.</p>"
+      },
+      {
+        "answer": "<p>If he finds problems, he will fix them</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>If he finds problems, he will ignore them</p>",
+        "feedback": "<p>Ignoring problems contradicts the proactive and responsible approach discussed.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 8.76,
+        "finishTimestamp": 13.4
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 5.64,
+        "dialogue": {
+          "text": "I'm using special tools to see where we might have problems, and then I have to fix them.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 6.14
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Let's practice conditionals!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

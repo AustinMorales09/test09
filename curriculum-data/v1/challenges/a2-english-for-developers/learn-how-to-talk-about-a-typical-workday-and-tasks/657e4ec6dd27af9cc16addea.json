@@ -1,0 +1,45 @@
+{
+  "id": "657e4ec6dd27af9cc16addea",
+  "title": "Task 78",
+  "challengeType": 19,
+  "dashedName": "task-78",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are <code>regulations</code> usually in a business context?</p>",
+    "answers": [
+      {
+        "answer": "<p>Personal preferences.</p>",
+        "feedback": "<p>Regulations are formal rules, not personal preferences.</p>"
+      },
+      {
+        "answer": "<p>Informal team agreements.</p>",
+        "feedback": "<p>Regulations are more formal than informal agreements.</p>"
+      },
+      {
+        "answer": "<p>Official rules set by authorities.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Suggestions for leisure activities.</p>",
+        "feedback": "<p>They are about professional conduct, not leisure.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Regulations</code> are official rules made by a government or authority. They are designed to control how something works or how people act, especially in businesses.</p>\n<p>Example: <code>Health and safety regulations ensure a safe workplace.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 81,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

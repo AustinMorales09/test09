@@ -1,0 +1,74 @@
+{
+  "id": "587d7dad367417b2b2512b77",
+  "title": "Define a Constructor Function",
+  "challengeType": 1,
+  "forumTopicId": 16804,
+  "dashedName": "define-a-constructor-function",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function Dog (name, color, numLegs) {\n  this.name = 'name';\n  this.color = 'color';\n  this.numLegs = 4;\n}",
+        "error": null,
+        "seed": "function Dog (name, color, numLegs) {\n  this.name = 'name';\n  this.color = 'color';\n  this.numLegs = 4;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>Dog</code> should have a <code>name</code> property set to a string.</p>",
+      "testString": "assert(typeof new Dog().name === 'string');"
+    },
+    {
+      "text": "<p><code>Dog</code> should have a <code>color</code> property set to a string.</p>",
+      "testString": "assert(typeof new Dog().color === 'string');"
+    },
+    {
+      "text": "<p><code>Dog</code> should have a <code>numLegs</code> property set to a number.</p>",
+      "testString": "assert(typeof new Dog().numLegs === 'number');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><dfn>Constructors</dfn> are functions that create new objects. They define properties and behaviors that will belong to the new object. Think of them as a blueprint for the creation of new objects.</p>\n<p>Here is an example of a constructor:</p>\n<pre><code class=\"language-js\">function Bird() {\n  this.name = \"Albert\";\n  this.color = \"blue\";\n  this.numLegs = 2;\n}\n</code></pre>\n<p>This constructor defines a <code>Bird</code> object with properties <code>name</code>, <code>color</code>, and <code>numLegs</code> set to Albert, blue, and 2, respectively. Constructors follow a few conventions:</p>\n<ul><li>Constructors are defined with a capitalized name to distinguish them from other functions that are not <code>constructors</code>.</li><li>Constructors use the keyword <code>this</code> to set properties of the object they will create. Inside the constructor, <code>this</code> refers to the new object it will create.</li><li>Constructors define properties and behaviors instead of returning a value as other functions might.</li></ul>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Create a constructor, <code>Dog</code>, with properties <code>name</code>, <code>color</code>, and <code>numLegs</code> that are set to a string, a string, and a number, respectively.</p>\n</section>",
+  "translationPending": false,
+  "block": "object-oriented-programming",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

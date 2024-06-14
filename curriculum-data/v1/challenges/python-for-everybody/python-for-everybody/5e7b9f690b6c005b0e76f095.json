@@ -1,0 +1,54 @@
+{
+  "id": "5e7b9f690b6c005b0e76f095",
+  "title": "Visualizing Data with Python",
+  "challengeType": 11,
+  "videoId": "e3lydkH0prw",
+  "bilibiliIds": {
+    "aid": 291996462,
+    "bvid": "BV15f4y1L7jH",
+    "cid": 377544192
+  },
+  "dashedName": "visualizing-data-with-python",
+  "solutions": [],
+  "question": {
+    "text": "<p>Most data needs to be ______ before using it.</p>",
+    "answers": [
+      {
+        "answer": "<p>converted to JSON format</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>graphed</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>cleaned</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>memorized</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>turned into song</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 53,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

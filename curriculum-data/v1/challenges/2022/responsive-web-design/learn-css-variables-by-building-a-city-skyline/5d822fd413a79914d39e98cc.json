@@ -1,0 +1,93 @@
+{
+  "id": "5d822fd413a79914d39e98cc",
+  "title": "Step 4",
+  "challengeType": 0,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        6
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    \n  </head>\n  <body>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    \n  </head>\n  <body>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should create a <code>meta</code> element within the <code>head</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('head > meta'));"
+    },
+    {
+      "text": "<p>You should give the <code>meta</code> tag a <code>charset</code> of <code>UTF-8</code>.</p>",
+      "testString": "assert.equal(document.querySelector('head > meta')?.getAttribute('charset')?.toLowerCase(), 'utf-8');"
+    },
+    {
+      "text": "<p>Your code should have a <code>title</code> element.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.exists(title);"
+    },
+    {
+      "text": "<p>The <code>title</code> element should be within the <code>head</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('head > title'));"
+    },
+    {
+      "text": "<p>Your project should have a title of <code>City Skyline</code>.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.equal(title.text.toLowerCase(), 'city skyline')"
+    },
+    {
+      "text": "<p>Remember, the casing and spelling matters for the title.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.equal(title.text, 'City Skyline');"
+    },
+    {
+      "text": "<p>Your code should have a <code>link</code> element.</p>",
+      "testString": "assert.match(code, /<link/)"
+    },
+    {
+      "text": "<p>You should not change your existing <code>head</code> tags. Make sure you did not delete the closing tag.</p>",
+      "testString": "const heads = document.querySelectorAll('head');\nassert.equal(heads?.length, 1);"
+    },
+    {
+      "text": "<p>You should have one self-closing <code>link</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('link').length === 1);"
+    },
+    {
+      "text": "<p>Your <code>link</code> element should be within your <code>head</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('head > link'));"
+    },
+    {
+      "text": "<p>Your <code>link</code> element should have a <code>rel</code> attribute with the value <code>stylesheet</code>.</p>",
+      "testString": "const link_element = document.querySelector('link');\nconst rel = link_element.getAttribute(\"rel\");\nassert.equal(rel, \"stylesheet\");"
+    },
+    {
+      "text": "<p>Your <code>link</code> element should have an <code>href</code> attribute with the value <code>styles.css</code>.</p>",
+      "testString": "const link = document.querySelector('link');\nassert.equal(link.dataset.href, \"styles.css\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Within the <code>head</code>, nest a <code>meta</code> element with a <code>charset</code> of <code>UTF-8</code>, a <code>title</code> element with a title of <code>City Skyline</code>, and a <code>link</code> element that links your <code>styles.css</code> file.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-variables-by-building-a-city-skyline",
+  "hasEditableBoundaries": true,
+  "order": 14,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

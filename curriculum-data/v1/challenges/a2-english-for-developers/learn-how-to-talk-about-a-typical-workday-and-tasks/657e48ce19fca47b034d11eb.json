@@ -1,0 +1,36 @@
+{
+  "id": "657e48ce19fca47b034d11eb",
+  "title": "Task 66",
+  "challengeType": 22,
+  "dashedName": "task-66",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I _ issue security badges to new employees and I _ forget to revoke access.</p>",
+    "blanks": [
+      {
+        "answer": "have to",
+        "feedback": "<p>Indicates something necessary to do.</p>"
+      },
+      {
+        "answer": "can't",
+        "feedback": "<p>Indicates something important to avoid doing.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Fill in the blanks placing <code>can't</code> and <code>have to</code> where they make more sense.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 68,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

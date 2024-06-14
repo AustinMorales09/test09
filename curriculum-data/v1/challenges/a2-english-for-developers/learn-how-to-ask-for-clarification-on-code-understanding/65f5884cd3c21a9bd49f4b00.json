@@ -1,0 +1,79 @@
+{
+  "id": "65f5884cd3c21a9bd49f4b00",
+  "title": "Task 28",
+  "challengeType": 22,
+  "dashedName": "task-28",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Brian, _ encountered an issue in the code, and I _ quite pinpoint what's causing it.</p>",
+    "blanks": [
+      {
+        "answer": "I've",
+        "feedback": "<p>It's a contraction for <code>I have</code>, indicating something Sophie has found or experienced.</p>"
+      },
+      {
+        "answer": "can't",
+        "feedback": "<p>It's a contraction for <code>cannot</code>, showing Sophie's difficulty in identifying the problem.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.92,
+        "dialogue": {
+          "text": "Brian, I've encountered an issue in the code, and I can't quite pinpoint what's causing it.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 6.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and complete the sentence.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

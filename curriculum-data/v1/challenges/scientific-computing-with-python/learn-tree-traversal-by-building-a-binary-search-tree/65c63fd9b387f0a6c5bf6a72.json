@@ -1,0 +1,57 @@
+{
+  "id": "65c63fd9b387f0a6c5bf6a72",
+  "title": "Step 24",
+  "challengeType": 20,
+  "dashedName": "step-24",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        28,
+        38
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n        if key < node.key:\n            return self._search(node.left, key)\n        return self._search(node.right, key)\n    \n    def search(self, key):\n        pass",
+      "error": null,
+      "seed": "\nclass TreeNode:\n\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self, key):\n        self.root = self._insert(self.root, key)\n        \n    def _search(self, node, key):\n        if node is None or node.key == key:\n            return node\n        if key < node.key:\n            return self._search(node.left, key)\n        return self._search(node.right, key)\n    \n    def search(self, key):\n        pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should remove the <code>pass</code> keyword from the <code>search</code> method.</p>",
+      "testString": "({\n  test: () => {\n    assert.isFalse(\n      runPython(\n        `_Node(_code).find_class(\"BinarySearchTree\").find_function(\"search\").has_pass()`\n      )\n    );\n  },\n});\n"
+    },
+    {
+      "text": "<p>You should call the <code>_search</code> method within the <code>search</code> method.</p>",
+      "testString": "({ test: () => assert.match(code, /self\\._search\\([^(]*\\)/) });"
+    },
+    {
+      "text": "<p>You should call the <code>_search</code> method passing <code>self.root</code> and <code>key</code> as the arguments.</p>",
+      "testString": "({ test: () => assert.match(code, /self\\._search\\(\\s*self\\.root\\s*,\\s*key\\s*\\)/) });"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Inside the <code>search</code> method, delete <code>pass</code> and call the helper method <code>_search</code> with the following arguments.</p>\n<ul>\n<li><code>self.root</code>: This is the root of the binary search tree. The search starts from the root.</li>\n<li><code>key</code>: This is the value that the user wants to find in the binary search tree.</li>\n</ul>\n<p>Internally, <code>search</code> delegates the actual search logic to the <code>_search</code> helper method that performs the actual recursive search within the binary search tree.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "6551f22653e6ce6e4f1d1370",
+  "title": "Step 11",
+  "challengeType": 20,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nprint(type(text))\nshift = 3\nprint(shift)",
+      "error": null,
+      "seed": "text = 'Hello World'\nprint(type(text))\nshift = 3\nprint(shift)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should keep your existing <code>print(type(text))</code> call.</p>",
+      "testString": "assert.match(code, /^print\\s*\\(\\s*type\\s*\\(\\s*text\\s*\\)\\s*\\)/m)"
+    },
+    {
+      "text": "<p>You should pass <code>shift</code> to the <code>type()</code> function.</p>",
+      "testString": "assert.match(code, /type\\s*\\(\\s*shift\\s*\\)/)"
+    },
+    {
+      "text": "<p>You should pass <code>type(shift)</code> to your <code>print()</code> function. Pay attention to place the function call at the beginning of the line.</p>",
+      "testString": "assert.match(code, /^print\\s*\\(\\s*type\\s*\\(\\s*shift\\s*\\)\\s*\\)/m)"
+    },
+    {
+      "text": "<p>You should not have <code>print(shift)</code> in your code.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code)\nassert.notMatch(commentless_code, /print\\s*\\(\\s*shift\\s*\\)/)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Modify your <code>print(shift)</code> call to print the data type of your <code>shift</code> variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "6633a45ce837ac9f95394eab",
+  "title": "Task 45",
+  "challengeType": 19,
+  "dashedName": "task-45",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the difference between variables and constants according to Sophie?</p>",
+    "answers": [
+      {
+        "answer": "<p>Variables' values can be different, but constants remain unchanged.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Variables and constants are both used to store values permanently.</p>",
+        "feedback": "<p>This option isn't correct because constants are permanent, but variables can change.</p>"
+      },
+      {
+        "answer": "<p>Constants can change their values just like variables.</p>",
+        "feedback": "<p>This isn't accurate. Constants do not change their values—they stay the same, unlike variables.</p>"
+      },
+      {
+        "answer": "<p>Variables are used less frequently than constants in programming.</p>",
+        "feedback": "<p>The frequency of use isn't discussed, and Sophie's statement focuses on usage rather than their functional difference.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.24,
+        "finishTimestamp": 27.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.78,
+        "dialogue": {
+          "text": "Great question, Tom. Variables can change their values, but constants stay the same.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 6.28
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 47,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

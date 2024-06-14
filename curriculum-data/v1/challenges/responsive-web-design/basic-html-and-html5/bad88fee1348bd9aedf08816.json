@@ -1,0 +1,87 @@
+{
+  "id": "bad88fee1348bd9aedf08816",
+  "title": "Link to Internal Sections of a Page with Anchor Elements",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pVMPUv/cyrDRUL",
+  "forumTopicId": 301098,
+  "dashedName": "link-to-internal-sections-of-a-page-with-anchor-elements",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<h2>CatPhotoApp</h2>\n<main>\n\n  <a href=\"https://www.freecatphotoapp.com\" target=\"_blank\">cat photos</a>\n\n  <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n\n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n  <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>\n  <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>\n\n</main>\n\n<footer>Copyright Cat Photo App</footer>",
+      "error": null,
+      "seed": "<h2>CatPhotoApp</h2>\n<main>\n\n  <a href=\"https://www.freecatphotoapp.com\" target=\"_blank\">cat photos</a>\n\n  <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n\n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n  <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>\n  <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>\n\n</main>\n\n<footer>Copyright Cat Photo App</footer>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<h2>CatPhotoApp</h2>\n<main>\n\n  <a href=\"#footer\">Jump to Bottom</a>\n\n  <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n\n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n  <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>\n  <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>\n\n</main>\n\n<footer id=\"footer\">Copyright Cat Photo App</footer>",
+        "error": null,
+        "seed": "<h2>CatPhotoApp</h2>\n<main>\n\n  <a href=\"#footer\">Jump to Bottom</a>\n\n  <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\">\n\n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n  <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>\n  <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>\n\n</main>\n\n<footer id=\"footer\">Copyright Cat Photo App</footer>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>There should be only one anchor tag on your page.</p>",
+      "testString": "assert($('a').length == 1);"
+    },
+    {
+      "text": "<p>There should be only one <code>footer</code> tag on your page.</p>",
+      "testString": "assert($('footer').length == 1);"
+    },
+    {
+      "text": "<p>The <code>a</code> tag should have an <code>href</code> attribute set to \"#footer\".</p>",
+      "testString": "assert($('a').eq(0).attr('href') == '#footer');"
+    },
+    {
+      "text": "<p>The <code>a</code> tag should not have a <code>target</code> attribute.</p>",
+      "testString": "assert(\n  typeof $('a').eq(0).attr('target') == typeof undefined ||\n    $('a').eq(0).attr('target') == true\n);"
+    },
+    {
+      "text": "<p>The <code>a</code> text should be \"Jump to Bottom\".</p>",
+      "testString": "assert(\n  $('a')\n    .eq(0)\n    .text()\n    .match(/Jump to Bottom/gi)\n);"
+    },
+    {
+      "text": "<p>The <code>footer</code> tag should have an <code>id</code> attribute set to \"footer\".</p>",
+      "testString": "assert($('footer').eq(0).attr('id') == 'footer');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><code>a</code> (<em>anchor</em>) elements can also be used to create internal links to jump to different sections within a webpage.</p>\n<p>To create an internal link, you assign a link's <code>href</code> attribute to a hash symbol <code>#</code> plus the value of the <code>id</code> attribute for the element that you want to internally link to, usually further down the page. You then need to add the same <code>id</code> attribute to the element you are linking to. An <code>id</code> is an attribute that uniquely describes an element.</p>\n<p>Below is an example of an internal anchor link and its target element:</p>\n<pre><code class=\"language-html\">&#x3C;a href=\"#contacts-header\">Contacts&#x3C;/a>\n...\n&#x3C;h2 id=\"contacts-header\">Contacts&#x3C;/h2>\n</code></pre>\n<p>When users click the <code>Contacts</code> link, they'll be taken to the section of the webpage with the <strong>Contacts</strong> heading element.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Change your external link to an internal link by changing the <code>href</code> attribute to <code>#footer</code> and the text from <code>cat photos</code> to <code>Jump to Bottom</code>.</p>\n<p>Remove the <code>target=\"_blank\"</code> attribute from the anchor tag since this causes the linked document to open in a new window tab.</p>\n<p>Then add an <code>id</code> attribute with a value of <code>footer</code> to the <code>&#x3C;footer></code> element at the bottom of the page.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-html-and-html5",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

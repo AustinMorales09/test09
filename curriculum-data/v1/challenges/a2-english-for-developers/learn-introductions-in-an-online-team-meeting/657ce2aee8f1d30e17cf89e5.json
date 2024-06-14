@@ -1,0 +1,88 @@
+{
+  "id": "657ce2aee8f1d30e17cf89e5",
+  "title": "Task 57",
+  "challengeType": 19,
+  "dashedName": "task-57",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Bob want to know about Lisa?</p>",
+    "answers": [
+      {
+        "answer": "<p>Bob wants to know if Lisa is interested in any specific area of design or development.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Bob is asking about Lisa's favorite color.</p>",
+        "feedback": "<p>The phrase <code>interested in</code> is used to inquire about preferences or focus areas, not specifically about colors.</p>"
+      },
+      {
+        "answer": "<p>Bob wants to know if Lisa is interested in changing her job.</p>",
+        "feedback": "<p>Bob's question is about Lisa's interests within her current field, not about changing her job.</p>"
+      },
+      {
+        "answer": "<p>Bob is asking if Lisa is ready to start working.</p>",
+        "feedback": "<p>The question is about Lisa's interests, not about her readiness to start work.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 26.14,
+        "finishTimestamp": 33.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 8.2,
+        "dialogue": {
+          "text": "This is Tom, our new graphic designer. Is there any specific area of design or development that you're interested in?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 8.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Interested in</code> is a phrase used to ask or talk about someone's preferences, hobbies, or areas of professional focus. For example, in <code>What are you interested in?</code>, they want to know about your hobbies, likes, or professional interests.</p>\n<p>It's a common way to learn more about a person's preferences in a friendly way.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 59,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

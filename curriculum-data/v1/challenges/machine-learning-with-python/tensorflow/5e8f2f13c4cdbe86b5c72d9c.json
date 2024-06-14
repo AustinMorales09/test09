@@ -1,0 +1,46 @@
+{
+  "id": "5e8f2f13c4cdbe86b5c72d9c",
+  "title": "Natural Language Processing With RNNs: Part 2",
+  "challengeType": 11,
+  "videoId": "mUU9YXOFbZg",
+  "bilibiliIds": {
+    "aid": 975558435,
+    "bvid": "BV1L44y1b7Lp",
+    "cid": 409135242
+  },
+  "dashedName": "natural-language-processing-with-rnns-part-2",
+  "solutions": [],
+  "question": {
+    "text": "<p>Word embeddings are...:</p>",
+    "answers": [
+      {
+        "answer": "<p>an unordered group of encoded words that describes the frequency of words in a given document.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>a group of encoded words that preserves the original order of the words in a given document.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>a vectorized representation of words in a given document that places words with similar meanings near each other.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "tensorflow",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

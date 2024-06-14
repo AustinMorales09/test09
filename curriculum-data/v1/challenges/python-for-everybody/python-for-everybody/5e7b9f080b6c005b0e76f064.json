@@ -1,0 +1,50 @@
+{
+  "id": "5e7b9f080b6c005b0e76f064",
+  "title": "Python Lists",
+  "challengeType": 11,
+  "videoId": "Y0cvfDpYC_c",
+  "bilibiliIds": {
+    "aid": 249460305,
+    "bvid": "BV1Dv411E7Uj",
+    "cid": 376532993
+  },
+  "dashedName": "python-lists",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the value of x after running this code:</p>\n<pre><code class=\"language-python\">fruit = \"banana\"\nx = fruit[1]\n</code></pre>",
+    "answers": [
+      {
+        "answer": "<p>banana</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>a</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>b</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>True</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

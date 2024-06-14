@@ -1,0 +1,106 @@
+{
+  "id": "6581944b911c3c3715d35518",
+  "title": "Task 49",
+  "challengeType": 19,
+  "dashedName": "task-49",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Alice personally hate?</p>",
+    "answers": [
+      {
+        "answer": "<p>Dealing with office politics</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Working overtime all the time</p>",
+        "feedback": "<p>Think about what Alice specifically mentions as something she hates, not just something she finds draining.</p>"
+      },
+      {
+        "answer": "<p>People working as a team</p>",
+        "feedback": "<p>Consider whether Alice dislikes teamwork or something else about people's behavior at work.</p>"
+      },
+      {
+        "answer": "<p>Trying to beat each other</p>",
+        "feedback": "<p>Reflect on the specific aspect of work that Alice mentions she hates dealing with.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.7,
+        "finishTimestamp": 29.58
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 4.9,
+        "dialogue": {
+          "text": "I totally get that, Tom. Working overtime all the time can be draining.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "startTime": 5.64,
+        "finishTime": 7.96,
+        "dialogue": {
+          "text": "Personally, I hate dealing with office politics.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "startTime": 8.4,
+        "finishTime": 12.88,
+        "dialogue": {
+          "text": "It's frustrating when people are constantly trying to beat each other instead of working together as a team.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 13.38
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Alice shares her feelings about something she finds difficult or unpleasant at work. Understanding what someone dislikes can help us learn more about their values and preferences.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 50,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

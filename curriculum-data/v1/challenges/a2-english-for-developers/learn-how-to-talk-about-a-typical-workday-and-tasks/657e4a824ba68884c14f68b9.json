@@ -1,0 +1,84 @@
+{
+  "id": "657e4a824ba68884c14f68b9",
+  "title": "Task 69",
+  "challengeType": 22,
+  "dashedName": "task-69",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Security is a top priority, and I _ _ make sure everything _ as expected.</p>",
+    "blanks": [
+      {
+        "answer": "have",
+        "feedback": "<p>Indicates a requirement.</p>"
+      },
+      {
+        "answer": "to",
+        "feedback": "<p>Used with <code>have</code> to form an expression of necessity.</p>"
+      },
+      {
+        "answer": "goes",
+        "feedback": "<p>Happens in the planned or anticipated way.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 47.98,
+        "finishTimestamp": 53.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 6.64,
+        "dialogue": {
+          "text": "Well, yeah, security is a top priority and I have to make sure everything goes as expected.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 7.14
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Goes</code>, in the phrase <code>goes as expected</code>, refers to things happening in the way they are planned or anticipated, with <code>goes</code> being the third-person present form of <code>go</code>.</p>\n<p>For example, <code>The project goes as expected</code> means the project is proceeding according to plan.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 71,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

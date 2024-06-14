@@ -1,0 +1,45 @@
+{
+  "id": "6556bc95e6ce5d850d37dd07",
+  "title": "Task 3",
+  "challengeType": 19,
+  "dashedName": "task-3",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the adjective <code>energetic</code> imply about someone?</p>",
+    "answers": [
+      {
+        "answer": "<p>That the person is feeling unwell.</p>",
+        "feedback": "<p><code>Energetic</code> is generally used to express a positive feeling about a person, not that they are feeling unwell..</p>"
+      },
+      {
+        "answer": "<p>That the person seems like they have a lot of energy.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>That the person is uncomfortable.</p>",
+        "feedback": "<p><code>Energetic</code> is generally used to express how dynamic the person looks, not how comfortable they are.</p>"
+      },
+      {
+        "answer": "<p>That the person is late.</p>",
+        "feedback": "<p>The adjective <code>energetic</code> does not relate to time or punctuality.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Adjectives are words that describe or give more information about nouns or pronouns. For example, in the phrase <code>the blue sky</code>, <code>blue</code> is an adjective describing the sky.</p>\n<p>Notice how the adjective comes before the noun. It is <code>blue sky</code> not <code>sky blue</code>.</p>\n<p>Expressive language can include idiomatic expressions or descriptive adjectives to communicate strong feelings or vivid ideas, like saying <code>sparkling eyes</code> to describe someone's bright, lively eyes.</p>\n<p>Instead of saying <code>It seems like you have a ton of energy this morning</code>, James could say something like <code>You look energetic this morning</code> to convey the same idea. <code>Energetic</code> is the adjective to represent someone who has a lot of energy.</p>\n<p>Here are some more examples:</p>\n<p><code>She wakes up early every day</code> - <code>Early</code> describes the time of her waking up.\n<code>He has a quick shower in the morning</code> - <code>Quick</code> describes the short duration of the shower.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

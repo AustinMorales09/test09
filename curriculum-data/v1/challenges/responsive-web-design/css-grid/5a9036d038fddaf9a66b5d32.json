@@ -1,0 +1,67 @@
+{
+  "id": "5a9036d038fddaf9a66b5d32",
+  "title": "Add Columns with grid-template-columns",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pByETK/c7NzDHv",
+  "forumTopicId": 301117,
+  "dashedName": "add-columns-with-grid-template-columns",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .d1{background:LightSkyBlue;}\n  .d2{background:LightSalmon;}\n  .d3{background:PaleTurquoise;}\n  .d4{background:LightPink;}\n  .d5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    /* Only change code below this line */\n\n    \n    /* Only change code above this line */\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"d1\">1</div>\n  <div class=\"d2\">2</div>\n  <div class=\"d3\">3</div>\n  <div class=\"d4\">4</div>\n  <div class=\"d5\">5</div>\n</div>",
+      "error": null,
+      "seed": "<style>\n  .d1{background:LightSkyBlue;}\n  .d2{background:LightSalmon;}\n  .d3{background:PaleTurquoise;}\n  .d4{background:LightPink;}\n  .d5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    /* Only change code below this line */\n\n    \n    /* Only change code above this line */\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"d1\">1</div>\n  <div class=\"d2\">2</div>\n  <div class=\"d3\">3</div>\n  <div class=\"d4\">4</div>\n  <div class=\"d5\">5</div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>.container {grid-template-columns: 100px 100px 100px;}</style>",
+        "error": null,
+        "seed": "<style>.container {grid-template-columns: 100px 100px 100px;}</style>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>container</code> class should have a <code>grid-template-columns</code> property with three units of <code>100px</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('.container')?.gridTemplateColumns === '100px 100px 100px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Simply creating a grid element doesn't get you very far. You need to define the structure of the grid as well. To add some columns to the grid, use the <code>grid-template-columns</code> property on a grid container as demonstrated below:</p>\n<pre><code class=\"language-css\">.container {\n  display: grid;\n  grid-template-columns: 50px 50px;\n}\n</code></pre>\n<p>This will give your grid two columns that are each 50px wide. The number of parameters given to the <code>grid-template-columns</code> property indicates the number of columns in the grid, and the value of each parameter indicates the width of each column.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Give the grid container three columns that are each <code>100px</code> wide.</p>\n</section>",
+  "translationPending": false,
+  "block": "css-grid",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

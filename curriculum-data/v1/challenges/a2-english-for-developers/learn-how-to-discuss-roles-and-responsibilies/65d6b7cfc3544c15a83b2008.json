@@ -1,0 +1,88 @@
+{
+  "id": "65d6b7cfc3544c15a83b2008",
+  "title": "Task 41",
+  "challengeType": 19,
+  "dashedName": "task-41",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Alice describe the person's feelings about their job?</p>",
+    "answers": [
+      {
+        "answer": "<p>Not caring much about her work</p>",
+        "feedback": "<p>Alice says the person is <code>committed</code> and <code>takes work seriously</code>, which means she cares a lot.</p>"
+      },
+      {
+        "answer": "<p>Only working a little</p>",
+        "feedback": "<p>Alice's words suggest the person works a lot and cares about the job, not just a little.</p>"
+      },
+      {
+        "answer": "<p>Really caring and working hard</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Just having fun and not working</p>",
+        "feedback": "<p>Alice talks about how serious and committed the person is, not about just having fun.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 12.16,
+        "finishTimestamp": 15.68
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 4.52,
+        "dialogue": {
+          "text": "Yeah, she's very committed. She seems to take her work very seriously.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 5.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

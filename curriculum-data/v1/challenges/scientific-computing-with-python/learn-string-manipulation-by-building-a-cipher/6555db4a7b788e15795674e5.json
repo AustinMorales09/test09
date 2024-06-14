@@ -1,0 +1,53 @@
+{
+  "id": "6555db4a7b788e15795674e5",
+  "title": "Step 87",
+  "challengeType": 20,
+  "dashedName": "step-87",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        31,
+        33
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'mrttaqrhknsw ih puggrur'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction=1):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    final_message = ''\n\n    for char in message.lower():\n\n        # Append any non-letter character to the message\n        if not char.isalpha():\n            final_message += char\n        else:        \n            # Find the right key character to encode/decode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted/decrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            final_message += alphabet[new_index]\n    \n    return final_message\n\ndef encrypt(message, key):\n    return vigenere(message, key)\n    \ndef decrypt(message, key):\n    return vigenere(message, key, -1)\n\n#decryption = decrypt(encryption, custom_key)\n#print(decryption)",
+      "error": null,
+      "seed": "text = 'mrttaqrhknsw ih puggrur'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction=1):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    final_message = ''\n\n    for char in message.lower():\n\n        # Append any non-letter character to the message\n        if not char.isalpha():\n            final_message += char\n        else:        \n            # Find the right key character to encode/decode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted/decrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            final_message += alphabet[new_index]\n    \n    return final_message\n\ndef encrypt(message, key):\n    return vigenere(message, key)\n    \ndef decrypt(message, key):\n    return vigenere(message, key, -1)\n\n#decryption = decrypt(encryption, custom_key)\n#print(decryption)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call <code>print()</code> and pass <code>'Encrypted text: ' + text</code> as the arguments.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.match(commentless_code, /^print\\s*\\(\\s*(\"|')Encrypted\\stext:\\s\\1\\s*\\+\\s*text\\s*\\)/m)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Two or more strings can be concatenated by using the <code>+</code> operator. For example: <code>'Hello' + ' there!'</code> results in <code>'Hello there!'</code>.</p>\n<p>Call the <code>print()</code> function and use the <code>+</code> operator to concatenate the <code>text</code> variable to the string <code>'Encrypted text: '</code>. Pay attention to the spacing.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 86,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

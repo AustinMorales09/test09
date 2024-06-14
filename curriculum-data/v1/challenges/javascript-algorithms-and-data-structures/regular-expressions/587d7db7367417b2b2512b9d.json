@@ -1,0 +1,78 @@
+{
+  "id": "587d7db7367417b2b2512b9d",
+  "title": "Match Beginning String Patterns",
+  "challengeType": 1,
+  "forumTopicId": 301349,
+  "dashedName": "match-beginning-string-patterns",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let rickyAndCal = \"Cal and Ricky both like racing.\";\nlet calRegex = /change/; // Change this line\nlet result = calRegex.test(rickyAndCal);",
+      "error": null,
+      "seed": "let rickyAndCal = \"Cal and Ricky both like racing.\";\nlet calRegex = /change/; // Change this line\nlet result = calRegex.test(rickyAndCal);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let rickyAndCal = \"Cal and Ricky both like racing.\";\nlet calRegex = /^Cal/; // Change this line\nlet result = calRegex.test(rickyAndCal);",
+        "error": null,
+        "seed": "let rickyAndCal = \"Cal and Ricky both like racing.\";\nlet calRegex = /^Cal/; // Change this line\nlet result = calRegex.test(rickyAndCal);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your regex should search for the string <code>Cal</code> with a capital letter.</p>",
+      "testString": "assert(calRegex.source == '^Cal');"
+    },
+    {
+      "text": "<p>Your regex should not use any flags.</p>",
+      "testString": "assert(calRegex.flags == '');"
+    },
+    {
+      "text": "<p>Your regex should match the string <code>Cal</code> at the beginning of the string.</p>",
+      "testString": "calRegex.lastIndex = 0;\nassert(calRegex.test('Cal and Ricky both like racing.'));"
+    },
+    {
+      "text": "<p>Your regex should not match the string <code>Cal</code> in the middle of a string.</p>",
+      "testString": "calRegex.lastIndex = 0;\nassert(!calRegex.test('Ricky and Cal both like racing.'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Prior challenges showed that regular expressions can be used to look for a number of matches. They are also used to search for patterns in specific positions in strings.</p>\n<p>In an earlier challenge, you used the caret character (<code>^</code>) inside a character set to create a negated character set in the form <code>[^thingsThatWillNotBeMatched]</code>. Outside of a character set, the caret is used to search for patterns at the beginning of strings.</p>\n<pre><code class=\"language-js\">let firstString = \"Ricky is first and can be found.\";\nlet firstRegex = /^Ricky/;\nfirstRegex.test(firstString);\nlet notFirst = \"You can't find Ricky now.\";\nfirstRegex.test(notFirst);\n</code></pre>\n<p>The first <code>test</code> call would return <code>true</code>, while the second would return <code>false</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use the caret character in a regex to find <code>Cal</code> only in the beginning of the string <code>rickyAndCal</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "regular-expressions",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

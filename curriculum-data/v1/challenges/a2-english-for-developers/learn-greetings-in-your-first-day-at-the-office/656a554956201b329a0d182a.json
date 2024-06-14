@@ -1,0 +1,45 @@
+{
+  "id": "656a554956201b329a0d182a",
+  "title": "Task 56",
+  "challengeType": 19,
+  "dashedName": "task-56",
+  "solutions": [],
+  "question": {
+    "text": "<p>Pick the sentence that uses <code>this</code> and <code>that</code> correctly.</p>",
+    "answers": [
+      {
+        "answer": "<p><code>This mouse here works well, but that one over there doesn't.</code></p>",
+        "feedback": "<p>Correct! <code>This</code> is for the mouse close by, and <code>that</code> for the one farther away.</p>"
+      },
+      {
+        "answer": "<p><code>That is my phone on this table, but this is my charger in that room.</code></p>",
+        "feedback": "<p>The sentence structure is awkward. Normally, <code>this</code> and <code>that</code> are not used in this manner, and the words <code>room</code> and <code>table</code> make the locations confusing.</p>"
+      },
+      {
+        "answer": "<p><code>That are the wires we need.</code></p>",
+        "feedback": "<p><code>Wires</code> is plural, so the correct form should be <code>these are,</code> not <code>that are</code>.</p>"
+      },
+      {
+        "answer": "<p><code>This app on my phone, and that games on my computer.</code></p>",
+        "feedback": "<p>The sentence is incomplete. Additionally, <code>games</code> is plural, so <code>those games</code> would be correct.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When talking about devices or tools, <code>this</code> and <code>that</code> help you show which one.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 57,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

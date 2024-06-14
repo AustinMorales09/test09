@@ -1,0 +1,57 @@
+{
+  "id": "6551ecf597038c36637f3759",
+  "title": "Step 1",
+  "challengeType": 20,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a variable called <code>number</code>. Pay attention to place the variable name at the beginning of the line.</p>",
+      "testString": "assert.match(code, /^number\\s*=/m)"
+    },
+    {
+      "text": "<p>You should assign the value <code>5</code> to your <code>number</code> variable.</p>",
+      "testString": "assert.match(code, /^number\\s*=\\s*5\\s*(#.*)?$/m)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Variables are an essential part of Python and any programming language. A variable is a name that references or points to an object. You can declare a variable by writing the variable name on the left side of the assignment operator <code>=</code> and specifying the value to assign to that variable on the right side of the assignment operator:</p>\n<pre><code class=\"language-py\">variable_name = value\n</code></pre>\n<p>Create a variable called <code>number</code> and assign the value <code>5</code> to your new variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

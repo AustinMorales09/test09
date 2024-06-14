@@ -1,0 +1,53 @@
+{
+  "id": "6578b13757611e2825beb8a5",
+  "title": "Step 3",
+  "challengeType": 20,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "copper = {'species': 'guinea pig'}",
+      "error": null,
+      "seed": "copper = {'species': 'guinea pig'}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an <code>'age'</code> key with the value <code>2</code> just after <code>'species': 'guinea pig'</code>, inside your <code>copper</code> dictionary. Don't forget the comma.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    copper == {\"species\": \"guinea pig\", \"age\": 2}\n  `))\n})"
+    },
+    {
+      "text": "<p>You should have two key-value pairs in your <code>copper</code> dictionary.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    len(copper) == 2\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Keys must be unique within a dictionary and they can be only immutable data types. This means you cannot use a list or another dictionary as keys.</p>\n<p>Add another key <code>'age'</code> to your dictionary and give it the integer number <code>2</code> as value.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

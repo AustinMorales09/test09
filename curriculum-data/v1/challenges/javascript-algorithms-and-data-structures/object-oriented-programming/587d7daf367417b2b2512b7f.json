@@ -1,0 +1,78 @@
+{
+  "id": "587d7daf367417b2b2512b7f",
+  "title": "Change the Prototype to a New Object",
+  "challengeType": 1,
+  "forumTopicId": 301316,
+  "dashedName": "change-the-prototype-to-a-new-object",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function Dog(name) {\n  this.name = name;\n}\n\nDog.prototype = {\n  // Only change code below this line\n\n};",
+      "error": null,
+      "seed": "function Dog(name) {\n  this.name = name;\n}\n\nDog.prototype = {\n  // Only change code below this line\n\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function Dog(name) {\n  this.name = name;\n}\nDog.prototype = {\nnumLegs: 4,\n  eat () {\n    console.log('nom nom nom');\n  },\n  describe () {\n    console.log('My name is ' + this.name);\n  }\n};",
+        "error": null,
+        "seed": "function Dog(name) {\n  this.name = name;\n}\nDog.prototype = {\nnumLegs: 4,\n  eat () {\n    console.log('nom nom nom');\n  },\n  describe () {\n    console.log('My name is ' + this.name);\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>Dog.prototype</code> should be set to a new object.</p>",
+      "testString": "assert(/Dog\\.prototype\\s*?=\\s*?{/.test(__helpers.removeJSComments(code)));"
+    },
+    {
+      "text": "<p><code>Dog.prototype</code> should have the property <code>numLegs</code>.</p>",
+      "testString": "assert(Dog.prototype.numLegs !== undefined);"
+    },
+    {
+      "text": "<p><code>Dog.prototype</code> should have the method <code>eat()</code>.</p>",
+      "testString": "assert(typeof Dog.prototype.eat === 'function');"
+    },
+    {
+      "text": "<p><code>Dog.prototype</code> should have the method <code>describe()</code>.</p>",
+      "testString": "assert(typeof Dog.prototype.describe === 'function');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Up until now you have been adding properties to the <code>prototype</code> individually:</p>\n<pre><code class=\"language-js\">Bird.prototype.numLegs = 2;\n</code></pre>\n<p>This becomes tedious after more than a few properties.</p>\n<pre><code class=\"language-js\">Bird.prototype.eat = function() {\n  console.log(\"nom nom nom\");\n}\n\nBird.prototype.describe = function() {\n  console.log(\"My name is \" + this.name);\n}\n</code></pre>\n<p>A more efficient way is to set the <code>prototype</code> to a new object that already contains the properties. This way, the properties are added all at once:</p>\n<pre><code class=\"language-js\">Bird.prototype = {\n  numLegs: 2, \n  eat: function() {\n    console.log(\"nom nom nom\");\n  },\n  describe: function() {\n    console.log(\"My name is \" + this.name);\n  }\n};\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add the property <code>numLegs</code> and the two methods <code>eat()</code> and <code>describe()</code> to the <code>prototype</code> of <code>Dog</code> by setting the <code>prototype</code> to a new object.</p>\n</section>",
+  "translationPending": false,
+  "block": "object-oriented-programming",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

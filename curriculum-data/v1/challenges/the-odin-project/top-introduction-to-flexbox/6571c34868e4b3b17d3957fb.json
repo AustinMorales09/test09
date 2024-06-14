@@ -1,0 +1,47 @@
+{
+  "id": "6571c34868e4b3b17d3957fb",
+  "title": "Introduction to Flexbox Question J",
+  "challengeType": 15,
+  "dashedName": "introduction-flexbox-question-j",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does applying <code>justify-content: space-between</code> to a flex container affect the positioning of its items?</p>",
+    "answers": [
+      {
+        "answer": "<p>It evenly distributes space between items, pushing the first and last items to the edges.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It centers all items within the container.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It causes the items to grow to fill available space.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It aligns items to the left side while leaving excessive space on the right side.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [
+    "<p>Before moving on to the next lesson, see what is possible with the <code>justify-content</code> property. Read this <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content\">interactive article on MDN</a> and play around with the different values of <code>justify-content</code> on the example.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Let's look at an example.</p>\n<iframe allowfullscreen=\"true\" allowpaymentrequest=\"true\" allowtransparency=\"true\" class=\"cp_embed_iframe \" frameborder=\"0\" height=\"400\" width=\"100%\" name=\"cp_embed_1\" scrolling=\"no\" src=\"https://codepen.io/TheOdinProjectExamples/embed/MWoyBzR?height=400&amp;default-tab=html%2Cresult&amp;slug-hash=MWoyBzR&amp;editable=true&amp;user=TheOdinProjectExamples&amp;name=cp_embed_1\" style=\"width: 100%; overflow:hidden; display:block;\" title=\"CodePen Embed\" loading=\"lazy\" id=\"cp_embed_MWoyBzR\"></iframe>\n<p>You should be able to predict what happens if you put <code>flex: 1</code> on the <code>.item</code> by now. Give it a shot before you move on!</p>\n<p>Adding <code>flex: 1</code> to <code>.item</code> makes each of the items grow to fill the available space, but what if you wanted them to stay the same width, but distribute themselves differently inside the container? You can do this!</p>\n<p>Remove <code>flex: 1</code> from <code>.item</code> and add <code>justify-content: space-between</code> to <code>.container</code>. Doing so should give you something like this:</p>\n<img src=\"https://cdn.freecodecamp.org/curriculum/odin-project/flex-box/flexbox-05.png\" alt=\"Three small boxes within a much larger rectangle. The boxes are arranged in a single row, one close to the left edge of the container, one close to the right edge of the container, and the last directly in the middle of the container, placing as much space as possible between each box.\">\n<p><code>justify-content</code> aligns items across the <strong>main axis</strong>. There are a few values that you can use here. You'll learn the rest of them in the reading assignments, but for now try changing it to center, which should center the boxes along the main axis.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-introduction-to-flexbox",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

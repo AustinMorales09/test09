@@ -1,0 +1,65 @@
+{
+  "id": "5900f4881000cf542c50ff9a",
+  "title": "Problem 283: Integer sided triangles for which the area / perimeter ratio is integral",
+  "challengeType": 1,
+  "forumTopicId": 301934,
+  "dashedName": "problem-283-integer-sided-triangles-for-which-the-area--perimeter-ratio-is-integral",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function integralAreaPerimeterRatio() {\n\n  return true;\n}\n\nintegralAreaPerimeterRatio();",
+      "error": null,
+      "seed": "function integralAreaPerimeterRatio() {\n\n  return true;\n}\n\nintegralAreaPerimeterRatio();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>integralAreaPerimeterRatio()</code> should return <code>28038042525570324</code>.</p>",
+      "testString": "assert.strictEqual(integralAreaPerimeterRatio(), 28038042525570324);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Consider the triangle with sides 6, 8 and 10. It can be seen that the perimeter and the area are both equal to 24.</p>\n<p>So the $\\frac{\\text{area}}{\\text{perimeter}}$ ratio is equal to 1.</p>\n<p>Consider also the triangle with sides 13, 14 and 15. The perimeter equals 42 while the area is equal to 84.</p>\n<p>So for this triangle the $\\frac{\\text{area}}{\\text{perimeter}}$ ratio is equal to 2.</p>\n<p>Find the sum of the perimeters of all integer sided triangles for which the area/perimeter ratios are equal to positive integers not exceeding 1000.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 82,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

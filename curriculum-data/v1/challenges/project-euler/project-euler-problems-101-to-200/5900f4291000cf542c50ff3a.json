@@ -1,0 +1,65 @@
+{
+  "id": "5900f4291000cf542c50ff3a",
+  "title": "Problem 187: Semiprimes",
+  "challengeType": 1,
+  "forumTopicId": 301823,
+  "dashedName": "problem-187-semiprimes",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function semiPrimes() {\n\n  return true;\n}\n\nsemiPrimes();",
+      "error": null,
+      "seed": "function semiPrimes() {\n\n  return true;\n}\n\nsemiPrimes();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>semiPrimes()</code> should return <code>17427258</code>.</p>",
+      "testString": "assert.strictEqual(euler187(), 17427258);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A composite is a number containing at least two prime factors. For example, $15 = 3 × 5; 9 = 3 × 3; 12 = 2 × 2 × 3$.</p>\n<p>There are ten composites below thirty containing precisely two, not necessarily distinct, prime factors: 4, 6, 9, 10, 14, 15, 21, 22, 25, 26.</p>\n<p>How many composite integers, $n &#x3C; {10}^8$, have precisely two, not necessarily distinct, prime factors?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 86,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,75 @@
+{
+  "id": "662f18dd52d5583574fcb9e0",
+  "title": "Task 65",
+  "challengeType": 22,
+  "dashedName": "task-65",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Not _, really.</p>",
+    "blanks": [
+      {
+        "answer": "much",
+        "feedback": "<p>It is used here to respond to a question about the extent of uncountable knowledge.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 11.5,
+        "finishTimestamp": 12.6
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 2.1,
+        "dialogue": {
+          "text": "Not much, really.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 2.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When asking and answering questions about quantity, it's important to use <code>much</code> and <code>many</code> consistently. <code>Much</code> is used with uncountable nouns, while <code>many</code> is used with countable nouns. In a conversation, the question and answer should match in using either <code>much</code> or <code>many</code>.</p>\n<p>Examples:</p>\n<p>Question: <code>How much time do you have?</code> Answer: <code>Not much.</code></p>\n<p>Question: <code>How many books do you own?</code> Answer: <code>Not many.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 67,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,75 @@
+{
+  "id": "663c88890037230b817b9fef",
+  "title": "Task 43",
+  "challengeType": 22,
+  "dashedName": "task-43",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hmm, that's a tough one. Is it a type of _ plant?</p>",
+    "blanks": [
+      {
+        "answer": "rare",
+        "feedback": "<p>This blank refers to something difficult to see or to find.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.72,
+        "finishTimestamp": 27.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.3,
+        "dialogue": {
+          "text": "Hmm, that's a tough one. Is it a type of rare plant?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Something <code>rare</code> is special because it is not common, something that you do not see or find often. For example, a <code>rare animal</code> is an animal that people do not see very much because there are not many of them.</p>\n<p>Listen to Tom and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 45,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "655a256c6fce94fb9c1cc841",
+  "title": "Task 39",
+  "challengeType": 19,
+  "dashedName": "task-39",
+  "solutions": [],
+  "question": {
+    "text": "<p>What specific advice is Sophie asking for?</p>",
+    "answers": [
+      {
+        "answer": "<p>Ways to sleep more in the morning</p>",
+        "feedback": "<p>Sophie is looking for ways to be more productive, not to sleep more.</p>"
+      },
+      {
+        "answer": "<p>Suggestions for evening activities</p>",
+        "feedback": "<p>Her focus is on improving her morning routine, not on evening activities.</p>"
+      },
+      {
+        "answer": "<p>Advice on avoiding mornings</p>",
+        "feedback": "<p>Sophie wants to improve her mornings, not avoid them.</p>"
+      },
+      {
+        "answer": "<p>Tips for a healthy morning routine to improve productivity</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room1.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 5.76,
+        "finishTimestamp": 8.3
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.54,
+        "dialogue": {
+          "text": "Do you have any tips on how to have a healthy morning routine?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.04
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Pay attention to what Sophie is specifically asking about her morning routine.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

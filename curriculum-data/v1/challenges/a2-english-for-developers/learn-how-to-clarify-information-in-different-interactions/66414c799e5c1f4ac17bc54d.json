@@ -1,0 +1,88 @@
+{
+  "id": "66414c799e5c1f4ac17bc54d",
+  "title": "Task 72",
+  "challengeType": 19,
+  "dashedName": "task-72",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Maria think is essential?</p>",
+    "answers": [
+      {
+        "answer": "<p>She thinks it is essential that everyone read the same page on the documentation</p>",
+        "feedback": "<p>Remember that <code>to be on the same page</code> has a different meaning, not related to pages on a document.</p>"
+      },
+      {
+        "answer": "<p>She believes it is essential that every project have the amount allocated for the budget</p>",
+        "feedback": "<p>Her comment has more to do with a common understanding of the situation.</p>"
+      },
+      {
+        "answer": "<p>She is sure that everyone working in the project has to love some sport</p>",
+        "feedback": "<p>Sports were used only as an example for the expression in this challenge.</p>"
+      },
+      {
+        "answer": "<p>For her, it is essential that everyone have a common understanding of the project details</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 49.22,
+        "finishTimestamp": 52.1
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 3.88,
+        "dialogue": {
+          "text": "It's essential that we're on the same page when it comes to project details.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 4.38
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>When it comes to</code> means when talking about a specific topic. For example, when discussing your favorite hobbies, you might say, <code>When it comes to sports, I love soccer.</code> It means when you are talking about that particular subject.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 75,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

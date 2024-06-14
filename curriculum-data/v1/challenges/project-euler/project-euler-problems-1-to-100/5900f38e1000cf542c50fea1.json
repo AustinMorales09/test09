@@ -1,0 +1,69 @@
+{
+  "id": "5900f38e1000cf542c50fea1",
+  "title": "Problem 34: Digit factorials",
+  "challengeType": 1,
+  "forumTopicId": 301998,
+  "dashedName": "problem-34-digit-factorials",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function digitFactorial() {\n\n  var sum = 0;\n  var numbers = [];\n  return { sum, numbers };\n}\n\ndigitFactorial();",
+      "error": null,
+      "seed": "function digitFactorial() {\n\n  var sum = 0;\n  var numbers = [];\n  return { sum, numbers };\n}\n\ndigitFactorial();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>digitFactorial()</code> should return an object.</p>",
+      "testString": "assert.typeOf(digitFactorial(), 'object');"
+    },
+    {
+      "text": "<p><code>digitFactorial()</code> should return { sum: 40730, numbers: [145, 40585] }.</p>",
+      "testString": "assert.deepEqual(digitFactorial(), { sum: 40730, numbers: [145, 40585] });"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>145 is a curious number, as 1! + 4! + 5! = 1 + 24 + 120 = 145.</p>\n<p>Find the numbers and the sum of the numbers which are equal to the sum of the factorial of their digits.</p>\n<p><strong>Note:</strong> as 1! = 1 and 2! = 2 are not sums they are not included.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 33,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

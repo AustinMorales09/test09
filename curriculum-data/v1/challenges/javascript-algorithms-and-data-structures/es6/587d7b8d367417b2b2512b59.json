@@ -1,0 +1,66 @@
+{
+  "id": "587d7b8d367417b2b2512b59",
+  "title": "Import a Default Export",
+  "challengeType": 1,
+  "forumTopicId": 301205,
+  "dashedName": "import-a-default-export",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "  \n// Only change code above this line\n\nsubtract(7,4);",
+      "error": null,
+      "seed": "  \n// Only change code above this line\n\nsubtract(7,4);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "import subtract from \"./math_functions.js\";\n\nsubtract(7,4);",
+        "error": null,
+        "seed": "import subtract from \"./math_functions.js\";\n\nsubtract(7,4);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should properly import <code>subtract</code> from <code>math_functions.js</code>.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/import\\s+subtract\\s+from\\s+('|\")\\.\\/math_functions\\.js\\1/g));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In the last challenge, you learned about <code>export default</code> and its uses. To import a default export, you need to use a different <code>import</code> syntax. In the following example, <code>add</code> is the default export of the <code>math_functions.js</code> file. Here is how to import it:</p>\n<pre><code class=\"language-js\">import add from \"./math_functions.js\";\n</code></pre>\n<p>The syntax differs in one key place. The imported value, <code>add</code>, is not surrounded by curly braces (<code>{}</code>). <code>add</code> here is simply a variable name for whatever the default export of the <code>math_functions.js</code> file is. You can use any name here when importing a default.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>In the following code, import the default export from the <code>math_functions.js</code> file, found in the same directory as this file. Give the import the name <code>subtract</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

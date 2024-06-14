@@ -1,0 +1,83 @@
+{
+  "id": "65b22d1aeb5ecf1d590d30bf",
+  "title": "Task 6",
+  "challengeType": 22,
+  "dashedName": "task-6",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>No, I _ _ her _. What can you tell me about her?</p>",
+    "blanks": [
+      {
+        "answer": "haven't",
+        "feedback": "<p>It's the contraction of <code>have not</code> used to make a negative statement in the present perfect tense.</p>"
+      },
+      {
+        "answer": "seen",
+        "feedback": "<p>Use the verb <code>see</code> in the form it is used in the Present Perfect tense.</p>"
+      },
+      {
+        "answer": "yet",
+        "feedback": "<p>It's used at the end of a negative Present Perfect sentence to indicate something that hasn't happened up to the present moment.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.34,
+        "finishTimestamp": 6.66
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.32,
+        "dialogue": {
+          "text": "No, I haven't seen her yet. What can you tell me about her?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.82
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The <em>Present Perfect</em> tense negative form is used to talk about things that have not happened at any time up until now. It's formed using <code>have not</code> or <code>has not</code> (<code>haven't</code>/<code>hasn't</code>) followed by the past participle of the verb.</p>\n<p>For example: <code>I haven't finished my homework yet.</code> or <code>She hasn't called me back.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

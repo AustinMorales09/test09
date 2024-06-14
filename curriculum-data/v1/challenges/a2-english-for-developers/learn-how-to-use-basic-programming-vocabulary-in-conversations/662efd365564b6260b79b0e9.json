@@ -1,0 +1,45 @@
+{
+  "id": "662efd365564b6260b79b0e9",
+  "title": "Task 43",
+  "challengeType": 19,
+  "dashedName": "task-43",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>loop</code> mean in a programming context?</p>",
+    "answers": [
+      {
+        "answer": "<p>It's a command to exit a program.</p>",
+        "feedback": "<p>A <code>loop</code> is not used to exit a program but to repeat a sequence of instructions.</p>"
+      },
+      {
+        "answer": "<p>It's a structure that repeats code until a certain condition is met.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It is a type of data storage.</p>",
+        "feedback": "<p><code>Loops</code> do not store data; they control the flow of execution by repeating operations.</p>"
+      },
+      {
+        "answer": "<p>It's a method to rename variables automatically.</p>",
+        "feedback": "<p><code>Loops</code> do not rename variables; they execute a block of code multiple times under specific conditions.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>loop</code> is a sequence of instructions that is continually repeated until a certain condition is reached. <code>Loops</code> are used to run the same code multiple times efficiently. Common types of <code>loops</code> include <code>for</code> loops and <code>while</code> loops.</p>\n<p>For example, <code>for loop</code>: <code>for (int i = 0; i &#x3C; 5; i++) { /* code to be executed */ }</code></p>\n<p>In the example, the code inside the braces <code>{ }</code> is executed repeatedly until the condition is no longer true.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 44,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

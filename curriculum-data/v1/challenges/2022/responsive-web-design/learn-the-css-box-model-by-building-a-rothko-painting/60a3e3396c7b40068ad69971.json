@@ -1,0 +1,73 @@
+{
+  "id": "60a3e3396c7b40068ad69971",
+  "title": "Step 8",
+  "challengeType": 0,
+  "dashedName": "step-8",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "\n",
+      "error": null,
+      "seed": "\n"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n    <link href=\"./styles.css\" rel=\"stylesheet\">\n  </head>\n  <body>\n    <div class=\"canvas\">\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n    <link href=\"./styles.css\" rel=\"stylesheet\">\n  </head>\n  <body>\n    <div class=\"canvas\">\n    </div>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have a <code>.canvas</code> selector.</p>",
+      "testString": "const hasCanvas = new __helpers.CSSHelp(document).getStyle('.canvas');\nassert(hasCanvas)"
+    },
+    {
+      "text": "<p>You should set the <code>width</code> property to <code>500px</code>.</p>",
+      "testString": "const hasWidth = new __helpers.CSSHelp(document).getCSSRules().some(x => x.style.width === '500px')\nassert(hasWidth);"
+    },
+    {
+      "text": "<p>Your <code>.canvas</code> element should have a <code>width</code> of <code>500px</code>.</p>",
+      "testString": "const width = new __helpers.CSSHelp(document).getStyle('.canvas')?.getPropertyValue('width');\nassert(width === '500px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Time for CSS.</p>\n<p>Even though your <code>&#x3C;div></code> has no text, it's still treated as a box with content.\nWrite a CSS rule that uses the <code>.canvas</code> class selector and set its <code>width</code> to 500 pixels.\nHere's a CSS rule that sets the width of the class <code>card</code> to 300 pixels:</p>\n<pre><code class=\"language-css\">.card {\n  width: 300px;\n}\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-css-box-model-by-building-a-rothko-painting",
+  "hasEditableBoundaries": true,
+  "order": 5,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

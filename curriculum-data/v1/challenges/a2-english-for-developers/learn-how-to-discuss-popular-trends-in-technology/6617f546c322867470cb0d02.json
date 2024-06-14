@@ -1,0 +1,79 @@
+{
+  "id": "6617f546c322867470cb0d02",
+  "title": "Task 17",
+  "challengeType": 22,
+  "dashedName": "task-17",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Yeah, we _ to make sure AI is used ethically and doesn't generate _.</p>",
+    "blanks": [
+      {
+        "answer": "have",
+        "feedback": "<p>Combined with the <code>to</code> right after it, it is a verb used to express obligation or necessity.</p>"
+      },
+      {
+        "answer": "bias",
+        "feedback": "<p>Expression that means a preference or inclination for or against something or someone.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 30.82,
+        "finishTimestamp": 34.68
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.86,
+        "dialogue": {
+          "text": "Yeah, we have to make sure AI is used ethically and doesn't generate bias.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.36
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and fill in the blanks with the correct words.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

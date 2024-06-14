@@ -1,0 +1,49 @@
+{
+  "id": "6577333feab1e8e927014f03",
+  "title": "Step 63",
+  "challengeType": 20,
+  "dashedName": "step-63",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        29,
+        36
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n       \n        constraints = [\n            (nums, r'\\d'),\n            (lowercase, r'[a-z]'),\n            (uppercase, r'[A-Z]'),            \n            (special_chars, fr'[{symbols}]')            \n        ]\n\n        # Check constraints\n        count = 0\n        if all(\n            [\n                constraint <= len(re.findall(pattern, password))\n                for constraint, pattern in constraints\n            ]\n        ):\n            break\n    \n    return password\n\n# new_password = generate_password(8)\n# print(new_password)",
+      "error": null,
+      "seed": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n       \n        constraints = [\n            (nums, r'\\d'),\n            (lowercase, r'[a-z]'),\n            (uppercase, r'[A-Z]'),            \n            (special_chars, fr'[{symbols}]')            \n        ]\n\n        # Check constraints\n        count = 0\n        if all(\n            [\n                constraint <= len(re.findall(pattern, password))\n                for constraint, pattern in constraints\n            ]\n        ):\n            break\n    \n    return password\n\n# new_password = generate_password(8)\n# print(new_password)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should turn your list comprehension into a generator expression by removing the square brackets.</p>",
+      "testString": "({ test: () => assert.match(code, /^(\\s*)if\\s+all\\s*\\(\\s*constraint\\s*<=\\s*len\\s*\\(\\s*re\\.findall\\s*\\(\\s*pattern\\s*,\\s*password\\s*\\)\\s*\\)\\s*for\\s+constraint\\s*,\\s*pattern\\s+in\\s+constraints\\s*\\)\\s*:\\s*^\\1\\s{4}break/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Having <code>all([expression for i in iterable])</code>, means that a new list is created by evaluating <code>expression</code> for each <code>i</code> in <code>iterable</code>. After the <code>all()</code> function iterates over the newly created list, the list is deleted automatically, since it is no longer needed.</p>\n<p>Memory can be saved by using a generator expression. Generator expressions follow the syntax of list comprehensions but they use parentheses instead of square brackets.</p>\n<p>Change your list comprehension into a generator expression by removing the square brackets.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 62,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

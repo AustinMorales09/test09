@@ -1,0 +1,79 @@
+{
+  "id": "65a84f2370686dbda3e53aff",
+  "title": "Task 36",
+  "challengeType": 22,
+  "dashedName": "task-36",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That's great. What _ you _?</p>",
+    "blanks": [
+      {
+        "answer": "did",
+        "feedback": "<p>Used here to form a past tense question. It helps ask about something that happened in the past.</p>"
+      },
+      {
+        "answer": "find",
+        "feedback": "<p>The main verb in the question, asking about what was discovered or learned.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.7,
+        "finishTimestamp": 11.38
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 2.68,
+        "dialogue": {
+          "text": "That's great. What did you find?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 3.18
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this task, listen to the question and choose the right verbs to complete it.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-help-a-coworker-troubleshoot-on-github",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 37,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

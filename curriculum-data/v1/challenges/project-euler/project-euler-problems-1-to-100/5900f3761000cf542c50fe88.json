@@ -1,0 +1,77 @@
+{
+  "id": "5900f3761000cf542c50fe88",
+  "title": "Problem 9: Special Pythagorean triplet",
+  "challengeType": 1,
+  "forumTopicId": 302205,
+  "dashedName": "problem-9-special-pythagorean-triplet",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function specialPythagoreanTriplet(n) {\n let sumOfabc = n;\n\n return true;\n}\n\nspecialPythagoreanTriplet(1000);",
+      "error": null,
+      "seed": "function specialPythagoreanTriplet(n) {\n let sumOfabc = n;\n\n return true;\n}\n\nspecialPythagoreanTriplet(1000);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function specialPythagoreanTriplet(n) {\n  for (let a = 1; a <= n / 2; a++) {\n    for (let b = a + 1; b <= n / 2; b++) {\n      const c = Math.sqrt(a * a + b * b);\n\n      if ((a + b + c) % n == 0) {\n        const factor = n / (a + b + c);\n\n        return (a * b * c) * (factor ** 3);\n      }\n    }\n  }\n}",
+        "error": null,
+        "seed": "function specialPythagoreanTriplet(n) {\n  for (let a = 1; a <= n / 2; a++) {\n    for (let b = a + 1; b <= n / 2; b++) {\n      const c = Math.sqrt(a * a + b * b);\n\n      if ((a + b + c) % n == 0) {\n        const factor = n / (a + b + c);\n\n        return (a * b * c) * (factor ** 3);\n      }\n    }\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>specialPythagoreanTriplet(24)</code> should return a number.</p>",
+      "testString": "assert(typeof specialPythagoreanTriplet(24) === 'number');"
+    },
+    {
+      "text": "<p><code>specialPythagoreanTriplet(24)</code> should return 480.</p>",
+      "testString": "assert.strictEqual(specialPythagoreanTriplet(24), 480);"
+    },
+    {
+      "text": "<p><code>specialPythagoreanTriplet(120)</code> should return 49920, 55080 or 60000.</p>",
+      "testString": "assert([49920, 55080, 60000].includes(specialPythagoreanTriplet(120)));"
+    },
+    {
+      "text": "<p><code>specialPythagoreanTriplet(1000)</code> should return 31875000.</p>",
+      "testString": "assert.strictEqual(specialPythagoreanTriplet(1000), 31875000);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A Pythagorean triplet is a set of three natural numbers, <code>a</code> &#x3C; <code>b</code> &#x3C; <code>c</code>, for which,</p>\n<div style='text-align: center;'><var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> = <var>c</var><sup>2</sup></div>\n<p>For example, 3<sup>2</sup> + 4<sup>2</sup> = 9 + 16 = 25 = 5<sup>2</sup>.</p>\n<p>There exists exactly one Pythagorean triplet for which <code>a</code> + <code>b</code> + <code>c</code> = 1000. Find the product <code>abc</code> such that <code>a</code> + <code>b</code> + <code>c</code> = <code>n</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

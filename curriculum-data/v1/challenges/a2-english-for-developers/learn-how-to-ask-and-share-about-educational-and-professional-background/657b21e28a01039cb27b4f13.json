@@ -1,0 +1,45 @@
+{
+  "id": "657b21e28a01039cb27b4f13",
+  "title": "Task 58",
+  "challengeType": 19,
+  "dashedName": "task-58",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>exactly</code> imply in a sentence like <code>This is exactly the kind of work I enjoy</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>This is somewhat similar to the work I enjoy</p>",
+        "feedback": "<p><code>Exactly</code> indicates a perfect match, not just a similarity.</p>"
+      },
+      {
+        "answer": "<p>This is the opposite of the work I enjoy</p>",
+        "feedback": "<p><code>Exactly</code> implies a perfect match, not an opposite.</p>"
+      },
+      {
+        "answer": "<p>I am not sure if this is the work I enjoy</p>",
+        "feedback": "<p>Using <code>exactly</code> shows certainty, not uncertainty.</p>"
+      },
+      {
+        "answer": "<p>This is precisely the type of work that I find enjoyable</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>exactly</code> is used to emphasize the truth or accuracy of a statement or description. It can mean <code>precisely</code> or <code>just</code>. For example, if someone says, <code>It's exactly what I needed</code>, they mean that it is precisely or perfectly what was required. <code>Exactly</code> often highlights that something is correct in every detail.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 60,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

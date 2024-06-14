@@ -1,0 +1,82 @@
+{
+  "id": "594810f028c0303b75339ad7",
+  "title": "Zhang-Suen thinning algorithm",
+  "challengeType": 1,
+  "forumTopicId": 302347,
+  "dashedName": "zhang-suen-thinning-algorithm",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const _testImage1 = [\n  '                               ',\n  '#########       ########       ',\n  '###   ####     ####  ####      ',\n  '###    ###     ###    ###      ',\n  '###   ####     ###             ',\n  '#########      ###             ',\n  '### ####       ###    ###      ',\n  '###  ####  ### ####  #### ###  ',\n  '###   #### ###  ########  ###  ',\n  '                               '\n];\nconst expected1 = [\n  '                               ',\n  '########         ######        ',\n  '#      #        ##             ',\n  '#       #       #              ',\n  '#      #        #              ',\n  '###### #        #              ',\n  '#     ##        #              ',\n  '#      #    #   ##    ##   #   ',\n  '#       #         ####         ',\n  '                               '\n];\nconst _testImage2 = [\n  '                                                          ',\n  ' #################                   #############        ',\n  ' ##################               ################        ',\n  ' ###################            ##################        ',\n  ' ########     #######          ###################        ',\n  '   ######     #######         #######       ######        ',\n  '   ######     #######        #######                      ',\n  '   #################         #######                      ',\n  '   ################          #######                      ',\n  '   #################         #######                      ',\n  '   ######     #######        #######                      ',\n  '   ######     #######        #######                      ',\n  '   ######     #######         #######       ######        ',\n  ' ########     #######          ###################        ',\n  ' ########     ####### ######    ################## ###### ',\n  ' ########     ####### ######      ################ ###### ',\n  ' ########     ####### ######         ############# ###### ',\n  '                                                          '];\nconst expected2 = [\n  '                                                          ',\n  '                                                          ',\n  '    # ##########                       #######            ',\n  '     ##        #                   ####       #           ',\n  '     #          #                 ##                      ',\n  '     #          #                #                        ',\n  '     #          #                #                        ',\n  '     #          #                #                        ',\n  '     ############               #                         ',\n  '     #          #               #                         ',\n  '     #          #                #                        ',\n  '     #          #                #                        ',\n  '     #          #                #                        ',\n  '     #                            ##                      ',\n  '     #                             ############           ',\n  '                       ###                          ###   ',\n  '                                                          ',\n  '                                                          '\n];",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function thinImage(image) {\n\n}\n\nconst testImage1 = [\n  '                               ',\n  '#########       ########       ',\n  '###   ####     ####  ####      ',\n  '###    ###     ###    ###      ',\n  '###   ####     ###             ',\n  '#########      ###             ',\n  '### ####       ###    ###      ',\n  '###  ####  ### ####  #### ###  ',\n  '###   #### ###  ########  ###  ',\n  '                               '\n];",
+      "error": null,
+      "seed": "function thinImage(image) {\n\n}\n\nconst testImage1 = [\n  '                               ',\n  '#########       ########       ',\n  '###   ####     ####  ####      ',\n  '###    ###     ###    ###      ',\n  '###   ####     ###             ',\n  '#########      ###             ',\n  '### ####       ###    ###      ',\n  '###  ####  ### ####  #### ###  ',\n  '###   #### ###  ########  ###  ',\n  '                               '\n];"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function Point(x, y) {\n  this.x = x;\n  this.y = y;\n}\n\nconst ZhangSuen = (function () {\n  function ZhangSuen() {\n  }\n\n  ZhangSuen.nbrs = [[0, -1], [1, -1], [1, 0], [1, 1], [0, 1], [-1, 1], [-1, 0], [-1, -1], [0, -1]];\n\n  ZhangSuen.nbrGroups = [[[0, 2, 4], [2, 4, 6]], [[0, 2, 6], [0, 4, 6]]];\n\n  ZhangSuen.toWhite = [];\n\n  ZhangSuen.main = function (image) {\n    ZhangSuen.grid = new Array(image);\n    for (let r = 0; r < image.length; r++) {\n      ZhangSuen.grid[r] = image[r].split('');\n    }\n    ZhangSuen.thinImage();\n    return ZhangSuen.getResult();\n  };\n\n  ZhangSuen.thinImage = function () {\n    let firstStep = false;\n    let hasChanged;\n    do {\n      hasChanged = false;\n      firstStep = !firstStep;\n      for (let r = 1; r < ZhangSuen.grid.length - 1; r++) {\n        for (let c = 1; c < ZhangSuen.grid[0].length - 1; c++) {\n          if (ZhangSuen.grid[r][c] !== '#') {\n            continue;\n          }\n          const nn = ZhangSuen.numNeighbors(r, c);\n          if (nn < 2 || nn > 6) {\n            continue;\n          }\n          if (ZhangSuen.numTransitions(r, c) !== 1) {\n            continue;\n          }\n          if (!ZhangSuen.atLeastOneIsWhite(r, c, firstStep ? 0 : 1)) {\n            continue;\n          }\n          ZhangSuen.toWhite.push(new Point(c, r));\n          hasChanged = true;\n        }\n      }\n      for (let i = 0; i < ZhangSuen.toWhite.length; i++) {\n        const p = ZhangSuen.toWhite[i];\n        ZhangSuen.grid[p.y][p.x] = ' ';\n      }\n      ZhangSuen.toWhite = [];\n    } while ((firstStep || hasChanged));\n  };\n\n  ZhangSuen.numNeighbors = function (r, c) {\n    let count = 0;\n    for (let i = 0; i < ZhangSuen.nbrs.length - 1; i++) {\n      if (ZhangSuen.grid[r + ZhangSuen.nbrs[i][1]][c + ZhangSuen.nbrs[i][0]] === '#') {\n        count++;\n      }\n    }\n    return count;\n  };\n\n  ZhangSuen.numTransitions = function (r, c) {\n    let count = 0;\n    for (let i = 0; i < ZhangSuen.nbrs.length - 1; i++) {\n      if (ZhangSuen.grid[r + ZhangSuen.nbrs[i][1]][c + ZhangSuen.nbrs[i][0]] === ' ') {\n        if (ZhangSuen.grid[r + ZhangSuen.nbrs[i + 1][1]][c + ZhangSuen.nbrs[i + 1][0]] === '#') {\n          count++;\n        }\n      }\n    }\n    return count;\n  };\n\n  ZhangSuen.atLeastOneIsWhite = function (r, c, step) {\n    let count = 0;\n    const group = ZhangSuen.nbrGroups[step];\n    for (let i = 0; i < 2; i++) {\n      for (let j = 0; j < group[i].length; j++) {\n        const nbr = ZhangSuen.nbrs[group[i][j]];\n        if (ZhangSuen.grid[r + nbr[1]][c + nbr[0]] === ' ') {\n          count++;\n          break;\n        }\n      }\n    }\n    return count > 1;\n  };\n\n  ZhangSuen.getResult = function () {\n    const result = [];\n    for (let i = 0; i < ZhangSuen.grid.length; i++) {\n      const row = ZhangSuen.grid[i].join('');\n      result.push(row);\n    }\n    return result;\n  };\n  return ZhangSuen;\n}());\n\nfunction thinImage(image) {\n  return ZhangSuen.main(image);\n}",
+        "error": null,
+        "seed": "function Point(x, y) {\n  this.x = x;\n  this.y = y;\n}\n\nconst ZhangSuen = (function () {\n  function ZhangSuen() {\n  }\n\n  ZhangSuen.nbrs = [[0, -1], [1, -1], [1, 0], [1, 1], [0, 1], [-1, 1], [-1, 0], [-1, -1], [0, -1]];\n\n  ZhangSuen.nbrGroups = [[[0, 2, 4], [2, 4, 6]], [[0, 2, 6], [0, 4, 6]]];\n\n  ZhangSuen.toWhite = [];\n\n  ZhangSuen.main = function (image) {\n    ZhangSuen.grid = new Array(image);\n    for (let r = 0; r < image.length; r++) {\n      ZhangSuen.grid[r] = image[r].split('');\n    }\n    ZhangSuen.thinImage();\n    return ZhangSuen.getResult();\n  };\n\n  ZhangSuen.thinImage = function () {\n    let firstStep = false;\n    let hasChanged;\n    do {\n      hasChanged = false;\n      firstStep = !firstStep;\n      for (let r = 1; r < ZhangSuen.grid.length - 1; r++) {\n        for (let c = 1; c < ZhangSuen.grid[0].length - 1; c++) {\n          if (ZhangSuen.grid[r][c] !== '#') {\n            continue;\n          }\n          const nn = ZhangSuen.numNeighbors(r, c);\n          if (nn < 2 || nn > 6) {\n            continue;\n          }\n          if (ZhangSuen.numTransitions(r, c) !== 1) {\n            continue;\n          }\n          if (!ZhangSuen.atLeastOneIsWhite(r, c, firstStep ? 0 : 1)) {\n            continue;\n          }\n          ZhangSuen.toWhite.push(new Point(c, r));\n          hasChanged = true;\n        }\n      }\n      for (let i = 0; i < ZhangSuen.toWhite.length; i++) {\n        const p = ZhangSuen.toWhite[i];\n        ZhangSuen.grid[p.y][p.x] = ' ';\n      }\n      ZhangSuen.toWhite = [];\n    } while ((firstStep || hasChanged));\n  };\n\n  ZhangSuen.numNeighbors = function (r, c) {\n    let count = 0;\n    for (let i = 0; i < ZhangSuen.nbrs.length - 1; i++) {\n      if (ZhangSuen.grid[r + ZhangSuen.nbrs[i][1]][c + ZhangSuen.nbrs[i][0]] === '#') {\n        count++;\n      }\n    }\n    return count;\n  };\n\n  ZhangSuen.numTransitions = function (r, c) {\n    let count = 0;\n    for (let i = 0; i < ZhangSuen.nbrs.length - 1; i++) {\n      if (ZhangSuen.grid[r + ZhangSuen.nbrs[i][1]][c + ZhangSuen.nbrs[i][0]] === ' ') {\n        if (ZhangSuen.grid[r + ZhangSuen.nbrs[i + 1][1]][c + ZhangSuen.nbrs[i + 1][0]] === '#') {\n          count++;\n        }\n      }\n    }\n    return count;\n  };\n\n  ZhangSuen.atLeastOneIsWhite = function (r, c, step) {\n    let count = 0;\n    const group = ZhangSuen.nbrGroups[step];\n    for (let i = 0; i < 2; i++) {\n      for (let j = 0; j < group[i].length; j++) {\n        const nbr = ZhangSuen.nbrs[group[i][j]];\n        if (ZhangSuen.grid[r + nbr[1]][c + nbr[0]] === ' ') {\n          count++;\n          break;\n        }\n      }\n    }\n    return count > 1;\n  };\n\n  ZhangSuen.getResult = function () {\n    const result = [];\n    for (let i = 0; i < ZhangSuen.grid.length; i++) {\n      const row = ZhangSuen.grid[i].join('');\n      result.push(row);\n    }\n    return result;\n  };\n  return ZhangSuen;\n}());\n\nfunction thinImage(image) {\n  return ZhangSuen.main(image);\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>thinImage</code> should be a function.</p>",
+      "testString": "assert.equal(typeof thinImage, 'function');"
+    },
+    {
+      "text": "<p><code>thinImage</code> should return an array.</p>",
+      "testString": "assert(Array.isArray(thinImage(_testImage1)));"
+    },
+    {
+      "text": "<p><code>thinImage</code> should return an array of strings.</p>",
+      "testString": "assert.equal(typeof thinImage(_testImage1)[0], 'string');"
+    },
+    {
+      "text": "<p><code>thinImage(testImage1)</code> should return a thinned image as in the example.</p>",
+      "testString": "assert.deepEqual(thinImage(_testImage1), expected1);"
+    },
+    {
+      "text": "<p><code>thinImage(testImage2)</code> should return a thinned image.</p>",
+      "testString": "assert.deepEqual(thinImage(_testImage2), expected2);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>This is an algorithm used to thin a black and white i.e. one bit per pixel images. For example, with an input image of:</p>\n<pre><code class=\"language-js\">const testImage1 = [\n '                               ',\n '#########       ########       ',\n '###   ####     ####  ####      ',\n '###    ###     ###    ###      ',\n '###   ####     ###             ',\n '#########      ###             ',\n '### ####       ###    ###      ',\n '###  ####  ### ####  #### ###  ',\n '###   #### ###  ########  ###  ',\n '                               '\n];\n</code></pre>\n<p>It produces the thinned output:</p>\n<pre><code class=\"language-js\">[ '                               ',\n  '########         ######        ',\n  '#      #        ##             ',\n  '#       #       #              ',\n  '#      #        #              ',\n  '###### #        #              ',\n  '#     ##        #              ',\n  '#      #    #   ##    ##   #   ',\n  '#       #         ####         ',\n  '                               ' ];\n</code></pre>\n<h2>Algorithm</h2>\n<p>Assume black pixels are one and white pixels zero, and that the input image is a rectangular N by M array of ones and zeroes. The algorithm operates on all black pixels P1 that can have eight neighbours. The neighbours are, in order, arranged as:</p>\n<p>$$\\begin{array}{|c|c|c|}\n\\hline\nP9 &#x26; P2              &#x26; P3\\\\ \\hline\nP8 &#x26; \\boldsymbol{P1} &#x26; P4\\\\ \\hline\nP7 &#x26; P6              &#x26; P5\\\\ \\hline\n\\end{array}$$</p>\n<p>Obviously the boundary pixels of the image cannot have the full eight neighbours.</p>\n<ul>\n<li>Define $A(P1)$ = the number of transitions from white to black, ($0 \\to 1$) in the sequence P2, P3, P4, P5, P6, P7, P8, P9, P2. (Note the extra P2 at the end - it is circular).</li>\n<li>Define $B(P1)$ = the number of black pixel neighbours of P1. ($= \\sum(P2 \\ldots P9)$)</li>\n</ul>\n<p><strong>Step 1:</strong></p>\n<p>All pixels are tested and pixels satisfying all the following conditions (simultaneously) are just noted at this stage.</p>\n<ol>\n<li>The pixel is black and has eight neighbours</li>\n<li>$2 \\le B(P1) \\le 6$</li>\n<li>$A(P1) = 1$</li>\n<li>At least one of $P2$, $P4$ and $P6$ is white</li>\n<li>At least one of $P4$, $P6$ and $P8$ is white</li>\n</ol>\n<p>After iterating over the image and collecting all the pixels satisfying all step 1 conditions, all these condition satisfying pixels are set to white.</p>\n<p><strong>Step 2:</strong></p>\n<p>All pixels are again tested and pixels satisfying all the following conditions are just noted at this stage.</p>\n<ol>\n<li>The pixel is black and has eight neighbours</li>\n<li>$2 \\le B(P1) \\le 6$</li>\n<li>$A(P1) = 1$</li>\n<li>At least one of $P2$, $P4$ and $P8$ is white</li>\n<li>At least one of $P2$, $P6$ and $P8$ is white</li>\n</ol>\n<p>After iterating over the image and collecting all the pixels satisfying all step 2 conditions, all these condition satisfying pixels are again set to white.</p>\n<p><strong>Iteration:</strong></p>\n<p>If any pixels were set in this round of either step 1 or step 2 then all steps are repeated until no image pixels are so changed.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a routine to perform Zhang-Suen thinning on the provided <code>image</code>, an array of strings, where each string represents single line of the image. In the string, <code>#</code> represents black pixel, and whitespace represents white pixel. Function should return thinned image, using the same representation.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 158,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

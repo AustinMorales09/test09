@@ -1,0 +1,83 @@
+{
+  "id": "65dab742fb5c1c8d81bb063b",
+  "title": "Task 102",
+  "challengeType": 22,
+  "dashedName": "task-102",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Thank you. It's all about finding the _ _ for you and your _.</p>",
+    "blanks": [
+      {
+        "answer": "right",
+        "feedback": "<p>This word suggests the most suitable or appropriate.</p>"
+      },
+      {
+        "answer": "balance",
+        "feedback": "<p>This word refers to an even distribution or the right proportions of different aspects of life.</p>"
+      },
+      {
+        "answer": "well-being",
+        "feedback": "<p>This term refers to the state of being comfortable, healthy, or happy.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 27.98,
+        "finishTimestamp": 32.14
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.16,
+        "dialogue": {
+          "text": "Thank you. It's all about finding the right balance for you and your well-being.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 5.66
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>It's all about</code> means that something is mainly or entirely focused on a particular idea or goal. For instance, <code>It's all about making time for both work and fun to keep a happy life.</code></p>\n<p><code>Balance</code> can be used as a noun or a verb. When it's a noun, it means having things in the right amounts so that no part is too much or too little. For example, <code>Finding a balance between work and play is important.</code></p>\n<p>When it's a verb, <code>balance</code> means to make things equal in amount or to keep them in a steady position. For example, <code>You need to balance your time between studying and relaxing.</code></p>\n<p><code>The right balance</code> means the perfect mix or amount of different activities or aspects.</p>\n<p>The term <code>well-being</code> refers to the state of being comfortable, healthy, or happy. It involves overall health and happiness, including physical, mental, and emotional aspects.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 106,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

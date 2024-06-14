@@ -1,0 +1,65 @@
+{
+  "id": "65521203d7165c7b84b22ad4",
+  "title": "Step 23",
+  "challengeType": 20,
+  "dashedName": "step-23",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>for</code> keyword to create a loop. Make sure to place the <code>for</code> keyword at the beginning of the line and leave a white space after the keyword.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.match(commentless_code, /^for\\s+/m)"
+    },
+    {
+      "text": "<p>You should write the <code>i</code> variable after the <code>for</code> keyword.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.match(commentless_code, /^for\\s+i/m)"
+    },
+    {
+      "text": "<p>You should write the <code>in</code> keyword after <code>for i </code>. Make sure to leave a space around the <code>in</code> keyword.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.match(commentless_code, /^for\\s+i\\s+in\\s+/m)"
+    },
+    {
+      "text": "<p>You should write <code>text</code> after <code>for i in </code>. Don't forget to add the final <code>:</code>.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.match(commentless_code, /^for\\s+i\\s+in\\s+text\\s*:\\s*$/m)"
+    },
+    {
+      "text": "<p>Your <code>for</code> loop should be placed below the line of code <code>alphabet = 'abcdefghijklmnopqrstuvwxyz'</code>.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert.match(commentless_code, /^alphabet\\s*=\\s*(\"|')abcdefghijklmnopqrstuvwxyz\\1\\s*^for\\s+i\\s+in\\s+text\\s*:\\s*$/m)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A loop allows you to systematically go through a sequence of elements and execute actions on each one.</p>\n<p>In this case, you'll employ a <code>for</code> loop. Here's how you can iterate over <code>text</code>:</p>\n<pre><code class=\"language-py\">for i in text:\n</code></pre>\n<p><code>for</code> is the keyword denoting the loop type. <code>i</code> is a variable that sequentially takes the value of the elements in <code>text</code>. The statement ends with a colon, <code>:</code>.</p>\n<p>Below the line where you declared <code>alphabet</code>, write a <code>for</code> loop to iterate over <code>text</code>. Use <code>i</code> as the loop variable.</p>\n<p>Doing so, there is an error in the terminal. You will learn about it in the next step.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,81 @@
+{
+  "id": "5900f3831000cf542c50fe96",
+  "title": "Problem 23: Non-abundant sums",
+  "challengeType": 1,
+  "forumTopicId": 301873,
+  "dashedName": "problem-23-non-abundant-sums",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function sumOfNonAbundantNumbers(n) {\n\n  return n;\n}\n\nsumOfNonAbundantNumbers(28123);",
+      "error": null,
+      "seed": "function sumOfNonAbundantNumbers(n) {\n\n  return n;\n}\n\nsumOfNonAbundantNumbers(28123);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function abundantCheck(number) {\n  let sum = 1;\n\n  for (let i = 2; i <= Math.sqrt(number); i += 1) {\n    if(number % i === 0) {\n      sum += i + +(i !== Math.sqrt(number) && number / i);\n    }\n  }\n  return sum > number;\n}\n\nfunction sumOfNonAbundantNumbers(n) {\n  let sum = 0;\n  const memo = {};\n  let abundantList = [];\n\n  // Function checkSum checks if num can be represented as a sum of numbers in the stack (array)\n  const checkSum = (num, stack, memo) => {\n    for (let i = 0; i < stack.length; i += 1) {\n      if ((num - stack[i]) in memo) return true;\n    }\n    return false;\n  };\n\n  for (let i = 1; i <= n; i += 1) {\n    if (abundantCheck(i)) {\n      abundantList.push(i);\n      memo[i] = 1;\n    }\n    if (checkSum(i, abundantList, memo)) continue;\n    sum += i;\n  }\n  return sum;\n}",
+        "error": null,
+        "seed": "function abundantCheck(number) {\n  let sum = 1;\n\n  for (let i = 2; i <= Math.sqrt(number); i += 1) {\n    if(number % i === 0) {\n      sum += i + +(i !== Math.sqrt(number) && number / i);\n    }\n  }\n  return sum > number;\n}\n\nfunction sumOfNonAbundantNumbers(n) {\n  let sum = 0;\n  const memo = {};\n  let abundantList = [];\n\n  // Function checkSum checks if num can be represented as a sum of numbers in the stack (array)\n  const checkSum = (num, stack, memo) => {\n    for (let i = 0; i < stack.length; i += 1) {\n      if ((num - stack[i]) in memo) return true;\n    }\n    return false;\n  };\n\n  for (let i = 1; i <= n; i += 1) {\n    if (abundantCheck(i)) {\n      abundantList.push(i);\n      memo[i] = 1;\n    }\n    if (checkSum(i, abundantList, memo)) continue;\n    sum += i;\n  }\n  return sum;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>sumOfNonAbundantNumbers(10000)</code> should return a number.</p>",
+      "testString": "assert(typeof sumOfNonAbundantNumbers(10000) === 'number');"
+    },
+    {
+      "text": "<p><code>sumOfNonAbundantNumbers(10000)</code> should return 3731004.</p>",
+      "testString": "assert(sumOfNonAbundantNumbers(10000) === 3731004);"
+    },
+    {
+      "text": "<p><code>sumOfNonAbundantNumbers(15000)</code> should return 4039939.</p>",
+      "testString": "assert(sumOfNonAbundantNumbers(15000) === 4039939);"
+    },
+    {
+      "text": "<p><code>sumOfNonAbundantNumbers(20000)</code> should return 4159710.</p>",
+      "testString": "assert(sumOfNonAbundantNumbers(20000) === 4159710);"
+    },
+    {
+      "text": "<p><code>sumOfNonAbundantNumbers(28123)</code> should return 4179871.</p>",
+      "testString": "assert(sumOfNonAbundantNumbers(28123) === 4179871);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A perfect number is a number for which the sum of its proper divisors is exactly equal to the number. For example, the sum of the proper divisors of 28 would be 1 + 2 + 4 + 7 + 14 = 28, which means that 28 is a perfect number.</p>\n<p>A number <code>n</code> is called deficient if the sum of its proper divisors is less than <code>n</code> and it is called abundant if this sum exceeds <code>n</code>.</p>\n<p>As 12 is the smallest abundant number, 1 + 2 + 3 + 4 + 6 = 16, the smallest number that can be written as the sum of two abundant numbers is 24. By mathematical analysis, it can be shown that all integers greater than 28123 can be written as the sum of two abundant numbers. However, this upper limit cannot be reduced any further by analysis even though it is known that the greatest number that cannot be expressed as the sum of two abundant numbers is less than this limit.</p>\n<p>Find the sum of all positive integers &#x3C;= <code>n</code> which cannot be written as the sum of two abundant numbers.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

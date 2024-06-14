@@ -1,0 +1,53 @@
+{
+  "id": "6610c87eac0f0b256d7b037e",
+  "title": "Step 59",
+  "challengeType": 1,
+  "dashedName": "step-59",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        11
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow() {\n  const test = \"Testing\";\n  return test;\n}\nconst call = padRow();\nconsole.log(call);\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow() {\n  const test = \"Testing\";\n  return test;\n}\nconst call = padRow();\nconsole.log(call);\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i + 1))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>padRow</code> function should not have a <code>test</code> variable.</p>",
+      "testString": "assert.notMatch(padRow.toString(), /test/);"
+    },
+    {
+      "text": "<p>Your <code>padRow</code> function should not return a value.</p>",
+      "testString": "assert.notMatch(padRow.toString(), /return/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Because your function was no longer using the parameter, changing the value passed in the call did not affect it.</p>\n<p>Go ahead and remove the <code>test</code> declaration from your <code>padRow</code> function. Also, remove the <code>return</code> statement, so your function is empty again.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 58,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "65a74dae1b3acd9fad3a068e",
+  "title": "Task 128",
+  "challengeType": 22,
+  "dashedName": "task-128",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>For me, I like the idea of _ my skills and getting _ for my contributions.</p>",
+    "blanks": [
+      {
+        "answer": "practicing",
+        "feedback": "<p>This verb means to perform an activity or exercise repeatedly or regularly in order to improve or maintain one's proficiency.</p>"
+      },
+      {
+        "answer": "recognition",
+        "feedback": "<p>This noun refers to the action or process of acknowledging someone's efforts, achievements, or qualities.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 41.5,
+        "finishTimestamp": 47.12
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 6.62,
+        "dialogue": {
+          "text": "For me, I like the idea of practicing my skills and getting recognition for my contributions.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 7.12
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To recognize</code> means to identify someone or something from before, or to acknowledge the existence or validity of something. For example, <code>I recognize your efforts in completing this project.</code></p>\n<p><code>Recognition</code> is the noun form of <code>recognize</code> and refers to the act of acknowledging or giving credit to someone for their efforts or achievements. For example, <code>He received recognition for his innovative work.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 132,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

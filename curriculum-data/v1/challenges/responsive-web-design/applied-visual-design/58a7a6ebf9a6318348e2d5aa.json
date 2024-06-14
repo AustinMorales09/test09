@@ -1,0 +1,67 @@
+{
+  "id": "58a7a6ebf9a6318348e2d5aa",
+  "title": "Modify Fill Mode of an Animation",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cVJDmcE",
+  "forumTopicId": 301064,
+  "dashedName": "modify-fill-mode-of-an-animation",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  button {\n    border-radius: 5px;\n    color: white;\n    background-color: #0F5897;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    animation-name: background-color;\n    animation-duration: 500ms;\n    /* Only change code below this line */\n\n    /* Only change code above this line */\n  }\n  @keyframes background-color {\n    100% {\n      background-color: #4791d0;\n    }\n  }\n</style>\n<button>Register</button>",
+      "error": null,
+      "seed": "<style>\n  button {\n    border-radius: 5px;\n    color: white;\n    background-color: #0F5897;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    animation-name: background-color;\n    animation-duration: 500ms;\n    /* Only change code below this line */\n\n    /* Only change code above this line */\n  }\n  @keyframes background-color {\n    100% {\n      background-color: #4791d0;\n    }\n  }\n</style>\n<button>Register</button>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  button {\n    border-radius: 5px;\n    color: white;\n    background-color: #0F5897;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    animation-name: background-color;\n    animation-duration: 500ms;\n    animation-fill-mode: forwards;\n  }\n  @keyframes background-color {\n    100% {\n      background-color: #4791d0;\n    }\n  }\n</style>\n<button>Register</button>",
+        "error": null,
+        "seed": "<style>\n  button {\n    border-radius: 5px;\n    color: white;\n    background-color: #0F5897;\n    padding: 5px 10px 8px 10px;\n  }\n  button:hover {\n    animation-name: background-color;\n    animation-duration: 500ms;\n    animation-fill-mode: forwards;\n  }\n  @keyframes background-color {\n    100% {\n      background-color: #4791d0;\n    }\n  }\n</style>\n<button>Register</button>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>button:hover</code> should have a <code>animation-fill-mode</code> property with a value of <code>forwards</code>.</p>",
+      "testString": "assert(\n  code.match(\n    /button\\s*?:\\s*?hover\\s*?{[\\s\\S]*animation-fill-mode\\s*?:\\s*?forwards\\s*?;[\\s\\S]*}/gi\n  ) &&\n    code.match(\n      /button\\s*?:\\s*?hover\\s*?{[\\s\\S]*animation-name\\s*?:\\s*?background-color\\s*?;[\\s\\S]*}/gi\n    ) &&\n    code.match(\n      /button\\s*?:\\s*?hover\\s*?{[\\s\\S]*animation-duration\\s*?:\\s*?500ms\\s*?;[\\s\\S]*}/gi\n    )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>That's great, but it doesn't work right yet. Notice how the animation resets after <code>500ms</code> has passed, causing the button to revert back to the original color. You want the button to stay highlighted.</p>\n<p>This can be done by setting the <code>animation-fill-mode</code> property to <code>forwards</code>. The <code>animation-fill-mode</code> specifies the style applied to an element when the animation has finished. You can set it like so:</p>\n<pre><code class=\"language-css\">animation-fill-mode: forwards;\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Set the <code>animation-fill-mode</code> property of <code>button:hover</code> to <code>forwards</code> so the button stays highlighted when a user hovers over it.</p>\n</section>",
+  "translationPending": false,
+  "block": "applied-visual-design",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 41,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

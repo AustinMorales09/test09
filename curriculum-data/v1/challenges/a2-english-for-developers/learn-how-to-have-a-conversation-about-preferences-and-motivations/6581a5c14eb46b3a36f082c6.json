@@ -1,0 +1,79 @@
+{
+  "id": "6581a5c14eb46b3a36f082c6",
+  "title": "Task 58",
+  "challengeType": 22,
+  "dashedName": "task-58",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It feels like I'm _ my skills and _.</p>",
+    "blanks": [
+      {
+        "answer": "wasting",
+        "feedback": "<p>This word means not using something valuable in a good or effective way. It's like when you have a talent or skill but don't get the chance to use it properly.</p>"
+      },
+      {
+        "answer": "creativity",
+        "feedback": "<p>This word refers to the ability to make new things or think of new ideas.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 53.24,
+        "finishTimestamp": 55.58
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 3.34,
+        "dialogue": {
+          "text": "It feels like I'm wasting my skills and creativity.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 3.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To waste</code> means to use something valuable, like time, skills, or resources, in a way that is not effective or useful. For example, if you are very good at drawing but spend all your time doing something else that doesn't use that skill, it might feel like <code>you are wasting your talent</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 59,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

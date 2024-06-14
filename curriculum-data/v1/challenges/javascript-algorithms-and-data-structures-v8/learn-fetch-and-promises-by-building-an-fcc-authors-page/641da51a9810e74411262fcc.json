@@ -1,0 +1,121 @@
+{
+  "id": "641da51a9810e74411262fcc",
+  "title": "Step 6",
+  "challengeType": 0,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>freeCodeCamp News Author Page</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n  </head>\n  <body>\n    <h1 class=\"title\">freeCodeCamp News Author Page</h1>\n\n    <main>\n      <div id=\"author-container\"></div>\n      <button class=\"btn\" id=\"load-more-btn\">Load More Authors</button>\n    </main>\n\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>freeCodeCamp News Author Page</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n  </head>\n  <body>\n    <h1 class=\"title\">freeCodeCamp News Author Page</h1>\n\n    <main>\n      <div id=\"author-container\"></div>\n      <button class=\"btn\" id=\"load-more-btn\">Load More Authors</button>\n    </main>\n\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --main-bg-color: #1b1b32;\n  --light-grey: #f5f6f7;\n  --dark-purple: #5a01a7;\n  --golden-yellow: #feac32;\n}\n\nbody {\n  background-color: var(--main-bg-color);\n  text-align: center;\n}\n\n.title {\n  color: var(--light-grey);\n  margin: 20px 0;\n}\n\n#author-container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n\n.user-card {\n  border-radius: 15px;\n  width: 300px;\n  height: 350px;\n  background-color: var(--light-grey);\n  margin: 20px;\n}\n\n.user-img {\n  width: 150px;\n  height: 150px;\n  object-fit: cover;\n}\n\n.purple-divider {\n  background-color: var(--dark-purple);\n  width: 100%;\n  height: 15px;\n}\n\n.author-name {\n  margin: 10px;\n}\n\n.bio {\n  margin: 20px;\n}\n\n.error-msg {\n  color: var(--light-grey);\n}\n\n.btn {\n  cursor: pointer;\n  width: 200px;\n  margin: 10px;\n  color: var(--main-bg-color);\n  font-size: 14px;\n  background-color: var(--golden-yellow);\n  background-image: linear-gradient(#fecc4c, #ffac33);\n  border-color: var(--golden-yellow);\n  border-width: 3px;\n}",
+      "error": null,
+      "seed": "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --main-bg-color: #1b1b32;\n  --light-grey: #f5f6f7;\n  --dark-purple: #5a01a7;\n  --golden-yellow: #feac32;\n}\n\nbody {\n  background-color: var(--main-bg-color);\n  text-align: center;\n}\n\n.title {\n  color: var(--light-grey);\n  margin: 20px 0;\n}\n\n#author-container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n\n.user-card {\n  border-radius: 15px;\n  width: 300px;\n  height: 350px;\n  background-color: var(--light-grey);\n  margin: 20px;\n}\n\n.user-img {\n  width: 150px;\n  height: 150px;\n  object-fit: cover;\n}\n\n.purple-divider {\n  background-color: var(--dark-purple);\n  width: 100%;\n  height: 15px;\n}\n\n.author-name {\n  margin: 10px;\n}\n\n.bio {\n  margin: 20px;\n}\n\n.error-msg {\n  color: var(--light-grey);\n}\n\n.btn {\n  cursor: pointer;\n  width: 200px;\n  margin: 10px;\n  color: var(--main-bg-color);\n  font-size: 14px;\n  background-color: var(--golden-yellow);\n  background-image: linear-gradient(#fecc4c, #ffac33);\n  border-color: var(--golden-yellow);\n  border-width: 3px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        10
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const authorContainer = document.getElementById('author-container');\nconst loadMoreBtn = document.getElementById('load-more-btn');\n\nfetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')\n  .then((res) => res.json())\n  .then((data) => {\n    console.log(data);\n  })\n",
+      "error": null,
+      "seed": "const authorContainer = document.getElementById('author-container');\nconst loadMoreBtn = document.getElementById('load-more-btn');\n\nfetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')\n  .then((res) => res.json())\n  .then((data) => {\n    console.log(data);\n  })\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>fetch()</code> method to make a <code>GET</code> request to <code>https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json</code>.</p>",
+      "testString": "assert.match(code, /fetch\\(\\s*('|\"|`)https:\\/\\/cdn\\.freecodecamp\\.org\\/curriculum\\/news\\-author\\-page\\/authors\\.json\\1\\s*\\)/)"
+    },
+    {
+      "text": "<p>You should chain another <code>.then()</code> to the existing <code>.then()</code>.</p>",
+      "testString": "assert.match(code, /fetch\\(\\s*('|\"|`)https:\\/\\/cdn\\.freecodecamp\\.org\\/curriculum\\/news\\-author\\-page\\/authors\\.json\\1\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*res\\s*\\)|res)\\s*=>\\s*res\\.json\\(\\s*\\)\\s*\\)\\s*\\.then\\(/)"
+    },
+    {
+      "text": "<p>You should add a <code>data</code> parameter to your second <code>.then()</code> method.</p>",
+      "testString": "assert.match(code, /fetch\\(\\s*('|\"|`)https:\\/\\/cdn\\.freecodecamp\\.org\\/curriculum\\/news\\-author\\-page\\/authors\\.json\\1\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*res\\s*\\)|res)\\s*=>\\s*res\\.json\\(\\s*\\)\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*data\\s*\\)|data)/)"
+    },
+    {
+      "text": "<p>Your second <code>.then()</code> method should use arrow function syntax.</p>",
+      "testString": "assert.match(code, /fetch\\(\\s*('|\"|`)https:\\/\\/cdn\\.freecodecamp\\.org\\/curriculum\\/news\\-author\\-page\\/authors\\.json\\1\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*res\\s*\\)|res)\\s*=>\\s*res\\.json\\(\\s*\\)\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*data\\s*\\)|data)\\s*=>\\s*/)"
+    },
+    {
+      "text": "<p>Your second <code>.then()</code> method should have curly braces.</p>",
+      "testString": "assert.match(code, /fetch\\(\\s*('|\"|`)https:\\/\\/cdn\\.freecodecamp\\.org\\/curriculum\\/news\\-author\\-page\\/authors\\.json\\1\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*res\\s*\\)|res)\\s*=>\\s*res\\.json\\(\\s*\\)\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*data\\s*\\)|data)\\s*=>\\s*\\{\\s*\\n?\\s*/)"
+    },
+    {
+      "text": "<p>Your second <code>.then()</code> method should log <code>data</code> to the console.</p>",
+      "testString": "assert.match(code, /fetch\\(\\s*('|\"|`)https:\\/\\/cdn\\.freecodecamp\\.org\\/curriculum\\/news\\-author\\-page\\/authors\\.json\\1\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*res\\s*\\)|res)\\s*=>\\s*res\\.json\\(\\s*\\)\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*data\\s*\\)|data)\\s*=>\\s*\\{\\s*\\n?\\s*?console\\.log\\(\\s*data\\s*\\)\\s*;?\\n?\\s*\\}\\s*\\)/)"
+    },
+    {
+      "text": "<p>Your second <code>.then()</code> should not have a semicolon.</p>",
+      "testString": "assert.notMatch(code, /fetch\\(\\s*('|\"|`)https:\\/\\/cdn\\.freecodecamp\\.org\\/curriculum\\/news\\-author\\-page\\/authors\\.json\\1\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*res\\s*\\)|res)\\s*=>\\s*res\\.json\\(\\s*\\)\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*data\\s*\\)|data)\\s*=>\\s*\\{\\s*\\n?\\s*?console\\.log\\(\\s*data\\s*\\)\\s*;?\\n?\\s*\\}\\s*\\)\\s*;/)"
+    },
+    {
+      "text": "<p>You should chain the <code>.catch()</code> method to the second <code>.then()</code> you already have.</p>",
+      "testString": "assert.match(code, /fetch\\(\\s*('|\"|`)https:\\/\\/cdn\\.freecodecamp\\.org\\/curriculum\\/news\\-author\\-page\\/authors\\.json\\1\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*res\\s*\\)|res)\\s*=>\\s*res\\.json\\(\\s*\\)\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*data\\s*\\)|data)\\s*=>\\s*\\{\\s*\\n?\\s*?console\\.log\\(\\s*data\\s*\\)\\s*;?\\n?\\s*\\}\\s*\\)\\n?\\s*\\.catch\\(/)"
+    },
+    {
+      "text": "<p>You should add an <code>err</code> parameter to your <code>.catch()</code> method.</p>",
+      "testString": "assert.match(code, /fetch\\(\\s*('|\"|`)https:\\/\\/cdn\\.freecodecamp\\.org\\/curriculum\\/news\\-author\\-page\\/authors\\.json\\1\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*res\\s*\\)|res)\\s*=>\\s*res\\.json\\(\\s*\\)\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*data\\s*\\)|data)\\s*=>\\s*\\{\\s*\\n?\\s*?console\\.log\\(\\s*data\\s*\\)\\s*;?\\n?\\s*\\}\\s*\\)\\n?\\s*\\.catch\\(\\s*(\\(\\s*err\\s*\\)|err)/)"
+    },
+    {
+      "text": "<p>Your <code>.catch()</code> method should have an arrow function syntax.</p>",
+      "testString": "assert.match(code, /fetch\\(\\s*('|\"|`)https:\\/\\/cdn\\.freecodecamp\\.org\\/curriculum\\/news\\-author\\-page\\/authors\\.json\\1\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*res\\s*\\)|res)\\s*=>\\s*res\\.json\\(\\s*\\)\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*data\\s*\\)|data)\\s*=>\\s*\\{\\s*\\n?\\s*?console\\.log\\(\\s*data\\s*\\)\\s*;?\\n?\\s*\\}\\s*\\)\\n?\\s*\\.catch\\(\\s*(\\(\\s*err\\s*\\)|err)\\s*=>\\s*\\{?/)"
+    },
+    {
+      "text": "<p>Your <code>.catch()</code> method should use <code>console.error()</code> to log <code>err</code> to the console with the text <code>`There was an error: ${err}`</code>. Don't forget to use backticks.</p>",
+      "testString": "assert.match(code, /fetch\\(\\s*('|\"|`)https:\\/\\/cdn\\.freecodecamp\\.org\\/curriculum\\/news\\-author\\-page\\/authors\\.json\\1\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*res\\s*\\)|res)\\s*=>\\s*res\\.json\\(\\s*\\)\\s*\\)\\s*\\.then\\(\\s*(\\(\\s*data\\s*\\)|data)\\s*=>\\s*\\{\\s*\\n?\\s*?console\\.log\\(\\s*data\\s*\\)\\s*;?\\n?\\s*\\}\\s*\\)\\n?\\s*\\.catch\\(\\s*(\\(\\s*err\\s*\\)|err)\\s*=>\\s*\\{?\\n?(\\s*)?console\\.error\\(\\s*`There\\swas\\san\\serror:\\s?\\$\\{\\s*err\\s*\\}`\\s*\\)\\s*;?\\n?(\\s*)?\\}?\\s*\\)\\s*;?/)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>.catch()</code> method is another asynchronous JavaScript method you can use to handle errors. This is useful in case the <code>Promise</code> gets rejected.</p>\n<p>Chain <code>.catch()</code> to the last <code>.then()</code>. Pass in a callback function with <code>err</code> as the parameter. Inside the callback, use <code>console.error()</code> to log possible errors to the console with the text <code>There was an error: ${err}</code>. Since you're using <code>err</code> in the text, don't forget to use a template literal string with backticks (``) instead of single or double quotes.</p>\n<p><strong>Note</strong>: Now you can terminate your code with a semicolon. You couldn't do that in the previous steps because you'll signal to JavaScript to stop parsing your code, which will affect the <code>fetch()</code> syntax.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-fetch-and-promises-by-building-an-fcc-authors-page",
+  "hasEditableBoundaries": true,
+  "order": 22,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

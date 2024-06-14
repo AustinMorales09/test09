@@ -1,0 +1,88 @@
+{
+  "id": "6579dd5f2f35b11f3dcd9702",
+  "title": "Task 34",
+  "challengeType": 19,
+  "dashedName": "task-34",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Bob asking the team with <code>What's on your plate today?</code></p>",
+    "answers": [
+      {
+        "answer": "<p>Their plans for lunch</p>",
+        "feedback": "<p><code>On your plate</code> here refers to tasks or workload, not literal plans for lunch.</p>"
+      },
+      {
+        "answer": "<p>The tasks or responsibilities they are currently handling</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Their opinion on the meeting agenda</p>",
+        "feedback": "<p>Bob's question is about their current tasks, not their opinions on the meeting agenda.</p>"
+      },
+      {
+        "answer": "<p>If they have completed their work</p>",
+        "feedback": "<p>Bob is asking about current tasks, not whether work has been completed.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.08
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 5.08,
+        "dialogue": {
+          "text": "Good morning team. Let's start our stand-up meeting. What's on your plate today?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 5.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Bob uses the phrase <code>on your plate</code> to inquire about the team's current tasks or responsibilities. Understanding this expression is important to grasp its use in professional and everyday conversations.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

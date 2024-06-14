@@ -1,0 +1,45 @@
+{
+  "id": "662f047a8839a2298e1e8b3e",
+  "title": "Task 50",
+  "challengeType": 19,
+  "dashedName": "task-50",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is an <code>IDE</code> in the context of programming?</p>",
+    "answers": [
+      {
+        "answer": "<p>A software application for development</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A type of programming language</p>",
+        "feedback": "<p>An <code>IDE</code> is not a programming language but a tool used to write and debug code in various languages.</p>"
+      },
+      {
+        "answer": "<p>A debugging tool</p>",
+        "feedback": "<p>While an <code>IDE</code> can contain debugging tools, it is a broader software application that includes many other features.</p>"
+      },
+      {
+        "answer": "<p>A computer hardware</p>",
+        "feedback": "<p>An <code>IDE</code> is a software, not a piece of hardware.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>IDE</code> stands for Integrated Development Environment. It's a software application that provides comprehensive facilities to computer programmers for software development.</p>\n<p>An <code>IDE</code> typically includes a code editor, a compiler or interpreter, and a debugger. Examples of <code>IDEs</code> include Visual Studio Code, Eclipse, and IntelliJ IDEA.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 51,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

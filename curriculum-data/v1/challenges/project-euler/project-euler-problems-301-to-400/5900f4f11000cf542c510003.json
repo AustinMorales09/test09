@@ -1,0 +1,65 @@
+{
+  "id": "5900f4f11000cf542c510003",
+  "title": "Problem 387: Harshad Numbers",
+  "challengeType": 1,
+  "forumTopicId": 302051,
+  "dashedName": "problem-387-harshad-numbers",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function harshadNumbers() {\n\n  return true;\n}\n\nharshadNumbers();",
+      "error": null,
+      "seed": "function harshadNumbers() {\n\n  return true;\n}\n\nharshadNumbers();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>harshadNumbers()</code> should return <code>696067597313468</code>.</p>",
+      "testString": "assert.strictEqual(harshadNumbers(), 696067597313468);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A Harshad or Niven number is a number that is divisible by the sum of its digits.</p>\n<p>201 is a Harshad number because it is divisible by 3 (the sum of its digits.)</p>\n<p>When we truncate the last digit from 201, we get 20, which is a Harshad number.</p>\n<p>When we truncate the last digit from 20, we get 2, which is also a Harshad number.</p>\n<p>Let's call a Harshad number that, while recursively truncating the last digit, always results in a Harshad number a right truncatable Harshad number.</p>\n<p>Also:</p>\n<p>$\\frac{201}{3} = 67$ which is prime.</p>\n<p>Let's call a Harshad number that, when divided by the sum of its digits, results in a prime a strong Harshad number.</p>\n<p>Now take the number 2011 which is prime. When we truncate the last digit from it we get 201, a strong Harshad number that is also right truncatable. Let's call such primes strong, right truncatable Harshad primes.</p>\n<p>You are given that the sum of the strong, right truncatable Harshad primes less than 10000 is 90619.</p>\n<p>Find the sum of the strong, right truncatable Harshad primes less than ${10}^{14}$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 86,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,70 @@
+{
+  "id": "587d7dad367417b2b2512b78",
+  "title": "Use a Constructor to Create Objects",
+  "challengeType": 1,
+  "forumTopicId": 18233,
+  "dashedName": "use-a-constructor-to-create-objects",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function Dog() {\n  this.name = \"Rupert\";\n  this.color = \"brown\";\n  this.numLegs = 4;\n}\n// Only change code below this line",
+      "error": null,
+      "seed": "function Dog() {\n  this.name = \"Rupert\";\n  this.color = \"brown\";\n  this.numLegs = 4;\n}\n// Only change code below this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function Dog() {\n  this.name = \"Rupert\";\n  this.color = \"brown\";\n  this.numLegs = 4;\n}\nconst hound = new Dog();",
+        "error": null,
+        "seed": "function Dog() {\n  this.name = \"Rupert\";\n  this.color = \"brown\";\n  this.numLegs = 4;\n}\nconst hound = new Dog();"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>hound</code> should be created using the <code>Dog</code> constructor.</p>",
+      "testString": "assert(hound instanceof Dog);"
+    },
+    {
+      "text": "<p>Your code should use the <code>new</code> operator to create an instance of <code>Dog</code>.</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/new/g));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Here's the <code>Bird</code> constructor from the previous challenge:</p>\n<pre><code class=\"language-js\">function Bird() {\n  this.name = \"Albert\";\n  this.color  = \"blue\";\n  this.numLegs = 2;\n}\n\nlet blueBird = new Bird();\n</code></pre>\n<p><strong>NOTE:</strong> <code>this</code> inside the constructor always refers to the object being created.</p>\n<p>Notice that the <code>new</code> operator is used when calling a constructor. This tells JavaScript to create a new instance of <code>Bird</code> called <code>blueBird</code>. Without the <code>new</code> operator, <code>this</code> inside the constructor would not point to the newly created object, giving unexpected results. Now <code>blueBird</code> has all the properties defined inside the <code>Bird</code> constructor:</p>\n<pre><code class=\"language-js\">blueBird.name;\nblueBird.color;\nblueBird.numLegs;\n</code></pre>\n<p>Just like any other object, its properties can be accessed and modified:</p>\n<pre><code class=\"language-js\">blueBird.name = 'Elvira';\nblueBird.name;\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use the <code>Dog</code> constructor from the last lesson to create a new instance of <code>Dog</code>, assigning it to a variable <code>hound</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "object-oriented-programming",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

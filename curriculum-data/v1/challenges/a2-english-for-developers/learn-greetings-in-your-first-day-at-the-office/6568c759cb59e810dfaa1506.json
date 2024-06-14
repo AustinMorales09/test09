@@ -1,0 +1,88 @@
+{
+  "id": "6568c759cb59e810dfaa1506",
+  "title": "Task 20",
+  "challengeType": 19,
+  "dashedName": "task-20",
+  "solutions": [],
+  "question": {
+    "text": "<p>In the dialogue, what does Tom's statement, <code>I like it here</code>, indicate?</p>",
+    "answers": [
+      {
+        "answer": "<p>He feels out of place in California.</p>",
+        "feedback": "<p>Incorrect. <code>I like it here</code> shows a positive feeling, not feeling out of place.</p>"
+      },
+      {
+        "answer": "<p>He misses Texas a lot.</p>",
+        "feedback": "<p>Incorrect. While Tom acknowledges differences from Texas, he doesn't explicitly express missing it in this line.</p>"
+      },
+      {
+        "answer": "<p>He is content and feels positive about California.</p>",
+        "feedback": "<p>Correct! <code>I like it here</code> indicates contentment and positivity about the place.</p>"
+      },
+      {
+        "answer": "<p>He is neutral and has no strong feelings about California.</p>",
+        "feedback": "<p>Incorrect. The phrase <code>I like it here</code> shows a definite positive sentiment, not neutrality.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 11.9,
+        "finishTimestamp": 15.18
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.78,
+        "dialogue": {
+          "text": "I like it. It's different from Texas, but I like it here.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.28
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When expressing a positive feeling about a place, one might use the phrase <code>I like it here</code>. Tom is indicating that he has a positive feeling about California.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

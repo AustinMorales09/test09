@@ -1,0 +1,45 @@
+{
+  "id": "6617f4d790c1b470c3835818",
+  "title": "Task 8",
+  "challengeType": 19,
+  "dashedName": "task-8",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is <code>customer service</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>Repairing electronic devices</p>",
+        "feedback": "<p><code>Customer service</code> involves assisting customers, not repairing devices.</p>"
+      },
+      {
+        "answer": "<p>Assisting and advising customers who buy or use products or services</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Managing financial transactions</p>",
+        "feedback": "<p>Think about helping customers with their purchases, not financial transactions.</p>"
+      },
+      {
+        "answer": "<p>Designing websites</p>",
+        "feedback": "<p><code>Customer service</code> focuses on interactions with customers, not web design.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Customer service</code> refers to the assistance and advice provided by a company to people who buy or use its products or services. For example, in a store, the people working there provide <code>customer service</code> by answering questions, helping you find things, and making sure you are happy with your purchase.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

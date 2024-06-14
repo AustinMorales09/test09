@@ -1,0 +1,88 @@
+{
+  "id": "65f58d630872fea94e0f91f5",
+  "title": "Task 31",
+  "challengeType": 19,
+  "dashedName": "task-31",
+  "solutions": [],
+  "question": {
+    "text": "<p>What problem is Sophie experiencing with her code?</p>",
+    "answers": [
+      {
+        "answer": "<p>She has found a bug but can't identify its cause.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She needs help writing new code.</p>",
+        "feedback": "<p>Sophie's current issue is not about writing new code but about identifying the cause of a bug.</p>"
+      },
+      {
+        "answer": "<p>She's finished her coding task.</p>",
+        "feedback": "<p>Sophie is actually facing an issue in her code, not completing a task.</p>"
+      },
+      {
+        "answer": "<p>She doesn't understand Brian's instructions.</p>",
+        "feedback": "<p>The problem is with the code she's working on, not with understanding instructions from Brian.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 4.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.92,
+        "dialogue": {
+          "text": "Brian, I've encountered an issue in the code, and I can't quite pinpoint what's causing it.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 6.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 33,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "657b149630b3ea5873269a38",
+  "title": "Task 18",
+  "challengeType": 19,
+  "dashedName": "task-18",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>various</code> imply when talking about programming languages and software development principles?</p>",
+    "answers": [
+      {
+        "answer": "<p>Different types or kinds</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A specific type or kind</p>",
+        "feedback": "<p>The term <code>various</code> implies diversity, not specificity.</p>"
+      },
+      {
+        "answer": "<p>Only one type</p>",
+        "feedback": "<p><code>Various</code> indicates a number of different types, not just one.</p>"
+      },
+      {
+        "answer": "<p>Irrelevant or unrelated types</p>",
+        "feedback": "<p><code>Various</code> does mean different types, but these are usually relevant and related to the context.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Candidate",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 44.52,
+        "finishTimestamp": 50.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Candidate",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Candidate",
+        "startTime": 1,
+        "finishTime": 6.92,
+        "dialogue": {
+          "text": "During my studies, I was introduced to various programming languages and software development principles.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Candidate",
+        "opacity": 0,
+        "startTime": 7.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>various</code> is an adjective used to describe a number of different types or kinds of something, emphasizing diversity or variety. It is often used to indicate that there are several distinct items or examples being referred to. For example, saying <code>various books</code> means books of different kinds or genres.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

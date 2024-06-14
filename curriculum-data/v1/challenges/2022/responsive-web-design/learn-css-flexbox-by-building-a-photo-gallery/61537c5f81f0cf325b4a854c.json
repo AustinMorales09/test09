@@ -1,0 +1,77 @@
+{
+  "id": "61537c5f81f0cf325b4a854c",
+  "title": "Step 4",
+  "challengeType": 0,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        12
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html>\n  <head lang=\"en\">\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html>\n  <head lang=\"en\">\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Photo Gallery</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>header</code> element within your <code>body</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('body')?.querySelector('header'));"
+    },
+    {
+      "text": "<p>Your <code>header</code> element should have a <code>class</code> with <code>header</code> as the value.</p>",
+      "testString": "assert(document?.querySelector('body')?.querySelector('header')?.classList?.contains('header'));"
+    },
+    {
+      "text": "<p>Your <code>header</code> element should have an <code>h1</code> element inside it.</p>",
+      "testString": "assert.exists(document.querySelector('.header')?.querySelector('h1'));"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should have the text <code>css flexbox photo gallery</code> inside it.</p>",
+      "testString": "assert(document?.querySelector('.header')?.querySelector('h1')?.innerText === 'css flexbox photo gallery');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Add a <code>header</code> element within the <code>body</code> element and assign a class of <code>header</code> to it.</p>\n<p>Inside the <code>header</code>, create an <code>h1</code> with <code>css flexbox photo gallery</code> as the text.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-flexbox-by-building-a-photo-gallery",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

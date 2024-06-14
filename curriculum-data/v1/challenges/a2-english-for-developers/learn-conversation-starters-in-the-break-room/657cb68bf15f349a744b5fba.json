@@ -1,0 +1,45 @@
+{
+  "id": "657cb68bf15f349a744b5fba",
+  "title": "Task 43",
+  "challengeType": 19,
+  "dashedName": "task-43",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the correct question for asking about a person's personality and character traits in a gender-neutral way.</p>",
+    "answers": [
+      {
+        "answer": "<p><code>What do they like?</code></p>",
+        "feedback": "<p><code>What do they like?</code> is used to inquire about someone's preferences or interests.</p>"
+      },
+      {
+        "answer": "<p><code>What is they like?</code></p>",
+        "feedback": "<p><code>What is they like?</code> is not grammatically correct in English.</p>"
+      },
+      {
+        "answer": "<p><code>What are they like?</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>What do they looks like?</code></p>",
+        "feedback": "<p><code>What do they looks like?</code> is incorrect; it mixes up the structure for asking about personality with the structure for asking about physical appearance and also uses a plural verb <code>looks</code> with a singular pronoun <code>they.</code></p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you want to learn about a person’s character or personality without specifying their gender, you can use <code>they</code> as a singular pronoun and ask, <code>What are they like?</code>.</p>\n<p>This is a respectful and inclusive way to ask about someone. Using <code>they</code> in this way ensures that you don't make assumptions about people. Example:</p>\n<p>Imagine there is a new team member joining your programming project, but you haven’t met them yet. Instead of assuming their gender, you can ask your supervisor, <code>What are they like?</code></p>\n<p>This question helps you find out about the new member's personality, such as being organized, creative, or detail-oriented.</p>\n<p><strong>Note:</strong> The question <code>What are they like?</code> can also refer to multiple people or a group. For example, if you're asking about a new team or a group of people you will be working with, you can use this question to learn about the group's personality or dynamic.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 45,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

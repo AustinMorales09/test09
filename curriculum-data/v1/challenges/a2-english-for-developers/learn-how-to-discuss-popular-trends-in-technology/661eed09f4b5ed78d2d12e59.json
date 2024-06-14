@@ -1,0 +1,45 @@
+{
+  "id": "661eed09f4b5ed78d2d12e59",
+  "title": "Task 99",
+  "challengeType": 19,
+  "dashedName": "task-99",
+  "solutions": [],
+  "question": {
+    "text": "<p>In what way can something be <code>interactive</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>By providing opportunities for hands-on activities</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>By allowing you to ask questions and get answers</p>",
+        "feedback": "<p>This option reflects an active and engaging way of interacting with something.</p>"
+      },
+      {
+        "answer": "<p>By offering a boring and dull experience</p>",
+        "feedback": "<p>This experience is not <code>interactive</code>.</p>"
+      },
+      {
+        "answer": "<p>By isolating and being solitary</p>",
+        "feedback": "<p>This option describes a negative aspect that is not related to interactivity.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When something is <code>interactive</code>, it means you can do things with it, and it responds to what you do. It's like having a conversation or playing a game where your actions affect what happens. For example, the freeCodeCamp curriculum is interactive, and you can actively participate and engage with it, making your learning experience more dynamic.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 103,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

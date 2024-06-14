@@ -1,0 +1,65 @@
+{
+  "id": "5900f4f21000cf542c510005",
+  "title": "Problem 390: Triangles with non rational sides and integral area",
+  "challengeType": 1,
+  "forumTopicId": 302055,
+  "dashedName": "problem-390-triangles-with-non-rational-sides-and-integral-area",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function nonRationalSidesAndIntegralArea() {\n\n  return true;\n}\n\nnonRationalSidesAndIntegralArea();",
+      "error": null,
+      "seed": "function nonRationalSidesAndIntegralArea() {\n\n  return true;\n}\n\nnonRationalSidesAndIntegralArea();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>nonRationalSidesAndIntegralArea()</code> should return <code>2919133642971</code>.</p>",
+      "testString": "assert.strictEqual(nonRationalSidesAndIntegralArea(), 2919133642971);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Consider the triangle with sides $\\sqrt{5}$, $\\sqrt{65}$ and $\\sqrt{68}$. It can be shown that this triangle has area 9.</p>\n<p>$S(n)$ is the sum of the areas of all triangles with sides $\\sqrt{1 + b^2}$, $\\sqrt{1 + c^2}$ and $\\sqrt{b^2 + c^2}$ (for positive integers $b$ and $c$) that have an integral area not exceeding $n$.</p>\n<p>The example triangle has $b = 2$ and $c = 8$.</p>\n<p>$S({10}^6) = 18\\,018\\,206$.</p>\n<p>Find $S({10}^{10})$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 89,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

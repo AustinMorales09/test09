@@ -1,0 +1,89 @@
+{
+  "id": "bad87fee1348bd9aec908855",
+  "title": "Give Each Element a Unique id",
+  "challengeType": 0,
+  "forumTopicId": 18191,
+  "dashedName": "give-each-element-a-unique-id",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <h4>#left-well</h4>\n      <div class=\"well\" id=\"left-well\">\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <h4>#right-well</h4>\n      <div class=\"well\" id=\"right-well\">\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n      </div>\n    </div>\n  </div>\n</div>",
+      "error": null,
+      "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <h4>#left-well</h4>\n      <div class=\"well\" id=\"left-well\">\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <h4>#right-well</h4>\n      <div class=\"well\" id=\"right-well\">\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n        <button class=\"btn btn-default target\"></button>\n      </div>\n    </div>\n  </div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <h4>#left-well</h4>\n      <div class=\"well\" id=\"left-well\">\n        <button class=\"btn btn-default target\" id=\"target1\"></button>\n        <button class=\"btn btn-default target\" id=\"target2\"></button>\n        <button class=\"btn btn-default target\" id=\"target3\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <h4>#right-well</h4>\n      <div class=\"well\" id=\"right-well\">\n        <button class=\"btn btn-default target\" id=\"target4\"></button>\n        <button class=\"btn btn-default target\" id=\"target5\"></button>\n        <button class=\"btn btn-default target\" id=\"target6\"></button>\n      </div>\n    </div>\n  </div>\n</div>",
+        "error": null,
+        "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\">\n      <h4>#left-well</h4>\n      <div class=\"well\" id=\"left-well\">\n        <button class=\"btn btn-default target\" id=\"target1\"></button>\n        <button class=\"btn btn-default target\" id=\"target2\"></button>\n        <button class=\"btn btn-default target\" id=\"target3\"></button>\n      </div>\n    </div>\n    <div class=\"col-xs-6\">\n      <h4>#right-well</h4>\n      <div class=\"well\" id=\"right-well\">\n        <button class=\"btn btn-default target\" id=\"target4\"></button>\n        <button class=\"btn btn-default target\" id=\"target5\"></button>\n        <button class=\"btn btn-default target\" id=\"target6\"></button>\n      </div>\n    </div>\n  </div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>One <code>button</code> element should have the id <code>target1</code>.</p>",
+      "testString": "assert(\n  $('#left-well').children('#target1') &&\n    $('#left-well').children('#target1').length > 0\n);"
+    },
+    {
+      "text": "<p>One <code>button</code> element should have the id <code>target2</code>.</p>",
+      "testString": "assert(\n  $('#left-well').children('#target2') &&\n    $('#left-well').children('#target2').length > 0\n);"
+    },
+    {
+      "text": "<p>One <code>button</code> element should have the id <code>target3</code>.</p>",
+      "testString": "assert(\n  $('#left-well').children('#target3') &&\n    $('#left-well').children('#target3').length > 0\n);"
+    },
+    {
+      "text": "<p>One <code>button</code> element should have the id <code>target4</code>.</p>",
+      "testString": "assert(\n  $('#right-well').children('#target4') &&\n    $('#right-well').children('#target4').length > 0\n);"
+    },
+    {
+      "text": "<p>One <code>button</code> element should have the id <code>target5</code>.</p>",
+      "testString": "assert(\n  $('#right-well').children('#target5') &&\n    $('#right-well').children('#target5').length > 0\n);"
+    },
+    {
+      "text": "<p>One <code>button</code> element should have the id <code>target6</code>.</p>",
+      "testString": "assert(\n  $('#right-well').children('#target6') &&\n    $('#right-well').children('#target6').length > 0\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>We will also want to be able to use jQuery to target each button by its unique id.</p>\n<p>Give each of your buttons a unique id, starting with <code>target1</code> and ending with <code>target6</code>.</p>\n<p>Make sure that <code>target1</code> to <code>target3</code> are in <code>#left-well</code>, and <code>target4</code> to <code>target6</code> are in <code>#right-well</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "bootstrap",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 28,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

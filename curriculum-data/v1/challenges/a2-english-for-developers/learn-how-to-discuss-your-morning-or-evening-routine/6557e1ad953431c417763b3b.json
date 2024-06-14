@@ -1,0 +1,88 @@
+{
+  "id": "6557e1ad953431c417763b3b",
+  "title": "Task 34",
+  "challengeType": 19,
+  "dashedName": "task-34",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah imply about <code>consistency</code> in her routine?</p>",
+    "answers": [
+      {
+        "answer": "<p>She prefers to start her day at a different pace every day</p>",
+        "feedback": "<p><code>Consistency</code> implies regularity, not varying pace, and <code>on the right foot</code> suggests a positive start.</p>"
+      },
+      {
+        "answer": "<p>She always has difficulties starting her day</p>",
+        "feedback": "<p>Starting <code>on the right foot</code> implies a positive start, which contradicts having difficulties.</p>"
+      },
+      {
+        "answer": "<p>Regular habits help her start the day positively</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Her days usually start in an unplanned manner</p>",
+        "feedback": "<p><code>Consistency</code> and starting <code>on the right foot</code> both imply planned, positive regularity, not an unplanned manner.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 74.52,
+        "finishTimestamp": 78.26
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 4.74,
+        "dialogue": {
+          "text": "It's my pleasure. It's the consistency that helps me start the day off on the right foot.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5.24
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>consistency</code> refers to the quality of always behaving or performing in a similar way, or of always happening in a similar way. It's often used to describe regular habits or behaviors. For example:</p>\n<p><code>Her consistency in studying every day led to great results.</code></p>\n<p>The phrase <code>on the right foot</code> is an idiom meaning to start something in a positive or successful way. For example:</p>\n<p><code>Starting the day with a healthy breakfast sets you on the right foot.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

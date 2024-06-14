@@ -1,0 +1,45 @@
+{
+  "id": "6579d62a28ab37f24f6ea8f9",
+  "title": "Task 19",
+  "challengeType": 19,
+  "dashedName": "task-19",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>would</code> express in a sentence?</p>",
+    "answers": [
+      {
+        "answer": "<p>A command or order</p>",
+        "feedback": "<p><code>Would</code> is not used for commands. It's for polite requests or possible actions.</p>"
+      },
+      {
+        "answer": "<p>A past action</p>",
+        "feedback": "<p><code>Would</code> doesn't directly express past actions; it's about hypothetical situations or polite requests.</p>"
+      },
+      {
+        "answer": "<p>A possible action or a polite request</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Immediate future plans</p>",
+        "feedback": "<p><code>Would</code> talks about hypothetical situations or politeness, not immediate future plans.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The modal verb <code>would</code> is often used to talk about possible actions or decisions in certain situations. It can also be used to make polite requests. For example:</p>\n<ol>\n<li><code>I would go to the party if I had time.</code> - talking about a possible action.</li>\n<li><code>Would you help me with this?</code> - making a polite request.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

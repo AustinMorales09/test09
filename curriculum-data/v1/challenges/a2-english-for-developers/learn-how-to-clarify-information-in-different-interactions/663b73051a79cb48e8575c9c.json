@@ -1,0 +1,88 @@
+{
+  "id": "663b73051a79cb48e8575c9c",
+  "title": "Task 35",
+  "challengeType": 19,
+  "dashedName": "task-35",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the Delivery Man decide to do?</p>",
+    "answers": [
+      {
+        "answer": "<p>He leaves the package with Sophie and leaves</p>",
+        "feedback": "<p>No, he doesn't. He says he'll try to find Tom in the company.</p>"
+      },
+      {
+        "answer": "<p>He'll try to find Tom to deliver the package for him</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He sits and waits for Tom</p>",
+        "feedback": "<p>Not really. He says he's going to look for Tom.</p>"
+      },
+      {
+        "answer": "<p>He opens the package and sees what's in it</p>",
+        "feedback": "<p>He doesn't make any comment suggesting that he'll do it.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Delivery Man",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 27.6,
+        "finishTimestamp": 29.18
+      }
+    },
+    "commands": [
+      {
+        "character": "Delivery Man",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Delivery Man",
+        "startTime": 1,
+        "finishTime": 2.58,
+        "dialogue": {
+          "text": "I'll try to find him around here.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Delivery Man",
+        "opacity": 0,
+        "startTime": 3.08
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To find</code> someone or something means to look for them and then see where they are. For example, if you lose your keys and ends up seeing them on the table, you find your keys.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

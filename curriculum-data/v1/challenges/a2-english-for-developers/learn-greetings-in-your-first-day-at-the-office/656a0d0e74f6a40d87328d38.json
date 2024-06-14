@@ -1,0 +1,88 @@
+{
+  "id": "656a0d0e74f6a40d87328d38",
+  "title": "Task 21",
+  "challengeType": 19,
+  "dashedName": "task-21",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Tom say to express he feels positively about his current location?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I feel it here.</code></p>",
+        "feedback": "<p>Listen again. Focus on the word Tom uses after <code>I</code> and before <code>here</code>.</p>"
+      },
+      {
+        "answer": "<p><code>I line it here.</code></p>",
+        "feedback": "<p>Listen again. Focus on the word Tom uses after <code>I</code> and before <code>here</code>.</p>"
+      },
+      {
+        "answer": "<p><code>I live it here.</code></p>",
+        "feedback": "<p>Listen again. Focus on the word Tom uses after <code>I</code> and before <code>here</code>.</p>"
+      },
+      {
+        "answer": "<p><code>I like it here.</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 11.9,
+        "finishTimestamp": 15.18
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.78,
+        "dialogue": {
+          "text": "I like it. It's different from Texas, but I like it here.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.28
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>I like it here</code> is commonly used to express positive feelings about a current location or environment. When someone says this, they are often commenting on their general comfort, happiness, or satisfaction with the place they are in. In this dialogue, Tom is emphasizing his contentment in California, despite it being different from Texas.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

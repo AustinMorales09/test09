@@ -1,0 +1,75 @@
+{
+  "id": "65f510b35d792af24e985351",
+  "title": "Task 16",
+  "challengeType": 22,
+  "dashedName": "task-16",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Sarah, I'm dealing with a _ bug in this section of the code.</p>",
+    "blanks": [
+      {
+        "answer": "persistent",
+        "feedback": "<p>It means a bug continually occurs and is challenging to resolve.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 3.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.36,
+        "dialogue": {
+          "text": "Hey, Sarah. I'm dealing with a persistent bug in this section of the code.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.86
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In coding, the term <code>persistent</code> often refers to something that continues to exist or occur, especially a problem or a bug that is difficult to solve.</p>\n<p><code>Persistence</code> is the noun form, referring to the state of being persistent.</p>\n<p>For example, a <code>persistent error</code> in code is an error that keeps occurring and is hard to fix.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

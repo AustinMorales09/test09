@@ -1,0 +1,79 @@
+{
+  "id": "656a43974f689442c0a0eeb2",
+  "title": "Task 32",
+  "challengeType": 22,
+  "dashedName": "task-32",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>That sounds like a good idea, Brian. I'm _ working on a series of blog posts about tech _.</p>",
+    "blanks": [
+      {
+        "answer": "currently",
+        "feedback": "<p>Amy is doing this work now.</p>"
+      },
+      {
+        "answer": "trends",
+        "feedback": "<p>Popular ideas in technology. It's the plural form of <code>trend</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Amy",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.34,
+        "finishTimestamp": 18.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Amy",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Amy",
+        "startTime": 1,
+        "finishTime": 6.02,
+        "dialogue": {
+          "text": "That sounds like a good idea, Brian. I'm currently working on a series of blog posts about tech trends.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Amy",
+        "opacity": 0,
+        "startTime": 6.52
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Currently</code> comes from <code>current</code> meaning happening now. Adding <code>-ly</code> turns an adjective into an adverb. For example:</p>\n<p><code>She is currently reading a book</code> (She is reading a book now)</p>\n<p><code>Trends</code> are popular styles or ideas that many people are talking about or doing. The word <code>trend</code> in the singular becomes <code>trends</code> in the plural. For example:</p>\n<p><code>One current trend is using eco-friendly products</code> (singular)</p>\n<p><code>She writes about fashion trends</code> (plural)</p>\n<p><code>Tech trends</code> refer to popular developments in technology.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

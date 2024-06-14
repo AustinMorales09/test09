@@ -1,0 +1,101 @@
+{
+  "id": "a77dbc43c33f39daa4429b4f",
+  "title": "Boo who",
+  "challengeType": 1,
+  "forumTopicId": 16000,
+  "dashedName": "boo-who",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function booWho(bool) {\n  return bool;\n}\n\nbooWho(null);",
+      "error": null,
+      "seed": "function booWho(bool) {\n  return bool;\n}\n\nbooWho(null);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function booWho(bool) {\n  return typeof bool === \"boolean\";\n}\n\nbooWho(null);",
+        "error": null,
+        "seed": "function booWho(bool) {\n  return typeof bool === \"boolean\";\n}\n\nbooWho(null);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>booWho(true)</code> should return <code>true</code>.</p>",
+      "testString": "assert.strictEqual(booWho(true), true);"
+    },
+    {
+      "text": "<p><code>booWho(false)</code> should return <code>true</code>.</p>",
+      "testString": "assert.strictEqual(booWho(false), true);"
+    },
+    {
+      "text": "<p><code>booWho([1, 2, 3])</code> should return <code>false</code>.</p>",
+      "testString": "assert.strictEqual(booWho([1, 2, 3]), false);"
+    },
+    {
+      "text": "<p><code>booWho([].slice)</code> should return <code>false</code>.</p>",
+      "testString": "assert.strictEqual(booWho([].slice), false);"
+    },
+    {
+      "text": "<p><code>booWho({ \"a\": 1 })</code> should return <code>false</code>.</p>",
+      "testString": "assert.strictEqual(booWho({ a: 1 }), false);"
+    },
+    {
+      "text": "<p><code>booWho(1)</code> should return <code>false</code>.</p>",
+      "testString": "assert.strictEqual(booWho(1), false);"
+    },
+    {
+      "text": "<p><code>booWho(NaN)</code> should return <code>false</code>.</p>",
+      "testString": "assert.strictEqual(booWho(NaN), false);"
+    },
+    {
+      "text": "<p><code>booWho(\"a\")</code> should return <code>false</code>.</p>",
+      "testString": "assert.strictEqual(booWho('a'), false);"
+    },
+    {
+      "text": "<p><code>booWho(\"true\")</code> should return <code>false</code>.</p>",
+      "testString": "assert.strictEqual(booWho('true'), false);"
+    },
+    {
+      "text": "<p><code>booWho(\"false\")</code> should return <code>false</code>.</p>",
+      "testString": "assert.strictEqual(booWho('false'), false);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Check if a value is classified as a boolean primitive. Return <code>true</code> or <code>false</code>.</p>\n<p>Boolean primitives are <code>true</code> and <code>false</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

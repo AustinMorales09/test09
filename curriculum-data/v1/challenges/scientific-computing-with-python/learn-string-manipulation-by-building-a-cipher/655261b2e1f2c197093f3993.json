@@ -1,0 +1,61 @@
+{
+  "id": "655261b2e1f2c197093f3993",
+  "title": "Step 41",
+  "challengeType": 20,
+  "dashedName": "step-41",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        12
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    print(char == ' ')\n    index = alphabet.find(char)\n    new_index = index + shift\n    encrypted_text += alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    print(char == ' ')\n    index = alphabet.find(char)\n    new_index = index + shift\n    encrypted_text += alphabet[new_index]\n    print('char:', char, 'encrypted text:', encrypted_text)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have <code>print(char == ' ')</code> in your code.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {block_body} = __helpers.python.getBlock(commentless_code, /for\\s+char\\s+in\\s+text\\.lower\\s*\\(\\s*\\)\\s*/);\nassert.notMatch(block_body, /print\\s*\\(\\s*char\\s*==\\s*(\"|')\\s\\1\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should replace <code>print(char == ' ')</code> with an <code>if</code> statement that triggers when <code>char == ' '</code>. Do not use parentheses to enclose the <code>if</code> condition and remember to include the final colon.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {block_body} = __helpers.python.getBlock(commentless_code, /for\\s+char\\s+in\\s+text\\.lower\\s*\\(\\s*\\)\\s*/);\nassert(block_body.match(/if\\s+char\\s*==\\s*(\"|')\\s\\1\\s*:/));"
+    },
+    {
+      "text": "<p>You should print the string <code>'space!'</code> inside your new <code>if</code> statement.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {block_body} = __helpers.python.getBlock(commentless_code, /if\\s+char\\s*==\\s*(\"|')\\s\\3\\s*/);    \nassert(block_body.match(/print\\s*\\(\\s*(\"|')space!\\1\\s*\\)/));"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Currently, spaces get encrypted as <code>'c'</code>. To maintain the original spacing in the plain message, you'll require a conditional <code>if</code> statement. This is composed of the <code>if</code> keyword, a condition, and a colon <code>:</code>.</p>\n<pre><code class=\"language-py\">if x != 0:\n    print(x)\n</code></pre>\n<p>In the example above, the condition of the <code>if</code> statement is <code>x != 0</code>. The code <code>print(x)</code>, inside the <code>if</code> statement body, runs only when the condition evaluates to <code>True</code> (in this example, meaning that <code>x</code> is different from zero).</p>\n<p>At the top of your for loop, replace <code>print(char == ' ')</code> with an <code>if</code> statement.  The condition of this <code>if</code> statement should evaluate to <code>True</code> if <code>char</code> is an empty space and <code>False</code> otherwise. Inside the <code>if</code> body, print the string <code>'space!'</code>. Remember to indent this line.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,90 @@
+{
+  "id": "8d5823c8c441eddfaeb5bdef",
+  "title": "Create a Map Data Structure",
+  "challengeType": 1,
+  "forumTopicId": 301629,
+  "dashedName": "create-a-map-data-structure",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "var Map = function() {\n  this.collection = {};\n  // Only change code below this line\n  \n  // Only change code above this line\n};",
+      "error": null,
+      "seed": "var Map = function() {\n  this.collection = {};\n  // Only change code below this line\n  \n  // Only change code above this line\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "var Map = function() {\n    this.collection = {};\n    // Only change code below this line\n\n    this.add = function(key,value) {\n      this.collection[key] = value;\n    }\n\n    this.remove = function(key) {\n      delete this.collection[key];\n    }\n\n    this.get = function(key) {\n      return this.collection[key];\n    }\n\n    this.has = function(key) {\n      return this.collection.hasOwnProperty(key)\n    }\n\n    this.values = function() {\n      return Object.values(this.collection);\n    }\n\n    this.size = function() {\n      return Object.keys(this.collection).length;\n    }\n\n    this.clear = function() {\n      for(let item of Object.keys(this.collection)) {\n        delete this.collection[item];\n      }\n    }\n    // Only change code above this line\n};",
+        "error": null,
+        "seed": "var Map = function() {\n    this.collection = {};\n    // Only change code below this line\n\n    this.add = function(key,value) {\n      this.collection[key] = value;\n    }\n\n    this.remove = function(key) {\n      delete this.collection[key];\n    }\n\n    this.get = function(key) {\n      return this.collection[key];\n    }\n\n    this.has = function(key) {\n      return this.collection.hasOwnProperty(key)\n    }\n\n    this.values = function() {\n      return Object.values(this.collection);\n    }\n\n    this.size = function() {\n      return Object.keys(this.collection).length;\n    }\n\n    this.clear = function() {\n      for(let item of Object.keys(this.collection)) {\n        delete this.collection[item];\n      }\n    }\n    // Only change code above this line\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>Map</code> data structure should exist.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof Map !== 'undefined') {\n      test = new Map();\n    }\n    return typeof test == 'object';\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>Map</code> object should have the following methods: <code>add</code>, <code>remove</code>, <code>get</code>, <code>has</code>, <code>values</code>, <code>clear</code>, and <code>size</code>.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof Map !== 'undefined') {\n      test = new Map();\n    }\n    return (\n      typeof test.add == 'function' &&\n      typeof test.remove == 'function' &&\n      typeof test.get == 'function' &&\n      typeof test.has == 'function' &&\n      typeof test.values == 'function' &&\n      typeof test.clear == 'function' &&\n      typeof test.size == 'function'\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>add</code> method should add items to the map.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof Map !== 'undefined') {\n      test = new Map();\n    }\n    test.add(5, 6);\n    test.add(2, 3);\n    test.add(2, 5);\n    return test.size() == 2;\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>has</code> method should return <code>true</code> for added items and <code>false</code> for absent items.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof Map !== 'undefined') {\n      test = new Map();\n    }\n    test.add('test', 'value');\n    return test.has('test') && !test.has('false');\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>get</code> method should accept keys as input and should return the associated values.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof Map !== 'undefined') {\n      test = new Map();\n    }\n    test.add('abc', 'def');\n    return test.get('abc') == 'def';\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>values</code> method should return all the values stored in the map as strings in an array.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof Map !== 'undefined') {\n      test = new Map();\n    }\n    test.add('a', 'b');\n    test.add('c', 'd');\n    test.add('e', 'f');\n    var vals = test.values();\n    return (\n      vals.indexOf('b') != -1 &&\n      vals.indexOf('d') != -1 &&\n      vals.indexOf('f') != -1\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>clear</code> method should empty the map and the <code>size</code> method should return the number of items present in the map.</p>",
+      "testString": "assert(\n  (function () {\n    var test = false;\n    if (typeof Map !== 'undefined') {\n      test = new Map();\n    }\n    test.add('b', 'b');\n    test.add('c', 'd');\n    test.remove('asdfas');\n    var init = test.size();\n    test.clear();\n    return init == 2 && test.size() == 0;\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The next few challenges will cover maps and hash tables. Maps are data structures that store key-value pairs. In JavaScript, these are available to us as objects. Maps provide rapid lookup of stored items based on key values and are very common and useful data structures.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Let's get some practice creating our own map. Because JavaScript objects provide a much more efficient map structure than anything we could write here, this is intended primarily as a learning exercise. However, JavaScript objects only provide us with certain operations. What if we wanted to define custom operations? Use the <code>Map</code> object provided here as a wrapper around a JavaScript <code>object</code>. Create the following methods and operations on the Map object:</p>\n<ul>\n<li><code>add</code> accepts a <code>key, value</code> pair to add to the map.</li>\n<li><code>remove</code> accepts a key and removes the associated <code>key, value</code> pair</li>\n<li><code>get</code> accepts a <code>key</code> and returns the stored <code>value</code></li>\n<li><code>has</code> accepts a <code>key</code> and returns <dfn>true</dfn> if the key exists or <dfn>false</dfn> if it doesn't.</li>\n<li><code>values</code> returns an array of all the values in the map</li>\n<li><code>size</code> returns the number of items in the map</li>\n<li><code>clear</code> empties the map</li>\n</ul>\n</section>",
+  "translationPending": false,
+  "block": "data-structures",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

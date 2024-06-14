@@ -1,0 +1,103 @@
+{
+  "id": "56533eb9ac21ba0edf2244d8",
+  "title": "Comparisons with the Logical And Operator",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cvbRVtr",
+  "forumTopicId": 16799,
+  "dashedName": "comparisons-with-the-logical-and-operator",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function testLogicalAnd(val) {\n  // Only change code below this line\n\n  if (val) {\n    if (val) {\n      return \"Yes\";\n    }\n  }\n\n  // Only change code above this line\n  return \"No\";\n}\n\ntestLogicalAnd(10);",
+      "error": null,
+      "seed": "function testLogicalAnd(val) {\n  // Only change code below this line\n\n  if (val) {\n    if (val) {\n      return \"Yes\";\n    }\n  }\n\n  // Only change code above this line\n  return \"No\";\n}\n\ntestLogicalAnd(10);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function testLogicalAnd(val) {\n  if (val >= 25 && val <= 50) {\n    return \"Yes\";\n  }\n  return \"No\";\n}",
+        "error": null,
+        "seed": "function testLogicalAnd(val) {\n  if (val >= 25 && val <= 50) {\n    return \"Yes\";\n  }\n  return \"No\";\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>&#x26;&#x26;</code> operator once</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/&&/g).length === 1);"
+    },
+    {
+      "text": "<p>You should only have one <code>if</code> statement</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/if/g).length === 1);"
+    },
+    {
+      "text": "<p><code>testLogicalAnd(0)</code> should return the string <code>No</code></p>",
+      "testString": "assert(testLogicalAnd(0) === 'No');"
+    },
+    {
+      "text": "<p><code>testLogicalAnd(24)</code> should return the string <code>No</code></p>",
+      "testString": "assert(testLogicalAnd(24) === 'No');"
+    },
+    {
+      "text": "<p><code>testLogicalAnd(25)</code> should return the string <code>Yes</code></p>",
+      "testString": "assert(testLogicalAnd(25) === 'Yes');"
+    },
+    {
+      "text": "<p><code>testLogicalAnd(30)</code> should return the string <code>Yes</code></p>",
+      "testString": "assert(testLogicalAnd(30) === 'Yes');"
+    },
+    {
+      "text": "<p><code>testLogicalAnd(50)</code> should return the string <code>Yes</code></p>",
+      "testString": "assert(testLogicalAnd(50) === 'Yes');"
+    },
+    {
+      "text": "<p><code>testLogicalAnd(51)</code> should return the string <code>No</code></p>",
+      "testString": "assert(testLogicalAnd(51) === 'No');"
+    },
+    {
+      "text": "<p><code>testLogicalAnd(75)</code> should return the string <code>No</code></p>",
+      "testString": "assert(testLogicalAnd(75) === 'No');"
+    },
+    {
+      "text": "<p><code>testLogicalAnd(80)</code> should return the string <code>No</code></p>",
+      "testString": "assert(testLogicalAnd(80) === 'No');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Sometimes you will need to test more than one thing at a time. The <dfn>logical and</dfn> operator (<code>&#x26;&#x26;</code>) returns <code>true</code> if and only if the <dfn>operands</dfn> to the left and right of it are true.</p>\n<p>The same effect could be achieved by nesting an <code>if</code> statement inside another <code>if</code>.</p>\n<pre><code class=\"language-js\">if (num > 5) {\n  if (num &#x3C; 10) {\n    return \"Yes\";\n  }\n}\nreturn \"No\";\n</code></pre>\n<p>This code will return <code>Yes</code> if <code>num</code> is greater than <code>5</code> and less than <code>10</code>. The same logic can be written with the <dfn>logical and</dfn> operator.</p>\n<pre><code class=\"language-js\">if (num > 5 &#x26;&#x26; num &#x3C; 10) {\n  return \"Yes\";\n}\nreturn \"No\";\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Replace the two if statements with one statement, using the <code>&#x26;&#x26;</code> operator, which will return the string <code>Yes</code> if <code>val</code> is less than or equal to <code>50</code> and greater than or equal to <code>25</code>. Otherwise, will return the string <code>No</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 68,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

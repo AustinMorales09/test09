@@ -1,0 +1,85 @@
+{
+  "id": "6140827cff96e906bd38fc2b",
+  "title": "Step 9",
+  "challengeType": 0,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n      <img id=\"logo\" alt=\"freeCodeCamp\" src=\"https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg\">\n      <h1>HTML/CSS Quiz</h1>\n      <nav></nav>\n    </header>\n    <main></main>\n  </body>\n</html>\n",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n      <img id=\"logo\" alt=\"freeCodeCamp\" src=\"https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg\">\n      <h1>HTML/CSS Quiz</h1>\n      <nav></nav>\n    </header>\n    <main></main>\n  </body>\n</html>\n"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        12
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}\n\n#logo {\n  width: max(100px, 18vw);\n\n}\n",
+      "error": null,
+      "seed": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}\n\n#logo {\n  width: max(100px, 18vw);\n\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should give <code>#logo</code> a <code>background-color</code> of <code>#0a0a23</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('#logo')?.backgroundColor, 'rgb(10, 10, 35)');"
+    },
+    {
+      "text": "<p>You should use the <code>aspect-ratio</code> property.</p>",
+      "testString": "assert.notEmpty(new __helpers.CSSHelp(document).getStyle('#logo')?.aspectRatio);"
+    },
+    {
+      "text": "<p>You should not use the <code>height</code> property.</p>",
+      "testString": "assert.isEmpty(new __helpers.CSSHelp(document).getStyle('#logo')?.height);"
+    },
+    {
+      "text": "<p>You should not change the <code>width</code> property.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('#logo')?.width, 'max(100px, 18vw)');"
+    },
+    {
+      "text": "<p>You should give the <code>img</code> an <code>aspect-ratio</code> of <code>35 / 4</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('#logo')?.aspectRatio, '35 / 4');"
+    },
+    {
+      "text": "<p>You should give the <code>img</code> a <code>padding</code> of <code>0.4rem</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('#logo')?.padding, '0.4rem');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>As described in the <a href=\"https://design-style-guide.freecodecamp.org/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">freeCodeCamp Style Guide</a>, the logo should retain an aspect ratio of <code>35 / 4</code>, and have padding around the text.</p>\n<p>First, change the <code>background-color</code> to <code>#0a0a23</code> so you can see the logo. Then, use the <code>aspect-ratio</code> property to set the desired aspect ratio to <code>35 / 4</code>. Finally, add a <code>padding</code> of <code>0.4rem</code> all around.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-accessibility-by-building-a-quiz",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

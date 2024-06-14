@@ -1,0 +1,53 @@
+{
+  "id": "6565a536ba1f9f25bd30e88b",
+  "title": "Step 1",
+  "challengeType": 20,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have <code>def main():</code> in your code.</p>",
+      "testString": "({\n    test: () => {\n        assert(runPython(`\n        import inspect\n        inspect.isfunction(main)\n        `))\n    }\n})"
+    },
+    {
+      "text": "<p>You should have <code>pass</code> in your code.</p>",
+      "testString": "({\n    test: () => {\n        const transformedCode = code.replace(/\\r/g, \"\");\n        const pass = __helpers.python.getDef(\"\\n\"+transformedCode, \"main\");\n        assert.include(pass?.function_body, \"pass\");\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In this project, you will implement the Luhn Algorithm. This algorithm is a formula to validate a variety of identification numbers.</p>\n<p>Start by declaring a function called <code>main</code>, this will serve as the entry point of the program. Use the <code>pass</code> keyword to avoid an error.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-work-with-numbers-and-strings-by-implementing-the-luhn-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

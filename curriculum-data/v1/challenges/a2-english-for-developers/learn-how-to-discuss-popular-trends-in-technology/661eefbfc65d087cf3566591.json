@@ -1,0 +1,45 @@
+{
+  "id": "661eefbfc65d087cf3566591",
+  "title": "Task 102",
+  "challengeType": 19,
+  "dashedName": "task-102",
+  "solutions": [],
+  "question": {
+    "text": "<p>What do interior designers focus on?</p>",
+    "answers": [
+      {
+        "answer": "<p>Making the outside of buildings look nice.</p>",
+        "feedback": "<p>This option describes a different focus.</p>"
+      },
+      {
+        "answer": "<p>Making the inside of buildings functional and aesthetically pleasing.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Choosing the location of buildings.</p>",
+        "feedback": "<p>This option is about a different aspect of building design.</p>"
+      },
+      {
+        "answer": "<p>Designing the structure of buildings.</p>",
+        "feedback": "<p>This option has more to do with the structural aspects of building design.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Previously, you've learned about <code>interior design</code>. <code>Interior designers</code> are the professionals responsible for planning and creating the inside spaces of buildings. They focus on making the interior both functional and aesthetically pleasing, choosing colors, furniture, and decorations to create a comfortable and attractive environment.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 106,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

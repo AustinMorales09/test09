@@ -1,0 +1,88 @@
+{
+  "id": "65b22b3556d52217d9595372",
+  "title": "Task 2",
+  "challengeType": 19,
+  "dashedName": "task-2",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Bob asking about?</p>",
+    "answers": [
+      {
+        "answer": "<p>If Sophie knows where Anna is</p>",
+        "feedback": "<p>Bob's question is about meeting Anna, not about her location.</p>"
+      },
+      {
+        "answer": "<p>If Anna has met Sophie</p>",
+        "feedback": "<p>The question is directed towards Sophie's experience, not Anna's.</p>"
+      },
+      {
+        "answer": "<p>If Sophie will meet Anna in the future</p>",
+        "feedback": "<p>Bob's question is about past experiences up to now, not future plans.</p>"
+      },
+      {
+        "answer": "<p>If Sophie has met Anna before now</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 1.6
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 2.6,
+        "dialogue": {
+          "text": "Hey, have you met Anna yet?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 3.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

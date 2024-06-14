@@ -1,0 +1,65 @@
+{
+  "id": "5900f5021000cf542c510014",
+  "title": "Problem 405: A rectangular tiling",
+  "challengeType": 1,
+  "forumTopicId": 302073,
+  "dashedName": "problem-405-a-rectangular-tiling",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function rectangularTiling() {\n\n  return true;\n}\n\nrectangularTiling();",
+      "error": null,
+      "seed": "function rectangularTiling() {\n\n  return true;\n}\n\nrectangularTiling();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>rectangularTiling()</code> should return <code>237696125</code>.</p>",
+      "testString": "assert.strictEqual(rectangularTiling(), 237696125);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>We wish to tile a rectangle whose length is twice its width.</p>\n<p>Let $T(0)$ be the tiling consisting of a single rectangle.</p>\n<p>For $n > 0$, let $T(n)$ be obtained from $T( n- 1)$ by replacing all tiles in the following manner:</p>\n<img class=\"img-responsive center-block\" alt=\"obtaining T(n) from T(n - 1)\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/a-rectangular-tiling-1.png\" style=\"background-color: white; padding: 10px;\">\n<p>The following animation demonstrates the tilings $T(n)$ for $n$ from 0 to 5:</p>\n<img class=\"img-responsive center-block\" alt=\"animation with tilings T(n) for n from 0 to 5\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/a-rectangular-tiling-2.gif\" style=\"background-color: white; padding: 10px;\">\n<p>Let $f(n)$ be the number of points where four tiles meet in $T(n)$. For example, $f(1) = 0$, $f(4) = 82$ and $f({10}^9)\\bmod {17}^7 = 126\\,897\\,180$.</p>\n<p>Find $f({10}^k)$ for $k = {10}^{18}$, give your answer modulo ${17}^7$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

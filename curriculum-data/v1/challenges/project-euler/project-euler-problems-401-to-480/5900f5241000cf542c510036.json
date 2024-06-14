@@ -1,0 +1,65 @@
+{
+  "id": "5900f5241000cf542c510036",
+  "title": "Problem 437: Fibonacci primitive roots",
+  "challengeType": 1,
+  "forumTopicId": 302108,
+  "dashedName": "problem-437-fibonacci-primitive-roots",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function fibonacciPrimitiveRoots() {\n\n  return true;\n}\n\nfibonacciPrimitiveRoots();",
+      "error": null,
+      "seed": "function fibonacciPrimitiveRoots() {\n\n  return true;\n}\n\nfibonacciPrimitiveRoots();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>fibonacciPrimitiveRoots()</code> should return <code>74204709657207</code>.</p>",
+      "testString": "assert.strictEqual(fibonacciPrimitiveRoots(), 74204709657207);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When we calculate $8^n$ modulo 11 for $n = 0$ to 9 we get: 1, 8, 9, 6, 4, 10, 3, 2, 5, 7.</p>\n<p>As we see all possible values from 1 to 10 occur. So 8 is a primitive root of 11.</p>\n<p>But there is more:</p>\n<p>If we take a closer look we see:</p>\n<p>$$\\begin{align}\n&#x26; 1 + 8 = 9 \\\\\n&#x26; 8 + 9 = 17 ≡ 6\\bmod 11 \\\\\n&#x26; 9 + 6 = 15 ≡ 4\\bmod 11 \\\\\n&#x26; 6 + 4 = 10 \\\\\n&#x26; 4 + 10 = 14 ≡ 3\\bmod 11 \\\\\n&#x26; 10 + 3 = 13 ≡ 2\\bmod 11 \\\\\n&#x26; 3 + 2 = 5 \\\\\n&#x26; 2 + 5 = 7 \\\\\n&#x26; 5 + 7 = 12 ≡ 1\\bmod 11.\n\\end{align}$$</p>\n<p>So the powers of 8 mod 11 are cyclic with period 10, and $8^n + 8^{n + 1} ≡ 8^{n + 2} (\\text{mod } 11)$. 8 is called a Fibonacci primitive root of 11.</p>\n<p>Not every prime has a Fibonacci primitive root. There are 323 primes less than 10000 with one or more Fibonacci primitive roots and the sum of these primes is 1480491.</p>\n<p>Find the sum of the primes less than $100\\,000\\,000$ with at least one Fibonacci primitive root.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

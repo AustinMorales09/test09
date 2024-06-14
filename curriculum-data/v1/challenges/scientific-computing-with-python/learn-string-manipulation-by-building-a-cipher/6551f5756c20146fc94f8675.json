@@ -1,0 +1,65 @@
+{
+  "id": "6551f5756c20146fc94f8675",
+  "title": "Step 7",
+  "challengeType": 20,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nprint(text[-1])",
+      "error": null,
+      "seed": "text = 'Hello World'\nprint(text[-1])"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call the <code>len()</code> function.</p>",
+      "testString": "assert.match(code, /len\\s*\\(.*\\)/)"
+    },
+    {
+      "text": "<p>You should pass the variable <code>text</code> to the <code>len()</code> function by including it between the parentheses.</p>",
+      "testString": "assert.match(code, /len\\s*\\(\\s*text\\s*\\)/)"
+    },
+    {
+      "text": "<p>You should pass <code>len(text)</code> to the <code>print()</code> function by including it between the parentheses. Pay attention to place the function call at the beginning of the line.</p>",
+      "testString": "assert.match(code, /^print\\s*\\(\\s*len\\s*\\(\\s*text\\s*\\)\\s*\\)/m)"
+    },
+    {
+      "text": "<p>You should not have <code>print(text[-1])</code> in your code.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code)\nassert.notMatch(commentless_code, /print\\s*\\(\\s*text\\s*\\[\\s*-\\s*1\\s*\\]\\s*\\)/)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can access the number of characters in a string with the built-in <code>len()</code> function.</p>\n<p>Modify your existing <code>print()</code> call by passing <code>len(text)</code> instead of <code>text[-1]</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

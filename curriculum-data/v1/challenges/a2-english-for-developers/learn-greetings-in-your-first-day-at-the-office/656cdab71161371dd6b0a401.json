@@ -1,0 +1,88 @@
+{
+  "id": "656cdab71161371dd6b0a401",
+  "title": "Task 137",
+  "challengeType": 19,
+  "dashedName": "task-137",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following sentences is correct?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Brian is a web developer.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Tom am from Texas.</code></p>",
+        "feedback": "<p><code>Am</code> is used with the first person singular (<code>I</code>).</p>"
+      },
+      {
+        "answer": "<p><code>Brian are a web developer.</code></p>",
+        "feedback": "<p><code>Are</code> is not the correct form for the third person singular (<code>he</code>, <code>she</code>, <code>it</code>).</p>"
+      },
+      {
+        "answer": "<p><code>They is our friends.</code></p>",
+        "feedback": "<p><code>Is</code> is not the correct form for plural subjects.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.1,
+        "finishTimestamp": 11.76
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.66,
+        "dialogue": {
+          "text": "Tom, this is Brian. He's a web developer.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.16
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>be</code> in its different forms (<code>am</code>, <code>are</code>, <code>is</code>) is used to describe or identify. It's essential to pick the right form based on the subject.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 140,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

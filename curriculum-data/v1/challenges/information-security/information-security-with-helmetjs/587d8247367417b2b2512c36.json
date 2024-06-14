@@ -1,0 +1,30 @@
+{
+  "id": "587d8247367417b2b2512c36",
+  "title": "Install and Require Helmet",
+  "challengeType": 2,
+  "forumTopicId": 301581,
+  "dashedName": "install-and-require-helmet",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>helmet</code> version <code>3.21.3</code> should be in <code>package.json</code></p>",
+      "testString": "(getUserInput) =>\n  $.get(getUserInput('url') + '/_api/package.json').then(\n    (data) => {\n      const packJson = JSON.parse(data);\n      const helmet = packJson.dependencies.helmet;\n      assert(helmet === '3.21.3' || helmet === '^3.21.3');\n    },\n    (xhr) => {\n      throw new Error(xhr.responseText);\n    }\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Working on these challenges will involve you writing your code using one of the following methods:</p>\n<ul>\n<li>Clone <a href=\"https://github.com/freeCodeCamp/boilerplate-infosec/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">this GitHub repo</a> and complete these challenges locally.</li>\n<li>Use <a href=\"https://gitpod.io/?autostart=true#https://github.com/freeCodeCamp/boilerplate-infosec/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">our Gitpod starter project</a> to complete these challenges.</li>\n<li>Use a site builder of your choice to complete the project. Be sure to incorporate all the files from our GitHub repo.</li>\n</ul>\n<p>Helmet helps you secure your Express apps by setting various HTTP headers.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>All your code for these lessons goes in the <code>myApp.js</code> file between the lines of code we have started you off with. Do not change or delete the code we have added for you.</p>\n<p>Helmet version <code>3.21.3</code> has already been installed, so require it as <code>helmet</code> in <code>myApp.js</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "information-security-with-helmetjs",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 9,
+  "certification": "information-security",
+  "superBlock": "information-security",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

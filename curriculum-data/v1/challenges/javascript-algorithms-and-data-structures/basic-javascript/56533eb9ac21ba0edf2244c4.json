@@ -1,0 +1,91 @@
+{
+  "id": "56533eb9ac21ba0edf2244c4",
+  "title": "Return Early Pattern for Functions",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cQe39Sq",
+  "forumTopicId": 18272,
+  "dashedName": "return-early-pattern-for-functions",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Setup\nfunction abTest(a, b) {\n  // Only change code below this line\n\n\n\n  // Only change code above this line\n\n  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));\n}\n\nabTest(2,2);",
+      "error": null,
+      "seed": "// Setup\nfunction abTest(a, b) {\n  // Only change code below this line\n\n\n\n  // Only change code above this line\n\n  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));\n}\n\nabTest(2,2);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function abTest(a, b) {\n  if(a < 0 || b < 0) {\n    return undefined;\n  }\n  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));\n}",
+        "error": null,
+        "seed": "function abTest(a, b) {\n  if(a < 0 || b < 0) {\n    return undefined;\n  }\n  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>abTest(2, 2)</code> should return a number</p>",
+      "testString": "assert(typeof abTest(2, 2) === 'number');"
+    },
+    {
+      "text": "<p><code>abTest(2, 2)</code> should return <code>8</code></p>",
+      "testString": "assert(abTest(2, 2) === 8);"
+    },
+    {
+      "text": "<p><code>abTest(-2, 2)</code> should return <code>undefined</code></p>",
+      "testString": "assert(abTest(-2, 2) === undefined);"
+    },
+    {
+      "text": "<p><code>abTest(2, -2)</code> should return <code>undefined</code></p>",
+      "testString": "assert(abTest(2, -2) === undefined);"
+    },
+    {
+      "text": "<p><code>abTest(2, 8)</code> should return <code>18</code></p>",
+      "testString": "assert(abTest(2, 8) === 18);"
+    },
+    {
+      "text": "<p><code>abTest(3, 3)</code> should return <code>12</code></p>",
+      "testString": "assert(abTest(3, 3) === 12);"
+    },
+    {
+      "text": "<p><code>abTest(0, 0)</code> should return <code>0</code></p>",
+      "testString": "assert(abTest(0, 0) === 0);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When a <code>return</code> statement is reached, the execution of the current function stops and control returns to the calling location.</p>\n<p><strong>Example</strong></p>\n<pre><code class=\"language-js\">function myFun() {\n  console.log(\"Hello\");\n  return \"World\";\n  console.log(\"byebye\")\n}\nmyFun();\n</code></pre>\n<p>The above will display the string <code>Hello</code> in the console, and return the string <code>World</code>. The string <code>byebye</code> will never display in the console, because the function exits at the <code>return</code> statement.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Modify the function <code>abTest</code> so that if <code>a</code> or <code>b</code> are less than <code>0</code> the function will immediately exit with a value of <code>undefined</code>.</p>\n<p><strong>Hint</strong><br>\nRemember that <a href=\"https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-uninitialized-variables\" target=\"_blank\" rel=\"noopener noreferrer nofollow\"><code>undefined</code> is a keyword</a>, not a string.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 80,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

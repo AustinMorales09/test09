@@ -1,0 +1,82 @@
+{
+  "id": "5a24c314108439a4d4036181",
+  "title": "Introducing Inline Styles",
+  "challengeType": 6,
+  "forumTopicId": 301395,
+  "dashedName": "introducing-inline-styles",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<Colorful />, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class Colorful extends React.Component {\n  render() {\n    return (\n      <div>Big Red</div>\n    );\n  }\n};",
+      "error": null,
+      "seed": "class Colorful extends React.Component {\n  render() {\n    return (\n      <div>Big Red</div>\n    );\n  }\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "class Colorful extends React.Component {\n  render() {\n    return (\n      <div style={{color: \"red\", fontSize: 72}}>Big Red</div>\n    );\n  }\n};",
+        "error": null,
+        "seed": "class Colorful extends React.Component {\n  render() {\n    return (\n      <div style={{color: \"red\", fontSize: 72}}>Big Red</div>\n    );\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The component should render a <code>div</code> element.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(Colorful));\n    return mockedComponent.children().type() === 'div';\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>div</code> element should have a color of <code>red</code>.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(Colorful));\n    return mockedComponent.children().props().style.color === 'red';\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>div</code> element should have a font size of <code>72px</code>.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(Colorful));\n    return (\n      mockedComponent.children().props().style.fontSize === 72 ||\n      mockedComponent.children().props().style.fontSize === '72' ||\n      mockedComponent.children().props().style.fontSize === '72px'\n    );\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>There are other complex concepts that add powerful capabilities to your React code. But you may be wondering about the more simple problem of how to style those JSX elements you create in React. You likely know that it won't be exactly the same as working with HTML because of <a href=\"/learn/front-end-development-libraries/react/define-an-html-class-in-jsx\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">the way you apply classes to JSX elements</a>.</p>\n<p>If you import styles from a stylesheet, it isn't much different at all. You apply a class to your JSX element using the <code>className</code> attribute, and apply styles to the class in your stylesheet. Another option is to apply inline styles, which are very common in ReactJS development.</p>\n<p>You apply inline styles to JSX elements similar to how you do it in HTML, but with a few JSX differences. Here's an example of an inline style in HTML:</p>\n<pre><code class=\"language-jsx\">&#x3C;div style=\"color: yellow; font-size: 16px\">Mellow Yellow&#x3C;/div>\n</code></pre>\n<p>JSX elements use the <code>style</code> attribute, but because of the way JSX is transpiled, you can't set the value to a <code>string</code>. Instead, you set it equal to a JavaScript <code>object</code>. Here's an example:</p>\n<pre><code class=\"language-jsx\">&#x3C;div style={{color: \"yellow\", fontSize: 16}}>Mellow Yellow&#x3C;/div>\n</code></pre>\n<p>Notice how we camelCase the <code>fontSize</code> property? This is because React will not accept kebab-case keys in the style object. React will apply the correct property name for us in the HTML.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add a <code>style</code> attribute to the <code>div</code> in the code editor to give the text a color of red and font size of <code>72px</code>.</p>\n<p>Note that you can optionally set the font size to be a number, omitting the units <code>px</code>, or write it as <code>\"72px\"</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 35,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

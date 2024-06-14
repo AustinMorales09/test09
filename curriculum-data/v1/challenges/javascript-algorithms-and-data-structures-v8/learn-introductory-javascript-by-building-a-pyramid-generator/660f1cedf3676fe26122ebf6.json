@@ -1,0 +1,61 @@
+{
+  "id": "660f1cedf3676fe26122ebf6",
+  "title": "Step 37",
+  "challengeType": 1,
+  "dashedName": "step-37",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        8
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  console.log(i);\n}",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  console.log(i);\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have a <code>console.log</code> call.</p>",
+      "testString": "assert.notMatch(code, /console/);"
+    },
+    {
+      "text": "<p>You should call <code>.push()</code> on your <code>rows</code> array.</p>",
+      "testString": "assert.match(code, /rows\\.push\\(/);"
+    },
+    {
+      "text": "<p>You should push <code>i</code> to your <code>rows</code> array.</p>",
+      "testString": "assert.match(code, /rows\\.push\\(\\s*i\\s*\\)/);"
+    },
+    {
+      "text": "<p>Your <code>.push()</code> should happen in your <code>for</code> loop.</p>",
+      "testString": "assert.match(code, /for\\s*\\(\\s*let\\s+i\\s*=\\s*0;\\s*i\\s*<\\s*count;\\s*i\\s*=\\s*i\\s*\\+\\s*1\\s*\\)\\s*\\{\\s*rows\\.push\\(\\s*i\\s*\\);?\\s*\\}/)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You should see the numbers zero through seven printed in your console, one per line. This will serve as the foundation for generating your pyramid.</p>\n<p>Replace your log statement with a statement to push <code>i</code> to your <code>rows</code> array.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

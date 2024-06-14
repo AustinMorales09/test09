@@ -1,0 +1,102 @@
+{
+  "id": "587d7fa7367417b2b2512bc7",
+  "title": "Change Styles Based on Data",
+  "challengeType": 6,
+  "forumTopicId": 301479,
+  "dashedName": "change-styles-based-on-data",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    d3.select(\"body\").selectAll(\"h2\")\n      .data(dataset)\n      .enter()\n      .append(\"h2\")\n      .text((d) => (d + \" USD\"))\n      // Add your code below this line\n\n\n\n      // Add your code above this line\n  </script>\n</body>",
+      "error": null,
+      "seed": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    d3.select(\"body\").selectAll(\"h2\")\n      .data(dataset)\n      .enter()\n      .append(\"h2\")\n      .text((d) => (d + \" USD\"))\n      // Add your code below this line\n\n\n\n      // Add your code above this line\n  </script>\n</body>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    d3.select(\"body\").selectAll(\"h2\")\n      .data(dataset)\n      .enter()\n      .append(\"h2\")\n      .text((d) => (d + \" USD\"))\n      .style(\"color\", (d) => d < 20 ? \"red\" : \"green\")\n  </script>\n</body>",
+        "error": null,
+        "seed": "<body>\n  <script>\n    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];\n\n    d3.select(\"body\").selectAll(\"h2\")\n      .data(dataset)\n      .enter()\n      .append(\"h2\")\n      .text((d) => (d + \" USD\"))\n      .style(\"color\", (d) => d < 20 ? \"red\" : \"green\")\n  </script>\n</body>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The first <code>h2</code> should have a <code>color</code> of red.</p>",
+      "testString": "assert($('h2').eq(0).css('color') == 'rgb(255, 0, 0)');"
+    },
+    {
+      "text": "<p>The second <code>h2</code> should have a <code>color</code> of green.</p>",
+      "testString": "assert($('h2').eq(1).css('color') == 'rgb(0, 128, 0)');"
+    },
+    {
+      "text": "<p>The third <code>h2</code> should have a <code>color</code> of green.</p>",
+      "testString": "assert($('h2').eq(2).css('color') == 'rgb(0, 128, 0)');"
+    },
+    {
+      "text": "<p>The fourth <code>h2</code> should have a <code>color</code> of red.</p>",
+      "testString": "assert($('h2').eq(3).css('color') == 'rgb(255, 0, 0)');"
+    },
+    {
+      "text": "<p>The fifth <code>h2</code> should have a <code>color</code> of green.</p>",
+      "testString": "assert($('h2').eq(4).css('color') == 'rgb(0, 128, 0)');"
+    },
+    {
+      "text": "<p>The sixth <code>h2</code> should have a <code>color</code> of red.</p>",
+      "testString": "assert($('h2').eq(5).css('color') == 'rgb(255, 0, 0)');"
+    },
+    {
+      "text": "<p>The seventh <code>h2</code> should have a <code>color</code> of green.</p>",
+      "testString": "assert($('h2').eq(6).css('color') == 'rgb(0, 128, 0)');"
+    },
+    {
+      "text": "<p>The eighth <code>h2</code> should have a <code>color</code> of red.</p>",
+      "testString": "assert($('h2').eq(7).css('color') == 'rgb(255, 0, 0)');"
+    },
+    {
+      "text": "<p>The ninth <code>h2</code> should have a <code>color</code> of red.</p>",
+      "testString": "assert($('h2').eq(8).css('color') == 'rgb(255, 0, 0)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>D3 is about visualization and presentation of data. It's likely you'll want to change the styling of elements based on the data.\nFor example, you may want to color a data point blue if it has a value less than 20, and red otherwise. You can use a callback function in the <code>style()</code> method and include the conditional logic. The callback function uses the <code>d</code> parameter to represent the data point:</p>\n<pre><code class=\"language-js\">selection.style(\"color\", (d) => {\n\n});\n</code></pre>\n<p>The <code>style()</code> method is not limited to setting the <code>color</code> - it can be used with other CSS properties as well.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Add the <code>style()</code> method to the code in the editor to set the <code>color</code> of the <code>h2</code> elements conditionally. Write the callback function so if the data value is less than 20, it returns red, otherwise it returns green.</p>\n<p><strong>Note:</strong> You can use if-else logic, or the ternary operator.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-visualization-with-d3",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 3,
+  "certification": "data-visualization",
+  "superBlock": "data-visualization",
+  "challengeOrder": 5,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

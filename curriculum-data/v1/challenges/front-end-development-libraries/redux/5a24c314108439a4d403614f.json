@@ -1,0 +1,81 @@
+{
+  "id": "5a24c314108439a4d403614f",
+  "title": "Dispatch an Action Event",
+  "challengeType": 6,
+  "forumTopicId": 301442,
+  "dashedName": "dispatch-an-action-event",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const store = Redux.createStore(\n  (state = {login: false}) => state\n);\n\nconst loginAction = () => {\n  return {\n    type: 'LOGIN'\n  }\n};\n\n// Dispatch the action here:",
+      "error": null,
+      "seed": "const store = Redux.createStore(\n  (state = {login: false}) => state\n);\n\nconst loginAction = () => {\n  return {\n    type: 'LOGIN'\n  }\n};\n\n// Dispatch the action here:"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const store = Redux.createStore(\n  (state = {login: false}) => state\n);\n\nconst loginAction = () => {\n  return {\n    type: 'LOGIN'\n  }\n};\n\nstore.dispatch(loginAction());",
+        "error": null,
+        "seed": "const store = Redux.createStore(\n  (state = {login: false}) => state\n);\n\nconst loginAction = () => {\n  return {\n    type: 'LOGIN'\n  }\n};\n\nstore.dispatch(loginAction());"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Calling the function <code>loginAction</code> should return an object with <code>type</code> property set to the string <code>LOGIN</code>.</p>",
+      "testString": "assert(loginAction().type === 'LOGIN');"
+    },
+    {
+      "text": "<p>The store should be initialized with an object with property <code>login</code> set to <code>false</code>.</p>",
+      "testString": "assert(store.getState().login === false);"
+    },
+    {
+      "text": "<p>The <code>store.dispatch()</code> method should be used to dispatch an action of type <code>LOGIN</code>.</p>",
+      "testString": "(getUserInput) =>\n  assert(\n    (function () {\n      let noWhiteSpace = getUserInput('index').replace(/\\s/g, '');\n      return (\n        noWhiteSpace.includes('store.dispatch(loginAction())') ||\n        noWhiteSpace.includes(\"store.dispatch({type: 'LOGIN'})\") === true\n      );\n    })()\n  );"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><code>dispatch</code> method is what you use to dispatch actions to the Redux store. Calling <code>store.dispatch()</code> and passing the value returned from an action creator sends an action back to the store.</p>\n<p>Recall that action creators return an object with a type property that specifies the type of action that has occurred. Then the method dispatches an action object to the Redux store. Based on the previous challenge's example, the following lines are equivalent, and both dispatch the action of type <code>LOGIN</code>:</p>\n<pre><code class=\"language-js\">store.dispatch(actionCreator());\nstore.dispatch({ type: 'LOGIN' });\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The Redux store in the code editor has an initialized state that's an object containing a <code>login</code> property currently set to <code>false</code>. There's also an action creator called <code>loginAction()</code> which returns an action of type <code>LOGIN</code>. Dispatch the <code>LOGIN</code> action to the Redux store by calling the <code>dispatch</code> method, and pass in the action created by <code>loginAction()</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "redux",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 4,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"
+    },
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.2.0/redux-thunk.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

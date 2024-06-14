@@ -1,0 +1,71 @@
+{
+  "id": "5a90372638fddaf9a66b5d38",
+  "title": "Use grid-column to Control Spacing",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pByETK/cnzkDSr",
+  "forumTopicId": 301136,
+  "dashedName": "use-grid-column-to-control-spacing",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n\n  .item5 {\n    background: PaleGreen;\n    /* Only change code below this line */\n\n\n    /* Only change code above this line */\n  }\n\n  .container {\n    font-size: 40px;\n    min-height: 300px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>",
+      "error": null,
+      "seed": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n\n  .item5 {\n    background: PaleGreen;\n    /* Only change code below this line */\n\n\n    /* Only change code above this line */\n  }\n\n  .container {\n    font-size: 40px;\n    min-height: 300px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n\n  .item5 {\n    background: PaleGreen;\n    grid-column: 2 / 4;\n  }\n\n  .container {\n    font-size: 40px;\n    min-height: 300px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>",
+        "error": null,
+        "seed": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n\n  .item5 {\n    background: PaleGreen;\n    grid-column: 2 / 4;\n  }\n\n  .container {\n    font-size: 40px;\n    min-height: 300px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>item5</code> class should have a <code>grid-column</code> property.</p>",
+      "testString": "assert(\n  __helpers\n    .removeWhiteSpace($('style').text())\n    .match(/\\.item5{.*grid-column:.*}/g)\n);"
+    },
+    {
+      "text": "<p><code>item5</code> class should have a <code>grid-column</code> property which results in it consuming the last two columns of the grid.</p>",
+      "testString": "const colStart = getComputedStyle($('.item5')[0]).gridColumnStart;\nconst colEnd = getComputedStyle($('.item5')[0]).gridColumnEnd;\nconst result = colStart.toString() + colEnd.toString();\nconst correctResults = [\n  '24',\n  '2-1',\n  '2span 2',\n  '2span2',\n  'span 2-1',\n  '-12',\n  'span 2span 2',\n  'span 2auto',\n  'autospan 2'\n];\nassert(correctResults.includes(result));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Up to this point, all the properties that have been discussed are for grid containers. The <code>grid-column</code> property is the first one for use on the grid items themselves.</p>\n<p>The hypothetical horizontal and vertical lines that create the grid are referred to as <dfn>lines</dfn>. These lines are numbered starting with 1 at the top left corner of the grid and move right for columns and down for rows, counting upward.</p>\n<p>This is what the lines look like for a 3x3 grid:</p>\n<div style='position:relative;margin:auto;background:Gainsboro;display:block;margin-top:100px;margin-bottom:50px;width:200px;height:200px;'><p style='left:25%;top:-30%;font-size:130%;position:absolute;color:RoyalBlue;'>column lines</p><p style='left:0%;top:-15%;font-size:130%;position:absolute;color:RoyalBlue;'>1</p><p style='left:30%;top:-15%;font-size:130%;position:absolute;color:RoyalBlue;'>2</p><p style='left:63%;top:-15%;font-size:130%;position:absolute;color:RoyalBlue;'>3</p><p style='left:95%;top:-15%;font-size:130%;position:absolute;color:RoyalBlue;'>4</p><p style='left:-40%;top:45%;font-size:130%;transform:rotateZ(-90deg);position:absolute;'>row lines</p><p style='left:-10%;top:-10%;font-size:130%;position:absolute;'>1</p><p style='left:-10%;top:21%;font-size:130%;position:absolute;'>2</p><p style='left:-10%;top:53%;font-size:130%;position:absolute;'>3</p><p style='left:-10%;top:85%;font-size:130%;position:absolute;'>4</p><div style='left:0%;top:0%;width:5%;height:100%;background:RoyalBlue;position:absolute;'></div><div style='left:31%;top:0%;width:5%;height:100%;background:RoyalBlue;position:absolute;'></div><div style='left:63%;top:0%;width:5%;height:100%;background:RoyalBlue;position:absolute;'></div><div style='left:95%;top:0%;width:5%;height:100%;background:RoyalBlue;position:absolute;'></div><div style='left:0%;top:0%;width:100%;height:5%;background:black;position:absolute;'></div><div style='left:0%;top:31%;width:100%;height:5%;background:black;position:absolute;'></div><div style='left:0%;top:63%;width:100%;height:5%;background:black;position:absolute;'></div><div style='left:0%;top:95%;width:100%;height:5%;background:black;position:absolute;'></div></div>\n<p>To control the number of columns an item will consume, you can use the <code>grid-column</code> property in conjunction with the line numbers you want the item to start and stop at.</p>\n<p>Here's an example:</p>\n<pre><code class=\"language-css\">grid-column: 1 / 3;\n</code></pre>\n<p>This will make the item start at the first vertical line of the grid on the left and span to the 3rd line of the grid, consuming two columns.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Make the item with the class <code>item5</code> consume the last two columns of the grid.</p>\n</section>",
+  "translationPending": false,
+  "block": "css-grid",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

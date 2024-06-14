@@ -1,0 +1,45 @@
+{
+  "id": "656a52680e234b3191131cc5",
+  "title": "Task 50",
+  "challengeType": 19,
+  "dashedName": "task-50",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence correctly uses both <code>this</code> and <code>those</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>This are my glasses and those is my hat.</code></p>",
+        "feedback": "<p>Remember the context in which <code>this</code> and <code>those</code> are used. Look for a sentence that uses both pronouns appropriately.</p>"
+      },
+      {
+        "answer": "<p><code>This is my phone and those are my keys.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Those is my notebook next to this pencils.</code></p>",
+        "feedback": "<p>Remember the context in which <code>this</code> and <code>those</code> are used. Look for a sentence that uses both pronouns appropriately.</p>"
+      },
+      {
+        "answer": "<p><code>This trees are tall next to those building.</code></p>",
+        "feedback": "<p>Remember the context in which <code>this</code> and <code>those</code> are used. Look for a sentence that uses both pronouns appropriately.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Understanding when to use <code>this</code> or <code>those</code> is crucial. Remember, <code>this</code> is for singular items close to you, and <code>those</code> is for plural items further away or not the main topic of discussion.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 51,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

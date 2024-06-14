@@ -1,0 +1,45 @@
+{
+  "id": "656bbeb152c95913465476e3",
+  "title": "Task 10",
+  "challengeType": 19,
+  "dashedName": "task-10",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>compile</code> mean in the context of programming?</p>",
+    "answers": [
+      {
+        "answer": "<p>To write and edit code</p>",
+        "feedback": "<p><code>Compile</code> specifically refers to converting code into an executable format, not writing or editing it.</p>"
+      },
+      {
+        "answer": "<p>To test code for errors</p>",
+        "feedback": "<p><code>Compile</code> refers to the process of converting code into an executable form.</p>"
+      },
+      {
+        "answer": "<p>To upload code to a repository</p>",
+        "feedback": "<p>That would be <code>pushing</code>. See the previous challenges.</p>"
+      },
+      {
+        "answer": "<p>To transform code into a form computers understand</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Compile</code> in programming means changing code that people write into a form that computers can understand and use.</p>\n<p>It's like turning a recipe written in one language into another language so that someone else can cook the meal.</p>\n<p>For example, <code>When we compile Java code, it changes into a form that the computer can run.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-help-a-coworker-troubleshoot-on-github",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

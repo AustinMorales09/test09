@@ -1,0 +1,65 @@
+{
+  "id": "5900f4b71000cf542c50ffca",
+  "title": "Problem 331: Cross flips",
+  "challengeType": 1,
+  "forumTopicId": 301989,
+  "dashedName": "problem-331-cross-flips",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function crossFlips() {\n\n  return true;\n}\n\ncrossFlips();",
+      "error": null,
+      "seed": "function crossFlips() {\n\n  return true;\n}\n\ncrossFlips();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>crossFlips()</code> should return <code>467178235146843500</code>.</p>",
+      "testString": "assert.strictEqual(crossFlips(), 467178235146843500);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>N×N disks are placed on a square game board. Each disk has a black side and white side.</p>\n<p>At each turn, you may choose a disk and flip all the disks in the same row and the same column as this disk: thus $2 × N - 1$ disks are flipped. The game ends when all disks show their white side. The following example shows a game on a 5×5 board.</p>\n<img class=\"img-responsive center-block\" alt=\"animation showing game on 5x5 board\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/cross-flips.gif\" style=\"background-color: white; padding: 10px;\">\n<p>It can be proven that 3 is the minimal number of turns to finish this game.</p>\n<p>The bottom left disk on the $N×N$ board has coordinates (0, 0); the bottom right disk has coordinates ($N - 1$,$0$) and the top left disk has coordinates ($0$,$N - 1$).</p>\n<p>Let $C_N$ be the following configuration of a board with $N × N$ disks: A disk at ($x$, $y$) satisfying $N - 1 \\le \\sqrt{x^2 + y^2} \\lt N$, shows its black side; otherwise, it shows its white side. $C_5$ is shown above.</p>\n<p>Let $T(N)$ be the minimal number of turns to finish a game starting from configuration $C_N$ or 0 if configuration $C_N$ is unsolvable. We have shown that $T(5) = 3$. You are also given that $T(10) = 29$ and $T(1\\,000) = 395\\,253$.</p>\n<p>Find $\\displaystyle \\sum_{i = 3}^{31} T(2^i - i)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

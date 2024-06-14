@@ -1,0 +1,93 @@
+{
+  "id": "657e759a72dd0c67f8992ff5",
+  "title": "Task 126",
+  "challengeType": 22,
+  "dashedName": "task-126",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Sarah _ testing the software in the morning. Each day, she _ a different task. For example, on Mondays, she _ the login process.</p>",
+    "blanks": [
+      {
+        "answer": "starts",
+        "feedback": "<p>Begins an action.</p>"
+      },
+      {
+        "answer": "has",
+        "feedback": "<p>Possesses or is assigned.</p>"
+      },
+      {
+        "answer": "tests",
+        "feedback": "<p>Examines or evaluates.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 33.9,
+        "finishTimestamp": 42.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.18,
+        "dialogue": {
+          "text": "After that, during the morning, I start testing the software. I have a different task to do each day.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "startTime": 6.3,
+        "finishTime": 9.12,
+        "dialogue": {
+          "text": "For example, on Mondays, I test the login process.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 9.62
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Sarah's role as a QA tester involves various tasks related to software testing. Understanding these tasks is important for comprehending job responsibilities in tech roles.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 130,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

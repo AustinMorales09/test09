@@ -1,0 +1,79 @@
+{
+  "id": "65a4f58e1daa8fc51dafc832",
+  "title": "Task 94",
+  "challengeType": 22,
+  "dashedName": "task-94",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I can see your enthusiasm, Bob! Tell me, _ gadgets are your _ favorites?</p>",
+    "blanks": [
+      {
+        "answer": "which",
+        "feedback": "<p>This word asks for a specific choice or selection from a known group of items.</p>"
+      },
+      {
+        "answer": "absolute",
+        "feedback": "<p>This adjective emphasizes that the choice is the most complete or total among all options.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.86,
+        "finishTimestamp": 11.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5.5,
+        "dialogue": {
+          "text": "I can see your enthusiasm, Bob. Tell me, which gadgets are your absolute favorites?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Which</code> is used when asking about one or more items from a known set of options. For example, <code>Which computer do you prefer?</code> asks for a choice from known computers.</p>\n<p><code>What</code> is more open, used when any answer is possible, like <code>What do you like to do?</code></p>\n<p><code>Absolute</code> means complete or total. It's used to emphasize that something is as much as it can be. For example, <code>My absolute favorite game is chess,</code> means chess is the top favorite, without question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 97,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

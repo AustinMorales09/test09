@@ -1,0 +1,74 @@
+{
+  "id": "587d7b8b367417b2b2512b50",
+  "title": "Write Concise Declarative Functions with ES6",
+  "challengeType": 1,
+  "forumTopicId": 301224,
+  "dashedName": "write-concise-declarative-functions-with-es6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Only change code below this line\nconst bicycle = {\n  gear: 2,\n  setGear: function(newGear) {\n    this.gear = newGear;\n  }\n};\n// Only change code above this line\nbicycle.setGear(3);\nconsole.log(bicycle.gear);",
+      "error": null,
+      "seed": "// Only change code below this line\nconst bicycle = {\n  gear: 2,\n  setGear: function(newGear) {\n    this.gear = newGear;\n  }\n};\n// Only change code above this line\nbicycle.setGear(3);\nconsole.log(bicycle.gear);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const bicycle = {\n  gear: 2,\n  // setGear: function(newGear) {\n  setGear(newGear) {\n    this.gear = newGear;\n  }\n};\nbicycle.setGear(3);",
+        "error": null,
+        "seed": "const bicycle = {\n  gear: 2,\n  // setGear: function(newGear) {\n  setGear(newGear) {\n    this.gear = newGear;\n  }\n};\nbicycle.setGear(3);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Traditional function expression should not be used.</p>",
+      "testString": "assert(!__helpers.removeJSComments(code).match(/function/));"
+    },
+    {
+      "text": "<p><code>setGear</code> should be a declarative function.</p>",
+      "testString": "assert(\n  typeof bicycle.setGear === 'function' && __helpers.removeJSComments(code).match(/setGear\\s*\\(.+\\)\\s*\\{/)\n);"
+    },
+    {
+      "text": "<p><code>bicycle.setGear(48)</code> should change the <code>gear</code> value to 48.</p>",
+      "testString": "bicycle.setGear(48);\nassert(bicycle.gear === 48);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When defining functions within objects in ES5, we have to use the keyword <code>function</code> as follows:</p>\n<pre><code class=\"language-js\">const person = {\n  name: \"Taylor\",\n  sayHello: function() {\n    return `Hello! My name is ${this.name}.`;\n  }\n};\n</code></pre>\n<p>With ES6, you can remove the <code>function</code> keyword and colon altogether when defining functions in objects. Here's an example of this syntax:</p>\n<pre><code class=\"language-js\">const person = {\n  name: \"Taylor\",\n  sayHello() {\n    return `Hello! My name is ${this.name}.`;\n  }\n};\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Refactor the function <code>setGear</code> inside the object <code>bicycle</code> to use the shorthand syntax described above.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

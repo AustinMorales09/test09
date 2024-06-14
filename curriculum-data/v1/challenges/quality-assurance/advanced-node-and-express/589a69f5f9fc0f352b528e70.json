@@ -1,0 +1,33 @@
+{
+  "id": "589a69f5f9fc0f352b528e70",
+  "title": "Implementation of Social Authentication",
+  "challengeType": 2,
+  "forumTopicId": 301559,
+  "dashedName": "implementation-of-social-authentication",
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Route <code>/auth/github</code> should be correct.</p>",
+      "testString": "async (getUserInput) => {\n  try {\n    const res = await fetch(getUserInput('url') + '/_api/routes.js');\n    if (res.ok) {\n      const data = await res.text();\n      assert.match(\n          data.replace(/\\s/g, ''),\n          /passport.authenticate.*?github/g,\n          'Route auth/github should only call passport.authenticate with github'\n        );\n    } else {\n      throw new Error(res.statusText);\n    }\n    const res2 = await fetch(getUserInput('url') + '/_api/app-stack');\n    if (res2.ok) {\n      const data2 = JSON.parse(await res2.json());\n      const dataLayer = data2.find(layer => layer?.route?.path === '/auth/github');\n      assert.deepInclude(dataLayer?.route, { methods: {get: true}, path: \"/auth/github\"});\n      assert.deepInclude(dataLayer?.route?.stack?.[0], {method: \"get\", name: \"authenticate\"});\n    } else {\n      throw new Error(res2.statusText);\n    }\n  } catch (err) {\n    throw new Error(err);\n  }\n}"
+    },
+    {
+      "text": "<p>Route <code>/auth/github/callback</code> should be correct.</p>",
+      "testString": "async (getUserInput) => {\n  try {\n    const res = await fetch(getUserInput('url') + '/_api/routes.js');\n    if (res.ok) {\n      const data = await res.text();\n      assert.match(\n        data.replace(/\\s/g, ''),\n        /failureRedirect:(\"|')\\/\\1/g,\n        'Route auth/github/callback should accept a get request and call passport.authenticate for github with a failure redirect to home'\n      );\n    } else {\n      throw new Error(res.statusText);\n    }\n    const res2 = await fetch(getUserInput('url') + '/_api/app-stack');\n    if (res2.ok) {\n      const data2 = JSON.parse(await res2.json());\n      const dataLayer = data2.find(layer => layer?.route?.path === '/auth/github/callback');\n      assert.deepInclude(dataLayer?.route, { methods: {get: true}, path: \"/auth/github/callback\"});\n      assert.deepInclude(dataLayer?.route?.stack?.[0], {method: \"get\", name: \"authenticate\"});\n    } else {\n      throw new Error(res2.statusText);\n    }\n  } catch (err) {\n    throw new Error(err);\n  }\n}"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The basic path this kind of authentication will follow in your app is:</p>\n<ol>\n<li>User clicks a button or link sending them to your route to authenticate using a specific strategy (e.g. GitHub).</li>\n<li>Your route calls <code>passport.authenticate('github')</code> which redirects them to GitHub.</li>\n<li>The page the user lands on, on GitHub, allows them to login if they aren't already. It then asks them to approve access to their profile from your app.</li>\n<li>The user is then returned to your app at a specific callback url with their profile if they are approved.</li>\n<li>They are now authenticated, and your app should check if it is a returning profile, or save it in your database if it is not.</li>\n</ol>\n<p>Strategies with OAuth require you to have at least a <em>Client ID</em> and a <em>Client Secret</em> which is a way for the service to verify who the authentication request is coming from and if it is valid. These are obtained from the site you are trying to implement authentication with, such as GitHub, and are unique to your app--<strong>THEY ARE NOT TO BE SHARED</strong> and should never be uploaded to a public repository or written directly in your code. A common practice is to put them in your <code>.env</code> file and reference them like so: <code>process.env.GITHUB_CLIENT_ID</code>. For this challenge you are going to use the GitHub strategy.</p>\n<p>Follow <a href=\"https://www.freecodecamp.org/news/how-to-set-up-a-github-oauth-application/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">these instructions</a> to obtain your <em>Client ID and Secret</em> from GitHub. Set the homepage URL to your homepage (<strong>not the project code's URL</strong>), and set the callback URL to the same homepage URL with <code>/auth/github/callback</code> appended to the end. Save the client ID and your client secret in your project's <code>.env</code> file as <code>GITHUB_CLIENT_ID</code> and <code>GITHUB_CLIENT_SECRET</code>.</p>\n<p>In your <code>routes.js</code> file, add <code>showSocialAuth: true</code> to the homepage route, after <code>showRegistration: true</code>. Now, create 2 routes accepting GET requests: <code>/auth/github</code> and <code>/auth/github/callback</code>. The first should only call passport to authenticate <code>'github'</code>. The second should call passport to authenticate <code>'github'</code> with a failure redirect to <code>/</code>, and then if that is successful redirect to <code>/profile</code> (similar to your last project).</p>\n<p>An example of how <code>/auth/github/callback</code> should look is similar to how you handled a normal login:</p>\n<pre><code class=\"language-js\">app.route('/login')\n  .post(passport.authenticate('local', { failureRedirect: '/' }), (req,res) => {\n    res.redirect('/profile');\n  });\n</code></pre>\n<p>Submit your page when you think you've got it right. If you're running into errors, you can <a href=\"https://forum.freecodecamp.org/t/advanced-node-and-express/567135#implementation-of-social-authentication-3\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">check out the project up to this point</a>.</p>\n</section>",
+  "translationPending": false,
+  "block": "advanced-node-and-express",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 6,
+  "certification": "quality-assurance",
+  "superBlock": "quality-assurance",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

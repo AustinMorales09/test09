@@ -1,0 +1,86 @@
+{
+  "id": "5a23c84252665b21eecc7eb1",
+  "title": "Identity matrix",
+  "challengeType": 1,
+  "forumTopicId": 302290,
+  "dashedName": "identity-matrix",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "let results=[[ [ 1 ] ],\n[ [ 1, 0 ], [ 0, 1 ] ],\n[ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1 ] ],\n[ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]]",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function idMatrix(n) {\n\n}",
+      "error": null,
+      "seed": "function idMatrix(n) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function idMatrix(n) {\n    return Array.apply(null, new Array(n)).map(function (x, i, xs) {\n        return xs.map(function (_, k) {\n            return i === k ? 1 : 0;\n        })\n    });\n}",
+        "error": null,
+        "seed": "function idMatrix(n) {\n    return Array.apply(null, new Array(n)).map(function (x, i, xs) {\n        return xs.map(function (_, k) {\n            return i === k ? 1 : 0;\n        })\n    });\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>idMatrix</code> should be a function.</p>",
+      "testString": "assert(typeof idMatrix == 'function');"
+    },
+    {
+      "text": "<p><code>idMatrix(1)</code> should return an array.</p>",
+      "testString": "assert(Array.isArray(idMatrix(1)));"
+    },
+    {
+      "text": "<p><code>idMatrix(1)</code> should return <code>[ [ 1 ] ]</code>.</p>",
+      "testString": "assert.deepEqual(idMatrix(1), results[0]);"
+    },
+    {
+      "text": "<p><code>idMatrix(2)</code> should return <code>[ [ 1, 0 ], [ 0, 1 ] ]</code>.</p>",
+      "testString": "assert.deepEqual(idMatrix(2), results[1]);"
+    },
+    {
+      "text": "<p><code>idMatrix(3)</code> should return <code>[ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1 ] ]</code>.</p>",
+      "testString": "assert.deepEqual(idMatrix(3), results[2]);"
+    },
+    {
+      "text": "<p><code>idMatrix(4)</code> should return <code>[ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]</code>.</p>",
+      "testString": "assert.deepEqual(idMatrix(4), results[3]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>An <em>identity matrix</em> is a square matrix of size \\( n \\times n \\), where the diagonal elements are all <code>1</code>s (ones), and all the other elements are all <code>0</code>s (zeroes).</p>\n<ul>\n  <li style='list-style: none;'>\\(\\displaystyle I_{n}=\\begin{bmatrix} 1 &#x26; 0 &#x26; 0 \\cr 0 &#x26; 1 &#x26; 0 \\cr 0 &#x26; 0 &#x26; 1 \\cr \\end{bmatrix}\\)</li>\n</ul>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that takes a number <code>n</code> as a parameter and returns the identity matrix of order \\( n \\times n \\).</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 72,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

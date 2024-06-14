@@ -1,0 +1,88 @@
+{
+  "id": "656d2d19c570e2146b5e8835",
+  "title": "Task 164",
+  "challengeType": 19,
+  "dashedName": "task-164",
+  "solutions": [],
+  "question": {
+    "text": "<p>Based on the audio, what does Jake want to know with <code>How was it?</code></p>",
+    "answers": [
+      {
+        "answer": "<p>What time is it?</p>",
+        "feedback": "<p>Jake already mentioned the time.</p>"
+      },
+      {
+        "answer": "<p>What Sarah will do tomorrow.</p>",
+        "feedback": "<p>He didn't ask about future plans.</p>"
+      },
+      {
+        "answer": "<p>How was Sarah's first day in the office.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Where Sarah is going.</p>",
+        "feedback": "<p>He isn't asking about Sarah's location.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.1,
+        "finishTimestamp": 24.23
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 6,
+        "dialogue": {
+          "text": "Well, it's five o'clock. I guess this is it for your first day. How was it?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 6.5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Sometimes, people use phrases to ask about experiences, feelings, or opinions. <code>How was it?</code> is a general way to ask about something that just happened.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 168,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "65524d2a1a253b8bb5197ae2",
+  "title": "Step 28",
+  "challengeType": 20,
+  "dashedName": "step-28",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        8
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n\nfor char in text:\n    index = alphabet.find(char)\n    print(char, index)",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n\nfor char in text:\n    index = alphabet.find(char)\n    print(char, index)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should modify your <code>for</code> loop to iterate over <code>text.lower()</code> instead of <code>text</code>.</p>",
+      "testString": "({test: () => assert.match(code, /^for\\s+char\\s+in\\s+text\\.lower\\s*\\(\\s*\\)\\s*:/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><code>find</code> is again returning <code>-1</code> for uppercase letters, and for the space character, too. You are going to take care of the space later on.</p>\n<p>For now, instead of iterating over <code>text</code>, change the <code>for</code> loop to iterate over <code>text.lower()</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

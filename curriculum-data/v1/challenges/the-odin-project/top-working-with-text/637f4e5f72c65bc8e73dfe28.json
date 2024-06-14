@@ -1,0 +1,41 @@
+{
+  "id": "637f4e5f72c65bc8e73dfe28",
+  "title": "Working With Text Question B",
+  "challengeType": 15,
+  "dashedName": "working-with-text-question-b",
+  "solutions": [],
+  "question": {
+    "text": "<p>How many different levels of headings are there and what is the difference between them?</p>",
+    "answers": [
+      {
+        "answer": "<p>There are 5 different levels of headings. <code>h5</code> is the smallest and least important heading, and <code>h1</code> is the largest and most important heading.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>There are 6 different levels of headings. <code>h6</code> is the largest and most important heading, and <code>h1</code> is the smallest and least important heading.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>There are 6 different levels of headings. <code>h1</code> is the largest and most important heading, and <code>h6</code> is the smallest and least important heading.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Headings are different from other HTML text elements: they are displayed larger and bolder than other text to signify that they are headings.</p>\n<p>There are 6 different levels of headings starting from <code>&#x3C;h1></code> to <code>&#x3C;h6></code>. The number within a heading tag represents that heading’s level. The largest and most important heading is <code>h1</code>, while <code>h6</code> is the tiniest heading at the lowest level.</p>\n<p>Headings are defined much like paragraphs. For example, to create an <code>h1</code> heading, we wrap our heading text in a <code>&#x3C;h1></code> tag.</p>\n<iframe allowfullscreen=\"true\" allowpaymentrequest=\"true\" allowtransparency=\"true\" class=\"cp_embed_iframe \" frameborder=\"0\" height=\"300\" width=\"100%\" name=\"cp_embed_3\" scrolling=\"no\" src=\"https://codepen.io/TheOdinProjectExamples/embed/LYLPLbg?height=300&amp;theme-id=dark&amp;default-tab=html%2Cresult&amp;slug-hash=LYLPLbg&amp;user=TheOdinProjectExamples&amp;name=cp_embed_3\" style=\"width: 100%; overflow:hidden; display:block;\" title=\"CodePen Embed\" loading=\"lazy\" id=\"cp_embed_LYLPLbg\"></iframe>\n<p>Using the correct level of heading is important as levels provide a hierarchy to the content. An <code>h1</code> heading should always be used for the heading of the overall page, and the lower level headings should be used as the headings for content in smaller sections of the page.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-working-with-text",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

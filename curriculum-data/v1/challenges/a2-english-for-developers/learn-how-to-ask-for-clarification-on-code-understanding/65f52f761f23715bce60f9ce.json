@@ -1,0 +1,88 @@
+{
+  "id": "65f52f761f23715bce60f9ce",
+  "title": "Task 20",
+  "challengeType": 19,
+  "dashedName": "task-20",
+  "solutions": [],
+  "question": {
+    "text": "<p>What part of Sarah’s answer suggests a course of action?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I can take a look at it</code></p>",
+        "feedback": "<p>While this shows willingness to help, it doesn't specify the first action Sarah wants to take.</p>"
+      },
+      {
+        "answer": "<p><code>Sure, Tom</code></p>",
+        "feedback": "<p>This is a simple acknowledgment, not a suggestion for action.</p>"
+      },
+      {
+        "answer": "<p><code>Let's start by identifying the issue</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>I can take a look at it later</code></p>",
+        "feedback": "<p>This option is not present in Sarah's response and doesn't suggest an immediate course of action.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.96,
+        "finishTimestamp": 10.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 4.5,
+        "dialogue": {
+          "text": "Sure, Tom. I can take a look at it. Let's start by identifying the issue.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,103 @@
+{
+  "id": "661ec1f0f4216124b5e450dd",
+  "title": "Task 82",
+  "challengeType": 22,
+  "dashedName": "task-82",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Tom: What are people studying in biometrics these days?</p>\n<p>Alice: Researchers are exploring biometrics _ traditional methods.</p>",
+    "blanks": [
+      {
+        "answer": "beyond",
+        "feedback": "<p>A word that means more than something or going past something.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 30.74,
+        "finishTimestamp": 37.26
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.68,
+        "dialogue": {
+          "text": "What are people studying in biometrics these days?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.09
+      },
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 4.09
+      },
+      {
+        "character": "Alice",
+        "startTime": 4.5,
+        "finishTime": 7.52,
+        "dialogue": {
+          "text": "Researchers are exploring biometrics beyond traditional methods.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 8.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Beyond</code> means further away or past a certain point. It can also mean more than something. For example, if you walk beyond the school, you go past it and keep walking.</p>\n<p>Listen and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 85,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

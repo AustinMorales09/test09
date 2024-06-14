@@ -1,0 +1,45 @@
+{
+  "id": "657e5af613558ce1f6e1d501",
+  "title": "Task 94",
+  "challengeType": 19,
+  "dashedName": "task-94",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is a <code>security incident</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>A regular company meeting.</p>",
+        "feedback": "<p>Security incidents are about safety risks, not regular meetings.</p>"
+      },
+      {
+        "answer": "<p>A celebration at the office.</p>",
+        "feedback": "<p>It's related to safety issues, not celebrations.</p>"
+      },
+      {
+        "answer": "<p>A new project launch.</p>",
+        "feedback": "<p>Security incidents are about risks, not project starts.</p>"
+      },
+      {
+        "answer": "<p>A problem or event that could harm security.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>security incident</code> is an event that may be harmful to the safety or security of a company or organization. For example, <code>A security incident like a stolen password needs to be reported immediately.</code></p>\n<p>Note on <code>Harm</code> and <code>Harmful</code>:</p>\n<p><code>Harm</code> means damage or injury to someone or something. It refers to causing a negative effect or putting someone or something at risk. For example:</p>\n<p><code>Touching hot surfaces can cause harm,</code> means that touching hot surfaces can lead to injury or damage.</p>\n<p><code>Harmful</code> is an adjective used to describe something that can cause harm. It means dangerous or risky in a way that could lead to damage or injury. For example:</p>\n<p><code>Smoking is harmful to health,</code> indicates that smoking can cause health problems or damage.</p>\n<p>These terms are often used to discuss safety and risks, especially in contexts like health, security, and the environment.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 97,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

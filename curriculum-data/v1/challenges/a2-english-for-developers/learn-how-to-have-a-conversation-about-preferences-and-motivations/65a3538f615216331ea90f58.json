@@ -1,0 +1,116 @@
+{
+  "id": "65a3538f615216331ea90f58",
+  "title": "Task 72",
+  "challengeType": 19,
+  "dashedName": "task-72",
+  "solutions": [],
+  "question": {
+    "text": "<p>What was Lisa's main motivation to choose a career in tech?</p>",
+    "answers": [
+      {
+        "answer": "<p>The creative opportunities in tech</p>",
+        "feedback": "<p>Consider the specific reason Lisa mentions for her career choice.</p>"
+      },
+      {
+        "answer": "<p>The financial stability tech jobs offer</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The flexible working hours in tech</p>",
+        "feedback": "<p>Think about what Lisa highlights as her main reason for choosing tech.</p>"
+      },
+      {
+        "answer": "<p>The chance to travel for work</p>",
+        "feedback": "<p>Reflect on Lisa's statement and whether travel is mentioned as a motivation.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Lisa",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 9.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 5.18,
+        "dialogue": {
+          "text": "Hey, Lisa, what motivated you to choose a career in tech?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 5.5
+      },
+      {
+        "character": "Lisa",
+        "opacity": 1,
+        "startTime": 5.5
+      },
+      {
+        "character": "Lisa",
+        "startTime": 5.82,
+        "finishTime": 10.02,
+        "dialogue": {
+          "text": "One of my main motivations was the financial stability that tech jobs can provide.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "opacity": 0,
+        "startTime": 10.52
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Brian asks Lisa about her reasons for entering the tech field, and Lisa shares a significant factor that influenced her decision.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 74,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

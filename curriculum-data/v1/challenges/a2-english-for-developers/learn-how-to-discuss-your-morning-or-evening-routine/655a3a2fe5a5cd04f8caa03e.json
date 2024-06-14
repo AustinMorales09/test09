@@ -1,0 +1,88 @@
+{
+  "id": "655a3a2fe5a5cd04f8caa03e",
+  "title": "Task 48",
+  "challengeType": 19,
+  "dashedName": "task-48",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the main advice the expert gives for a better morning routine?</p>",
+    "answers": [
+      {
+        "answer": "<p>Use multiple alarms to ensure waking up on time</p>",
+        "feedback": "<p>The expert advises against multiple alarms.</p>"
+      },
+      {
+        "answer": "<p>Stay in bed longer to feel less groggy</p>",
+        "feedback": "<p>The advice is not to stay in bed longer.</p>"
+      },
+      {
+        "answer": "<p>Ignore the alarm and sleep until midday</p>",
+        "feedback": "<p>This is contrary to the expert's advice.</p>"
+      },
+      {
+        "answer": "<p>Avoid using the snooze button and wake up with a single alarm</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room1.png",
+      "characters": [
+        {
+          "character": "Expert",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 8.98,
+        "finishTimestamp": 14.4
+      }
+    },
+    "commands": [
+      {
+        "character": "Expert",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Expert",
+        "startTime": 1,
+        "finishTime": 6.42,
+        "dialogue": {
+          "text": "Absolutely. My first suggestion is to not hit the snooze button multiple times.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "opacity": 0,
+        "startTime": 6.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge tests your understanding of the expert's suggestions.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 49,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

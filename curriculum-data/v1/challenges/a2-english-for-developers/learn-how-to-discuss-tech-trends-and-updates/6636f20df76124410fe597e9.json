@@ -1,0 +1,97 @@
+{
+  "id": "6636f20df76124410fe597e9",
+  "title": "Task 28",
+  "challengeType": 19,
+  "dashedName": "task-28",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Lisa describe <code>serverless computing</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>It is a cheaper way to use computers.</p>",
+        "feedback": "<p>While <code>serverless computing</code> can be cost-effective, Lisa's description focuses on the operational aspect, not directly on cost.</p>"
+      },
+      {
+        "answer": "<p>It is about using more servers in computing.</p>",
+        "feedback": "<p>This statement is incorrect; <code>serverless computing</code> involves using fewer, if any, visible servers to the developer.</p>"
+      },
+      {
+        "answer": "<p>It means programming without computers.</p>",
+        "feedback": "<p><code>Serverless computing</code> still involves computers, specifically servers that are managed by the provider, not by the programmer.</p>"
+      },
+      {
+        "answer": "<p>It's like having computer helpers to run code without managing servers.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Lisa",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.62,
+        "finishTimestamp": 11.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Lisa",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Lisa",
+        "startTime": 1,
+        "finishTime": 3.58,
+        "dialogue": {
+          "text": "Serverless computing is an interesting concept, Tom.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "startTime": 4.14,
+        "finishTime": 8,
+        "dialogue": {
+          "text": "It's when we run code without managing servers, like having computer helpers.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "opacity": 0,
+        "startTime": 8.5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 29,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

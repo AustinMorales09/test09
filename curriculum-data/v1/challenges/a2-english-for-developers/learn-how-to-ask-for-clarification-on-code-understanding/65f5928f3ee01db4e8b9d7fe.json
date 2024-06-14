@@ -1,0 +1,88 @@
+{
+  "id": "65f5928f3ee01db4e8b9d7fe",
+  "title": "Task 33",
+  "challengeType": 19,
+  "dashedName": "task-33",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Brian's reaction to Sophie's request for help?</p>",
+    "answers": [
+      {
+        "answer": "<p>He is willing to help Sophie with her code issue.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He is too busy to help Sophie right now.</p>",
+        "feedback": "<p>Brian's response indicates his readiness to assist, not that he is too busy.</p>"
+      },
+      {
+        "answer": "<p>He needs more information before deciding.</p>",
+        "feedback": "<p>Brian agrees to help without asking for additional information first.</p>"
+      },
+      {
+        "answer": "<p>He suggests Sophie find someone else to help.</p>",
+        "feedback": "<p>Brian offers his own assistance, not suggesting someone else.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 7.78,
+        "finishTimestamp": 10.76
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 3.98,
+        "dialogue": {
+          "text": "No problem, Sophie. I can definitely work on that with you.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 4.48
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In this task, you will learn about the phrase <code>to be willing</code>.</p>\n<p>When someone says they are <code>willing</code> to do something, it means they are ready and prepared to do it, often out of kindness or cooperation. For example, <code>Brian is willing to help Sophie</code> means Brian is ready and happy to assist Sophie.</p>\n<p>This phrase is often used in professional and personal contexts to show a positive attitude towards doing something or helping someone.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 35,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

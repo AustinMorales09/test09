@@ -1,0 +1,46 @@
+{
+  "id": "5e8f2f13c4cdbe86b5c72d8a",
+  "title": "Core Learning Algorithms: Working with Data",
+  "challengeType": 11,
+  "videoId": "u85IOSsJsPI",
+  "bilibiliIds": {
+    "aid": 675550447,
+    "bvid": "BV1RU4y1w7up",
+    "cid": 409127383
+  },
+  "dashedName": "core-learning-algorithms-working-with-data",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the pandas <code>.head()</code> function do?</p>",
+    "answers": [
+      {
+        "answer": "<p>Returns the number of entries in a data frame.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Returns the number of columns in a data frame.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>By default, shows the first five rows or entries in a data frame.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "tensorflow",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

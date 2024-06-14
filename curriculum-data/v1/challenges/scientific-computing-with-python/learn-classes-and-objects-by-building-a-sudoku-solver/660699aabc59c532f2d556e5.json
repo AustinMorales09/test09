@@ -1,0 +1,49 @@
+{
+  "id": "660699aabc59c532f2d556e5",
+  "title": "Step 6",
+  "challengeType": 20,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        6
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    def spam(self):\n        print('Spam!')\n    \ngameboard = Board()",
+      "error": null,
+      "seed": "class Board:\n    def spam(self):\n        print('Spam!')\n    \ngameboard = Board()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call the <code>spam</code> method of the <code>gameboard</code> object with <code>gameboard.spam()</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).has_call(\"gameboard.spam()\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To call an instance method, you need to use dot notation:</p>\n<pre><code class=\"language-py\">instance_name.method_name()\n</code></pre>\n<p>Where <code>instance_name</code> is the instance or object, and <code>method_name</code> is the method you want to call.</p>\n<p>Call the <code>spam</code> method of the <code>gameboard</code> object.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,107 @@
+{
+  "id": "657ee66dd1216ad6c61f1168",
+  "title": "Task 52",
+  "challengeType": 22,
+  "dashedName": "task-52",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>James: What kind of figures are you _ interested in?</p>\n<p>Sarah: I like sci-fi and fantasy, _.</p>",
+    "blanks": [
+      {
+        "answer": "most",
+        "feedback": "<p>This word is used ask the greatest interest Sarah has when it comes to action figures.</p>"
+      },
+      {
+        "answer": "mostly",
+        "feedback": "<p>This word implies that her interest is in great part about sci-fi and fantasy, though not entirely.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "James",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.08,
+        "finishTimestamp": 13.6
+      }
+    },
+    "commands": [
+      {
+        "character": "James",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "James",
+        "startTime": 1,
+        "finishTime": 3.16,
+        "dialogue": {
+          "text": "What kind of figures are you most interested in?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "James",
+        "opacity": 0,
+        "startTime": 3.3
+      },
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 3.3
+      },
+      {
+        "character": "Sarah",
+        "startTime": 3.64,
+        "finishTime": 5.52,
+        "dialogue": {
+          "text": "I like sci-fi and fantasy, mostly.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Most</code> is used to refer to the greatest in amount or degree. For example, <code>She spends most of her time reading.</code> This means she spends the greater part of her time reading compared to other activities.</p>\n<p><code>Mostly</code>, on the other hand, means mainly or for the most part. It's used when something is true or applies to a great extent but not entirely. For instance, <code>The sky is mostly clear tonight.</code> This suggests that while there may be a few clouds, the majority of the sky is clear.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 54,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

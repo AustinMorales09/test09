@@ -1,0 +1,65 @@
+{
+  "id": "5900f3e71000cf542c50fefa",
+  "title": "Problem 123: Prime square remainders",
+  "challengeType": 1,
+  "forumTopicId": 301750,
+  "dashedName": "problem-123-prime-square-remainders",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function primeSquareRemainders() {\n\n  return true;\n}\n\nprimeSquareRemainders();",
+      "error": null,
+      "seed": "function primeSquareRemainders() {\n\n  return true;\n}\n\nprimeSquareRemainders();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>primeSquareRemainders()</code> should return <code>21035</code>.</p>",
+      "testString": "assert.strictEqual(primeSquareRemainders(), 21035);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $p_n$ be the $n$th prime: 2, 3, 5, 7, 11, ..., and let $r$ be the remainder when ${(p_n−1)}^n + {(p_n+1)}^n$ is divided by ${p_n}^2$.</p>\n<p>For example, when $n = 3, p_3 = 5$, and $4^3 + 6^3 = 280 ≡ 5\\ mod\\ 25$.</p>\n<p>The least value of $n$ for which the remainder first exceeds $10^9$ is 7037.</p>\n<p>Find the least value of $n$ for which the remainder first exceeds $10^{10}$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

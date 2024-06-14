@@ -1,0 +1,65 @@
+{
+  "id": "5900f4f81000cf542c51000b",
+  "title": "Problem 396: Weak Goodstein sequence",
+  "challengeType": 1,
+  "forumTopicId": 302061,
+  "dashedName": "problem-396-weak-goodstein-sequence",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function weakGoodsteinSequence() {\n\n  return true;\n}\n\nweakGoodsteinSequence();",
+      "error": null,
+      "seed": "function weakGoodsteinSequence() {\n\n  return true;\n}\n\nweakGoodsteinSequence();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>weakGoodsteinSequence()</code> should return <code>173214653</code>.</p>",
+      "testString": "assert.strictEqual(weakGoodsteinSequence(), 173214653);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>For any positive integer $n$, the $n$th weak Goodstein sequence $\\{g1, g2, g3, \\ldots\\}$ is defined as:</p>\n<ul>\n<li>$g_1 = n$</li>\n<li>for $k > 1$, $g_k$ is obtained by writing $g_{k - 1}$ in base $k$, interpreting it as a base $k + 1$ number, and subtracting 1.</li>\n</ul>\n<p>The sequence terminates when $g_k$ becomes 0.</p>\n<p>For example, the $6$th weak Goodstein sequence is $\\{6, 11, 17, 25, \\ldots\\}$:</p>\n<ul>\n<li>$g_1 = 6$.</li>\n<li>$g_2 = 11$ since $6 = 110_2$, $110_3 = 12$, and $12 - 1 = 11$.</li>\n<li>$g_3 = 17$ since $11 = 102_3$, $102_4 = 18$, and $18 - 1 = 17$.</li>\n<li>$g_4 = 25$ since $17 = 101_4$, $101_5 = 26$, and $26 - 1 = 25$.</li>\n</ul>\n<p>and so on.</p>\n<p>It can be shown that every weak Goodstein sequence terminates.</p>\n<p>Let $G(n)$ be the number of nonzero elements in the $n$th weak Goodstein sequence.</p>\n<p>It can be verified that $G(2) = 3$, $G(4) = 21$ and $G(6) = 381$.</p>\n<p>It can also be verified that $\\sum G(n) = 2517$ for $1 ≤ n &#x3C; 8$.</p>\n<p>Find the last 9 digits of $\\sum G(n)$ for $1 ≤ n &#x3C; 16$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 95,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

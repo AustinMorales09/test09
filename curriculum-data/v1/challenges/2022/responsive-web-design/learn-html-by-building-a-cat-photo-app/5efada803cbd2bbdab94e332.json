@@ -1,0 +1,69 @@
+{
+  "id": "5efada803cbd2bbdab94e332",
+  "title": "Step 29",
+  "challengeType": 0,
+  "dashedName": "step-29",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        28,
+        32
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n          <figcaption>Cats <em>love</em> lasagna.</figcaption>  \n        </figure>\n        <h3>Top 3 things cats hate:</h3>\n        <ol>\n          <li>flea treatment</li>\n          <li>thunder</li>\n          <li>other cats</li>\n        </ol>\n        <figure>\n          \n        </figure>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        <h3>Things cats love:</h3>\n        <ul>\n          <li>cat nip</li>\n          <li>laser pointers</li>\n          <li>lasagna</li>\n        </ul>\n        <figure>\n          <img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg\" alt=\"A slice of lasagna on a plate.\">\n          <figcaption>Cats <em>love</em> lasagna.</figcaption>  \n        </figure>\n        <h3>Top 3 things cats hate:</h3>\n        <ol>\n          <li>flea treatment</li>\n          <li>thunder</li>\n          <li>other cats</li>\n        </ol>\n        <figure>\n          \n        </figure>\n      </section>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your second <code>figure</code> element should have an opening tag. Opening tags have this syntax: <code>&#x3C;elementName></code>.</p>",
+      "testString": "assert(document.querySelectorAll('figure').length >= 2);"
+    },
+    {
+      "text": "<p>Your second <code>figure</code> element should have a closing tag. Closing tags have a <code>/</code> just after the <code>&#x3C;</code> character.</p>",
+      "testString": "assert(code.match(/<\\/figure>/g).length >= 2);"
+    },
+    {
+      "text": "<p>There should be a second <code>figure</code> element right above the second <code>section</code> element's closing tag. You have them in the wrong order.</p>",
+      "testString": "assert($('main > section')[1].lastElementChild.nodeName === 'FIGURE');"
+    },
+    {
+      "text": "<p>You should have a third <code>img</code> element nested in the <code>figure</code> element.</p>",
+      "testString": "const catsImg = document.querySelectorAll('figure > img')[1];\nassert(\n  catsImg\n);"
+    },
+    {
+      "text": "<p>The third image should have a <code>src</code> attribute set to <code>https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg</code>.</p>",
+      "testString": "const catsImg = document.querySelectorAll('figure > img')[1];\nassert(\n  catsImg &&\n    catsImg.getAttribute('src').toLowerCase() === 'https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg'\n);"
+    },
+    {
+      "text": "<p>Although you have set the new image's <code>src</code> to the correct URL, it is recommended to always surround the value of an attribute with quotation marks.</p>",
+      "testString": "assert(!/\\<img\\s+.+\\s+src\\s*=\\s*https:\\/\\/cdn\\.freecodecamp\\.org\\/curriculum\\/cat-photo-app\\/cats\\.jpg/.test(code));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Inside the <code>figure</code> element you just added, nest an <code>img</code> element with a <code>src</code> attribute set to <code>https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

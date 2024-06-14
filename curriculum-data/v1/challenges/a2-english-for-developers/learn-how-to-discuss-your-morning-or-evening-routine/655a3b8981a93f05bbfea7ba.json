@@ -1,0 +1,106 @@
+{
+  "id": "655a3b8981a93f05bbfea7ba",
+  "title": "Task 49",
+  "challengeType": 19,
+  "dashedName": "task-49",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the expert mean by <code>don't skip breakfast</code> and <code>you probably compensate later</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>Avoid missing breakfast as you might eat more later to make up for it</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Always have a large breakfast and a small lunch</p>",
+        "feedback": "<p>The focus is on not skipping breakfast and the tendency to eat more later, not necessarily on meal sizes.</p>"
+      },
+      {
+        "answer": "<p>Skip breakfast to save time in the morning</p>",
+        "feedback": "<p>The expert advises against skipping breakfast, not recommending it.</p>"
+      },
+      {
+        "answer": "<p>Eat the same amount of food at every meal</p>",
+        "feedback": "<p>Compensating later suggests changing how much you eat, not eating the same amount.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room1.png",
+      "characters": [
+        {
+          "character": "Expert",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 24.6,
+        "finishTimestamp": 38.88
+      }
+    },
+    "commands": [
+      {
+        "character": "Expert",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Expert",
+        "startTime": 1,
+        "finishTime": 7.06,
+        "dialogue": {
+          "text": "Another thing: don't skip breakfast. Breakfast gives you the energy to start the day.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "startTime": 7.48,
+        "finishTime": 12.98,
+        "dialogue": {
+          "text": "If you skip it, you probably compensate later by eating too much or you feel sluggish in the morning.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "startTime": 13.28,
+        "finishTime": 15.28,
+        "dialogue": {
+          "text": "Have a balanced breakfast instead.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "opacity": 0,
+        "startTime": 15.78
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>to skip</code> means to not do or not include something that you usually do or that should be done.</p>\n<p><code>Compensate</code> means to make up for something that is missed or lacking. It's often used to describe actions taken to balance out an absence or deficiency. For example:</p>\n<p><code>If you skip lunch, you might compensate by eating more at dinner.</code> (not having lunch and then eating more later to make up for it)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 50,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,53 @@
+{
+  "id": "6582267ef39f5047411c1743",
+  "title": "Step 6",
+  "challengeType": 20,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        5
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \n\n\nexpenses = []",
+      "error": null,
+      "seed": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \n\n\nexpenses = []"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should define a new function named <code>print_expenses</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import inspect    \n    inspect.isfunction(print_expenses)\n  `))\n})"
+    },
+    {
+      "text": "<p>Your <code>print_expenses</code> function should take a single parameter <code>expenses</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import inspect    \n    sig = str(inspect.signature(print_expenses))\n    sig == '(expenses)'\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Next, define a function named <code>print_expenses</code> that takes one parameter <code>expenses</code>. This function will later be used to display each expense in your list.</p>\n<p>Fill the body of your new function with a <code>pass</code> statement.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

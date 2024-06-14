@@ -1,0 +1,106 @@
+{
+  "id": "655a497a3afaf10b336746a5",
+  "title": "Task 51",
+  "challengeType": 19,
+  "dashedName": "task-51",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the expert imply with his conditional sentence?</p>",
+    "answers": [
+      {
+        "answer": "<p>Eating breakfast causes you to feel sluggish later</p>",
+        "feedback": "<p>The conditional sentence relates to skipping breakfast, not eating it.</p>"
+      },
+      {
+        "answer": "<p>Skipping breakfast leads to compensating later by overeating or feeling sluggish</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>You can skip breakfast without any consequences</p>",
+        "feedback": "<p>The expert implies that skipping breakfast does have consequences.</p>"
+      },
+      {
+        "answer": "<p>Having breakfast makes you compensate by eating less later</p>",
+        "feedback": "<p>The focus is on the consequences of skipping breakfast, not having it.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room1.png",
+      "characters": [
+        {
+          "character": "Expert",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 24.6,
+        "finishTimestamp": 38.88
+      }
+    },
+    "commands": [
+      {
+        "character": "Expert",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Expert",
+        "startTime": 1,
+        "finishTime": 7.06,
+        "dialogue": {
+          "text": "Another thing: don't skip breakfast. Breakfast gives you the energy to start the day.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "startTime": 7.48,
+        "finishTime": 12.98,
+        "dialogue": {
+          "text": "If you skip it, you probably compensate later by eating too much or you feel sluggish in the morning.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "startTime": 13.28,
+        "finishTime": 15.28,
+        "dialogue": {
+          "text": "Have a balanced breakfast instead.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "opacity": 0,
+        "startTime": 15.78
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Conditional sentences often use the word <code>if</code> to describe a situation that will cause a particular result. They typically consist of two parts: the condition (the <code>if</code> part) and the result. For example:</p>\n<p><code>If you study hard, you will pass the exam.</code> (condition: studying hard; result: passing the exam)</p>\n<p>In the dialogue, the expert uses a conditional sentence to explain the consequences of skipping breakfast.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 52,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

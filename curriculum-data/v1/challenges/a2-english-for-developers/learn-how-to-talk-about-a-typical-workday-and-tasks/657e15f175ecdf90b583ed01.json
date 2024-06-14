@@ -1,0 +1,88 @@
+{
+  "id": "657e15f175ecdf90b583ed01",
+  "title": "Task 17",
+  "challengeType": 19,
+  "dashedName": "task-17",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Tom asking Sophie about?</p>",
+    "answers": [
+      {
+        "answer": "<p>Sophie’s opinion on work.</p>",
+        "feedback": "<p>The question is specifically about breaks, not general work opinions.</p>"
+      },
+      {
+        "answer": "<p>If Sophie takes breaks.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>What Sophie does after work.</p>",
+        "feedback": "<p>The focus is on breaks during work, not after work.</p>"
+      },
+      {
+        "answer": "<p>Sophie’s favorite coffee.</p>",
+        "feedback": "<p>The question is about breaks, not specifically about coffee preferences.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 36.34,
+        "finishTimestamp": 37.34
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 2,
+        "dialogue": {
+          "text": "Do you take breaks?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 2.5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

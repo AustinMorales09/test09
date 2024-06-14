@@ -1,0 +1,45 @@
+{
+  "id": "6557c1dff9d170bc911fd82b",
+  "title": "Task 23",
+  "challengeType": 19,
+  "dashedName": "task-23",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence correctly uses the word <code>balanced</code> as an adjective?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>She balanced her diet with fruits and vegetables.</code></p>",
+        "feedback": "<p>Here, <code>balanced</code> is used as a verb, meaning she adjusted her diet in the past.</p>"
+      },
+      {
+        "answer": "<p><code>A balanced diet includes many types of food.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>He tries to balance his work and leisure time.</code></p>",
+        "feedback": "<p>In this sentence, <code>balance</code> is used as a verb in its base form.</p>"
+      },
+      {
+        "answer": "<p><code>Balance the books on the shelf carefully.</code></p>",
+        "feedback": "<p>This is an imperative sentence using <code>balance</code> as a verb.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>balanced</code> can be an adjective or the past tense of the verb <code>balance</code>. As an adjective, it describes something that is in a state of equilibrium or evenly distributed, like in <code>a balanced breakfast</code>.</p>\n<p>As a verb, <code>balance</code> (and its past tense <code>balanced</code>) means to keep or put something in a steady position so that it does not fall.</p>\n<p>In a sentence, if <code>balanced</code> is used before a noun (like <code>balanced diet</code>), it's an adjective.</p>\n<p>If it describes an action that happened in the past (like <code>She balanced the books</code>), it's a verb.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

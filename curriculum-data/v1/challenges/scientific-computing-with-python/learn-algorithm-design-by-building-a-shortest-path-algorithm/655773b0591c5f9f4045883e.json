@@ -1,0 +1,49 @@
+{
+  "id": "655773b0591c5f9f4045883e",
+  "title": "Step 24",
+  "challengeType": 20,
+  "dashedName": "step-24",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        10
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\n\ndef shortest_path():\n    pass",
+      "error": null,
+      "seed": "my_graph = {\n    'A': [('B', 3), ('D', 1)],\n    'B': [('A', 3), ('C', 4)],\n    'C': [('B', 4), ('D', 7)],\n    'D': [('A', 1), ('C', 7)]\n}\n\ndef shortest_path():\n    pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your function should take <code>graph</code> and <code>start</code> as the parameters, in this order.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import inspect\n    sig = str(inspect.signature(shortest_path))\n    sig == '(graph, start)'\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The algorithm will start at a specified node. Then it will explore the graph to find the shortest path between the starting node, or <em>source</em>, and all the other nodes.</p>\n<p>For that your function needs two parameters: <code>graph</code>, and <code>start</code>. Add them to your function declaration.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

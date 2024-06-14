@@ -1,0 +1,83 @@
+{
+  "id": "65819377e2ad2536b3d1e0c0",
+  "title": "Task 48",
+  "challengeType": 22,
+  "dashedName": "task-48",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It's _ when people are constantly _ to beat each other instead of _ together as a team.</p>",
+    "blanks": [
+      {
+        "answer": "frustrating",
+        "feedback": "<p>This word means feeling upset or annoyed because things are not going the way you want or expect.</p>"
+      },
+      {
+        "answer": "trying",
+        "feedback": "<p>This word means making an effort to do something, often something challenging.</p>"
+      },
+      {
+        "answer": "working",
+        "feedback": "<p>This word is about doing tasks, especially with others to achieve a common goal or finish a project.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 25.02,
+        "finishTimestamp": 29.38
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 5.36,
+        "dialogue": {
+          "text": "It's frustrating when people are constantly trying to beat each other instead of working together as a team.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 5.86
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When people <code>try to beat each other</code>, they are competing or trying to be better than the others, often in a way that is not friendly or cooperative.</p>\n<p><code>Working together as a team</code> means cooperating with others, sharing tasks, and helping each other to achieve a common goal. It's the opposite of competing; it's about helping and supporting.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 49,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

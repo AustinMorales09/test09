@@ -1,0 +1,49 @@
+{
+  "id": "655520c20cb1e6177b0641d6",
+  "title": "Step 79",
+  "challengeType": 20,
+  "dashedName": "step-79",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        9,
+        13
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira!'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction=1):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    final_message = ''\n\n    for char in message.lower():\n        # Append space to the message\n        if char.isalpha():\n            final_message += char\n        else:        \n            # Find the right key character to encode/decode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted/decrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            final_message += alphabet[new_index]\n    \n    return final_message\n    \nencryption = vigenere(text, custom_key)\nprint(encryption)\ndecryption = vigenere(encryption, custom_key, -1)\nprint(decryption)\n",
+      "error": null,
+      "seed": "text = 'Hello Zaira!'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction=1):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    final_message = ''\n\n    for char in message.lower():\n        # Append space to the message\n        if char.isalpha():\n            final_message += char\n        else:        \n            # Find the right key character to encode/decode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted/decrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            final_message += alphabet[new_index]\n    \n    return final_message\n    \nencryption = vigenere(text, custom_key)\nprint(encryption)\ndecryption = vigenere(encryption, custom_key, -1)\nprint(decryption)\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>not</code> operator in the condition of your <code>if</code> statement.</p>",
+      "testString": "({ test: () => assert.match(code, /if\\s+not\\s+char\\.isalpha\\s*\\(\\s*\\)\\s*:/) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>not</code> operator is used to negate an expression. When placed before a truthy value — a value that evaluates to <code>True</code> — it returns <code>False</code> and vice versa.</p>\n<p>Add the <code>not</code> operator at the beginning of the <code>if</code> condition to check if the character is not alphabetic.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 78,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

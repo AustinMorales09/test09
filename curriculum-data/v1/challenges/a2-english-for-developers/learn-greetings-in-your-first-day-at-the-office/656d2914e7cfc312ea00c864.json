@@ -1,0 +1,111 @@
+{
+  "id": "656d2914e7cfc312ea00c864",
+  "title": "Task 156",
+  "challengeType": 22,
+  "dashedName": "task-156",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>No, _ _. _ the good-old swipe at the door.</p>",
+    "blanks": [
+      {
+        "answer": "it",
+        "feedback": "<p>The first blank needs a negative contraction.</p>"
+      },
+      {
+        "answer": "isn't",
+        "feedback": "<p>The second blank is describing the card's functionality.</p>"
+      },
+      {
+        "answer": "It's",
+        "feedback": "<p>The third blank is describing the action needed to use the card.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 25,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 75,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 7.54,
+        "finishTimestamp": 12.24
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 2.3,
+        "dialogue": {
+          "text": "Is it contactless?",
+          "align": "right"
+        }
+      },
+      {
+        "character": "Jake",
+        "startTime": 2.5,
+        "finishTime": 5.2,
+        "dialogue": {
+          "text": "No, it isn't. It's the good-old swipe at the door.",
+          "align": "left"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 5.7
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Jake provides an answer using <code>it isn't</code>, which is a contraction of <code>it is not</code>. It's a way to negate or say <code>no</code> to a statement or question. Contractions are a way to combine words for more fluid speech. For example:</p>\n<p><code>Is the software updated?</code>\n<code>No, it isn't (it is not) updated.</code></p>\n<p>Jake also uses <code>it's</code>, the contraction for <code>it is</code>, when talking about the swipe card system. Let's see how well you understand these in the context of the dialogue.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 160,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

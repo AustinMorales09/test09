@@ -1,0 +1,109 @@
+{
+  "superblocks": [
+    {
+      "dashedName": "2022/responsive-web-design",
+      "public": true,
+      "title": "Responsive Web Design"
+    },
+    {
+      "dashedName": "data-analysis-with-python",
+      "public": true,
+      "title": "Data Analysis with Python"
+    },
+    {
+      "dashedName": "machine-learning-with-python",
+      "public": true,
+      "title": "Machine Learning with Python"
+    },
+    {
+      "dashedName": "responsive-web-design",
+      "public": true,
+      "title": "Legacy Responsive Web Design Challenges"
+    },
+    {
+      "dashedName": "python-for-everybody",
+      "public": true,
+      "title": "Legacy Python for Everybody"
+    },
+    {
+      "dashedName": "the-odin-project",
+      "public": false,
+      "title": "The Odin Project - freeCodeCamp Remix (Beta)"
+    },
+    {
+      "dashedName": "javascript-algorithms-and-data-structures-v8",
+      "public": false,
+      "title": "JavaScript Algorithms and Data Structures (Beta)"
+    },
+    {
+      "dashedName": "front-end-development-libraries",
+      "public": false,
+      "title": "Front End Development Libraries"
+    },
+    {
+      "dashedName": "data-visualization",
+      "public": false,
+      "title": "Data Visualization"
+    },
+    {
+      "dashedName": "relational-database",
+      "public": false,
+      "title": "Relational Database"
+    },
+    {
+      "dashedName": "back-end-development-and-apis",
+      "public": false,
+      "title": "Back End Development and APIs"
+    },
+    {
+      "dashedName": "quality-assurance",
+      "public": false,
+      "title": "Quality Assurance"
+    },
+    {
+      "dashedName": "scientific-computing-with-python",
+      "public": false,
+      "title": "Scientific Computing with Python (Beta)"
+    },
+    {
+      "dashedName": "information-security",
+      "public": false,
+      "title": "Information Security"
+    },
+    {
+      "dashedName": "college-algebra-with-python",
+      "public": false,
+      "title": "College Algebra with Python"
+    },
+    {
+      "dashedName": "a2-english-for-developers",
+      "public": false,
+      "title": "A2 English for Developers (Beta)"
+    },
+    {
+      "dashedName": "foundational-c-sharp-with-microsoft",
+      "public": false,
+      "title": "(New) Foundational C# with Microsoft"
+    },
+    {
+      "dashedName": "coding-interview-prep",
+      "public": false,
+      "title": "Coding Interview Prep"
+    },
+    {
+      "dashedName": "project-euler",
+      "public": false,
+      "title": "Project Euler"
+    },
+    {
+      "dashedName": "rosetta-code",
+      "public": false,
+      "title": "Rosetta Code"
+    },
+    {
+      "dashedName": "javascript-algorithms-and-data-structures",
+      "public": false,
+      "title": "Legacy JavaScript Algorithms and Data Structures"
+    }
+  ]
+}

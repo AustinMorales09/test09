@@ -1,0 +1,88 @@
+{
+  "id": "6617f517c76ecc72b9e6260b",
+  "title": "Task 12",
+  "challengeType": 19,
+  "dashedName": "task-12",
+  "solutions": [],
+  "question": {
+    "text": "<p>How can AI help doctors?</p>",
+    "answers": [
+      {
+        "answer": "<p>By talking to the patients to calm them down</p>",
+        "feedback": "<p>Even though it is possible to use AIs to chat, this is not what Tom mentions.</p>"
+      },
+      {
+        "answer": "<p>By giving instructions to doctors on how to perform surgeries</p>",
+        "feedback": "<p>It is expected that doctors are already trained to perform surgeries beforehand.</p>"
+      },
+      {
+        "answer": "<p>By distracting the patients while doctors perform the surgeries</p>",
+        "feedback": "<p>It is possible to use AI as a means of entertainment, but that is not what Tom mentions.</p>"
+      },
+      {
+        "answer": "<p>By analyzing medical data and helping doctors in surgeries</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 21.62,
+        "finishTimestamp": 26.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.84,
+        "dialogue": {
+          "text": "In healthcare, it's used to analyze medical data and even assist in surgeries.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 6.34
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to what Tom says related to AIs in healthcare and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

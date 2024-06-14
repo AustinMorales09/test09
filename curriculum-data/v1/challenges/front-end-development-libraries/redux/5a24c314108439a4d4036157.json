@@ -1,0 +1,97 @@
+{
+  "id": "5a24c314108439a4d4036157",
+  "title": "Write a Counter with Redux",
+  "challengeType": 6,
+  "forumTopicId": 301453,
+  "dashedName": "write-a-counter-with-redux",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const _store = Redux.createStore(counterReducer)",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const INCREMENT = null; // Define a constant for increment action types\nconst DECREMENT = null; // Define a constant for decrement action types\n\nconst counterReducer = null; // Define the counter reducer which will increment or decrement the state based on the action it receives\n\nconst incAction = null; // Define an action creator for incrementing\n\nconst decAction = null; // Define an action creator for decrementing\n\nconst store = null; // Define the Redux store here, passing in your reducers",
+      "error": null,
+      "seed": "const INCREMENT = null; // Define a constant for increment action types\nconst DECREMENT = null; // Define a constant for decrement action types\n\nconst counterReducer = null; // Define the counter reducer which will increment or decrement the state based on the action it receives\n\nconst incAction = null; // Define an action creator for incrementing\n\nconst decAction = null; // Define an action creator for decrementing\n\nconst store = null; // Define the Redux store here, passing in your reducers"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const INCREMENT = 'INCREMENT';\nconst DECREMENT = 'DECREMENT';\n\nconst counterReducer = (state = 0, action) => {\n  switch(action.type) {\n    case INCREMENT:\n      return state + 1;\n    case DECREMENT:\n      return state - 1;\n    default:\n      return state;\n  }\n};\n\nconst incAction = () => {\n  return {\n    type: INCREMENT\n  }\n};\n\nconst decAction = () => {\n  return {\n    type: DECREMENT\n  }\n};\n\nconst store = Redux.createStore(counterReducer);",
+        "error": null,
+        "seed": "const INCREMENT = 'INCREMENT';\nconst DECREMENT = 'DECREMENT';\n\nconst counterReducer = (state = 0, action) => {\n  switch(action.type) {\n    case INCREMENT:\n      return state + 1;\n    case DECREMENT:\n      return state - 1;\n    default:\n      return state;\n  }\n};\n\nconst incAction = () => {\n  return {\n    type: INCREMENT\n  }\n};\n\nconst decAction = () => {\n  return {\n    type: DECREMENT\n  }\n};\n\nconst store = Redux.createStore(counterReducer);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The action creator <code>incAction</code> should return an action object with <code>type</code> equal to the value of <code>INCREMENT</code></p>",
+      "testString": "assert(incAction().type === INCREMENT);"
+    },
+    {
+      "text": "<p>The action creator <code>decAction</code> should return an action object with <code>type</code> equal to the value of <code>DECREMENT</code></p>",
+      "testString": "assert(decAction().type === DECREMENT);"
+    },
+    {
+      "text": "<p>Running <code>store.getState()</code> should return a number</p>",
+      "testString": "assert(typeof store.getState() === 'number');"
+    },
+    {
+      "text": "<p>The Redux store should initialize with a <code>state</code> of 0.</p>",
+      "testString": "assert(_store.getState() === 0);"
+    },
+    {
+      "text": "<p>Dispatching <code>incAction</code> on the Redux store should increment the <code>state</code> by 1.</p>",
+      "testString": "assert(\n  (function () {\n    const initialState = _store.getState();\n    _store.dispatch(incAction());\n    const incState = _store.getState();\n    return initialState + 1 === incState;\n  })()\n);"
+    },
+    {
+      "text": "<p>Dispatching <code>decAction</code> on the Redux store should decrement the <code>state</code> by 1.</p>",
+      "testString": "assert(\n  (function () {\n    const initialState = _store.getState();\n    _store.dispatch(decAction());\n    const decState = _store.getState();\n    return initialState - 1 === decState;\n  })()\n);"
+    },
+    {
+      "text": "<p><code>counterReducer</code> should be a function</p>",
+      "testString": "assert(typeof counterReducer === 'function');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now you've learned all the core principles of Redux! You've seen how to create actions and action creators, create a Redux store, dispatch your actions against the store, and design state updates with pure reducers. You've even seen how to manage complex state with reducer composition and handle asynchronous actions. These examples are simplistic, but these concepts are the core principles of Redux. If you understand them well, you're ready to start building your own Redux app. The next challenges cover some of the details regarding <code>state</code> immutability, but first, here's a review of everything you've learned so far.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>In this lesson, you'll implement a simple counter with Redux from scratch. The basics are provided in the code editor, but you'll have to fill in the details! Use the names that are provided and define <code>incAction</code> and <code>decAction</code> action creators, the <code>counterReducer()</code>, <code>INCREMENT</code> and <code>DECREMENT</code> action types, and finally the Redux <code>store</code>. Once you're finished you should be able to dispatch <code>INCREMENT</code> or <code>DECREMENT</code> actions to increment or decrement the state held in the <code>store</code>. Good luck building your first Redux app!</p>\n</section>",
+  "translationPending": false,
+  "block": "redux",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 12,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"
+    },
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.2.0/redux-thunk.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

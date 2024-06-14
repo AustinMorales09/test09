@@ -1,0 +1,116 @@
+{
+  "id": "657dca763bc23c5fc3398d95",
+  "title": "Task 107",
+  "challengeType": 19,
+  "dashedName": "task-107",
+  "solutions": [],
+  "question": {
+    "text": "<p>When does Sophie think Tom will attend his first meeting?</p>",
+    "answers": [
+      {
+        "answer": "<p>Definitely next Monday.</p>",
+        "feedback": "<p><code>Definitely</code> is too certain compared to <code>probably.</code></p>"
+      },
+      {
+        "answer": "<p>Maybe in two weeks.</p>",
+        "feedback": "<p><code>Maybe in two weeks</code> suggests less certainty and a longer timeframe than indicated by <code>probably.</code></p>"
+      },
+      {
+        "answer": "<p>Next Monday, most likely.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>On Friday.</p>",
+        "feedback": "<p><code>On Friday</code> is not mentioned and does not align with <code>probably next Monday.</code></p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 55.22,
+        "finishTimestamp": 58.68
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.18,
+        "dialogue": {
+          "text": "I can't wait for the first meeting I'll attend.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 3.18
+      },
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 3.18
+      },
+      {
+        "character": "Sophie",
+        "startTime": 3.18,
+        "finishTime": 4.46,
+        "dialogue": {
+          "text": "Probably next Monday.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Probably</code> is used when you think something is likely to happen, but you're not 100% sure.</p>\n<p>For example, you could say: <code>The code will probably run without errors after the update</code>, because you believe that, but there's still a small chance of an issue.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 110,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

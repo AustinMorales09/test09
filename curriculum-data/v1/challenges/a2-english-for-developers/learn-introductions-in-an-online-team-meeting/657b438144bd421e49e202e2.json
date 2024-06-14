@@ -1,0 +1,79 @@
+{
+  "id": "657b438144bd421e49e202e2",
+  "title": "Task 4",
+  "challengeType": 22,
+  "dashedName": "task-4",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I'm a _ and I love creating _ that helps people in their daily activities.</p>",
+    "blanks": [
+      {
+        "answer": "programmer",
+        "feedback": "<p><code>Program</code> is a word that ends in consonant, vowel, consonant <code>(r a m)</code>, in those cases what you want to do is to repeat the last consonant , in this case <code>m</code>, and add <code>er</code>. Now it should work.</p>"
+      },
+      {
+        "answer": "software",
+        "feedback": "<p>This word refers to the programs and other operating information used by a computer.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.44,
+        "finishTimestamp": 8.6
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 5.16,
+        "dialogue": {
+          "text": "I'm a programmer and I love creating software that helps people in their daily activities.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 5.66
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In English, many professions are named by adding <code>er</code> to the end of a word that describes what the person does.</p>\n<p>For example, a <code>programmer</code> is someone who <code>programs</code>, a <code>developer</code> is someone who <code>develops</code> software or systems. Another example is a <code>designer</code>, who is a person that <code>designs</code> websites, graphics, or products.</p>\n<p>By adding <code>er</code> to a verb, you create a noun that describes a person's job. It doesn´t apply to all professions but you'll see this pattern in many.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,78 @@
+{
+  "id": "587d7db1367417b2b2512b86",
+  "title": "Reset an Inherited Constructor Property",
+  "challengeType": 1,
+  "forumTopicId": 301324,
+  "dashedName": "reset-an-inherited-constructor-property",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function Animal() { }\nfunction Bird() { }\nfunction Dog() { }\n\nBird.prototype = Object.create(Animal.prototype);\nDog.prototype = Object.create(Animal.prototype);\n\n// Only change code below this line\n\n\n\nlet duck = new Bird();\nlet beagle = new Dog();",
+      "error": null,
+      "seed": "function Animal() { }\nfunction Bird() { }\nfunction Dog() { }\n\nBird.prototype = Object.create(Animal.prototype);\nDog.prototype = Object.create(Animal.prototype);\n\n// Only change code below this line\n\n\n\nlet duck = new Bird();\nlet beagle = new Dog();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function Animal() { }\nfunction Bird() { }\nfunction Dog() { }\nBird.prototype = Object.create(Animal.prototype);\nDog.prototype = Object.create(Animal.prototype);\nDog.prototype.constructor = Dog;\nBird.prototype.constructor = Bird;\nlet duck = new Bird();\nlet beagle = new Dog();",
+        "error": null,
+        "seed": "function Animal() { }\nfunction Bird() { }\nfunction Dog() { }\nBird.prototype = Object.create(Animal.prototype);\nDog.prototype = Object.create(Animal.prototype);\nDog.prototype.constructor = Dog;\nBird.prototype.constructor = Bird;\nlet duck = new Bird();\nlet beagle = new Dog();"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>Bird.prototype</code> should be an instance of <code>Animal</code>.</p>",
+      "testString": "assert(Animal.prototype.isPrototypeOf(Bird.prototype));"
+    },
+    {
+      "text": "<p><code>duck.constructor</code> should return <code>Bird</code>.</p>",
+      "testString": "assert(duck.constructor === Bird);"
+    },
+    {
+      "text": "<p><code>Dog.prototype</code> should be an instance of <code>Animal</code>.</p>",
+      "testString": "assert(Animal.prototype.isPrototypeOf(Dog.prototype));"
+    },
+    {
+      "text": "<p><code>beagle.constructor</code> should return <code>Dog</code>.</p>",
+      "testString": "assert(beagle.constructor === Dog);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When an object inherits its <code>prototype</code> from another object, it also inherits the supertype's constructor property.</p>\n<p>Here's an example:</p>\n<pre><code class=\"language-js\">function Bird() { }\nBird.prototype = Object.create(Animal.prototype);\nlet duck = new Bird();\nduck.constructor\n</code></pre>\n<p>But <code>duck</code> and all instances of <code>Bird</code> should show that they were constructed by <code>Bird</code> and not <code>Animal</code>. To do so, you can manually set the constructor property of <code>Bird</code> to the <code>Bird</code> object:</p>\n<pre><code class=\"language-js\">Bird.prototype.constructor = Bird;\nduck.constructor\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Fix the code so <code>duck.constructor</code> and <code>beagle.constructor</code> return their respective constructors.</p>\n</section>",
+  "translationPending": false,
+  "block": "object-oriented-programming",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

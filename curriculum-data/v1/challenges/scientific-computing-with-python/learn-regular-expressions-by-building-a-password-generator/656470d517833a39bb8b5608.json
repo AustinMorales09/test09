@@ -1,0 +1,49 @@
+{
+  "id": "656470d517833a39bb8b5608",
+  "title": "Step 9",
+  "challengeType": 20,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        13,
+        15
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import random\nimport string\n\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n\n# Combine all characters\nall_characters = letters + digits + symbols\n\nprint(all_characters)\n",
+      "error": null,
+      "seed": "import random\nimport string\n\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n\n# Combine all characters\nall_characters = letters + digits + symbols\n\nprint(all_characters)\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should print the result of calling <code>random.random()</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /^print\\s*\\(\\s*random\\.random\\s*\\(\\s*\\)\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>random</code> module contains a pseudo-random number generator. Most of its functionalities depend on the <code>random()</code> function, which returns a floating point number in the range between <code>0.0</code> (inclusive) and <code>1.0</code> (exclusive).</p>\n<p>Call the <code>random()</code> function from the <code>random</code> module and print the result.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

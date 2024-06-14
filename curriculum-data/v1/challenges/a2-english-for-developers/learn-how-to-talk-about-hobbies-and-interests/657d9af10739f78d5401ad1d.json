@@ -1,0 +1,88 @@
+{
+  "id": "657d9af10739f78d5401ad1d",
+  "title": "Task 14",
+  "challengeType": 19,
+  "dashedName": "task-14",
+  "solutions": [],
+  "question": {
+    "text": "<p>Select the sentence that correctly uses <code>as</code>:</p>",
+    "answers": [
+      {
+        "answer": "<p><code>This is a small blanket. It takes as a small space in your bag.</code></p>",
+        "feedback": "<p>This sentence incorrectly uses <code>as</code>. The second sentence should be <code>It takes a small space in your bag.</code></p>"
+      },
+      {
+        "answer": "<p><code>They play music as a band, performing in local cafes.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>He writes as his job at the newspaper, focusing on sports.</code></p>",
+        "feedback": "<p>This sentence misuses <code>as</code>. It should be <code>He writes for his job at the newspaper, focusing on sports.</code></p>"
+      },
+      {
+        "answer": "<p><code>I use my phone as to make calls.</code></p>",
+        "feedback": "<p>This sentence is incorrect because <code>as</code> is not needed with <code>to</code> in this context. The correct sentence should be: <code>I use my phone to make calls</code>.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.38,
+        "finishTimestamp": 19.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.52,
+        "dialogue": {
+          "text": "For nearly a decade now. It started as a hobby, but it's become a significant part of my life.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 7.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>as</code> is often used to describe the role, function, or manner of something. In the context of activities, <code>as</code> can indicate that something is done in a particular way or style, or for enjoyment rather than professionally, as in Bob's sentence, <code>It started as a hobby</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

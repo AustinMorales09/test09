@@ -1,0 +1,88 @@
+{
+  "id": "6579de58f1da5a2b4c6ea741",
+  "title": "Task 43",
+  "challengeType": 19,
+  "dashedName": "task-43",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Bob suggesting in his statement?</p>",
+    "answers": [
+      {
+        "answer": "<p>To immediately start working on the code individually</p>",
+        "feedback": "<p>Bob's suggestion is for a collaborative session, not individual work.</p>"
+      },
+      {
+        "answer": "<p>To postpone discussing the coding issue</p>",
+        "feedback": "<p>Bob proposes a session after the meeting, not delaying the discussion.</p>"
+      },
+      {
+        "answer": "<p>To cancel the code review session entirely</p>",
+        "feedback": "<p>Bob's statement is about planning a session, not canceling it.</p>"
+      },
+      {
+        "answer": "<p>To have a group session to share and discuss ideas and solutions</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.28,
+        "finishTimestamp": 22.72
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.44,
+        "dialogue": {
+          "text": "We might want to set up a short code review session after the meeting to exchange ideas and solutions.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.94
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Bob's suggestion is about organizing a collaborative code review session. This highlights the importance of teamwork and shared knowledge in professional environments.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 44,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

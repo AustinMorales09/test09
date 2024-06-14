@@ -1,0 +1,88 @@
+{
+  "id": "65a534f9fdc15f01ed67d860",
+  "title": "Task 114",
+  "challengeType": 19,
+  "dashedName": "task-114",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Tom want to know from Sophie?</p>",
+    "answers": [
+      {
+        "answer": "<p>Sophie's favorite software tools</p>",
+        "feedback": "<p>Focus on the nature of Tom's inquiry related to Sophie's motivations.</p>"
+      },
+      {
+        "answer": "<p>Sophie's motivation for contributing to open-source projects</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>How Sophie spends her weekends</p>",
+        "feedback": "<p>Consider if Tom's question is about Sophie's general activities or something more specific.</p>"
+      },
+      {
+        "answer": "<p>Sophie's technical skills</p>",
+        "feedback": "<p>Think about whether Tom is asking about skills or the reasons behind an activity.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 5.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 6.92,
+        "dialogue": {
+          "text": "Hey, Sophie, what motivates you to work on open-source software projects in your free time?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 7.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to Tom and asnwer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 118,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

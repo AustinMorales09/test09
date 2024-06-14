@@ -1,0 +1,119 @@
+{
+  "id": "63ee3fe4381756f9716727f0",
+  "title": "CSS Foundations Exercise B",
+  "challengeType": 14,
+  "dashedName": "css-foundations-exercise-b",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Class and ID Selectors</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <p>Number 1 - I'm a class!</p>\n    <div>Number 2 - I'm one ID.</div>\n    <p>Number 3 - I'm a class, but cooler!</p>\n    <div>Number 4 - I'm another ID.</div>\n    <p>Number 5 - I'm a class!</p>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Class and ID Selectors</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <p>Number 1 - I'm a class!</p>\n    <div>Number 2 - I'm one ID.</div>\n    <p>Number 3 - I'm a class, but cooler!</p>\n    <div>Number 4 - I'm another ID.</div>\n    <p>Number 5 - I'm a class!</p>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Class and ID Selectors</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <p class=\"odd\">Number 1 - I'm a class!</p>\n    <div id=\"two\">Number 2 - I'm one ID.</div>\n    <p class=\"odd adjust-font-size\">Number 3 - I'm a class, but cooler!</p>\n    <div id=\"four\" class=\"adjust-font-size\">Number 4 - I'm another ID.</div>\n    <p class=\"odd\">Number 5 - I'm a class!</p>\n  </body>\n</html>",
+        "error": null,
+        "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Class and ID Selectors</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <p class=\"odd\">Number 1 - I'm a class!</p>\n    <div id=\"two\">Number 2 - I'm one ID.</div>\n    <p class=\"odd adjust-font-size\">Number 3 - I'm a class, but cooler!</p>\n    <div id=\"four\" class=\"adjust-font-size\">Number 4 - I'm another ID.</div>\n    <p class=\"odd\">Number 5 - I'm a class!</p>\n  </body>\n</html>"
+      },
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "styles.css"
+        ],
+        "name": "styles",
+        "ext": "css",
+        "path": "styles.css",
+        "fileKey": "stylescss",
+        "contents": ".odd {\n  background-color: yellow;\n  font-family: Verdana, \"DejaVu Sans\", sans-serif;\n}\n\n.adjust-font-size {\n  font-size: 24px;\n}\n\n#two {\n  color: blue;\n  font-size: 36px;\n}\n\n#four {\n  background-color: red;\n  font-weight: bold;\n}",
+        "error": null,
+        "seed": ".odd {\n  background-color: yellow;\n  font-family: Verdana, \"DejaVu Sans\", sans-serif;\n}\n\n.adjust-font-size {\n  font-size: 24px;\n}\n\n#two {\n  color: blue;\n  font-size: 36px;\n}\n\n#four {\n  background-color: red;\n  font-weight: bold;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Every odd element should have a <code>class</code> attribute.</p>",
+      "testString": "const p = Array.from(document.querySelectorAll('P'));\n\nconst everyPHasClass = p?.every((paragraph) => paragraph.classList.length > 0);\n\nassert(everyPHasClass);"
+    },
+    {
+      "text": "<p>Your odd elements should have a <code>background-color</code> of <code>yellow</code>.</p>",
+      "testString": "const p = Array.from(document.querySelectorAll('P'));\n\nconst everyPHasBackgroundColor = p?.every((paragraph) => {\n  const style = getComputedStyle(paragraph);\n  \n  return style?.backgroundColor === 'rgb(255, 255, 0)';\n})\n\nassert.equal(everyPHasBackgroundColor, true);"
+    },
+    {
+      "text": "<p>Your second element should have <code>blue</code> text and a <code>font-size</code> of <code>36px</code>.</p>",
+      "testString": "const secondElementId = document.querySelectorAll('div')?.[0]?.id;\n\nconst style = new __helpers.CSSHelp(document).getStyle(`#${secondElementId}`);\n\nassert.equal(style?.color, 'blue');\nassert.equal(style?.fontSize, '36px');"
+    },
+    {
+      "text": "<p>Your third element should have text and a <code>font-size</code> of <code>24px</code>.</p>",
+      "testString": "const thirdElement = document.querySelectorAll('p')?.[1];\n\nassert(thirdElement?.innerText?.length > 0);\n\nconst thirdElementClasses = Array.from(thirdElement?.classList?.values());\n\nassert(thirdElementClasses.some(thirdElementClass => {\n\n  const style = new __helpers.CSSHelp(document).getStyle(`.${thirdElementClass}`);\n\n  return style?.fontSize === '24px';\n\n}))\n"
+    },
+    {
+      "text": "<p>The fourth element should have a <code>font-size</code> of <code>24px</code>.</p>",
+      "testString": "const fourthElementClass = document.querySelectorAll('div')?.[1]?.classList[0];\n\nconst style = new __helpers.CSSHelp(document).getStyle(`.${fourthElementClass}`);\n\nassert(style?.fontSize === '24px');"
+    },
+    {
+      "text": "<p>The fourth element should have a <code>red</code> <code>background-color</code>.</p>",
+      "testString": "const fourthElement = document.querySelectorAll('div')?.[1]?.id;\n\nconst style = new __helpers.CSSHelp(document).getStyle(`#${fourthElement}`);\n\nassert(style?.backgroundColor === 'red');"
+    },
+    {
+      "text": "<p>The fourth element should have a <code>font-weight</code> of <code>bold</code>.</p>",
+      "testString": "const fourthElement = document.querySelectorAll('div')?.[1]?.id;\n\nconst style = new __helpers.CSSHelp(document).getStyle(`#${fourthElement}`);\n\nassert(style?.fontWeight === 'bold');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><strong>Objective:</strong> There are several elements in the HTML file provided, which you will have to add either class or ID attributes to. You will then have to add rules in the CSS file provided using the correct selector syntax.</p>\n<h2>User Stories</h2>\n<ol>\n<li>\n<p>You should see a <code>yellow</code> background for all odd numbered elements in the list.</p>\n</li>\n<li>\n<p>You should have a <code>class</code> selector used for all odd numbered elements in the list.</p>\n</li>\n<li>\n<p>You should see that the second element in the list has <code>blue</code> text and a <code>font-size</code> of <code>36px</code>.</p>\n</li>\n<li>\n<p>The <code>font-size</code> and text color on the second element should be set by using an <code>id</code> attribute.</p>\n</li>\n<li>\n<p>You should see that the third element in the list has a <code>font-size</code> of <code>24px</code>.</p>\n</li>\n<li>\n<p>The <code>font-size</code> on the third element should be set by using a <code>class</code> attribute.</p>\n</li>\n<li>\n<p>You should see that the fourth element in the list has a <code>red</code> background, a <code>font-size</code> of <code>24px</code>, and a <code>font-weight</code> of <code>bold</code>.</p>\n</li>\n<li>\n<p>The <code>font-size</code> of the fourth element should be set with a <code>class</code> attribute. The <code>font-weight</code> and the color should be set with an <code>id</code> attribute.</p>\n</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-css-foundations-projects",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

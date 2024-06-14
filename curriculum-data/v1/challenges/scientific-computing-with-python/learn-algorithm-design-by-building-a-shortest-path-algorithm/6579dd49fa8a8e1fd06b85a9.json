@@ -1,0 +1,53 @@
+{
+  "id": "6579dd49fa8a8e1fd06b85a9",
+  "title": "Step 15",
+  "challengeType": 20,
+  "dashedName": "step-15",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}",
+      "error": null,
+      "seed": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should rename your <code>copper</code> dictionary into <code>my_graph</code>.</p>",
+      "testString": "({ test: () => assert(__userGlobals.has(\"my_graph\")) })"
+    },
+    {
+      "text": "<p>Your <code>my_graph</code> variable should be a dictionary.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    type(my_graph) is dict \n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Graphs are data structures representing relations between pairs of elements.\nThese elements, called <em>nodes</em>, can be real-life objects, entities, points in space or others. The connections between the nodes are called the <em>edges</em>.</p>\n<p>Here's a visual representation of a graph:</p>\n<img class=\"img-responsive center-block\" alt=\"a weighted graph with 6 nodes\" src=\"https://cdn.freecodecamp.org/curriculum/python/graph1-example.png\" style=\"background-color: white; height: 350px; width: auto; padding: 10px;\">\n<p>Rename the <code>copper</code> dictionary into <code>my_graph</code>. This will represent the graph to test your algorithm.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

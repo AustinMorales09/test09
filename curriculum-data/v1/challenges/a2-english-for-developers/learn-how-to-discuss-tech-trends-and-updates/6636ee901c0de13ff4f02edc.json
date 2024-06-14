@@ -1,0 +1,100 @@
+{
+  "id": "6636ee901c0de13ff4f02edc",
+  "title": "Task 27",
+  "challengeType": 22,
+  "dashedName": "task-27",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Serverless computing is an interesting concept, Tom. It's when we _ _ _ _ _, like having computer helpers.</p>",
+    "blanks": [
+      {
+        "answer": "run",
+        "feedback": "<p>This word indicates the action of executing or operating something.</p>"
+      },
+      {
+        "answer": "code",
+        "feedback": "<p>This is what is being executed or operated. It consists of the commands and instructions written for computers.</p>"
+      },
+      {
+        "answer": "without",
+        "feedback": "<p>This word is used to indicate the absence of something.</p>"
+      },
+      {
+        "answer": "managing",
+        "feedback": "<p>This refers to the act of controlling or organizing something, which in serverless computing, is not done by the coder.</p>"
+      },
+      {
+        "answer": "servers",
+        "feedback": "<p>These are the systems or machines that manage network resources, which are not actively managed by the user in serverless computing.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Lisa",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.62,
+        "finishTimestamp": 11.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Lisa",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Lisa",
+        "startTime": 1,
+        "finishTime": 3.58,
+        "dialogue": {
+          "text": "Serverless computing is an interesting concept, Tom.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "startTime": 4.14,
+        "finishTime": 8,
+        "dialogue": {
+          "text": "It's when we run code without managing servers, like having computer helpers.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "opacity": 0,
+        "startTime": 8.5
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The term <code>run code</code> refers to the action of executing or operating a program or script by a computer. To <code>run</code> in this context means to start the process and see it through until the program does what it's designed to do, whether it's calculating numbers, sorting data, or anything else.</p>\n<p>The phrase <code>run code without managing servers</code> refers to executing computer programs or applications without the need to handle the physical or virtual servers on which the code runs. This is a key aspect of serverless computing, where the cloud provider manages the servers, allowing developers to focus more on coding than on server management.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

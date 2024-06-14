@@ -1,0 +1,53 @@
+{
+  "id": "65c4f013851cefd1a4fe4c96",
+  "title": "Step 3",
+  "challengeType": 20,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class TreeNode:\n    def __init__():\n        pass",
+      "error": null,
+      "seed": "class TreeNode:\n    def __init__():\n        pass"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add the <code>self</code> parameter to the method.</p>",
+      "testString": "({ test: () => assert.match(code, /def\\s+__init__\\s*\\(\\s*self\\s*/) });"
+    },
+    {
+      "text": "<p>You should add the <code>key</code> parameter to the method.</p>",
+      "testString": "({\n  test: () => assert.match(code, /def\\s+__init__\\s*\\(\\s*self\\s*,\\s*key\\s*\\)/)\n});"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>__init__</code> method takes two parameters: <code>self</code> (which represents the instance of the class being created) and <code>key</code> (the value to be stored in the node). Add those two parameters to the <code>__init__()</code> method.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

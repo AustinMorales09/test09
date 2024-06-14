@@ -1,0 +1,88 @@
+{
+  "id": "6557dc1aa6be93c1eb4e9efb",
+  "title": "Task 29",
+  "challengeType": 19,
+  "dashedName": "task-29",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah imply by using <code>if</code> in her statement about checking emails and messages?</p>",
+    "answers": [
+      {
+        "answer": "<p>She always finds urgent updates from her team</p>",
+        "feedback": "<p><code>If</code> doesn't suggest certainty of finding urgent updates.</p>"
+      },
+      {
+        "answer": "<p>Sometimes there are urgent updates, sometimes not</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She never checks her emails and messages</p>",
+        "feedback": "<p>Sarah actually states that she does check her emails and messages.</p>"
+      },
+      {
+        "answer": "<p>Checking emails is not part of her routine</p>",
+        "feedback": "<p>Sarah mentions that checking emails and messages is part of her routine.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 55.08,
+        "finishTimestamp": 60.78
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.7,
+        "dialogue": {
+          "text": "Anyway, before leaving for work, I like to check my emails and messages to see if there are any urgent updates from the team.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 7.2
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>if</code> is often used in conditional statements to talk about a possible situation and its consequences. For example:</p>\n<p><code>If it rains, I will bring an umbrella.</code>\n(The action of bringing an umbrella depends on the possibility of rain.)</p>\n<p><code>If you need help, just ask.</code>\n(The offer to help is conditional on the other person needing it.)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 29,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

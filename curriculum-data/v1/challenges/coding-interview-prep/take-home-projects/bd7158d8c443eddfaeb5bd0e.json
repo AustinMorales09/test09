@@ -1,0 +1,42 @@
+{
+  "id": "bd7158d8c443eddfaeb5bd0e",
+  "title": "Chart the Stock Market",
+  "challengeType": 4,
+  "forumTopicId": 302363,
+  "dashedName": "chart-the-stock-market",
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Build a full stack JavaScript app that is functionally similar to this: <a href=\"https://chart-the-stock-market.freecodecamp.rocks/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">https://chart-the-stock-market.freecodecamp.rocks/</a>. Use a site builder of your choice to complete the project.</p>\n<p>Here are the specific user stories you should implement for this project:</p>\n<p><strong>User Story:</strong> You can view a graph displaying the recent trend lines for each added stock.</p>\n<p><strong>User Story:</strong> You can add new stocks by their symbol name.</p>\n<p><strong>User Story:</strong> You can remove stocks.</p>\n<p><strong>User Story:</strong> You can see changes in real-time when any other user adds or removes a stock. For this you will need to use Web Sockets.</p>\n<p>When you are done, make sure a working demo of your project is hosted somewhere public. Then submit the URL to it in the Solution Link field. Optionally, also submit a link to your project's source code in the GitHub Link field.</p>\n</section>",
+  "translationPending": false,
+  "block": "take-home-projects",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

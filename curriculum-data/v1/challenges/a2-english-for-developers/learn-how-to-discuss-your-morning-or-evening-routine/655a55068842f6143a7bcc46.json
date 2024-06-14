@@ -1,0 +1,75 @@
+{
+  "id": "655a55068842f6143a7bcc46",
+  "title": "Task 59",
+  "challengeType": 22,
+  "dashedName": "task-59",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Wow, thanks! _ try to include these changes into my morning routine.</p>",
+    "blanks": [
+      {
+        "answer": "I'll",
+        "feedback": "<p>Sophie uses the contraction <code>I'll</code>. <code>I</code> should be capitalized.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room1.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 72.36,
+        "finishTimestamp": 76.1
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.74,
+        "dialogue": {
+          "text": "Wow, thanks. I'll try to include these changes into my morning routine.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 5.24
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to Sophie's statement and identify if she uses <code>I will</code> or <code>I'll</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 60,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

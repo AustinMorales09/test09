@@ -1,0 +1,79 @@
+{
+  "id": "65daab9b713d3e6e6272c8bf",
+  "title": "Task 97",
+  "challengeType": 22,
+  "dashedName": "task-97",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I also don’t want to neglect my health, so two months ago I started _ _.</p>",
+    "blanks": [
+      {
+        "answer": "jogging",
+        "feedback": "<p>This is the <code>-ing</code> form of the verb <code>jog</code>, used after <code>started</code> to show the action Sophie began to do.</p>"
+      },
+      {
+        "answer": "regularly",
+        "feedback": "<p>This adverb describes how Sophie does the action - in a usual, often way.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 16.4,
+        "finishTimestamp": 20.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.04,
+        "dialogue": {
+          "text": "I also don't want to neglect my health, so two months ago I started jogging regularly.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 5.54
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>jog</code> means to run at a slow, steady pace. The word <code>start</code> can be followed by a verb ending in <code>-ing</code> (like <code>jogging</code>) or with <code>to</code> followed by the base form of the verb (like <code>to jog</code>). This shows the beginning of an action.</p>\n<p>Adverbs describe how actions are done. They are often formed by adding <code>-ly</code> to adjectives. For example, <code>regular</code> is an adjective that means usual or done often. When you add <code>-ly</code>, it becomes <code>regularly</code>, an adverb that means doing something in a usual or frequent manner.</p>\n<p>Examples:</p>\n<p><code>He has a regular exercise schedule.</code>, or <code>He exercises regularly.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 101,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

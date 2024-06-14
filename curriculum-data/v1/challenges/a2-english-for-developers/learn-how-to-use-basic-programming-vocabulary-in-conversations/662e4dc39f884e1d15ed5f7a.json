@@ -1,0 +1,75 @@
+{
+  "id": "662e4dc39f884e1d15ed5f7a",
+  "title": "Task 35",
+  "challengeType": 22,
+  "dashedName": "task-35",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Don't worry. _ is a common challenge for programmers.</p>",
+    "blanks": [
+      {
+        "answer": "Debugging",
+        "feedback": "<p>This is the term used for finding and fixing errors in a computer program.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 5.02,
+        "finishTimestamp": 8.18
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.16,
+        "dialogue": {
+          "text": "Don't worry. Debugging is a common challenge for programmers.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.66
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The term <code>to debug</code> is crucial in programming. It means to find and fix errors or bugs in a computer program. A <code>bug</code> is a mistake or problem in a program that prevents it from working correctly.</p>\n<p><code>Debugging</code> is a regular part of a programmer's job.</p>\n<p>For example, <code>She spent the whole day debugging the code.</code> This means she was fixing mistakes in the code.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

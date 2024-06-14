@@ -1,0 +1,83 @@
+{
+  "id": "6630e609d81a446cd663c521",
+  "title": "Task 9",
+  "challengeType": 22,
+  "dashedName": "task-9",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Good question! You usually choose data types _ _ the kind of information you want to _.</p>",
+    "blanks": [
+      {
+        "answer": "based",
+        "feedback": "<p>This word is used to indicate the foundation or reason behind a decision. Here, it introduces the criteria for choosing data types.</p>"
+      },
+      {
+        "answer": "on",
+        "feedback": "<p>This preposition is commonly used to point out the basis or criteria for decisions. It links the decision-making process to the type of information.</p>"
+      },
+      {
+        "answer": "store",
+        "feedback": "<p>This verb means to save or keep information in a computing system.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 15.82,
+        "finishTimestamp": 20.6
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5.78,
+        "dialogue": {
+          "text": "Good question! You usually choose data types based on the kind of information you want to store.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.28
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>to store</code> in programming refers to the act of keeping or saving data so that it can be used later. Choosing the right data types is critical because it influences how information is <code>stored</code> and used in a program.</p>\n<p>Different data types are suited for different kinds of information, like text, numbers, or boolean values. For example, To <code>store</code> text, a programmer might use the data type <code>string</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "60a3e3396c7b40068ad6996a",
+  "title": "Step 1",
+  "challengeType": 0,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "\n",
+      "error": null,
+      "seed": "\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have a <code>&#x3C;!DOCTYPE html></code> declaration.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE html>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>&#x3C;html></code> tag with a <code>lang</code> attribute of <code>en</code>.</p>",
+      "testString": "assert(code.match(/<html\\s+lang\\s*=\\s*('|\")en\\1\\s*>/gi));"
+    },
+    {
+      "text": "<p>Your code should have a <code>head</code> element within the <code>html</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('head').length === 1);"
+    },
+    {
+      "text": "<p>Your code should have a <code>body</code> element within the <code>html</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('body').length === 1);"
+    },
+    {
+      "text": "<p>Your <code>head</code> element should come before your <code>body</code> element.</p>",
+      "testString": "assert(document.querySelector('body').previousElementSibling.tagName === 'HEAD');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>By now, you should be familiar with the basic elements an HTML page should have.</p>\n<p>Set up your code with a <code>DOCTYPE</code> declaration, an <code>html</code> element with the language set to English, a <code>head</code> element, and a <code>body</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-css-box-model-by-building-a-rothko-painting",
+  "hasEditableBoundaries": true,
+  "order": 5,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

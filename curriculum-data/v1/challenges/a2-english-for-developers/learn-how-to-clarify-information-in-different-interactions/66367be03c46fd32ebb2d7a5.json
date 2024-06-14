@@ -1,0 +1,116 @@
+{
+  "id": "66367be03c46fd32ebb2d7a5",
+  "title": "Task 12",
+  "challengeType": 19,
+  "dashedName": "task-12",
+  "solutions": [],
+  "question": {
+    "text": "<p>What can we conclude by Alice's answer?</p>",
+    "answers": [
+      {
+        "answer": "<p>She's Lisa's best friend</p>",
+        "feedback": "<p>Initially, Alice does not recognize Lisa and does not know her by her name.</p>"
+      },
+      {
+        "answer": "<p>She remembers that she has talked to Lisa before</p>",
+        "feedback": "<p>That's not exactly what Alice says.</p>"
+      },
+      {
+        "answer": "<p>She believes she recognizes Lisa based on Tom's description</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She does not recognize Lisa</p>",
+        "feedback": "<p>Actually, Alice thinks she saw someone matching Tom's description.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 10.58,
+        "finishTimestamp": 16.32
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.86,
+        "dialogue": {
+          "text": "If you see her today, she's wearing a black and green jacket and a beige shirt.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 5.18
+      },
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 5.18
+      },
+      {
+        "character": "Alice",
+        "startTime": 5.5,
+        "finishTime": 6.74,
+        "dialogue": {
+          "text": "Oh, I think I saw her.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 7.24
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>After Tom describes Lisa based on her physical characteristics and the clothes she's wearing that day, Alice can have a better idea if has seen someone like that person Tom describes.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

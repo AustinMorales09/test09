@@ -1,0 +1,87 @@
+{
+  "id": "662f327b74cbce38624be994",
+  "title": "Task 68",
+  "challengeType": 22,
+  "dashedName": "task-68",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ _. Object-oriented programming is a fundamental _ in _ languages.</p>",
+    "blanks": [
+      {
+        "answer": "No",
+        "feedback": "<p>This word is used to indicate absence, often part of informal reassurances.</p>"
+      },
+      {
+        "answer": "worries",
+        "feedback": "<p>It is used here to indicate concerns or problems.</p>"
+      },
+      {
+        "answer": "concept",
+        "feedback": "<p>It refers to an idea or principle that is used to plan or define actions and operations.</p>"
+      },
+      {
+        "answer": "many",
+        "feedback": "<p>This quantifier is used to describe a large number of items, emphasizing the quantity.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.32,
+        "finishTimestamp": 21.8
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 5.48,
+        "dialogue": {
+          "text": "No worries. Object-oriented programming is a fundamental concept in many languages.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 5.98
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>no worries</code> is a casual expression used to reassure someone that everything is okay and they should not be concerned. It can be used to respond to a thank you, to dismiss an apology, or to reassure someone that a problem is not serious.</p>\n<p>For example, when your friend accidentally spills a drink and starts to apologize, you may say <code>no worries! It's just water, and it'll dry up quickly</code> to make the friend feel better.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 70,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

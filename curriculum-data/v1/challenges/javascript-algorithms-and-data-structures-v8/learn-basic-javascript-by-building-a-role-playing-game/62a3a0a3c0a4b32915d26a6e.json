@@ -1,0 +1,81 @@
+{
+  "id": "62a3a0a3c0a4b32915d26a6e",
+  "title": "Step 6",
+  "challengeType": 0,
+  "dashedName": "step-6",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "console.log(\"Hello World\");",
+      "error": null,
+      "seed": "console.log(\"Hello World\");"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have a <code>console.log(\"Hello World\");</code> line in your code.</p>",
+      "testString": "assert.notMatch(code, /console\\.log\\(\\s*('|\")Hello World\\1\\s*\\)\\s*;/);"
+    },
+    {
+      "text": "<p>You should use the <code>let</code> keyword to declare your variable.</p>",
+      "testString": "assert.match(code, /let/);"
+    },
+    {
+      "text": "<p>You should declare a variable named <code>xp</code>.</p>",
+      "testString": "assert.match(code, /let\\s+xp/);"
+    },
+    {
+      "text": "<p><code>xp</code> should have a value of <code>0</code>.</p>",
+      "testString": "assert.equal(xp, 0);"
+    },
+    {
+      "text": "<p>You should initialize the <code>xp</code> variable to <code>0</code>.</p>",
+      "testString": "assert.match(code, /let\\s+xp\\s*=\\s*0\\s*;?/)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Remove your <code>console.log(\"Hello World\");</code> line to begin writing your project code.</p>\n<p>In the previous project, you learned how to work with variables and the <code>let</code> keyword like this:</p>\n<pre><code class=\"language-js\">let camperbot;\n</code></pre>\n<p>You also learned how to initialize a variable with a value like this:</p>\n<pre><code class=\"language-js\">let age = 32;\n</code></pre>\n<p>Use the <code>let</code> keyword to declare a variable called <code>xp</code> and assign it the value of <code>0</code>, a number.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-javascript-by-building-a-role-playing-game",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

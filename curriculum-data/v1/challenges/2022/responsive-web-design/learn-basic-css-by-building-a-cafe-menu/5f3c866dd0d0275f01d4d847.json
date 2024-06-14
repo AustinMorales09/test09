@@ -1,0 +1,69 @@
+{
+  "id": "5f3c866dd0d0275f01d4d847",
+  "title": "Step 39",
+  "challengeType": 0,
+  "dashedName": "step-39",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article class=\"item\">\n            <p class=\"flavor\">French Vanilla</p>\n            <p class=\"price\">3.00</p>\n          </article>\n          <article>\n            <p>Caramel Macchiato</p>\n            <p>3.75</p>\n          </article>\n          <article>\n            <p>Pumpkin Spice</p>\n            <p>3.50</p>\n          </article>\n          <article>\n            <p>Hazelnut</p>\n            <p>4.00</p>\n          </article>\n          <article>\n            <p>Mocha</p>\n            <p>4.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article class=\"item\">\n            <p class=\"flavor\">French Vanilla</p>\n            <p class=\"price\">3.00</p>\n          </article>\n          <article>\n            <p>Caramel Macchiato</p>\n            <p>3.75</p>\n          </article>\n          <article>\n            <p>Pumpkin Spice</p>\n            <p>3.50</p>\n          </article>\n          <article>\n            <p>Hazelnut</p>\n            <p>4.00</p>\n          </article>\n          <article>\n            <p>Mocha</p>\n            <p>4.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        19,
+        29
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.item p {\n  display: inline-block;\n}\n\n.flavor {\n  text-align: left;\n  width: 50%;\n}\n\n.price {\n  text-align: right;\n  width: 50%;\n}",
+      "error": null,
+      "seed": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.item p {\n  display: inline-block;\n}\n\n.flavor {\n  text-align: left;\n  width: 50%;\n}\n\n.price {\n  text-align: right;\n  width: 50%;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should set the <code>width</code> property to <code>49%</code> in your <code>.flavor</code> selector.</p>",
+      "testString": "const flavorWidth = new __helpers.CSSHelp(document).getStyle('.flavor')?.getPropertyValue('width');\nassert(flavorWidth === '49%');"
+    },
+    {
+      "text": "<p>You should set the <code>width</code> property to <code>49%</code> in your <code>.price</code> selector.</p>",
+      "testString": "const priceWidth = new __helpers.CSSHelp(document).getStyle('.price')?.getPropertyValue('width');\nassert(priceWidth === '49%');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Well that did not work. Styling the <code>p</code> elements as <code>inline-block</code> and placing them on separate lines in the code creates an extra space to the right of the first <code>p</code> element, causing the second one to shift to the next line. One way to fix this is to make each <code>p</code> element's width a little less than <code>50%</code>.</p>\n<p>Change the <code>width</code> value to <code>49%</code> for each class to see what happens.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 38,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "6617f4e86152be717a0d3569",
+  "title": "Task 9",
+  "challengeType": 19,
+  "dashedName": "task-9",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the correct description of <code>self-driving</code>.</p>",
+    "answers": [
+      {
+        "answer": "<p>Driving a vehicle manually</p>",
+        "feedback": "<p><code>Self-driving</code> means the opposite of manual driving; no human input is involved.</p>"
+      },
+      {
+        "answer": "<p>Cars with advanced music systems</p>",
+        "feedback": "<p>Focus on the autonomous nature of <code>self-driving</code> vehicles, not their entertainment systems.</p>"
+      },
+      {
+        "answer": "<p>Vehicles operating without human input</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Vehicles with enhanced fuel efficiency</p>",
+        "feedback": "<p><code>Self-driving</code> vehicles focus on automation, not fuel efficiency.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Self-driving</code> means the ability of a vehicle to operate without human input. This technology is a significant application of AI in the field of transportation.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

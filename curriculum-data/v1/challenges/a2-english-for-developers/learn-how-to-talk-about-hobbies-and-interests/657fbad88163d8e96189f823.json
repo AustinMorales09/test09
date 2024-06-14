@@ -1,0 +1,79 @@
+{
+  "id": "657fbad88163d8e96189f823",
+  "title": "Task 68",
+  "challengeType": 22,
+  "dashedName": "task-68",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Well, we have _ _, conventions, and even play together some movie-related video games.</p>",
+    "blanks": [
+      {
+        "answer": "movie",
+        "feedback": "<p>It's is a story shown on a screen with pictures that move.</p>"
+      },
+      {
+        "answer": "marathons",
+        "feedback": "<p>This word is often used to describe an extended event that involves continuous activity (in the plural).</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.1,
+        "finishTimestamp": 18.34
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.24,
+        "dialogue": {
+          "text": "Well, we have movie marathons, conventions, and we even play some movie-related video games together.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.74
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Sarah mentions watching multiple movies one after another without stopping. Listen to the audio and complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 71,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

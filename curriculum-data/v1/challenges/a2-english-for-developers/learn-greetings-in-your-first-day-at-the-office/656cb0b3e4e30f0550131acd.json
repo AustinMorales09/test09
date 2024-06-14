@@ -1,0 +1,32 @@
+{
+  "id": "656cb0b3e4e30f0550131acd",
+  "title": "Task 86",
+  "challengeType": 22,
+  "dashedName": "task-86",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>We are looking for _ project manager to join our team.</p>",
+    "blanks": [
+      {
+        "answer": "a",
+        "feedback": "<p>The word <code>project</code> starts with a consonant sounds. <code>A</code> should be used for before words that start with a consonant sound.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Remember that articles show if we are talking about something specific or something general.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 87,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

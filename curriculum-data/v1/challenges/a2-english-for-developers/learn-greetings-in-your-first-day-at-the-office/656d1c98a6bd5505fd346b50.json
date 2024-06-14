@@ -1,0 +1,88 @@
+{
+  "id": "656d1c98a6bd5505fd346b50",
+  "title": "Task 147",
+  "challengeType": 19,
+  "dashedName": "task-147",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which two words does the contraction <code>She's</code> in the dialogue stand for?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>She was.</code></p>",
+        "feedback": "<p><code>She was</code> doesn't fit the context of the dialogue.</p>"
+      },
+      {
+        "answer": "<p><code>She has.</code></p>",
+        "feedback": "<p><code>She has</code> is a possible contraction for <code>She's</code>, but it doesn't fit this specific dialogue context.</p>"
+      },
+      {
+        "answer": "<p><code>She does.</code></p>",
+        "feedback": "<p><code>She does</code> isn't represented by <code>She's</code>.</p>"
+      },
+      {
+        "answer": "<p><code>She is.</code></p>",
+        "feedback": "<p><code>She is</code> is the correct expansion of the contraction <code>She's</code> in this context.</p>"
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 24.9,
+        "finishTimestamp": 28.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 3.76,
+        "dialogue": {
+          "text": "But it's true. She's the person to go to if you need help.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 4.26
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In the dialogue, Brian uses the contraction <code>She's</code> instead of <code>She is</code>. It gives the sentence a better flow and sounds more natural in conversation.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 150,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,98 @@
+{
+  "id": "587d8250367417b2b2512c60",
+  "title": "Create a Queue Class",
+  "challengeType": 1,
+  "forumTopicId": 301631,
+  "dashedName": "create-a-queue-class",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function Queue() {\n  var collection = [];\n  this.print = function() {\n    console.log(collection);\n  };\n  // Only change code below this line\n\n  // Only change code above this line\n}",
+      "error": null,
+      "seed": "function Queue() {\n  var collection = [];\n  this.print = function() {\n    console.log(collection);\n  };\n  // Only change code below this line\n\n  // Only change code above this line\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function Queue () { \n    var collection = [];\n    this.print = function() {\n        console.log(collection);\n    };\n    // Only change code below this line\n    this.enqueue = function(item) {\n        collection.push(item);\n    }\n\n    this.dequeue = function() {\n        return collection.shift();\n    }\n\n    this.front = function() {\n        return collection[0];\n    }\n\n    this.size = function(){\n        return collection.length;\n    }\n\n    this.isEmpty = function() {\n        return collection.length === 0 ? true : false;\n    }\n    // Only change code above this line\n}",
+        "error": null,
+        "seed": "function Queue () { \n    var collection = [];\n    this.print = function() {\n        console.log(collection);\n    };\n    // Only change code below this line\n    this.enqueue = function(item) {\n        collection.push(item);\n    }\n\n    this.dequeue = function() {\n        return collection.shift();\n    }\n\n    this.front = function() {\n        return collection[0];\n    }\n\n    this.size = function(){\n        return collection.length;\n    }\n\n    this.isEmpty = function() {\n        return collection.length === 0 ? true : false;\n    }\n    // Only change code above this line\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>Queue</code> class should have a <code>enqueue</code> method.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new Queue();\n    return typeof test.enqueue === 'function';\n  })()\n);"
+    },
+    {
+      "text": "<p>Your <code>Queue</code> class should have a <code>dequeue</code> method.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new Queue();\n    return typeof test.dequeue === 'function';\n  })()\n);"
+    },
+    {
+      "text": "<p>Your <code>Queue</code> class should have a <code>front</code> method.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new Queue();\n    return typeof test.front === 'function';\n  })()\n);"
+    },
+    {
+      "text": "<p>Your <code>Queue</code> class should have a <code>size</code> method.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new Queue();\n    return typeof test.size === 'function';\n  })()\n);"
+    },
+    {
+      "text": "<p>Your <code>Queue</code> class should have an <code>isEmpty</code> method.</p>",
+      "testString": "assert(\n  (function () {\n    var test = new Queue();\n    return typeof test.isEmpty === 'function';\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>dequeue</code> method should remove and return the front element of the queue</p>",
+      "testString": "assert(\n  (function () {\n    var test = new Queue();\n    test.enqueue('Smith');\n    test.enqueue('John');\n    return test.dequeue() === 'Smith';\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>front</code> method should return value of the front element of the queue</p>",
+      "testString": "assert(\n  (function () {\n    var test = new Queue();\n    test.enqueue('Smith');\n    test.enqueue('John');\n    return test.front() === 'Smith';\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>size</code> method should return the length of the queue</p>",
+      "testString": "assert(\n  (function () {\n    var test = new Queue();\n    test.enqueue('Smith');\n    return test.size() === 1;\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>isEmpty</code> method should return <code>false</code> if there are elements in the queue</p>",
+      "testString": "assert(\n  (function () {\n    var test = new Queue();\n    test.enqueue('Smith');\n    return !test.isEmpty();\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Like stacks, queues are a collection of elements. But unlike stacks, queues follow the FIFO (First-In First-Out) principle. Elements added to a queue are pushed to the tail, or the end, of the queue, and only the element at the front of the queue is allowed to be removed.</p>\n<p>We could use an array to represent a queue, but just like stacks, we want to limit the amount of control we have over our queues.</p>\n<p>The two main methods of a queue class is the enqueue and the dequeue method. The enqueue method pushes an element to the tail of the queue, and the dequeue method removes and returns the element at the front of the queue. Other useful methods are the front, size, and isEmpty methods.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write an <code>enqueue</code> method that pushes an element to the tail of the queue, a <code>dequeue</code> method that removes and returns the front element, a <code>front</code> method that lets us see the front element, a <code>size</code> method that shows the length, and an <code>isEmpty</code> method to check if the queue is empty.</p>\n</section>",
+  "translationPending": false,
+  "block": "data-structures",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

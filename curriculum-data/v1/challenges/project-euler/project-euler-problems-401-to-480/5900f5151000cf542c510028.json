@@ -1,0 +1,65 @@
+{
+  "id": "5900f5151000cf542c510028",
+  "title": "Problem 425: Prime connection",
+  "challengeType": 1,
+  "forumTopicId": 302095,
+  "dashedName": "problem-425-prime-connection",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function primeConnection() {\n\n  return true;\n}\n\nprimeConnection();",
+      "error": null,
+      "seed": "function primeConnection() {\n\n  return true;\n}\n\nprimeConnection();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>primeConnection()</code> should return <code>46479497324</code>.</p>",
+      "testString": "assert.strictEqual(primeConnection(), 46479497324);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Two positive numbers $A$ and $B$ are said to be connected (denoted by \"$A ↔ B$\") if one of these conditions holds:</p>\n<ol>\n<li>$A$ and $B$ have the same length and differ in exactly one digit; for example, $123 ↔ 173$.</li>\n<li>Adding one digit to the left of $A$ (or $B$) makes $B$ (or $A$); for example, $23 ↔ 223$ and $123 ↔ 23$.</li>\n</ol>\n<p>We call a prime $P$ a 2's relative if there exists a chain of connected primes between 2 and $P$ and no prime in the chain exceeds $P$.</p>\n<p>For example, 127 is a 2's relative. One of the possible chains is shown below:</p>\n<p>$$2 ↔ 3 ↔ 13 ↔ 113 ↔ 103 ↔ 107 ↔ 127$$</p>\n<p>However, 11 and 103 are not 2's relatives.</p>\n<p>Let $F(N)$ be the sum of the primes $≤ N$ which are not 2's relatives. We can verify that $F({10}^3) = 431$ and $F({10}^4) = 78\\,728$.</p>\n<p>Find $F({10}^7)$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

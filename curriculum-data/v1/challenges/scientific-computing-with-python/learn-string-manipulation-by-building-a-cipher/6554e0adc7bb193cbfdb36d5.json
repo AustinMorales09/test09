@@ -1,0 +1,57 @@
+{
+  "id": "6554e0adc7bb193cbfdb36d5",
+  "title": "Step 71",
+  "challengeType": 20,
+  "dashedName": "step-71",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        25,
+        29
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:        \n            # Find the right key character to encode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    \n    return encrypted_text\nencryption = vigenere(text, custom_key, 1)\nprint(encryption)\n",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n    \n        # Append space to the message\n        if char == ' ':\n            encrypted_text += char\n        else:        \n            # Find the right key character to encode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    \n    return encrypted_text\nencryption = vigenere(text, custom_key, 1)\nprint(encryption)\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call <code>vigenere</code> passing <code>encryption</code>, <code>custom_key</code> and <code>-1</code> as the arguments.</p>",
+      "testString": "({ test: () => assert.match(code, /vigenere\\s*\\(\\s*encryption\\s*,\\s*custom_key\\s*,\\s*-\\s*1\\s*\\)/) })"
+    },
+    {
+      "text": "<p>You should declare a <code>decryption</code> variable.</p>",
+      "testString": "({ test: () => assert(__userGlobals.has(\"decryption\")) })"
+    },
+    {
+      "text": "<p>Your <code>decryption</code> variable should have the value of <code>vigenere(encryption, custom_key, -1)</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /^decryption\\s*=\\s*vigenere\\s*\\(\\s*encryption\\s*,\\s*custom_key\\s*,\\s*-\\s*1\\s*\\)/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Check if the function can decrypt the string back to the plain text.</p>\n<p>Declare another variable called <code>decryption</code> and assign it <code>vigenere(encryption, custom_key, -1)</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 70,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

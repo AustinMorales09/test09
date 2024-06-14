@@ -1,0 +1,65 @@
+{
+  "id": "662693f82c91a66be46c881b",
+  "title": "Step 1",
+  "challengeType": 1,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        7
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function getAverage(scores) {\n\n}\n\nconsole.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));\nconsole.log(getAverage([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]));",
+      "error": null,
+      "seed": "function getAverage(scores) {\n\n}\n\nconsole.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));\nconsole.log(getAverage([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]));"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>getAverage</code> function should return a number.</p>",
+      "testString": "assert.strictEqual(typeof getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]), 'number');"
+    },
+    {
+      "text": "<p><code>getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89])</code> should return <code>71.7</code>.</p>",
+      "testString": "assert.strictEqual(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]), 71.7);"
+    },
+    {
+      "text": "<p><code>getAverage([45, 87, 98, 100, 86, 94, 67, 88, 94, 95])</code> should return <code>85.4</code>.</p>",
+      "testString": "assert.strictEqual(getAverage([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]), 85.4);"
+    },
+    {
+      "text": "<p><code>getAverage([38, 99, 87, 100, 100, 100, 100, 100, 100, 100])</code> should return <code>92.4</code>.</p>",
+      "testString": "assert.strictEqual(getAverage([38, 99, 87, 100, 100, 100, 100, 100, 100, 100]), 92.4);"
+    },
+    {
+      "text": "<p>Your <code>getAverage</code> function should return the average score of the test scores.</p>",
+      "testString": "assert.strictEqual(getAverage([52, 56, 60, 65, 70, 75, 80, 85, 90, 95]), 72.8);\nassert.strictEqual(getAverage([45, 50, 55, 60, 65, 70, 75, 80, 85, 90]), 67.5);\nassert.strictEqual(getAverage([38, 42, 46, 50, 54, 58, 62, 66, 70, 74]), 56);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A teacher has finished grading their students' tests and needs your help to calculate the average score for the class.</p>\n<p>Complete the <code>getAverage</code> function which takes in an array of test scores and returns the average score.</p>\n<p>The average is calculated by adding up all the scores and dividing by the total number of scores.</p>\n<pre><code class=\"language-js\">average = sum of all scores / total number of scores\n</code></pre>\n<p>A couple of function calls have been provided for you so you can test out your code.</p>\n<p><strong>Tips</strong></p>\n<ul>\n<li>You can use a loop to iterate over the <code>scores</code> array and add up all the scores.</li>\n<li>You can use the <code>length</code> property to get the total number of scores.</li>\n</ul>\n</section>",
+  "translationPending": false,
+  "block": "review-js-fundamentals-by-building-a-gradebook-app",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,83 @@
+{
+  "id": "6580026241ae0ef46b181e49",
+  "title": "Task 85",
+  "challengeType": 22,
+  "dashedName": "task-85",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>No problem, Tom. _ _ _ you'll join us!</p>",
+    "blanks": [
+      {
+        "answer": "Maybe",
+        "feedback": "<p>This word is often used to express uncertainty or possibility. The first letter should be capitalized.</p>"
+      },
+      {
+        "answer": "next",
+        "feedback": "<p>This word is typically used to indicate the immediate successor in a sequence or the one following the current.</p>"
+      },
+      {
+        "answer": "time",
+        "feedback": "<p>This word refers to the indefinite continued progress of existence and events in the past, present, and future.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 28.88,
+        "finishTimestamp": 31.8
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 3.92,
+        "dialogue": {
+          "text": "No problem, Tom. Maybe next time you'll join us.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.42
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>maybe next time</code> is used to politely suggest the possibility of someone participating or joining an activity or event in the future. It can be used independently or as part of a sentence.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 88,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

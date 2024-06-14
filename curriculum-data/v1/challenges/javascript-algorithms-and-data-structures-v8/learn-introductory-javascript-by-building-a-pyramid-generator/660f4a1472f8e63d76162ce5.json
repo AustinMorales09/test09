@@ -1,0 +1,61 @@
+{
+  "id": "660f4a1472f8e63d76162ce5",
+  "title": "Step 96",
+  "challengeType": 1,
+  "dashedName": "step-96",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        17,
+        19
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\n/*for (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}*/\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have a <code>for</code> loop.</p>",
+      "testString": "const stripped = __helpers.removeJSComments(code);\nassert.match(stripped, /for\\s*\\(/);"
+    },
+    {
+      "text": "<p>Your <code>for</code> loop should initialise <code>i</code> with the value of <code>count</code>.</p>",
+      "testString": "assert.match(code, /for\\s*\\(\\s*let\\s*i\\s*=\\s*count/);"
+    },
+    {
+      "text": "<p>Your <code>for</code> loop should use <code>false</code> as the condition.</p>",
+      "testString": "assert.match(code, /for\\s*\\(\\s*let\\s*i\\s*=\\s*count\\s*;\\s*false/);"
+    },
+    {
+      "text": "<p>Your <code>for</code> loop should use <code>false</code> as the iteration.</p>",
+      "testString": "assert.match(code, /for\\s*\\(\\s*let\\s*i\\s*=\\s*count\\s*;\\s*false\\s*;\\s*false\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>What if you made your pyramid upside-down, or <dfn>inverted</dfn>? Time to try it out!</p>\n<p>Start by creating a new <code>for</code> loop. Declare your iterator <code>i</code> and assign it the value of <code>count</code>, then use the boolean <code>false</code> for your condition and iteration statements.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 95,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

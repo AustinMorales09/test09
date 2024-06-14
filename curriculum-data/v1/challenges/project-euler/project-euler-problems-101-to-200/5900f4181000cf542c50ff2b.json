@@ -1,0 +1,65 @@
+{
+  "id": "5900f4181000cf542c50ff2b",
+  "title": "Problem 172: Investigating numbers with few repeated digits",
+  "challengeType": 1,
+  "forumTopicId": 301807,
+  "dashedName": "problem-172-investigating-numbers-with-few-repeated-digits",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function numbersWithRepeatedDigits() {\n\n  return true;\n}\n\nnumbersWithRepeatedDigits();",
+      "error": null,
+      "seed": "function numbersWithRepeatedDigits() {\n\n  return true;\n}\n\nnumbersWithRepeatedDigits();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>numbersWithRepeatedDigits()</code> should return <code>227485267000992000</code>.</p>",
+      "testString": "assert.strictEqual(numbersWithRepeatedDigits(), 227485267000992000);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>How many 18-digit numbers $n$ (without leading zeros) are there such that no digit occurs more than three times in $n$?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 71,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

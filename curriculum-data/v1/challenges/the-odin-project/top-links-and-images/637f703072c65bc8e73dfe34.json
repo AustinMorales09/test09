@@ -1,0 +1,41 @@
+{
+  "id": "637f703072c65bc8e73dfe34",
+  "title": "Links and Images Question C",
+  "challengeType": 15,
+  "dashedName": "links-and-images-question-c",
+  "solutions": [],
+  "question": {
+    "text": "<p>What attribute tells links where to go to?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>src</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>href</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>link</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>To get some practice using links and images throughout this lesson you need an HTML project to work with.</p>\n<ul>\n<li>\n<p>Create a new directory named <code>odin-links-and-images</code>.</p>\n</li>\n<li>\n<p>Within that directory, create a new file named <code>index.html</code>.</p>\n</li>\n<li>\n<p>Fill in the usual HTML boilerplate.</p>\n</li>\n<li>\n<p>Finally, add the following <code>h1</code> to the <code>body</code>: <code>&#x3C;h1>Homepage&#x3C;/h1></code></p>\n</li>\n</ul>\n<h2>Anchor Elements</h2>\n<p>To create a link in HTML, you use the anchor element. An anchor element is defined by wrapping the text or another HTML element you want to be a link with an <code>&#x3C;a></code> tag.</p>\n<p>Add the following to the <code>body</code> of the <code>index.html</code> page you created and open it in the browser:</p>\n<pre><code class=\"language-html\">&#x3C;a>click me&#x3C;/a>\n</code></pre>\n<p>You may have noticed that clicking this link doesn’t do anything. This is because an anchor tag on its own won’t know where you want to link to. You have to tell it a destination to go to. You do this by using an HTML attribute.</p>\n<p>An HTML attribute gives additional information to an HTML element and always goes in the element’s opening tag. An attribute is usually made up of two parts: a name, and a value; however, not all attributes require a value. In your case, you need to add an <code>href</code> (hyperlink reference) attribute to the opening anchor tag. The value of the <code>href</code> attribute is the destination you want your link to go to.</p>\n<p>Add the following <code>href</code> attribute to the anchor element you created previously and try clicking it again, don’t forget to refresh the browser so the new changes can be applied.</p>\n<pre><code class=\"language-html\">&#x3C;a href=\"https://www.theodinproject.com/about\">click me&#x3C;/a>\n</code></pre>\n<p>By default, any text wrapped with an anchor tag without an <code>href</code> attribute will look like plain text. If the <code>href</code> attribute is present, the browser will give the text a blue color and underline it to signify it is a link.</p>\n<p>It’s worth noting you can use anchor tags to link to any kind of resource on the internet, not just other HTML documents. You can link to videos, pdf files, images, and so on, but for the most part, you will be linking to other HTML documents.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-links-and-images",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

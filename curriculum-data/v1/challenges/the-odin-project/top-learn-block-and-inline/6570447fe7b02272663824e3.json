@@ -1,0 +1,45 @@
+{
+  "id": "6570447fe7b02272663824e3",
+  "title": "Learn Block and Inline Question E",
+  "challengeType": 15,
+  "dashedName": "learn-block-and-inline-question-e",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the difference between an <code>inline</code> element and an <code>inline-block</code> element?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>inline</code> elements are displayed without line breaks, while <code>inline-block</code> elements are displayed with line breaks.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>inline</code> elements do not allow setting width and height, while <code>inline-block</code> elements allow setting width and height.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>inline</code> elements are always positioned horizontally, while <code>inline-block</code> elements are positioned vertically.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>inline</code> elements can contain block-level elements, while <code>inline-block</code> elements cannot contain other elements.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Inline-block elements behave like inline elements, but with block-style padding and margin. <code>display: inline-block</code> is a useful tool to know about, but in practice, you'll probably end up reaching for flexbox more often if you're trying to line up a bunch of boxes. Flexbox will be covered in-depth in the next lesson.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-block-and-inline",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

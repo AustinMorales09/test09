@@ -1,0 +1,79 @@
+{
+  "id": "66414b6b60f69749ebd1dda9",
+  "title": "Task 71",
+  "challengeType": 22,
+  "dashedName": "task-71",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It's essential that we're on the _ _ when it comes to project details.</p>",
+    "blanks": [
+      {
+        "answer": "same",
+        "feedback": "<p>This blank has a synonym for equal or not different.</p>"
+      },
+      {
+        "answer": "page",
+        "feedback": "<p>The word in this blank is also used for one side of a sheet of paper in a book you read or a diary you write on.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 49.22,
+        "finishTimestamp": 52.1
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 3.88,
+        "dialogue": {
+          "text": "It's essential that we're on the same page when it comes to project details.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 4.38
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To be on the same page</code> means that everyone understands and agrees about something. For example, if a team discusses a plan and everyone agrees on it, you can say that <code>they are on the same page</code>. It means they all understand and agree.</p>\n<p>Listen to Maria and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 74,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

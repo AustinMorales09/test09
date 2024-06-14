@@ -1,0 +1,88 @@
+{
+  "id": "65d74ca5293a7b9397dec0e6",
+  "title": "Task 58",
+  "challengeType": 19,
+  "dashedName": "task-58",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why does Tom need to talk with Jeff?</p>",
+    "answers": [
+      {
+        "answer": "<p>To discuss a new project</p>",
+        "feedback": "<p>Tom's message is about a necessity to talk with Jeff from the <code>Security department</code>, which suggests it's more about safety or security issues, not a new project.</p>"
+      },
+      {
+        "answer": "<p>Because he received a message saying it's necessary</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To ask for a day off</p>",
+        "feedback": "<p>The message Tom received specifies talking with Jeff from the <code>Security department</code>, which implies it's about a security matter, not requesting time off.</p>"
+      },
+      {
+        "answer": "<p>To plan a company event</p>",
+        "feedback": "<p>The mention of the <code>Security department</code> suggests the conversation is related to security or safety, not event planning.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 5.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 6.16,
+        "dialogue": {
+          "text": "I got this message saying I must talk with Jeff from the security department. Do you know him?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 6.66
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The <code>Security department</code> is a part of a company or organization that focuses on keeping people and the place safe. They handle things like protecting the building, making sure only the right people can get in, and dealing with any safety problems.</p>\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 60,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

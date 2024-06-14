@@ -1,0 +1,69 @@
+{
+  "id": "660f207334fabaeac3269c38",
+  "title": "Step 40",
+  "challengeType": 1,
+  "dashedName": "step-40",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        12
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(i);\n}\n\nlet result = \"\"\n\n\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(i);\n}\n\nlet result = \"\"\n\n\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use another <code>for</code> keyword.</p>",
+      "testString": "assert.lengthOf(code.match(/for/g), 2);"
+    },
+    {
+      "text": "<p>You should declare a <code>row</code> variable.</p>",
+      "testString": "assert.match(code, /\\s+row\\s+/);"
+    },
+    {
+      "text": "<p>You should use <code>const</code> to declare your <code>row</code> variable.</p>",
+      "testString": "assert.match(code, /const\\s+row\\s+/);"
+    },
+    {
+      "text": "<p>Your <code>for...of</code> loop should declare your <code>row</code> variable.</p>",
+      "testString": "assert.match(code, /for\\s*\\(\\s*const\\s+row\\s+/);"
+    },
+    {
+      "text": "<p>Your <code>row</code> variable should be extracted from <code>rows</code> using the <code>of</code> keyword.</p>",
+      "testString": "assert.match(code, /for\\s*\\(\\s*const\\s+row\\s+of\\s+rows\\s*\\)/);"
+    },
+    {
+      "text": "<p>Your <code>for...of</code> loop body should be empty.</p>",
+      "testString": "assert.match(code, /for\\s*\\(\\s*const\\s+row\\s+of\\s+rows\\s*\\)\\s*\\{\\s*\\}/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To manipulate the <code>result</code> string, you will use a different type of loop. Specifically, a <code>for...of</code> loop, which iterates over each item in an iterable object and temporarily assigns it to a variable.</p>\n<p>The syntax for a <code>for...of</code> loop looks like:</p>\n<pre><code class=\"language-js\">for (const value of iterable) {\n\n}\n</code></pre>\n<p>Note that you can use <code>const</code> because the variable only exists for a single iteration, not during the entire loop.</p>\n<p>Create a <code>for...of</code> loop to iterate through your <code>rows</code> array, assigning each value to a <code>row</code> variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 39,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

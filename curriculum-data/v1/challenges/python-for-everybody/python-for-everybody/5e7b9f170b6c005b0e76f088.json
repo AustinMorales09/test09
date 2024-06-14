@@ -1,0 +1,50 @@
+{
+  "id": "5e7b9f170b6c005b0e76f088",
+  "title": "Objects: Inheritance",
+  "challengeType": 11,
+  "videoId": "FBL3alYrxRM",
+  "bilibiliIds": {
+    "aid": 631990691,
+    "bvid": "BV1sb4y1r7GF",
+    "cid": 377529901
+  },
+  "dashedName": "objects-inheritance",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is inheritance in object-oriented programming?</p>",
+    "answers": [
+      {
+        "answer": "<p>A new class created when a parent class is extended.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A constructed instance of a class.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The ability to create a new class by extending an existing class.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A method that is called at the moment when a class is being used to construct an object.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 45,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

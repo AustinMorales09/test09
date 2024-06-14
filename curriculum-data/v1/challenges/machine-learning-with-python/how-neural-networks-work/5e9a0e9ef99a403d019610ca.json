@@ -1,0 +1,41 @@
+{
+  "id": "5e9a0e9ef99a403d019610ca",
+  "title": "How Deep Neural Networks Work",
+  "challengeType": 11,
+  "videoId": "zvalnHWGtx4",
+  "dashedName": "how-deep-neural-networks-work",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is it better to calculate the gradient (slope) directly rather than numerically?</p>",
+    "answers": [
+      {
+        "answer": "<p>It is computationally expensive to go back through the entire neural network and adjust the weights for each layer of the neural network.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It is more accurate.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>There is no difference between the two methods.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "how-neural-networks-work",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

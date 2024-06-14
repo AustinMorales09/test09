@@ -1,0 +1,97 @@
+{
+  "id": "657fba163fec41e8e00c5817",
+  "title": "Task 70",
+  "challengeType": 19,
+  "dashedName": "task-70",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the term <code>convention</code> imply in this dialogue?</p>",
+    "answers": [
+      {
+        "answer": "<p>A casual get-together</p>",
+        "feedback": "<p>The term in the context involves more organization and structured activities than a casual get-together.</p>"
+      },
+      {
+        "answer": "<p>An organized gathering with specific activities</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A formal business meeting</p>",
+        "feedback": "<p>It is not the primary focus in this context.</p>"
+      },
+      {
+        "answer": "<p>A random social event</p>",
+        "feedback": "<p>It does not capture the planned and themed nature of the context.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.1,
+        "finishTimestamp": 21.36
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.24,
+        "dialogue": {
+          "text": "Well, we have movie marathons, conventions, and we even play some movie-related video games together.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "startTime": 6.6,
+        "finishTime": 9.26,
+        "dialogue": {
+          "text": "There's a big convention next month. Would you like to come?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 9.76
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 73,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

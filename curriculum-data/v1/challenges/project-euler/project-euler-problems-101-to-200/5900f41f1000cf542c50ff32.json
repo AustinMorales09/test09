@@ -1,0 +1,65 @@
+{
+  "id": "5900f41f1000cf542c50ff32",
+  "title": "Problem 179: Consecutive positive divisors",
+  "challengeType": 1,
+  "forumTopicId": 301814,
+  "dashedName": "problem-179-consecutive-positive-divisors",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function consecutivePositiveDivisors() {\n\n  return true;\n}\n\nconsecutivePositiveDivisors();",
+      "error": null,
+      "seed": "function consecutivePositiveDivisors() {\n\n  return true;\n}\n\nconsecutivePositiveDivisors();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>consecutivePositiveDivisors()</code> should return <code>986262</code>.</p>",
+      "testString": "assert.strictEqual(consecutivePositiveDivisors(), 986262);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Find the number of integers $1 &#x3C; n &#x3C; {10}^7$, for which $n$ and $n + 1$ have the same number of positive divisors. For example, 14 has the positive divisors 1, 2, 7, 14 while 15 has 1, 3, 5, 15.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 78,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

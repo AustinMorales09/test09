@@ -1,0 +1,49 @@
+{
+  "id": "6564d096a55d707bd77ab67b",
+  "title": "Step 38",
+  "challengeType": 20,
+  "dashedName": "step-38",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        28,
+        32
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, '[0-9]')\n        ]        \n\n    return password\n    \n# new_password = generate_password(8)\n# print(new_password)\npattern = '[a-z]t'\nquote = 'Not all those who wander are lost.'\nprint(re.findall(pattern, quote))",
+      "error": null,
+      "seed": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length, nums, special_chars, uppercase, lowercase):\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, '[0-9]')\n        ]        \n\n    return password\n    \n# new_password = generate_password(8)\n# print(new_password)\npattern = '[a-z]t'\nquote = 'Not all those who wander are lost.'\nprint(re.findall(pattern, quote))"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add a <code>^</code> as the first character inside your character class.</p>",
+      "testString": "({ test: () => assert.equal(__userGlobals.get(\"pattern\"), \"[^a-z]t\") })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The caret, <code>^</code>, placed at the beginning of the character class, matches all the characters except those specified in the class.</p>\n<p>Add a <code>^</code> as the first character inside your character class and see what happens.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 37,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

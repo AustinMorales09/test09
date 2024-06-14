@@ -1,0 +1,75 @@
+{
+  "id": "bad87fee1348bd9aedf08756",
+  "title": "Prioritize One Style Over Another",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cZ8wnHv",
+  "forumTopicId": 18258,
+  "dashedName": "prioritize-one-style-over-another",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n</style>\n<h1>Hello World!</h1>",
+      "error": null,
+      "seed": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n</style>\n<h1>Hello World!</h1>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n  .pink-text {\n    color: pink;\n  }\n</style>\n<h1 class=\"pink-text\">Hello World!</h1>",
+        "error": null,
+        "seed": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n  .pink-text {\n    color: pink;\n  }\n</style>\n<h1 class=\"pink-text\">Hello World!</h1>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>h1</code> element should have the class <code>pink-text</code>.</p>",
+      "testString": "assert($('h1').hasClass('pink-text'));"
+    },
+    {
+      "text": "<p>Your <code>&#x3C;style></code> should have a <code>pink-text</code> CSS class that changes the <code>color</code>.</p>",
+      "testString": "assert(code.match(/\\.pink-text\\s*\\{\\s*color\\s*:\\s*.+\\s*;?\\s*\\}/g));"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should be pink.</p>",
+      "testString": "assert($('h1').css('color') === 'rgb(255, 192, 203)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Sometimes your HTML elements will receive multiple styles that conflict with one another.</p>\n<p>For example, your <code>h1</code> element can't be both green and pink at the same time.</p>\n<p>Let's see what happens when we create a class that makes text pink, then apply it to an element. Will our class <em>override</em> the <code>body</code> element's <code>color: green;</code> CSS property?</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Create a CSS class called <code>pink-text</code> that gives an element the color pink.</p>\n<p>Give your <code>h1</code> element the class of <code>pink-text</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-css",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

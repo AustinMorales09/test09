@@ -1,0 +1,113 @@
+{
+  "id": "aaa48de84e1ecc7c742e1124",
+  "title": "Palindrome Checker",
+  "challengeType": 5,
+  "forumTopicId": 16004,
+  "dashedName": "palindrome-checker",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function palindrome(str) {\n  return true;\n}\n\npalindrome(\"eye\");",
+      "error": null,
+      "seed": "function palindrome(str) {\n  return true;\n}\n\npalindrome(\"eye\");"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function palindrome(str) {\n  var string = str.toLowerCase().split(/[^A-Za-z0-9]/gi).join('');\n  var aux = string.split('');\n  if (aux.join('') === aux.reverse().join('')){\n    return true;\n  }\n\n  return false;\n}",
+        "error": null,
+        "seed": "function palindrome(str) {\n  var string = str.toLowerCase().split(/[^A-Za-z0-9]/gi).join('');\n  var aux = string.split('');\n  if (aux.join('') === aux.reverse().join('')){\n    return true;\n  }\n\n  return false;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>palindrome(\"eye\")</code> should return a boolean.</p>",
+      "testString": "assert(typeof palindrome('eye') === 'boolean');"
+    },
+    {
+      "text": "<p><code>palindrome(\"eye\")</code> should return <code>true</code>.</p>",
+      "testString": "assert(palindrome('eye') === true);"
+    },
+    {
+      "text": "<p><code>palindrome(\"_eye\")</code> should return <code>true</code>.</p>",
+      "testString": "assert(palindrome('_eye') === true);"
+    },
+    {
+      "text": "<p><code>palindrome(\"race car\")</code> should return <code>true</code>.</p>",
+      "testString": "assert(palindrome('race car') === true);"
+    },
+    {
+      "text": "<p><code>palindrome(\"not a palindrome\")</code> should return <code>false</code>.</p>",
+      "testString": "assert(palindrome('not a palindrome') === false);"
+    },
+    {
+      "text": "<p><code>palindrome(\"A man, a plan, a canal. Panama\")</code> should return <code>true</code>.</p>",
+      "testString": "assert(palindrome('A man, a plan, a canal. Panama') === true);"
+    },
+    {
+      "text": "<p><code>palindrome(\"never odd or even\")</code> should return <code>true</code>.</p>",
+      "testString": "assert(palindrome('never odd or even') === true);"
+    },
+    {
+      "text": "<p><code>palindrome(\"nope\")</code> should return <code>false</code>.</p>",
+      "testString": "assert(palindrome('nope') === false);"
+    },
+    {
+      "text": "<p><code>palindrome(\"almostomla\")</code> should return <code>false</code>.</p>",
+      "testString": "assert(palindrome('almostomla') === false);"
+    },
+    {
+      "text": "<p><code>palindrome(\"My age is 0, 0 si ega ym.\")</code> should return <code>true</code>.</p>",
+      "testString": "assert(palindrome('My age is 0, 0 si ega ym.') === true);"
+    },
+    {
+      "text": "<p><code>palindrome(\"1 eye for of 1 eye.\")</code> should return <code>false</code>.</p>",
+      "testString": "assert(palindrome('1 eye for of 1 eye.') === false);"
+    },
+    {
+      "text": "<p><code>palindrome(\"0_0 (: /-\\ :) 0-0\")</code> should return <code>true</code>.</p>",
+      "testString": "assert(palindrome('0_0 (: /- :) 0-0') === true);"
+    },
+    {
+      "text": "<p><code>palindrome(\"five|\\_/|four\")</code> should return <code>false</code>.</p>",
+      "testString": "assert(palindrome('five|_/|four') === false);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Return <code>true</code> if the given string is a palindrome. Otherwise, return <code>false</code>.</p>\n<p>A <dfn>palindrome</dfn> is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>\n<p><strong>Note:</strong> You'll need to remove <strong>all non-alphanumeric characters</strong> (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for palindromes.</p>\n<p>We'll pass strings with varying formats, such as <code>racecar</code>, <code>RaceCar</code>, and <code>race CAR</code> among others.</p>\n<p>We'll also pass strings with special symbols, such as <code>2A3*3a2</code>, <code>2A3 3a2</code>, and <code>2_A3*3#A2</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "javascript-algorithms-and-data-structures-projects",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "612e95ef2e4bdf41f69067f9",
+  "title": "Step 12",
+  "challengeType": 0,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>Piano</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div id=\"piano\">\n      <div class=\"keys\">\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>Piano</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <div id=\"piano\">\n      <div class=\"keys\">\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        14
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "html {\n  box-sizing: border-box;\n}\n\n*, *::before, *::after {\n  box-sizing: inherit;\n}\n\n#piano {\n  background-color: #00471b;\n  width: 992px;\n  height: 290px;\n}",
+      "error": null,
+      "seed": "html {\n  box-sizing: border-box;\n}\n\n*, *::before, *::after {\n  box-sizing: inherit;\n}\n\n#piano {\n  background-color: #00471b;\n  width: 992px;\n  height: 290px;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>#piano</code> selector should have the <code>margin</code> property set to <code>80px auto</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('#piano')?.margin === '80px auto');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Set the <code>margin</code> of the <code>#piano</code> to <code>80px auto</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-responsive-web-design-by-building-a-piano",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

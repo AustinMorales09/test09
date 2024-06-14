@@ -1,0 +1,82 @@
+{
+  "id": "587d7b88367417b2b2512b47",
+  "title": "Use the Rest Parameter with Function Parameters",
+  "challengeType": 1,
+  "forumTopicId": 301221,
+  "dashedName": "use-the-rest-parameter-with-function-parameters",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const sum = (x, y, z) => {\n  const args = [x, y, z];\n  let total = 0;\n  for (let i = 0; i < args.length; i++) {\n    total += args[i];\n  }\n  return total;\n}",
+      "error": null,
+      "seed": "const sum = (x, y, z) => {\n  const args = [x, y, z];\n  let total = 0;\n  for (let i = 0; i < args.length; i++) {\n    total += args[i];\n  }\n  return total;\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const sum = (...args) => {\n  let total = 0;\n  for (let i = 0; i < args.length; i++) {\n    total += args[i];\n  }\n  return total;\n}",
+        "error": null,
+        "seed": "const sum = (...args) => {\n  let total = 0;\n  for (let i = 0; i < args.length; i++) {\n    total += args[i];\n  }\n  return total;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The result of <code>sum(0,1,2)</code> should be 3</p>",
+      "testString": "assert(sum(0, 1, 2) === 3);"
+    },
+    {
+      "text": "<p>The result of <code>sum(1,2,3,4)</code> should be 10</p>",
+      "testString": "assert(sum(1, 2, 3, 4) === 10);"
+    },
+    {
+      "text": "<p>The result of <code>sum(5)</code> should be 5</p>",
+      "testString": "assert(sum(5) === 5);"
+    },
+    {
+      "text": "<p>The result of <code>sum()</code> should be 0</p>",
+      "testString": "assert(sum() === 0);"
+    },
+    {
+      "text": "<p><code>sum</code> should be an arrow function which uses the rest parameter syntax (<code>...</code>) on the <code>args</code> parameter.</p>",
+      "testString": "assert(__helpers.removeWhiteSpace(__helpers.removeJSComments(code)).match(/sum=\\(\\.\\.\\.args\\)=>/));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In order to help us create more flexible functions, ES6 introduces the <dfn>rest parameter</dfn> for function parameters. With the rest parameter, you can create functions that take a variable number of arguments. These arguments are stored in an array that can be accessed later from inside the function.</p>\n<p>Check out this code:</p>\n<pre><code class=\"language-js\">function howMany(...args) {\n  return \"You have passed \" + args.length + \" arguments.\";\n}\nconsole.log(howMany(0, 1, 2));\nconsole.log(howMany(\"string\", null, [1, 2, 3], { }));\n</code></pre>\n<p>The console would display the strings <code>You have passed 3 arguments.</code> and <code>You have passed 4 arguments.</code>.</p>\n<p>The rest parameter eliminates the need to use the <code>arguments</code> object and allows us to use array methods on the array of parameters passed to the function <code>howMany</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Modify the function <code>sum</code> using the rest parameter in such a way that the function <code>sum</code> is able to take any number of arguments and return their sum.</p>\n</section>",
+  "translationPending": false,
+  "block": "es6",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,87 @@
+{
+  "id": "65b625b0ce7ac75e1115c8cb",
+  "title": "Task 22",
+  "challengeType": 22,
+  "dashedName": "task-22",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Well, she's responsible for _ people and _ _ _ workers.</p>",
+    "blanks": [
+      {
+        "answer": "hiring",
+        "feedback": "<p>It means to give someone a job or position.</p>"
+      },
+      {
+        "answer": "taking",
+        "feedback": "<p>This word starts the phrase for looking after someone.</p>"
+      },
+      {
+        "answer": "care",
+        "feedback": "<p>It's the part of the phrase meaning to ensure someone's well-being.</p>"
+      },
+      {
+        "answer": "of",
+        "feedback": "<p>This small word connects <code>taking care</code> with who is being looked after, in this case, <code>workers</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.44,
+        "finishTimestamp": 26.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.54,
+        "dialogue": {
+          "text": "Well, she's responsible for hiring people and taking care of workers.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 5.04
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>After <code>responsible for</code>, you use the <code>-ing</code> form of verbs to describe these tasks.</p>\n<p><code>Hiring</code> means to give someone a job. A simple example could be, <code>The manager is hiring new workers.</code></p>\n<p><code>Taking care of</code> means to look after or ensure someone's well-being. An example is, <code>She is taking care of her sick friend.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

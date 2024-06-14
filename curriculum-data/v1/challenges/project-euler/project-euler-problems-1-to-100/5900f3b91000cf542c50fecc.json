@@ -1,0 +1,81 @@
+{
+  "id": "5900f3b91000cf542c50fecc",
+  "title": "Problem 77: Prime summations",
+  "challengeType": 1,
+  "forumTopicId": 302190,
+  "dashedName": "problem-77-prime-summations",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function primeSummations(n) {\n\n  return true;\n}\n\nprimeSummations(5);",
+      "error": null,
+      "seed": "function primeSummations(n) {\n\n  return true;\n}\n\nprimeSummations(5);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function primeSummations(n) {\n  function getSievePrimes(max) {\n    const primesMap = new Array(max).fill(true);\n    primesMap[0] = false;\n    primesMap[1] = false;\n    const primes = [];\n\n    for (let i = 2; i < max; i += 2) {\n      if (primesMap[i]) {\n        primes.push(i);\n        for (let j = i * i; j < max; j += i) {\n          primesMap[j] = false;\n        }\n      }\n      if (i === 2) {\n        i = 1;\n      }\n    }\n    return primes;\n  }\n\n  const MAX_NUMBER = 100;\n  const primes = getSievePrimes(MAX_NUMBER);\n\n  for (let curNumber = 2; curNumber < MAX_NUMBER; curNumber++) {\n    const combinations = new Array(curNumber + 1).fill(0);\n    combinations[0] = 1;\n    for (let i = 0; i < primes.length; i++) {\n      for (let j = primes[i]; j <= curNumber; j++) {\n        combinations[j] += combinations[j - primes[i]];\n      }\n    }\n    if (combinations[curNumber] > n) {\n      return curNumber;\n    }\n  }\n\n  return false;\n}",
+        "error": null,
+        "seed": "function primeSummations(n) {\n  function getSievePrimes(max) {\n    const primesMap = new Array(max).fill(true);\n    primesMap[0] = false;\n    primesMap[1] = false;\n    const primes = [];\n\n    for (let i = 2; i < max; i += 2) {\n      if (primesMap[i]) {\n        primes.push(i);\n        for (let j = i * i; j < max; j += i) {\n          primesMap[j] = false;\n        }\n      }\n      if (i === 2) {\n        i = 1;\n      }\n    }\n    return primes;\n  }\n\n  const MAX_NUMBER = 100;\n  const primes = getSievePrimes(MAX_NUMBER);\n\n  for (let curNumber = 2; curNumber < MAX_NUMBER; curNumber++) {\n    const combinations = new Array(curNumber + 1).fill(0);\n    combinations[0] = 1;\n    for (let i = 0; i < primes.length; i++) {\n      for (let j = primes[i]; j <= curNumber; j++) {\n        combinations[j] += combinations[j - primes[i]];\n      }\n    }\n    if (combinations[curNumber] > n) {\n      return curNumber;\n    }\n  }\n\n  return false;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>primeSummations(5)</code> should return a number.</p>",
+      "testString": "assert(typeof primeSummations(5) === 'number');"
+    },
+    {
+      "text": "<p><code>primeSummations(5)</code> should return <code>11</code>.</p>",
+      "testString": "assert.strictEqual(primeSummations(5), 11);"
+    },
+    {
+      "text": "<p><code>primeSummations(100)</code> should return <code>31</code>.</p>",
+      "testString": "assert.strictEqual(primeSummations(100), 31);"
+    },
+    {
+      "text": "<p><code>primeSummations(1000)</code> should return <code>53</code>.</p>",
+      "testString": "assert.strictEqual(primeSummations(1000), 53);"
+    },
+    {
+      "text": "<p><code>primeSummations(5000)</code> should return <code>71</code>.</p>",
+      "testString": "assert.strictEqual(primeSummations(5000), 71);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>It is possible to write ten as the sum of primes in exactly five different ways:</p>\n<div style='margin-left: 4em;'>\n  7 + 3<br>\n  5 + 5<br>\n  5 + 3 + 2<br>\n  3 + 3 + 2 + 2<br>\n  2 + 2 + 2 + 2 + 2<br><br>\n</div>\n<p>What is the first value which can be written as the sum of primes in over <code>n</code> ways?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 76,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

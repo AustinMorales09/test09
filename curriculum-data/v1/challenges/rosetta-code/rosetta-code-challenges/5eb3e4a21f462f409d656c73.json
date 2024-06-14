@@ -1,0 +1,90 @@
+{
+  "id": "5eb3e4a21f462f409d656c73",
+  "title": "Self-referential sequence",
+  "challengeType": 1,
+  "forumTopicId": 385317,
+  "dashedName": "self-referential-sequence",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function selfReferential(n) {\n\n}",
+      "error": null,
+      "seed": "function selfReferential(n) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function selfReferential(n) {\n  var descending,\n    i,\n    incr,\n    j,\n    max_i,\n    max_len,\n    max_seq,\n    seq,\n    sequence,\n    indexOf =\n      [].indexOf ||\n      function(item) {\n        for (var i = 0, l = this.length; i < l; i++) {\n          if (i in this && this[i] === item) return i;\n        }\n        return -1;\n      };\n\n  sequence = function(n) {\n    var c, cnt, cnts, d, digit, i, j, l, len, new_cnts, ref, s, seq;\n    cnts = {};\n    ref = n.toString();\n    for (j = 0, len = ref.length; j < len; j++) {\n      c = ref[j];\n      d = parseInt(c);\n      incr(cnts, d);\n    }\n    seq = [ref];\n    while (true) {\n      s = '';\n      for (i = l = 9; l >= 0; i = --l) {\n        if (cnts[i]) {\n          s += '' + cnts[i] + i;\n        }\n      }\n      if (indexOf.call(seq, s) >= 0) {\n        break;\n      }\n      seq.push(s);\n      new_cnts = {};\n      for (digit in cnts) {\n        cnt = cnts[digit];\n        incr(new_cnts, cnt);\n        incr(new_cnts, digit);\n      }\n      cnts = new_cnts;\n    }\n    return seq;\n  };\n\n  incr = function(h, k) {\n    if (h[k] == null) {\n      h[k] = 0;\n    }\n    return (h[k] += 1);\n  };\n\n  descending = function(n) {\n    var tens;\n    if (n < 10) {\n      return true;\n    }\n    tens = n / 10;\n    if (n % 10 > tens % 10) {\n      return false;\n    }\n    return descending(tens);\n  };\n\n  return sequence(n);\n}",
+        "error": null,
+        "seed": "function selfReferential(n) {\n  var descending,\n    i,\n    incr,\n    j,\n    max_i,\n    max_len,\n    max_seq,\n    seq,\n    sequence,\n    indexOf =\n      [].indexOf ||\n      function(item) {\n        for (var i = 0, l = this.length; i < l; i++) {\n          if (i in this && this[i] === item) return i;\n        }\n        return -1;\n      };\n\n  sequence = function(n) {\n    var c, cnt, cnts, d, digit, i, j, l, len, new_cnts, ref, s, seq;\n    cnts = {};\n    ref = n.toString();\n    for (j = 0, len = ref.length; j < len; j++) {\n      c = ref[j];\n      d = parseInt(c);\n      incr(cnts, d);\n    }\n    seq = [ref];\n    while (true) {\n      s = '';\n      for (i = l = 9; l >= 0; i = --l) {\n        if (cnts[i]) {\n          s += '' + cnts[i] + i;\n        }\n      }\n      if (indexOf.call(seq, s) >= 0) {\n        break;\n      }\n      seq.push(s);\n      new_cnts = {};\n      for (digit in cnts) {\n        cnt = cnts[digit];\n        incr(new_cnts, cnt);\n        incr(new_cnts, digit);\n      }\n      cnts = new_cnts;\n    }\n    return seq;\n  };\n\n  incr = function(h, k) {\n    if (h[k] == null) {\n      h[k] = 0;\n    }\n    return (h[k] += 1);\n  };\n\n  descending = function(n) {\n    var tens;\n    if (n < 10) {\n      return true;\n    }\n    tens = n / 10;\n    if (n % 10 > tens % 10) {\n      return false;\n    }\n    return descending(tens);\n  };\n\n  return sequence(n);\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>selfReferential</code> should be a function.</p>",
+      "testString": "assert(typeof selfReferential === 'function');"
+    },
+    {
+      "text": "<p><code>selfReferential(40)</code> should return a array.</p>",
+      "testString": "assert(Array.isArray(selfReferential(40)));"
+    },
+    {
+      "text": "<p><code>selfReferential(40)</code> should return <code>[\"40\", \"1410\", \"142110\", \"14123110\", \"1413124110\", \"2413125110\", \"151413224110\", \"152413225110\", \"251413324110\", \"152423224110\", \"152413423110\"]</code>.</p>",
+      "testString": "assert.deepEqual(selfReferential(40), [\n  '40',\n  '1410',\n  '142110',\n  '14123110',\n  '1413124110',\n  '2413125110',\n  '151413224110',\n  '152413225110',\n  '251413324110',\n  '152423224110',\n  '152413423110'\n]);"
+    },
+    {
+      "text": "<p><code>selfReferential(132110)</code> should return <code>[\"132110\", \"13123110\", \"23124110\", \"1413223110\", \"1423224110\", \"2413323110\", \"1433223110\"]</code>.</p>",
+      "testString": "assert.deepEqual(selfReferential(132110), [\n  '132110',\n  '13123110',\n  '23124110',\n  '1413223110',\n  '1423224110',\n  '2413323110',\n  '1433223110'\n]);"
+    },
+    {
+      "text": "<p><code>selfReferential(132211)</code> should return <code>[\"132211\", \"132231\", \"232221\", \"134211\", \"14131231\", \"14231241\", \"24132231\", \"14233221\"]</code>.</p>",
+      "testString": "assert.deepEqual(selfReferential(132211), [\n  '132211',\n  '132231',\n  '232221',\n  '134211',\n  '14131231',\n  '14231241',\n  '24132231',\n  '14233221'\n]);"
+    },
+    {
+      "text": "<p><code>selfReferential(1413223110)</code> should return <code>[\"1413223110\", \"1423224110\", \"2413323110\", \"1433223110\"]</code>.</p>",
+      "testString": "assert.deepEqual(selfReferential(1413223110), [\n  '1413223110',\n  '1423224110',\n  '2413323110',\n  '1433223110'\n]);"
+    },
+    {
+      "text": "<p><code>selfReferential(251413126110)</code> should return <code>[\"251413126110\", \"16151413225110\", \"16251413226110\", \"26151413325110\", \"16251423225110\", \"16251413424110\", \"16153413225110\"]</code>.</p>",
+      "testString": "assert.deepEqual(selfReferential(251413126110), [\n  '251413126110',\n  '16151413225110',\n  '16251413226110',\n  '26151413325110',\n  '16251423225110',\n  '16251413424110',\n  '16153413225110'\n]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>There are several ways to generate a self-referential sequence. One very common one (the <a href=\"https://rosettacode.org/wiki/Look-and-say_sequence\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Look-and-say sequence</a>) is to start with a positive integer, then generate the next term by concatenating enumerated groups of adjacent alike digits:</p>\n<pre>0, 10, 1110, 3110, 132110, 1113122110, 311311222110 ...</pre>\n<p>The terms generated grow in length geometrically and never converge.</p>\n<p>Another way to generate a self-referential sequence is to summarize the previous term.</p>\n<p>Count how many of each alike digit there is, then concatenate the sum and digit for each of the sorted enumerated digits. Note that the first five terms are the same as for the previous sequence.</p>\n<pre>0, 10, 1110, 3110, 132110, 13123110, 23124110 ...</pre>\n<p>Sort the digits largest to smallest. Do not include counts of digits that do not appear in the previous term.</p>\n<p>Depending on the seed value, series generated this way always either converge to a stable value or to a short cyclical pattern. (For our purposes, converge means that an element matches a previously seen element.) The sequence shown, with a seed value of 0, converges to a stable value of 1433223110 after 11 iterations. The seed value that converges most quickly is 22. It goes stable after the first element. (The next element is 22, which has been seen before.)</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function that takes the seed value as parameter, generates a self referential sequence until it converges, and returns it as an array.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 110,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "6630e965a9e9c46e8b5a3ee2",
+  "title": "Task 12",
+  "challengeType": 19,
+  "dashedName": "task-12",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the <code>int</code> data type represent in programming?</p>",
+    "answers": [
+      {
+        "answer": "<p>Decimal numbers</p>",
+        "feedback": "<p><code>Int</code> is used for whole numbers, not for numbers with decimal parts.</p>"
+      },
+      {
+        "answer": "<p>Textual information</p>",
+        "feedback": "<p><code>Int</code> represents whole numbers, not text. <code>String</code> is used for textual information.</p>"
+      },
+      {
+        "answer": "<p>Whole numbers</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Images or graphics</p>",
+        "feedback": "<p><code>Int</code> is for storing numerical values, not for images or graphics.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In programming, <code>int</code> stands for \"integer\". It's a data type used to store whole numbers, which are numbers without fractional parts or decimals. Integers can be positive, negative, or zero.</p>\n<p>Choosing the <code>int</code> data type is essential when dealing with whole numbers, like counts, indexes in arrays, or any scenario where fractional numbers are not needed.</p>\n<p>Examples:</p>\n<p>Counting items: <code>int itemCount = 5;</code></p>\n<p>Storing age: <code>int age = 30;</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

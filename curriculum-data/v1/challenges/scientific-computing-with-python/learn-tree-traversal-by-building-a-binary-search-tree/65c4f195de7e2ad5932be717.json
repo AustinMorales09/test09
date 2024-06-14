@@ -1,0 +1,53 @@
+{
+  "id": "65c4f195de7e2ad5932be717",
+  "title": "Step 9",
+  "challengeType": 20,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        5,
+        10
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class TreeNode:\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\nclass BinarySearchTree:\n    def __init__(self):\n        self.root = None\n",
+      "error": null,
+      "seed": "class TreeNode:\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\nclass BinarySearchTree:\n    def __init__(self):\n        self.root = None\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should define an <code>_insert</code> method within the <code>BinarySearchTree</code> class. Remember to use <code>pass</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /def\\s+_insert\\s*\\([^(]*\\)\\s*:/m) })"
+    },
+    {
+      "text": "<p>Your <code>_insert</code> method should take three parameters: <code>self</code>, <code>node</code> and <code>key</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /def\\s+_insert\\s*\\(\\s*self\\s*,\\s*node\\s*,\\s*key\\s*\\)\\s*:/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Next, you need to define a mechanism to insert nodes in the tree. For that, you need to define an <code>_insert</code> method, which is a helper function and would be used by the actual <code>insert</code> method later on.</p>\n<p>This method is recursive, meaning it calls itself to traverse the tree until the appropriate location for the new node is found.</p>\n<p>Define an <code>_insert</code> method with the parameters <code>self</code>, <code>node</code> and <code>key</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

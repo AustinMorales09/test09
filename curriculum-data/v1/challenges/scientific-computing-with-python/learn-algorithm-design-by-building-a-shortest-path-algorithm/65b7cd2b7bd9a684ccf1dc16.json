@@ -1,0 +1,57 @@
+{
+  "id": "65b7cd2b7bd9a684ccf1dc16",
+  "title": "Step 9",
+  "challengeType": 20,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        9
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\ncopper['food'] = 'hay'\ncopper['species'] = 'Cavia porcellus'\n\nprint(copper)",
+      "error": null,
+      "seed": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\ncopper['food'] = 'hay'\ncopper['species'] = 'Cavia porcellus'\n\nprint(copper)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have <code>print(copper)</code> in your code.</p>",
+      "testString": "({ test: () => assert.isFalse(runPython(`_Node(_code).has_call(\"print(copper)\")`)) })"
+    },
+    {
+      "text": "<p>You should create a <code>for</code> loop to iterate over the <code>copper</code> dictionary.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_for_loops()[0].find_for_iter().is_equivalent(\"copper\")`)) })"
+    },
+    {
+      "text": "<p>You should print each key of the <code>copper</code> inside your <code>for</code> loop.</p>",
+      "testString": "({ test: () => assert(runPython(`\nvar = _Node(_code).find_for_loops()[0].find_for_vars()\n_Node(_code).find_for_loops()[0].find_bodies()[0].is_equivalent(f\"print({var})\")\n`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To iterate over the keys of a dictionary, you can simply put the dictionary into a <code>for</code> loop. The code below would print each key in the dictionary <code>dict</code>:</p>\n<pre><code class=\"language-py\">for i in dict:\n   print(i)\n</code></pre>\n<p>Replace the <code>print()</code> call with a <code>for</code> loop that iterates over <code>copper</code> and prints each key.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

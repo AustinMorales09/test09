@@ -1,0 +1,69 @@
+{
+  "id": "594da033de4190850b893874",
+  "title": "Averages/Root mean square",
+  "challengeType": 1,
+  "forumTopicId": 302228,
+  "dashedName": "averagesroot-mean-square",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\nconst answer1 = 6.2048368229954285;",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function rms(arr) {\n\n}",
+      "error": null,
+      "seed": "function rms(arr) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function rms(arr) {\n  const sumOfSquares = arr.reduce((s, x) => s + x * x, 0);\n  return Math.sqrt(sumOfSquares / arr.length);\n}",
+        "error": null,
+        "seed": "function rms(arr) {\n  const sumOfSquares = arr.reduce((s, x) => s + x * x, 0);\n  return Math.sqrt(sumOfSquares / arr.length);\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>rms</code> should be a function.</p>",
+      "testString": "assert(typeof rms === 'function');"
+    },
+    {
+      "text": "<p><code>rms([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])</code> should equal <code>6.2048368229954285</code>.</p>",
+      "testString": "assert.equal(rms(arr1), answer1);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Compute the Root Mean Square (RMS) of the numbers 1 through 10 inclusive.</p>\n<p>The <abbr title=\"Root mean square\">RMS</abbr> is calculated by taking the square root of the mean of the squares of the numbers, given by the equation:</p>\n<p>$$x_{\\mathrm{rms}} = \\sqrt {{{x_1}^2 + {x_2}^2 + \\cdots + {x_n}^2} \\over n}. $$</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

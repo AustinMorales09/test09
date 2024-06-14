@@ -1,0 +1,53 @@
+{
+  "id": "5f3477ae34c1239cafe128be",
+  "title": "Step 13",
+  "challengeType": 0,
+  "dashedName": "step-13",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        5,
+        17
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n    <style>\n      h1 {\n        text-align: center;\n      }\n      h2 {\n        text-align: center;\n      }\n      p {\n        text-align: center;\n      }\n    </style>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n    <style>\n      h1 {\n        text-align: center;\n      }\n      h2 {\n        text-align: center;\n      }\n      p {\n        text-align: center;\n      }\n    </style>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use a single type selector for all three elements, <code>h1, h2, p</code>. Be sure to use that order.</p>",
+      "testString": "const hasSelector = new __helpers.CSSHelp(document).getStyle('h1, h2, p');\nassert(hasSelector);"
+    },
+    {
+      "text": "<p>You should only have one selector in your <code>style</code> element.</p>",
+      "testString": "const selectors = new __helpers.CSSHelp(document).getCSSRules().filter(x => x.selectorText)\nassert(selectors.length === 1);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You now have three type selectors with the exact same styling. You can add the same group of styles to many elements by creating a list of selectors. Each selector is separated with commas like this:</p>\n<pre><code class=\"language-css\">selector1, selector2 {\n  property: value;\n}\n</code></pre>\n<p>Delete the three existing type selectors and replace them with one selector list that centers the text for the <code>h1</code>, <code>h2</code>, and <code>p</code> elements.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

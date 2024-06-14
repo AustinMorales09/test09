@@ -1,0 +1,121 @@
+{
+  "id": "587d7db2367417b2b2512b8b",
+  "title": "Understand the Immediately Invoked Function Expression (IIFE)",
+  "challengeType": 1,
+  "forumTopicId": 301328,
+  "dashedName": "understand-the-immediately-invoked-function-expression-iife",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function makeNest() {\n  console.log(\"A cozy nest is ready\");\n}\n\nmakeNest();",
+      "error": null,
+      "seed": "function makeNest() {\n  console.log(\"A cozy nest is ready\");\n}\n\nmakeNest();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "(function () {\n  console.log(\"A cozy nest is ready\");\n})();",
+        "error": null,
+        "seed": "(function () {\n  console.log(\"A cozy nest is ready\");\n})();"
+      }
+    ],
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "(function () {\n  console.log(\"A cozy nest is ready\");\n}());",
+        "error": null,
+        "seed": "(function () {\n  console.log(\"A cozy nest is ready\");\n}());"
+      }
+    ],
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "(() => {\n  console.log(\"A cozy nest is ready\");\n})();",
+        "error": null,
+        "seed": "(() => {\n  console.log(\"A cozy nest is ready\");\n})();"
+      }
+    ],
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "(() =>\n  console.log(\"A cozy nest is ready\")\n)();",
+        "error": null,
+        "seed": "(() =>\n  console.log(\"A cozy nest is ready\")\n)();"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The function should be anonymous.</p>",
+      "testString": "assert(/\\((function|\\(\\))(=>|\\(\\)){?/.test(__helpers.removeJSComments(code).replace(/\\s/g, '')));"
+    },
+    {
+      "text": "<p>Your function should have parentheses at the end of the expression to call it immediately.</p>",
+      "testString": "assert(/\\(.*(\\)\\(|\\}\\(\\))\\)/.test(__helpers.removeJSComments(code).replace(/[\\s;]/g, '')));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A common pattern in JavaScript is to execute a function as soon as it is declared:</p>\n<pre><code class=\"language-js\">(function () {\n  console.log(\"Chirp, chirp!\");\n})();\n</code></pre>\n<p>This is an anonymous function expression that executes right away, and outputs <code>Chirp, chirp!</code> immediately.</p>\n<p>Note that the function has no name and is not stored in a variable. The two parentheses () at the end of the function expression cause it to be immediately executed or invoked. This pattern is known as an <dfn>immediately invoked function expression</dfn> or <dfn>IIFE</dfn>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Rewrite the function <code>makeNest</code> and remove its call so instead it's an anonymous immediately invoked function expression (IIFE).</p>\n</section>",
+  "translationPending": false,
+  "block": "object-oriented-programming",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

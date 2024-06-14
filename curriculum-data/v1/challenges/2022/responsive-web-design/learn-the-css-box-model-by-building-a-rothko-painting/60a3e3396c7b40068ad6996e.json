@@ -1,0 +1,49 @@
+{
+  "id": "60a3e3396c7b40068ad6996e",
+  "title": "Step 5",
+  "challengeType": 0,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        9
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n  </head>\n  <body>\n    <img src=\"https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-3.png\">\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Rothko Painting</title>\n  </head>\n  <body>\n    <img src=\"https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-3.png\">\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have an <code>img</code> element in your code.</p>",
+      "testString": "assert(document.querySelector('img') === null);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Margin is the area outside of the box, and can be used to control the space between other boxes or elements.</p>\n<p>Here the bottom element has a larger top margin, pushing it further down the page.</p>\n<p>Now that you understand the CSS box model, let's get started on the Rothko painting.</p>\n<p>Remove the <code>&#x3C;img></code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-css-box-model-by-building-a-rothko-painting",
+  "hasEditableBoundaries": true,
+  "order": 5,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

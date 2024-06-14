@@ -1,0 +1,88 @@
+{
+  "id": "657cfeeeabb34d946d437dc7",
+  "title": "Task 75",
+  "challengeType": 19,
+  "dashedName": "task-75",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sophie mean when she says <code>I think you are in good hands</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>Tom needs good hands.</p>",
+        "feedback": "<p>The phrase doesn't refer to physically handling an object.</p>"
+      },
+      {
+        "answer": "<p>Tom is holding something good.</p>",
+        "feedback": "<p>It is not about holding something in your hands.</p>"
+      },
+      {
+        "answer": "<p>Maria is a capable leader.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Tom is in trouble.</p>",
+        "feedback": "<p>The phrase suggests that Tom is indeed being helped, and well.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 57.46,
+        "finishTimestamp": 60.4
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.94,
+        "dialogue": {
+          "text": "Maria is a fantastic leader to have. I think you're in good hands.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.44
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>to be in good hands</code> means that someone is being taken care of by a competent or capable person.</p>\n<p>It’s like saying you can relax because you trust the person helping or looking after you.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 77,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

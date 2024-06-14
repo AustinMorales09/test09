@@ -1,0 +1,88 @@
+{
+  "id": "6579db734a2b8010c3e92ada",
+  "title": "Task 28",
+  "challengeType": 19,
+  "dashedName": "task-28",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Bob proposing in his statement?</p>",
+    "answers": [
+      {
+        "answer": "<p>To immediately start the code review</p>",
+        "feedback": "<p>Bob proposes scheduling a time, not starting the review immediately.</p>"
+      },
+      {
+        "answer": "<p>To schedule a specific time for the code review session</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To cancel the code review session</p>",
+        "feedback": "<p>Bob's intention is to organize the session, not cancel it.</p>"
+      },
+      {
+        "answer": "<p>To review the code by himself</p>",
+        "feedback": "<p>Bob suggests a joint review session, not doing it alone.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 40.06,
+        "finishTimestamp": 42.68
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.62,
+        "dialogue": {
+          "text": "Excellent. Let's set up a time for our code review session.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.12
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

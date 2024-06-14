@@ -1,0 +1,74 @@
+{
+  "id": "bad87fee1348bd9aedf08812",
+  "title": "Add Images to Your Website",
+  "challengeType": 0,
+  "forumTopicId": 16640,
+  "dashedName": "add-images-to-your-website",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<h2>CatPhotoApp</h2>\n<main>\n\n\n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n</main>",
+      "error": null,
+      "seed": "<h2>CatPhotoApp</h2>\n<main>\n\n\n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n</main>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<h2>CatPhotoApp</h2>\n<main>\n  <a href=\"#\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n</main>",
+        "error": null,
+        "seed": "<h2>CatPhotoApp</h2>\n<main>\n  <a href=\"#\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n</main>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your page should have an image element.</p>",
+      "testString": "assert($('img').length);"
+    },
+    {
+      "text": "<p>Your image should have a <code>src</code> attribute that points to the kitten image.</p>",
+      "testString": "assert(/^https:\\/\\/cdn\\.freecodecamp\\.org\\/curriculum\\/cat-photo-app\\/relaxing-cat\\.jpg$/i.test($('img').attr('src')));"
+    },
+    {
+      "text": "<p>Your image element's <code>alt</code> attribute should not be empty.</p>",
+      "testString": "assert(\n  $('img').attr('alt') &&\n    $('img').attr('alt').length &&\n    /<(?:img|IMG)\\S*alt=(['\"])(?!\\1|>)\\S+\\1\\S*\\/?>/.test(\n      __helpers.removeWhiteSpace(code)\n    )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You can add images to your website by using the <code>img</code> element, and point to a specific image's URL using the <code>src</code> attribute.</p>\n<p>An example of this would be:</p>\n<pre><code class=\"language-html\">&#x3C;img src=\"https://www.freecatphotoapp.com/your-image.jpg\">\n</code></pre>\n<p>Note that <code>img</code> elements are self-closing.</p>\n<p>All <code>img</code> elements <strong>must</strong> have an <code>alt</code> attribute. The text inside an <code>alt</code> attribute is used for screen readers to improve accessibility and is displayed if the image fails to load.</p>\n<p><strong>Note:</strong> If the image is purely decorative, using an empty <code>alt</code> attribute is a best practice.</p>\n<p>Ideally the <code>alt</code> attribute should not contain special characters unless needed.</p>\n<p>Let's add an <code>alt</code> attribute to our <code>img</code> example above:</p>\n<pre><code class=\"language-html\">&#x3C;img src=\"https://www.freecatphotoapp.com/your-image.jpg\" alt=\"freeCodeCamp logo\">\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Let's try to add an image to our website:</p>\n<p>Within the existing <code>main</code> element, insert an <code>img</code> element before the existing <code>p</code> elements.</p>\n<p>Now set the <code>src</code> attribute so that it points to the url <code>https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg</code></p>\n<p>Finally, don't forget to give your <code>img</code> element an <code>alt</code> attribute with applicable text.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-html-and-html5",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "666339dd9d6dc46efa85c8cb",
+  "title": "Task 7",
+  "challengeType": 19,
+  "dashedName": "task-7",
+  "solutions": [],
+  "question": {
+    "text": "<p>According to Sarah, how does <code>low-code development</code> help developers?</p>",
+    "answers": [
+      {
+        "answer": "<p>They don't need to focus on developing anymore</p>",
+        "feedback": "<p>The development still happens; it just needs less code.</p>"
+      },
+      {
+        "answer": "<p>It eliminates the need of coding altogether</p>",
+        "feedback": "<p><code>Low-code</code> does not mean no code. Some coding is still necessary.</p>"
+      },
+      {
+        "answer": "<p>It helps them write more low-level code</p>",
+        "feedback": "<p>The idea of <code>low-code development</code> is to write less code, not more.</p>"
+      },
+      {
+        "answer": "<p>By having them write less code</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.14,
+        "finishTimestamp": 9.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 4.32,
+        "dialogue": {
+          "text": "Low-code development is about making software with less code.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.82
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

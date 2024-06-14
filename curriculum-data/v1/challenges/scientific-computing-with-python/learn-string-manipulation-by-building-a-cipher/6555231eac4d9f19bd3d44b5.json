@@ -1,0 +1,53 @@
+{
+  "id": "6555231eac4d9f19bd3d44b5",
+  "title": "Step 81",
+  "challengeType": 20,
+  "dashedName": "step-81",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        25,
+        31
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira!'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction=1):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    final_message = ''\n\n    for char in message.lower():\n\n        # Append any non-letter character to the message\n        if not char.isalpha():\n            final_message += char\n        else:        \n            # Find the right key character to encode/decode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted/decrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            final_message += alphabet[new_index]\n    \n    return final_message\n\nencryption = vigenere(text, custom_key)\nprint(encryption)\ndecryption = vigenere(encryption, custom_key, -1)\nprint(decryption)",
+      "error": null,
+      "seed": "text = 'Hello Zaira!'\ncustom_key = 'python'\n\ndef vigenere(message, key, direction=1):\n    key_index = 0\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    final_message = ''\n\n    for char in message.lower():\n\n        # Append any non-letter character to the message\n        if not char.isalpha():\n            final_message += char\n        else:        \n            # Find the right key character to encode/decode\n            key_char = key[key_index % len(key)]\n            key_index += 1\n\n            # Define the offset and the encrypted/decrypted letter\n            offset = alphabet.index(key_char)\n            index = alphabet.find(char)\n            new_index = (index + offset*direction) % len(alphabet)\n            final_message += alphabet[new_index]\n    \n    return final_message\n\nencryption = vigenere(text, custom_key)\nprint(encryption)\ndecryption = vigenere(encryption, custom_key, -1)\nprint(decryption)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a new function called <code>encrypt</code>. Remember to use the <code>pass</code> keyword inside the body.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import inspect\n    inspect.isfunction(encrypt)\n  `))\n})"
+    },
+    {
+      "text": "<p>Your <code>encrypt</code> function should take <code>message</code> and <code>key</code> as the parameters. The order matters.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import inspect\n    sig = inspect.signature(encrypt)\n    str(sig) == \"(message, key)\"\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>pass</code> keyword can be used as a placeholder for future code. It does not have any effect in your code but it can save you from errors you would get in case of incomplete code:</p>\n<pre><code class=\"language-py\">def foo():\n    pass\n</code></pre>\n<p>Calling <code>vigenere</code> with <code>1</code> to encrypt and <code>-1</code> to decrypt is fine but it might be a little bit cryptic. Create a new function called <code>encrypt</code> that takes <code>message</code> and <code>key</code> parameters, and use <code>pass</code> to fill the function body.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 80,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

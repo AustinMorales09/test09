@@ -1,0 +1,74 @@
+{
+  "id": "587d7daf367417b2b2512b7e",
+  "title": "Understand the Constructor Property",
+  "challengeType": 1,
+  "forumTopicId": 301327,
+  "dashedName": "understand-the-constructor-property",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function Dog(name) {\n  this.name = name;\n}\n\n// Only change code below this line\nfunction joinDogFraternity(candidate) {\n\n}",
+      "error": null,
+      "seed": "function Dog(name) {\n  this.name = name;\n}\n\n// Only change code below this line\nfunction joinDogFraternity(candidate) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function Dog(name) {\n  this.name = name;\n}\nfunction joinDogFraternity(candidate) {\n  return candidate.constructor === Dog;\n}",
+        "error": null,
+        "seed": "function Dog(name) {\n  this.name = name;\n}\nfunction joinDogFraternity(candidate) {\n  return candidate.constructor === Dog;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>joinDogFraternity</code> should be defined as a function.</p>",
+      "testString": "assert(typeof joinDogFraternity === 'function');"
+    },
+    {
+      "text": "<p><code>joinDogFraternity</code> should return <code>true</code> if <code>candidate</code> is an instance of <code>Dog</code>.</p>",
+      "testString": "assert(joinDogFraternity(new Dog('')) === true);"
+    },
+    {
+      "text": "<p><code>joinDogFraternity</code> should use the <code>constructor</code> property.</p>",
+      "testString": "assert(/\\.constructor/.test(__helpers.removeJSComments(code)) && !/instanceof/.test(__helpers.removeJSComments(code)));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>There is a special <code>constructor</code> property located on the object instances <code>duck</code> and <code>beagle</code> that were created in the previous challenges:</p>\n<pre><code class=\"language-js\">let duck = new Bird();\nlet beagle = new Dog();\n\nconsole.log(duck.constructor === Bird); \nconsole.log(beagle.constructor === Dog);\n</code></pre>\n<p>Both of these <code>console.log</code> calls would display <code>true</code> in the console.</p>\n<p>Note that the <code>constructor</code> property is a reference to the constructor function that created the instance. The advantage of the <code>constructor</code> property is that it's possible to check for this property to find out what kind of object it is. Here's an example of how this could be used:</p>\n<pre><code class=\"language-js\">function joinBirdFraternity(candidate) {\n  if (candidate.constructor === Bird) {\n    return true;\n  } else {\n    return false;\n  }\n}\n</code></pre>\n<p><strong>Note:</strong> Since the <code>constructor</code> property can be overwritten (which will be covered in the next two challenges) it’s generally better to use the <code>instanceof</code> method to check the type of an object.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a <code>joinDogFraternity</code> function that takes a <code>candidate</code> parameter and, using the <code>constructor</code> property, return <code>true</code> if the candidate is a <code>Dog</code>, otherwise return <code>false</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "object-oriented-programming",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

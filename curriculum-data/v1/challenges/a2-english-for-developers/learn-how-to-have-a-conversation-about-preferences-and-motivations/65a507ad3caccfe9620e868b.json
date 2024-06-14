@@ -1,0 +1,97 @@
+{
+  "id": "65a507ad3caccfe9620e868b",
+  "title": "Task 108",
+  "challengeType": 19,
+  "dashedName": "task-108",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is Bob obsessed with drones?</p>",
+    "answers": [
+      {
+        "answer": "<p>They are easy to carry around</p>",
+        "feedback": "<p>Think about the specific uses of drones that Bob mentions.</p>"
+      },
+      {
+        "answer": "<p>They make phone calls clearer</p>",
+        "feedback": "<p>Consider what Bob appreciates most about drones related to photography.</p>"
+      },
+      {
+        "answer": "<p>They enhance his gaming experience</p>",
+        "feedback": "<p>Reflect on how drones contribute to Bob's specific hobby.</p>"
+      },
+      {
+        "answer": "<p>They allow for stunning aerial photography</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 36.58,
+        "finishTimestamp": 45.56
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.2,
+        "dialogue": {
+          "text": "But you know what my obsession is these days? Drones!",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "startTime": 4.78,
+        "finishTime": 9.98,
+        "dialogue": {
+          "text": "I love capturing stunning aerial shots and exploring new angles for photography.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 10.48
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 111,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

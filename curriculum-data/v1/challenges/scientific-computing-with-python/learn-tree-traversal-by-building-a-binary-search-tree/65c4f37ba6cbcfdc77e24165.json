@@ -1,0 +1,53 @@
+{
+  "id": "65c4f37ba6cbcfdc77e24165",
+  "title": "Step 17",
+  "challengeType": 20,
+  "dashedName": "step-17",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        20,
+        24
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class TreeNode:\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self):\n        pass\n\n",
+      "error": null,
+      "seed": "class TreeNode:\n    def __init__(self, key):\n        self.key = key\n        self.left = None\n        self.right = None\n\nclass BinarySearchTree:\n\n    def __init__(self):\n        self.root = None\n\n    def _insert(self, node, key):\n        if node is None:\n            return TreeNode(key)\n        if key < node.key:\n            node.left = self._insert(node.left, key)\n        elif key > node.key:\n            node.right = self._insert(node.right, key)\n        return node\n\n    def insert(self):\n        pass\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>insert</code> method should contain the <code>self</code> parameter.</p>",
+      "testString": "({ test: () => assert.match(code, /def\\s+insert\\s*\\(\\s*self\\s*,/) });"
+    },
+    {
+      "text": "<p>The <code>insert</code> method should contain the <code>key</code> parameter.</p>",
+      "testString": "({ test: () => assert.match(code, /def\\s+insert\\s*\\(\\s*self\\s*,\\s*key\\s*\\)/) });"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>insert</code> method will be called by the user. In addition to the <code>self</code> parameter, it will also need a <code>key</code> parameter. This parameter will be the key value to insert into the binary search tree.</p>\n<p>Add <code>key</code> as the second parameter to the function definition.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "647e23368acb466c97ccbefd",
+  "title": "Guided Project - Work with Variable Data in C#",
+  "challengeType": 19,
+  "dashedName": "guided-project-work-with-variable-data-in-c-sharp",
+  "solutions": [],
+  "question": {
+    "text": "<p>For the code <code>decimal.TryParse(numberString, out myConvert))</code> when the type of <code>numberString</code> is a String.</p>\n<p>Which best describes the value type for <code>myConvert</code> when the <code>TryParse()</code> is successful?</p>",
+    "answers": [
+      {
+        "answer": "<p>A string representing numeric digits.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A Boolean value.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A decimal</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [
+    "<p>Complete the <a href=\"https://learn.microsoft.com/training/modules/guided-project-work-variable-data-c-sharp/\" target=\"_blank\" rel=\"noreferrer\">Work with Variable Data in C#</a> guided project on Microsoft Learn. Then, answer the question below.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge will be partially completed on the Microsoft Learn platform. Follow these instructions to complete the challenge:</p>\n<ol>\n<li>Go to <a href=\"https://learn.microsoft.com/training/modules/guided-project-work-variable-data-c-sharp/\" target=\"_blank\" rel=\"noreferrer\">https://learn.microsoft.com/training/modules/guided-project-work-variable-data-c-sharp/</a> and complete all the tasks for the \"Guided Project - Work with Variable Data in C#\" module. This is <strong>required</strong> to earn the \"Work with Variable Data in C# Console Applications\" trophy on Microsoft Learn, and qualify for the certification exam.</li>\n<li>When you are finished, come back and correctly answer the question below.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "work-with-variable-data-in-c-sharp-console-applications",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 13,
+  "certification": "foundational-c-sharp-with-microsoft",
+  "superBlock": "foundational-c-sharp-with-microsoft",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "C-Sharp",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

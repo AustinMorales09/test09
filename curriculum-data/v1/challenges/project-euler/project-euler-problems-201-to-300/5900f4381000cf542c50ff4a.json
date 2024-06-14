@@ -1,0 +1,65 @@
+{
+  "id": "5900f4381000cf542c50ff4a",
+  "title": "Problem 203: Squarefree Binomial Coefficients",
+  "challengeType": 1,
+  "forumTopicId": 301844,
+  "dashedName": "problem-203-squarefree-binomial-coefficients",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function squarefreeBinomialCoefficients() {\n\n  return true;\n}\n\nsquarefreeBinomialCoefficients();",
+      "error": null,
+      "seed": "function squarefreeBinomialCoefficients() {\n\n  return true;\n}\n\nsquarefreeBinomialCoefficients();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>squarefreeBinomialCoefficients()</code> should return <code>34029210557338</code>.</p>",
+      "testString": "assert.strictEqual(squarefreeBinomialCoefficients(), 34029210557338);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The binomial coefficients $\\displaystyle\\binom{n}{k}$ can be arranged in triangular form, Pascal's triangle, like this:</p>\n<p>$$\\begin{array}{ccccccccccccccc}\n&#x26;   &#x26;   &#x26;   &#x26;    &#x26;    &#x26;    &#x26;  1 &#x26;    &#x26;    &#x26;    &#x26;   &#x26;   &#x26;   &#x26;   \\\\\n&#x26;   &#x26;   &#x26;   &#x26;    &#x26;    &#x26;  1 &#x26;    &#x26; 1  &#x26;    &#x26;    &#x26;   &#x26;   &#x26;   &#x26;   \\\\\n&#x26;   &#x26;   &#x26;   &#x26;    &#x26;  1 &#x26;    &#x26;  2 &#x26;    &#x26;  1 &#x26;    &#x26;   &#x26;   &#x26;   &#x26;   \\\\\n&#x26;   &#x26;   &#x26;   &#x26;  1 &#x26;    &#x26;  3 &#x26;    &#x26;  3 &#x26;    &#x26;  1 &#x26;   &#x26;   &#x26;   &#x26;   \\\\\n&#x26;   &#x26;   &#x26; 1 &#x26;    &#x26;  4 &#x26;    &#x26;  6 &#x26;    &#x26;  4 &#x26;    &#x26; 1 &#x26;   &#x26;   &#x26;   \\\\\n&#x26;   &#x26; 1 &#x26;   &#x26;  5 &#x26;    &#x26; 10 &#x26;    &#x26; 10 &#x26;    &#x26;  5 &#x26;   &#x26; 1 &#x26;   &#x26;   \\\\\n&#x26; 1 &#x26;   &#x26; 6 &#x26;    &#x26; 15 &#x26;    &#x26; 20 &#x26;    &#x26; 15 &#x26;    &#x26; 6 &#x26;   &#x26; 1 &#x26;   \\\\\n1 &#x26;   &#x26; 7 &#x26;   &#x26; 21 &#x26;    &#x26; 35 &#x26;    &#x26; 35 &#x26;    &#x26; 21 &#x26;   &#x26; 7 &#x26;   &#x26; 1 \\\\\n&#x26;   &#x26;   &#x26;   &#x26;    &#x26;    &#x26;    &#x26; \\ldots\n\\end{array}$$</p>\n<p>It can be seen that the first eight rows of Pascal's triangle contain twelve distinct numbers: 1, 2, 3, 4, 5, 6, 7, 10, 15, 20, 21 and 35.</p>\n<p>A positive integer n is called squarefree if no square of a prime divides n. Of the twelve distinct numbers in the first eight rows of Pascal's triangle, all except 4 and 20 are squarefree. The sum of the distinct squarefree numbers in the first eight rows is 105.</p>\n<p>Find the sum of the distinct squarefree numbers in the first 51 rows of Pascal's triangle.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

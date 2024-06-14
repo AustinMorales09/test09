@@ -1,0 +1,88 @@
+{
+  "id": "65d74fe1b1db8c9b43fb93fd",
+  "title": "Task 75",
+  "challengeType": 19,
+  "dashedName": "task-75",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Maria advise about access codes and passwords?</p>",
+    "answers": [
+      {
+        "answer": "<p>You should share them with your friends.</p>",
+        "feedback": "<p>Maria's advice is to keep them private, not to share them, even with friends.</p>"
+      },
+      {
+        "answer": "<p>It's okay to share them on social media.</p>",
+        "feedback": "<p>Maria's warning suggests that sharing sensitive information like this is unsafe, especially on public platforms like social media.</p>"
+      },
+      {
+        "answer": "<p>You can share them if someone asks politely.</p>",
+        "feedback": "<p>Maria emphasizes not sharing your passwords with anyone.</p>"
+      },
+      {
+        "answer": "<p>You're prohibited to share them with anyone.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 46.32,
+        "finishTimestamp": 49.4
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 4.08,
+        "dialogue": {
+          "text": "You mustn't share your access codes or passwords with anyone.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 4.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 77,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

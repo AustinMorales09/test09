@@ -1,0 +1,97 @@
+{
+  "id": "65a7455f319ba98b5885cb6a",
+  "title": "Task 121",
+  "challengeType": 19,
+  "dashedName": "task-121",
+  "solutions": [],
+  "question": {
+    "text": "<p>What makes it hard for Tom to help with open-source projects?</p>",
+    "answers": [
+      {
+        "answer": "<p>He doesn't like the projects</p>",
+        "feedback": "<p>Listen again to what Tom says is hard about helping.</p>"
+      },
+      {
+        "answer": "<p>He doesn't understand the code</p>",
+        "feedback": "<p>Is Tom talking about the code or how long it takes?</p>"
+      },
+      {
+        "answer": "<p>It takes a lot of time</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The projects are too easy</p>",
+        "feedback": "<p>Think about if Tom says the projects are easy or something else.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.06,
+        "finishTimestamp": 26.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 7.08,
+        "dialogue": {
+          "text": "Yeah, I checked out some open source projects, but I admit that I have problems with the amount of time it can take to contribute.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "startTime": 7.46,
+        "finishTime": 10.1,
+        "dialogue": {
+          "text": "Sometimes it can be so time-consuming.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 10.6
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Tom talks about why it's hard for him to help with open-source projects.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 125,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

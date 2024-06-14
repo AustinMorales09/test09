@@ -1,0 +1,53 @@
+{
+  "id": "65823040bdb32949d4c1a96f",
+  "title": "Step 10",
+  "challengeType": 20,
+  "dashedName": "step-10",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        6,
+        8
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n\n\nexpenses = []",
+      "error": null,
+      "seed": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n\n\nexpenses = []"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should define a function named <code>total_expenses</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import inspect    \n    inspect.isfunction(total_expenses)\n  `))\n})"
+    },
+    {
+      "text": "<p>Your <code>total_expenses</code> function should take a single <code>expenses</code> parameter.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    import inspect    \n    sig = str(inspect.signature(total_expenses))\n    sig == '(expenses)'\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You will need a function to calculate the total amount of expenses.</p>\n<p>Define a function named <code>total_expenses</code> that takes one parameter <code>expenses</code>. Fill the function body with a <code>pass</code> statement for now.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "65d7480fba8a2b88f5499094",
+  "title": "Task 57",
+  "challengeType": 22,
+  "dashedName": "task-57",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I got this message saying I _ _ with Jeff from the Security department.</p>",
+    "blanks": [
+      {
+        "answer": "must",
+        "feedback": "<p>This word indicates a strong necessity to do something.</p>"
+      },
+      {
+        "answer": "talk",
+        "feedback": "<p>This verb indicates the action of having a conversation or discussion.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 5.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 6.16,
+        "dialogue": {
+          "text": "I got this message saying I must talk with Jeff from the security department. Do you know him?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 6.66
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>must</code> is used to express a strong necessity or obligation. It is followed by a verb to show something that is very important or necessary to do.</p>\n<p>It's similar to <code>have to</code>, but <code>must</code> is often used when the obligation comes from the speaker or is internal, while <code>have to</code> is often used for external obligations or rules.</p>\n<p>Examples:</p>\n<p><code>You must study for the test</code> means the speaker thinks it's very important for you to study for the test.</p>\n<p><code>I have to go to work at 8 AM</code> means the speaker needs to work at 8 AM because of a job schedule.</p>\n<p><code>Talk with</code> means to have a conversation or discussion with someone. For example, <code>I need to talk with my teacher about the homework</code> means I need to have a conversation with my teacher concerning the homework.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 59,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

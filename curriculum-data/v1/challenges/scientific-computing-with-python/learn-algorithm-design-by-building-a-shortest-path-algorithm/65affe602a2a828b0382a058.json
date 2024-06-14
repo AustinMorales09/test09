@@ -1,0 +1,65 @@
+{
+  "id": "65affe602a2a828b0382a058",
+  "title": "Step 17",
+  "challengeType": 20,
+  "dashedName": "step-17",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "my_graph = {\n    'A': 'B',\n    'age': 2\n}",
+      "error": null,
+      "seed": "my_graph = {\n    'A': 'B',\n    'age': 2\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your dictionary should have a <code>'B'</code> key.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    \"B\" in my_graph\n  `))\n})"
+    },
+    {
+      "text": "<p>Your <code>'B'</code> key should have <code>'A'</code> as the value.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    my_graph[\"B\"] == \"A\"\n  `))\n})"
+    },
+    {
+      "text": "<p>Your dictionary should have an <code>'A'</code> key.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    \"A\" in my_graph\n  `))\n})"
+    },
+    {
+      "text": "<p>Your <code>'A'</code> key should have <code>'B'</code> as the value.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    my_graph[\"A\"] == \"B\"\n  `))\n})"
+    },
+    {
+      "text": "<p>Your dictionary should have two keys.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    len(my_graph) == 2\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Replace the <code>'age'</code> key with the string <code>'B'</code> and set its value to the string <code>'A'</code> to represent the connection between the nodes in both directions.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "656477845006313fbfea0ad1",
+  "title": "Step 12",
+  "challengeType": 20,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        11,
+        14
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import secrets\nimport string\n\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n\n# Combine all characters\nall_characters = letters + digits + symbols\nprint(all_characters)\nprint(secrets.choice(all_characters))",
+      "error": null,
+      "seed": "import secrets\nimport string\n\n\n# Define the possible characters for the password\nletters = string.ascii_letters\ndigits = string.digits\nsymbols = string.punctuation\n\n# Combine all characters\nall_characters = letters + digits + symbols\nprint(all_characters)\nprint(secrets.choice(all_characters))"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should delete your two <code>print()</code> calls.</p>",
+      "testString": "({ test: () => assert.isFalse( /^print/m.test(code)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Although the effect might seem equal to <code>random.choice()</code>, <code>secrets</code> ensure you the most secure source of randomness that your operating system can provide.</p>\n<p>Now, delete your two <code>print()</code> calls.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

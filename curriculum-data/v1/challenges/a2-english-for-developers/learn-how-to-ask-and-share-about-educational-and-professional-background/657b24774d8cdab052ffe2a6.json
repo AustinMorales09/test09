@@ -1,0 +1,92 @@
+{
+  "id": "657b24774d8cdab052ffe2a6",
+  "title": "Task 71",
+  "challengeType": 22,
+  "dashedName": "task-71",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I _ study tech at a traditional university. I'm mostly _, and I _ a lot of online courses.</p>",
+    "blanks": [
+      {
+        "answer": "didn't",
+        "feedback": "<p>This word is used to form a negative statement in the past tense.</p>"
+      },
+      {
+        "answer": "self-taught",
+        "feedback": "<p>This word describes acquiring knowledge or skills independently. It's made of two parts: the first means <code>own</code> or <code>personal</code>, and the second is related to learning or education.</p>"
+      },
+      {
+        "answer": "took",
+        "feedback": "<p>This word is the past tense form of a verb meaning to have completed an action.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 5.2,
+        "finishTimestamp": 10.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 3.52,
+        "dialogue": {
+          "text": "I didn't study tech at a traditional university.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "startTime": 4,
+        "finishTime": 6.42,
+        "dialogue": {
+          "text": "I'm mostly self-taught and I took a lot of online courses.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 6.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and fill in the blanks correctly.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 74,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

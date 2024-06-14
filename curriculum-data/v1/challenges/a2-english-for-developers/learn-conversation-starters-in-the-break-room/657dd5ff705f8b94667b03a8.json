@@ -1,0 +1,116 @@
+{
+  "id": "657dd5ff705f8b94667b03a8",
+  "title": "Task 120",
+  "challengeType": 19,
+  "dashedName": "task-120",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Maria saying?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Is there a gym?</code></p>",
+        "feedback": "<p>This choice is a question, but Maria is making a statement.</p>"
+      },
+      {
+        "answer": "<p><code>There are gym.</code></p>",
+        "feedback": "<p>This choice has a grammatical error; it should be <code>There is a gym</code> for singular.</p>"
+      },
+      {
+        "answer": "<p><code>There is gyms.</code></p>",
+        "feedback": "<p>This choice has a grammatical error; <code>gyms</code> is plural, so it should be <code>There are gyms.</code></p>"
+      },
+      {
+        "answer": "<p><code>There is a gym.</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.58,
+        "finishTimestamp": 30.92
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.76,
+        "dialogue": {
+          "text": "Fantastic. Is there anything else interesting to check out?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 3.76
+      },
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 3.76
+      },
+      {
+        "character": "Maria",
+        "startTime": 4.36,
+        "finishTime": 9.34,
+        "dialogue": {
+          "text": "Absolutely. There's a gym. There are also great coffee shops not too far away.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 9.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>gym</code> is a place where people go to exercise.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 124,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

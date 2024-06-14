@@ -1,0 +1,79 @@
+{
+  "id": "657b11e082e48a44eb4bfc09",
+  "title": "Task 7",
+  "challengeType": 22,
+  "dashedName": "task-7",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I _ also part of the _ update team.</p>",
+    "blanks": [
+      {
+        "answer": "was",
+        "feedback": "<p>This word is a past tense verb. You use it to talk about something that happened in the past.</p>"
+      },
+      {
+        "answer": "software",
+        "feedback": "<p>This word refers to computer programs. It's an important term in technology and programming.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Candidate",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 16.7,
+        "finishTimestamp": 19
+      }
+    },
+    "commands": [
+      {
+        "character": "Candidate",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Candidate",
+        "startTime": 1,
+        "finishTime": 3.3,
+        "dialogue": {
+          "text": "I was also a part of the software update team.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Candidate",
+        "opacity": 0,
+        "startTime": 3.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the candidate's response and fill in the missing words.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

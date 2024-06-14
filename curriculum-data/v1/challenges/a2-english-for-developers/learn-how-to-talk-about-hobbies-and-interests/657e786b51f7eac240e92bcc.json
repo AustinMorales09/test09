@@ -1,0 +1,45 @@
+{
+  "id": "657e786b51f7eac240e92bcc",
+  "title": "Task 31",
+  "challengeType": 19,
+  "dashedName": "task-31",
+  "solutions": [],
+  "question": {
+    "text": "<p>In which sentence is <code>would you like</code> used correctly?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Would you like to come to the movie with us?</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Would you like I make dinner tonight?</code></p>",
+        "feedback": "<p>This sentence is not correct. A correct usage would be <code>Would you like me to make dinner tonight?</code></p>"
+      },
+      {
+        "answer": "<p><code>Would you likes a glass of water?</code></p>",
+        "feedback": "<p>This sentence is incorrect because <code>likes</code> should not be plural. The correct form is <code>Would you like a glass of water?</code></p>"
+      },
+      {
+        "answer": "<p><code>Would you like go to the park?</code></p>",
+        "feedback": "<p>This sentence is missing <code>to</code> before <code>go</code>. The correct sentence should be <code>Would you like to go to the park?</code></p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>would you like</code> is a polite way to offer something or ask someone if they want something. When offering something, you can specify it directly after the expression <code>would you like</code>. For instance, you might ask <code>Would you like some coffee?</code> when offering coffee to a guest.\nIf you are proposing to do something, such as <code>going shopping</code>, remember to include <code>to</code> between the expression and the action. For example: <code>Would you like to go shopping?</code>.\nFinally, if you are asking someone if you should do something for them, use <code>me</code> between <code>would you like</code> and <code>to</code>. For example: <code>Would you like me to make some coffee?</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 32,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "6629ce1a4f6581a7266d6ca9",
+  "title": "Task 3",
+  "challengeType": 22,
+  "dashedName": "task-3",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hey, Sophie. How's it going? I've heard you've _ _ a lot about programming languages.</p>",
+    "blanks": [
+      {
+        "answer": "been",
+        "feedback": "<p>This is the verb <code>to be</code>, in the form used as a part of the <strong>Present Perfect Continuous</strong> tense.</p>"
+      },
+      {
+        "answer": "learning",
+        "feedback": "<p>This is a verb with <code>-ing</code>. It indicates what Sophie has been doing continuously.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 5.3
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 6.3,
+        "dialogue": {
+          "text": "Hey, Sophie. How's it going? I've heard you've been learning a lot about programming languages.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 6.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The <strong>Present Perfect Continuous tense</strong> is used talk about actions or situations that started in the past and are still happening now. It is very useful when you want to emphasize the duration of an activity or that it is an ongoing process.</p>\n<p>Here’s how to form the <strong>Present Perfect Continuous</strong>: Subject + <code>has/have been</code> + <code>-ing</code> form of the verb. This tense is often used with expressions of time such as <code>for</code> and <code>since</code>. <code>For</code> is used with a period of time like two years or six months, while <code>since</code> is used with a specific point in time, like 2018 or this morning.</p>\n<p>Examples:</p>\n<p><code>I have been studying English for two years.</code> This means I started studying English two years ago and I'm still studying it now.</p>\n<p><code>She has been working here since 2018.</code> It means she started working here in 2018 and is still working here.</p>\n<p>Listen to Brian and fill in the blanks.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

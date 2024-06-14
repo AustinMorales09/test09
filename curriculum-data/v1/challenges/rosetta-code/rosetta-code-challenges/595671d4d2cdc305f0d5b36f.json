@@ -1,0 +1,89 @@
+{
+  "id": "595671d4d2cdc305f0d5b36f",
+  "title": "Hash from two arrays",
+  "challengeType": 1,
+  "forumTopicId": 302283,
+  "dashedName": "hash-from-two-arrays",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const testCases = [\n  [[1, 2, 3, 4, 5], ['a', 'b', 'c', 'd', 'e']],\n  [[1, 2, 3, 4, 5], ['a', 'b', 'c', 'd']],\n  [[1, 2, 3], ['a', 'b', 'c', 'd', 'e']],\n  [['a', 'b', 'c', 'd', 'e'], [1, 2, 3, 4, 5]],\n  [['a', 'b', 'c', 'd', 'e'], [1, 2, 3, 4]],\n  [['a', 'b', 'c'], [1, 2, 3, 4, 5]]\n];\n\nconst res = [\n  { 1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e' },\n  { 1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: undefined },\n  { 1: 'a', 2: 'b', 3: 'c' },\n  { a: 1, b: 2, c: 3, d: 4, e: 5 },\n  { a: 1, b: 2, c: 3, d: 4, e: undefined },\n  { a: 1, b: 2, c: 3 }\n];",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function arrToObj (keys, vals) {\n\n  return true;\n}",
+      "error": null,
+      "seed": "function arrToObj (keys, vals) {\n\n  return true;\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function arrToObj (keys, vals) {\n  return keys.reduce((map, key, index) => {\n    map[key] = vals[index];\n    return map;\n  }, {});\n}",
+        "error": null,
+        "seed": "function arrToObj (keys, vals) {\n  return keys.reduce((map, key, index) => {\n    map[key] = vals[index];\n    return map;\n  }, {});\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>arrToObj</code> should be a function.</p>",
+      "testString": "assert(typeof arrToObj === 'function');"
+    },
+    {
+      "text": "<p><code>arrToObj([1, 2, 3, 4, 5], [\"a\", \"b\", \"c\", \"d\", \"e\"])</code> should return <code>{ 1: \"a\", 2: \"b\", 3: \"c\", 4: \"d\", 5: \"e\" }</code></p>",
+      "testString": "assert.deepEqual(arrToObj(...testCases[0]), res[0]);"
+    },
+    {
+      "text": "<p><code>arrToObj([1, 2, 3, 4, 5], [\"a\", \"b\", \"c\", \"d\"])</code> should return <code>{ 1: \"a\", 2: \"b\", 3: \"c\", 4: \"d\", 5: undefined }</code></p>",
+      "testString": "assert.deepEqual(arrToObj(...testCases[1]), res[1]);"
+    },
+    {
+      "text": "<p><code>arrToObj([1, 2, 3], [\"a\", \"b\", \"c\", \"d\", \"e\"])</code> should return <code>{ 1: \"a\", 2: \"b\", 3: \"c\" }</code></p>",
+      "testString": "assert.deepEqual(arrToObj(...testCases[2]), res[2]);"
+    },
+    {
+      "text": "<p><code>arrToObj([\"a\", \"b\", \"c\", \"d\", \"e\"], [1, 2, 3, 4, 5])</code> should return <code>{ \"a\": 1, \"b\": 2, \"c\": 3 , \"d\": 4, \"e\": 5 }</code></p>",
+      "testString": "assert.deepEqual(arrToObj(...testCases[3]), res[3]);"
+    },
+    {
+      "text": "<p><code>arrToObj([\"a\", \"b\", \"c\", \"d\", \"e\"], [1, 2, 3, 4])</code> should return <code>{ \"a\": 1, \"b\": 2, \"c\": 3 , \"d\": 4, \"e\": undefined }</code></p>",
+      "testString": "assert.deepEqual(arrToObj(...testCases[4]), res[4]);"
+    },
+    {
+      "text": "<p><code>arrToObj([\"a\", \"b\", \"c\"], [1, 2, 3, 4, 5])</code> should return <code>{ \"a\": 1, \"b\": 2, \"c\": 3 }</code></p>",
+      "testString": "assert.deepEqual(arrToObj(...testCases[5]), res[5]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Given two arrays, create a hash object where the elements from one array (the keys) are linked to the elements of the other (the values).</p>\n<p>Example:</p>\n<pre><code class=\"language-js\">const firstArr = [1, 2, 3];\nconst secondArr = [\"a\", \"b\", \"c\"];\nconst hashObj = arrToObj(firstArr, secondArr);\n</code></pre>\n<p>The hash object created from the arrays above will be <code>{1: \"a\", 2: \"b\", 3: \"c\"}</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 65,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

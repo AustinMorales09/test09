@@ -1,0 +1,61 @@
+{
+  "id": "660f505d02b2bd513a1c3468",
+  "title": "Step 108",
+  "challengeType": 1,
+  "dashedName": "step-108",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        9,
+        13
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\nfor (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfunction padRow(rowNumber, rowCount) {\n  return \" \".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + \" \".repeat(rowCount - rowNumber);\n}\n\n// TODO: use a different type of loop\nfor (let i = 1; i <= count; i++) {\n  rows.push(padRow(i, count));\n}\n\n/*while (rows.length < count) {\n  rows.push(padRow(rows.length + 1, count));\n}*/\n\n/*for (let i = count; i > 0; i--) {\n  rows.push(padRow(i, count));\n}*/\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>unshift</code> method of <code>rows</code>.</p>",
+      "testString": "const stripped = __helpers.removeJSComments(code);\nassert.match(stripped, /\\.unshift/);"
+    },
+    {
+      "text": "<p>You should pass a <code>padRow()</code> call as the argument for your <code>.unshift()</code> method.</p>",
+      "testString": "assert.match(code, /rows\\.unshift\\(\\s*padRow\\(/);"
+    },
+    {
+      "text": "<p>You should pass <code>i</code> as the first argument to your <code>padRow()</code> call.</p>",
+      "testString": "assert.match(code, /rows\\.unshift\\(\\s*padRow\\(\\s*i/)"
+    },
+    {
+      "text": "<p>You should pass <code>count</code> as the second argument to your <code>padRow()</code> call.</p>",
+      "testString": "assert.match(code, /rows\\.unshift\\(\\s*padRow\\(\\s*i\\s*,\\s*count\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Your pyramid is no longer inverted. This is because you are adding new rows to the <strong>end</strong> of the array.</p>\n<p>Update your loop body to add new rows to the beginning of the array.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 107,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "65800c12978ba7fb82007446",
+  "title": "Task 93",
+  "challengeType": 19,
+  "dashedName": "task-93",
+  "solutions": [],
+  "question": {
+    "text": "<p>Choose the sentence that correctly represents the Present Perfect Tense expressing a long-standing desire.</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I want to try rafting in the future.</code></p>",
+        "feedback": "<p>The sentence is in simple present tense, not the Present Perfect Tense. It does not indicate a desire that has persisted over time.</p>"
+      },
+      {
+        "answer": "<p><code>I tried rafting last summer.</code></p>",
+        "feedback": "<p>The sentence is in simple past tense, not the Present Perfect Tense. It refers to a completed action in the past.</p>"
+      },
+      {
+        "answer": "<p><code>I've always wanted to try rafting.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>I will try rafting someday.</code></p>",
+        "feedback": "<p>The sentence is in future tense, not the Present Perfect Tense. It indicates a future intention rather than an ongoing desire.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 8.62,
+        "finishTimestamp": 12.48
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 4.86,
+        "dialogue": {
+          "text": "That's amazing. I've always wanted to try rafting, but I've never had the opportunity.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 5.36
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The sentence <code>I've always wanted to try</code> in the Present Perfect Tense expresses a desire that has persisted over time but hasn't been fulfilled.</p>\n<p>The word <code>always</code> is used to say that something happens every time, or all the time, without change.</p>\n<p>In the dialogue, Brian shares his enduring interest in rafting despite never getting the chance.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 97,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

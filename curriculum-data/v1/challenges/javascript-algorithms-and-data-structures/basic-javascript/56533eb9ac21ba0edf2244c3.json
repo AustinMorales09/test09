@@ -1,0 +1,71 @@
+{
+  "id": "56533eb9ac21ba0edf2244c3",
+  "title": "Assignment with a Returned Value",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/ce2pEtB",
+  "forumTopicId": 16658,
+  "dashedName": "assignment-with-a-returned-value",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "(function(){return \"processed = \" + processed})();",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// Setup\nlet processed = 0;\n\nfunction processArg(num) {\n  return (num + 3) / 5;\n}\n\n// Only change code below this line\n",
+      "error": null,
+      "seed": "// Setup\nlet processed = 0;\n\nfunction processArg(num) {\n  return (num + 3) / 5;\n}\n\n// Only change code below this line\n"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "var processed = 0;\n\nfunction processArg(num) {\n  return (num + 3) / 5;\n}\n\nprocessed = processArg(7);",
+        "error": null,
+        "seed": "var processed = 0;\n\nfunction processArg(num) {\n  return (num + 3) / 5;\n}\n\nprocessed = processArg(7);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>processed</code> should have a value of <code>2</code></p>",
+      "testString": "assert(processed === 2);"
+    },
+    {
+      "text": "<p>You should assign <code>processArg</code> to <code>processed</code></p>",
+      "testString": "assert(/processed\\s*=\\s*processArg\\(\\s*7\\s*\\)/.test(__helpers.removeJSComments(code)));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>If you'll recall from our discussion about <a href=\"/learn/javascript-algorithms-and-data-structures/basic-javascript/storing-values-with-the-assignment-operator\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Storing Values with the Assignment Operator</a>, everything to the right of the equal sign is resolved before the value is assigned. This means we can take the return value of a function and assign it to a variable.</p>\n<p>Assume we have defined a function <code>sum</code> which adds two numbers together.</p>\n<pre><code class=\"language-js\">ourSum = sum(5, 12);\n</code></pre>\n<p>Calling the <code>sum</code> function with the arguments of <code>5</code> and <code>12</code> produces a return value of <code>17</code>. This return value is assigned to the <code>ourSum</code> variable.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Call the <code>processArg</code> function with an argument of <code>7</code> and assign its return value to the variable <code>processed</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 55,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

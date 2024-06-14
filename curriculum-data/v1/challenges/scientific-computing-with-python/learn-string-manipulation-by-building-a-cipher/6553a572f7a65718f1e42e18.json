@@ -1,0 +1,61 @@
+{
+  "id": "6553a572f7a65718f1e42e18",
+  "title": "Step 49",
+  "challengeType": 20,
+  "dashedName": "step-49",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        16
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\nshift = 3\n\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        encrypted_text += char\n    else:\n        index = alphabet.find(char)\n        new_index = (index + shift) % len(alphabet)\n        encrypted_text += alphabet[new_index]\nprint('plain text:', text)\nprint('encrypted text:', encrypted_text)",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\nshift = 3\n\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nencrypted_text = ''\n\nfor char in text.lower():\n    if char == ' ':\n        encrypted_text += char\n    else:\n        index = alphabet.find(char)\n        new_index = (index + shift) % len(alphabet)\n        encrypted_text += alphabet[new_index]\nprint('plain text:', text)\nprint('encrypted text:', encrypted_text)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>def</code> keyword to declare a new function.</p>",
+      "testString": "assert.match(code, /^def\\s+/m)"
+    },
+    {
+      "text": "<p>You should write <code>caesar</code> as the function name after the <code>def</code> keyword. Remember to add a space after <code>def</code>.</p>",
+      "testString": "assert.match(code, /^def\\s+caesar/m)"
+    },
+    {
+      "text": "<p>You should add a pair of parentheses after the function name. Don't forget the final colon.</p>",
+      "testString": "assert.match(code, /^def\\s+caesar\\s*\\(\\s*\\)\\s*:/m)"
+    },
+    {
+      "text": "<p>You should indent all the lines after <code>shift = 3</code> so that they become your new function body.</p>",
+      "testString": "({ test: () => {\n    const commentless_code = __helpers.python.removeComments(code);\n    const {def} = __helpers.python.getDef(commentless_code, \"caesar\");    \n    const replacement = def.replace(/print\\s*\\(\\s*(\"|')plain\\stext:\\1\\s*,\\s*text\\s*\\)\\s*print\\s*\\(\\s*(\"|')encrypted\\stext:\\2\\s*,\\s*encrypted_text\\s*\\)/, \"return encrypted_text\")\n    const py_code = `\ntext = \"Hello Zaira\"\nshift = 3\n${replacement}\ncaesar()\n`\n    const out = runPython(py_code, {});\n    assert.equal(out, \"khoor cdlud\");\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A function is essentially a reusable block of code. You have already met some built-in functions, like <code>print()</code>, <code>find()</code> and <code>len()</code>. But you can also define custom functions like this:</p>\n<pre><code class=\"language-py\">def function_name():\n    &#x3C;code>\n</code></pre>\n<p>A function declaration starts with the <code>def</code> keyword followed by the function name — a valid variable name — and a pair of parentheses. The declaration ends with a colon.</p>\n<p>Right after your <code>shift</code> variable, declare a function called <code>caesar</code> and indent all the following lines to give your new function a body.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 48,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

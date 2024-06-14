@@ -1,0 +1,57 @@
+{
+  "id": "65549561463f0016876e852c",
+  "title": "Step 58",
+  "challengeType": 20,
+  "dashedName": "step-58",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        17
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key):\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', message)\n    print('encrypted text:', encrypted_text)",
+      "error": null,
+      "seed": "text = 'Hello Zaira'\ncustom_key = 'python'\n\ndef vigenere(message, key):\n    alphabet = 'abcdefghijklmnopqrstuvwxyz'\n    encrypted_text = ''\n\n    for char in message.lower():\n        if char == ' ':\n            encrypted_text += char\n        else:\n            index = alphabet.find(char)\n            new_index = (index + offset) % len(alphabet)\n            encrypted_text += alphabet[new_index]\n    print('plain text:', message)\n    print('encrypted text:', encrypted_text)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a variable called <code>key_index</code> at the beginning of your function body.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {function_body} = __helpers.python.getDef(commentless_code, \"vigenere\");\nassert(function_body.match(/^\\s*key_index\\s*=/));"
+    },
+    {
+      "text": "<p>You should assign <code>0</code> to your <code>key_index</code> variable.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nconst {function_body} = __helpers.python.getDef(commentless_code, \"vigenere\");   \nassert(function_body.match(/key_index\\s*=\\s*0/));"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Since your key is shorter than the text that you will have to encrypt, you will need to repeat it to generate the whole encrypted text.\nAt the beginning of your function body, declare a <code>key_index</code> variable and set it to zero.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 57,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

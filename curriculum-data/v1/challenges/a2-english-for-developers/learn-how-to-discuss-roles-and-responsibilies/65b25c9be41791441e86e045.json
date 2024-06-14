@@ -1,0 +1,83 @@
+{
+  "id": "65b25c9be41791441e86e045",
+  "title": "Task 15",
+  "challengeType": 22,
+  "dashedName": "task-15",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>She's _ _ and _, which makes her excellent at her job.</p>",
+    "blanks": [
+      {
+        "answer": "quite",
+        "feedback": "<p>It's used here to emphasize the extent.</p>"
+      },
+      {
+        "answer": "serious",
+        "feedback": "<p>It describes her attitude of being focused and not taking things lightly.</p>"
+      },
+      {
+        "answer": "organized",
+        "feedback": "<p>It shows she plans well and keeps things in order.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.74,
+        "finishTimestamp": 17.22
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 4.48,
+        "dialogue": {
+          "text": "She's quite serious and organized, which makes her excellent at her job.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.98
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>quite</code> is used to describe adjectives or adverbs to a certain degree, often meaning \"very\" or to a significant extent but not completely. For example, <code>The test was quite difficult.</code> This means the test was very difficult, but not to the extreme.</p>\n<p><code>Serious</code> means showing deep thought, not joking, or focusing intensely on something important. For example, <code>He is serious about learning English.</code> This shows he is very focused and committed to learning English, not doing it just for fun.</p>\n<p><code>Organized</code> means arranged or planned well, making sure everything is where it should be or done at the right time. For instance, <code>She keeps the Trello board very organized.</code> It means she arranges and manages the Trello board (a tool for organizing tasks and projects) in a neat and orderly way, making sure everything is well-planned and easy to find.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

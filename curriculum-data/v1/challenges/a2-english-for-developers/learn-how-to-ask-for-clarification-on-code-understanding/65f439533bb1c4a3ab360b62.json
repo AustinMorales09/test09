@@ -1,0 +1,88 @@
+{
+  "id": "65f439533bb1c4a3ab360b62",
+  "title": "Task 10",
+  "challengeType": 19,
+  "dashedName": "task-10",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Brian expressing in his statements?</p>",
+    "answers": [
+      {
+        "answer": "<p>He is confident that there is an error in Sarah's code.</p>",
+        "feedback": "<p>Brian expresses uncertainty, not confidence about an error.</p>"
+      },
+      {
+        "answer": "<p>He needs clarification and wants to understand the code logic better.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He is asking Sarah to rewrite the entire code.</p>",
+        "feedback": "<p>Brian's focus is on understanding the current code, not asking for a complete rewrite.</p>"
+      },
+      {
+        "answer": "<p>He is sure that he understands the code completely.</p>",
+        "feedback": "<p>Brian actually indicates that he needs to understand the code logic better.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 12.56,
+        "finishTimestamp": 20.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 8.46,
+        "dialogue": {
+          "text": "In the function you added, it could be that I'm missing something, but it may not be working as expected. I should probably understand the logic better.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 8.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

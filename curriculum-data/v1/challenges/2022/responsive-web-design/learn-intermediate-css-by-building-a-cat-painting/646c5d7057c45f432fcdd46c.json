@@ -1,0 +1,81 @@
+{
+  "id": "646c5d7057c45f432fcdd46c",
+  "title": "Step 7",
+  "challengeType": 0,
+  "dashedName": "step-7",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>fCC Cat Painting</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n</head>\n<body>\n  <main>\n    <div class='cat-head'></div>\n  </main>\n</body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>fCC Cat Painting</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n</head>\n<body>\n  <main>\n    <div class='cat-head'></div>\n  </main>\n</body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        10
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #c9d2fc;\n}\n\n",
+      "error": null,
+      "seed": "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #c9d2fc;\n}\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>.cat-head</code> selector.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head'))"
+    },
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>width</code> set to <code>205px</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.width === '205px');"
+    },
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>height</code> set to <code>180px</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.height === '180px')"
+    },
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>border</code> set to <code>1px solid #000</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle('.cat-head')?.border === '1px solid rgb(0, 0, 0)')"
+    },
+    {
+      "text": "<p>Your <code>.cat-head</code> selector should have a <code>border-radius</code> set to <code>46%</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document)?.getStyle(\".cat-head\")?.borderRadius === '46%')"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Using a class selector, give the <code>.cat-head</code> element a width of <code>205px</code> and a height of <code>180px</code>. Also, give it a border of <code>1px solid #000</code> and a <code>border-radius</code> of <code>46%</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-intermediate-css-by-building-a-cat-painting",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

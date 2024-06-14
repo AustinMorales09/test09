@@ -1,0 +1,67 @@
+{
+  "id": "5a94fe3669fb03452672e45f",
+  "title": "Reduce Repetition Using the repeat Function",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/p/pByETK/cQvqyHR",
+  "forumTopicId": 301133,
+  "dashedName": "reduce-repetition-using-the-repeat-function",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n  .item5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    min-height: 300px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    /* Only change code below this line */\n\n    grid-template-columns: 1fr 1fr 1fr;\n\n    /* Only change code above this line */\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>",
+      "error": null,
+      "seed": "<style>\n  .item1{background:LightSkyBlue;}\n  .item2{background:LightSalmon;}\n  .item3{background:PaleTurquoise;}\n  .item4{background:LightPink;}\n  .item5{background:PaleGreen;}\n\n  .container {\n    font-size: 40px;\n    min-height: 300px;\n    width: 100%;\n    background: LightGray;\n    display: grid;\n    /* Only change code below this line */\n\n    grid-template-columns: 1fr 1fr 1fr;\n\n    /* Only change code above this line */\n    grid-template-rows: 1fr 1fr 1fr;\n    grid-gap: 10px;\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"item1\">1</div>\n  <div class=\"item2\">2</div>\n  <div class=\"item3\">3</div>\n  <div class=\"item4\">4</div>\n  <div class=\"item5\">5</div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>.container {grid-template-columns: repeat(3, 1fr);}</style>",
+        "error": null,
+        "seed": "<style>.container {grid-template-columns: repeat(3, 1fr);}</style>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>container</code> class should have a <code>grid-template-columns</code> property that is set to repeat 3 columns with the width of <code>1fr</code>.</p>",
+      "testString": "assert(\n  code.match(\n    /.container\\s*?{[\\s\\S]*grid-template-columns\\s*?:\\s*?repeat\\s*?\\(\\s*?3\\s*?,\\s*?1fr\\s*?\\)\\s*?;[\\s\\S]*}/gi\n  )\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When you used <code>grid-template-columns</code> and <code>grid-template-rows</code> to define the structure of a grid, you entered a value for each row or column you created.</p>\n<p>Let's say you want a grid with 100 rows of the same height. It isn't very practical to insert 100 values individually. Fortunately, there's a better way - by using the <code>repeat</code> function to specify the number of times you want your column or row to be repeated, followed by a comma and the value you want to repeat.</p>\n<p>Here's an example that would create the 100 row grid, each row at 50px tall.</p>\n<pre><code class=\"language-css\">grid-template-rows: repeat(100, 50px);\n</code></pre>\n<p>You can also repeat multiple values with the repeat function and insert the function amongst other values when defining a grid structure. Here's what that looks like:</p>\n<pre><code class=\"language-css\">grid-template-columns: repeat(2, 1fr 50px) 20px;\n</code></pre>\n<p>This translates to:</p>\n<pre><code class=\"language-css\">grid-template-columns: 1fr 50px 1fr 50px 20px;\n</code></pre>\n<p><strong>Note:</strong> The <code>1fr 50px</code> is repeated twice followed by 20px.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Use <code>repeat</code> to remove repetition from the <code>grid-template-columns</code> property.</p>\n</section>",
+  "translationPending": false,
+  "block": "css-grid",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

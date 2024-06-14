@@ -1,0 +1,45 @@
+{
+  "id": "6633032bf786ff8a61b0c482",
+  "title": "Task 25",
+  "challengeType": 19,
+  "dashedName": "task-25",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence is using <code>thanks for</code> correctly?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Thanks for help me with the project.</code></p>",
+        "feedback": "<p>Remember, <code>thanks for</code> should be followed by a gerund or a noun. Here, <code>help</code> should be <code>helping</code>.</p>"
+      },
+      {
+        "answer": "<p><code>Thanks for to assist in the task.</code></p>",
+        "feedback": "<p>The phrase <code>thanks for</code> should not be followed by <code>to</code> + verb. It should be a gerund or a noun.</p>"
+      },
+      {
+        "answer": "<p><code>Thanks for assisting with the task.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Thanks for assist with the task.</code></p>",
+        "feedback": "<p>Remember, <code>thanks for</code> should be followed by a gerund or a noun. Here, <code>assist</code> should be <code>assisting</code>.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

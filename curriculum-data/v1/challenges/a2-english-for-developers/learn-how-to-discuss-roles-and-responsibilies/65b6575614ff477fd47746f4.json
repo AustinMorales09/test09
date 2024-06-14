@@ -1,0 +1,88 @@
+{
+  "id": "65b6575614ff477fd47746f4",
+  "title": "Task 28",
+  "challengeType": 19,
+  "dashedName": "task-28",
+  "solutions": [],
+  "question": {
+    "text": "<p>How is she described according to Bob?</p>",
+    "answers": [
+      {
+        "answer": "<p>She is strict and treats everyone equally.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She is only strict.</p>",
+        "feedback": "<p>Bob mentions that she is not only <code>strict</code> but also <code>fair</code>, which means she treats everyone equally.</p>"
+      },
+      {
+        "answer": "<p>She is only fair.</p>",
+        "feedback": "<p>Bob's description includes being <code>strict</code> as well, indicating she enforces rules strongly.</p>"
+      },
+      {
+        "answer": "<p>She ignores the rules.</p>",
+        "feedback": "<p>Bob actually says the opposite, indicating she enforces rules (being <code>strict</code>) but does so fairly.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 30.92,
+        "finishTimestamp": 32.72
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 2.8,
+        "dialogue": {
+          "text": "Word is that she's strict but fair.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 3.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 28,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

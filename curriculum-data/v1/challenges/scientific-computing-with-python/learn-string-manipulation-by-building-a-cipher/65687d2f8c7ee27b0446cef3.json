@@ -1,0 +1,53 @@
+{
+  "id": "65687d2f8c7ee27b0446cef3",
+  "title": "Step 24",
+  "challengeType": 20,
+  "dashedName": "step-24",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        7
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n\nfor i in text:\n",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\n\nfor i in text:\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add <code>print(i)</code> to your <code>for</code> loop body. Pay attention to the indentation.</p>",
+      "testString": "assert.match(code, /^for\\s+i\\s+in\\s+text:\\s+print\\s*\\(\\s*i\\s*\\)/m)"
+    },
+    {
+      "text": "<p>Your code contains invalid syntax and/or invalid indentation.</p>",
+      "testString": "({test: () => assert(true) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The code to execute at each iteration — placed after the <code>:</code> — constitutes the body of the loop. This code must be indented. In Python, it is recommended to use 4 spaces per indentation level. This indented level is a code block.</p>\n<pre><code class=\"language-py\">for i in text:\n    print(i)\n</code></pre>\n<p>Python relies on indentation to indicate blocks of code. A colon at the end of a line is a signal that a new indented block of code will follow.</p>\n<p>So, when no indented block is found after the final colon, the code execution stops and an <code>IndentationError</code> is thrown. This code will not show the output and instead raise an <code>IndentationError</code>:</p>\n<pre><code class=\"language-py\">for i in text:\nprint(i)\n</code></pre>\n<p>Give your <code>for</code> loop a body by adding a call to <code>print(i)</code>. Remember to indent the loop body.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

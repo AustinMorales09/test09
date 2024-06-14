@@ -1,0 +1,77 @@
+{
+  "id": "615f34ecc1091b4fd5a8a484",
+  "title": "Step 4",
+  "challengeType": 0,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        16
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Nutrition Label</title>\n\n</head>\n\n<body>\n  <h1>Nutrition Facts</h1>\n  <p>8 servings per container</p>\n  <p>Serving size 2/3 cup (55g)</p>\n</body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Nutrition Label</title>\n\n</head>\n\n<body>\n  <h1>Nutrition Facts</h1>\n  <p>8 servings per container</p>\n  <p>Serving size 2/3 cup (55g)</p>\n</body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have two self-closing <code>link</code> elements.</p>",
+      "testString": "assert(document.querySelectorAll('link').length === 2);"
+    },
+    {
+      "text": "<p>Both of your <code>link</code> elements should have the <code>rel</code> attribute set to <code>stylesheet</code>.</p>",
+      "testString": "const links = [...document.querySelectorAll('link')];\nassert(links.every(link => link.getAttribute('rel') === 'stylesheet'));"
+    },
+    {
+      "text": "<p>One of your <code>link</code> elements should have an <code>href</code> attribute set to <code>./styles.css</code>.</p>",
+      "testString": "assert(code.match(/<link[\\s\\S]*?href\\s*=\\s*('|\"|`)(\\.\\/)?styles\\.css\\1/g)?.length === 1);"
+    },
+    {
+      "text": "<p>One of your <code>link</code> elements should have an <code>href</code> attribute set to <code>https://fonts.googleapis.com/css?family=Open+Sans:400,700,800</code>.</p>",
+      "testString": "const links = [...document.querySelectorAll('link')]\nassert(links.find(link => link?.getAttribute('href') === 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,800'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Within your <code>head</code> element, add a <code>link</code> element with the <code>rel</code> attribute set to <code>stylesheet</code> and the <code>href</code> attribute set to <code>https://fonts.googleapis.com/css?family=Open+Sans:400,700,800</code>.</p>\n<p>This will import the <code>Open Sans</code> font family, with the font weight values <code>400</code>, <code>700</code>, and <code>800</code>.</p>\n<p>Also add a <code>link</code> element to link your <code>styles.css</code> file.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-typography-by-building-a-nutrition-label",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

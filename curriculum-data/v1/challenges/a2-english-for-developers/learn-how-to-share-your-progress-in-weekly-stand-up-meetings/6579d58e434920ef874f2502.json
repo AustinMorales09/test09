@@ -1,0 +1,45 @@
+{
+  "id": "6579d58e434920ef874f2502",
+  "title": "Task 18",
+  "challengeType": 19,
+  "dashedName": "task-18",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>not at all</code> mean in simple conversations?</p>",
+    "answers": [
+      {
+        "answer": "<p>It means you agree with what was said</p>",
+        "feedback": "<p><code>Not at all</code> is used for saying <code>no</code> or <code>it was not a problem</code>, not for agreeing.</p>"
+      },
+      {
+        "answer": "<p>It means you really don't want something or that you are ok with what was said</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It means you don't understand what the other person said</p>",
+        "feedback": "<p><code>Not at all</code> doesn't mean confusion. It means no problem or just no.</p>"
+      },
+      {
+        "answer": "<p>It means you'd like the person to repeat what they said</p>",
+        "feedback": "<p>This phrase is not about asking for repetition, but about saying <code>no problem</code> or simply <code>no, I don't agree</code>.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Not at all</code> is a simple phrase in English used to say <code>no</code> in a strong way or to answer <code>thank you</code>. When someone says <code>thank you</code>, you can say <code>not at all</code> to tell them it was easy or no problem.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

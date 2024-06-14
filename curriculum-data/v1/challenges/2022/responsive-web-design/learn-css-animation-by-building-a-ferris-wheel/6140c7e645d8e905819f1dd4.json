@@ -1,0 +1,157 @@
+{
+  "id": "6140c7e645d8e905819f1dd4",
+  "title": "Step 1",
+  "challengeType": 0,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should contain the <code>DOCTYPE</code> reference.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE/gi));"
+    },
+    {
+      "text": "<p>You should include a space after the <code>DOCTYPE</code> reference.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+/gi));"
+    },
+    {
+      "text": "<p>You should define the document type to be <code>html</code>.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+html/gi));"
+    },
+    {
+      "text": "<p>You should close the <code>DOCTYPE</code> declaration with a <code>></code> after the type.</p>",
+      "testString": "assert(code.match(/<!DOCTYPE\\s+html\\s*>/gi));"
+    },
+    {
+      "text": "<p>Your <code>html</code> element should have an opening tag with a <code>lang</code> attribute of <code>en</code>.</p>",
+      "testString": "assert(code.match(/<html\\s+lang\\s*=\\s*('|\")en\\1\\s*>/gi));"
+    },
+    {
+      "text": "<p>Your <code>html</code> element should have a closing tag.</p>",
+      "testString": "assert(code.match(/<\\/html\\s*>/));"
+    },
+    {
+      "text": "<p>Your <code>DOCTYPE</code> declaration should be at the beginning of your HTML.</p>",
+      "testString": "assert(__helpers.removeHtmlComments(code).match(/^\\s*<!DOCTYPE\\s+html\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<head\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/head\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<body\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/body\\s*>/i));"
+    },
+    {
+      "text": "<p>The <code>head</code> and <code>body</code> elements should be siblings.</p>",
+      "testString": "assert(document.querySelector('head')?.nextElementSibling?.localName === 'body');"
+    },
+    {
+      "text": "<p>The <code>head</code> element should be within the <code>html</code> element.</p>",
+      "testString": "assert([...document.querySelector('html')?.children].some(x => x?.localName === 'head'));"
+    },
+    {
+      "text": "<p>The <code>body</code> element should be within the <code>html</code> element.</p>",
+      "testString": "assert([...document.querySelector('html')?.children].some(x => x?.localName === 'body'));"
+    },
+    {
+      "text": "<p>Your code should have a <code>meta</code> element.</p>",
+      "testString": "const meta = document.querySelector('meta');\nassert.exists(meta);"
+    },
+    {
+      "text": "<p>Your <code>meta</code> element should have a <code>charset</code> attribute with the value <code>UTF-8</code>.</p>",
+      "testString": "assert.match(code, /<meta[\\s\\S]+?charset=('|\"|`)UTF-8\\1/i)"
+    },
+    {
+      "text": "<p>Your code should have a <code>title</code> element.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.exists(title);"
+    },
+    {
+      "text": "<p>Your project should have a title of <code>Ferris Wheel</code>.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.equal(title?.text?.trim()?.toLowerCase(), 'ferris wheel')"
+    },
+    {
+      "text": "<p>Remember, the casing and spelling matter for the title.</p>",
+      "testString": "const title = document.querySelector('title');\nassert.equal(title?.text?.trim(), 'Ferris Wheel');"
+    },
+    {
+      "text": "<p>Your code should have a <code>link</code> element.</p>",
+      "testString": "assert.match(code, /<link/)"
+    },
+    {
+      "text": "<p>You should have one self-closing <code>link</code> element.</p>",
+      "testString": "assert(document.querySelectorAll('link').length === 1);"
+    },
+    {
+      "text": "<p>Your <code>link</code> element should be within your <code>head</code> element.</p>",
+      "testString": "assert.exists(document.querySelector('head > link'));"
+    },
+    {
+      "text": "<p>Your <code>link</code> element should have a <code>rel</code> attribute with the value <code>stylesheet</code>.</p>",
+      "testString": "const link_element = document.querySelector('link');\nconst rel = link_element.getAttribute(\"rel\");\nassert.equal(rel, \"stylesheet\");"
+    },
+    {
+      "text": "<p>Your <code>link</code> element should have an <code>href</code> attribute with the value <code>styles.css</code>.</p>",
+      "testString": "const link = document.querySelector('link');\nassert.equal(link.dataset.href, \"styles.css\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Begin with the standard boilerplate. Add your <code>DOCTYPE</code> declaration, your <code>html</code> element with the language set to English, your <code>head</code> and <code>body</code> elements.</p>\n<p>Add your <code>meta</code> element for the correct <code>charset</code>, your <code>title</code> element, and a <code>link</code> element for the <code>./styles.css</code> file.</p>\n<p>Set the <code>title</code> to <code>Ferris Wheel</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-animation-by-building-a-ferris-wheel",
+  "hasEditableBoundaries": true,
+  "order": 17,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

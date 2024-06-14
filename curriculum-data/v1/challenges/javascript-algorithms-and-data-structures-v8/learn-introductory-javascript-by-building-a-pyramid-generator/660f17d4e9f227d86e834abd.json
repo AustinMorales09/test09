@@ -1,0 +1,65 @@
+{
+  "id": "660f17d4e9f227d86e834abd",
+  "title": "Step 32",
+  "challengeType": 1,
+  "dashedName": "step-32",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        6
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\n",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>for</code> loop.</p>",
+      "testString": "assert.match(code, /for/);"
+    },
+    {
+      "text": "<p>The first component of your <code>for</code> loop should be the string <code>\"iterator\"</code>.</p>",
+      "testString": "assert.match(code, /for\\s*\\(\\s*('|\")iterator\\1/);"
+    },
+    {
+      "text": "<p>The second component of your <code>for</code> loop should be the string <code>\"condition\"</code>.</p>",
+      "testString": "assert.match(code, /for\\s*\\(\\s*('|\")iterator\\1\\s*;\\s*('|\")condition\\2/);"
+    },
+    {
+      "text": "<p>The third component of your <code>for</code> loop should be the string <code>\"iteration\"</code>.</p>",
+      "testString": "assert.match(code, /for\\s*\\(\\s*('|\")iterator\\1\\s*;\\s*('|\")condition\\2\\s*;\\s*('|\")iteration\\3\\s*\\)/);"
+    },
+    {
+      "text": "<p>The body of your <code>for</code> loop should be empty.</p>",
+      "testString": "assert.match(code, /for\\s*\\(\\s*('|\")iterator\\1\\s*;\\s*('|\")condition\\2\\s*;\\s*('|\")iteration\\3\\s*\\)\\s*\\{\\s*\\}/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To generate a pyramid, you will need to create multiple rows. When you have to perform a task repeatedly until a condition is met, you will use a <dfn>loop</dfn>. There are many ways to write a loop.</p>\n<p>You are going to start with a basic <code>for</code> loop. <code>for</code> loops use the following syntax:</p>\n<pre><code class=\"language-js\">for (iterator; condition; iteration) {\n  logic;\n}\n</code></pre>\n<p>In the upcoming steps, you'll explore each component of a loop in detail. For now, construct a <code>for</code> loop that includes the terms <code>\"iterator\"</code>, <code>\"condition\"</code>, and <code>\"iteration\"</code> for the three components. Keep the loop <dfn>body</dfn>, the section within the curly braces <code>{}</code>, empty.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 31,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

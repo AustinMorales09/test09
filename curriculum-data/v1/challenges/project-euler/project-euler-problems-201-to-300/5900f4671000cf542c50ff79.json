@@ -1,0 +1,65 @@
+{
+  "id": "5900f4671000cf542c50ff79",
+  "title": "Problem 249: Prime Subset Sums",
+  "challengeType": 1,
+  "forumTopicId": 301896,
+  "dashedName": "problem-249-prime-subset-sums",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function primeSubsetSums() {\n\n  return true;\n}\n\nprimeSubsetSums();",
+      "error": null,
+      "seed": "function primeSubsetSums() {\n\n  return true;\n}\n\nprimeSubsetSums();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>primeSubsetSums()</code> should return <code>9275262564250418</code>.</p>",
+      "testString": "assert.strictEqual(primeSubsetSums(), 9275262564250418);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $S = \\{2, 3, 5, \\ldots, 4999\\}$ be the set of prime numbers less than 5000.</p>\n<p>Find the number of subsets of $S$, the sum of whose elements is a prime number.</p>\n<p>Enter the rightmost 16 digits as your answer.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 48,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

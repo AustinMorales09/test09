@@ -1,0 +1,75 @@
+{
+  "id": "65f511638aa1de0b9d53963e",
+  "title": "Task 17",
+  "challengeType": 22,
+  "dashedName": "task-17",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I may need your _.</p>",
+    "blanks": [
+      {
+        "answer": "expertise",
+        "feedback": "<p>Tom is acknowledging that he might need Sarah's specialized skills and knowledge in coding.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.96,
+        "finishTimestamp": 6.3
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 2.34,
+        "dialogue": {
+          "text": "I may need your expertise.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 2.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Expertise</code> refers to having specialized knowledge or skill in a particular field or area, especially gained over time. In a professional setting like coding, having <code>expertise</code> means being very knowledgeable and skilled in specific aspects of the work, such as a programming language or a type of software.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

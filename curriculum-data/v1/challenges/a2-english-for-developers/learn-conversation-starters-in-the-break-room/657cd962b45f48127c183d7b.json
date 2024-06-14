@@ -1,0 +1,45 @@
+{
+  "id": "657cd962b45f48127c183d7b",
+  "title": "Task 56",
+  "challengeType": 19,
+  "dashedName": "task-56",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which is the right way to say <code>to coordinate</code> when talking about one person like Maria?</p>",
+    "answers": [
+      {
+        "answer": "<p>Maria coordinate projects</p>",
+        "feedback": "<p><code>Coordinate</code> is what you say for <code>I,</code> <code>you,</code> <code>we,</code> or <code>they.</code></p>"
+      },
+      {
+        "answer": "<p>Maria coordinating projects</p>",
+        "feedback": "<p><code>Coordinating</code> is used when something is happening right now.</p>"
+      },
+      {
+        "answer": "<p>Maria coordinates projects</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Maria coordinated projects</p>",
+        "feedback": "<p><code>Coordinated</code> is used for something that happened already, not what happens every day.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you speak about what another person does every day, like your friend or a teacher, and you use <code>he,</code> <code>she,</code> or <code>it</code> you will often need to conjugate the verb of your sentence.</p>\n<p>As you already studied, For most verbs conjugation can be simple. You just  add <code>s</code> or <code>es</code> to the end of the verb.</p>\n<p>For example:</p>\n<p><code>You talk</code> -> <code>He talks</code>\n<code>They do</code> -> <code>It does</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 58,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

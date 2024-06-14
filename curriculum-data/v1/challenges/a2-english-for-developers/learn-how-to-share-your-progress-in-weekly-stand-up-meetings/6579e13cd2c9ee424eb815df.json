@@ -1,0 +1,88 @@
+{
+  "id": "6579e13cd2c9ee424eb815df",
+  "title": "Task 54",
+  "challengeType": 19,
+  "dashedName": "task-54",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Bob's advice regarding the coding guidelines?</p>",
+    "answers": [
+      {
+        "answer": "<p>To follow the guidelines strictly without changes</p>",
+        "feedback": "<p>Bob advises regular reviews and updates, not strict adherence without changes.</p>"
+      },
+      {
+        "answer": "<p>To regularly review and update the guidelines as needed</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To create a new set of guidelines for each project</p>",
+        "feedback": "<p>Bob suggests updating the existing guidelines, not creating new ones for each project.</p>"
+      },
+      {
+        "answer": "<p>To ignore the guidelines for future projects</p>",
+        "feedback": "<p>His advice is about regular updates, not ignoring the guidelines.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 23.88,
+        "finishTimestamp": 29.14
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.26,
+        "dialogue": {
+          "text": "Also, I would advise that we regularly review and update these guidelines as our projects involve.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.76
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 56,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

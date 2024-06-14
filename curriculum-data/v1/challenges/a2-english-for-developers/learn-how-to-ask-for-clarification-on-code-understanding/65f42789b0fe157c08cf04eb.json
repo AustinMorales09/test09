@@ -1,0 +1,88 @@
+{
+  "id": "65f42789b0fe157c08cf04eb",
+  "title": "Task 5",
+  "challengeType": 19,
+  "dashedName": "task-5",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Sarah telling Brian she can do?</p>",
+    "answers": [
+      {
+        "answer": "<p>Sarah proposes to rewrite the code for him</p>",
+        "feedback": "<p>Sarah proposes to explain the code, not to rewrite it.</p>"
+      },
+      {
+        "answer": "<p>She says she can explain and clarify the part of the code Brian is unsure about</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She is asking that someone else clarifies the code</p>",
+        "feedback": "<p>Sarah herself is proposing help, not suggesting others to assist.</p>"
+      },
+      {
+        "answer": "<p>She's scheduling a meeting for later</p>",
+        "feedback": "<p>Her offer is about explaining it now, not planning a future meeting.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 7.46,
+        "finishTimestamp": 12.66
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 6.2,
+        "dialogue": {
+          "text": "Of course, Brian. I can explain what I was trying to achieve there. What part of the code are you uncertain about?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the dialogue and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

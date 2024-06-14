@@ -1,0 +1,83 @@
+{
+  "id": "658013bd3b1a06001a59e006",
+  "title": "Task 102",
+  "challengeType": 22,
+  "dashedName": "task-102",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Really? That sounds great! I'd _ _ _ you.</p>",
+    "blanks": [
+      {
+        "answer": "love",
+        "feedback": "<p>This word is often used to express a strong feeling of affection or enjoyment.</p>"
+      },
+      {
+        "answer": "to",
+        "feedback": "<p>This word is used as a preposition indicating direction or purpose in a sentence.</p>"
+      },
+      {
+        "answer": "join",
+        "feedback": "<p>This word means to become a part of something or to participate in an activity or event.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.48,
+        "finishTimestamp": 20.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 3.96,
+        "dialogue": {
+          "text": "Really? That sounds great. I'd love to join you.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 4.46
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>I'd love to join</code> is used to express eagerness or willingness to participate in an activity or event.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 106,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

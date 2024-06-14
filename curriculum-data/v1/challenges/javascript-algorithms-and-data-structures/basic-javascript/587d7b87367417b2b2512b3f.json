@@ -1,0 +1,74 @@
+{
+  "id": "587d7b87367417b2b2512b3f",
+  "title": "Explore Differences Between the var and let Keywords",
+  "challengeType": 1,
+  "forumTopicId": 301202,
+  "dashedName": "explore-differences-between-the-var-and-let-keywords",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "var catName = \"Oliver\";\nvar catSound = \"Meow!\";",
+      "error": null,
+      "seed": "var catName = \"Oliver\";\nvar catSound = \"Meow!\";"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let catName = \"Oliver\";\nlet catSound = \"Meow!\";",
+        "error": null,
+        "seed": "let catName = \"Oliver\";\nlet catSound = \"Meow!\";"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>var</code> should not exist in the code.</p>",
+      "testString": "assert.notMatch(code, /var/g);"
+    },
+    {
+      "text": "<p><code>catName</code> should be the string <code>Oliver</code>.</p>",
+      "testString": "assert.equal(catName, 'Oliver');"
+    },
+    {
+      "text": "<p><code>catSound</code> should be the string <code>Meow!</code></p>",
+      "testString": "assert.equal(catSound, 'Meow!');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>One of the biggest problems with declaring variables with the <code>var</code> keyword is that you can easily overwrite variable declarations:</p>\n<pre><code class=\"language-js\">var camper = \"James\";\nvar camper = \"David\";\nconsole.log(camper);\n</code></pre>\n<p>In the code above, the <code>camper</code> variable is originally declared as <code>James</code>, and is then overridden to be <code>David</code>. The console then displays the string <code>David</code>.</p>\n<p>In a small application, you might not run into this type of problem. But as your codebase becomes larger, you might accidentally overwrite a variable that you did not intend to. Because this behavior does not throw an error, searching for and fixing bugs becomes more difficult.</p>\n<p>A keyword called <code>let</code> was introduced in ES6, a major update to JavaScript, to solve this potential issue with the <code>var</code> keyword. You'll learn about other ES6 features in later challenges.</p>\n<p>If you replace <code>var</code> with <code>let</code> in the code above, it results in an error:</p>\n<pre><code class=\"language-js\">let camper = \"James\";\nlet camper = \"David\";\n</code></pre>\n<p>The error can be seen in your browser console.</p>\n<p>So unlike <code>var</code>, when you use <code>let</code>, a variable with the same name can only be declared once.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Update the code so it only uses the <code>let</code> keyword.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

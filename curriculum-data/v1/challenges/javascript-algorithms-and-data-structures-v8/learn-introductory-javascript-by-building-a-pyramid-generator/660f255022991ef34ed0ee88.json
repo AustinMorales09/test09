@@ -1,0 +1,53 @@
+{
+  "id": "660f255022991ef34ed0ee88",
+  "title": "Step 43",
+  "challengeType": 1,
+  "dashedName": "step-43",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        8
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(i);\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(i);\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should no longer push your <code>i</code> variable.</p>",
+      "testString": "assert.notMatch(code, /rows\\.push\\(\\s*i\\s*\\)/);"
+    },
+    {
+      "text": "<p>You should push your <code>character</code> variable.</p>",
+      "testString": "assert.match(code, /rows\\.push\\(\\s*character\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Printing numbers won't result in a visually appealing pyramid. Now that you're outputting the formatted content of your <code>rows</code> array, it's time to update your original loop.</p>\n<p>Instead of pushing <code>i</code> to the array, push the value of your <code>character</code> variable.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

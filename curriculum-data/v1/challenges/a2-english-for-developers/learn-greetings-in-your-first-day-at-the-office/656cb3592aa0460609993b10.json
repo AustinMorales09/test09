@@ -1,0 +1,88 @@
+{
+  "id": "656cb3592aa0460609993b10",
+  "title": "Task 90",
+  "challengeType": 19,
+  "dashedName": "task-90",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sophie mean by <code>someone</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>A specific person she knows.</p>",
+        "feedback": "<p>She's talking about Tom but isn't naming him directly.</p>"
+      },
+      {
+        "answer": "<p>Any person, not specified.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A famous person.</p>",
+        "feedback": "<p>The context doesn't suggest fame.</p>"
+      },
+      {
+        "answer": "<p>Herself.</p>",
+        "feedback": "<p>She's talking about Tom, not herself.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 53.22,
+        "finishTimestamp": 55.86
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.3,
+        "dialogue": {
+          "text": "So nice to have someone so energetic like you in the team.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>someone</code> is used to refer to an unspecified individual or person without specifying exactly who.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 91,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

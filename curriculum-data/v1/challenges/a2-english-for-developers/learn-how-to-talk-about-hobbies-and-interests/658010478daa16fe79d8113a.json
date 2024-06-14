@@ -1,0 +1,88 @@
+{
+  "id": "658010478daa16fe79d8113a",
+  "title": "Task 99",
+  "challengeType": 19,
+  "dashedName": "task-99",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sophie imply by saying <code>You're welcome to join!</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>She's unsure about Brian joining.</p>",
+        "feedback": "<p>Sophie's response indicates positivity and willingness for Brian to participate, not uncertainty.</p>"
+      },
+      {
+        "answer": "<p>She's excited for Brian to join.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She's hesitant to include Brian.</p>",
+        "feedback": "<p>Sophie's tone doesn’t suggest hesitation, but rather openness and enthusiasm for his participation.</p>"
+      },
+      {
+        "answer": "<p>She's not interested in Brian's participation.</p>",
+        "feedback": "<p>Sophie's invitation expresses the opposite of disinterest in Brian's participation, showing enthusiasm and inclusivity.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 13.1,
+        "finishTimestamp": 17.04
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 4.94,
+        "dialogue": {
+          "text": "Well, why don't you try it? I'm planning to go rafting this weekend. You're welcome to join.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 5.44
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 103,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

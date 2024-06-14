@@ -1,0 +1,88 @@
+{
+  "id": "6629cc728221a1a4a5613320",
+  "title": "Task 2",
+  "challengeType": 19,
+  "dashedName": "task-2",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Brian mean by asking <code>how's it going</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>He is asking if Sophie is going somewhere.</p>",
+        "feedback": "<p>This phrase is not about going to a place, but about asking how someone is doing.</p>"
+      },
+      {
+        "answer": "<p>He is asking about Sophie's general well-being or situation.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He wants to know what time it is.</p>",
+        "feedback": "<p>The phrase is not related to asking about the time.</p>"
+      },
+      {
+        "answer": "<p>He is asking for directions.</p>",
+        "feedback": "<p>This phrase is used to ask about someone's situation, not for directions.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 2.08
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 3.08,
+        "dialogue": {
+          "text": "Hey, Sophie. How's it going?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 3.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

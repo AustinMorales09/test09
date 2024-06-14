@@ -1,0 +1,45 @@
+{
+  "id": "657ce469dc28f40f4b7ac75d",
+  "title": "Task 59",
+  "challengeType": 19,
+  "dashedName": "task-59",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which is the correct way to ask about the existence of something using <code>there is</code> or <code>there are</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Is there a meeting scheduled for today?</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Are there the new designer in the office?</code></p>",
+        "feedback": "<p>Remember to use <code>Is there</code> for singular and <code>Are there</code> for plural. The correct form should be <code>Is there a new designer in the office?</code></p>"
+      },
+      {
+        "answer": "<p><code>Is there any chairs in the meeting room?</code></p>",
+        "feedback": "<p><code>Chairs</code> is plural, so the correct form is <code>Are there any chairs in the meeting room?</code></p>"
+      },
+      {
+        "answer": "<p><code>Are there a new designer in the office?</code></p>",
+        "feedback": "<p>This question is about one person, so it should use <code>Is there</code> instead of <code>Are there</code>. The correct form is <code>Is there a new designer in the office?</code></p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Is there</code> and <code>Are there</code> are used at the beginning of questions to ask about the existence or presence of something.\n<code>Is there</code> is used for singular nouns, like in <code>Is there a solution?</code> <code>Are there</code> is used for plural nouns, such as in <code>Are there any questions?</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 61,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

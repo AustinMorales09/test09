@@ -1,0 +1,53 @@
+{
+  "id": "65821c1c40ccac44adf38e6b",
+  "title": "Step 2",
+  "challengeType": 20,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        5
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def add_expense(expenses, amount, category):\n    pass\n    \n",
+      "error": null,
+      "seed": "def add_expense(expenses, amount, category):\n    pass\n    \n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should declare a new variable named <code>expenses</code>.</p>",
+      "testString": "({ test: () => assert(__userGlobals.has(\"expenses\")) })"
+    },
+    {
+      "text": "<p>You should assign an empty list to the <code>expenses</code> variable.</p>",
+      "testString": "({ test: () => assert.equal(__userGlobals.get(\"expenses\").length, 0) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A list in Python is a built-in data type that allows you to store many items in a single data structure. In Python, you create a list by putting items inside square brackets (<code>[]</code>), with each item separated from the following one by a comma.</p>\n<pre><code class=\"language-py\">numbers = [1, 2, 3, 4]\n</code></pre>\n<p>Use a pair of square brackets to create an empty list named <code>expenses</code>. You will use it to store each of your expenses.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

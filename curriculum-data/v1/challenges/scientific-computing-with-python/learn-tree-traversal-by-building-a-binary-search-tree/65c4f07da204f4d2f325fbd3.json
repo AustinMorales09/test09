@@ -1,0 +1,53 @@
+{
+  "id": "65c4f07da204f4d2f325fbd3",
+  "title": "Step 5",
+  "challengeType": 20,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class TreeNode:    \n    def __init__(self, key):\n        self.key = key",
+      "error": null,
+      "seed": "class TreeNode:    \n    def __init__(self, key):\n        self.key = key"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should assign <code>None</code> to the <code>left</code> attribute of the node using <code>self.left</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /self\\.left\\s*=\\s*None/m) })"
+    },
+    {
+      "text": "<p>You should assign <code>None</code> to the <code>right</code> attribute of the node using <code>self.right</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /self\\.right\\s*=\\s*None/m) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Inside the <code>__init__</code> method, initialize the <code>left</code> and <code>right</code> attributes of the node to <code>None</code>. This is because when a node is first created, it doesn't have any left or right children. Remember to use the <code>self</code> keyword.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-tree-traversal-by-building-a-binary-search-tree",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

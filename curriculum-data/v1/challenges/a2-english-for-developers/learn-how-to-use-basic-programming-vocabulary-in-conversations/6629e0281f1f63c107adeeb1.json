@@ -1,0 +1,45 @@
+{
+  "id": "6629e0281f1f63c107adeeb1",
+  "title": "Task 4",
+  "challengeType": 19,
+  "dashedName": "task-4",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following sentences uses the Present Perfect Continuous tense correctly?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>She has visited her grandmother.</code></p>",
+        "feedback": "<p>This sentence Present Perfect tense, not Present Perfect Continuous tense.</p>"
+      },
+      {
+        "answer": "<p><code>They have been eat dinner.</code></p>",
+        "feedback": "<p>This sentence is grammatically incorrect. The correct verb form should be <code>eating</code>.</p>"
+      },
+      {
+        "answer": "<p><code>We have been studying for the exam since January.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>He has been plays soccer every Thursday.</code></p>",
+        "feedback": "<p>This sentence uses incorrect verb form. The correct form should be <code>playing</code>.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "657e5c296bdba2ea26c67ca0",
+  "title": "Task 97",
+  "challengeType": 19,
+  "dashedName": "task-97",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the meaning of Linda’s question?</p>",
+    "answers": [
+      {
+        "answer": "<p>She wants to know if they need to plan for security incidents.</p>",
+        "feedback": "<p>The question is not about making plans for incidents.</p>"
+      },
+      {
+        "answer": "<p>She wants to know if every security incident needs to be reported.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She wants to know how to celebrate company achievements.</p>",
+        "feedback": "<p>The talk is about security, not celebrating.</p>"
+      },
+      {
+        "answer": "<p>She wants to know when to take breaks during work.</p>",
+        "feedback": "<p>They are talking about security, not when to take breaks.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room2.png",
+      "characters": [
+        {
+          "character": "Linda",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 40.84,
+        "finishTimestamp": 42.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Linda",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Linda",
+        "startTime": 1,
+        "finishTime": 3.14,
+        "dialogue": {
+          "text": "Do we have to report every security incident?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Linda",
+        "opacity": 0,
+        "startTime": 3.64
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio to answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 100,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

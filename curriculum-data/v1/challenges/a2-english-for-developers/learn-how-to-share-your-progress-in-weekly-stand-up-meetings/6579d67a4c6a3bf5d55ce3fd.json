@@ -1,0 +1,88 @@
+{
+  "id": "6579d67a4c6a3bf5d55ce3fd",
+  "title": "Task 20",
+  "challengeType": 19,
+  "dashedName": "task-20",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>I'd</code> express in Sophie's sentence?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I do</code></p>",
+        "feedback": "<p><code>I'd</code> is not the same as <code>I do</code>. It's a contraction for <code>I would</code>, indicating preference or politeness.</p>"
+      },
+      {
+        "answer": "<p><code>I had</code></p>",
+        "feedback": "<p>Although <code>I'd</code> can sometimes mean <code>I had</code>, in this case, it means <code>I would</code>.</p>"
+      },
+      {
+        "answer": "<p><code>I would</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>I will</code></p>",
+        "feedback": "<p><code>I'd</code> is a contraction of <code>I would</code>, not <code>I will</code>. It's used for polite or hypothetical expressions.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 24.32,
+        "finishTimestamp": 26.22
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 2.9,
+        "dialogue": {
+          "text": "Not at all. I'd appreciate your input.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 3.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In spoken English, <code>I'd</code> is a contraction of <code>I would</code>, used to make speech more fluid and conversational. It's often used to express politeness, preference, or hypothetical situations. For example, <code>I'd go to the park if it stops raining</code>, or <code>I'd like to order a pizza.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

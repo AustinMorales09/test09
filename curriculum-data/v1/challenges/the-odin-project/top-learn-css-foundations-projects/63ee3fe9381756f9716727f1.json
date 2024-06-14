@@ -1,0 +1,119 @@
+{
+  "id": "63ee3fe9381756f9716727f1",
+  "title": "CSS Foundations Exercise C",
+  "challengeType": 14,
+  "dashedName": "css-foundations-exercise-c",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Grouping Selectors</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <button>Click Me!</button>\n    <button>No, Click Me!</button>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Grouping Selectors</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <button>Click Me!</button>\n    <button>No, Click Me!</button>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<!DOCTYPE html>\n  <html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Grouping Selectors</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <button class=\"inverted\">Click Me!</button>\n    <button class=\"fancy\">No, Click Me!</button>\n  </body>\n</html>",
+        "error": null,
+        "seed": "<!DOCTYPE html>\n  <html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Grouping Selectors</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <button class=\"inverted\">Click Me!</button>\n    <button class=\"fancy\">No, Click Me!</button>\n  </body>\n</html>"
+      },
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "styles.css"
+        ],
+        "name": "styles",
+        "ext": "css",
+        "path": "styles.css",
+        "fileKey": "stylescss",
+        "contents": ".inverted,\n.fancy {\n  font-family: Helvetica, \"Times New Roman\", sans-serif;\n  font-size: 28px;\n}\n\n.inverted {\n  background-color: black;\n  color: white;\n}\n\n.fancy {\n  background-color: yellow;\n}",
+        "error": null,
+        "seed": ".inverted,\n.fancy {\n  font-family: Helvetica, \"Times New Roman\", sans-serif;\n  font-size: 28px;\n}\n\n.inverted {\n  background-color: black;\n  color: white;\n}\n\n.fancy {\n  background-color: yellow;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>black</code> background on the first element.</p>",
+      "testString": "const classes = document.querySelectorAll('button')?.[0].classList;\n\nconst style = new __helpers.CSSHelp(document).getStyle(`.${classes[0]}`);\n\nassert.equal(style?.backgroundColor, 'black');\n"
+    },
+    {
+      "text": "<p>Your first element should have a text color of <code>white</code>.</p>",
+      "testString": "\nconst classes = document.querySelectorAll('button')?.[0].classList;\n\nconst style = new __helpers.CSSHelp(document).getStyle(`.${classes[0]}`);\n\nassert.equal(style?.color, 'white');\n"
+    },
+    {
+      "text": "<p>You should set the <code>font-size</code> for both elements to <code>28px</code> using a grouping selector.</p>",
+      "testString": "const classOne = document.querySelectorAll('button')?.[0].classList?.[0];\nconst classTwo = document.querySelectorAll('button')?.[1].classList?.[0];\n\nfunction eitherOr() {\n  const a = new __helpers.CSSHelp(document)\n  return a.getStyle(`.${classOne}, .${classTwo}`) ?? a.getStyle(`.${classTwo}, .${classOne}`);\n}\nassert.equal(eitherOr()?.fontSize, '28px');"
+    },
+    {
+      "text": "<p>You have a unique class name on each element.</p>",
+      "testString": "const elementOneClasses = document.querySelectorAll('button')?.[0].classList;\nconst elementTwoClasses = document.querySelectorAll('button')?.[1].classList;\n\nfor(let i = 0; i < elementOneClasses.length; i++){\n    assert(![...elementTwoClasses].includes(elementOneClasses[i]));\n}\n"
+    },
+    {
+      "text": "<p>You should have a grouping selector for styles that both elements share.</p>",
+      "testString": "const classOne = document.querySelectorAll('button')?.[0].classList?.[0];\nconst classTwo = document.querySelectorAll('button')?.[1].classList?.[0];\n\nfunction eitherOr() {\n  const a = new __helpers.CSSHelp(document)\n  return a.getStyle(`.${classOne}, .${classTwo}`) ?? a.getStyle(`.${classTwo}, .${classOne}`);\n}\nassert.exists(eitherOr());"
+    },
+    {
+      "text": "<p>You should have a list of fonts containing <code>Helvetica</code> and <code>Times New Roman</code> with <code>sans-serif</code> as a fallback.</p>",
+      "testString": "const classOne = document.querySelectorAll('button')?.[0].classList?.[0];\nconst classTwo = document.querySelectorAll('button')?.[1].classList?.[0];\n\nfunction eitherOr() {\n  const a = new __helpers.CSSHelp(document)\n  return a.getStyle(`.${classOne}, .${classTwo}`) ?? a.getStyle(`.${classTwo}, .${classOne}`);\n}\n\nassert.equal(eitherOr()?.fontFamily, 'Helvetica, \"Times New Roman\", sans-serif');"
+    },
+    {
+      "text": "<p>Each element should only have one class.</p>",
+      "testString": "const elementOneClasses = document.querySelectorAll('button')?.[0].classList;\nconst elementTwoClasses = document.querySelectorAll('button')?.[1].classList;\n\nassert(elementOneClasses.length === 1 && elementTwoClasses.length === 1);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let's build a little off the previous exercise, in which you added multiple classes to a single element in order to apply two different rules to it.</p>\n<ol>\n<li>You should see a black background and white text on the first <code>button</code> element.</li>\n<li>You should see a yellow background on the second <code>button</code> element.</li>\n<li>You should set a font size of <code>28px</code> using a grouping selector.</li>\n<li>You should have a list of fonts containing <code>Helvetica</code> and <code>Times New Roman</code> with <code>sans-serif</code> as a fallback.</li>\n<li>You should see a unique class name on each element.</li>\n<li>You should have a grouping selector for styles that both elements share.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-css-foundations-projects",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "bad87fee1348bd9aec908847",
+  "title": "Split Your Bootstrap Row",
+  "challengeType": 0,
+  "forumTopicId": 18306,
+  "dashedName": "split-your-bootstrap-row",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n\n\n  </div>\n</div>",
+      "error": null,
+      "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n\n\n  </div>\n</div>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\"></div>\n    <div class=\"col-xs-6\"></div>\n  </div>\n</div>",
+        "error": null,
+        "seed": "<div class=\"container-fluid\">\n  <h3 class=\"text-primary text-center\">jQuery Playground</h3>\n  <div class=\"row\">\n    <div class=\"col-xs-6\"></div>\n    <div class=\"col-xs-6\"></div>\n  </div>\n</div>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Two <code>div class=\"col-xs-6\"</code> elements should be nested within your <code>div class=\"row\"</code> element.</p>",
+      "testString": "assert($('div.row > div.col-xs-6').length > 1);"
+    },
+    {
+      "text": "<p>All your <code>div</code> elements should have closing tags.</p>",
+      "testString": "assert(\n  code.match(/<\\/div>/g) &&\n    code.match(/<div/g) &&\n    code.match(/<\\/div>/g).length === code.match(/<div/g).length\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now that we have a Bootstrap Row, let's split it into two columns to house our elements.</p>\n<p>Create two <code>div</code> elements within your row, both with the class <code>col-xs-6</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "bootstrap",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 21,
+  "required": [
+    {
+      "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"
+    }
+  ],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

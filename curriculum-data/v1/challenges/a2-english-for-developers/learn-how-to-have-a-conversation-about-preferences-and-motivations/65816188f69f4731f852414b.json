@@ -1,0 +1,79 @@
+{
+  "id": "65816188f69f4731f852414b",
+  "title": "Task 40",
+  "challengeType": 22,
+  "dashedName": "task-40",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Hi, Tom. You look a bit _ _ days. Is everything okay?</p>",
+    "blanks": [
+      {
+        "answer": "down",
+        "feedback": "<p>This word is used to describe feeling sad or unhappy. It's like when you're not feeling like your usual happy self.</p>"
+      },
+      {
+        "answer": "these",
+        "feedback": "<p>This word is used with <code>days</code> to talk about the current time or the recent period.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0.98,
+        "finishTimestamp": 4.58
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 4.6,
+        "dialogue": {
+          "text": "Hi, Tom. You look a bit down these days. Is everything okay?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 5.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When someone says you look <code>down</code>, it means they think you seem sad or unhappy. It's like when someone can tell you're not your usual self because of your face or how you act.</p>\n<p><code>These days</code> means the current period of time or recently. If you say, <code>It's been raining a lot these days,</code> you mean it has rained a lot recently.</p>\n<p>In this conversation, Alice notices something about Tom's mood and asks if he's okay.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 41,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,106 @@
+{
+  "id": "65a35c036df46e46187c31a3",
+  "title": "Task 76",
+  "challengeType": 19,
+  "dashedName": "task-76",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the comparison Lisa makes between the tech field and other fields?</p>",
+    "answers": [
+      {
+        "answer": "<p>Tech jobs are more creatively fulfilling than other fields</p>",
+        "feedback": "<p>Think about whether Lisa's comparison focuses on creativity or another aspect.</p>"
+      },
+      {
+        "answer": "<p>Tech jobs offer more financial stability than other fields</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Tech jobs require more hours than other fields</p>",
+        "feedback": "<p>Consider what aspect of tech jobs Lisa highlights as a positive comparison.</p>"
+      },
+      {
+        "answer": "<p>Tech jobs are more socially engaging than other fields</p>",
+        "feedback": "<p>Reflect on Lisa's statement about what makes tech jobs stand out for her.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Lisa",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.82,
+        "finishTimestamp": 15.34
+      }
+    },
+    "commands": [
+      {
+        "character": "Lisa",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Lisa",
+        "startTime": 1,
+        "finishTime": 5.2,
+        "dialogue": {
+          "text": "One of my main motivations was the financial stability that tech jobs can provide.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "startTime": 5.66,
+        "finishTime": 8.08,
+        "dialogue": {
+          "text": "It allows me to plan for my future with confidence.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "startTime": 8.54,
+        "finishTime": 11.32,
+        "dialogue": {
+          "text": "In other fields, it's much more difficult to achieve this stability.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "opacity": 0,
+        "startTime": 11.82
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The words <code>much</code> and <code>many</code> are used to talk about quantity.</p>\n<p><code>Much</code> is used with uncountable nouns, like <code>much work,</code> and <code>many</code> is used with countable nouns, like <code>many open tickets.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 78,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

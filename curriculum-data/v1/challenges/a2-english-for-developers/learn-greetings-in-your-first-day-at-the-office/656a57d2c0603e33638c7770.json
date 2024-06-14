@@ -1,0 +1,88 @@
+{
+  "id": "656a57d2c0603e33638c7770",
+  "title": "Task 60",
+  "challengeType": 19,
+  "dashedName": "task-60",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>alternative</code> mean in the dialogue?</p>",
+    "answers": [
+      {
+        "answer": "<p>The same choice</p>",
+        "feedback": "<p>An <code>alternative</code> means a different choice, not the same one.</p>"
+      },
+      {
+        "answer": "<p>A different option or choice</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The only option</p>",
+        "feedback": "<p><code>Alternative</code> suggests there are other options available, not just one.</p>"
+      },
+      {
+        "answer": "<p>A mistake</p>",
+        "feedback": "<p>This doesn't relate to the context of the dialogue or the meaning of <code>alternative</code>.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 26.78,
+        "finishTimestamp": 28.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 2.34,
+        "dialogue": {
+          "text": "This is a good alternative for me.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 2.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>An <code>alternative</code> refers to another option or solution that is different from the one currently in use or being considered.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 61,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

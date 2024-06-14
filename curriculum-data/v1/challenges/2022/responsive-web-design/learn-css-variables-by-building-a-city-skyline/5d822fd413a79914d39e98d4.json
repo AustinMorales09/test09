@@ -1,0 +1,109 @@
+{
+  "id": "5d822fd413a79914d39e98d4",
+  "title": "Step 12",
+  "challengeType": 0,
+  "dashedName": "step-12",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />   \n  </head>\n\n  <body>\n    <div class=\"background-buildings\">\n      <div class=\"bb1\">\n        <div class=\"bb1a\"></div>\n        <div class=\"bb1b\"></div>\n        <div class=\"bb1c\"></div>\n        <div class=\"bb1d\"></div>\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />   \n  </head>\n\n  <body>\n    <div class=\"background-buildings\">\n      <div class=\"bb1\">\n        <div class=\"bb1a\"></div>\n        <div class=\"bb1b\"></div>\n        <div class=\"bb1c\"></div>\n        <div class=\"bb1d\"></div>\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        20,
+        22
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  margin: 0;\n  overflow: hidden;\n}\n\n.background-buildings {\n  width: 100%;\n  height: 100%;\n}\n\n.bb1 {\n  width: 10%;\n  height: 70%;\n}\n\n",
+      "error": null,
+      "seed": "* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  margin: 0;\n  overflow: hidden;\n}\n\n.background-buildings {\n  width: 100%;\n  height: 100%;\n}\n\n.bb1 {\n  width: 10%;\n  height: 70%;\n}\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use a class selector to style <code>.bb1a</code>.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.bb1a'));"
+    },
+    {
+      "text": "<p>You should give <code>.bb1a</code> a <code>width</code> of <code>70%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.bb1a')?.width, '70%');"
+    },
+    {
+      "text": "<p>You should give <code>.bb1a</code> a <code>height</code> of <code>10%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.bb1a')?.height, '10%');"
+    },
+    {
+      "text": "<p>You should use a class selector to style <code>.bb1b</code>.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.bb1b'));"
+    },
+    {
+      "text": "<p>You should give <code>.bb1b</code> a <code>width</code> of <code>80%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.bb1b')?.width, '80%');"
+    },
+    {
+      "text": "<p>You should give <code>.bb1b</code> a <code>height</code> of <code>10%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.bb1b')?.height, '10%');"
+    },
+    {
+      "text": "<p>You should use a class selector to style <code>.bb1c</code>.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.bb1c'));"
+    },
+    {
+      "text": "<p>You should give <code>.bb1c</code> a <code>width</code> of <code>90%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.bb1c')?.width, '90%');"
+    },
+    {
+      "text": "<p>You should give <code>.bb1c</code> a <code>height</code> of <code>10%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.bb1c')?.height, '10%');"
+    },
+    {
+      "text": "<p>You should use a class selector to style <code>.bb1d</code>.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.bb1d'));"
+    },
+    {
+      "text": "<p>You should give <code>.bb1d</code> a <code>width</code> of <code>100%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.bb1d')?.width, '100%');"
+    },
+    {
+      "text": "<p>You should give <code>.bb1d</code> a <code>height</code> of <code>70%</code>.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.bb1d')?.height, '70%');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Give the parts of your building <code>width</code> and <code>height</code> properties with these values: <code>70%</code> and <code>10%</code> to <code>.bb1a</code>, <code>80%</code> and <code>10%</code> to <code>.bb1b</code>, <code>90%</code> and <code>10%</code> to <code>.bb1c</code>, and <code>100%</code> and <code>70%</code> to <code>.bb1d</code>. Remember that these percentages are relative to the parent and note that the heights will add up to 100% - vertically filling the container.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-variables-by-building-a-city-skyline",
+  "hasEditableBoundaries": true,
+  "order": 14,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,125 @@
+{
+  "id": "65a393115e989381c5dc0c4c",
+  "title": "Task 83",
+  "challengeType": 19,
+  "dashedName": "task-83",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Brian's opinion?</p>",
+    "answers": [
+      {
+        "answer": "<p>He disagrees with Lisa</p>",
+        "feedback": "<p>Consider what <code>I'm with you</code> typically means in a conversation.</p>"
+      },
+      {
+        "answer": "<p>He is unsure about Lisa's perspective</p>",
+        "feedback": "<p>Think about Brian's choice of words and what they convey about his stance.</p>"
+      },
+      {
+        "answer": "<p>He finds tech work uninteresting</p>",
+        "feedback": "<p>Reflect on the context of Brian's response to Lisa's statement.</p>"
+      },
+      {
+        "answer": "<p>He agrees with Lisa</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Lisa",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 25.82,
+        "finishTimestamp": 34.98
+      }
+    },
+    "commands": [
+      {
+        "character": "Lisa",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Lisa",
+        "startTime": 1,
+        "finishTime": 3.36,
+        "dialogue": {
+          "text": "Collaborating with diverse teams can be exciting, Brian.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "startTime": 3.76,
+        "finishTime": 8.44,
+        "dialogue": {
+          "text": "Another thing was the chance to be part of projects that push the limits of innovation and creativity.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "opacity": 0,
+        "startTime": 8.45
+      },
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 8.45
+      },
+      {
+        "character": "Brian",
+        "startTime": 8.57,
+        "finishTime": 10.16,
+        "dialogue": {
+          "text": "I'm with you on that one.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 10.66
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Brian responds to Lisa's comments about working in tech.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 85,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

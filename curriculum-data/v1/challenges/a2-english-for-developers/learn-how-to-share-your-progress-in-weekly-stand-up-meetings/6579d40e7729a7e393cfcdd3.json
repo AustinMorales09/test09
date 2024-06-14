@@ -1,0 +1,79 @@
+{
+  "id": "6579d40e7729a7e393cfcdd3",
+  "title": "Task 11",
+  "challengeType": 22,
+  "dashedName": "task-11",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ . I can _ help you with that.</p>",
+    "blanks": [
+      {
+        "answer": "Absolutely",
+        "feedback": "<p>It is a strong affirmation, like saying <code>yes</code> with more emphasis.</p>"
+      },
+      {
+        "answer": "definitely",
+        "feedback": "<p>It shows high assurance, indicating Bob is certain he can help.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.56,
+        "finishTimestamp": 17.28
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.72,
+        "dialogue": {
+          "text": "Absolutely. I can definitely help you with that.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 4.22
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The words <code>absolutely</code> and <code>definitely</code> strongly emphasize certainty and assurance. <code>Absolutely</code> is used to give an emphatic yes or agreement, while <code>definitely</code> means 'without any doubt,' reinforcing the speaker's commitment or sureness. For instance, if asked, <code>Are you sure you can complete this project?</code> a confident response could be, <code>Absolutely, I can definitely finish it on time.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-share-your-progress-in-weekly-stand-up-meetings",
+  "hasEditableBoundaries": false,
+  "order": 16,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

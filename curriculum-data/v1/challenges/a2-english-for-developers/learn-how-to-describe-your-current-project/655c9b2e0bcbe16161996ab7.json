@@ -1,0 +1,88 @@
+{
+  "id": "655c9b2e0bcbe16161996ab7",
+  "title": "Task 23",
+  "challengeType": 19,
+  "dashedName": "task-23",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Mark doing, and why is he doing it?</p>",
+    "answers": [
+      {
+        "answer": "<p>He is testing new software to find problems</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>He is designing new software for a project</p>",
+        "feedback": "<p>Mark is not designing it.</p>"
+      },
+      {
+        "answer": "<p>He is fixing problems in existing software</p>",
+        "feedback": "<p>Mark's goal is not to fix existing problems.</p>"
+      },
+      {
+        "answer": "<p>He is evaluating software for fun</p>",
+        "feedback": "<p>It might be fun, but that is not Mark's reason for doing it.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Mark",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 2.56,
+        "finishTimestamp": 5.7
+      }
+    },
+    "commands": [
+      {
+        "character": "Mark",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Mark",
+        "startTime": 1,
+        "finishTime": 4.14,
+        "dialogue": {
+          "text": "Hi, Maria. I'm testing a new software tool to find problems.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Mark",
+        "opacity": 0,
+        "startTime": 4.64
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Practice time!</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 25,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

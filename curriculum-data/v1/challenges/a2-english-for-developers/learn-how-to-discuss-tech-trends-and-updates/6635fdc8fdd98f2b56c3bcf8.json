@@ -1,0 +1,45 @@
+{
+  "id": "6635fdc8fdd98f2b56c3bcf8",
+  "title": "Task 4",
+  "challengeType": 19,
+  "dashedName": "task-4",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following sentences uses the structure <code>do you know</code> followed by an affirmative sentence correctly?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Do you know can he arrive on time?</code></p>",
+        "feedback": "<p>This sentence incorrectly uses a modal verb <code>can</code> directly after <code>Do you know</code>. It should be <code>Do you know if he can arrive on time?</code>.</p>"
+      },
+      {
+        "answer": "<p><code>Do you know is it raining outside?</code></p>",
+        "feedback": "<p>This sentence incorrectly forms a question directly after <code>Do you know</code>. The correct form should be <code>Do you know it is raining outside?</code></p>"
+      },
+      {
+        "answer": "<p><code>Do you know what time the store closes today?</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Do you know what time is it now?</code></p>",
+        "feedback": "<p>This sentence incorrectly forms a question directly after <code>Do you know</code>. The correct structure uses an affirmative statement, <code>Do you know what time it is now?</code></p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Expressions like <code>do you know</code>, <code>could you tell me</code>, and <code>do you have any idea</code> are commonly used in English to inquire or confirm information gently. You use them followed by a question and the structure of the question changes to an affirmative sentence.</p>\n<p>Examples:</p>\n<p>Original question <code>What time is it?</code> changed to <code>Do you know what time it is?</code></p>\n<p>Original question <code>How long does it take to read this book?</code> changed to <code>Could you tell me how long it takes to read this book?</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

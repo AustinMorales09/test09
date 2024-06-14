@@ -1,0 +1,49 @@
+{
+  "id": "6569b19d31a09b65b4bc390a",
+  "title": "Step 20",
+  "challengeType": 20,
+  "dashedName": "step-20",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        22,
+        26
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def merge_sort(array):\n    \n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n\n    merge_sort(left_part)\n    merge_sort(right_part)\n\n    left_array_index = 0\n    right_array_index = 0\n    sorted_index = 0\n\n    while left_array_index < len(left_part) and right_array_index < len(right_part):\n        if left_part[left_array_index] < right_part[right_array_index]:\n            array[sorted_index] = left_part[left_array_index]\n            left_array_index += 1\n        else:\n            array[sorted_index] = right_part[right_array_index]\n            right_array_index += 1\n        sorted_index += 1\n        \n    while left_array_index < len(left_part):\n        array[sorted_index] = left_part[left_array_index]\n",
+      "error": null,
+      "seed": "def merge_sort(array):\n    \n    middle_point = len(array) // 2\n    left_part = array[:middle_point]\n    right_part = array[middle_point:]\n\n    merge_sort(left_part)\n    merge_sort(right_part)\n\n    left_array_index = 0\n    right_array_index = 0\n    sorted_index = 0\n\n    while left_array_index < len(left_part) and right_array_index < len(right_part):\n        if left_part[left_array_index] < right_part[right_array_index]:\n            array[sorted_index] = left_part[left_array_index]\n            left_array_index += 1\n        else:\n            array[sorted_index] = right_part[right_array_index]\n            right_array_index += 1\n        sorted_index += 1\n        \n    while left_array_index < len(left_part):\n        array[sorted_index] = left_part[left_array_index]\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should use the <code>+=</code> operator to increment the current value of <code>left_array_index</code> by one within the <code>while</code> loop.</p>",
+      "testString": "({\n  test: () => {\n    const transformedCode = code.replace(/\\r/g, \"\");\n    const merge_sort = __helpers.python.getDef(\"\\n\" + transformedCode, \"merge_sort\");\n    const { function_body } = merge_sort;\n\n    assert.match(function_body, /while\\s+left_array_index\\s*<\\s*len\\(\\s*left_part\\s*\\):[^}]*\\bleft_array_index\\s*\\+=\\s*1\\b/);\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Still within the <code>while</code> loop, increment the value of <code>left_array_index</code> by 1.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-data-structures-by-building-the-merge-sort-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 9,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

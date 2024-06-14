@@ -1,0 +1,88 @@
+{
+  "id": "65f6fb76ea5932fe4ba266c6",
+  "title": "Task 42",
+  "challengeType": 19,
+  "dashedName": "task-42",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Brian implying with his statement?</p>",
+    "answers": [
+      {
+        "answer": "<p>They need to investigate quickly.</p>",
+        "feedback": "<p>Brian's focus is on understanding better, not on how fast they should do it.</p>"
+      },
+      {
+        "answer": "<p>They will have a better understanding after investigating.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>The situation is too complicated to understand.</p>",
+        "feedback": "<p>Brian believes they will understand better, not that it's too complicated.</p>"
+      },
+      {
+        "answer": "<p>Investigating is not necessary.</p>",
+        "feedback": "<p>Brian is actually emphasizing the need for investigation to gain clarity.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 20.74,
+        "finishTimestamp": 26.28
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 6.54,
+        "dialogue": {
+          "text": "Understood. We can investigate this together, and by the end of it, we should have a clearer picture of what's happening.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 7.04
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>By the end of it</code> means when something is over or is about to finish.</p>\n<p><code>A clearer picture</code> metaphorically means a better or more complete understanding. It's like when you clean your glasses and suddenly see things more clearly.</p>\n<p>An example of <code>a clearer picture</code>: <code>After studying, I have a clearer picture of the math problem.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 44,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

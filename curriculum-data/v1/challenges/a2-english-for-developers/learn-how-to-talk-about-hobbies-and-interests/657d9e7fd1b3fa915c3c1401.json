@@ -1,0 +1,88 @@
+{
+  "id": "657d9e7fd1b3fa915c3c1401",
+  "title": "Task 18",
+  "challengeType": 19,
+  "dashedName": "task-18",
+  "solutions": [],
+  "question": {
+    "text": "<p>What kind of photography does Bob enjoy the most?</p>",
+    "answers": [
+      {
+        "answer": "<p>Street photography</p>",
+        "feedback": "<p>Street photography is not mentioned as Bob's preferred type of photography.</p>"
+      },
+      {
+        "answer": "<p>Portrait photography</p>",
+        "feedback": "<p>Portrait photography is not mentioned as Bob's preferred type of photography.</p>"
+      },
+      {
+        "answer": "<p>Landscapes and nature photography</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Wildlife photography</p>",
+        "feedback": "<p>Wildlife photography is not mentioned as Bob's preferred type of photography.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 24.54,
+        "finishTimestamp": 29.88
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.34,
+        "dialogue": {
+          "text": "I like landscapes and nature. It's incredible to capture the beauty of our world in pictures.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

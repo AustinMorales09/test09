@@ -1,0 +1,77 @@
+{
+  "id": "5900f37b1000cf542c50fe8e",
+  "title": "Problem 15: Lattice paths",
+  "challengeType": 1,
+  "forumTopicId": 301780,
+  "dashedName": "problem-15-lattice-paths",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function latticePaths(gridSize) {\n\n  return true;\n}\n\nlatticePaths(4);",
+      "error": null,
+      "seed": "function latticePaths(gridSize) {\n\n  return true;\n}\n\nlatticePaths(4);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function latticePaths(gridSize) {\n  let paths = 1;\n\n  for (let i = 0; i < gridSize; i++) {\n    paths *= (2 * gridSize) - i;\n    paths /= i + 1;\n  }\n  return paths;\n}",
+        "error": null,
+        "seed": "function latticePaths(gridSize) {\n  let paths = 1;\n\n  for (let i = 0; i < gridSize; i++) {\n    paths *= (2 * gridSize) - i;\n    paths /= i + 1;\n  }\n  return paths;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>latticePaths(4)</code> should return a number.</p>",
+      "testString": "assert(typeof latticePaths(4) === 'number');"
+    },
+    {
+      "text": "<p><code>latticePaths(4)</code> should return 70.</p>",
+      "testString": "assert.strictEqual(latticePaths(4), 70);"
+    },
+    {
+      "text": "<p><code>latticePaths(9)</code> should return 48620.</p>",
+      "testString": "assert.strictEqual(latticePaths(9), 48620);"
+    },
+    {
+      "text": "<p><code>latticePaths(20)</code> should return 137846528820.</p>",
+      "testString": "assert.strictEqual(latticePaths(20), 137846528820);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.</p>\n<img class=\"img-responsive center-block\" alt=\"a diagram of 6 2 by 2 grids showing all the routes to the bottom right corner\" src=\"https://cdn-media-1.freecodecamp.org/project-euler/1Atixoj.gif\" style=\"background-color: white; padding: 10px;\">\n<p>How many such routes are there through a given <code>gridSize</code>?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

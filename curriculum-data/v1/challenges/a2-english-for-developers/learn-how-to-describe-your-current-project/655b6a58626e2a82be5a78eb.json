@@ -1,0 +1,97 @@
+{
+  "id": "655b6a58626e2a82be5a78eb",
+  "title": "Task 10",
+  "challengeType": 19,
+  "dashedName": "task-10",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Sophie's team practicing to do?</p>",
+    "answers": [
+      {
+        "answer": "<p>If someone compliments them, they will thank them</p>",
+        "feedback": "<p>This option is not related to the context of online safety and identity theft.</p>"
+      },
+      {
+        "answer": "<p>If someone tries to steal their identity, they will know what to do</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>If they finish work early, they will leave</p>",
+        "feedback": "<p>This option does not align with the scenario of practicing for online safety.</p>"
+      },
+      {
+        "answer": "<p>If they learn quickly, they will teach others</p>",
+        "feedback": "<p>The focus is on responding to identity theft, not on teaching others.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 15.2,
+        "finishTimestamp": 21.74
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.14,
+        "dialogue": {
+          "text": "I'm helping our team learn how to stay safe online.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "startTime": 3.8,
+        "finishTime": 7.54,
+        "dialogue": {
+          "text": "We're taking some lessons and practicing what to do if someone tries to steal our identity.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 8.04
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>To <code>steal</code> means to take something that doesn't belong to you without permission. For example:</p>\n<p><code>Some people try to steal our data</code> means that there are people that try to take personal data without the owner's permission.</p>\n<p><code>Identity</code> refers to who a person is, including their name, date of birth, and other personal information. For example:</p>\n<p><code>Protecting your identity online is important</code> means keeping your personal information safe on the internet.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

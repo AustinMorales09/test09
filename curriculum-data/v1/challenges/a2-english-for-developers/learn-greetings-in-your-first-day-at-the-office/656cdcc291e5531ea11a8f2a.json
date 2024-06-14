@@ -1,0 +1,45 @@
+{
+  "id": "656cdcc291e5531ea11a8f2a",
+  "title": "Task 139",
+  "challengeType": 19,
+  "dashedName": "task-139",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following means that one computer belongs to John?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>John computers</code></p>",
+        "feedback": "<p>This sounds like multiple computers that relate to John, but doesn't show possession.</p>"
+      },
+      {
+        "answer": "<p><code>John's computer</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>Computer John</code></p>",
+        "feedback": "<p>This misses the possessive marker and is in the incorrect order.</p>"
+      },
+      {
+        "answer": "<p><code>John computer</code></p>",
+        "feedback": "<p>This misses the possessive marker and sounds incomplete.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The general rule for making something possessive in English is to add an apostrophe and the letter <code>s</code> (<code>'s</code>) to the end. For example, if a desk belongs to Sophie, you say <code>Sophie's desk</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 142,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

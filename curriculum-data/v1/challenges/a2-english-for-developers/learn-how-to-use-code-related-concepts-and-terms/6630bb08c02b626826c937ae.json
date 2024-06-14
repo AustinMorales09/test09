@@ -1,0 +1,79 @@
+{
+  "id": "6630bb08c02b626826c937ae",
+  "title": "Task 5",
+  "challengeType": 22,
+  "dashedName": "task-5",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>You use them to tell the computer what kind of data you're _ _.</p>",
+    "blanks": [
+      {
+        "answer": "working",
+        "feedback": "<p>This word suggests an ongoing process or activity; it means actively using certain types of data in programming tasks.</p>"
+      },
+      {
+        "answer": "with",
+        "feedback": "<p>This preposition is commonly used to indicate involvement or association.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.9,
+        "finishTimestamp": 10.16
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 4.26,
+        "dialogue": {
+          "text": "You use them to tell the computer what kind of data you're working with.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.76
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>work with</code> is used to describe using or dealing with something, such as tools, materials, people, or concepts, to accomplish a task or goal. It implies cooperation or interaction.</p>\n<p>Examples:</p>\n<p><code>I work with computers every day.</code></p>\n<p>This example shows that the person regularly uses computers as part of their daily tasks.</p>\n<p><code>She works with a team to develop new software.</code></p>\n<p>In this sentence, <code>work with</code> indicates that the person collaborates or cooperates with other people (a team) to achieve something specific, in this case, developing software.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

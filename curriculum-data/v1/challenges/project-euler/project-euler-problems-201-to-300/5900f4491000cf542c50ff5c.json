@@ -1,0 +1,65 @@
+{
+  "id": "5900f4491000cf542c50ff5c",
+  "title": "Problem 221: Alexandrian Integers",
+  "challengeType": 1,
+  "forumTopicId": 301864,
+  "dashedName": "problem-221-alexandrian-integers",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function alexandrianIntegers() {\n\n  return true;\n}\n\nalexandrianIntegers();",
+      "error": null,
+      "seed": "function alexandrianIntegers() {\n\n  return true;\n}\n\nalexandrianIntegers();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>alexandrianIntegers()</code> should return <code>1884161251122450</code>.</p>",
+      "testString": "assert.strictEqual(alexandrianIntegers(), 1884161251122450);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>We shall call a positive integer $A$ an \"Alexandrian integer\", if there exist integers $p$, $q$, $r$ such that:</p>\n<p>$$A = p \\times q \\times r$$</p>\n<p>and</p>\n<p>$$\\frac{1}{A} = \\frac{1}{p} + \\frac{1}{q} + \\frac{1}{r}$$</p>\n<p>For example, 630 is an Alexandrian integer ($p = 5$, $q = −7$, $r = −18$). In fact, 630 is the 6th Alexandrian integer, the first 6 Alexandrian integers being: 6, 42, 120, 156, 420 and 630.</p>\n<p>Find the 150000th Alexandrian integer.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

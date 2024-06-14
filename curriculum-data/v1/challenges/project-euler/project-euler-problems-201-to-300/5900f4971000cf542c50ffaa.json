@@ -1,0 +1,65 @@
+{
+  "id": "5900f4971000cf542c50ffaa",
+  "title": "Problem 299: Three similar triangles",
+  "challengeType": 1,
+  "forumTopicId": 301951,
+  "dashedName": "problem-299-three-similar-triangles",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function threeSimilarTriangles() {\n\n  return true;\n}\n\nthreeSimilarTriangles();",
+      "error": null,
+      "seed": "function threeSimilarTriangles() {\n\n  return true;\n}\n\nthreeSimilarTriangles();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>threeSimilarTriangles()</code> should return <code>549936643</code>.</p>",
+      "testString": "assert.strictEqual(threeSimilarTriangles(), 549936643);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Four points with integer coordinates are selected:</p>\n<p>$A(a, 0)$, $B(b, 0)$, $C(0, c)$ and $D(0, d)$, with $0 &#x3C; a &#x3C; b$ and $0 &#x3C; c &#x3C; d$.</p>\n<p>Point $P$, also with integer coordinates, is chosen on the line $AC$ so that the three triangles $ABP$, $CDP$ and $BDP$ are all similar.</p>\n<img class=\"img-responsive center-block\" alt=\"points A, B, C, D and P creating three triangles: ABP, CDP, and BDP\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/three-similar-triangles.gif\" style=\"background-color: white; padding: 10px;\">\n<p>It is easy to prove that the three triangles can be similar, only if $a = c$.</p>\n<p>So, given that $a = c$, we are looking for triplets ($a$, $b$, $d$) such that at least one point $P$ (with integer coordinates) exists on $AC$, making the three triangles $ABP$, $CDP$ and $BDP$ all similar.</p>\n<p>For example, if $(a, b, d) = (2, 3, 4)$, it can be easily verified that point $P(1, 1)$ satisfies the above condition. Note that the triplets (2,3,4) and (2,4,3) are considered as distinct, although point $P(1, 1)$ is common for both.</p>\n<p>If $b + d &#x3C; 100$, there are 92 distinct triplets ($a$, $b$, $d$) such that point $P$ exists.</p>\n<p>If $b + d &#x3C; 100\\,000$, there are 320471 distinct triplets ($a$, $b$, $d$) such that point $P$ exists.</p>\n<p>If $b + d &#x3C; 100\\,000\\,000$, how many distinct triplets ($a$, $b$, $d$) are there such that point $P$ exists?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 98,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

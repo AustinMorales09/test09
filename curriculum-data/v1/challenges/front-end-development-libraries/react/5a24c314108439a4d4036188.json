@@ -1,0 +1,98 @@
+{
+  "id": "5a24c314108439a4d4036188",
+  "title": "Render Conditionally from Props",
+  "challengeType": 6,
+  "forumTopicId": 301405,
+  "dashedName": "render-conditionally-from-props",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<GameOfChance />, document.getElementById('root'));",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class Results extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    {/* Change code below this line */}\n    return <h1></h1>;\n    {/* Change code above this line */}\n  }\n}\n\nclass GameOfChance extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      counter: 1\n    };\n    this.handleClick = this.handleClick.bind(this);\n  }\n  handleClick() {\n    this.setState(prevState => {\n      // Complete the return statement:\n      return {\n        counter: prevState\n      }\n    });\n  }\n  render() {\n    const expression = null; // Change this line\n    return (\n      <div>\n        <button onClick={this.handleClick}>Play Again</button>\n        {/* Change code below this line */}\n\n        {/* Change code above this line */}\n        <p>{'Turn: ' + this.state.counter}</p>\n      </div>\n    );\n  }\n}",
+      "error": null,
+      "seed": "class Results extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    {/* Change code below this line */}\n    return <h1></h1>;\n    {/* Change code above this line */}\n  }\n}\n\nclass GameOfChance extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      counter: 1\n    };\n    this.handleClick = this.handleClick.bind(this);\n  }\n  handleClick() {\n    this.setState(prevState => {\n      // Complete the return statement:\n      return {\n        counter: prevState\n      }\n    });\n  }\n  render() {\n    const expression = null; // Change this line\n    return (\n      <div>\n        <button onClick={this.handleClick}>Play Again</button>\n        {/* Change code below this line */}\n\n        {/* Change code above this line */}\n        <p>{'Turn: ' + this.state.counter}</p>\n      </div>\n    );\n  }\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "// We want this to be deterministic for testing purposes.\nconst randomSequence = [true, false, false, true, true, false, false, true, true, false];\nlet index = 0;\nconst fiftyFifty = () => randomSequence[index++ % randomSequence.length];\n\nclass Results extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return <h1>{this.props.fiftyFifty ? 'You Win!' : 'You Lose!'}</h1>;\n  }\n}\n\nclass GameOfChance extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      counter: 1\n    };\n    this.handleClick = this.handleClick.bind(this);\n  }\n  handleClick() {\n    this.setState(prevState => {\n      return {\n        counter: prevState.counter + 1\n      }\n    });\n  }\n  render() {\n    return (\n      <div>\n        <button onClick={this.handleClick}>Play Again</button>\n        <Results fiftyFifty={fiftyFifty()} />\n        <p>{'Turn: ' + this.state.counter}</p>\n      </div>\n    );\n  }\n}",
+        "error": null,
+        "seed": "// We want this to be deterministic for testing purposes.\nconst randomSequence = [true, false, false, true, true, false, false, true, true, false];\nlet index = 0;\nconst fiftyFifty = () => randomSequence[index++ % randomSequence.length];\n\nclass Results extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return <h1>{this.props.fiftyFifty ? 'You Win!' : 'You Lose!'}</h1>;\n  }\n}\n\nclass GameOfChance extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      counter: 1\n    };\n    this.handleClick = this.handleClick.bind(this);\n  }\n  handleClick() {\n    this.setState(prevState => {\n      return {\n        counter: prevState.counter + 1\n      }\n    });\n  }\n  render() {\n    return (\n      <div>\n        <button onClick={this.handleClick}>Play Again</button>\n        <Results fiftyFifty={fiftyFifty()} />\n        <p>{'Turn: ' + this.state.counter}</p>\n      </div>\n    );\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>GameOfChance</code> component should exist and render to the page.</p>",
+      "testString": "assert.strictEqual(\n  Enzyme.mount(React.createElement(GameOfChance)).find('GameOfChance').length,\n  1\n);"
+    },
+    {
+      "text": "<p><code>GameOfChance</code> should return a single <code>button</code> element.</p>",
+      "testString": "assert.strictEqual(\n  Enzyme.mount(React.createElement(GameOfChance)).find('button').length,\n  1\n);"
+    },
+    {
+      "text": "<p><code>GameOfChance</code> should return a single instance of the <code>Results</code> component, which has a prop called <code>fiftyFifty</code>.</p>",
+      "testString": "assert(\n  Enzyme.mount(React.createElement(GameOfChance)).find('Results').length ===\n    1 &&\n    Enzyme.mount(React.createElement(GameOfChance))\n      .find('Results')\n      .props()\n      .hasOwnProperty('fiftyFifty') === true\n);"
+    },
+    {
+      "text": "<p><code>GameOfChance</code> state should be initialized with a property of <code>counter</code> set to a value of <code>1</code>.</p>",
+      "testString": "assert.strictEqual(\n  Enzyme.mount(React.createElement(GameOfChance)).state().counter,\n  1\n);"
+    },
+    {
+      "text": "<p>When the <code>GameOfChance</code> component is first rendered to the DOM, a <code>p</code> element should be returned with the inner text of <code>Turn: 1</code>.</p>",
+      "testString": "assert.strictEqual(\n  Enzyme.mount(React.createElement(GameOfChance)).find('p').text(),\n  'Turn: 1'\n);"
+    },
+    {
+      "text": "<p>Each time the button is clicked, the counter state should be incremented by a value of 1, and a single <code>p</code> element should be rendered to the DOM that contains the text <code>Turn: N</code>, where <code>N</code> is the value of the counter state.</p>",
+      "testString": "(() => {\n  const comp = Enzyme.mount(React.createElement(GameOfChance));\n  const simulate = () => {\n    comp.find('button').simulate('click');\n  };\n  const result = () => ({\n    count: comp.state('counter'),\n    text: comp.find('p').text()\n  });\n  const _1 = () => {\n    simulate();\n    return result();\n  };\n  const _2 = () => {\n    simulate();\n    return result();\n  };\n  const _3 = () => {\n    simulate();\n    return result();\n  };\n  const _4 = () => {\n    simulate();\n    return result();\n  };\n  const _5 = () => {\n    simulate();\n    return result();\n  };\n  const _1_val = _1();\n  const _2_val = _2();\n  const _3_val = _3();\n  const _4_val = _4();\n  const _5_val = _5();\n  assert(\n    _1_val.count === 2 &&\n      _1_val.text === 'Turn: 2' &&\n      _2_val.count === 3 &&\n      _2_val.text === 'Turn: 3' &&\n      _3_val.count === 4 &&\n      _3_val.text === 'Turn: 4' &&\n      _4_val.count === 5 &&\n      _4_val.text === 'Turn: 5' &&\n      _5_val.count === 6 &&\n      _5_val.text === 'Turn: 6'\n  );\n})();"
+    },
+    {
+      "text": "<p>When the <code>GameOfChance</code> component is first mounted to the DOM and each time the button is clicked thereafter, a single <code>h1</code> element should be returned that randomly renders either <code>You Win!</code> or <code>You Lose!</code>. Note: this can fail randomly. If that happens, please try again.</p>",
+      "testString": "(() => {\n  const comp = Enzyme.mount(React.createElement(GameOfChance));\n  const simulate = () => {\n    comp.find('button').simulate('click');\n  };\n  const result = () => ({\n    h1: comp.find('h1').length,\n    text: comp.find('h1').text()\n  });\n  const _1 = result();\n  const _2 = () => {\n    simulate();\n    return result();\n  };\n  const _3 = () => {\n    simulate();\n    return result();\n  };\n  const _4 = () => {\n    simulate();\n    return result();\n  };\n  const _5 = () => {\n    simulate();\n    return result();\n  };\n  const _6 = () => {\n    simulate();\n    return result();\n  };\n  const _7 = () => {\n    simulate();\n    return result();\n  };\n  const _8 = () => {\n    simulate();\n    return result();\n  };\n  const _9 = () => {\n    simulate();\n    return result();\n  };\n  const _10 = () => {\n    simulate();\n    return result();\n  };\n  const _2_val = _2();\n  const _3_val = _3();\n  const _4_val = _4();\n  const _5_val = _5();\n  const _6_val = _6();\n  const _7_val = _7();\n  const _8_val = _8();\n  const _9_val = _9();\n  const _10_val = _10();\n  const __text = new Set([\n    _1.text,\n    _2_val.text,\n    _3_val.text,\n    _4_val.text,\n    _5_val.text,\n    _6_val.text,\n    _7_val.text,\n    _8_val.text,\n    _9_val.text,\n    _10_val.text\n  ]);\n  const __h1 = new Set([\n    _1.h1,\n    _2_val.h1,\n    _3_val.h1,\n    _4_val.h1,\n    _5_val.h1,\n    _6_val.h1,\n    _7_val.h1,\n    _8_val.h1,\n    _9_val.h1,\n    _10_val.h1\n  ]);\n  assert(__text.size === 2 && __h1.size === 1);\n})();"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>So far, you've seen how to use <code>if/else</code>, <code>&#x26;&#x26;</code>, and the ternary operator (<code>condition ? expressionIfTrue : expressionIfFalse</code>) to make conditional decisions about what to render and when. However, there's one important topic left to discuss that lets you combine any or all of these concepts with another powerful React feature: props. Using props to conditionally render code is very common with React developers — that is, they use the value of a given prop to automatically make decisions about what to render.</p>\n<p>In this challenge, you'll set up a child component to make rendering decisions based on props. You'll also use the ternary operator, but you can see how several of the other concepts that were covered in the last few challenges might be just as useful in this context.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The code editor has two components that are partially defined for you: a parent called <code>GameOfChance</code>, and a child called <code>Results</code>. They are used to create a simple game where the user presses a button to see if they win or lose.</p>\n<p>First, you'll need a simple expression that randomly returns a different value every time it is run. You can use <code>Math.random()</code>. This method returns a value between <code>0</code> (inclusive) and <code>1</code> (exclusive) each time it is called. So for 50/50 odds, use <code>Math.random() >= .5</code> in your expression. Statistically speaking, this expression will return <code>true</code> 50% of the time, and <code>false</code> the other 50%. In the render method, replace <code>null</code> with the above expression to complete the variable declaration.</p>\n<p>Now you have an expression that you can use to make a randomized decision in the code. Next you need to implement this. Render the <code>Results</code> component as a child of <code>GameOfChance</code>, and pass in <code>expression</code> as a prop called <code>fiftyFifty</code>. In the <code>Results</code> component, write a ternary expression to render the <code>h1</code> element with the text <code>You Win!</code> or <code>You Lose!</code> based on the <code>fiftyFifty</code> prop that's being passed in from <code>GameOfChance</code>. Finally, make sure the <code>handleClick()</code> method is correctly counting each turn so the user knows how many times they've played. This also serves to let the user know the component has actually updated in case they win or lose twice in a row.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 41,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

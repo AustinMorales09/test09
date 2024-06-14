@@ -1,0 +1,97 @@
+{
+  "id": "657b145976723b56a97b8dda",
+  "title": "Task 17",
+  "challengeType": 19,
+  "dashedName": "task-17",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the candidate mean by saying <code>I was introduced to various programming languages and software development principles</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>I taught myself various programming languages and principles</p>",
+        "feedback": "<p><code>I was introduced to</code> implies being formally taught or shown by someone else, not self-teaching.</p>"
+      },
+      {
+        "answer": "<p>I learned about various programming languages and principles in my studies</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>I have extensive experience with various programming languages and principles</p>",
+        "feedback": "<p>The phrase indicates initial exposure to these topics, not necessarily extensive experience.</p>"
+      },
+      {
+        "answer": "<p>I developed various programming languages and principles</p>",
+        "feedback": "<p>Being introduced to something means learning about it for the first time, not creating or developing it.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room3.png",
+      "characters": [
+        {
+          "character": "Candidate",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 39.56,
+        "finishTimestamp": 50.44
+      }
+    },
+    "commands": [
+      {
+        "character": "Candidate",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Candidate",
+        "startTime": 1,
+        "finishTime": 5.56,
+        "dialogue": {
+          "text": "I have a bachelor's degree in computer science from California State University.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Candidate",
+        "startTime": 6.06,
+        "finishTime": 11.88,
+        "dialogue": {
+          "text": "During my studies, I was introduced to various programming languages and software development principles.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Candidate",
+        "opacity": 0,
+        "startTime": 12.38
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>I was introduced to</code> uses the simple past tense form <code>was</code> of the verb <code>be</code>, combined with the past participle <code>introduced</code>. This structure, <code>be</code> followed by a verb suffixed with <code>-ed</code>, is often used to describe actions that happened to the subject in the past. For example:</p>\n<p><code>At college, I was introduced to many programing languages</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

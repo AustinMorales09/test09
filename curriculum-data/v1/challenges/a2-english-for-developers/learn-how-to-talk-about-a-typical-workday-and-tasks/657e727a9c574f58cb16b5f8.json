@@ -1,0 +1,45 @@
+{
+  "id": "657e727a9c574f58cb16b5f8",
+  "title": "Task 120",
+  "challengeType": 19,
+  "dashedName": "task-120",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>down the street</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>In a different city.</p>",
+        "feedback": "<p>This phrase indicates a nearby location, not a different city.</p>"
+      },
+      {
+        "answer": "<p>Very far away.</p>",
+        "feedback": "<p>It refers to a place close by, not far away</p>"
+      },
+      {
+        "answer": "<p>A short distance away on the same street.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Directly underneath the street.</p>",
+        "feedback": "<p><code>Down the street</code> is about location on the surface, not underneath.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Down the street</code> is used to describe a location that is not too far away, usually within walking distance on the same street. It's a common way to indicate nearby places in everyday conversation.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 124,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

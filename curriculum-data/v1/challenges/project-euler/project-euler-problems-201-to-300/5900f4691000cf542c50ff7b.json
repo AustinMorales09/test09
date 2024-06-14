@@ -1,0 +1,65 @@
+{
+  "id": "5900f4691000cf542c50ff7b",
+  "title": "Problem 252: Convex Holes",
+  "challengeType": 1,
+  "forumTopicId": 301900,
+  "dashedName": "problem-252-convex-holes",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function convexHoles() {\n\n  return true;\n}\n\nconvexHoles();",
+      "error": null,
+      "seed": "function convexHoles() {\n\n  return true;\n}\n\nconvexHoles();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>convexHoles()</code> should return <code>104924</code>.</p>",
+      "testString": "assert.strictEqual(convexHoles(), 104924);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Given a set of points on a plane, we define a convex hole to be a convex polygon having as vertices any of the given points and not containing any of the given points in its interior (in addition to the vertices, other given points may lie on the perimeter of the polygon).</p>\n<p>As an example, the image below shows a set of twenty points and a few such convex holes. The convex hole shown as a red heptagon has an area equal to 1049694.5 square units, which is the highest possible area for a convex hole on the given set of points.</p>\n<img class=\"img-responsive center-block\" alt=\"set of twenty points and convex holes on plane\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/convex-holes.gif\" style=\"background-color: white; padding: 10px;\">\n<p>For our example, we used the first 20 points ($T_{2k − 1}$, $T_{2k}$), for $k = 1, 2, \\ldots, 20$, produced with the pseudo-random number generator:</p>\n<p>$$\\begin{align}\nS_0 &#x26; = 290\\,797 \\\\\nS_{n+1} &#x26; = {S_n}^2 \\; \\text{mod} \\; 50\\,515\\,093 \\\\\nT_n &#x26; = (S_n \\; \\text{mod} \\; 2000) − 1000\n\\end{align}$$</p>\n<p>i.e. (527, 144), (−488, 732), (−454, −947), …</p>\n<p>What is the maximum area for a convex hole on the set containing the first 500 points in the pseudo-random sequence? Specify your answer including one digit after the decimal point.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 51,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,83 @@
+{
+  "id": "657e55e612fac9847dc7ce03",
+  "title": "Task 100",
+  "challengeType": 22,
+  "dashedName": "task-100",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ excited about this project. _ confident that _ can achieve great results.</p>",
+    "blanks": [
+      {
+        "answer": "We're",
+        "feedback": "<p>Contracted for of a pronoun that talks about a group including the person who is speaking and the verb to be.</p>"
+      },
+      {
+        "answer": "I'm",
+        "feedback": "<p>Contracted for of a pronoun and verb to be.</p>"
+      },
+      {
+        "answer": "we",
+        "feedback": "<p>Pronoun that talks about a group including the person who is speaking.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "David",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 46.84,
+        "finishTimestamp": 51
+      }
+    },
+    "commands": [
+      {
+        "character": "David",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "David",
+        "startTime": 1,
+        "finishTime": 5.16,
+        "dialogue": {
+          "text": "We're excited about this project. I'm confident that we can achieve great results.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "David",
+        "opacity": 0,
+        "startTime": 5.66
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The task focuses on expressions of enthusiasm and confidence in a project setting.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 104,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

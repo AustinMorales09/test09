@@ -1,0 +1,75 @@
+{
+  "id": "6617f500f6a99d72213a5c92",
+  "title": "Task 11",
+  "challengeType": 22,
+  "dashedName": "task-11",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>In healthcare, it's used to analyze medical data and even _ in surgeries.</p>",
+    "blanks": [
+      {
+        "answer": "assist",
+        "feedback": "<p>Tom is talking about tools that help users. Think about a synonym for <code>help</code>.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-roof.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 21.62,
+        "finishTimestamp": 26.46
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.84,
+        "dialogue": {
+          "text": "In healthcare, it's used to analyze medical data and even assist in surgeries.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 6.34
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To assist</code> means to help or support someone in doing a task. When someone assists you, they are giving you help or making a task easier for you. In the context of AI and technology, it refers to a computer program or system providing help or support to users in various tasks.</p>\n<p>Listen and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

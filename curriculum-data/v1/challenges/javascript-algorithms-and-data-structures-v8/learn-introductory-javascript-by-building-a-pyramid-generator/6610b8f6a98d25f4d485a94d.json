@@ -1,0 +1,57 @@
+{
+  "id": "6610b8f6a98d25f4d485a94d",
+  "title": "Step 9",
+  "challengeType": 1,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        7
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = 'Hello';\nconsole.log(character);\ncharacter = \"World\";\nlet secondCharacter;\n\nconsole.log(secondCharacter);",
+      "error": null,
+      "seed": "let character = 'Hello';\nconsole.log(character);\ncharacter = \"World\";\nlet secondCharacter;\n\nconsole.log(secondCharacter);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not initialize <code>secondCharacter</code>. Remember that initialization means assigning a value when you declare the variable.</p>",
+      "testString": "assert.notMatch(code, /let\\s+secondCharacter\\s*=/);"
+    },
+    {
+      "text": "<p>You should use the assignment operator on <code>secondCharacter</code>.</p>",
+      "testString": "assert.match(code, /secondCharacter\\s*=/);"
+    },
+    {
+      "text": "<p>You should assign the string <code>\"Test\"</code> to your <code>secondCharacter</code> variable.</p>",
+      "testString": "assert.equal(secondCharacter, \"Test\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The default value of an uninitialized variable is <code>undefined</code>. This is a special data type that represents a value that does not have a definition yet.</p>\n<p>You can still assign a value to an uninitialized variable. Here is an example:</p>\n<pre><code class=\"language-js\">let uninitialized;\nuninitialized = \"assigned\";\n</code></pre>\n<p>Assign the string <code>\"Test\"</code> to your <code>secondCharacter</code> variable below your declaration. Open the console to see how your log has changed.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

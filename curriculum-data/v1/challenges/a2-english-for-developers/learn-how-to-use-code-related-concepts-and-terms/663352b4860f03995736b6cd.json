@@ -1,0 +1,83 @@
+{
+  "id": "663352b4860f03995736b6cd",
+  "title": "Task 38",
+  "challengeType": 22,
+  "dashedName": "task-38",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Variables help you _ _ in your code, _ names, numbers, and more.</p>",
+    "blanks": [
+      {
+        "answer": "store",
+        "feedback": "<p>This word means to keep or save something for future use. In the context, it refers to keeping data in a variable.</p>"
+      },
+      {
+        "answer": "information",
+        "feedback": "<p>It refers to data or details that are kept in the computer. In this sentence, it means the data saved in variables.</p>"
+      },
+      {
+        "answer": "like",
+        "feedback": "<p>It is used to give examples of what can be stored in variables.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.48,
+        "finishTimestamp": 11.18
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.7,
+        "dialogue": {
+          "text": "Variables help you store information in your code, like names, numbers, and more.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 6.2
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Store information</code> means to keep or save data in a specific location, usually in a variable. Variables are like containers in your code that hold information, such as numbers, text, or other types of data. You can think of them as named storage spots where you can access the <code>stored information</code> later in your code.</p>\n<p>For example, <code>int age = 30;</code> Here, the variable <code>age</code> stores the number 30.</p>\n<p>The word <code>like</code> is used as a preposition to give examples or to compare similar things.</p>\n<p>For instance, if you say, <code>I love fruits like apples and oranges.</code> You are using <code>like</code> to give examples of the type of fruits you love, suggesting that there might be more fruits on that list.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 40,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "5900f5331000cf542c510046",
+  "title": "Problem 455: Powers With Trailing Digits",
+  "challengeType": 1,
+  "forumTopicId": 302129,
+  "dashedName": "problem-455-powers-with-trailing-digits",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function powersWithTrailingDigits() {\n\n  return true;\n}\n\npowersWithTrailingDigits();",
+      "error": null,
+      "seed": "function powersWithTrailingDigits() {\n\n  return true;\n}\n\npowersWithTrailingDigits();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>powersWithTrailingDigits()</code> should return <code>450186511399999</code>.</p>",
+      "testString": "assert.strictEqual(powersWithTrailingDigits(), 450186511399999);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $f(n)$ be the largest positive integer $x$ less than ${10}^9$ such that the last 9 digits of $n^x$ form the number $x$ (including leading zeros), or zero if no such integer exists.</p>\n<p>For example:</p>\n<p>$$\\begin{align}\n&#x26; f(4) = 411\\,728\\,896 (4^{411\\,728\\,896} = ...490\\underline{411728896}) \\\\\n&#x26; f(10) = 0 \\\\\n&#x26; f(157) = 743\\,757 (157^{743\\,757} = ...567\\underline{000743757}) \\\\\n&#x26; Σf(n), 2 ≤ n ≤ 103 = 442\\,530\\,011\\,399\n\\end{align}$$</p>\n<p>Find $\\sum f(n)$, $2 ≤ n ≤ {10}^6$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 54,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

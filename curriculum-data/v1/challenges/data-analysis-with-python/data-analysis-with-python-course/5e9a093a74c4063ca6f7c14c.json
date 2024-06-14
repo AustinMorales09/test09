@@ -1,0 +1,51 @@
+{
+  "id": "5e9a093a74c4063ca6f7c14c",
+  "title": "Introduction to Data Analysis",
+  "challengeType": 11,
+  "videoId": "VJrP2FUzKP0",
+  "bilibiliIds": {
+    "aid": 378034466,
+    "bvid": "BV19f4y1c7nu",
+    "cid": 409001487
+  },
+  "dashedName": "introduction-to-data-analysis",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of the following is <strong>not</strong> part of Data Analysis?</p>",
+    "answers": [
+      {
+        "answer": "<p>Building statistical models and data visualizations.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Picking a desired conclusion for the analysis.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Fixing incorrect values and removing invalid data.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Transforming data into an appropriate data structure.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Data analysis is the act of turning raw, messy data into useful insights by cleaning the data up, transforming it, manipulating it, and inspecting it.</p>\n<p>More resources:</p>\n<p>- <a href=\"https://www.freecodecamp.org/news/what-is-data-analysis/\" rel=\"noopener noreferrer nofollow\">News article</a></p>\n</section>",
+  "translationPending": false,
+  "block": "data-analysis-with-python-course",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 8,
+  "certification": "data-analysis-with-python",
+  "superBlock": "data-analysis-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

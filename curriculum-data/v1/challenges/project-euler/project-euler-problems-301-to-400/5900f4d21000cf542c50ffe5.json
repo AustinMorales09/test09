@@ -1,0 +1,65 @@
+{
+  "id": "5900f4d21000cf542c50ffe5",
+  "title": "Problem 358: Cyclic numbers",
+  "challengeType": 1,
+  "forumTopicId": 302018,
+  "dashedName": "problem-358-cyclic-numbers",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function cyclicNumbers() {\n\n  return true;\n}\n\ncyclicNumbers();",
+      "error": null,
+      "seed": "function cyclicNumbers() {\n\n  return true;\n}\n\ncyclicNumbers();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>cyclicNumbers()</code> should return <code>3284144505</code>.</p>",
+      "testString": "assert.strictEqual(cyclicNumbers(), 3284144505);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A cyclic number with $n$ digits has a very interesting property:</p>\n<p>When it is multiplied by 1, 2, 3, 4, ... $n$, all the products have exactly the same digits, in the same order, but rotated in a circular fashion!</p>\n<p>The smallest cyclic number is the 6-digit number 142857:</p>\n<p>$$\\begin{align}\n&#x26; 142857 × 1 = 142857 \\\\\n&#x26; 142857 × 2 = 285714 \\\\\n&#x26; 142857 × 3 = 428571 \\\\\n&#x26; 142857 × 4 = 571428 \\\\\n&#x26; 142857 × 5 = 714285 \\\\\n&#x26; 142857 × 6 = 857142\n\\end{align}$$</p>\n<p>The next cyclic number is 0588235294117647 with 16 digits:</p>\n<p>$$\\begin{align}\n&#x26; 0588235294117647 × 1 = 0588235294117647 \\\\\n&#x26; 0588235294117647 × 2 = 1176470588235294 \\\\\n&#x26; 0588235294117647 × 3 = 1764705882352941 \\\\\n&#x26; \\ldots \\\\\n&#x26; 0588235294117647 × 16 = 9411764705882352\n\\end{align}$$</p>\n<p>Note that for cyclic numbers, leading zeros are important.</p>\n<p>There is only one cyclic number for which, the eleven leftmost digits are 00000000137 and the five rightmost digits are 56789 (i.e., it has the form $00000000137\\ldots56789$ with an unknown number of digits in the middle). Find the sum of all its digits.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 57,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

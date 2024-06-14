@@ -1,0 +1,89 @@
+{
+  "id": "661890c4abae9f2a0eddad6b",
+  "title": "Step 22",
+  "challengeType": 0,
+  "dashedName": "step-22",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <script src=\"./script.js\"></script>\n    <title>Statistics Calculator</title>\n  </head>\n  <body>\n    <h1>Statistics Calculator</h1>\n    <p>Enter a list of comma-separated numbers.</p>\n    <form onsubmit=\"calculate(); return false;\">\n      <label for=\"numbers\">Numbers:</label>\n      <input type=\"text\" name=\"numbers\" id=\"numbers\" />\n      <button type=\"submit\">Calculate</button>\n    </form>\n    <div class=\"results\">\n      <p>\n        The <dfn>mean</dfn> of a list of numbers is the average, calculated by\n        taking the sum of all numbers and dividing that by the count of numbers.\n      </p>\n      <p class=\"bold\">Mean: <span id=\"mean\"></span></p>\n      <p>\n        The <dfn>median</dfn> of a list of numbers is the number that appears in\n        the middle of the list, when sorted from least to greatest.\n      </p>\n      <p class=\"bold\">Median: <span id=\"median\"></span></p>\n      <p>\n        The <dfn>mode</dfn> of a list of numbers is the number that appears most\n        often in the list.\n      </p>\n      <p class=\"bold\">Mode: <span id=\"mode\"></span></p>\n      <p>\n        The <dfn>range</dfn> of a list of numbers is the difference between the\n        largest and smallest numbers in the list.\n      </p>\n      <p class=\"bold\">Range: <span id=\"range\"></span></p>\n      <p>\n        The <dfn>variance</dfn> of a list of numbers measures how far the values\n        are from the mean, on average.\n      </p>\n      <p class=\"bold\">Variance: <span id=\"variance\"></span></p>\n      <p>\n        The <dfn>standard deviation</dfn> of a list of numbers is the square\n        root of the variance.\n      </p>\n      <p class=\"bold\">\n        Standard Deviation: <span id=\"standardDeviation\"></span>\n      </p>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <script src=\"./script.js\"></script>\n    <title>Statistics Calculator</title>\n  </head>\n  <body>\n    <h1>Statistics Calculator</h1>\n    <p>Enter a list of comma-separated numbers.</p>\n    <form onsubmit=\"calculate(); return false;\">\n      <label for=\"numbers\">Numbers:</label>\n      <input type=\"text\" name=\"numbers\" id=\"numbers\" />\n      <button type=\"submit\">Calculate</button>\n    </form>\n    <div class=\"results\">\n      <p>\n        The <dfn>mean</dfn> of a list of numbers is the average, calculated by\n        taking the sum of all numbers and dividing that by the count of numbers.\n      </p>\n      <p class=\"bold\">Mean: <span id=\"mean\"></span></p>\n      <p>\n        The <dfn>median</dfn> of a list of numbers is the number that appears in\n        the middle of the list, when sorted from least to greatest.\n      </p>\n      <p class=\"bold\">Median: <span id=\"median\"></span></p>\n      <p>\n        The <dfn>mode</dfn> of a list of numbers is the number that appears most\n        often in the list.\n      </p>\n      <p class=\"bold\">Mode: <span id=\"mode\"></span></p>\n      <p>\n        The <dfn>range</dfn> of a list of numbers is the difference between the\n        largest and smallest numbers in the list.\n      </p>\n      <p class=\"bold\">Range: <span id=\"range\"></span></p>\n      <p>\n        The <dfn>variance</dfn> of a list of numbers measures how far the values\n        are from the mean, on average.\n      </p>\n      <p class=\"bold\">Variance: <span id=\"variance\"></span></p>\n      <p>\n        The <dfn>standard deviation</dfn> of a list of numbers is the square\n        root of the variance.\n      </p>\n      <p class=\"bold\">\n        Standard Deviation: <span id=\"standardDeviation\"></span>\n      </p>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  margin: 0;\n  background-color: rgb(27, 27, 50);\n  text-align: center;\n  color: #fff;\n}\n\nbutton {\n  cursor: pointer;\n  background-color: rgb(59, 59, 79);\n  border: 3px solid white;\n  color: white;\n}\n\ninput {\n  background-color: rgb(10, 10, 35);\n  color: white;\n  border: 1px solid rgb(59, 59, 79);\n}\n\n.bold {\n  font-weight: bold;\n}",
+      "error": null,
+      "seed": "body {\n  margin: 0;\n  background-color: rgb(27, 27, 50);\n  text-align: center;\n  color: #fff;\n}\n\nbutton {\n  cursor: pointer;\n  background-color: rgb(59, 59, 79);\n  border: 3px solid white;\n  color: white;\n}\n\ninput {\n  background-color: rgb(10, 10, 35);\n  color: white;\n  border: 1px solid rgb(59, 59, 79);\n}\n\n.bold {\n  font-weight: bold;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        6
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;\n\nconst testArr1 = [1, 2, 3, 4, 5];\nconst testArr2 = [1, 2, 3, 4, 5, 6];\n\nconst getMedian = (array) => {\n  const sorted = array.sort((a, b) => a - b);\n}\n\nconst calculate = () => {\n  const value = document.querySelector(\"#numbers\").value;\n  const array = value.split(/,\\s*/g);\n  const numbers = array.map(el => Number(el)).filter(el => !isNaN(el));\n  \n  const mean = getMean(numbers);\n\n  document.querySelector(\"#mean\").textContent = mean;\n}",
+      "error": null,
+      "seed": "const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;\n\nconst testArr1 = [1, 2, 3, 4, 5];\nconst testArr2 = [1, 2, 3, 4, 5, 6];\n\nconst getMedian = (array) => {\n  const sorted = array.sort((a, b) => a - b);\n}\n\nconst calculate = () => {\n  const value = document.querySelector(\"#numbers\").value;\n  const array = value.split(/,\\s*/g);\n  const numbers = array.map(el => Number(el)).filter(el => !isNaN(el));\n  \n  const mean = getMean(numbers);\n\n  document.querySelector(\"#mean\").textContent = mean;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an <code>isEven</code> variable.</p>",
+      "testString": "assert.isDefined(isEven);"
+    },
+    {
+      "text": "<p>You should check if the length of the <code>testArr2</code> array is even. Refer back to the example provided for you: <code>arr.length % 2 === 0;</code></p>",
+      "testString": "assert.isTrue(isEven);"
+    },
+    {
+      "text": "<p>You should have a <code>console.log</code> statement that logs the <code>isEven</code> variable.</p>",
+      "testString": "assert.match(code, /console\\.log\\(isEven\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In the next few steps, you'll learn how to determine if an array's length is even or odd, as well as how to find the median. You will then be able to apply what you learned to the <code>getMedian</code> function.</p>\n<p>To check if a number is even or odd, you can use the <dfn>modulus operator</dfn> <code>%</code>. The modulus operator returns the remainder of the division of two numbers.</p>\n<p>Here is an example checking if an array length is even or odd:</p>\n<pre><code class=\"language-js\">// check if array length is even\narr.length % 2 === 0;\n\n// check if array length is odd\narr.length % 2 === 1;\n</code></pre>\n<p>If the remainder is <code>0</code>, the number is even. If the remainder is <code>1</code>, the number is odd.</p>\n<p>Create a variable called <code>isEven</code>. Then use the modulus operator to check if the length of the <code>testArr2</code> array is even. Assign that expression to the <code>isEven</code> variable.</p>\n<p>Below your <code>isEven</code> variable, log out the <code>isEven</code> variable to the console.</p>\n<p>Open up the console to see the result.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-advanced-array-methods-by-building-a-statistics-calculator",
+  "hasEditableBoundaries": true,
+  "order": 15,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 21,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

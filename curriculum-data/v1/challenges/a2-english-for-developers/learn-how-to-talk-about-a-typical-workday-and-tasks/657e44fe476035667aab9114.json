@@ -1,0 +1,80 @@
+{
+  "id": "657e44fe476035667aab9114",
+  "title": "Task 62",
+  "challengeType": 22,
+  "dashedName": "task-62",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Yes, I _ security sweeps. It's _ to ensure everything is secure.</p>",
+    "blanks": [
+      {
+        "answer": "conduct",
+        "feedback": "<p>To organize and carry out.</p>"
+      },
+      {
+        "answer": "essential",
+        "feedback": "<p>Absolutely necessary or extremely important.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 26.58,
+        "finishTimestamp": 32.78
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 7.2,
+        "dialogue": {
+          "text": "Yes, I conduct regular security sweeps. It's essential to ensure everything is secure.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 7.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To ensure</code> means to make certain that something will happen or is the case. Example: <code>We ensure safety by following the guidelines.</code></p>\n<p><code>To conduct</code> means to organize and carry out an activity or task. For example, <code>The manager conducts weekly meetings.</code></p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Listen to the audio to complete the sentence below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 64,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

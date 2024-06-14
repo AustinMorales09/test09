@@ -1,0 +1,88 @@
+{
+  "id": "65a39a8889842f0a4ed3faa4",
+  "title": "Task 88",
+  "challengeType": 19,
+  "dashedName": "task-88",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does Lisa feel after solving complex problems and finding practical solutions?</p>",
+    "answers": [
+      {
+        "answer": "<p>She feels bored</p>",
+        "feedback": "<p>Think about what <code>thrilling</code> means and if it matches with feeling bored.</p>"
+      },
+      {
+        "answer": "<p>She feels thrilled</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She feels confused</p>",
+        "feedback": "<p>Consider if solving problems and finding solutions would make her feel confused.</p>"
+      },
+      {
+        "answer": "<p>She feels tired</p>",
+        "feedback": "<p>Reflect on the word <code>satisfaction</code> and if it suggests feeling tired.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Lisa",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 43.1,
+        "finishTimestamp": 48.68
+      }
+    },
+    "commands": [
+      {
+        "character": "Lisa",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Lisa",
+        "startTime": 1,
+        "finishTime": 6.58,
+        "dialogue": {
+          "text": "Yeah. Also, the satisfaction of solving complex problems and finding practical solutions is really thrilling.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Lisa",
+        "opacity": 0,
+        "startTime": 7.08
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Lisa talks about her feelings when she solves difficult problems and comes up with real, workable answers.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 90,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

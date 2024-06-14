@@ -1,0 +1,69 @@
+{
+  "id": "5f07c98cdb9413cbd4b16750",
+  "title": "Step 17",
+  "challengeType": 0,
+  "dashedName": "step-17",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        12
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      \n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      \n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>section</code> element should have an opening tag. Opening tags have this syntax: <code>&#x3C;elementName></code>.</p>",
+      "testString": "assert(document.querySelectorAll('section').length >= 2);"
+    },
+    {
+      "text": "<p>You should only add one opening <code>section</code> tag. Please remove any extras.</p>",
+      "testString": "assert(document.querySelectorAll('section').length === 2);"
+    },
+    {
+      "text": "<p>Your <code>section</code> element should have a closing tag. Closing tags have a <code>/</code> just after the <code>&#x3C;</code> character.</p>",
+      "testString": "assert(code.match(/<\\/section>/g).length >= 2);"
+    },
+    {
+      "text": "<p>You should only add one closing <code>section</code> tag. Please remove any extras.</p>",
+      "testString": "assert(code.match(/<\\/section>/g).length === 2);"
+    },
+    {
+      "text": "<p>The second <code>section</code> element should not be nested in the first <code>section</code> element.</p>",
+      "testString": "const childrenOf1stSection = [\n  ...document.querySelector('main > section').children\n];\nconst foundElems = childrenOf1stSection.filter((child) => {\n  return child.nodeName === 'SECTION';\n});\nassert(foundElems.length === 0);"
+    },
+    {
+      "text": "<p>Both <code>section</code> elements should be between the opening and closing tags of the <code>main</code> element.</p>",
+      "testString": "const childrenOfMain = [...document.querySelector('main').children];\nconst foundElems = childrenOfMain.filter((child) => {\n  return child.nodeName === 'SECTION';\n});\nassert(foundElems.length === 2);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>It is time to add a new section. Add a second <code>section</code> element below the existing <code>section</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

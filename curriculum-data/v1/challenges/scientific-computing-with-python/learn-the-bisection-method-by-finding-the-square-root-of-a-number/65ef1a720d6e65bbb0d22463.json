@@ -1,0 +1,49 @@
+{
+  "id": "65ef1a720d6e65bbb0d22463",
+  "title": "Step 8",
+  "challengeType": 20,
+  "dashedName": "step-8",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        9,
+        12
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):\n    if square_target < 0:\n        raise ValueError('Square root of negative number is not defined in real numbers')\n    if square_target == 1:\n        root = 1\n        print(f'The square root of {square_target} is 1')\n    elif square_target == 0:\n        root = 0\n        print(f'The square root of {square_target} is 0')\n\n",
+      "error": null,
+      "seed": "def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):\n    if square_target < 0:\n        raise ValueError('Square root of negative number is not defined in real numbers')\n    if square_target == 1:\n        root = 1\n        print(f'The square root of {square_target} is 1')\n    elif square_target == 0:\n        root = 0\n        print(f'The square root of {square_target} is 0')\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Create an <code>else</code> clause and do not forget to add a <code>pass</code> keyword.</p>",
+      "testString": "({\n    test: () => \n    {\n        assert(runPython(`_Node(_code).find_function(\"square_root_bisection\").find_ifs()[1].find_conditions()[2] == _Node()`))\n    }\n})\n"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Next, you are going to work on the cases where the <code>square_target</code> is a positive number apart from <code>1</code> or <code>0</code>.</p>\n<p>Create an <code>else</code> clause to handle these cases.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-bisection-method-by-finding-the-square-root-of-a-number",
+  "hasEditableBoundaries": true,
+  "order": 4,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 7,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

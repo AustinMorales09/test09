@@ -1,0 +1,73 @@
+{
+  "id": "5900f3e91000cf542c50fefc",
+  "title": "Problem 125: Palindromic sums",
+  "challengeType": 1,
+  "forumTopicId": 301752,
+  "dashedName": "problem-125-palindromic-sums",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function palindromicSums(limit) {\n\n  return true;\n}\n\npalindromicSums(100);",
+      "error": null,
+      "seed": "function palindromicSums(limit) {\n\n  return true;\n}\n\npalindromicSums(100);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function isPalindrome(num) {\n  return num\n    .toString()\n    .split('')\n    .every((digit, i, arr) => digit === arr[arr.length - 1 - i]);\n}\n\nfunction palindromicSums(limit) {\n  let sumOfPalindromes = 0;\n  const sqrtLimit = Math.sqrt(limit);\n  const list = new Set();\n\n  for (let i = 1; i <= sqrtLimit; i++) {\n    let sumOfSquares = i * i;\n    for (let j = i + 1; j <= sqrtLimit; j++) {\n      sumOfSquares += j * j;\n      if (sumOfSquares > limit) break;\n      if (isPalindrome(sumOfSquares) && !list.has(sumOfSquares)) {\n        sumOfPalindromes += sumOfSquares;\n        list.add(sumOfSquares);\n      }\n    }\n  }\n  return sumOfPalindromes;\n}",
+        "error": null,
+        "seed": "function isPalindrome(num) {\n  return num\n    .toString()\n    .split('')\n    .every((digit, i, arr) => digit === arr[arr.length - 1 - i]);\n}\n\nfunction palindromicSums(limit) {\n  let sumOfPalindromes = 0;\n  const sqrtLimit = Math.sqrt(limit);\n  const list = new Set();\n\n  for (let i = 1; i <= sqrtLimit; i++) {\n    let sumOfSquares = i * i;\n    for (let j = i + 1; j <= sqrtLimit; j++) {\n      sumOfSquares += j * j;\n      if (sumOfSquares > limit) break;\n      if (isPalindrome(sumOfSquares) && !list.has(sumOfSquares)) {\n        sumOfPalindromes += sumOfSquares;\n        list.add(sumOfSquares);\n      }\n    }\n  }\n  return sumOfPalindromes;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>palindromicSums(100000000)</code> should return <code>2906969179</code>.</p>",
+      "testString": "\nassert.strictEqual(palindromicSums(100000000), 2906969179);\n"
+    },
+    {
+      "text": "<p><code>palindromicSums(100)</code> should return <code>137</code>.</p>",
+      "testString": "assert.strictEqual(palindromicSums(100), 137);"
+    },
+    {
+      "text": "<p><code>palindromicSums(1000)</code> should return <code>4164</code>.</p>",
+      "testString": "assert.strictEqual(palindromicSums(1000),4164);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The palindromic number 595 is interesting because it can be written as the sum of consecutive squares: $6^2 + 7^2 + 8^2 + 9^2 + 10^2 + 11^2 + 12^2$.</p>\n<p>There are exactly eleven palindromes below one-thousand that can be written as consecutive square sums, and the sum of these palindromes is 4164. Note that $1 = 0^2 + 1^2$ has not been included as this problem is concerned with the squares of positive integers.</p>\n<p>Find the sum of all the numbers less than the  <code>limit</code>  that are both palindromic and can be written as the sum of consecutive squares.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "65823b0167fd894f4a7ea60a",
+  "title": "Step 16",
+  "challengeType": 20,
+  "dashedName": "step-16",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        13
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n\ndef total_expenses(expenses):\n    pass\n    \ntest = lambda x: x * 2\nprint(sum(map(test, [2, 3, 5, 8])))\n\nexpenses = []",
+      "error": null,
+      "seed": "def add_expense(expenses, amount, category):\n    expenses.append({'amount': amount, 'category': category})\n    \ndef print_expenses(expenses):\n    for expense in expenses:\n        print(f'Amount: {expense[\"amount\"]}, Category: {expense[\"category\"]}')\n\ndef total_expenses(expenses):\n    pass\n    \ntest = lambda x: x * 2\nprint(sum(map(test, [2, 3, 5, 8])))\n\nexpenses = []"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should delete your <code>test</code> variable and the related <code>print()</code> call.</p>",
+      "testString": "({ test: () => assert.isFalse(runPython(`_Node(_code).has_variable(\"test\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Next, you are going to implement the same logic within the <code>total_expenses</code> function.</p>\n<p>For now, delete both the <code>test</code> function and the <code>print()</code> call.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

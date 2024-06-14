@@ -1,0 +1,121 @@
+{
+  "id": "62a23c1d505bfa13747c8a9b",
+  "title": "Step 13",
+  "challengeType": 0,
+  "dashedName": "step-13",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        11,
+        15
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n      <div id=\"stats\">\n        <span class=\"stat\">XP: 0</span>\n        <span class=\"stat\">Health: 100</span>\n        <span class=\"stat\">Gold: 50</span>\n      </div>\n      <div id=\"controls\"></div>\n      <div id=\"monsterStats\"></div>\n      <div id=\"text\"></div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n      <div id=\"stats\">\n        <span class=\"stat\">XP: 0</span>\n        <span class=\"stat\">Health: 100</span>\n        <span class=\"stat\">Gold: 50</span>\n      </div>\n      <div id=\"controls\"></div>\n      <div id=\"monsterStats\"></div>\n      <div id=\"text\"></div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;\nlet monsterHealth;\nlet inventory = [\"stick\"];",
+      "error": null,
+      "seed": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;\nlet monsterHealth;\nlet inventory = [\"stick\"];"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add a <code>strong</code> element in your first <code>.stat</code> element.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[0];\nconst strong = stat?.querySelector('strong');\nassert.exists(strong);"
+    },
+    {
+      "text": "<p>Your first new <code>strong</code> element should have a <code>span</code> element.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[0];\nconst strong = stat?.querySelector('strong');\nconst span = strong?.querySelector('span');\nassert.exists(span);"
+    },
+    {
+      "text": "<p>Your first nested <code>span</code> element should have the <code>id</code> of <code>xpText</code>.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[0];\nconst strong = stat?.querySelector('strong');\nconst span = strong?.querySelector('span');\nassert.equal(span?.id, 'xpText');"
+    },
+    {
+      "text": "<p>Your first <code>span</code> element should be wrapped around the text <code>0</code>.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[0];\nconst strong = stat?.querySelector('strong');\nconst span = strong?.querySelector('span');\nassert.equal(span.innerText.trim(), '0');"
+    },
+    {
+      "text": "<p>The text of your first <code>.stat</code> element should still be <code>XP: 0</code>.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[0];\nassert.equal(stat.innerText.trimEnd(), 'XP: 0');"
+    },
+    {
+      "text": "<p>You should add a <code>strong</code> element in your second <code>.stat</code> element.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[1];\nconst strong = stat?.querySelector('strong');\nassert.exists(strong);"
+    },
+    {
+      "text": "<p>Your second new <code>strong</code> element should have a <code>span</code> element.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[1];\nconst strong = stat?.querySelector('strong');\nconst span = strong?.querySelector('span');\nassert.exists(span);"
+    },
+    {
+      "text": "<p>Your second nested <code>span</code> element should have the <code>id</code> of <code>healthText</code>.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[1];\nconst strong = stat?.querySelector('strong');\nconst span = strong?.querySelector('span');\nassert.equal(span?.id, 'healthText');"
+    },
+    {
+      "text": "<p>Your second <code>span</code> element should be wrapped around the text <code>100</code>.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[1];\nconst strong = stat?.querySelector('strong');\nconst span = strong?.querySelector('span');\nassert.equal(span.innerText.trim(), '100');"
+    },
+    {
+      "text": "<p>The text of your second <code>.stat</code> element should still be <code>Health: 100</code>.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[1];\nassert.equal(stat.innerText.trimEnd(), 'Health: 100');"
+    },
+    {
+      "text": "<p>You should add a <code>strong</code> element in your third <code>.stat</code> element.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[2];\nconst strong = stat?.querySelector('strong');\nassert.exists(strong);"
+    },
+    {
+      "text": "<p>Your third new <code>strong</code> element should have a <code>span</code> element.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[2];\nconst strong = stat?.querySelector('strong');\nconst span = strong?.querySelector('span');\nassert.exists(span);"
+    },
+    {
+      "text": "<p>Your third nested <code>span</code> element should have the <code>id</code> of <code>goldText</code>.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[2];\nconst strong = stat?.querySelector('strong');\nconst span = strong?.querySelector('span');\nassert.equal(span?.id, 'goldText');"
+    },
+    {
+      "text": "<p>Your third <code>span</code> element should be wrapped around the text <code>50</code>.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[2];\nconst strong = stat?.querySelector('strong');\nconst span = strong?.querySelector('span');\nassert.equal(span.innerText.trim(), '50');"
+    },
+    {
+      "text": "<p>The text of your third <code>.stat</code> element should still be <code>Gold: 50</code>.</p>",
+      "testString": "const stat = document.querySelectorAll('.stat')[2];\nassert.equal(stat.innerText.trimEnd(), 'Gold: 50');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Wrap the numbers <code>0</code>, <code>100</code>, and <code>50</code> in <code>span</code> elements, and wrap those new <code>span</code> elements in <code>strong</code> elements. Then give your new <code>span</code> elements <code>id</code> values of <code>xpText</code>, <code>healthText</code>, and <code>goldText</code>, respectively.</p>\n<p>Your answer should follow this basic structure:</p>\n<pre><code class=\"language-html\">&#x3C;span class=\"stat\">TEXT &#x3C;strong>&#x3C;span id=\"VALUE\">TEXT&#x3C;/span>&#x3C;/strong>&#x3C;/span>\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-javascript-by-building-a-role-playing-game",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

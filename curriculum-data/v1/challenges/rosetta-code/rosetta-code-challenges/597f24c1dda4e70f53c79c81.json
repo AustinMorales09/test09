@@ -1,0 +1,81 @@
+{
+  "id": "597f24c1dda4e70f53c79c81",
+  "title": "Fibonacci sequence",
+  "challengeType": 1,
+  "forumTopicId": 302268,
+  "dashedName": "fibonacci-sequence",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function fibonacci(n) {\n\n}",
+      "error": null,
+      "seed": "function fibonacci(n) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function fibonacci(n) {\n  let a = 0, b = 1, t;\n  while (--n >= 0) {\n    t = a;\n    a = b;\n    b += t;\n  }\n  return a;\n}",
+        "error": null,
+        "seed": "function fibonacci(n) {\n  let a = 0, b = 1, t;\n  while (--n >= 0) {\n    t = a;\n    a = b;\n    b += t;\n  }\n  return a;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>fibonacci</code> should be a function.</p>",
+      "testString": "assert(typeof fibonacci === 'function');"
+    },
+    {
+      "text": "<p><code>fibonacci(2)</code> should return a number.</p>",
+      "testString": "assert(typeof fibonacci(2) == 'number');"
+    },
+    {
+      "text": "<p><code>fibonacci(3)</code> should return 2.</p>",
+      "testString": "assert.equal(fibonacci(3), 2);"
+    },
+    {
+      "text": "<p><code>fibonacci(5)</code> should return 5.</p>",
+      "testString": "assert.equal(fibonacci(5), 5);"
+    },
+    {
+      "text": "<p><code>fibonacci(10)</code> should return 55.</p>",
+      "testString": "assert.equal(fibonacci(10), 55);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Write a function to generate the <code>n<sup>th</sup></code> Fibonacci number.</p>\n<p>The <code>n<sup>th</sup></code> Fibonacci number is given by:</p>\n<p><code>F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-2</sub></code></p>\n<p>The first two terms of the series are 0 and 1.</p>\n<p>Hence, the series is: 0, 1, 1, 2, 3, 5, 8, 13...</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 50,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

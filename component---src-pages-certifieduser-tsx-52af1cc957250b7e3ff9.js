@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_freecodecamp_client=self.webpackChunk_freecodecamp_client||[]).push([[2639],{67310:function(e,n,c){c.r(n),c.d(n,{default:function(){return t}});var r=c(72047);class t extends r.Component{render(){return r.createElement("div",null,"certifieduser")}}}}]);
+//# sourceMappingURL=component---src-pages-certifieduser-tsx-52af1cc957250b7e3ff9.js.map

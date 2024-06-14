@@ -1,0 +1,45 @@
+{
+  "id": "657e0f15eb5e5b77ce1a39c2",
+  "title": "Task 13",
+  "challengeType": 19,
+  "dashedName": "task-13",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>break down my projects</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>To stop working on projects.</p>",
+        "feedback": "<p><code>Break down</code> in this context does not mean stopping work.</p>"
+      },
+      {
+        "answer": "<p>To divide projects into smaller tasks.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>To remove projects from a list.</p>",
+        "feedback": "<p><code>Break down</code> does not mean removing projects.</p>"
+      },
+      {
+        "answer": "<p>To finish projects quickly.</p>",
+        "feedback": "<p><code>Break down</code> is about organizing, not speed of completion.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In project management, specific phrases are used to describe how tasks are handled.</p>\n<p><code>To break down</code> means dividing something into smaller, more manageable parts. For example: <code>When I work on a large project, I often break down the work into smaller sections.</code></p>\n<p><code>To set deadlines</code> means deciding on the time by which tasks need to be completed. For example: <code>Setting deadlines for each task ensures that the project stays on schedule.</code></p>\n<p>Understanding these phrases helps in grasping how projects are organized.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

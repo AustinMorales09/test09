@@ -1,0 +1,97 @@
+{
+  "id": "61695ab9f6ffe951c16d03dd",
+  "title": "Step 2",
+  "challengeType": 0,
+  "dashedName": "step-2",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        4
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an opening <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<head\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>head</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/head\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have an opening <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<body\\s*>/i));"
+    },
+    {
+      "text": "<p>You should have a closing <code>body</code> tag.</p>",
+      "testString": "assert(code.match(/<\\/body\\s*>/i));"
+    },
+    {
+      "text": "<p>There should only be one <code>head</code> opening tag.</p>",
+      "testString": "assert(code.match(/<head\\s*>/ig).length === 1);"
+    },
+    {
+      "text": "<p>There should only be one <code>head</code> closing tag.</p>",
+      "testString": "assert(code.match(/<\\/head\\s*>/ig).length === 1);"
+    },
+    {
+      "text": "<p>There should only be one <code>body</code> opening tag.</p>",
+      "testString": "assert(code.match(/<body\\s*>/ig).length === 1);"
+    },
+    {
+      "text": "<p>There should only be one <code>body</code> closing tag.</p>",
+      "testString": "assert(code.match(/<\\/body\\s*>/ig).length === 1);"
+    },
+    {
+      "text": "<p>Your <code>head</code> element should be empty.</p>",
+      "testString": "assert(code.match(/<head\\s*>\\s*<\\/head\\s*>/i));"
+    },
+    {
+      "text": "<p>Your <code>body</code> element should be empty.</p>",
+      "testString": "assert(code.match(/<body\\s*>\\s*<\\/body\\s*>/i));"
+    },
+    {
+      "text": "<p>Your <code>body</code> element should be placed after your <code>head</code> element.</p>",
+      "testString": "assert(code.match(/<\\/head\\s*>\\s*<body\\s*>/i));"
+    },
+    {
+      "text": "<p>Your <code>head</code> element should be within the <code>html</code> element.</p>",
+      "testString": "assert([...document.querySelector('html')?.children].some(x => x?.localName === 'head'));"
+    },
+    {
+      "text": "<p>Your <code>body</code> element should be within the <code>html</code> element.</p>",
+      "testString": "assert([...document.querySelector('html')?.children].some(x => x?.localName === 'body'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Nest a <code>head</code> element within the <code>html</code> element. Just after the <code>head</code> element, add a <code>body</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-colors-by-building-a-set-of-colored-markers",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

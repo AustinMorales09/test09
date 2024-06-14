@@ -1,0 +1,79 @@
+{
+  "id": "656bbfedb30479145d464e37",
+  "title": "Task 11",
+  "challengeType": 22,
+  "dashedName": "task-11",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I _ some changes to the _ earlier, but now the code won't compile.</p>",
+    "blanks": [
+      {
+        "answer": "pushed",
+        "feedback": "<p>Means Bob uploaded changes to the repository. This verb is in the past tense.</p>"
+      },
+      {
+        "answer": "repository",
+        "feedback": "<p>Where Bob's code changes are stored and managed.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 9.18,
+        "finishTimestamp": 13.7
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 5.52,
+        "dialogue": {
+          "text": "I pushed some changes to the repository earlier, but now the code won't compile.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.02
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and complete the sentence.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-help-a-coworker-troubleshoot-on-github",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 11,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

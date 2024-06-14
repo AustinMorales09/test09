@@ -1,0 +1,87 @@
+{
+  "id": "65a35cf34eb65f48c24ee97e",
+  "title": "Task 78",
+  "challengeType": 22,
+  "dashedName": "task-78",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>For me, it was the _ to collaborate with _ from many _ and have different _.</p>",
+    "blanks": [
+      {
+        "answer": "opportunity",
+        "feedback": "<p>This noun means a chance to do something that you see as valuable or beneficial.</p>"
+      },
+      {
+        "answer": "experts",
+        "feedback": "<p>These are people with a high level of knowledge or skill in a particular area. This word is in plural.</p>"
+      },
+      {
+        "answer": "fields",
+        "feedback": "<p>This word is used to describe different areas of study or work. This word is in plural.</p>"
+      },
+      {
+        "answer": "perspectives",
+        "feedback": "<p>These are different ways of viewing or thinking about something. This word is in plural.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 18.8,
+        "finishTimestamp": 25
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 7.2,
+        "dialogue": {
+          "text": "For me, it was the opportunity to collaborate with experts from many fields and have different perspectives.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 7.7
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the statement and fill in the missing words.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 80,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

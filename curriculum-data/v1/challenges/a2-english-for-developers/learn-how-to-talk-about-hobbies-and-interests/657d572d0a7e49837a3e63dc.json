@@ -1,0 +1,88 @@
+{
+  "id": "657d572d0a7e49837a3e63dc",
+  "title": "Task 2",
+  "challengeType": 19,
+  "dashedName": "task-2",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Maria ask Bob when she notices the camera on his desk?</p>",
+    "answers": [
+      {
+        "answer": "<p>If Bob's camera is high quality.</p>",
+        "feedback": "<p>The quality of the camera is not the topic of the conversation.</p>"
+      },
+      {
+        "answer": "<p>If Bob's camera is on the desk.</p>",
+        "feedback": "<p>The location of Bob's camera not the focus of Maria's question.</p>"
+      },
+      {
+        "answer": "<p>If Bob likes photography.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>If anyone in Bob's family is interested in photography.</p>",
+        "feedback": "<p>Bob's family is not mentioned in Maria's question.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 3.6
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 4.6,
+        "dialogue": {
+          "text": "Hey, I noticed that you have a camera on your desk. Are you into photography?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 5.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>You ask people if they <code>are into</code> something when you want to know if they like it. For example: <code>What is your favorite kind of music? Are you into jazz or rock?</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

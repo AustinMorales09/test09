@@ -1,0 +1,88 @@
+{
+  "id": "657ec57a0ab01cc7af71f565",
+  "title": "Task 37",
+  "challengeType": 19,
+  "dashedName": "task-37",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>Let's see</code> convey in this context?</p>",
+    "answers": [
+      {
+        "answer": "<p>A sure promise</p>",
+        "feedback": "<p>It actually means being open to ideas, not making a sure promise.</p>"
+      },
+      {
+        "answer": "<p>Not wanting to go cycling</p>",
+        "feedback": "<p>The dialogue shows interest in planning, not a lack of interest.</p>"
+      },
+      {
+        "answer": "<p>Being open to ideas</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A certain plan for next week</p>",
+        "feedback": "<p><code>Let's see</code> suggests being open, not having a certain plan.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 42.94,
+        "finishTimestamp": 44.64
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 2.7,
+        "dialogue": {
+          "text": "Let's see what we can do next week",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 3.2
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Let's see</code> is used in the dialogue to express a willingness to explore the possibility of going cycling together next week.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 38,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

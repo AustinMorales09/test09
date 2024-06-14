@@ -1,0 +1,53 @@
+{
+  "id": "65822308ded1ba4632f66aa3",
+  "title": "Step 4",
+  "challengeType": 20,
+  "dashedName": "step-4",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        3
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def add_expense(expenses, amount, category):\n    expenses.append()\n\nexpenses = []",
+      "error": null,
+      "seed": "def add_expense(expenses, amount, category):\n    expenses.append()\n\nexpenses = []"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should pass a dictionary as the argument to the <code>.append()</code> method.</p>",
+      "testString": "({ test: () => assert(runPython(`\nimport ast\nnode = _Node(_code).find_function(\"add_expense\").find_calls(\"append\")[0].find_call_args()\nlen(node) == 1 and isinstance(node[0].tree, ast.Dict)\n`)) })"
+    },
+    {
+      "text": "<p>You should pass <code>{'amount': amount}</code> as the argument to the <code>.append()</code> method.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_function(\"add_expense\").has_stmt(\"expenses.append({'amount': amount})\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A dictionary is another built-in data type in Python. A dictionary is a collection of data in the form of <em>key</em>-<em>value</em> pairs. Dictionaries are defined with curly braces (<code>{}</code>) and they contain key-value pairs separated by commas. Each key is followed by a colon (<code>:</code>) and the value:</p>\n<pre><code class=\"language-py\">{'amount': 50.0, 'category': 'Food'}\n</code></pre>\n<p>In the example above, <code>'amount'</code> and <code>'category'</code> are keys, and <code>50.0</code> and <code>'Food'</code> are their corresponding values.</p>\n<p>Create a dictionary with a key <code>'amount'</code> and value of the <code>amount</code> parameter and pass your new dictionary to the <code>.append()</code> call.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-lambda-functions-by-building-an-expense-tracker",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

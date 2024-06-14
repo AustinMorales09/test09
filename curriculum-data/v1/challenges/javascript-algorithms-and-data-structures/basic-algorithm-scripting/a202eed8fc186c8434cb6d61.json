@@ -1,0 +1,77 @@
+{
+  "id": "a202eed8fc186c8434cb6d61",
+  "title": "Reverse a String",
+  "challengeType": 1,
+  "forumTopicId": 16043,
+  "dashedName": "reverse-a-string",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function reverseString(str) {\n  return str;\n}\n\nreverseString(\"hello\");",
+      "error": null,
+      "seed": "function reverseString(str) {\n  return str;\n}\n\nreverseString(\"hello\");"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function reverseString(str) {\n  return str.split('').reverse().join('');\n}\n\nreverseString(\"hello\");",
+        "error": null,
+        "seed": "function reverseString(str) {\n  return str.split('').reverse().join('');\n}\n\nreverseString(\"hello\");"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>reverseString(\"hello\")</code> should return a string.</p>",
+      "testString": "assert(typeof reverseString('hello') === 'string');"
+    },
+    {
+      "text": "<p><code>reverseString(\"hello\")</code> should return the string <code>olleh</code>.</p>",
+      "testString": "assert(reverseString('hello') === 'olleh');"
+    },
+    {
+      "text": "<p><code>reverseString(\"Howdy\")</code> should return the string <code>ydwoH</code>.</p>",
+      "testString": "assert(reverseString('Howdy') === 'ydwoH');"
+    },
+    {
+      "text": "<p><code>reverseString(\"Greetings from Earth\")</code> should return the string <code>htraE morf sgniteerG</code>.</p>",
+      "testString": "assert(reverseString('Greetings from Earth') === 'htraE morf sgniteerG');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Reverse the provided string and return the reversed string.</p>\n<p>For example, <code>\"hello\"</code> should become <code>\"olleh\"</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-algorithm-scripting",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

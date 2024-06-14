@@ -1,0 +1,105 @@
+{
+  "id": "5900f3ab1000cf542c50febe",
+  "title": "Problem 63: Powerful digit counts",
+  "challengeType": 1,
+  "forumTopicId": 302175,
+  "dashedName": "problem-63-powerful-digit-counts",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function powerfulDigitCounts(n) {\n\n  return true;\n}\n\npowerfulDigitCounts(1);",
+      "error": null,
+      "seed": "function powerfulDigitCounts(n) {\n\n  return true;\n}\n\npowerfulDigitCounts(1);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function powerfulDigitCounts(n) {\n  function countDigits(num) {\n    let counter = 0;\n    while (num > 0) {\n      num = Math.floor(num / 10);\n      counter++;\n    }\n    return counter;\n  }\n\n  let numbersCount = 0;\n\n  let curNum = 1;\n  while (curNum < 10) {\n    let power = n;\n    if (power === countDigits(curNum ** power)) {\n      numbersCount++;\n    }\n    curNum++;\n  }\n\n  return numbersCount;\n}",
+        "error": null,
+        "seed": "function powerfulDigitCounts(n) {\n  function countDigits(num) {\n    let counter = 0;\n    while (num > 0) {\n      num = Math.floor(num / 10);\n      counter++;\n    }\n    return counter;\n  }\n\n  let numbersCount = 0;\n\n  let curNum = 1;\n  while (curNum < 10) {\n    let power = n;\n    if (power === countDigits(curNum ** power)) {\n      numbersCount++;\n    }\n    curNum++;\n  }\n\n  return numbersCount;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>powerfulDigitCounts(1)</code> should return a number.</p>",
+      "testString": "assert(typeof powerfulDigitCounts(1) === 'number');"
+    },
+    {
+      "text": "<p><code>powerfulDigitCounts(1)</code> should return <code>9</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitCounts(1), 9);"
+    },
+    {
+      "text": "<p><code>powerfulDigitCounts(2)</code> should return <code>6</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitCounts(2), 6);"
+    },
+    {
+      "text": "<p><code>powerfulDigitCounts(3)</code> should return <code>5</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitCounts(3), 5);"
+    },
+    {
+      "text": "<p><code>powerfulDigitCounts(4)</code> should return <code>4</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitCounts(4), 4);"
+    },
+    {
+      "text": "<p><code>powerfulDigitCounts(5)</code> should return <code>3</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitCounts(5), 3);"
+    },
+    {
+      "text": "<p><code>powerfulDigitCounts(6)</code> should return <code>3</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitCounts(6), 3);"
+    },
+    {
+      "text": "<p><code>powerfulDigitCounts(7)</code> should return <code>2</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitCounts(7), 2);"
+    },
+    {
+      "text": "<p><code>powerfulDigitCounts(8)</code> should return <code>2</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitCounts(8), 2);"
+    },
+    {
+      "text": "<p><code>powerfulDigitCounts(10)</code> should return <code>2</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitCounts(10), 2);"
+    },
+    {
+      "text": "<p><code>powerfulDigitCounts(21)</code> should return <code>1</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitCounts(21), 1);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The 5-digit number, 16807 = 7<sup>5</sup>, is also a fifth power. Similarly, the 9-digit number, 134217728 = 8<sup>9</sup>, is a ninth power.</p>\n<p>Complete the function so that it returns how many positive integers are of length <code>n</code> and an <code>n</code>th power.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 62,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

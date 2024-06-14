@@ -1,0 +1,88 @@
+{
+  "id": "657e523fcaaa0e823b3789e5",
+  "title": "Task 96",
+  "challengeType": 19,
+  "dashedName": "task-96",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is David's role at FCC Corp?</p>",
+    "answers": [
+      {
+        "answer": "<p>He is a team member from Maria's team.</p>",
+        "feedback": "<p>He's not part of Maria's team.</p>"
+      },
+      {
+        "answer": "<p>He is a project consultant at FCC Corp.</p>",
+        "feedback": "<p>While David is involved in projects, this is not his role.</p>"
+      },
+      {
+        "answer": "<p>He is a doctor from FCC Corp.</p>",
+        "feedback": "<p>David is not a doctor.</p>"
+      },
+      {
+        "answer": "<p>He is the project manager from FCC Corp.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "David",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 37.24,
+        "finishTimestamp": 41.84
+      }
+    },
+    "commands": [
+      {
+        "character": "David",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "David",
+        "startTime": 1,
+        "finishTime": 5.6,
+        "dialogue": {
+          "text": "Wonderful to meet you all. I'm David, the project manager from FCC Corp.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "David",
+        "opacity": 0,
+        "startTime": 6.1
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This task is designed to assess your understanding of David's introduction and his role within his organization.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 100,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

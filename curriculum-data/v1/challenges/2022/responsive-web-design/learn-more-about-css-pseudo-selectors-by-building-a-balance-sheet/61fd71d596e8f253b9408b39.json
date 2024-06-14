@@ -1,0 +1,73 @@
+{
+  "id": "61fd71d596e8f253b9408b39",
+  "title": "Step 10",
+  "challengeType": 0,
+  "dashedName": "step-10",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        25,
+        28
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Balance Sheet</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <main>\n      <section>\n        <h1>\n          <span class=\"flex\">\n            <span>AcmeWidgetCorp</span>\n            <span>Balance Sheet</span>\n          </span>\n        </h1>\n        <div id=\"years\" aria-hidden=\"true\">\n          <span class=\"year\">2019</span>\n          <span class=\"year\">2020</span>\n          <span class=\"year\">2021</span>\n        </div>\n        <div class=\"table-wrap\">\n          <table>\n            <caption>Assets</caption>\n            <thead>\n            </thead>\n            <tbody>\n            </tbody>\n          </table>\n          <table>\n          </table>\n          <table>\n          </table>\n        </div>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Balance Sheet</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n  </head>\n  <body>\n    <main>\n      <section>\n        <h1>\n          <span class=\"flex\">\n            <span>AcmeWidgetCorp</span>\n            <span>Balance Sheet</span>\n          </span>\n        </h1>\n        <div id=\"years\" aria-hidden=\"true\">\n          <span class=\"year\">2019</span>\n          <span class=\"year\">2020</span>\n          <span class=\"year\">2021</span>\n        </div>\n        <div class=\"table-wrap\">\n          <table>\n            <caption>Assets</caption>\n            <thead>\n            </thead>\n            <tbody>\n            </tbody>\n          </table>\n          <table>\n          </table>\n          <table>\n          </table>\n        </div>\n      </section>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>thead</code> element should have a <code>tr</code> element.</p>",
+      "testString": "assert(document.querySelector('thead')?.children?.[0]?.localName === 'tr');"
+    },
+    {
+      "text": "<p>Your <code>tr</code> element should have a <code>td</code> element as the first child.</p>",
+      "testString": "assert(document.querySelector('tr')?.children?.[0]?.localName === 'td');"
+    },
+    {
+      "text": "<p>Your <code>tr</code> element should have three <code>th</code> elements, after the <code>td</code> element.</p>",
+      "testString": "assert(document.querySelector('tr')?.children?.[1]?.localName === 'th');\nassert(document.querySelector('tr')?.children?.[2]?.localName === 'th');\nassert(document.querySelector('tr')?.children?.[3]?.localName === 'th');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>tr</code> element is used to indicate a table row. Add a <code>tr</code> element within your <code>thead</code> element. In your new <code>tr</code> element, add a <code>td</code> element, followed by three <code>th</code> elements.</p>\n<p>The <code>td</code> element indicates a data cell, while the <code>th</code> element indicates a header cell.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-more-about-css-pseudo-selectors-by-building-a-balance-sheet",
+  "hasEditableBoundaries": true,
+  "order": 10,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

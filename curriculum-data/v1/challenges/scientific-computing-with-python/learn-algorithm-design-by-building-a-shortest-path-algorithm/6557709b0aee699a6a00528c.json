@@ -1,0 +1,57 @@
+{
+  "id": "6557709b0aee699a6a00528c",
+  "title": "Step 16",
+  "challengeType": 20,
+  "dashedName": "step-16",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "my_graph = {\n    'species': 'guinea pig',\n    'age': 2\n}",
+      "error": null,
+      "seed": "my_graph = {\n    'species': 'guinea pig',\n    'age': 2\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your dictionary should have an <code>'A'</code> key.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    \"A\" in my_graph\n  `))\n})"
+    },
+    {
+      "text": "<p>Your <code>'A'</code> key should have <code>'B'</code> as the value.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    my_graph[\"A\"] == \"B\"\n  `))\n})"
+    },
+    {
+      "text": "<p>Your dictionary should have two keys.</p>",
+      "testString": "({ test: () => assert(runPython(`\n    len(my_graph) == 2\n  `))\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>For example, a graph can be used to represent two points in the space, <code>A</code> and <code>B</code>, connected by a path. A graph like this will be made of two nodes connected by an edge.</p>\n<p>Replace the existent <code>'species'</code> key with the strings <code>'A'</code>. Then, replace the correspondent value with the string <code>'B'</code> to represent the connection between the <code>'A'</code> and <code>'B'</code> nodes.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

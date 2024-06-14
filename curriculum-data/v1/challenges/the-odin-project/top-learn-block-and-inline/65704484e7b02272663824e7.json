@@ -1,0 +1,41 @@
+{
+  "id": "65704484e7b02272663824e7",
+  "title": "Learn Block and Inline Question I",
+  "challengeType": 15,
+  "dashedName": "learn-block-and-inline-question-i",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the primary difference of <code>span</code> and <code>div</code> elements from other elements?</p>",
+    "answers": [
+      {
+        "answer": "<p>Unlike specific HTML elements that carry inherent meanings, <code>span</code> and <code>div</code> elements are versatile and are primarily used for styling and layout purposes.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>span</code> and <code>div</code> elements do not impart any specific semantic meaning to the content they contain, unlike other HTML elements such as paragraphs or headings.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>span</code> and <code>div</code> elements are generic containers that allow developers to apply CSS styles and structure content without any particular semantic significance.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>You can't talk about <code>block</code> and <code>inline</code> elements without discussing <code>div</code>s and <code>span</code>s. All the other HTML elements you have encountered so far give meaning to their content. For example, paragraph elements tell the browser to display the text it contains as a paragraph. Strong elements tell the browser which texts within are important and so on. Yet, <code>div</code>s and <code>span</code>s give no particular meaning to their content. They are just generic boxes that can contain anything.</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-block-and-inline",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

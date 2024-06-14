@@ -1,0 +1,87 @@
+{
+  "id": "6638a7713695f25abd3f3c02",
+  "title": "Task 49",
+  "challengeType": 22,
+  "dashedName": "task-49",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It can _ code quality and reduce the time _ _ _.</p>",
+    "blanks": [
+      {
+        "answer": "improve",
+        "feedback": "<p>This verb is used to express making something better or enhancing quality. Here, it refers to making the code quality better.</p>"
+      },
+      {
+        "answer": "spent",
+        "feedback": "<p>This is the past participle of a verb meaning to use time for some activity.</p>"
+      },
+      {
+        "answer": "on",
+        "feedback": "<p>This preposition is used to indicate that something is focused on a particular activity.</p>"
+      },
+      {
+        "answer": "debugging",
+        "feedback": "<p>This noun refers to the process of identifying, tracing, and fixing errors in computer programs.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-parking.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 21.22,
+        "finishTimestamp": 24.4
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 4.18,
+        "dialogue": {
+          "text": "It can improve code quality and reduce the time spent on debugging.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 4.68
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The verb <code>improve</code> means to make something better or to enhance its quality. It's often used in various contexts, including in technological and personal development areas. When something is <code>improved</code>, it has been enhanced or developed in a positive way.</p>\n<p>For example, <code>We can improve our coding skills by practicing regularly.</code></p>\n<p>The phrase <code>spend time on</code> is used to describe the action of using time for a particular purpose or activity. It implies that time is like a resource that can be used for various activities, emphasizing the investment of time in those activities. The past participle of <code>spend</code> is <code>spent</code>. When followed by an action, the verb is in the <code>-ing</code> form (gerund),</p>\n<p>Examples are <code>I spend a lot of time on my hobbies.</code> and <code>I spend a lot of time reading books.</code></p>\n<p><code>Debugging</code> is the process of finding and resolving defects or problems within a program.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 51,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

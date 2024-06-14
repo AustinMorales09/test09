@@ -1,0 +1,69 @@
+{
+  "id": "612e89562043183c86df287c",
+  "title": "Step 9",
+  "challengeType": 0,
+  "dashedName": "step-9",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>Piano</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n  </head>\n  <body>\n    <div id=\"piano\">\n      <div class=\"keys\">\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>Piano</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n  </head>\n  <body>\n    <div id=\"piano\">\n      <div class=\"keys\">\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n        <div class=\"key black--key\"></div>\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an <code>html</code> selector.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('html'));"
+    },
+    {
+      "text": "<p>Your <code>html</code> selector should have the <code>box-sizing</code> property set to <code>border-box</code>.</p>",
+      "testString": "assert(new __helpers.CSSHelp(document).getStyle('html')?.boxSizing === 'border-box');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Browsers can apply default margin and padding values to specific elements. To make sure your piano looks correct, you need to reset the box model.</p>\n<p>Add an <code>html</code> rule selector to your CSS file, and set the <code>box-sizing</code> property to <code>border-box</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-responsive-web-design-by-building-a-piano",
+  "hasEditableBoundaries": true,
+  "order": 12,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

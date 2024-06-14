@@ -1,0 +1,49 @@
+{
+  "id": "660699119472f332798860ad",
+  "title": "Step 5",
+  "challengeType": 20,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        6
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    def spam(self):\n        pass\n    \ngameboard = Board()",
+      "error": null,
+      "seed": "class Board:\n    def spam(self):\n        pass\n    \ngameboard = Board()"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should delete <code>pass</code> and print the string <code>'Spam!'</code> within the <code>spam</code> method.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"Board\").find_function(\"spam\").find_body().is_equivalent(\"print('Spam!')\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now, replace <code>pass</code> with a <code>print</code> call and pass it the string <code>'Spam!'</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

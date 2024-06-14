@@ -1,0 +1,53 @@
+{
+  "id": "657e928716b77b2277980276",
+  "title": "Step 1",
+  "challengeType": 20,
+  "dashedName": "step-1",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should define a new function named <code>convert_to_snake_case()</code>. Don't forget the colon at the end and use <code>pass</code> to fill the function body.</p>",
+      "testString": "({\n  test: () => {\n    assert(runPython(`\n      import inspect\n      inspect.isfunction(convert_to_snake_case)\n    `));\n  }\n})"
+    },
+    {
+      "text": "<p>Your function should take a parameter named <code>pascal_or_camel_cased_string</code>.</p>",
+      "testString": "({\n  test: () => {\n    assert(runPython(`\n      import inspect\n      'pascal_or_camel_cased_string' in inspect.signature(convert_to_snake_case).parameters\n    `));\n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In this project, you are going to learn about list comprehensions in Python by building a program that can take a <code>camelCase</code> or <code>PascalCase</code> formatted string and convert that to a <code>snake_case</code> formatted string.</p>\n<p>List comprehensions in Python are a concise way to construct a list without using loops or the <code>.append()</code> method. Apart from being briefer, list comprehensions often run faster.</p>\n<p>Start defining a new function named <code>convert_to_snake_case()</code> that accepts a string named <code>pascal_or_camel_cased_string</code> as input. For now, add a <code>pass</code> statement inside the function.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-list-comprehension-by-building-a-case-converter-program",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

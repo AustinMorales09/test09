@@ -1,0 +1,77 @@
+{
+  "id": "5900f3bb1000cf542c50fece",
+  "title": "Problem 79: Passcode derivation",
+  "challengeType": 1,
+  "forumTopicId": 302192,
+  "dashedName": "problem-79-passcode-derivation",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const _keylog1 = [\n  127,327,178,528,537,538,532,328,127,178,537,127,317,328,512,278,328,327,178,327,578,317,527,178,128,328,517,312,531,128,128,317,527,312,328,532,512,518,317,127,537,528,537,527,327,278,532,128, 318,517\n];\nconst _keylog2 = [\n  305,367,256,123,357,120,125,307,236,256,356,267,357,256,356,136,257,107,126,567,567,105,120,237,367,120,367,135,207,167,367,367,307,125,120,130,367,230,106,356,126,106,130,123,307,127,306,167,136,126\n];\nconst _keylog3 = [\n  319,680,180,690,129,620,762,689,762,318,368,710,720,710,629,168,160,689,716,731,736,729,316,729,729,710,769,290,719,680,318,389,162,289,162,718,729,319,790,680,890,362,319,760,316,729,380,319,728,716,\n];",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function passcodeDerivation(arr) {\n\n  return true;\n}\n\n// Only change code above this line\n\nconst keylog1 = [\n  319,680,180,690,129,620,762,689,762,318,368,710,720,710,629,168,160,689,716,731,736,729,316,729,729,710,769,290,719,680,318,389,162,289,162,718,729,319,790,680,890,362,319,760,316,729,380,319,728,716,\n];\n\npasscodeDerivation(keylog1);",
+      "error": null,
+      "seed": "function passcodeDerivation(arr) {\n\n  return true;\n}\n\n// Only change code above this line\n\nconst keylog1 = [\n  319,680,180,690,129,620,762,689,762,318,368,710,720,710,629,168,160,689,716,731,736,729,316,729,729,710,769,290,719,680,318,389,162,289,162,718,729,319,790,680,890,362,319,760,316,729,380,319,728,716,\n];\n\npasscodeDerivation(keylog1);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function passcodeDerivation(arr) {\n  const numbersInPasscode = [];\n  const relativePositions = new Array(10)\n    .fill()\n    .map(() => new Array(10).fill(0));\n\n  for (let i = 0; i < arr.length; i++) {\n    const curAttempt = arr[i]\n      .toString()\n      .split('')\n      .map(key => parseInt(key, 10));\n    for (let j = 0; j < curAttempt.length; j++) {\n      if (numbersInPasscode.indexOf(curAttempt[j]) === -1) {\n        numbersInPasscode.push(curAttempt[j]);\n      }\n      for (let k = j + 1; k < curAttempt.length; k++) {\n        relativePositions[curAttempt[j]][curAttempt[k]] += 1;\n      }\n    }\n  }\n\n  const ranks = {};\n  for (let i = 0; i < numbersInPasscode.length; i++) {\n    const curNumber = numbersInPasscode[i];\n    ranks[curNumber] = relativePositions[curNumber].filter(\n      count => count > 0\n    ).length;\n  }\n\n  const passcode = numbersInPasscode\n    .sort((i, j) => ranks[i] - ranks[j])\n    .reverse()\n    .join('');\n\n  return parseInt(passcode, 10);\n}",
+        "error": null,
+        "seed": "function passcodeDerivation(arr) {\n  const numbersInPasscode = [];\n  const relativePositions = new Array(10)\n    .fill()\n    .map(() => new Array(10).fill(0));\n\n  for (let i = 0; i < arr.length; i++) {\n    const curAttempt = arr[i]\n      .toString()\n      .split('')\n      .map(key => parseInt(key, 10));\n    for (let j = 0; j < curAttempt.length; j++) {\n      if (numbersInPasscode.indexOf(curAttempt[j]) === -1) {\n        numbersInPasscode.push(curAttempt[j]);\n      }\n      for (let k = j + 1; k < curAttempt.length; k++) {\n        relativePositions[curAttempt[j]][curAttempt[k]] += 1;\n      }\n    }\n  }\n\n  const ranks = {};\n  for (let i = 0; i < numbersInPasscode.length; i++) {\n    const curNumber = numbersInPasscode[i];\n    ranks[curNumber] = relativePositions[curNumber].filter(\n      count => count > 0\n    ).length;\n  }\n\n  const passcode = numbersInPasscode\n    .sort((i, j) => ranks[i] - ranks[j])\n    .reverse()\n    .join('');\n\n  return parseInt(passcode, 10);\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>passcodeDerivation(keylog1)</code> should return a number.</p>",
+      "testString": "assert(typeof passcodeDerivation(_keylog1) === 'number');"
+    },
+    {
+      "text": "<p><code>passcodeDerivation(keylog1)</code> should return <code>531278</code>.</p>",
+      "testString": "assert.strictEqual(passcodeDerivation(_keylog1), 531278);"
+    },
+    {
+      "text": "<p><code>passcodeDerivation(keylog2)</code> should return <code>1230567</code>.</p>",
+      "testString": "assert.strictEqual(passcodeDerivation(_keylog2), 1230567);"
+    },
+    {
+      "text": "<p><code>passcodeDerivation(keylog3)</code> should return <code>73162890</code>.</p>",
+      "testString": "assert.strictEqual(passcodeDerivation(_keylog3), 73162890);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A common security method used for online banking is to ask the user for three random characters from a passcode. For example, if the passcode was <code>531278</code>, they may ask for the 2nd, 3rd, and 5th characters; the expected reply would be: <code>317</code>.</p>\n<p>The arrays, <code>keylog1</code>, <code>keylog2</code>, and <code>keylog3</code>, contains fifty successful login attempts.</p>\n<p>Given that the three characters are always asked for in order, analyze the array so as to determine the shortest possible secret passcode of unknown length.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 78,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

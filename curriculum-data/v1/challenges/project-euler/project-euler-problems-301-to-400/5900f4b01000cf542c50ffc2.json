@@ -1,0 +1,65 @@
+{
+  "id": "5900f4b01000cf542c50ffc2",
+  "title": "Problem 323: Bitwise-OR operations on random integers",
+  "challengeType": 1,
+  "forumTopicId": 301980,
+  "dashedName": "problem-323-bitwise-or-operations-on-random-integers",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function bitwiseOrOnRandomIntegers() {\n\n  return true;\n}\n\nbitwiseOrOnRandomIntegers();",
+      "error": null,
+      "seed": "function bitwiseOrOnRandomIntegers() {\n\n  return true;\n}\n\nbitwiseOrOnRandomIntegers();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>bitwiseOrOnRandomIntegers()</code> should return <code>6.3551758451</code>.</p>",
+      "testString": "assert.strictEqual(bitwiseOrOnRandomIntegers(), 6.3551758451);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Let $y_0, y_1, y_2, \\ldots$ be a sequence of random unsigned 32 bit integers (i.e. $0 ≤ y_i &#x3C; 2^{32}$, every value equally likely).</p>\n<p>For the sequence $x_i$ the following recursion is given:</p>\n<ul>\n<li>$x_0 = 0$ and</li>\n<li>$x_i = x_{i - 1} \\mathbf{|} y_{i - 1}$, for $i > 0$. ($\\mathbf{|}$ is the bitwise-OR operator)</li>\n</ul>\n<p>It can be seen that eventually there will be an index $N$ such that $x_i = 2^{32} - 1$ (a bit-pattern of all ones) for all $i ≥ N$.</p>\n<p>Find the expected value of $N$. Give your answer rounded to 10 digits after the decimal point.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

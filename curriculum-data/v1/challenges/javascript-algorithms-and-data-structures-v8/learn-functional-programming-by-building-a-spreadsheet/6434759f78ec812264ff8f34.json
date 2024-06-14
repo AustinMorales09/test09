@@ -1,0 +1,105 @@
+{
+  "id": "6434759f78ec812264ff8f34",
+  "title": "Step 16",
+  "challengeType": 0,
+  "dashedName": "step-16",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n    <title>Functional Programming Spreadsheet</title>\n  </head>\n  <body>\n    <div id=\"container\">\n      <div></div>\n    </div>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}",
+      "error": null,
+      "seed": "#container {\n  display: grid;\n  grid-template-columns: 50px repeat(10, 200px);\n  grid-template-rows: repeat(11, 30px);\n}\n\n.label {\n  background-color: lightgray;\n  text-align: center;\n  vertical-align: middle;\n  line-height: 30px;\n}"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        13,
+        17
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n\n  })\n}",
+      "error": null,
+      "seed": "const range = (start, end) => Array(end - start + 1).fill(start).map((element, index) => element + index);\nconst charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map(code => String.fromCharCode(code));\n\nwindow.onload = () => {\n  const container = document.getElementById(\"container\");\n  const createLabel = (name) => {\n    const label = document.createElement(\"div\");\n    label.className = \"label\";\n    label.textContent = name;\n    container.appendChild(label);\n  }\n  const letters = charRange(\"A\", \"J\");\n  letters.forEach(createLabel);\n  range(1, 99).forEach(number => {\n\n  })\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should call your <code>createLabel()</code> function.</p>",
+      "testString": "assert.match(code, /range\\(\\s*1\\s*,\\s*99\\s*\\)\\.forEach\\(\\s*(\\(\\s*number\\s*\\)|number)\\s*=>\\s*\\{\\s*createLabel\\(/);"
+    },
+    {
+      "text": "<p>You should pass <code>number</code> to your <code>createLabel()</code> call.</p>",
+      "testString": "assert.match(code, /range\\(\\s*1\\s*,\\s*99\\s*\\)\\.forEach\\(\\s*(\\(\\s*number\\s*\\)|number)\\s*=>\\s*\\{\\s*createLabel\\(/)"
+    },
+    {
+      "text": "<p>You should call the <code>.forEach()</code> method on your <code>letters</code> array.</p>",
+      "testString": "assert.lengthOf(code.match(/letters\\.forEach\\(/g), 2)"
+    },
+    {
+      "text": "<p>You should pass a callback function with arrow syntax to your <code>.forEach()</code> method.</p>",
+      "testString": "assert.match(code, /letters\\.forEach\\(\\s*(\\([^)]*\\)|[^\\s()]+)\\s*=>\\s*\\{/)"
+    },
+    {
+      "text": "<p>Your callback function should have a <code>letter</code> parameter.</p>",
+      "testString": "assert.match(code, /letters\\.forEach\\(\\s*(\\(\\s*letter\\s*\\)|letter)\\s*=>\\s*\\{/)"
+    },
+    {
+      "text": "<p>Your callback function should be empty.</p>",
+      "testString": "assert.match(code, /letters\\.forEach\\(\\s*(\\(\\s*letter\\s*\\)|letter)\\s*=>\\s*\\{\\s*\\}/)"
+    },
+    {
+      "text": "<p>Your <code>letters.forEach()</code> callback function should be nested inside the <code>range(1, 99).forEach(number => {}</code> callback function.</p>",
+      "testString": "assert.match(code, /range\\s*\\(\\s*1\\s*,\\s*99\\s*\\)\\s*.forEach\\s*\\(\\s*(\\(\\s*number\\s*\\)|number)\\s*=>\\s*\\{\\s*[^}]*letters\\.forEach\\(\\s*(\\(\\s*letter\\s*\\)|letter)\\s*=>\\s*\\{\\s*\\}\\s*\\)\\s*;?\\s*\\}\\s*\\)/)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In your callback, you will need to make two function calls. Start by calling <code>createLabel()</code> and pass <code>number</code> as the argument. You should see some numbers appear in your spreadsheet.</p>\n<p>Then call the <code>.forEach()</code> method on your <code>letters</code> array. Pass an empty callback function which takes a <code>letter</code> parameter.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-functional-programming-by-building-a-spreadsheet",
+  "hasEditableBoundaries": true,
+  "order": 16,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

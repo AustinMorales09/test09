@@ -1,0 +1,97 @@
+{
+  "id": "662b81901b178a0fd33f093c",
+  "title": "Task 29",
+  "challengeType": 19,
+  "dashedName": "task-29",
+  "solutions": [],
+  "question": {
+    "text": "<p>How do you declare a variable in Python according to Sophie?</p>",
+    "answers": [
+      {
+        "answer": "<p>You declare a variable by naming it after an operator.</p>",
+        "feedback": "<p>This choice is incorrect, because the variable is not named after, but before, an operator.</p>"
+      },
+      {
+        "answer": "<p>Variables are declared by using a command called <code>declare</code>.</p>",
+        "feedback": "<p>Python does not require a special command like <code>declare</code> to create variables; it uses assignment directly.</p>"
+      },
+      {
+        "answer": "<p>You use the variable name followed by the assignment operator and a value.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Variables must be declared by typing <code>variable</code> before the name.</p>",
+        "feedback": "<p>Python does not use any keywords like <code>variable</code> to declare variables. It simply uses the variable name, the assignment operator, and the value.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 30.84,
+        "finishTimestamp": 39.96
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.78,
+        "dialogue": {
+          "text": "In Python, you declare variables by using the variable name and the assignment operator.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "startTime": 5.78,
+        "finishTime": 10.12,
+        "dialogue": {
+          "text": "For example, you can declare a variable like this \"name = 'Sophie'\".",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 10.62
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 29,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

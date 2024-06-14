@@ -1,0 +1,45 @@
+{
+  "id": "657e00b8edd9c338225cbce5",
+  "title": "Task 2",
+  "challengeType": 19,
+  "dashedName": "task-2",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence correctly uses a preposition?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>I have lunch at afternoon.</code></p>",
+        "feedback": "<p>Use <code>in the afternoon</code> instead of <code>at afternoon</code>. <code>At</code> is not used with parts of the day.</p>"
+      },
+      {
+        "answer": "<p><code>We start work at 9:00 AM.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>She goes to bed in 11:00 PM.</code></p>",
+        "feedback": "<p><code>At</code> is the correct preposition for specific times, not <code>in</code>.</p>"
+      },
+      {
+        "answer": "<p><code>He exercises on 7:30 AM.</code></p>",
+        "feedback": "<p>The correct preposition for specific times is <code>at</code>, not <code>on</code>.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Prepositions of time are essential in English to talk about when something happens.</p>\n<p>The preposition <code>in</code> is used for months, years, centuries, and long periods. For example, <code>We will update the software in July</code>, <code>I started learning coding in 2022</code>. <code>I like to work in the morning</code>.</p>\n<p>The preposition <code>on</code> is used for days and dates. For example: <code>Our team meets on Mondays</code>, <code>The coding class is on April 10th</code>, <code>I finished the task on the last day</code>.</p>\n<p>The preposition <code>at</code> is used to specify exact times of the day. For example, <code>Our meeting is at 9 AM</code>, <code>I begin coding at 10 AM</code>, <code>We have lunch at 12 PM</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

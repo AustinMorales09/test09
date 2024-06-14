@@ -1,0 +1,61 @@
+{
+  "id": "5dfa371beacea3f48c6300af",
+  "title": "Step 19",
+  "challengeType": 0,
+  "dashedName": "step-19",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        10,
+        15
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        \n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n      <section>\n        <h2>Cat Photos</h2>\n        <!-- TODO: Add link to cat photos -->\n        <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n        <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n      </section>\n      <section>\n        <h2>Cat Lists</h2>\n        \n      </section>\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The second <code>section</code> element appears to be missing or does not have both an opening and closing tag.</p>",
+      "testString": "assert(\n  document.querySelectorAll('main > section')[1] &&\n    code.match(/\\<\\/section>/g).length == 2\n);"
+    },
+    {
+      "text": "<p>There should be an <code>h3</code> element right above the second <code>section</code> element's closing tag.</p>",
+      "testString": "assert(\n  document.querySelectorAll('main > section')[1].lastElementChild.nodeName ===\n    'H3'\n);"
+    },
+    {
+      "text": "<p>The <code>h3</code> element right above the second <code>section</code> element's closing tag should have the text <code>Things cats love:</code>. Make sure to include the colon at the end of the text.</p>",
+      "testString": "assert(\n  document\n    .querySelectorAll('main > section')[1]\n    .lastElementChild.innerText.toLowerCase()\n    .replace(/\\s+/g, ' ') === 'things cats love:'\n);"
+    },
+    {
+      "text": "<p>There should be an <code>h2</code> element with the text <code>Cat Lists</code> above the last <code>h3</code> element that is nested in the last <code>section</code> element'. You may have accidentally deleted the <code>h2</code> element.</p>",
+      "testString": "const secondSectionLastElemNode = document.querySelectorAll('main > section')[1]\n  .lastElementChild;\nassert(\n  secondSectionLastElemNode.nodeName === 'H3' &&\n    secondSectionLastElemNode.previousElementSibling.innerText\n      .toLowerCase()\n      .replace(/\\s+/g, ' ') === 'cat lists'\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When you add a lower rank heading element to the page, it's implied that you're starting a new subsection.</p>\n<p>After the last <code>h2</code> element of the second <code>section</code> element, add an <code>h3</code> element with this text:</p>\n<p><code>Things cats love:</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 18,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "65fc92b127e3af5bcab2a449",
+  "title": "Task 23",
+  "challengeType": 22,
+  "dashedName": "task-23",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It's where we _ our best _.</p>",
+    "blanks": [
+      {
+        "answer": "generate",
+        "feedback": "<p>This word means to create or produce something, especially ideas or solutions.</p>"
+      },
+      {
+        "answer": "concepts",
+        "feedback": "<p>This word refers to ideas or plans that are used in thinking, discussion, or creating something new.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "cafe.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 41.84,
+        "finishTimestamp": 43.62
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 2.78,
+        "dialogue": {
+          "text": "It's where we generate our best concepts.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 3.28
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To generate</code> means to create or produce something, especially ideas or solutions.</p>\n<p>Listen to the audio and fill in the missing words.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 23,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

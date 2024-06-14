@@ -1,0 +1,69 @@
+{
+  "id": "62b46e3a8d4be31be5af793d",
+  "title": "Step 16",
+  "challengeType": 0,
+  "dashedName": "step-16",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        26
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n      <div id=\"stats\">\n        <span class=\"stat\">XP: <strong><span id=\"xpText\">0</span></strong></span>\n        <span class=\"stat\">Health: <strong><span id=\"healthText\">100</span></strong></span>\n        <span class=\"stat\">Gold: <strong><span id=\"goldText\">50</span></strong></span>\n      </div>\n      <div id=\"controls\">\n        <button id=\"button1\">Go to store</button>\n        <button id=\"button2\">Go to cave</button>\n        <button id=\"button3\">Fight dragon</button>\n      </div>\n      <div id=\"monsterStats\"></div>\n      <div id=\"text\"></div>\n    </div>\n\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"./styles.css\">\n    <title>RPG - Dragon Repeller</title>\n    <script src=\"./script.js\"></script>\n  </head>\n  <body>\n    <div id=\"game\">\n      <div id=\"stats\">\n        <span class=\"stat\">XP: <strong><span id=\"xpText\">0</span></strong></span>\n        <span class=\"stat\">Health: <strong><span id=\"healthText\">100</span></strong></span>\n        <span class=\"stat\">Gold: <strong><span id=\"goldText\">50</span></strong></span>\n      </div>\n      <div id=\"controls\">\n        <button id=\"button1\">Go to store</button>\n        <button id=\"button2\">Go to cave</button>\n        <button id=\"button3\">Fight dragon</button>\n      </div>\n      <div id=\"monsterStats\"></div>\n      <div id=\"text\"></div>\n    </div>\n\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;\nlet monsterHealth;\nlet inventory = [\"stick\"];\n\nlet button1 = document.querySelector(\"#button1\");",
+      "error": null,
+      "seed": "let xp = 0;\nlet health = 100;\nlet gold = 50;\nlet currentWeaponIndex = 0;\nlet fighting;\nlet monsterHealth;\nlet inventory = [\"stick\"];\n\nlet button1 = document.querySelector(\"#button1\");"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>script</code> element should not be in your <code>head</code> element.</p>",
+      "testString": "const script = document.querySelector('script[data-src$=\"script.js\"]');\nassert.notEqual(script.parentElement.tagName, \"HEAD\");"
+    },
+    {
+      "text": "<p>Your <code>script</code> element should come at the end of your <code>body</code> element.</p>",
+      "testString": "const script = document.querySelector('script[data-src$=\"script.js\"]');\nassert.equal(script.previousElementSibling.tagName, \"DIV\");\n// When building the test frame, the runner script is always inserted after user\n// code. This means the learner's script should be the penultimate element in \n// the body.\nassert.equal(script.nextElementSibling.id, \"fcc-test-runner\");\nassert.equal(script.parentElement.tagName, \"BODY\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>We have run into a slight problem. You are trying to query your page for a button element, but your <code>script</code> tag is in the <code>head</code> of your HTML. This means your code runs before the browser has finished reading the HTML, and your <code>document.querySelector()</code> will not see the button - because the browser hasn't processed it yet.</p>\n<p>To fix this, move your <code>script</code> element out of the <code>head</code> element, and place it at the end of your <code>body</code> element (just before the closing <code>&#x3C;/body></code> tag.)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-javascript-by-building-a-role-playing-game",
+  "hasEditableBoundaries": true,
+  "order": 2,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

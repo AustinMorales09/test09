@@ -1,0 +1,88 @@
+{
+  "id": "655c9d9470acf0643482b95b",
+  "title": "Task 25",
+  "challengeType": 19,
+  "dashedName": "task-25",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is Mark's team asking people for their thoughts, and how does Mark feel about his work?</p>",
+    "answers": [
+      {
+        "answer": "<p>They want to make everyone happy, and Mark is feeling too busy</p>",
+        "feedback": "<p>They want to make the software better, not just make people happy. Mark is busy but is happy to learn.</p>"
+      },
+      {
+        "answer": "<p>They want to make the software better, and Mark is happy learning more</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>They are just being polite, and Mark is bored</p>",
+        "feedback": "<p>They are asking people to improve the software, not just to be polite. Mark is busy and finds it a good chance to learn, not boring.</p>"
+      },
+      {
+        "answer": "<p>It's a rule they have to follow, and Mark is excited</p>",
+        "feedback": "<p>They are asking for thoughts to improve their work, not just following a rule. Mark is busy and learning, which doesn't mean he is excited.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Mark",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 10.5,
+        "finishTimestamp": 16.3
+      }
+    },
+    "commands": [
+      {
+        "character": "Mark",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Mark",
+        "startTime": 1,
+        "finishTime": 6.8,
+        "dialogue": {
+          "text": "We're also asking some people to tell us what they think. It's a bit busy, but I'm learning a lot.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Mark",
+        "opacity": 0,
+        "startTime": 7.3
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Remember: <code>Their</code> is a possessive pronoun. It shows that something belongs to a group of people.</p>\n<p>For example, <code>Their opinions are important</code> means the opinions of a group of people are important.</p>\n<p><code>Thoughts</code> means what someone thinks or their ideas. When we ask for someone's <code>thoughts</code>, we want to know what they think or feel about something. For example:</p>\n<p><code>What are their thoughts on this book?</code> is asking for the group's opinion about the book.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 27,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

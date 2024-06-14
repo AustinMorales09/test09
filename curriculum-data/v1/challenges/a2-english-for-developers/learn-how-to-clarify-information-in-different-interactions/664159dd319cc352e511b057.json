@@ -1,0 +1,45 @@
+{
+  "id": "664159dd319cc352e511b057",
+  "title": "Task 75",
+  "challengeType": 19,
+  "dashedName": "task-75",
+  "solutions": [],
+  "question": {
+    "text": "<p>What seems to be the mix-up Bob talks about?</p>",
+    "answers": [
+      {
+        "answer": "<p>He imagined that Maria liked chicken wings like him</p>",
+        "feedback": "<p>The discussion is not about their likes or dislikes, but the amount of food to the party.</p>"
+      },
+      {
+        "answer": "<p>He thought each chicken cost 20 pounds instead of 10</p>",
+        "feedback": "<p><code>Pounds</code>, here, does not refer to the UK currency, but to weight.</p>"
+      },
+      {
+        "answer": "<p>He believed Maria was a vegetarian and did not want chicken meat to be served at the party</p>",
+        "feedback": "<p>It's a company party, so they might have to tend to people with different dietary habits, not only vegetarians.</p>"
+      },
+      {
+        "answer": "<p>He thought that they had the same idea about the amount of <code>chicken wings</code> that would be served at the party.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Pounds</code> are a unit of weight used to measure how heavy something is. For example, if a bag of apples weighs <code>2 pounds</code> (for those who use the metric system, approximately 1 <code>kilogram</code>), it means the apples are as heavy as that.</p>\n<p><code>Chicken wings</code> are a type of food made from the wings of a chicken. They are often cooked and eaten as a snack or meal, sometimes with sauce or seasoning.</p>\n<p><code>To agree on something</code> means that two or more people share the same opinion or decision about a specific thing. For example, if you and your friend both decide to go to the movies, you can say <code>I agree on going to the movies</code> to tell your friend you like the plan or idea.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 79,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

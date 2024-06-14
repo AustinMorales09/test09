@@ -1,0 +1,54 @@
+{
+  "id": "5e7b9f060b6c005b0e76f05a",
+  "title": "Python Functions",
+  "challengeType": 11,
+  "videoId": "3JGF-n3tDPU",
+  "bilibiliIds": {
+    "aid": 631881917,
+    "bvid": "BV1Xb4y167P4",
+    "cid": 376337920
+  },
+  "dashedName": "python-functions",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is the purpose of the \"def\" keyword in Python?</p>",
+    "answers": [
+      {
+        "answer": "<p>It is slang that means \"The following code is really cool.\"</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It indicates the start of a function.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It indicates that the following indented section of code is to be stored for later.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It indicates the start of a function, and the following indented section of code is to be stored for later.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>None of the above.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 8,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

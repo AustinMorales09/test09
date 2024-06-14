@@ -1,0 +1,82 @@
+{
+  "id": "5a24c314108439a4d403617a",
+  "title": "Pass State as Props to Child Components",
+  "challengeType": 6,
+  "forumTopicId": 301403,
+  "dashedName": "pass-state-as-props-to-child-components",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(<MyApp />, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class MyApp extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      name: 'CamperBot'\n    }\n  }\n  render() {\n    return (\n       <div>\n         {/* Change code below this line */}\n         <Navbar />\n         {/* Change code above this line */}\n       </div>\n    );\n  }\n};\n\nclass Navbar extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n    <div>\n      {/* Change code below this line */}\n      <h1>Hello, my name is: </h1>\n      {/* Change code above this line */}\n    </div>\n    );\n  }\n};",
+      "error": null,
+      "seed": "class MyApp extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      name: 'CamperBot'\n    }\n  }\n  render() {\n    return (\n       <div>\n         {/* Change code below this line */}\n         <Navbar />\n         {/* Change code above this line */}\n       </div>\n    );\n  }\n};\n\nclass Navbar extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n    <div>\n      {/* Change code below this line */}\n      <h1>Hello, my name is: </h1>\n      {/* Change code above this line */}\n    </div>\n    );\n  }\n};"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "class MyApp extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      name: 'CamperBot'\n    }\n  }\n  render() {\n    return (\n       <div>\n         <Navbar name={this.state.name}/>\n       </div>\n    );\n  }\n};\nclass Navbar extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n    <div>\n      <h1>Hello, my name is: {this.props.name}</h1>\n    </div>\n    );\n  }\n};",
+        "error": null,
+        "seed": "class MyApp extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = {\n      name: 'CamperBot'\n    }\n  }\n  render() {\n    return (\n       <div>\n         <Navbar name={this.state.name}/>\n       </div>\n    );\n  }\n};\nclass Navbar extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n    <div>\n      <h1>Hello, my name is: {this.props.name}</h1>\n    </div>\n    );\n  }\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>MyApp</code> component should render with a <code>Navbar</code> component inside.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(MyApp));\n    return (\n      mockedComponent.find('MyApp').length === 1 &&\n      mockedComponent.find('Navbar').length === 1\n    );\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>Navbar</code> component should receive the <code>MyApp</code> state property <code>name</code> as props.</p>",
+      "testString": "async () => {\n  const waitForIt = (fn) =>\n    new Promise((resolve, reject) => setTimeout(() => resolve(fn()), 250));\n  const mockedComponent = Enzyme.mount(React.createElement(MyApp));\n  const setState = () => {\n    mockedComponent.setState({ name: 'TestName' });\n    return waitForIt(() => mockedComponent.find('Navbar').props());\n  };\n  const navProps = await setState();\n  assert(navProps.name === 'TestName');\n};"
+    },
+    {
+      "text": "<p>The <code>h1</code> element in <code>Navbar</code> should render the <code>name</code> prop.</p>",
+      "testString": "async () => {\n  const waitForIt = (fn) =>\n    new Promise((resolve, reject) => setTimeout(() => resolve(fn()), 250));\n  const mockedComponent = Enzyme.mount(React.createElement(MyApp));\n  const navH1Before = mockedComponent.find('Navbar').find('h1').text();\n  const setState = () => {\n    mockedComponent.setState({ name: 'TestName' });\n    return waitForIt(() => mockedComponent.find('Navbar').find('h1').text());\n  };\n  const navH1After = await setState();\n  assert(new RegExp('TestName').test(navH1After) && navH1After !== navH1Before);\n};"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You saw a lot of examples that passed props to child JSX elements and child React components in previous challenges. You may be wondering where those props come from. A common pattern is to have a stateful component containing the <code>state</code> important to your app, that then renders child components. You want these components to have access to some pieces of that <code>state</code>, which are passed in as props.</p>\n<p>For example, maybe you have an <code>App</code> component that renders a <code>Navbar</code>, among other components. In your <code>App</code>, you have <code>state</code> that contains a lot of user information, but the <code>Navbar</code> only needs access to the user's username so it can display it. You pass that piece of <code>state</code> to the <code>Navbar</code> component as a prop.</p>\n<p>This pattern illustrates some important paradigms in React. The first is <em>unidirectional data flow</em>. State flows in one direction down the tree of your application's components, from the stateful parent component to child components. The child components only receive the state data they need. The second is that complex stateful apps can be broken down into just a few, or maybe a single, stateful component. The rest of your components simply receive state from the parent as props, and render a UI from that state. It begins to create a separation where state management is handled in one part of code and UI rendering in another. This principle of separating state logic from UI logic is one of React's key principles. When it's used correctly, it makes the design of complex, stateful applications much easier to manage.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The <code>MyApp</code> component is stateful and renders a <code>Navbar</code> component as a child. Pass the <code>name</code> property in its <code>state</code> down to the child component, then show the <code>name</code> in the <code>h1</code> tag that's part of the <code>Navbar</code> render method. <code>name</code> should appear after the text <code>Hello, my name is:</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 29,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

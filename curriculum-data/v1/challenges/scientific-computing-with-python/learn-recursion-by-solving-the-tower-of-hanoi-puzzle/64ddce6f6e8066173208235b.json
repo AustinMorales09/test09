@@ -1,0 +1,61 @@
+{
+  "id": "64ddce6f6e8066173208235b",
+  "title": "Step 27",
+  "challengeType": 20,
+  "dashedName": "step-27",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        20,
+        24
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "NUMBER_OF_DISKS = 3\nnumber_of_moves = 2**NUMBER_OF_DISKS - 1\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\n\ndef move(n, source, auxiliary, target):\n    # display starting configuration\n    print(rods)\n    for i in range(number_of_moves):\n        remainder = (i + 1) % 3\n        if remainder == 1:\n            print(f'Move {i + 1} allowed between {source} and {target}')\n            forward = False\n            if not rods[target]:\n                forward = True\n            elif rods[source] and rods[source][-1] < rods[target][-1]:\n                forward = True\n            if forward:\n                print(f'Moving disk {rods[source][-1]} from {source} to {target}')\n                rods[target].append(rods[source].pop())\n        elif remainder == 2:\n            print(f'Move {i + 1} allowed between {source} and {auxiliary}')\n        elif remainder == 0:\n            print(f'Move {i + 1} allowed between {auxiliary} and {target}')\n\n# initiate call from source A to target C with auxiliary B\nmove(NUMBER_OF_DISKS, 'A', 'B', 'C')",
+      "error": null,
+      "seed": "NUMBER_OF_DISKS = 3\nnumber_of_moves = 2**NUMBER_OF_DISKS - 1\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\n\ndef move(n, source, auxiliary, target):\n    # display starting configuration\n    print(rods)\n    for i in range(number_of_moves):\n        remainder = (i + 1) % 3\n        if remainder == 1:\n            print(f'Move {i + 1} allowed between {source} and {target}')\n            forward = False\n            if not rods[target]:\n                forward = True\n            elif rods[source] and rods[source][-1] < rods[target][-1]:\n                forward = True\n            if forward:\n                print(f'Moving disk {rods[source][-1]} from {source} to {target}')\n                rods[target].append(rods[source].pop())\n        elif remainder == 2:\n            print(f'Move {i + 1} allowed between {source} and {auxiliary}')\n        elif remainder == 0:\n            print(f'Move {i + 1} allowed between {auxiliary} and {target}')\n\n# initiate call from source A to target C with auxiliary B\nmove(NUMBER_OF_DISKS, 'A', 'B', 'C')"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an <code>else</code> clause to move the disks in the opposite direction.</p>",
+      "testString": "({ test: () => assert.match(code, /rods\\s*\\[\\s*target\\s*\\]\\s*\\.append\\s*\\(\\s*rods\\s*\\[\\s*source\\s*\\]\\s*\\.pop\\s*\\(\\s*\\)\\s*\\)\\s+else\\s*:/) })"
+    },
+    {
+      "text": "<p>You should have <code>print(f'Moving disk {rods[target][-1]} from {target} to {source}')</code> inside your <code>else</code> clause.</p>",
+      "testString": "({ test: () => assert.match(code, /else\\s*:\\s+print\\s*\\(\\s*f('|\")Moving\\sdisk\\s\\{\\s*rods\\s*\\[\\s*target\\s*\\]\\s*\\[\\s*-\\s*1\\s*\\]\\s*\\}\\sfrom\\s\\{\\s*target\\s*\\}\\sto\\s\\{\\s*source\\s*\\}\\1\\s*\\)/) })"
+    },
+    {
+      "text": "<p>You should remove the last element from <code>rods[target]</code>.</p>",
+      "testString": "({ test: () => assert.match(code, /rods\\s*\\[\\s*target\\s*\\]\\s*\\.pop\\s*\\(\\s*\\)/) })"
+    },
+    {
+      "text": "<p>You should have <code>rods[source].append(rods[target].pop())</code> in your code.</p>",
+      "testString": "({ test: () => assert.match(code, /rods\\s*\\[\\s*source\\s*\\]\\s*\\.append\\s*\\(\\s*rods\\s*\\[\\s*target\\s*\\]\\s*\\.pop\\s*\\(\\s*\\)\\s*\\)/) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>When <code>forward</code> is <code>False</code>, the disk has to be moved in the opposite direction. Write an <code>else</code> clause for that. Print the move and change the content of the lists accordingly.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-solving-the-tower-of-hanoi-puzzle",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

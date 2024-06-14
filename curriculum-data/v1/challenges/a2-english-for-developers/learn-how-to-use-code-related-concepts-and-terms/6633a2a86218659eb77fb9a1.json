@@ -1,0 +1,87 @@
+{
+  "id": "6633a2a86218659eb77fb9a1",
+  "title": "Task 44",
+  "challengeType": 22,
+  "dashedName": "task-44",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Great question, Tom. Variables can _ their values, but constants _ _ _.</p>",
+    "blanks": [
+      {
+        "answer": "change",
+        "feedback": "<p>It describes how the values of variables can be altered or modified during the execution of a program.</p>"
+      },
+      {
+        "answer": "stay",
+        "feedback": "<p>It is used here as part of the phrase meaning to remain in the same state or condition.</p>"
+      },
+      {
+        "answer": "the",
+        "feedback": "<p>It is used as part of the phrase indicating that the state being referred to is specific and defined.</p>"
+      },
+      {
+        "answer": "same",
+        "feedback": "<p>It completes the phrase emphasizing that something does not vary or alter from its original state.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.24,
+        "finishTimestamp": 27.02
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 5.78,
+        "dialogue": {
+          "text": "Great question, Tom. Variables can change their values, but constants stay the same.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 6.28
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The modal verb <code>can</code> is used to indicate possibility or ability. For example, in the sentence <code>You can see the stars at night</code>, <code>can</code> shows that it is possible to see the stars during nighttime.</p>\n<p><code>Change</code> means to make or become different. In everyday life, you might <code>change</code> your clothes after work, indicating you switch from work clothes to casual ones.</p>\n<p><code>Stay the same</code> means to remain unchanged or constant. For example, <code>The rules of the game stay the same every year.</code> This means the rules do not alter from one year to the next.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 46,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

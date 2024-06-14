@@ -1,0 +1,49 @@
+{
+  "id": "660f17294346b7d69e79db3d",
+  "title": "Step 31",
+  "challengeType": 1,
+  "dashedName": "step-31",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        4
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"Hello\";\nconst count = 8;\nconst rows = [];",
+      "error": null,
+      "seed": "const character = \"Hello\";\nconst count = 8;\nconst rows = [];"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>character</code> variable should be a hash symbol.</p>",
+      "testString": "assert.equal(character, \"#\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You are now ready to start building your pyramid generator. Your <code>character</code> variable will serve as the building block for the pyramid.</p>\n<p><code>\"Hello\"</code> might not work very well for that. Change the value of <code>character</code> to be the hash character <code>\"#\"</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

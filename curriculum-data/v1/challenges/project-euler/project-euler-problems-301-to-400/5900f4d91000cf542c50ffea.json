@@ -1,0 +1,65 @@
+{
+  "id": "5900f4d91000cf542c50ffea",
+  "title": "Problem 364: Comfortable distance",
+  "challengeType": 1,
+  "forumTopicId": 302025,
+  "dashedName": "problem-364-comfortable-distance",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function comfortableDistance() {\n\n  return true;\n}\n\ncomfortableDistance();",
+      "error": null,
+      "seed": "function comfortableDistance() {\n\n  return true;\n}\n\ncomfortableDistance();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>comfortableDistance()</code> should return <code>44855254</code>.</p>",
+      "testString": "assert.strictEqual(comfortableDistance(), 44855254);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>There are $N$ seats in a row. $N$ people come after each other to fill the seats according to the following rules:</p>\n<ol>\n<li>If there is any seat whose adjacent seat(s) are not occupied take such a seat.</li>\n<li>If there is no such seat and there is any seat for which only one adjacent seat is occupied take such a seat.</li>\n<li>Otherwise take one of the remaining available seats.</li>\n</ol>\n<p>Let $T(N)$ be the number of possibilities that $N$ seats are occupied by $N$ people with the given rules. The following figure shows $T(4) = 8$.</p>\n<img class=\"img-responsive center-block\" alt=\"eight ways for N seats to be occupied by N people\" src=\"https://cdn.freecodecamp.org/curriculum/project-euler/comfortable-distance.gif\" style=\"background-color: white; padding: 10px;\">\n<p>We can verify that $T(10) = 61\\,632$ and $T(1\\,000)\\bmod 100\\,000\\,007 = 47\\,255\\,094$.</p>\n<p>Find $T(1\\,000\\,000)\\bmod 100\\,000\\,007$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 63,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

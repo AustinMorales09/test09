@@ -1,0 +1,45 @@
+{
+  "id": "6581557c17e64128b1a5aeb6",
+  "title": "Task 19",
+  "challengeType": 19,
+  "dashedName": "task-19",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does the expression <code>against the clock</code> mean?</p>",
+    "answers": [
+      {
+        "answer": "<p>Working without a deadline</p>",
+        "feedback": "<p>It implies having no time limit, which is not the same as the expression.</p>"
+      },
+      {
+        "answer": "<p>Working with ample time</p>",
+        "feedback": "<p>It means having plenty of time, while the expression suggests a lack of time.</p>"
+      },
+      {
+        "answer": "<p>Working under time pressure</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Working leisurely</p>",
+        "feedback": "<p>It means working in a relaxed or unhurried manner, which is the opposite of the expression.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The expression <code>against the clock</code> suggests being in a situation where time is limited, and one needs to complete tasks quickly.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-have-a-conversation-about-preferences-and-motivations",
+  "hasEditableBoundaries": false,
+  "order": 9,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,77 @@
+{
+  "id": "587d8259367417b2b2512c85",
+  "title": "Implement Selection Sort",
+  "challengeType": 1,
+  "forumTopicId": 301616,
+  "dashedName": "implement-selection-sort",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "function isSorted(a){\n  for(let i = 0; i < a.length - 1; i++)\n    if(a[i] > a[i + 1])\n      return false;\n  return true;\n}\n\nfunction isBuiltInSortUsed(){\n  let sortUsed = false;\n  Array.prototype.sort = () => sortUsed = true;\n  selectionSort([0, 1]);\n  return !sortUsed;\n}",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function selectionSort(array) {\n  // Only change code below this line\n  return array;\n  // Only change code above this line\n}",
+      "error": null,
+      "seed": "function selectionSort(array) {\n  // Only change code below this line\n  return array;\n  // Only change code above this line\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function selectionSort(array) {\n  for (let i = 0; i < array.length-1; i++) {\n    let minimumIndex = i;\n    for (let j = i+1; j < array.length; j++){\n      if (array[j] < array[minimumIndex]) {\n        minimumIndex = j;\n      }\n    }\n    let value = array[minimumIndex];\n    array[minimumIndex] = array[i];\n    array[i] = value;\n  }\n    return array;\n}",
+        "error": null,
+        "seed": "function selectionSort(array) {\n  for (let i = 0; i < array.length-1; i++) {\n    let minimumIndex = i;\n    for (let j = i+1; j < array.length; j++){\n      if (array[j] < array[minimumIndex]) {\n        minimumIndex = j;\n      }\n    }\n    let value = array[minimumIndex];\n    array[minimumIndex] = array[i];\n    array[i] = value;\n  }\n    return array;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>selectionSort</code> should be a function.</p>",
+      "testString": "assert(typeof selectionSort == 'function');"
+    },
+    {
+      "text": "<p><code>selectionSort</code> should return a sorted array (least to greatest).</p>",
+      "testString": "assert(\n  isSorted(\n    selectionSort([\n      1,\n      4,\n      2,\n      8,\n      345,\n      123,\n      43,\n      32,\n      5643,\n      63,\n      123,\n      43,\n      2,\n      55,\n      1,\n      234,\n      92\n    ])\n  )\n);"
+    },
+    {
+      "text": "<p><code>selectionSort([1,4,2,8,345,123,43,32,5643,63,123,43,2,55,1,234,92])</code> should return an array that is unchanged except for order.</p>",
+      "testString": "assert.sameMembers(\n  selectionSort([\n    1,\n    4,\n    2,\n    8,\n    345,\n    123,\n    43,\n    32,\n    5643,\n    63,\n    123,\n    43,\n    2,\n    55,\n    1,\n    234,\n    92\n  ]),\n  [1, 4, 2, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234, 92]\n);"
+    },
+    {
+      "text": "<p><code>selectionSort</code> should not use the built-in <code>.sort()</code> method.</p>",
+      "testString": "assert(isBuiltInSortUsed());"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Here we will implement selection sort. Selection sort works by selecting the minimum value in a list and swapping it with the first value in the list. It then starts at the second position, selects the smallest value in the remaining list, and swaps it with the second element. It continues iterating through the list and swapping elements until it reaches the end of the list. Now the list is sorted. Selection sort has quadratic time complexity in all cases.</p>\n<p><strong>Instructions</strong>: Write a function <code>selectionSort</code> which takes an array of integers as input and returns an array of these integers in sorted order from least to greatest.</p>\n</section>",
+  "translationPending": false,
+  "block": "algorithms",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

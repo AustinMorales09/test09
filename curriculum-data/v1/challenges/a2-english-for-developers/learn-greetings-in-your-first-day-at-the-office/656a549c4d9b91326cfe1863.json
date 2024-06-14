@@ -1,0 +1,36 @@
+{
+  "id": "656a549c4d9b91326cfe1863",
+  "title": "Task 55",
+  "challengeType": 22,
+  "dashedName": "task-55",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ printer right here is fast. Can you fix _ computer over there?</p>",
+    "blanks": [
+      {
+        "answer": "This",
+        "feedback": "<p>What word do you use for something right next to you?</p>"
+      },
+      {
+        "answer": "that",
+        "feedback": "<p>If you're pointing to something a little far, which word fits?</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Use <code>this</code> for something close and <code>that</code> for something a bit far.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 56,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

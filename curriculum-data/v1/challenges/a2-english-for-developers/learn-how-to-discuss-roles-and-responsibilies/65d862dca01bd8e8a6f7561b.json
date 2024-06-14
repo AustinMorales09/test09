@@ -1,0 +1,88 @@
+{
+  "id": "65d862dca01bd8e8a6f7561b",
+  "title": "Task 62",
+  "challengeType": 22,
+  "dashedName": "task-62",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>He sounds like a dedicated professional. I've _ _ what the folks in Security do around here. What are his responsibilities?</p>",
+    "blanks": [
+      {
+        "answer": "always",
+        "feedback": "<p>This word emphasizes that the action has been continuous over time.</p>"
+      },
+      {
+        "answer": "wondered",
+        "feedback": "<p>This word is the past participle of <code>wonder</code>, used to express curiosity about something.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.32,
+        "finishTimestamp": 25.94
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 2.7,
+        "dialogue": {
+          "text": "He sounds like a dedicated professional.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "startTime": 2.92,
+        "finishTime": 7.62,
+        "dialogue": {
+          "text": "I've always wondered what the folks in security do around here. What are his responsibilities?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 8.12
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The present perfect tense, formed with <code>have</code> or <code>has</code> plus the past participle of a verb, is used to talk about experiences or actions that have relevance to the present.</p>\n<p><code>Always</code> is used to emphasize that the action or feeling has been true for a long time and continues to be true. For example, <code>I've always liked chocolate</code> means I liked chocolate in the past and still do now.</p>\n<p><code>Wonder</code> means to think about something with curiosity.</p>\n<p><code>Folks</code> is an informal word for <code>people</code>, often used to talk about a group of people in a friendly way.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 64,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

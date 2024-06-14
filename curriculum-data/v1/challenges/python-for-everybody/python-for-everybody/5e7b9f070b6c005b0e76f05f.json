@@ -1,0 +1,51 @@
+{
+  "id": "5e7b9f070b6c005b0e76f05f",
+  "title": "Iterations: More Patterns",
+  "challengeType": 11,
+  "videoId": "9Wtqo6vha1M",
+  "bilibiliIds": {
+    "aid": 674492981,
+    "bvid": "BV1hU4y1H7tF",
+    "cid": 376531204
+  },
+  "dashedName": "iterations-more-patterns",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which of these evaluates to False?</p>",
+    "answers": [
+      {
+        "answer": "<pre><code class=\"language-python\">0 == 0.0\n</code></pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre><code class=\"language-python\">0 is 0.0\n</code></pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre><code class=\"language-python\">0 is not 0.0\n</code></pre>",
+        "feedback": null
+      },
+      {
+        "answer": "<pre><code class=\"language-python\">0 = 0.0\n</code></pre>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>More resources:</p>\n<p>- <a href=\"https://www.youtube.com/watch?v=kjxXZQw0uPg\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Exercise</a></p>\n</section>",
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

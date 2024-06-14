@@ -1,0 +1,49 @@
+{
+  "id": "6624e0ec0bf47017eed84b1f",
+  "title": "Step 14",
+  "challengeType": 20,
+  "dashedName": "step-14",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        5
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nalphabet.find('z')",
+      "error": null,
+      "seed": "text = 'Hello World'\nshift = 3\nalphabet = 'abcdefghijklmnopqrstuvwxyz'\nalphabet.find('z')"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should modify your existing <code>alphabet.find('z')</code> call passing <code>text[0]</code> to the method.</p>",
+      "testString": "assert.match(code, /^alphabet\\.find\\s*\\(\\s*text\\s*\\[\\s*0\\s*\\]\\s*\\)/m)"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The first kind of cipher you are going to build is called a <em>Caesar</em> cipher.  Specifically, you will take each letter in your message, find its position in the alphabet, take the letter located after 3 positions in the alphabet, and replace the original letter with the new letter.</p>\n<p>To implement this, you will use the <code>.find()</code> method discussed in the previous step. Modify your existing <code>.find()</code> call passing it <code>text[0]</code> as the argument instead of <code>'z'</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-string-manipulation-by-building-a-cipher",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "663626ee2c3a803af8cc2fd6",
+  "title": "Task 23",
+  "challengeType": 19,
+  "dashedName": "task-23",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>computing</code> generally refer to?</p>",
+    "answers": [
+      {
+        "answer": "<p>The study of computers</p>",
+        "feedback": "<p>While <code>computing</code> involves computers, it's more about the use and operation of computers rather than their study.</p>"
+      },
+      {
+        "answer": "<p>Physical computer parts</p>",
+        "feedback": "<p><code>Computing</code> involves the use of computer technology, not just the physical hardware.</p>"
+      },
+      {
+        "answer": "<p>Using computers to manage information and solve problems</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Only internet browsing</p>",
+        "feedback": "<p><code>Computing</code> covers a broad range of activities, not just browsing the internet.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Computing</code> refers to the process or activity of using computers and computer technology to manage information, solve problems, and perform various tasks. It means a wide range of activities, from simple calculations to complex programming and data analysis.</p>\n<p>In modern usage, <code>computing</code> also includes topics like <code>cloud computing</code>, <code>serverless computing</code>, and more, reflecting the evolving nature of technology.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-tech-trends-and-updates",
+  "hasEditableBoundaries": false,
+  "order": 14,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 24,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

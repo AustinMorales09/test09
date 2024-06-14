@@ -1,0 +1,78 @@
+{
+  "id": "587d7b7d367417b2b2512b1d",
+  "title": "Iterate Through the Keys of an Object with a for...in Statement",
+  "challengeType": 1,
+  "forumTopicId": 301162,
+  "dashedName": "iterate-through-the-keys-of-an-object-with-a-for---in-statement",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const usersObj1 = {\n  Alan: {\n    online: false\n  },\n  Jeff: {\n    online: true\n  },\n  Sarah: {\n    online: false\n  }\n}\n\nconst usersObj2 = {\n  Alan: {\n    online: true\n  },\n  Jeff: {\n    online: false\n  },\n  Sarah: {\n    online: true\n  }\n}\n\n\nconst usersObj3 = {\n  Alan: {\n    online: false\n  },\n  Jeff: {\n    online: false\n  },\n  Sarah: {\n    online: false\n  }\n}",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const users = {\n  Alan: {\n    online: false\n  },\n  Jeff: {\n    online: true\n  },\n  Sarah: {\n    online: false\n  }\n}\n\nfunction countOnline(allUsers) {\n  // Only change code below this line\n\n  // Only change code above this line\n}\n\nconsole.log(countOnline(users));",
+      "error": null,
+      "seed": "const users = {\n  Alan: {\n    online: false\n  },\n  Jeff: {\n    online: true\n  },\n  Sarah: {\n    online: false\n  }\n}\n\nfunction countOnline(allUsers) {\n  // Only change code below this line\n\n  // Only change code above this line\n}\n\nconsole.log(countOnline(users));"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function countOnline(allUsers) {\n  let numOnline = 0;\n  for(const user in allUsers){\n    if(allUsers[user].online) {\n      numOnline++;\n    }\n  }\n  return numOnline;\n}",
+        "error": null,
+        "seed": "function countOnline(allUsers) {\n  let numOnline = 0;\n  for(const user in allUsers){\n    if(allUsers[user].online) {\n      numOnline++;\n    }\n  }\n  return numOnline;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The function <code>countOnline</code> should use a <code>for in</code> statement to iterate through the object keys of the object passed to it.</p>",
+      "testString": "assert(\n  __helpers.removeJSComments(code).match(\n    /for\\s*\\(\\s*(var|let|const)\\s+[a-zA-Z_$]\\w*\\s+in\\s+[a-zA-Z_$]\\w*\\s*\\)/\n  )\n);"
+    },
+    {
+      "text": "<p>The function <code>countOnline</code> should return <code>1</code> when the object <code>{ Alan: { online: false }, Jeff: { online: true }, Sarah: { online: false } }</code> is passed to it</p>",
+      "testString": "assert(countOnline(usersObj1) === 1);"
+    },
+    {
+      "text": "<p>The function <code>countOnline</code> should return <code>2</code> when the object <code>{ Alan: { online: true }, Jeff: { online: false }, Sarah: { online: true } }</code> is passed to it</p>",
+      "testString": "assert(countOnline(usersObj2) === 2);"
+    },
+    {
+      "text": "<p>The function <code>countOnline</code> should return <code>0</code> when the object <code>{ Alan: { online: false }, Jeff: { online: false }, Sarah: { online: false } }</code> is passed to it</p>",
+      "testString": "assert(countOnline(usersObj3) === 0);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Sometimes you need to iterate through all the keys within an object. You can use a <dfn>for...in</dfn> loop to do this. The for...in loop looks like:</p>\n<pre><code class=\"language-javascript\">const refrigerator = {\n  'milk': 1,\n  'eggs': 12,\n};\n\nfor (const food in refrigerator) {\n  console.log(food, refrigerator[food]);\n}\n</code></pre>\n<p>This code logs <code>milk 1</code>  and <code>eggs 12</code>, with each key-value pair on its own line.</p>\n<p>We defined the variable <code>food</code> in the loop head and this variable was set to each of the object's keys on each iteration, resulting in each food's name being printed to the console.</p>\n<p><strong>NOTE:</strong> Objects do not maintain an ordering to stored keys like arrays do; thus a key's position on an object, or the relative order in which it appears, is irrelevant when referencing or accessing that key.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>We've defined a function <code>countOnline</code> which accepts one argument, <code>allUsers</code>. Use a <dfn>for...in</dfn> statement inside this function to loop through the <code>allUsers</code> object and return the number of users whose <code>online</code> property is set to <code>true</code>. An example of an object which could be passed to <code>countOnline</code> is shown below. Each user will have an <code>online</code> property set to either <code>true</code> or <code>false</code>.</p>\n<pre><code class=\"language-js\">{\n  Alan: {\n    online: false\n  },\n  Jeff: {\n    online: true\n  },\n  Sarah: {\n    online: false\n  }\n}\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "basic-data-structures",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

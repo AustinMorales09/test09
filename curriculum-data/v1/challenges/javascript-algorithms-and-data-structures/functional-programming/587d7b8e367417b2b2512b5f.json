@@ -1,0 +1,74 @@
+{
+  "id": "587d7b8e367417b2b2512b5f",
+  "title": "Pass Arguments to Avoid External Dependence in a Function",
+  "challengeType": 1,
+  "forumTopicId": 301234,
+  "dashedName": "pass-arguments-to-avoid-external-dependence-in-a-function",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "// The global variable\nlet fixedValue = 4;\n\n// Only change code below this line\nfunction incrementer() {\n\n\n  // Only change code above this line\n}",
+      "error": null,
+      "seed": "// The global variable\nlet fixedValue = 4;\n\n// Only change code below this line\nfunction incrementer() {\n\n\n  // Only change code above this line\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let fixedValue = 4;\n\nfunction incrementer(fixedValue) {\n  return fixedValue + 1;\n}",
+        "error": null,
+        "seed": "let fixedValue = 4;\n\nfunction incrementer(fixedValue) {\n  return fixedValue + 1;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your function <code>incrementer</code> should not change the value of <code>fixedValue</code> (which is <code>4</code>).</p>",
+      "testString": "assert(fixedValue === 4);"
+    },
+    {
+      "text": "<p>Your <code>incrementer</code> function should take an argument.</p>",
+      "testString": "assert(incrementer.length === 1);"
+    },
+    {
+      "text": "<p>Your <code>incrementer</code> function should return a value that is one larger than the <code>fixedValue</code> value.</p>",
+      "testString": "const __newValue = incrementer(fixedValue);\nassert(__newValue === 5);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The last challenge was a step closer to functional programming principles, but there is still something missing.</p>\n<p>We didn't alter the global variable value, but the function <code>incrementer</code> would not work without the global variable <code>fixedValue</code> being there.</p>\n<p>Another principle of functional programming is to always declare your dependencies explicitly. This means if a function depends on a variable or object being present, then pass that variable or object directly into the function as an argument.</p>\n<p>There are several good consequences from this principle. The function is easier to test, you know exactly what input it takes, and it won't depend on anything else in your program.</p>\n<p>This can give you more confidence when you alter, remove, or add new code. You would know what you can or cannot change and you can see where the potential traps are.</p>\n<p>Finally, the function would always produce the same output for the same set of inputs, no matter what part of the code executes it.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Let's update the <code>incrementer</code> function to clearly declare its dependencies.</p>\n<p>Write the <code>incrementer</code> function so it takes an argument, and then returns a result after increasing the value by one.</p>\n</section>",
+  "translationPending": false,
+  "block": "functional-programming",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

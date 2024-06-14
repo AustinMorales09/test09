@@ -1,0 +1,41 @@
+{
+  "id": "6376327e2724a688c04636e3",
+  "title": "HTML Foundations Question G",
+  "challengeType": 15,
+  "dashedName": "html-foundations-question-g",
+  "solutions": [],
+  "question": {
+    "text": "<p>What are the primary responsibilities of HTML and CSS in creating a webpage?</p>",
+    "answers": [
+      {
+        "answer": "<p>HTML structures the content, while CSS styles the elements.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>HTML creates the visual design, while CSS organizes the content.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>CSS manages the functionality, while HTML controls the layout.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>HTML and CSS are two languages that work together to create everything that you see when you look at something on the internet. HTML is the raw data that a webpage is built out of. All the text, links, cards, lists, and buttons are created in HTML. CSS is what adds style to those plain elements. HTML puts information on a webpage, and CSS positions that information, gives it color, changes the font, and makes it look great!</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-html-foundations",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 6,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

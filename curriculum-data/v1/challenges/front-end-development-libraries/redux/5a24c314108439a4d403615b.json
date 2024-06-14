@@ -1,0 +1,85 @@
+{
+  "id": "5a24c314108439a4d403615b",
+  "title": "Copy an Object with Object.assign",
+  "challengeType": 6,
+  "forumTopicId": 301437,
+  "dashedName": "copy-an-object-with-object-assign",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const defaultState = {\n  user: 'CamperBot',\n  status: 'offline',\n  friends: '732,982',\n  community: 'freeCodeCamp'\n};\n\nconst immutableReducer = (state = defaultState, action) => {\n  switch(action.type) {\n    case 'ONLINE':\n      // Don't mutate state here or the tests will fail\n      return\n    default:\n      return state;\n  }\n};\n\nconst wakeUp = () => {\n  return {\n    type: 'ONLINE'\n  }\n};\n\nconst store = Redux.createStore(immutableReducer);",
+      "error": null,
+      "seed": "const defaultState = {\n  user: 'CamperBot',\n  status: 'offline',\n  friends: '732,982',\n  community: 'freeCodeCamp'\n};\n\nconst immutableReducer = (state = defaultState, action) => {\n  switch(action.type) {\n    case 'ONLINE':\n      // Don't mutate state here or the tests will fail\n      return\n    default:\n      return state;\n  }\n};\n\nconst wakeUp = () => {\n  return {\n    type: 'ONLINE'\n  }\n};\n\nconst store = Redux.createStore(immutableReducer);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const defaultState = {\n  user: 'CamperBot',\n  status: 'offline',\n  friends: '732,982',\n  community: 'freeCodeCamp'\n};\n\nconst immutableReducer = (state = defaultState, action) => {\n  switch(action.type) {\n    case 'ONLINE':\n      return Object.assign({}, state, {\n        status: 'online'\n      });\n    default:\n      return state;\n  }\n};\n\nconst wakeUp = () => {\n  return {\n    type: 'ONLINE'\n  }\n};\n\nconst store = Redux.createStore(immutableReducer);",
+        "error": null,
+        "seed": "const defaultState = {\n  user: 'CamperBot',\n  status: 'offline',\n  friends: '732,982',\n  community: 'freeCodeCamp'\n};\n\nconst immutableReducer = (state = defaultState, action) => {\n  switch(action.type) {\n    case 'ONLINE':\n      return Object.assign({}, state, {\n        status: 'online'\n      });\n    default:\n      return state;\n  }\n};\n\nconst wakeUp = () => {\n  return {\n    type: 'ONLINE'\n  }\n};\n\nconst store = Redux.createStore(immutableReducer);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The Redux store should exist and initialize with a state that is equivalent to the <code>defaultState</code> object declared on line 1.</p>",
+      "testString": "assert(\n  (function () {\n    const expectedState = {\n      user: 'CamperBot',\n      status: 'offline',\n      friends: '732,982',\n      community: 'freeCodeCamp'\n    };\n    const initialState = store.getState();\n    return DeepEqual(expectedState, initialState);\n  })()\n);"
+    },
+    {
+      "text": "<p><code>wakeUp</code> and <code>immutableReducer</code> both should be functions.</p>",
+      "testString": "assert(typeof wakeUp === 'function' && typeof immutableReducer === 'function');"
+    },
+    {
+      "text": "<p>Dispatching an action of type <code>ONLINE</code> should update the property <code>status</code> in state to <code>online</code> and should NOT mutate state.</p>",
+      "testString": "assert(\n  (function () {\n    const initialState = store.getState();\n    const isFrozen = DeepFreeze(initialState);\n    store.dispatch({ type: 'ONLINE' });\n    const finalState = store.getState();\n    const expectedState = {\n      user: 'CamperBot',\n      status: 'online',\n      friends: '732,982',\n      community: 'freeCodeCamp'\n    };\n    return isFrozen && DeepEqual(finalState, expectedState);\n  })()\n);"
+    },
+    {
+      "text": "<p><code>Object.assign</code> should be used to return new state.</p>",
+      "testString": "(getUserInput) => assert(getUserInput('index').includes('Object.assign'));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The last several challenges worked with arrays, but there are ways to help enforce state immutability when state is an <code>object</code>, too. A useful tool for handling objects is the <code>Object.assign()</code> utility. <code>Object.assign()</code> takes a target object and source objects and maps properties from the source objects to the target object. Any matching properties are overwritten by properties in the source objects. This behavior is commonly used to make shallow copies of objects by passing an empty object as the first argument followed by the object(s) you want to copy. Here's an example:</p>\n<pre><code class=\"language-js\">const newObject = Object.assign({}, obj1, obj2);\n</code></pre>\n<p>This creates <code>newObject</code> as a new <code>object</code>, which contains the properties that currently exist in <code>obj1</code> and <code>obj2</code>.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The Redux state and actions were modified to handle an <code>object</code> for the <code>state</code>. Edit the code to return a new <code>state</code> object for actions with type <code>ONLINE</code>, which set the <code>status</code> property to the string <code>online</code>. Try to use <code>Object.assign()</code> to complete the challenge.</p>\n</section>",
+  "translationPending": false,
+  "block": "redux",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 16,
+  "required": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"
+    },
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.2.0/redux-thunk.min.js"
+    }
+  ],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

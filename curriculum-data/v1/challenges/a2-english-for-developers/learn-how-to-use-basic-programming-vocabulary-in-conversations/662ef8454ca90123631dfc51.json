@@ -1,0 +1,45 @@
+{
+  "id": "662ef8454ca90123631dfc51",
+  "title": "Task 40",
+  "challengeType": 19,
+  "dashedName": "task-40",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence correctly uses the phrase <code>a lot of</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>She learned a lot of programming languages.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>He has a lot of careful in his work.</code></p>",
+        "feedback": "<p>The word <code>careful</code> is an adjective, not a noun. <code>A lot of</code> should be used with nouns.</p>"
+      },
+      {
+        "answer": "<p><code>I have  a lot of idea for the new app.</code></p>",
+        "feedback": "<p>The countable noun <code>idea</code> should be in its plural form when used with the phrase <code>a lot of</code>.</p>"
+      },
+      {
+        "answer": "<p><code>She has a lot of the most experience in our team.</code></p>",
+        "feedback": "<p>When comparing qualities, <code>more</code> or <code>most</code> is appropriate, not <code>a lot of</code>.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Please answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 41,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

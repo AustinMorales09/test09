@@ -1,0 +1,87 @@
+{
+  "id": "bad87fee1348bd9aedf07756",
+  "title": "Override All Other Styles by using Important",
+  "challengeType": 0,
+  "videoUrl": "https://scrimba.com/c/cm24rcp",
+  "forumTopicId": 18249,
+  "dashedName": "override-all-other-styles-by-using-important",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n  #orange-text {\n    color: orange;\n  }\n  .pink-text {\n    color: pink;\n  }\n  .blue-text {\n    color: blue;\n  }\n</style>\n<h1 id=\"orange-text\" class=\"pink-text blue-text\" style=\"color: white\">Hello World!</h1>",
+      "error": null,
+      "seed": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n  #orange-text {\n    color: orange;\n  }\n  .pink-text {\n    color: pink;\n  }\n  .blue-text {\n    color: blue;\n  }\n</style>\n<h1 id=\"orange-text\" class=\"pink-text blue-text\" style=\"color: white\">Hello World!</h1>"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.html"
+        ],
+        "name": "index",
+        "ext": "html",
+        "path": "index.html",
+        "fileKey": "indexhtml",
+        "contents": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n  #orange-text {\n    color: orange;\n  }\n  .pink-text {\n    color: pink !important;\n  }\n  .blue-text {\n    color: blue;\n  }\n</style>\n<h1 id=\"orange-text\" class=\"pink-text blue-text\" style=\"color: white\">Hello World!</h1>",
+        "error": null,
+        "seed": "<style>\n  body {\n    background-color: black;\n    font-family: monospace;\n    color: green;\n  }\n  #orange-text {\n    color: orange;\n  }\n  .pink-text {\n    color: pink !important;\n  }\n  .blue-text {\n    color: blue;\n  }\n</style>\n<h1 id=\"orange-text\" class=\"pink-text blue-text\" style=\"color: white\">Hello World!</h1>"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>h1</code> element should have the class <code>pink-text</code>.</p>",
+      "testString": "assert($('h1').hasClass('pink-text'));"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should have the class <code>blue-text</code>.</p>",
+      "testString": "assert($('h1').hasClass('blue-text'));"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should have the <code>id</code> of <code>orange-text</code>.</p>",
+      "testString": "assert($('h1').attr('id') === 'orange-text');"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should have the inline style of <code>color: white</code>.</p>",
+      "testString": "assert(code.match(/<h1.*style/gi) && code.match(/<h1.*style.*color\\s*?:/gi));"
+    },
+    {
+      "text": "<p>Your <code>pink-text</code> class declaration should have the <code>!important</code> keyword to override all other declarations.</p>",
+      "testString": "assert(\n  code.match(/\\.pink-text\\s*?\\{[\\s\\S]*?color:.*pink.*!important\\s*;?[^\\.]*\\}/g)\n);"
+    },
+    {
+      "text": "<p>Your <code>h1</code> element should be pink.</p>",
+      "testString": "assert($('h1').css('color') === 'rgb(255, 192, 203)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Yay! We just proved that inline styles will override all the CSS declarations in your <code>style</code> element.</p>\n<p>But wait. There's one last way to override CSS. This is the most powerful method of all. But before we do it, let's talk about why you would ever want to override CSS.</p>\n<p>In many situations, you will use CSS libraries. These may accidentally override your own CSS. So when you absolutely need to be sure that an element has specific CSS, you can use <code>!important</code>.</p>\n<p>Let's go all the way back to our <code>pink-text</code> class declaration. Remember that our <code>pink-text</code> class was overridden by subsequent class declarations, id declarations, and inline styles.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Let's add the keyword <code>!important</code> to your pink-text element's color declaration to make 100% sure that your <code>h1</code> element will be pink.</p>\n<p>An example of how to do this is:</p>\n<pre><code class=\"language-css\">color: red !important;\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "basic-css",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 18,
+  "certification": "responsive-web-design",
+  "superBlock": "responsive-web-design",
+  "challengeOrder": 30,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

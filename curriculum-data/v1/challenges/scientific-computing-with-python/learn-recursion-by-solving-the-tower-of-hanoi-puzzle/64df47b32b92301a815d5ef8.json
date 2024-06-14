@@ -1,0 +1,49 @@
+{
+  "id": "64df47b32b92301a815d5ef8",
+  "title": "Step 49",
+  "challengeType": 20,
+  "dashedName": "step-49",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        7,
+        19
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "NUMBER_OF_DISKS = 4\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\n\ndef move(n, source, auxiliary, target):\n    if n > 0:\n        # move n - 1 disks from source to auxiliary, so they are out of the way\n        move(n - 1, source, auxiliary, target)\n        \n        # move the nth disk from source to target\n        rods[target].append(rods[source].pop())\n        \n        # display our progress\n        print(rods, '\\n')\n              \n# initiate call from source A to target C with auxiliary B\nmove(NUMBER_OF_DISKS, 'A', 'B', 'C')",
+      "error": null,
+      "seed": "NUMBER_OF_DISKS = 4\nrods = {\n    'A': list(range(NUMBER_OF_DISKS, 0, -1)),\n    'B': [],\n    'C': []\n}\n\ndef move(n, source, auxiliary, target):\n    if n > 0:\n        # move n - 1 disks from source to auxiliary, so they are out of the way\n        move(n - 1, source, auxiliary, target)\n        \n        # move the nth disk from source to target\n        rods[target].append(rods[source].pop())\n        \n        # display our progress\n        print(rods, '\\n')\n              \n# initiate call from source A to target C with auxiliary B\nmove(NUMBER_OF_DISKS, 'A', 'B', 'C')"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should modify the order of the arguments in your <code>move(n - 1, source, auxiliary, target)</code> call.</p>",
+      "testString": "({ test:  () => assert.match(code, /move\\(\\s*n\\s*-\\s*1\\s*,\\s*source\\s*,\\s*target\\s*,\\s*auxiliary\\s*\\)/) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>At first, the recursive call you have just added deals with the sub-problem of moving <code>n - 1</code> disks to the second rod.</p>\n<p>For that reason, the <code>target</code> argument corresponds to your second rod, while the <code>auxiliary</code> argument is the third rod. Keep in mind that those will keep swapping as the recursion proceeds.</p>\n<p>Fix the arguments order exchanging <code>target</code> and <code>auxiliary</code> in your recursive call.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-recursion-by-solving-the-tower-of-hanoi-puzzle",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 48,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,88 @@
+{
+  "id": "656a4e001d2b804cdea7000a",
+  "title": "Task 56",
+  "challengeType": 19,
+  "dashedName": "task-56",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Bob questioning about their security practices?</p>",
+    "answers": [
+      {
+        "answer": "<p>If they are too complicated</p>",
+        "feedback": "<p>Bob is asking about strength, not how complicated they are.</p>"
+      },
+      {
+        "answer": "<p>If they are strong enough for protection</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>If they cost too much</p>",
+        "feedback": "<p>Bob's question is about strength, not cost.</p>"
+      },
+      {
+        "answer": "<p>If they are new</p>",
+        "feedback": "<p>Bob is focused on their effectiveness, not how new they are.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 37.42,
+        "finishTimestamp": 42.76
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 6.34,
+        "dialogue": {
+          "text": "I'm supposed to figure out if our current practices are robust enough to protect sensitive information.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 6.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Robust</code> means strong or powerful. For example:</p>\n<p><code>A robust system can handle many users.</code></p>\n<p><code>Enough</code> means as much as is necessary. For example:</p>\n<p><code>Do we have enough chairs?</code></p>\n<p>Together, <code>robust enough</code> means being strong or effective to the necessary degree. For example, this sentence asks if the password is strong enough to stop hackers:</p>\n<p><code>Is the password robust enough to prevent hacking?</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-describe-your-current-project",
+  "hasEditableBoundaries": false,
+  "order": 5,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 60,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,85 @@
+{
+  "id": "6143cb26f7edff2dc28f7da5",
+  "title": "Step 27",
+  "challengeType": 0,
+  "dashedName": "step-27",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        38,
+        50
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n      <img id=\"logo\" alt=\"freeCodeCamp\" src=\"https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg\">\n      <h1>HTML/CSS Quiz</h1>\n      <nav>\n        <ul>\n          <li><a href=\"#student-info\">INFO</a></li>\n          <li><a href=\"#html-questions\">HTML</a></li>\n          <li><a href=\"#css-questions\">CSS</a></li>\n        </ul>\n      </nav>\n    </header>\n    <main>\n      <form method=\"post\" action=\"https://freecodecamp.org/practice-project/accessibility-quiz\">\n        <section role=\"region\" aria-labelledby=\"student-info\">\n          <h2 id=\"student-info\">Student Info</h2>\n          <div class=\"info\">\n            <label for=\"student-name\">Name:</label>\n            <input type=\"text\" name=\"student-name\" id=\"student-name\" />\n          </div>\n          <div class=\"info\">\n            <label for=\"student-email\">Email:</label>\n            <input type=\"email\" name=\"student-email\" id=\"student-email\" />\n          </div>\n          <div class=\"info\">\n            <label for=\"birth-date\">D.O.B.<span class=\"sr-only\">(Date of Birth)</span></label>\n            <input type=\"date\" name=\"birth-date\" id=\"birth-date\" />\n          </div>\n        </section>\n        <section role=\"region\" aria-labelledby=\"html-questions\">\n          <h2 id=\"html-questions\">HTML</h2>\n          <div class=\"question-block\">\n            <p>1</p>\n            <fieldset class=\"question\"></fieldset>\n          </div>\n          <div class=\"question-block\">\n            <p>2</p>\n            <fieldset class=\"question\"></fieldset>\n          </div>\n        </section>\n        <section role=\"region\" aria-labelledby=\"css-questions\">\n          <h2 id=\"css-questions\">CSS</h2>\n        </section>\n      </form>\n    </main>\n  </body>\n</html>\n",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"freeCodeCamp Accessibility Quiz practice project\" />\n    <title>Accessibility Quiz</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <header>\n      <img id=\"logo\" alt=\"freeCodeCamp\" src=\"https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg\">\n      <h1>HTML/CSS Quiz</h1>\n      <nav>\n        <ul>\n          <li><a href=\"#student-info\">INFO</a></li>\n          <li><a href=\"#html-questions\">HTML</a></li>\n          <li><a href=\"#css-questions\">CSS</a></li>\n        </ul>\n      </nav>\n    </header>\n    <main>\n      <form method=\"post\" action=\"https://freecodecamp.org/practice-project/accessibility-quiz\">\n        <section role=\"region\" aria-labelledby=\"student-info\">\n          <h2 id=\"student-info\">Student Info</h2>\n          <div class=\"info\">\n            <label for=\"student-name\">Name:</label>\n            <input type=\"text\" name=\"student-name\" id=\"student-name\" />\n          </div>\n          <div class=\"info\">\n            <label for=\"student-email\">Email:</label>\n            <input type=\"email\" name=\"student-email\" id=\"student-email\" />\n          </div>\n          <div class=\"info\">\n            <label for=\"birth-date\">D.O.B.<span class=\"sr-only\">(Date of Birth)</span></label>\n            <input type=\"date\" name=\"birth-date\" id=\"birth-date\" />\n          </div>\n        </section>\n        <section role=\"region\" aria-labelledby=\"html-questions\">\n          <h2 id=\"html-questions\">HTML</h2>\n          <div class=\"question-block\">\n            <p>1</p>\n            <fieldset class=\"question\"></fieldset>\n          </div>\n          <div class=\"question-block\">\n            <p>2</p>\n            <fieldset class=\"question\"></fieldset>\n          </div>\n        </section>\n        <section role=\"region\" aria-labelledby=\"css-questions\">\n          <h2 id=\"css-questions\">CSS</h2>\n        </section>\n      </form>\n    </main>\n  </body>\n</html>\n"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}\n\nheader {\n  width: 100%;\n  height: 50px;\n  background-color: #1b1b32;\n  display: flex;\n}\n\n#logo {\n  width: max(100px, 18vw);\n  background-color: #0a0a23;\n  aspect-ratio: 35 / 4;\n  padding: 0.4rem;\n}\n\nh1 {\n  color: #f1be32;\n  font-size: min(5vw, 1.2em);\n}\n\nnav {\n  width: 50%;\n  max-width: 300px;\n  height: 50px;\n}\n\nnav > ul {\n  display: flex;\n  justify-content: space-evenly;\n}\n\nh1,\nh2 {\n  font-family: Verdana, Tahoma;\n}\n\nh2 {\n  border-bottom: 4px solid #dfdfe2;\n}\n\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border: 0;\n}\n",
+      "error": null,
+      "seed": "body {\n  background: #f5f6f7;\n  color: #1b1b32;\n  font-family: Helvetica;\n  margin: 0;\n}\n\nheader {\n  width: 100%;\n  height: 50px;\n  background-color: #1b1b32;\n  display: flex;\n}\n\n#logo {\n  width: max(100px, 18vw);\n  background-color: #0a0a23;\n  aspect-ratio: 35 / 4;\n  padding: 0.4rem;\n}\n\nh1 {\n  color: #f1be32;\n  font-size: min(5vw, 1.2em);\n}\n\nnav {\n  width: 50%;\n  max-width: 300px;\n  height: 50px;\n}\n\nnav > ul {\n  display: flex;\n  justify-content: space-evenly;\n}\n\nh1,\nh2 {\n  font-family: Verdana, Tahoma;\n}\n\nh2 {\n  border-bottom: 4px solid #dfdfe2;\n}\n\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border: 0;\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should nest one <code>legend</code> element within the first <code>fieldset</code> element.</p>",
+      "testString": "assert.equal(document.querySelectorAll('.question-block:nth-of-type(1) > fieldset > legend')?.length, 1);"
+    },
+    {
+      "text": "<p>You should nest one <code>ul</code> element within the first <code>fieldset</code> element.</p>",
+      "testString": "assert.equal(document.querySelectorAll('.question-block:nth-of-type(1) > fieldset > ul')?.length, 1);"
+    },
+    {
+      "text": "<p>You should nest two <code>li</code> elements within the first <code>ul</code> element.</p>",
+      "testString": "assert.equal(document.querySelectorAll('fieldset > ul')?.[0]?.querySelectorAll('li')?.length, 2);"
+    },
+    {
+      "text": "<p>You should nest one <code>legend</code> element within the second <code>fieldset</code> element.</p>",
+      "testString": "assert.equal(document.querySelectorAll('.question-block:nth-of-type(2) > fieldset > legend')?.length, 1);"
+    },
+    {
+      "text": "<p>You should nest one <code>ul</code> element within the second <code>fieldset</code> element.</p>",
+      "testString": "assert.equal(document.querySelectorAll('.question-block:nth-of-type(2) > fieldset > ul')?.length, 1);"
+    },
+    {
+      "text": "<p>You should nest two <code>li</code> elements within the second <code>ul</code> element.</p>",
+      "testString": "assert.equal(document.querySelectorAll('fieldset > ul')?.[1]?.querySelectorAll('li')?.length, 2);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Each <code>fieldset</code> will contain a true/false question.</p>\n<p>Within each <code>fieldset</code>, nest one <code>legend</code> element, and one <code>ul</code> element with two options.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-accessibility-by-building-a-quiz",
+  "hasEditableBoundaries": true,
+  "order": 8,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

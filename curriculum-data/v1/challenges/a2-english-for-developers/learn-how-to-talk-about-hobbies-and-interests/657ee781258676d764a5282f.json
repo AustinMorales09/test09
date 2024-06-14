@@ -1,0 +1,45 @@
+{
+  "id": "657ee781258676d764a5282f",
+  "title": "Task 53",
+  "challengeType": 19,
+  "dashedName": "task-53",
+  "solutions": [],
+  "question": {
+    "text": "<p>Define <code>sci-fi and fantasy</code>.</p>",
+    "answers": [
+      {
+        "answer": "<p>A genre solely focused on futuristic concepts.</p>",
+        "feedback": "<p>Incomplete or incorrect definition.</p>"
+      },
+      {
+        "answer": "<p>A genre encompassing stories set in realistic and everyday settings.</p>",
+        "feedback": "<p>Incomplete or incorrect definition.</p>"
+      },
+      {
+        "answer": "<p>Two closely related genres: science fiction and fantasy.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A genre focused on historical events and periods.</p>",
+        "feedback": "<p>Sci-fi and fantasy typically involve speculative elements rather than historical events.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Sci-fi and fantasy</code> refer to two distinct but closely related genres within the realm of speculative fiction.</p>\n<p><code>Science Fiction (Sci-Fi)</code> explores imaginative and futuristic concepts often grounded in scientific principles, technology, and the potential advancements of the future.</p>\n<p><code>Fantasy</code> encompasses stories set in worlds that diverge from reality, often featuring magical elements, mythical creatures, and supernatural phenomena.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-hobbies-and-interests",
+  "hasEditableBoundaries": false,
+  "order": 7,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 55,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

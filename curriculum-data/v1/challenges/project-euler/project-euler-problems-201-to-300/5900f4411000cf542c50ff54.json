@@ -1,0 +1,65 @@
+{
+  "id": "5900f4411000cf542c50ff54",
+  "title": "Problem 213: Flea Circus",
+  "challengeType": 1,
+  "forumTopicId": 301855,
+  "dashedName": "problem-213-flea-circus",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function fleaCircus() {\n\n  return true;\n}\n\nfleaCircus();",
+      "error": null,
+      "seed": "function fleaCircus() {\n\n  return true;\n}\n\nfleaCircus();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>fleaCircus()</code> should return <code>330.721154</code>.</p>",
+      "testString": "assert.strictEqual(fleaCircus(), 330.721154);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A 30×30 grid of squares contains 900 fleas, initially one flea per square.</p>\n<p>When a bell is rung, each flea jumps to an adjacent square at random (usually 4 possibilities, except for fleas on the edge of the grid or at the corners).</p>\n<p>What is the expected number of unoccupied squares after 50 rings of the bell? Give your answer rounded to six decimal places.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-201-to-300",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 12,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

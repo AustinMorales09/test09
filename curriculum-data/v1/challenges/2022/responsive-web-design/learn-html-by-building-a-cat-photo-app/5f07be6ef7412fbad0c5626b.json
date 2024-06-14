@@ -1,0 +1,65 @@
+{
+  "id": "5f07be6ef7412fbad0c5626b",
+  "title": "Step 16",
+  "challengeType": 0,
+  "dashedName": "step-16",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        12
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n      <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<html>\n  <body>\n    <main>\n      <h1>CatPhotoApp</h1>\n\n      <h2>Cat Photos</h2>\n      <!-- TODO: Add link to cat photos -->\n      <p>See more <a target=\"_blank\" href=\"https://freecatphotoapp.com\">cat photos</a> in our gallery.</p>\n      <a href=\"https://freecatphotoapp.com\"><img src=\"https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg\" alt=\"A cute orange cat lying on its back.\"></a>\n\n    </main>\n  </body>\n</html>"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your <code>section</code> element should have an opening tag. Opening tags have the following syntax: <code>&#x3C;elementName></code>.</p>",
+      "testString": "assert(document.querySelector('section'));"
+    },
+    {
+      "text": "<p>Your <code>section</code> element should have a closing tag. Closing tags have a <code>/</code> just after the <code>&#x3C;</code> character.</p>",
+      "testString": "assert(code.match(/<\\/section\\s*>/i));"
+    },
+    {
+      "text": "<p>The entire <code>section</code> element should be between the opening and closing tags of the <code>main</code> element.</p>",
+      "testString": "assert(document.querySelector('section').parentNode.nodeName === 'MAIN');"
+    },
+    {
+      "text": "<p>The existing <code>h2</code>, comment, <code>p</code> element, and anchor (<code>a</code>) element should be between the opening and closing tags of the <code>section</code> element.</p>",
+      "testString": "const childrenOfSection = [...document.querySelector('section').childNodes];\nconst foundElements = childrenOfSection.filter((child) => {\n  return ['H2', 'A', 'P'].includes(child.nodeName);\n});\nassert(foundElements.length === 3);"
+    },
+    {
+      "text": "<p>The <code>h1</code> element should not be nested in the <code>section</code> element.</p>",
+      "testString": "const childrenOfSection = [...document.querySelector('section').childNodes];\nconst includesH1 = childrenOfSection.some((child) => child.nodeName === 'H1');\nassert.isFalse(includesH1);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Before adding any new content, you should make use of a <code>section</code> element to separate the cat photos content from the future content.</p>\n<p>The <code>section</code> element is used to define sections in a document, such as chapters, headers, footers, or any other sections of the document. It is a semantic element that helps with SEO and accessibility.</p>\n<pre><code class=\"language-html\">&#x3C;section>\n  &#x3C;h2>Section Title&#x3C;/h2>\n  &#x3C;p>Section content...&#x3C;/p>\n&#x3C;/section>\n</code></pre>\n<p>Take your <code>h2</code>, comment, <code>p</code>, and anchor (<code>a</code>) elements and nest them in a <code>section</code> element.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-by-building-a-cat-photo-app",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

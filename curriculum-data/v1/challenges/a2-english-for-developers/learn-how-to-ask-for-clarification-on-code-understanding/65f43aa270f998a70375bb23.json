@@ -1,0 +1,75 @@
+{
+  "id": "65f43aa270f998a70375bb23",
+  "title": "Task 13",
+  "challengeType": 22,
+  "dashedName": "task-13",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>We should be able to _ out what's going wrong.</p>",
+    "blanks": [
+      {
+        "answer": "figure",
+        "feedback": "<p>It refers to understanding or solving the issue with the code.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 25.02,
+        "finishTimestamp": 26.96
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sarah",
+        "startTime": 1,
+        "finishTime": 2.84,
+        "dialogue": {
+          "text": "We should be able to figure out what's going wrong.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 3.34
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>To <code>figure out</code> something means to understand or find a solution to a problem, often after some thought or investigation.</p>\n<p>For example, <code>I need to figure out how to fix this bug</code> means the speaker is planning to think about or investigate how to solve this bug.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

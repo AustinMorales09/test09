@@ -1,0 +1,49 @@
+{
+  "id": "660f2a70ad6225fa503e71c3",
+  "title": "Step 45",
+  "challengeType": 1,
+  "dashedName": "step-45",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        4,
+        8
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);",
+      "error": null,
+      "seed": "const character = \"#\";\nconst count = 8;\nconst rows = [];\n\nfor (let i = 0; i < count; i = i + 1) {\n  rows.push(character.repeat(i))\n}\n\nlet result = \"\"\n\nfor (const row of rows) {\n  result = result + \"\\n\" + row;\n}\n\nconsole.log(result);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should add <code>1</code> to <code>i</code> in your <code>.repeat()</code> method.</p>",
+      "testString": "assert.match(code, /character\\.repeat\\(\\s*i\\s*\\+\\s*1\\s*\\)/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>You're getting closer! At this point, you're encountering what's known as an <dfn>off-by-one error</dfn>, a frequent problem in zero-based indexing languages like JavaScript.</p>\n<p>The first index of your <code>rows</code> array is <code>0</code>, which is why you start your <code>for</code> loop with <code>i = 0</code>. But repeating a string zero times results in nothing to print.</p>\n<p>To fix this, add <code>1</code> to the value of <code>i</code> in your <code>.repeat()</code> call. Do not assign it back to <code>i</code> like you did in your loop conditions.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 44,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

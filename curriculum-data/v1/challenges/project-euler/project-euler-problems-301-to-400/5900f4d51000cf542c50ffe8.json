@@ -1,0 +1,65 @@
+{
+  "id": "5900f4d51000cf542c50ffe8",
+  "title": "Problem 361: Subsequence of Thue-Morse sequence",
+  "challengeType": 1,
+  "forumTopicId": 302022,
+  "dashedName": "problem-361-subsequence-of-thue-morse-sequence",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function subsequenceOfThueMorseSequence() {\n\n  return true;\n}\n\nsubsequenceOfThueMorseSequence();",
+      "error": null,
+      "seed": "function subsequenceOfThueMorseSequence() {\n\n  return true;\n}\n\nsubsequenceOfThueMorseSequence();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>subsequenceOfThueMorseSequence()</code> should return <code>178476944</code>.</p>",
+      "testString": "assert.strictEqual(subsequenceOfThueMorseSequence(), 178476944);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The Thue-Morse sequence $\\{T_n\\}$ is a binary sequence satisfying:</p>\n<ul>\n<li>$T_0 = 0$</li>\n<li>$T_{2n} = T_n$</li>\n<li>$T_{2n + 1} = 1 - T_n$</li>\n</ul>\n<p>The first several terms of $\\{T_n\\}$ are given as follows: $01101001\\color{red}{10010}1101001011001101001\\ldots$.</p>\n<p>We define $\\{A_n\\}$ as the sorted sequence of integers such that the binary expression of each element appears as a subsequence in $\\{T_n\\}$. For example, the decimal number 18 is expressed as 10010 in binary. 10010 appears in $\\{T_n\\}$ ($T_8$ to $T_{12}$), so 18 is an element of $\\{A_n\\}$. The decimal number 14 is expressed as 1110 in binary. 1110 never appears in $\\{T_n\\}$, so 14 is not an element of $\\{A_n\\}$.</p>\n<p>The first several terms of $A_n$ are given as follows:</p>\n<p>$$\\begin{array}{cr}\nn   &#x26; 0 &#x26; 1 &#x26; 2 &#x26; 3 &#x26; 4 &#x26; 5 &#x26; 6 &#x26; 7 &#x26;  8 &#x26;  9 &#x26; 10 &#x26; 11 &#x26; 12 &#x26; \\ldots \\\\\nA_n &#x26; 0 &#x26; 1 &#x26; 2 &#x26; 3 &#x26; 4 &#x26; 5 &#x26; 6 &#x26; 9 &#x26; 10 &#x26; 11 &#x26; 12 &#x26; 13 &#x26; 18 &#x26; \\ldots\n\\end{array}$$</p>\n<p>We can also verify that $A_{100} = 3251$ and $A_{1000} = 80\\,852\\,364\\,498$.</p>\n<p>Find the last 9 digits of $\\displaystyle\\sum_{k = 1}^{18} A_{{10}^k}$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-301-to-400",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 60,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

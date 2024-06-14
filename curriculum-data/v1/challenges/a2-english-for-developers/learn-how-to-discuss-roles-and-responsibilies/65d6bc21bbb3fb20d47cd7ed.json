@@ -1,0 +1,79 @@
+{
+  "id": "65d6bc21bbb3fb20d47cd7ed",
+  "title": "Task 42",
+  "challengeType": 22,
+  "dashedName": "task-42",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I don't really know her, to be honest. What's _ _?</p>",
+    "blanks": [
+      {
+        "answer": "her",
+        "feedback": "<p>This word shows Tom is talking about a female person's job or part in something.</p>"
+      },
+      {
+        "answer": "role",
+        "feedback": "<p>This word means the job or position someone has in a situation.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 15.98,
+        "finishTimestamp": 18.96
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.98,
+        "dialogue": {
+          "text": "I don't really know much about her to be honest. What's her role?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.48
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Asking <code>What's her role?</code> is a way to find out about someone's job or position in a group or project. <code>Role</code> means the part or job someone does in a particular situation. For example, if someone's <code>role</code> at a school is a teacher, it means their job is to teach students.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

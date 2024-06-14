@@ -1,0 +1,88 @@
+{
+  "id": "657e1fd7b5ffaebc0ff4bd9f",
+  "title": "Task 26",
+  "challengeType": 19,
+  "dashedName": "task-26",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is Tom thanking Sophie?</p>",
+    "answers": [
+      {
+        "answer": "<p>For giving him a time management app.</p>",
+        "feedback": "<p>Tom is thanking Sophie for tips, not for giving her an app.</p>"
+      },
+      {
+        "answer": "<p>Because he finds Sophie's tips helpful.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>For inviting him to lunch.</p>",
+        "feedback": "<p>The thank you is for the advice, not for a lunch invitation.</p>"
+      },
+      {
+        "answer": "<p>For helping him with a project.</p>",
+        "feedback": "<p>Tom's gratitude is related to the tips about organization, not specific project help.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 58.29,
+        "finishTimestamp": 63
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.71,
+        "dialogue": {
+          "text": "Thanks for sharing, Sophie. I want to get more organized and your tips are a great help to me.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 6.21
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Listen to the audio and answer the question below.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

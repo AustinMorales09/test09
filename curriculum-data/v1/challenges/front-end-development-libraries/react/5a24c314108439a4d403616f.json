@@ -1,0 +1,90 @@
+{
+  "id": "5a24c314108439a4d403616f",
+  "title": "Review Using Props with Stateless Functional Components",
+  "challengeType": 6,
+  "forumTopicId": 301411,
+  "dashedName": "review-using-props-with-stateless-functional-components",
+  "challengeFiles": [
+    {
+      "head": "var PropTypes = {\n   string: { isRequired: true }\n};",
+      "tail": "ReactDOM.render(<CampSite />, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "class CampSite extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <div>\n        <Camper/>\n      </div>\n    );\n  }\n};\n// Change code below this line",
+      "error": null,
+      "seed": "class CampSite extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <div>\n        <Camper/>\n      </div>\n    );\n  }\n};\n// Change code below this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "class CampSite extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <div>\n        <Camper/>\n      </div>\n    );\n  }\n};\n// Change code below this line\n\nconst Camper = (props) => {\n   return (\n     <div>\n       <p>{props.name}</p>\n     </div>\n   );\n};\n\nCamper.propTypes = {\n  name: PropTypes.string.isRequired\n};\n\nCamper.defaultProps = {\n  name: 'CamperBot'\n};",
+        "error": null,
+        "seed": "class CampSite extends React.Component {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return (\n      <div>\n        <Camper/>\n      </div>\n    );\n  }\n};\n// Change code below this line\n\nconst Camper = (props) => {\n   return (\n     <div>\n       <p>{props.name}</p>\n     </div>\n   );\n};\n\nCamper.propTypes = {\n  name: PropTypes.string.isRequired\n};\n\nCamper.defaultProps = {\n  name: 'CamperBot'\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>CampSite</code> component should render.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(CampSite));\n    return mockedComponent.find('CampSite').length === 1;\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>Camper</code> component should render.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(CampSite));\n    return mockedComponent.find('Camper').length === 1;\n  })()\n);"
+    },
+    {
+      "text": "<p>The <code>Camper</code> component should include default props which assign the string <code>CamperBot</code> to the key <code>name</code>.</p>",
+      "testString": "assert(\n  /Camper.defaultProps={name:(['\"`])CamperBot\\1,?}/.test(\n    __helpers.removeWhiteSpace(code)\n  )\n);"
+    },
+    {
+      "text": "<p>The <code>Camper</code> component should include prop types which require the <code>name</code> prop to be of type <code>string</code>.</p>",
+      "testString": "assert(\n  /Camper.propTypes={name:PropTypes.string.isRequired,?}/.test(\n    __helpers.removeWhiteSpace(code)\n  )\n);"
+    },
+    {
+      "text": "<p>The <code>Camper</code> component should contain a <code>p</code> element with only the text from the <code>name</code> prop.</p>",
+      "testString": "assert(\n  (function () {\n    const mockedComponent = Enzyme.mount(React.createElement(CampSite));\n    return (\n      mockedComponent.find('p').text() ===\n      mockedComponent.find('Camper').props().name\n    );\n  })()\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Except for the last challenge, you've been passing props to stateless functional components. These components act like pure functions. They accept props as input and return the same view every time they are passed the same props. You may be wondering what state is, and the next challenge will cover it in more detail. Before that, here's a review of the terminology for components.</p>\n<p>A <em>stateless functional component</em> is any function you write which accepts props and returns JSX. A <em>stateless component</em>, on the other hand, is a class that extends <code>React.Component</code>, but does not use internal state (covered in the next challenge). Finally, a <em>stateful component</em> is a class component that does maintain its own internal state. You may see stateful components referred to simply as components or React components.</p>\n<p>A common pattern is to try to minimize statefulness and to create stateless functional components wherever possible. This helps contain your state management to a specific area of your application. In turn, this improves development and maintenance of your app by making it easier to follow how changes to state affect its behavior.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The code editor has a <code>CampSite</code> component that renders a <code>Camper</code> component as a child. Define the <code>Camper</code> component and assign it default props of <code>{ name: 'CamperBot' }</code>. Inside the <code>Camper</code> component, render any code that you want, but make sure to have one <code>p</code> element that includes only the <code>name</code> value that is passed in as a <code>prop</code>. Finally, define <code>propTypes</code> on the <code>Camper</code> component to require <code>name</code> to be provided as a prop and verify that it is of type <code>string</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 19,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

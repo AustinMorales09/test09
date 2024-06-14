@@ -1,0 +1,71 @@
+{
+  "id": "56592a60ddddeae28f7aa8e1",
+  "title": "Access Multi-Dimensional Arrays With Indexes",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/ckND4Cq",
+  "forumTopicId": 16159,
+  "dashedName": "access-multi-dimensional-arrays-with-indexes",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "if(typeof myArray !== \"undefined\"){(function(){return \"myData: \" + myData + \" myArray: \" + JSON.stringify(myArray);})();}",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const myArray = [\n  [1, 2, 3],\n  [4, 5, 6],\n  [7, 8, 9],\n  [[10, 11, 12], 13, 14],\n];\n\nconst myData = myArray[0][0];",
+      "error": null,
+      "seed": "const myArray = [\n  [1, 2, 3],\n  [4, 5, 6],\n  [7, 8, 9],\n  [[10, 11, 12], 13, 14],\n];\n\nconst myData = myArray[0][0];"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "const myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 14]];\nconst myData = myArray[2][1];",
+        "error": null,
+        "seed": "const myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 14]];\nconst myData = myArray[2][1];"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>myData</code> should be equal to <code>8</code>.</p>",
+      "testString": "assert(myData === 8);"
+    },
+    {
+      "text": "<p>You should be using bracket notation to read the correct value from <code>myArray</code>.</p>",
+      "testString": "assert(/myData=myArray\\[2\\]\\[1\\]/.test(__helpers.removeWhiteSpace(__helpers.removeJSComments(code))));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>One way to think of a <dfn>multi-dimensional</dfn> array, is as an <em>array of arrays</em>. When you use brackets to access your array, the first set of brackets refers to the entries in the outermost (the first level) array, and each additional pair of brackets refers to the next level of entries inside.</p>\n<p><strong>Example</strong></p>\n<pre><code class=\"language-js\">const arr = [\n  [1, 2, 3],\n  [4, 5, 6],\n  [7, 8, 9],\n  [[10, 11, 12], 13, 14]\n];\n\nconst subarray = arr[3];\nconst nestedSubarray = arr[3][0];\nconst element = arr[3][0][1];\n</code></pre>\n<p>In this example, <code>subarray</code> has the value <code>[[10, 11, 12], 13, 14]</code>,\n<code>nestedSubarray</code> has the value <code>[10, 11, 12]</code>,   and <code>element</code> has the value <code>11</code> .</p>\n<p><strong>Note:</strong> There shouldn't be any spaces between the array name and the square brackets, like <code>array [0][0]</code> and even this <code>array [0] [0]</code> is not allowed. Although JavaScript is able to process this correctly, this may confuse other programmers reading your code.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Using bracket notation select an element from <code>myArray</code> such that <code>myData</code> is equal to <code>8</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 42,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,49 @@
+{
+  "id": "6606a4641ec48b3a9fe8c2fc",
+  "title": "Step 15",
+  "challengeType": 20,
+  "dashedName": "step-15",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        3,
+        6
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    def __init__(self, board):\n        self.board = board\n    def find_empty_cell(self):\n        pass\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)",
+      "error": null,
+      "seed": "class Board:\n    def __init__(self, board):\n        self.board = board\n    def find_empty_cell(self):\n        pass\npuzzle = [\n  [0, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should replace <code>pass</code> with a <code>for</code> loop that iterates over <code>enumerate(self.board)</code>. Use <code>row</code> and <code>contents</code> as the loop variables.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_class(\"Board\").find_function(\"find_empty_cell\").find_body().is_equivalent(\"for row, contents in enumerate(self.board):\\\\n  pass\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The <code>enumerate</code> built-in function takes an iterable as its argument and returns an enumerate object you can iterate over.\nIt provides the count (which by default starts at zero) and the value from the iterable.</p>\n<pre><code class=\"language-py\">iterable = ['a', 'b', 'c']\nfor i, j in enumerate(iterable):\n    print(i, j)\n</code></pre>\n<p>The loop from the example above would output the tuples <code>0, a</code>, <code>1, b</code>, and <code>2, c</code>.</p>\n<p>Inside the <code>find_empty_cell</code> method, replace <code>pass</code> with a <code>for</code> loop that uses the <code>enumerate()</code> function to iterate over each row in the sudoku board. Use <code>row</code> as the index of the current row and <code>contents</code> for the elements of the current row.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

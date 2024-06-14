@@ -1,0 +1,88 @@
+{
+  "id": "657cbb578ed7f5a52420d274",
+  "title": "Task 45",
+  "challengeType": 19,
+  "dashedName": "task-45",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which adjective describes someone who takes action and initiates change?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>proactive</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>inactive</code></p>",
+        "feedback": "<p>This means not doing anything; not active.</p>"
+      },
+      {
+        "answer": "<p><code>reactive</code></p>",
+        "feedback": "<p>This is the opposite of proactive; it means waiting for things to happen before responding.</p>"
+      },
+      {
+        "answer": "<p><code>passive</code></p>",
+        "feedback": "<p>A passive person allows things to happen or who accepts things without active response or resistance.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 5.36,
+        "finishTimestamp": 8.24
+      }
+    },
+    "commands": [
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Sophie",
+        "startTime": 1,
+        "finishTime": 3.88,
+        "dialogue": {
+          "text": "Well, she's very proactive and she likes everything in order.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 4.38
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When you want to describe someone's personality, you often use adjectives, which are words that describe or give more information about a noun or pronoun. In the dialogue, Sophie uses adjectives like <code>proactive</code> to describe Maria's personality.</p>\n<p><code>Proactive</code> means taking action by causing change and not only reacting to change when it happens.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 47,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

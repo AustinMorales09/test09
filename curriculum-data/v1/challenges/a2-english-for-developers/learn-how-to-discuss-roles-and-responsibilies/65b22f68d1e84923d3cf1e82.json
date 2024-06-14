@@ -1,0 +1,83 @@
+{
+  "id": "65b22f68d1e84923d3cf1e82",
+  "title": "Task 5",
+  "challengeType": 22,
+  "dashedName": "task-5",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>She's now _ _ _ the HR department.</p>",
+    "blanks": [
+      {
+        "answer": "in",
+        "feedback": "<p>It begins the phrase that indicates responsibility or leadership.</p>"
+      },
+      {
+        "answer": "charge",
+        "feedback": "<p>It's the part of the phrase that conveys having control or authority.</p>"
+      },
+      {
+        "answer": "of",
+        "feedback": "<p>The word connects <code>in charge</code> with what or whom one is responsible for.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 2,
+        "finishTimestamp": 3.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 2.9,
+        "dialogue": {
+          "text": "She's now in charge of the HR department.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 3.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The phrase <code>in charge of</code> means being responsible for something or someone, leading or managing it/them. It's used when talking about the person who has control or authority over a particular area, project, or group.</p>\n<p>For example, <code>Tom is in charge of this project.</code> This means Tom has the responsibility and authority to plan and manage everything related to the project.</p>\n<p>The <code>HR department</code> stands for <code>Human Resources department</code>. It's a part of a company that takes care of everything related to the people who work there. This includes hiring new employees, training them, making sure they are paid, and helping with any problems they might have at work. For instance, if you have a question about your holiday time, you would go to the <code>HR department</code> to ask.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-roles-and-responsibilies",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 5,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

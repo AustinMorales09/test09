@@ -1,0 +1,45 @@
+{
+  "id": "6570447ee7b02272663824e2",
+  "title": "Learn Block and Inline Question D",
+  "challengeType": 15,
+  "dashedName": "learn-block-and-inline-question-d",
+  "solutions": [],
+  "question": {
+    "text": "<p>How does <code>margin-top</code> affect <code>inline</code> elements?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>margin-top</code> has no impact on the layout of <code>inline</code> elements</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>margin-top</code> increases the height of <code>inline</code> elements.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>margin-top</code> adds space above the <code>inline</code> element.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>margin-top</code> only affects the horizontal spacing of <code>inline</code> elements.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Now that you have a basic understanding on how adding width and height to <code>inline</code> elements works, what happens when you add a top margin to an <code>inline</code> element?</p>\n</section>",
+  "translationPending": false,
+  "block": "top-learn-block-and-inline",
+  "hasEditableBoundaries": false,
+  "order": 8,
+  "superOrder": 14,
+  "certification": "the-odin-project",
+  "superBlock": "the-odin-project",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "Odin",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

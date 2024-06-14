@@ -1,0 +1,49 @@
+{
+  "id": "65b7d25992879698180e6a71",
+  "title": "Step 11",
+  "challengeType": 20,
+  "dashedName": "step-11",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        10
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\ncopper['food'] = 'hay'\ncopper['species'] = 'Cavia porcellus'\n\nfor i in copper.values():\n    print(i)",
+      "error": null,
+      "seed": "copper = {\n    'species': 'guinea pig',\n    'age': 2\n}\ncopper['food'] = 'hay'\ncopper['species'] = 'Cavia porcellus'\n\nfor i in copper.values():\n    print(i)"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should mmodify your <code>for</code> loop to iterate over <code>copper.items()</code> instead of <code>copper.values()</code>.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_for_loops()[0].find_for_iter().is_equivalent(\"copper.items()\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Finally, if you want to be able to go through the key-value pairs, you can use the <code>.items()</code> method.</p>\n<p>Modify your <code>for</code> loop to iterate over <code>copper.items()</code> instead of <code>copper.values()</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-algorithm-design-by-building-a-shortest-path-algorithm",
+  "hasEditableBoundaries": true,
+  "order": 7,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

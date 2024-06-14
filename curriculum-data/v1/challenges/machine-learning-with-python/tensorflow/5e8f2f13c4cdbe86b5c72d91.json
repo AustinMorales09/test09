@@ -1,0 +1,46 @@
+{
+  "id": "5e8f2f13c4cdbe86b5c72d91",
+  "title": "Core Learning Algorithms: Using Probabilities to make Predictions",
+  "challengeType": 11,
+  "videoId": "fYAYvLUawnc",
+  "bilibiliIds": {
+    "aid": 763245369,
+    "bvid": "BV1B64y187gE",
+    "cid": 414731624
+  },
+  "dashedName": "core-learning-algorithms-using-probabilities-to-make-predictions",
+  "solutions": [],
+  "question": {
+    "text": "<p>What TensorFlow module should you import to implement <code>.HiddenMarkovModel()</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>tensorflow.keras</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>tensorflow_gpu</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>tensorflow_probability</code></p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "tensorflow",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 10,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

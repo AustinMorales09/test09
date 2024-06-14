@@ -1,0 +1,45 @@
+{
+  "id": "662efc55d552e72591518e31",
+  "title": "Task 42",
+  "challengeType": 19,
+  "dashedName": "task-42",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>function</code> mean in a programming context?</p>",
+    "answers": [
+      {
+        "answer": "<p>It is the title of a program.</p>",
+        "feedback": "<p>A <code>function</code> is not the title but a part of the code designed to perform specific operations.</p>"
+      },
+      {
+        "answer": "<p>It is a reusable block of code that performs a specific task.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>It refers to a special type of variable.</p>",
+        "feedback": "<p>While <code>functions</code> can interact with variables, they are not variables themselves but sets of instructions.</p>"
+      },
+      {
+        "answer": "<p>It is the main software that runs on a computer.</p>",
+        "feedback": "<p>A <code>function</code> is a component of software, not the entire software system.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>function</code> is a set of instructions that perform a specific task. <code>Functions</code> can make code more organized, reusable, and easier to read. For example, a <code>function</code> might calculate the sum of two numbers or display a message to the user.</p>\n<p>Think of a <code>function</code> as a small machine in a factory; you give it some input, it does something with that input, and then it gives you an output.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-basic-programming-vocabulary-in-conversations",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

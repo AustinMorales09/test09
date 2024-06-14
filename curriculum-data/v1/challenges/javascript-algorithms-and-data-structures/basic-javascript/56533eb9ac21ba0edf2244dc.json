@@ -1,0 +1,115 @@
+{
+  "id": "56533eb9ac21ba0edf2244dc",
+  "title": "Chaining If Else Statements",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/caeJgsw",
+  "forumTopicId": 16772,
+  "dashedName": "chaining-if-else-statements",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function testSize(num) {\n  // Only change code below this line\n\n\n  return \"Change Me\";\n  // Only change code above this line\n}\n\ntestSize(7);",
+      "error": null,
+      "seed": "function testSize(num) {\n  // Only change code below this line\n\n\n  return \"Change Me\";\n  // Only change code above this line\n}\n\ntestSize(7);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function testSize(num) {\n  if (num < 5) {\n    return \"Tiny\";\n  } else if (num < 10) {\n    return \"Small\";\n  } else if (num < 15) {\n    return \"Medium\";\n  } else if (num < 20) {\n    return \"Large\";\n  } else {\n    return \"Huge\";\n  }\n}",
+        "error": null,
+        "seed": "function testSize(num) {\n  if (num < 5) {\n    return \"Tiny\";\n  } else if (num < 10) {\n    return \"Small\";\n  } else if (num < 15) {\n    return \"Medium\";\n  } else if (num < 20) {\n    return \"Large\";\n  } else {\n    return \"Huge\";\n  }\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have at least four <code>else</code> statements</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/else/g).length > 3);"
+    },
+    {
+      "text": "<p>You should have at least four <code>if</code> statements</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/if/g).length > 3);"
+    },
+    {
+      "text": "<p>You should have at least one <code>return</code> statement</p>",
+      "testString": "assert(__helpers.removeJSComments(code).match(/return/g).length >= 1);"
+    },
+    {
+      "text": "<p><code>testSize(0)</code> should return the string <code>Tiny</code></p>",
+      "testString": "assert(testSize(0) === 'Tiny');"
+    },
+    {
+      "text": "<p><code>testSize(4)</code> should return the string <code>Tiny</code></p>",
+      "testString": "assert(testSize(4) === 'Tiny');"
+    },
+    {
+      "text": "<p><code>testSize(5)</code> should return the string <code>Small</code></p>",
+      "testString": "assert(testSize(5) === 'Small');"
+    },
+    {
+      "text": "<p><code>testSize(8)</code> should return the string <code>Small</code></p>",
+      "testString": "assert(testSize(8) === 'Small');"
+    },
+    {
+      "text": "<p><code>testSize(10)</code> should return the string <code>Medium</code></p>",
+      "testString": "assert(testSize(10) === 'Medium');"
+    },
+    {
+      "text": "<p><code>testSize(14)</code> should return the string <code>Medium</code></p>",
+      "testString": "assert(testSize(14) === 'Medium');"
+    },
+    {
+      "text": "<p><code>testSize(15)</code> should return the string <code>Large</code></p>",
+      "testString": "assert(testSize(15) === 'Large');"
+    },
+    {
+      "text": "<p><code>testSize(17)</code> should return the string <code>Large</code></p>",
+      "testString": "assert(testSize(17) === 'Large');"
+    },
+    {
+      "text": "<p><code>testSize(20)</code> should return the string <code>Huge</code></p>",
+      "testString": "assert(testSize(20) === 'Huge');"
+    },
+    {
+      "text": "<p><code>testSize(25)</code> should return the string <code>Huge</code></p>",
+      "testString": "assert(testSize(25) === 'Huge');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><code>if/else</code> statements can be chained together for complex logic. Here is <dfn>pseudocode</dfn> of multiple chained <code>if</code> / <code>else if</code> statements:</p>\n<pre><code class=\"language-js\">if (condition1) {\n  statement1\n} else if (condition2) {\n  statement2\n} else if (condition3) {\n  statement3\n. . .\n} else {\n  statementN\n}\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write chained <code>if</code>/<code>else if</code> statements to fulfill the following conditions:</p>\n<p><code>num &#x3C; 5</code> - return <code>Tiny</code><br>\n<code>num &#x3C; 10</code> - return <code>Small</code><br>\n<code>num &#x3C; 15</code> - return <code>Medium</code><br>\n<code>num &#x3C; 20</code> - return <code>Large</code><br>\n<code>num >= 20</code> - return <code>Huge</code></p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 73,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

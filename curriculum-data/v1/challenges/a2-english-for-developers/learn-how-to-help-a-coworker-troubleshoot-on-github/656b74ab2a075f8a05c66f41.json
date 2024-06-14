@@ -1,0 +1,75 @@
+{
+  "id": "656b74ab2a075f8a05c66f41",
+  "title": "Task 2",
+  "challengeType": 22,
+  "dashedName": "task-2",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>I think we should _ an issue on GitHub.</p>",
+    "blanks": [
+      {
+        "answer": "open",
+        "feedback": "<p>To <code>open an issue</code> means to start a report or discussion about a specific problem.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Bob",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.1-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 4.54,
+        "finishTimestamp": 6.84
+      }
+    },
+    "commands": [
+      {
+        "character": "Bob",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Bob",
+        "startTime": 1,
+        "finishTime": 3.3,
+        "dialogue": {
+          "text": "I think we should open an issue on GitHub.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Bob",
+        "opacity": 0,
+        "startTime": 3.8
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In the context of software development, to <code>open an issue</code> on platforms like GitHub means to create a report about a problem or a request for enhancement in a project.</p>\n<p>It's like telling the team, \"Here's something we need to look at or fix.\"</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-help-a-coworker-troubleshoot-on-github",
+  "hasEditableBoundaries": false,
+  "order": 15,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

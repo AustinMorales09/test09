@@ -1,0 +1,88 @@
+{
+  "id": "66415e9aa33e7054cc3da761",
+  "title": "Task 77",
+  "challengeType": 19,
+  "dashedName": "task-77",
+  "solutions": [],
+  "question": {
+    "text": "<p>Why is Maria confirming the information with Bob?</p>",
+    "answers": [
+      {
+        "answer": "<p>Because she doesn't eat chicken</p>",
+        "feedback": "<p>The <code>gathering</code> will join all the team together. This is not about Maria's preferences.</p>"
+      },
+      {
+        "answer": "<p>Because it's a small event. She thinks <code>20 pounds of chicken wings</code> would be too much for it</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Because she thinks there won't be food for everybody</p>",
+        "feedback": "<p>On the contrary, she thinks it's a small <code>gathering</code>, so it would be food in excess.</p>"
+      },
+      {
+        "answer": "<p>Because she thinks Bob is strange</p>",
+        "feedback": "<p>Her comment is not about Bob, but about a misunderstanding.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-boardroom.png",
+      "characters": [
+        {
+          "character": "Maria",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.76,
+        "finishTimestamp": 20.1
+      }
+    },
+    "commands": [
+      {
+        "character": "Maria",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 6.34,
+        "dialogue": {
+          "text": "That's strange. I'm sure we decided on 10 pounds because it's a small gathering. Are you sure it's 20 pounds?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Maria",
+        "opacity": 0,
+        "startTime": 6.84
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>gathering</code> is when people come together for a purpose or event. For example, a <code>family gathering</code> is when family members meet to spend time together. It means a group of people meeting in one place.</p>\n<p>Just as in the phrase <code>I'm sure</code>, asking <code>Are you sure?</code> means you are asking someone if they are really confident that something is true. For example, if your friend says the store is open and you want to be certain, you may ask, <code>Are you sure?</code> It means you want to know if they are confident and have no doubt about it.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 81,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "5d822fd413a79914d39e98d7",
+  "title": "Step 15",
+  "challengeType": 0,
+  "dashedName": "step-15",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />   \n  </head>\n\n  <body>\n    <div class=\"background-buildings\">\n      <div class=\"bb1\">\n        <div class=\"bb1a\"></div>\n        <div class=\"bb1b\"></div>\n        <div class=\"bb1c\"></div>\n        <div class=\"bb1d\"></div>\n      </div>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">    \n  <head>\n    <meta charset=\"UTF-8\">\n    <title>City Skyline</title>\n    <link href=\"styles.css\" rel=\"stylesheet\" />   \n  </head>\n\n  <body>\n    <div class=\"background-buildings\">\n      <div class=\"bb1\">\n        <div class=\"bb1a\"></div>\n        <div class=\"bb1b\"></div>\n        <div class=\"bb1c\"></div>\n        <div class=\"bb1d\"></div>\n      </div>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        24,
+        29
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  margin: 0;\n  overflow: hidden;\n}\n\n.background-buildings {\n  width: 100%;\n  height: 100%;\n}\n\n.bb1 {\n  width: 10%;\n  height: 70%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  --building-color1: #999;\n}\n.bb1a {\n  width: 70%;\n  height: 10%;\n}\n.bb1b {\n  width: 80%;\n  height: 10%;\n}\n\n.bb1c {\n  width: 90%;\n  height: 10%;\n}\n\n.bb1d {\n  width: 100%;\n  height: 70%;\n}\n    ",
+      "error": null,
+      "seed": "* {\n  border: 1px solid black;\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100vh;\n  margin: 0;\n  overflow: hidden;\n}\n\n.background-buildings {\n  width: 100%;\n  height: 100%;\n}\n\n.bb1 {\n  width: 10%;\n  height: 70%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  --building-color1: #999;\n}\n.bb1a {\n  width: 70%;\n  height: 10%;\n}\n.bb1b {\n  width: 80%;\n  height: 10%;\n}\n\n.bb1c {\n  width: 90%;\n  height: 10%;\n}\n\n.bb1d {\n  width: 100%;\n  height: 70%;\n}\n    "
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The <code>background-color</code> of the <code>.bb1a</code> element should be set.</p>",
+      "testString": "assert.exists(new __helpers.CSSHelp(document).getStyle('.bb1a')?.backgroundColor)"
+    },
+    {
+      "text": "<p>You should use <code>var(--building-color1)</code> to set the <code>background-color</code> of the <code>.bb1a</code> element.</p>",
+      "testString": "assert.equal(new __helpers.CSSHelp(document).getStyle('.bb1a')?.getPropVal('background-color', true), 'var(--building-color1)');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>To use a variable, put the variable name in parentheses with <code>var</code> in front of them like this: <code>var(--variable-name)</code>. Whatever value you gave the variable will be applied to whatever property you use it on.</p>\n<p>Add the variable <code>--building-color1</code> you created in the previous step as the value of the <code>background-color</code> property of the <code>.bb1a</code> class.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-css-variables-by-building-a-city-skyline",
+  "hasEditableBoundaries": true,
+  "order": 14,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

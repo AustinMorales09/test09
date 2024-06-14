@@ -1,0 +1,109 @@
+{
+  "id": "60fad1cafcde010995e15306",
+  "title": "Step 42",
+  "challengeType": 0,
+  "dashedName": "step-42",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        11,
+        42
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Registration Form</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Registration Form</h1>\n    <p>Please fill out this form with the required information</p>\n    <form method=\"post\" action='https://register-demo.freecodecamp.org'>\n        <fieldset>\n        <label for=\"first-name\">Enter Your First Name: <input id=\"first-name\" type=\"text\" required /></label>\n        <label for=\"last-name\">Enter Your Last Name: <input id=\"last-name\" type=\"text\" required /></label>\n        <label for=\"email\">Enter Your Email: <input id=\"email\" type=\"email\" required /></label>\n        <label for=\"new-password\">Create a New Password: <input id=\"new-password\" type=\"password\" pattern=\"[a-z0-5]{8,}\" required /></label>\n      </fieldset>\n      <fieldset>\n        <legend>Account type (required)</legend>\n        <label for=\"personal-account\"><input id=\"personal-account\" type=\"radio\" name=\"account-type\" checked /> Personal</label>\n        <label for=\"business-account\"><input id=\"business-account\" type=\"radio\" name=\"account-type\" /> Business</label>\n      </fieldset>\n      <fieldset>\n        <label for=\"profile-picture\">Upload a profile picture: <input id=\"profile-picture\" type=\"file\"/></label>\n        <label for=\"age\">Input your age (years): <input id=\"age\" type=\"number\" min=\"13\" max=\"120\" /></label>\n        <label for=\"referrer\">How did you hear about us?\n          <select id=\"referrer\">\n            <option value=\"\">(select one)</option>\n            <option value=\"1\">freeCodeCamp News</option>\n            <option value=\"2\">freeCodeCamp YouTube Channel</option>\n            <option value=\"3\">freeCodeCamp Forum</option>\n            <option value=\"4\">Other</option>\n          </select>\n        </label>\n        <label for=\"bio\">Provide a bio:\n          <textarea id =\"bio\" rows=\"3\" cols=\"30\" placeholder=\"I like coding on the beach...\"></textarea>\n        </label>\n      </fieldset>\n      <label for=\"terms-and-conditions\">\n        <input id=\"terms-and-conditions\" type=\"checkbox\" required /> I accept the <a href=\"https://www.freecodecamp.org/news/terms-of-service/\">terms and conditions</a>\n      </label>\n      <input type=\"submit\" value=\"Submit\" />\n    </form>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Registration Form</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n  </head>\n  <body>\n    <h1>Registration Form</h1>\n    <p>Please fill out this form with the required information</p>\n    <form method=\"post\" action='https://register-demo.freecodecamp.org'>\n        <fieldset>\n        <label for=\"first-name\">Enter Your First Name: <input id=\"first-name\" type=\"text\" required /></label>\n        <label for=\"last-name\">Enter Your Last Name: <input id=\"last-name\" type=\"text\" required /></label>\n        <label for=\"email\">Enter Your Email: <input id=\"email\" type=\"email\" required /></label>\n        <label for=\"new-password\">Create a New Password: <input id=\"new-password\" type=\"password\" pattern=\"[a-z0-5]{8,}\" required /></label>\n      </fieldset>\n      <fieldset>\n        <legend>Account type (required)</legend>\n        <label for=\"personal-account\"><input id=\"personal-account\" type=\"radio\" name=\"account-type\" checked /> Personal</label>\n        <label for=\"business-account\"><input id=\"business-account\" type=\"radio\" name=\"account-type\" /> Business</label>\n      </fieldset>\n      <fieldset>\n        <label for=\"profile-picture\">Upload a profile picture: <input id=\"profile-picture\" type=\"file\"/></label>\n        <label for=\"age\">Input your age (years): <input id=\"age\" type=\"number\" min=\"13\" max=\"120\" /></label>\n        <label for=\"referrer\">How did you hear about us?\n          <select id=\"referrer\">\n            <option value=\"\">(select one)</option>\n            <option value=\"1\">freeCodeCamp News</option>\n            <option value=\"2\">freeCodeCamp YouTube Channel</option>\n            <option value=\"3\">freeCodeCamp Forum</option>\n            <option value=\"4\">Other</option>\n          </select>\n        </label>\n        <label for=\"bio\">Provide a bio:\n          <textarea id =\"bio\" rows=\"3\" cols=\"30\" placeholder=\"I like coding on the beach...\"></textarea>\n        </label>\n      </fieldset>\n      <label for=\"terms-and-conditions\">\n        <input id=\"terms-and-conditions\" type=\"checkbox\" required /> I accept the <a href=\"https://www.freecodecamp.org/news/terms-of-service/\">terms and conditions</a>\n      </label>\n      <input type=\"submit\" value=\"Submit\" />\n    </form>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  width: 100%;\n  height: 100vh;\n  margin: 0;\n  background-color: #1b1b32;\n  color: #f5f6f7;\n}\n\nlabel {\n  display: block;\n  margin: 0.5rem 0;\n}\n",
+      "error": null,
+      "seed": "body {\n  width: 100%;\n  height: 100vh;\n  margin: 0;\n  background-color: #1b1b32;\n  color: #f5f6f7;\n}\n\nlabel {\n  display: block;\n  margin: 0.5rem 0;\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should give the <code>input</code> expecting a first name a <code>name</code> attribute. <em>PS I would have chosen <code>first-name</code></em></p>",
+      "testString": "assert.isNotEmpty(document.querySelector('fieldset:nth-child(1) > label:nth-child(1) > input')?.name);"
+    },
+    {
+      "text": "<p>You should give the <code>input</code> expecting a last name a <code>name</code> attribute. <em>PS I would have chosen <code>last-name</code></em></p>",
+      "testString": "assert.isNotEmpty(document.querySelector('fieldset:nth-child(1) > label:nth-child(2) > input')?.name);"
+    },
+    {
+      "text": "<p>You should give the <code>email</code> a <code>name</code> attribute. <em>PS I would have chosen <code>email</code></em></p>",
+      "testString": "assert.isNotEmpty(document.querySelector('input[type=\"email\"]')?.name);"
+    },
+    {
+      "text": "<p>You should give the <code>password</code> a <code>name</code> attribute. <em>PS I would have chosen <code>password</code></em></p>",
+      "testString": "assert.isNotEmpty(document.querySelector('input[type=\"password\"]')?.name);"
+    },
+    {
+      "text": "<p>You should give the <code>checkbox</code> a <code>name</code> attribute. <em>PS I would have chosen <code>terms</code></em></p>",
+      "testString": "assert.isNotEmpty(document.querySelector('input[type=\"checkbox\"]')?.name);"
+    },
+    {
+      "text": "<p>You should give the <code>file</code> a <code>name</code> attribute. <em>PS I would have chosen <code>file</code></em></p>",
+      "testString": "assert.isNotEmpty(document.querySelector('input[type=\"file\"]')?.name);"
+    },
+    {
+      "text": "<p>You should give the <code>number</code> a <code>name</code> attribute. <em>PS I would have chosen <code>age</code></em></p>",
+      "testString": "assert.isNotEmpty(document.querySelector('input[type=\"number\"]')?.name);"
+    },
+    {
+      "text": "<p>You should give the <code>select</code> element a <code>name</code> attribute. <em>PS I would have chosen <code>referrer</code></em></p>",
+      "testString": "assert.isNotEmpty(document.querySelector('select')?.name);"
+    },
+    {
+      "text": "<p>You should give the <code>textarea</code> element a <code>name</code> attribute. <em>PS I would have chosen <code>bio</code></em></p>",
+      "testString": "assert.isNotEmpty(document.querySelector('textarea')?.name);"
+    },
+    {
+      "text": "<p>You should not give any of the <code>option</code> elements a <code>name</code> attribute.</p>",
+      "testString": "[...document.querySelectorAll('option')]?.forEach(option => assert.isUndefined(option?.name));"
+    },
+    {
+      "text": "<p>You should not give any of the <code>label</code> elements a <code>name</code> attribute.</p>",
+      "testString": "[...document.querySelectorAll('label')]?.forEach(label => assert.isUndefined(label?.name));"
+    },
+    {
+      "text": "<p>You should not give any of the <code>fieldset</code> elements a <code>name</code> attribute.</p>",
+      "testString": "[...document.querySelectorAll('fieldset')]?.forEach(fieldset => assert.isEmpty(fieldset?.name));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>With form submissions, it is useful, and good practice, to provide each submittable element with a <code>name</code> attribute. This attribute is used to identify the element in the form submission.</p>\n<p>Except for the two <code>radio</code> inputs (which you have already named), give each submittable element a unique <code>name</code> attribute of your choosing.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-html-forms-by-building-a-registration-form",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 41,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

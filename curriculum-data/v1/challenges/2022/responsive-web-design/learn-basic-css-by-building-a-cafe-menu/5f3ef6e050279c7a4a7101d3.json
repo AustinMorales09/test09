@@ -1,0 +1,81 @@
+{
+  "id": "5f3ef6e050279c7a4a7101d3",
+  "title": "Step 54",
+  "challengeType": 0,
+  "dashedName": "step-54",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article class=\"item\">\n            <p class=\"flavor\">French Vanilla</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Caramel Macchiato</p><p class=\"price\">3.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Pumpkin Spice</p><p class=\"price\">3.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Hazelnut</p><p class=\"price\">4.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Mocha</p><p class=\"price\">4.50</p>\n          </article>\n        </section>\n        <section>\n          <h2>Desserts</h2>\n          <article class=\"item\">\n            <p class=\"dessert\">Donut</p><p class=\"price\">1.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cherry Pie</p><p class=\"price\">2.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cheesecake</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cinnamon Roll</p><p class=\"price\">2.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div class=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n          <article class=\"item\">\n            <p class=\"flavor\">French Vanilla</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Caramel Macchiato</p><p class=\"price\">3.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Pumpkin Spice</p><p class=\"price\">3.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Hazelnut</p><p class=\"price\">4.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"flavor\">Mocha</p><p class=\"price\">4.50</p>\n          </article>\n        </section>\n        <section>\n          <h2>Desserts</h2>\n          <article class=\"item\">\n            <p class=\"dessert\">Donut</p><p class=\"price\">1.50</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cherry Pie</p><p class=\"price\">2.75</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cheesecake</p><p class=\"price\">3.00</p>\n          </article>\n          <article class=\"item\">\n            <p class=\"dessert\">Cinnamon Roll</p><p class=\"price\">2.50</p>\n          </article>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        8,
+        17
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.item p {\n  display: inline-block;\n}\n\n.flavor, .dessert {\n  text-align: left;\n  width: 75%;\n}\n\n.price {\n  text-align: right;\n  width: 25%\n}",
+      "error": null,
+      "seed": "body {\n  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);\n}\n\nh1, h2, p {\n  text-align: center;\n}\n\n.menu {\n  width: 80%;\n  background-color: burlywood;\n  margin-left: auto;\n  margin-right: auto;\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.item p {\n  display: inline-block;\n}\n\n.flavor, .dessert {\n  text-align: left;\n  width: 75%;\n}\n\n.price {\n  text-align: right;\n  width: 25%\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not remove the <code>padding-left</code> or <code>padding-right</code> properties.</p>",
+      "testString": "const paddingLeft = new __helpers.CSSHelp(document).getStyle('.menu')?.getPropertyValue('padding-left');\nassert(paddingLeft === '20px');\nconst paddingRight = new __helpers.CSSHelp(document).getStyle('.menu')?.getPropertyValue('padding-right');\nassert(paddingRight === '20px');"
+    },
+    {
+      "text": "<p>You should set the <code>padding-top</code> property to <code>20px</code>.</p>",
+      "testString": "const hasPaddingTop = new __helpers.CSSHelp(document).getCSSRules().some(x => x.style['padding-top'] === '20px');\nassert(hasPaddingTop);"
+    },
+    {
+      "text": "<p>You should set the <code>padding-bottom</code> property to <code>20px</code>.</p>",
+      "testString": "const hasPaddingBottom = new __helpers.CSSHelp(document).getCSSRules().some(x => x.style['padding-top'] === '20px');\nassert(hasPaddingBottom);"
+    },
+    {
+      "text": "<p>Your <code>.menu</code> element should have a <code>padding-top</code> of <code>20px</code>.</p>",
+      "testString": "const menuPaddingTop = new __helpers.CSSHelp(document).getStyle('.menu')?.getPropertyValue('padding-top');\nassert(menuPaddingTop === '20px');"
+    },
+    {
+      "text": "<p>Your <code>.menu</code> element should have a <code>padding-bottom</code> of <code>20px</code>.</p>",
+      "testString": "const menuPaddingBottom = new __helpers.CSSHelp(document).getStyle('.menu')?.getPropertyValue('padding-bottom');\nassert(menuPaddingBottom === '20px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>That looks better. Now try to add the same <code>20px</code> padding to the top and bottom of the menu.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 53,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

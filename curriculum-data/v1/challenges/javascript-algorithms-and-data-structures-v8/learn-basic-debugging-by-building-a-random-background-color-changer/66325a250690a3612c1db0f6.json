@@ -1,0 +1,81 @@
+{
+  "id": "66325a250690a3612c1db0f6",
+  "title": "Step 5",
+  "challengeType": 0,
+  "dashedName": "step-5",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Build a random background color changer</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n  </head>\n  <body>\n    <h1>Random Background Color changer</h1>\n\n    <main>\n      <section class=\"bg-information-container\">\n        <p>Hex Code: <span id=\"bg-hex-code\">#110815</span></p>\n      </section>\n\n      <button class=\"btn\" id=\"btn\">Change Background Color</button>\n    </main>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Build a random background color changer</title>\n    <link rel=\"stylesheet\" href=\"./styles.css\" />\n  </head>\n  <body>\n    <h1>Random Background Color changer</h1>\n\n    <main>\n      <section class=\"bg-information-container\">\n        <p>Hex Code: <span id=\"bg-hex-code\">#110815</span></p>\n      </section>\n\n      <button class=\"btn\" id=\"btn\">Change Background Color</button>\n    </main>\n    <script src=\"./script.js\"></script>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --yellow: #f1be32;\n  --golden-yellow: #feac32;\n  --dark-purple: #110815;\n  --light-grey: #efefef;\n}\n\nbody {\n  background-color: var(--dark-purple);\n  color: var(--light-grey);\n  text-align: center;\n}\n\n.bg-information-container {\n  margin: 15px 0 25px;\n  font-size: 1.2rem;\n}\n\n.btn {\n  cursor: pointer;\n  padding: 10px;\n  margin: 10px;\n  color: var(--dark-purple);\n  background-color: var(--golden-yellow);\n  background-image: linear-gradient(#fecc4c, #ffac33);\n  border-color: var(--golden-yellow);\n  border-width: 3px;\n}\n\n.btn:hover {\n  background-image: linear-gradient(#ffcc4c, #f89808);\n}\n",
+      "error": null,
+      "seed": "*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --yellow: #f1be32;\n  --golden-yellow: #feac32;\n  --dark-purple: #110815;\n  --light-grey: #efefef;\n}\n\nbody {\n  background-color: var(--dark-purple);\n  color: var(--light-grey);\n  text-align: center;\n}\n\n.bg-information-container {\n  margin: 15px 0 25px;\n  font-size: 1.2rem;\n}\n\n.btn {\n  cursor: pointer;\n  padding: 10px;\n  margin: 10px;\n  color: var(--dark-purple);\n  background-color: var(--golden-yellow);\n  background-image: linear-gradient(#fecc4c, #ffac33);\n  border-color: var(--golden-yellow);\n  border-width: 3px;\n}\n\n.btn:hover {\n  background-image: linear-gradient(#ffcc4c, #f89808);\n}\n"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        17,
+        22
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "const darkColorsArr = [\n  \"#2C3E50\",\n  \"#34495E\",\n  \"#2C2C2C\",\n  \"#616A6B\",\n  \"#4A235A\",\n  \"#2F4F4F\",\n  \"#0E4B5A\",\n  \"#36454F\",\n  \"#2C3E50\",\n  \"#800020\",\n];\nfunction getRandomIndex() {\n  const randomIndex = Math.floor(darkColorsArr.length * Math.random());\n  return randomIndex;\n}\n\nconst body = document.querySelector(\"body\");\nconst bgHexCodeSpanElement = document.querySelector(\"bg-hex-code\");\n\nconsole.log(bgHexCodeSpanElement);",
+      "error": null,
+      "seed": "const darkColorsArr = [\n  \"#2C3E50\",\n  \"#34495E\",\n  \"#2C2C2C\",\n  \"#616A6B\",\n  \"#4A235A\",\n  \"#2F4F4F\",\n  \"#0E4B5A\",\n  \"#36454F\",\n  \"#2C3E50\",\n  \"#800020\",\n];\nfunction getRandomIndex() {\n  const randomIndex = Math.floor(darkColorsArr.length * Math.random());\n  return randomIndex;\n}\n\nconst body = document.querySelector(\"body\");\nconst bgHexCodeSpanElement = document.querySelector(\"bg-hex-code\");\n\nconsole.log(bgHexCodeSpanElement);"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should fix <code>\"bg-hex-code\"</code> so it correctly references the <code>id</code> of <code>bg-hex-code</code>. Remember that <code>id</code> selectors in CSS start with a hash symbol (<code>#</code>).</p>",
+      "testString": "assert.match(bgHexCodeSpanElement.id, /bg-hex-code/);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>CamperBot has created a new variable called <code>bgHexCodeSpanElement</code> to store the reference to the <code>span</code> element with the <code>id</code> of <code>bg-hex-code</code>. However, when they try to log that variable to the console, they get <code>null</code>.</p>\n<p><code>null</code> is a special value in JavaScript that represents the absence of a value. This can happen when you try to access a property of an object that doesn't exist.</p>\n<p>In this case, CamperBot is not passing in the correct selector to the <code>document.querySelector</code> method.</p>\n<p>Fix the <code>document.querySelector(\"bg-hex-code\")</code> line so that it correctly selects the element with the <code>id</code> of <code>bg-hex-code</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-debugging-by-building-a-random-background-color-changer",
+  "hasEditableBoundaries": true,
+  "order": 3,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

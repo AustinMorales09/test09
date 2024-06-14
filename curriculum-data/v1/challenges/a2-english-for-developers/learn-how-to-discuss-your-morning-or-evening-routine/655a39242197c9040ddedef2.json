@@ -1,0 +1,79 @@
+{
+  "id": "655a39242197c9040ddedef2",
+  "title": "Task 47",
+  "challengeType": 22,
+  "dashedName": "task-47",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ one alarm and _ up when it rings.</p>",
+    "blanks": [
+      {
+        "answer": "Set",
+        "feedback": "<p>Base form of the verb used for giving a positive command. This word is capitalized.</p>"
+      },
+      {
+        "answer": "get",
+        "feedback": "<p>Another base form used for giving a positive command. This word is not capitalized.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "interview-room1.png",
+      "characters": [
+        {
+          "character": "Expert",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "2.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 19.82,
+        "finishTimestamp": 22.28
+      }
+    },
+    "commands": [
+      {
+        "character": "Expert",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Expert",
+        "startTime": 1,
+        "finishTime": 3.46,
+        "dialogue": {
+          "text": "Set one alarm and get up when it rings.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Expert",
+        "opacity": 0,
+        "startTime": 3.96
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The imperative form is used to give orders, instructions, or advice. It often starts with a verb in the base form for positive commands, or with <code>don't</code>/<code>do not</code> for negative commands. Understanding this form is important for following or giving instructions. For example:</p>\n<p><code>Drink plenty of water</code> (positive command)</p>\n<p><code>Don't stay up too late</code> (negative command)</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-your-morning-or-evening-routine",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 48,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,75 @@
+{
+  "id": "66191920b7e6dc7aacd28e07",
+  "title": "Task 33",
+  "challengeType": 22,
+  "dashedName": "task-33",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>It offers _ and can help companies gain access to talent from many parts of the world.</p>",
+    "blanks": [
+      {
+        "answer": "flexibility",
+        "feedback": "<p>The ability to change plans or conditions as needed.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 26.1,
+        "finishTimestamp": 30.52
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 5.42,
+        "dialogue": {
+          "text": "It offers flexibility and can help companies gain access to talent from many parts of the world.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 5.92
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Flexibility</code> is the ability to adapt and change easily when situations or circumstances are different from what was expected. It means being able to adjust your plans, actions, or thoughts when needed without difficulty.</p>\n<p>Listen and fill in the blank.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

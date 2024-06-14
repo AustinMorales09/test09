@@ -1,0 +1,94 @@
+{
+  "id": "61abc7ebf3029b56226de5b6",
+  "title": "Implement Binary Search",
+  "challengeType": 1,
+  "forumTopicId": 487618,
+  "dashedName": "implement-binary-search",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const _testArray = [\n  0, 1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,\n  23, 49, 70\n];",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function binarySearch(searchList, value) {\n  let arrayPath = [];\n  return arrayPath;\n}",
+      "error": null,
+      "seed": "function binarySearch(searchList, value) {\n  let arrayPath = [];\n  return arrayPath;\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let binarySearch = (searchList, value) => {\n  let arrayPath = [];\n\n  // set initial L - M - R\n  let left = 0;\n  let right = searchList.length - 1;\n  let middle = Math.floor(right / 2);\n\n  // if first comparison finds value\n  if (searchList[middle] == value) {\n    arrayPath.push(searchList[middle]);\n    return arrayPath;\n  }\n\n  while (searchList[middle] !== value) {\n    // add to output array\n    arrayPath.push(searchList[middle]);\n\n    // not found\n    if (right < left) {\n      return 'Value Not Found';\n    }\n    // value is in left or right portion of array\n    // update L - M - R\n    if (searchList[middle] > value) {\n      right = middle - 1;\n      middle = left + Math.floor((right - left) / 2);\n    } else {\n      left = middle + 1;\n      middle = left + Math.floor((right - left) / 2);\n    }\n\n    // if found update output array and exit\n    if (searchList[middle] == value) {\n      arrayPath.push(searchList[middle]);\n\n      break;\n    }\n  }\n  return arrayPath;\n};",
+        "error": null,
+        "seed": "let binarySearch = (searchList, value) => {\n  let arrayPath = [];\n\n  // set initial L - M - R\n  let left = 0;\n  let right = searchList.length - 1;\n  let middle = Math.floor(right / 2);\n\n  // if first comparison finds value\n  if (searchList[middle] == value) {\n    arrayPath.push(searchList[middle]);\n    return arrayPath;\n  }\n\n  while (searchList[middle] !== value) {\n    // add to output array\n    arrayPath.push(searchList[middle]);\n\n    // not found\n    if (right < left) {\n      return 'Value Not Found';\n    }\n    // value is in left or right portion of array\n    // update L - M - R\n    if (searchList[middle] > value) {\n      right = middle - 1;\n      middle = left + Math.floor((right - left) / 2);\n    } else {\n      left = middle + 1;\n      middle = left + Math.floor((right - left) / 2);\n    }\n\n    // if found update output array and exit\n    if (searchList[middle] == value) {\n      arrayPath.push(searchList[middle]);\n\n      break;\n    }\n  }\n  return arrayPath;\n};"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>binarySearch</code> should be a function.</p>",
+      "testString": "assert(typeof binarySearch == 'function');"
+    },
+    {
+      "text": "<p><code>binarySearch(testArray, 0)</code> should return <code>[13, 5, 2, 0]</code>.</p>",
+      "testString": "assert.deepEqual(binarySearch(_testArray, 0), [13, 5, 2, 0]);"
+    },
+    {
+      "text": "<p><code>binarySearch(testArray, 1)</code> should return <code>[13, 5, 2, 0, 1]</code>.</p>",
+      "testString": "assert.deepEqual(binarySearch(_testArray, 1), [13, 5, 2, 0, 1]);"
+    },
+    {
+      "text": "<p><code>binarySearch(testArray, 2)</code> should return <code>[13, 5, 2]</code>.</p>",
+      "testString": "assert.deepEqual(binarySearch(_testArray, 2), [13, 5, 2]);"
+    },
+    {
+      "text": "<p><code>binarySearch(testArray, 6)</code> should return the string <code>Value Not Found</code>.</p>",
+      "testString": "assert.strictEqual(binarySearch(_testArray, 6), 'Value Not Found');"
+    },
+    {
+      "text": "<p><code>binarySearch(testArray, 11)</code> should return <code>[13, 5, 10, 11]</code>.</p>",
+      "testString": "assert.deepEqual(binarySearch(_testArray, 11), [13, 5, 10, 11])"
+    },
+    {
+      "text": "<p><code>binarySearch(testArray, 13)</code> should return <code>[13]</code>.</p>",
+      "testString": "assert.deepEqual(binarySearch(_testArray, 13), [13]);"
+    },
+    {
+      "text": "<p><code>binarySearch(testArray, 70)</code> should return <code>[13, 19, 22, 49, 70]</code>.</p>",
+      "testString": "assert.deepEqual(binarySearch(_testArray, 70), [13, 19, 22, 49, 70]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Binary search is an <strong>O(log(n))</strong> efficiency algorithm for searching a sorted array to find an element. It operates using the following steps:</p>\n<ol>\n<li>Find the middle <code>value</code> of a sorted array. If <code>value == target</code> return <code>true</code> (The value has been found and the search is complete).</li>\n<li>If middle <code>value &#x3C; target</code>, search right half of array in next compare.</li>\n<li>If middle <code>value > target</code>, search left half of array in next compare.</li>\n<li>If after searching the whole array the value is not present, return <code>false</code> (The array has been searched and the value is not in the array).</li>\n</ol>\n<p>As you can see, you are successively halving an array, which gives you the log(n) efficiency. For this challenge, we want you to show your work - how you got to the target value... the path you took!</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function <code>binarySearch</code> that implements the binary search algorithm on an array, returning the path you took (each middle value comparison) to find the target in an array.</p>\n<p>The function takes a sorted array of integers and a target value as input. It returns an array containing (in-order) the middle value you found at each halving of the original array until you found the target value. The target value should be the last element of the returned array. If the value is not found, return the string <code>Value Not Found</code>.</p>\n<p>For example, <code>binarySearch([1,2,3,4,5,6,7], 5)</code> would return <code>[4,6,5]</code>.</p>\n<p>For this challenge, when halving, you MUST use <code>Math.floor()</code> when doing division: <code>Math.floor(x/2)</code>. This will give a consistent, testable path.</p>\n<p><strong>Note:</strong> The following array will be used in tests:</p>\n<pre><code class=\"language-js\">const testArray = [\n  0, 1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,\n  23, 49, 70\n];\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "algorithms",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 15,
+  "certification": "coding-interview-prep",
+  "superBlock": "coding-interview-prep",
+  "challengeOrder": 9,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "65f5936de4e017b74ea663db",
+  "title": "Task 34",
+  "challengeType": 22,
+  "dashedName": "task-34",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Let's start _ understanding the _ of the issue.</p>",
+    "blanks": [
+      {
+        "answer": "by",
+        "feedback": "<p>It's used to indicate the method or way to start something. Here, it introduces the approach to understanding the issue.</p>"
+      },
+      {
+        "answer": "symptoms",
+        "feedback": "<p>This word in coding refers to the observable signs or indications of a problem, similar to that of an illness in medicine.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Brian",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "6.3-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 10.86,
+        "finishTimestamp": 13.26
+      }
+    },
+    "commands": [
+      {
+        "character": "Brian",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Brian",
+        "startTime": 1,
+        "finishTime": 3.4,
+        "dialogue": {
+          "text": "Let's start by understanding the symptoms of the issue.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Brian",
+        "opacity": 0,
+        "startTime": 3.9
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In medicine, <code>symptoms</code> are signs or indications of a condition or disease. Similarly, in coding, <code>symptoms</code> refer to signs or indications of a problem in the software or code.</p>\n<p>For example, a <code>symptom</code> could be an error message or a part of the program not working correctly.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 36,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

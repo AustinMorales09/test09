@@ -1,0 +1,45 @@
+{
+  "id": "65f4271a0a61e57af14a9b35",
+  "title": "Task 4",
+  "challengeType": 19,
+  "dashedName": "task-4",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does Sarah mean when she says, <code>I can explain what I was trying to achieve there</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>She has the ability to clarify her past actions.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>She needs help to understand the code herself.</p>",
+        "feedback": "<p>Sarah is offering help, not asking for it.</p>"
+      },
+      {
+        "answer": "<p>She will try to achieve something in the future.</p>",
+        "feedback": "<p>Sarah talks about past efforts, not future plans.</p>"
+      },
+      {
+        "answer": "<p>She wants Brian to explain the code to her.</p>",
+        "feedback": "<p>Sarah is offering to explain, not asking Brian to do so.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This task focuses on reviewing the use of <code>can</code> for expressing capability and the use of the verb <code>try</code> in the past continuous tense.</p>\n<p><code>Can</code> is used to talk about someone's ability to do something, like <code>I can solve this problem.</code></p>\n<p><code>Try</code> in the past continuous (<code>was</code>/<code>were</code> + verb in the <code>-ing</code> form) indicates an ongoing action in the past, like <code>I was trying to fix the issue.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-for-clarification-on-code-understanding",
+  "hasEditableBoundaries": false,
+  "order": 17,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

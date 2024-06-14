@@ -1,0 +1,43 @@
+{
+  "id": "647e23188acb466c97ccbefa",
+  "title": "Choose the Correct Data Type in Your C# Code",
+  "challengeType": 19,
+  "dashedName": "choose-the-correct-data-type-in-your-c-sharp-code",
+  "solutions": [],
+  "question": {
+    "text": "<p>A piece of code must store whole numeric values between negative and positive <code>1,000,000</code>. Which data type should you choose?</p>",
+    "answers": [
+      {
+        "answer": "<p>float</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>double</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>int</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [
+    "<p>Complete the <a href=\"https://learn.microsoft.com/training/modules/csharp-choose-data-type/\" target=\"_blank\" rel=\"noreferrer\">Choose the Correct Data Type in Your C# Code</a> module on Microsoft Learn. Then, answer the question below.</p>"
+  ],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This challenge will be partially completed on the Microsoft Learn platform. Follow these instructions to complete the challenge:</p>\n<ol>\n<li>Go to <a href=\"https://learn.microsoft.com/training/modules/csharp-choose-data-type/\" target=\"_blank\" rel=\"noreferrer\">https://learn.microsoft.com/training/modules/csharp-choose-data-type/</a> and complete all the tasks for the \"Choose the Correct Data Type in Your C# Code\" module. This is <strong>required</strong> to earn the \"Work with Variable Data in C# Console Applications\" trophy on Microsoft Learn, and qualify for the certification exam.</li>\n<li>When you are finished, come back and correctly answer the question below.</li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "work-with-variable-data-in-c-sharp-console-applications",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 13,
+  "certification": "foundational-c-sharp-with-microsoft",
+  "superBlock": "foundational-c-sharp-with-microsoft",
+  "challengeOrder": 0,
+  "required": [],
+  "helpCategory": "C-Sharp",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

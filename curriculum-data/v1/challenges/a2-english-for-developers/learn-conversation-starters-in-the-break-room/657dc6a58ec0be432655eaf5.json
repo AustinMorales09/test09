@@ -1,0 +1,104 @@
+{
+  "id": "657dc6a58ec0be432655eaf5",
+  "title": "Task 99",
+  "challengeType": 22,
+  "dashedName": "task-99",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Maria _ assigns tasks during the meetings.</p>",
+    "blanks": [
+      {
+        "answer": "sometimes",
+        "feedback": "<p>Sophie indicates that assigning tasks is not a consistent action.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Sophie",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.3-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 41.48,
+        "finishTimestamp": 48.72
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.72,
+        "dialogue": {
+          "text": "Does Maria assign tasks during these meetings?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4
+      },
+      {
+        "character": "Sophie",
+        "opacity": 1,
+        "startTime": 4
+      },
+      {
+        "character": "Sophie",
+        "startTime": 4.52,
+        "finishTime": 8.24,
+        "dialogue": {
+          "text": "Sometimes, but we normally discuss tasks we plan on tackling for the week.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sophie",
+        "opacity": 0,
+        "startTime": 8.74
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>In English, words like <code>sometimes,</code> <code>always,</code> and <code>never</code> are used to describe the frequency of an action.</p>\n<p><code>Sometimes</code> is used when an action happens on certain occasions but not every time. For example, <code>I sometimes have coffee for breakfast.</code> It indicates possibility but not certainty.</p>\n<p><code>Always</code> is used when an action happens every single time without fail. For instance, <code>The sun always rises in the east.</code> It shows a consistent or habitual action.</p>\n<p><code>Never</code> means an action does not happen at any time. For example, <code>She never eats meat</code>, indicating a complete absence of the action.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Listen to the audio, understand the context and complete this sentence with the\ncorrect adverb of frequency.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-conversation-starters-in-the-break-room",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 102,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "657b631cc34605266f81b9bb",
+  "title": "Task 13",
+  "challengeType": 19,
+  "dashedName": "task-13",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is a <code>mobile app</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p>A type of fruit</p>",
+        "feedback": "<p>Consider the context of digital technology and how it relates to the term.</p>"
+      },
+      {
+        "answer": "<p>A type of computer</p>",
+        "feedback": "<p>Think about what runs on a device rather than the device itself.</p>"
+      },
+      {
+        "answer": "<p>A software program for mobile devices</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>A book about mobile phones</p>",
+        "feedback": "<p>Reflect on the difference between a physical object and digital software.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Do you remember this definition?</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 13,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

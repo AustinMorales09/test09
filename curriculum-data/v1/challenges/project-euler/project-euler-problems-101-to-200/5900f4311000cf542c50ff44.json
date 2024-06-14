@@ -1,0 +1,65 @@
+{
+  "id": "5900f4311000cf542c50ff44",
+  "title": "Problem 197: Investigating the behaviour of a recursively defined sequence",
+  "challengeType": 1,
+  "forumTopicId": 301835,
+  "dashedName": "problem-197-investigating-the-behaviour-of-a-recursively-defined-sequence",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function recursivelyDefinedSequence() {\n\n  return true;\n}\n\nrecursivelyDefinedSequence();",
+      "error": null,
+      "seed": "function recursivelyDefinedSequence() {\n\n  return true;\n}\n\nrecursivelyDefinedSequence();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>recursivelyDefinedSequence()</code> should return <code>1.710637717</code>.</p>",
+      "testString": "assert.strictEqual(recursivelyDefinedSequence(), 1.710637717);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Given is the function $f(x) = ⌊{2}^{30.403243784 - x^2}⌋ × {10}^{-9}$ ( ⌊ ⌋ is the floor-function), the sequence $u_n$ is defined by $u_0 = -1$ and $u_{n + 1} = f(u_n)$.</p>\n<p>Find $u_n + u_{n + 1}$ for $n = {10}^{12}$. Give your answer with 9 digits after the decimal point.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-101-to-200",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 96,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

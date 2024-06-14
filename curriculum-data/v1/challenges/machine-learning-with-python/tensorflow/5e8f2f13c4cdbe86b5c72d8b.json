@@ -1,0 +1,46 @@
+{
+  "id": "5e8f2f13c4cdbe86b5c72d8b",
+  "title": "Core Learning Algorithms: Training and Testing Data",
+  "challengeType": 11,
+  "videoId": "wz9J1slsi7I",
+  "bilibiliIds": {
+    "aid": 335509743,
+    "bvid": "BV1rA411F7bG",
+    "cid": 409127635
+  },
+  "dashedName": "core-learning-algorithms-training-and-testing-data",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is categorical data?</p>",
+    "answers": [
+      {
+        "answer": "<p>Another term for one-hot encoding.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Any data that is not numeric.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Any data that is represented numerically.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "tensorflow",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 10,
+  "certification": "machine-learning-with-python",
+  "superBlock": "machine-learning-with-python",
+  "challengeOrder": 4,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

@@ -1,0 +1,86 @@
+{
+  "id": "596e414344c3b2872167f0fe",
+  "title": "Comma quibbling",
+  "challengeType": 1,
+  "forumTopicId": 302234,
+  "dashedName": "comma-quibbling",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "const testCases = [[], [\"ABC\"], [\"ABC\", \"DEF\"], [\"ABC\", \"DEF\", \"G\", \"H\"]];\nconst results = [\"{}\", \"{ABC}\", \"{ABC and DEF}\", \"{ABC, DEF, G and H}\"];",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function quibble(words) {\n\n  return true;\n}",
+      "error": null,
+      "seed": "function quibble(words) {\n\n  return true;\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function quibble(words) {\n  return \"{\" +\n    words.slice(0, words.length - 1).join(\", \") +\n   (words.length > 1 ? \" and \" : \"\") +\n   (words[words.length - 1] || '') +\n  \"}\";\n}",
+        "error": null,
+        "seed": "function quibble(words) {\n  return \"{\" +\n    words.slice(0, words.length - 1).join(\", \") +\n   (words.length > 1 ? \" and \" : \"\") +\n   (words[words.length - 1] || '') +\n  \"}\";\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>quibble</code> should be a function.</p>",
+      "testString": "assert(typeof quibble === 'function');"
+    },
+    {
+      "text": "<p><code>quibble([\"ABC\"])</code> should return a string.</p>",
+      "testString": "assert(typeof quibble(['ABC']) === 'string');"
+    },
+    {
+      "text": "<p><code>quibble([])</code> should return \"{}\".</p>",
+      "testString": "assert.equal(quibble(testCases[0]), results[0]);"
+    },
+    {
+      "text": "<p><code>quibble([\"ABC\"])</code> should return <code>\"{ABC}\"</code>.</p>",
+      "testString": "assert.equal(quibble(testCases[1]), results[1]);"
+    },
+    {
+      "text": "<p><code>quibble([\"ABC\", \"DEF\"])</code> should return <code>\"{ABC and DEF}\"</code>.</p>",
+      "testString": "assert.equal(quibble(testCases[2]), results[2]);"
+    },
+    {
+      "text": "<p><code>quibble([\"ABC\", \"DEF\", \"G\", \"H\"])</code> should return <code>\"{ABC, DEF, G and H}\"</code>.</p>",
+      "testString": "assert.equal(quibble(testCases[3]), results[3]);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p><a href=\"https://rosettacode.org/wiki/Comma_quibbling\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Comma quibbling</a> is a task originally set by Eric Lippert in his blog.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function to generate a string output which is the concatenation of input words from a list/sequence where:</p>\n<ol>\n  <li>An input of no words produces the output string of just the two brace characters (<code>\"{}\"</code>)</li>\n  <li>An input of just one word, e.g. <code>[\"ABC\"]</code>, produces the output string of the word inside the two braces, e.g. <code>\"{ABC}\"</code></li>\n  <li>An input of two words, e.g. <code>[\"ABC\", \"DEF\"]</code>, produces the output string of the two words inside the two braces with the words separated by the string <code>\" and \"</code>, e.g. <code>\"{ABC and DEF}\"</code></li>\n  <li>An input of three or more words, e.g. <code>[\"ABC\", \"DEF\", \"G\", \"H\"]</code>, produces the output string of all but the last word separated by <code>\", \"</code> with the last word separated by <code>\" and \"</code> and all within braces; e.g. <code>\"{ABC, DEF, G and H}\"</code></li>\n</ol>\n<p>Test your function with the following series of inputs showing your output here on this page:</p>\n<ul>\n  <li>[] # (No input words).</li>\n  <li>[\"ABC\"]</li>\n  <li>[\"ABC\", \"DEF\"]</li>\n  <li>[\"ABC\", \"DEF\", \"G\", \"H\"]</li>\n</ul>\n<p><strong>Note:</strong> Assume words are non-empty strings of uppercase characters for this task.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 17,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

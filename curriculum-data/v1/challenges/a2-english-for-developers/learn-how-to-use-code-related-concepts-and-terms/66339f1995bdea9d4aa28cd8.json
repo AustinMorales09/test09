@@ -1,0 +1,96 @@
+{
+  "id": "66339f1995bdea9d4aa28cd8",
+  "title": "Task 42",
+  "challengeType": 22,
+  "dashedName": "task-42",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>Thanks, Sophie. I'm also using many _ in my project. But _ the _ _ variables and constants?</p>",
+    "blanks": [
+      {
+        "answer": "constants",
+        "feedback": "<p>It refer to fixed values in programming that do not change throughout the execution of the program, unlike variables.</p>"
+      },
+      {
+        "answer": "what's",
+        "feedback": "<p>It is a contraction commonly used in questions to inquire about something, in this case, asking for an explanation or clarification.</p>"
+      },
+      {
+        "answer": "difference",
+        "feedback": "<p>It means two or more things which you are comparing are not the same. It's used to highlight distinctions.</p>"
+      },
+      {
+        "answer": "between",
+        "feedback": "<p>It is used to refer to two things being compared.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "5.2-3.mp3",
+        "startTime": 1,
+        "startTimestamp": 14.5,
+        "finishTimestamp": 21.96
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 5.48,
+        "dialogue": {
+          "text": "Thanks, Sophie. I'm also using many constants in my project.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "startTime": 5.9,
+        "finishTime": 8.64,
+        "dialogue": {
+          "text": "But what's the difference between variables and constants?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 9.14
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>difference</code> refers to the way in which two or more things are not the same. It highlights the distinct characteristics or qualities between items or concepts.</p>\n<p>For example, if you look at an apple and an orange, the <code>difference</code> includes their color, taste, and texture.</p>\n<p>The preposition <code>between</code> is often used in the phrase <code>difference between</code> to compare two things or discuss the contrasts that exist when comparing two things.</p>\n<p>For instance, <code>He explained the difference between Java and Python.</code></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-use-code-related-concepts-and-terms",
+  "hasEditableBoundaries": false,
+  "order": 13,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 44,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

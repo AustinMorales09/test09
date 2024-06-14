@@ -1,0 +1,77 @@
+{
+  "id": "59e0a8df964e4540d5abe599",
+  "title": "Execute Brain****",
+  "challengeType": 1,
+  "forumTopicId": 302261,
+  "dashedName": "execute-brain",
+  "challengeFiles": [
+    {
+      "head": "let fib=`+\n\n++\n\n+++\n\n++++\n\n+>+>>\n\n>>++++\n\n+++++++\n\n++++++++\n\n+++++++++\n\n++++++++++\n\n++++++>++++\n\n++++++++++++\n\n+++++++++++++\n\n+++<<<<<<[>[>>\n\n>>>>+>+<<<<<<<-\n\n]>>>>>>>[<<<<<<<\n\n+>>>>>>>-]<[>++++\n\n++++++[-<-[>>+>+<<\n\n<-]>>>[<<<+>>>-]+<[\n\n>[-]<[-]]>[<<[>>>+<<\n\n<-]>>[-]]<<]>>>[>>+>+\n\n<<<-]>>>[<<<+>>>-]+<[>\n\n[-]<[-]]>[<<+>>[-]]<<<<\n\n<<<]>>>>>[++++++++++++++\n\n+++++++++++++++++++++++++\n\n+++++++++.[-]]++++++++++<[\n\n->-<]>+++++++++++++++++++++\n\n+++++++++++++++++++++++++++.\n\n[-]<<<<<<<<<<<<[>>>+>+<<<<-]>\n\n>>>[<<<<+>>>>-]<-[>>.>.<<<[-]]\n\n<<[>>+>+<<<-]>>>[<<<+>>>-]<<[<+\n\n>-]>[<+>-]<<<-]`;\nlet hello='++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.'",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function brain(prog) {\n\n}",
+      "error": null,
+      "seed": "function brain(prog) {\n\n}"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function brain(prog){\n  var output=\"\";\n    var code; // formatted code\n  var ip = 0; // current instruction within code\n  var nest = 0; // current bracket nesting (for Out button)\n  var ahead = []; // locations of matching brackets\n\n  var data = [0]; // data array (mod by +, -)\n  var dp = 0; // index into data (mod by <, >)\n\n  var inp = 0; // current input character (fetch with ,)\n  var quit = 0;\n    var commands = {\n    '>':function() { if (++dp >= data.length) data[dp]=0 },\n    '<':function() { if (--dp < 0) quit++ },\n    '+':function() { ++data[dp] },\n    '-':function() { --data[dp] },\n    '[':function() { if (!data[dp]) ip = ahead[ip]; else ++nest },\n    ']':function() { if ( data[dp]) ip = ahead[ip]; else --nest },\n    ',':function() {\n        var c = document.getElementById(\"input\").value.charCodeAt(inp++);\n        data[dp] = isNaN(c) ? 0 : c; // EOF: other options are -1 or no change\n    },\n    '.':function() {\n            output+=String.fromCharCode(data[dp]);\n            /*var s = document.getElementById(\"output\").innerHTML)\n             + String.fromCharCode(data[dp]);\n            s = s.replace(/\\n/g,\"<br>\").replace(/ /g,\"&amp;nbsp;\");\n            document.getElementById(\"output\").innerHTML = s;*/\n        },\n    };\n\n    let ar=prog.split('');\n    var st = [], back, error = -1;\n    for (ip=0; ip<ar.length; ip++) {\n        switch(ar[ip]) {\n        case '[':\n            st.push(ip);\n            break;\n        case ']':\n            if (st.length == 0) error = ip;\n            back = st.pop();\n            ahead[ip] = back;\n            ahead[back] = ip;\n            break;\n        }\n    }\n\n    for(ip=0;ip<ar.length;ip++){\n    if(commands.hasOwnProperty(ar[ip]))\n          commands[ar[ip]]();\n    }\n\n    return output;\n}",
+        "error": null,
+        "seed": "function brain(prog){\n  var output=\"\";\n    var code; // formatted code\n  var ip = 0; // current instruction within code\n  var nest = 0; // current bracket nesting (for Out button)\n  var ahead = []; // locations of matching brackets\n\n  var data = [0]; // data array (mod by +, -)\n  var dp = 0; // index into data (mod by <, >)\n\n  var inp = 0; // current input character (fetch with ,)\n  var quit = 0;\n    var commands = {\n    '>':function() { if (++dp >= data.length) data[dp]=0 },\n    '<':function() { if (--dp < 0) quit++ },\n    '+':function() { ++data[dp] },\n    '-':function() { --data[dp] },\n    '[':function() { if (!data[dp]) ip = ahead[ip]; else ++nest },\n    ']':function() { if ( data[dp]) ip = ahead[ip]; else --nest },\n    ',':function() {\n        var c = document.getElementById(\"input\").value.charCodeAt(inp++);\n        data[dp] = isNaN(c) ? 0 : c; // EOF: other options are -1 or no change\n    },\n    '.':function() {\n            output+=String.fromCharCode(data[dp]);\n            /*var s = document.getElementById(\"output\").innerHTML)\n             + String.fromCharCode(data[dp]);\n            s = s.replace(/\\n/g,\"<br>\").replace(/ /g,\"&amp;nbsp;\");\n            document.getElementById(\"output\").innerHTML = s;*/\n        },\n    };\n\n    let ar=prog.split('');\n    var st = [], back, error = -1;\n    for (ip=0; ip<ar.length; ip++) {\n        switch(ar[ip]) {\n        case '[':\n            st.push(ip);\n            break;\n        case ']':\n            if (st.length == 0) error = ip;\n            back = st.pop();\n            ahead[ip] = back;\n            ahead[back] = ip;\n            break;\n        }\n    }\n\n    for(ip=0;ip<ar.length;ip++){\n    if(commands.hasOwnProperty(ar[ip]))\n          commands[ar[ip]]();\n    }\n\n    return output;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>brain(hello)</code> should return a string</p>",
+      "testString": "assert(typeof brain(hello) === 'string');"
+    },
+    {
+      "text": "<p><code>brain(\"++++++[>++++++++++&#x3C;-]>+++++.\")</code> should return \"A\"</p>",
+      "testString": "assert.equal(brain('++++++[>++++++++++<-]>+++++.'), 'A');"
+    },
+    {
+      "text": "<p><code>brain(hello)</code> should return <code>Hello World!\\n</code></p>",
+      "testString": "assert.equal(brain(hello), 'Hello World!\\n');"
+    },
+    {
+      "text": "<p><code>brain(fib)</code> should return <code>1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89</code></p>",
+      "testString": "assert.equal(brain(fib), '1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Write a function to implement a Brain**** interpreter. The function will take a string as a parameter and should return a string as the output. More details are given below:</p>\n<p>RCBF is a set of <a href=\"https://rosettacode.org/wiki/Brainf***\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Brainf***</a> compilers and interpreters written for Rosetta Code in a variety of languages.</p>\n<p>Below are links to each of the versions of RCBF.</p>\n<p>An implementation need only properly implement the following instructions:</p>\n<table>\n<thead>\n<tr>\n<th>Command</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>></code></td>\n<td>Move the pointer to the right</td>\n</tr>\n<tr>\n<td><code>&#x3C;</code></td>\n<td>Move the pointer to the left</td>\n</tr>\n<tr>\n<td><code>+</code></td>\n<td>Increment the memory cell under the pointer</td>\n</tr>\n<tr>\n<td><code>-</code></td>\n<td>Decrement the memory cell under the pointer</td>\n</tr>\n<tr>\n<td><code>.</code></td>\n<td>Output the character signified by the cell at the pointer</td>\n</tr>\n<tr>\n<td><code>,</code></td>\n<td>Input a character and store it in the cell at the pointer</td>\n</tr>\n<tr>\n<td><code>[</code></td>\n<td>Jump past the matching <code>]</code> if the cell under the pointer is 0</td>\n</tr>\n<tr>\n<td><code>]</code></td>\n<td>Jump back to the matching <code>[</code> if the cell under the pointer is nonzero</td>\n</tr>\n</tbody>\n</table>\n<p>Any cell size is allowed, EOF (<em>E</em>nd-<em>O</em>-<em>F</em>ile) support is optional, as is whether you have bounded or unbounded memory.</p>\n</section>",
+  "translationPending": false,
+  "block": "rosetta-code-challenges",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 17,
+  "certification": "rosetta-code",
+  "superBlock": "rosetta-code",
+  "challengeOrder": 43,
+  "required": [],
+  "helpCategory": "Rosetta",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

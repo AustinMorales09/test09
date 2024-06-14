@@ -1,0 +1,85 @@
+{
+  "id": "5900f3a41000cf542c50feb7",
+  "title": "Problem 56: Powerful digit sum",
+  "challengeType": 1,
+  "forumTopicId": 302167,
+  "dashedName": "problem-56-powerful-digit-sum",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function powerfulDigitSum(n) {\n\n  return true;\n}\n\npowerfulDigitSum(3);",
+      "error": null,
+      "seed": "function powerfulDigitSum(n) {\n\n  return true;\n}\n\npowerfulDigitSum(3);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function powerfulDigitSum(n) {\n  function sumDigitsOfPower(numA, numB) {\n    let digitsSum = 0;\n    let number = power(numA, numB);\n    while (number > 0n) {\n      const digit = number % 10n;\n      digitsSum += parseInt(digit, 10);\n      number = number / 10n;\n    }\n    return digitsSum;\n  }\n\n  function power(numA, numB) {\n    let sum = 1n;\n    for (let b = 0; b < numB; b++) {\n      sum = sum * BigInt(numA);\n    }\n    return sum;\n  }\n\n  const limit = n - 1;\n  let maxDigitsSum = 0;\n  for (let a = limit; a > 0; a--) {\n    for (let b = limit; b > 0; b--) {\n      const curDigitSum = sumDigitsOfPower(a, b);\n      if (curDigitSum > maxDigitsSum) {\n        maxDigitsSum = curDigitSum;\n      }\n    }\n  }\n  return maxDigitsSum;\n}",
+        "error": null,
+        "seed": "function powerfulDigitSum(n) {\n  function sumDigitsOfPower(numA, numB) {\n    let digitsSum = 0;\n    let number = power(numA, numB);\n    while (number > 0n) {\n      const digit = number % 10n;\n      digitsSum += parseInt(digit, 10);\n      number = number / 10n;\n    }\n    return digitsSum;\n  }\n\n  function power(numA, numB) {\n    let sum = 1n;\n    for (let b = 0; b < numB; b++) {\n      sum = sum * BigInt(numA);\n    }\n    return sum;\n  }\n\n  const limit = n - 1;\n  let maxDigitsSum = 0;\n  for (let a = limit; a > 0; a--) {\n    for (let b = limit; b > 0; b--) {\n      const curDigitSum = sumDigitsOfPower(a, b);\n      if (curDigitSum > maxDigitsSum) {\n        maxDigitsSum = curDigitSum;\n      }\n    }\n  }\n  return maxDigitsSum;\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>powerfulDigitSum(3)</code> should return a number.</p>",
+      "testString": "assert(typeof powerfulDigitSum(3) === 'number');"
+    },
+    {
+      "text": "<p><code>powerfulDigitSum(3)</code> should return <code>4</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitSum(3), 4);"
+    },
+    {
+      "text": "<p><code>powerfulDigitSum(10)</code> should return <code>45</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitSum(10), 45);"
+    },
+    {
+      "text": "<p><code>powerfulDigitSum(50)</code> should return <code>406</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitSum(50), 406);"
+    },
+    {
+      "text": "<p><code>powerfulDigitSum(75)</code> should return <code>684</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitSum(75), 684);"
+    },
+    {
+      "text": "<p><code>powerfulDigitSum(100)</code> should return <code>972</code>.</p>",
+      "testString": "assert.strictEqual(powerfulDigitSum(100), 972);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A googol ($10^{100}$) is a massive number: one followed by one-hundred zeros; $100^{100}$ is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the sum of the digits in each number is only 1.</p>\n<p>Considering natural numbers of the form, $a^b$, where <code>a</code>, <code>b</code> &#x3C; <code>n</code>, what is the maximum digital sum?</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-1-to-100",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 55,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

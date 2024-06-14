@@ -1,0 +1,116 @@
+{
+  "id": "657b2310b8cd52a4f15c1818",
+  "title": "Task 65",
+  "challengeType": 19,
+  "dashedName": "task-65",
+  "solutions": [],
+  "question": {
+    "text": "<p>What does <code>unconventional</code> imply about Alice's background in tech?</p>",
+    "answers": [
+      {
+        "answer": "<p>Her background is different from the usual way people get into tech</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Her background is exactly the same as most people in tech</p>",
+        "feedback": "<p><code>Unconventional</code> means not following the usual conventions, which contradicts being the same as most people.</p>"
+      },
+      {
+        "answer": "<p>She doesn't have any background in tech</p>",
+        "feedback": "<p><code>Unconventional</code> suggests a different approach, not the absence of a background.</p>"
+      },
+      {
+        "answer": "<p>She followed a very traditional path into tech</p>",
+        "feedback": "<p><code>Unconventional</code> indicates a non-traditional path, not a very traditional one.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        },
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "3.1-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 5.08
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 3.82,
+        "dialogue": {
+          "text": "Hey, Alice, how did you get into tech?",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4
+      },
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 4
+      },
+      {
+        "character": "Alice",
+        "startTime": 4.5,
+        "finishTime": 6.08,
+        "dialogue": {
+          "text": "My background is a bit unconventional.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 6.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The word <code>unconventional</code> is used to describe something that's not based on or conforming to what is generally done or believed. It often implies a method or approach that is different from the norm.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-ask-and-share-about-educational-and-professional-background",
+  "hasEditableBoundaries": false,
+  "order": 6,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 68,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

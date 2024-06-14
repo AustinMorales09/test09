@@ -1,0 +1,88 @@
+{
+  "id": "657e4de2c8c70a7ff7e1546d",
+  "title": "Task 92",
+  "challengeType": 19,
+  "dashedName": "task-92",
+  "solutions": [],
+  "question": {
+    "text": "<p>What do Maria and Sarah work together to do?</p>",
+    "answers": [
+      {
+        "answer": "<p>To write reports for the company.</p>",
+        "feedback": "<p>The focus is on project success, not just writing reports.</p>"
+      },
+      {
+        "answer": "<p>To organize team meetings.</p>",
+        "feedback": "<p>While important, the statement specifically mentions ensuring the project's success.</p>"
+      },
+      {
+        "answer": "<p>To plan company events.</p>",
+        "feedback": "<p>Their collaboration is centered around the project, not event planning.</p>"
+      },
+      {
+        "answer": "<p>To ensure the project's success.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 4
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-boardroom.png",
+      "characters": [
+        {
+          "character": "Sarah",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.5
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.2-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 22.22,
+        "finishTimestamp": 27.38
+      }
+    },
+    "commands": [
+      {
+        "character": "Sarah",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Maria",
+        "startTime": 1,
+        "finishTime": 6.16,
+        "dialogue": {
+          "text": "And this is Sarah, the senior developer. She and I work together to ensure the project's success.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Sarah",
+        "opacity": 0,
+        "startTime": 6.66
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>To ensure</code> means to make certain or guarantee that something happens. For example, <code>We ensure quality by checking every product</code> means they make sure every product is good.</p>\n<p>In a project, ensuring success means doing things that help the project succeed, like planning well or solving problems quickly.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductions-in-an-online-team-meeting",
+  "hasEditableBoundaries": false,
+  "order": 1,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 96,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

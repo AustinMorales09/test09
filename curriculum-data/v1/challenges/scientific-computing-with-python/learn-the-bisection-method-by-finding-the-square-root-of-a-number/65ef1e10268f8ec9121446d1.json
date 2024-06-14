@@ -1,0 +1,49 @@
+{
+  "id": "65ef1e10268f8ec9121446d1",
+  "title": "Step 20",
+  "challengeType": 20,
+  "dashedName": "step-20",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        36,
+        38
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):\n    if square_target < 0:\n        raise ValueError('Square root of negative number is not defined in real numbers')\n    if square_target == 1:\n        root = 1\n        print(f'The square root of {square_target} is 1')\n    elif square_target == 0:\n        root = 0\n        print(f'The square root of {square_target} is 0')\n\n    else:\n        low = 0\n        high = max(1, square_target)\n        root = None\n        \n        for _ in range(max_iterations):\n            mid = (low + high) / 2\n            square_mid = mid**2\n\n            if abs(square_mid - square_target) < tolerance:\n                root = mid\n                break\n\n            elif square_mid < square_target:\n                low = mid\n            else:\n                high = mid\n\n        if root is None:\n            print(f\"Failed to converge within {max_iterations} iterations.\")\n        \n        else:   \n            print(f'The square root of {square_target} is approximately {root}')\n    \n    return root\n\n\n",
+      "error": null,
+      "seed": "def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):\n    if square_target < 0:\n        raise ValueError('Square root of negative number is not defined in real numbers')\n    if square_target == 1:\n        root = 1\n        print(f'The square root of {square_target} is 1')\n    elif square_target == 0:\n        root = 0\n        print(f'The square root of {square_target} is 0')\n\n    else:\n        low = 0\n        high = max(1, square_target)\n        root = None\n        \n        for _ in range(max_iterations):\n            mid = (low + high) / 2\n            square_mid = mid**2\n\n            if abs(square_mid - square_target) < tolerance:\n                root = mid\n                break\n\n            elif square_mid < square_target:\n                low = mid\n            else:\n                high = mid\n\n        if root is None:\n            print(f\"Failed to converge within {max_iterations} iterations.\")\n        \n        else:   \n            print(f'The square root of {square_target} is approximately {root}')\n    \n    return root\n\n\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have the variable <code>N = 16</code> outside the function definition.</p>",
+      "testString": "({ \n    test: () => \n    {\n        assert(runPython(`_Node(_code).find_variable(\"N\").is_equivalent(\"N = 16\")`))\n    }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Outside the function definiton, create a variable <code>N</code> and assign the value of <code>16</code> to it.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-the-bisection-method-by-finding-the-square-root-of-a-number",
+  "hasEditableBoundaries": true,
+  "order": 4,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 19,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

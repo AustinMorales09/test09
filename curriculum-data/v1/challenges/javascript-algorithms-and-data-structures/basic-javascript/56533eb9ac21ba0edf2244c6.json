@@ -1,0 +1,83 @@
+{
+  "id": "56533eb9ac21ba0edf2244c6",
+  "title": "Stand in Line",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/ca8Q8tP",
+  "forumTopicId": 18307,
+  "dashedName": "stand-in-line",
+  "challengeFiles": [
+    {
+      "head": "var logOutput = [];\nvar originalConsole = console\nfunction capture() {\n    var nativeLog = console.log;\n    console.log = function (message) {\n        logOutput.push(message);\n        if(nativeLog.apply) {\n          nativeLog.apply(originalConsole, arguments);\n        } else {\n          var nativeMsg = Array.prototype.slice.apply(arguments).join(' ');\n          nativeLog(nativeMsg);\n        }\n    };\n}\n\nfunction uncapture() {\n  console.log = originalConsole.log;\n}\n\ncapture();",
+      "tail": "uncapture();\ntestArr = [1,2,3,4,5];\n(function() { return logOutput.join(\"\\n\");})();",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function nextInLine(arr, item) {\n  // Only change code below this line\n  \n  return item;\n  // Only change code above this line\n}\n\n// Setup\nlet testArr = [1, 2, 3, 4, 5];\n\n// Display code\nconsole.log(\"Before: \" + JSON.stringify(testArr));\nconsole.log(nextInLine(testArr, 6));\nconsole.log(\"After: \" + JSON.stringify(testArr));",
+      "error": null,
+      "seed": "function nextInLine(arr, item) {\n  // Only change code below this line\n  \n  return item;\n  // Only change code above this line\n}\n\n// Setup\nlet testArr = [1, 2, 3, 4, 5];\n\n// Display code\nconsole.log(\"Before: \" + JSON.stringify(testArr));\nconsole.log(nextInLine(testArr, 6));\nconsole.log(\"After: \" + JSON.stringify(testArr));"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let testArr = [1, 2, 3, 4, 5];\n\nfunction nextInLine(arr, item) {\n    arr.push(item);\n    return arr.shift();\n}",
+        "error": null,
+        "seed": "let testArr = [1, 2, 3, 4, 5];\n\nfunction nextInLine(arr, item) {\n    arr.push(item);\n    return arr.shift();\n}"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>nextInLine([], 5)</code> should return a number.</p>",
+      "testString": "assert.isNumber(nextInLine([], 5));"
+    },
+    {
+      "text": "<p><code>nextInLine([], 1)</code> should return <code>1</code></p>",
+      "testString": "assert(nextInLine([], 1) === 1);"
+    },
+    {
+      "text": "<p><code>nextInLine([2], 1)</code> should return <code>2</code></p>",
+      "testString": "assert(nextInLine([2], 1) === 2);"
+    },
+    {
+      "text": "<p><code>nextInLine([5,6,7,8,9], 1)</code> should return <code>5</code></p>",
+      "testString": "assert(nextInLine([5, 6, 7, 8, 9], 1) === 5);"
+    },
+    {
+      "text": "<p>After <code>nextInLine(testArr, 10)</code>, <code>testArr[4]</code> should be <code>10</code></p>",
+      "testString": "nextInLine(testArr, 10);\nassert(testArr[4] === 10);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In Computer Science a <dfn>queue</dfn> is an abstract <dfn>Data Structure</dfn> where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a function <code>nextInLine</code> which takes an array (<code>arr</code>) and a number (<code>item</code>) as arguments.</p>\n<p>Add the number to the end of the array, then remove the first element of the array.</p>\n<p>The <code>nextInLine</code> function should then return the element that was removed.</p>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 56,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

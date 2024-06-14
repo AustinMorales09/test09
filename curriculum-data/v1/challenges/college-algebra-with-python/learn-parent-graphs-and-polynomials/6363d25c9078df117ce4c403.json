@@ -1,0 +1,46 @@
+{
+  "id": "6363d25c9078df117ce4c403",
+  "title": "Parent Graphs and Polynomials: Extra",
+  "challengeType": 15,
+  "videoId": "YDlXmmRgQJI",
+  "dashedName": "parent-graphs-and-polynomials-extra",
+  "solutions": [],
+  "question": {
+    "text": "<p>How many sliders would you add to change the coefficients in a quadratic graph?</p>",
+    "answers": [
+      {
+        "answer": "<p>1</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>2</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>3</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>4</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>This next video will show you how to add sliders to your graphs, to see them change in real time. You will also see ways to use loops to find the roots of a graph, and how this method is different from factoring.</p>\n<p>Here is the <a href=\"https://colab.research.google.com/drive/1bspkmQVcKOXUuk-Orb0Mwl0GUGbqMpka?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Colab notebook to go along with this video.</a></p>\n</section>",
+  "translationPending": false,
+  "block": "learn-parent-graphs-and-polynomials",
+  "hasEditableBoundaries": false,
+  "order": 12,
+  "superOrder": 11,
+  "certification": "college-algebra-with-python",
+  "superBlock": "college-algebra-with-python",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

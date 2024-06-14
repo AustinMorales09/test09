@@ -1,0 +1,45 @@
+{
+  "id": "656a510695ccb03109117af0",
+  "title": "Task 47",
+  "challengeType": 19,
+  "dashedName": "task-47",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which sentence correctly uses the demonstrative pronoun <code>this</code>?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>Those is my pen on the table.</code></p>",
+        "feedback": "<p><code>This</code> is used for singular nouns. Look for a sentence where \"this\" points to a single item or idea.</p>"
+      },
+      {
+        "answer": "<p><code>This are my books on the shelf.</code></p>",
+        "feedback": "<p><code>This</code> is used for singular nouns. Look for a sentence where \"this\" points to a single item or idea.</p>"
+      },
+      {
+        "answer": "<p><code>This is my laptop.</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>This pencils are sharp.</code></p>",
+        "feedback": "<p><code>This</code> is used for singular nouns. Look for a sentence where \"this\" points to a single item or idea.</p>"
+      }
+    ],
+    "solution": 3
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>The demonstrative pronoun <code>this</code> is used to refer to a singular noun that is close to the speaker, both in terms of distance and in terms of the topic of conversation. It can refer to both tangible objects and intangible ideas or situations.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 48,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

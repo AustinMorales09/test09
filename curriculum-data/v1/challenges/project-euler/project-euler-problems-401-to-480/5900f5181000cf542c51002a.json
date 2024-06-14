@@ -1,0 +1,65 @@
+{
+  "id": "5900f5181000cf542c51002a",
+  "title": "Problem 427: n-sequences",
+  "challengeType": 1,
+  "forumTopicId": 302097,
+  "dashedName": "problem-427-n-sequences",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "function nSequences() {\n\n  return true;\n}\n\nnSequences();",
+      "error": null,
+      "seed": "function nSequences() {\n\n  return true;\n}\n\nnSequences();"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "// solution required",
+        "error": null,
+        "seed": "// solution required"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>nSequences()</code> should return <code>97138867</code>.</p>",
+      "testString": "assert.strictEqual(nSequences(), 97138867);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>A sequence of integers $S = \\{s_i\\}$ is called an $n$-sequence if it has $n$ elements and each element $s_i$ satisfies $1 ≤ s_i ≤ n$. Thus there are $n^n$ distinct $n$-sequences in total.</p>\n<p>For example, the sequence $S = \\{1, 5, 5, 10, 7, 7, 7, 2, 3, 7\\}$ is a 10-sequence.</p>\n<p>For any sequence $S$, let $L(S)$ be the length of the longest contiguous subsequence of $S$ with the same value. For example, for the given sequence $S$ above, $L(S) = 3$, because of the three consecutive 7's.</p>\n<p>Let $f(n) = \\sum L(S)$ for all $n$-sequences $S$.</p>\n<p>For example, $f(3) = 45$, $f(7) = 1\\,403\\,689$ and $f(11) = 481\\,496\\,895\\,121$.</p>\n<p>Find $f(7\\,500\\,000)\\bmod 1\\,000\\,000\\,009$.</p>\n</section>",
+  "translationPending": false,
+  "block": "project-euler-problems-401-to-480",
+  "hasEditableBoundaries": false,
+  "order": 4,
+  "superOrder": 16,
+  "certification": "project-euler",
+  "superBlock": "project-euler",
+  "challengeOrder": 26,
+  "required": [],
+  "helpCategory": "Euler",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": true,
+  "disableLoopProtectPreview": false
+}

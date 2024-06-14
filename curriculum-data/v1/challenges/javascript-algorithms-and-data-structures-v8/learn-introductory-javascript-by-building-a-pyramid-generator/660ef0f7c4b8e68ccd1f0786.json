@@ -1,0 +1,65 @@
+{
+  "id": "660ef0f7c4b8e68ccd1f0786",
+  "title": "Step 3",
+  "challengeType": 1,
+  "dashedName": "step-3",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        2
+      ],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let character = \"Hello\";",
+      "error": null,
+      "seed": "let character = \"Hello\";"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should not have double quotes in your code.</p>",
+      "testString": "assert.notMatch(code, /\"/);"
+    },
+    {
+      "text": "<p>You should use single quotes for your <code>\"Hello\"</code> string.</p>",
+      "testString": "assert.match(code, /'Hello'/);"
+    },
+    {
+      "text": "<p>You should still use <code>let</code> in your code.</p>",
+      "testString": "assert.match(code, /let/);"
+    },
+    {
+      "text": "<p>You should still declare a <code>character</code> variable.</p>",
+      "testString": "assert.match(code, /let\\s+character/);"
+    },
+    {
+      "text": "<p>Your <code>character</code> variable should still have the string <code>\"Hello\"</code> for its value.</p>",
+      "testString": "assert.equal(character, \"Hello\");"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>JavaScript has seven primitive data types, with <code>String</code> being one of them. In JavaScript, a <dfn>string</dfn> represents a sequence of characters and can be enclosed in either single (<code>'</code>) or double (<code>\"</code>) quotes.</p>\n<p>Note that strings are <dfn>immutable</dfn>, which means once they are created, they cannot be changed.</p>\n<p>Change your <code>\"Hello\"</code> string to use single quotes.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-introductory-javascript-by-building-a-pyramid-generator",
+  "hasEditableBoundaries": true,
+  "order": 0,
+  "superOrder": 1,
+  "certification": "javascript-algorithms-and-data-structures-v8",
+  "superBlock": "javascript-algorithms-and-data-structures-v8",
+  "challengeOrder": 2,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

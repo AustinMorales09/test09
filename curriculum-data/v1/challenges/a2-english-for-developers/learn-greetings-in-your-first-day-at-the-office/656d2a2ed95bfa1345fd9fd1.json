@@ -1,0 +1,88 @@
+{
+  "id": "656d2a2ed95bfa1345fd9fd1",
+  "title": "Task 158",
+  "challengeType": 19,
+  "dashedName": "task-158",
+  "solutions": [],
+  "question": {
+    "text": "<p>What should Sarah do with the card at the door?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>It is the door.</code></p>",
+        "feedback": "<p>This doesn't indicate an action.</p>"
+      },
+      {
+        "answer": "<p><code>Swipe it</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>good-old door.</code></p>",
+        "feedback": "<p><code>Good-old</code> describes familiarity, but doesn't indicate an action.</p>"
+      },
+      {
+        "answer": "<p><code>No, it isn't</code></p>",
+        "feedback": "<p>This is a negation and not related to what to do with the card.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 10.3,
+        "finishTimestamp": 12.24
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 2.9,
+        "dialogue": {
+          "text": "It's the good-old swipe at the door.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 3.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When Jake says <code>swipe at the door</code>, he means you have to move or <code>swipe</code> the access card close to a special reader at the door to open it.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 162,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

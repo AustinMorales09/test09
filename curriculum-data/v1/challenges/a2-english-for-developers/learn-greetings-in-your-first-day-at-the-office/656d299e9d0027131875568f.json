@@ -1,0 +1,88 @@
+{
+  "id": "656d299e9d0027131875568f",
+  "title": "Task 157",
+  "challengeType": 19,
+  "dashedName": "task-157",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which phrase means something is familiar and has been around for some time?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>good-old</code></p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>bad-old</code></p>",
+        "feedback": "<p>This doesn't make sense in English.</p>"
+      },
+      {
+        "answer": "<p><code>new-new</code></p>",
+        "feedback": "<p><code>New</code> means it's recent.</p>"
+      },
+      {
+        "answer": "<p><code>old-bad</code></p>",
+        "feedback": "<p>This is a reversed and incorrect version of <code>good-old</code>.</p>"
+      }
+    ],
+    "solution": 1
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company1-reception.png",
+      "characters": [
+        {
+          "character": "Jake",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-5.mp3",
+        "startTime": 1,
+        "startTimestamp": 10.3,
+        "finishTimestamp": 12.24
+      }
+    },
+    "commands": [
+      {
+        "character": "Jake",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Jake",
+        "startTime": 1,
+        "finishTime": 2.9,
+        "dialogue": {
+          "text": "It's the good-old swipe at the door.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Jake",
+        "opacity": 0,
+        "startTime": 3.4
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>Jake refers to the swipe system as the <code>good-old swipe</code>. The term <code>good-old</code> is an informal expression suggesting something is reliable, familiar, or has been around for a while. It's like saying it's traditional or well-known.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 161,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

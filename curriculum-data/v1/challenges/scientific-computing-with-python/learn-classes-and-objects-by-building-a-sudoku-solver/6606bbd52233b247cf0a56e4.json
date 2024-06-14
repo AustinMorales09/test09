@@ -1,0 +1,53 @@
+{
+  "id": "6606bbd52233b247cf0a56e4",
+  "title": "Step 23",
+  "challengeType": 20,
+  "dashedName": "step-23",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        12,
+        27
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "class Board:\n    def __init__(self, board):\n        self.board = board\n\n    def find_empty_cell(self):\n        for row, contents in enumerate(self.board):\n            try:\n                col = contents.index(0)\n                return row, col\n            except ValueError:\n                pass\n        return None\npuzzle = [\n  [1, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)\nprint(gameboard.find_empty_cell())",
+      "error": null,
+      "seed": "class Board:\n    def __init__(self, board):\n        self.board = board\n\n    def find_empty_cell(self):\n        for row, contents in enumerate(self.board):\n            try:\n                col = contents.index(0)\n                return row, col\n            except ValueError:\n                pass\n        return None\npuzzle = [\n  [1, 0, 2, 0, 0, 8, 0, 0, 0],\n  [0, 0, 0, 0, 0, 3, 7, 6, 2],\n  [4, 3, 0, 0, 0, 0, 8, 0, 0],\n  [0, 5, 0, 0, 3, 0, 0, 9, 0],\n  [0, 4, 0, 0, 0, 0, 0, 2, 6],\n  [0, 0, 0, 4, 6, 7, 0, 0, 0],\n  [0, 8, 6, 7, 0, 4, 0, 0, 0],\n  [0, 0, 0, 5, 1, 9, 0, 0, 8],\n  [1, 7, 0, 0, 0, 6, 0, 0, 5]\n]\n\ngameboard = Board(puzzle)\nprint(gameboard.find_empty_cell())"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should turn the first item of the first list of <code>puzzle</code> back into a zero.</p>",
+      "testString": "({ test: () => assert(runPython(`_Node(_code).find_variable(\"puzzle\").is_equivalent(\"puzzle = [[0, 0, 2, 0, 0, 8, 0, 0, 0], [0, 0, 0, 0, 0, 3, 7, 6, 2], [4, 3, 0, 0, 0, 0, 8, 0, 0], [0, 5, 0, 0, 3, 0, 0, 9, 0], [0, 4, 0, 0, 0, 0, 0, 2, 6], [0, 0, 0, 4, 6, 7, 0, 0, 0], [0, 8, 6, 7, 0, 4, 0, 0, 0], [0, 0, 0, 5, 1, 9, 0, 0, 8], [1, 7, 0, 0, 0, 6, 0, 0, 5]]\")`)) })"
+    },
+    {
+      "text": "<p>You should not have <code>print(gameboard.find_empty_cell())</code> in your code.</p>",
+      "testString": "({ test: () => assert.isFalse(runPython(`_Node(_code).has_call(\"print(gameboard.find_empty_cell())\")`)) })"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Now, turn the <code>1</code> you modified earlier back into a <code>0</code> to restore the original board configuration. Then, delete your <code>print</code> call.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-classes-and-objects-by-building-a-sudoku-solver",
+  "hasEditableBoundaries": true,
+  "order": 11,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 22,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

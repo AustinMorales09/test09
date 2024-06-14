@@ -1,0 +1,79 @@
+{
+  "id": "656a2b1c7216c026fcd156c7",
+  "title": "Task 33",
+  "challengeType": 22,
+  "dashedName": "task-33",
+  "solutions": [],
+  "fillInTheBlank": {
+    "sentence": "<p>_ _. I'm Tom.</p>",
+    "blanks": [
+      {
+        "answer": "Hi",
+        "feedback": "<p>Think about a common casual greeting.</p>"
+      },
+      {
+        "answer": "there",
+        "feedback": "<p>Think about a common casual greeting.</p>"
+      }
+    ]
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "1.1-2.mp3",
+        "startTime": 1,
+        "startTimestamp": 0,
+        "finishTimestamp": 3.52
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.15,
+        "dialogue": {
+          "text": "Hi there. I'm Tom. I'm the new graphic designer.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.65
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>When greeting someone casually or for the first time, <code>Hi, there</code> is a friendly way to say hello. It's often used in informal situations or to greet someone you might not know very well.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-greetings-in-your-first-day-at-the-office",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 34,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

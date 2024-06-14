@@ -1,0 +1,73 @@
+{
+  "id": "5f3477cbcb6ba47918c1da92",
+  "title": "Step 17",
+  "challengeType": 0,
+  "dashedName": "step-17",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        2,
+        8
+      ],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <main>\n      <h1>CAMPER CAFE</h1>\n      <p>Est. 2020</p>\n      <section>\n        <h2>Coffee</h2>\n      </section>\n    </main>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "h1, h2, p {\n  text-align: center;\n}",
+      "error": null,
+      "seed": "h1, h2, p {\n  text-align: center;\n}"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your code should have two <code>meta</code> elements.</p>",
+      "testString": "assert(code.match(/<meta.*?\\/?>/g).length === 2);"
+    },
+    {
+      "text": "<p>Your <code>meta</code> element should have a <code>name</code> attribute with a value of <code>viewport</code>.</p>",
+      "testString": "const meta = $('meta');\nassert(meta[0].outerHTML.match(/name=('|\")viewport\\1/) || meta[1].outerHTML.match(/name=('|\")viewport\\1/));"
+    },
+    {
+      "text": "<p>Your <code>meta</code> element should have a <code>content</code> attribute with a value of <code>width=device-width, initial-scale=1.0</code>.</p>",
+      "testString": "const meta = $('meta');\nassert(meta[0].outerHTML.match(/content=('|\")width=device-width, initial-scale=1.0\\1/) || meta[1].outerHTML.match(/content=('|\")width=device-width, initial-scale=1.0\\1/));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a <code>meta</code> element with a special <code>content</code> attribute.</p>\n<p>Add the following within the <code>head</code> element:</p>\n<pre><code class=\"language-html\">&#x3C;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n</code></pre>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 16,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

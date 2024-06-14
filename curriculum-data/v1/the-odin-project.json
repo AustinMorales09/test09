@@ -1,0 +1,496 @@
+{
+  "the-odin-project": {
+    "intro": [
+      "The Odin Project was created in 2013 by a lone developer, Erik Trautman. Over the years, an open source community has sprung up to maintain and expand the project.",
+      "freeCodeCamp has expanded upon the open source curriculum to make it run interactively in the browser, with tests to evaluate your code and ensure you've understood key concepts.",
+      "If you want the original experience of configuring all of The Odin Project to run on your local computer, you can check out the original Odin Project on <a href='https://www.theodinproject.com/' target='_blank' rel='noopener noreferrer nofollow'>The Odin Project website</a>. A huge thanks to The Odin Project community for continuing to maintain this valuable learning resource for developers all around the world.",
+      "This course is unofficial, and not endorsed by The Odin Project. Changes to The Odin Project curriculum content have been made, and all instructional material for this course is licenced under <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' target='_blank' rel='noopener noreferrer nofollow'>CC-BY-SA-NC 4.0</a>",
+      "<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed' target='_blank' rel='noopener noreferrer nofollow'>&copy; The Odin Project</a>",
+      "This course includes content from <a href='javascript.info'>JavaScript.info</a>, which is licenced under <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' target='_blank' rel='noopener noreferrer nofollow'>CC-BY-NC-SA 4.0</a>"
+    ],
+    "blocks": {
+      "top-build-a-recipe-project": {
+        "desc": [
+          "Put your HTML skills into practice by building a recipe page. This hands-on project allows you to apply your knowledge and create a functional web page while reinforcing key concepts of HTML development."
+        ],
+        "challenges": {
+          "name": "Learn HTML Foundations by Building a Recipe Page",
+          "isUpcomingChange": false,
+          "dashedName": "top-build-a-recipe-project",
+          "helpCategory": "Odin",
+          "order": 3,
+          "superBlock": "the-odin-project",
+          "challengeOrder": [
+            {
+              "id": "6391d1a4f7ac71efd0621380",
+              "title": "Build a Recipe Page Project"
+            }
+          ]
+        }
+      },
+      "top-introduction-to-flexbox": {
+        "desc": [
+          "Discover the power of Flexbox, a layout model that simplifies the design of flexible and responsive web layouts. Learn how to create dynamic and adaptive page structures with ease."
+        ],
+        "challenges": {
+          "name": "Introduction to Flexbox",
+          "isUpcomingChange": false,
+          "dashedName": "top-introduction-to-flexbox",
+          "helpCategory": "Odin",
+          "order": 9,
+          "superBlock": "the-odin-project",
+          "challengeOrder": [
+            {
+              "id": "6571b2fccc1de61d7b4dd37f",
+              "title": "Introduction to Flexbox Question A"
+            },
+            {
+              "id": "6571b2fecc1de61d7b4dd380",
+              "title": "Introduction to Flexbox Question B"
+            },
+            {
+              "id": "6571b2fecc1de61d7b4dd381",
+              "title": "Introduction to Flexbox Question C"
+            },
+            {
+              "id": "6571b2ffcc1de61d7b4dd382",
+              "title": "Introduction to Flexbox Question D"
+            },
+            {
+              "id": "6571b300cc1de61d7b4dd383",
+              "title": "Introduction to Flexbox Question E"
+            },
+            {
+              "id": "6571b300cc1de61d7b4dd384",
+              "title": "Introduction to Flexbox Question F"
+            },
+            {
+              "id": "6571c34568e4b3b17d3957f8",
+              "title": "Introduction to Flexbox Question G"
+            },
+            {
+              "id": "6571c34668e4b3b17d3957f9",
+              "title": "Introduction to Flexbox Question H"
+            },
+            {
+              "id": "6571c34768e4b3b17d3957fa",
+              "title": "Introduction to Flexbox Question I"
+            },
+            {
+              "id": "6571c34868e4b3b17d3957fb",
+              "title": "Introduction to Flexbox Question J"
+            },
+            {
+              "id": "6597b43d854b3fa8e35d66d7",
+              "title": "Introduction to Flexbox Question K"
+            }
+          ]
+        }
+      },
+      "top-learn-block-and-inline": {
+        "desc": [
+          "Explore the distinctions between block and inline elements in HTML and CSS. This course provides insights into how these display types affect layout and behavior, empowering you to make informed design decisions."
+        ],
+        "challenges": {
+          "name": "Learn the difference between Block and Inline",
+          "isUpcomingChange": false,
+          "dashedName": "top-learn-block-and-inline",
+          "helpCategory": "Odin",
+          "order": 8,
+          "superBlock": "the-odin-project",
+          "challengeOrder": [
+            {
+              "id": "6570447ce7b02272663824df",
+              "title": "Learn Block and Inline Question A"
+            },
+            {
+              "id": "6570447de7b02272663824e0",
+              "title": "Learn Block and Inline Question B"
+            },
+            {
+              "id": "6570447ee7b02272663824e1",
+              "title": "Learn Block and Inline Question C"
+            },
+            {
+              "id": "6570447ee7b02272663824e2",
+              "title": "Learn Block and Inline Question D"
+            },
+            {
+              "id": "6570447fe7b02272663824e3",
+              "title": "Learn Block and Inline Question E"
+            },
+            {
+              "id": "65704480e7b02272663824e4",
+              "title": "Learn Block and Inline Question F"
+            },
+            {
+              "id": "65704482e7b02272663824e5",
+              "title": "Learn Block and Inline Question G"
+            },
+            {
+              "id": "65704483e7b02272663824e6",
+              "title": "Learn Block and Inline Question H"
+            },
+            {
+              "id": "65704484e7b02272663824e7",
+              "title": "Learn Block and Inline Question I"
+            },
+            {
+              "id": "65704485e7b02272663824e8",
+              "title": "Learn Block and Inline Question J"
+            },
+            {
+              "id": "65704486e7b02272663824e9",
+              "title": "Learn Block and Inline Question K"
+            }
+          ]
+        }
+      },
+      "top-learn-css-foundations": {
+        "desc": [
+          "Dive into the world of Cascading Style Sheets (CSS) and learn how to style your HTML elements. Explore styling properties, selectors, and layouts to bring your web pages to life."
+        ],
+        "challenges": {
+          "name": "Learn CSS Foundations",
+          "isUpcomingChange": false,
+          "dashedName": "top-learn-css-foundations",
+          "helpCategory": "Odin",
+          "order": 4,
+          "superBlock": "the-odin-project",
+          "challengeOrder": [
+            {
+              "id": "63ee351d0d8d4841c3a7091a",
+              "title": "CSS Foundations Question A"
+            },
+            {
+              "id": "63ee35240d8d4841c3a7091b",
+              "title": "CSS Foundations Question B"
+            },
+            {
+              "id": "63ee352b0d8d4841c3a7091c",
+              "title": "CSS Foundations Question C"
+            },
+            {
+              "id": "63ee35300d8d4841c3a7091d",
+              "title": "CSS Foundations Question D"
+            },
+            {
+              "id": "63ee35370d8d4841c3a7091e",
+              "title": "CSS Foundations Question E"
+            },
+            {
+              "id": "63ee353e0d8d4841c3a7091f",
+              "title": "CSS Foundations Question F"
+            },
+            {
+              "id": "63ee35450d8d4841c3a70920",
+              "title": "CSS Foundations Question G"
+            },
+            {
+              "id": "63ee354c0d8d4841c3a70921",
+              "title": "CSS Foundations Question H"
+            }
+          ]
+        }
+      },
+      "top-learn-css-foundations-projects": {
+        "desc": [
+          "Take your CSS skills to the next level by working on practical projects. This course provides hands-on experience in applying CSS to create responsive designs for real-world scenarios."
+        ],
+        "challenges": {
+          "name": "Learn CSS Foundations Projects",
+          "isUpcomingChange": false,
+          "dashedName": "top-learn-css-foundations-projects",
+          "helpCategory": "Odin",
+          "order": 5,
+          "superBlock": "the-odin-project",
+          "challengeOrder": [
+            {
+              "id": "63ee3f71381756f9716727ef",
+              "title": "CSS Foundations Exercise A"
+            },
+            {
+              "id": "63ee3fe4381756f9716727f0",
+              "title": "CSS Foundations Exercise B"
+            },
+            {
+              "id": "63ee3fe9381756f9716727f1",
+              "title": "CSS Foundations Exercise C"
+            },
+            {
+              "id": "63ee3ff1381756f9716727f2",
+              "title": "CSS Foundations Exercise D"
+            },
+            {
+              "id": "63ee3ff8381756f9716727f3",
+              "title": "CSS Foundations Exercise E"
+            }
+          ]
+        }
+      },
+      "top-learn-css-specificity": {
+        "desc": [
+          "Learn CSS specificity and gain a better understanding of how styles are applied to HTML elements. This course explores the nuances of CSS rules and helps you write efficient and targeted styles for your web pages."
+        ],
+        "challenges": {
+          "name": "Learn CSS Specificity",
+          "dashedName": "top-learn-css-specificity",
+          "isUpcomingChange": false,
+          "helpCategory": "Odin",
+          "order": 6,
+          "superBlock": "the-odin-project",
+          "challengeOrder": [
+            {
+              "id": "6489bcd7b7600c818dc297ea",
+              "title": "The Cascade of CSS Question A"
+            },
+            {
+              "id": "6489c96782cf2e4f86f03ae2",
+              "title": "The Cascade of CSS Question B"
+            },
+            {
+              "id": "6489cb0b82cf2e4f86f03ae3",
+              "title": "The Cascade of CSS Question C"
+            },
+            {
+              "id": "6489cf5882cf2e4f86f03ae5",
+              "title": "The Cascade of CSS Question D"
+            },
+            {
+              "id": "6489cf6282cf2e4f86f03ae6",
+              "title": "The Cascade of CSS Question E"
+            },
+            {
+              "id": "6489cf6782cf2e4f86f03ae7",
+              "title": "The Cascade of CSS Question F"
+            },
+            {
+              "id": "6489cf7682cf2e4f86f03ae8",
+              "title": "The Cascade of CSS Question G"
+            },
+            {
+              "id": "648acb0745e79f79650fa2ac",
+              "title": "The Cascade of CSS Question H"
+            }
+          ]
+        }
+      },
+      "top-learn-html-foundations": {
+        "desc": [
+          "Get a solid grasp of HTML essentials with this course. From structuring web pages to understanding semantic tags, you'll build a strong foundation for creating well-organized and accessible content on the web."
+        ],
+        "challenges": {
+          "name": "Learn HTML Foundations",
+          "isUpcomingChange": false,
+          "dashedName": "top-learn-html-foundations",
+          "helpCategory": "Odin",
+          "order": 0,
+          "superBlock": "the-odin-project",
+          "challengeOrder": [
+            {
+              "id": "637f4e0e72c65bc8e73dfe1e",
+              "title": "HTML Foundations Question A"
+            },
+            {
+              "id": "637f4e1672c65bc8e73dfe1f",
+              "title": "HTML Foundations Question B"
+            },
+            {
+              "id": "637f4e1c72c65bc8e73dfe20",
+              "title": "HTML Foundations Question C"
+            },
+            {
+              "id": "637f4e2872c65bc8e73dfe21",
+              "title": "HTML Foundations Question D"
+            },
+            {
+              "id": "637f4e2f72c65bc8e73dfe22",
+              "title": "HTML Foundations Question E"
+            },
+            {
+              "id": "637f4e3672c65bc8e73dfe23",
+              "title": "HTML Foundations Question F"
+            },
+            {
+              "id": "6376327e2724a688c04636e3",
+              "title": "HTML Foundations Question G"
+            },
+            {
+              "id": "637633162724a688c04636e4",
+              "title": "HTML Foundations Question H"
+            }
+          ]
+        }
+      },
+      "top-links-and-images": {
+        "desc": [
+          "Learn how to incorporate links and images into your web projects. This course covers the fundamentals of creating links and embedding images to make your websites more interactive and visually appealing."
+        ],
+        "challenges": {
+          "name": "Links and Images",
+          "isUpcomingChange": false,
+          "dashedName": "top-links-and-images",
+          "helpCategory": "Odin",
+          "order": 2,
+          "superBlock": "the-odin-project",
+          "challengeOrder": [
+            {
+              "id": "637f704072c65bc8e73dfe36",
+              "title": "Links and Images Question A"
+            },
+            {
+              "id": "637f703572c65bc8e73dfe35",
+              "title": "Links and Images Question B"
+            },
+            {
+              "id": "637f703072c65bc8e73dfe34",
+              "title": "Links and Images Question C"
+            },
+            {
+              "id": "637f702872c65bc8e73dfe33",
+              "title": "Links and Images Question D"
+            },
+            {
+              "id": "637f702372c65bc8e73dfe32",
+              "title": "Links and Images Question E"
+            },
+            {
+              "id": "637f701c72c65bc8e73dfe31",
+              "title": "Links and Images Question F"
+            },
+            {
+              "id": "637f701572c65bc8e73dfe30",
+              "title": "Links and Images Question G"
+            },
+            {
+              "id": "637f700b72c65bc8e73dfe2f",
+              "title": "Links and Images Question H"
+            }
+          ]
+        }
+      },
+      "top-the-box-model": {
+        "desc": [
+          "Learn the CSS box model with this course. Understand how elements are rendered on the web, and learn to manipulate spacing, borders, and padding to achieve your desired layout and design."
+        ],
+        "challenges": {
+          "name": "Learn the Box Model",
+          "isUpcomingChange": false,
+          "dashedName": "top-the-box-model",
+          "helpCategory": "Odin",
+          "order": 7,
+          "superBlock": "the-odin-project",
+          "challengeOrder": [
+            {
+              "id": "64a5529c02815a7d323aab88",
+              "title": "The Box Model Question A"
+            },
+            {
+              "id": "64a553ed02815a7d323aab89",
+              "title": "The Box Model Question B"
+            },
+            {
+              "id": "64a5551d02815a7d323aab8a",
+              "title": "The Box Model Question C"
+            },
+            {
+              "id": "64a55a6102815a7d323aab8b",
+              "title": "The Box Model Question D"
+            },
+            {
+              "id": "64a669f77a7d00f97013ed0c",
+              "title": "The Box Model Question E"
+            },
+            {
+              "id": "64a66c917a7d00f97013ed0d",
+              "title": "The Box Model Question F"
+            },
+            {
+              "id": "64a6702e7a7d00f97013ed0e",
+              "title": "The Box Model Question G"
+            },
+            {
+              "id": "64a674937a7d00f97013ed0f",
+              "title": "The Box Model Question H"
+            },
+            {
+              "id": "64a6749a7a7d00f97013ed10",
+              "title": "The Box Model Question I"
+            },
+            {
+              "id": "64a674a47a7d00f97013ed11",
+              "title": "The Box Model Question J"
+            },
+            {
+              "id": "64a674ac7a7d00f97013ed12",
+              "title": "The Box Model Question K"
+            },
+            {
+              "id": "64a674b97a7d00f97013ed13",
+              "title": "The Box Model Question L"
+            },
+            {
+              "id": "64a674c27a7d00f97013ed14",
+              "title": "The Box Model Question M"
+            }
+          ]
+        }
+      },
+      "top-working-with-text": {
+        "desc": [
+          "Explore the intricacies of working with text in web development. Learn about text formatting, manipulation, and presentation to enhance your skills in creating web content."
+        ],
+        "challenges": {
+          "name": "Working with Text",
+          "isUpcomingChange": false,
+          "dashedName": "top-working-with-text",
+          "helpCategory": "Odin",
+          "order": 1,
+          "superBlock": "the-odin-project",
+          "challengeOrder": [
+            {
+              "id": "637f4e5872c65bc8e73dfe27",
+              "title": "Working With Text Question A"
+            },
+            {
+              "id": "637f4e5f72c65bc8e73dfe28",
+              "title": "Working With Text Question B"
+            },
+            {
+              "id": "637f4e6672c65bc8e73dfe29",
+              "title": "Working With Text Question C"
+            },
+            {
+              "id": "637f4e6e72c65bc8e73dfe2a",
+              "title": "Working With Text Question D"
+            },
+            {
+              "id": "637f4e7972c65bc8e73dfe2b",
+              "title": "Working With Text Question E"
+            },
+            {
+              "id": "637f4e8072c65bc8e73dfe2c",
+              "title": "Working With Text Question F"
+            },
+            {
+              "id": "637f4e8772c65bc8e73dfe2d",
+              "title": "Working With Text Question G"
+            },
+            {
+              "id": "637f4e3e72c65bc8e73dfe24",
+              "title": "Working With Text Question H"
+            },
+            {
+              "id": "637f4e4672c65bc8e73dfe25",
+              "title": "Working With Text Question I"
+            },
+            {
+              "id": "637f4e5172c65bc8e73dfe26",
+              "title": "Working With Text Question J"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

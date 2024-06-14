@@ -1,0 +1,73 @@
+{
+  "id": "5f356ed63c7807a4f1e6d054",
+  "title": "Step 21",
+  "challengeType": 0,
+  "dashedName": "step-21",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.html"
+      ],
+      "name": "index",
+      "ext": "html",
+      "path": "index.html",
+      "fileKey": "indexhtml",
+      "contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div id=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>",
+      "error": null,
+      "seed": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cafe Menu</title>\n    <link href=\"styles.css\" rel=\"stylesheet\"/>\n  </head>\n  <body>\n    <div id=\"menu\">\n      <main>\n        <h1>CAMPER CAFE</h1>\n        <p>Est. 2020</p>\n        <section>\n          <h2>Coffee</h2>\n        </section>\n      </main>\n    </div>\n  </body>\n</html>"
+    },
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        0,
+        8
+      ],
+      "history": [
+        "styles.css"
+      ],
+      "name": "styles",
+      "ext": "css",
+      "path": "styles.css",
+      "fileKey": "stylescss",
+      "contents": "body {\n  background-color: burlywood;\n}\n\nh1, h2, p {\n  text-align: center;\n}\n",
+      "error": null,
+      "seed": "body {\n  background-color: burlywood;\n}\n\nh1, h2, p {\n  text-align: center;\n}\n"
+    }
+  ],
+  "solutions": [],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have a <code>#menu</code> selector.</p>",
+      "testString": "const hasDiv = new __helpers.CSSHelp(document).getStyle(\"#menu\");\nassert(hasDiv);"
+    },
+    {
+      "text": "<p>You should set the <code>width</code> property to <code>300px</code>.</p>",
+      "testString": "const hasWidth = new __helpers.CSSHelp(document).getCSSRules().some(x => x.style.width === '300px');\nassert(hasWidth);"
+    },
+    {
+      "text": "<p>Your <code>div</code> should have a width of 300px.</p>",
+      "testString": "const divWidth = new __helpers.CSSHelp(document).getStyle(\"#menu\")?.getPropertyValue('width');\nassert(divWidth === '300px');"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>The goal now is to make the <code>div</code> not take up the entire width of the page. The CSS <code>width</code> property is perfect for this.</p>\n<p>You can use the <code>id</code> selector to target a specific element with an <code>id</code> attribute. An <code>id</code> selector is defined by placing the hash symbol <code>#</code> directly in front of the element's <code>id</code> value. For example, if an element has the <code>id</code> of <code>cat</code> then you would target that element like this:</p>\n<pre><code class=\"language-css\">#cat {\n  width: 250px;\n}\n</code></pre>\n<p>Use the <code>#menu</code> selector to give your element a width of <code>300px</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-basic-css-by-building-a-cafe-menu",
+  "hasEditableBoundaries": true,
+  "order": 1,
+  "superOrder": 0,
+  "certification": "responsive-web-design",
+  "superBlock": "2022/responsive-web-design",
+  "challengeOrder": 20,
+  "required": [],
+  "helpCategory": "HTML-CSS",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

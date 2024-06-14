@@ -1,0 +1,88 @@
+{
+  "id": "663683bee8bb3c35a05ba69a",
+  "title": "Task 15",
+  "challengeType": 19,
+  "dashedName": "task-15",
+  "solutions": [],
+  "question": {
+    "text": "<p>What is Tom's opinion about Lisa?</p>",
+    "answers": [
+      {
+        "answer": "<p>She is a very logic person and her work always follows the rules</p>",
+        "feedback": "<p>That is not a very good thing for someone who needs to use their creativity all the time.</p>"
+      },
+      {
+        "answer": "<p>She has great ideas to find solutions to problems.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Tom doesn't like her very much</p>",
+        "feedback": "<p>Probably he wouldn't praise her as being <code>creative</code> if he did not like her.</p>"
+      },
+      {
+        "answer": "<p>She thinks her works are unimaginative</p>",
+        "feedback": "<p>On the contrary, if he thinks she's <code>creative</code>, he believes in her imagination.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-center.png",
+      "characters": [
+        {
+          "character": "Tom",
+          "position": {
+            "x": 50,
+            "y": 15,
+            "z": 1.2
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.3-1.mp3",
+        "startTime": 1,
+        "startTimestamp": 17.88,
+        "finishTimestamp": 20.96
+      }
+    },
+    "commands": [
+      {
+        "character": "Tom",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Tom",
+        "startTime": 1,
+        "finishTime": 4.08,
+        "dialogue": {
+          "text": "She's a UX/UI designer. She's really creative.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Tom",
+        "opacity": 0,
+        "startTime": 4.58
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p>A <code>creative</code> person is someone who likes to make new things or think of new ideas. They might work with art, write stories, or come up with new ways to solve problems. <code>Creativity</code> is about using imagination to make something unique or different.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-clarify-information-in-different-interactions",
+  "hasEditableBoundaries": false,
+  "order": 11,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 15,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

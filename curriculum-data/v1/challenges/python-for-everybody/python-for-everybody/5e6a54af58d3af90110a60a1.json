@@ -1,0 +1,46 @@
+{
+  "id": "5e6a54af58d3af90110a60a1",
+  "title": "Introduction: Hardware Architecture",
+  "challengeType": 11,
+  "videoId": "H6qtjRTfSog",
+  "bilibiliIds": {
+    "aid": 206977572,
+    "bvid": "BV1zh411z7Ak",
+    "cid": 376199262
+  },
+  "dashedName": "introduction-hardware-architecture",
+  "solutions": [],
+  "question": {
+    "text": "<p>Where are your programs stored when they are running?</p>",
+    "answers": [
+      {
+        "answer": "<p>Hard Drive.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Memory.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Central Processing Unit.</p>",
+        "feedback": null
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "translationPending": false,
+  "block": "python-for-everybody",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 20,
+  "certification": "python-for-everybody",
+  "superBlock": "python-for-everybody",
+  "challengeOrder": 1,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

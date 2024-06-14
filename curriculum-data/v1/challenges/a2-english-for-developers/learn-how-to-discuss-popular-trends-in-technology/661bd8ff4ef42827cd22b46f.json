@@ -1,0 +1,97 @@
+{
+  "id": "661bd8ff4ef42827cd22b46f",
+  "title": "Task 70",
+  "challengeType": 19,
+  "dashedName": "task-70",
+  "solutions": [],
+  "question": {
+    "text": "<p>Listen and choose what Alice means by mentioning using biometrics for <code>access control</code>, like <code>unlocking your phone</code>.</p>",
+    "answers": [
+      {
+        "answer": "<p>Keeping your phone secure</p>",
+        "feedback": "<p><code>Unlocking your phone</code> is about removing security, not keeping it secure.</p>"
+      },
+      {
+        "answer": "<p>Making your phone ready to use by removing security</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p>Throwing your phone away</p>",
+        "feedback": "<p><code>Unlocking your phone</code> doesn't mean throwing it away.</p>"
+      },
+      {
+        "answer": "<p>Keeping doors closed</p>",
+        "feedback": "<p><code>Unlocking your phone</code> is not the same as turning it off.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "scene": {
+    "setup": {
+      "background": "company2-breakroom.png",
+      "characters": [
+        {
+          "character": "Alice",
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 1.4
+          },
+          "opacity": 0
+        }
+      ],
+      "audio": {
+        "filename": "4.2-4.mp3",
+        "startTime": 1,
+        "startTimestamp": 6.92,
+        "finishTimestamp": 14.9
+      }
+    },
+    "commands": [
+      {
+        "character": "Alice",
+        "opacity": 1,
+        "startTime": 0
+      },
+      {
+        "character": "Alice",
+        "startTime": 1,
+        "finishTime": 4.44,
+        "dialogue": {
+          "text": "Biometrics is the use of physical or behavioral traits for security.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "startTime": 5.02,
+        "finishTime": 8.98,
+        "dialogue": {
+          "text": "It's used for access control, like unlocking your phone with your face or fingerprint.",
+          "align": "center"
+        }
+      },
+      {
+        "character": "Alice",
+        "opacity": 0,
+        "startTime": 9.48
+      }
+    ]
+  },
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>Unlock your phone</code> means making your phone ready to use by removing the security barrier. When you unlock your phone, you enter a code, use your fingerprint, or use facial recognition to remove the protection, allowing you to use your phone freely.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-discuss-popular-trends-in-technology",
+  "hasEditableBoundaries": false,
+  "order": 10,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 73,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

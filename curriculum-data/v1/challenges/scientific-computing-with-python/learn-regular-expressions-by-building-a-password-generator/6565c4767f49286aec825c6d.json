@@ -1,0 +1,71 @@
+{
+  "id": "6565c4767f49286aec825c6d",
+  "title": "Step 72",
+  "challengeType": 20,
+  "dashedName": "step-72",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [
+        37,
+        40
+      ],
+      "history": [
+        "main.py"
+      ],
+      "name": "main",
+      "ext": "py",
+      "path": "main.py",
+      "fileKey": "mainpy",
+      "contents": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase=1):\n\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, r'\\d'),\n            (special_chars, fr'[{symbols}]'),\n            (uppercase, r'[A-Z]'),\n            (lowercase, r'[a-z]')\n        ]\n\n        # Check constraints        \n        if all(\n            constraint <= len(re.findall(pattern, password))\n            for constraint, pattern in constraints\n        ):\n            break\n    \n    return password\n    \nnew_password = generate_password()\nprint('Generated password:', new_password)",
+      "error": null,
+      "seed": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase=1):\n\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, r'\\d'),\n            (special_chars, fr'[{symbols}]'),\n            (uppercase, r'[A-Z]'),\n            (lowercase, r'[a-z]')\n        ]\n\n        # Check constraints        \n        if all(\n            constraint <= len(re.findall(pattern, password))\n            for constraint, pattern in constraints\n        ):\n            break\n    \n    return password\n    \nnew_password = generate_password()\nprint('Generated password:', new_password)"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "main.py"
+        ],
+        "name": "main",
+        "ext": "py",
+        "path": "main.py",
+        "fileKey": "mainpy",
+        "contents": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase=1):\n\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, r'\\d'),\n            (special_chars, fr'[{symbols}]'),\n            (uppercase, r'[A-Z]'),\n            (lowercase, r'[a-z]')\n        ]\n\n        # Check constraints\n        if all(\n            constraint <= len(re.findall(pattern, password))\n            for constraint, pattern in constraints\n        ):            \n            break\n    \n    return password\n    \n\nif __name__ == '__main__':\n    new_password = generate_password()\n    print('Generated password:', new_password)\n    ",
+        "error": null,
+        "seed": "import re\nimport secrets\nimport string\n\n\ndef generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase=1):\n\n    # Define the possible characters for the password\n    letters = string.ascii_letters\n    digits = string.digits\n    symbols = string.punctuation\n\n    # Combine all characters\n    all_characters = letters + digits + symbols\n\n    while True:\n        password = ''\n        # Generate password\n        for _ in range(length):\n            password += secrets.choice(all_characters)\n        \n        constraints = [\n            (nums, r'\\d'),\n            (special_chars, fr'[{symbols}]'),\n            (uppercase, r'[A-Z]'),\n            (lowercase, r'[a-z]')\n        ]\n\n        # Check constraints\n        if all(\n            constraint <= len(re.findall(pattern, password))\n            for constraint, pattern in constraints\n        ):            \n            break\n    \n    return password\n    \n\nif __name__ == '__main__':\n    new_password = generate_password()\n    print('Generated password:', new_password)\n    "
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>You should have an <code>if</code> statement that checks if <code>__name__ == '__main__'</code>.</p>",
+      "testString": "const commentless_code = __helpers.python.removeComments(code);\nassert(commentless_code.match(/^if\\s+__name__\\s*==\\s*(\"|')__main__\\1\\s*:\\s*$/m));"
+    },
+    {
+      "text": "<p>You should put the <code>new_password</code> assignment and the following <code>print()</code> call in your new <code>if</code> statement body.</p>",
+      "testString": "({ test: () => {\n    const commentless_code = __helpers.python.removeComments(code);\n    const {block_body} = __helpers.python.getBlock(commentless_code, /if\\s+__name__\\s*==\\s*(\"|')__main__\\3\\s*/);\n    assert(block_body.match(/^\\s+new_password\\s*=\\s*generate_password\\s*\\(\\s*\\)\\s*print\\s*\\(\\s*(\"|')Generated\\spassword:\\1\\s*,\\s*new_password\\s*\\)\\s*$/));    \n  }\n})"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Finally, put the last two lines of your code inside an <code>if</code> statement that execute when <code>__name__ == '__main__'</code>. In this way, your code won't run when imported as a module. Otherwise, it will call <code>generate_password()</code> and print the generated password.</p>\n<p>With that, the password generator project is complete.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-regular-expressions-by-building-a-password-generator",
+  "hasEditableBoundaries": true,
+  "order": 6,
+  "superOrder": 7,
+  "certification": "scientific-computing-with-python",
+  "superBlock": "scientific-computing-with-python",
+  "challengeOrder": 71,
+  "required": [],
+  "helpCategory": "Python",
+  "usesMultifileEditor": true,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

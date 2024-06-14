@@ -1,0 +1,75 @@
+{
+  "id": "56bbb991ad1ed5201cd392cf",
+  "title": "Write Reusable JavaScript with Functions",
+  "challengeType": 1,
+  "videoUrl": "https://scrimba.com/c/cL6dqfy",
+  "forumTopicId": 18378,
+  "dashedName": "write-reusable-javascript-with-functions",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "\nfunction testConsole() {\n  var logOutput = \"\";\n  var originalConsole = console;\n  var nativeLog = console.log;\n  var hiWorldWasLogged = false;\n  console.log = function (message) {\n    if(message === 'Hi World')  {\n      console.warn(message)\n      hiWorldWasLogged = true;\n    }\n    if(message && message.trim) logOutput = message.trim();\n    if(nativeLog.apply) {\n      nativeLog.apply(originalConsole, arguments);\n    } else {\n      var nativeMsg = Array.prototype.slice.apply(arguments).join(' ');\n      nativeLog(nativeMsg);\n    }\n  };\n  reusableFunction();\n  console.log = nativeLog;\n  return hiWorldWasLogged;\n}\n",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "",
+      "error": null,
+      "seed": ""
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "function reusableFunction() {\n  console.log(\"Hi World\");\n}\nreusableFunction();",
+        "error": null,
+        "seed": "function reusableFunction() {\n  console.log(\"Hi World\");\n}\nreusableFunction();"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p><code>reusableFunction</code> should be a function.</p>",
+      "testString": "assert(typeof reusableFunction === 'function');"
+    },
+    {
+      "text": "<p>If <code>reusableFunction</code> is called, it should output the string <code>Hi World</code> to the console.</p>",
+      "testString": "assert(testConsole());"
+    },
+    {
+      "text": "<p>You should call <code>reusableFunction</code> once it is defined.</p>",
+      "testString": "const functionStr = reusableFunction && __helpers.removeWhiteSpace(reusableFunction.toString());\nconst codeWithoutFunction = __helpers.removeWhiteSpace(__helpers.removeJSComments(code)).replace(/reusableFunction\\(\\)\\{/g, '');\nassert(/reusableFunction\\(\\)/.test(codeWithoutFunction));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>In JavaScript, we can divide up our code into reusable parts called <dfn>functions</dfn>.</p>\n<p>Here's an example of a function:</p>\n<pre><code class=\"language-js\">function functionName() {\n  console.log(\"Hello World\");\n}\n</code></pre>\n<p>You can call or <dfn>invoke</dfn> this function by using its name followed by parentheses, like this: <code>functionName();</code> Each time the function is called it will print out the message <code>Hello World</code> on the dev console. All of the code between the curly braces will be executed every time the function is called.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<ol>\n  <li>\n    Create a function called <code>reusableFunction</code> which prints the string <code>Hi World</code> to the dev console.\n  </li>\n  <li>\n    Call the function.\n  </li>\n</ol>\n</section>",
+  "translationPending": false,
+  "block": "basic-javascript",
+  "hasEditableBoundaries": false,
+  "order": 0,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 48,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

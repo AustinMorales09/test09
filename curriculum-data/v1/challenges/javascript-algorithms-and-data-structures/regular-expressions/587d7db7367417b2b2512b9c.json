@@ -1,0 +1,90 @@
+{
+  "id": "587d7db7367417b2b2512b9c",
+  "title": "Find One or More Criminals in a Hunt",
+  "challengeType": 1,
+  "forumTopicId": 301343,
+  "dashedName": "find-one-or-more-criminals-in-a-hunt",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "script.js"
+      ],
+      "name": "script",
+      "ext": "js",
+      "path": "script.js",
+      "fileKey": "scriptjs",
+      "contents": "let reCriminals = /./; // Change this line",
+      "error": null,
+      "seed": "let reCriminals = /./; // Change this line"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "script.js"
+        ],
+        "name": "script",
+        "ext": "js",
+        "path": "script.js",
+        "fileKey": "scriptjs",
+        "contents": "let reCriminals = /C+/; // Change this line",
+        "error": null,
+        "seed": "let reCriminals = /C+/; // Change this line"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>Your regex should match one criminal (<code>C</code>) in the string <code>C</code></p>",
+      "testString": "assert('C'.match(reCriminals) && 'C'.match(reCriminals)[0] == 'C');"
+    },
+    {
+      "text": "<p>Your regex should match two criminals (<code>CC</code>) in the string <code>CC</code></p>",
+      "testString": "assert('CC'.match(reCriminals) && 'CC'.match(reCriminals)[0] == 'CC');"
+    },
+    {
+      "text": "<p>Your regex should match three criminals (<code>CCC</code>) in the string <code>P1P5P4CCCcP2P6P3</code>.</p>",
+      "testString": "assert(\n  'P1P5P4CCCcP2P6P3'.match(reCriminals) &&\n    'P1P5P4CCCcP2P6P3'.match(reCriminals)[0] == 'CCC'\n);"
+    },
+    {
+      "text": "<p>Your regex should match five criminals (<code>CCCCC</code>) in the string <code>P6P2P7P4P5CCCCCP3P1</code></p>",
+      "testString": "assert(\n  'P6P2P7P4P5CCCCCP3P1'.match(reCriminals) &&\n    'P6P2P7P4P5CCCCCP3P1'.match(reCriminals)[0] == 'CCCCC'\n);"
+    },
+    {
+      "text": "<p>Your regex should not match any criminals in the empty string <code>\"\"</code></p>",
+      "testString": "reCriminals.lastIndex = 0;\nassert(!reCriminals.test(''));"
+    },
+    {
+      "text": "<p>Your regex should not match any criminals in the string <code>P1P2P3</code></p>",
+      "testString": "reCriminals.lastIndex = 0;\nassert(!reCriminals.test('P1P2P3'));"
+    },
+    {
+      "text": "<p>Your regex should match fifty criminals (<code>CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</code>) in the string <code>P2P1P5P4CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCP3</code>.</p>",
+      "testString": "assert(\n  'P2P1P5P4CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCP3'.match(\n    reCriminals\n  ) &&\n    'P2P1P5P4CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCP3'.match(\n      reCriminals\n    )[0] == 'CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC'\n);"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>Time to pause and test your new regex writing skills. A group of criminals escaped from jail and ran away, but you don't know how many. However, you do know that they stay close together when they are around other people. You are responsible for finding all of the criminals at once.</p>\n<p>Here's an example to review how to do this:</p>\n<p>The regex <code>/z+/</code> matches the letter <code>z</code> when it appears one or more times in a row. It would find matches in all of the following strings:</p>\n<pre><code class=\"language-js\">\"z\"\n\"zzzzzz\"\n\"ABCzzzz\"\n\"zzzzABC\"\n\"abczzzzzzzzzzzzzzzzzzzzzabc\"\n</code></pre>\n<p>But it does not find matches in the following strings since there are no letter <code>z</code> characters:</p>\n<pre><code class=\"language-js\">\"\"\n\"ABC\"\n\"abcabc\"\n</code></pre>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>Write a greedy regex that finds one or more criminals within a group of other people. A criminal is represented by the capital letter <code>C</code>.</p>\n</section>",
+  "translationPending": false,
+  "block": "regular-expressions",
+  "hasEditableBoundaries": false,
+  "order": 2,
+  "superOrder": 19,
+  "certification": "javascript-algorithms-and-data-structures",
+  "superBlock": "javascript-algorithms-and-data-structures",
+  "challengeOrder": 14,
+  "required": [],
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

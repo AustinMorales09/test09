@@ -1,0 +1,90 @@
+{
+  "id": "5a24bbe0dba28a8d3cbd4c5e",
+  "title": "Add Comments in JSX",
+  "challengeType": 6,
+  "forumTopicId": 301376,
+  "dashedName": "add-comments-in-jsx",
+  "challengeFiles": [
+    {
+      "head": "",
+      "tail": "ReactDOM.render(JSX, document.getElementById('root'))",
+      "id": "",
+      "editableRegionBoundaries": [],
+      "history": [
+        "index.jsx"
+      ],
+      "name": "index",
+      "ext": "jsx",
+      "path": "index.jsx",
+      "fileKey": "indexjsx",
+      "contents": "const JSX = (\n  <div>\n    <h1>This is a block of JSX</h1>\n    <p>Here's a subtitle</p>\n  </div>\n);",
+      "error": null,
+      "seed": "const JSX = (\n  <div>\n    <h1>This is a block of JSX</h1>\n    <p>Here's a subtitle</p>\n  </div>\n);"
+    }
+  ],
+  "solutions": [
+    [
+      {
+        "head": "",
+        "tail": "",
+        "id": "",
+        "history": [
+          "index.jsx"
+        ],
+        "name": "index",
+        "ext": "jsx",
+        "path": "index.jsx",
+        "fileKey": "indexjsx",
+        "contents": "const JSX = (\n<div>\n  <h1>This is a block of JSX</h1>\n  { /* this is a JSX comment */ }\n  <p>Here's a subtitle</p>\n</div>);",
+        "error": null,
+        "seed": "const JSX = (\n<div>\n  <h1>This is a block of JSX</h1>\n  { /* this is a JSX comment */ }\n  <p>Here's a subtitle</p>\n</div>);"
+      }
+    ]
+  ],
+  "assignments": [],
+  "tests": [
+    {
+      "text": "<p>The constant <code>JSX</code> should return a <code>div</code> element.</p>",
+      "testString": "assert(JSX.type === 'div');"
+    },
+    {
+      "text": "<p>The <code>div</code> should contain an <code>h1</code> tag as the first element.</p>",
+      "testString": "assert(JSX.props.children[0].type === 'h1');"
+    },
+    {
+      "text": "<p>The <code>div</code> should contain a <code>p</code> tag as the second element.</p>",
+      "testString": "assert(JSX.props.children[1].type === 'p');"
+    },
+    {
+      "text": "<p>The existing <code>h1</code> and <code>p</code> elements should not be modified.</p>",
+      "testString": "assert(\n  JSX.props.children[0].props.children === 'This is a block of JSX' &&\n    JSX.props.children[1].props.children === \"Here's a subtitle\"\n);"
+    },
+    {
+      "text": "<p>The <code>JSX</code> should use valid comment syntax.</p>",
+      "testString": "assert(/<div>[\\s\\S]*{\\s*\\/\\*[\\s\\S]*\\*\\/\\s*}[\\s\\S]*<\\/div>/.test(code));"
+    }
+  ],
+  "description": "<section id=\"description\">\n<p>JSX is a syntax that gets compiled into valid JavaScript. Sometimes, for readability, you might need to add comments to your code. Like most programming languages, JSX has its own way to do this.</p>\n<p>To put comments inside JSX, you use the syntax <code>{/* */}</code> to wrap around the comment text.</p>\n</section>",
+  "instructions": "<section id=\"instructions\">\n<p>The code editor has a JSX element similar to what you created in the last challenge. Add a comment somewhere within the provided <code>div</code> element, without modifying the existing <code>h1</code> or <code>p</code> elements.</p>\n</section>",
+  "translationPending": false,
+  "block": "react",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 2,
+  "certification": "front-end-development-libraries",
+  "superBlock": "front-end-development-libraries",
+  "challengeOrder": 2,
+  "required": [
+    {
+      "src": "https://unpkg.com/react@16.4.0/umd/react.production.min.js"
+    },
+    {
+      "src": "https://unpkg.com/react-dom@16.4.0/umd/react-dom.production.min.js"
+    }
+  ],
+  "template": "<body><div id='root'></div><div id='challenge-node'></div>${ source || '' }</body>",
+  "helpCategory": "JavaScript",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}

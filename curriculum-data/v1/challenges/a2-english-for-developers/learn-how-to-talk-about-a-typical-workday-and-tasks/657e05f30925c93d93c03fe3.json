@@ -1,0 +1,45 @@
+{
+  "id": "657e05f30925c93d93c03fe3",
+  "title": "Task 3",
+  "challengeType": 19,
+  "dashedName": "task-3",
+  "solutions": [],
+  "question": {
+    "text": "<p>Which statement is correct?</p>",
+    "answers": [
+      {
+        "answer": "<p><code>10:00 AM</code> is late at night.</p>",
+        "feedback": "<p><code>10:00 AM</code> is in the morning, not late at night.</p>"
+      },
+      {
+        "answer": "<p><code>12:00 PM</code> is at noon.</p>",
+        "feedback": null
+      },
+      {
+        "answer": "<p><code>7:00 PM</code> is early morning.</p>",
+        "feedback": "<p><code>7:00 PM</code> is in the evening, not early morning.</p>"
+      },
+      {
+        "answer": "<p><code>1:00 AM</code> is in the afternoon.</p>",
+        "feedback": "<p><code>1:00 AM</code> is early in the morning, not in the afternoon.</p>"
+      }
+    ],
+    "solution": 2
+  },
+  "assignments": [],
+  "tests": [],
+  "description": "<section id=\"description\">\n<p><code>AM</code> and <code>PM</code> are used to tell time during the day. <code>AM</code> means the time from midnight to noon (for example, <code>8:00 AM</code> is in the morning). <code>PM</code> means the time from noon to midnight (for example, <code>6:00 PM</code> is in the evening).</p>\n<p>In English, the day is divided into two periods using <code>AM</code> and <code>PM</code>.\n<code>AM</code> stands for <code>Ante Meridiem</code>, which is Latin for <code>before midday</code>. It refers to the time from midnight (<code>12:00 AM</code>) to noon (<code>12:00 PM</code>). So, when you say <code>9:00 AM</code>, it means 9 in the morning.</p>\n<p><code>PM</code> stands for <code>Post Meridiem</code>, which is Latin for <code>after midday</code>. It refers to the time from noon (<code>12:00 PM</code>) to just before midnight (<code>11:59 PM</code>). So, when we say <code>3:00 PM</code>, it means 3 in the afternoon.</p>\n</section>",
+  "translationPending": false,
+  "block": "learn-how-to-talk-about-a-typical-workday-and-tasks",
+  "hasEditableBoundaries": false,
+  "order": 3,
+  "superOrder": 12,
+  "certification": "a2-english-for-developers",
+  "superBlock": "a2-english-for-developers",
+  "challengeOrder": 3,
+  "required": [],
+  "helpCategory": "English",
+  "usesMultifileEditor": false,
+  "disableLoopProtectTests": false,
+  "disableLoopProtectPreview": false
+}
