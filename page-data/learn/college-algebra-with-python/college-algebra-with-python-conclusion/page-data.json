@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/college-algebra-with-python/college-algebra-with-python-conclusion/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"college-algebra-with-python-conclusion","superBlock":"college-algebra-with-python"},"html":"<h2>Introduction to College Algebra with Python Conclusion</h2>\n<p>This will be the last unit in this course. Let's look at how you can connect your Math and Python knowledge with external data.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/college-algebra-with-python-conclusion/spreadsheets-and-additional-resources"},"title":"Spreadsheets and Additional Resources"}}},{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/college-algebra-with-python-conclusion/more-resources-in-colab"},"title":"More Resources in Colab"}}}]}},"pageContext":{"block":"college-algebra-with-python-conclusion","slug":"/learn/college-algebra-with-python/college-algebra-with-python-conclusion/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}

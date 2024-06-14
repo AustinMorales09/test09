@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/college-algebra-with-python/learn-quadratic-equations/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"learn-quadratic-equations","superBlock":"college-algebra-with-python"},"html":"<h2>Introduction to Learn Quadratic Equations</h2>\n<p>This unit will go beyond linear equations, to work with exponents and graph parabolas. You will learn how to find key points in parabolas and how to solve quadratic equations.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-quadratic-equations/quadratics"},"title":"Quadratics"}}}]}},"pageContext":{"block":"learn-quadratic-equations","slug":"/learn/college-algebra-with-python/learn-quadratic-equations/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}

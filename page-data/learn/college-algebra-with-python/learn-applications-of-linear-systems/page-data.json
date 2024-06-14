@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/college-algebra-with-python/learn-applications-of-linear-systems/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"learn-applications-of-linear-systems","superBlock":"college-algebra-with-python"},"html":"<h2>Introduction to Learn Applications of Linear Systems</h2>\n<p>In this unit, you will see how you can use the algebra you learned so far to solve real world problems.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-applications-of-linear-systems/word-problems"},"title":"Word Problems"}}},{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-applications-of-linear-systems/applications-of-linear-systems-extra"},"title":"Applications of Linear Systems: Extra"}}}]}},"pageContext":{"block":"learn-applications-of-linear-systems","slug":"/learn/college-algebra-with-python/learn-applications-of-linear-systems/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}

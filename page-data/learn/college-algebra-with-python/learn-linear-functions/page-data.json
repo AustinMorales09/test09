@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/college-algebra-with-python/learn-linear-functions/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"learn-linear-functions","superBlock":"college-algebra-with-python"},"html":"<h2>Introduction to Learn Linear Functions</h2>\n<p>This unit will show you how to develop linear equations from two points.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-linear-functions/slope"},"title":"Slope"}}},{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-linear-functions/linear-equations"},"title":"Linear Equations"}}},{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-linear-functions/linear-functions-extra"},"title":"Linear Functions: Extra"}}}]}},"pageContext":{"block":"learn-linear-functions","slug":"/learn/college-algebra-with-python/learn-linear-functions/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}

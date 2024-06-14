@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/college-algebra-with-python/learn-exponents-and-logarithms/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"learn-exponents-and-logarithms","superBlock":"college-algebra-with-python"},"html":"<h2>Introduction to Learn Exponents and Logarithms</h2>\n<p>This unit will show you how exponents and logarithms are inverse functions, and how you can use these functions in various applications.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-exponents-and-logarithms/exponents-and-logarithms"},"title":"Exponents and Logarithms"}}}]}},"pageContext":{"block":"learn-exponents-and-logarithms","slug":"/learn/college-algebra-with-python/learn-exponents-and-logarithms/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}

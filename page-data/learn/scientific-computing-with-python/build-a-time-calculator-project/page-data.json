@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/scientific-computing-with-python/build-a-time-calculator-project/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"build-a-time-calculator-project","superBlock":"scientific-computing-with-python"},"html":"<h2>Introduction to the Build a Time Calculator Project</h2>\n<p>This is a test for the new project-based curriculum.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/scientific-computing-with-python/build-a-time-calculator-project/build-a-time-calculator-project"},"title":"Build a Time Calculator Project"}}}]}},"pageContext":{"block":"build-a-time-calculator-project","slug":"/learn/scientific-computing-with-python/build-a-time-calculator-project/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}

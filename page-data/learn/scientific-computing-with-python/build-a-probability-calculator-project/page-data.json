@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/scientific-computing-with-python/build-a-probability-calculator-project/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"build-a-probability-calculator-project","superBlock":"scientific-computing-with-python"},"html":"<h2>Introduction to the Build a Probability Calculator Project</h2>\n<p>This is a test for the new project-based curriculum.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/scientific-computing-with-python/build-a-probability-calculator-project/build-a-probability-calculator-project"},"title":"Build a Probability Calculator Project"}}}]}},"pageContext":{"block":"build-a-probability-calculator-project","slug":"/learn/scientific-computing-with-python/build-a-probability-calculator-project/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}

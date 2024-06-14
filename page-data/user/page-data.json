@@ -1,0 +1,6 @@
+{
+    "componentChunkName": "component---src-pages-user-tsx",
+    "path": "/user/",
+    "result": {"pageContext":{"matchPath":"/user/*"}},
+    "staticQueryHashes": ["1800977889","4268002518"],
+    "matchPath": "/user/*"}

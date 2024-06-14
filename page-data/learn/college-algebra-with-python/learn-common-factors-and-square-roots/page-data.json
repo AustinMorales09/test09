@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/college-algebra-with-python/learn-common-factors-and-square-roots/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"learn-common-factors-and-square-roots","superBlock":"college-algebra-with-python"},"html":"<h2>Introduction to Learn Common Factors and Square Roots</h2>\n<p>In this unit, you will learn how to find common factors and divide them out. This will be useful when simplifying fractions and factoring square roots.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-common-factors-and-square-roots/factoring"},"title":"Factoring"}}}]}},"pageContext":{"block":"learn-common-factors-and-square-roots","slug":"/learn/college-algebra-with-python/learn-common-factors-and-square-roots/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}

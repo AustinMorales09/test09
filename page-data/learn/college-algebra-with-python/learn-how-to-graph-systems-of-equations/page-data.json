@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/college-algebra-with-python/learn-how-to-graph-systems-of-equations/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"learn-how-to-graph-systems-of-equations","superBlock":"college-algebra-with-python"},"html":"<h2>Introduction to Learn How to Graph Systems of Equations</h2>\n<p>This unit will focus on graphing two equations on the same coordinate plane, so that you can see where the lines intersect.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-how-to-graph-systems-of-equations/graphing-systems"},"title":"Graphing Systems"}}},{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-how-to-graph-systems-of-equations/graphing-systems-of-equations-extra"},"title":"Graphing Systems of Equations: Extra"}}}]}},"pageContext":{"block":"learn-how-to-graph-systems-of-equations","slug":"/learn/college-algebra-with-python/learn-how-to-graph-systems-of-equations/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}

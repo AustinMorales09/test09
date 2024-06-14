@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/college-algebra-with-python/learn-functions-and-graphing/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"learn-functions-and-graphing","superBlock":"college-algebra-with-python"},"html":"<h2>Introduction to Learn Functions and Graphing</h2>\n<p>This unit will teach you about math functions.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-functions-and-graphing/functions"},"title":"Functions"}}},{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-functions-and-graphing/graphing"},"title":"Graphing"}}},{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-functions-and-graphing/functions-and-graphing-extra"},"title":"Functions and Graphing: Extra"}}}]}},"pageContext":{"block":"learn-functions-and-graphing","slug":"/learn/college-algebra-with-python/learn-functions-and-graphing/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}

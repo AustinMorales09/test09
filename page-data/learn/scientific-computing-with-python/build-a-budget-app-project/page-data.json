@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/scientific-computing-with-python/build-a-budget-app-project/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"build-a-budget-app-project","superBlock":"scientific-computing-with-python"},"html":"<h2>Introduction to the Build a Budget App Project</h2>\n<p>This is a test for the new project-based curriculum.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/scientific-computing-with-python/build-a-budget-app-project/build-a-budget-app-project"},"title":"Build a Budget App Project"}}}]}},"pageContext":{"block":"build-a-budget-app-project","slug":"/learn/scientific-computing-with-python/build-a-budget-app-project/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}

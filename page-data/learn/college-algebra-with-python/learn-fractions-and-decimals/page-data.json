@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/college-algebra-with-python/learn-fractions-and-decimals/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"learn-fractions-and-decimals","superBlock":"college-algebra-with-python"},"html":"<h2>Introduction to Learn Fractions and Decimals</h2>\n<p>This unit will focus on converting decimals to fractions and percents.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-fractions-and-decimals/converting-fractions-and-decimals"},"title":"Converting Fractions and Decimals"}}},{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-fractions-and-decimals/fractions-and-decimals-extra"},"title":"Fractions and Decimals: Extra"}}}]}},"pageContext":{"block":"learn-fractions-and-decimals","slug":"/learn/college-algebra-with-python/learn-fractions-and-decimals/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}

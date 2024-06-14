@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/scientific-computing-with-python/build-an-arithmetic-formatter-project/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"build-an-arithmetic-formatter-project","superBlock":"scientific-computing-with-python"},"html":"<h2>Introduction to the Build an Arithmetic Formatter Project</h2>\n<p>This is a test for the new project-based curriculum.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/scientific-computing-with-python/build-an-arithmetic-formatter-project/build-an-arithmetic-formatter-project"},"title":"Build an Arithmetic Formatter Project"}}}]}},"pageContext":{"block":"build-an-arithmetic-formatter-project","slug":"/learn/scientific-computing-with-python/build-an-arithmetic-formatter-project/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}

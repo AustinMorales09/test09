@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-introduction-intro-tsx",
+    "path": "/learn/college-algebra-with-python/learn-how-to-solve-for-x/",
+    "result": {"data":{"markdownRemark":{"frontmatter":{"block":"learn-how-to-solve-for-x","superBlock":"college-algebra-with-python"},"html":"<h2>Introduction to Learn How to Solve for X</h2>\n<p>This unit will focus on how to solve for an unknown number (often referred to as \"x\") using written Algebra and Python code.</p>"},"allChallengeNode":{"edges":[{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-how-to-solve-for-x/solving-for-x"},"title":"Solving for X"}}},{"node":{"challenge":{"fields":{"slug":"/learn/college-algebra-with-python/learn-how-to-solve-for-x/how-to-solve-for-x-extra"},"title":"How to Solve for X: Extra"}}}]}},"pageContext":{"block":"learn-how-to-solve-for-x","slug":"/learn/college-algebra-with-python/learn-how-to-solve-for-x/"}},
+    "staticQueryHashes": ["1800977889","4268002518"]}
